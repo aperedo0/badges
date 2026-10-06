@@ -1,0 +1,10 @@
+00:00.445  blend            | Read blend: "/Users/antonioperedo/Downloads/badge_realitykit_iron/scenes/iron_medallion_master.blend"
+00:30.270  render           | Saved: '/Users/antonioperedo/Downloads/badge_realitykit_iron/proof/renders/iron_harsh_0_no_denoise.png'
+BlenderMCP addon registered
+IMPORTED ['Casing___smooth_rounded_outer_edge_mobile_geometry', 'Emblem___faceted_compass_spear_mobile_geometry', 'Inner_channel___shadowed_bevel_mobile_geometry', 'Inner_edge___fine_silver_reveal_mobile_geometry', 'Inset___charcoal_textured_disk_mobile_geometry', 'Rim_inner_lip___narrow_highlight_mobile_geometry']
+RENDERED /Users/antonioperedo/Downloads/badge_realitykit_iron/proof/renders/iron_harsh_0_no_denoise.png
+BlenderMCP addon unregistered
+Blender 5.2.2 LTS (hash d13f752e3b9c built 2026-09-15 01:49:19)
+USD import of '/Users/antonioperedo/Downloads/badge_realitykit_iron/mobile/iron_badge_mobile.usdz' took 95.98 ms
+
+Blender quit

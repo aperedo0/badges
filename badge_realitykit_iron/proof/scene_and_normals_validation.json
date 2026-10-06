@@ -1,0 +1,80 @@
+{
+  "iron_badge_mobile_reduced": {
+    "Casing | smooth rounded outer edge": {
+      "mesh_name": "Casing | smooth rounded outer edge mobile geometry",
+      "points_exactly_equal_to_usdz": true,
+      "triangles": 26566,
+      "identity_world_transform": true
+    },
+    "Emblem | faceted compass spear": {
+      "mesh_name": "Emblem | faceted compass spear mobile geometry",
+      "points_exactly_equal_to_usdz": true,
+      "triangles": 98,
+      "identity_world_transform": true
+    },
+    "Inner channel | shadowed bevel": {
+      "mesh_name": "Inner channel | shadowed bevel mobile geometry",
+      "points_exactly_equal_to_usdz": true,
+      "triangles": 3500,
+      "identity_world_transform": true
+    },
+    "Inner edge | fine silver reveal": {
+      "mesh_name": "Inner edge | fine silver reveal mobile geometry",
+      "points_exactly_equal_to_usdz": true,
+      "triangles": 2200,
+      "identity_world_transform": true
+    },
+    "Inset | charcoal textured disk": {
+      "mesh_name": "Inset | charcoal textured disk mobile geometry",
+      "points_exactly_equal_to_usdz": true,
+      "triangles": 3570,
+      "identity_world_transform": true
+    },
+    "Rim inner lip | narrow highlight": {
+      "mesh_name": "Rim inner lip | narrow highlight mobile geometry",
+      "points_exactly_equal_to_usdz": true,
+      "triangles": 2500,
+      "identity_world_transform": true
+    }
+  },
+  "iron_badge_mobile": {
+    "Casing | smooth rounded outer edge": {
+      "mesh_name": "Casing | smooth rounded outer edge mobile geometry",
+      "points_exactly_equal_to_usdz": true,
+      "triangles": 26566,
+      "identity_world_transform": true
+    },
+    "Emblem | faceted compass spear": {
+      "mesh_name": "Emblem | faceted compass spear mobile geometry",
+      "points_exactly_equal_to_usdz": true,
+      "triangles": 98,
+      "identity_world_transform": true,
+      "broad_triangle_max_corner_normal_variation": 0.0
+    },
+    "Inner channel | shadowed bevel": {
+      "mesh_name": "Inner channel | shadowed bevel mobile geometry",
+      "points_exactly_equal_to_usdz": true,
+      "triangles": 3500,
+      "identity_world_transform": true
+    },
+    "Inner edge | fine silver reveal": {
+      "mesh_name": "Inner edge | fine silver reveal mobile geometry",
+      "points_exactly_equal_to_usdz": true,
+      "triangles": 2200,
+      "identity_world_transform": true
+    },
+    "Inset | charcoal textured disk": {
+      "mesh_name": "Inset | charcoal textured disk mobile geometry",
+      "points_exactly_equal_to_usdz": true,
+      "triangles": 3570,
+      "identity_world_transform": true
+    },
+    "Rim inner lip | narrow highlight": {
+      "mesh_name": "Rim inner lip | narrow highlight mobile geometry",
+      "points_exactly_equal_to_usdz": true,
+      "triangles": 2500,
+      "identity_world_transform": true
+    }
+  },
+  "normal_map_connections": []
+}

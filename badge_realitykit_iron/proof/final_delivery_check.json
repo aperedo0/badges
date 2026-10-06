@@ -1,0 +1,8 @@
+{
+  "required_files_present": 9,
+  "proof_pngs_decoded": 81,
+  "embedded_textures_exactly_equal_to_delivered_pngs": 7,
+  "usdz_zip_crc": "PASS",
+  "original_files_unchanged": 105,
+  "usdz_sha256": "b01852569a49fb62826c0b2e7266bb35ad01cac0de59dd6dbf0ef5f084b77575"
+}

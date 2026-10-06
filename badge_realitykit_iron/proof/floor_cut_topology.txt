@@ -1,0 +1,5 @@
+source edges 39954 boundary 210 on floor 210 non-manifold 0 points 13389 unique positions 13389
+badge_realitykit_iron edges 39954 boundary 210 on floor 210 non-manifold 0 points 13389 unique positions 13389
+Blender 5.2.2 LTS (hash d13f752e3b9c built 2026-09-15 01:49:19)
+
+Blender quit

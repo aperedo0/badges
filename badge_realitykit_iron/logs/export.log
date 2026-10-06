@@ -1,0 +1,9 @@
+00:01.222  blend            | Read blend: "/Users/antonioperedo/Downloads/badge_realitykit_iron/scenes/iron_medallion_master.blend"
+/Users/antonioperedo/Downloads/badge_realitykit_iron/scripts/export_mobile.py:76: DeprecationWarning: 'Material.use_nodes' is expected to be removed in Blender 6.0
+  mat=bpy.data.materials.new(src.name+' Mobile '+short);mat.use_nodes=True
+Info: Saved as "iron_badge_mobile_reduced.blend"
+Info: Saved as "iron_badge_mobile.blend"
+Blender 5.2.2 LTS (hash d13f752e3b9c built 2026-09-15 01:49:19)
+USD export of '/Users/antonioperedo/Downloads/badge_realitykit_iron/mobile/iron_badge_mobile.usdc' took 39.48 ms
+
+Blender quit

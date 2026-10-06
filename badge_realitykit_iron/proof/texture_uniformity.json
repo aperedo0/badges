@@ -1,0 +1,86 @@
+{
+  "USDZ_Casing_base_color.png": {
+    "size": [
+      512,
+      512
+    ],
+    "unique_rgb_colors": 1,
+    "rgb8": [
+      108,
+      105,
+      99
+    ]
+  },
+  "USDZ_Casing_back_roughness.png": {
+    "size": [
+      512,
+      512
+    ],
+    "unique_rgb_colors": 1,
+    "rgb8": [
+      82,
+      82,
+      82
+    ]
+  },
+  "USDZ_Inset_base_color.png": {
+    "size": [
+      512,
+      512
+    ],
+    "unique_rgb_colors": 1,
+    "rgb8": [
+      24,
+      25,
+      27
+    ]
+  },
+  "USDZ_Casing_back_base_color.png": {
+    "size": [
+      512,
+      512
+    ],
+    "unique_rgb_colors": 1,
+    "rgb8": [
+      14,
+      13,
+      12
+    ]
+  },
+  "USDZ_Casing_outer_base_color.png": {
+    "size": [
+      512,
+      512
+    ],
+    "unique_rgb_colors": 1,
+    "rgb8": [
+      27,
+      26,
+      24
+    ]
+  },
+  "USDZ_Casing_roughness.png": {
+    "size": [
+      512,
+      512
+    ],
+    "unique_rgb_colors": 1,
+    "rgb8": [
+      83,
+      83,
+      83
+    ]
+  },
+  "USDZ_Casing_outer_roughness.png": {
+    "size": [
+      512,
+      512
+    ],
+    "unique_rgb_colors": 1,
+    "rgb8": [
+      69,
+      69,
+      69
+    ]
+  }
+}

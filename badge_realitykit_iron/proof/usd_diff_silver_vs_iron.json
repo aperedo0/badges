@@ -1,0 +1,375 @@
+{
+  "old": "/Users/antonioperedo/Downloads/badge_realitykit_iron/source/silver_v3/silver_badge_mobile.usdz",
+  "new": "/Users/antonioperedo/Downloads/badge_realitykit_iron/mobile/iron_badge_mobile.usdz",
+  "stage": {
+    "old": {
+      "upAxis": "Y",
+      "metersPerUnit": 1.0,
+      "defaultPrim": "/Badge"
+    },
+    "new": {
+      "upAxis": "Y",
+      "metersPerUnit": 1.0,
+      "defaultPrim": "/Badge"
+    }
+  },
+  "differences": [
+    {
+      "prim": "/Badge/Emblem___faceted_compass_spear/Emblem___faceted_compass_spear_mobile_geometry",
+      "attr": "extent",
+      "change": "values",
+      "max_abs_delta": 0.0025949478149414062,
+      "elements_changed": 2,
+      "elements": 2
+    },
+    {
+      "prim": "/Badge/Emblem___faceted_compass_spear/Emblem___faceted_compass_spear_mobile_geometry",
+      "attr": "faceVertexCounts",
+      "change": "array shape",
+      "old": [
+        230
+      ],
+      "new": [
+        98
+      ]
+    },
+    {
+      "prim": "/Badge/Emblem___faceted_compass_spear/Emblem___faceted_compass_spear_mobile_geometry",
+      "attr": "faceVertexIndices",
+      "change": "array shape",
+      "old": [
+        690
+      ],
+      "new": [
+        294
+      ]
+    },
+    {
+      "prim": "/Badge/Emblem___faceted_compass_spear/Emblem___faceted_compass_spear_mobile_geometry",
+      "attr": "normals",
+      "change": "array shape",
+      "old": [
+        690,
+        3
+      ],
+      "new": [
+        294,
+        3
+      ]
+    },
+    {
+      "prim": "/Badge/Emblem___faceted_compass_spear/Emblem___faceted_compass_spear_mobile_geometry",
+      "attr": "points",
+      "change": "array shape",
+      "old": [
+        117,
+        3
+      ],
+      "new": [
+        51,
+        3
+      ]
+    },
+    {
+      "prim": "/Badge/Emblem___faceted_compass_spear/Emblem___faceted_compass_spear_mobile_geometry",
+      "attr": "primvars:USDZ_UV",
+      "change": "array shape",
+      "old": [
+        170,
+        2
+      ],
+      "new": [
+        51,
+        2
+      ]
+    },
+    {
+      "prim": "/Badge/Emblem___faceted_compass_spear/Emblem___faceted_compass_spear_mobile_geometry",
+      "attr": "primvars:USDZ_UV:indices",
+      "change": "array shape",
+      "old": [
+        690
+      ],
+      "new": [
+        294
+      ]
+    },
+    {
+      "prim": "/Badge/Emblem___faceted_compass_spear/Emblem___faceted_compass_spear_mobile_geometry/Emblem___satin_silver_facets_Mobile_Emblem",
+      "attr": "indices",
+      "change": "array shape",
+      "old": [
+        180
+      ],
+      "new": [
+        34
+      ]
+    },
+    {
+      "prim": "/Badge/Emblem___faceted_compass_spear/Emblem___faceted_compass_spear_mobile_geometry/Emblem___shaded_outer_facets_Mobile_Emblem",
+      "attr": "indices",
+      "change": "array shape",
+      "old": [
+        50
+      ],
+      "new": [
+        64
+      ]
+    },
+    {
+      "prim": "/Badge/_materials/Back_and_edge___gunmetal_Mobile_Casing/Image_Texture",
+      "attr": "inputs:file",
+      "change": "value",
+      "old": "@./textures/USDZ_Casing_base_color.png@",
+      "new": "@./textures/USDZ_Casing_back_base_color.png@"
+    },
+    {
+      "prim": "/Badge/_materials/Back_and_edge___gunmetal_Mobile_Casing/Image_Texture_001",
+      "attr": "inputs:file",
+      "change": "value",
+      "old": "@./textures/USDZ_Casing_roughness.png@",
+      "new": "@./textures/USDZ_Casing_back_roughness.png@"
+    },
+    {
+      "prim": "/Badge/_materials/Emblem___satin_silver_facets_Mobile_Emblem/Principled_BSDF",
+      "attr": "inputs:diffuseColor",
+      "change": "values",
+      "max_abs_delta": 0.20000001788139343,
+      "elements_changed": 3,
+      "elements": 3
+    },
+    {
+      "prim": "/Badge/_materials/Emblem___shaded_outer_facets_Mobile_Emblem/Principled_BSDF",
+      "attr": "inputs:diffuseColor",
+      "change": "values",
+      "max_abs_delta": 0.019999995827674866,
+      "elements_changed": 3,
+      "elements": 3
+    },
+    {
+      "prim": "/Badge/_materials/Inset___finely_textured_charcoal_Mobile_Inset/Image_Texture_001",
+      "change": "removed",
+      "type": "Shader"
+    },
+    {
+      "prim": "/Badge/_materials/Inset___finely_textured_charcoal_Mobile_Inset/Principled_BSDF",
+      "attr": "inputs:normal",
+      "change": "attribute removed"
+    },
+    {
+      "prim": "/Badge/_materials/Inset___finely_textured_charcoal_Mobile_Inset/UV_Map_001",
+      "change": "removed",
+      "type": "Shader"
+    },
+    {
+      "prim": "/Badge/_materials/Outer_edge___smooth_satin_silver_Mobile_Casing/Image_Texture",
+      "attr": "inputs:file",
+      "change": "value",
+      "old": "@./textures/USDZ_Casing_base_color.png@",
+      "new": "@./textures/USDZ_Casing_outer_base_color.png@"
+    },
+    {
+      "prim": "/Badge/_materials/Outer_edge___smooth_satin_silver_Mobile_Casing/Image_Texture_001",
+      "attr": "inputs:file",
+      "change": "value",
+      "old": "@./textures/USDZ_Casing_roughness.png@",
+      "new": "@./textures/USDZ_Casing_outer_roughness.png@"
+    },
+    {
+      "prim": "/Badge/_materials/Recess___smoked_nickel_Mobile_Inner_channel/Principled_BSDF",
+      "attr": "inputs:diffuseColor",
+      "change": "values",
+      "max_abs_delta": 0.02499999850988388,
+      "elements_changed": 3,
+      "elements": 3
+    },
+    {
+      "prim": "/Badge/_materials/Silver___polished_cut_edges_Mobile_Inner_edge/Principled_BSDF",
+      "attr": "inputs:diffuseColor",
+      "change": "values",
+      "max_abs_delta": 0.3399999737739563,
+      "elements_changed": 3,
+      "elements": 3
+    },
+    {
+      "prim": "/Badge/_materials/Silver___polished_cut_edges_Mobile_Rim_inner_lip/Principled_BSDF",
+      "attr": "inputs:diffuseColor",
+      "change": "values",
+      "max_abs_delta": 0.3399999737739563,
+      "elements_changed": 3,
+      "elements": 3
+    }
+  ],
+  "bounds_old": {
+    "/Badge": [
+      [
+        -3.01487135887146,
+        -2.8949999809265137,
+        -0.3450004458427429
+      ],
+      [
+        3.01487135887146,
+        3.01487135887146,
+        0.9771202802658081
+      ]
+    ],
+    "/Badge/Inset___charcoal_textured_disk/Inset___charcoal_textured_disk_mobile_geometry": [
+      [
+        -2.5250000953674316,
+        -2.5250000953674316,
+        -0.13100045919418335
+      ],
+      [
+        2.5250000953674316,
+        2.5250000953674316,
+        0.03900047391653061
+      ]
+    ],
+    "/Badge/Inner_edge___fine_silver_reveal/Inner_edge___fine_silver_reveal_mobile_geometry": [
+      [
+        -2.5390655994415283,
+        -2.5390655994415283,
+        0.06098673492670059
+      ],
+      [
+        2.5390655994415283,
+        2.5390655994415283,
+        0.09602090716362
+      ]
+    ],
+    "/Badge/Casing___smooth_rounded_outer_edge/Casing___smooth_rounded_outer_edge_mobile_geometry": [
+      [
+        -3.01487135887146,
+        -2.8949999809265137,
+        -0.3450004458427429
+      ],
+      [
+        3.01487135887146,
+        3.01487135887146,
+        0.2600186765193939
+      ]
+    ],
+    "/Badge/Emblem___faceted_compass_spear/Emblem___faceted_compass_spear_mobile_geometry": [
+      [
+        -1.0885751247406006,
+        -2.0473744869232178,
+        0.11999999731779099
+      ],
+      [
+        1.0885751247406006,
+        2.017314910888672,
+        0.9771202802658081
+      ]
+    ],
+    "/Badge/Inner_channel___shadowed_bevel/Inner_channel___shadowed_bevel_mobile_geometry": [
+      [
+        -2.6401007175445557,
+        -2.6401007175445557,
+        0.01798584684729576
+      ],
+      [
+        2.6401007175445557,
+        2.6401007175445557,
+        0.20115379989147186
+      ]
+    ],
+    "/Badge/Rim_inner_lip___narrow_highlight/Rim_inner_lip___narrow_highlight_mobile_geometry": [
+      [
+        -2.6612191200256348,
+        -2.6612191200256348,
+        0.18692268431186676
+      ],
+      [
+        2.6612191200256348,
+        2.6612191200256348,
+        0.22401870787143707
+      ]
+    ]
+  },
+  "bounds_new": {
+    "/Badge": [
+      [
+        -3.01487135887146,
+        -2.8949999809265137,
+        -0.3450004458427429
+      ],
+      [
+        3.01487135887146,
+        3.01487135887146,
+        0.974890410900116
+      ]
+    ],
+    "/Badge/Inset___charcoal_textured_disk/Inset___charcoal_textured_disk_mobile_geometry": [
+      [
+        -2.5250000953674316,
+        -2.5250000953674316,
+        -0.13100045919418335
+      ],
+      [
+        2.5250000953674316,
+        2.5250000953674316,
+        0.03900047391653061
+      ]
+    ],
+    "/Badge/Inner_edge___fine_silver_reveal/Inner_edge___fine_silver_reveal_mobile_geometry": [
+      [
+        -2.5390655994415283,
+        -2.5390655994415283,
+        0.06098673492670059
+      ],
+      [
+        2.5390655994415283,
+        2.5390655994415283,
+        0.09602090716362
+      ]
+    ],
+    "/Badge/Casing___smooth_rounded_outer_edge/Casing___smooth_rounded_outer_edge_mobile_geometry": [
+      [
+        -3.01487135887146,
+        -2.8949999809265137,
+        -0.3450004458427429
+      ],
+      [
+        3.01487135887146,
+        3.01487135887146,
+        0.2600186765193939
+      ]
+    ],
+    "/Badge/Emblem___faceted_compass_spear/Emblem___faceted_compass_spear_mobile_geometry": [
+      [
+        -1.0869446992874146,
+        -2.0447795391082764,
+        0.11999981105327606
+      ],
+      [
+        1.0870530605316162,
+        2.0148818492889404,
+        0.974890410900116
+      ]
+    ],
+    "/Badge/Inner_channel___shadowed_bevel/Inner_channel___shadowed_bevel_mobile_geometry": [
+      [
+        -2.6401007175445557,
+        -2.6401007175445557,
+        0.01798584684729576
+      ],
+      [
+        2.6401007175445557,
+        2.6401007175445557,
+        0.20115379989147186
+      ]
+    ],
+    "/Badge/Rim_inner_lip___narrow_highlight/Rim_inner_lip___narrow_highlight_mobile_geometry": [
+      [
+        -2.6612191200256348,
+        -2.6612191200256348,
+        0.18692268431186676
+      ],
+      [
+        2.6612191200256348,
+        2.6612191200256348,
+        0.22401870787143707
+      ]
+    ]
+  }
+}

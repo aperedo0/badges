@@ -1,0 +1,254 @@
+{
+  "meshes": {
+    "/Badge/Inset___charcoal_textured_disk/Inset___charcoal_textured_disk_mobile_geometry": {
+      "triangles_silver": 3570,
+      "triangles_iron": 3570,
+      "every_authored_mesh_attribute_identical": true,
+      "identical_attributes": [
+        "doubleSided",
+        "extent",
+        "faceVertexCounts",
+        "faceVertexIndices",
+        "normals",
+        "points",
+        "primvars:USDZ_UV",
+        "primvars:USDZ_UV:indices",
+        "primvars:UVMap",
+        "primvars:UVMap:indices",
+        "subdivisionScheme",
+        "userProperties:blender:data_name"
+      ],
+      "bounds": [
+        [
+          -2.5250000953674316,
+          -2.5250000953674316,
+          -0.13100045919418335
+        ],
+        [
+          2.5250000953674316,
+          2.5250000953674316,
+          0.03900047391653061
+        ]
+      ]
+    },
+    "/Badge/Inner_edge___fine_silver_reveal/Inner_edge___fine_silver_reveal_mobile_geometry": {
+      "triangles_silver": 2200,
+      "triangles_iron": 2200,
+      "every_authored_mesh_attribute_identical": true,
+      "identical_attributes": [
+        "doubleSided",
+        "extent",
+        "faceVertexCounts",
+        "faceVertexIndices",
+        "normals",
+        "points",
+        "primvars:Machining_UV",
+        "primvars:Machining_UV:indices",
+        "subdivisionScheme",
+        "userProperties:blender:data_name"
+      ],
+      "bounds": [
+        [
+          -2.5390655994415283,
+          -2.5390655994415283,
+          0.06098673492670059
+        ],
+        [
+          2.5390655994415283,
+          2.5390655994415283,
+          0.09602090716362
+        ]
+      ]
+    },
+    "/Badge/Casing___smooth_rounded_outer_edge/Casing___smooth_rounded_outer_edge_mobile_geometry": {
+      "triangles_silver": 26566,
+      "triangles_iron": 26566,
+      "every_authored_mesh_attribute_identical": true,
+      "identical_attributes": [
+        "doubleSided",
+        "extent",
+        "faceVertexCounts",
+        "faceVertexIndices",
+        "normals",
+        "points",
+        "primvars:Machining_UV",
+        "primvars:Machining_UV:indices",
+        "primvars:USDZ_UV",
+        "primvars:USDZ_UV:indices",
+        "subdivisionScheme",
+        "subsetFamily:materialBind:familyType",
+        "userProperties:blender:data_name"
+      ],
+      "bounds": [
+        [
+          -3.01487135887146,
+          -2.8949999809265137,
+          -0.3450004458427429
+        ],
+        [
+          3.01487135887146,
+          3.01487135887146,
+          0.2600186765193939
+        ]
+      ]
+    },
+    "/Badge/Emblem___faceted_compass_spear/Emblem___faceted_compass_spear_mobile_geometry": {
+      "triangles_silver": 230,
+      "triangles_iron": 98,
+      "bounds": [
+        [
+          -1.0869446992874146,
+          -2.0447795391082764,
+          0.11999981105327606
+        ],
+        [
+          1.0870530605316162,
+          2.0148818492889404,
+          0.974890410900116
+        ]
+      ]
+    },
+    "/Badge/Inner_channel___shadowed_bevel/Inner_channel___shadowed_bevel_mobile_geometry": {
+      "triangles_silver": 3500,
+      "triangles_iron": 3500,
+      "every_authored_mesh_attribute_identical": true,
+      "identical_attributes": [
+        "doubleSided",
+        "extent",
+        "faceVertexCounts",
+        "faceVertexIndices",
+        "normals",
+        "points",
+        "primvars:Machining_UV",
+        "primvars:Machining_UV:indices",
+        "subdivisionScheme",
+        "userProperties:blender:data_name"
+      ],
+      "bounds": [
+        [
+          -2.6401007175445557,
+          -2.6401007175445557,
+          0.01798584684729576
+        ],
+        [
+          2.6401007175445557,
+          2.6401007175445557,
+          0.20115379989147186
+        ]
+      ]
+    },
+    "/Badge/Rim_inner_lip___narrow_highlight/Rim_inner_lip___narrow_highlight_mobile_geometry": {
+      "triangles_silver": 2500,
+      "triangles_iron": 2500,
+      "every_authored_mesh_attribute_identical": true,
+      "identical_attributes": [
+        "doubleSided",
+        "extent",
+        "faceVertexCounts",
+        "faceVertexIndices",
+        "normals",
+        "points",
+        "primvars:Machining_UV",
+        "primvars:Machining_UV:indices",
+        "subdivisionScheme",
+        "userProperties:blender:data_name"
+      ],
+      "bounds": [
+        [
+          -2.6612191200256348,
+          -2.6612191200256348,
+          0.18692268431186676
+        ],
+        [
+          2.6612191200256348,
+          2.6612191200256348,
+          0.22401870787143707
+        ]
+      ]
+    }
+  },
+  "materials": {
+    "Inset___finely_textured_charcoal_Mobile_Inset": {
+      "diffuseColor": "None",
+      "metallic": "0.05000000074505806",
+      "roughness": "0.8299999833106995"
+    },
+    "Silver___polished_cut_edges_Mobile_Inner_edge": {
+      "diffuseColor": "(0.3, 0.285, 0.26)",
+      "metallic": "1.0",
+      "roughness": "0.1899999976158142"
+    },
+    "Silver___circumferential_brushed_steel_Mobile_Casing": {
+      "diffuseColor": "None",
+      "metallic": "1.0",
+      "roughness": "None"
+    },
+    "Outer_edge___smooth_satin_silver_Mobile_Casing": {
+      "diffuseColor": "None",
+      "metallic": "1.0",
+      "roughness": "None"
+    },
+    "Back_and_edge___gunmetal_Mobile_Casing": {
+      "diffuseColor": "None",
+      "metallic": "0.949999988079071",
+      "roughness": "None"
+    },
+    "Emblem___satin_silver_facets_Mobile_Emblem": {
+      "diffuseColor": "(0.36, 0.34, 0.3)",
+      "metallic": "1.0",
+      "roughness": "0.28999999165534973"
+    },
+    "Emblem___shaded_outer_facets_Mobile_Emblem": {
+      "diffuseColor": "(0.19, 0.18, 0.165)",
+      "metallic": "1.0",
+      "roughness": "0.28999999165534973"
+    },
+    "Recess___smoked_nickel_Mobile_Inner_channel": {
+      "diffuseColor": "(0.045, 0.043, 0.039)",
+      "metallic": "1.0",
+      "roughness": "0.27000001072883606"
+    },
+    "Silver___polished_cut_edges_Mobile_Rim_inner_lip": {
+      "diffuseColor": "(0.3, 0.285, 0.26)",
+      "metallic": "1.0",
+      "roughness": "0.1899999976158142"
+    }
+  },
+  "stage": {
+    "upAxis": "Y",
+    "metersPerUnit": 1.0
+  },
+  "names": {
+    "Mesh": {
+      "identical": true,
+      "count": 6,
+      "names": [
+        "/Badge/Casing___smooth_rounded_outer_edge/Casing___smooth_rounded_outer_edge_mobile_geometry",
+        "/Badge/Emblem___faceted_compass_spear/Emblem___faceted_compass_spear_mobile_geometry",
+        "/Badge/Inner_channel___shadowed_bevel/Inner_channel___shadowed_bevel_mobile_geometry",
+        "/Badge/Inner_edge___fine_silver_reveal/Inner_edge___fine_silver_reveal_mobile_geometry",
+        "/Badge/Inset___charcoal_textured_disk/Inset___charcoal_textured_disk_mobile_geometry",
+        "/Badge/Rim_inner_lip___narrow_highlight/Rim_inner_lip___narrow_highlight_mobile_geometry"
+      ]
+    },
+    "Material": {
+      "identical": true,
+      "count": 9,
+      "names": [
+        "/Badge/_materials/Back_and_edge___gunmetal_Mobile_Casing",
+        "/Badge/_materials/Emblem___satin_silver_facets_Mobile_Emblem",
+        "/Badge/_materials/Emblem___shaded_outer_facets_Mobile_Emblem",
+        "/Badge/_materials/Inset___finely_textured_charcoal_Mobile_Inset",
+        "/Badge/_materials/Outer_edge___smooth_satin_silver_Mobile_Casing",
+        "/Badge/_materials/Recess___smoked_nickel_Mobile_Inner_channel",
+        "/Badge/_materials/Silver___circumferential_brushed_steel_Mobile_Casing",
+        "/Badge/_materials/Silver___polished_cut_edges_Mobile_Inner_edge",
+        "/Badge/_materials/Silver___polished_cut_edges_Mobile_Rim_inner_lip"
+      ]
+    }
+  },
+  "total_triangles_silver": 38566,
+  "total_triangles_iron": 38434,
+  "bytes_silver": 3511448,
+  "bytes_iron": 2506612
+}

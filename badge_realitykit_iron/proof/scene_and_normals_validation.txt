@@ -1,0 +1,6 @@
+00:00.991  blend            | Read blend: "/Users/antonioperedo/Downloads/badge_realitykit_iron/scenes/iron_badge_mobile_reduced.blend"
+00:01.152  blend            | Read blend: "/Users/antonioperedo/Downloads/badge_realitykit_iron/scenes/iron_badge_mobile.blend"
+PASS: reduced/final scene mesh positions and triangles match USDZ; broad facet corner normals are constant; no exported normal maps.
+Blender 5.2.2 LTS (hash d13f752e3b9c built 2026-09-15 01:49:19)
+
+Blender quit

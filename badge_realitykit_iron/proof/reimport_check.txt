@@ -1,0 +1,44 @@
+Info: Fixed mesh for prim: /Badge/Casing___smooth_rounded_outer_edge/Casing___smooth_rounded_outer_edge_mobile_geometry
+Info: Fixed mesh for prim: /Badge/Emblem___faceted_compass_spear/Emblem___faceted_compass_spear_mobile_geometry
+Info: Fixed mesh for prim: /Badge/Inner_channel___shadowed_bevel/Inner_channel___shadowed_bevel_mobile_geometry
+Info: Fixed mesh for prim: /Badge/Inner_edge___fine_silver_reveal/Inner_edge___fine_silver_reveal_mobile_geometry
+Info: Fixed mesh for prim: /Badge/Inset___charcoal_textured_disk/Inset___charcoal_textured_disk_mobile_geometry
+Info: Fixed mesh for prim: /Badge/Rim_inner_lip___narrow_highlight/Rim_inner_lip___narrow_highlight_mobile_geometry
+import result {'FINISHED'}
+MESH Casing___smooth_rounded_outer_edge_mobile_geometry: 13389 verts, 26566 tris, custom normals True, UVs ['Machining_UV', 'USDZ_UV'], local bounds min [-3.01487, -2.895, -0.345] max [3.01487, 3.01487, 0.26002]
+    material Outer_edge___smooth_satin_silver_Mobile_Casing: 20384 faces
+    material Silver___circumferential_brushed_steel_Mobile_Casing: 4950 faces
+    material Back_and_edge___gunmetal_Mobile_Casing: 1232 faces
+MESH Emblem___faceted_compass_spear_mobile_geometry: 51 verts, 98 tris, custom normals True, UVs ['USDZ_UV'], local bounds min [-1.08694, -2.04478, 0.12] max [1.08705, 2.01488, 0.97489]
+    material Emblem___satin_silver_facets_Mobile_Emblem: 34 faces
+    material Emblem___shaded_outer_facets_Mobile_Emblem: 64 faces
+MESH Inner_channel___shadowed_bevel_mobile_geometry: 1750 verts, 3500 tris, custom normals True, UVs ['Machining_UV'], local bounds min [-2.6401, -2.6401, 0.01799] max [2.6401, 2.6401, 0.20115]
+    material Recess___smoked_nickel_Mobile_Inner_channel: 3500 faces
+MESH Inner_edge___fine_silver_reveal_mobile_geometry: 1100 verts, 2200 tris, custom normals True, UVs ['Machining_UV'], local bounds min [-2.53907, -2.53907, 0.06099] max [2.53907, 2.53907, 0.09602]
+    material Silver___polished_cut_edges_Mobile_Inner_edge: 2200 faces
+MESH Inset___charcoal_textured_disk_mobile_geometry: 1787 verts, 3570 tris, custom normals True, UVs ['USDZ_UV', 'UVMap'], local bounds min [-2.525, -2.525, -0.131] max [2.525, 2.525, 0.039]
+    material Inset___finely_textured_charcoal_Mobile_Inset: 3570 faces
+MESH Rim_inner_lip___narrow_highlight_mobile_geometry: 1250 verts, 2500 tris, custom normals True, UVs ['Machining_UV'], local bounds min [-2.66122, -2.66122, 0.18692] max [2.66122, 2.66122, 0.22402]
+    material Silver___polished_cut_edges_Mobile_Rim_inner_lip: 2500 faces
+OBJECT _materials (EMPTY)
+TOTAL TRIANGLES 38434
+MATERIAL Back_and_edge___gunmetal_Mobile_Casing: base color texture, {'Metallic': 0.95}, linked inputs {'Base Color': 'TEX_IMAGE', 'Roughness': 'SEPARATE_COLOR'}, images ['USDZ_Casing_back_base_color.png', 'USDZ_Casing_back_roughness.png']
+MATERIAL Emblem___satin_silver_facets_Mobile_Emblem: base color (0.36, 0.34, 0.3), {'Metallic': 1.0, 'Roughness': 0.29}, linked inputs {}, images []
+MATERIAL Emblem___shaded_outer_facets_Mobile_Emblem: base color (0.19, 0.18, 0.165), {'Metallic': 1.0, 'Roughness': 0.29}, linked inputs {}, images []
+MATERIAL Inset___finely_textured_charcoal_Mobile_Inset: base color texture, {'Metallic': 0.05, 'Roughness': 0.83}, linked inputs {'Base Color': 'TEX_IMAGE'}, images ['USDZ_Inset_base_color.png']
+MATERIAL Outer_edge___smooth_satin_silver_Mobile_Casing: base color texture, {'Metallic': 1.0}, linked inputs {'Base Color': 'TEX_IMAGE', 'Roughness': 'SEPARATE_COLOR'}, images ['USDZ_Casing_outer_base_color.png', 'USDZ_Casing_outer_roughness.png']
+MATERIAL Recess___smoked_nickel_Mobile_Inner_channel: base color (0.045, 0.043, 0.039), {'Metallic': 1.0, 'Roughness': 0.27}, linked inputs {}, images []
+MATERIAL Silver___circumferential_brushed_steel_Mobile_Casing: base color texture, {'Metallic': 1.0}, linked inputs {'Base Color': 'TEX_IMAGE', 'Roughness': 'SEPARATE_COLOR'}, images ['USDZ_Casing_base_color.png', 'USDZ_Casing_roughness.png']
+MATERIAL Silver___polished_cut_edges_Mobile_Inner_edge: base color (0.3, 0.285, 0.26), {'Metallic': 1.0, 'Roughness': 0.19}, linked inputs {}, images []
+MATERIAL Silver___polished_cut_edges_Mobile_Rim_inner_lip: base color (0.3, 0.285, 0.26), {'Metallic': 1.0, 'Roughness': 0.19}, linked inputs {}, images []
+IMAGE USDZ_Casing_back_base_color.png: 512x512, sRGB, packed True
+IMAGE USDZ_Casing_back_roughness.png: 512x512, Non-Color, packed True
+IMAGE USDZ_Casing_base_color.png: 512x512, sRGB, packed True
+IMAGE USDZ_Casing_outer_base_color.png: 512x512, sRGB, packed True
+IMAGE USDZ_Casing_outer_roughness.png: 512x512, Non-Color, packed True
+IMAGE USDZ_Casing_roughness.png: 512x512, Non-Color, packed True
+IMAGE USDZ_Inset_base_color.png: 512x512, sRGB, packed True
+Blender 5.2.2 LTS (hash d13f752e3b9c built 2026-09-15 01:49:19)
+USD import of '/Users/antonioperedo/Downloads/badge_realitykit_iron/mobile/iron_badge_mobile.usdz' took 104.43 ms
+
+Blender quit

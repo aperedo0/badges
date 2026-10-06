@@ -1,0 +1,404 @@
+{
+  "source_blend": "/Users/antonioperedo/Downloads/badge_realitykit_iron/scenes/iron_medallion_master.blend",
+  "baked_uv_source": "/Users/antonioperedo/Downloads/badge_realitykit_iron/work/iron_baked.usdz",
+  "meshes": [
+    {
+      "name": "Casing | smooth rounded outer edge",
+      "source_triangles": 26566,
+      "after_planar_dissolve": 26566,
+      "target_triangles": 28000,
+      "triangles": 26566,
+      "vertices": 13389,
+      "custom_normals": true,
+      "emblem_geometry_unchanged": false,
+      "sampled_max_surface_deviation": 1.705851718725171e-05,
+      "sampled_p95_surface_deviation": 2.4575624024691933e-07,
+      "material_slots": [
+        "Silver | circumferential brushed steel Mobile Casing",
+        "Outer edge | smooth satin silver Mobile Casing",
+        "Back and edge | gunmetal Mobile Casing"
+      ]
+    },
+    {
+      "name": "Emblem | faceted compass spear",
+      "source_triangles": 98,
+      "after_planar_dissolve": 98,
+      "target_triangles": 230,
+      "triangles": 98,
+      "vertices": 51,
+      "custom_normals": true,
+      "emblem_geometry_unchanged": true,
+      "sampled_max_surface_deviation": 0.0016475562006235123,
+      "sampled_p95_surface_deviation": 0.00027736522024497315,
+      "material_slots": [
+        "Emblem | satin silver facets Mobile Emblem",
+        "Silver | polished cut edges Mobile Emblem",
+        "Emblem | shaded outer facets Mobile Emblem"
+      ]
+    },
+    {
+      "name": "Inner channel | shadowed bevel",
+      "source_triangles": 3500,
+      "after_planar_dissolve": 3500,
+      "target_triangles": 3500,
+      "triangles": 3500,
+      "vertices": 1750,
+      "custom_normals": true,
+      "emblem_geometry_unchanged": false,
+      "sampled_max_surface_deviation": 2.8762039505636494e-07,
+      "sampled_p95_surface_deviation": 2.4620757699267415e-07,
+      "material_slots": [
+        "Recess | smoked nickel Mobile Inner channel"
+      ]
+    },
+    {
+      "name": "Inner edge | fine silver reveal",
+      "source_triangles": 2200,
+      "after_planar_dissolve": 2200,
+      "target_triangles": 2200,
+      "triangles": 2200,
+      "vertices": 1100,
+      "custom_normals": true,
+      "emblem_geometry_unchanged": false,
+      "sampled_max_surface_deviation": 3.379148267868004e-07,
+      "sampled_p95_surface_deviation": 2.413114259525173e-07,
+      "material_slots": [
+        "Silver | polished cut edges Mobile Inner edge"
+      ]
+    },
+    {
+      "name": "Inset | charcoal textured disk",
+      "source_triangles": 3570,
+      "after_planar_dissolve": 3570,
+      "target_triangles": 3570,
+      "triangles": 3570,
+      "vertices": 1787,
+      "custom_normals": true,
+      "emblem_geometry_unchanged": false,
+      "sampled_max_surface_deviation": 2.2775391244067578e-06,
+      "sampled_p95_surface_deviation": 2.4755667027420714e-07,
+      "material_slots": [
+        "Inset | finely textured charcoal Mobile Inset"
+      ]
+    },
+    {
+      "name": "Rim inner lip | narrow highlight",
+      "source_triangles": 2500,
+      "after_planar_dissolve": 2500,
+      "target_triangles": 2500,
+      "triangles": 2500,
+      "vertices": 1250,
+      "custom_normals": true,
+      "emblem_geometry_unchanged": false,
+      "sampled_max_surface_deviation": 3.401253252377501e-07,
+      "sampled_p95_surface_deviation": 2.4978896817628993e-07,
+      "material_slots": [
+        "Silver | polished cut edges Mobile Rim inner lip"
+      ]
+    }
+  ],
+  "smoothness_rules": {
+    "input_blend": "/Users/antonioperedo/Downloads/badge_realitykit_iron/scenes/iron_badge_mobile_reduced.blend",
+    "rules_applied": true,
+    "floor_cut_applied": true,
+    "meshes": {
+      "Emblem | faceted compass spear": {
+        "mesh": "Emblem | faceted compass spear",
+        "bevel_faces": 64,
+        "broad_faces": 34,
+        "facets": 18,
+        "max_bevel_strip_width": 0.007672666593038706,
+        "min_broad_face_width": 0.1765514607929818,
+        "bevel_material_removed": [
+          "Silver | polished cut edges Mobile Emblem"
+        ],
+        "bevel_faces_per_material": {
+          "Emblem | satin silver facets Mobile Emblem": 20,
+          "Emblem | shaded outer facets Mobile Emblem": 44
+        },
+        "bevel_corner_normal_vs_owner_facet_degrees_before": {
+          "median": 31.130056593916933,
+          "p95": 54.792616836046626,
+          "max": 65.8027473447333
+        },
+        "bevel_corner_normal_vs_owner_facet_degrees_after": {
+          "median": 0.0,
+          "p95": 0.019782341029446364,
+          "max": 0.7165515339198261
+        },
+        "broad_facet_corner_normals_max_change": 0.0,
+        "materials_after": [
+          "Emblem | satin silver facets Mobile Emblem",
+          "Emblem | shaded outer facets Mobile Emblem"
+        ]
+      }
+    },
+    "materials": {
+      "Silver | circumferential brushed steel Mobile Casing": {
+        "meshes": [
+          "Casing | smooth rounded outer edge"
+        ],
+        "normal_map_removed": "USDZ_Casing_normal.png"
+      },
+      "Outer edge | smooth satin silver Mobile Casing": {
+        "meshes": [
+          "Casing | smooth rounded outer edge"
+        ],
+        "normal_map_removed": "USDZ_Casing_normal.png"
+      },
+      "Back and edge | gunmetal Mobile Casing": {
+        "meshes": [
+          "Casing | smooth rounded outer edge"
+        ],
+        "normal_map_removed": "USDZ_Casing_normal.png"
+      },
+      "Emblem | satin silver facets Mobile Emblem": {
+        "meshes": [
+          "Emblem | faceted compass spear"
+        ],
+        "normal_map_removed": "USDZ_Emblem_normal.png"
+      },
+      "Emblem | shaded outer facets Mobile Emblem": {
+        "meshes": [
+          "Emblem | faceted compass spear"
+        ],
+        "normal_map_removed": "USDZ_Emblem_normal.png"
+      },
+      "Recess | smoked nickel Mobile Inner channel": {
+        "meshes": [
+          "Inner channel | shadowed bevel"
+        ]
+      },
+      "Silver | polished cut edges Mobile Inner edge": {
+        "meshes": [
+          "Inner edge | fine silver reveal"
+        ]
+      },
+      "Inset | finely textured charcoal Mobile Inset": {
+        "meshes": [
+          "Inset | charcoal textured disk"
+        ]
+      },
+      "Silver | polished cut edges Mobile Rim inner lip": {
+        "meshes": [
+          "Rim inner lip | narrow highlight"
+        ]
+      }
+    },
+    "floor_cut": {
+      "Casing | smooth rounded outer edge": {
+        "mesh": "Casing | smooth rounded outer edge",
+        "blender_world_axis": [
+          0.0,
+          1.0,
+          0.0
+        ],
+        "blender_height": -2.895,
+        "min_height_before": -2.8949999809265137,
+        "triangles_before": 26566,
+        "cut": false,
+        "min_height_after": -2.8949999809265137,
+        "triangles_after": 26566
+      },
+      "Emblem | faceted compass spear": {
+        "mesh": "Emblem | faceted compass spear",
+        "blender_world_axis": [
+          0.0,
+          1.0,
+          0.0
+        ],
+        "blender_height": -2.895,
+        "min_height_before": -2.0447795391082764,
+        "triangles_before": 98,
+        "cut": false,
+        "min_height_after": -2.0447795391082764,
+        "triangles_after": 98
+      },
+      "Inner channel | shadowed bevel": {
+        "mesh": "Inner channel | shadowed bevel",
+        "blender_world_axis": [
+          0.0,
+          1.0,
+          0.0
+        ],
+        "blender_height": -2.895,
+        "min_height_before": -2.6401007175445557,
+        "triangles_before": 3500,
+        "cut": false,
+        "min_height_after": -2.6401007175445557,
+        "triangles_after": 3500
+      },
+      "Inner edge | fine silver reveal": {
+        "mesh": "Inner edge | fine silver reveal",
+        "blender_world_axis": [
+          0.0,
+          1.0,
+          0.0
+        ],
+        "blender_height": -2.895,
+        "min_height_before": -2.5390655994415283,
+        "triangles_before": 2200,
+        "cut": false,
+        "min_height_after": -2.5390655994415283,
+        "triangles_after": 2200
+      },
+      "Inset | charcoal textured disk": {
+        "mesh": "Inset | charcoal textured disk",
+        "blender_world_axis": [
+          0.0,
+          1.0,
+          0.0
+        ],
+        "blender_height": -2.895,
+        "min_height_before": -2.5250000953674316,
+        "triangles_before": 3570,
+        "cut": false,
+        "min_height_after": -2.5250000953674316,
+        "triangles_after": 3570
+      },
+      "Rim inner lip | narrow highlight": {
+        "mesh": "Rim inner lip | narrow highlight",
+        "blender_world_axis": [
+          0.0,
+          1.0,
+          0.0
+        ],
+        "blender_height": -2.895,
+        "min_height_before": -2.6612191200256348,
+        "triangles_before": 2500,
+        "cut": false,
+        "min_height_after": -2.6612191200256348,
+        "triangles_after": 2500
+      }
+    },
+    "textures": {
+      "USDZ_Casing_base_color.png": {
+        "file": "/Users/antonioperedo/Downloads/badge_realitykit_iron/mobile/textures/USDZ_Casing_base_color.png",
+        "strength_baked": 1.0,
+        "width": 512,
+        "height": 512
+      },
+      "USDZ_Casing_roughness.png": {
+        "file": "/Users/antonioperedo/Downloads/badge_realitykit_iron/mobile/textures/USDZ_Casing_roughness.png",
+        "strength_baked": 1.0,
+        "width": 512,
+        "height": 512
+      },
+      "USDZ_Casing_outer_base_color.png": {
+        "file": "/Users/antonioperedo/Downloads/badge_realitykit_iron/mobile/textures/USDZ_Casing_outer_base_color.png",
+        "strength_baked": 1.0,
+        "width": 512,
+        "height": 512
+      },
+      "USDZ_Casing_outer_roughness.png": {
+        "file": "/Users/antonioperedo/Downloads/badge_realitykit_iron/mobile/textures/USDZ_Casing_outer_roughness.png",
+        "strength_baked": 1.0,
+        "width": 512,
+        "height": 512
+      },
+      "USDZ_Casing_back_base_color.png": {
+        "file": "/Users/antonioperedo/Downloads/badge_realitykit_iron/mobile/textures/USDZ_Casing_back_base_color.png",
+        "strength_baked": 1.0,
+        "width": 512,
+        "height": 512
+      },
+      "USDZ_Casing_back_roughness.png": {
+        "file": "/Users/antonioperedo/Downloads/badge_realitykit_iron/mobile/textures/USDZ_Casing_back_roughness.png",
+        "strength_baked": 1.0,
+        "width": 512,
+        "height": 512
+      },
+      "USDZ_Inset_base_color.png": {
+        "file": "/Users/antonioperedo/Downloads/badge_realitykit_iron/mobile/textures/USDZ_Inset_base_color.png",
+        "strength_baked": 1.0,
+        "width": 512,
+        "height": 512
+      }
+    },
+    "file": "/Users/antonioperedo/Downloads/badge_realitykit_iron/mobile/iron_badge_mobile.usdz",
+    "file_bytes": 2506612,
+    "usdc": "/Users/antonioperedo/Downloads/badge_realitykit_iron/mobile/iron_badge_mobile.usdc"
+  },
+  "total_triangles": 38434,
+  "source_total_triangles": 38434,
+  "file": "/Users/antonioperedo/Downloads/badge_realitykit_iron/mobile/iron_badge_mobile.usdz",
+  "file_bytes": 2506612,
+  "texture_files": [
+    {
+      "file": "/Users/antonioperedo/Downloads/badge_realitykit_iron/mobile/textures/USDZ_Casing_base_color.png",
+      "strength_baked": 1.0,
+      "width": 512,
+      "height": 512
+    },
+    {
+      "file": "/Users/antonioperedo/Downloads/badge_realitykit_iron/mobile/textures/USDZ_Casing_roughness.png",
+      "strength_baked": 1.0,
+      "width": 512,
+      "height": 512
+    },
+    {
+      "file": "/Users/antonioperedo/Downloads/badge_realitykit_iron/mobile/textures/USDZ_Casing_outer_base_color.png",
+      "strength_baked": 1.0,
+      "width": 512,
+      "height": 512
+    },
+    {
+      "file": "/Users/antonioperedo/Downloads/badge_realitykit_iron/mobile/textures/USDZ_Casing_outer_roughness.png",
+      "strength_baked": 1.0,
+      "width": 512,
+      "height": 512
+    },
+    {
+      "file": "/Users/antonioperedo/Downloads/badge_realitykit_iron/mobile/textures/USDZ_Casing_back_base_color.png",
+      "strength_baked": 1.0,
+      "width": 512,
+      "height": 512
+    },
+    {
+      "file": "/Users/antonioperedo/Downloads/badge_realitykit_iron/mobile/textures/USDZ_Casing_back_roughness.png",
+      "strength_baked": 1.0,
+      "width": 512,
+      "height": 512
+    },
+    {
+      "file": "/Users/antonioperedo/Downloads/badge_realitykit_iron/mobile/textures/USDZ_Inset_base_color.png",
+      "strength_baked": 1.0,
+      "width": 512,
+      "height": 512
+    }
+  ],
+  "usd_name_mapping": [
+    {
+      "source_name": "Inset | charcoal textured disk",
+      "usd_mesh_path": "/Badge/Inset___charcoal_textured_disk/Inset___charcoal_textured_disk_mobile_geometry",
+      "triangles": 3570
+    },
+    {
+      "source_name": "Inner edge | fine silver reveal",
+      "usd_mesh_path": "/Badge/Inner_edge___fine_silver_reveal/Inner_edge___fine_silver_reveal_mobile_geometry",
+      "triangles": 2200
+    },
+    {
+      "source_name": "Casing | smooth rounded outer edge",
+      "usd_mesh_path": "/Badge/Casing___smooth_rounded_outer_edge/Casing___smooth_rounded_outer_edge_mobile_geometry",
+      "triangles": 26566
+    },
+    {
+      "source_name": "Emblem | faceted compass spear",
+      "usd_mesh_path": "/Badge/Emblem___faceted_compass_spear/Emblem___faceted_compass_spear_mobile_geometry",
+      "triangles": 98
+    },
+    {
+      "source_name": "Inner channel | shadowed bevel",
+      "usd_mesh_path": "/Badge/Inner_channel___shadowed_bevel/Inner_channel___shadowed_bevel_mobile_geometry",
+      "triangles": 3500
+    },
+    {
+      "source_name": "Rim inner lip | narrow highlight",
+      "usd_mesh_path": "/Badge/Rim_inner_lip___narrow_highlight/Rim_inner_lip___narrow_highlight_mobile_geometry",
+      "triangles": 2500
+    }
+  ],
+  "normal_convention": "OpenGL tangent space, +X red, +Y green, +Z blue. No green-channel inversion.",
+  "source_original_untouched": true
+}

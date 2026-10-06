@@ -1,0 +1,74 @@
+{
+  "Silver | circumferential brushed steel": [
+    [
+      0.15,
+      0.14,
+      0.125
+    ],
+    1,
+    0.325
+  ],
+  "Outer edge | smooth satin silver": [
+    [
+      0.105,
+      0.102,
+      0.094
+    ],
+    1,
+    0.27
+  ],
+  "Back and edge | gunmetal": [
+    [
+      0.055,
+      0.052,
+      0.048
+    ],
+    0.95,
+    0.32
+  ],
+  "Silver | polished cut edges": [
+    [
+      0.3,
+      0.285,
+      0.26
+    ],
+    1,
+    0.19
+  ],
+  "Emblem | satin silver facets": [
+    [
+      0.36,
+      0.34,
+      0.3
+    ],
+    1,
+    0.29
+  ],
+  "Emblem | shaded outer facets": [
+    [
+      0.19,
+      0.18,
+      0.165
+    ],
+    1,
+    0.29
+  ],
+  "Recess | smoked nickel": [
+    [
+      0.045,
+      0.043,
+      0.039
+    ],
+    1,
+    0.27
+  ],
+  "Inset | finely textured charcoal": [
+    [
+      0.009,
+      0.01,
+      0.011
+    ],
+    0.05,
+    0.83
+  ]
+}

@@ -1,0 +1,11 @@
+/Users/antonioperedo/Downloads/badge_realitykit_iron/proof/emblem_stage_pose00.png (1764, 1838)
+/Users/antonioperedo/Downloads/badge_realitykit_iron/proof/emblem_stage_pose20.png (1764, 1838)
+/Users/antonioperedo/Downloads/badge_realitykit_iron/proof/emblem_harsh_pose00.png (1764, 1838)
+/Users/antonioperedo/Downloads/badge_realitykit_iron/proof/emblem_harsh_pose20.png (1764, 1838)
+/Users/antonioperedo/Downloads/badge_realitykit_iron/proof/ring_inset_stage_pose00.png (1164, 1598)
+/Users/antonioperedo/Downloads/badge_realitykit_iron/proof/ring_inset_harsh_pose00.png (1164, 1598)
+stage_pose00 gem: max 221 mean 33.1611 differing 127464/127600 | bottom_rim_above_floor: max 195 mean 20.9517 differing 22103/22400 | bottom_rim_with_floor_contact: max 195 mean 23.1881 differing 40977/44800 | whole_frame: max 221 mean 5.7911 differing 317559/1555200
+stage_pose20 gem: max 231 mean 35.8844 differing 127425/127600 | bottom_rim_above_floor: max 72 mean 16.9489 differing 21401/22400 | bottom_rim_with_floor_contact: max 101 mean 16.2761 differing 37901/44800 | whole_frame: max 231 mean 5.6085 differing 284989/1555200
+harsh_pose00 gem: max 227 mean 34.1523 differing 127431/127600 | bottom_rim_above_floor: max 215 mean 20.9451 differing 22196/22400 | bottom_rim_with_floor_contact: max 215 mean 22.6843 differing 41517/44800 | whole_frame: max 227 mean 5.7409 differing 317729/1555200
+harsh_pose20 gem: max 234 mean 34.4168 differing 127379/127600 | bottom_rim_above_floor: max 96 mean 16.6741 differing 21436/22400 | bottom_rim_with_floor_contact: max 96 mean 15.7749 differing 37649/44800 | whole_frame: max 234 mean 5.3659 differing 284772/1555200
+Proof sheets, individual facet/rim/inset crops, smoothness numbers, and uniform-texture verification complete.

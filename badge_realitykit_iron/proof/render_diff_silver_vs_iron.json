@@ -1,0 +1,122 @@
+{
+ "stage_pose00": {
+  "gem": {
+   "pixels": 127600,
+   "max_abs": 221,
+   "mean_abs": 33.16110501567398,
+   "pixels_differing": 127464,
+   "psnr_db": 12.45843206134242
+  },
+  "bottom_rim_above_floor": {
+   "pixels": 22400,
+   "max_abs": 195,
+   "mean_abs": 20.95171130952381,
+   "pixels_differing": 22103,
+   "psnr_db": 18.357961362930606
+  },
+  "bottom_rim_with_floor_contact": {
+   "pixels": 44800,
+   "max_abs": 195,
+   "mean_abs": 23.188072916666666,
+   "pixels_differing": 40977,
+   "psnr_db": 17.511699465007887
+  },
+  "whole_frame": {
+   "pixels": 1555200,
+   "max_abs": 221,
+   "mean_abs": 5.791059242112483,
+   "pixels_differing": 317559,
+   "psnr_db": 21.18356530343481
+  }
+ },
+ "stage_pose20": {
+  "gem": {
+   "pixels": 127600,
+   "max_abs": 231,
+   "mean_abs": 35.884412225705326,
+   "pixels_differing": 127425,
+   "psnr_db": 11.861144492808071
+  },
+  "bottom_rim_above_floor": {
+   "pixels": 22400,
+   "max_abs": 72,
+   "mean_abs": 16.948854166666667,
+   "pixels_differing": 21401,
+   "psnr_db": 20.818197593995688
+  },
+  "bottom_rim_with_floor_contact": {
+   "pixels": 44800,
+   "max_abs": 101,
+   "mean_abs": 16.27608630952381,
+   "pixels_differing": 37901,
+   "psnr_db": 20.683546613172943
+  },
+  "whole_frame": {
+   "pixels": 1555200,
+   "max_abs": 231,
+   "mean_abs": 5.608535022290809,
+   "pixels_differing": 284989,
+   "psnr_db": 21.015682106641805
+  }
+ },
+ "harsh_pose00": {
+  "gem": {
+   "pixels": 127600,
+   "max_abs": 227,
+   "mean_abs": 34.15230668756531,
+   "pixels_differing": 127431,
+   "psnr_db": 12.18890934574205
+  },
+  "bottom_rim_above_floor": {
+   "pixels": 22400,
+   "max_abs": 215,
+   "mean_abs": 20.945059523809523,
+   "pixels_differing": 22196,
+   "psnr_db": 18.009039901955315
+  },
+  "bottom_rim_with_floor_contact": {
+   "pixels": 44800,
+   "max_abs": 215,
+   "mean_abs": 22.684308035714285,
+   "pixels_differing": 41517,
+   "psnr_db": 17.53922635394501
+  },
+  "whole_frame": {
+   "pixels": 1555200,
+   "max_abs": 227,
+   "mean_abs": 5.74091135116598,
+   "pixels_differing": 317729,
+   "psnr_db": 21.13683944958316
+  }
+ },
+ "harsh_pose20": {
+  "gem": {
+   "pixels": 127600,
+   "max_abs": 234,
+   "mean_abs": 34.41679467084639,
+   "pixels_differing": 127379,
+   "psnr_db": 11.977041861659039
+  },
+  "bottom_rim_above_floor": {
+   "pixels": 22400,
+   "max_abs": 96,
+   "mean_abs": 16.67407738095238,
+   "pixels_differing": 21436,
+   "psnr_db": 20.90687608636753
+  },
+  "bottom_rim_with_floor_contact": {
+   "pixels": 44800,
+   "max_abs": 96,
+   "mean_abs": 15.774873511904762,
+   "pixels_differing": 37649,
+   "psnr_db": 20.880747629537225
+  },
+  "whole_frame": {
+   "pixels": 1555200,
+   "max_abs": 234,
+   "mean_abs": 5.365857767489712,
+   "pixels_differing": 284772,
+   "psnr_db": 21.245151577702963
+  }
+ }
+}

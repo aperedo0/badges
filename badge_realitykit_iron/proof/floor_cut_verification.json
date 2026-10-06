@@ -1,0 +1,133 @@
+{
+ "uncut": "/Users/antonioperedo/Downloads/badge_realitykit_iron/work/iron_uncut.usdz",
+ "cut": "/Users/antonioperedo/Downloads/badge_realitykit_iron/mobile/iron_badge_mobile.usdz",
+ "height": -2.895,
+ "meshes": {
+  "Inset___charcoal_textured_disk_mobile_geometry": {
+   "min_y_uncut": -2.5250000953674316,
+   "min_y_cut": -2.5250000953674316,
+   "max_uncut": [
+    2.5250000953674316,
+    2.5250000953674316,
+    0.03900047391653061
+   ],
+   "max_cut": [
+    2.5250000953674316,
+    2.5250000953674316,
+    0.03900047391653061
+   ],
+   "triangles_uncut": 3570,
+   "triangles_cut": 3570,
+   "byte_identical": true,
+   "sha1_uncut": "2c272b78487abb62e061ff6c6adaf8e4014e6615",
+   "sha1_cut": "2c272b78487abb62e061ff6c6adaf8e4014e6615"
+  },
+  "Inner_edge___fine_silver_reveal_mobile_geometry": {
+   "min_y_uncut": -2.5390655994415283,
+   "min_y_cut": -2.5390655994415283,
+   "max_uncut": [
+    2.5390655994415283,
+    2.5390655994415283,
+    0.09602090716362
+   ],
+   "max_cut": [
+    2.5390655994415283,
+    2.5390655994415283,
+    0.09602090716362
+   ],
+   "triangles_uncut": 2200,
+   "triangles_cut": 2200,
+   "byte_identical": true,
+   "sha1_uncut": "dce1bf67dc3cb55576456a2c0cde22d829982c83",
+   "sha1_cut": "dce1bf67dc3cb55576456a2c0cde22d829982c83"
+  },
+  "Casing___smooth_rounded_outer_edge_mobile_geometry": {
+   "min_y_uncut": -3.01487135887146,
+   "min_y_cut": -2.8949999809265137,
+   "max_uncut": [
+    3.01487135887146,
+    3.01487135887146,
+    0.2600186765193939
+   ],
+   "max_cut": [
+    3.01487135887146,
+    3.01487135887146,
+    0.2600186765193939
+   ],
+   "triangles_uncut": 28000,
+   "triangles_cut": 26566,
+   "byte_identical": false,
+   "sha1_uncut": "525449b90b7bfd4772379907fb78ed80fdb92298",
+   "sha1_cut": "5efcee30005e669fda6759793ccfcc2b791bcc93",
+   "uncut_triangles_above": 26245,
+   "uncut_triangles_below": 1545,
+   "uncut_triangles_crossing": 210,
+   "kept_bit_identical": 26245,
+   "kept_changed": 0,
+   "kept_missing": 0,
+   "new_cut_triangles": 321,
+   "new_triangle_material_mismatches": 0,
+   "new_corner_normal_max_deg_from_edge_interpolation": 8.79013768592829e-06,
+   "new_corner_uv_max_abs_from_edge_interpolation": 7.326423778764024e-08,
+   "new_triangle_max_distance_from_source_plane": 8.44377321182268e-09,
+   "max_depth_below_floor": 0.0
+  },
+  "Emblem___faceted_compass_spear_mobile_geometry": {
+   "min_y_uncut": -2.0447795391082764,
+   "min_y_cut": -2.0447795391082764,
+   "max_uncut": [
+    1.0870530605316162,
+    2.0148818492889404,
+    0.974890410900116
+   ],
+   "max_cut": [
+    1.0870530605316162,
+    2.0148818492889404,
+    0.974890410900116
+   ],
+   "triangles_uncut": 98,
+   "triangles_cut": 98,
+   "byte_identical": true,
+   "sha1_uncut": "c4f99d9f292c7b622e704eabe989cd6a4f8f046a",
+   "sha1_cut": "c4f99d9f292c7b622e704eabe989cd6a4f8f046a"
+  },
+  "Inner_channel___shadowed_bevel_mobile_geometry": {
+   "min_y_uncut": -2.6401007175445557,
+   "min_y_cut": -2.6401007175445557,
+   "max_uncut": [
+    2.6401007175445557,
+    2.6401007175445557,
+    0.20115379989147186
+   ],
+   "max_cut": [
+    2.6401007175445557,
+    2.6401007175445557,
+    0.20115379989147186
+   ],
+   "triangles_uncut": 3500,
+   "triangles_cut": 3500,
+   "byte_identical": true,
+   "sha1_uncut": "f607effc8b3fcc079436407e2084260fce7e1e15",
+   "sha1_cut": "f607effc8b3fcc079436407e2084260fce7e1e15"
+  },
+  "Rim_inner_lip___narrow_highlight_mobile_geometry": {
+   "min_y_uncut": -2.6612191200256348,
+   "min_y_cut": -2.6612191200256348,
+   "max_uncut": [
+    2.6612191200256348,
+    2.6612191200256348,
+    0.22401870787143707
+   ],
+   "max_cut": [
+    2.6612191200256348,
+    2.6612191200256348,
+    0.22401870787143707
+   ],
+   "triangles_uncut": 2500,
+   "triangles_cut": 2500,
+   "byte_identical": true,
+   "sha1_uncut": "084285305a05657fda0fbff09aa9729d51d04950",
+   "sha1_cut": "084285305a05657fda0fbff09aa9729d51d04950"
+  }
+ }
+}
