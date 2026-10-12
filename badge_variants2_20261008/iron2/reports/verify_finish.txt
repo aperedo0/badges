@@ -1,0 +1,5 @@
+iron2 PASS: ARKit, shape bounds/names/axes, identical geometry, USD comparison, reimport, UV/colorspaces, baked normal strength and plain lower fifth.
+Blender 5.2.2 LTS (hash d13f752e3b9c built 2026-09-15 01:49:19)
+USD import of '/Users/antonioperedo/Desktop/badges/badge_variants2_20261008/iron2/mobile/iron2_badge_mobile.usdz' took 51.26 ms
+
+Blender quit

@@ -1,0 +1,93 @@
+{
+  "checks": {
+    "up_axis": true,
+    "meters_per_unit": true,
+    "no_transforms": true,
+    "centered_x": true,
+    "centered_z": true,
+    "width_6_03_max": true,
+    "height_4_6_to_5_4": true,
+    "top_max_3_015": true,
+    "lowest_y_minus_2_455": true,
+    "thickness_0_5_to_0_8": true,
+    "above_floor": true,
+    "no_coin_names": true,
+    "normal_maps_authorized": true,
+    "arkit": true
+  },
+  "all_checks_pass": true,
+  "bounds": [
+    [
+      -2.161102294921875,
+      -2.4549999237060547,
+      -0.32499998807907104
+    ],
+    [
+      2.161102294921875,
+      2.8450000286102295,
+      0.32499998807907104
+    ]
+  ],
+  "span": [
+    4.32220458984375,
+    5.300000190734863,
+    0.6499999761581421
+  ],
+  "triangles": 38528,
+  "bytes": 3815685,
+  "sha256": "3c2b245b3074c8f9a72f87630ff6317a581bd0e34e17e364b3f926d93e9517fd",
+  "compliance_arkit": {
+    "errors": [],
+    "failed_checks": [],
+    "warnings": []
+  },
+  "names": [
+    "/Iron2",
+    "/Iron2/Materials",
+    "/Iron2/Materials/Iron2_PlateLeft_Satin",
+    "/Iron2/Materials/Iron2_PlateLeft_Satin/Surface",
+    "/Iron2/Materials/Iron2_PlateLeft_Satin/UV",
+    "/Iron2/Materials/Iron2_PlateLeft_Satin/diffuseColor",
+    "/Iron2/Materials/Iron2_PlateLeft_Satin/roughness",
+    "/Iron2/Materials/Iron2_Reveal_Satin",
+    "/Iron2/Materials/Iron2_Reveal_Satin/Surface",
+    "/Iron2/Materials/Iron2_Border_Satin",
+    "/Iron2/Materials/Iron2_Border_Satin/Surface",
+    "/Iron2/Materials/Iron2_Border_Satin/UV",
+    "/Iron2/Materials/Iron2_Border_Satin/diffuseColor",
+    "/Iron2/Materials/Iron2_Border_Satin/roughness",
+    "/Iron2/Materials/Iron2_PlateRight_Satin",
+    "/Iron2/Materials/Iron2_PlateRight_Satin/Surface",
+    "/Iron2/Materials/Iron2_PlateRight_Satin/UV",
+    "/Iron2/Materials/Iron2_PlateRight_Satin/diffuseColor",
+    "/Iron2/Materials/Iron2_PlateRight_Satin/roughness",
+    "/Iron2/Materials/Iron2_PlateEdge_Satin",
+    "/Iron2/Materials/Iron2_PlateEdge_Satin/Surface",
+    "/Iron2/Materials/Iron2_Back_Satin",
+    "/Iron2/Materials/Iron2_Back_Satin/Surface",
+    "/Iron2/Materials/Iron2_Outline_Satin",
+    "/Iron2/Materials/Iron2_Outline_Satin/Surface",
+    "/Iron2/Materials/Iron2_Channel_Satin",
+    "/Iron2/Materials/Iron2_Channel_Satin/Surface",
+    "/Iron2/Materials/Iron2_Lip_Satin",
+    "/Iron2/Materials/Iron2_Lip_Satin/Surface",
+    "/Iron2/Iron2_PlateLeft_Satin",
+    "/Iron2/Iron2_PlateLeft_Satin/Material_0",
+    "/Iron2/Iron2_InnerReveal_Satin",
+    "/Iron2/Iron2_InnerReveal_Satin/Material_1",
+    "/Iron2/Iron2_Border_Satin",
+    "/Iron2/Iron2_Border_Satin/Material_2",
+    "/Iron2/Iron2_Border_Satin/Material_5",
+    "/Iron2/Iron2_Border_Satin/Material_6",
+    "/Iron2/Iron2_PlateRight_Satin",
+    "/Iron2/Iron2_PlateRight_Satin/Material_3",
+    "/Iron2/Iron2_InnerChannel_Satin",
+    "/Iron2/Iron2_InnerChannel_Satin/Material_7",
+    "/Iron2/Iron2_InnerLip_Satin",
+    "/Iron2/Iron2_InnerLip_Satin/Material_8"
+  ],
+  "shape_exceptions": [
+    "Shield plate and outline intentionally smoothly curved; plane-only normal constraint is inapplicable."
+  ],
+  "coin_floor_cut_shell_comparison": "N/A: standalone shape section 2B. Full requested shape and new tier IDs replace the circular coin, which remains unchanged."
+}

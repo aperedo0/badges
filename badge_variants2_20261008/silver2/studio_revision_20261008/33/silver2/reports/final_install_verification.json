@@ -1,0 +1,103 @@
+{
+  "selected_candidate": 24,
+  "installed_sha256": "dda83feba079a138fc95de2e40f49a910e1fc89f942844366d855181759c9d45",
+  "baseline_fingerprints": {
+    "BEHAVIOR_MAP.md": "e39f8081c98cdb06401e05be33cca407a665794d70ca1fb29ab41621a3137ea9",
+    "ScreenTime/Sources/App/Features/Badges/BadgeHeroCard.swift": "9cc7c2d32dc52bb93553f899ff4c4fc0bf57e8a89f72ac33d9218923155541dc",
+    "ScreenTime/SupportingFiles/Assets.xcassets/Badge3DModelIron.dataset/iron_badge_mobile.usdz": "3c2b245b3074c8f9a72f87630ff6317a581bd0e34e17e364b3f926d93e9517fd",
+    "ScreenTime/SupportingFiles/Assets.xcassets/Badge3DModelSilver.dataset/silver_badge_mobile.usdz": "55cbe6dfa24d46e7152bb1d70d217219207543bf3768e2be1ed9fe75a9b9fa67",
+    "ScreenTime/SupportingFiles/Assets.xcassets/Badge3DPreviewIronOriginal.dataset/Contents.json": "54b4f211c360a1e6bd219387e8e84209c246224d6e0de5acffc4f94a9ba31e5f",
+    "ScreenTime/SupportingFiles/Assets.xcassets/Badge3DPreviewIronOriginal.dataset/iron_badge_mobile.usdz": "2cbeb89f31d524fa97fe4dec40f345c3a26bc9acbdb13e2dc760c8df2320de3b",
+    "ScreenTime/SupportingFiles/Assets.xcassets/Badge3DPreviewSilverOriginal.dataset/Contents.json": "36b2270f6ce0eb6265a82f8ed88637476872125f473f46387c55d3cba56cb690",
+    "ScreenTime/SupportingFiles/Assets.xcassets/Badge3DPreviewSilverOriginal.dataset/silver_badge_mobile.usdz": "5d64e709da342ad73d747c5873589e73a8d0e09daf2797f0d0f523693a7219ce"
+  },
+  "final_fingerprints": {
+    "BEHAVIOR_MAP.md": "e39f8081c98cdb06401e05be33cca407a665794d70ca1fb29ab41621a3137ea9",
+    "ScreenTime/Sources/App/Features/Badges/BadgeHeroCard.swift": "9cc7c2d32dc52bb93553f899ff4c4fc0bf57e8a89f72ac33d9218923155541dc",
+    "ScreenTime/SupportingFiles/Assets.xcassets/Badge3DModelIron.dataset/iron_badge_mobile.usdz": "3c2b245b3074c8f9a72f87630ff6317a581bd0e34e17e364b3f926d93e9517fd",
+    "ScreenTime/SupportingFiles/Assets.xcassets/Badge3DModelSilver.dataset/silver_badge_mobile.usdz": "dda83feba079a138fc95de2e40f49a910e1fc89f942844366d855181759c9d45",
+    "ScreenTime/SupportingFiles/Assets.xcassets/Badge3DPreviewIronOriginal.dataset/Contents.json": "54b4f211c360a1e6bd219387e8e84209c246224d6e0de5acffc4f94a9ba31e5f",
+    "ScreenTime/SupportingFiles/Assets.xcassets/Badge3DPreviewIronOriginal.dataset/iron_badge_mobile.usdz": "2cbeb89f31d524fa97fe4dec40f345c3a26bc9acbdb13e2dc760c8df2320de3b",
+    "ScreenTime/SupportingFiles/Assets.xcassets/Badge3DPreviewSilverOriginal.dataset/Contents.json": "36b2270f6ce0eb6265a82f8ed88637476872125f473f46387c55d3cba56cb690",
+    "ScreenTime/SupportingFiles/Assets.xcassets/Badge3DPreviewSilverOriginal.dataset/silver_badge_mobile.usdz": "5d64e709da342ad73d747c5873589e73a8d0e09daf2797f0d0f523693a7219ce"
+  },
+  "changed_paths_vs_finish_baseline": [
+    "ScreenTime/SupportingFiles/Assets.xcassets/Badge3DModelSilver.dataset/silver_badge_mobile.usdz"
+  ],
+  "status": " M BEHAVIOR_MAP.md\n M ScreenTime/Sources/App/Features/Badges/BadgeHeroCard.swift\n M ScreenTime/SupportingFiles/Assets.xcassets/Badge3DModelIron.dataset/iron_badge_mobile.usdz\n M ScreenTime/SupportingFiles/Assets.xcassets/Badge3DModelSilver.dataset/silver_badge_mobile.usdz\n?? ScreenTime/SupportingFiles/Assets.xcassets/Badge3DPreviewIronOriginal.dataset/Contents.json\n?? ScreenTime/SupportingFiles/Assets.xcassets/Badge3DPreviewIronOriginal.dataset/iron_badge_mobile.usdz\n?? ScreenTime/SupportingFiles/Assets.xcassets/Badge3DPreviewSilverOriginal.dataset/Contents.json\n?? ScreenTime/SupportingFiles/Assets.xcassets/Badge3DPreviewSilverOriginal.dataset/silver_badge_mobile.usdz\n",
+  "head": "dba21e28c4854d86fa921f322f8518c7750fe99e",
+  "head_unchanged": true,
+  "unrelated_BEHAVIOR_MAP_unchanged": true,
+  "Swift_unchanged": true,
+  "Iron2_unchanged": true,
+  "original_preview_datasets_unchanged": true,
+  "git_diff_check": "PASS",
+  "build_state": "Exact24 asset hash installed before recorded green presentation device and UIOnly simulator builds; simulator package unchanged since those builds. No code or other asset changes.",
+  "final_cycle_rest_comparison": {
+    "silver_2": {
+      "native_resolution": [
+        1206,
+        2622
+      ],
+      "comparison_reference": "/Users/antonioperedo/Desktop/badges/badge_variants2_20261008/silver2/finish_revision_20261008/24/app_rest.png",
+      "badge_floor_ROI": [
+        270,
+        300,
+        936,
+        1040
+      ],
+      "mean_delta": 0.0,
+      "max_delta": 0,
+      "actual3D_proved_by_exact_rest_reference_match": true
+    },
+    "iron_2": {
+      "native_resolution": [
+        1206,
+        2622
+      ],
+      "comparison_reference": "/Users/antonioperedo/Desktop/badges/badge_variants2_20261008/app_install_preview/all_four/iron_2_home.png",
+      "badge_floor_ROI": [
+        270,
+        300,
+        936,
+        1040
+      ],
+      "mean_delta": 0.0,
+      "max_delta": 0,
+      "actual3D_proved_by_exact_rest_reference_match": true
+    },
+    "silver": {
+      "native_resolution": [
+        1206,
+        2622
+      ],
+      "comparison_reference": "/Users/antonioperedo/Desktop/badges/badge_variants2_20261008/app_install_preview/all_four/silver_home.png",
+      "badge_floor_ROI": [
+        270,
+        300,
+        936,
+        1040
+      ],
+      "mean_delta": 0.0,
+      "max_delta": 0,
+      "actual3D_proved_by_exact_rest_reference_match": true
+    },
+    "iron": {
+      "native_resolution": [
+        1206,
+        2622
+      ],
+      "comparison_reference": "/Users/antonioperedo/Desktop/badges/badge_variants2_20261008/app_install_preview/all_four/iron_home.png",
+      "badge_floor_ROI": [
+        270,
+        300,
+        936,
+        1040
+      ],
+      "mean_delta": 0.0,
+      "max_delta": 0,
+      "actual3D_proved_by_exact_rest_reference_match": true
+    }
+  },
+  "final_state": "Silver 2 visible, full four-option cycle exercised"
+}

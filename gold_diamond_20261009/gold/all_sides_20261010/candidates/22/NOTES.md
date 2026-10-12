@@ -1,0 +1,2 @@
+A true circular crown band with a continuous curved crown wall, eight round finials and the reference five-point front silhouette.
+The installed gold texture and original peak design are retained, with the front shell projected along the original camera rays onto the round wall. The band and wall geometry changed; the front is judged against the original app picture. The lowest wall row is seated in the band with reference shading normals retained, and the band texture is continuous through both side joins.

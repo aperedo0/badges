@@ -1,0 +1,27 @@
+{
+  "tier": "diamond",
+  "installed_sha256": "88b2ee5477f42b59afef20c49416bb34cff865795b10d392b36998b100e713c7",
+  "sha256": "fbf6a93599731d4efcc8c5382f914e546da0bf99cb00c9e2e2ccf6df37e89e76",
+  "triangles": 240,
+  "bytes": 939233,
+  "bounds": [
+    [
+      -3.119999885559082,
+      -2.4549999237060547,
+      -3.119999885559082
+    ],
+    [
+      3.119999885559082,
+      2.3486063480377197,
+      3.119999885559082
+    ]
+  ],
+  "arkit_errors": [],
+  "arkit_failed_checks": [],
+  "changes": [
+    {
+      "design": "Closed round brilliant with a real table, faceted crown, girdle, pavilion and culet, all the way around.",
+      "look": "Installed blue optical facet maps and supplemental emission retained; no added lights or normal maps."
+    }
+  ]
+}

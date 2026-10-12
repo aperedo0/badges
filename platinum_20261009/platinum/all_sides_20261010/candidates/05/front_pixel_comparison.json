@@ -1,0 +1,5 @@
+{
+  "mean_absolute_difference_255": 0.58207355457768,
+  "changed_pixels": 11587,
+  "reason": "Narrow perimeter bevel shading intentionally changes to eliminate oblique outline dots; main front texture and geometry retained."
+}

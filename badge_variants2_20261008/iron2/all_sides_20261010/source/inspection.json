@@ -1,0 +1,492 @@
+{
+  "layer": "/Users/antonioperedo/Desktop/badges/badge_variants2_20261008/iron2/all_sides_20261010/source/installed/iron2_badge_mobile.usdc",
+  "meshes": [
+    {
+      "path": "/Iron2/Iron2_PlateLeft_Satin",
+      "vertices": 7201,
+      "faces": 14112,
+      "triangles": 14112,
+      "counts": [
+        3
+      ],
+      "bounds": [
+        [
+          -1.875836730003357,
+          -2.1051998138427734,
+          0.03339368477463722
+        ],
+        [
+          0.0,
+          2.4951999187469482,
+          0.32499998807907104
+        ]
+      ],
+      "normals": "faceVarying",
+      "material": [
+        "/Iron2/Materials/Iron2_PlateLeft_Satin"
+      ],
+      "subsets": [
+        {
+          "path": "/Iron2/Iron2_PlateLeft_Satin/Material_0",
+          "faces": 14112,
+          "material": [
+            "/Iron2/Materials/Iron2_PlateLeft_Satin"
+          ]
+        }
+      ],
+      "uv": [
+        {
+          "name": "displayColor",
+          "interpolation": "constant",
+          "len": 0
+        },
+        {
+          "name": "displayOpacity",
+          "interpolation": "constant",
+          "len": 0
+        },
+        {
+          "name": "USDZ_UV",
+          "interpolation": "faceVarying",
+          "len": 42336
+        }
+      ]
+    },
+    {
+      "path": "/Iron2/Iron2_InnerReveal_Satin",
+      "vertices": 896,
+      "faces": 896,
+      "triangles": 896,
+      "counts": [
+        3
+      ],
+      "bounds": [
+        [
+          -1.910414457321167,
+          -2.147599935531616,
+          0.072901651263237
+        ],
+        [
+          1.910414457321167,
+          2.537600040435791,
+          0.11429095268249512
+        ]
+      ],
+      "normals": "faceVarying",
+      "material": [
+        "/Iron2/Materials/Iron2_Reveal_Satin"
+      ],
+      "subsets": [
+        {
+          "path": "/Iron2/Iron2_InnerReveal_Satin/Material_1",
+          "faces": 896,
+          "material": [
+            "/Iron2/Materials/Iron2_Reveal_Satin"
+          ]
+        }
+      ],
+      "uv": [
+        {
+          "name": "displayColor",
+          "interpolation": "constant",
+          "len": 0
+        },
+        {
+          "name": "displayOpacity",
+          "interpolation": "constant",
+          "len": 0
+        },
+        {
+          "name": "USDZ_UV",
+          "interpolation": "faceVarying",
+          "len": 2688
+        }
+      ]
+    },
+    {
+      "path": "/Iron2/Iron2_Border_Satin",
+      "vertices": 3585,
+      "faces": 6720,
+      "triangles": 6720,
+      "counts": [
+        3
+      ],
+      "bounds": [
+        [
+          -2.161102294921875,
+          -2.4549999237060547,
+          -0.32499998807907104
+        ],
+        [
+          2.161102294921875,
+          2.8450000286102295,
+          0.14345158636569977
+        ]
+      ],
+      "normals": "faceVarying",
+      "material": [
+        "/Iron2/Materials/Iron2_Back_Satin"
+      ],
+      "subsets": [
+        {
+          "path": "/Iron2/Iron2_Border_Satin/Material_2",
+          "faces": 2688,
+          "material": [
+            "/Iron2/Materials/Iron2_Border_Satin"
+          ]
+        },
+        {
+          "path": "/Iron2/Iron2_Border_Satin/Material_5",
+          "faces": 1344,
+          "material": [
+            "/Iron2/Materials/Iron2_Back_Satin"
+          ]
+        },
+        {
+          "path": "/Iron2/Iron2_Border_Satin/Material_6",
+          "faces": 2688,
+          "material": [
+            "/Iron2/Materials/Iron2_Outline_Satin"
+          ]
+        }
+      ],
+      "uv": [
+        {
+          "name": "displayColor",
+          "interpolation": "constant",
+          "len": 0
+        },
+        {
+          "name": "displayOpacity",
+          "interpolation": "constant",
+          "len": 0
+        },
+        {
+          "name": "USDZ_UV",
+          "interpolation": "faceVarying",
+          "len": 20160
+        }
+      ]
+    },
+    {
+      "path": "/Iron2/Iron2_PlateRight_Satin",
+      "vertices": 7201,
+      "faces": 14112,
+      "triangles": 14112,
+      "counts": [
+        3
+      ],
+      "bounds": [
+        [
+          0.0,
+          -2.1051998138427734,
+          0.03339368477463722
+        ],
+        [
+          1.875836730003357,
+          2.4951999187469482,
+          0.3249977231025696
+        ]
+      ],
+      "normals": "faceVarying",
+      "material": [
+        "/Iron2/Materials/Iron2_PlateRight_Satin"
+      ],
+      "subsets": [
+        {
+          "path": "/Iron2/Iron2_PlateRight_Satin/Material_3",
+          "faces": 14112,
+          "material": [
+            "/Iron2/Materials/Iron2_PlateRight_Satin"
+          ]
+        }
+      ],
+      "uv": [
+        {
+          "name": "displayColor",
+          "interpolation": "constant",
+          "len": 0
+        },
+        {
+          "name": "displayOpacity",
+          "interpolation": "constant",
+          "len": 0
+        },
+        {
+          "name": "USDZ_UV",
+          "interpolation": "faceVarying",
+          "len": 42336
+        }
+      ]
+    },
+    {
+      "path": "/Iron2/Iron2_InnerChannel_Satin",
+      "vertices": 1344,
+      "faces": 1792,
+      "triangles": 1792,
+      "counts": [
+        3
+      ],
+      "bounds": [
+        [
+          -1.899608850479126,
+          -2.134350061416626,
+          0.03339368477463722
+        ],
+        [
+          1.899608850479126,
+          2.5243499279022217,
+          0.072901651263237
+        ]
+      ],
+      "normals": "faceVarying",
+      "material": [
+        "/Iron2/Materials/Iron2_Channel_Satin"
+      ],
+      "subsets": [
+        {
+          "path": "/Iron2/Iron2_InnerChannel_Satin/Material_7",
+          "faces": 1792,
+          "material": [
+            "/Iron2/Materials/Iron2_Channel_Satin"
+          ]
+        }
+      ],
+      "uv": [
+        {
+          "name": "displayColor",
+          "interpolation": "constant",
+          "len": 0
+        },
+        {
+          "name": "displayOpacity",
+          "interpolation": "constant",
+          "len": 0
+        },
+        {
+          "name": "USDZ_UV",
+          "interpolation": "faceVarying",
+          "len": 5376
+        }
+      ]
+    },
+    {
+      "path": "/Iron2/Iron2_InnerLip_Satin",
+      "vertices": 896,
+      "faces": 896,
+      "triangles": 896,
+      "counts": [
+        3
+      ],
+      "bounds": [
+        [
+          -1.9471532106399536,
+          -2.192650079727173,
+          0.11429095268249512
+        ],
+        [
+          1.9471532106399536,
+          2.5826499462127686,
+          0.14345158636569977
+        ]
+      ],
+      "normals": "faceVarying",
+      "material": [
+        "/Iron2/Materials/Iron2_Lip_Satin"
+      ],
+      "subsets": [
+        {
+          "path": "/Iron2/Iron2_InnerLip_Satin/Material_8",
+          "faces": 896,
+          "material": [
+            "/Iron2/Materials/Iron2_Lip_Satin"
+          ]
+        }
+      ],
+      "uv": [
+        {
+          "name": "displayColor",
+          "interpolation": "constant",
+          "len": 0
+        },
+        {
+          "name": "displayOpacity",
+          "interpolation": "constant",
+          "len": 0
+        },
+        {
+          "name": "USDZ_UV",
+          "interpolation": "faceVarying",
+          "len": 2688
+        }
+      ]
+    }
+  ],
+  "materials": [
+    {
+      "path": "/Iron2/Materials/Iron2_PlateLeft_Satin/Surface",
+      "inputs": {
+        "diffuseColor": {
+          "value": "(0.05, 0.0488, 0.0464)",
+          "sources": [
+            "/Iron2/Materials/Iron2_PlateLeft_Satin/diffuseColor"
+          ]
+        },
+        "metallic": {
+          "value": "1.0",
+          "sources": []
+        },
+        "roughness": {
+          "value": "0.4000000059604645",
+          "sources": [
+            "/Iron2/Materials/Iron2_PlateLeft_Satin/roughness"
+          ]
+        }
+      }
+    },
+    {
+      "path": "/Iron2/Materials/Iron2_Reveal_Satin/Surface",
+      "inputs": {
+        "diffuseColor": {
+          "value": "(0.21, 0.203, 0.19)",
+          "sources": []
+        },
+        "metallic": {
+          "value": "1.0",
+          "sources": []
+        },
+        "roughness": {
+          "value": "0.4000000059604645",
+          "sources": []
+        }
+      }
+    },
+    {
+      "path": "/Iron2/Materials/Iron2_Border_Satin/Surface",
+      "inputs": {
+        "diffuseColor": {
+          "value": "(0.175, 0.17, 0.161)",
+          "sources": [
+            "/Iron2/Materials/Iron2_Border_Satin/diffuseColor"
+          ]
+        },
+        "metallic": {
+          "value": "1.0",
+          "sources": []
+        },
+        "roughness": {
+          "value": "0.4000000059604645",
+          "sources": [
+            "/Iron2/Materials/Iron2_Border_Satin/roughness"
+          ]
+        }
+      }
+    },
+    {
+      "path": "/Iron2/Materials/Iron2_PlateRight_Satin/Surface",
+      "inputs": {
+        "diffuseColor": {
+          "value": "(0.05, 0.0488, 0.0464)",
+          "sources": [
+            "/Iron2/Materials/Iron2_PlateRight_Satin/diffuseColor"
+          ]
+        },
+        "metallic": {
+          "value": "1.0",
+          "sources": []
+        },
+        "roughness": {
+          "value": "0.4000000059604645",
+          "sources": [
+            "/Iron2/Materials/Iron2_PlateRight_Satin/roughness"
+          ]
+        }
+      }
+    },
+    {
+      "path": "/Iron2/Materials/Iron2_PlateEdge_Satin/Surface",
+      "inputs": {
+        "diffuseColor": {
+          "value": "(0.05, 0.0488, 0.0464)",
+          "sources": []
+        },
+        "metallic": {
+          "value": "1.0",
+          "sources": []
+        },
+        "roughness": {
+          "value": "0.49000000953674316",
+          "sources": []
+        }
+      }
+    },
+    {
+      "path": "/Iron2/Materials/Iron2_Back_Satin/Surface",
+      "inputs": {
+        "diffuseColor": {
+          "value": "(0.05, 0.048, 0.045)",
+          "sources": []
+        },
+        "metallic": {
+          "value": "0.949999988079071",
+          "sources": []
+        },
+        "roughness": {
+          "value": "0.47999998927116394",
+          "sources": []
+        }
+      }
+    },
+    {
+      "path": "/Iron2/Materials/Iron2_Outline_Satin/Surface",
+      "inputs": {
+        "diffuseColor": {
+          "value": "(0.19, 0.184, 0.173)",
+          "sources": []
+        },
+        "metallic": {
+          "value": "1.0",
+          "sources": []
+        },
+        "roughness": {
+          "value": "0.4000000059604645",
+          "sources": []
+        }
+      }
+    },
+    {
+      "path": "/Iron2/Materials/Iron2_Channel_Satin/Surface",
+      "inputs": {
+        "diffuseColor": {
+          "value": "(0.035, 0.033, 0.03)",
+          "sources": []
+        },
+        "metallic": {
+          "value": "1.0",
+          "sources": []
+        },
+        "roughness": {
+          "value": "0.5",
+          "sources": []
+        }
+      }
+    },
+    {
+      "path": "/Iron2/Materials/Iron2_Lip_Satin/Surface",
+      "inputs": {
+        "diffuseColor": {
+          "value": "(0.19, 0.183, 0.17)",
+          "sources": []
+        },
+        "metallic": {
+          "value": "1.0",
+          "sources": []
+        },
+        "roughness": {
+          "value": "0.4000000059604645",
+          "sources": []
+        }
+      }
+    }
+  ]
+}

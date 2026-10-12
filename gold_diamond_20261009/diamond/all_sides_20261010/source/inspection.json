@@ -1,0 +1,131 @@
+{
+  "layer": "/Users/antonioperedo/Desktop/badges/gold_diamond_20261009/diamond/all_sides_20261010/source/installed/badge.usdc",
+  "meshes": [
+    {
+      "path": "/DiamondCrystal/DiamondCrystal_CutFacets",
+      "vertices": 88,
+      "faces": 172,
+      "triangles": 172,
+      "counts": [
+        3
+      ],
+      "bounds": [
+        [
+          -3.2105746269226074,
+          -2.4549999237060547,
+          -0.45758238434791565
+        ],
+        [
+          3.2105746269226074,
+          2.3486063480377197,
+          0.45758238434791565
+        ]
+      ],
+      "normals": "faceVarying",
+      "material": [
+        "/DiamondCrystal/Materials/DiamondCrystal_Front"
+      ],
+      "subsets": [
+        {
+          "path": "/DiamondCrystal/DiamondCrystal_CutFacets/Material_0",
+          "faces": 73,
+          "material": [
+            "/DiamondCrystal/Materials/DiamondCrystal_Front"
+          ]
+        },
+        {
+          "path": "/DiamondCrystal/DiamondCrystal_CutFacets/Material_1",
+          "faces": 73,
+          "material": [
+            "/DiamondCrystal/Materials/DiamondCrystal_Back"
+          ]
+        },
+        {
+          "path": "/DiamondCrystal/DiamondCrystal_CutFacets/Material_2",
+          "faces": 26,
+          "material": [
+            "/DiamondCrystal/Materials/DiamondCrystal_Edges"
+          ]
+        }
+      ],
+      "uv": [
+        {
+          "name": "BadgeUV",
+          "interpolation": "faceVarying",
+          "len": 516
+        },
+        {
+          "name": "displayColor",
+          "interpolation": "constant",
+          "len": 0
+        },
+        {
+          "name": "displayOpacity",
+          "interpolation": "constant",
+          "len": 0
+        }
+      ]
+    }
+  ],
+  "materials": [
+    {
+      "path": "/DiamondCrystal/Materials/DiamondCrystal_Front/Surface",
+      "inputs": {
+        "diffuseColor": {
+          "value": "(0.055, 0.2, 0.5)",
+          "sources": [
+            "/DiamondCrystal/Materials/DiamondCrystal_Front/diffuseColor"
+          ]
+        },
+        "emissiveColor": {
+          "value": "None",
+          "sources": [
+            "/DiamondCrystal/Materials/DiamondCrystal_Front/emissiveColor"
+          ]
+        },
+        "metallic": {
+          "value": "1.0",
+          "sources": []
+        },
+        "roughness": {
+          "value": "0.3199999928474426",
+          "sources": []
+        }
+      }
+    },
+    {
+      "path": "/DiamondCrystal/Materials/DiamondCrystal_Back/Surface",
+      "inputs": {
+        "diffuseColor": {
+          "value": "(0.018, 0.075, 0.23)",
+          "sources": []
+        },
+        "metallic": {
+          "value": "1.0",
+          "sources": []
+        },
+        "roughness": {
+          "value": "0.4000000059604645",
+          "sources": []
+        }
+      }
+    },
+    {
+      "path": "/DiamondCrystal/Materials/DiamondCrystal_Edges/Surface",
+      "inputs": {
+        "diffuseColor": {
+          "value": "(0.06, 0.24, 0.53)",
+          "sources": []
+        },
+        "metallic": {
+          "value": "1.0",
+          "sources": []
+        },
+        "roughness": {
+          "value": "0.3199999928474426",
+          "sources": []
+        }
+      }
+    }
+  ]
+}

@@ -1,0 +1,402 @@
+{
+  "installed": {
+    "bounds": [
+      [
+        -3.2105746269226074,
+        -2.4549999237060547,
+        -0.45758238434791565
+      ],
+      [
+        3.2105746269226074,
+        2.3486063480377197,
+        0.45758238434791565
+      ]
+    ],
+    "dimensions": [
+      6.421149253845215,
+      4.803606271743774,
+      0.9151647686958313
+    ],
+    "meshes": [
+      {
+        "path": "/DiamondCrystal/DiamondCrystal_CutFacets",
+        "vertices": 88,
+        "triangles": 172,
+        "bounds": [
+          [
+            -3.2105746269226074,
+            -2.4549999237060547,
+            -0.45758238434791565
+          ],
+          [
+            3.2105746269226074,
+            2.3486063480377197,
+            0.45758238434791565
+          ]
+        ],
+        "normal_interpolation": "faceVarying",
+        "max_normal_geometry_angle_degrees": 0.014802558935800866,
+        "normal_angles_percentiles": [
+          0.0,
+          0.005068546744927929,
+          0.013513659192812054,
+          0.014802558935800866
+        ],
+        "bindings": [
+          "/DiamondCrystal/Materials/DiamondCrystal_Front"
+        ],
+        "subsets": [
+          {
+            "path": "/DiamondCrystal/DiamondCrystal_CutFacets/Material_0",
+            "faces": 73,
+            "area": 17.997288602232263,
+            "bindings": [
+              "/DiamondCrystal/Materials/DiamondCrystal_Front"
+            ]
+          },
+          {
+            "path": "/DiamondCrystal/DiamondCrystal_CutFacets/Material_1",
+            "faces": 73,
+            "area": 18.179237892888725,
+            "bindings": [
+              "/DiamondCrystal/Materials/DiamondCrystal_Back"
+            ]
+          },
+          {
+            "path": "/DiamondCrystal/DiamondCrystal_CutFacets/Material_2",
+            "faces": 26,
+            "area": 2.6421299752879928,
+            "bindings": [
+              "/DiamondCrystal/Materials/DiamondCrystal_Edges"
+            ]
+          }
+        ]
+      }
+    ],
+    "shaders": [
+      {
+        "path": "/DiamondCrystal/Materials/DiamondCrystal_Front/Surface",
+        "id": "UsdPreviewSurface",
+        "inputs": {
+          "diffuseColor": {
+            "value": "(0.055, 0.2, 0.5)",
+            "connected": [
+              "/DiamondCrystal/Materials/DiamondCrystal_Front/diffuseColor.outputs:rgb"
+            ]
+          },
+          "emissiveColor": {
+            "value": "None",
+            "connected": [
+              "/DiamondCrystal/Materials/DiamondCrystal_Front/emissiveColor.outputs:rgb"
+            ]
+          },
+          "metallic": {
+            "value": "1.0",
+            "connected": []
+          },
+          "roughness": {
+            "value": "0.3199999928474426",
+            "connected": []
+          }
+        }
+      },
+      {
+        "path": "/DiamondCrystal/Materials/DiamondCrystal_Front/UV",
+        "id": "UsdPrimvarReader_float2",
+        "inputs": {
+          "varname": {
+            "value": "BadgeUV",
+            "connected": []
+          }
+        }
+      },
+      {
+        "path": "/DiamondCrystal/Materials/DiamondCrystal_Front/diffuseColor",
+        "id": "UsdUVTexture",
+        "inputs": {
+          "file": {
+            "value": "@0/color.png@",
+            "connected": []
+          },
+          "sourceColorSpace": {
+            "value": "sRGB",
+            "connected": []
+          },
+          "st": {
+            "value": "None",
+            "connected": [
+              "/DiamondCrystal/Materials/DiamondCrystal_Front/UV.outputs:result"
+            ]
+          },
+          "wrapS": {
+            "value": "clamp",
+            "connected": []
+          },
+          "wrapT": {
+            "value": "clamp",
+            "connected": []
+          }
+        }
+      },
+      {
+        "path": "/DiamondCrystal/Materials/DiamondCrystal_Front/emissiveColor",
+        "id": "UsdUVTexture",
+        "inputs": {
+          "file": {
+            "value": "@0/emissive.png@",
+            "connected": []
+          },
+          "scale": {
+            "value": "(4, 4, 4, 1)",
+            "connected": []
+          },
+          "sourceColorSpace": {
+            "value": "sRGB",
+            "connected": []
+          },
+          "st": {
+            "value": "None",
+            "connected": [
+              "/DiamondCrystal/Materials/DiamondCrystal_Front/UV.outputs:result"
+            ]
+          },
+          "wrapS": {
+            "value": "clamp",
+            "connected": []
+          },
+          "wrapT": {
+            "value": "clamp",
+            "connected": []
+          }
+        }
+      },
+      {
+        "path": "/DiamondCrystal/Materials/DiamondCrystal_Back/Surface",
+        "id": "UsdPreviewSurface",
+        "inputs": {
+          "diffuseColor": {
+            "value": "(0.018, 0.075, 0.23)",
+            "connected": []
+          },
+          "metallic": {
+            "value": "1.0",
+            "connected": []
+          },
+          "roughness": {
+            "value": "0.4000000059604645",
+            "connected": []
+          }
+        }
+      },
+      {
+        "path": "/DiamondCrystal/Materials/DiamondCrystal_Edges/Surface",
+        "id": "UsdPreviewSurface",
+        "inputs": {
+          "diffuseColor": {
+            "value": "(0.06, 0.24, 0.53)",
+            "connected": []
+          },
+          "metallic": {
+            "value": "1.0",
+            "connected": []
+          },
+          "roughness": {
+            "value": "0.3199999928474426",
+            "connected": []
+          }
+        }
+      }
+    ]
+  },
+  "proposed": {
+    "bounds": [
+      [
+        -3.119999885559082,
+        -2.4549999237060547,
+        -3.119999885559082
+      ],
+      [
+        3.119999885559082,
+        2.3486063480377197,
+        3.119999885559082
+      ]
+    ],
+    "dimensions": [
+      6.239999771118164,
+      4.803606271743774,
+      6.239999771118164
+    ],
+    "meshes": [
+      {
+        "path": "/DiamondCrystal/DiamondCrystal_FullBrilliant",
+        "vertices": 122,
+        "triangles": 240,
+        "bounds": [
+          [
+            -3.119999885559082,
+            -2.4549999237060547,
+            -3.119999885559082
+          ],
+          [
+            3.119999885559082,
+            2.3486063480377197,
+            3.119999885559082
+          ]
+        ],
+        "normal_interpolation": "faceVarying",
+        "max_normal_geometry_angle_degrees": 0.01594603011844934,
+        "normal_angles_percentiles": [
+          0.0,
+          0.0,
+          0.015946023297032385,
+          0.01594603011844934
+        ],
+        "bindings": [],
+        "subsets": [
+          {
+            "path": "/DiamondCrystal/DiamondCrystal_FullBrilliant/Finish_0",
+            "faces": 240,
+            "area": 83.17312029131223,
+            "bindings": [
+              "/DiamondCrystal/Materials/DiamondCrystal_Front"
+            ]
+          }
+        ]
+      }
+    ],
+    "shaders": [
+      {
+        "path": "/DiamondCrystal/Materials/DiamondCrystal_Front/Surface",
+        "id": "UsdPreviewSurface",
+        "inputs": {
+          "diffuseColor": {
+            "value": "(0.055, 0.2, 0.5)",
+            "connected": [
+              "/DiamondCrystal/Materials/DiamondCrystal_Front/diffuseColor.outputs:rgb"
+            ]
+          },
+          "emissiveColor": {
+            "value": "None",
+            "connected": [
+              "/DiamondCrystal/Materials/DiamondCrystal_Front/emissiveColor.outputs:rgb"
+            ]
+          },
+          "metallic": {
+            "value": "1.0",
+            "connected": []
+          },
+          "roughness": {
+            "value": "0.3199999928474426",
+            "connected": []
+          }
+        }
+      },
+      {
+        "path": "/DiamondCrystal/Materials/DiamondCrystal_Front/UV",
+        "id": "UsdPrimvarReader_float2",
+        "inputs": {
+          "varname": {
+            "value": "BadgeUV",
+            "connected": []
+          }
+        }
+      },
+      {
+        "path": "/DiamondCrystal/Materials/DiamondCrystal_Front/diffuseColor",
+        "id": "UsdUVTexture",
+        "inputs": {
+          "file": {
+            "value": "@0/color.png@",
+            "connected": []
+          },
+          "sourceColorSpace": {
+            "value": "sRGB",
+            "connected": []
+          },
+          "st": {
+            "value": "None",
+            "connected": [
+              "/DiamondCrystal/Materials/DiamondCrystal_Front/UV.outputs:result"
+            ]
+          },
+          "wrapS": {
+            "value": "clamp",
+            "connected": []
+          },
+          "wrapT": {
+            "value": "clamp",
+            "connected": []
+          }
+        }
+      },
+      {
+        "path": "/DiamondCrystal/Materials/DiamondCrystal_Front/emissiveColor",
+        "id": "UsdUVTexture",
+        "inputs": {
+          "file": {
+            "value": "@0/emissive.png@",
+            "connected": []
+          },
+          "scale": {
+            "value": "(4, 4, 4, 1)",
+            "connected": []
+          },
+          "sourceColorSpace": {
+            "value": "sRGB",
+            "connected": []
+          },
+          "st": {
+            "value": "None",
+            "connected": [
+              "/DiamondCrystal/Materials/DiamondCrystal_Front/UV.outputs:result"
+            ]
+          },
+          "wrapS": {
+            "value": "clamp",
+            "connected": []
+          },
+          "wrapT": {
+            "value": "clamp",
+            "connected": []
+          }
+        }
+      },
+      {
+        "path": "/DiamondCrystal/Materials/DiamondCrystal_Back/Surface",
+        "id": "UsdPreviewSurface",
+        "inputs": {
+          "diffuseColor": {
+            "value": "(0.018, 0.075, 0.23)",
+            "connected": []
+          },
+          "metallic": {
+            "value": "1.0",
+            "connected": []
+          },
+          "roughness": {
+            "value": "0.4000000059604645",
+            "connected": []
+          }
+        }
+      },
+      {
+        "path": "/DiamondCrystal/Materials/DiamondCrystal_Edges/Surface",
+        "id": "UsdPreviewSurface",
+        "inputs": {
+          "diffuseColor": {
+            "value": "(0.06, 0.24, 0.53)",
+            "connected": []
+          },
+          "metallic": {
+            "value": "1.0",
+            "connected": []
+          },
+          "roughness": {
+            "value": "0.3199999928474426",
+            "connected": []
+          }
+        }
+      }
+    ]
+  }
+}

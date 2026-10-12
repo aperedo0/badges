@@ -1,7 +1,7 @@
 import bpy,json,numpy as np
 from pathlib import Path
 from pxr import Usd,UsdGeom,UsdShade
-r=Path('/Users/antonioperedo/Downloads/badge_realitykit_iron');stage=Usd.Stage.Open(str(r/'mobile/iron_badge_mobile.usdz'));report={}
+r=Path(__file__).resolve().parents[1];stage=Usd.Stage.Open(str(r/'mobile/iron_badge_mobile.usdz'));report={}
 for name in ['iron_badge_mobile_reduced','iron_badge_mobile']:
  bpy.ops.wm.open_mainfile(filepath=str(r/f'scenes/{name}.blend'));meshes=[o for o in bpy.context.scene.objects if o.type=='MESH'];assert len(meshes)==6
  rows={}
@@ -15,12 +15,12 @@ for name in ['iron_badge_mobile_reduced','iron_badge_mobile']:
    for p in o.data.polygons:
     vs=[o.data.vertices[i].co for i in p.vertices];width=(vs[1]-vs[0]).cross(vs[2]-vs[0]).length/max((vs[1]-vs[0]).length,(vs[2]-vs[1]).length,(vs[0]-vs[2]).length)
     if width>.02:deviation.append(float(np.abs(norms[list(p.loop_indices)]-norms[p.loop_start]).max()))
-   rows[o.name]['broad_triangle_max_corner_normal_variation']=max(deviation);assert max(deviation)<1e-5
+   rows[o.name]['broad_triangle_max_corner_normal_variation']=max(deviation);assert max(deviation)==0.0
  report[name]=rows
 normal_connections=[]
 for prim in stage.Traverse():
  if prim.IsA(UsdShade.Shader) and prim.GetAttribute('info:id').Get()=='UsdPreviewSurface':
   normal_connections += [str(p) for p in prim.GetAttribute('inputs:normal').GetConnections()] if prim.GetAttribute('inputs:normal') else []
-assert not normal_connections
+assert len(normal_connections)==5,normal_connections
 report['normal_map_connections']=normal_connections
-(r/'proof/scene_and_normals_validation.json').write_text(json.dumps(report,indent=2));print('PASS: reduced/final scene mesh positions and triangles match USDZ; broad facet corner normals are constant; no exported normal maps.')
+(r/'proof/scene_and_normals_validation.json').write_text(json.dumps(report,indent=2));print('PASS: reduced/final scene mesh positions and triangles match USDZ; broad facet corner normals are constant; five normal-map shader connections, all explicitly authorized for the forged finish.')

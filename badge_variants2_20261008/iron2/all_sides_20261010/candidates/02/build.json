@@ -1,0 +1,29 @@
+{
+  "tier": "iron",
+  "installed_sha256": "3c2b245b3074c8f9a72f87630ff6317a581bd0e34e17e364b3f926d93e9517fd",
+  "sha256": "cdaaf4a25690965f20e9259f939bc1ce7d5ed5ffcff3754532dfa337a1a0bccf",
+  "triangles": 51328,
+  "bytes": 4341595,
+  "bounds": [
+    [
+      -2.161102294921875,
+      -2.4549999237060547,
+      -0.32499998807907104
+    ],
+    [
+      2.161102294921875,
+      2.8450000286102295,
+      0.32499998807907104
+    ]
+  ],
+  "arkit_errors": [],
+  "arkit_failed_checks": [],
+  "changes": [
+    {
+      "front_data_identical": true,
+      "replaced_rear_triangles": 448,
+      "hollow_rear_triangles": 10304,
+      "design": "Smooth hollow shield bowl, crossed iron braces, raised iron hand grip, six domed rivets; the fittings stay inside the original depth."
+    }
+  ]
+}

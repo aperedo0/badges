@@ -1,0 +1,14 @@
+{
+  "bronze": {
+    "candidate": "03",
+    "sha256": "13e1be6a35822b1d4b2f654873d9e46bfe5af351e763187ec6cf3e3ea7b98c72",
+    "bytes": 3206559,
+    "triangles": 39440
+  },
+  "silver": {
+    "candidate": "02",
+    "sha256": "fa647f99b2aabdbe0d39a799017ee06d726cbb402050454d23c1e4060abe7122",
+    "bytes": 632059,
+    "triangles": 440
+  }
+}

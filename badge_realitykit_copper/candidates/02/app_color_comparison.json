@@ -1,0 +1,35 @@
+{
+  "ribbons": [
+    {
+      "ribbon": "central",
+      "mean_absolute_rgb_error": [
+        1.8803427425011756,
+        3.038193174315248,
+        4.360214891103556
+      ],
+      "mean_error": 3.0929169359733013,
+      "p95": 10.492102007613056
+    },
+    {
+      "ribbon": "right",
+      "mean_absolute_rgb_error": [
+        2.30266301305597,
+        3.9773062127092205,
+        5.301889677845678
+      ],
+      "mean_error": 3.860619634536945,
+      "p95": 13.059821266906013
+    },
+    {
+      "ribbon": "left",
+      "mean_absolute_rgb_error": [
+        3.6800400601502443,
+        5.38058240514329,
+        6.688890207855327
+      ],
+      "mean_error": 5.249837557716295,
+      "p95": 16.997599717119712
+    }
+  ],
+  "note": "Diagnostics only. Same-size image and native crops decide visual acceptance."
+}

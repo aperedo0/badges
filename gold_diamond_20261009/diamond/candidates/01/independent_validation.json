@@ -1,0 +1,55 @@
+{
+  "arkit_compliance": "PASS",
+  "meshes": [
+    {
+      "name": "DiamondCrystal_CutFacets",
+      "vertices": 88,
+      "triangles": 172,
+      "uv": "BadgeUV",
+      "closed": true
+    }
+  ],
+  "textures_match_package": [
+    {
+      "member": "0/color.png",
+      "sha256": "e712c6a5633d965a21de9c375eb51d27d1827aceb7e6387dfae1cedb417477c7"
+    },
+    {
+      "member": "0/emissive.png",
+      "sha256": "e2ae358142171bd7f3930edf9e8a3731d7bf290af1624cc0f1cb333e41057611"
+    }
+  ],
+  "reimport_triangles": 172,
+  "reimport_images": [
+    {
+      "name": "color.png",
+      "dimensions": [
+        1024,
+        1024
+      ],
+      "packed": true
+    },
+    {
+      "name": "emissive.png",
+      "dimensions": [
+        1024,
+        1024
+      ],
+      "packed": true
+    }
+  ],
+  "editable_master_packed_textures": true,
+  "no_transforms_or_scene_items": true,
+  "bounds": [
+    [
+      -3.2105746269226074,
+      -2.4549999237060547,
+      -0.45758238434791565
+    ],
+    [
+      3.2105746269226074,
+      2.3486063480377197,
+      0.45758238434791565
+    ]
+  ]
+}

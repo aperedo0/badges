@@ -1,0 +1,25 @@
+{
+  "summary": {
+    "status": "SUCCEEDED",
+    "durationMs": 23605,
+    "target": "simulator"
+  },
+  "artifacts": {
+    "appPath": "/Users/antonioperedo/Library/Developer/XcodeBuildMCP/workspaces/badges-aa906adb7ece/DerivedData/ScreenTime-a820cf0e7a59/Build/Products/Debug-iphonesimulator/ScreenTimeUI.app",
+    "bundleId": "com.antonioperedo.screentime.uidev",
+    "processId": 72442,
+    "simulatorId": "69A29DD2-C91E-487A-81B9-3B146DF8F07B",
+    "buildLogPath": "/Users/antonioperedo/Library/Developer/XcodeBuildMCP/workspaces/badges-aa906adb7ece/logs/build_run_sim_2026-10-10T02-34-25-219Z_pid43861_a16d9849.log",
+    "runtimeLogPath": "/Users/antonioperedo/Library/Developer/XcodeBuildMCP/workspaces/badges-aa906adb7ece/logs/com.antonioperedo.screentime.uidev_2026-10-10T02-34-43-813Z_helperpid72409_ownerpid43861_9775d17d.log",
+    "osLogPath": "/Users/antonioperedo/Library/Developer/XcodeBuildMCP/workspaces/badges-aa906adb7ece/logs/com.antonioperedo.screentime.uidev_oslog_2026-10-10T02-34-48-729Z_helperpid72590_ownerpid43861_7d431346.log"
+  },
+  "diagnostics": {
+    "warnings": [
+      {
+        "message": "will never be executed",
+        "location": "/Users/antonioperedo/Desktop/screen_time/ScreenTime/Sources/Shared/Services/FocusSessionManager.swift:357"
+      }
+    ],
+    "errors": []
+  }
+}

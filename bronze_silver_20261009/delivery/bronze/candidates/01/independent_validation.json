@@ -1,0 +1,132 @@
+{
+  "arkit_compliance": "PASS",
+  "meshes": [
+    {
+      "name": "BronzeSun_Dome",
+      "vertices": 15842,
+      "triangles": 31680,
+      "uv": "BadgeUV",
+      "closed": true
+    },
+    {
+      "name": "BronzeSun_OuterLip",
+      "vertices": 1600,
+      "triangles": 3200,
+      "uv": "BadgeUV",
+      "closed": true
+    },
+    {
+      "name": "BronzeSun_InnerLip",
+      "vertices": 1600,
+      "triangles": 3200,
+      "uv": "BadgeUV",
+      "closed": true
+    },
+    {
+      "name": "BronzeSun_Channel",
+      "vertices": 640,
+      "triangles": 1280,
+      "uv": "BadgeUV",
+      "closed": true
+    },
+    {
+      "name": "BronzeSun_Ray1",
+      "vertices": 7,
+      "triangles": 10,
+      "uv": "BadgeUV",
+      "closed": true
+    },
+    {
+      "name": "BronzeSun_Ray2",
+      "vertices": 7,
+      "triangles": 10,
+      "uv": "BadgeUV",
+      "closed": true
+    },
+    {
+      "name": "BronzeSun_Ray3",
+      "vertices": 7,
+      "triangles": 10,
+      "uv": "BadgeUV",
+      "closed": true
+    },
+    {
+      "name": "BronzeSun_Ray4",
+      "vertices": 7,
+      "triangles": 10,
+      "uv": "BadgeUV",
+      "closed": true
+    },
+    {
+      "name": "BronzeSun_Ray5",
+      "vertices": 7,
+      "triangles": 10,
+      "uv": "BadgeUV",
+      "closed": true
+    },
+    {
+      "name": "BronzeSun_Ray6",
+      "vertices": 7,
+      "triangles": 10,
+      "uv": "BadgeUV",
+      "closed": true
+    },
+    {
+      "name": "BronzeSun_Ray7",
+      "vertices": 7,
+      "triangles": 10,
+      "uv": "BadgeUV",
+      "closed": true
+    },
+    {
+      "name": "BronzeSun_Ray8",
+      "vertices": 7,
+      "triangles": 10,
+      "uv": "BadgeUV",
+      "closed": true
+    }
+  ],
+  "textures_match_package": [
+    {
+      "member": "0/color.png",
+      "sha256": "a1f549efa573157e14e334fef21b1147e96e7e7d4af5b3ef86dc85cdccf7c2a9"
+    },
+    {
+      "member": "0/emissive.png",
+      "sha256": "9dd2654464cc618238b63805161d41a3bdec4898f0d06c15370b04bb79f2fabe"
+    }
+  ],
+  "reimport_triangles": 39440,
+  "reimport_images": [
+    {
+      "name": "color.png",
+      "dimensions": [
+        1024,
+        1024
+      ],
+      "packed": true
+    },
+    {
+      "name": "emissive.png",
+      "dimensions": [
+        1024,
+        1024
+      ],
+      "packed": true
+    }
+  ],
+  "editable_master_packed_textures": true,
+  "no_transforms_or_scene_items": true,
+  "bounds": [
+    [
+      -2.6708455085754395,
+      -2.4549999237060547,
+      -0.32499998807907104
+    ],
+    [
+      2.6708455085754395,
+      2.8450000286102295,
+      0.32499998807907104
+    ]
+  ]
+}

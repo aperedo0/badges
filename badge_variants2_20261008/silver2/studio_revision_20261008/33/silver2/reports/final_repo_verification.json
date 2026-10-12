@@ -1,0 +1,14 @@
+{
+  "status": " M BEHAVIOR_MAP.md\n M ScreenTime/Sources/App/Features/Badges/BadgeHeroCard.swift\n M ScreenTime/SupportingFiles/Assets.xcassets/Badge3DModelIron.dataset/iron_badge_mobile.usdz\n M ScreenTime/SupportingFiles/Assets.xcassets/Badge3DModelSilver.dataset/silver_badge_mobile.usdz\n?? ScreenTime/SupportingFiles/Assets.xcassets/Badge3DPreviewIronOriginal.dataset/Contents.json\n?? ScreenTime/SupportingFiles/Assets.xcassets/Badge3DPreviewIronOriginal.dataset/iron_badge_mobile.usdz\n?? ScreenTime/SupportingFiles/Assets.xcassets/Badge3DPreviewSilverOriginal.dataset/Contents.json\n?? ScreenTime/SupportingFiles/Assets.xcassets/Badge3DPreviewSilverOriginal.dataset/silver_badge_mobile.usdz\n",
+  "head": "dba21e28c4854d86fa921f322f8518c7750fe99e",
+  "changed_since_finish_baseline": [
+    {
+      "file": "ScreenTime/SupportingFiles/Assets.xcassets/Badge3DModelSilver.dataset/silver_badge_mobile.usdz",
+      "before": "55cbe6dfa24d46e7152bb1d70d217219207543bf3768e2be1ed9fe75a9b9fa67",
+      "after": "dda83feba079a138fc95de2e40f49a910e1fc89f942844366d855181759c9d45"
+    }
+  ],
+  "only_authorized_silver_asset_changed": true,
+  "Iron2_and_originals_and_source_unchanged": true,
+  "no_commits_or_branch_changes": true
+}

@@ -1,0 +1,30 @@
+{
+  "tier": "platinum",
+  "installed_sha256": "6ba3c309bc8d9861c28ed66230f1fbaf5d23b0106e97ddddf6263095403ce371",
+  "sha256": "f2ab9432f69d6b4d13731d00763cbc70490b3fbd7f0b3f2d9fbdebbfb0b928e3",
+  "triangles": 43008,
+  "bytes": 3957040,
+  "bounds": [
+    [
+      -0.7828716039657593,
+      -2.4549999237060547,
+      -2.8524208068847656
+    ],
+    [
+      0.7828716039657593,
+      2.902362585067749,
+      2.8524208068847656
+    ]
+  ],
+  "arkit_errors": [],
+  "arkit_failed_checks": [],
+  "changes": [
+    {
+      "inspection_only": true,
+      "angle_degrees": 90,
+      "purpose": "Full-size in-app inspection under unchanged studio lighting. Final model remains upright/front facing; actual scrolling is captured separately.",
+      "source_version": "updated",
+      "source_candidate": "13"
+    }
+  ]
+}

@@ -1,0 +1,28 @@
+{
+  "source": "Original installed gem, not a shallower recut",
+  "girdle_rise": 0.07345000000000002,
+  "original_crown_height": 1.4690000000000003,
+  "girdle_top_y": 0.95345,
+  "girdle_bottom_y": 0.85345,
+  "table_y": 2.349,
+  "culet_y": -2.455,
+  "star_tip_y": 1.63745,
+  "pavilion_degrees": 46.67914478015648,
+  "lower_girdle_extra_degrees": 3.0,
+  "azimuth_degrees": 22.5,
+  "planes": 89,
+  "triangles": 206,
+  "bounds": [
+    [
+      -3.12,
+      -2.4549999999999996,
+      -3.1200000000000006
+    ],
+    [
+      3.12,
+      2.349,
+      3.12
+    ]
+  ],
+  "model_sha256": "51b86378706c87ef8cd5a43a170ea3d5b1da42c88e9d65f9741681186d9cdadf"
+}

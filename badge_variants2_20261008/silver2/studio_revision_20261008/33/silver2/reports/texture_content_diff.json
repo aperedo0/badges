@@ -1,0 +1,42 @@
+[
+  {
+    "file": "Silver2_LeafLit_Satin_color.png",
+    "previous_sha256": "d7a5cd82f50fce11b36c9bd9e02b87fab58cc947454bc4b85a51cba05cfdcbaa",
+    "final_sha256": "62998d618bccd3c4e86afe5e73c3e6e2d0afc34520a4bf1041ed33c2357d26aa"
+  },
+  {
+    "file": "Silver2_LeafLit_Satin_roughness.png",
+    "previous_sha256": "ba2efe4f73ba9489345ff3cfef7bf5aa7f638a50c7b1f0e1cafc1dbe724cb94c",
+    "final_sha256": "4f75fbbbf9babf11e12502cbe490179548798184d3a961114419b57d00feee1f"
+  },
+  {
+    "file": "Silver2_LeafShaded_Satin_color.png",
+    "previous_sha256": "77e828d561abad9644ec94a7e478ecfe76ee2b83dc28ea80ab2ed5d89ff50170",
+    "final_sha256": "e206666b2fe910e4d52f752162444a37b4b4f0d978fe3140d21b27f2f068e8f3"
+  },
+  {
+    "file": "Silver2_LeafShaded_Satin_roughness.png",
+    "previous_sha256": "ba2efe4f73ba9489345ff3cfef7bf5aa7f638a50c7b1f0e1cafc1dbe724cb94c",
+    "final_sha256": "4f75fbbbf9babf11e12502cbe490179548798184d3a961114419b57d00feee1f"
+  },
+  {
+    "file": "Silver2_StarLit_Satin_color.png",
+    "previous_sha256": "3684b9b2b73784fe5dd7fa36e12e874a8a24c6b31973168a21eed20bbb84b823",
+    "final_sha256": "574a32664d07699bb52e5a46ab394212e1db97125826f83b220f8138c9d5a1ec"
+  },
+  {
+    "file": "Silver2_StarLit_Satin_roughness.png",
+    "previous_sha256": "dc818a63b7e283158cec5c8634687a1cb53100331287daa4303d1b82745acc4d",
+    "final_sha256": "7f6cb5c153cb81793f76fee8c998a5c0b6a720a95148c656a12d30f9f19a4118"
+  },
+  {
+    "file": "Silver2_StarShaded_Satin_color.png",
+    "previous_sha256": "d24417920392a730bc80a49748155aed7cdb83b4652d43ab86f297bed64103d3",
+    "final_sha256": "185c3dbd864726850fe21d795c91c398f3f6c08f615a8d6f06ce96e07664989e"
+  },
+  {
+    "file": "Silver2_StarShaded_Satin_roughness.png",
+    "previous_sha256": "dc818a63b7e283158cec5c8634687a1cb53100331287daa4303d1b82745acc4d",
+    "final_sha256": "7f6cb5c153cb81793f76fee8c998a5c0b6a720a95148c656a12d30f9f19a4118"
+  }
+]

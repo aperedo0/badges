@@ -1,0 +1,46 @@
+{
+  "scale": 0.006812339331619537,
+  "center_x": 627.0,
+  "reference_bottom": 1029.4415970474583,
+  "reference_top": 253.0,
+  "image_size": [
+    1254,
+    1254
+  ],
+  "meshes": [
+    {
+      "name": "SilverChevron_Upper",
+      "triangles": 220,
+      "smooth": false,
+      "bounds": [
+        [
+          -2.813496144,
+          -0.4862433659,
+          -0.3
+        ],
+        [
+          2.813496144,
+          2.8295996337,
+          0.3
+        ]
+      ]
+    },
+    {
+      "name": "SilverChevron_Lower",
+      "triangles": 220,
+      "smooth": false,
+      "bounds": [
+        [
+          -2.813496144,
+          -2.455,
+          -0.3
+        ],
+        [
+          2.813496144,
+          0.8608335669,
+          0.3
+        ]
+      ]
+    }
+  ]
+}

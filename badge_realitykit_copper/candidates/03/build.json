@@ -1,0 +1,42 @@
+{
+  "triangles": 40812,
+  "bytes": 1281488,
+  "sha256": "f2c6f6bad8e3767fe0dd921ce778348a5bbf931c6c9e2ed19531c84c9f164f92",
+  "bounds": [
+    [
+      -1.5748316498316497,
+      -2.455,
+      -0.325
+    ],
+    [
+      1.5748313632043405,
+      2.8449999999999998,
+      0.325
+    ]
+  ],
+  "float_gap": 0.43999999999999995,
+  "closed_manifold": {
+    "Central": true,
+    "Right": true,
+    "Left": true
+  },
+  "compliance": {
+    "errors": [],
+    "failed_checks": [],
+    "warnings": []
+  },
+  "settings": {
+    "color": [
+      0.61,
+      0.255,
+      0.115
+    ],
+    "roughness": 0.34,
+    "textures": {
+      "diffuseColor": "copper_color.png",
+      "emissiveColor": "copper_emissive.png"
+    },
+    "emissive_scale": 3.0,
+    "master": true
+  }
+}

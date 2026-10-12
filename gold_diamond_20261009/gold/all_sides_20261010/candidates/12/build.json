@@ -1,0 +1,95 @@
+{
+  "tier": "gold",
+  "installed_sha256": "2306ce19a8d9fabb804775350c6d7677901a29283fe5fa80914a790ca6b638a2",
+  "sha256": "822a76653b541070495f5da2ca3de8c8904348a2b10c764331ef985347040e8a",
+  "triangles": 45224,
+  "bytes": 3739385,
+  "bounds": [
+    [
+      -3.1890628337860107,
+      -2.4549999237060547,
+      -0.7210000157356262
+    ],
+    [
+      3.1890628337860107,
+      1.9958367347717285,
+      0.7210000157356262
+    ]
+  ],
+  "arkit_errors": [],
+  "arkit_failed_checks": [],
+  "changes": [
+    {
+      "detail": "GoldCrown_RoundedScallopLip",
+      "front_faces_unchanged": 2241,
+      "rear_camera_facing_skin_copied": true,
+      "reason": "Remove the hidden halves of duplicated rolled details which otherwise protrude as extra ellipses across the band."
+    },
+    {
+      "detail": "GoldCrown_ValleyFlange1",
+      "front_faces_unchanged": 276,
+      "rear_camera_facing_skin_copied": true,
+      "reason": "Remove the hidden halves of duplicated rolled details which otherwise protrude as extra ellipses across the band."
+    },
+    {
+      "detail": "GoldCrown_ValleyFlange2",
+      "front_faces_unchanged": 278,
+      "rear_camera_facing_skin_copied": true,
+      "reason": "Remove the hidden halves of duplicated rolled details which otherwise protrude as extra ellipses across the band."
+    },
+    {
+      "detail": "GoldCrown_ValleyFlange3",
+      "front_faces_unchanged": 278,
+      "rear_camera_facing_skin_copied": true,
+      "reason": "Remove the hidden halves of duplicated rolled details which otherwise protrude as extra ellipses across the band."
+    },
+    {
+      "detail": "GoldCrown_ValleyFlange4",
+      "front_faces_unchanged": 276,
+      "rear_camera_facing_skin_copied": true,
+      "reason": "Remove the hidden halves of duplicated rolled details which otherwise protrude as extra ellipses across the band."
+    },
+    {
+      "detail": "GoldCrown_UpperBandLip",
+      "front_faces_unchanged": 1024,
+      "rear_camera_facing_skin_copied": true,
+      "reason": "Remove the hidden halves of duplicated rolled details which otherwise protrude as extra ellipses across the band."
+    },
+    {
+      "detail": "GoldCrown_LowerBandLip",
+      "front_faces_unchanged": 1024,
+      "rear_camera_facing_skin_copied": true,
+      "reason": "Remove the hidden halves of duplicated rolled details which otherwise protrude as extra ellipses across the band."
+    },
+    {
+      "detail": "GoldCrown_Collar1",
+      "front_faces_unchanged": 283,
+      "rear_camera_facing_skin_copied": true,
+      "reason": "Remove the hidden halves of duplicated rolled details which otherwise protrude as extra ellipses across the band."
+    },
+    {
+      "detail": "GoldCrown_Collar2",
+      "front_faces_unchanged": 286,
+      "rear_camera_facing_skin_copied": true,
+      "reason": "Remove the hidden halves of duplicated rolled details which otherwise protrude as extra ellipses across the band."
+    },
+    {
+      "detail": "GoldCrown_Collar3",
+      "front_faces_unchanged": 284,
+      "rear_camera_facing_skin_copied": true,
+      "reason": "Remove the hidden halves of duplicated rolled details which otherwise protrude as extra ellipses across the band."
+    },
+    {
+      "detail": "GoldCrown_Collar4",
+      "front_faces_unchanged": 283,
+      "rear_camera_facing_skin_copied": true,
+      "reason": "Remove the hidden halves of duplicated rolled details which otherwise protrude as extra ellipses across the band."
+    },
+    {
+      "detail": "GoldCrown_Collar5",
+      "front_faces_unchanged": 285,
+      "rear_camera_facing_skin_copied": true,
+      "reason": "Remove the hidden halves of duplicated rolled details which otherwise protrude as extra ellipses across the band."
+    }
+  ]
+}

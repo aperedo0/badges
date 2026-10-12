@@ -1,0 +1,62 @@
+{
+ "stage_pose00": {
+  "gem": {
+   "pixels": 132325,
+   "max_abs": 114,
+   "mean_abs": 4.6464160211600225,
+   "pixels_differing": 69574,
+   "psnr_db": 27.880860181848757
+  },
+  "bottom_rim_above_floor": {
+   "pixels": 68200,
+   "max_abs": 12,
+   "mean_abs": 0.03797653958944282,
+   "pixels_differing": 5610,
+   "psnr_db": 60.57958395295189
+  },
+  "bottom_rim_with_floor_contact": {
+   "pixels": 102300,
+   "max_abs": 4,
+   "mean_abs": 0.014542196155099382,
+   "pixels_differing": 4069,
+   "psnr_db": 66.16040211813213
+  },
+  "whole_frame": {
+   "pixels": 1555200,
+   "max_abs": 114,
+   "mean_abs": 0.44989026063100135,
+   "pixels_differing": 123931,
+   "psnr_db": 38.50191869966493
+  }
+ },
+ "harsh_pose00": {
+  "gem": {
+   "pixels": 132325,
+   "max_abs": 113,
+   "mean_abs": 5.074067636501039,
+   "pixels_differing": 74459,
+   "psnr_db": 27.024755467135407
+  },
+  "bottom_rim_above_floor": {
+   "pixels": 68200,
+   "max_abs": 58,
+   "mean_abs": 0.7979765395894428,
+   "pixels_differing": 21191,
+   "psnr_db": 39.874918224246265
+  },
+  "bottom_rim_with_floor_contact": {
+   "pixels": 102300,
+   "max_abs": 41,
+   "mean_abs": 0.060801564027370476,
+   "pixels_differing": 4710,
+   "psnr_db": 52.20114975898612
+  },
+  "whole_frame": {
+   "pixels": 1555200,
+   "max_abs": 113,
+   "mean_abs": 0.5569311556927298,
+   "pixels_differing": 145795,
+   "psnr_db": 37.35413099708782
+  }
+ }
+}

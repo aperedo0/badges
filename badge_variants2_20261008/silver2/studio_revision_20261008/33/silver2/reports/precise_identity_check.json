@@ -1,0 +1,111 @@
+{
+  "geometry": [
+    {
+      "mesh": "/Silver2/Silver2_LeafBlades_Satin",
+      "all_original_positions_indices_normals_exact": true,
+      "changed_UV_faces": 4464,
+      "changed_UV_regions": [
+        "leaf False-0 back",
+        "leaf False-4 back",
+        "leaf False-8 back",
+        "leaf True-0 back",
+        "leaf True-4 back",
+        "leaf True-8 back"
+      ],
+      "leaf_front_UVs_identical": true,
+      "original_triangles": 9696,
+      "new_triangles": 0
+    },
+    {
+      "mesh": "/Silver2/Silver2_LeafEdges_Satin",
+      "all_original_positions_indices_normals_exact": true,
+      "changed_UV_faces": 4464,
+      "changed_UV_regions": [
+        "leaf False-1 back",
+        "leaf False-5 back",
+        "leaf False-9 back",
+        "leaf True-1 back",
+        "leaf True-5 back",
+        "leaf True-9 back"
+      ],
+      "leaf_front_UVs_identical": true,
+      "original_triangles": 9696,
+      "new_triangles": 0
+    },
+    {
+      "mesh": "/Silver2/Silver2_Stems_Satin",
+      "all_original_positions_indices_normals_exact": true,
+      "changed_UV_faces": 0,
+      "changed_UV_regions": [],
+      "leaf_front_UVs_identical": true,
+      "original_triangles": 10304,
+      "new_triangles": 0
+    },
+    {
+      "mesh": "/Silver2/Silver2_Star_Satin",
+      "all_original_positions_indices_normals_exact": true,
+      "changed_UV_faces": 40,
+      "changed_UV_regions": [
+        "star back",
+        "star extruded sidewall",
+        "star plane 0",
+        "star plane 1",
+        "star plane 2",
+        "star plane 3",
+        "star plane 4",
+        "star plane 5",
+        "star plane 6",
+        "star plane 7",
+        "star plane 8",
+        "star plane 9"
+      ],
+      "leaf_front_UVs_identical": false,
+      "original_triangles": 40,
+      "new_triangles": 0
+    },
+    {
+      "mesh": "/Silver2/Silver2_InnerLeaves_Satin",
+      "all_original_positions_indices_normals_exact": true,
+      "changed_UV_faces": 2976,
+      "changed_UV_regions": [
+        "leaf False-2 back",
+        "leaf False-6 back",
+        "leaf True-2 back",
+        "leaf True-6 back"
+      ],
+      "leaf_front_UVs_identical": true,
+      "original_triangles": 6464,
+      "new_triangles": 0
+    },
+    {
+      "mesh": "/Silver2/Silver2_UpperLeaves_Satin",
+      "all_original_positions_indices_normals_exact": true,
+      "changed_UV_faces": 2976,
+      "changed_UV_regions": [
+        "leaf False-3 back",
+        "leaf False-7 back",
+        "leaf True-3 back",
+        "leaf True-7 back"
+      ],
+      "leaf_front_UVs_identical": true,
+      "original_triangles": 6464,
+      "new_triangles": 0
+    }
+  ],
+  "all_object_mesh_material_names_exact": true,
+  "leaf_front_UVs_unchanged": true,
+  "all_original_geometry_and_normals_exact": true,
+  "plain_back_islands_verified": true,
+  "all_external_PNGs_equal_actual_USDZ_bytes": [
+    "Silver2_StarShaded_Satin_roughness.png",
+    "Silver2_LeafLit_Satin_color.png",
+    "Silver2_StarLit_Satin_roughness.png",
+    "Silver2_LeafLit_Satin_roughness.png",
+    "Silver2_StarLit_Satin_color.png",
+    "Silver2_LeafShaded_Satin_color.png",
+    "Silver2_StarShaded_Satin_color.png",
+    "Silver2_LeafShaded_Satin_roughness.png"
+  ],
+  "normal_maps": 0,
+  "border_geometry_exception": false
+}

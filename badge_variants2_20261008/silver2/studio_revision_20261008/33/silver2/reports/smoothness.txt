@@ -1,0 +1,7 @@
+=== pose 0.0: per-facet rough (cubic residual RMS, luma levels)
+                              g0     g9     g1     g8     g2     g7     g6     g3     g5     g4   mean  mottle  grain
+stage                       1.07   2.15   1.43   1.66   0.65   1.49   1.41   1.64   1.60   1.60   1.47   0.92   0.52
+harsh                       1.63   1.01   1.62   0.94   0.61   0.67   1.30   1.66   1.39   1.15   1.20   0.87   0.44
+                            edge jag mean/max   edge excess mean/max   ring grain/mottle   inset-L grain   inset-R grain
+stage                        2.75 /  7.04        45.6 /  191.8        15.34 / 12.95      13.11           13.75
+harsh                        2.47 /  6.27        43.6 /  177.6        14.22 / 12.84      11.38           13.10

@@ -1,0 +1,42 @@
+{
+  "kind": "silver",
+  "triangles": 440,
+  "bytes": 632059,
+  "bounds": [
+    [
+      -2.813496144,
+      -2.455,
+      -0.3
+    ],
+    [
+      2.813496144,
+      2.8295996337,
+      0.3
+    ]
+  ],
+  "float_gap": 0.43999999999999995,
+  "closed_meshes": {
+    "SilverChevron_Upper": true,
+    "SilverChevron_Lower": true
+  },
+  "sha256": "fa647f99b2aabdbe0d39a799017ee06d726cbb402050454d23c1e4060abe7122",
+  "compliance": {
+    "errors": [],
+    "failed_checks": [],
+    "warnings": []
+  },
+  "settings": {
+    "color": [
+      0.45,
+      0.46,
+      0.48
+    ],
+    "roughness": 0.38,
+    "textures": {
+      "diffuseColor": "color.png",
+      "emissiveColor": "emissive.png"
+    },
+    "emissive_scale": 3.0,
+    "master": true
+  }
+}

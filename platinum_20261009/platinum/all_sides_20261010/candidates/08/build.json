@@ -1,0 +1,40 @@
+{
+  "tier": "platinum",
+  "installed_sha256": "6ba3c309bc8d9861c28ed66230f1fbaf5d23b0106e97ddddf6263095403ce371",
+  "sha256": "66c085cdc579fb73e17be0bfd491bf918f7c9cd51a734b5f78256695e42ba059",
+  "triangles": 43008,
+  "bytes": 3660744,
+  "bounds": [
+    [
+      -2.8524208068847656,
+      -2.4549999237060547,
+      -0.7828716039657593
+    ],
+    [
+      2.8524208068847656,
+      2.902362585067749,
+      0.7828716039657593
+    ]
+  ],
+  "arkit_errors": [],
+  "arkit_failed_checks": [],
+  "changes": [
+    {
+      "method": "Extend the textured non-emissive perimeter guard onto the first rear face row at each edge. Candidate07 retained isolated bright inner-outline samples in rear oblique frame117. Original front and all geometry, normals and UVs remain unchanged from07.",
+      "rear_guard_rows": [
+        16,
+        25
+      ],
+      "main_rear_rows": [
+        17,
+        18,
+        19,
+        20,
+        21,
+        22,
+        23,
+        24
+      ]
+    }
+  ]
+}

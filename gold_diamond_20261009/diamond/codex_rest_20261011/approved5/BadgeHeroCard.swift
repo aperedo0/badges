@@ -1,0 +1,3094 @@
+import SwiftUI
+// These imports serve the live 3D badge at the bottom of the file.
+// RealityKit comes in as @preconcurrency because it has not marked its mesh
+// data as Sendable yet; the mesh edits only hand a private copy of it to a
+// background task and take the result back.
+import ImageIO
+import Metal
+import MetalKit
+import QuartzCore
+@preconcurrency import RealityKit
+import UIKit
+
+/// The view-facing live tail: `BadgeEngine.liveTailSeconds` (THE formula,
+/// shared with the badge evaluation itself) applied to this snapshot's running
+/// source. Every badge surface (hero, Badges screen, tier celebration) adds
+/// exactly this: the running source's UNBANKED net seconds today, onto a base
+/// the presenter already de-tailed. Forwarding rather than re-deriving is what
+/// makes the never-double-count guarantee auditable: the views and the badge
+/// evaluation now read one formula, where this used to restate the engine's.
+extension LiveReclaimedSnapshot {
+    func badgeLiveTailSeconds(now: Date) -> Int {
+        BadgeEngine.liveTailSeconds(
+            activeStart: activeSourceStart,
+            activeEnd: activeSourceEnd,
+            now: now,
+            liveTailExclusions: activeSourceBypasses,
+            calendar: .current
+        )
+    }
+
+    /// Whether a source (a scheduled block or a Quick Start) is running right
+    /// now. The badge surfaces read it to pick their tick cadence and to light
+    /// the live dot, so they all agree on what "live" means.
+    var isSourceLive: Bool { activeSourceStart != nil }
+}
+
+/// The Home badge hero (spec §4.1), top to bottom: the badge top and center
+/// (no glow); a title row with the badge's name on the left and the "All
+/// badges" link on the right, which names any new achievements inline; a thin
+/// bar; and under the bar a progress row in small capitals (what is being
+/// climbed on the left, how far it has come on the right). Only the badge is
+/// centered: everything under it spans the page's content width.
+///
+/// Live behavior: the monthly number ticks per minute (the app's standard
+/// cadence) by adding the CURRENT live tail onto the published banked base:
+/// the presenter already subtracted the evaluation's tail from that base, so
+/// nothing is ever counted twice. The displayed tier is
+/// `max(floorTier, tier(base + tail))`, so crossing a threshold promotes the
+/// badge on the very next tick, independent of the celebration (§4.1).
+struct BadgeHeroCard: View {
+    /// Opens the badges landing over Home.
+    let onSeeAll: () -> Void
+
+    @Environment(\.badges) private var badges
+    @Environment(\.liveReclaimed) private var liveReclaimed
+    /// Reduce Motion: a tier promotion swaps instantly (crossfade only, no
+    /// scale settle, no bar choreography), the progress label's digit roll
+    /// becomes a crossfade, and the link's NEW count fades instead of popping.
+    @Environment(\.accessibilityReduceMotion) private var reduceMotion
+
+    /// The tier the hero currently SHOWS. On a promotion it trails the
+    /// computed tier by the short choreography in
+    /// `handleComputedTierChange(to:)` so the user sees the full bar →
+    /// badge swap → fresh bar story instead of everything snapping on one
+    /// minute tick. `nil` until the first render seeds it.
+    @State private var displayedTier: MonthlyTier?
+    /// Opacity of the bar AND the progress row's right label ("32h of 60h")
+    /// during the promotion choreography: both fade out, snap to the new
+    /// segment while invisible, and fade back in with the fresh climb. A
+    /// visible full → near-zero width change would read as draining, the
+    /// opposite of what happened. The row's left label never fades.
+    @State private var promotionBarOpacity: Double = 1
+    /// Re-entry guard: per-minute ticks during the ~0.85s run (0.67s of
+    /// beats + the trailing bar fade-in) must not start a second
+    /// choreography.
+    @State private var promotionInFlight = false
+    #if DEBUG
+    /// Debug only badge preview: the tier whose badge and name replace the real
+    /// ones while the owner flips through the ladder. It never touches progress,
+    /// and `nil` means the real badge shows.
+    @State private var previewTier: MonthlyTier?
+    #endif
+
+    var body: some View {
+        if let badges, badges.state.ready, let hero = badges.state.hero {
+            card(hero: hero, state: badges.state)
+        }
+    }
+
+    private func card(hero: BadgeHeroState, state: BadgeUIState) -> some View {
+        VStack(spacing: 0) {
+            if let progress = hero.monthlyProgress {
+                TimelineView(
+                    .periodic(
+                        from: .now, by: progress.isLive && liveReclaimed.isSourceLive ? 60 : 3600
+                    )
+                ) { context in
+                    monthlyContent(
+                        progress: progress,
+                        newAchievementCount: state.newAchievementCount,
+                        now: context.date
+                    )
+                }
+            } else {
+                achievementContent(hero: hero, newAchievementCount: state.newAchievementCount)
+            }
+
+            // Closes the badge section on the flat page with a section line:
+            // the full seam over it, and the seam minus the 14pt Home stack
+            // spacing under it.
+            DS.SectionLine()
+                .padding(.top, DS.Spacing.sectionSeam)
+                .padding(.bottom, DS.Spacing.sectionSeam - DS.Spacing.homeCardSpacing)
+        }
+        // The badge morph's source width: `HomeView` publishes this view's
+        // bounds through `HomeBadgeSourceFrameKey`.
+        .frame(maxWidth: .infinity)
+    }
+
+    // MARK: Monthly mode
+
+    private func monthlyContent(
+        progress: BadgeHeroState.MonthlyProgress, newAchievementCount: Int, now: Date
+    ) -> some View {
+        let total = BadgeStatePresenter.monthTotal(
+            baseSeconds: progress.baseSeconds,
+            isLiveMonth: progress.isLive,
+            monthKey: progress.monthKey,
+            now: now,
+            tail: liveReclaimed.badgeLiveTailSeconds(now: now)
+        )
+        let tier = BadgeConfig.displayTier(
+            forMonthSeconds: total, daysInMonth: progress.daysInMonth,
+            notBelow: progress.floorTier
+        )
+        // The DISPLAYED tier drives everything below: the title (the tier
+        // held), the row's next tier, the progress label, and the bar all swap
+        // together at the choreography's promote beat. The `??` covers the
+        // first render before `.onAppear` seeds the latch.
+        let shownTier = displayedTier ?? tier
+        // Only the badge and the title use this one; the bar and the progress
+        // row keep describing the real tier.
+        let badgeTier = badgeAndTitleTier(realTier: shownTier)
+        // One frozen value behind the bar and the progress label, so they
+        // cannot disagree. It is pinned to the SHOWN tier, not the computed
+        // one, which is what keeps them describing a single segment through
+        // the promotion beats.
+        let segment = BadgeConfig.segmentProgress(
+            forMonthSeconds: total, daysInMonth: progress.daysInMonth, pinnedTier: shownTier
+        )
+        let climbedSeconds = max(0, segment.segmentSeconds - segment.remainingSeconds)
+        // The figure the progress label leads with, in whole minutes: the
+        // segment climbed so far, or at the top tier (no segment left) the
+        // month's whole total. The label rolls once per minute, so its roll
+        // keys on whole minutes, never on seconds.
+        let progressFigureMinutes = segment.next == nil ? total / 60 : climbedSeconds / 60
+        let rowTitle = monthlyRowTitle(nextTier: segment.next)
+        let spokenRowTitle = Self.monthlySpokenRowTitle(nextTier: segment.next)
+        let progressLabel = monthlyProgressLabel(
+            segment: segment, climbedSeconds: climbedSeconds, monthTotalSeconds: total
+        )
+        let spokenProgressLabel = Self.monthlySpokenProgressLabel(
+            segment: segment, climbedSeconds: climbedSeconds, monthTotalSeconds: total
+        )
+
+        return VStack(spacing: 0) {
+            // ZStack: both badge slots share the same fixed footprint during
+            // the crossfade, so the promotion cannot shift layout.
+            ZStack {
+                // The badge of the tier HELD, the one the title names, never
+                // the next one: the live 3D coin for a tier that has one, its
+                // flat art on the same stage for every other tier.
+                Badge3DSlot(badge: .tier(badgeTier))
+                    .id(badgeTier)
+                    .transition(
+                        reduceMotion
+                            ? .opacity
+                            : .asymmetric(
+                                insertion: .scale(scale: 0.92).combined(with: .opacity),
+                                removal: .opacity
+                            )
+                    )
+            }
+            .padding(.top, Badge3DLayout.slotTopPadding)
+            .animation(Animations.tierPromotionSwap, value: badgeTier)
+            titleRow(newAchievementCount: newAchievementCount) {
+                heroTitle(badgeTier.displayName)
+                    .contentTransition(.opacity)
+                    .animation(Animations.tierPromotionSwap, value: badgeTier)
+            }
+            .padding(.top, Badge3DLayout.titleTopPadding)
+            progressBlock(
+                accessibilityLabel: spokenRowTitle, accessibilityValue: spokenProgressLabel ?? ""
+            ) {
+                HeroProgressBar(fraction: segment.fraction)
+                    .opacity(promotionBarOpacity)
+                    .animation(Animations.tierPromotionBarFade, value: promotionBarOpacity)
+            } left: {
+                // Crossfades to the new next tier at the promote beat, like
+                // the title. It never fades out: only the numbers reset.
+                rowTitle
+                    .contentTransition(.opacity)
+                    .animation(Animations.tierPromotionSwap, value: shownTier)
+            } right: {
+                if let progressLabel {
+                    progressLabel
+                        // Rolls once per minute as the climb (or, at the top
+                        // tier, the month's total) grows. The roll is off while
+                        // a promotion runs, so the reset ("60h" → "0m") snaps
+                        // while the label is faded out.
+                        .contentTransition(
+                            reduceMotion
+                                ? .opacity
+                                : .numericText(value: Double(progressFigureMinutes))
+                        )
+                        .animation(
+                            promotionInFlight ? nil : Animations.heroCounter,
+                            value: progressFigureMinutes
+                        )
+                        .opacity(promotionBarOpacity)
+                        .animation(Animations.tierPromotionBarFade, value: promotionBarOpacity)
+                }
+            }
+            #if DEBUG
+            badgePreviewRow
+            #endif
+        }
+        .onAppear {
+            // Seed the latch without any animation so a cold appearance
+            // never plays a promotion.
+            if displayedTier == nil { displayedTier = tier }
+        }
+        .onChange(of: tier) { _, newTier in
+            handleComputedTierChange(to: newTier)
+        }
+    }
+
+    /// Applies a computed-tier change to the displayed tier. A promotion
+    /// runs the quiet two-beat choreography; a demotion (the month rollover
+    /// resets the climb) or an equal-tier refresh just tracks the value.
+    /// Crossing a tier is one of the few genuinely earned moments on Home:
+    /// without this, the badge art hard-swaps and the full progress bar
+    /// collapses to empty in one frame, which reads as loss. The exuberant
+    /// version stays where it already lives (the full-screen
+    /// BadgeCelebrationFlowView, presented separately); the hero only
+    /// acknowledges.
+    private func handleComputedTierChange(to newTier: MonthlyTier) {
+        guard let shown = displayedTier else {
+            displayedTier = newTier
+            return
+        }
+        // Mid-choreography ticks are ignored: the run already targets the
+        // latest crossing, and monthly tiers are hours of reclaimed time
+        // apart, so a second crossing cannot land inside one ~0.85s run.
+        guard !promotionInFlight else { return }
+        guard Self.tierRank(newTier) > Self.tierRank(shown) else {
+            displayedTier = newTier
+            return
+        }
+        guard !reduceMotion else {
+            // Reduce Motion: promote instantly. The badge still crossfades
+            // via its .opacity transition; the bar snaps.
+            displayedTier = newTier
+            return
+        }
+        promotionInFlight = true
+        Task { @MainActor in
+            // Beat 1: hold. On the crossing tick the segment fraction
+            // clamps at the ceiling, so the bar is already sitting at 100%
+            // (and the progress label reads the full goal, "60h of 60h", for
+            // this beat); let the full bar register before anything moves.
+            try? await Task.sleep(for: .milliseconds(350))
+            // Beat 2: the full bar and the progress label bow out.
+            promotionBarOpacity = 0
+            try? await Task.sleep(for: .milliseconds(200))
+            // Beat 3, promote: badge art, name and the row's next tier
+            // crossfade via their tierPromotionSwap animations; the invisible
+            // bar and progress label snap to the new segment at the same
+            // instant.
+            displayedTier = newTier
+            try? await Task.sleep(for: .milliseconds(120))
+            // Beat 4: the fresh climb fades in.
+            promotionBarOpacity = 1
+            promotionInFlight = false
+        }
+    }
+
+    /// Ladder rank (iron < … < diamond). `MonthlyTier` is not Comparable;
+    /// `BadgeConfig.tierIndex` (the ladder's single order authority) gives
+    /// the 1-based position, which is all a promotion comparison needs.
+    private static func tierRank(_ tier: MonthlyTier) -> Int {
+        BadgeConfig.tierIndex(tier)
+    }
+
+    /// The row's left label in monthly mode: the tier being climbed toward,
+    /// "Next · " quiet and the tier's name emphasized, like achievement
+    /// mode's "Next: " line. The title above already names the tier held. At
+    /// the top of the ladder there is nothing left to climb toward.
+    private func monthlyRowTitle(nextTier: MonthlyTier?) -> Text {
+        guard let nextTier else {
+            return Text("Top tier").foregroundStyle(DS.Colors.textSecondary)
+        }
+        return Text("Next · ").foregroundStyle(DS.Colors.textSecondary)
+            + emphasized(Text(nextTier.displayName))
+    }
+
+    /// `monthlyRowTitle` as VoiceOver says it: "Next: Copper", or "Top tier".
+    private static func monthlySpokenRowTitle(nextTier: MonthlyTier?) -> String {
+        guard let nextTier else { return "Top tier" }
+        return "Next: \(nextTier.displayName)"
+    }
+
+    /// The row's right label in monthly mode: how far the shown tier's
+    /// segment has been climbed against its size ("32h of 60h"), so it always
+    /// agrees with the bar. At the top of the ladder (no next tier) there is
+    /// no segment left to climb, so it shows the month's whole total instead
+    /// ("412h this month") under the full bar. A zero-width segment (two
+    /// adjacent tiers sharing a threshold) has no climb to describe, so it
+    /// shows nothing.
+    private func monthlyProgressLabel(
+        segment: BadgeConfig.MonthProgress, climbedSeconds: Int, monthTotalSeconds: Int
+    ) -> Text? {
+        guard segment.next != nil else {
+            let totalLabel = TimeFormatters.durationLabel(minutes: monthTotalSeconds / 60)
+            return emphasizedFigureLabel(figure: totalLabel, remainder: " this month")
+        }
+        guard segment.segmentSeconds > 0 else { return nil }
+        let climbedLabel = TimeFormatters.durationLabel(minutes: climbedSeconds / 60)
+        let goalLabel = TimeFormatters.durationLabel(minutes: segment.segmentSeconds / 60)
+        return emphasizedFigureLabel(figure: climbedLabel, remainder: " of \(goalLabel)")
+    }
+
+    /// `monthlyProgressLabel` as VoiceOver says it, in spoken durations: "32
+    /// hours of 60 hours" rather than the visual "32h of 60h", and "412 hours
+    /// this month" at the top of the ladder. A zero-width segment reads
+    /// nothing, like the visible label.
+    private static func monthlySpokenProgressLabel(
+        segment: BadgeConfig.MonthProgress, climbedSeconds: Int, monthTotalSeconds: Int
+    ) -> String? {
+        guard segment.next != nil else {
+            let totalPhrase = TimeFormatters.spokenDuration(minutes: monthTotalSeconds / 60)
+            return "\(totalPhrase) this month"
+        }
+        guard segment.segmentSeconds > 0 else { return nil }
+        let climbedPhrase = TimeFormatters.spokenDuration(minutes: climbedSeconds / 60)
+        let goalPhrase = TimeFormatters.spokenDuration(minutes: segment.segmentSeconds / 60)
+        return "\(climbedPhrase) of \(goalPhrase)"
+    }
+
+    // MARK: Badge preview (Debug only)
+
+    /// The tier the badge and the title show: the Debug preview's pick while
+    /// there is one, else the real tier held. Release builds always show the
+    /// real tier.
+    private func badgeAndTitleTier(realTier: MonthlyTier) -> MonthlyTier {
+        #if DEBUG
+        return previewTier ?? realTier
+        #else
+        return realTier
+        #endif
+    }
+
+    #if DEBUG
+    /// "BADGE PREVIEW" on the left and the button that steps through the
+    /// ladder on the right, under the real progress row so the layout above
+    /// never moves.
+    private var badgePreviewRow: some View {
+        let nextPreviewTier = Self.previewTier(after: previewTier)
+        return HStack(alignment: .center) {
+            Text("Badge preview")
+                .foregroundStyle(DS.Colors.textSecondary)
+                .heroCapsStyle(weight: .semibold)
+            Spacer()
+            Button {
+                previewTier = nextPreviewTier
+            } label: {
+                Text("Show \(nextPreviewTier?.displayName ?? "Mine")")
+                    .foregroundStyle(DS.Colors.accent)
+                    .heroCapsStyle(weight: .bold)
+                    .frame(minHeight: Self.linkTouchHeight)
+                    .contentShape(Rectangle())
+            }
+            .buttonStyle(.plain)
+            .accessibilityHint("Shows another badge without changing your progress")
+        }
+        .padding(.top, 16)
+    }
+
+    /// The next stop in the preview cycle: nothing goes to the first tier,
+    /// each tier goes to the one above it, and the top tier goes back to
+    /// nothing (the real badge).
+    private static func previewTier(after currentTier: MonthlyTier?) -> MonthlyTier? {
+        let ladder = MonthlyTier.allCases
+        guard let currentTier else { return ladder.first }
+        guard let currentIndex = ladder.firstIndex(of: currentTier),
+            currentIndex + 1 < ladder.count
+        else { return nil }
+        return ladder[currentIndex + 1]
+    }
+    #endif
+
+    // MARK: Achievement mode
+
+    private func achievementContent(hero: BadgeHeroState, newAchievementCount: Int) -> some View {
+        VStack(spacing: 0) {
+            // The achievement hero is always a badge the user has already
+            // EARNED, so it draws in the default earned metal art, flat on the
+            // same lit stage as any badge with no 3D model. It sits deliberately
+            // OUTSIDE the `if let` below: a missing line must never blank the
+            // art.
+            Badge3DSlot(badge: hero.badge)
+                .padding(.top, Badge3DLayout.slotTopPadding)
+            titleRow(newAchievementCount: newAchievementCount) {
+                heroTitle(hero.name)
+            }
+            .padding(.top, Badge3DLayout.titleTopPadding)
+            if let line = hero.achievementLine {
+                progressBlock(
+                    accessibilityLabel: line.text,
+                    accessibilityValue: line.spokenProgressLabel ?? ""
+                ) {
+                    // All earned: the presenter's fraction is 1, a full bar.
+                    HeroProgressBar(fraction: line.fraction)
+                } left: {
+                    achievementRowTitle(line)
+                } right: {
+                    if let progressLabel = line.progressLabel {
+                        progressLabelText(progressLabel)
+                    }
+                }
+            }
+        }
+    }
+
+    /// The row's left label in achievement mode: "Next: " quiet and the rung's
+    /// name emphasized, or the completion line once every rung is earned.
+    private func achievementRowTitle(_ line: BadgeHeroState.AchievementLine) -> Text {
+        guard let nextName = line.nextName else {
+            return Text(line.text).foregroundStyle(DS.Colors.textSecondary)
+        }
+        return Text("Next: ").foregroundStyle(DS.Colors.textSecondary)
+            + emphasized(Text(nextName))
+    }
+
+    // MARK: Shared pieces
+
+    /// The title row under the medal: the badge's name on the left and the
+    /// "All badges" link on the right, centered on each other like the mock's
+    /// row. The name comes in as a view so monthly mode can attach its
+    /// promotion crossfade to the name alone, never to the link.
+    private func titleRow<Title: View>(
+        newAchievementCount: Int,
+        @ViewBuilder title: () -> Title
+    ) -> some View {
+        HStack(alignment: .center, spacing: 0) {
+            title()
+            Spacer(minLength: 12)
+            allBadgesLink(newAchievementCount: newAchievementCount)
+                // The link is laid out first and never shrinks: a long
+                // achievement name makes room for it instead.
+                .layoutPriority(1)
+        }
+    }
+
+    /// The badge's name, styled the same in both modes (the mock's 32pt heavy
+    /// title). It shares its row with the link, so a long achievement name
+    /// ("Start of the Journey") wraps onto a second line, and shrinks a
+    /// little if it still does not fit, rather than truncating.
+    private func heroTitle(_ name: String) -> some View {
+        Text(name)
+            .font(.system(size: 32, weight: .heavy))
+            .kerning(-0.8)
+            .foregroundStyle(BadgeHeroPalette.primary)
+            .lineLimit(2)
+            .minimumScaleFactor(0.7)
+    }
+
+    /// Achievement mode's progress label ("10m of 1h", "5 of 7 days"). The
+    /// presenter hands it over as one string, so it is split at " of " to
+    /// emphasize its first quantity. A label with no " of " has no climb to
+    /// single out, so it stays quiet throughout.
+    private func progressLabelText(_ label: String) -> Text {
+        guard let ofRange = label.range(of: " of ") else {
+            return Text(label).foregroundStyle(DS.Colors.textSecondary)
+        }
+        let climbed = String(label[..<ofRange.lowerBound])
+        let remainder = String(label[ofRange.lowerBound...])
+        return emphasizedFigureLabel(figure: climbed, remainder: remainder)
+    }
+
+    /// A progress label that leads with the number that grows ("32h" in
+    /// "32h of 60h", "412h" in "412h this month"): that figure emphasized,
+    /// the words after it quiet.
+    private func emphasizedFigureLabel(figure: String, remainder: String) -> Text {
+        emphasized(Text(figure))
+            + Text(remainder).foregroundStyle(DS.Colors.textSecondary)
+    }
+
+    /// A run of the progress row the eye should land on first (the rung's
+    /// name, the climbed amount): brighter and heavier than the quiet
+    /// capitals around it, like the mock's bold runs.
+    private func emphasized(_ text: Text) -> Text {
+        text
+            .fontWeight(.bold)
+            .foregroundStyle(BadgeHeroPalette.primary)
+    }
+
+    /// The bar and the progress row under it, laid out the same in both
+    /// modes: the bar 16pt under the title row, then 10pt below the bar what
+    /// is being climbed on the left and how far it has come on the right.
+    /// Each mode passes its own pieces, so only monthly mode attaches the
+    /// promotion fade. VoiceOver reads the bar and the row as one element:
+    /// the left text as its label, the right text (in spoken durations) as
+    /// its value.
+    private func progressBlock<Bar: View, Left: View, Right: View>(
+        accessibilityLabel: String,
+        accessibilityValue: String,
+        @ViewBuilder bar: () -> Bar,
+        @ViewBuilder left: () -> Left,
+        @ViewBuilder right: () -> Right
+    ) -> some View {
+        VStack(spacing: 10) {
+            bar()
+            HStack(alignment: .firstTextBaseline) {
+                // A long rung name shrinks a little, then truncates.
+                left()
+                    .lineLimit(1)
+                    .minimumScaleFactor(0.8)
+                Spacer()
+                // The right label is the number the user is tracking, so it
+                // is laid out first and never truncates.
+                right()
+                    .monospacedDigit()
+                    .layoutPriority(1)
+            }
+            .heroCapsStyle(weight: .semibold)
+        }
+        .padding(.top, 16)
+        .accessibilityElement(children: .ignore)
+        .accessibilityLabel(accessibilityLabel)
+        .accessibilityValue(accessibilityValue)
+    }
+
+    /// The standard 44pt touch height around the link's caps line.
+    private static let linkTouchHeight: CGFloat = 44
+    /// The height of one line of the 12pt small capitals.
+    private static let capsLineHeight: CGFloat = 14
+
+    /// The "ALL BADGES →" link at the right end of the title row. While there
+    /// are new achievements it names them inline in the accent color ("ALL
+    /// BADGES · 1 NEW →"). VoiceOver reads only the words ("All badges, 1
+    /// NEW"): the dot and the arrow are decoration.
+    private func allBadgesLink(newAchievementCount: Int) -> some View {
+        Button {
+            onSeeAll()
+        } label: {
+            HStack(alignment: .firstTextBaseline, spacing: 0) {
+                Text("All badges")
+                if newAchievementCount > 0 {
+                    newAchievementsLabel(count: newAchievementCount)
+                        // The count is a notification; it appears right when
+                        // an achievement lands, often while the user is
+                        // looking at Home. A small pop-in is earned emphasis
+                        // so it isn't simply missed; Reduce Motion fades.
+                        .transition(
+                            reduceMotion
+                                ? .opacity
+                                : .scale(scale: 0.6).combined(with: .opacity)
+                        )
+                }
+                Text(" →")
+                    .accessibilityHidden(true)
+            }
+            .foregroundStyle(BadgeHeroPalette.primary)
+            .heroCapsStyle(weight: .bold)
+            // Keyed on presence (a Bool), so only the count's appearance/
+            // disappearance animates the link (the words slide over to make
+            // room): count increments are handled by the count's own roll.
+            .animation(Animations.newPillPop, value: newAchievementCount > 0)
+            .frame(height: Self.linkTouchHeight)
+            // The label has no background, so without this only the glyphs
+            // would take a tap.
+            .contentShape(Rectangle())
+        }
+        .buttonStyle(.plain)
+        // Hands the touch frame's extra height back to the layout, so the
+        // title row is as tall as the title and the bar's 16pt gap is
+        // measured from it, as in the mock. The tap target still covers the
+        // full 44pt.
+        .padding(.vertical, -(Self.linkTouchHeight - Self.capsLineHeight) / 2)
+    }
+
+    /// The link's inline " · 1 NEW", in the accent color.
+    private func newAchievementsLabel(count: Int) -> some View {
+        HStack(alignment: .firstTextBaseline, spacing: 0) {
+            Text(" · ")
+                .accessibilityHidden(true)
+            Text("\(count) NEW")
+                // An increment while the count is showing rolls it; Reduce
+                // Motion crossfades it.
+                .contentTransition(reduceMotion ? .opacity : .numericText())
+                .animation(Animations.heroCounter, value: count)
+        }
+        .foregroundStyle(DS.Colors.accent)
+    }
+}
+
+// MARK: - Previews
+
+#Preview("Monthly climber") {
+    NavigationStack {
+        ScrollView {
+            BadgeHeroCard(onSeeAll: {})
+                .padding(.horizontal, 20)
+        }
+        .background(DS.Colors.pageBackground)
+    }
+    .environment(\.badges, MockBadgeViewModel(.midMonthClimber))
+}
+
+#Preview("Day one") {
+    NavigationStack {
+        ScrollView {
+            BadgeHeroCard(onSeeAll: {})
+                .padding(.horizontal, 20)
+        }
+        .background(DS.Colors.pageBackground)
+    }
+    .environment(\.badges, MockBadgeViewModel(.dayOne))
+}
+
+#Preview("Pre-monthly") {
+    NavigationStack {
+        ScrollView {
+            BadgeHeroCard(onSeeAll: {})
+                .padding(.horizontal, 20)
+        }
+        .background(DS.Colors.pageBackground)
+    }
+    .environment(\.badges, MockBadgeViewModel(.preMonthly))
+}
+
+// MARK: - Live 3D badge
+
+// Everything below draws the hero's badge on its lit stage: a backdrop with the
+// light from above and a glossy floor. A tier with a 3D model (see
+// `Badge3DModels`) stands on it as a live RealityKit coin; every other tier,
+// and the achievement badges, stand on it as their flat art.
+//
+// The model comes from Blender already prepared for this scene: its bevel
+// strips shade like the facets they belong to and its polished metal carries
+// no normal maps (both for the nearby point lights used here), and the slice
+// that sinks into the floor is already cut away (a floating badge has nothing
+// below the floor to cut; see `Badge3DScene.floorY`). So the only changes made to it at load are
+// the brushed ring's anisotropy, which USD cannot carry, and the Diamond's gem material, which
+// swaps the model's plain `DiamondGem` material for the gem shader (see `Badge3DGem`).
+
+/// Which tiers have a 3D badge, and the data set in Assets.xcassets that holds
+/// each one's model: the one place that says so. Adding a tier's 3D badge is
+/// one data set (a `Badge3DModel<Tier>` folder holding the tier's `.usdz`) and
+/// one changed line here. The switch lists every tier and has no `default`, so
+/// a tier added to the ladder cannot be forgotten: the compiler asks for its
+/// line.
+private enum Badge3DModels {
+    static func datasetName(for tier: MonthlyTier) -> String? {
+        switch tier {
+        case .iron: return "Badge3DModelIron"
+        case .silver: return "Badge3DModelSilver"
+        case .copper: return "Badge3DModelCopper"
+        case .bronze: return "Badge3DModelBronze"
+        case .steel: return "Badge3DModelSteel"
+        case .gold: return "Badge3DModelGold"
+        case .platinum: return "Badge3DModelPlatinum"
+        case .diamond: return "Badge3DModelDiamond"
+        }
+    }
+
+    /// Achievements never have a 3D model.
+    static func datasetName(for badge: BadgeRef) -> String? {
+        switch badge {
+        case .tier(let tier): return datasetName(for: tier)
+        case .achievement: return nil
+        }
+    }
+}
+
+/// The hero's badge slot. From iOS 18 it shows the badge on the lit stage: the
+/// live 3D coin, or the flat art when the tier has no 3D model. On iOS 17 it
+/// shows the flat badge, with no stage, in a slot of the same size: only iOS 18
+/// can build the studio lighting from the bundled environment map.
+///
+/// Whichever it shows, the slot tells the launch splash when Home's badge is on
+/// screen (see `\.markHomeBadgeReady`), so the splash never lifts on a Home
+/// without one.
+private struct Badge3DSlot: View {
+    let badge: BadgeRef
+
+    var body: some View {
+        if #available(iOS 18.0, *) {
+            Badge3DView(badge: badge)
+        } else {
+            Color.clear
+                .frame(
+                    width: Badge3DLayout.sliceSize.width,
+                    height: Badge3DLayout.sliceSize.height
+                )
+                .overlay {
+                    BadgeFlatWithoutStage(
+                        badge: BadgeView(ref: badge, size: Badge3DLayout.fallbackBadgeSize)
+                    )
+                }
+        }
+    }
+}
+
+/// The flat badge on its own, with no stage, for a slot that cannot draw the
+/// stage (iOS 17, or a stage that failed to load). It reports to the launch
+/// splash the moment it appears: from then on Home's badge spot is not empty.
+private struct BadgeFlatWithoutStage: View {
+    let badge: BadgeView
+
+    @Environment(\.markHomeBadgeReady) private var markHomeBadgeReady
+
+    var body: some View {
+        let markHomeBadgeReadyNow = markHomeBadgeReady
+        badge
+            // The coin's slot is hidden from VoiceOver and the title beneath
+            // names the tier, so the flat badge must not read it twice.
+            .accessibilityHidden(true)
+            .onAppear { markHomeBadgeReadyNow() }
+    }
+}
+
+/// The flat badge standing on the lit stage where the 3D coin stands, with its
+/// reflection in the floor under it. It is placed in the slot's own
+/// coordinates and never signals the launch splash itself: the slot decides
+/// what counts as ready (see `Badge3DView`).
+private struct BadgeFlatOnStage: View {
+    let badge: BadgeRef
+
+    var body: some View {
+        ZStack(alignment: .top) {
+            // Under the badge, so the reflection's blur never dims the badge's
+            // own bottom edge, where the two meet at the floor line.
+            reflection
+            BadgeView(ref: badge, size: Badge3DLayout.flatBadgeSize)
+        }
+        .frame(
+            width: Badge3DLayout.flatBadgeSize, height: Badge3DLayout.flatBadgeSize,
+            alignment: .top
+        )
+    }
+
+    /// The badge turned upside down across the floor line: faint, soft, and
+    /// fading out with distance from the floor, like the 3D coin's reflection.
+    private var reflection: some View {
+        BadgeView(ref: badge, size: Badge3DLayout.flatBadgeSize)
+            .scaleEffect(x: 1, y: -1)
+            .opacity(Badge3DLayout.flatReflectionOpacity)
+            .blur(radius: Badge3DLayout.flatReflectionBlurRadius)
+            .mask {
+                LinearGradient(
+                    stops: [
+                        .init(color: .black, location: 0),
+                        .init(color: .clear, location: Badge3DLayout.flatReflectionFadeFraction),
+                    ],
+                    startPoint: .top,
+                    endPoint: .bottom
+                )
+            }
+            .offset(y: Badge3DLayout.coinHeight)
+    }
+}
+
+/// Where the coin sits on Home and how scrolling poses it. Every source number
+/// is in pixels of the 1080x1440 master frame the Blender scene was framed
+/// for, so the live coin lands exactly where the earlier video test drew it.
+private enum Badge3DLayout {
+    /// The slice of the master frame the hero shows: full width, from a
+    /// 20-row margin above the coin (row 343) down past the end of its
+    /// reflection (row 1200). Nothing above the margin is shown, so the slot
+    /// holds no empty rows over the coin.
+    static let visibleRect = CGRect(x: 0, y: 343, width: 1080, height: 857)
+    /// The part of the master frame RealityKit renders: the visible slice
+    /// grown upward until it is centered on the frame's middle row (720). The
+    /// camera looks through that middle row and RealityKit has no lens shift,
+    /// so an off-center slice cannot be rendered on its own. The extra rows on
+    /// top (240 to 343) show above the slot, over the stage.
+    static let renderedRect = CGRect(x: 0, y: 240, width: 1080, height: 960)
+    /// The slice draws at 47/180 (about 0.261) pt per master pixel on Home,
+    /// which puts the coin about 153pt tall. On a 3x screen the render is then
+    /// 0.783 pixels per master pixel, which makes the rendered rect a whole
+    /// number of pixels both ways (846 by 752); most nearby scales leave a
+    /// fraction, which the compositor would resample into a soft image.
+    static let pointsPerPixel: CGFloat = 47.0 / 180
+    /// The full-size coin's top and bottom edges, in master rows.
+    static let coinTopRow: CGFloat = 363
+    static let coinBottomRow: CGFloat = 949
+
+    static let sliceSize = CGSize(
+        width: visibleRect.width * pointsPerPixel,
+        height: visibleRect.height * pointsPerPixel
+    )
+
+    /// The side of the flat badge drawn with no stage (see
+    /// `BadgeFlatWithoutStage`), the size the hero drew its badge at before
+    /// the coin replaced it.
+    static let fallbackBadgeSize: CGFloat = 96
+
+    /// The side of the flat badge's frame on the stage. Every tier's art is
+    /// drawn in the same square frame, but the shapes differ (chevrons, a
+    /// wreath, a hexagon); only Copper is a round disc, 108 of its frame's 120
+    /// units across (see `BadgeView.swift`). The stills of every tier are
+    /// cropped from renders at this same fixed frame, so whatever their shape
+    /// they line up with the 3D badge. One footprint serves every tier: the
+    /// frame in which Copper's disc is exactly as wide as the 3D coin.
+    static let flatBadgeSize = coinHeight * 120 / 108
+    /// How far the flat badge frame's top edge sits below the slice's top
+    /// edge. The frame is centered on the coin, so Copper's disc bottom lands
+    /// on the coin's bottom row, where the 3D coin meets the floor.
+    static let flatBadgeTopInSlice = coinTopInSlice - (flatBadgeSize - coinHeight) / 2
+    /// The flat badge's reflection: how faint, how soft (in points of blur),
+    /// and over what share of its height it fades out. Tuned by eye against the
+    /// 3D coin's reflection, which is also faint and soft and fades with
+    /// distance.
+    static let flatReflectionOpacity = 0.35
+    static let flatReflectionBlurRadius: CGFloat = 2
+    static let flatReflectionFadeFraction: CGFloat = 0.4
+
+    /// Where the stage plate (the `Badge3DStagePlate` data set) lies in
+    /// master pixels: its top-left corner at (-270, -540), 0.8 plate pixels
+    /// per master pixel, as its STAGE_RULES.md sets it. It reaches past both
+    /// sides of any iPhone screen, well above the screen's top, and down to
+    /// row 1320, behind the top of the title; it fades to black on every
+    /// edge, and is already black where the title starts (about row 1260).
+    static let stagePlateRect = CGRect(x: -270, y: -540, width: 1620, height: 1860)
+    /// The area the finished image covers: the plate's, with its left and
+    /// right edges moved out 0.6 master pixels (where the plate is black) so
+    /// that every edge sits a whole number of 3x screen pixels from the
+    /// rendered rect: 212 on the left and right, 611 above, 94 below. The
+    /// coin's render then lands on whole screen pixels inside it.
+    static let stageRect = CGRect(
+        x: renderedRect.minX - 212 * masterPixelsPerScreenPixel,
+        y: renderedRect.minY - 611 * masterPixelsPerScreenPixel,
+        width: renderedRect.width + (212 + 212) * masterPixelsPerScreenPixel,
+        height: renderedRect.height + (611 + 94) * masterPixelsPerScreenPixel
+    )
+    /// Master pixels per screen pixel on a 3x screen.
+    private static let masterPixelsPerScreenPixel = 1 / (3 * pointsPerPixel)
+
+    static let stageSize = CGSize(
+        width: stageRect.width * pointsPerPixel,
+        height: stageRect.height * pointsPerPixel
+    )
+    /// How far the stage's top edge sits from the slice's top edge, in points;
+    /// negative, because the stage reaches far above it.
+    static let stageTopInSlice = (stageRect.minY - visibleRect.minY) * pointsPerPixel
+    /// How far below the slice's top edge the full-size coin's top sits, in
+    /// points.
+    static let coinTopInSlice = (coinTopRow - visibleRect.minY) * pointsPerPixel
+    /// The full-size coin's height in points. It is also the scroll distance
+    /// the whole spin is scrubbed across, so the coin winds all the way back
+    /// exactly as it leaves the screen.
+    static let coinHeight = (coinBottomRow - coinTopRow) * pointsPerPixel
+
+    /// Where the resting coin's top edge sits below the top safe-area edge:
+    /// 56pt, 1.4x the quarter inch (40pt) it first got, about 0.35 inch on the
+    /// iPhone 13 mini (about 158.7pt per inch), so the coin does not look close
+    /// to touching the top of the phone. It also has to stay clear of the edge,
+    /// because a coin whose top is above it counts as scrolled and would rest
+    /// turned and shrunk (see `growth`).
+    static let restingCoinTopBelowSafeArea: CGFloat = 56
+    /// How far below the top safe-area edge Home's scroll content starts: the
+    /// navigation bar area, where the Settings button sits. Measured on iOS 26
+    /// (the scroll inset there is a 62pt safe area plus these 54pt) and tuned
+    /// for it alone. The coin's resting top sits inside this area, so the slot
+    /// is pulled up by the difference.
+    static let navigationAreaHeight: CGFloat = 54
+    /// The gap between the slot and the tier title, tuned so the title's
+    /// capitals start about 38pt under the point where the reflection fades
+    /// out.
+    static let titleTopPadding: CGFloat = 16
+    /// The slot's top padding, negative on purpose: it lifts the slot, and with
+    /// it everything below, out of Home's own top padding and up under the
+    /// navigation area until the resting coin's top is
+    /// `restingCoinTopBelowSafeArea` below the safe-area edge.
+    static let slotTopPadding: CGFloat = restingCoinTopBelowSafeArea
+        - navigationAreaHeight - DS.Spacing.homeTopPadding - coinTopInSlice
+
+    /// How grown the coin is for where it sits on screen, from 1 (full size,
+    /// face on) down to 0. While the coin's top is below the top safe-area
+    /// edge it stays at 1. From the moment its top reaches that edge, each
+    /// point scrolled winds the spin back, reaching 0 exactly as the coin's
+    /// bottom edge gets there. A pure function of position, so the same scroll
+    /// offset always shows the same pose, in either direction.
+    static func growth(coinTopInWindow: CGFloat, safeAreaTop: CGFloat) -> Float {
+        let distancePastSafeAreaTop = safeAreaTop - coinTopInWindow
+        let shrinkProgress = min(1, max(0, distancePastSafeAreaTop / coinHeight))
+        return Float(1 - shrinkProgress)
+    }
+}
+
+/// What a finished frame drew.
+private enum Badge3DFrameKind {
+    /// The stage alone: backdrop, light and floor, for the flat badge to stand
+    /// on.
+    case stageOnly
+    /// The stage with the live coin and its reflection.
+    case withCoin
+}
+
+/// The badge on its lit stage. Once the shared studio has loaded, a Metal view
+/// draws the stage; a tier with a 3D model then loads its coin, which replaces
+/// the flat badge on the stage at its first finished frame, and from then on is
+/// posed by where it sits on screen. Every other tier, and the achievement
+/// badges, keep their flat badge on the stage.
+///
+/// When the coin cannot be shown (its model fails to load, or draws nothing six
+/// seconds after loading started) that tier keeps its flat badge on the stage
+/// for the rest of the launch; the other tier's coin is not affected. If the
+/// stage itself cannot be built, the flat badge stands alone.
+///
+/// What tells the launch splash that Home's badge is ready is the first frame
+/// of what the slot is going to show: the coin's in a tier with a model, the
+/// stage's in one without. A fallback tells it too, as soon as it is decided.
+/// The load starts inside the splash's still hold rather than after the splash.
+///
+/// What the slot shows and tells the splash, by state:
+/// - Studio not loaded yet: nothing, until the slot gives up waiting for it
+///   (`hasGivenUpWaitingForStudio`). Then the flat badge alone, which tells the
+///   splash itself, until the studio arrives.
+/// - Studio loaded, no model or the coin not drawn yet: the flat badge on the
+///   stage. A tier with no model tells the splash on the stage's first frame;
+///   a tier with a model never does here (the stage frames under its loading
+///   flat badge say nothing).
+/// - Coin drawn (`hasDrawnCoinFrame`): the coin alone, which told the splash
+///   on its first frame.
+/// - Coin given up on (`hasGivenUpOnCoin`): the flat badge on the stage for the
+///   rest of the launch; the splash was told when the coin was given up on.
+@available(iOS 18.0, *)
+private struct Badge3DView: View {
+    let badge: BadgeRef
+
+    /// The data set holding this badge's 3D model; nil when its tier has none.
+    private let modelDatasetName: String?
+
+    @Environment(\.homeBadgeMayLoad) private var homeBadgeMayLoad
+    @Environment(\.markHomeBadgeReady) private var markHomeBadgeReady
+    /// The shared studio, once loaded. A slot built after an earlier one loaded
+    /// it starts with it, so a tier promotion never swaps in an empty slot.
+    @State private var studio: Badge3DStudio?
+    /// Whether this slot gave up waiting for the studio: its load failed, or it
+    /// was still loading when the clock ran out. A slot built after an earlier
+    /// one gave up starts out that way. While the studio is missing, the flat
+    /// badge stands alone; once it arrives the stage takes over and this flag no
+    /// longer matters.
+    @State private var hasGivenUpWaitingForStudio: Bool
+    /// This badge's coin, once its model has loaded (again, a slot built after
+    /// that starts with it).
+    @State private var scene: Badge3DScene?
+    /// The visible slice's top edge in window points. Scrolling Home moves it,
+    /// which is what drives the pose. Nil until the first layout pass.
+    @State private var sliceTopInWindow: CGFloat?
+    /// Whether the live coin has finished a frame. Until then the flat badge
+    /// stands on the stage in its place.
+    @State private var hasDrawnCoinFrame = false
+    /// Whether the stage has finished a frame. The stuck-load clock reads it
+    /// for a tier with no model.
+    @State private var hasDrawnStageFrame = false
+    /// Whether this tier's coin was given up on (it failed to load, or drew
+    /// nothing in time). A slot built after an earlier one gave up starts out
+    /// that way, so a tier promotion that rebuilds the slot cannot bring back a
+    /// coin that already failed.
+    @State private var hasGivenUpOnCoin: Bool
+    /// Whether the load holds back until the tier swap has settled. It is set
+    /// for any slot built after the launch's first load, not only a tier
+    /// promotion (see `waitOutTierSwapIfNeeded`, which also needs a model still
+    /// to load).
+    @State private var waitsForTierSwapToSettle: Bool
+
+    /// How long a slot has, from the moment loading starts, to draw the first
+    /// frame that makes it ready (the coin's in a tier with a model, the
+    /// stage's in one without) before the flat badge is kept and the splash
+    /// stops waiting. Loading starts inside the splash's still hold, so the
+    /// fallback is decided (and the splash can leave) before
+    /// `LaunchSplashTimeline.hardCap`, which stays the last resort for a slot
+    /// that never reports at all.
+    private static let firstFrameDeadlineSeconds: Double = 6
+
+    init(badge: BadgeRef) {
+        self.badge = badge
+        let modelDatasetName = Badge3DModels.datasetName(for: badge)
+        self.modelDatasetName = modelDatasetName
+        _studio = State(initialValue: Badge3DStudio.loaded)
+        _hasGivenUpWaitingForStudio = State(initialValue: Badge3DStudio.hasBeenGivenUpOn)
+        _scene = State(initialValue: modelDatasetName.flatMap { Badge3DScene.loaded(datasetName: $0) })
+        _hasGivenUpOnCoin = State(
+            initialValue: modelDatasetName.map { Badge3DScene.hasGivenUp(on: $0) } ?? false
+        )
+        _waitsForTierSwapToSettle = State(initialValue: Badge3DStudio.hasStartedLoading)
+    }
+
+    var body: some View {
+        // Read here, not inside the `.task` closures or the first-frame
+        // closure: an environment read from a captured view copy can come back
+        // as the key's default (the same rule `MainTabView.body` follows).
+        let mayLoad = homeBadgeMayLoad
+        let markReady = markHomeBadgeReady
+        // The slice holds the badge's place in the card's layout. The stage is
+        // far bigger and spills past it on every side without moving anything
+        // (see `Badge3DLayout.stageRect`); it scrolls with the card, and the
+        // title, drawn after it, sits on top of its black lower edge.
+        Color.clear
+            .frame(
+                width: Badge3DLayout.sliceSize.width,
+                height: Badge3DLayout.sliceSize.height
+            )
+            .overlay(alignment: .top) {
+                stageLayer(markReady: markReady)
+            }
+            .overlay(alignment: .top) {
+                flatBadgeOnStageLayer
+            }
+            .overlay {
+                flatBadgeWithoutStageLayer
+            }
+            .onGeometryChange(
+                for: CGFloat.self,
+                of: { proxy in proxy.frame(in: .global).minY },
+                action: { sliceTopInWindow = $0 }
+            )
+            // RealityKit's first use freezes the main thread while its engine
+            // starts (about 0.4s on the simulator). Home mounts under the launch
+            // splash, so loading waits for `MainTabView` to say the splash is in
+            // its still hold, where a freeze is invisible, instead of stalling
+            // the splash's moving animation.
+            .task(id: mayLoad) {
+                guard mayLoad else { return }
+                await waitOutTierSwapIfNeeded()
+                // A slot torn down during the wait (a second promotion) must
+                // not start a load nobody will show.
+                guard !Task.isCancelled else { return }
+                await loadStageAndCoin(markReady: markReady)
+            }
+            // The clock runs ALONGSIDE the load, never after it: a load that
+            // hangs would otherwise never reach the line that gives up on it.
+            // Both tasks start and are cancelled together, and both wait out
+            // the tier swap first, so the clock starts with the load.
+            .task(id: mayLoad) {
+                guard mayLoad else { return }
+                await waitOutTierSwapIfNeeded()
+                await fallBackIfNoFrameDrawnInTime(markReady: markReady)
+            }
+            .allowsHitTesting(false)
+            .accessibilityHidden(true)
+    }
+
+    // MARK: Layers
+
+    /// The stage, and the coin on it once there is one to draw. Far bigger than
+    /// the slice, so it is placed by its own top edge.
+    @ViewBuilder
+    private func stageLayer(markReady: @escaping @MainActor () -> Void) -> some View {
+        if let studio {
+            Badge3DRenderer(
+                studio: studio,
+                scene: hasGivenUpOnCoin ? nil : scene,
+                coinTopInWindow: coinTopInWindow,
+                onFirstFrame: { kind in
+                    handleFirstFrame(of: kind, markReady: markReady)
+                }
+            )
+            .frame(
+                width: Badge3DLayout.stageSize.width,
+                height: Badge3DLayout.stageSize.height
+            )
+            .offset(y: Badge3DLayout.stageTopInSlice)
+        }
+    }
+
+    /// The flat badge on the stage: the whole show for a tier with no model,
+    /// and a stand-in for the coin until its first frame (or for good, once the
+    /// coin was given up on), so the slot is never empty.
+    @ViewBuilder
+    private var flatBadgeOnStageLayer: some View {
+        if studio != nil, !hasDrawnCoinFrame {
+            BadgeFlatOnStage(badge: badge)
+                .offset(y: Badge3DLayout.flatBadgeTopInSlice)
+        }
+    }
+
+    @ViewBuilder
+    private var flatBadgeWithoutStageLayer: some View {
+        if studio == nil, hasGivenUpWaitingForStudio {
+            BadgeFlatWithoutStage(
+                badge: BadgeView(ref: badge, size: Badge3DLayout.fallbackBadgeSize)
+            )
+        }
+    }
+
+    // MARK: Loading and the launch splash
+
+    /// A promotion into a tier with a 3D model rebuilds the slot while the
+    /// `tierPromotionSwap` animation is still running, and RealityKit's first
+    /// use freezes the main thread. Holding the load back until the swap has
+    /// settled keeps that freeze out of the animation, which shows the flat
+    /// badge meanwhile. Only a slot with a model still to load waits.
+    private func waitOutTierSwapIfNeeded() async {
+        guard waitsForTierSwapToSettle, modelDatasetName != nil, scene == nil else { return }
+        try? await Task.sleep(nanoseconds: UInt64(Animations.tierPromotionSwapSettleSeconds * 1_000_000_000))
+    }
+
+    private func loadStageAndCoin(markReady: @MainActor () -> Void) async {
+        guard let loadedStudio = await Badge3DStudio.shared() else {
+            // No stage: the flat badge stands alone and tells the splash itself.
+            // A cancelled slot leaves that to the one that replaces it.
+            if !Task.isCancelled {
+                hasGivenUpWaitingForStudio = true
+            }
+            return
+        }
+        studio = loadedStudio
+        // A tier with no model is done: its stage's first frame tells the
+        // splash (see `handleFirstFrame`).
+        guard let modelDatasetName else { return }
+        guard !hasGivenUpOnCoin else {
+            // An earlier slot gave up on this coin: the flat badge is already
+            // standing, and the splash must not wait for a coin that will not
+            // come.
+            markReady()
+            return
+        }
+        let loadedScene = await Badge3DScene.shared(datasetName: modelDatasetName, studio: loadedStudio)
+        scene = loadedScene
+        // A failed load is cached as nil, so every slot of this launch would
+        // fail the same way. A cancelled slot leaves that to the one that
+        // replaces it.
+        if loadedScene == nil, !Task.isCancelled {
+            keepFlatBadge(markReady: markReady)
+        }
+    }
+
+    private func fallBackIfNoFrameDrawnInTime(markReady: @MainActor () -> Void) async {
+        try? await Task.sleep(nanoseconds: UInt64(Self.firstFrameDeadlineSeconds * 1_000_000_000))
+        // A cancelled clock (the slot was torn down by a tier promotion, a mode
+        // switch or a tab switch) must never fall back: the cancelled sleep
+        // returns early, and without this it would blame a coin that was simply
+        // taken away.
+        guard !Task.isCancelled else { return }
+        // A model tier that already gave up has already told the splash.
+        if !hasDrawnReadyFrame, !hasGivenUpOnCoin {
+            keepFlatBadge(markReady: markReady)
+        }
+    }
+
+    /// The frame that makes the slot ready: the coin's first in a tier with a
+    /// model, the stage's first in one without.
+    private var hasDrawnReadyFrame: Bool {
+        modelDatasetName == nil ? hasDrawnStageFrame : hasDrawnCoinFrame
+    }
+
+    /// Keeps the flat badge as what the slot shows and tells the splash to stop
+    /// waiting. For a tier with a model that also gives up its coin for the
+    /// rest of the launch. If the studio is still loading (the stuck load the
+    /// clock exists for), the flat badge stands alone until it arrives, for
+    /// this slot and every slot built after it, so no slot is empty while the
+    /// splash leaves. Never waits for a stage frame: it may be stuck behind the
+    /// very coin frame that failed.
+    private func keepFlatBadge(markReady: @MainActor () -> Void) {
+        if let modelDatasetName {
+            Badge3DScene.giveUp(on: modelDatasetName)
+            hasGivenUpOnCoin = true
+        }
+        if studio == nil {
+            Badge3DStudio.giveUp()
+            hasGivenUpWaitingForStudio = true
+        }
+        markReady()
+    }
+
+    private func handleFirstFrame(of kind: Badge3DFrameKind, markReady: @MainActor () -> Void) {
+        switch kind {
+        case .withCoin:
+            // A coin frame already in flight when the clock gave up lands late:
+            // the flat badge has taken over (the renderer now draws the stage
+            // alone), so the coin must not count as drawn, or the flat badge
+            // would be hidden and the slot left a bare stage.
+            guard !hasGivenUpOnCoin else { return }
+            hasDrawnCoinFrame = true
+            markReady()
+        case .stageOnly:
+            hasDrawnStageFrame = true
+            // In a tier with a model the stage is only what the flat badge
+            // stands on while the coin loads (or after it was given up on, when
+            // the fallback has already told the splash), so its frames never
+            // tell the splash anything.
+            if modelDatasetName == nil {
+                markReady()
+            }
+        }
+    }
+
+    private var coinTopInWindow: CGFloat? {
+        guard let sliceTopInWindow else { return nil }
+        return sliceTopInWindow + Badge3DLayout.coinTopInSlice
+    }
+}
+
+/// The UIKit bridge behind `Badge3DView`.
+@available(iOS 18.0, *)
+private struct Badge3DRenderer: UIViewRepresentable {
+    let studio: Badge3DStudio
+    /// The coin to draw on the stage; nil draws the stage alone.
+    let scene: Badge3DScene?
+    /// Where the full-size coin's top edge sits, in window points; nil until it
+    /// has been measured, which leaves the resting coin showing.
+    let coinTopInWindow: CGFloat?
+    /// Called once per kind of frame, when the first frame of that kind has
+    /// finished drawing.
+    let onFirstFrame: @MainActor (Badge3DFrameKind) -> Void
+
+    func makeUIView(context: Context) -> Badge3DRenderUIView {
+        Badge3DRenderUIView(studio: studio, onFirstFrame: onFirstFrame)
+    }
+
+    func updateUIView(_ uiView: Badge3DRenderUIView, context: Context) {
+        uiView.show(scene: scene, coinTopInWindow: coinTopInWindow)
+    }
+}
+
+/// A view whose backing layer is a Metal layer the stage is drawn into, with
+/// the coin on it when it has one. It draws only when what it shows changes (a
+/// scroll, a new size, a coin arriving), never on a timer, so a still Home
+/// costs no rendering at all. The stage alone never changes with the scroll, so
+/// it is drawn once per size.
+@available(iOS 18.0, *)
+private final class Badge3DRenderUIView: UIView {
+    override static var layerClass: AnyClass { CAMetalLayer.self }
+
+    private let studio: Badge3DStudio
+    /// The coin drawn on the stage; nil draws the stage alone.
+    private var scene: Badge3DScene?
+    /// The pose the scroll position asks for. It starts full grown: the
+    /// resting, face-on coin.
+    private var requestedGrowth: Float = 1
+    /// The pose of the coin frame on screen or being drawn; nil forces a
+    /// redraw.
+    private var drawnGrowth: Float?
+    /// Whether the stage-alone frame is on screen or being drawn at the current
+    /// size.
+    private var isStageDrawn = false
+    /// Frames are drawn one at a time: while one is in flight, scroll updates
+    /// only move `requestedGrowth`, and the finished frame then chases the
+    /// latest request. Asking the layer for a drawable on every scroll event
+    /// would block the main thread once all of its drawables were busy.
+    private var frameInFlight: Badge3DFrameKind?
+    /// The kinds of frame already reported, so each is reported only once.
+    private var reportedFrameKinds: Set<Badge3DFrameKind> = []
+    private let onFirstFrame: @MainActor (Badge3DFrameKind) -> Void
+
+    init(studio: Badge3DStudio, onFirstFrame: @escaping @MainActor (Badge3DFrameKind) -> Void) {
+        self.studio = studio
+        self.onFirstFrame = onFirstFrame
+        super.init(frame: .zero)
+        backgroundColor = .black
+        // The stage spreads over the neighboring content; it must never take
+        // a touch meant for it.
+        isUserInteractionEnabled = false
+        if let metalLayer = layer as? CAMetalLayer {
+            metalLayer.device = studio.device
+            // The AgX view transform already outputs display-encoded sRGB,
+            // so the layer stores the values as they are. The finish pass
+            // dithers, so 8 bits show no banding.
+            metalLayer.pixelFormat = .bgra8Unorm
+            // The final pass writes into the drawable from a compute shader.
+            metalLayer.framebufferOnly = false
+        }
+    }
+
+    required init?(coder: NSCoder) {
+        fatalError("init(coder:) has not been implemented")
+    }
+
+    override func layoutSubviews() {
+        super.layoutSubviews()
+        guard let metalLayer = layer as? CAMetalLayer else { return }
+        let scale = traitCollection.displayScale
+        metalLayer.contentsScale = scale
+        // Rounded, so a size like 423.33pt at 3x gives exactly 1270 pixels.
+        metalLayer.drawableSize = CGSize(
+            width: (bounds.width * scale).rounded(), height: (bounds.height * scale).rounded()
+        )
+        drawnGrowth = nil
+        isStageDrawn = false
+        drawRequestedFrameIfIdle()
+    }
+
+    func show(scene newScene: Badge3DScene?, coinTopInWindow: CGFloat?) {
+        if newScene !== scene {
+            scene = newScene
+            // Whatever the view shows now has not been drawn yet.
+            drawnGrowth = nil
+            isStageDrawn = false
+        }
+        if let coinTopInWindow {
+            requestedGrowth = Badge3DLayout.growth(
+                coinTopInWindow: coinTopInWindow,
+                safeAreaTop: window?.safeAreaInsets.top ?? 0
+            )
+        }
+        drawRequestedFrameIfIdle()
+    }
+
+    /// Whether what the view shows differs from what is on screen.
+    private var isFrameNeeded: Bool {
+        scene == nil ? !isStageDrawn : requestedGrowth != drawnGrowth
+    }
+
+    private func drawRequestedFrameIfIdle() {
+        guard frameInFlight == nil,
+              isFrameNeeded,
+              let metalLayer = layer as? CAMetalLayer,
+              metalLayer.drawableSize.width > 0,
+              let drawable = metalLayer.nextDrawable()
+        else { return }
+        let onComplete: @Sendable () -> Void = { [weak self] in
+            guard let self else { return }
+            DispatchQueue.main.async {
+                self.frameDidFinish()
+            }
+        }
+        do {
+            if let scene {
+                try scene.render(growth: requestedGrowth, to: drawable, onComplete: onComplete)
+                drawnGrowth = requestedGrowth
+                frameInFlight = .withCoin
+            } else {
+                try studio.imagePipeline.renderStageOnly(to: drawable, onComplete: onComplete)
+                isStageDrawn = true
+                frameInFlight = .stageOnly
+            }
+        } catch {
+            // Nothing was drawn; the next pose request tries again.
+        }
+    }
+
+    private func frameDidFinish() {
+        let finishedKind = frameInFlight
+        frameInFlight = nil
+        if let finishedKind, reportedFrameKinds.insert(finishedKind).inserted {
+            onFirstFrame(finishedKind)
+        }
+        drawRequestedFrameIfIdle()
+    }
+}
+
+/// What every model's scene shares: the image pipeline that finishes each frame
+/// (the stage plate, Blender's view transform, the shaders) and the studio's
+/// environment lighting, right way up and upside down for the mirror image.
+/// Loaded once per launch by whichever slot needs it first; each model's coin is
+/// then loaded on top of it (`Badge3DScene`).
+///
+/// The studio's lights (`Badge3DStudioLight.all`) are plain descriptions, so
+/// they are shared by construction; each stage makes its own light entities from
+/// them, because an entity can belong to only one parent.
+@available(iOS 18.0, *)
+@MainActor
+private final class Badge3DStudio {
+    let imagePipeline: Badge3DImagePipeline
+    let lighting: EnvironmentResource
+    let mirroredLighting: EnvironmentResource
+
+    var device: MTLDevice { imagePipeline.device }
+
+    // MARK: Loading
+
+    private static var sharedLoad: Task<Badge3DStudio?, Never>?
+
+    /// The studio once its load has finished, for a slot built after that: it
+    /// can start with the stage in place instead of waiting a turn for the
+    /// finished load task.
+    private(set) static var loaded: Badge3DStudio?
+
+    /// Whether the studio was given up on: its load failed, or some slot of
+    /// this launch stopped waiting for it. Every slot built afterwards shows
+    /// the flat badge alone at once until the studio arrives, instead of an
+    /// empty spot. It stays set after the studio arrives, when the slots no
+    /// longer look at it.
+    private(set) static var hasBeenGivenUpOn = false
+
+    static func giveUp() {
+        hasBeenGivenUpOn = true
+    }
+
+    static var hasStartedLoading: Bool { sharedLoad != nil }
+
+    /// The one shared studio, loaded on first use. Nil if an asset is missing
+    /// or fails to load, which makes the hero slot show its flat badge without a
+    /// stage instead of crashing.
+    static func shared() async -> Badge3DStudio? {
+        if let sharedLoad { return await sharedLoad.value }
+        let load = Task {
+            let studio = try? await Badge3DStudio.load()
+            loaded = studio
+            if studio == nil {
+                giveUp()
+            }
+            return studio
+        }
+        sharedLoad = load
+        return await load.value
+    }
+
+    private static func load() async throws -> Badge3DStudio {
+        // Reading and decoding the bundled files is plain file work, so it
+        // stays off the main thread. RealityKit's own loaders are async.
+        let files = try await Task.detached(priority: .userInitiated) {
+            try Badge3DFiles.readStudio()
+        }.value
+        let imagePipeline = try await Badge3DImagePipeline(
+            agxCube: files.agxCube, stagePlate: files.stagePlate
+        )
+        let lighting = try await EnvironmentResource(equirectangular: files.environmentMap)
+        let mirroredLighting = try await EnvironmentResource(
+            equirectangular: files.upsideDownEnvironmentMap
+        )
+        return Badge3DStudio(
+            imagePipeline: imagePipeline, lighting: lighting, mirroredLighting: mirroredLighting
+        )
+    }
+
+    private init(
+        imagePipeline: Badge3DImagePipeline,
+        lighting: EnvironmentResource,
+        mirroredLighting: EnvironmentResource
+    ) {
+        self.imagePipeline = imagePipeline
+        self.lighting = lighting
+        self.mirroredLighting = mirroredLighting
+    }
+}
+
+/// One model's 3D scene, built once per launch and shared by every hero slot
+/// showing it: the coin and its mirror image under the floor, each on its own
+/// stage, finished by the shared studio's image pipeline the way Blender's
+/// compositor finished the reference render. It renders one frame per request
+/// (`render(growth:to:onComplete:)`), never continuously.
+///
+/// Scene units follow the Blender handoff: Y up, the coin faces +Z, 6.03
+/// units across, standing on a floor at Y = -2.895.
+@available(iOS 18.0, *)
+@MainActor
+private final class Badge3DScene {
+    /// The floor's height. The coin sinks 0.12 units into it, as on the
+    /// Blender stage, and the model file comes with that slice cut away at
+    /// this same height (rule 5 of the export's EXPORT_RULES.md), because
+    /// RealityKit cannot hide geometry under a floor. The two must stay equal.
+    nonisolated static let floorY: Float = -2.895
+
+    private let studio: Badge3DStudio
+    private let coinStage: Badge3DStage
+    private let reflectionStage: Badge3DStage
+    private let usesGemShader: Bool
+    private static let gemGlintStrength: Float = 0.035
+
+    // MARK: Loading
+
+    /// One load per model, keyed by its data set name, so each model loads at
+    /// most once per launch and only a model that is shown is loaded.
+    private static var loadsByDataset: [String: Task<Badge3DScene?, Never>] = [:]
+    private static var loadedByDataset: [String: Badge3DScene] = [:]
+
+    /// The models some slot of this launch gave up on (the load failed, or no
+    /// frame drew in time). Every slot built afterwards shows that tier's flat
+    /// badge at once instead of trying again. Per model: a failed Iron does not
+    /// make Silver flat.
+    private static var datasetsGivenUpOn: Set<String> = []
+
+    static func loaded(datasetName: String) -> Badge3DScene? {
+        loadedByDataset[datasetName]
+    }
+
+    static func hasGivenUp(on datasetName: String) -> Bool {
+        datasetsGivenUpOn.contains(datasetName)
+    }
+
+    static func giveUp(on datasetName: String) {
+        datasetsGivenUpOn.insert(datasetName)
+    }
+
+    /// The scene of the model in `datasetName`, loaded on first use. Nil if an
+    /// asset is missing or fails to load, which makes the hero slot keep its
+    /// flat badge instead of crashing.
+    static func shared(datasetName: String, studio: Badge3DStudio) async -> Badge3DScene? {
+        if let load = loadsByDataset[datasetName] { return await load.value }
+        let load = Task {
+            let scene = try? await Badge3DScene.load(datasetName: datasetName, studio: studio)
+            loadedByDataset[datasetName] = scene
+            return scene
+        }
+        loadsByDataset[datasetName] = load
+        return await load.value
+    }
+
+    private static func load(datasetName: String, studio: Badge3DStudio) async throws -> Badge3DScene {
+        // Copying the bundled model out is plain file work, so it stays off the
+        // main thread.
+        let modelURL = try await Task.detached(priority: .userInitiated) {
+            try Badge3DFiles.writeModelFile(datasetName: datasetName)
+        }.value
+        let coin = try await Entity(contentsOf: modelURL)
+        try await restoreBrushedSteel(in: coin)
+        let mirroredCoin = coin.clone(recursive: true)
+        try await mirrorTopToBottom(mirroredCoin)
+        // After the clone and the flip: each copy builds its facet planes
+        // from its own mesh, and the mirror image's light is flipped.
+        let usesGemShader = await applyGemMaterial(to: coin, isMirrorImage: false)
+        _ = await applyGemMaterial(to: mirroredCoin, isMirrorImage: true)
+        let coinStage = try Badge3DStage(
+            coin: coin,
+            environment: studio.lighting,
+            lights: Badge3DStudioLight.all,
+            isMirrorImage: false
+        )
+        // The mirror image stands where the coin's reflection appears, so it
+        // is lit the way the reflection is: by the studio flipped through the
+        // floor.
+        let reflectionStage = try Badge3DStage(
+            coin: mirroredCoin,
+            environment: studio.mirroredLighting,
+            lights: Badge3DStudioLight.all.map { $0.mirroredThroughFloor() },
+            isMirrorImage: true
+        )
+        return Badge3DScene(
+            studio: studio,
+            coinStage: coinStage,
+            reflectionStage: reflectionStage,
+            usesGemShader: usesGemShader
+        )
+    }
+
+    private init(
+        studio: Badge3DStudio,
+        coinStage: Badge3DStage,
+        reflectionStage: Badge3DStage,
+        usesGemShader: Bool
+    ) {
+        self.studio = studio
+        self.coinStage = coinStage
+        self.reflectionStage = reflectionStage
+        self.usesGemShader = usesGemShader
+    }
+
+    /// Gives the brushed ring back the stretched highlight of its circular
+    /// machining marks, which the export dropped: anisotropy 0.4, running
+    /// around the coin.
+    private static func restoreBrushedSteel(in coin: Entity) async throws {
+        guard let casing = coin.findEntity(named: "Casing___smooth_rounded_outer_edge_mobile_geometry"),
+              var model = casing.components[ModelComponent.self],
+              let brushedIndex = model.materials.firstIndex(where: {
+                  $0.name?.hasPrefix("Silver___circumferential_brushed_steel") == true
+              }),
+              var brushed = model.materials[brushedIndex] as? PhysicallyBasedMaterial
+        else { return }
+        brushed.anisotropyLevel = 0.4
+        brushed.anisotropyAngle = 0.0
+        model.materials[brushedIndex] = brushed
+        // The highlight stretches along the mesh's tangents, and the imported
+        // ones follow the texture atlas, not the machining direction.
+        let contents = model.mesh.contents
+        let edited = await Task.detached(priority: .userInitiated) {
+            Badge3DMeshEdits.withCircumferentialTangents(contents, onPartsUsing: brushedIndex)
+        }.value
+        model.mesh = try await MeshResource(from: edited)
+        casing.components.set(model)
+    }
+
+    /// Flips every mesh under `entity` top to bottom, for the mirror image
+    /// under the floor. The flip is baked into the mesh data because RealityKit
+    /// lights a model with a negative scale as if its normals pointed inward.
+    private static func mirrorTopToBottom(_ entity: Entity) async throws {
+        if var model = entity.components[ModelComponent.self] {
+            let contents = model.mesh.contents
+            let mirrored = await Task.detached(priority: .userInitiated) {
+                Badge3DMeshEdits.mirroredTopToBottom(contents)
+            }.value
+            model.mesh = try await MeshResource(from: mirrored)
+            entity.components.set(model)
+        }
+        for child in entity.children {
+            try await mirrorTopToBottom(child)
+        }
+    }
+
+    /// Swaps the material named `Badge3DGem.materialName` for the gem shader,
+    /// on the coin or on its mirror image. A model without that material
+    /// (every tier but the Diamond) is left exactly as it is; so is a gem
+    /// whose shader or planes cannot be built, which then keeps its plain
+    /// material and is lit like any other model.
+    private static func applyGemMaterial(to coin: Entity, isMirrorImage: Bool) async -> Bool {
+        guard let gemEntity = entityWithGemMaterial(in: coin),
+              var model = gemEntity.components[ModelComponent.self],
+              let gem = await Badge3DGem.shared(),
+              let gemMaterial = try? await gem.material(
+                  for: model.mesh.contents, isMirrorImage: isMirrorImage
+              )
+        else { return false }
+        for (index, material) in model.materials.enumerated()
+        where material.name == Badge3DGem.materialName {
+            model.materials[index] = gemMaterial
+        }
+        gemEntity.components.set(model)
+        return true
+    }
+
+    private static func entityWithGemMaterial(in entity: Entity) -> Entity? {
+        if let model = entity.components[ModelComponent.self],
+           model.materials.contains(where: { $0.name == Badge3DGem.materialName }) {
+            return entity
+        }
+        for child in entity.children {
+            if let found = entityWithGemMaterial(in: child) { return found }
+        }
+        return nil
+    }
+
+    // MARK: Rendering
+
+    /// Poses both stages for `growth` and draws one finished frame into
+    /// `drawable`, which is presented as soon as the GPU is done.
+    /// `onComplete` runs on a background thread after that.
+    func render(
+        growth: Float,
+        to drawable: CAMetalDrawable,
+        onComplete: @escaping @Sendable () -> Void
+    ) throws {
+        coinStage.pose(growth: growth, mirrored: false)
+        reflectionStage.pose(growth: growth, mirrored: true)
+        try studio.imagePipeline.render(
+            coin: coinStage.renderer,
+            reflection: reflectionStage.renderer,
+            growth: growth,
+            gemGlintStrength: usesGemShader ? Self.gemGlintStrength : 0,
+            to: drawable,
+            onComplete: onComplete
+        )
+    }
+}
+
+/// What the Diamond's gem look is made of: the surface shader that traces the
+/// studio's light through the stone (`BadgeGemSurface.metal`) and the studio's
+/// light it reads. Loaded once per launch, by the first model that has a gem
+/// material, and shared by every slot. Each coin copy then builds its own
+/// material, because the shader needs that copy's facet planes (the mirror
+/// image's mesh is flipped, so its planes are too).
+///
+/// RealityKit's own materials cannot bend light through a stone, so the gem is
+/// a `CustomMaterial`: our Metal code runs for every pixel of the gem. It
+/// needs a convex gem (`GemFacetPlanes`), so a model that is not one keeps
+/// its plain material.
+@available(iOS 18.0, *)
+@MainActor
+private final class Badge3DGem {
+    /// A model material with this name asks for the gem shader.
+    nonisolated static let materialName = "DiamondGem"
+    /// The shader function in `BadgeGemSurface.metal`.
+    private static let shaderFunctionName = "badgeGemSurface"
+
+    private let surfaceShader: CustomMaterial.SurfaceShader
+    /// The studio's full-strength light, as an equirectangular HDR texture
+    /// with its mipmaps (the shader reads a sharp and a blurred level).
+    private let studioLight: TextureResource
+
+    // MARK: Loading
+
+    private static var sharedLoad: Task<Badge3DGem?, Never>?
+
+    /// The one shared gem, loaded on first use. Nil if the shader or the
+    /// light fails to load, which leaves the Diamond on its plain material.
+    static func shared() async -> Badge3DGem? {
+        if let sharedLoad { return await sharedLoad.value }
+        let load = Task { try? await Badge3DGem.load() }
+        sharedLoad = load
+        return await load.value
+    }
+
+    private static func load() async throws -> Badge3DGem {
+        guard let library = MTLCreateSystemDefaultDevice()?.makeDefaultLibrary() else {
+            throw Badge3DFiles.LoadError(failedItem: "default Metal library")
+        }
+        let surfaceShader = CustomMaterial.SurfaceShader(named: shaderFunctionName, in: library)
+        let lightImage = try await Task.detached(priority: .userInitiated) {
+            try Badge3DFiles.readGemEnvironment()
+        }.value
+        let studioLight = try await TextureResource(
+            image: lightImage,
+            options: TextureResource.CreateOptions(semantic: .hdrColor, mipmapsMode: .allocateAndGenerateAll)
+        )
+        return Badge3DGem(surfaceShader: surfaceShader, studioLight: studioLight)
+    }
+
+    private init(surfaceShader: CustomMaterial.SurfaceShader, studioLight: TextureResource) {
+        self.surfaceShader = surfaceShader
+        self.studioLight = studioLight
+    }
+
+    // MARK: Material
+
+    /// The gem material for the mesh `contents`: unlit (the shader's result
+    /// is the color, because the studio's light is already in it), with the
+    /// mesh's facet planes in the base color texture slot (one pixel per
+    /// plane) and the studio's light in the custom one. Nil when the mesh is
+    /// not a convex gem.
+    func material(for contents: MeshResource.Contents, isMirrorImage: Bool) async throws -> CustomMaterial? {
+        let planes = await Task.detached(priority: .userInitiated) {
+            GemFacetPlanes.outwardPlanes(ofTriangles: Self.triangleCorners(of: contents))
+        }.value
+        guard let planes else { return nil }
+        var material = try CustomMaterial(surfaceShader: surfaceShader, lightingModel: .unlit)
+        material.baseColor.texture = CustomMaterial.Texture(try Self.planeTexture(for: planes))
+        material.custom.texture = CustomMaterial.Texture(studioLight)
+        // The mirror image is lit by the studio flipped through the floor.
+        material.custom.value = SIMD4(isMirrorImage ? 1 : 0, 0, 0, 0)
+        return material
+    }
+
+    /// Every triangle of the mesh as three consecutive corners.
+    nonisolated private static func triangleCorners(of contents: MeshResource.Contents) -> [SIMD3<Float>] {
+        var corners: [SIMD3<Float>] = []
+        for model in contents.models {
+            for part in model.parts {
+                let positions = part.positions.elements
+                if let triangleIndices = part.triangleIndices {
+                    corners += triangleIndices.elements.map { positions[Int($0)] }
+                } else {
+                    corners += positions
+                }
+            }
+        }
+        return corners
+    }
+
+    /// One pixel per plane: the unit outward normal in red, green and blue and
+    /// the offset in alpha. The shader reads it at half precision, which is
+    /// why it traces with a small tolerance (see `BadgeGemSurface.metal`).
+    private static func planeTexture(for planes: [SIMD4<Float>]) throws -> TextureResource {
+        let planeData = planes.withUnsafeBytes { Data($0) }
+        return try TextureResource(
+            dimensions: .dimensions(width: planes.count, height: 1),
+            format: .raw(pixelFormat: .rgba32Float),
+            contents: .init(mipmapLevels: [.mip(data: planeData, bytesPerRow: planeData.count)])
+        )
+    }
+}
+
+/// One RealityKit renderer with its own copy of the studio: a coin on a
+/// turntable, the lights, the camera. The coin and its mirror image each get
+/// one because RealityKit cannot keep a light off an entity, and the mirror
+/// image needs the studio flipped through the floor while the coin needs it
+/// the right way up.
+@available(iOS 18.0, *)
+@MainActor
+private final class Badge3DStage {
+    static let cameraPosition: SIMD3<Float> = [0, 1.8, 23]
+    static let cameraTarget: SIMD3<Float> = [0, -0.55, 0]
+    /// A 75mm lens on a 36mm-wide sensor that spans the master frame's 1080
+    /// pixels.
+    static let focalLengthInPixels: Float = 75 / 36 * 1080
+    /// The environment map's brightness, in stops. The bundled map already
+    /// carries each light's fitted share (see `Badge3DFiles`), so it is
+    /// used as it is.
+    private static let environmentExposure: Float = 0
+
+    let renderer: RealityRenderer
+    private let turntable = Entity()
+
+    init(
+        coin: Entity,
+        environment: EnvironmentResource,
+        lights: [Badge3DStudioLight],
+        isMirrorImage: Bool
+    ) throws {
+        renderer = try RealityRenderer()
+        renderer.lighting.resource = environment
+        renderer.lighting.intensityExponent = Self.environmentExposure
+        // Transparent where there is no coin, so the image pipeline can lay
+        // the coin over its reflection.
+        renderer.cameraSettings.colorBackground = .color(CGColor(gray: 0, alpha: 0))
+        // Scene-linear light out: the image pipeline applies Blender's own
+        // view transform instead of RealityKit's.
+        renderer.cameraSettings.isToneMappingEnabled = false
+        // The reflection is dim, faded and meant to look soft, so only the
+        // coin pays for 4x multisampling.
+        renderer.cameraSettings.antialiasing = isMirrorImage ? .none : .multisample4X
+
+        let stage = Entity()
+        // The environment map was baked with its center facing +Z, the coin's
+        // front. RealityKit centers an environment on -Z, so the whole stage
+        // turns half a circle to face its lights the way it did in Blender.
+        stage.orientation = simd_quatf(angle: .pi, axis: [0, 1, 0])
+        turntable.addChild(coin)
+        stage.addChild(turntable)
+        for light in lights {
+            stage.addChild(light.makeEntity())
+        }
+        let camera = Entity()
+        camera.components.set(
+            PerspectiveCameraComponent(
+                near: 1,
+                far: 100,
+                fieldOfViewInDegrees: Self.horizontalFieldOfViewDegrees,
+                // Blender fitted the sensor horizontally; RealityKit's field
+                // of view is vertical unless told otherwise.
+                fieldOfViewOrientation: .horizontal
+            )
+        )
+        stage.addChild(camera)
+        camera.look(at: Self.cameraTarget, from: Self.cameraPosition, relativeTo: stage)
+        renderer.entities.append(stage)
+        renderer.activeCamera = camera
+    }
+
+    private static var horizontalFieldOfViewDegrees: Float {
+        let halfWidthInPixels: Float = 540
+        return 2 * atan(halfWidthInPixels / focalLengthInPixels) * 180 / .pi
+    }
+
+    /// The Blender animation at `growth` (its t, 0 to 1, all linear): one full
+    /// turn about +Y, uniform scale t, and the center rising from the floor to
+    /// Y = 0. The angle comes from t directly; interpolating between the 0 and
+    /// 360 degree orientations would find no spin at all. The mirror image
+    /// takes the same pose reflected through the floor: its mesh is already
+    /// flipped top to bottom, and a flip commutes with a turn about Y, so only
+    /// its center moves, as far below the floor as the coin's is above it.
+    func pose(growth: Float, mirrored: Bool) {
+        // At zero size every transform collapses to a point; hide the coin
+        // rather than hand the renderer a degenerate matrix.
+        turntable.isEnabled = growth > 0
+        guard growth > 0 else { return }
+        let centerY = Badge3DScene.floorY * (1 - growth)
+        turntable.transform = Transform(
+            scale: SIMD3(repeating: growth),
+            rotation: simd_quatf(angle: Self.spinAngle(growth: growth), axis: [0, 1, 0]),
+            translation: [0, mirrored ? 2 * Badge3DScene.floorY - centerY : centerY, 0]
+        )
+    }
+
+    /// How far the coin has turned about +Y at `growth`, in radians.
+    nonisolated static func spinAngle(growth: Float) -> Float {
+        2 * .pi * growth
+    }
+}
+
+/// A point light standing in for part of one of the Blender studio's area
+/// lights (see `all`).
+@available(iOS 18.0, *)
+private struct Badge3DStudioLight {
+    let position: SIMD3<Float>
+    /// Linear RGB, as in the Blender scene.
+    let color: SIMD3<Float>
+    /// RealityKit lumens, calibrated against the Blender light's own render.
+    let intensity: Float
+
+    /// The studio's lights, placed where Blender's are. An environment map
+    /// holds lights infinitely far away, so every point of a flat emblem facet
+    /// sees them from the same direction and the facet turns one flat tone;
+    /// these nearby lights are what give the facets Blender's gradients.
+    ///
+    /// RealityKit has no area lights and draws at most 8 lights, so each
+    /// Blender softbox is stood in for by points on its surface, and the
+    /// overhead spot, which barely reaches the coin's face, is left out
+    /// (adding it measured worse). The intensities were fitted, together
+    /// with how much of each light stays in the environment map (see the
+    /// `Badge3DEnvironment` data set), to Blender's per-light renders at
+    /// poses 0, 20, 45, 90 and 180 degrees, minimizing the difference after
+    /// the AgX view transform.
+    static let all: [Badge3DStudioLight] = [
+        // Key, the tall softbox up and to the left.
+        Badge3DStudioLight(position: [-5.4, 3.5, 2.8], color: [1, 0.98, 0.95], intensity: 1_156_500),
+        // Rim, the narrow strip to the right: its upper end, middle and lower end.
+        Badge3DStudioLight(position: [5.393, 2.023, 3.426], color: [0.98, 0.99, 1], intensity: 226_633),
+        Badge3DStudioLight(position: [4.8, 1.8, 4.2], color: [0.98, 0.99, 1], intensity: 226_633),
+        Badge3DStudioLight(position: [4.207, 1.577, 4.974], color: [0.98, 0.99, 1], intensity: 226_633),
+        // Top, the crown light above.
+        Badge3DStudioLight(position: [-0.3, 5.1, 3.5], color: [1, 0.99, 0.98], intensity: 958_800),
+        // Bottom, the narrow reflector low on the left: its lower and upper ends.
+        Badge3DStudioLight(position: [-2.075, -2.375, 4.375], color: [1, 0.985, 0.96], intensity: 300_000),
+        Badge3DStudioLight(position: [-1.525, -1.825, 4.825], color: [1, 0.985, 0.96], intensity: 300_000),
+        // Fill, the large card in front.
+        Badge3DStudioLight(position: [0, 0.6, 7.5], color: [1, 1, 1], intensity: 83_800),
+    ]
+
+    func mirroredThroughFloor() -> Badge3DStudioLight {
+        Badge3DStudioLight(
+            position: SIMD3(position.x, 2 * Badge3DScene.floorY - position.y, position.z),
+            color: color,
+            intensity: intensity
+        )
+    }
+
+    @MainActor
+    func makeEntity() -> Entity {
+        let entity = Entity()
+        entity.position = position
+        entity.components.set(
+            PointLightComponent(
+                cgColor: CGColor(
+                    red: CGFloat(color.x), green: CGFloat(color.y), blue: CGFloat(color.z), alpha: 1
+                ),
+                intensity: intensity,
+                // Far beyond the scene, so the light falls off with the
+                // inverse square of distance, as a real light does.
+                attenuationRadius: 100
+            )
+        )
+        return entity
+    }
+}
+
+/// Everything after RealityKit, done the way Blender's compositor finished
+/// the reference render, in scene-linear light on the GPU, once per frame:
+/// the reflection is blurred and faded the way Blender's floor softens it,
+/// the coin and its reflection go over the stage plate, Blender's Fog Glow
+/// is added, and Blender's AgX view transform (Medium High Contrast) turns
+/// the result into display colors. The finished image covers the whole
+/// stage (`Badge3DLayout.stageRect`); RealityKit renders only the
+/// coin's part of it (`renderedRect`).
+@available(iOS 18.0, *)
+@MainActor
+private final class Badge3DImagePipeline {
+    /// Fog Glow, fitted to Blender's own (threshold 1.5, strength 0.45) at the
+    /// hero's earlier 0.65 render pixels per master pixel: the highlights are
+    /// blurred at six sizes (each level half the previous), and these weights,
+    /// one per level, add them back. Most of the glow is the two sharpest
+    /// levels; the wide ones make its faint long tail. The hero now renders
+    /// at 0.783 pixels per master pixel and the levels are sized in render
+    /// pixels, so the glow spans a sixth fewer master pixels than fitted.
+    static let glowThreshold: Float = 1.5
+    static let glowWeights: [Float] = [0.1544, 0.2365, 0.0108, 0.0206, 0, 0.0128]
+
+    let device: MTLDevice
+    private let commandQueue: MTLCommandQueue
+    private let blurAcrossPipeline: MTLComputePipelineState
+    private let blurDownPipeline: MTLComputePipelineState
+    private let highlightsPipeline: MTLComputePipelineState
+    private let downsamplePipeline: MTLComputePipelineState
+    private let finishPipeline: MTLComputePipelineState
+    private let gemFlashesPipeline: MTLComputePipelineState
+    private let gemStreaksPipeline: MTLComputePipelineState
+    private let gemPeaksPipeline: MTLComputePipelineState
+    private var gemGlintTargets: GemGlintTargets?
+
+    private struct GemGlintTargets {
+        let flashes: MTLTexture
+        let peaks: MTLTexture
+        let streaks: MTLTexture
+    }
+    private let agxCube: MTLTexture
+    /// The backdrop behind the coin (see `makeStagePlate`).
+    private let stagePlate: MTLTexture
+    /// Signaled by each RealityKit renderer when its frame is drawn, so this
+    /// pipeline's GPU work starts right after without a trip back to the CPU.
+    private let coinDrawn: MTLEvent
+    private let reflectionDrawn: MTLEvent
+    private var frameNumber: UInt64 = 0
+    private var targets: Targets?
+
+    /// What one drawable size needs. Rebuilt only when the size changes. Its
+    /// textures are the size of the coin's render, not of the drawable.
+    private struct Targets {
+        /// Where the coin's render sits in the drawable, and how the
+        /// drawable maps onto the stage plate.
+        let stage: StageUniforms
+        let drawableWidth: Int
+        let drawableHeight: Int
+        let coin: MTLTexture
+        /// The mirror image as RealityKit draws it, then blurred in place.
+        let reflection: MTLTexture
+        /// The reflection blurred across only, halfway through its blur.
+        let reflectionBlurredAcross: MTLTexture
+        /// Level 0 is the highlights at full size; each next level is half.
+        let glowLevels: [MTLTexture]
+        /// How much reflection shows at each row (see `reflectionVisibility`).
+        let reflectionVisibility: MTLBuffer
+        /// How wide the reflection's blur is at each row (see
+        /// `reflectionBlurSigmas`).
+        let reflectionBlurSigmas: MTLBuffer
+        /// The rows the blur changes: those with a sigma above 0.
+        let reflectionBlurRows: Range<Int>
+        /// Those rows widened by the blur's reach: the rows its first pass
+        /// fills, because the second pass reads them.
+        let reflectionBlurReadRows: Range<Int>
+    }
+
+    /// What the finish pass needs to place things in a stage-sized drawable
+    /// (see `stageUniforms(drawableWidth:)`), and whether it draws the coin
+    /// there. Laid out like the shader's struct of the same name.
+    private struct StageUniforms {
+        /// The coin render's top-left corner, in drawable pixels.
+        var coinOrigin: SIMD2<Int32>
+        /// A drawable pixel's center maps onto the plate's texture
+        /// coordinates as `(pixel + 0.5) * plateUVPerPixel + plateUVOrigin`.
+        var plateUVPerPixel: SIMD2<Float>
+        var plateUVOrigin: SIMD2<Float>
+        /// And onto master pixels as
+        /// `masterOrigin + (pixel + 0.5) * masterPixelsPerPixel`.
+        var masterOrigin: SIMD2<Float>
+        var masterPixelsPerPixel: Float
+        /// 1 to lay the coin, its reflection, its glow and its contact shadow
+        /// over the stage, 0 to draw the stage alone. Set per frame by
+        /// `encodeFinish`; a Bool has no shader-compatible layout.
+        var drawsCoin: UInt32
+    }
+
+    /// What the finish pass needs to shade the coin's contact shadow onto
+    /// the stage floor for one frame's pose (see
+    /// `contactShadowUniforms(growth:)`). Laid out like the shader's struct
+    /// of the same name.
+    private struct ContactShadowUniforms {
+        var cameraPosition: SIMD3<Float>
+        var cameraForward: SIMD3<Float>
+        var cameraRight: SIMD3<Float>
+        var cameraUp: SIMD3<Float>
+        var focalLengthInMasterPixels: Float
+        var floorY: Float
+        /// The coin's turn on the turntable, as its cosine and sine, and one
+        /// over its size.
+        var spinCosine: Float
+        var spinSine: Float
+        var inverseScale: Float
+    }
+
+    struct SetupError: Error {
+        let failedItem: String
+    }
+
+    init(agxCube cubeData: Data, stagePlate stagePlateData: Data) async throws {
+        guard let device = MTLCreateSystemDefaultDevice(),
+              let commandQueue = device.makeCommandQueue(),
+              let coinDrawn = device.makeEvent(),
+              let reflectionDrawn = device.makeEvent()
+        else { throw SetupError(failedItem: "Metal device") }
+        self.device = device
+        self.commandQueue = commandQueue
+        self.coinDrawn = coinDrawn
+        self.reflectionDrawn = reflectionDrawn
+        // Compiled from source at load (asynchronously) because the badge
+        // lives in one Swift file and adds no Metal file to the project.
+        let library = try await device.makeLibrary(source: Self.shaderSource, options: nil)
+        blurAcrossPipeline = try Self.makePipeline(named: "blurReflectionAcross", in: library, device: device)
+        blurDownPipeline = try Self.makePipeline(named: "blurReflectionDown", in: library, device: device)
+        highlightsPipeline = try Self.makePipeline(named: "extractHighlights", in: library, device: device)
+        downsamplePipeline = try Self.makePipeline(named: "downsample", in: library, device: device)
+        finishPipeline = try Self.makePipeline(named: "finish", in: library, device: device)
+        gemFlashesPipeline = try Self.makePipeline(named: "compactGemFlashes", in: library, device: device)
+        gemStreaksPipeline = try Self.makePipeline(named: "gemStreaks", in: library, device: device)
+        gemPeaksPipeline = try Self.makePipeline(named: "gemFlashPeaks", in: library, device: device)
+        agxCube = try Self.makeAgXCube(from: cubeData, device: device)
+        stagePlate = try await Self.makeStagePlate(
+            from: stagePlateData, device: device, commandQueue: commandQueue, library: library
+        )
+    }
+
+    private static func makePipeline(
+        named name: String, in library: MTLLibrary, device: MTLDevice
+    ) throws -> MTLComputePipelineState {
+        guard let function = library.makeFunction(name: name) else { throw SetupError(failedItem: name) }
+        return try device.makeComputePipelineState(function: function)
+    }
+
+    /// Blender's AgX transform sampled as a 65 x 65 x 65 cube of half-float
+    /// RGBA display colors, red varying fastest (the texture's own layout).
+    private static func makeAgXCube(from data: Data, device: MTLDevice) throws -> MTLTexture {
+        let size = 65
+        let bytesPerTexel = 8
+        let descriptor = MTLTextureDescriptor()
+        descriptor.textureType = .type3D
+        descriptor.pixelFormat = .rgba16Float
+        descriptor.width = size
+        descriptor.height = size
+        descriptor.depth = size
+        descriptor.usage = .shaderRead
+        guard data.count == size * size * size * bytesPerTexel,
+              let texture = device.makeTexture(descriptor: descriptor)
+        else { throw SetupError(failedItem: "AgX cube") }
+        try data.withUnsafeBytes { bytes in
+            guard let cubeBytes = bytes.baseAddress else { throw SetupError(failedItem: "AgX cube") }
+            texture.replace(
+                region: MTLRegionMake3D(0, 0, 0, size, size, size),
+                mipmapLevel: 0,
+                slice: 0,
+                withBytes: cubeBytes,
+                bytesPerRow: size * bytesPerTexel,
+                bytesPerImage: size * size * bytesPerTexel
+            )
+        }
+        return texture
+    }
+
+    /// The stage plate on the GPU. The EXR decodes to half floats (8 bytes a
+    /// pixel, about 15 MB); one GPU pass then stores it as RG11B10Float, half
+    /// that size. After AgX that is within 0.4 of a display level in
+    /// brightness (under 1 in any one channel), below the finish pass's
+    /// one-level dither. Full resolution, because the thin horizon line
+    /// blurs visibly at half.
+    private static func makeStagePlate(
+        from data: Data, device: MTLDevice, commandQueue: MTLCommandQueue, library: MTLLibrary
+    ) async throws -> MTLTexture {
+        let decoded = try await MTKTextureLoader(device: device).newTexture(data: data, options: [
+            .SRGB: false,
+            .textureUsage: NSNumber(value: MTLTextureUsage.shaderRead.rawValue),
+            .textureStorageMode: NSNumber(value: MTLStorageMode.private.rawValue),
+        ])
+        let descriptor = MTLTextureDescriptor.texture2DDescriptor(
+            pixelFormat: .rg11b10Float, width: decoded.width, height: decoded.height, mipmapped: false
+        )
+        descriptor.usage = [.shaderRead, .shaderWrite]
+        descriptor.storageMode = .private
+        guard let plate = device.makeTexture(descriptor: descriptor),
+              let commandBuffer = commandQueue.makeCommandBuffer(),
+              let encoder = commandBuffer.makeComputeCommandEncoder()
+        else { throw SetupError(failedItem: "stage plate") }
+        encoder.setComputePipelineState(try makePipeline(named: "storeStagePlate", in: library, device: device))
+        encoder.setTexture(decoded, index: 0)
+        encoder.setTexture(plate, index: 1)
+        encoder.dispatchThreadgroups(
+            MTLSize(width: (plate.width + 15) / 16, height: (plate.height + 15) / 16, depth: 1),
+            threadsPerThreadgroup: MTLSize(width: 16, height: 16, depth: 1)
+        )
+        encoder.endEncoding()
+        await withCheckedContinuation { (continuation: CheckedContinuation<Void, Never>) in
+            commandBuffer.addCompletedHandler { _ in continuation.resume() }
+            commandBuffer.commit()
+        }
+        return plate
+    }
+
+    // MARK: Drawing a frame
+
+    /// Draws the coin and its reflection with RealityKit, finishes the image
+    /// into `drawable`, and presents it. `growth` is the pose both renderers
+    /// were given (see `Badge3DStage.pose`); the contact shadow follows it.
+    func render(
+        coin coinRenderer: RealityRenderer,
+        reflection reflectionRenderer: RealityRenderer,
+        growth: Float,
+        gemGlintStrength: Float = 0,
+        to drawable: CAMetalDrawable,
+        onComplete: @escaping @Sendable () -> Void
+    ) throws {
+        let targets = try targets(drawableWidth: drawable.texture.width, drawableHeight: drawable.texture.height)
+        frameNumber += 1
+        try coinRenderer.updateAndRender(
+            deltaTime: 0,
+            cameraOutput: RealityRenderer.CameraOutput(.singleProjection(colorTexture: targets.coin)),
+            actionsAfterRender: [.signal(coinDrawn, value: frameNumber)]
+        )
+        try reflectionRenderer.updateAndRender(
+            deltaTime: 0,
+            cameraOutput: RealityRenderer.CameraOutput(.singleProjection(colorTexture: targets.reflection)),
+            actionsAfterRender: [.signal(reflectionDrawn, value: frameNumber)]
+        )
+        guard let commandBuffer = commandQueue.makeCommandBuffer() else {
+            throw SetupError(failedItem: "command buffer")
+        }
+        commandBuffer.encodeWaitForEvent(coinDrawn, value: frameNumber)
+        commandBuffer.encodeWaitForEvent(reflectionDrawn, value: frameNumber)
+        guard let encoder = commandBuffer.makeComputeCommandEncoder() else {
+            throw SetupError(failedItem: "compute encoder")
+        }
+        encodeReflectionBlur(targets: targets, encoder: encoder)
+        encodeHighlights(targets: targets, encoder: encoder)
+        encodeGlowLevels(targets: targets, encoder: encoder)
+        let streaks = gemGlintStrength > 0
+            ? try encodeGemGlints(targets: targets, encoder: encoder) : nil
+        encodeFinish(
+            targets: targets, growth: growth, drawsCoin: true, output: drawable.texture,
+            encoder: encoder, gemStreaks: streaks, gemGlintStrength: gemGlintStrength
+        )
+        encoder.endEncoding()
+        commandBuffer.present(drawable)
+        commandBuffer.addCompletedHandler { _ in onComplete() }
+        commandBuffer.commit()
+    }
+
+    /// Finishes the stage alone into `drawable`, without the coin, and presents
+    /// it: the floor the flat badge stands on. The stage does not depend on the
+    /// coin's pose, so one frame per drawable size is enough. It skips the
+    /// RealityKit renders, their event waits and the blur, highlight and glow
+    /// passes, and never writes the shared coin and reflection textures, which
+    /// other slots are drawing their coins with.
+    func renderStageOnly(
+        to drawable: CAMetalDrawable,
+        onComplete: @escaping @Sendable () -> Void
+    ) throws {
+        let targets = try targets(drawableWidth: drawable.texture.width, drawableHeight: drawable.texture.height)
+        guard let commandBuffer = commandQueue.makeCommandBuffer(),
+              let encoder = commandBuffer.makeComputeCommandEncoder()
+        else { throw SetupError(failedItem: "stage command buffer") }
+        encodeFinish(
+            targets: targets, growth: 1, drawsCoin: false, output: drawable.texture, encoder: encoder
+        )
+        encoder.endEncoding()
+        commandBuffer.present(drawable)
+        commandBuffer.addCompletedHandler { _ in onComplete() }
+        commandBuffer.commit()
+    }
+
+    /// Blurs the reflection in two passes, across and then down, each row as
+    /// wide as `reflectionBlurSigmas` sets it. Only the floor band's rows are
+    /// touched; the rest keep RealityKit's pixels.
+    private func encodeReflectionBlur(targets: Targets, encoder: MTLComputeCommandEncoder) {
+        guard !targets.reflectionBlurRows.isEmpty else { return }
+        encoder.setBuffer(targets.reflectionBlurSigmas, offset: 0, index: 0)
+        // Both passes leave out the pixels the coin covers (see the shader).
+        encoder.setTexture(targets.coin, index: 2)
+        encoder.setComputePipelineState(blurAcrossPipeline)
+        encoder.setTexture(targets.reflection, index: 0)
+        encoder.setTexture(targets.reflectionBlurredAcross, index: 1)
+        dispatch(rows: targets.reflectionBlurReadRows, of: targets.reflection, encoder: encoder)
+        encoder.setComputePipelineState(blurDownPipeline)
+        encoder.setTexture(targets.reflectionBlurredAcross, index: 0)
+        encoder.setTexture(targets.reflection, index: 1)
+        dispatch(rows: targets.reflectionBlurRows, of: targets.reflection, encoder: encoder)
+    }
+
+    private func encodeHighlights(targets: Targets, encoder: MTLComputeCommandEncoder) {
+        var threshold = Self.glowThreshold
+        encoder.setComputePipelineState(highlightsPipeline)
+        encoder.setTexture(targets.coin, index: 0)
+        encoder.setTexture(targets.reflection, index: 1)
+        encoder.setTexture(targets.glowLevels[0], index: 2)
+        encoder.setBuffer(targets.reflectionVisibility, offset: 0, index: 0)
+        encoder.setBytes(&threshold, length: MemoryLayout<Float>.size, index: 1)
+        dispatch(covering: targets.glowLevels[0], encoder: encoder)
+    }
+
+    /// Only a successfully shaded gem requests these three half-resolution passes.
+    /// They use its actual HDR flashes; the other tiers allocate and draw nothing.
+    private func encodeGemGlints(targets: Targets, encoder: MTLComputeCommandEncoder) throws -> MTLTexture {
+        let width = (targets.coin.width + 1) / 2
+        let height = (targets.coin.height + 1) / 2
+        if gemGlintTargets?.flashes.width != width || gemGlintTargets?.flashes.height != height {
+            gemGlintTargets = GemGlintTargets(
+                flashes: try makeTexture(width: width, height: height, usage: [.shaderRead, .shaderWrite]),
+                peaks: try makeTexture(width: width, height: height, usage: [.shaderRead, .shaderWrite]),
+                streaks: try makeTexture(width: width, height: height, usage: [.shaderRead, .shaderWrite])
+            )
+        }
+        guard let glints = gemGlintTargets else { throw SetupError(failedItem: "gem glints") }
+        encoder.setComputePipelineState(gemFlashesPipeline)
+        encoder.setTexture(targets.coin, index: 0)
+        encoder.setTexture(glints.flashes, index: 1)
+        dispatch(covering: glints.flashes, encoder: encoder)
+        encoder.setComputePipelineState(gemPeaksPipeline)
+        encoder.setTexture(glints.flashes, index: 0)
+        encoder.setTexture(glints.peaks, index: 1)
+        dispatch(covering: glints.peaks, encoder: encoder)
+        encoder.setComputePipelineState(gemStreaksPipeline)
+        encoder.setTexture(glints.peaks, index: 0)
+        encoder.setTexture(glints.streaks, index: 1)
+        dispatch(covering: glints.streaks, encoder: encoder)
+        return glints.streaks
+    }
+
+    private func encodeGlowLevels(targets: Targets, encoder: MTLComputeCommandEncoder) {
+        encoder.setComputePipelineState(downsamplePipeline)
+        for level in 1..<targets.glowLevels.count {
+            encoder.setTexture(targets.glowLevels[level - 1], index: 0)
+            encoder.setTexture(targets.glowLevels[level], index: 1)
+            dispatch(covering: targets.glowLevels[level], encoder: encoder)
+        }
+    }
+
+    /// Covers the whole drawable: the stage everywhere, and when `drawsCoin`
+    /// is set, the coin's contact shadow for the pose at `growth`, and the
+    /// coin, its reflection and the glow where the coin's render sits. A stage
+    /// alone still binds every texture, because the shader declares them, but
+    /// never reads the coin ones.
+    private func encodeFinish(
+        targets: Targets, growth: Float, drawsCoin: Bool, output: MTLTexture,
+        encoder: MTLComputeCommandEncoder, gemStreaks: MTLTexture? = nil, gemGlintStrength: Float = 0
+    ) {
+        var strength = gemGlintStrength
+        var weights = Self.glowWeights
+        var stage = targets.stage
+        stage.drawsCoin = drawsCoin ? 1 : 0
+        var contactShadow = Self.contactShadowUniforms(growth: growth)
+        encoder.setComputePipelineState(finishPipeline)
+        encoder.setTexture(targets.coin, index: 0)
+        encoder.setTexture(targets.reflection, index: 1)
+        encoder.setTexture(agxCube, index: 2)
+        encoder.setTexture(output, index: 3)
+        encoder.setTextures(targets.glowLevels, range: 4..<(4 + targets.glowLevels.count))
+        encoder.setTexture(stagePlate, index: 10)
+        encoder.setTexture(gemStreaks ?? targets.coin, index: 11)
+        encoder.setBytes(&strength, length: MemoryLayout<Float>.size, index: 4)
+        encoder.setBuffer(targets.reflectionVisibility, offset: 0, index: 0)
+        encoder.setBytes(&weights, length: MemoryLayout<Float>.stride * weights.count, index: 1)
+        encoder.setBytes(&stage, length: MemoryLayout<StageUniforms>.stride, index: 2)
+        encoder.setBytes(&contactShadow, length: MemoryLayout<ContactShadowUniforms>.stride, index: 3)
+        dispatch(covering: output, encoder: encoder)
+    }
+
+    /// The camera, as the contact shadow needs it to find the floor point
+    /// behind each pixel, and the coin's pose at `growth`: turned by
+    /// `Badge3DStage.spinAngle(growth:)` and scaled by `growth` about
+    /// its contact with the floor, which stays at Y = `floorY` in the coin's
+    /// own space (see `Badge3DStage.pose`).
+    private static func contactShadowUniforms(growth: Float) -> ContactShadowUniforms {
+        let forward = simd_normalize(Badge3DStage.cameraTarget - Badge3DStage.cameraPosition)
+        let right = simd_normalize(simd_cross(forward, [0, 1, 0]))
+        let angle = Badge3DStage.spinAngle(growth: growth)
+        return ContactShadowUniforms(
+            cameraPosition: Badge3DStage.cameraPosition,
+            cameraForward: forward,
+            cameraRight: right,
+            cameraUp: simd_cross(right, forward),
+            focalLengthInMasterPixels: Badge3DStage.focalLengthInPixels,
+            floorY: Badge3DScene.floorY,
+            spinCosine: cos(angle),
+            spinSine: sin(angle),
+            inverseScale: 1 / max(growth, 0.001)
+        )
+    }
+
+    /// One thread per texel of `texture`, in 16 x 16 groups; the kernels skip
+    /// the threads that fall past the edge.
+    private func dispatch(covering texture: MTLTexture, encoder: MTLComputeCommandEncoder) {
+        let groupSize = MTLSize(width: 16, height: 16, depth: 1)
+        let groups = MTLSize(
+            width: (texture.width + 15) / 16, height: (texture.height + 15) / 16, depth: 1
+        )
+        encoder.dispatchThreadgroups(groups, threadsPerThreadgroup: groupSize)
+    }
+
+    /// One thread per texel of `rows` of `texture`, in 16 x 16 groups. The
+    /// kernel gets the first row as buffer 1 and adds it to its thread's row;
+    /// it skips the threads that fall past the texture's edge.
+    private func dispatch(rows: Range<Int>, of texture: MTLTexture, encoder: MTLComputeCommandEncoder) {
+        var firstRow = UInt32(rows.lowerBound)
+        encoder.setBytes(&firstRow, length: MemoryLayout<UInt32>.size, index: 1)
+        let groupSize = MTLSize(width: 16, height: 16, depth: 1)
+        let groups = MTLSize(width: (texture.width + 15) / 16, height: (rows.count + 15) / 16, depth: 1)
+        encoder.dispatchThreadgroups(groups, threadsPerThreadgroup: groupSize)
+    }
+
+    // MARK: Frame-size textures
+
+    private func targets(drawableWidth: Int, drawableHeight: Int) throws -> Targets {
+        if let targets, targets.drawableWidth == drawableWidth, targets.drawableHeight == drawableHeight {
+            return targets
+        }
+        let (stage, width, height) = Self.stageUniforms(drawableWidth: drawableWidth)
+        let renderUsage: MTLTextureUsage = [.renderTarget, .shaderRead]
+        let workUsage: MTLTextureUsage = [.shaderRead, .shaderWrite]
+        var glowLevels = [try makeTexture(width: width, height: height, usage: workUsage)]
+        while glowLevels.count < Self.glowWeights.count {
+            let previous = glowLevels[glowLevels.count - 1]
+            glowLevels.append(
+                try makeTexture(width: (previous.width + 1) / 2, height: (previous.height + 1) / 2, usage: workUsage)
+            )
+        }
+        let blurSigmas = Self.reflectionBlurSigmas(rowCount: height)
+        let blurredRows = Self.rowsWithBlur(blurSigmas)
+        let blurReach = Int((3 * (blurSigmas.max() ?? 0)).rounded(.up))
+        let newTargets = Targets(
+            stage: stage,
+            drawableWidth: drawableWidth,
+            drawableHeight: drawableHeight,
+            coin: try makeTexture(width: width, height: height, usage: renderUsage),
+            // RealityKit draws into it, then the blur's second pass writes
+            // the blurred reflection back into it.
+            reflection: try makeTexture(width: width, height: height, usage: renderUsage.union(.shaderWrite)),
+            reflectionBlurredAcross: try makeTexture(width: width, height: height, usage: workUsage),
+            glowLevels: glowLevels,
+            reflectionVisibility: try makeBuffer(
+                Self.reflectionVisibility(rowCount: height), failedItem: "reflection visibility"
+            ),
+            reflectionBlurSigmas: try makeBuffer(blurSigmas, failedItem: "reflection blur"),
+            reflectionBlurRows: blurredRows,
+            reflectionBlurReadRows: max(0, blurredRows.lowerBound - blurReach)
+                ..< min(height, blurredRows.upperBound + blurReach)
+        )
+        targets = newTargets
+        return newTargets
+    }
+
+    /// For a drawable covering the whole stage and `drawableWidth` pixels
+    /// wide: where the coin's render sits in it and how its pixels map onto
+    /// the stage plate, plus the render's size in pixels. On a 3x screen the
+    /// render lands on whole pixels (see `Badge3DLayout.stageRect`).
+    private static func stageUniforms(
+        drawableWidth: Int
+    ) -> (uniforms: StageUniforms, coinWidth: Int, coinHeight: Int) {
+        let stage = Badge3DLayout.stageRect
+        let rendered = Badge3DLayout.renderedRect
+        let plate = Badge3DLayout.stagePlateRect
+        let pixelsPerMasterPixel = CGFloat(drawableWidth) / stage.width
+        let uniforms = StageUniforms(
+            coinOrigin: SIMD2(
+                Int32(((rendered.minX - stage.minX) * pixelsPerMasterPixel).rounded()),
+                Int32(((rendered.minY - stage.minY) * pixelsPerMasterPixel).rounded())
+            ),
+            plateUVPerPixel: SIMD2(
+                Float(1 / (pixelsPerMasterPixel * plate.width)),
+                Float(1 / (pixelsPerMasterPixel * plate.height))
+            ),
+            plateUVOrigin: SIMD2(
+                Float((stage.minX - plate.minX) / plate.width),
+                Float((stage.minY - plate.minY) / plate.height)
+            ),
+            masterOrigin: SIMD2(Float(stage.minX), Float(stage.minY)),
+            masterPixelsPerPixel: Float(1 / pixelsPerMasterPixel),
+            drawsCoin: 1
+        )
+        return (
+            uniforms,
+            Int((rendered.width * pixelsPerMasterPixel).rounded()),
+            Int((rendered.height * pixelsPerMasterPixel).rounded())
+        )
+    }
+
+    private func makeBuffer(_ values: [Float], failedItem: String) throws -> MTLBuffer {
+        guard let buffer = device.makeBuffer(bytes: values, length: MemoryLayout<Float>.stride * values.count) else {
+            throw SetupError(failedItem: failedItem)
+        }
+        return buffer
+    }
+
+    private func makeTexture(width: Int, height: Int, usage: MTLTextureUsage) throws -> MTLTexture {
+        let descriptor = MTLTextureDescriptor.texture2DDescriptor(
+            pixelFormat: .rgba16Float, width: width, height: height, mipmapped: false
+        )
+        descriptor.usage = usage
+        descriptor.storageMode = .private
+        guard let texture = device.makeTexture(descriptor: descriptor) else {
+            throw SetupError(failedItem: "\(width) x \(height) texture")
+        }
+        return texture
+    }
+
+    // MARK: Floor reflection
+
+    /// The Blender floor's screen-space band, in master rows: it starts at
+    /// the coin's contact line and runs 230 rows down. Across it the
+    /// reflection fades out (`reflectionVisibility`) while the floor grows
+    /// rougher (`reflectionBlurSigmas`).
+    private static let floorBandStartRow: Float = 944.8
+    private static let floorBandHeight: Float = 230
+
+    /// How much of the mirror image shows through the floor at each rendered
+    /// row, reproducing the Blender floor, which works in screen space: its
+    /// reflection is strongest at the coin's contact line and fades out over
+    /// the floor band, as `0.6 * (1 - s)^2 * (1 + s)` with `s` running 0 to 1
+    /// across it. Behind the coin the floor turns black between Z = -1 and
+    /// -5. And the floor is glossy dielectric (index of refraction 1.5), so
+    /// even its full reflection is only the Fresnel share of the mirror image.
+    private static func reflectionVisibility(rowCount: Int) -> [Float] {
+        let renderedRows = Badge3DLayout.renderedRect
+        return (0..<rowCount).map { row in
+            let masterRow = Float(renderedRows.minY)
+                + (Float(row) + 0.5) * Float(renderedRows.height) / Float(rowCount)
+            let floorZ = floorDepth(atMasterRow: masterRow)
+            let s = min(1, max(0, (masterRow - floorBandStartRow) / floorBandHeight))
+            let frontWeight = 0.6 * (1 - s) * (1 - s) * (1 + s)
+            let rearBlackWeight = 1 - smoothstep(-5, -1, floorZ)
+            let reflectionWeight = min(frontWeight, 1 - rearBlackWeight)
+            return fresnelReflectance(atFloorZ: floorZ) * reflectionWeight
+        }
+    }
+
+    /// How wide the reflection's blur is at each rendered row: the sigma of
+    /// its Gaussian, in rendered pixels. Blender's floor grows rougher across
+    /// the floor band, and the further a row lies below the contact line, the
+    /// further its reflected light has traveled from the coin; the blur grows
+    /// with both, so with the square of the distance. Matched to Blender's
+    /// renders by how crisp the reflection looks at each distance: 1 master
+    /// pixel at the contact line, 1.5 at 50 rows below it, 3 at 100, and
+    /// about 11.6 where the band ends. Above the contact line Blender's floor
+    /// is at its smoothest, so those rows stay sharp; past the band the
+    /// reflection has faded out.
+    private static func reflectionBlurSigmas(rowCount: Int) -> [Float] {
+        let renderedRows = Badge3DLayout.renderedRect
+        let renderPixelsPerMasterPixel = Float(rowCount) / Float(renderedRows.height)
+        return (0..<rowCount).map { row in
+            let masterRow = Float(renderedRows.minY)
+                + (Float(row) + 0.5) * Float(renderedRows.height) / Float(rowCount)
+            let rowsBelowContact = masterRow - floorBandStartRow
+            guard rowsBelowContact >= 0, rowsBelowContact <= floorBandHeight else { return 0 }
+            let sigmaInMasterPixels = 1 + 0.0002 * rowsBelowContact * rowsBelowContact
+            return sigmaInMasterPixels * renderPixelsPerMasterPixel
+        }
+    }
+
+    /// The span of rows whose blur sigma is above 0; empty when none is.
+    private static func rowsWithBlur(_ sigmas: [Float]) -> Range<Int> {
+        guard let first = sigmas.firstIndex(where: { $0 > 0 }),
+              let last = sigmas.lastIndex(where: { $0 > 0 })
+        else { return 0..<0 }
+        return first..<(last + 1)
+    }
+
+    private static let cameraPosition = Badge3DStage.cameraPosition
+    private static let cameraTarget = Badge3DStage.cameraTarget
+
+    /// The depth (Z) of the floor point seen at `masterRow`, straight ahead
+    /// of the camera. Rows of the frame meet the floor along lines parallel
+    /// to X, so the row alone decides the depth. Rows at or above the horizon
+    /// never meet the floor and read as far behind the coin.
+    private static func floorDepth(atMasterRow masterRow: Float) -> Float {
+        let forward = simd_normalize(cameraTarget - cameraPosition)
+        let right = simd_normalize(simd_cross(forward, [0, 1, 0]))
+        let up = simd_cross(right, forward)
+        let masterCenterRow: Float = 720
+        let offset = (masterCenterRow - masterRow) / Badge3DStage.focalLengthInPixels
+        let ray = simd_normalize(forward + offset * up)
+        guard ray.y < 0 else { return -.greatestFiniteMagnitude }
+        let distance = (Badge3DScene.floorY - cameraPosition.y) / ray.y
+        return cameraPosition.z + distance * ray.z
+    }
+
+    /// Schlick's approximation for a dielectric with index of refraction 1.5
+    /// (4% straight on), seen from the camera at the floor point at depth `z`.
+    private static func fresnelReflectance(atFloorZ z: Float) -> Float {
+        let toPoint = simd_normalize(SIMD3<Float>(0, Badge3DScene.floorY, z) - cameraPosition)
+        let cosine = abs(toPoint.y)
+        return 0.04 + 0.96 * pow(1 - cosine, 5)
+    }
+
+    private static func smoothstep(_ edge0: Float, _ edge1: Float, _ x: Float) -> Float {
+        let t = min(1, max(0, (x - edge0) / (edge1 - edge0)))
+        return t * t * (3 - 2 * t)
+    }
+
+    // MARK: Shaders
+
+    private static let shaderSource = """
+    #include <metal_stdlib>
+    using namespace metal;
+
+    constexpr sampler linearClamp(filter::linear, address::clamp_to_edge);
+    // Outside the stage plate there is only black.
+    constexpr sampler plateSampler(filter::linear, address::clamp_to_zero);
+
+    // Where the coin's render sits in the stage-sized drawable, how the
+    // drawable's pixels map onto the stage plate, and whether the coin is drawn
+    // at all (see the pipeline's `stageUniforms(drawableWidth:)`).
+    struct StageUniforms {
+        int2 coinOrigin;
+        float2 plateUVPerPixel;
+        float2 plateUVOrigin;
+        float2 masterOrigin;
+        float masterPixelsPerPixel;
+        // 1 draws the coin over the stage, 0 draws the stage alone.
+        uint drawsCoin;
+    };
+
+    // The camera and the coin's pose for one frame (see the pipeline's
+    // `contactShadowUniforms(growth:)`).
+    struct ContactShadowUniforms {
+        float3 cameraPosition;
+        float3 cameraForward;
+        float3 cameraRight;
+        float3 cameraUp;
+        float focalLengthInMasterPixels;
+        float floorY;
+        float spinCosine;
+        float spinSine;
+        float inverseScale;
+    };
+
+    // The coin's contact shadow on the stage floor at master pixel `master`:
+    // the share of the floor's light it takes away there, from 0 to 1. The
+    // stage plate was baked without the coin, so it has no such shadow, and
+    // on its lit floor the coin's rim ran straight into its reflection.
+    // Fitted to the mock's contact line: a thin dark line on the floor just
+    // in front of the coin's face toward the camera (centered 0.17 units out,
+    // with a soft Gaussian profile of sigma 0.2), strongest where the rim
+    // hangs lowest over the floor and fading as it rises (1.15 * exp(-h /
+    // 0.83) at rim height h, at most 0.95). It turns and shrinks with the
+    // coin; while the coin turns its back to the camera, the line moves to
+    // the back face.
+    static float contactShadow(float2 master, constant ContactShadowUniforms &pose)
+    {
+        const float coinRadius = 3.015;     // the casing's radius, in model units
+        const float coinBack = -0.345;      // the casing's back and front faces (Z)
+        const float coinFront = 0.26;
+        const float lineOffset = 0.17;
+        const float lineSigma = 0.2;
+        const float stageWallZ = -1.5;      // the plate's back wall; no floor behind it
+        // The camera looks through the master frame's center, (540, 720).
+        float2 offset = (master - float2(540.0, 720.0)) / pose.focalLengthInMasterPixels;
+        float3 ray = pose.cameraForward + offset.x * pose.cameraRight - offset.y * pose.cameraUp;
+        if (ray.y >= 0.0) return 0.0;
+        float3 floorPoint = pose.cameraPosition + ray * ((pose.floorY - pose.cameraPosition.y) / ray.y);
+        if (floorPoint.z < stageWallZ) return 0.0;
+        // Into the coin's own space: undo its turn and its size.
+        float x = (floorPoint.x * pose.spinCosine - floorPoint.z * pose.spinSine) * pose.inverseScale;
+        float z = (floorPoint.x * pose.spinSine + floorPoint.z * pose.spinCosine) * pose.inverseScale;
+        if (abs(x) >= coinRadius) return 0.0;
+        float rimHeight = max(0.0, -pose.floorY - sqrt(coinRadius * coinRadius - x * x));
+        float strength = min(0.95, 1.15 * exp(-rimHeight / 0.83));
+        // The front face points at the camera when the turn's cosine is
+        // positive, the back face when it is negative.
+        float frontFacing = smoothstep(-0.2, 0.2, pose.spinCosine);
+        float fromFrontLine = z - (coinFront + lineOffset);
+        float fromBackLine = z - (coinBack - lineOffset);
+        float frontLine = exp(-fromFrontLine * fromFrontLine / (2.0 * lineSigma * lineSigma));
+        float backLine = exp(-fromBackLine * fromBackLine / (2.0 * lineSigma * lineSigma));
+        return strength * max(frontLine * frontFacing, backLine * (1.0 - frontFacing));
+    }
+
+    // RealityKit now and then writes a stray pure-black pixel where a point
+    // light meets the inset's normal map. Nothing in this scene is truly
+    // black (the studio's ambient light reaches every surface), so an opaque,
+    // exactly black coin pixel is filled in from its four neighbors.
+    static float4 coinPixel(texture2d<float, access::sample> coin, uint2 gid)
+    {
+        float4 front = coin.read(gid);
+        if (front.a < 1.0 || any(front.rgb != 0.0)) return front;
+        uint2 last = uint2(coin.get_width() - 1, coin.get_height() - 1);
+        float4 neighbors = coin.read(uint2(min(gid.x + 1, last.x), gid.y))
+                         + coin.read(uint2(max(gid.x, 1u) - 1, gid.y))
+                         + coin.read(uint2(gid.x, min(gid.y + 1, last.y)))
+                         + coin.read(uint2(gid.x, max(gid.y, 1u) - 1));
+        return neighbors / 4.0;
+    }
+
+    // The coin laid over its reflection, and both over `stage` (what the
+    // stage plate shows at this pixel), in scene-linear light. The coin
+    // render is premultiplied, transparent where there is no coin.
+    static float3 composite(texture2d<float, access::sample> coin,
+                            texture2d<float, access::sample> reflection,
+                            constant float *reflectionVisibility,
+                            float3 stage,
+                            uint2 gid)
+    {
+        float4 front = coinPixel(coin, gid);
+        float3 mirrored = reflection.read(gid).rgb;
+        return front.rgb + (1.0 - front.a) * (stage + reflectionVisibility[gid.y] * mirrored);
+    }
+
+    // A number in [0, 1) that looks random, fixed for each pixel and salt.
+    static float pixelNoise(uint2 pixel, uint salt)
+    {
+        uint hash = pixel.x * 1973u + pixel.y * 9277u + salt * 26699u;
+        hash = (hash ^ 61u) ^ (hash >> 16);
+        hash *= 9u;
+        hash ^= hash >> 4;
+        hash *= 0x27d4eb2du;
+        hash ^= hash >> 15;
+        return float(hash) / 4294967296.0;
+    }
+
+    // The display color with about one 8-bit level of triangular noise added
+    // (the sum of two uniform noises), so the stage's slow dark gradients show
+    // no bands in the 8-bit drawable. Exact black stays exact black, so the
+    // stage's edges match the page's black.
+    static float3 dithered(float3 display, float3 linearColor, uint2 pixel)
+    {
+        if (all(linearColor <= 0.0)) return display;
+        float noise = pixelNoise(pixel, 0u) + pixelNoise(pixel, 1u) - 1.0;
+        return display + noise / 255.0;
+    }
+
+    // Copies the decoded stage plate into its compact RG11B10Float texture;
+    // the texture write does the conversion.
+    kernel void storeStagePlate(texture2d<float, access::read> decoded [[texture(0)]],
+                                texture2d<float, access::write> plate [[texture(1)]],
+                                uint2 gid [[thread_position_in_grid]])
+    {
+        if (gid.x >= plate.get_width() || gid.y >= plate.get_height()) return;
+        plate.write(float4(decoded.read(gid).rgb, 1.0), gid);
+    }
+
+    // A Gaussian blur of `source` along one direction (`step`) around
+    // `center`, `sigma` pixels wide. Pixels the coin covers are left out:
+    // the floor behind the coin is hidden, and the empty mirror image there
+    // would darken the reflection right where it meets the coin. A sigma of
+    // 0 copies the pixel as it is.
+    static float4 blurAlong(texture2d<float, access::read> source,
+                            texture2d<float, access::read> coin,
+                            int2 center, int2 step, float sigma)
+    {
+        if (sigma <= 0.0) return source.read(uint2(center));
+        int radius = int(ceil(3.0 * sigma));
+        int2 last = int2(source.get_width() - 1, source.get_height() - 1);
+        float4 sum = float4(0.0);
+        float totalWeight = 0.0;
+        for (int offset = -radius; offset <= radius; offset++) {
+            uint2 position = uint2(clamp(center + offset * step, int2(0), last));
+            float weight = exp(-float(offset * offset) / (2.0 * sigma * sigma)) * (1.0 - coin.read(position).a);
+            sum += weight * source.read(position);
+            totalWeight += weight;
+        }
+        return totalWeight > 0.0 ? sum / totalWeight : source.read(uint2(center));
+    }
+
+    // The reflection's blur, first pass: across each row, as wide as that
+    // row's entry in blurSigmas. The dispatch starts at firstRow.
+    kernel void blurReflectionAcross(texture2d<float, access::read> reflection [[texture(0)]],
+                                     texture2d<float, access::write> blurredAcross [[texture(1)]],
+                                     texture2d<float, access::read> coin [[texture(2)]],
+                                     constant float *blurSigmas [[buffer(0)]],
+                                     constant uint &firstRow [[buffer(1)]],
+                                     uint2 gid [[thread_position_in_grid]])
+    {
+        uint2 pixel = uint2(gid.x, gid.y + firstRow);
+        if (pixel.x >= blurredAcross.get_width() || pixel.y >= blurredAcross.get_height()) return;
+        blurredAcross.write(blurAlong(reflection, coin, int2(pixel), int2(1, 0), blurSigmas[pixel.y]), pixel);
+    }
+
+    // Second pass: down each column, back into the reflection, as wide as
+    // the row's entry in blurSigmas. Rows without a blur keep RealityKit's
+    // pixels.
+    kernel void blurReflectionDown(texture2d<float, access::read> blurredAcross [[texture(0)]],
+                                   texture2d<float, access::write> reflection [[texture(1)]],
+                                   texture2d<float, access::read> coin [[texture(2)]],
+                                   constant float *blurSigmas [[buffer(0)]],
+                                   constant uint &firstRow [[buffer(1)]],
+                                   uint2 gid [[thread_position_in_grid]])
+    {
+        uint2 pixel = uint2(gid.x, gid.y + firstRow);
+        if (pixel.x >= reflection.get_width() || pixel.y >= reflection.get_height()) return;
+        if (blurSigmas[pixel.y] <= 0.0) return;
+        reflection.write(blurAlong(blurredAcross, coin, int2(pixel), int2(0, 1), blurSigmas[pixel.y]), pixel);
+    }
+
+    // What Fog Glow blurs: the part of each pixel's brightness above the
+    // threshold, keeping its color. The stage plate is left out: it never
+    // comes near the threshold (it peaks at 0.23), so it adds no glow.
+    kernel void extractHighlights(texture2d<float, access::sample> coin [[texture(0)]],
+                                  texture2d<float, access::sample> reflection [[texture(1)]],
+                                  texture2d<float, access::write> highlights [[texture(2)]],
+                                  constant float *reflectionVisibility [[buffer(0)]],
+                                  constant float &threshold [[buffer(1)]],
+                                  uint2 gid [[thread_position_in_grid]])
+    {
+        if (gid.x >= highlights.get_width() || gid.y >= highlights.get_height()) return;
+        float3 color = composite(coin, reflection, reflectionVisibility, float3(0.0), gid);
+        float brightest = max(color.r, max(color.g, color.b));
+        float3 highlight = brightest > threshold ? color * ((brightest - threshold) / brightest) : float3(0.0);
+        highlights.write(float4(highlight, 1.0), gid);
+    }
+
+    // Camera diffraction from compact, genuine HDR returns. Opaque support
+    // at every surrounding sample erodes the outline; broad facets and isolated
+    // single-pixel returns cannot seed stars. No time or random input is used.
+    kernel void compactGemFlashes(texture2d<float, access::sample> coin [[texture(0)]],
+                                  texture2d<float, access::write> flashes [[texture(1)]],
+                                  uint2 gid [[thread_position_in_grid]])
+    {
+        if (gid.x >= flashes.get_width() || gid.y >= flashes.get_height()) return;
+        float2 size = float2(coin.get_width(), coin.get_height());
+        float2 uv = (float2(gid) * 2.0 + 1.0) / size;
+        float4 core = coin.sample(linearClamp, uv);
+        // This alpha already makes support zero; avoid sampling the backdrop.
+        if (core.a <= 0.995) {
+            flashes.write(float4(0.0, 0.0, 0.0, 1.0), gid);
+            return;
+        }
+        float3 mean = float3(0.0);
+        uint supportedBrightSamples = 0;
+        float alpha = core.a;
+        for (int y = -1; y <= 1; y++) {
+            for (int x = -1; x <= 1; x++) {
+                float4 v = coin.sample(linearClamp, uv + float2(x,y) / size);
+                mean += v.rgb / 9.0;
+                alpha = min(alpha, v.a);
+            }
+        }
+        float ring[8];
+        const float2 directions[8] = {
+            float2(1,0), float2(-1,0), float2(0,1), float2(0,-1),
+            float2(0.707,0.707), float2(-0.707,0.707),
+            float2(0.707,-0.707), float2(-0.707,-0.707)
+        };
+        for (uint i = 0; i < 8; i++) {
+            float4 v = coin.sample(linearClamp, uv + 7.0 * directions[i] / size);
+            alpha = min(alpha, v.a);
+            ring[i] = dot(v.rgb, float3(0.2126,0.7152,0.0722));
+        }
+        float brightness = dot(mean, float3(0.2126,0.7152,0.0722));
+        for (uint i = 0; i < 4; i++) {
+            float3 v = coin.sample(linearClamp, uv + directions[i] / size).rgb;
+            supportedBrightSamples += dot(v, float3(0.2126,0.7152,0.0722)) > 0.35 * brightness ? 1 : 0;
+        }
+        // A neighboring bright facet alone is not an extended flash. Brightness
+        // spanning both directions across the source is; reject that extent.
+        float extended = max(max(min(ring[0],ring[1]), min(ring[2],ring[3])),
+                             max(min(ring[4],ring[7]), min(ring[5],ring[6])));
+        float compact = smoothstep(1.5, 4.0, brightness - extended);
+        float bright = smoothstep(4.0, 10.0, brightness);
+        float supported = smoothstep(0.995, 1.0, alpha);
+        float support = supportedBrightSamples >= 3 ? supported : 0.0;
+        flashes.write(float4(mean * compact * bright * support, 1.0), gid);
+    }
+
+    // One local HDR peak per compact return avoids a cluster of stars and
+    // rejects flat plateaus. There is no global ranking or position decal.
+    kernel void gemFlashPeaks(texture2d<float, access::sample> flashes [[texture(0)]],
+                             texture2d<float, access::write> peaks [[texture(1)]],
+                             uint2 gid [[thread_position_in_grid]])
+    {
+        if (gid.x >= peaks.get_width() || gid.y >= peaks.get_height()) return;
+        float2 size = float2(flashes.get_width(), flashes.get_height());
+        float2 uv = (float2(gid) + 0.5) / size;
+        float3 color = flashes.sample(linearClamp, uv).rgb;
+        // A zero source cannot exceed any nonnegative neighboring peak.
+        if (all(color == float3(0.0))) {
+            peaks.write(float4(0.0, 0.0, 0.0, 1.0), gid);
+            return;
+        }
+        float brightness = dot(color, float3(0.2126,0.7152,0.0722));
+        float neighborPeak = 0.0;
+        for (int y = -1; y <= 1; y++) {
+            for (int x = -1; x <= 1; x++) {
+                if (x == 0 && y == 0) continue;
+                float3 neighbor = flashes.sample(linearClamp, uv + float2(x,y) / size).rgb;
+                neighborPeak = max(neighborPeak, dot(neighbor, float3(0.2126,0.7152,0.0722)));
+            }
+        }
+        peaks.write(float4(brightness > neighborPeak * 1.01 ? color : float3(0.0), 1.0), gid);
+    }
+
+    // Four fixed screen directions, with a narrow taper and no extra central
+    // blob: the existing fog glow already supplies the photographic halo.
+    kernel void gemStreaks(texture2d<float, access::sample> flashes [[texture(0)]],
+                          texture2d<float, access::write> streaks [[texture(1)]],
+                          uint2 gid [[thread_position_in_grid]])
+    {
+        if (gid.x >= streaks.get_width() || gid.y >= streaks.get_height()) return;
+        float2 size = float2(flashes.get_width(), flashes.get_height());
+        float2 uv = (float2(gid) + 0.5) / size;
+        float3 color = float3(0.0);
+        for (int offset = 2; offset <= 7; offset++) {
+            float taper = pow(1.0 - float(offset) / 8.0, 2.0);
+            color += taper * (
+                flashes.sample(linearClamp, uv + float2(offset,0) / size).rgb
+                + flashes.sample(linearClamp, uv - float2(offset,0) / size).rgb
+                + flashes.sample(linearClamp, uv + float2(0,offset) / size).rgb
+                + flashes.sample(linearClamp, uv - float2(0,offset) / size).rgb
+            );
+        }
+        streaks.write(float4(color, 1.0), gid);
+    }
+
+    // Halves an image: each output texel averages a 2 x 2 block, read as one
+    // bilinear tap at the block's center.
+    kernel void downsample(texture2d<float, access::sample> source [[texture(0)]],
+                           texture2d<float, access::write> destination [[texture(1)]],
+                           uint2 gid [[thread_position_in_grid]])
+    {
+        if (gid.x >= destination.get_width() || gid.y >= destination.get_height()) return;
+        float2 uv = (float2(gid) * 2.0 + 1.0) / float2(source.get_width(), source.get_height());
+        destination.write(source.sample(linearClamp, uv), gid);
+    }
+
+    // One pixel of the whole stage: the stage plate and, unless the frame is
+    // the stage alone, the coin's contact shadow, and the coin, its reflection
+    // and the glow laid over it where the coin's render sits. Then Blender's
+    // AgX view transform: a log2
+    // shaper over [-12.47393, 12.5260688117] stops, then the 65-point cube,
+    // whose texel centers sit at (u * 64 + 0.5) / 65. Then the dither.
+    kernel void finish(texture2d<float, access::sample> coin [[texture(0)]],
+                       texture2d<float, access::sample> reflection [[texture(1)]],
+                       texture3d<float, access::sample> agxCube [[texture(2)]],
+                       texture2d<float, access::write> output [[texture(3)]],
+                       array<texture2d<float, access::sample>, 6> glowLevels [[texture(4)]],
+                       texture2d<float, access::sample> stagePlate [[texture(10)]],
+                       texture2d<float, access::sample> gemStreaks [[texture(11)]],
+                       constant float *reflectionVisibility [[buffer(0)]],
+                       constant float *glowWeights [[buffer(1)]],
+                       constant StageUniforms &stage [[buffer(2)]],
+                       constant ContactShadowUniforms &contactShadowPose [[buffer(3)]],
+                       constant float &gemGlintStrength [[buffer(4)]],
+                       uint2 gid [[thread_position_in_grid]])
+    {
+        if (gid.x >= output.get_width() || gid.y >= output.get_height()) return;
+        float2 plateUV = (float2(gid) + 0.5) * stage.plateUVPerPixel + stage.plateUVOrigin;
+        float2 master = stage.masterOrigin + (float2(gid) + 0.5) * stage.masterPixelsPerPixel;
+        float3 color = stagePlate.sample(plateSampler, plateUV).rgb;
+        if (stage.drawsCoin != 0) {
+            color = color * (1.0 - contactShadow(master, contactShadowPose));
+            int2 inCoinRender = int2(gid) - stage.coinOrigin;
+            bool isInCoinRender = all(inCoinRender >= 0)
+                && inCoinRender.x < int(coin.get_width()) && inCoinRender.y < int(coin.get_height());
+            if (isInCoinRender) {
+                uint2 coinGid = uint2(inCoinRender);
+                color = composite(coin, reflection, reflectionVisibility, color, coinGid);
+                float2 uv = (float2(coinGid) + 0.5) / float2(coin.get_width(), coin.get_height());
+                // Six levels, one per entry of the pipeline's glowWeights.
+                for (uint level = 0; level < 6; level++) {
+                    color += glowWeights[level] * glowLevels[level].sample(linearClamp, uv).rgb;
+                }
+                if (gemGlintStrength > 0.0) {
+                    color += gemGlintStrength * gemStreaks.sample(linearClamp, uv).rgb;
+                }
+            }
+        }
+        const float lowestStop = -12.47393;
+        const float highestStop = 12.5260688117;
+        float3 shaped = clamp((log2(max(color, exp2(lowestStop))) - lowestStop) / (highestStop - lowestStop), 0.0, 1.0);
+        float3 display = agxCube.sample(linearClamp, (shaped * 64.0 + 0.5) / 65.0).rgb;
+        output.write(float4(dithered(display, color, gid), 1.0), gid);
+    }
+    """
+}
+
+/// Edits to raw mesh data: each returns a changed copy of a mesh's contents.
+private enum Badge3DMeshEdits {
+    /// The mesh reflected top to bottom (Y negated). Every triangle's winding
+    /// is reversed too, because a reflection turns a mesh inside out:
+    /// without it the renderer would cull the faces that point outward.
+    static func mirroredTopToBottom(_ contents: MeshResource.Contents) -> MeshResource.Contents {
+        editingEveryPart(of: contents) { part in
+            var part = part
+            part.positions = MeshBuffers.Positions(part.positions.map(flippedTopToBottom))
+            if let normals = part.normals {
+                part.normals = MeshBuffers.Normals(normals.map(flippedTopToBottom))
+            }
+            if let tangents = part.tangents {
+                part.tangents = MeshBuffers.Tangents(tangents.map(flippedTopToBottom))
+            }
+            if let bitangents = part.bitangents {
+                part.bitangents = MeshBuffers.Tangents(bitangents.map(flippedTopToBottom))
+            }
+            if let triangleIndices = part.triangleIndices {
+                part.triangleIndices = MeshBuffers.TriangleIndices(
+                    reversedWinding(of: triangleIndices.elements)
+                )
+            }
+            return part
+        }
+    }
+
+    /// The mesh with the tangents of every part drawn with `materialIndex`
+    /// turned to run around the coin's axis (Z). That is the direction the
+    /// Blender material's `Machining UV` U coordinate runs, and an anisotropic
+    /// highlight stretches along the tangent.
+    static func withCircumferentialTangents(
+        _ contents: MeshResource.Contents,
+        onPartsUsing materialIndex: Int
+    ) -> MeshResource.Contents {
+        editingEveryPart(of: contents) { part in
+            guard part.materialIndex == materialIndex, let normals = part.normals else { return part }
+            var tangents: [SIMD3<Float>] = []
+            var bitangents: [SIMD3<Float>] = []
+            for (position, normal) in zip(part.positions, normals) {
+                let tangent = circumferentialTangent(at: position, normal: normal)
+                tangents.append(tangent)
+                bitangents.append(simd_cross(normal, tangent))
+            }
+            var part = part
+            part.tangents = MeshBuffers.Tangents(tangents)
+            part.bitangents = MeshBuffers.Tangents(bitangents)
+            return part
+        }
+    }
+
+    /// The direction around the Z axis at `position`, laid flat into the
+    /// surface by dropping its component along `normal`.
+    private static func circumferentialTangent(
+        at position: SIMD3<Float>, normal: SIMD3<Float>
+    ) -> SIMD3<Float> {
+        let aroundAxis = SIMD3<Float>(-position.y, position.x, 0)
+        let inSurface = aroundAxis - simd_dot(aroundAxis, normal) * normal
+        // Only a point on the axis itself has no direction around it; the
+        // ring never touches the axis, so this is a guard, not a case.
+        guard simd_length(inSurface) > 1e-6 else { return SIMD3(1, 0, 0) }
+        return simd_normalize(inSurface)
+    }
+
+    private static func flippedTopToBottom(_ vector: SIMD3<Float>) -> SIMD3<Float> {
+        SIMD3(vector.x, -vector.y, vector.z)
+    }
+
+    /// Swaps each triangle's last two corners, turning it to face the other
+    /// way.
+    private static func reversedWinding(of triangleIndices: [UInt32]) -> [UInt32] {
+        var reversed = triangleIndices
+        for firstCorner in stride(from: 0, to: reversed.count - 2, by: 3) {
+            reversed.swapAt(firstCorner + 1, firstCorner + 2)
+        }
+        return reversed
+    }
+
+    private static func editingEveryPart(
+        of contents: MeshResource.Contents,
+        _ edit: (MeshResource.Part) -> MeshResource.Part
+    ) -> MeshResource.Contents {
+        var edited = contents
+        edited.models = MeshModelCollection(contents.models.map { model in
+            var model = model
+            model.parts = MeshPartCollection(model.parts.map(edit))
+            return model
+        })
+        return edited
+    }
+}
+
+/// The bundled data sets, read and decoded off the main thread: the studio's
+/// files here (shared by every model), and each model's own file through
+/// `writeModelFile(datasetName:)`.
+private struct Badge3DFiles {
+    /// The linear HDR studio environment (equirectangular), decoded as floats
+    /// so its bright lights are not clipped. It is Blender's bake with each
+    /// light's share rebalanced to go with the nearby point lights: the world
+    /// ambient at 0.455 of the bake, the key at 0.567, the fill at 0.204, the
+    /// rim, top and bottom lights at about 0.01 (the point lights carry them),
+    /// and the overhead spot removed.
+    let environmentMap: CGImage
+    /// The same environment turned upside down, for the mirror image.
+    let upsideDownEnvironmentMap: CGImage
+    /// Blender's AgX view transform as a 65 x 65 x 65 half-float RGBA cube.
+    let agxCube: Data
+    /// The stage behind the coin, baked in Blender without the coin: an
+    /// OpenEXR image of scene-linear light, placed as
+    /// `Badge3DLayout.stagePlateRect` says. A new plate with the same
+    /// placement only needs its file swapped in the data set.
+    let stagePlate: Data
+
+    struct LoadError: Error {
+        let failedItem: String
+    }
+
+    static func readStudio() throws -> Badge3DFiles {
+        let environmentMap = try image(data: try data(named: "Badge3DEnvironment"), name: "Badge3DEnvironment")
+        return Badge3DFiles(
+            environmentMap: environmentMap,
+            upsideDownEnvironmentMap: try upsideDown(environmentMap),
+            agxCube: try data(named: "Badge3DAgXCube"),
+            stagePlate: try data(named: "Badge3DStagePlate")
+        )
+    }
+
+    /// The studio's light at full strength, as the Diamond's gem shader needs
+    /// it (see `Badge3DGem`): Blender's bake before its lights were rebalanced
+    /// for the point lights, so the softboxes are as bright as they are in the
+    /// studio. Decoded as floats, like the studio environment.
+    static func readGemEnvironment() throws -> CGImage {
+        try image(data: try data(named: "Badge3DGemEnvironment"), name: "Badge3DGemEnvironment")
+    }
+
+    /// Copies a model's data set to a temporary file of its own, named after the
+    /// data set so each model keeps its own file, because RealityKit loads
+    /// models from URLs, not from in-memory data.
+    static func writeModelFile(datasetName: String) throws -> URL {
+        let modelData = try data(named: datasetName)
+        let modelURL = FileManager.default.temporaryDirectory
+            .appendingPathComponent(datasetName)
+            .appendingPathExtension("usdz")
+        try modelData.write(to: modelURL, options: .atomic)
+        return modelURL
+    }
+
+    private static func data(named name: String) throws -> Data {
+        guard let asset = NSDataAsset(name: name) else { throw LoadError(failedItem: name) }
+        return asset.data
+    }
+
+    private static func image(data: Data, name: String) throws -> CGImage {
+        let options = [kCGImageSourceShouldAllowFloat: true] as CFDictionary
+        guard let source = CGImageSourceCreateWithData(data as CFData, nil),
+              let image = CGImageSourceCreateImageAtIndex(source, 0, options)
+        else { throw LoadError(failedItem: name) }
+        return image
+    }
+
+    /// The float image turned upside down, its values kept unclipped.
+    private static func upsideDown(_ image: CGImage) throws -> CGImage {
+        guard let space = CGColorSpace(name: CGColorSpace.extendedLinearSRGB),
+              let context = CGContext(
+                data: nil,
+                width: image.width,
+                height: image.height,
+                bitsPerComponent: 32,
+                bytesPerRow: 0,
+                space: space,
+                bitmapInfo: CGImageAlphaInfo.premultipliedLast.rawValue
+                    | CGBitmapInfo.floatComponents.rawValue
+                    | CGBitmapInfo.byteOrder32Little.rawValue
+              )
+        else { throw LoadError(failedItem: "upside-down environment") }
+        context.translateBy(x: 0, y: CGFloat(image.height))
+        context.scaleBy(x: 1, y: -1)
+        context.draw(image, in: CGRect(x: 0, y: 0, width: image.width, height: image.height))
+        guard let flipped = context.makeImage() else {
+            throw LoadError(failedItem: "upside-down environment")
+        }
+        return flipped
+    }
+}

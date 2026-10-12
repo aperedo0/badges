@@ -1,0 +1,137 @@
+{
+  "tier": "gold",
+  "installed_sha256": "2306ce19a8d9fabb804775350c6d7677901a29283fe5fa80914a790ca6b638a2",
+  "sha256": "e403bf8f2cd8e1bb903677b1c03fd945ea266f4bfd1586c2a01db16cc10c6027",
+  "triangles": 42580,
+  "bytes": 3478334,
+  "bounds": [
+    [
+      -3.1890628337860107,
+      -2.4549999237060547,
+      -0.7210000157356262
+    ],
+    [
+      3.1890628337860107,
+      1.9958367347717285,
+      0.7210000157356262
+    ]
+  ],
+  "arkit_errors": [],
+  "arkit_failed_checks": [],
+  "changes": [
+    {
+      "mesh": "/GoldCrown/GoldCrown_HollowBand",
+      "geometry_and_normals_unchanged": true,
+      "original_front_material_and_uv_unchanged": true,
+      "rear_faces_with_reference_finish": 1536
+    },
+    {
+      "mesh": "/GoldCrown/GoldCrown_ScallopedShell",
+      "geometry_and_normals_unchanged": true,
+      "original_front_material_and_uv_unchanged": true,
+      "rear_faces_with_reference_finish": 2800
+    },
+    {
+      "mesh": "/GoldCrown/GoldCrown_RoundedScallopLip",
+      "geometry_and_normals_unchanged": true,
+      "original_front_material_and_uv_unchanged": true,
+      "rear_faces_with_reference_finish": 2240
+    },
+    {
+      "mesh": "/GoldCrown/GoldCrown_ValleyFlange1",
+      "geometry_and_normals_unchanged": true,
+      "original_front_material_and_uv_unchanged": true,
+      "rear_faces_with_reference_finish": 278
+    },
+    {
+      "mesh": "/GoldCrown/GoldCrown_ValleyFlange2",
+      "geometry_and_normals_unchanged": true,
+      "original_front_material_and_uv_unchanged": true,
+      "rear_faces_with_reference_finish": 278
+    },
+    {
+      "mesh": "/GoldCrown/GoldCrown_ValleyFlange3",
+      "geometry_and_normals_unchanged": true,
+      "original_front_material_and_uv_unchanged": true,
+      "rear_faces_with_reference_finish": 278
+    },
+    {
+      "mesh": "/GoldCrown/GoldCrown_ValleyFlange4",
+      "geometry_and_normals_unchanged": true,
+      "original_front_material_and_uv_unchanged": true,
+      "rear_faces_with_reference_finish": 278
+    },
+    {
+      "mesh": "/GoldCrown/GoldCrown_UpperBandLip",
+      "geometry_and_normals_unchanged": true,
+      "original_front_material_and_uv_unchanged": true,
+      "rear_faces_with_reference_finish": 1024
+    },
+    {
+      "mesh": "/GoldCrown/GoldCrown_LowerBandLip",
+      "geometry_and_normals_unchanged": true,
+      "original_front_material_and_uv_unchanged": true,
+      "rear_faces_with_reference_finish": 1024
+    },
+    {
+      "mesh": "/GoldCrown/GoldCrown_Finial1",
+      "geometry_and_normals_unchanged": true,
+      "original_front_material_and_uv_unchanged": true,
+      "rear_faces_with_reference_finish": 1856
+    },
+    {
+      "mesh": "/GoldCrown/GoldCrown_Collar1",
+      "geometry_and_normals_unchanged": true,
+      "original_front_material_and_uv_unchanged": true,
+      "rear_faces_with_reference_finish": 192
+    },
+    {
+      "mesh": "/GoldCrown/GoldCrown_Finial2",
+      "geometry_and_normals_unchanged": true,
+      "original_front_material_and_uv_unchanged": true,
+      "rear_faces_with_reference_finish": 1856
+    },
+    {
+      "mesh": "/GoldCrown/GoldCrown_Collar2",
+      "geometry_and_normals_unchanged": true,
+      "original_front_material_and_uv_unchanged": true,
+      "rear_faces_with_reference_finish": 192
+    },
+    {
+      "mesh": "/GoldCrown/GoldCrown_Finial3",
+      "geometry_and_normals_unchanged": true,
+      "original_front_material_and_uv_unchanged": true,
+      "rear_faces_with_reference_finish": 1856
+    },
+    {
+      "mesh": "/GoldCrown/GoldCrown_Collar3",
+      "geometry_and_normals_unchanged": true,
+      "original_front_material_and_uv_unchanged": true,
+      "rear_faces_with_reference_finish": 192
+    },
+    {
+      "mesh": "/GoldCrown/GoldCrown_Finial4",
+      "geometry_and_normals_unchanged": true,
+      "original_front_material_and_uv_unchanged": true,
+      "rear_faces_with_reference_finish": 1856
+    },
+    {
+      "mesh": "/GoldCrown/GoldCrown_Collar4",
+      "geometry_and_normals_unchanged": true,
+      "original_front_material_and_uv_unchanged": true,
+      "rear_faces_with_reference_finish": 192
+    },
+    {
+      "mesh": "/GoldCrown/GoldCrown_Finial5",
+      "geometry_and_normals_unchanged": true,
+      "original_front_material_and_uv_unchanged": true,
+      "rear_faces_with_reference_finish": 1856
+    },
+    {
+      "mesh": "/GoldCrown/GoldCrown_Collar5",
+      "geometry_and_normals_unchanged": true,
+      "original_front_material_and_uv_unchanged": true,
+      "rear_faces_with_reference_finish": 192
+    }
+  ]
+}

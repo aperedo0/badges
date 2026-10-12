@@ -1,0 +1,41 @@
+{
+  "geometry_unchanged": true,
+  "normals_unchanged": true,
+  "uv_unchanged": true,
+  "closed_mesh": true,
+  "triangles": 240,
+  "vertices": 122,
+  "flat_facet_normals": true,
+  "no_transforms_or_lights": true,
+  "bounds": [
+    [
+      -3.119999885559082,
+      -2.4549999237060547,
+      -3.119999885559082
+    ],
+    [
+      3.119999885559082,
+      2.3486063480377197,
+      3.119999885559082
+    ]
+  ],
+  "maximum_spin_width": 6.240000068537839,
+  "textures_resolve_after_independent_unpack": [
+    "0/body_color.png"
+  ],
+  "color_uv": [
+    "BadgeUV"
+  ],
+  "emission_is_uniform_only": [
+    0.00800000037997961,
+    0.019999999552965164,
+    0.03500000014901161
+  ],
+  "metallic": 0.25,
+  "roughness": 0.14000000059604645,
+  "clearcoat": 0.699999988079071,
+  "ior": 2.4200000762939453,
+  "opacity": 1.0,
+  "arkit_errors": [],
+  "arkit_failed_checks": []
+}

@@ -1,0 +1,30 @@
+{
+  "tier": "platinum",
+  "installed_sha256": "6ba3c309bc8d9861c28ed66230f1fbaf5d23b0106e97ddddf6263095403ce371",
+  "sha256": "6872d97cce0eae42c29f0991f35e9144dba6a8c347ac06149da813bc8c903a06",
+  "triangles": 43008,
+  "bytes": 3656937,
+  "bounds": [
+    [
+      -2.8524208068847656,
+      -2.4549999237060547,
+      -0.7828716039657593
+    ],
+    [
+      2.8524208068847656,
+      2.902362585067749,
+      0.7828716039657593
+    ]
+  ],
+  "arkit_errors": [],
+  "arkit_failed_checks": [],
+  "changes": [
+    {
+      "mesh": "/PlatinumKnot/PlatinumKnot_ContinuousBeveledRibbon",
+      "front_data_identical": true,
+      "back_textured_faces": 21504,
+      "moderate_textured_wall_faces": 3151,
+      "geometry_unchanged": true
+    }
+  ]
+}

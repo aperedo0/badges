@@ -1,0 +1,6 @@
+{
+  "method": "Rasterize installed optical maps into a continuous front XY field, then reproject into individual atlas regions for every real facet. This avoids stretching narrow source atlas triangles over unrelated facets.",
+  "source": "Installed blue crystal color and emissive maps.",
+  "texture_size": 1024,
+  "facets": 240
+}

@@ -1,0 +1,7 @@
+{
+  "solved_texels": 201636,
+  "emission_clipped_fraction": 0.00023805272867940248,
+  "reference_sigma": 0.8,
+  "texture_size": 1024,
+  "refine_from": "candidates/02"
+}

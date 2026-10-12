@@ -1,0 +1,16 @@
+{
+  "color": {
+    "quarter_turn_repeat_exact": true,
+    "max_quarter_turn_byte_difference": 0
+  },
+  "emissive": {
+    "quarter_turn_repeat_exact": true,
+    "max_quarter_turn_byte_difference": 0
+  },
+  "geometry": {
+    "closed_every_edge_two_faces": true,
+    "max_normal_variation_within_triangle": 0.0,
+    "triangles": 240,
+    "depth_width_ratio": 1.0
+  }
+}

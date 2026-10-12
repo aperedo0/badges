@@ -1,0 +1,22 @@
+{
+  "installed": {
+    "source": "/Users/antonioperedo/Desktop/screen_time/ScreenTime/SupportingFiles/Assets.xcassets/Badge3DModelDiamond.dataset/diamond_badge_mobile.usdz",
+    "sha256": "88b2ee5477f42b59afef20c49416bb34cff865795b10d392b36998b100e713c7",
+    "bytes": 922675,
+    "entries": [
+      "badge.usdc",
+      "0/emissive.png",
+      "0/color.png"
+    ]
+  },
+  "proposed": {
+    "source": "/Users/antonioperedo/Desktop/badges/gold_diamond_20261009/diamond/all_sides_20261010/mobile/diamond_badge_mobile.usdz",
+    "sha256": "2ba20a7cf8a5efb7bcbe764879bc8205a9845f38f7c080aa1999a0d2c1ca3b16",
+    "bytes": 413880,
+    "entries": [
+      "compacted.usdc",
+      "0/emissive.png",
+      "0/color.png"
+    ]
+  }
+}

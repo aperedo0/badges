@@ -1,0 +1,10 @@
+00:00.574  blend            | Read blend: "/Users/antonioperedo/Desktop/badges/badge_variants2_20261008/silver2/scenes/silver2_badge_mobile.blend"
+00:07.299  render           | Saved: '/Users/antonioperedo/Desktop/badges/badge_variants2_20261008/silver2/iterations/11/app_light_front.png'
+BlenderMCP addon registered
+IMPORTED ['Silver2_InnerLeaves_Satin.001', 'Silver2_LeafBlades_Satin.001', 'Silver2_LeafEdges_Satin.001', 'Silver2_Star_Satin.001', 'Silver2_Stems_Satin.001', 'Silver2_UpperLeaves_Satin.001']
+RENDERED /Users/antonioperedo/Desktop/badges/badge_variants2_20261008/silver2/iterations/11/app_light_front.png
+BlenderMCP addon unregistered
+Blender 5.2.2 LTS (hash d13f752e3b9c built 2026-09-15 01:49:19)
+USD import of '/Users/antonioperedo/Desktop/badges/badge_variants2_20261008/silver2/iterations/11/silver2_badge_mobile.usdz' took 110.57 ms
+
+Blender quit

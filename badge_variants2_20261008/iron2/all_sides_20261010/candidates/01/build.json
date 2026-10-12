@@ -1,0 +1,29 @@
+{
+  "tier": "iron",
+  "installed_sha256": "3c2b245b3074c8f9a72f87630ff6317a581bd0e34e17e364b3f926d93e9517fd",
+  "sha256": "207f6cc7926109b3f9a9416c91d02e64211b13c2174225f9fda2ed0b754ae50a",
+  "triangles": 42816,
+  "bytes": 4403077,
+  "bounds": [
+    [
+      -2.161102294921875,
+      -2.4549999237060547,
+      -0.32499998807907104
+    ],
+    [
+      2.161102294921875,
+      2.8450000286102295,
+      0.32499998807907104
+    ]
+  ],
+  "arkit_errors": [],
+  "arkit_failed_checks": [],
+  "changes": [
+    {
+      "front_data_identical": true,
+      "replaced_rear_triangles": 448,
+      "hollow_rear_triangles": 1792,
+      "design": "Crossed iron braces, raised iron hand grip, six domed rivets; the fittings stay inside the original depth."
+    }
+  ]
+}

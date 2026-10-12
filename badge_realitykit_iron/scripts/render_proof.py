@@ -16,6 +16,7 @@ rig harsh       the scene's lights off; the app's eight point lights instead (sa
 """
 import math
 import sys
+from pathlib import Path
 
 import bpy
 
@@ -29,7 +30,7 @@ def opt(name, default=None):
 variant, rig_name = opt('--variant'), opt('--rig', 'stage')
 pose, out = float(opt('--pose', '0')), opt('--out')
 scene = bpy.context.scene
-assert bpy.data.filepath.startswith('/Users/antonioperedo/Downloads/badge_realitykit_iron/scenes/'), 'open a copy only'
+assert Path(bpy.data.filepath).resolve().parent == Path(__file__).resolve().parents[1]/'scenes', 'open a copy only'
 bpy.context.preferences.filepaths.save_version = 0
 
 # GPU for speed; every variant uses the same device and settings.

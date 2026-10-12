@@ -1,0 +1,32 @@
+{
+  "tier": "gold",
+  "installed_sha256": "2306ce19a8d9fabb804775350c6d7677901a29283fe5fa80914a790ca6b638a2",
+  "sha256": "7f7f8379a0117511b28cdb849d23ff7031446f70012ce56f97183b638b765a3c",
+  "triangles": 32608,
+  "bytes": 5432306,
+  "bounds": [
+    [
+      -3.0246286392211914,
+      -2.4549999237060547,
+      -3.302490472793579
+    ],
+    [
+      3.0246286392211914,
+      2.746544599533081,
+      3.302490472793579
+    ]
+  ],
+  "arkit_errors": [],
+  "arkit_failed_checks": [],
+  "changes": [
+    {
+      "test_only": true,
+      "baked_tilt_degrees": 6,
+      "tilt_reverses_toward_back": true
+    },
+    {
+      "design": "Continuous circular hollow gold band and ten scalloped points with gold finials and amber cabochons around the full circumference.",
+      "front_style": "Polished warm physical gold on continuous surfaces; darker physical metal inside and at narrow trim. Old projected texture is omitted on revised full crown because it stretches over curved rear surfaces."
+    }
+  ]
+}

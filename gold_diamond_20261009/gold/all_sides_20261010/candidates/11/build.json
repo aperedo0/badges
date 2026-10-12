@@ -1,0 +1,146 @@
+{
+  "tier": "gold",
+  "installed_sha256": "2306ce19a8d9fabb804775350c6d7677901a29283fe5fa80914a790ca6b638a2",
+  "sha256": "72219fe69a92e2adfbe4796416e4fcde07914c3b2d3ee899b7e5901c452057ea",
+  "triangles": 58980,
+  "bytes": 4398052,
+  "bounds": [
+    [
+      -3.1890628337860107,
+      -2.4549999237060547,
+      -0.7210000157356262
+    ],
+    [
+      3.1890628337860107,
+      1.9958367347717285,
+      0.7210000157356262
+    ]
+  ],
+  "arkit_errors": [],
+  "arkit_failed_checks": [],
+  "changes": [
+    {
+      "mesh": "/GoldCrown/GoldCrown_HollowBand",
+      "front_triangles_preserved": 1792,
+      "front_data_identical": true,
+      "back_maps_match_front": true,
+      "paired_mirror_x": true,
+      "max_pairing_error": 1.2707457207669767e-15,
+      "triangles": 4144
+    },
+    {
+      "mesh": "/GoldCrown/GoldCrown_ScallopedShell",
+      "front_triangles_preserved": 3470,
+      "front_data_identical": true,
+      "back_maps_match_front": true,
+      "paired_mirror_x": false,
+      "max_pairing_error": 0.11289710242766199,
+      "triangles": 8100
+    },
+    {
+      "mesh": "/GoldCrown/GoldCrown_RoundedScallopLip",
+      "original_preserved": true,
+      "rear_detail_copied": true
+    },
+    {
+      "mesh": "/GoldCrown/GoldCrown_ValleyFlange1",
+      "original_preserved": true,
+      "rear_detail_copied": true
+    },
+    {
+      "mesh": "/GoldCrown/GoldCrown_ValleyFlange2",
+      "original_preserved": true,
+      "rear_detail_copied": true
+    },
+    {
+      "mesh": "/GoldCrown/GoldCrown_ValleyFlange3",
+      "original_preserved": true,
+      "rear_detail_copied": true
+    },
+    {
+      "mesh": "/GoldCrown/GoldCrown_ValleyFlange4",
+      "original_preserved": true,
+      "rear_detail_copied": true
+    },
+    {
+      "mesh": "/GoldCrown/GoldCrown_UpperBandLip",
+      "original_preserved": true,
+      "rear_detail_copied": true
+    },
+    {
+      "mesh": "/GoldCrown/GoldCrown_LowerBandLip",
+      "original_preserved": true,
+      "rear_detail_copied": true
+    },
+    {
+      "mesh": "/GoldCrown/GoldCrown_Finial1",
+      "front_triangles_preserved": 1864,
+      "front_data_identical": true,
+      "back_maps_match_front": true,
+      "paired_mirror_x": false,
+      "max_pairing_error": 5.91007623409984,
+      "triangles": 3864
+    },
+    {
+      "mesh": "/GoldCrown/GoldCrown_Collar1",
+      "original_preserved": true,
+      "rear_detail_copied": true
+    },
+    {
+      "mesh": "/GoldCrown/GoldCrown_Finial2",
+      "front_triangles_preserved": 1876,
+      "front_data_identical": true,
+      "back_maps_match_front": true,
+      "paired_mirror_x": false,
+      "max_pairing_error": 3.4901072773831388,
+      "triangles": 3888
+    },
+    {
+      "mesh": "/GoldCrown/GoldCrown_Collar2",
+      "original_preserved": true,
+      "rear_detail_copied": true
+    },
+    {
+      "mesh": "/GoldCrown/GoldCrown_Finial3",
+      "front_triangles_preserved": 1856,
+      "front_data_identical": true,
+      "back_maps_match_front": true,
+      "paired_mirror_x": true,
+      "max_pairing_error": 0.0,
+      "triangles": 3840
+    },
+    {
+      "mesh": "/GoldCrown/GoldCrown_Collar3",
+      "original_preserved": true,
+      "rear_detail_copied": true
+    },
+    {
+      "mesh": "/GoldCrown/GoldCrown_Finial4",
+      "front_triangles_preserved": 1876,
+      "front_data_identical": true,
+      "back_maps_match_front": true,
+      "paired_mirror_x": false,
+      "max_pairing_error": 3.4901072773831388,
+      "triangles": 3888
+    },
+    {
+      "mesh": "/GoldCrown/GoldCrown_Collar4",
+      "original_preserved": true,
+      "rear_detail_copied": true
+    },
+    {
+      "mesh": "/GoldCrown/GoldCrown_Finial5",
+      "front_triangles_preserved": 1864,
+      "front_data_identical": true,
+      "back_maps_match_front": true,
+      "paired_mirror_x": false,
+      "max_pairing_error": 5.91007623409984,
+      "triangles": 3864
+    },
+    {
+      "mesh": "/GoldCrown/GoldCrown_Collar5",
+      "original_preserved": true,
+      "rear_detail_copied": true
+    }
+  ]
+}

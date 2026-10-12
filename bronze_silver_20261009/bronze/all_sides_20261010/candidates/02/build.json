@@ -1,0 +1,123 @@
+{
+  "tier": "bronze",
+  "installed_sha256": "272ea6468b93059f8109b061337385751d238071aa4bcfcb9ed27c95f4061b8f",
+  "sha256": "c84985b4d77a628ced09742d8aaed4360158f452b49ba7659cacfcc1e0e7f3ab",
+  "triangles": 46176,
+  "bytes": 3722395,
+  "bounds": [
+    [
+      -2.6708455085754395,
+      -2.4549999237060547,
+      -0.32499998807907104
+    ],
+    [
+      2.6708455085754395,
+      2.8450000286102295,
+      0.32499998807907104
+    ]
+  ],
+  "arkit_errors": [],
+  "arkit_failed_checks": [],
+  "changes": [
+    {
+      "mesh": "/BronzeSun/BronzeSun_Dome",
+      "front_triangles_preserved": 15840,
+      "front_data_identical": true,
+      "back_maps_match_front": true,
+      "paired_mirror_x": true,
+      "max_pairing_error": 3.982450338875813e-16,
+      "triangles": 32000
+    },
+    {
+      "mesh": "/BronzeSun/BronzeSun_OuterLip",
+      "original_preserved": true,
+      "rear_lip_added": true
+    },
+    {
+      "mesh": "/BronzeSun/BronzeSun_InnerLip",
+      "original_preserved": true,
+      "rear_lip_added": true
+    },
+    {
+      "mesh": "/BronzeSun/BronzeSun_Channel",
+      "front_triangles_preserved": 320,
+      "front_data_identical": true,
+      "back_maps_match_front": true,
+      "paired_mirror_x": true,
+      "max_pairing_error": 4.537695788273176e-16,
+      "triangles": 1280
+    },
+    {
+      "mesh": "/BronzeSun/BronzeSun_Ray1",
+      "front_triangles_preserved": 2,
+      "front_data_identical": true,
+      "back_maps_match_front": true,
+      "paired_mirror_x": false,
+      "max_pairing_error": 0.0052114129066467285,
+      "triangles": 12
+    },
+    {
+      "mesh": "/BronzeSun/BronzeSun_Ray2",
+      "front_triangles_preserved": 2,
+      "front_data_identical": true,
+      "back_maps_match_front": true,
+      "paired_mirror_x": false,
+      "max_pairing_error": 3.7887492197951484,
+      "triangles": 12
+    },
+    {
+      "mesh": "/BronzeSun/BronzeSun_Ray3",
+      "front_triangles_preserved": 2,
+      "front_data_identical": true,
+      "back_maps_match_front": true,
+      "paired_mirror_x": false,
+      "max_pairing_error": 0.0052114129066467285,
+      "triangles": 12
+    },
+    {
+      "mesh": "/BronzeSun/BronzeSun_Ray4",
+      "front_triangles_preserved": 2,
+      "front_data_identical": true,
+      "back_maps_match_front": true,
+      "paired_mirror_x": false,
+      "max_pairing_error": 3.799185292572125,
+      "triangles": 12
+    },
+    {
+      "mesh": "/BronzeSun/BronzeSun_Ray5",
+      "front_triangles_preserved": 2,
+      "front_data_identical": true,
+      "back_maps_match_front": true,
+      "paired_mirror_x": false,
+      "max_pairing_error": 2.264331946804167,
+      "triangles": 12
+    },
+    {
+      "mesh": "/BronzeSun/BronzeSun_Ray6",
+      "front_triangles_preserved": 2,
+      "front_data_identical": true,
+      "back_maps_match_front": true,
+      "paired_mirror_x": false,
+      "max_pairing_error": 2.3505015230344237,
+      "triangles": 12
+    },
+    {
+      "mesh": "/BronzeSun/BronzeSun_Ray7",
+      "front_triangles_preserved": 2,
+      "front_data_identical": true,
+      "back_maps_match_front": true,
+      "paired_mirror_x": false,
+      "max_pairing_error": 2.359629172045006,
+      "triangles": 12
+    },
+    {
+      "mesh": "/BronzeSun/BronzeSun_Ray8",
+      "front_triangles_preserved": 2,
+      "front_data_identical": true,
+      "back_maps_match_front": true,
+      "paired_mirror_x": false,
+      "max_pairing_error": 2.269393827035452,
+      "triangles": 12
+    }
+  ]
+}

@@ -1,0 +1,116 @@
+{
+  "method": "one affine projection per flat face; independent padded UV islands, no interpolation across plane edges; plain side/back island",
+  "planes": [
+    {
+      "plane": 4,
+      "affine_gradient_curvature_source": 0,
+      "float64_source": true,
+      "padded_island_pixels": 12,
+      "quantized_core_red_levels": 61,
+      "core_min_max_linear": [
+        0.48277363903925513,
+        0.9364571696290745
+      ]
+    },
+    {
+      "plane": 6,
+      "affine_gradient_curvature_source": 0,
+      "float64_source": true,
+      "padded_island_pixels": 12,
+      "quantized_core_red_levels": 59,
+      "core_min_max_linear": [
+        0.4829027211084587,
+        0.9189884146858552
+      ]
+    },
+    {
+      "plane": 7,
+      "affine_gradient_curvature_source": 0,
+      "float64_source": true,
+      "padded_island_pixels": 12,
+      "quantized_core_red_levels": 54,
+      "core_min_max_linear": [
+        0.40886076737821053,
+        0.7746536017281745
+      ]
+    },
+    {
+      "plane": 8,
+      "affine_gradient_curvature_source": 0,
+      "float64_source": true,
+      "padded_island_pixels": 12,
+      "quantized_core_red_levels": 54,
+      "core_min_max_linear": [
+        0.4137556086825585,
+        0.7761243307872154
+      ]
+    },
+    {
+      "plane": 9,
+      "affine_gradient_curvature_source": 0,
+      "float64_source": true,
+      "padded_island_pixels": 12,
+      "quantized_core_red_levels": 44,
+      "core_min_max_linear": [
+        0.24988999053959818,
+        0.4682337309584621
+      ]
+    },
+    {
+      "plane": 0,
+      "affine_gradient_curvature_source": 0,
+      "float64_source": true,
+      "padded_island_pixels": 12,
+      "quantized_core_red_levels": 36,
+      "core_min_max_linear": [
+        0.14629203046622202,
+        0.3147515054751273
+      ]
+    },
+    {
+      "plane": 1,
+      "affine_gradient_curvature_source": 0,
+      "float64_source": true,
+      "padded_island_pixels": 12,
+      "quantized_core_red_levels": 50,
+      "core_min_max_linear": [
+        0.4184278335884042,
+        0.8462386783214034
+      ]
+    },
+    {
+      "plane": 2,
+      "affine_gradient_curvature_source": 0,
+      "float64_source": true,
+      "padded_island_pixels": 12,
+      "quantized_core_red_levels": 57,
+      "core_min_max_linear": [
+        0.45610803435307284,
+        0.968000128500388
+      ]
+    },
+    {
+      "plane": 3,
+      "affine_gradient_curvature_source": 0,
+      "float64_source": true,
+      "padded_island_pixels": 12,
+      "quantized_core_red_levels": 53,
+      "core_min_max_linear": [
+        0.349671832948564,
+        0.7617562700876386
+      ]
+    },
+    {
+      "plane": 5,
+      "affine_gradient_curvature_source": 0,
+      "float64_source": true,
+      "padded_island_pixels": 12,
+      "quantized_core_red_levels": 50,
+      "core_min_max_linear": [
+        0.33477130064426275,
+        0.704546942633567
+      ]
+    }
+  ],
+  "normal_maps": 0
+}

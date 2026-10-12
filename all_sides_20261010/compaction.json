@@ -1,0 +1,44 @@
+{
+  "iron": {
+    "before_bytes": 5091900,
+    "after_bytes": 4680780,
+    "scene_text_identical": true,
+    "triangles": 59392
+  },
+  "bronze": {
+    "before_bytes": 3722395,
+    "after_bytes": 3722395,
+    "scene_text_identical": true,
+    "triangles": 46176
+  },
+  "steel": {
+    "before_bytes": 744538,
+    "after_bytes": 744538,
+    "scene_text_identical": true,
+    "triangles": 600
+  },
+  "silver": {
+    "before_bytes": 3942190,
+    "after_bytes": 3942190,
+    "scene_text_identical": true,
+    "triangles": 43944
+  },
+  "gold": {
+    "before_bytes": 1478867,
+    "after_bytes": 1478867,
+    "scene_text_identical": true,
+    "triangles": 35080
+  },
+  "platinum": {
+    "before_bytes": 4689904,
+    "after_bytes": 3657045,
+    "scene_text_identical": true,
+    "triangles": 43008
+  },
+  "diamond": {
+    "before_bytes": 420012,
+    "after_bytes": 413880,
+    "scene_text_identical": true,
+    "triangles": 240
+  }
+}

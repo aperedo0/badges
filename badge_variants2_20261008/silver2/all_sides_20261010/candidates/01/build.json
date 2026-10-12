@@ -1,0 +1,77 @@
+{
+  "tier": "silver",
+  "installed_sha256": "1df59b509c7668df78edec16091d61008c60a33d9bd046c1d434979abe67dbba",
+  "sha256": "0978efac1bc452acd42613109ff097bb1d0edf49c3db208fa1c7e3bc992f3d0f",
+  "triangles": 43944,
+  "bytes": 7019202,
+  "bounds": [
+    [
+      -3.1959002017974854,
+      -2.4549999237060547,
+      -0.34449997544288635
+    ],
+    [
+      3.1959002017974854,
+      2.6567277908325195,
+      0.34449997544288635
+    ]
+  ],
+  "arkit_errors": [],
+  "arkit_failed_checks": [],
+  "changes": [
+    {
+      "mesh": "/Silver2/Silver2_LeafBlades_Satin",
+      "front_triangles_preserved": 4464,
+      "front_data_identical": true,
+      "back_maps_match_front": true,
+      "paired_mirror_x": true,
+      "max_pairing_error": 0.0,
+      "triangles": 9696
+    },
+    {
+      "mesh": "/Silver2/Silver2_LeafEdges_Satin",
+      "front_triangles_preserved": 4464,
+      "front_data_identical": true,
+      "back_maps_match_front": true,
+      "paired_mirror_x": true,
+      "max_pairing_error": 0.0,
+      "triangles": 9696
+    },
+    {
+      "mesh": "/Silver2/Silver2_Stems_Satin",
+      "front_triangles_preserved": 5120,
+      "front_data_identical": true,
+      "back_maps_match_front": true,
+      "paired_mirror_x": false,
+      "max_pairing_error": 0.010980084538459778,
+      "triangles": 11584
+    },
+    {
+      "mesh": "/Silver2/Silver2_Star_Satin",
+      "front_triangles_preserved": 10,
+      "front_data_identical": true,
+      "back_maps_match_front": true,
+      "paired_mirror_x": false,
+      "max_pairing_error": 0.13797944913519286,
+      "triangles": 40
+    },
+    {
+      "mesh": "/Silver2/Silver2_InnerLeaves_Satin",
+      "front_triangles_preserved": 2976,
+      "front_data_identical": true,
+      "back_maps_match_front": true,
+      "paired_mirror_x": true,
+      "max_pairing_error": 0.0,
+      "triangles": 6464
+    },
+    {
+      "mesh": "/Silver2/Silver2_UpperLeaves_Satin",
+      "front_triangles_preserved": 2976,
+      "front_data_identical": true,
+      "back_maps_match_front": true,
+      "paired_mirror_x": true,
+      "max_pairing_error": 0.0,
+      "triangles": 6464
+    }
+  ]
+}

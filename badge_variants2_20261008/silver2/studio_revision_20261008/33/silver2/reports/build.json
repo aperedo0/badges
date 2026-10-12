@@ -1,0 +1,413 @@
+{
+  "tier": "Silver2",
+  "triangles": 42664,
+  "file_bytes": 3213478,
+  "sha256": "2f401f6c2bdab9df3bd7924d5a9dd629f43dee86e8a1968a47252b0d27ac9fb0",
+  "bounds": [
+    [
+      -3.015000104904175,
+      -2.4549999237060547,
+      -0.32499998807907104
+    ],
+    [
+      3.015000104904175,
+      2.367384672164917,
+      0.32499998807907104
+    ]
+  ],
+  "height": 4.822384595870972,
+  "width": 6.03000020980835,
+  "thickness": 0.6499999761581421,
+  "lowest_y": -2.4549999237060547,
+  "float_above_floor": 0.44000007629394533,
+  "flat_plane_max_normal_difference": {
+    "star plane 0": 0.0,
+    "star plane 1": 0.0,
+    "star plane 2": 0.0,
+    "star plane 3": 0.0,
+    "star plane 4": 0.0,
+    "star plane 5": 0.0,
+    "star plane 6": 0.0,
+    "star plane 7": 0.0,
+    "star plane 8": 0.0,
+    "star plane 9": 0.0
+  },
+  "metal_normal_maps": 0,
+  "finish_evidence": {
+    "method": "Final24 fibers unchanged; one float64 affine color ramp per star plane, one longitudinal color ramp per leaf; even roughness; no normals, bowls, bands, painted spot highlights or new lighting.",
+    "fiber_gaussian_sigma_world": 0.0225,
+    "fiber_FWHM_world": 0.053,
+    "polish_bowl_by_plane": {},
+    "brush_color_gain": 0.14,
+    "star_brush_color_gain": 0.055,
+    "brush_roughness_gain": 0.001,
+    "polish_bowl_gain": 0,
+    "polish_bowl_planes": [],
+    "top_plane_color_gain": 0.6,
+    "top_shaded_plane_color_gain": 0.73,
+    "star_plane_roughness": {
+      "2": 0.42,
+      "4": 0.29,
+      "6": 0.4,
+      "7": 0.31,
+      "8": 0.2,
+      "9": 0.24
+    },
+    "star_polish_ramps": {},
+    "normal_maps": 0,
+    "affine_ramps": [
+      {
+        "plane": 0,
+        "method": "one affine projection, float64 before sRGB quantization",
+        "direction_reference_xy": [
+          -0.8191520442889917,
+          -0.573576436351046
+        ],
+        "endpoint_gains": [
+          0.72,
+          1.28
+        ],
+        "endpoint_ratio": 1.777777777777778,
+        "interior_extrema": false
+      },
+      {
+        "plane": 1,
+        "method": "one affine projection, float64 before sRGB quantization",
+        "direction_reference_xy": [
+          -0.7071067811865475,
+          -0.7071067811865475
+        ],
+        "endpoint_gains": [
+          0.72,
+          1.28
+        ],
+        "endpoint_ratio": 1.777777777777778,
+        "interior_extrema": false
+      },
+      {
+        "plane": 2,
+        "method": "one affine projection, float64 before sRGB quantization",
+        "direction_reference_xy": [
+          -0.573576436351046,
+          -0.8191520442889917
+        ],
+        "endpoint_gains": [
+          0.72,
+          1.28
+        ],
+        "endpoint_ratio": 1.777777777777778,
+        "interior_extrema": false
+      },
+      {
+        "plane": 3,
+        "method": "one affine projection, float64 before sRGB quantization",
+        "direction_reference_xy": [
+          -0.8191520442889917,
+          -0.573576436351046
+        ],
+        "endpoint_gains": [
+          0.72,
+          1.28
+        ],
+        "endpoint_ratio": 1.777777777777778,
+        "interior_extrema": false
+      },
+      {
+        "plane": 4,
+        "method": "one affine projection, float64 before sRGB quantization",
+        "direction_reference_xy": [
+          -0.7071067811865475,
+          -0.7071067811865475
+        ],
+        "endpoint_gains": [
+          0.72,
+          1.28
+        ],
+        "endpoint_ratio": 1.777777777777778,
+        "interior_extrema": false
+      },
+      {
+        "plane": 5,
+        "method": "one affine projection, float64 before sRGB quantization",
+        "direction_reference_xy": [
+          -0.573576436351046,
+          -0.8191520442889917
+        ],
+        "endpoint_gains": [
+          0.72,
+          1.28
+        ],
+        "endpoint_ratio": 1.777777777777778,
+        "interior_extrema": false
+      },
+      {
+        "plane": 6,
+        "method": "one affine projection, float64 before sRGB quantization",
+        "direction_reference_xy": [
+          -0.8191520442889917,
+          -0.573576436351046
+        ],
+        "endpoint_gains": [
+          0.72,
+          1.28
+        ],
+        "endpoint_ratio": 1.777777777777778,
+        "interior_extrema": false
+      },
+      {
+        "plane": 7,
+        "method": "one affine projection, float64 before sRGB quantization",
+        "direction_reference_xy": [
+          -0.7071067811865475,
+          -0.7071067811865475
+        ],
+        "endpoint_gains": [
+          0.72,
+          1.28
+        ],
+        "endpoint_ratio": 1.777777777777778,
+        "interior_extrema": false
+      },
+      {
+        "plane": 8,
+        "method": "one affine projection, float64 before sRGB quantization",
+        "direction_reference_xy": [
+          -0.573576436351046,
+          -0.8191520442889917
+        ],
+        "endpoint_gains": [
+          0.72,
+          1.28
+        ],
+        "endpoint_ratio": 1.777777777777778,
+        "interior_extrema": false
+      },
+      {
+        "plane": 9,
+        "method": "one affine projection, float64 before sRGB quantization",
+        "direction_reference_xy": [
+          -0.8191520442889917,
+          -0.573576436351046
+        ],
+        "endpoint_gains": [
+          0.72,
+          1.28
+        ],
+        "endpoint_ratio": 1.777777777777778,
+        "interior_extrema": false
+      }
+    ],
+    "leaf_ramp_endpoint_gains": [
+      0.94,
+      1.06
+    ],
+    "owner_exception": "Owner explicitly requested gentle fixed color ramps, 2000 whole-badge white limit, plane means>=30 and adjacent differences>=25 under current original studio.",
+    "resolution": [
+      512,
+      512
+    ],
+    "lower_plain_fraction": 0.2,
+    "full_finish_fraction": 0.44
+  },
+  "material_table": [
+    {
+      "name": "Silver2_LeafLit_Satin",
+      "color_linear": [
+        0.39,
+        0.384,
+        0.372
+      ],
+      "metallic": 1.0,
+      "roughness": 0.32,
+      "textures": {
+        "diffuseColor": "Silver2_LeafLit_Satin_color.png",
+        "roughness": "Silver2_LeafLit_Satin_roughness.png"
+      }
+    },
+    {
+      "name": "Silver2_Reveal_Satin",
+      "color_linear": [
+        0.3,
+        0.291,
+        0.273
+      ],
+      "metallic": 1.0,
+      "roughness": 0.4,
+      "textures": null
+    },
+    {
+      "name": "Silver2_StemsLit_Satin",
+      "color_linear": [
+        0.34,
+        0.33,
+        0.31
+      ],
+      "metallic": 1.0,
+      "roughness": 0.4,
+      "textures": null
+    },
+    {
+      "name": "Silver2_StarLit_Satin",
+      "color_linear": [
+        0.6,
+        0.592,
+        0.578
+      ],
+      "metallic": 1.0,
+      "roughness": 0.28,
+      "textures": {
+        "diffuseColor": "Silver2_StarLit_Satin_color.png",
+        "roughness": "Silver2_StarLit_Satin_roughness.png"
+      }
+    },
+    {
+      "name": "Silver2_StarShaded_Satin",
+      "color_linear": [
+        0.19,
+        0.2,
+        0.22
+      ],
+      "metallic": 1.0,
+      "roughness": 0.34,
+      "textures": {
+        "diffuseColor": "Silver2_StarShaded_Satin_color.png",
+        "roughness": "Silver2_StarShaded_Satin_roughness.png"
+      }
+    },
+    {
+      "name": "Silver2_Back_Satin",
+      "color_linear": [
+        0.16,
+        0.155,
+        0.146
+      ],
+      "metallic": 0.95,
+      "roughness": 0.45,
+      "textures": null
+    },
+    {
+      "name": "Silver2_Outline_Satin",
+      "color_linear": [
+        0.28,
+        0.272,
+        0.253
+      ],
+      "metallic": 1.0,
+      "roughness": 0.4,
+      "textures": null
+    },
+    {
+      "name": "Silver2_Channel_Satin",
+      "color_linear": [
+        0.1,
+        0.098,
+        0.092
+      ],
+      "metallic": 1.0,
+      "roughness": 0.45,
+      "textures": null
+    },
+    {
+      "name": "Silver2_LeafShaded_Satin",
+      "color_linear": [
+        0.27,
+        0.263,
+        0.248
+      ],
+      "metallic": 1.0,
+      "roughness": 0.32,
+      "textures": {
+        "diffuseColor": "Silver2_LeafShaded_Satin_color.png",
+        "roughness": "Silver2_LeafShaded_Satin_roughness.png"
+      }
+    }
+  ],
+  "metadata": {
+    "kind": "standalone ten-plane star, twenty folded sculpted leaves, two crossed cylindrical stems",
+    "star_plane_normals": [
+      [
+        0.45222385879356586,
+        0.08867033928941655,
+        0.8874858604328053
+      ],
+      [
+        0.09140818492702675,
+        0.3826389136480187,
+        0.9193650012321605
+      ],
+      [
+        0.2695505232240009,
+        -0.2535771588848009,
+        0.9290000753076287
+      ],
+      [
+        0.39628461610268184,
+        0.06323690682489608,
+        0.9159473765755156
+      ],
+      [
+        -0.2057011453265738,
+        -0.3579199928682384,
+        0.910812998104735
+      ],
+      [
+        0.11837313308502766,
+        -0.3631699649812683,
+        0.9241728073791929
+      ],
+      [
+        -0.36243215223101594,
+        -0.026721692579744345,
+        0.9316270102218309
+      ],
+      [
+        -0.26535448250044497,
+        -0.2555988029967523,
+        0.9296538337056156
+      ],
+      [
+        -0.08830178070922416,
+        0.38684589644041006,
+        0.9179068841286656
+      ],
+      [
+        -0.4490719048397522,
+        0.08882852661082796,
+        0.8890691295640324
+      ]
+    ],
+    "reference_scale": 0.006017964071856288,
+    "star_apex_z": 0.53,
+    "curved_surface_exception": "Leaf blades and stems intentionally use smooth continuous custom normals, matching curved foliage in the reference; the star alone is faceted and perfectly planar.",
+    "reference_to_world": {
+      "source_bounds": [
+        [
+          -3.0372965335845947,
+          -2.9684064388275146,
+          0.02800000086426735
+        ],
+        [
+          3.0372965335845947,
+          1.8896406888961792,
+          0.5299999713897705
+        ]
+      ],
+      "offset": [
+        -0.0,
+        2.9684064388275146,
+        -0.27899998612701893
+      ],
+      "scale": [
+        0.9926590856908264,
+        0.9926590856908264,
+        1.2948207931557598
+      ],
+      "y_shift": -2.455
+    }
+  },
+  "compliance": {
+    "errors": [],
+    "failed_checks": [],
+    "warnings": []
+  }
+}

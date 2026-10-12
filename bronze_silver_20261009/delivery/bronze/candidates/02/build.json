@@ -1,0 +1,57 @@
+{
+  "kind": "bronze",
+  "triangles": 39440,
+  "bytes": 3157877,
+  "bounds": [
+    [
+      -2.6708456243854473,
+      -2.455,
+      -0.325
+    ],
+    [
+      2.6708456243854473,
+      2.8449999999999998,
+      0.325
+    ]
+  ],
+  "float_gap": 0.43999999999999995,
+  "closed_meshes": {
+    "BronzeSun_Dome": true,
+    "BronzeSun_OuterLip": true,
+    "BronzeSun_InnerLip": true,
+    "BronzeSun_Channel": true,
+    "BronzeSun_Ray1": true,
+    "BronzeSun_Ray2": true,
+    "BronzeSun_Ray3": true,
+    "BronzeSun_Ray4": true,
+    "BronzeSun_Ray5": true,
+    "BronzeSun_Ray6": true,
+    "BronzeSun_Ray7": true,
+    "BronzeSun_Ray8": true
+  },
+  "sha256": "f2c0730a28b097e1ffa65d536bb14598b47ebce48c6d4730b3b4173eb17a1e66",
+  "compliance": {
+    "errors": [],
+    "failed_checks": [],
+    "warnings": []
+  },
+  "settings": {
+    "color": [
+      0.5,
+      0.27,
+      0.09
+    ],
+    "roughness": 0.38,
+    "textures": {
+      "diffuseColor": "color.png",
+      "emissiveColor": "emissive.png"
+    },
+    "emissive_scale": 3.0,
+    "master": true,
+    "channel_color": [
+      0.035,
+      0.009,
+      0.002
+    ]
+  }
+}

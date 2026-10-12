@@ -1,0 +1,37 @@
+{
+  "iron": {
+    "work": "/Users/antonioperedo/Desktop/badges/badge_variants2_20261008/iron2/all_sides_20261010",
+    "asset": "/Users/antonioperedo/Desktop/screen_time/ScreenTime/SupportingFiles/Assets.xcassets/Badge3DModelIron.dataset/iron_badge_mobile.usdz",
+    "sha256": "3c2b245b3074c8f9a72f87630ff6317a581bd0e34e17e364b3f926d93e9517fd"
+  },
+  "bronze": {
+    "work": "/Users/antonioperedo/Desktop/badges/bronze_silver_20261009/bronze/all_sides_20261010",
+    "asset": "/Users/antonioperedo/Desktop/screen_time/ScreenTime/SupportingFiles/Assets.xcassets/Badge3DModelBronze.dataset/bronze_badge_mobile.usdz",
+    "sha256": "272ea6468b93059f8109b061337385751d238071aa4bcfcb9ed27c95f4061b8f"
+  },
+  "steel": {
+    "work": "/Users/antonioperedo/Desktop/badges/bronze_silver_20261009/silver/all_sides_20261010",
+    "asset": "/Users/antonioperedo/Desktop/screen_time/ScreenTime/SupportingFiles/Assets.xcassets/Badge3DModelSteel.dataset/steel_badge_mobile.usdz",
+    "sha256": "74570f1a5776139ed80cf3b5d9e38ad42a87f3e03ffa399c87c6870d7ca8bc93"
+  },
+  "silver": {
+    "work": "/Users/antonioperedo/Desktop/badges/badge_variants2_20261008/silver2/all_sides_20261010",
+    "asset": "/Users/antonioperedo/Desktop/screen_time/ScreenTime/SupportingFiles/Assets.xcassets/Badge3DModelSilver.dataset/silver_badge_mobile.usdz",
+    "sha256": "1df59b509c7668df78edec16091d61008c60a33d9bd046c1d434979abe67dbba"
+  },
+  "gold": {
+    "work": "/Users/antonioperedo/Desktop/badges/gold_diamond_20261009/gold/all_sides_20261010",
+    "asset": "/Users/antonioperedo/Desktop/screen_time/ScreenTime/SupportingFiles/Assets.xcassets/Badge3DModelGold.dataset/gold_badge_mobile.usdz",
+    "sha256": "2306ce19a8d9fabb804775350c6d7677901a29283fe5fa80914a790ca6b638a2"
+  },
+  "platinum": {
+    "work": "/Users/antonioperedo/Desktop/badges/platinum_20261009/platinum/all_sides_20261010",
+    "asset": "/Users/antonioperedo/Desktop/screen_time/ScreenTime/SupportingFiles/Assets.xcassets/Badge3DModelPlatinum.dataset/platinum_badge_mobile.usdz",
+    "sha256": "6ba3c309bc8d9861c28ed66230f1fbaf5d23b0106e97ddddf6263095403ce371"
+  },
+  "diamond": {
+    "work": "/Users/antonioperedo/Desktop/badges/gold_diamond_20261009/diamond/all_sides_20261010",
+    "asset": "/Users/antonioperedo/Desktop/screen_time/ScreenTime/SupportingFiles/Assets.xcassets/Badge3DModelDiamond.dataset/diamond_badge_mobile.usdz",
+    "sha256": "88b2ee5477f42b59afef20c49416bb34cff865795b10d392b36998b100e713c7"
+  }
+}

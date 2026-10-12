@@ -1,0 +1,34 @@
+{
+  "tier": "platinum",
+  "installed_sha256": "6ba3c309bc8d9861c28ed66230f1fbaf5d23b0106e97ddddf6263095403ce371",
+  "sha256": "a637627708473816bf533de040724e5f5fa7d59b8a405540f6269cf55194d1a9",
+  "triangles": 43008,
+  "bytes": 3659631,
+  "bounds": [
+    [
+      -2.8524208068847656,
+      -2.4549999237060547,
+      -0.7828716039657593
+    ],
+    [
+      2.8524208068847656,
+      2.902362585067749,
+      0.7828716039657593
+    ]
+  ],
+  "arkit_errors": [],
+  "arkit_failed_checks": [],
+  "changes": [
+    {
+      "textured_wall_faces": 6144,
+      "thin_lip_rows": [
+        1,
+        12,
+        15,
+        26
+      ],
+      "method": "Broad side walls retain inset source color texture, with moderate roughness and zero emission; only the thin front/rear bevel lips are plain rough metal. Main front and rear solved texture remains unchanged.",
+      "geometry_normals_uv_unchanged_from_candidate03": true
+    }
+  ]
+}

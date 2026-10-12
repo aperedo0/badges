@@ -1,0 +1,139 @@
+{
+  "all_geometry_and_custom_normals_identical": true,
+  "all_mesh_and_material_binding_ids_unchanged": true,
+  "mesh_checks": [
+    {
+      "mesh": "/Iron2/Iron2_PlateLeft_Satin",
+      "changed_attributes": [],
+      "bindings_identical": true
+    },
+    {
+      "mesh": "/Iron2/Iron2_InnerReveal_Satin",
+      "changed_attributes": [],
+      "bindings_identical": true
+    },
+    {
+      "mesh": "/Iron2/Iron2_Border_Satin",
+      "changed_attributes": [],
+      "bindings_identical": true
+    },
+    {
+      "mesh": "/Iron2/Iron2_PlateRight_Satin",
+      "changed_attributes": [],
+      "bindings_identical": true
+    },
+    {
+      "mesh": "/Iron2/Iron2_InnerChannel_Satin",
+      "changed_attributes": [],
+      "bindings_identical": true
+    },
+    {
+      "mesh": "/Iron2/Iron2_InnerLip_Satin",
+      "changed_attributes": [],
+      "bindings_identical": true
+    }
+  ],
+  "material_changes": [
+    {
+      "path": "/Iron2/Materials/Iron2_PlateLeft_Satin/Surface",
+      "attribute": "inputs:diffuseColor",
+      "before": "(0.065, 0.063, 0.059)",
+      "after": "(0.05, 0.0488, 0.0464)",
+      "connections": [
+        "/Iron2/Materials/Iron2_PlateLeft_Satin/diffuseColor.outputs:rgb"
+      ]
+    },
+    {
+      "path": "/Iron2/Materials/Iron2_PlateLeft_Satin/Surface",
+      "attribute": "inputs:roughness",
+      "before": "0.49000000953674316",
+      "after": "0.4000000059604645",
+      "connections": [
+        "/Iron2/Materials/Iron2_PlateLeft_Satin/roughness.outputs:r"
+      ]
+    },
+    {
+      "path": "/Iron2/Materials/Iron2_PlateLeft_Satin/diffuseColor",
+      "attribute": "inputs:file",
+      "before": "@0/Iron2_PlateLeft_color.png@",
+      "after": "@0/Iron2_PlateLeft_Satin_color.png@",
+      "connections": []
+    },
+    {
+      "path": "/Iron2/Materials/Iron2_PlateLeft_Satin/roughness",
+      "attribute": "inputs:file",
+      "before": "@0/Iron2_PlateLeft_roughness.png@",
+      "after": "@0/Iron2_PlateLeft_Satin_roughness.png@",
+      "connections": []
+    },
+    {
+      "path": "/Iron2/Materials/Iron2_Border_Satin/Surface",
+      "attribute": "inputs:diffuseColor",
+      "before": "(0.245, 0.238, 0.225)",
+      "after": "(0.175, 0.17, 0.161)",
+      "connections": [
+        "/Iron2/Materials/Iron2_Border_Satin/diffuseColor.outputs:rgb"
+      ]
+    },
+    {
+      "path": "/Iron2/Materials/Iron2_Border_Satin/diffuseColor",
+      "attribute": "inputs:file",
+      "before": "@0/Iron2_Border_color.png@",
+      "after": "@0/Iron2_Border_Satin_color.png@",
+      "connections": []
+    },
+    {
+      "path": "/Iron2/Materials/Iron2_Border_Satin/roughness",
+      "attribute": "inputs:file",
+      "before": "@0/Iron2_Border_roughness.png@",
+      "after": "@0/Iron2_Border_Satin_roughness.png@",
+      "connections": []
+    },
+    {
+      "path": "/Iron2/Materials/Iron2_PlateRight_Satin/Surface",
+      "attribute": "inputs:diffuseColor",
+      "before": "(0.065, 0.063, 0.059)",
+      "after": "(0.05, 0.0488, 0.0464)",
+      "connections": [
+        "/Iron2/Materials/Iron2_PlateRight_Satin/diffuseColor.outputs:rgb"
+      ]
+    },
+    {
+      "path": "/Iron2/Materials/Iron2_PlateRight_Satin/Surface",
+      "attribute": "inputs:roughness",
+      "before": "0.49000000953674316",
+      "after": "0.4000000059604645",
+      "connections": [
+        "/Iron2/Materials/Iron2_PlateRight_Satin/roughness.outputs:r"
+      ]
+    },
+    {
+      "path": "/Iron2/Materials/Iron2_PlateRight_Satin/diffuseColor",
+      "attribute": "inputs:file",
+      "before": "@0/Iron2_PlateRight_color.png@",
+      "after": "@0/Iron2_PlateLeft_Satin_color.png@",
+      "connections": []
+    },
+    {
+      "path": "/Iron2/Materials/Iron2_PlateRight_Satin/roughness",
+      "attribute": "inputs:file",
+      "before": "@0/Iron2_PlateRight_roughness.png@",
+      "after": "@0/Iron2_PlateLeft_Satin_roughness.png@",
+      "connections": []
+    },
+    {
+      "path": "/Iron2/Materials/Iron2_PlateEdge_Satin/Surface",
+      "attribute": "inputs:diffuseColor",
+      "before": "(0.065, 0.063, 0.059)",
+      "after": "(0.05, 0.0488, 0.0464)",
+      "connections": []
+    },
+    {
+      "path": "/Iron2/Materials/Iron2_Outline_Satin/Surface",
+      "attribute": "inputs:diffuseColor",
+      "before": "(0.225, 0.218, 0.205)",
+      "after": "(0.19, 0.184, 0.173)",
+      "connections": []
+    }
+  ]
+}

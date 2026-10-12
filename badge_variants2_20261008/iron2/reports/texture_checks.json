@@ -1,0 +1,37 @@
+{
+  "all_shader_spaces_and_UV_readers_correct": true,
+  "strength_baked_in_PNG": true,
+  "normal_maps": [],
+  "texture_connections": [
+    {
+      "shader": "/Iron2/Materials/Iron2_PlateLeft_Satin/diffuseColor",
+      "normal": false,
+      "file": "@0/Iron2_PlateLeft_Satin_color.png@"
+    },
+    {
+      "shader": "/Iron2/Materials/Iron2_PlateLeft_Satin/roughness",
+      "normal": false,
+      "file": "@0/Iron2_PlateLeft_Satin_roughness.png@"
+    },
+    {
+      "shader": "/Iron2/Materials/Iron2_Border_Satin/diffuseColor",
+      "normal": false,
+      "file": "@0/Iron2_Border_Satin_color.png@"
+    },
+    {
+      "shader": "/Iron2/Materials/Iron2_Border_Satin/roughness",
+      "normal": false,
+      "file": "@0/Iron2_Border_Satin_roughness.png@"
+    },
+    {
+      "shader": "/Iron2/Materials/Iron2_PlateRight_Satin/diffuseColor",
+      "normal": false,
+      "file": "@0/Iron2_PlateLeft_Satin_color.png@"
+    },
+    {
+      "shader": "/Iron2/Materials/Iron2_PlateRight_Satin/roughness",
+      "normal": false,
+      "file": "@0/Iron2_PlateLeft_Satin_roughness.png@"
+    }
+  ]
+}

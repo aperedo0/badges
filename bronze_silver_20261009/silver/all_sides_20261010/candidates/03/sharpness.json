@@ -1,0 +1,20 @@
+{
+  "cause": "The reference solve fades directional brushing between 19% and 44% of total badge height, which suppresses the lower chevron interior.",
+  "method": "Restore matching upper-chevron fine detail in lower interior while retaining lower broad lighting and unchanged 9-texel outline band.",
+  "maps": {
+    "color.png": {
+      "upper_detail_rms": 0.054604914077197725,
+      "lower_before_detail_rms": 0.04652705788875735,
+      "lower_after_detail_rms": 0.04711807832033012,
+      "changed_texels": 98301,
+      "outline_unchanged": true
+    },
+    "emissive.png": {
+      "upper_detail_rms": 0.08266181458085636,
+      "lower_before_detail_rms": 0.053395821011029035,
+      "lower_after_detail_rms": 0.05578221193185118,
+      "changed_texels": 17399,
+      "outline_unchanged": true
+    }
+  }
+}

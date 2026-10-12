@@ -1,0 +1,30 @@
+{
+  "tier": "platinum",
+  "installed_sha256": "6ba3c309bc8d9861c28ed66230f1fbaf5d23b0106e97ddddf6263095403ce371",
+  "sha256": "153df0181bd08f7117c3a3b308bff8c20c05f755db4b020c89c96f6a66ac259b",
+  "triangles": 43008,
+  "bytes": 3658015,
+  "bounds": [
+    [
+      -2.8524208068847656,
+      -2.4549999237060547,
+      -0.7828716039657593
+    ],
+    [
+      2.8524208068847656,
+      2.902362585067749,
+      0.7828716039657593
+    ]
+  ],
+  "arkit_errors": [],
+  "arkit_failed_checks": [],
+  "changes": [
+    {
+      "rear_lip_faces": 6144,
+      "roughness": 0.78,
+      "method": "Narrow continuous rear bevel uses non-emissive rough platinum metal; front rows and the main textured rear and wall surfaces are retained.",
+      "front_half_materials_unchanged_from_candidate03": true,
+      "geometry_normals_uv_unchanged_from_candidate03": true
+    }
+  ]
+}

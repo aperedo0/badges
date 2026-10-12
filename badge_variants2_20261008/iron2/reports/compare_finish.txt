@@ -1,0 +1,1 @@
+iron2 PASS: exact geometry, normals, UVs, IDs and bindings; 13 material/map differences recorded.

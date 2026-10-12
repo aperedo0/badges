@@ -1,0 +1,17 @@
+{
+  "source_visible_samples": [
+    663,
+    664,
+    664,
+    667,
+    669,
+    677,
+    680,
+    681,
+    682,
+    682,
+    683
+  ],
+  "hidden_samples_filled": 1036,
+  "method": "Reuse each ribbon cross section of the installed front. Fill front-occluded portions by interpolating nearby visible portions along the same ribbon; no hidden crossing shadow is painted on the exposed back."
+}

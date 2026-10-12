@@ -1,0 +1,10 @@
+{
+  "movie_sha256": "e888e14e7f79c513d0c1fd05519c10320e7e1613ecc5a2c7c4664d74d0f6201e",
+  "samples_per_second": 12,
+  "samples": 250,
+  "native_size": [
+    1206,
+    2622
+  ],
+  "full_4x_frames_generated": true
+}

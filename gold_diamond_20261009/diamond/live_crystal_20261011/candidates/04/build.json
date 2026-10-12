@@ -1,0 +1,28 @@
+{
+  "tier": "diamond",
+  "installed_sha256": "88b2ee5477f42b59afef20c49416bb34cff865795b10d392b36998b100e713c7",
+  "sha256": "8bced2a2b13abf7eaf7085cc834980d76514747566f8d51cd21b54fb4aefe1b0",
+  "triangles": 240,
+  "bytes": 257704,
+  "bounds": [
+    [
+      -3.119999885559082,
+      -2.4549999237060547,
+      -3.119999885559082
+    ],
+    [
+      3.119999885559082,
+      2.3486063480377197,
+      3.119999885559082
+    ]
+  ],
+  "arkit_errors": [],
+  "arkit_failed_checks": [],
+  "changes": [
+    {
+      "design": "Unchanged round gem exterior. Candidate 01 includes an inset optical interior; candidate 02 measures the directly lit dielectric facets; subsequent candidates retain the original round geometry.",
+      "material": "Measured light-responsive optical body color with live dielectric specular and clearcoat; low uniform blue emission, no emissive picture texture",
+      "source_round_sha256": "2ba20a7cf8a5efb7bcbe764879bc8205a9845f38f7c080aa1999a0d2c1ca3b16"
+    }
+  ]
+}

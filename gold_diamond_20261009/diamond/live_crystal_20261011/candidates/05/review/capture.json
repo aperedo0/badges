@@ -1,0 +1,10 @@
+{
+  "samples_per_second": 12,
+  "samples": 202,
+  "native_screen_size": [
+    1206,
+    2622
+  ],
+  "zoom": 4,
+  "source": "actual Home scroll video, shader-warmed simulator"
+}

@@ -1,0 +1,36 @@
+{
+  "kind": "platinum",
+  "triangles": 43008,
+  "bytes": 2841657,
+  "bounds": [
+    [
+      -2.852420882317107,
+      -2.455,
+      -0.7828715968928904
+    ],
+    [
+      2.852420882317107,
+      2.9023627023027303,
+      0.7828715968928904
+    ]
+  ],
+  "float_gap": 0.43999999999999995,
+  "closed_meshes": {
+    "PlatinumKnot_ContinuousBeveledRibbon": true
+  },
+  "sha256": "1d0a71d6fc60513bd73b0441fb359e7c69a8f9c7d3cd07d22f6d9a162c06407f",
+  "compliance": {
+    "errors": [],
+    "failed_checks": [],
+    "warnings": []
+  },
+  "settings": {
+    "color": [
+      0.12,
+      0.12,
+      0.12
+    ],
+    "roughness": 0.3,
+    "master": false
+  }
+}

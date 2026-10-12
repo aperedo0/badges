@@ -1,0 +1,6 @@
+{
+  "method": "Rasterize installed optical maps into one continuous shared XY chart over the entire closed gem; shared vertices share exact UVs, eliminating atlas tile fringing.",
+  "source": "Installed blue crystal color and emissive maps.",
+  "texture_size": 1024,
+  "facets": 240
+}

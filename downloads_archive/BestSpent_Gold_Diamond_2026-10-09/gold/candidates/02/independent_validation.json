@@ -1,0 +1,181 @@
+{
+  "arkit_compliance": "PASS",
+  "meshes": [
+    {
+      "name": "GoldCrown_HollowBand",
+      "vertices": 1792,
+      "triangles": 3584,
+      "uv": "BadgeUV",
+      "closed": true
+    },
+    {
+      "name": "GoldCrown_ScallopedShell",
+      "vertices": 3372,
+      "triangles": 6740,
+      "uv": "BadgeUV",
+      "closed": true
+    },
+    {
+      "name": "GoldCrown_RoundedScallopLip",
+      "vertices": 2250,
+      "triangles": 4496,
+      "uv": "BadgeUV",
+      "closed": true
+    },
+    {
+      "name": "GoldCrown_ValleyFlange1",
+      "vertices": 280,
+      "triangles": 556,
+      "uv": "BadgeUV",
+      "closed": true
+    },
+    {
+      "name": "GoldCrown_ValleyFlange2",
+      "vertices": 280,
+      "triangles": 556,
+      "uv": "BadgeUV",
+      "closed": true
+    },
+    {
+      "name": "GoldCrown_ValleyFlange3",
+      "vertices": 280,
+      "triangles": 556,
+      "uv": "BadgeUV",
+      "closed": true
+    },
+    {
+      "name": "GoldCrown_ValleyFlange4",
+      "vertices": 280,
+      "triangles": 556,
+      "uv": "BadgeUV",
+      "closed": true
+    },
+    {
+      "name": "GoldCrown_UpperBandLip",
+      "vertices": 1024,
+      "triangles": 2048,
+      "uv": "BadgeUV",
+      "closed": true
+    },
+    {
+      "name": "GoldCrown_LowerBandLip",
+      "vertices": 1024,
+      "triangles": 2048,
+      "uv": "BadgeUV",
+      "closed": true
+    },
+    {
+      "name": "GoldCrown_Finial1",
+      "vertices": 1858,
+      "triangles": 3712,
+      "uv": "BadgeUV",
+      "closed": true
+    },
+    {
+      "name": "GoldCrown_Collar1",
+      "vertices": 288,
+      "triangles": 576,
+      "uv": "BadgeUV",
+      "closed": true
+    },
+    {
+      "name": "GoldCrown_Finial2",
+      "vertices": 1858,
+      "triangles": 3712,
+      "uv": "BadgeUV",
+      "closed": true
+    },
+    {
+      "name": "GoldCrown_Collar2",
+      "vertices": 288,
+      "triangles": 576,
+      "uv": "BadgeUV",
+      "closed": true
+    },
+    {
+      "name": "GoldCrown_Finial3",
+      "vertices": 1858,
+      "triangles": 3712,
+      "uv": "BadgeUV",
+      "closed": true
+    },
+    {
+      "name": "GoldCrown_Collar3",
+      "vertices": 288,
+      "triangles": 576,
+      "uv": "BadgeUV",
+      "closed": true
+    },
+    {
+      "name": "GoldCrown_Finial4",
+      "vertices": 1858,
+      "triangles": 3712,
+      "uv": "BadgeUV",
+      "closed": true
+    },
+    {
+      "name": "GoldCrown_Collar4",
+      "vertices": 288,
+      "triangles": 576,
+      "uv": "BadgeUV",
+      "closed": true
+    },
+    {
+      "name": "GoldCrown_Finial5",
+      "vertices": 1858,
+      "triangles": 3712,
+      "uv": "BadgeUV",
+      "closed": true
+    },
+    {
+      "name": "GoldCrown_Collar5",
+      "vertices": 288,
+      "triangles": 576,
+      "uv": "BadgeUV",
+      "closed": true
+    }
+  ],
+  "textures_match_package": [
+    {
+      "member": "0/color.png",
+      "sha256": "582bfe98e18ab07313475ddd5726131be5dbc0bb10a7d3226c049308181ff4fe"
+    },
+    {
+      "member": "0/emissive.png",
+      "sha256": "30e2eb28412fff0ad563f134d56546de0af59e750b7a9bc5f1ff7613bd97ed94"
+    }
+  ],
+  "reimport_triangles": 42580,
+  "reimport_images": [
+    {
+      "name": "color.png",
+      "dimensions": [
+        1024,
+        1024
+      ],
+      "packed": true
+    },
+    {
+      "name": "emissive.png",
+      "dimensions": [
+        1024,
+        1024
+      ],
+      "packed": true
+    }
+  ],
+  "editable_master_packed_textures": true,
+  "no_transforms_or_scene_items": true,
+  "bounds": [
+    [
+      -3.1890628337860107,
+      -2.4549999237060547,
+      -0.7210000157356262
+    ],
+    [
+      3.1890628337860107,
+      1.9958367347717285,
+      0.7210000157356262
+    ]
+  ]
+}

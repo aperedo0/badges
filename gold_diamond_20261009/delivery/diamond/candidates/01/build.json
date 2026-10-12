@@ -1,0 +1,41 @@
+{
+  "kind": "diamond",
+  "triangles": 172,
+  "bytes": 658195,
+  "bounds": [
+    [
+      -3.2105745372544128,
+      -2.455,
+      -0.45758236952934367
+    ],
+    [
+      3.2105745372544128,
+      2.348606301437608,
+      0.45758236952934367
+    ]
+  ],
+  "float_gap": 0.43999999999999995,
+  "closed_meshes": {
+    "DiamondCrystal_CutFacets": true
+  },
+  "sha256": "423224408f99bba7ba1da8255c0b137e0da23bf9d1806c72cec5ff436f22dc95",
+  "compliance": {
+    "errors": [],
+    "failed_checks": [],
+    "warnings": []
+  },
+  "settings": {
+    "color": [
+      0.055,
+      0.2,
+      0.5
+    ],
+    "roughness": 0.32,
+    "textures": {
+      "diffuseColor": "color.png",
+      "emissiveColor": "emissive.png"
+    },
+    "emissive_scale": 3.0,
+    "master": true
+  }
+}

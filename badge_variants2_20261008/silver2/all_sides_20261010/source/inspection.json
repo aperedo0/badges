@@ -1,0 +1,576 @@
+{
+  "layer": "/Users/antonioperedo/Desktop/badges/badge_variants2_20261008/silver2/all_sides_20261010/source/installed/silver2_badge_mobile.usdc",
+  "meshes": [
+    {
+      "path": "/Silver2/Silver2_LeafBlades_Satin",
+      "vertices": 4860,
+      "faces": 9696,
+      "triangles": 9696,
+      "counts": [
+        3
+      ],
+      "bounds": [
+        [
+          -2.3420591354370117,
+          -1.8164023160934448,
+          -0.25528684258461
+        ],
+        [
+          2.3420591354370117,
+          2.5476107597351074,
+          0.01372512523084879
+        ]
+      ],
+      "normals": "faceVarying",
+      "material": [
+        "/Silver2/Materials/Silver2_LeafLit_Satin"
+      ],
+      "subsets": [
+        {
+          "path": "/Silver2/Silver2_LeafBlades_Satin/Material_0",
+          "faces": 2232,
+          "material": [
+            "/Silver2/Materials/Silver2_LeafLit_Satin"
+          ]
+        },
+        {
+          "path": "/Silver2/Silver2_LeafBlades_Satin/Material_4",
+          "faces": 4464,
+          "material": [
+            "/Silver2/Materials/Silver2_StarShaded_Satin"
+          ]
+        },
+        {
+          "path": "/Silver2/Silver2_LeafBlades_Satin/Material_8",
+          "faces": 3000,
+          "material": [
+            "/Silver2/Materials/Silver2_LeafShaded_Satin"
+          ]
+        }
+      ],
+      "uv": [
+        {
+          "name": "displayColor",
+          "interpolation": "constant",
+          "len": 0
+        },
+        {
+          "name": "displayOpacity",
+          "interpolation": "constant",
+          "len": 0
+        },
+        {
+          "name": "USDZ_UV",
+          "interpolation": "faceVarying",
+          "len": 29088
+        }
+      ]
+    },
+    {
+      "path": "/Silver2/Silver2_LeafEdges_Satin",
+      "vertices": 4860,
+      "faces": 9696,
+      "triangles": 9696,
+      "counts": [
+        3
+      ],
+      "bounds": [
+        [
+          -3.176448106765747,
+          -2.2702348232269287,
+          -0.25528684258461
+        ],
+        [
+          3.176448106765747,
+          1.6585694551467896,
+          0.01372512523084879
+        ]
+      ],
+      "normals": "faceVarying",
+      "material": [
+        "/Silver2/Materials/Silver2_LeafLit_Satin"
+      ],
+      "subsets": [
+        {
+          "path": "/Silver2/Silver2_LeafEdges_Satin/Material_0",
+          "faces": 2232,
+          "material": [
+            "/Silver2/Materials/Silver2_LeafLit_Satin"
+          ]
+        },
+        {
+          "path": "/Silver2/Silver2_LeafEdges_Satin/Material_4",
+          "faces": 4464,
+          "material": [
+            "/Silver2/Materials/Silver2_StarShaded_Satin"
+          ]
+        },
+        {
+          "path": "/Silver2/Silver2_LeafEdges_Satin/Material_8",
+          "faces": 3000,
+          "material": [
+            "/Silver2/Materials/Silver2_LeafShaded_Satin"
+          ]
+        }
+      ],
+      "uv": [
+        {
+          "name": "displayColor",
+          "interpolation": "constant",
+          "len": 0
+        },
+        {
+          "name": "displayOpacity",
+          "interpolation": "constant",
+          "len": 0
+        },
+        {
+          "name": "USDZ_UV",
+          "interpolation": "faceVarying",
+          "len": 29088
+        }
+      ]
+    },
+    {
+      "path": "/Silver2/Silver2_Stems_Satin",
+      "vertices": 5156,
+      "faces": 10304,
+      "triangles": 10304,
+      "counts": [
+        3
+      ],
+      "bounds": [
+        [
+          -2.5294060707092285,
+          -2.4549999237060547,
+          -0.34449997544288635
+        ],
+        [
+          2.5294060707092285,
+          1.6936229467391968,
+          -0.20450398325920105
+        ]
+      ],
+      "normals": "faceVarying",
+      "material": [
+        "/Silver2/Materials/Silver2_StemsLit_Satin"
+      ],
+      "subsets": [
+        {
+          "path": "/Silver2/Silver2_Stems_Satin/Material_2",
+          "faces": 5120,
+          "material": [
+            "/Silver2/Materials/Silver2_StemsLit_Satin"
+          ]
+        },
+        {
+          "path": "/Silver2/Silver2_Stems_Satin/Material_5",
+          "faces": 5184,
+          "material": [
+            "/Silver2/Materials/Silver2_Back_Satin"
+          ]
+        }
+      ],
+      "uv": [
+        {
+          "name": "displayColor",
+          "interpolation": "constant",
+          "len": 0
+        },
+        {
+          "name": "displayOpacity",
+          "interpolation": "constant",
+          "len": 0
+        },
+        {
+          "name": "USDZ_UV",
+          "interpolation": "faceVarying",
+          "len": 30912
+        }
+      ]
+    },
+    {
+      "path": "/Silver2/Silver2_Star_Satin",
+      "vertices": 22,
+      "faces": 40,
+      "triangles": 40,
+      "counts": [
+        3
+      ],
+      "bounds": [
+        [
+          -1.7540233135223389,
+          -0.9146409034729004,
+          -0.3348924517631531
+        ],
+        [
+          1.7096977233886719,
+          2.6567277908325195,
+          0.34449997544288635
+        ]
+      ],
+      "normals": "faceVarying",
+      "material": [
+        "/Silver2/Materials/Silver2_StarShaded_Satin"
+      ],
+      "subsets": [
+        {
+          "path": "/Silver2/Silver2_Star_Satin/Material_3",
+          "faces": 5,
+          "material": [
+            "/Silver2/Materials/Silver2_StarLit_Satin"
+          ]
+        },
+        {
+          "path": "/Silver2/Silver2_Star_Satin/Material_4",
+          "faces": 35,
+          "material": [
+            "/Silver2/Materials/Silver2_StarShaded_Satin"
+          ]
+        }
+      ],
+      "uv": [
+        {
+          "name": "displayColor",
+          "interpolation": "constant",
+          "len": 0
+        },
+        {
+          "name": "displayOpacity",
+          "interpolation": "constant",
+          "len": 0
+        },
+        {
+          "name": "USDZ_UV",
+          "interpolation": "faceVarying",
+          "len": 120
+        }
+      ]
+    },
+    {
+      "path": "/Silver2/Silver2_InnerLeaves_Satin",
+      "vertices": 3240,
+      "faces": 6464,
+      "triangles": 6464,
+      "counts": [
+        3
+      ],
+      "bounds": [
+        [
+          -2.832994222640991,
+          -1.307238221168518,
+          -0.25528684258461
+        ],
+        [
+          2.832994222640991,
+          2.137486219406128,
+          0.01372512523084879
+        ]
+      ],
+      "normals": "faceVarying",
+      "material": [
+        "/Silver2/Materials/Silver2_LeafLit_Satin"
+      ],
+      "subsets": [
+        {
+          "path": "/Silver2/Silver2_InnerLeaves_Satin/Material_0",
+          "faces": 1488,
+          "material": [
+            "/Silver2/Materials/Silver2_LeafLit_Satin"
+          ]
+        },
+        {
+          "path": "/Silver2/Silver2_InnerLeaves_Satin/Material_4",
+          "faces": 2976,
+          "material": [
+            "/Silver2/Materials/Silver2_StarShaded_Satin"
+          ]
+        },
+        {
+          "path": "/Silver2/Silver2_InnerLeaves_Satin/Material_8",
+          "faces": 2000,
+          "material": [
+            "/Silver2/Materials/Silver2_LeafShaded_Satin"
+          ]
+        }
+      ],
+      "uv": [
+        {
+          "name": "displayColor",
+          "interpolation": "constant",
+          "len": 0
+        },
+        {
+          "name": "displayOpacity",
+          "interpolation": "constant",
+          "len": 0
+        },
+        {
+          "name": "USDZ_UV",
+          "interpolation": "faceVarying",
+          "len": 19392
+        }
+      ]
+    },
+    {
+      "path": "/Silver2/Silver2_UpperLeaves_Satin",
+      "vertices": 3240,
+      "faces": 6464,
+      "triangles": 6464,
+      "counts": [
+        3
+      ],
+      "bounds": [
+        [
+          -3.1959002017974854,
+          -1.7150371074676514,
+          -0.25528684258461
+        ],
+        [
+          3.1959002017974854,
+          1.1369963884353638,
+          0.01372512523084879
+        ]
+      ],
+      "normals": "faceVarying",
+      "material": [
+        "/Silver2/Materials/Silver2_LeafLit_Satin"
+      ],
+      "subsets": [
+        {
+          "path": "/Silver2/Silver2_UpperLeaves_Satin/Material_0",
+          "faces": 1488,
+          "material": [
+            "/Silver2/Materials/Silver2_LeafLit_Satin"
+          ]
+        },
+        {
+          "path": "/Silver2/Silver2_UpperLeaves_Satin/Material_4",
+          "faces": 2976,
+          "material": [
+            "/Silver2/Materials/Silver2_StarShaded_Satin"
+          ]
+        },
+        {
+          "path": "/Silver2/Silver2_UpperLeaves_Satin/Material_8",
+          "faces": 2000,
+          "material": [
+            "/Silver2/Materials/Silver2_LeafShaded_Satin"
+          ]
+        }
+      ],
+      "uv": [
+        {
+          "name": "displayColor",
+          "interpolation": "constant",
+          "len": 0
+        },
+        {
+          "name": "displayOpacity",
+          "interpolation": "constant",
+          "len": 0
+        },
+        {
+          "name": "USDZ_UV",
+          "interpolation": "faceVarying",
+          "len": 19392
+        }
+      ]
+    }
+  ],
+  "materials": [
+    {
+      "path": "/Silver2/Materials/Silver2_LeafLit_Satin/Surface",
+      "inputs": {
+        "diffuseColor": {
+          "value": "(0.39, 0.384, 0.372)",
+          "sources": [
+            "/Silver2/Materials/Silver2_LeafLit_Satin/diffuseColor"
+          ]
+        },
+        "emissiveColor": {
+          "value": "None",
+          "sources": [
+            "/Silver2/Materials/Silver2_LeafLit_Satin/emissiveColor"
+          ]
+        },
+        "metallic": {
+          "value": "1.0",
+          "sources": []
+        },
+        "roughness": {
+          "value": "0.3199999928474426",
+          "sources": [
+            "/Silver2/Materials/Silver2_LeafLit_Satin/roughness"
+          ]
+        }
+      }
+    },
+    {
+      "path": "/Silver2/Materials/Silver2_Reveal_Satin/Surface",
+      "inputs": {
+        "diffuseColor": {
+          "value": "(0.3, 0.291, 0.273)",
+          "sources": []
+        },
+        "metallic": {
+          "value": "1.0",
+          "sources": []
+        },
+        "roughness": {
+          "value": "0.4000000059604645",
+          "sources": []
+        }
+      }
+    },
+    {
+      "path": "/Silver2/Materials/Silver2_StemsLit_Satin/Surface",
+      "inputs": {
+        "diffuseColor": {
+          "value": "(0.34, 0.33, 0.31)",
+          "sources": []
+        },
+        "metallic": {
+          "value": "1.0",
+          "sources": []
+        },
+        "roughness": {
+          "value": "0.4000000059604645",
+          "sources": []
+        }
+      }
+    },
+    {
+      "path": "/Silver2/Materials/Silver2_StarLit_Satin/Surface",
+      "inputs": {
+        "diffuseColor": {
+          "value": "(0.6, 0.592, 0.578)",
+          "sources": [
+            "/Silver2/Materials/Silver2_StarLit_Satin/diffuseColor"
+          ]
+        },
+        "emissiveColor": {
+          "value": "None",
+          "sources": [
+            "/Silver2/Materials/Silver2_StarLit_Satin/emissiveColor"
+          ]
+        },
+        "metallic": {
+          "value": "1.0",
+          "sources": []
+        },
+        "roughness": {
+          "value": "0.2800000011920929",
+          "sources": [
+            "/Silver2/Materials/Silver2_StarLit_Satin/roughness"
+          ]
+        }
+      }
+    },
+    {
+      "path": "/Silver2/Materials/Silver2_StarShaded_Satin/Surface",
+      "inputs": {
+        "diffuseColor": {
+          "value": "(0.19, 0.2, 0.22)",
+          "sources": [
+            "/Silver2/Materials/Silver2_StarShaded_Satin/diffuseColor"
+          ]
+        },
+        "emissiveColor": {
+          "value": "None",
+          "sources": [
+            "/Silver2/Materials/Silver2_StarShaded_Satin/emissiveColor"
+          ]
+        },
+        "metallic": {
+          "value": "1.0",
+          "sources": []
+        },
+        "roughness": {
+          "value": "0.3400000035762787",
+          "sources": [
+            "/Silver2/Materials/Silver2_StarShaded_Satin/roughness"
+          ]
+        }
+      }
+    },
+    {
+      "path": "/Silver2/Materials/Silver2_Back_Satin/Surface",
+      "inputs": {
+        "diffuseColor": {
+          "value": "(0.16, 0.155, 0.146)",
+          "sources": []
+        },
+        "metallic": {
+          "value": "0.949999988079071",
+          "sources": []
+        },
+        "roughness": {
+          "value": "0.44999998807907104",
+          "sources": []
+        }
+      }
+    },
+    {
+      "path": "/Silver2/Materials/Silver2_Outline_Satin/Surface",
+      "inputs": {
+        "diffuseColor": {
+          "value": "(0.28, 0.272, 0.253)",
+          "sources": []
+        },
+        "metallic": {
+          "value": "1.0",
+          "sources": []
+        },
+        "roughness": {
+          "value": "0.4000000059604645",
+          "sources": []
+        }
+      }
+    },
+    {
+      "path": "/Silver2/Materials/Silver2_Channel_Satin/Surface",
+      "inputs": {
+        "diffuseColor": {
+          "value": "(0.1, 0.098, 0.092)",
+          "sources": []
+        },
+        "metallic": {
+          "value": "1.0",
+          "sources": []
+        },
+        "roughness": {
+          "value": "0.44999998807907104",
+          "sources": []
+        }
+      }
+    },
+    {
+      "path": "/Silver2/Materials/Silver2_LeafShaded_Satin/Surface",
+      "inputs": {
+        "diffuseColor": {
+          "value": "(0.27, 0.263, 0.248)",
+          "sources": [
+            "/Silver2/Materials/Silver2_LeafShaded_Satin/diffuseColor"
+          ]
+        },
+        "emissiveColor": {
+          "value": "None",
+          "sources": [
+            "/Silver2/Materials/Silver2_LeafShaded_Satin/emissiveColor"
+          ]
+        },
+        "metallic": {
+          "value": "1.0",
+          "sources": []
+        },
+        "roughness": {
+          "value": "0.3199999928474426",
+          "sources": [
+            "/Silver2/Materials/Silver2_LeafShaded_Satin/roughness"
+          ]
+        }
+      }
+    }
+  ]
+}

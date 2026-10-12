@@ -1,0 +1,28 @@
+{
+  "tier": "diamond",
+  "installed_sha256": "88b2ee5477f42b59afef20c49416bb34cff865795b10d392b36998b100e713c7",
+  "sha256": "0632c82ef98cda4dd31e99b7e8836bdc67a6eb01d4a5769db785afde3cd05127",
+  "triangles": 480,
+  "bytes": 28822,
+  "bounds": [
+    [
+      -3.119999885559082,
+      -2.4549999237060547,
+      -3.119999885559082
+    ],
+    [
+      3.119999885559082,
+      2.3486063480377197,
+      3.119999885559082
+    ]
+  ],
+  "arkit_errors": [],
+  "arkit_failed_checks": [],
+  "changes": [
+    {
+      "design": "Unchanged round gem exterior, with a safely inset rotated faceted optical interior.",
+      "material": "Live dielectric transparent crystal exterior and live blue reflective inner facets. No picture textures or fixed white glints.",
+      "source_round_sha256": "2ba20a7cf8a5efb7bcbe764879bc8205a9845f38f7c080aa1999a0d2c1ca3b16"
+    }
+  ]
+}

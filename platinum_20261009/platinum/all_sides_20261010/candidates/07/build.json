@@ -1,0 +1,32 @@
+{
+  "tier": "platinum",
+  "installed_sha256": "6ba3c309bc8d9861c28ed66230f1fbaf5d23b0106e97ddddf6263095403ce371",
+  "sha256": "d946feaddc3584ab881480abd2f1bc99dab7d3ac0b919a6f1740bb479cbc59d4",
+  "triangles": 43008,
+  "bytes": 3660026,
+  "bounds": [
+    [
+      -2.8524208068847656,
+      -2.4549999237060547,
+      -0.7828716039657593
+    ],
+    [
+      2.8524208068847656,
+      2.902362585067749,
+      0.7828716039657593
+    ]
+  ],
+  "arkit_errors": [],
+  "arkit_failed_checks": [],
+  "changes": [
+    {
+      "method": "Textured wall reflectance is bounded by the RGB and roughness of candidate05, which passed the oblique edge check. Color texture remains connected through BadgeUV; no wall emission. Thin bevel lips retain the same finish. Main front and rear texture and all geometry are unchanged from06.",
+      "maximum_wall_color": [
+        0.045,
+        0.05,
+        0.06
+      ],
+      "wall_roughness": 0.88
+    }
+  ]
+}

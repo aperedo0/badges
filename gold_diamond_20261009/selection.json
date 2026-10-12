@@ -1,0 +1,14 @@
+{
+  "gold": {
+    "candidate": "03",
+    "sha256": "2306ce19a8d9fabb804775350c6d7677901a29283fe5fa80914a790ca6b638a2",
+    "bytes": 3478944,
+    "triangles": 42580
+  },
+  "diamond": {
+    "candidate": "04",
+    "sha256": "06bf88af01dd4e3858325c7e0856071c0517d55a056a76bcf53b576769c24afe",
+    "bytes": 879103,
+    "triangles": 172
+  }
+}

@@ -1,0 +1,58 @@
+{
+  "package_sha256": "70ea3bcab53cb3f1fb024cd9b1a46fed56cf43268a1a70e6e1d23ab037a24530",
+  "true_parallel_circular_band": true,
+  "rings": [
+    {
+      "surface": "outer",
+      "edge": "top",
+      "radius": 2.6317715003496627,
+      "max_radius_error": 1.7428459919699435e-07,
+      "max_plane_error": 1.7753882042281788e-07,
+      "axis": [
+        -0.0,
+        0.9553869280827508,
+        -0.29535710190988207
+      ],
+      "tilt_degrees": -17.178951994582647
+    },
+    {
+      "surface": "outer",
+      "edge": "bottom",
+      "radius": 2.6317714926077964,
+      "max_radius_error": 1.8416141989163748e-07,
+      "max_plane_error": 2.1777996328520288e-07,
+      "axis": [
+        -0.0,
+        0.9553869314090987,
+        -0.2953570911501976
+      ],
+      "tilt_degrees": -17.17895134931057
+    },
+    {
+      "surface": "inner",
+      "edge": "top",
+      "radius": 2.4427215006697547,
+      "max_radius_error": 1.8006915736279439e-07,
+      "max_plane_error": 1.8378201183111287e-07,
+      "axis": [
+        -0.0,
+        0.9553869272716026,
+        -0.2953571045336906
+      ],
+      "tilt_degrees": -17.17895215193581
+    },
+    {
+      "surface": "inner",
+      "edge": "bottom",
+      "radius": 2.442721497675626,
+      "max_radius_error": 1.8648367916540565e-07,
+      "max_plane_error": 2.496944374319465e-07,
+      "axis": [
+        -0.0,
+        0.9553869314286013,
+        -0.2953570910871127
+      ],
+      "tilt_degrees": -17.178951345527288
+    }
+  ]
+}

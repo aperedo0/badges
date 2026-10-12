@@ -1,0 +1,41 @@
+{
+  "tier": "platinum",
+  "installed_sha256": "6ba3c309bc8d9861c28ed66230f1fbaf5d23b0106e97ddddf6263095403ce371",
+  "sha256": "3fbde4964f02b398b9bc092497edce6fca2ba34048f57b44c93e022f47892fb0",
+  "triangles": 43008,
+  "bytes": 3658654,
+  "bounds": [
+    [
+      -2.8524208068847656,
+      -2.4549999237060547,
+      -0.7828716039657593
+    ],
+    [
+      2.8524208068847656,
+      2.902362585067749,
+      0.7828716039657593
+    ]
+  ],
+  "arkit_errors": [],
+  "arkit_failed_checks": [],
+  "changes": [
+    {
+      "continuous_lip_faces": 12288,
+      "roughness": 0.88,
+      "method": "Narrow front, rear and side bevels have one continuous dark, rough, non-emissive platinum lip. Main front/rear texture and broad textured side surfaces remain. This removes the solved front silhouette texture from oblique edges.",
+      "main_front_rows_unchanged": [
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11
+      ],
+      "geometry_normals_uv_unchanged_from_candidate03": true
+    }
+  ]
+}

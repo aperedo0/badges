@@ -1,0 +1,53 @@
+{
+  "arkit_compliance": "PASS",
+  "meshes": [
+    {
+      "name": "CopperFlame_CentralRibbon",
+      "vertices": 9084,
+      "triangles": 18164,
+      "uv": "FlameUV"
+    },
+    {
+      "name": "CopperFlame_RightRibbon",
+      "vertices": 5664,
+      "triangles": 11324,
+      "uv": "FlameUV"
+    },
+    {
+      "name": "CopperFlame_LeftRibbon",
+      "vertices": 5664,
+      "triangles": 11324,
+      "uv": "FlameUV"
+    }
+  ],
+  "textures_match_package": [
+    {
+      "member": "0/copper_color.png",
+      "sha256": "d1f4c08ac2fdb795b2dcbc858519451d324fdb0b7a45c8094cbb7b98e23284a9"
+    },
+    {
+      "member": "0/copper_emissive.png",
+      "sha256": "aaa4c8e770dab21ff638088b0f786d211f0ed67e17b189ba72794c2980c36f03"
+    }
+  ],
+  "reimport_triangles": 40812,
+  "reimport_images": [
+    {
+      "name": "copper_color.png",
+      "dimensions": [
+        1024,
+        1024
+      ],
+      "packed": true
+    },
+    {
+      "name": "copper_emissive.png",
+      "dimensions": [
+        1024,
+        1024
+      ],
+      "packed": true
+    }
+  ],
+  "no_transforms_or_scene_items": true
+}

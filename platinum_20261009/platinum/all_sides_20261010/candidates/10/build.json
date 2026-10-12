@@ -1,0 +1,44 @@
+{
+  "tier": "platinum",
+  "installed_sha256": "6ba3c309bc8d9861c28ed66230f1fbaf5d23b0106e97ddddf6263095403ce371",
+  "sha256": "a3a4935bf320003d2c34a1018cfde2c75a8e40a5ab3d06dd743487e212d848bd",
+  "triangles": 43008,
+  "bytes": 3964073,
+  "bounds": [
+    [
+      -2.8524208068847656,
+      -2.4549999237060547,
+      -0.7828716039657593
+    ],
+    [
+      2.8524208068847656,
+      2.902362585067749,
+      0.7828716039657593
+    ]
+  ],
+  "arkit_errors": [],
+  "arkit_failed_checks": [],
+  "changes": [
+    {
+      "rear_polish": {
+        "source_visible_samples": [
+          663,
+          664,
+          664,
+          667,
+          669,
+          677,
+          680,
+          681,
+          682,
+          682,
+          683
+        ],
+        "hidden_samples_filled": 1036,
+        "method": "Reuse each ribbon cross section of the installed front. Fill front-occluded portions by interpolating nearby visible portions along the same ribbon; no hidden crossing shadow is painted on the exposed back."
+      },
+      "front_geometry_and_maps_unchanged_from08": true,
+      "rear_geometry_preserved": "An actual trefoil has different over-under crossings from behind. Preserve its continuous ribbon; reuse and complete the front polish rather than flattening a reference image onto the rear."
+    }
+  ]
+}

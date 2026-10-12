@@ -1,0 +1,57 @@
+{
+  "tier": "platinum",
+  "installed_sha256": "6ba3c309bc8d9861c28ed66230f1fbaf5d23b0106e97ddddf6263095403ce371",
+  "sha256": "2145abd0bbbb4492d6e8bed74ba26fa21a376c618b337daa30161569c2e9a3ac",
+  "triangles": 43008,
+  "bytes": 3933932,
+  "bounds": [
+    [
+      -2.8524208068847656,
+      -2.4549999237060547,
+      -0.7828716039657593
+    ],
+    [
+      2.8524208068847656,
+      2.902362585067749,
+      0.7828716039657593
+    ]
+  ],
+  "arkit_errors": [],
+  "arkit_failed_checks": [],
+  "changes": [
+    {
+      "rear_polish": {
+        "method": "Native app front appearance transferred along the continuous ribbon, with front-hidden sections filled from visible neighboring sections. Rear albedo and emission solved against measured rear studio light. Thin side and bevel guards retain the installed front outline and avoid mixed silhouette pixels.",
+        "front_visible": [
+          663,
+          664,
+          664,
+          667,
+          669,
+          677,
+          680,
+          681,
+          682,
+          682,
+          683
+        ],
+        "rear_calibration_valid": [
+          327,
+          375,
+          536,
+          510,
+          513,
+          536,
+          566,
+          503,
+          421,
+          402,
+          389
+        ],
+        "emission_scale": 3
+      },
+      "front_geometry_and_maps_unchanged_from08": true,
+      "rear_geometry_preserved": "An actual trefoil has different over-under crossings from behind. Preserve its continuous ribbon; reuse and complete the front polish rather than flattening a reference image onto the rear."
+    }
+  ]
+}

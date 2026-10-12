@@ -1,0 +1,71 @@
+{
+  "atlas_mapping_note": "Atlas plain island tested; actual leaf-back UV routing independently proved in precise_identity_check.json. Candidates28-30 lacked plain-back routing and are not final recommendations.",
+  "all_plain_lower_fifth_checks_pass": true,
+  "normal_map_count": 0,
+  "maps": [
+    {
+      "file": "Silver2_LeafLit_Satin_color.png",
+      "dimensions": [
+        512,
+        512
+      ],
+      "plain_lower_fifth_max_channel_difference": 0
+    },
+    {
+      "file": "Silver2_LeafLit_Satin_roughness.png",
+      "dimensions": [
+        512,
+        512
+      ],
+      "plain_lower_fifth_max_channel_difference": 0
+    },
+    {
+      "file": "Silver2_LeafShaded_Satin_color.png",
+      "dimensions": [
+        512,
+        512
+      ],
+      "plain_lower_fifth_max_channel_difference": 0
+    },
+    {
+      "file": "Silver2_LeafShaded_Satin_roughness.png",
+      "dimensions": [
+        512,
+        512
+      ],
+      "plain_lower_fifth_max_channel_difference": 0
+    },
+    {
+      "file": "Silver2_StarLit_Satin_color.png",
+      "dimensions": [
+        512,
+        512
+      ],
+      "plain_lower_fifth_max_channel_difference": 0
+    },
+    {
+      "file": "Silver2_StarLit_Satin_roughness.png",
+      "dimensions": [
+        512,
+        512
+      ],
+      "plain_lower_fifth_max_channel_difference": 0
+    },
+    {
+      "file": "Silver2_StarShaded_Satin_color.png",
+      "dimensions": [
+        512,
+        512
+      ],
+      "plain_lower_fifth_max_channel_difference": 0
+    },
+    {
+      "file": "Silver2_StarShaded_Satin_roughness.png",
+      "dimensions": [
+        512,
+        512
+      ],
+      "plain_lower_fifth_max_channel_difference": 0
+    }
+  ]
+}

@@ -1,0 +1,296 @@
+[
+  {
+    "package": "/Users/antonioperedo/Desktop/badges/badge_variants2_20261008/iron2/all_sides_20261010/candidates/03/iron_badge_mobile.usdz",
+    "triangles": 59392,
+    "textures_resolve": true,
+    "sha256": "40e08595215bc27ec56427dde654d8ed22077d6771ed88660d1304f5cb69622d"
+  },
+  {
+    "package": "/Users/antonioperedo/Desktop/badges/bronze_silver_20261009/bronze/all_sides_20261010/candidates/02/bronze_badge_mobile.usdz",
+    "triangles": 46176,
+    "textures_resolve": true,
+    "sha256": "c84985b4d77a628ced09742d8aaed4360158f452b49ba7659cacfcc1e0e7f3ab"
+  },
+  {
+    "package": "/Users/antonioperedo/Desktop/badges/bronze_silver_20261009/silver/all_sides_20261010/candidates/03/steel_badge_mobile.usdz",
+    "triangles": 600,
+    "textures_resolve": true,
+    "sha256": "65b2047e8503ddddcfe6330164e694856d2bce4dea9bad60fedaa177b40acfb1"
+  },
+  {
+    "package": "/Users/antonioperedo/Desktop/badges/badge_variants2_20261008/silver2/all_sides_20261010/candidates/04/silver_badge_mobile.usdz",
+    "triangles": 43944,
+    "textures_resolve": true,
+    "sha256": "5e53854e07c9acd15276e9f6f204325a45222263bcd82371b893f97606918174"
+  },
+  {
+    "package": "/Users/antonioperedo/Desktop/badges/gold_diamond_20261009/gold/all_sides_20261010/candidates/22/gold_badge_mobile.usdz",
+    "triangles": 74272,
+    "textures_resolve": true,
+    "sha256": "70ea3bcab53cb3f1fb024cd9b1a46fed56cf43268a1a70e6e1d23ab037a24530"
+  },
+  {
+    "package": "/Users/antonioperedo/Desktop/badges/platinum_20261009/platinum/all_sides_20261010/candidates/13/platinum_badge_mobile.usdz",
+    "triangles": 43008,
+    "textures_resolve": true,
+    "sha256": "d94ab8976aa8b632f5363acb7e95793dfd724510c9432c0daf723122ad54ed1c"
+  },
+  {
+    "package": "/Users/antonioperedo/Desktop/badges/gold_diamond_20261009/diamond/all_sides_20261010/candidates/04/diamond_badge_mobile.usdz",
+    "triangles": 240,
+    "textures_resolve": true,
+    "sha256": "2ba20a7cf8a5efb7bcbe764879bc8205a9845f38f7c080aa1999a0d2c1ca3b16"
+  },
+  {
+    "package": "/Users/antonioperedo/Desktop/badges/all_sides_20261010/inspection_models/current/iron/right/iron_badge_mobile.usdz",
+    "triangles": 38528,
+    "textures_resolve": true,
+    "sha256": "903efc8c83e574cd781d6e45d60e7df96c170486c2ecec14d96b71240b87627f"
+  },
+  {
+    "package": "/Users/antonioperedo/Desktop/badges/all_sides_20261010/inspection_models/current/iron/back/iron_badge_mobile.usdz",
+    "triangles": 38528,
+    "textures_resolve": true,
+    "sha256": "c52df374923898a0a3fa7ca226ae347dbf7ec3212cade8d5c01558de076e223d"
+  },
+  {
+    "package": "/Users/antonioperedo/Desktop/badges/all_sides_20261010/inspection_models/current/iron/left/iron_badge_mobile.usdz",
+    "triangles": 38528,
+    "textures_resolve": true,
+    "sha256": "6f6c2f0179b06a31cafc2497abf76a8e47948db831186513aa2f1833f2d87177"
+  },
+  {
+    "package": "/Users/antonioperedo/Desktop/badges/all_sides_20261010/inspection_models/current/bronze/right/bronze_badge_mobile.usdz",
+    "triangles": 39440,
+    "textures_resolve": true,
+    "sha256": "0830ca0b92a8c74705c32e7a6129dd5a6f5c0f0c9dfd64ac4908f9c36a187915"
+  },
+  {
+    "package": "/Users/antonioperedo/Desktop/badges/all_sides_20261010/inspection_models/current/bronze/back/bronze_badge_mobile.usdz",
+    "triangles": 39440,
+    "textures_resolve": true,
+    "sha256": "bdf0ee6eadc1e0978c4fb4f91a5c85724cefeb24376ff33a574e6eaf04092aea"
+  },
+  {
+    "package": "/Users/antonioperedo/Desktop/badges/all_sides_20261010/inspection_models/current/bronze/left/bronze_badge_mobile.usdz",
+    "triangles": 39440,
+    "textures_resolve": true,
+    "sha256": "2ef687cafd1106e0f7e069a14749c330c072cb2fd55157711feab240bceeed72"
+  },
+  {
+    "package": "/Users/antonioperedo/Desktop/badges/all_sides_20261010/inspection_models/current/steel/right/steel_badge_mobile.usdz",
+    "triangles": 440,
+    "textures_resolve": true,
+    "sha256": "09e55a0b2e306d6e86999f9960ab12698f1dd2c0a0d16ed4d38913d928e85f50"
+  },
+  {
+    "package": "/Users/antonioperedo/Desktop/badges/all_sides_20261010/inspection_models/current/steel/back/steel_badge_mobile.usdz",
+    "triangles": 440,
+    "textures_resolve": true,
+    "sha256": "87220a766c61144a1501d6815c91a7d9081e3c049a5a8ac23766422b138ddaf1"
+  },
+  {
+    "package": "/Users/antonioperedo/Desktop/badges/all_sides_20261010/inspection_models/current/steel/left/steel_badge_mobile.usdz",
+    "triangles": 440,
+    "textures_resolve": true,
+    "sha256": "95740f0c21d78c67e9b019e148587ff35610cc2cc8f8253b8b187ea1838eec8e"
+  },
+  {
+    "package": "/Users/antonioperedo/Desktop/badges/all_sides_20261010/inspection_models/current/silver/right/silver_badge_mobile.usdz",
+    "triangles": 42664,
+    "textures_resolve": true,
+    "sha256": "25c0b7dbad476b3bd027f738a249644d74ccc742977db9f54e7ad511161f0400"
+  },
+  {
+    "package": "/Users/antonioperedo/Desktop/badges/all_sides_20261010/inspection_models/current/silver/back/silver_badge_mobile.usdz",
+    "triangles": 42664,
+    "textures_resolve": true,
+    "sha256": "3784037d9874bf9c88ba53a47eee833083f2086faca6dcd1012ee4d07bed4a7c"
+  },
+  {
+    "package": "/Users/antonioperedo/Desktop/badges/all_sides_20261010/inspection_models/current/silver/left/silver_badge_mobile.usdz",
+    "triangles": 42664,
+    "textures_resolve": true,
+    "sha256": "f8ba9b023e96555d8cafc42d8a49ec97b399ef317cc43bb47c818b5b23c8c9d5"
+  },
+  {
+    "package": "/Users/antonioperedo/Desktop/badges/all_sides_20261010/inspection_models/current/gold/right/gold_badge_mobile.usdz",
+    "triangles": 42580,
+    "textures_resolve": true,
+    "sha256": "cac6f42f40ba8e0dc0d324448905e095f65246fa3ce9a0220462764c097313cd"
+  },
+  {
+    "package": "/Users/antonioperedo/Desktop/badges/all_sides_20261010/inspection_models/current/gold/back/gold_badge_mobile.usdz",
+    "triangles": 42580,
+    "textures_resolve": true,
+    "sha256": "79e0ccf3323b8b676517cbbb76da50c59691c9bde597f7b67b436ecd329131aa"
+  },
+  {
+    "package": "/Users/antonioperedo/Desktop/badges/all_sides_20261010/inspection_models/current/gold/left/gold_badge_mobile.usdz",
+    "triangles": 42580,
+    "textures_resolve": true,
+    "sha256": "022a1e33993b4cb6dd348fb914ab9cd0bdbb0d1a5b5eb3407fa696a2e508e4e7"
+  },
+  {
+    "package": "/Users/antonioperedo/Desktop/badges/all_sides_20261010/inspection_models/current/platinum/right/platinum_badge_mobile.usdz",
+    "triangles": 43008,
+    "textures_resolve": true,
+    "sha256": "ae747d6fb20d5a7f26c3c43b4915ed21334fa100f7c030c5a0a2a884f9f99464"
+  },
+  {
+    "package": "/Users/antonioperedo/Desktop/badges/all_sides_20261010/inspection_models/current/platinum/back/platinum_badge_mobile.usdz",
+    "triangles": 43008,
+    "textures_resolve": true,
+    "sha256": "7b0cf967f09061fd35573c02037d3105b3c99005edcbfc772a5d0ceeb92abee3"
+  },
+  {
+    "package": "/Users/antonioperedo/Desktop/badges/all_sides_20261010/inspection_models/current/platinum/left/platinum_badge_mobile.usdz",
+    "triangles": 43008,
+    "textures_resolve": true,
+    "sha256": "66e3974e831390b69ad5fa31fbed1adde9d08708a50e9c9267a83f4f49b7bc3c"
+  },
+  {
+    "package": "/Users/antonioperedo/Desktop/badges/all_sides_20261010/inspection_models/current/diamond/right/diamond_badge_mobile.usdz",
+    "triangles": 172,
+    "textures_resolve": true,
+    "sha256": "f89ed86ac07c430d2800a19420001971741377090de88d85167ae30e07a196f7"
+  },
+  {
+    "package": "/Users/antonioperedo/Desktop/badges/all_sides_20261010/inspection_models/current/diamond/back/diamond_badge_mobile.usdz",
+    "triangles": 172,
+    "textures_resolve": true,
+    "sha256": "d2a82292d7741750e9cfc601317b5bae4c287f9f1839853bde2251b5b464e6e7"
+  },
+  {
+    "package": "/Users/antonioperedo/Desktop/badges/all_sides_20261010/inspection_models/current/diamond/left/diamond_badge_mobile.usdz",
+    "triangles": 172,
+    "textures_resolve": true,
+    "sha256": "8ce7b871e1479b0953fc9c048281680fd67a0d8d7570312d29ee7f11ad6730ca"
+  },
+  {
+    "package": "/Users/antonioperedo/Desktop/badges/all_sides_20261010/inspection_models/updated/iron/right/iron_badge_mobile.usdz",
+    "triangles": 59392,
+    "textures_resolve": true,
+    "sha256": "040a82a9e4b25a5d149b51fdabb9fafcc943369f14197bf4bc84b0731373c3c0"
+  },
+  {
+    "package": "/Users/antonioperedo/Desktop/badges/all_sides_20261010/inspection_models/updated/iron/back/iron_badge_mobile.usdz",
+    "triangles": 59392,
+    "textures_resolve": true,
+    "sha256": "e9c676e5dfa689ba2827ce8d315e307627f2d523e9156d31684634c04fc137f9"
+  },
+  {
+    "package": "/Users/antonioperedo/Desktop/badges/all_sides_20261010/inspection_models/updated/iron/left/iron_badge_mobile.usdz",
+    "triangles": 59392,
+    "textures_resolve": true,
+    "sha256": "874c5678ae8acf0b3fa91ea82fc38182c0caf72338467ac9bb7da97a8258fd43"
+  },
+  {
+    "package": "/Users/antonioperedo/Desktop/badges/all_sides_20261010/inspection_models/updated/bronze/right/bronze_badge_mobile.usdz",
+    "triangles": 46176,
+    "textures_resolve": true,
+    "sha256": "c3485438f26c69f5687ec850549b49eba5c0117b45b9405ece6cc6bad606abc0"
+  },
+  {
+    "package": "/Users/antonioperedo/Desktop/badges/all_sides_20261010/inspection_models/updated/bronze/back/bronze_badge_mobile.usdz",
+    "triangles": 46176,
+    "textures_resolve": true,
+    "sha256": "b0ff741b8b42ec1926f984dc01d78b78503c65b9f57752af6d13ca3bff492d2e"
+  },
+  {
+    "package": "/Users/antonioperedo/Desktop/badges/all_sides_20261010/inspection_models/updated/bronze/left/bronze_badge_mobile.usdz",
+    "triangles": 46176,
+    "textures_resolve": true,
+    "sha256": "a92344c0ec6531572525a984e8848caf7a721ce193ec69b759f63b222c02fdc2"
+  },
+  {
+    "package": "/Users/antonioperedo/Desktop/badges/all_sides_20261010/inspection_models/updated/steel/right/steel_badge_mobile.usdz",
+    "triangles": 600,
+    "textures_resolve": true,
+    "sha256": "e4f40e85c26b6fb1cd29463d1d04f9b01c96a1b7a23ba14d252bdfa97069fe7e"
+  },
+  {
+    "package": "/Users/antonioperedo/Desktop/badges/all_sides_20261010/inspection_models/updated/steel/back/steel_badge_mobile.usdz",
+    "triangles": 600,
+    "textures_resolve": true,
+    "sha256": "ab0e3bfd13bfc2ca23ad9f5e53df014fec125c669ae012f163724844d6c8d84f"
+  },
+  {
+    "package": "/Users/antonioperedo/Desktop/badges/all_sides_20261010/inspection_models/updated/steel/left/steel_badge_mobile.usdz",
+    "triangles": 600,
+    "textures_resolve": true,
+    "sha256": "529851f1b1fd0bbf7243904895083486548c08f82d01a7db505bd5a70910f04d"
+  },
+  {
+    "package": "/Users/antonioperedo/Desktop/badges/all_sides_20261010/inspection_models/updated/silver/right/silver_badge_mobile.usdz",
+    "triangles": 43944,
+    "textures_resolve": true,
+    "sha256": "34ba4405b5ac3200b3a8ae2afa57b9505c90967cced167d9ae570f0aa051eb06"
+  },
+  {
+    "package": "/Users/antonioperedo/Desktop/badges/all_sides_20261010/inspection_models/updated/silver/back/silver_badge_mobile.usdz",
+    "triangles": 43944,
+    "textures_resolve": true,
+    "sha256": "1e261af8177cbd5cbdc84f4e05bc7876618bcc4defdac5c80e60287fb0b8b592"
+  },
+  {
+    "package": "/Users/antonioperedo/Desktop/badges/all_sides_20261010/inspection_models/updated/silver/left/silver_badge_mobile.usdz",
+    "triangles": 43944,
+    "textures_resolve": true,
+    "sha256": "4ee1f678c50bec9a42ecc3ff3829226417c9e2f1b5fe18c8c9bbad9475c10c08"
+  },
+  {
+    "package": "/Users/antonioperedo/Desktop/badges/all_sides_20261010/inspection_models/updated/gold/right/gold_badge_mobile.usdz",
+    "triangles": 74272,
+    "textures_resolve": true,
+    "sha256": "b3888936f111618fd9eecf5399b824b56bb00112bd37e4137f9aa488881439e1"
+  },
+  {
+    "package": "/Users/antonioperedo/Desktop/badges/all_sides_20261010/inspection_models/updated/gold/back/gold_badge_mobile.usdz",
+    "triangles": 74272,
+    "textures_resolve": true,
+    "sha256": "6bf441af0066abd09b3ecf1d8a2a052a498a5e8455a3ead92710110d98faccd5"
+  },
+  {
+    "package": "/Users/antonioperedo/Desktop/badges/all_sides_20261010/inspection_models/updated/gold/left/gold_badge_mobile.usdz",
+    "triangles": 74272,
+    "textures_resolve": true,
+    "sha256": "d68dfcbcb4df63352f581de580c21d13b996cb271578f83f0e0fe23074d90cd5"
+  },
+  {
+    "package": "/Users/antonioperedo/Desktop/badges/all_sides_20261010/inspection_models/updated/platinum/right/platinum_badge_mobile.usdz",
+    "triangles": 43008,
+    "textures_resolve": true,
+    "sha256": "4e379d8af0bacdac1ff73d7508b30f41cf0c78160c3c2bf46464b066a633aa60"
+  },
+  {
+    "package": "/Users/antonioperedo/Desktop/badges/all_sides_20261010/inspection_models/updated/platinum/back/platinum_badge_mobile.usdz",
+    "triangles": 43008,
+    "textures_resolve": true,
+    "sha256": "c7b523d40cb43b1654b4c49d63fea6ab2658285278e77e566cb5f8c07ba7469a"
+  },
+  {
+    "package": "/Users/antonioperedo/Desktop/badges/all_sides_20261010/inspection_models/updated/platinum/left/platinum_badge_mobile.usdz",
+    "triangles": 43008,
+    "textures_resolve": true,
+    "sha256": "f2ab9432f69d6b4d13731d00763cbc70490b3fbd7f0b3f2d9fbdebbfb0b928e3"
+  },
+  {
+    "package": "/Users/antonioperedo/Desktop/badges/all_sides_20261010/inspection_models/updated/diamond/right/diamond_badge_mobile.usdz",
+    "triangles": 240,
+    "textures_resolve": true,
+    "sha256": "661bb5a4a9b88301387f8b0987918478edacb9eb836429d744af7c0d50a77c87"
+  },
+  {
+    "package": "/Users/antonioperedo/Desktop/badges/all_sides_20261010/inspection_models/updated/diamond/back/diamond_badge_mobile.usdz",
+    "triangles": 240,
+    "textures_resolve": true,
+    "sha256": "ecfdc8224ef4d77374f139efc0ab8253d2c72ffcff0d855b54356bcaf0198e45"
+  },
+  {
+    "package": "/Users/antonioperedo/Desktop/badges/all_sides_20261010/inspection_models/updated/diamond/left/diamond_badge_mobile.usdz",
+    "triangles": 240,
+    "textures_resolve": true,
+    "sha256": "2d75a6596e574fba27e2d583e1347323aadec9618d4da91afa2f15c022541027"
+  }
+]

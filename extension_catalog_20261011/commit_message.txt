@@ -1,0 +1,4 @@
+badges stored once: the two notification extensions bundle only the app icon instead of the whole 28 MB image catalog
+
+Co-Authored-By: Claude Opus 5.5 <noreply@anthropic.com>
+Claude-Session: https://claude.ai/code/session_016BjnfxfNxSNPQYMU2kvnrR

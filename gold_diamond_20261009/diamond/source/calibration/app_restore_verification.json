@@ -1,0 +1,12 @@
+{
+  "restored_byte_for_byte": true,
+  "all_tracked_file_hashes_unchanged": true,
+  "tracked_files": 641,
+  "head": "379713754222a3f03eb7188da7dff57d0816d378",
+  "branch": "3d-badge",
+  "status": "",
+  "asset_hashes": {
+    "diamond": "45c2dd04daf079a24ebe14bee2df4a31a9be9f1686aa7938215d650b65851928",
+    "gold": "f2c6f6bad8e3767fe0dd921ce778348a5bbf931c6c9e2ed19531c84c9f164f92"
+  }
+}

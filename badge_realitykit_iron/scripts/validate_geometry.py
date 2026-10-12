@@ -1,7 +1,7 @@
 import bpy,json,sys,numpy as np,hashlib,zipfile
 from pathlib import Path
 from pxr import Usd,UsdGeom,UsdShade,UsdUtils,Sdf,Gf
-r=Path('/Users/antonioperedo/Downloads/badge_realitykit_iron')
+r=Path(__file__).resolve().parents[1]
 a=Usd.Stage.Open(str(r/'source/silver_v3/silver_badge_mobile.usdz'));b=Usd.Stage.Open(str(r/'mobile/iron_badge_mobile.usdz'))
 report={'meshes':{},'materials':{},'stage':{'upAxis':str(UsdGeom.GetStageUpAxis(b)),'metersPerUnit':UsdGeom.GetStageMetersPerUnit(b)},'names':{}}
 for p in a.Traverse():

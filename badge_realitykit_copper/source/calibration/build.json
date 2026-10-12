@@ -1,0 +1,36 @@
+{
+  "triangles": 40812,
+  "bytes": 657398,
+  "sha256": "c1d5caef79b79cf8a7f88f854ec8e90dab4d5392097aefa3b362a47eaf98e2b1",
+  "bounds": [
+    [
+      -1.5748316498316497,
+      -2.455,
+      -0.325
+    ],
+    [
+      1.5748313632043405,
+      2.8449999999999998,
+      0.325
+    ]
+  ],
+  "float_gap": 0.43999999999999995,
+  "closed_manifold": {
+    "Central": true,
+    "Right": true,
+    "Left": true
+  },
+  "compliance": {
+    "errors": [],
+    "failed_checks": [],
+    "warnings": []
+  },
+  "settings": {
+    "color": [
+      0.12,
+      0.12,
+      0.12
+    ],
+    "roughness": 0.34
+  }
+}

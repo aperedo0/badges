@@ -1,0 +1,27 @@
+{
+  "tier": "platinum",
+  "installed_sha256": "6ba3c309bc8d9861c28ed66230f1fbaf5d23b0106e97ddddf6263095403ce371",
+  "sha256": "254bcde1b985c1e948a70f6554eb0d57fa7a9b92bf2fa69f5807443fb792c645",
+  "triangles": 43008,
+  "bytes": 3657483,
+  "bounds": [
+    [
+      -2.8524208068847656,
+      -2.4549999237060547,
+      -0.7828716039657593
+    ],
+    [
+      2.8524208068847656,
+      2.902362585067749,
+      0.7828716039657593
+    ]
+  ],
+  "arkit_errors": [],
+  "arkit_failed_checks": [],
+  "changes": [
+    {
+      "calibration_only": true,
+      "purpose": "Measure the real rear studio illumination so the front polish can be solved onto the rear rather than layered with mismatched highlights."
+    }
+  ]
+}

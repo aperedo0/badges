@@ -1,0 +1,23 @@
+{
+  "calibration": "Candidate 02 native app front with known dielectric body color, no optical texture and no emission. Full coupled RGB AgX inversion used. The former neutral-axis solver diverged on saturated blue; this uses the actual 3D cube and a damped full Jacobian.",
+  "appearance": "Previous optical field transferred into light-responsive body color. Fixed white emissive highlights removed; only a small uniform blue emission remains.",
+  "body_range": [
+    [
+      0.002,
+      0.002,
+      0.002
+    ],
+    [
+      0.95,
+      0.95,
+      0.95
+    ]
+  ],
+  "uniform_emission": [
+    0.008,
+    0.02,
+    0.035
+  ],
+  "excluded_outline": true,
+  "live_specular_ior": 2.42
+}

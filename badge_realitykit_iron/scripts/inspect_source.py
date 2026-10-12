@@ -1,7 +1,7 @@
 import bpy,json,numpy as np
 from pathlib import Path
 from pxr import Usd,UsdGeom,UsdShade
-r=Path('/Users/antonioperedo/Downloads/badge_realitykit_iron')
+r=Path(__file__).resolve().parents[1]
 bpy.ops.wm.open_mainfile(filepath=str(r/'source/silver_master.blend'))
 bpy.context.scene.frame_set(360)
 d=bpy.context.evaluated_depsgraph_get()

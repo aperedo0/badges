@@ -1,0 +1,121 @@
+{
+  "tier": "gold",
+  "installed_sha256": "2306ce19a8d9fabb804775350c6d7677901a29283fe5fa80914a790ca6b638a2",
+  "sha256": "25591726231aa0e068888594679948934bde4027456bf277a36bd2a9e3a966e3",
+  "triangles": 74312,
+  "bytes": 4795048,
+  "bounds": [
+    [
+      -3.191899299621582,
+      -2.787841320037842,
+      -3.3415310382843018
+    ],
+    [
+      3.191899299621582,
+      1.9641330242156982,
+      3.3415310382843018
+    ]
+  ],
+  "arkit_errors": [],
+  "arkit_failed_checks": [],
+  "changes": [
+    {
+      "mesh": "GoldCrown_ScallopedShell",
+      "source_uv_and_front_finish_preserved": true,
+      "wrapped_to_circular_wall": true
+    },
+    {
+      "mesh": "GoldCrown_RoundedScallopLip",
+      "source_uv_and_front_finish_preserved": true,
+      "wrapped_to_circular_wall": true
+    },
+    {
+      "mesh": "GoldCrown_ValleyFlange1",
+      "source_uv_and_front_finish_preserved": true,
+      "wrapped_to_circular_wall": true
+    },
+    {
+      "mesh": "GoldCrown_ValleyFlange2",
+      "source_uv_and_front_finish_preserved": true,
+      "wrapped_to_circular_wall": true
+    },
+    {
+      "mesh": "GoldCrown_ValleyFlange3",
+      "source_uv_and_front_finish_preserved": true,
+      "wrapped_to_circular_wall": true
+    },
+    {
+      "mesh": "GoldCrown_ValleyFlange4",
+      "source_uv_and_front_finish_preserved": true,
+      "wrapped_to_circular_wall": true
+    },
+    {
+      "mesh": "GoldCrown_Finial1",
+      "source_uv_and_front_finish_preserved": true,
+      "wrapped_to_circular_wall": true
+    },
+    {
+      "mesh": "GoldCrown_Collar1",
+      "source_uv_and_front_finish_preserved": true,
+      "wrapped_to_circular_wall": true
+    },
+    {
+      "mesh": "GoldCrown_Finial2",
+      "source_uv_and_front_finish_preserved": true,
+      "wrapped_to_circular_wall": true
+    },
+    {
+      "mesh": "GoldCrown_Collar2",
+      "source_uv_and_front_finish_preserved": true,
+      "wrapped_to_circular_wall": true
+    },
+    {
+      "mesh": "GoldCrown_Finial3",
+      "source_uv_and_front_finish_preserved": true,
+      "wrapped_to_circular_wall": true
+    },
+    {
+      "mesh": "GoldCrown_Collar3",
+      "source_uv_and_front_finish_preserved": true,
+      "wrapped_to_circular_wall": true
+    },
+    {
+      "mesh": "GoldCrown_Finial4",
+      "source_uv_and_front_finish_preserved": true,
+      "wrapped_to_circular_wall": true
+    },
+    {
+      "mesh": "GoldCrown_Collar4",
+      "source_uv_and_front_finish_preserved": true,
+      "wrapped_to_circular_wall": true
+    },
+    {
+      "mesh": "GoldCrown_Finial5",
+      "source_uv_and_front_finish_preserved": true,
+      "wrapped_to_circular_wall": true
+    },
+    {
+      "mesh": "GoldCrown_Collar5",
+      "source_uv_and_front_finish_preserved": true,
+      "wrapped_to_circular_wall": true
+    },
+    {
+      "true_circular_band": true,
+      "radius": 2.644996483626511,
+      "height": 0.6300864902666727,
+      "tilt_degrees": -17.17895195637769,
+      "axis": [
+        0.0,
+        0.9553869282796957,
+        -0.2953571012728279
+      ],
+      "circle_radius_error": 8.881784197001252e-16,
+      "center_shift": [
+        -0.0,
+        0.0,
+        0.16133010387420654
+      ],
+      "floating_height_guidance_exception": "A real tilted circular band reaches lower at the far side than the flattened source. Retain reference projection and satisfy the hard floor."
+    }
+  ]
+}

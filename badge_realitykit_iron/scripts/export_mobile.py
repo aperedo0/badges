@@ -20,7 +20,7 @@ sys.path.insert(0,str(Path(__file__).resolve().parent))  # v2
 import badge_mobile_rules  # v2
 ARGS=sys.argv[sys.argv.index('--')+1:] if '--' in sys.argv else []  # v2
 def arg(name,default=None):return ARGS[ARGS.index(name)+1] if name in ARGS else default  # v2
-ROOT=Path(arg('--root','/Users/antonioperedo/Downloads/badge_realitykit_iron'))  # v3
+ROOT=Path(arg('--root',str(Path(__file__).resolve().parents[1])))  # v3
 SOURCE=Path(arg('--source',str(ROOT/'scenes/iron_medallion_master.blend')))  # v2
 OLD_USDZ=arg('--baked-usdz',str(ROOT/'work/iron_baked.usdz'))  # v2
 BAKES=Path(arg('--bakes',str(ROOT/'source/bakes')))  # v2
@@ -41,6 +41,8 @@ try:
     rig=bpy.data.objects['Turntable | one slow 360 degree spin']
     original={o.name:o for o in rig.children_recursive if o.type=='MESH'}
     source_materials={m.name:m for o in original.values() for m in o.data.materials if m}
+    # Packed master images must not steal the shipping texture filenames.
+    for image in bpy.data.images:image.name='MASTER_SOURCE_'+image.name
     for o in scene.objects:o.hide_render=True
     for name,obj in original.items():obj.name='SOURCE '+name
     stage=Usd.Stage.Open(OLD_USDZ)
@@ -51,13 +53,13 @@ try:
     images={}
     texture_report=[]
     for stem in ('USDZ_Casing_base_color','USDZ_Casing_roughness','USDZ_Casing_normal',
-                 'USDZ_Emblem_normal','USDZ_Inset_base_color','USDZ_Inset_normal'):
+                 'USDZ_Emblem_normal','USDZ_Emblem_base_color','USDZ_Emblem_shaded_base_color','USDZ_Emblem_roughness','USDZ_Inset_base_color','USDZ_Inset_roughness','USDZ_Inset_normal'):
         file=BAKES/(stem+'.png')
         assert file.exists(),file
-        img=bpy.data.images.load(str(file),check_existing=False)
+        img=bpy.data.images.load(str(file),check_existing=False);img.name=stem+'.png'
         normal=stem.endswith('_normal')
         img.colorspace_settings.name='Non-Color' if normal or stem.endswith('_roughness') else 'sRGB'
-        size=1024 if stem in ('USDZ_Emblem_normal','USDZ_Inset_normal') else 512
+        size=512
         img.scale(size,size)
         if normal and size==512:
             a=np.empty(size*size*4,dtype=np.float32);img.pixels.foreach_get(a)
@@ -81,20 +83,21 @@ try:
             if target and not socket.is_linked and hasattr(socket,'default_value'):
                 try:target.default_value=socket.default_value
                 except (TypeError,ValueError):pass
-        channels={'Casing':('base_color','roughness','normal'),'Emblem':('normal',),'Inset':('base_color',)}.get(short,())
+        channels={'Casing':('base_color','roughness','normal'),'Emblem':('base_color','roughness','normal'),'Inset':('base_color','roughness','normal')}.get(short,())
         for channel in channels:
+            if channel=='normal' and src.name.startswith('Back and edge'):continue
             img=images['USDZ_'+short+'_'+channel]
-            # A perfectly uniform image per casing material, preserving its own tone and roughness.
             if short=='Casing' and channel in ('base_color','roughness') and not src.name.startswith('Silver | circumferential'):
-                img=img.copy()
                 role='outer' if src.name.startswith('Outer edge') else 'back'
-                img.name='USDZ_Casing_'+role+'_'+channel+'.png'
-                col=(.105,.102,.094) if role=='outer' else (.055,.052,.048)
-                if channel=='roughness':col=(.27,.27,.27) if role=='outer' else (.32,.32,.32)
-                rgba=np.ones((512*512,4),dtype=np.float32);rgba[:,:3]=col
-                img.pixels.foreach_set(rgba.ravel());img.update()
-                img.filepath_raw=str(ROOT/'mobile/textures'/img.name);img.file_format='PNG';img.save();img.pack()
-                images[img.name]=img
+                key='USDZ_Casing_'+role+'_'+channel
+                if key not in images:
+                    img=bpy.data.images.load(str(BAKES/(key+'.png')),check_existing=False);img.name=key+'.png'
+                    img.colorspace_settings.name='sRGB' if channel=='base_color' else 'Non-Color'
+                    img.scale(512,512)
+                    img.filepath_raw=str(ROOT/'mobile/textures'/(key+'.png'));img.file_format='PNG';img.save();images[key]=img
+                img=images[key]
+            if short=='Emblem' and channel=='base_color' and src.name.startswith('Emblem | shaded'):
+                img=images['USDZ_Emblem_shaded_base_color']
             tex=mat.node_tree.nodes.new('ShaderNodeTexImage');tex.image=img
             uv=mat.node_tree.nodes.new('ShaderNodeUVMap');uv.uv_map='USDZ_UV'
             mat.node_tree.links.new(uv.outputs['UV'],tex.inputs['Vector'])
@@ -201,7 +204,10 @@ try:
     scene['Model orientation']='Y up, front +Z, native diameter 6.03 units; preserve scale or normalize in app.'
     # v2: keep the reduced scene before the rules (the v1 mobile .blend), then apply the rules and export.
     bpy.ops.wm.save_as_mainfile(filepath=str(ROOT/'scenes/iron_badge_mobile_reduced.blend'),check_existing=False)
-    config=dict(badge_mobile_rules.SILVER_CONFIG)  # v2
+    config=dict(badge_mobile_rules.SILVER_CONFIG)
+    # User authorized restrained normals for the forged finish; strength is pre-baked.
+    config['no_normal_map_meshes']=[]
+    config['normal_map_strength']={'Casing':1.,'Emblem':1.,'Inset':1.}
     if arg('--inset-strength'):config['normal_map_strength']={'Inset':float(arg('--inset-strength'))}  # v2
     rules=badge_mobile_rules.run(None,OUT,ROOT/'mobile/textures',apply=True,config=config,
         save_blend=ROOT/'scenes/iron_badge_mobile.blend')  # v2
@@ -229,4 +235,3 @@ try:
 except Exception:
     status('error',traceback=traceback.format_exc())
     raise
-

@@ -1,0 +1,22 @@
+{
+  "interpretation": "Continuous curved plate, not planar facets. Cubic residual includes the requested broad forging and physical curved-light gradients; report rather than compare to flat-facet limits.",
+  "shared_point_normal_max_difference": 0,
+  "regions": {
+    "stage": {
+      "pixels": 118079,
+      "mean": 65.34085083007812,
+      "percentile_5": 14.140399932861328,
+      "cubic_residual": 20.33504520309626,
+      "grain_sigma_2_5": 4.238653182983398,
+      "mottle_sigma_6": 4.8726019859313965
+    },
+    "harsh": {
+      "pixels": 118079,
+      "mean": 61.00446701049805,
+      "percentile_5": 13.212599754333496,
+      "cubic_residual": 21.152555939054142,
+      "grain_sigma_2_5": 4.007254600524902,
+      "mottle_sigma_6": 4.621570110321045
+    }
+  }
+}

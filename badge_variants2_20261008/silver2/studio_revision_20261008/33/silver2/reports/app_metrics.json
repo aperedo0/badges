@@ -1,0 +1,25 @@
+{
+  "native_resolution": [
+    1206,
+    2622
+  ],
+  "white_box": [
+    360,
+    340,
+    845,
+    812
+  ],
+  "whole_badge_white_pixels": 1058,
+  "white_cap": 1249,
+  "actual_3D_by_eye": true,
+  "outside_stage_mean_delta": 0.0,
+  "outside_stage_max_delta": 0,
+  "baseline_restored": {
+    "restored_silver_sha256": "55cbe6dfa24d46e7152bb1d70d217219207543bf3768e2be1ed9fe75a9b9fa67",
+    "all_baseline_fingerprints_match": true,
+    "Iron2_untouched": true,
+    "source_and_original_datasets_untouched": true,
+    "head_unchanged": true
+  },
+  "white_count_pass": true
+}

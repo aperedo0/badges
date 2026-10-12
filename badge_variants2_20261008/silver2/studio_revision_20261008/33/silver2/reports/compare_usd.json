@@ -1,0 +1,725 @@
+{
+  "old": "/Users/antonioperedo/Desktop/badges/badge_variants2_20261008/silver2/studio_revision_20261008/33/source/silver_base.usdz",
+  "new": "/Users/antonioperedo/Desktop/badges/badge_variants2_20261008/silver2/studio_revision_20261008/33/silver2/mobile/silver2_badge_mobile.usdz",
+  "stage": {
+    "old": {
+      "upAxis": "Y",
+      "metersPerUnit": 1.0,
+      "defaultPrim": "/Badge"
+    },
+    "new": {
+      "upAxis": "Y",
+      "metersPerUnit": 1.0,
+      "defaultPrim": "/Silver2"
+    }
+  },
+  "differences": [
+    {
+      "prim": "/Badge",
+      "change": "removed",
+      "type": "Xform"
+    },
+    {
+      "prim": "/Badge/Casing___smooth_rounded_outer_edge",
+      "change": "removed",
+      "type": "Xform"
+    },
+    {
+      "prim": "/Badge/Casing___smooth_rounded_outer_edge/Casing___smooth_rounded_outer_edge_mobile_geometry",
+      "change": "removed",
+      "type": "Mesh"
+    },
+    {
+      "prim": "/Badge/Casing___smooth_rounded_outer_edge/Casing___smooth_rounded_outer_edge_mobile_geometry/Back_and_edge___gunmetal_Mobile_Casing",
+      "change": "removed",
+      "type": "GeomSubset"
+    },
+    {
+      "prim": "/Badge/Casing___smooth_rounded_outer_edge/Casing___smooth_rounded_outer_edge_mobile_geometry/Outer_edge___smooth_satin_silver_Mobile_Casing",
+      "change": "removed",
+      "type": "GeomSubset"
+    },
+    {
+      "prim": "/Badge/Casing___smooth_rounded_outer_edge/Casing___smooth_rounded_outer_edge_mobile_geometry/Silver___circumferential_brushed_steel_Mobile_Casing",
+      "change": "removed",
+      "type": "GeomSubset"
+    },
+    {
+      "prim": "/Badge/Emblem___faceted_compass_spear",
+      "change": "removed",
+      "type": "Xform"
+    },
+    {
+      "prim": "/Badge/Emblem___faceted_compass_spear/Emblem___faceted_compass_spear_mobile_geometry",
+      "change": "removed",
+      "type": "Mesh"
+    },
+    {
+      "prim": "/Badge/Emblem___faceted_compass_spear/Emblem___faceted_compass_spear_mobile_geometry/Emblem___satin_silver_facets_Mobile_Emblem",
+      "change": "removed",
+      "type": "GeomSubset"
+    },
+    {
+      "prim": "/Badge/Emblem___faceted_compass_spear/Emblem___faceted_compass_spear_mobile_geometry/Emblem___shaded_outer_facets_Mobile_Emblem",
+      "change": "removed",
+      "type": "GeomSubset"
+    },
+    {
+      "prim": "/Badge/Inner_channel___shadowed_bevel",
+      "change": "removed",
+      "type": "Xform"
+    },
+    {
+      "prim": "/Badge/Inner_channel___shadowed_bevel/Inner_channel___shadowed_bevel_mobile_geometry",
+      "change": "removed",
+      "type": "Mesh"
+    },
+    {
+      "prim": "/Badge/Inner_edge___fine_silver_reveal",
+      "change": "removed",
+      "type": "Xform"
+    },
+    {
+      "prim": "/Badge/Inner_edge___fine_silver_reveal/Inner_edge___fine_silver_reveal_mobile_geometry",
+      "change": "removed",
+      "type": "Mesh"
+    },
+    {
+      "prim": "/Badge/Inset___charcoal_textured_disk",
+      "change": "removed",
+      "type": "Xform"
+    },
+    {
+      "prim": "/Badge/Inset___charcoal_textured_disk/Inset___charcoal_textured_disk_mobile_geometry",
+      "change": "removed",
+      "type": "Mesh"
+    },
+    {
+      "prim": "/Badge/Rim_inner_lip___narrow_highlight",
+      "change": "removed",
+      "type": "Xform"
+    },
+    {
+      "prim": "/Badge/Rim_inner_lip___narrow_highlight/Rim_inner_lip___narrow_highlight_mobile_geometry",
+      "change": "removed",
+      "type": "Mesh"
+    },
+    {
+      "prim": "/Badge/_materials",
+      "change": "removed",
+      "type": "Scope"
+    },
+    {
+      "prim": "/Badge/_materials/Back_and_edge___gunmetal_Mobile_Casing",
+      "change": "removed",
+      "type": "Material"
+    },
+    {
+      "prim": "/Badge/_materials/Back_and_edge___gunmetal_Mobile_Casing/Image_Texture",
+      "change": "removed",
+      "type": "Shader"
+    },
+    {
+      "prim": "/Badge/_materials/Back_and_edge___gunmetal_Mobile_Casing/Image_Texture_001",
+      "change": "removed",
+      "type": "Shader"
+    },
+    {
+      "prim": "/Badge/_materials/Back_and_edge___gunmetal_Mobile_Casing/Principled_BSDF",
+      "change": "removed",
+      "type": "Shader"
+    },
+    {
+      "prim": "/Badge/_materials/Back_and_edge___gunmetal_Mobile_Casing/UV_Map",
+      "change": "removed",
+      "type": "Shader"
+    },
+    {
+      "prim": "/Badge/_materials/Back_and_edge___gunmetal_Mobile_Casing/UV_Map_001",
+      "change": "removed",
+      "type": "Shader"
+    },
+    {
+      "prim": "/Badge/_materials/Emblem___satin_silver_facets_Mobile_Emblem",
+      "change": "removed",
+      "type": "Material"
+    },
+    {
+      "prim": "/Badge/_materials/Emblem___satin_silver_facets_Mobile_Emblem/Principled_BSDF",
+      "change": "removed",
+      "type": "Shader"
+    },
+    {
+      "prim": "/Badge/_materials/Emblem___shaded_outer_facets_Mobile_Emblem",
+      "change": "removed",
+      "type": "Material"
+    },
+    {
+      "prim": "/Badge/_materials/Emblem___shaded_outer_facets_Mobile_Emblem/Principled_BSDF",
+      "change": "removed",
+      "type": "Shader"
+    },
+    {
+      "prim": "/Badge/_materials/Inset___finely_textured_charcoal_Mobile_Inset",
+      "change": "removed",
+      "type": "Material"
+    },
+    {
+      "prim": "/Badge/_materials/Inset___finely_textured_charcoal_Mobile_Inset/Image_Texture",
+      "change": "removed",
+      "type": "Shader"
+    },
+    {
+      "prim": "/Badge/_materials/Inset___finely_textured_charcoal_Mobile_Inset/Image_Texture_001",
+      "change": "removed",
+      "type": "Shader"
+    },
+    {
+      "prim": "/Badge/_materials/Inset___finely_textured_charcoal_Mobile_Inset/Principled_BSDF",
+      "change": "removed",
+      "type": "Shader"
+    },
+    {
+      "prim": "/Badge/_materials/Inset___finely_textured_charcoal_Mobile_Inset/UV_Map",
+      "change": "removed",
+      "type": "Shader"
+    },
+    {
+      "prim": "/Badge/_materials/Inset___finely_textured_charcoal_Mobile_Inset/UV_Map_001",
+      "change": "removed",
+      "type": "Shader"
+    },
+    {
+      "prim": "/Badge/_materials/Outer_edge___smooth_satin_silver_Mobile_Casing",
+      "change": "removed",
+      "type": "Material"
+    },
+    {
+      "prim": "/Badge/_materials/Outer_edge___smooth_satin_silver_Mobile_Casing/Image_Texture",
+      "change": "removed",
+      "type": "Shader"
+    },
+    {
+      "prim": "/Badge/_materials/Outer_edge___smooth_satin_silver_Mobile_Casing/Image_Texture_001",
+      "change": "removed",
+      "type": "Shader"
+    },
+    {
+      "prim": "/Badge/_materials/Outer_edge___smooth_satin_silver_Mobile_Casing/Principled_BSDF",
+      "change": "removed",
+      "type": "Shader"
+    },
+    {
+      "prim": "/Badge/_materials/Outer_edge___smooth_satin_silver_Mobile_Casing/UV_Map",
+      "change": "removed",
+      "type": "Shader"
+    },
+    {
+      "prim": "/Badge/_materials/Outer_edge___smooth_satin_silver_Mobile_Casing/UV_Map_001",
+      "change": "removed",
+      "type": "Shader"
+    },
+    {
+      "prim": "/Badge/_materials/Recess___smoked_nickel_Mobile_Inner_channel",
+      "change": "removed",
+      "type": "Material"
+    },
+    {
+      "prim": "/Badge/_materials/Recess___smoked_nickel_Mobile_Inner_channel/Principled_BSDF",
+      "change": "removed",
+      "type": "Shader"
+    },
+    {
+      "prim": "/Badge/_materials/Silver___circumferential_brushed_steel_Mobile_Casing",
+      "change": "removed",
+      "type": "Material"
+    },
+    {
+      "prim": "/Badge/_materials/Silver___circumferential_brushed_steel_Mobile_Casing/Image_Texture",
+      "change": "removed",
+      "type": "Shader"
+    },
+    {
+      "prim": "/Badge/_materials/Silver___circumferential_brushed_steel_Mobile_Casing/Image_Texture_001",
+      "change": "removed",
+      "type": "Shader"
+    },
+    {
+      "prim": "/Badge/_materials/Silver___circumferential_brushed_steel_Mobile_Casing/Principled_BSDF",
+      "change": "removed",
+      "type": "Shader"
+    },
+    {
+      "prim": "/Badge/_materials/Silver___circumferential_brushed_steel_Mobile_Casing/UV_Map",
+      "change": "removed",
+      "type": "Shader"
+    },
+    {
+      "prim": "/Badge/_materials/Silver___circumferential_brushed_steel_Mobile_Casing/UV_Map_001",
+      "change": "removed",
+      "type": "Shader"
+    },
+    {
+      "prim": "/Badge/_materials/Silver___polished_cut_edges_Mobile_Inner_edge",
+      "change": "removed",
+      "type": "Material"
+    },
+    {
+      "prim": "/Badge/_materials/Silver___polished_cut_edges_Mobile_Inner_edge/Principled_BSDF",
+      "change": "removed",
+      "type": "Shader"
+    },
+    {
+      "prim": "/Badge/_materials/Silver___polished_cut_edges_Mobile_Rim_inner_lip",
+      "change": "removed",
+      "type": "Material"
+    },
+    {
+      "prim": "/Badge/_materials/Silver___polished_cut_edges_Mobile_Rim_inner_lip/Principled_BSDF",
+      "change": "removed",
+      "type": "Shader"
+    },
+    {
+      "prim": "/Silver2",
+      "change": "added",
+      "type": "Xform"
+    },
+    {
+      "prim": "/Silver2/Materials",
+      "change": "added",
+      "type": ""
+    },
+    {
+      "prim": "/Silver2/Materials/Silver2_Back_Satin",
+      "change": "added",
+      "type": "Material"
+    },
+    {
+      "prim": "/Silver2/Materials/Silver2_Back_Satin/Surface",
+      "change": "added",
+      "type": "Shader"
+    },
+    {
+      "prim": "/Silver2/Materials/Silver2_Channel_Satin",
+      "change": "added",
+      "type": "Material"
+    },
+    {
+      "prim": "/Silver2/Materials/Silver2_Channel_Satin/Surface",
+      "change": "added",
+      "type": "Shader"
+    },
+    {
+      "prim": "/Silver2/Materials/Silver2_LeafLit_Satin",
+      "change": "added",
+      "type": "Material"
+    },
+    {
+      "prim": "/Silver2/Materials/Silver2_LeafLit_Satin/Surface",
+      "change": "added",
+      "type": "Shader"
+    },
+    {
+      "prim": "/Silver2/Materials/Silver2_LeafLit_Satin/UV",
+      "change": "added",
+      "type": "Shader"
+    },
+    {
+      "prim": "/Silver2/Materials/Silver2_LeafLit_Satin/diffuseColor",
+      "change": "added",
+      "type": "Shader"
+    },
+    {
+      "prim": "/Silver2/Materials/Silver2_LeafLit_Satin/roughness",
+      "change": "added",
+      "type": "Shader"
+    },
+    {
+      "prim": "/Silver2/Materials/Silver2_LeafShaded_Satin",
+      "change": "added",
+      "type": "Material"
+    },
+    {
+      "prim": "/Silver2/Materials/Silver2_LeafShaded_Satin/Surface",
+      "change": "added",
+      "type": "Shader"
+    },
+    {
+      "prim": "/Silver2/Materials/Silver2_LeafShaded_Satin/UV",
+      "change": "added",
+      "type": "Shader"
+    },
+    {
+      "prim": "/Silver2/Materials/Silver2_LeafShaded_Satin/diffuseColor",
+      "change": "added",
+      "type": "Shader"
+    },
+    {
+      "prim": "/Silver2/Materials/Silver2_LeafShaded_Satin/roughness",
+      "change": "added",
+      "type": "Shader"
+    },
+    {
+      "prim": "/Silver2/Materials/Silver2_Outline_Satin",
+      "change": "added",
+      "type": "Material"
+    },
+    {
+      "prim": "/Silver2/Materials/Silver2_Outline_Satin/Surface",
+      "change": "added",
+      "type": "Shader"
+    },
+    {
+      "prim": "/Silver2/Materials/Silver2_Reveal_Satin",
+      "change": "added",
+      "type": "Material"
+    },
+    {
+      "prim": "/Silver2/Materials/Silver2_Reveal_Satin/Surface",
+      "change": "added",
+      "type": "Shader"
+    },
+    {
+      "prim": "/Silver2/Materials/Silver2_StarLit_Satin",
+      "change": "added",
+      "type": "Material"
+    },
+    {
+      "prim": "/Silver2/Materials/Silver2_StarLit_Satin/Surface",
+      "change": "added",
+      "type": "Shader"
+    },
+    {
+      "prim": "/Silver2/Materials/Silver2_StarLit_Satin/UV",
+      "change": "added",
+      "type": "Shader"
+    },
+    {
+      "prim": "/Silver2/Materials/Silver2_StarLit_Satin/diffuseColor",
+      "change": "added",
+      "type": "Shader"
+    },
+    {
+      "prim": "/Silver2/Materials/Silver2_StarLit_Satin/roughness",
+      "change": "added",
+      "type": "Shader"
+    },
+    {
+      "prim": "/Silver2/Materials/Silver2_StarShaded_Satin",
+      "change": "added",
+      "type": "Material"
+    },
+    {
+      "prim": "/Silver2/Materials/Silver2_StarShaded_Satin/Surface",
+      "change": "added",
+      "type": "Shader"
+    },
+    {
+      "prim": "/Silver2/Materials/Silver2_StarShaded_Satin/UV",
+      "change": "added",
+      "type": "Shader"
+    },
+    {
+      "prim": "/Silver2/Materials/Silver2_StarShaded_Satin/diffuseColor",
+      "change": "added",
+      "type": "Shader"
+    },
+    {
+      "prim": "/Silver2/Materials/Silver2_StarShaded_Satin/roughness",
+      "change": "added",
+      "type": "Shader"
+    },
+    {
+      "prim": "/Silver2/Materials/Silver2_StemsLit_Satin",
+      "change": "added",
+      "type": "Material"
+    },
+    {
+      "prim": "/Silver2/Materials/Silver2_StemsLit_Satin/Surface",
+      "change": "added",
+      "type": "Shader"
+    },
+    {
+      "prim": "/Silver2/Silver2_InnerLeaves_Satin",
+      "change": "added",
+      "type": "Mesh"
+    },
+    {
+      "prim": "/Silver2/Silver2_InnerLeaves_Satin/Material_0",
+      "change": "added",
+      "type": "GeomSubset"
+    },
+    {
+      "prim": "/Silver2/Silver2_InnerLeaves_Satin/Material_4",
+      "change": "added",
+      "type": "GeomSubset"
+    },
+    {
+      "prim": "/Silver2/Silver2_InnerLeaves_Satin/Material_8",
+      "change": "added",
+      "type": "GeomSubset"
+    },
+    {
+      "prim": "/Silver2/Silver2_LeafBlades_Satin",
+      "change": "added",
+      "type": "Mesh"
+    },
+    {
+      "prim": "/Silver2/Silver2_LeafBlades_Satin/Material_0",
+      "change": "added",
+      "type": "GeomSubset"
+    },
+    {
+      "prim": "/Silver2/Silver2_LeafBlades_Satin/Material_4",
+      "change": "added",
+      "type": "GeomSubset"
+    },
+    {
+      "prim": "/Silver2/Silver2_LeafBlades_Satin/Material_8",
+      "change": "added",
+      "type": "GeomSubset"
+    },
+    {
+      "prim": "/Silver2/Silver2_LeafEdges_Satin",
+      "change": "added",
+      "type": "Mesh"
+    },
+    {
+      "prim": "/Silver2/Silver2_LeafEdges_Satin/Material_0",
+      "change": "added",
+      "type": "GeomSubset"
+    },
+    {
+      "prim": "/Silver2/Silver2_LeafEdges_Satin/Material_4",
+      "change": "added",
+      "type": "GeomSubset"
+    },
+    {
+      "prim": "/Silver2/Silver2_LeafEdges_Satin/Material_8",
+      "change": "added",
+      "type": "GeomSubset"
+    },
+    {
+      "prim": "/Silver2/Silver2_Star_Satin",
+      "change": "added",
+      "type": "Mesh"
+    },
+    {
+      "prim": "/Silver2/Silver2_Star_Satin/Material_3",
+      "change": "added",
+      "type": "GeomSubset"
+    },
+    {
+      "prim": "/Silver2/Silver2_Star_Satin/Material_4",
+      "change": "added",
+      "type": "GeomSubset"
+    },
+    {
+      "prim": "/Silver2/Silver2_Stems_Satin",
+      "change": "added",
+      "type": "Mesh"
+    },
+    {
+      "prim": "/Silver2/Silver2_Stems_Satin/Material_2",
+      "change": "added",
+      "type": "GeomSubset"
+    },
+    {
+      "prim": "/Silver2/Silver2_Stems_Satin/Material_5",
+      "change": "added",
+      "type": "GeomSubset"
+    },
+    {
+      "prim": "/Silver2/Silver2_UpperLeaves_Satin",
+      "change": "added",
+      "type": "Mesh"
+    },
+    {
+      "prim": "/Silver2/Silver2_UpperLeaves_Satin/Material_0",
+      "change": "added",
+      "type": "GeomSubset"
+    },
+    {
+      "prim": "/Silver2/Silver2_UpperLeaves_Satin/Material_4",
+      "change": "added",
+      "type": "GeomSubset"
+    },
+    {
+      "prim": "/Silver2/Silver2_UpperLeaves_Satin/Material_8",
+      "change": "added",
+      "type": "GeomSubset"
+    }
+  ],
+  "bounds_old": {
+    "/Badge": [
+      [
+        -3.01487135887146,
+        -2.8949999809265137,
+        -0.3450004458427429
+      ],
+      [
+        3.01487135887146,
+        3.01487135887146,
+        0.9771202802658081
+      ]
+    ],
+    "/Badge/Inset___charcoal_textured_disk/Inset___charcoal_textured_disk_mobile_geometry": [
+      [
+        -2.5250000953674316,
+        -2.5250000953674316,
+        -0.13100045919418335
+      ],
+      [
+        2.5250000953674316,
+        2.5250000953674316,
+        0.03900047391653061
+      ]
+    ],
+    "/Badge/Inner_edge___fine_silver_reveal/Inner_edge___fine_silver_reveal_mobile_geometry": [
+      [
+        -2.5390655994415283,
+        -2.5390655994415283,
+        0.06098673492670059
+      ],
+      [
+        2.5390655994415283,
+        2.5390655994415283,
+        0.09602090716362
+      ]
+    ],
+    "/Badge/Casing___smooth_rounded_outer_edge/Casing___smooth_rounded_outer_edge_mobile_geometry": [
+      [
+        -3.01487135887146,
+        -2.8949999809265137,
+        -0.3450004458427429
+      ],
+      [
+        3.01487135887146,
+        3.01487135887146,
+        0.2600186765193939
+      ]
+    ],
+    "/Badge/Emblem___faceted_compass_spear/Emblem___faceted_compass_spear_mobile_geometry": [
+      [
+        -1.0885751247406006,
+        -2.0473744869232178,
+        0.11999999731779099
+      ],
+      [
+        1.0885751247406006,
+        2.017314910888672,
+        0.9771202802658081
+      ]
+    ],
+    "/Badge/Inner_channel___shadowed_bevel/Inner_channel___shadowed_bevel_mobile_geometry": [
+      [
+        -2.6401007175445557,
+        -2.6401007175445557,
+        0.01798584684729576
+      ],
+      [
+        2.6401007175445557,
+        2.6401007175445557,
+        0.20115379989147186
+      ]
+    ],
+    "/Badge/Rim_inner_lip___narrow_highlight/Rim_inner_lip___narrow_highlight_mobile_geometry": [
+      [
+        -2.6612191200256348,
+        -2.6612191200256348,
+        0.18692268431186676
+      ],
+      [
+        2.6612191200256348,
+        2.6612191200256348,
+        0.22401870787143707
+      ]
+    ]
+  },
+  "bounds_new": {
+    "/Silver2": [
+      [
+        -3.015000104904175,
+        -2.4549999237060547,
+        -0.32499998807907104
+      ],
+      [
+        3.015000104904175,
+        2.367384672164917,
+        0.32499998807907104
+      ]
+    ],
+    "/Silver2/Silver2_LeafBlades_Satin": [
+      [
+        -2.2094898223876953,
+        -1.8525493144989014,
+        -0.24083665013313293
+      ],
+      [
+        2.2094898223876953,
+        2.26444411277771,
+        0.012948231771588326
+      ]
+    ],
+    "/Silver2/Silver2_LeafEdges_Satin": [
+      [
+        -2.9966492652893066,
+        -2.280693292617798,
+        -0.24083665013313293
+      ],
+      [
+        2.9966492652893066,
+        1.4257259368896484,
+        0.012948231771588326
+      ]
+    ],
+    "/Silver2/Silver2_Stems_Satin": [
+      [
+        -2.3862321376800537,
+        -2.4549999237060547,
+        -0.32499998807907104
+      ],
+      [
+        2.3862321376800537,
+        1.458795189857483,
+        -0.192928284406662
+      ]
+    ],
+    "/Silver2/Silver2_Star_Satin": [
+      [
+        -1.6547390222549438,
+        -1.0018310546875,
+        -0.31593626737594604
+      ],
+      [
+        1.6129224300384521,
+        2.367384672164917,
+        0.32499998807907104
+      ]
+    ],
+    "/Silver2/Silver2_InnerLeaves_Satin": [
+      [
+        -2.672636032104492,
+        -1.3722058534622192,
+        -0.24083665013313293
+      ],
+      [
+        2.672636032104492,
+        1.8775341510772705,
+        0.012948231771588326
+      ]
+    ],
+    "/Silver2/Silver2_UpperLeaves_Satin": [
+      [
+        -3.015000104904175,
+        -1.7569217681884766,
+        -0.24083665013313293
+      ],
+      [
+        3.015000104904175,
+        0.9336758255958557,
+        0.012948231771588326
+      ]
+    ]
+  }
+}

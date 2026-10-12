@@ -1,0 +1,196 @@
+{
+  "iron": {
+    "max_width_any_turn": 4.370806846049361,
+    "bounds": [
+      [
+        -2.161102294921875,
+        -2.4549999237060547,
+        -0.375
+      ],
+      [
+        2.161102294921875,
+        2.8450000286102295,
+        0.32499998807907104
+      ]
+    ],
+    "floating_height_guideline_met": true,
+    "materials_preview_surface": 11,
+    "reader_uv_matches": [
+      "/Iron2/Iron2_Border_Satin:USDZ_UV",
+      "/Iron2/Iron2_PlateLeft_Satin:USDZ_UV",
+      "/Iron2/Iron2_PlateRight_Satin:USDZ_UV"
+    ],
+    "no_transforms_or_stage_objects": true
+  },
+  "bronze": {
+    "max_width_any_turn": 5.3597819844292465,
+    "bounds": [
+      [
+        -2.6708455085754395,
+        -2.4549999237060547,
+        -0.32499998807907104
+      ],
+      [
+        2.6708455085754395,
+        2.8450000286102295,
+        0.32499998807907104
+      ]
+    ],
+    "floating_height_guideline_met": true,
+    "materials_preview_surface": 4,
+    "reader_uv_matches": [
+      "/BronzeSun/BronzeSun_Dome:BadgeUV",
+      "/BronzeSun/BronzeSun_InnerLip:BadgeUV",
+      "/BronzeSun/BronzeSun_InnerLip_RearMatchingLip:BadgeUV",
+      "/BronzeSun/BronzeSun_OuterLip:BadgeUV",
+      "/BronzeSun/BronzeSun_OuterLip_RearMatchingLip:BadgeUV",
+      "/BronzeSun/BronzeSun_Ray1:BadgeUV",
+      "/BronzeSun/BronzeSun_Ray2:BadgeUV",
+      "/BronzeSun/BronzeSun_Ray3:BadgeUV",
+      "/BronzeSun/BronzeSun_Ray4:BadgeUV",
+      "/BronzeSun/BronzeSun_Ray5:BadgeUV",
+      "/BronzeSun/BronzeSun_Ray6:BadgeUV",
+      "/BronzeSun/BronzeSun_Ray7:BadgeUV",
+      "/BronzeSun/BronzeSun_Ray8:BadgeUV"
+    ],
+    "no_transforms_or_stage_objects": true
+  },
+  "steel": {
+    "max_width_any_turn": 5.658890486314584,
+    "bounds": [
+      [
+        -2.8134961128234863,
+        -2.4549999237060547,
+        -0.30000001192092896
+      ],
+      [
+        2.8134961128234863,
+        2.829599618911743,
+        0.30000001192092896
+      ]
+    ],
+    "floating_height_guideline_met": true,
+    "materials_preview_surface": 2,
+    "reader_uv_matches": [
+      "/SilverChevron/SilverChevron_Lower:BadgeUV",
+      "/SilverChevron/SilverChevron_Upper:BadgeUV"
+    ],
+    "no_transforms_or_stage_objects": true
+  },
+  "silver": {
+    "max_width_any_turn": 6.409863117334163,
+    "bounds": [
+      [
+        -3.1959002017974854,
+        -2.4549999237060547,
+        -0.34449997544288635
+      ],
+      [
+        3.1959002017974854,
+        2.6567277908325195,
+        0.34449997544288635
+      ]
+    ],
+    "floating_height_guideline_met": true,
+    "materials_preview_surface": 6,
+    "reader_uv_matches": [
+      "/Silver2/Silver2_InnerLeaves_Satin:USDZ_UV",
+      "/Silver2/Silver2_LeafBlades_Satin:USDZ_UV",
+      "/Silver2/Silver2_LeafEdges_Satin:USDZ_UV",
+      "/Silver2/Silver2_Star_Satin:USDZ_UV",
+      "/Silver2/Silver2_UpperLeaves_Satin:USDZ_UV"
+    ],
+    "no_transforms_or_stage_objects": true
+  },
+  "gold": {
+    "max_width_any_turn": 6.552009135219524,
+    "bounds": [
+      [
+        -3.191899299621582,
+        -2.787841320037842,
+        -3.2760045528411865
+      ],
+      [
+        3.191899299621582,
+        1.9655214548110962,
+        3.2760045528411865
+      ]
+    ],
+    "floating_height_guideline_met": false,
+    "materials_preview_surface": 4,
+    "reader_uv_matches": [
+      "/GoldCrown/GoldCrown_Collar1:BadgeUV",
+      "/GoldCrown/GoldCrown_Collar2:BadgeUV",
+      "/GoldCrown/GoldCrown_Collar2_RoundRear:BadgeUV",
+      "/GoldCrown/GoldCrown_Collar3:BadgeUV",
+      "/GoldCrown/GoldCrown_Collar3_RoundRear:BadgeUV",
+      "/GoldCrown/GoldCrown_Collar4:BadgeUV",
+      "/GoldCrown/GoldCrown_Collar4_RoundRear:BadgeUV",
+      "/GoldCrown/GoldCrown_Collar5:BadgeUV",
+      "/GoldCrown/GoldCrown_Finial1:BadgeUV",
+      "/GoldCrown/GoldCrown_Finial2:BadgeUV",
+      "/GoldCrown/GoldCrown_Finial2_RoundRear:BadgeUV",
+      "/GoldCrown/GoldCrown_Finial3:BadgeUV",
+      "/GoldCrown/GoldCrown_Finial3_RoundRear:BadgeUV",
+      "/GoldCrown/GoldCrown_Finial4:BadgeUV",
+      "/GoldCrown/GoldCrown_Finial4_RoundRear:BadgeUV",
+      "/GoldCrown/GoldCrown_Finial5:BadgeUV",
+      "/GoldCrown/GoldCrown_RoundedScallopLip:BadgeUV",
+      "/GoldCrown/GoldCrown_RoundedScallopLip_RoundRear:BadgeUV",
+      "/GoldCrown/GoldCrown_ScallopedShell:BadgeUV",
+      "/GoldCrown/GoldCrown_ScallopedShell_RoundRear:BadgeUV",
+      "/GoldCrown/GoldCrown_TrueCircularBand:BadgeUV",
+      "/GoldCrown/GoldCrown_ValleyFlange1:BadgeUV",
+      "/GoldCrown/GoldCrown_ValleyFlange1_RoundRear:BadgeUV",
+      "/GoldCrown/GoldCrown_ValleyFlange2:BadgeUV",
+      "/GoldCrown/GoldCrown_ValleyFlange2_RoundRear:BadgeUV",
+      "/GoldCrown/GoldCrown_ValleyFlange3:BadgeUV",
+      "/GoldCrown/GoldCrown_ValleyFlange3_RoundRear:BadgeUV",
+      "/GoldCrown/GoldCrown_ValleyFlange4:BadgeUV",
+      "/GoldCrown/GoldCrown_ValleyFlange4_RoundRear:BadgeUV"
+    ],
+    "no_transforms_or_stage_objects": true
+  },
+  "platinum": {
+    "max_width_any_turn": 5.734919879151795,
+    "bounds": [
+      [
+        -2.8524208068847656,
+        -2.4549999237060547,
+        -0.7828716039657593
+      ],
+      [
+        2.8524208068847656,
+        2.902362585067749,
+        0.7828716039657593
+      ]
+    ],
+    "floating_height_guideline_met": true,
+    "materials_preview_surface": 4,
+    "reader_uv_matches": [
+      "/PlatinumKnot/PlatinumKnot_ContinuousBeveledRibbon:BadgeUV"
+    ],
+    "no_transforms_or_stage_objects": true
+  },
+  "diamond": {
+    "max_width_any_turn": 6.240000068537839,
+    "bounds": [
+      [
+        -3.119999885559082,
+        -2.4549999237060547,
+        -3.119999885559082
+      ],
+      [
+        3.119999885559082,
+        2.3486063480377197,
+        3.119999885559082
+      ]
+    ],
+    "floating_height_guideline_met": true,
+    "materials_preview_surface": 1,
+    "reader_uv_matches": [
+      "/DiamondCrystal/DiamondCrystal_FullBrilliant:BadgeUV"
+    ],
+    "no_transforms_or_stage_objects": true
+  }
+}

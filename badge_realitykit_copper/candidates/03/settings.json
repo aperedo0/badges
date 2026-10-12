@@ -1,0 +1,14 @@
+{
+  "color": [
+    0.61,
+    0.255,
+    0.115
+  ],
+  "roughness": 0.34,
+  "textures": {
+    "diffuseColor": "copper_color.png",
+    "emissiveColor": "copper_emissive.png"
+  },
+  "emissive_scale": 3.0,
+  "master": true
+}

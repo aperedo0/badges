@@ -1,0 +1,10 @@
+{
+  "mean_absolute_rgb_error": [
+    11.650911507830196,
+    5.038234452665942,
+    3.842467499663631
+  ],
+  "mean_error": 6.84387115338653,
+  "p95": 29.241632092826343,
+  "note": "Diagnostics only; native app crops decide acceptance."
+}

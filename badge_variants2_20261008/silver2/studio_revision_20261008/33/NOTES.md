@@ -1,0 +1,2 @@
+Candidate33: final no-border finish. Raise the bright shoulder/lower-right face reflectance to separate the remaining top pair and approach the mock; add a conservative5% lift to the upper-left highlight. Geometry, normals, padded ramps, leaves, plain backs, roughness and brushing unchanged.
+App: white 1176; darkest plane 52.211; minimum true-plane gap 28.758; PASS. ARKit, frame, reimport and flat normals0 pass; final24 restored after test.

@@ -1,0 +1,24 @@
+{
+  "solved_texels": 242888,
+  "fine_reference_sigma": 0.55,
+  "highlight_knee": 0.85,
+  "highlight_slope": 0.65,
+  "gamut_mean_error_rgb": [
+    0.0016668132482819942,
+    0.0006311198679157194,
+    0.0022433934910319367
+  ],
+  "gamut_p95_error": 3.453903829608862e-11,
+  "emissive_scale": 3.0,
+  "emissive_mean": [
+    0.44339314593525603,
+    0.10164676561562003,
+    0.015320524704293034
+  ],
+  "emissive_max": [
+    3.0,
+    3.0,
+    3.0
+  ],
+  "emissive_clipped_fraction": 0.008744771252593788
+}

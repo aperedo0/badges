@@ -1,0 +1,14 @@
+{
+  "color": [
+    0.45,
+    0.46,
+    0.48
+  ],
+  "roughness": 0.38,
+  "textures": {
+    "diffuseColor": "color.png",
+    "emissiveColor": "emissive.png"
+  },
+  "emissive_scale": 3.0,
+  "master": true
+}

@@ -1,0 +1,56 @@
+{
+ "Casing___smooth_rounded_outer_edge_mobile_geometry|Silver___circumferential_brushed_steel_Mobile_Casing": {
+  "mesh": "/Badge/Casing___smooth_rounded_outer_edge/Casing___smooth_rounded_outer_edge_mobile_geometry",
+  "material": "/Badge/_materials/Silver___circumferential_brushed_steel_Mobile_Casing",
+  "files": {
+   "diffuseColor": "./textures/USDZ_Casing_base_color.png",
+   "roughness": "./textures/USDZ_Casing_roughness.png",
+   "normal": "./textures/USDZ_Casing_normal.png"
+  },
+  "triangles": 4950,
+  "uv_interp": "faceVarying"
+ },
+ "Casing___smooth_rounded_outer_edge_mobile_geometry|Outer_edge___smooth_satin_silver_Mobile_Casing": {
+  "mesh": "/Badge/Casing___smooth_rounded_outer_edge/Casing___smooth_rounded_outer_edge_mobile_geometry",
+  "material": "/Badge/_materials/Outer_edge___smooth_satin_silver_Mobile_Casing",
+  "files": {
+   "diffuseColor": "./textures/USDZ_Casing_outer_base_color.png",
+   "roughness": "./textures/USDZ_Casing_outer_roughness.png",
+   "normal": "./textures/USDZ_Casing_normal.png"
+  },
+  "triangles": 20384,
+  "uv_interp": "faceVarying"
+ },
+ "Casing___smooth_rounded_outer_edge_mobile_geometry|Back_and_edge___gunmetal_Mobile_Casing": {
+  "mesh": "/Badge/Casing___smooth_rounded_outer_edge/Casing___smooth_rounded_outer_edge_mobile_geometry",
+  "material": "/Badge/_materials/Back_and_edge___gunmetal_Mobile_Casing",
+  "files": {
+   "diffuseColor": "./textures/USDZ_Casing_back_base_color.png",
+   "roughness": "./textures/USDZ_Casing_back_roughness.png"
+  },
+  "triangles": 1232,
+  "uv_interp": "faceVarying"
+ },
+ "Emblem___faceted_compass_spear_mobile_geometry|Emblem___satin_silver_facets_Mobile_Emblem": {
+  "mesh": "/Badge/Emblem___faceted_compass_spear/Emblem___faceted_compass_spear_mobile_geometry",
+  "material": "/Badge/_materials/Emblem___satin_silver_facets_Mobile_Emblem",
+  "files": {
+   "diffuseColor": "./textures/USDZ_Emblem_base_color.png",
+   "roughness": "./textures/USDZ_Emblem_roughness.png",
+   "normal": "./textures/USDZ_Emblem_normal.png"
+  },
+  "triangles": 29,
+  "uv_interp": "faceVarying"
+ },
+ "Emblem___faceted_compass_spear_mobile_geometry|Emblem___shaded_outer_facets_Mobile_Emblem": {
+  "mesh": "/Badge/Emblem___faceted_compass_spear/Emblem___faceted_compass_spear_mobile_geometry",
+  "material": "/Badge/_materials/Emblem___shaded_outer_facets_Mobile_Emblem",
+  "files": {
+   "diffuseColor": "./textures/USDZ_Emblem_shaded_base_color.png",
+   "roughness": "./textures/USDZ_Emblem_roughness.png",
+   "normal": "./textures/USDZ_Emblem_normal.png"
+  },
+  "triangles": 63,
+  "uv_interp": "faceVarying"
+ }
+}

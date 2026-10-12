@@ -1,0 +1,835 @@
+{
+  "layer": "/Users/antonioperedo/Desktop/badges/bronze_silver_20261009/bronze/all_sides_20261010/source/installed/badge.usdc",
+  "meshes": [
+    {
+      "path": "/BronzeSun/BronzeSun_Dome",
+      "vertices": 15842,
+      "faces": 31680,
+      "triangles": 31680,
+      "counts": [
+        3
+      ],
+      "bounds": [
+        [
+          -1.083972454071045,
+          -0.8603097200393677,
+          -0.32499998807907104
+        ],
+        [
+          1.083972454071045,
+          1.3076351881027222,
+          0.32499998807907104
+        ]
+      ],
+      "normals": "faceVarying",
+      "material": [
+        "/BronzeSun/Materials/BronzeSun_Front"
+      ],
+      "subsets": [
+        {
+          "path": "/BronzeSun/BronzeSun_Dome/Material_0",
+          "faces": 15840,
+          "material": [
+            "/BronzeSun/Materials/BronzeSun_Front"
+          ]
+        },
+        {
+          "path": "/BronzeSun/BronzeSun_Dome/Material_1",
+          "faces": 15840,
+          "material": [
+            "/BronzeSun/Materials/BronzeSun_Back"
+          ]
+        }
+      ],
+      "uv": [
+        {
+          "name": "BadgeUV",
+          "interpolation": "faceVarying",
+          "len": 95040
+        },
+        {
+          "name": "displayColor",
+          "interpolation": "constant",
+          "len": 0
+        },
+        {
+          "name": "displayOpacity",
+          "interpolation": "constant",
+          "len": 0
+        }
+      ]
+    },
+    {
+      "path": "/BronzeSun/BronzeSun_OuterLip",
+      "vertices": 1600,
+      "faces": 3200,
+      "triangles": 3200,
+      "counts": [
+        3
+      ],
+      "bounds": [
+        [
+          -1.2340610027313232,
+          -1.010398268699646,
+          0.06629687547683716
+        ],
+        [
+          1.2340610027313232,
+          1.4577237367630005,
+          0.13370312750339508
+        ]
+      ],
+      "normals": "faceVarying",
+      "material": [
+        "/BronzeSun/Materials/BronzeSun_Front"
+      ],
+      "subsets": [
+        {
+          "path": "/BronzeSun/BronzeSun_OuterLip/Material_0",
+          "faces": 1600,
+          "material": [
+            "/BronzeSun/Materials/BronzeSun_Front"
+          ]
+        },
+        {
+          "path": "/BronzeSun/BronzeSun_OuterLip/Material_1",
+          "faces": 1600,
+          "material": [
+            "/BronzeSun/Materials/BronzeSun_Back"
+          ]
+        }
+      ],
+      "uv": [
+        {
+          "name": "BadgeUV",
+          "interpolation": "faceVarying",
+          "len": 9600
+        },
+        {
+          "name": "displayColor",
+          "interpolation": "constant",
+          "len": 0
+        },
+        {
+          "name": "displayOpacity",
+          "interpolation": "constant",
+          "len": 0
+        }
+      ]
+    },
+    {
+      "path": "/BronzeSun/BronzeSun_InnerLip",
+      "vertices": 1600,
+      "faces": 3200,
+      "triangles": 3200,
+      "counts": [
+        3
+      ],
+      "bounds": [
+        [
+          -1.1579744815826416,
+          -0.9343116879463196,
+          0.054183363914489746
+        ],
+        [
+          1.1579744815826416,
+          1.3816372156143188,
+          0.09581663459539413
+        ]
+      ],
+      "normals": "faceVarying",
+      "material": [
+        "/BronzeSun/Materials/BronzeSun_Front"
+      ],
+      "subsets": [
+        {
+          "path": "/BronzeSun/BronzeSun_InnerLip/Material_0",
+          "faces": 1600,
+          "material": [
+            "/BronzeSun/Materials/BronzeSun_Front"
+          ]
+        },
+        {
+          "path": "/BronzeSun/BronzeSun_InnerLip/Material_1",
+          "faces": 1600,
+          "material": [
+            "/BronzeSun/Materials/BronzeSun_Back"
+          ]
+        }
+      ],
+      "uv": [
+        {
+          "name": "BadgeUV",
+          "interpolation": "faceVarying",
+          "len": 9600
+        },
+        {
+          "name": "displayColor",
+          "interpolation": "constant",
+          "len": 0
+        },
+        {
+          "name": "displayOpacity",
+          "interpolation": "constant",
+          "len": 0
+        }
+      ]
+    },
+    {
+      "path": "/BronzeSun/BronzeSun_Channel",
+      "vertices": 640,
+      "faces": 1280,
+      "triangles": 1280,
+      "counts": [
+        3
+      ],
+      "bounds": [
+        [
+          -1.2351032495498657,
+          -1.0114405155181885,
+          -0.11999999731779099
+        ],
+        [
+          1.2351032495498657,
+          1.458765983581543,
+          0.03500000014901161
+        ]
+      ],
+      "normals": "faceVarying",
+      "material": [
+        "/BronzeSun/Materials/BronzeSun_Front"
+      ],
+      "subsets": [
+        {
+          "path": "/BronzeSun/BronzeSun_Channel/Material_1",
+          "faces": 320,
+          "material": [
+            "/BronzeSun/Materials/BronzeSun_Back"
+          ]
+        },
+        {
+          "path": "/BronzeSun/BronzeSun_Channel/Material_2",
+          "faces": 960,
+          "material": [
+            "/BronzeSun/Materials/BronzeSun_Channel"
+          ]
+        }
+      ],
+      "uv": [
+        {
+          "name": "BadgeUV",
+          "interpolation": "faceVarying",
+          "len": 3840
+        },
+        {
+          "name": "displayColor",
+          "interpolation": "constant",
+          "len": 0
+        },
+        {
+          "name": "displayOpacity",
+          "interpolation": "constant",
+          "len": 0
+        }
+      ]
+    },
+    {
+      "path": "/BronzeSun/BronzeSun_Ray1",
+      "vertices": 7,
+      "faces": 10,
+      "triangles": 10,
+      "counts": [
+        3
+      ],
+      "bounds": [
+        [
+          -0.4612094461917877,
+          1.2867895364761353,
+          -0.2199999988079071
+        ],
+        [
+          0.46642085909843445,
+          2.8450000286102295,
+          0.02500000037252903
+        ]
+      ],
+      "normals": "faceVarying",
+      "material": [
+        "/BronzeSun/Materials/BronzeSun_Front"
+      ],
+      "subsets": [
+        {
+          "path": "/BronzeSun/BronzeSun_Ray1/Material_0",
+          "faces": 3,
+          "material": [
+            "/BronzeSun/Materials/BronzeSun_Front"
+          ]
+        },
+        {
+          "path": "/BronzeSun/BronzeSun_Ray1/Material_1",
+          "faces": 1,
+          "material": [
+            "/BronzeSun/Materials/BronzeSun_Back"
+          ]
+        },
+        {
+          "path": "/BronzeSun/BronzeSun_Ray1/Material_2",
+          "faces": 6,
+          "material": [
+            "/BronzeSun/Materials/BronzeSun_Edges"
+          ]
+        }
+      ],
+      "uv": [
+        {
+          "name": "BadgeUV",
+          "interpolation": "faceVarying",
+          "len": 30
+        },
+        {
+          "name": "displayColor",
+          "interpolation": "constant",
+          "len": 0
+        },
+        {
+          "name": "displayOpacity",
+          "interpolation": "constant",
+          "len": 0
+        }
+      ]
+    },
+    {
+      "path": "/BronzeSun/BronzeSun_Ray2",
+      "vertices": 7,
+      "faces": 10,
+      "triangles": 10,
+      "counts": [
+        3
+      ],
+      "bounds": [
+        [
+          1.1178466081619263,
+          -0.25578662753105164,
+          -0.2199999988079071
+        ],
+        [
+          2.6708455085754395,
+          0.6770550608634949,
+          0.02500000037252903
+        ]
+      ],
+      "normals": "faceVarying",
+      "material": [
+        "/BronzeSun/Materials/BronzeSun_Front"
+      ],
+      "subsets": [
+        {
+          "path": "/BronzeSun/BronzeSun_Ray2/Material_0",
+          "faces": 3,
+          "material": [
+            "/BronzeSun/Materials/BronzeSun_Front"
+          ]
+        },
+        {
+          "path": "/BronzeSun/BronzeSun_Ray2/Material_1",
+          "faces": 1,
+          "material": [
+            "/BronzeSun/Materials/BronzeSun_Back"
+          ]
+        },
+        {
+          "path": "/BronzeSun/BronzeSun_Ray2/Material_2",
+          "faces": 6,
+          "material": [
+            "/BronzeSun/Materials/BronzeSun_Edges"
+          ]
+        }
+      ],
+      "uv": [
+        {
+          "name": "BadgeUV",
+          "interpolation": "faceVarying",
+          "len": 30
+        },
+        {
+          "name": "displayColor",
+          "interpolation": "constant",
+          "len": 0
+        },
+        {
+          "name": "displayOpacity",
+          "interpolation": "constant",
+          "len": 0
+        }
+      ]
+    },
+    {
+      "path": "/BronzeSun/BronzeSun_Ray3",
+      "vertices": 7,
+      "faces": 10,
+      "triangles": 10,
+      "counts": [
+        3
+      ],
+      "bounds": [
+        [
+          -0.45078662037849426,
+          -2.4549999237060547,
+          -0.2199999988079071
+        ],
+        [
+          0.455998033285141,
+          -0.9124237895011902,
+          0.02500000037252903
+        ]
+      ],
+      "normals": "faceVarying",
+      "material": [
+        "/BronzeSun/Materials/BronzeSun_Front"
+      ],
+      "subsets": [
+        {
+          "path": "/BronzeSun/BronzeSun_Ray3/Material_0",
+          "faces": 3,
+          "material": [
+            "/BronzeSun/Materials/BronzeSun_Front"
+          ]
+        },
+        {
+          "path": "/BronzeSun/BronzeSun_Ray3/Material_1",
+          "faces": 1,
+          "material": [
+            "/BronzeSun/Materials/BronzeSun_Back"
+          ]
+        },
+        {
+          "path": "/BronzeSun/BronzeSun_Ray3/Material_2",
+          "faces": 6,
+          "material": [
+            "/BronzeSun/Materials/BronzeSun_Edges"
+          ]
+        }
+      ],
+      "uv": [
+        {
+          "name": "BadgeUV",
+          "interpolation": "faceVarying",
+          "len": 30
+        },
+        {
+          "name": "displayColor",
+          "interpolation": "constant",
+          "len": 0
+        },
+        {
+          "name": "displayOpacity",
+          "interpolation": "constant",
+          "len": 0
+        }
+      ]
+    },
+    {
+      "path": "/BronzeSun/BronzeSun_Ray4",
+      "vertices": 7,
+      "faces": 10,
+      "triangles": 10,
+      "counts": [
+        3
+      ],
+      "bounds": [
+        [
+          -2.6708455085754395,
+          -0.26099804043769836,
+          -0.2199999988079071
+        ],
+        [
+          -1.1282694339752197,
+          0.6770550608634949,
+          0.02500000037252903
+        ]
+      ],
+      "normals": "faceVarying",
+      "material": [
+        "/BronzeSun/Materials/BronzeSun_Front"
+      ],
+      "subsets": [
+        {
+          "path": "/BronzeSun/BronzeSun_Ray4/Material_0",
+          "faces": 3,
+          "material": [
+            "/BronzeSun/Materials/BronzeSun_Front"
+          ]
+        },
+        {
+          "path": "/BronzeSun/BronzeSun_Ray4/Material_1",
+          "faces": 1,
+          "material": [
+            "/BronzeSun/Materials/BronzeSun_Back"
+          ]
+        },
+        {
+          "path": "/BronzeSun/BronzeSun_Ray4/Material_2",
+          "faces": 6,
+          "material": [
+            "/BronzeSun/Materials/BronzeSun_Edges"
+          ]
+        }
+      ],
+      "uv": [
+        {
+          "name": "BadgeUV",
+          "interpolation": "faceVarying",
+          "len": 30
+        },
+        {
+          "name": "displayColor",
+          "interpolation": "constant",
+          "len": 0
+        },
+        {
+          "name": "displayOpacity",
+          "interpolation": "constant",
+          "len": 0
+        }
+      ]
+    },
+    {
+      "path": "/BronzeSun/BronzeSun_Ray5",
+      "vertices": 7,
+      "faces": 10,
+      "triangles": 10,
+      "counts": [
+        3
+      ],
+      "bounds": [
+        [
+          0.6488200426101685,
+          0.8177630305290222,
+          -0.2199999988079071
+        ],
+        [
+          1.5503933429718018,
+          1.7506047487258911,
+          0.02500000037252903
+        ]
+      ],
+      "normals": "faceVarying",
+      "material": [
+        "/BronzeSun/Materials/BronzeSun_Front"
+      ],
+      "subsets": [
+        {
+          "path": "/BronzeSun/BronzeSun_Ray5/Material_0",
+          "faces": 3,
+          "material": [
+            "/BronzeSun/Materials/BronzeSun_Front"
+          ]
+        },
+        {
+          "path": "/BronzeSun/BronzeSun_Ray5/Material_1",
+          "faces": 1,
+          "material": [
+            "/BronzeSun/Materials/BronzeSun_Back"
+          ]
+        },
+        {
+          "path": "/BronzeSun/BronzeSun_Ray5/Material_2",
+          "faces": 6,
+          "material": [
+            "/BronzeSun/Materials/BronzeSun_Edges"
+          ]
+        }
+      ],
+      "uv": [
+        {
+          "name": "BadgeUV",
+          "interpolation": "faceVarying",
+          "len": 30
+        },
+        {
+          "name": "displayColor",
+          "interpolation": "constant",
+          "len": 0
+        },
+        {
+          "name": "displayOpacity",
+          "interpolation": "constant",
+          "len": 0
+        }
+      ]
+    },
+    {
+      "path": "/BronzeSun/BronzeSun_Ray6",
+      "vertices": 7,
+      "faces": 10,
+      "triangles": 10,
+      "counts": [
+        3
+      ],
+      "bounds": [
+        [
+          0.6592428684234619,
+          -1.2824336290359497,
+          -0.2199999988079071
+        ],
+        [
+          1.6389871835708618,
+          -0.4121288061141968,
+          0.02500000037252903
+        ]
+      ],
+      "normals": "faceVarying",
+      "material": [
+        "/BronzeSun/Materials/BronzeSun_Front"
+      ],
+      "subsets": [
+        {
+          "path": "/BronzeSun/BronzeSun_Ray6/Material_0",
+          "faces": 3,
+          "material": [
+            "/BronzeSun/Materials/BronzeSun_Front"
+          ]
+        },
+        {
+          "path": "/BronzeSun/BronzeSun_Ray6/Material_1",
+          "faces": 1,
+          "material": [
+            "/BronzeSun/Materials/BronzeSun_Back"
+          ]
+        },
+        {
+          "path": "/BronzeSun/BronzeSun_Ray6/Material_2",
+          "faces": 6,
+          "material": [
+            "/BronzeSun/Materials/BronzeSun_Edges"
+          ]
+        }
+      ],
+      "uv": [
+        {
+          "name": "BadgeUV",
+          "interpolation": "faceVarying",
+          "len": 30
+        },
+        {
+          "name": "displayColor",
+          "interpolation": "constant",
+          "len": 0
+        },
+        {
+          "name": "displayOpacity",
+          "interpolation": "constant",
+          "len": 0
+        }
+      ]
+    },
+    {
+      "path": "/BronzeSun/BronzeSun_Ray7",
+      "vertices": 7,
+      "faces": 10,
+      "triangles": 10,
+      "counts": [
+        3
+      ],
+      "bounds": [
+        [
+          -1.6389871835708618,
+          -1.2824336290359497,
+          -0.2199999988079071
+        ],
+        [
+          -0.6696656942367554,
+          -0.4121288061141968,
+          0.02500000037252903
+        ]
+      ],
+      "normals": "faceVarying",
+      "material": [
+        "/BronzeSun/Materials/BronzeSun_Front"
+      ],
+      "subsets": [
+        {
+          "path": "/BronzeSun/BronzeSun_Ray7/Material_0",
+          "faces": 3,
+          "material": [
+            "/BronzeSun/Materials/BronzeSun_Front"
+          ]
+        },
+        {
+          "path": "/BronzeSun/BronzeSun_Ray7/Material_1",
+          "faces": 1,
+          "material": [
+            "/BronzeSun/Materials/BronzeSun_Back"
+          ]
+        },
+        {
+          "path": "/BronzeSun/BronzeSun_Ray7/Material_2",
+          "faces": 6,
+          "material": [
+            "/BronzeSun/Materials/BronzeSun_Edges"
+          ]
+        }
+      ],
+      "uv": [
+        {
+          "name": "BadgeUV",
+          "interpolation": "faceVarying",
+          "len": 30
+        },
+        {
+          "name": "displayColor",
+          "interpolation": "constant",
+          "len": 0
+        },
+        {
+          "name": "displayOpacity",
+          "interpolation": "constant",
+          "len": 0
+        }
+      ]
+    },
+    {
+      "path": "/BronzeSun/BronzeSun_Ray8",
+      "vertices": 7,
+      "faces": 10,
+      "triangles": 10,
+      "counts": [
+        3
+      ],
+      "bounds": [
+        [
+          -1.5503933429718018,
+          0.8177630305290222,
+          -0.2199999988079071
+        ],
+        [
+          -0.6540314555168152,
+          1.7506047487258911,
+          0.02500000037252903
+        ]
+      ],
+      "normals": "faceVarying",
+      "material": [
+        "/BronzeSun/Materials/BronzeSun_Front"
+      ],
+      "subsets": [
+        {
+          "path": "/BronzeSun/BronzeSun_Ray8/Material_0",
+          "faces": 3,
+          "material": [
+            "/BronzeSun/Materials/BronzeSun_Front"
+          ]
+        },
+        {
+          "path": "/BronzeSun/BronzeSun_Ray8/Material_1",
+          "faces": 1,
+          "material": [
+            "/BronzeSun/Materials/BronzeSun_Back"
+          ]
+        },
+        {
+          "path": "/BronzeSun/BronzeSun_Ray8/Material_2",
+          "faces": 6,
+          "material": [
+            "/BronzeSun/Materials/BronzeSun_Edges"
+          ]
+        }
+      ],
+      "uv": [
+        {
+          "name": "BadgeUV",
+          "interpolation": "faceVarying",
+          "len": 30
+        },
+        {
+          "name": "displayColor",
+          "interpolation": "constant",
+          "len": 0
+        },
+        {
+          "name": "displayOpacity",
+          "interpolation": "constant",
+          "len": 0
+        }
+      ]
+    }
+  ],
+  "materials": [
+    {
+      "path": "/BronzeSun/Materials/BronzeSun_Front/Surface",
+      "inputs": {
+        "diffuseColor": {
+          "value": "(0.5, 0.27, 0.09)",
+          "sources": [
+            "/BronzeSun/Materials/BronzeSun_Front/diffuseColor"
+          ]
+        },
+        "emissiveColor": {
+          "value": "None",
+          "sources": [
+            "/BronzeSun/Materials/BronzeSun_Front/emissiveColor"
+          ]
+        },
+        "metallic": {
+          "value": "1.0",
+          "sources": []
+        },
+        "roughness": {
+          "value": "0.3799999952316284",
+          "sources": []
+        }
+      }
+    },
+    {
+      "path": "/BronzeSun/Materials/BronzeSun_Back/Surface",
+      "inputs": {
+        "diffuseColor": {
+          "value": "(0.29, 0.13, 0.035)",
+          "sources": []
+        },
+        "metallic": {
+          "value": "1.0",
+          "sources": []
+        },
+        "roughness": {
+          "value": "0.4300000071525574",
+          "sources": []
+        }
+      }
+    },
+    {
+      "path": "/BronzeSun/Materials/BronzeSun_Edges/Surface",
+      "inputs": {
+        "diffuseColor": {
+          "value": "(0.58, 0.31, 0.09)",
+          "sources": []
+        },
+        "metallic": {
+          "value": "1.0",
+          "sources": []
+        },
+        "roughness": {
+          "value": "0.3499999940395355",
+          "sources": []
+        }
+      }
+    },
+    {
+      "path": "/BronzeSun/Materials/BronzeSun_Channel/Surface",
+      "inputs": {
+        "diffuseColor": {
+          "value": "(0.035, 0.009, 0.002)",
+          "sources": []
+        },
+        "metallic": {
+          "value": "1.0",
+          "sources": []
+        },
+        "roughness": {
+          "value": "0.4000000059604645",
+          "sources": []
+        }
+      }
+    }
+  ]
+}

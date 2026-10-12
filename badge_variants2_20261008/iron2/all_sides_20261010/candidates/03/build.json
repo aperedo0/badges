@@ -1,0 +1,29 @@
+{
+  "tier": "iron",
+  "installed_sha256": "3c2b245b3074c8f9a72f87630ff6317a581bd0e34e17e364b3f926d93e9517fd",
+  "sha256": "40e08595215bc27ec56427dde654d8ed22077d6771ed88660d1304f5cb69622d",
+  "triangles": 59392,
+  "bytes": 4680780,
+  "bounds": [
+    [
+      -2.161102294921875,
+      -2.4549999237060547,
+      -0.375
+    ],
+    [
+      2.161102294921875,
+      2.8450000286102295,
+      0.32499998807907104
+    ]
+  ],
+  "arkit_errors": [],
+  "arkit_failed_checks": [],
+  "changes": [
+    {
+      "front_data_identical": true,
+      "replaced_rear_triangles": 448,
+      "hollow_rear_triangles": 15680,
+      "design": "Smooth hollow shield bowl, crossed iron braces, raised iron hand grip, six domed rivets; candidate 03 adds a continuous dark rolled rear rim and a smooth elliptical bowl. Main front faces are unchanged."
+    }
+  ]
+}

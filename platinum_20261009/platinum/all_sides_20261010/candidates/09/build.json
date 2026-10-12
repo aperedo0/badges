@@ -1,0 +1,35 @@
+{
+  "tier": "platinum",
+  "installed_sha256": "6ba3c309bc8d9861c28ed66230f1fbaf5d23b0106e97ddddf6263095403ce371",
+  "sha256": "9e5aedd7a392a82f68f2e9f121f596a0edde6ea212f5581b05545b20a31c889e",
+  "triangles": 43008,
+  "bytes": 3657292,
+  "bounds": [
+    [
+      -2.8524208068847656,
+      -2.4549999237060547,
+      -0.7828716039657593
+    ],
+    [
+      2.8524208068847656,
+      2.902362585067749,
+      0.7828716039657593
+    ]
+  ],
+  "arkit_errors": [],
+  "arkit_failed_checks": [],
+  "changes": [
+    {
+      "method": "Rear UVs follow the corresponding front surface across the ribbon cross section, rather than projecting the photographic front onto the rear plane. The first sampled front UV row is four, excluding the front silhouette highlight strip. Front faces, all geometry and normals, and bounded side materials remain unchanged from08.",
+      "front_sample_rows": [
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10
+      ]
+    }
+  ]
+}

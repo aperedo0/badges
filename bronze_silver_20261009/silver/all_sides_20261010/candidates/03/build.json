@@ -1,0 +1,61 @@
+{
+  "tier": "steel",
+  "installed_sha256": "74570f1a5776139ed80cf3b5d9e38ad42a87f3e03ffa399c87c6870d7ca8bc93",
+  "sha256": "65b2047e8503ddddcfe6330164e694856d2bce4dea9bad60fedaa177b40acfb1",
+  "triangles": 600,
+  "bytes": 744538,
+  "bounds": [
+    [
+      -2.8134961128234863,
+      -2.4549999237060547,
+      -0.30000001192092896
+    ],
+    [
+      2.8134961128234863,
+      2.829599618911743,
+      0.30000001192092896
+    ]
+  ],
+  "arkit_errors": [],
+  "arkit_failed_checks": [],
+  "changes": [
+    {
+      "mesh": "/SilverChevron/SilverChevron_Upper",
+      "front_triangles_preserved": 114,
+      "front_data_identical": true,
+      "back_maps_match_front": true,
+      "paired_mirror_x": false,
+      "max_pairing_error": 0.00438523835182269,
+      "triangles": 300
+    },
+    {
+      "mesh": "/SilverChevron/SilverChevron_Lower",
+      "front_triangles_preserved": 114,
+      "front_data_identical": true,
+      "back_maps_match_front": true,
+      "paired_mirror_x": false,
+      "max_pairing_error": 0.004385792362994372,
+      "triangles": 300
+    },
+    {
+      "cause": "The reference solve fades directional brushing between 19% and 44% of total badge height, which suppresses the lower chevron interior.",
+      "method": "Restore matching upper-chevron fine detail in lower interior while retaining lower broad lighting and unchanged 9-texel outline band.",
+      "maps": {
+        "color.png": {
+          "upper_detail_rms": 0.054604914077197725,
+          "lower_before_detail_rms": 0.04652705788875735,
+          "lower_after_detail_rms": 0.04711807832033012,
+          "changed_texels": 98301,
+          "outline_unchanged": true
+        },
+        "emissive.png": {
+          "upper_detail_rms": 0.08266181458085636,
+          "lower_before_detail_rms": 0.053395821011029035,
+          "lower_after_detail_rms": 0.05578221193185118,
+          "changed_texels": 17399,
+          "outline_unchanged": true
+        }
+      }
+    }
+  ]
+}

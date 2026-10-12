@@ -1,0 +1,11 @@
+{
+  "candidate": "05",
+  "sha256": "6676c7cfbe671419d5ced81aae9f878bd4831bc51a20d380380b0c94fea16e6e",
+  "previous_round_sha256": "2ba20a7cf8a5efb7bcbe764879bc8205a9845f38f7c080aa1999a0d2c1ca3b16",
+  "simulator": "iPhone 17",
+  "simulator_udid": "69A29DD2-C91E-487A-81B9-3B146DF8F07B",
+  "scheme": "ScreenTime-UIOnly",
+  "bundle_id": "com.antonioperedo.screentime.uidev",
+  "project": "/Users/antonioperedo/Desktop/screen_time/ScreenTime.xcodeproj",
+  "preview_state": "Final unrotated model installed, shader-warmed, Diamond Home open; temporary full-size inspection models replaced."
+}

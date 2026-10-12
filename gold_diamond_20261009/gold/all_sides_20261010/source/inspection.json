@@ -1,0 +1,1182 @@
+{
+  "layer": "/Users/antonioperedo/Desktop/badges/gold_diamond_20261009/gold/all_sides_20261010/source/installed/badge.usdc",
+  "meshes": [
+    {
+      "path": "/GoldCrown/GoldCrown_HollowBand",
+      "vertices": 1792,
+      "faces": 3584,
+      "triangles": 3584,
+      "counts": [
+        3
+      ],
+      "bounds": [
+        [
+          -2.6475393772125244,
+          -2.434000015258789,
+          -0.699999988079071
+        ],
+        [
+          2.6475393772125244,
+          -0.8182660341262817,
+          0.699999988079071
+        ]
+      ],
+      "normals": "faceVarying",
+      "material": [
+        "/GoldCrown/Materials/GoldCrown_Front"
+      ],
+      "subsets": [
+        {
+          "path": "/GoldCrown/GoldCrown_HollowBand/Material_0",
+          "faces": 2048,
+          "material": [
+            "/GoldCrown/Materials/GoldCrown_Front"
+          ]
+        },
+        {
+          "path": "/GoldCrown/GoldCrown_HollowBand/Material_1",
+          "faces": 1536,
+          "material": [
+            "/GoldCrown/Materials/GoldCrown_Back"
+          ]
+        }
+      ],
+      "uv": [
+        {
+          "name": "BadgeUV",
+          "interpolation": "faceVarying",
+          "len": 10752
+        },
+        {
+          "name": "displayColor",
+          "interpolation": "constant",
+          "len": 0
+        },
+        {
+          "name": "displayOpacity",
+          "interpolation": "constant",
+          "len": 0
+        }
+      ]
+    },
+    {
+      "path": "/GoldCrown/GoldCrown_ScallopedShell",
+      "vertices": 3372,
+      "faces": 6740,
+      "triangles": 6740,
+      "counts": [
+        3
+      ],
+      "bounds": [
+        [
+          -3.022340774536133,
+          -1.3282699584960938,
+          -0.366661012172699
+        ],
+        [
+          3.0129706859588623,
+          1.3173617124557495,
+          0.6996849775314331
+        ]
+      ],
+      "normals": "faceVarying",
+      "material": [
+        "/GoldCrown/Materials/GoldCrown_Front"
+      ],
+      "subsets": [
+        {
+          "path": "/GoldCrown/GoldCrown_ScallopedShell/Material_0",
+          "faces": 3360,
+          "material": [
+            "/GoldCrown/Materials/GoldCrown_Front"
+          ]
+        },
+        {
+          "path": "/GoldCrown/GoldCrown_ScallopedShell/Material_1",
+          "faces": 2800,
+          "material": [
+            "/GoldCrown/Materials/GoldCrown_Back"
+          ]
+        },
+        {
+          "path": "/GoldCrown/GoldCrown_ScallopedShell/Material_2",
+          "faces": 580,
+          "material": [
+            "/GoldCrown/Materials/GoldCrown_Edges"
+          ]
+        }
+      ],
+      "uv": [
+        {
+          "name": "BadgeUV",
+          "interpolation": "faceVarying",
+          "len": 20220
+        },
+        {
+          "name": "displayColor",
+          "interpolation": "constant",
+          "len": 0
+        },
+        {
+          "name": "displayOpacity",
+          "interpolation": "constant",
+          "len": 0
+        }
+      ]
+    },
+    {
+      "path": "/GoldCrown/GoldCrown_RoundedScallopLip",
+      "vertices": 2250,
+      "faces": 4496,
+      "triangles": 4496,
+      "counts": [
+        3
+      ],
+      "bounds": [
+        [
+          -3.028759002685547,
+          -0.46342790126800537,
+          -0.2443149983882904
+        ],
+        [
+          3.0189385414123535,
+          1.3428642749786377,
+          0.6055738925933838
+        ]
+      ],
+      "normals": "faceVarying",
+      "material": [
+        "/GoldCrown/Materials/GoldCrown_Front"
+      ],
+      "subsets": [
+        {
+          "path": "/GoldCrown/GoldCrown_RoundedScallopLip/Material_0",
+          "faces": 2240,
+          "material": [
+            "/GoldCrown/Materials/GoldCrown_Front"
+          ]
+        },
+        {
+          "path": "/GoldCrown/GoldCrown_RoundedScallopLip/Material_1",
+          "faces": 2240,
+          "material": [
+            "/GoldCrown/Materials/GoldCrown_Back"
+          ]
+        },
+        {
+          "path": "/GoldCrown/GoldCrown_RoundedScallopLip/Material_2",
+          "faces": 16,
+          "material": [
+            "/GoldCrown/Materials/GoldCrown_Edges"
+          ]
+        }
+      ],
+      "uv": [
+        {
+          "name": "BadgeUV",
+          "interpolation": "faceVarying",
+          "len": 13488
+        },
+        {
+          "name": "displayColor",
+          "interpolation": "constant",
+          "len": 0
+        },
+        {
+          "name": "displayOpacity",
+          "interpolation": "constant",
+          "len": 0
+        }
+      ]
+    },
+    {
+      "path": "/GoldCrown/GoldCrown_ValleyFlange1",
+      "vertices": 280,
+      "faces": 556,
+      "triangles": 556,
+      "counts": [
+        3
+      ],
+      "bounds": [
+        [
+          -3.0126399993896484,
+          -0.4423099458217621,
+          -0.29166102409362793
+        ],
+        [
+          -1.825614094734192,
+          0.773551881313324,
+          0.34480324387550354
+        ]
+      ],
+      "normals": "faceVarying",
+      "material": [
+        "/GoldCrown/Materials/GoldCrown_Front"
+      ],
+      "subsets": [
+        {
+          "path": "/GoldCrown/GoldCrown_ValleyFlange1/Material_0",
+          "faces": 278,
+          "material": [
+            "/GoldCrown/Materials/GoldCrown_Front"
+          ]
+        },
+        {
+          "path": "/GoldCrown/GoldCrown_ValleyFlange1/Material_1",
+          "faces": 278,
+          "material": [
+            "/GoldCrown/Materials/GoldCrown_Back"
+          ]
+        }
+      ],
+      "uv": [
+        {
+          "name": "BadgeUV",
+          "interpolation": "faceVarying",
+          "len": 1668
+        },
+        {
+          "name": "displayColor",
+          "interpolation": "constant",
+          "len": 0
+        },
+        {
+          "name": "displayOpacity",
+          "interpolation": "constant",
+          "len": 0
+        }
+      ]
+    },
+    {
+      "path": "/GoldCrown/GoldCrown_ValleyFlange2",
+      "vertices": 280,
+      "faces": 556,
+      "triangles": 556,
+      "counts": [
+        3
+      ],
+      "bounds": [
+        [
+          -1.7415437698364258,
+          -0.2938697040081024,
+          0.24118992686271667
+        ],
+        [
+          -0.0881468802690506,
+          1.3173617124557495,
+          0.5625739097595215
+        ]
+      ],
+      "normals": "faceVarying",
+      "material": [
+        "/GoldCrown/Materials/GoldCrown_Front"
+      ],
+      "subsets": [
+        {
+          "path": "/GoldCrown/GoldCrown_ValleyFlange2/Material_0",
+          "faces": 278,
+          "material": [
+            "/GoldCrown/Materials/GoldCrown_Front"
+          ]
+        },
+        {
+          "path": "/GoldCrown/GoldCrown_ValleyFlange2/Material_1",
+          "faces": 278,
+          "material": [
+            "/GoldCrown/Materials/GoldCrown_Back"
+          ]
+        }
+      ],
+      "uv": [
+        {
+          "name": "BadgeUV",
+          "interpolation": "faceVarying",
+          "len": 1668
+        },
+        {
+          "name": "displayColor",
+          "interpolation": "constant",
+          "len": 0
+        },
+        {
+          "name": "displayOpacity",
+          "interpolation": "constant",
+          "len": 0
+        }
+      ]
+    },
+    {
+      "path": "/GoldCrown/GoldCrown_ValleyFlange3",
+      "vertices": 280,
+      "faces": 556,
+      "triangles": 556,
+      "counts": [
+        3
+      ],
+      "bounds": [
+        [
+          0.0881468802690506,
+          -0.27381592988967896,
+          0.24537895619869232
+        ],
+        [
+          1.7197597026824951,
+          1.3173617124557495,
+          0.5618459582328796
+        ]
+      ],
+      "normals": "faceVarying",
+      "material": [
+        "/GoldCrown/Materials/GoldCrown_Front"
+      ],
+      "subsets": [
+        {
+          "path": "/GoldCrown/GoldCrown_ValleyFlange3/Material_0",
+          "faces": 278,
+          "material": [
+            "/GoldCrown/Materials/GoldCrown_Front"
+          ]
+        },
+        {
+          "path": "/GoldCrown/GoldCrown_ValleyFlange3/Material_1",
+          "faces": 278,
+          "material": [
+            "/GoldCrown/Materials/GoldCrown_Back"
+          ]
+        }
+      ],
+      "uv": [
+        {
+          "name": "BadgeUV",
+          "interpolation": "faceVarying",
+          "len": 1668
+        },
+        {
+          "name": "displayColor",
+          "interpolation": "constant",
+          "len": 0
+        },
+        {
+          "name": "displayOpacity",
+          "interpolation": "constant",
+          "len": 0
+        }
+      ]
+    },
+    {
+      "path": "/GoldCrown/GoldCrown_ValleyFlange4",
+      "vertices": 280,
+      "faces": 556,
+      "triangles": 556,
+      "counts": [
+        3
+      ],
+      "bounds": [
+        [
+          1.8310679197311401,
+          -0.4445306658744812,
+          -0.26176533102989197
+        ],
+        [
+          3.0032875537872314,
+          0.7734925746917725,
+          0.34331032633781433
+        ]
+      ],
+      "normals": "faceVarying",
+      "material": [
+        "/GoldCrown/Materials/GoldCrown_Front"
+      ],
+      "subsets": [
+        {
+          "path": "/GoldCrown/GoldCrown_ValleyFlange4/Material_0",
+          "faces": 278,
+          "material": [
+            "/GoldCrown/Materials/GoldCrown_Front"
+          ]
+        },
+        {
+          "path": "/GoldCrown/GoldCrown_ValleyFlange4/Material_1",
+          "faces": 278,
+          "material": [
+            "/GoldCrown/Materials/GoldCrown_Back"
+          ]
+        }
+      ],
+      "uv": [
+        {
+          "name": "BadgeUV",
+          "interpolation": "faceVarying",
+          "len": 1668
+        },
+        {
+          "name": "displayColor",
+          "interpolation": "constant",
+          "len": 0
+        },
+        {
+          "name": "displayOpacity",
+          "interpolation": "constant",
+          "len": 0
+        }
+      ]
+    },
+    {
+      "path": "/GoldCrown/GoldCrown_UpperBandLip",
+      "vertices": 1024,
+      "faces": 2048,
+      "triangles": 2048,
+      "counts": [
+        3
+      ],
+      "bounds": [
+        [
+          -2.6684422492980957,
+          -1.9520081281661987,
+          -0.7210000157356262
+        ],
+        [
+          2.6684422492980957,
+          -0.7972660064697266,
+          0.7210000157356262
+        ]
+      ],
+      "normals": "faceVarying",
+      "material": [
+        "/GoldCrown/Materials/GoldCrown_Front"
+      ],
+      "subsets": [
+        {
+          "path": "/GoldCrown/GoldCrown_UpperBandLip/Material_0",
+          "faces": 1024,
+          "material": [
+            "/GoldCrown/Materials/GoldCrown_Front"
+          ]
+        },
+        {
+          "path": "/GoldCrown/GoldCrown_UpperBandLip/Material_1",
+          "faces": 1024,
+          "material": [
+            "/GoldCrown/Materials/GoldCrown_Back"
+          ]
+        }
+      ],
+      "uv": [
+        {
+          "name": "BadgeUV",
+          "interpolation": "faceVarying",
+          "len": 6144
+        },
+        {
+          "name": "displayColor",
+          "interpolation": "constant",
+          "len": 0
+        },
+        {
+          "name": "displayOpacity",
+          "interpolation": "constant",
+          "len": 0
+        }
+      ]
+    },
+    {
+      "path": "/GoldCrown/GoldCrown_LowerBandLip",
+      "vertices": 1024,
+      "faces": 2048,
+      "triangles": 2048,
+      "counts": [
+        3
+      ],
+      "bounds": [
+        [
+          -2.6684179306030273,
+          -2.4549999237060547,
+          -0.7210000157356262
+        ],
+        [
+          2.6684179306030273,
+          -1.4914089441299438,
+          0.7210000157356262
+        ]
+      ],
+      "normals": "faceVarying",
+      "material": [
+        "/GoldCrown/Materials/GoldCrown_Front"
+      ],
+      "subsets": [
+        {
+          "path": "/GoldCrown/GoldCrown_LowerBandLip/Material_0",
+          "faces": 1024,
+          "material": [
+            "/GoldCrown/Materials/GoldCrown_Front"
+          ]
+        },
+        {
+          "path": "/GoldCrown/GoldCrown_LowerBandLip/Material_1",
+          "faces": 1024,
+          "material": [
+            "/GoldCrown/Materials/GoldCrown_Back"
+          ]
+        }
+      ],
+      "uv": [
+        {
+          "name": "BadgeUV",
+          "interpolation": "faceVarying",
+          "len": 6144
+        },
+        {
+          "name": "displayColor",
+          "interpolation": "constant",
+          "len": 0
+        },
+        {
+          "name": "displayOpacity",
+          "interpolation": "constant",
+          "len": 0
+        }
+      ]
+    },
+    {
+      "path": "/GoldCrown/GoldCrown_Finial1",
+      "vertices": 1858,
+      "faces": 3712,
+      "triangles": 3712,
+      "counts": [
+        3
+      ],
+      "bounds": [
+        [
+          -3.1890628337860107,
+          0.21963857114315033,
+          -0.1519118696451187
+        ],
+        [
+          -2.720890522003174,
+          0.6856265664100647,
+          0.2119118571281433
+        ]
+      ],
+      "normals": "faceVarying",
+      "material": [
+        "/GoldCrown/Materials/GoldCrown_Front"
+      ],
+      "subsets": [
+        {
+          "path": "/GoldCrown/GoldCrown_Finial1/Material_0",
+          "faces": 1856,
+          "material": [
+            "/GoldCrown/Materials/GoldCrown_Front"
+          ]
+        },
+        {
+          "path": "/GoldCrown/GoldCrown_Finial1/Material_1",
+          "faces": 1856,
+          "material": [
+            "/GoldCrown/Materials/GoldCrown_Back"
+          ]
+        }
+      ],
+      "uv": [
+        {
+          "name": "BadgeUV",
+          "interpolation": "faceVarying",
+          "len": 11136
+        },
+        {
+          "name": "displayColor",
+          "interpolation": "constant",
+          "len": 0
+        },
+        {
+          "name": "displayOpacity",
+          "interpolation": "constant",
+          "len": 0
+        }
+      ]
+    },
+    {
+      "path": "/GoldCrown/GoldCrown_Collar1",
+      "vertices": 288,
+      "faces": 576,
+      "triangles": 576,
+      "counts": [
+        3
+      ],
+      "bounds": [
+        [
+          -3.0452489852905273,
+          0.21918322145938873,
+          -0.014000000432133675
+        ],
+        [
+          -2.864346981048584,
+          0.2763356566429138,
+          0.07400000095367432
+        ]
+      ],
+      "normals": "faceVarying",
+      "material": [
+        "/GoldCrown/Materials/GoldCrown_Front"
+      ],
+      "subsets": [
+        {
+          "path": "/GoldCrown/GoldCrown_Collar1/Material_0",
+          "faces": 384,
+          "material": [
+            "/GoldCrown/Materials/GoldCrown_Front"
+          ]
+        },
+        {
+          "path": "/GoldCrown/GoldCrown_Collar1/Material_1",
+          "faces": 192,
+          "material": [
+            "/GoldCrown/Materials/GoldCrown_Back"
+          ]
+        }
+      ],
+      "uv": [
+        {
+          "name": "BadgeUV",
+          "interpolation": "faceVarying",
+          "len": 1728
+        },
+        {
+          "name": "displayColor",
+          "interpolation": "constant",
+          "len": 0
+        },
+        {
+          "name": "displayOpacity",
+          "interpolation": "constant",
+          "len": 0
+        }
+      ]
+    },
+    {
+      "path": "/GoldCrown/GoldCrown_Finial2",
+      "vertices": 1858,
+      "faces": 3712,
+      "triangles": 3712,
+      "counts": [
+        3
+      ],
+      "bounds": [
+        [
+          -2.056197166442871,
+          0.7310028076171875,
+          0.024630509316921234
+        ],
+        [
+          -1.4338157176971436,
+          1.3527697324752808,
+          0.5153694748878479
+        ]
+      ],
+      "normals": "faceVarying",
+      "material": [
+        "/GoldCrown/Materials/GoldCrown_Front"
+      ],
+      "subsets": [
+        {
+          "path": "/GoldCrown/GoldCrown_Finial2/Material_0",
+          "faces": 1856,
+          "material": [
+            "/GoldCrown/Materials/GoldCrown_Front"
+          ]
+        },
+        {
+          "path": "/GoldCrown/GoldCrown_Finial2/Material_1",
+          "faces": 1856,
+          "material": [
+            "/GoldCrown/Materials/GoldCrown_Back"
+          ]
+        }
+      ],
+      "uv": [
+        {
+          "name": "BadgeUV",
+          "interpolation": "faceVarying",
+          "len": 11136
+        },
+        {
+          "name": "displayColor",
+          "interpolation": "constant",
+          "len": 0
+        },
+        {
+          "name": "displayOpacity",
+          "interpolation": "constant",
+          "len": 0
+        }
+      ]
+    },
+    {
+      "path": "/GoldCrown/GoldCrown_Collar2",
+      "vertices": 288,
+      "faces": 576,
+      "triangles": 576,
+      "counts": [
+        3
+      ],
+      "bounds": [
+        [
+          -1.8583874702453613,
+          0.7345221042633057,
+          0.22599999606609344
+        ],
+        [
+          -1.631067156791687,
+          0.8021366000175476,
+          0.3140000104904175
+        ]
+      ],
+      "normals": "faceVarying",
+      "material": [
+        "/GoldCrown/Materials/GoldCrown_Front"
+      ],
+      "subsets": [
+        {
+          "path": "/GoldCrown/GoldCrown_Collar2/Material_0",
+          "faces": 384,
+          "material": [
+            "/GoldCrown/Materials/GoldCrown_Front"
+          ]
+        },
+        {
+          "path": "/GoldCrown/GoldCrown_Collar2/Material_1",
+          "faces": 192,
+          "material": [
+            "/GoldCrown/Materials/GoldCrown_Back"
+          ]
+        }
+      ],
+      "uv": [
+        {
+          "name": "BadgeUV",
+          "interpolation": "faceVarying",
+          "len": 1728
+        },
+        {
+          "name": "displayColor",
+          "interpolation": "constant",
+          "len": 0
+        },
+        {
+          "name": "displayOpacity",
+          "interpolation": "constant",
+          "len": 0
+        }
+      ]
+    },
+    {
+      "path": "/GoldCrown/GoldCrown_Finial3",
+      "vertices": 1858,
+      "faces": 3712,
+      "triangles": 3712,
+      "counts": [
+        3
+      ],
+      "bounds": [
+        [
+          -0.36336153745651245,
+          1.2691136598587036,
+          0.052325423806905746
+        ],
+        [
+          0.36336153745651245,
+          1.9958367347717285,
+          0.6276745796203613
+        ]
+      ],
+      "normals": "faceVarying",
+      "material": [
+        "/GoldCrown/Materials/GoldCrown_Front"
+      ],
+      "subsets": [
+        {
+          "path": "/GoldCrown/GoldCrown_Finial3/Material_0",
+          "faces": 1856,
+          "material": [
+            "/GoldCrown/Materials/GoldCrown_Front"
+          ]
+        },
+        {
+          "path": "/GoldCrown/GoldCrown_Finial3/Material_1",
+          "faces": 1856,
+          "material": [
+            "/GoldCrown/Materials/GoldCrown_Back"
+          ]
+        }
+      ],
+      "uv": [
+        {
+          "name": "BadgeUV",
+          "interpolation": "faceVarying",
+          "len": 11136
+        },
+        {
+          "name": "displayColor",
+          "interpolation": "constant",
+          "len": 0
+        },
+        {
+          "name": "displayOpacity",
+          "interpolation": "constant",
+          "len": 0
+        }
+      ]
+    },
+    {
+      "path": "/GoldCrown/GoldCrown_Collar3",
+      "vertices": 288,
+      "faces": 576,
+      "triangles": 576,
+      "counts": [
+        3
+      ],
+      "bounds": [
+        [
+          -0.12913867831230164,
+          1.2751885652542114,
+          0.29600000381469727
+        ],
+        [
+          0.12913867831230164,
+          1.3502936363220215,
+          0.3840000033378601
+        ]
+      ],
+      "normals": "faceVarying",
+      "material": [
+        "/GoldCrown/Materials/GoldCrown_Front"
+      ],
+      "subsets": [
+        {
+          "path": "/GoldCrown/GoldCrown_Collar3/Material_0",
+          "faces": 384,
+          "material": [
+            "/GoldCrown/Materials/GoldCrown_Front"
+          ]
+        },
+        {
+          "path": "/GoldCrown/GoldCrown_Collar3/Material_1",
+          "faces": 192,
+          "material": [
+            "/GoldCrown/Materials/GoldCrown_Back"
+          ]
+        }
+      ],
+      "uv": [
+        {
+          "name": "BadgeUV",
+          "interpolation": "faceVarying",
+          "len": 1728
+        },
+        {
+          "name": "displayColor",
+          "interpolation": "constant",
+          "len": 0
+        },
+        {
+          "name": "displayOpacity",
+          "interpolation": "constant",
+          "len": 0
+        }
+      ]
+    },
+    {
+      "path": "/GoldCrown/GoldCrown_Finial4",
+      "vertices": 1858,
+      "faces": 3712,
+      "triangles": 3712,
+      "counts": [
+        3
+      ],
+      "bounds": [
+        [
+          1.4338157176971436,
+          0.7310028076171875,
+          0.024630509316921234
+        ],
+        [
+          2.056197166442871,
+          1.3527697324752808,
+          0.5153694748878479
+        ]
+      ],
+      "normals": "faceVarying",
+      "material": [
+        "/GoldCrown/Materials/GoldCrown_Front"
+      ],
+      "subsets": [
+        {
+          "path": "/GoldCrown/GoldCrown_Finial4/Material_0",
+          "faces": 1856,
+          "material": [
+            "/GoldCrown/Materials/GoldCrown_Front"
+          ]
+        },
+        {
+          "path": "/GoldCrown/GoldCrown_Finial4/Material_1",
+          "faces": 1856,
+          "material": [
+            "/GoldCrown/Materials/GoldCrown_Back"
+          ]
+        }
+      ],
+      "uv": [
+        {
+          "name": "BadgeUV",
+          "interpolation": "faceVarying",
+          "len": 11136
+        },
+        {
+          "name": "displayColor",
+          "interpolation": "constant",
+          "len": 0
+        },
+        {
+          "name": "displayOpacity",
+          "interpolation": "constant",
+          "len": 0
+        }
+      ]
+    },
+    {
+      "path": "/GoldCrown/GoldCrown_Collar4",
+      "vertices": 288,
+      "faces": 576,
+      "triangles": 576,
+      "counts": [
+        3
+      ],
+      "bounds": [
+        [
+          1.631067156791687,
+          0.7345221042633057,
+          0.22599999606609344
+        ],
+        [
+          1.8583874702453613,
+          0.8021366000175476,
+          0.3140000104904175
+        ]
+      ],
+      "normals": "faceVarying",
+      "material": [
+        "/GoldCrown/Materials/GoldCrown_Front"
+      ],
+      "subsets": [
+        {
+          "path": "/GoldCrown/GoldCrown_Collar4/Material_0",
+          "faces": 384,
+          "material": [
+            "/GoldCrown/Materials/GoldCrown_Front"
+          ]
+        },
+        {
+          "path": "/GoldCrown/GoldCrown_Collar4/Material_1",
+          "faces": 192,
+          "material": [
+            "/GoldCrown/Materials/GoldCrown_Back"
+          ]
+        }
+      ],
+      "uv": [
+        {
+          "name": "BadgeUV",
+          "interpolation": "faceVarying",
+          "len": 1728
+        },
+        {
+          "name": "displayColor",
+          "interpolation": "constant",
+          "len": 0
+        },
+        {
+          "name": "displayOpacity",
+          "interpolation": "constant",
+          "len": 0
+        }
+      ]
+    },
+    {
+      "path": "/GoldCrown/GoldCrown_Finial5",
+      "vertices": 1858,
+      "faces": 3712,
+      "triangles": 3712,
+      "counts": [
+        3
+      ],
+      "bounds": [
+        [
+          2.720890522003174,
+          0.21963857114315033,
+          -0.1519118696451187
+        ],
+        [
+          3.1890628337860107,
+          0.6856265664100647,
+          0.2119118571281433
+        ]
+      ],
+      "normals": "faceVarying",
+      "material": [
+        "/GoldCrown/Materials/GoldCrown_Front"
+      ],
+      "subsets": [
+        {
+          "path": "/GoldCrown/GoldCrown_Finial5/Material_0",
+          "faces": 1856,
+          "material": [
+            "/GoldCrown/Materials/GoldCrown_Front"
+          ]
+        },
+        {
+          "path": "/GoldCrown/GoldCrown_Finial5/Material_1",
+          "faces": 1856,
+          "material": [
+            "/GoldCrown/Materials/GoldCrown_Back"
+          ]
+        }
+      ],
+      "uv": [
+        {
+          "name": "BadgeUV",
+          "interpolation": "faceVarying",
+          "len": 11136
+        },
+        {
+          "name": "displayColor",
+          "interpolation": "constant",
+          "len": 0
+        },
+        {
+          "name": "displayOpacity",
+          "interpolation": "constant",
+          "len": 0
+        }
+      ]
+    },
+    {
+      "path": "/GoldCrown/GoldCrown_Collar5",
+      "vertices": 288,
+      "faces": 576,
+      "triangles": 576,
+      "counts": [
+        3
+      ],
+      "bounds": [
+        [
+          2.864346981048584,
+          0.21918322145938873,
+          -0.014000000432133675
+        ],
+        [
+          3.0452489852905273,
+          0.2763356566429138,
+          0.07400000095367432
+        ]
+      ],
+      "normals": "faceVarying",
+      "material": [
+        "/GoldCrown/Materials/GoldCrown_Front"
+      ],
+      "subsets": [
+        {
+          "path": "/GoldCrown/GoldCrown_Collar5/Material_0",
+          "faces": 384,
+          "material": [
+            "/GoldCrown/Materials/GoldCrown_Front"
+          ]
+        },
+        {
+          "path": "/GoldCrown/GoldCrown_Collar5/Material_1",
+          "faces": 192,
+          "material": [
+            "/GoldCrown/Materials/GoldCrown_Back"
+          ]
+        }
+      ],
+      "uv": [
+        {
+          "name": "BadgeUV",
+          "interpolation": "faceVarying",
+          "len": 1728
+        },
+        {
+          "name": "displayColor",
+          "interpolation": "constant",
+          "len": 0
+        },
+        {
+          "name": "displayOpacity",
+          "interpolation": "constant",
+          "len": 0
+        }
+      ]
+    }
+  ],
+  "materials": [
+    {
+      "path": "/GoldCrown/Materials/GoldCrown_Front/Surface",
+      "inputs": {
+        "diffuseColor": {
+          "value": "(0.65, 0.4, 0.04)",
+          "sources": [
+            "/GoldCrown/Materials/GoldCrown_Front/diffuseColor"
+          ]
+        },
+        "emissiveColor": {
+          "value": "None",
+          "sources": [
+            "/GoldCrown/Materials/GoldCrown_Front/emissiveColor"
+          ]
+        },
+        "metallic": {
+          "value": "1.0",
+          "sources": []
+        },
+        "roughness": {
+          "value": "0.3199999928474426",
+          "sources": []
+        }
+      }
+    },
+    {
+      "path": "/GoldCrown/Materials/GoldCrown_Back/Surface",
+      "inputs": {
+        "diffuseColor": {
+          "value": "(0.36, 0.22, 0.018)",
+          "sources": []
+        },
+        "metallic": {
+          "value": "1.0",
+          "sources": []
+        },
+        "roughness": {
+          "value": "0.4000000059604645",
+          "sources": []
+        }
+      }
+    },
+    {
+      "path": "/GoldCrown/Materials/GoldCrown_Edges/Surface",
+      "inputs": {
+        "diffuseColor": {
+          "value": "(0.6, 0.36, 0.025)",
+          "sources": []
+        },
+        "metallic": {
+          "value": "1.0",
+          "sources": []
+        },
+        "roughness": {
+          "value": "0.3199999928474426",
+          "sources": []
+        }
+      }
+    }
+  ]
+}

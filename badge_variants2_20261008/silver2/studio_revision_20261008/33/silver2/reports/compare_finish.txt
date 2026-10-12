@@ -1,0 +1,1 @@
+silver2 PASS: exact geometry, normals, UVs, IDs and bindings; 16 material/map differences recorded.

@@ -1,0 +1,5 @@
+ScreenTime: ** BUILD SUCCEEDED **
+ScreenTime-UIOnly: ** BUILD SUCCEEDED **
+DeviceActivityReportExtension: ** BUILD SUCCEEDED **
+tests: ** TEST SUCCEEDED ** | xcresult: 1871 passed, 0 failed, 0 skipped (total 1871)
+gate PASSED in 2.2 min; logs: /var/folders/gl/mpj0czg96klfknfbtdxsw0400000gn/T/gate-g6mnlizh

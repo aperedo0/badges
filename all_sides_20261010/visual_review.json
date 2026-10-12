@@ -1,0 +1,179 @@
+{
+  "fronts": {
+    "iron": {
+      "candidate": "03",
+      "all_front_4x_pages_reviewed": true,
+      "result": "Native app front hero pixels identical to installed. No isolated white edge specks or broken bright outline segments observed."
+    },
+    "bronze": {
+      "candidate": "02",
+      "all_front_4x_pages_reviewed": true,
+      "result": "No isolated white outline specks or broken bright edge segments observed."
+    },
+    "steel": {
+      "candidate": "03",
+      "all_front_4x_pages_reviewed": true,
+      "result": "No isolated white outline specks or broken bright edge segments observed."
+    },
+    "silver": {
+      "candidate": "04",
+      "all_front_4x_pages_reviewed": true,
+      "result": "No isolated white outline specks or broken bright edge segments observed."
+    },
+    "platinum": {
+      "candidate": "05",
+      "all_front_4x_pages_reviewed": true,
+      "result": "Main polished front appearance retained; narrow perimeter bevel deliberately changed to continuous rough metal. No isolated white outline specks observed."
+    },
+    "diamond": {
+      "candidate": "04",
+      "all_front_4x_pages_reviewed": true,
+      "result": "Full-volume geometry retains the blue crystal identity. No isolated white outline dots or broken bright outline segments observed."
+    }
+  },
+  "remaining": "Platinum08 and resumed Gold validation.",
+  "fullsize_4x_reviewed": {
+    "bronze": {
+      "candidate": "02",
+      "poses": [
+        "right",
+        "back",
+        "left"
+      ],
+      "result": "No isolated white outline specks or broken bright outline segments observed."
+    },
+    "steel": {
+      "candidate": "03",
+      "poses": [
+        "right",
+        "back",
+        "left"
+      ],
+      "result": "No isolated white outline specks or broken bright outline segments observed."
+    },
+    "silver": {
+      "candidate": "04",
+      "poses": [
+        "right",
+        "back",
+        "left"
+      ],
+      "result": "No isolated white outline specks or broken bright outline segments observed."
+    },
+    "iron": {
+      "candidate": "03",
+      "poses": [
+        "right",
+        "back",
+        "left"
+      ],
+      "result": "No isolated white outline specks or broken bright outline segments observed."
+    },
+    "platinum": {
+      "candidate": "03",
+      "poses": [
+        "right",
+        "back",
+        "left"
+      ],
+      "result": "No isolated white outline specks or broken bright outline segments observed."
+    },
+    "diamond": {
+      "candidate": "04",
+      "poses": [
+        "right",
+        "back",
+        "left"
+      ],
+      "result": "No isolated white outline specks or broken bright outline segments observed."
+    }
+  },
+  "rejected_intermediate_views": {
+    "platinum03": {
+      "frame": "114",
+      "issue": "Dotted bright outline on oblique rear edge at native rectangle (505,350,570,460).",
+      "action": "Candidate04 adds a continuous non-emissive rear metal bevel lip; app retest pending."
+    },
+    "platinum04": {
+      "frame": "113",
+      "issue": "Oblique dots persisted on the front-side bevel despite the rear lip.",
+      "action": "Candidate05 applies a dark non-emissive lip to the narrow front/rear/side perimeter bevel, leaving broad front texture unchanged."
+    },
+    "platinum05": {
+      "issue": "Outline improved, but broad side walls became plain with the perimeter treatment.",
+      "action": "Candidate06 restores inset wall color texture without emission; only narrow bevel lips remain plain."
+    },
+    "platinum06": {
+      "issue": "Restoring the unbounded wall color texture reintroduced a thin bright dotted outline even with zero emission.",
+      "action": "Candidate07 bounds textured-wall reflectance by the successful candidate05 plain-wall RGB and uses its same roughness."
+    }
+  },
+  "dense_turn_review": {
+    "iron": {
+      "candidate": "03",
+      "turn_overview_reviewed": true,
+      "additional_4x_frames_reviewed": [
+        "113",
+        "124",
+        "147"
+      ],
+      "result": "No isolated white edge specks or broken bright outline segments observed in these intermediate app views."
+    },
+    "bronze": {
+      "candidate": "02",
+      "turn_overview_reviewed": true,
+      "additional_4x_frames_reviewed": [
+        "094",
+        "105",
+        "115"
+      ],
+      "result": "No isolated white edge specks or broken bright outline segments observed in these intermediate app views."
+    },
+    "steel": {
+      "candidate": "03",
+      "turn_overview_reviewed": true,
+      "additional_4x_frames_reviewed": [
+        "118",
+        "130",
+        "141"
+      ],
+      "result": "No isolated white edge specks or broken bright outline segments observed in these intermediate app views."
+    },
+    "silver": {
+      "candidate": "04",
+      "turn_overview_reviewed": true,
+      "additional_4x_frames_reviewed": [
+        "116",
+        "128",
+        "139"
+      ],
+      "result": "No isolated white edge specks or broken bright outline segments observed in these intermediate app views."
+    },
+    "diamond": {
+      "candidate": "04",
+      "turn_overview_reviewed": true,
+      "additional_4x_frames_reviewed": [
+        "104",
+        "116",
+        "128",
+        "139",
+        "151",
+        "162"
+      ],
+      "result": "No isolated white edge specks or broken bright outline segments observed in these intermediate app views."
+    },
+    "platinum": {
+      "candidate": "07",
+      "turn_overview_reviewed": true,
+      "additional_4x_frames_reviewed": [
+        "090",
+        "103",
+        "117",
+        "131",
+        "145",
+        "159"
+      ],
+      "result": "Outer walls moderated successfully; two isolated bright inner-outline samples remain in rear oblique frame117. Candidate08 extends the bounded textured guard by one rear face row."
+    }
+  }
+}

@@ -1,0 +1,20 @@
+{
+  "front.png": {
+    "whole_frame_mean_abs_channel_difference": 2.049604766803841,
+    "maximum_channel_difference": 60,
+    "changed_pixels": 166198,
+    "purpose": "Material appearance change; geometry/normal identity is checked separately at the USD attribute level."
+  },
+  "app_light_front.png": {
+    "whole_frame_mean_abs_channel_difference": 2.09076731824417,
+    "maximum_channel_difference": 61,
+    "changed_pixels": 167486,
+    "purpose": "Material appearance change; geometry/normal identity is checked separately at the USD attribute level."
+  },
+  "three_quarter.png": {
+    "whole_frame_mean_abs_channel_difference": 1.4363001543209877,
+    "maximum_channel_difference": 53,
+    "changed_pixels": 145410,
+    "purpose": "Material appearance change; geometry/normal identity is checked separately at the USD attribute level."
+  }
+}

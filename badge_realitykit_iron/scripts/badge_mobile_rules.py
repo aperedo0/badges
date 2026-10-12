@@ -180,6 +180,10 @@ def fold_bevels_into_facets(obj, settings, merge_degrees):
         return best
 
     def interpolated_normal(t, q):
+        # Flat planes already have one exact float32 normal. Return it unchanged
+        # so their folded subpixel strips remain bit-identical to the owner.
+        if np.array_equal(normals[t.loops[0]], normals[t.loops[1]]) and np.array_equal(normals[t.loops[0]], normals[t.loops[2]]):
+            return normals[t.loops[0]].copy()
         a, b, c = tri_points(t)
         v0, v1, v2 = b - a, c - a, q - a
         d00, d01, d11 = v0.dot(v0), v0.dot(v1), v1.dot(v1)
@@ -470,7 +474,7 @@ def export_usdz(objects, out_usdz, prim_order=None):
         prim.GetParent().SetDisplayName(name)
         prim.SetCustomDataByKey('sourceObjectName', name)
     # Restore frozen enclosure specifications to preserve even indexed UV representation.
-    silver = Usd.Stage.Open('/Users/antonioperedo/Downloads/badge_realitykit_iron/source/silver_v3/silver_badge_mobile.usdz')
+    silver = Usd.Stage.Open(str(Path(__file__).resolve().parents[1]/'source/silver_v3/silver_badge_mobile.usdz'))
     for source in silver.GetPrimAtPath('/Badge').GetChildren():
         if source.GetName() in ('_materials', 'Emblem___faceted_compass_spear'):
             continue

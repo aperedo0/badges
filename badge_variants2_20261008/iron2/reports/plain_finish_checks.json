@@ -1,0 +1,38 @@
+{
+  "all_plain_lower_fifth_checks_pass": true,
+  "normal_map_count": 0,
+  "maps": [
+    {
+      "file": "Iron2_Border_Satin_color.png",
+      "dimensions": [
+        1024,
+        1024
+      ],
+      "plain_lower_fifth_max_channel_difference": 0
+    },
+    {
+      "file": "Iron2_Border_Satin_roughness.png",
+      "dimensions": [
+        1024,
+        1024
+      ],
+      "plain_lower_fifth_max_channel_difference": 0
+    },
+    {
+      "file": "Iron2_PlateLeft_Satin_color.png",
+      "dimensions": [
+        1024,
+        1024
+      ],
+      "plain_lower_fifth_max_channel_difference": 0
+    },
+    {
+      "file": "Iron2_PlateLeft_Satin_roughness.png",
+      "dimensions": [
+        1024,
+        1024
+      ],
+      "plain_lower_fifth_max_channel_difference": 0
+    }
+  ]
+}

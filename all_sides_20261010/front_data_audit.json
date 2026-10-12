@@ -1,0 +1,242 @@
+{
+  "iron": [
+    {
+      "mesh": "/Iron2/Iron2_PlateLeft_Satin",
+      "front_triangles": 14112,
+      "positions_equal": true,
+      "normals_equal": true,
+      "uv_equal": true,
+      "material_paths_equal": true
+    },
+    {
+      "mesh": "/Iron2/Iron2_InnerReveal_Satin",
+      "front_triangles": 896,
+      "positions_equal": true,
+      "normals_equal": true,
+      "uv_equal": true,
+      "material_paths_equal": true
+    },
+    {
+      "mesh": "/Iron2/Iron2_Border_Satin",
+      "front_triangles": 5376,
+      "positions_equal": true,
+      "normals_equal": true,
+      "uv_equal": true,
+      "material_paths_equal": true
+    },
+    {
+      "mesh": "/Iron2/Iron2_PlateRight_Satin",
+      "front_triangles": 14112,
+      "positions_equal": true,
+      "normals_equal": true,
+      "uv_equal": true,
+      "material_paths_equal": true
+    },
+    {
+      "mesh": "/Iron2/Iron2_InnerChannel_Satin",
+      "front_triangles": 1792,
+      "positions_equal": true,
+      "normals_equal": true,
+      "uv_equal": true,
+      "material_paths_equal": true
+    },
+    {
+      "mesh": "/Iron2/Iron2_InnerLip_Satin",
+      "front_triangles": 896,
+      "positions_equal": true,
+      "normals_equal": true,
+      "uv_equal": true,
+      "material_paths_equal": true
+    }
+  ],
+  "bronze": [
+    {
+      "mesh": "/BronzeSun/BronzeSun_Dome",
+      "front_triangles": 15840,
+      "positions_equal": true,
+      "normals_equal": true,
+      "uv_equal": true,
+      "material_paths_equal": true
+    },
+    {
+      "mesh": "/BronzeSun/BronzeSun_OuterLip",
+      "front_triangles": 1600,
+      "positions_equal": true,
+      "normals_equal": true,
+      "uv_equal": true,
+      "material_paths_equal": true
+    },
+    {
+      "mesh": "/BronzeSun/BronzeSun_InnerLip",
+      "front_triangles": 1600,
+      "positions_equal": true,
+      "normals_equal": true,
+      "uv_equal": true,
+      "material_paths_equal": true
+    },
+    {
+      "mesh": "/BronzeSun/BronzeSun_Channel",
+      "front_triangles": 320,
+      "positions_equal": true,
+      "normals_equal": true,
+      "uv_equal": true,
+      "material_paths_equal": true
+    },
+    {
+      "mesh": "/BronzeSun/BronzeSun_Ray1",
+      "front_triangles": 2,
+      "positions_equal": true,
+      "normals_equal": true,
+      "uv_equal": true,
+      "material_paths_equal": true
+    },
+    {
+      "mesh": "/BronzeSun/BronzeSun_Ray2",
+      "front_triangles": 2,
+      "positions_equal": true,
+      "normals_equal": true,
+      "uv_equal": true,
+      "material_paths_equal": true
+    },
+    {
+      "mesh": "/BronzeSun/BronzeSun_Ray3",
+      "front_triangles": 2,
+      "positions_equal": true,
+      "normals_equal": true,
+      "uv_equal": true,
+      "material_paths_equal": true
+    },
+    {
+      "mesh": "/BronzeSun/BronzeSun_Ray4",
+      "front_triangles": 2,
+      "positions_equal": true,
+      "normals_equal": true,
+      "uv_equal": true,
+      "material_paths_equal": true
+    },
+    {
+      "mesh": "/BronzeSun/BronzeSun_Ray5",
+      "front_triangles": 2,
+      "positions_equal": true,
+      "normals_equal": true,
+      "uv_equal": true,
+      "material_paths_equal": true
+    },
+    {
+      "mesh": "/BronzeSun/BronzeSun_Ray6",
+      "front_triangles": 2,
+      "positions_equal": true,
+      "normals_equal": true,
+      "uv_equal": true,
+      "material_paths_equal": true
+    },
+    {
+      "mesh": "/BronzeSun/BronzeSun_Ray7",
+      "front_triangles": 2,
+      "positions_equal": true,
+      "normals_equal": true,
+      "uv_equal": true,
+      "material_paths_equal": true
+    },
+    {
+      "mesh": "/BronzeSun/BronzeSun_Ray8",
+      "front_triangles": 2,
+      "positions_equal": true,
+      "normals_equal": true,
+      "uv_equal": true,
+      "material_paths_equal": true
+    }
+  ],
+  "steel": [
+    {
+      "mesh": "/SilverChevron/SilverChevron_Upper",
+      "front_triangles": 114,
+      "positions_equal": true,
+      "normals_equal": true,
+      "uv_equal": true,
+      "material_paths_equal": true
+    },
+    {
+      "mesh": "/SilverChevron/SilverChevron_Lower",
+      "front_triangles": 114,
+      "positions_equal": true,
+      "normals_equal": true,
+      "uv_equal": true,
+      "material_paths_equal": true
+    }
+  ],
+  "silver": [
+    {
+      "mesh": "/Silver2/Silver2_LeafBlades_Satin",
+      "front_triangles": 4464,
+      "positions_equal": true,
+      "normals_equal": true,
+      "uv_equal": true,
+      "material_paths_equal": true
+    },
+    {
+      "mesh": "/Silver2/Silver2_LeafEdges_Satin",
+      "front_triangles": 4464,
+      "positions_equal": true,
+      "normals_equal": true,
+      "uv_equal": true,
+      "material_paths_equal": true
+    },
+    {
+      "mesh": "/Silver2/Silver2_Stems_Satin",
+      "front_triangles": 5120,
+      "positions_equal": true,
+      "normals_equal": true,
+      "uv_equal": true,
+      "material_paths_equal": true
+    },
+    {
+      "mesh": "/Silver2/Silver2_Star_Satin",
+      "front_triangles": 10,
+      "positions_equal": true,
+      "normals_equal": true,
+      "uv_equal": true,
+      "material_paths_equal": true
+    },
+    {
+      "mesh": "/Silver2/Silver2_InnerLeaves_Satin",
+      "front_triangles": 2976,
+      "positions_equal": true,
+      "normals_equal": true,
+      "uv_equal": true,
+      "material_paths_equal": true
+    },
+    {
+      "mesh": "/Silver2/Silver2_UpperLeaves_Satin",
+      "front_triangles": 2976,
+      "positions_equal": true,
+      "normals_equal": true,
+      "uv_equal": true,
+      "material_paths_equal": true
+    }
+  ],
+  "gold": [
+    {
+      "new_full_volume_geometry": true,
+      "front_geometry_preservation_required": false,
+      "reference_front_appearance_review_required": true
+    }
+  ],
+  "platinum": [
+    {
+      "mesh": "/PlatinumKnot/PlatinumKnot_ContinuousBeveledRibbon",
+      "front_triangles": 21855,
+      "positions_equal": true,
+      "normals_equal": true,
+      "uv_equal": false,
+      "material_paths_equal": false
+    }
+  ],
+  "diamond": [
+    {
+      "new_full_volume_geometry": true,
+      "front_geometry_preservation_required": false,
+      "reference_front_appearance_review_required": true
+    }
+  ]
+}

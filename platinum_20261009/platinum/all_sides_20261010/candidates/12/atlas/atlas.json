@@ -1,0 +1,30 @@
+{
+  "method": "Native app front appearance transferred along the continuous ribbon, with front-hidden sections filled from visible neighboring sections. Rear albedo and emission solved against measured rear studio light. Thin side and bevel guards retain the installed front outline and avoid mixed silhouette pixels.",
+  "front_visible": [
+    663,
+    664,
+    664,
+    667,
+    669,
+    677,
+    680,
+    681,
+    682,
+    682,
+    683
+  ],
+  "rear_calibration_valid": [
+    327,
+    375,
+    536,
+    510,
+    513,
+    536,
+    566,
+    503,
+    421,
+    402,
+    389
+  ],
+  "emission_scale": 3
+}

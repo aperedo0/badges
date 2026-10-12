@@ -1,0 +1,47 @@
+{
+  "all_shader_spaces_and_UV_readers_correct": true,
+  "strength_baked_in_PNG": true,
+  "normal_maps": [],
+  "texture_connections": [
+    {
+      "shader": "/Silver2/Materials/Silver2_LeafLit_Satin/diffuseColor",
+      "normal": false,
+      "file": "@0/Silver2_LeafLit_Satin_color.png@"
+    },
+    {
+      "shader": "/Silver2/Materials/Silver2_LeafLit_Satin/roughness",
+      "normal": false,
+      "file": "@0/Silver2_LeafLit_Satin_roughness.png@"
+    },
+    {
+      "shader": "/Silver2/Materials/Silver2_StarLit_Satin/diffuseColor",
+      "normal": false,
+      "file": "@0/Silver2_StarLit_Satin_color.png@"
+    },
+    {
+      "shader": "/Silver2/Materials/Silver2_StarLit_Satin/roughness",
+      "normal": false,
+      "file": "@0/Silver2_StarLit_Satin_roughness.png@"
+    },
+    {
+      "shader": "/Silver2/Materials/Silver2_StarShaded_Satin/diffuseColor",
+      "normal": false,
+      "file": "@0/Silver2_StarShaded_Satin_color.png@"
+    },
+    {
+      "shader": "/Silver2/Materials/Silver2_StarShaded_Satin/roughness",
+      "normal": false,
+      "file": "@0/Silver2_StarShaded_Satin_roughness.png@"
+    },
+    {
+      "shader": "/Silver2/Materials/Silver2_LeafShaded_Satin/diffuseColor",
+      "normal": false,
+      "file": "@0/Silver2_LeafShaded_Satin_color.png@"
+    },
+    {
+      "shader": "/Silver2/Materials/Silver2_LeafShaded_Satin/roughness",
+      "normal": false,
+      "file": "@0/Silver2_LeafShaded_Satin_roughness.png@"
+    }
+  ]
+}

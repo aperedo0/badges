@@ -1,0 +1,59 @@
+{
+  "kind": "gold",
+  "triangles": 42580,
+  "bytes": 3445768,
+  "bounds": [
+    [
+      -3.1890629448704133,
+      -2.455,
+      -0.721
+    ],
+    [
+      3.1890629448704133,
+      1.9958366985998532,
+      0.721
+    ]
+  ],
+  "float_gap": 0.43999999999999995,
+  "closed_meshes": {
+    "GoldCrown_HollowBand": true,
+    "GoldCrown_ScallopedShell": true,
+    "GoldCrown_RoundedScallopLip": true,
+    "GoldCrown_ValleyFlange1": true,
+    "GoldCrown_ValleyFlange2": true,
+    "GoldCrown_ValleyFlange3": true,
+    "GoldCrown_ValleyFlange4": true,
+    "GoldCrown_UpperBandLip": true,
+    "GoldCrown_LowerBandLip": true,
+    "GoldCrown_Finial1": true,
+    "GoldCrown_Collar1": true,
+    "GoldCrown_Finial2": true,
+    "GoldCrown_Collar2": true,
+    "GoldCrown_Finial3": true,
+    "GoldCrown_Collar3": true,
+    "GoldCrown_Finial4": true,
+    "GoldCrown_Collar4": true,
+    "GoldCrown_Finial5": true,
+    "GoldCrown_Collar5": true
+  },
+  "sha256": "5044d0e77b9d0fc8d0c2d56fe106cb205ecddf37f17b41f24f7bcb66af901119",
+  "compliance": {
+    "errors": [],
+    "failed_checks": [],
+    "warnings": []
+  },
+  "settings": {
+    "color": [
+      0.65,
+      0.4,
+      0.04
+    ],
+    "roughness": 0.32,
+    "textures": {
+      "diffuseColor": "color.png",
+      "emissiveColor": "emissive.png"
+    },
+    "emissive_scale": 3.0,
+    "master": true
+  }
+}

@@ -1,0 +1,11 @@
+constant float kIndexGreen = 2.423;
+constant float kIndexRed = 2.4065;
+constant float kIndexBlue = 2.4485;
+constant int kMaxInternalHits = 5;
+constant float3 kAbsorptionPerUnit = float3(0.12, 0.05, 0.012);
+constant float kSharpMipLevel = 1.0;
+constant float kSharpClamp = 40.0;
+constant float kTentMipLevel = 6.0;
+constant float kTentGain = 1.0;
+constant float kExposure = 1.0;
+constant float kPlaneRoundingTolerance = 0.004;

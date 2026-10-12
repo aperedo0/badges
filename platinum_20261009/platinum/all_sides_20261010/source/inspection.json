@@ -1,0 +1,124 @@
+{
+  "layer": "/Users/antonioperedo/Desktop/badges/platinum_20261009/platinum/all_sides_20261010/source/installed/badge.usdc",
+  "meshes": [
+    {
+      "path": "/PlatinumKnot/PlatinumKnot_ContinuousBeveledRibbon",
+      "vertices": 21504,
+      "faces": 43008,
+      "triangles": 43008,
+      "counts": [
+        3
+      ],
+      "bounds": [
+        [
+          -2.8524208068847656,
+          -2.4549999237060547,
+          -0.7828716039657593
+        ],
+        [
+          2.8524208068847656,
+          2.902362585067749,
+          0.7828716039657593
+        ]
+      ],
+      "normals": "faceVarying",
+      "material": [
+        "/PlatinumKnot/Materials/PlatinumKnot_Front"
+      ],
+      "subsets": [
+        {
+          "path": "/PlatinumKnot/PlatinumKnot_ContinuousBeveledRibbon/Material_0",
+          "faces": 21504,
+          "material": [
+            "/PlatinumKnot/Materials/PlatinumKnot_Front"
+          ]
+        },
+        {
+          "path": "/PlatinumKnot/PlatinumKnot_ContinuousBeveledRibbon/Material_1",
+          "faces": 21504,
+          "material": [
+            "/PlatinumKnot/Materials/PlatinumKnot_Back"
+          ]
+        }
+      ],
+      "uv": [
+        {
+          "name": "BadgeUV",
+          "interpolation": "faceVarying",
+          "len": 129024
+        },
+        {
+          "name": "displayColor",
+          "interpolation": "constant",
+          "len": 0
+        },
+        {
+          "name": "displayOpacity",
+          "interpolation": "constant",
+          "len": 0
+        }
+      ]
+    }
+  ],
+  "materials": [
+    {
+      "path": "/PlatinumKnot/Materials/PlatinumKnot_Front/Surface",
+      "inputs": {
+        "diffuseColor": {
+          "value": "(0.45, 0.49, 0.56)",
+          "sources": [
+            "/PlatinumKnot/Materials/PlatinumKnot_Front/diffuseColor"
+          ]
+        },
+        "emissiveColor": {
+          "value": "None",
+          "sources": [
+            "/PlatinumKnot/Materials/PlatinumKnot_Front/emissiveColor"
+          ]
+        },
+        "metallic": {
+          "value": "1.0",
+          "sources": []
+        },
+        "roughness": {
+          "value": "0.30000001192092896",
+          "sources": []
+        }
+      }
+    },
+    {
+      "path": "/PlatinumKnot/Materials/PlatinumKnot_Back/Surface",
+      "inputs": {
+        "diffuseColor": {
+          "value": "(0.28, 0.3, 0.34)",
+          "sources": []
+        },
+        "metallic": {
+          "value": "1.0",
+          "sources": []
+        },
+        "roughness": {
+          "value": "0.4000000059604645",
+          "sources": []
+        }
+      }
+    },
+    {
+      "path": "/PlatinumKnot/Materials/PlatinumKnot_Edges/Surface",
+      "inputs": {
+        "diffuseColor": {
+          "value": "(0.45, 0.49, 0.56)",
+          "sources": []
+        },
+        "metallic": {
+          "value": "1.0",
+          "sources": []
+        },
+        "roughness": {
+          "value": "0.3199999928474426",
+          "sources": []
+        }
+      }
+    }
+  ]
+}

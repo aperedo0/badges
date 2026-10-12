@@ -1,0 +1,55 @@
+{
+  "arkit_compliance": "PASS",
+  "meshes": [
+    {
+      "name": "PlatinumKnot_ContinuousBeveledRibbon",
+      "vertices": 21504,
+      "triangles": 43008,
+      "uv": "BadgeUV",
+      "closed": true
+    }
+  ],
+  "textures_match_package": [
+    {
+      "member": "0/color.png",
+      "sha256": "a1fef52136883f54ec0d59e9e88ba58f6039963c164dc95e8aa305dca4b778f1"
+    },
+    {
+      "member": "0/emissive.png",
+      "sha256": "22e507917521b0a4bfb5e16156e7634b5a8b0771958773e7a2248469cf7e9737"
+    }
+  ],
+  "reimport_triangles": 43008,
+  "reimport_images": [
+    {
+      "name": "color.png",
+      "dimensions": [
+        1024,
+        1024
+      ],
+      "packed": true
+    },
+    {
+      "name": "emissive.png",
+      "dimensions": [
+        1024,
+        1024
+      ],
+      "packed": true
+    }
+  ],
+  "editable_master_packed_textures": true,
+  "no_transforms_or_scene_items": true,
+  "bounds": [
+    [
+      -2.8524208068847656,
+      -2.4549999237060547,
+      -0.7828716039657593
+    ],
+    [
+      2.8524208068847656,
+      2.902362585067749,
+      0.7828716039657593
+    ]
+  ]
+}

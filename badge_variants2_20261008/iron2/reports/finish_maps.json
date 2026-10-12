@@ -1,0 +1,33 @@
+{
+  "materials": {
+    "0": {
+      "diffuseColor": "Iron2_PlateLeft_Satin_color.png",
+      "roughness": "Iron2_PlateLeft_Satin_roughness.png"
+    },
+    "2": {
+      "diffuseColor": "Iron2_Border_Satin_color.png",
+      "roughness": "Iron2_Border_Satin_roughness.png"
+    },
+    "3": {
+      "diffuseColor": "Iron2_PlateLeft_Satin_color.png",
+      "roughness": "Iron2_PlateLeft_Satin_roughness.png"
+    }
+  },
+  "evidence": {
+    "method": "Fine reference-derived worked-metal color, lighting removed; even satin roughness; no metal normal maps.",
+    "minimum_feature_reference_sigma_pixels": 0,
+    "method_version": "linear-light reference reflectance ratio,1024px, no texture pre-blur",
+    "scoring_sigma_pixels": 5.2,
+    "maximum_normal_tilt_degrees": null,
+    "relief_height_scale_world": null,
+    "normal_maps": 0,
+    "reference_detail_exception": "Fine reference marks retained in color only (about1to2screenpixels); bounded contrast, filtered at texture sampling, never specular-normal or roughness grain. Coarse broadening made the earlier candidates look pebbled.",
+    "owner_authorization": "Earlier explicit approval: Test restrained normal maps for a closer reference match, applied to Iron tier material revision.",
+    "resolution": [
+      1024,
+      1024
+    ],
+    "lower_plain_fraction": 0.2,
+    "full_finish_fraction": 0.44
+  }
+}

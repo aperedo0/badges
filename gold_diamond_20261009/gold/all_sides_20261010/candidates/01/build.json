@@ -1,0 +1,27 @@
+{
+  "tier": "gold",
+  "installed_sha256": "2306ce19a8d9fabb804775350c6d7677901a29283fe5fa80914a790ca6b638a2",
+  "sha256": "29cd74de9718fd7187b59e7fcb6f8a41ecd021479b9a6ece8515a1bb1090a0b3",
+  "triangles": 51120,
+  "bytes": 6676581,
+  "bounds": [
+    [
+      -3.0246286392211914,
+      -2.4549999237060547,
+      -3.2799999713897705
+    ],
+    [
+      3.0246286392211914,
+      2.1740000247955322,
+      3.2799999713897705
+    ]
+  ],
+  "arkit_errors": [],
+  "arkit_failed_checks": [],
+  "changes": [
+    {
+      "design": "Continuous circular hollow gold band and ten scalloped points with gold finials and amber cabochons around the full circumference.",
+      "front_style": "Installed gold maps retained for polished gold faces; darker physical metal inside and at narrow trim."
+    }
+  ]
+}

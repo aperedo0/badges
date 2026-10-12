@@ -1,0 +1,29 @@
+{
+  "tier": "gold",
+  "installed_sha256": "2306ce19a8d9fabb804775350c6d7677901a29283fe5fa80914a790ca6b638a2",
+  "sha256": "18d1c8e64115f316a0dea20cd135bb4473259ffb0e8f7c9b5413e54d99684ef7",
+  "triangles": 35080,
+  "bytes": 5701084,
+  "bounds": [
+    [
+      -3.0753746032714844,
+      -2.4549999237060547,
+      -3.346564531326294
+    ],
+    [
+      3.0753746032714844,
+      2.861105442047119,
+      3.346564531326294
+    ]
+  ],
+  "arkit_errors": [],
+  "arkit_failed_checks": [],
+  "changes": [
+    {
+      "test_only": true,
+      "baked_tilt_degrees": 10,
+      "xz_scale": 0.997,
+      "reason": "Fit every turn within the 6.7-unit picture frame. Baked tilt leans away on the rear."
+    }
+  ]
+}

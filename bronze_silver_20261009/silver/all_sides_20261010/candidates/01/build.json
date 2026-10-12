@@ -1,0 +1,41 @@
+{
+  "tier": "steel",
+  "installed_sha256": "74570f1a5776139ed80cf3b5d9e38ad42a87f3e03ffa399c87c6870d7ca8bc93",
+  "sha256": "37287c82f73cf8b2072b0cb3fdcc05d5248090ab16a6abcc7aec64122919f005",
+  "triangles": 600,
+  "bytes": 708925,
+  "bounds": [
+    [
+      -2.8134961128234863,
+      -2.4549999237060547,
+      -0.30000001192092896
+    ],
+    [
+      2.8134961128234863,
+      2.829599618911743,
+      0.30000001192092896
+    ]
+  ],
+  "arkit_errors": [],
+  "arkit_failed_checks": [],
+  "changes": [
+    {
+      "mesh": "/SilverChevron/SilverChevron_Upper",
+      "front_triangles_preserved": 114,
+      "front_data_identical": true,
+      "back_maps_match_front": true,
+      "paired_mirror_x": false,
+      "max_pairing_error": 0.00438523835182269,
+      "triangles": 300
+    },
+    {
+      "mesh": "/SilverChevron/SilverChevron_Lower",
+      "front_triangles_preserved": 114,
+      "front_data_identical": true,
+      "back_maps_match_front": true,
+      "paired_mirror_x": false,
+      "max_pairing_error": 0.004385792362994372,
+      "triangles": 300
+    }
+  ]
+}

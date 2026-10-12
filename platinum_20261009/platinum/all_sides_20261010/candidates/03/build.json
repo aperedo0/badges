@@ -1,0 +1,27 @@
+{
+  "tier": "platinum",
+  "installed_sha256": "6ba3c309bc8d9861c28ed66230f1fbaf5d23b0106e97ddddf6263095403ce371",
+  "sha256": "b4859247571e6ca2fb034747d74d4b50056ba55a3e8c7c823cfdcfa2ae6ff173",
+  "triangles": 43008,
+  "bytes": 3657045,
+  "bounds": [
+    [
+      -2.8524208068847656,
+      -2.4549999237060547,
+      -0.7828716039657593
+    ],
+    [
+      2.8524208068847656,
+      2.902362585067749,
+      0.7828716039657593
+    ]
+  ],
+  "arkit_errors": [],
+  "arkit_failed_checks": [],
+  "changes": [
+    {
+      "wall_faces": 6327,
+      "method": "Side-wall UVs sample 0.12 units inside the ribbon rather than the front silhouette, preventing background and outline-band stripes. Main front surfaces and textures remain unchanged; grazing wall shading is moderate and textured."
+    }
+  ]
+}
