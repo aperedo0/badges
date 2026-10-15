@@ -1,0 +1,25 @@
+{
+  "name": "round",
+  "planes": 177,
+  "plane_work_relative_to_89": 1.9887640449438202,
+  "triangles": 414,
+  "bytes": 31620,
+  "band_bottom": 0.85345,
+  "band_top": 0.95345,
+  "band_center_delta": 0.0,
+  "pavilion_degrees": 46.67914478015648,
+  "radial_scale": 1.0,
+  "bounds": [
+    [
+      -3.12,
+      -2.4549999999999996,
+      -3.12
+    ],
+    [
+      3.12,
+      2.349,
+      3.1200000000000006
+    ]
+  ],
+  "model_sha256": "be3c78a6c5f6b86ce8f8f08d256c01e69bddb6cebf5961e6073b170d256ca819"
+}

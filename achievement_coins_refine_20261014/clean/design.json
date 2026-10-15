@@ -1,0 +1,36 @@
+{
+  "name": "clean",
+  "reference": "/Users/antonioperedo/Downloads/ChatGPT Image Oct 13, 2026, 06_56_52 PM.png",
+  "circle": [
+    624,
+    609,
+    517
+  ],
+  "features": [
+    {
+      "role": "water",
+      "front_count": 3438,
+      "triangles": 4414
+    },
+    {
+      "role": "water",
+      "front_count": 721,
+      "triangles": 1071
+    },
+    {
+      "role": "water",
+      "front_count": 443,
+      "triangles": 717
+    },
+    {
+      "role": "silver",
+      "front_count": 847,
+      "triangles": 1621
+    },
+    {
+      "role": "background",
+      "front_count": 256,
+      "triangles": 256
+    }
+  ]
+}

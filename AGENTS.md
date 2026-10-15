@@ -11,8 +11,8 @@ Read this before working on a badge. It applies to every agent (Codex, Claude, a
 
 **How a badge gets made:**
 1. **Reference.** Start from the owner's reference image or request, and the tier's place in the ladder.
-2. **Model.** Build it inside the app contract (section 2), using the techniques that work (section 4).
-3. **Test in the app.** Put it in the app and take a screenshot (section 5). Blender renders are only for working.
+2. **Model in Blender.** Import a working copy of the complete existing badge, including its shell and rim, then build and inspect the new design there. Follow section 2 and the Blender workflow in section 4.
+3. **Final test in the app.** Once the model looks ready in Blender, put it in the app and inspect every side (section 5). Do not repeatedly build the app to inspect unfinished geometry. Blender renders are only for working.
 4. **Measure and match.** Compare with the reference at the same size. If it is not getting closer, measure the app's light and solve for the colors (section 4) instead of guessing again.
 5. **Deliver.** Show the owner side by sides, with options when the look is a judgment call (section 6).
 
@@ -35,6 +35,7 @@ Both kinds of badge:
 
 Coins (round, stand in the floor):
 5. **Frozen shell** copied exactly from the shipped silver (`badge_realitykit_silver/mobile/silver_badge_mobile.usdz`, never edit it): casing, rim, lips, channel, inset, same radius 3.015, same names. The app finds `Casing___smooth_rounded_outer_edge_mobile_geometry` and `Silver___circumferential_brushed_steel` by name.
+   **Owner-authorized new coin standard, 2026-10-14:** new coins use a wider flat metal band with short bevels, still protruding above a recessed emblem background. Canonical working geometry: `water_match_20261014/shell_template.usdz`, `shell_geometry.npz`, and `shell_design.json`. Outer radius 3.015, inner radius 2.420, band width 0.595, total casing depth 0.760. The front rim is at Z 0.215; a plain background is at Z 0.044. Keep the floor cut, identity transforms and the app's casing/material names. The five mockup coins use this geometry, with individual material finishes. Preserve the shipped silver source and existing installed badges. The owner can refine the new standard after reviewing the app results.
 6. **Floor cut** at Y = -2.895, no cap (the coin sinks 0.12 units into the floor; nothing below it may ship).
 
 Shapes (custom outline, float above the floor):
@@ -62,6 +63,14 @@ Diamond (drawn by the app's gem shader, 2026-10-11):
 
 ## 4. Techniques
 
+**Blender first, app at the end (owner's workflow, 2026-10-14):**
+- Bring the complete current badge into Blender, rather than working on an isolated emblem. For a new coin, include the new coin standard in section 2 so the actual rim, inset, size and depth guide the design.
+- Keep the source untouched. Existing approved badges retain their frozen shells; new coins use the owner-authorized replacement in section 2. Preserve the chosen shell data and names when packaging the final USDZ, rather than changing it through a Blender round trip.
+- Build and inspect the raised shapes, bevels and materials in Blender, with the reference visible. Check front, both sides, back and the full rotation before exporting. Scripts may create or repeat parts, but inspect the complete result in Blender.
+- Prefer the live Blender MCP connection when available: edit the open working scene through Blender's API, then inspect viewport captures after major changes. Verify the connection and viewport capture first. Background Blender is a fallback; say which method is actually being used. Computer Use is optional when the live add-on already supplies editing and visual inspection.
+- Use the app for final validation once the design is ready. Its lighting and rendering remain authoritative, so Blender alone cannot prove the final appearance. If that final check reveals a problem, fix that problem and recheck; avoid repeated app builds for routine shape development.
+- Keep owner-facing comparisons short. Do not create large review folders or packs in Downloads unless the owner explicitly asks for them.
+
 What works:
 - **Match a reference by measuring, not guessing.** Render the badge once in the app with an even color to measure the light on every point of every face, then compute each texture pixel's color as target divided by light, and add emissive for what the light cannot reach. Silver 2's star went from clay to the reference's look in one pass this way, after 34 guessed candidates. Scripts and README: `silver2_metal_claude/` (`try.sh` tests in the app, `solve2.py` solves, `agx.py` inverts the app's view transform). They are built around Silver 2's star (its ten flat faces, each with its own texture area): reuse the method and `agx.py` as they are, and adapt the face and texture mapping for any other badge.
 - **Shape in geometry.** Facets are real flat planes (every triangle of one plane shares one normal), dents and bevels are real faces.
@@ -86,6 +95,14 @@ What does not:
 - **Patching the outline after the solve** (replacing the outermost strip of a finished map with the nearest inner texel): it removed some white rims but left dark notches on thin tips, black bands where a side wall shows, or no change where the rim sits a few pixels inside (2026-10-10). Fix the outline in the solve instead.
 - **Painting an inside color into the outline strip:** light patches on thin flames and a changed dome ring. **Darkening without a smooth ratio and a floor:** dashed edges and black leaf tips (2026-10-10).
 - **Checking only a couple of zoomed spots:** missed edges came back in review. Check every tip, point and long edge at 4x zoom against the previous version.
+
+What fixed the outlines for good (Copper, Bronze, Platinum, 2026-10-13, `rim_fix_20261012/`, REPORT.md and tools there):
+- **The darken-only outline strip itself became a dark or orange stroke** (the owner still saw "weird outlines"). Repaint the outermost 3 screen pixels of the texture as the smooth (harmonic) continuation of the texels just inside, narrower on thin tips, and refill everything outside the shape by pull push so mipmaps never bleed a rim (`tools/bandfill.py`).
+- **A thin edge lip with its own dark material draws a 1 px line around everything.** Give the lip the normals and texture coordinates of the face it borders and a dimmed (about half) copy of that face's material (`tools/lipfix.py`). A lip at full brightness draws a light line instead.
+- **Rounded edges mirror a different part of the studio than the face** (dark or white rim). Blend the normals within about 0.07 units of the edge toward the normal just inside (`tools/edgeflat.py`).
+- **Side walls:** plain metal (no texture: a wall sampling the face texture zips and streaks from behind), dark but not black, roughness 0.5 to 0.6, normals blended about 70% toward the nearest face.
+- **Look for real gaps:** Bronze's dashed ring was a 0.015 unit see-through gap and a hairline between two beads.
+- Blender's USD writes the file about twice as big: re-save with `/usr/bin/usdcat`.
 
 ## 5. Testing in the app (required before showing the owner)
 

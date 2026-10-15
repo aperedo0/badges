@@ -1,0 +1,25 @@
+{
+  "name": "shallow",
+  "planes": 89,
+  "plane_work_relative_to_89": 1.0,
+  "triangles": 206,
+  "bytes": 16643,
+  "band_bottom": 0.2571746219866271,
+  "band_top": 0.3571746219866271,
+  "band_center_delta": -0.5962753780133729,
+  "pavilion_degrees": 41.0,
+  "radial_scale": 1.0,
+  "bounds": [
+    [
+      -3.12,
+      -2.4550000000000005,
+      -3.1200000000000006
+    ],
+    [
+      3.12,
+      2.349,
+      3.12
+    ]
+  ],
+  "model_sha256": "2a5999246d8a83bd8e2c7689420cd4fe48e73dde8b327ed866af8db78643840b"
+}

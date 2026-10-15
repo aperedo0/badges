@@ -1,0 +1,122 @@
+[
+  {
+    "name": "clean",
+    "file": "/Users/antonioperedo/Desktop/badges/achievement_coins_refine_20261014/clean/mobile/clean_badge_mobile.usdz",
+    "bytes": 4515480,
+    "triangles": 56694,
+    "shell_geometry_identical": true,
+    "floor_y": -2.895,
+    "calibration": false,
+    "sha256": "18b797bbb661170f593eb8d03282a890e329cd0b5b6fd6f1a6690809788f6953",
+    "usdchecker": "Success!",
+    "identity_transforms": true,
+    "textures_resolve": true,
+    "matching_back": true,
+    "bounds_min": [
+      -3.01487135887146,
+      -2.8949999809265137,
+      -0.9899865984916687
+    ],
+    "bounds_max": [
+      3.01487135887146,
+      3.01487135887146,
+      0.6599866151809692
+    ]
+  },
+  {
+    "name": "hourglass_teal",
+    "file": "/Users/antonioperedo/Desktop/badges/achievement_coins_refine_20261014/hourglass_teal/mobile/hourglass_teal_badge_mobile.usdz",
+    "bytes": 4867442,
+    "triangles": 87800,
+    "shell_geometry_identical": true,
+    "floor_y": -2.895,
+    "calibration": false,
+    "sha256": "ce2f0789bda0ad55a41c4d42ab11713225c908b78793e3c9ce52bb247116ffc7",
+    "usdchecker": "Success!",
+    "identity_transforms": true,
+    "textures_resolve": true,
+    "matching_back": true,
+    "bounds_min": [
+      -3.01487135887146,
+      -2.8949999809265137,
+      -0.8351454734802246
+    ],
+    "bounds_max": [
+      3.01487135887146,
+      3.01487135887146,
+      0.5051454305648804
+    ]
+  },
+  {
+    "name": "hourglass_gold",
+    "file": "/Users/antonioperedo/Desktop/badges/achievement_coins_refine_20261014/hourglass_gold/mobile/hourglass_gold_badge_mobile.usdz",
+    "bytes": 4901992,
+    "triangles": 87800,
+    "shell_geometry_identical": true,
+    "floor_y": -2.895,
+    "calibration": false,
+    "sha256": "a1e35e3c47880772b57eae4469dbd8e13a7e25da4ff9129d03593f8ec30a5496",
+    "usdchecker": "Success!",
+    "identity_transforms": true,
+    "textures_resolve": true,
+    "matching_back": true,
+    "bounds_min": [
+      -3.01487135887146,
+      -2.8949999809265137,
+      -0.8351454734802246
+    ],
+    "bounds_max": [
+      3.01487135887146,
+      3.01487135887146,
+      0.5051454305648804
+    ]
+  },
+  {
+    "name": "sunrise",
+    "file": "/Users/antonioperedo/Desktop/badges/achievement_coins_refine_20261014/sunrise/mobile/sunrise_badge_mobile.usdz",
+    "bytes": 4434224,
+    "triangles": 62864,
+    "shell_geometry_identical": true,
+    "floor_y": -2.895,
+    "calibration": false,
+    "sha256": "792f7d77afc64a36bda62a66fb23eb3b0bd00f576fdd569fb5e46bb745c59166",
+    "usdchecker": "Success!",
+    "identity_transforms": true,
+    "textures_resolve": true,
+    "matching_back": true,
+    "bounds_min": [
+      -3.01487135887146,
+      -2.8949999809265137,
+      -0.6832869648933411
+    ],
+    "bounds_max": [
+      3.01487135887146,
+      3.01487135887146,
+      0.3532869815826416
+    ]
+  },
+  {
+    "name": "sprout",
+    "file": "/Users/antonioperedo/Desktop/badges/achievement_coins_refine_20261014/sprout/mobile/sprout_badge_mobile.usdz",
+    "bytes": 4470377,
+    "triangles": 61174,
+    "shell_geometry_identical": true,
+    "floor_y": -2.895,
+    "calibration": false,
+    "sha256": "055a2bb5c046ec6abb27552805eec0a2d72e93c30bdf6c22c96edfd5ef92da21",
+    "usdchecker": "Success!",
+    "identity_transforms": true,
+    "textures_resolve": true,
+    "matching_back": true,
+    "bounds_min": [
+      -3.01487135887146,
+      -2.8949999809265137,
+      -0.6399590969085693
+    ],
+    "bounds_max": [
+      3.01487135887146,
+      3.01487135887146,
+      0.3099591135978699
+    ]
+  }
+]

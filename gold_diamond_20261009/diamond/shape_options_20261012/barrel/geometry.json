@@ -1,0 +1,25 @@
+{
+  "name": "barrel",
+  "planes": 121,
+  "plane_work_relative_to_89": 1.3595505617977528,
+  "triangles": 270,
+  "bytes": 21247,
+  "band_bottom": 0.7784500000000001,
+  "band_top": 1.02845,
+  "band_center_delta": 0.0,
+  "pavilion_degrees": 46.02298994231426,
+  "radial_scale": 1.0,
+  "bounds": [
+    [
+      -3.12,
+      -2.4549999999999996,
+      -3.12
+    ],
+    [
+      3.12,
+      2.349,
+      3.12
+    ]
+  ],
+  "model_sha256": "095961f8190ad6a51d5f1ded0013c6b14527a4a9e020559e8ca60f46fb5ef58f"
+}

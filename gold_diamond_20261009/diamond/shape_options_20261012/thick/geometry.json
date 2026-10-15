@@ -1,0 +1,25 @@
+{
+  "name": "thick",
+  "planes": 89,
+  "plane_work_relative_to_89": 1.0,
+  "triangles": 206,
+  "bytes": 16643,
+  "band_bottom": 0.7784500000000001,
+  "band_top": 1.02845,
+  "band_center_delta": 0.0,
+  "pavilion_degrees": 46.02298994231426,
+  "radial_scale": 1.0,
+  "bounds": [
+    [
+      -3.12,
+      -2.455,
+      -3.1200000000000006
+    ],
+    [
+      3.12,
+      2.349,
+      3.12
+    ]
+  ],
+  "model_sha256": "9599a2260ff191242c2761770a3a3a85875d06bb33128df1b12404a7285193e6"
+}

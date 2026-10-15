@@ -1,0 +1,34 @@
+{
+  "schema": "xcodebuildmcp.output.build-run-result",
+  "schemaVersion": "2",
+  "didError": false,
+  "error": null,
+  "data": {
+    "summary": {
+      "status": "SUCCEEDED",
+      "durationMs": 76926,
+      "target": "simulator"
+    },
+    "artifacts": {
+      "appPath": "/tmp/achievement_coin_derived_20261014/Build/Products/Debug-iphonesimulator/ScreenTimeUI.app",
+      "bundleId": "com.antonioperedo.screentime.uidev",
+      "processId": 8461,
+      "simulatorId": "85DF6D3B-6622-491A-8996-3ED0725DB273",
+      "buildLogPath": "/Users/antonioperedo/Library/Developer/XcodeBuildMCP/workspaces/badges-aa906adb7ece/logs/build_run_sim_2026-10-15T03-57-39-528Z_pid43861_7bae95d1.log",
+      "runtimeLogPath": "/Users/antonioperedo/Library/Developer/XcodeBuildMCP/workspaces/badges-aa906adb7ece/logs/com.antonioperedo.screentime.uidev_2026-10-15T03-58-40-790Z_helperpid8416_ownerpid43861_e86ed90c.log",
+      "osLogPath": "/Users/antonioperedo/Library/Developer/XcodeBuildMCP/workspaces/badges-aa906adb7ece/logs/com.antonioperedo.screentime.uidev_oslog_2026-10-15T03-58-56-149Z_helperpid8627_ownerpid43861_142c27b8.log"
+    },
+    "diagnostics": {
+      "warnings": [
+        {
+          "message": "will never be executed",
+          "location": "/tmp/achievement_coin_app_20261014/ScreenTime/Sources/Shared/Services/FocusSessionManager.swift:357"
+        }
+      ],
+      "errors": []
+    }
+  },
+  "nextSteps": [
+    "Stop app in simulator: stop_app_sim({ simulatorId: \"85DF6D3B-6622-491A-8996-3ED0725DB273\", bundleId: \"com.antonioperedo.screentime.uidev\" })"
+  ]
+}

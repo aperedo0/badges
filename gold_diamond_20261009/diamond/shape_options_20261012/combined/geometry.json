@@ -1,0 +1,25 @@
+{
+  "name": "combined",
+  "planes": 177,
+  "plane_work_relative_to_89": 1.9887640449438202,
+  "triangles": 414,
+  "bytes": 31620,
+  "band_bottom": 0.2571746219866271,
+  "band_top": 0.5071746219866271,
+  "band_center_delta": -0.521275378013373,
+  "pavilion_degrees": 41.0,
+  "radial_scale": 1.0,
+  "bounds": [
+    [
+      -3.12,
+      -2.4550000000000005,
+      -3.1200000000000006
+    ],
+    [
+      3.12,
+      2.349,
+      3.1200000000000006
+    ]
+  ],
+  "model_sha256": "f6c55c15e4128cea39081540d9c738fcee9bac9d207d1a132c3680ae117c0bed"
+}

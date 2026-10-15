@@ -1,0 +1,127 @@
+{
+  "clean": {
+    "summary": {
+      "status": "SUCCEEDED",
+      "durationMs": 66957,
+      "target": "simulator"
+    },
+    "artifacts": {
+      "appPath": "/tmp/achievement_coin_derived_20261014/Build/Products/Debug-iphonesimulator/ScreenTimeUI.app",
+      "bundleId": "com.antonioperedo.screentime.uidev",
+      "processId": 62999,
+      "simulatorId": "85DF6D3B-6622-491A-8996-3ED0725DB273",
+      "buildLogPath": "/Users/antonioperedo/Library/Developer/XcodeBuildMCP/workspaces/badges-aa906adb7ece/logs/build_run_sim_2026-10-14T22-39-08-893Z_pid43861_fb83b4e2.log",
+      "runtimeLogPath": "/Users/antonioperedo/Library/Developer/XcodeBuildMCP/workspaces/badges-aa906adb7ece/logs/com.antonioperedo.screentime.uidev_2026-10-14T22-40-04-679Z_helperpid62924_ownerpid43861_9104d5b9.log",
+      "osLogPath": "/Users/antonioperedo/Library/Developer/XcodeBuildMCP/workspaces/badges-aa906adb7ece/logs/com.antonioperedo.screentime.uidev_oslog_2026-10-14T22-40-15-781Z_helperpid63028_ownerpid43861_fe08d1f3.log"
+    },
+    "diagnostics": {
+      "warnings": [
+        {
+          "message": "will never be executed",
+          "location": "/tmp/achievement_coin_app_20261014/ScreenTime/Sources/Shared/Services/FocusSessionManager.swift:357"
+        }
+      ],
+      "errors": []
+    }
+  },
+  "hourglass_teal": {
+    "summary": {
+      "status": "SUCCEEDED",
+      "durationMs": 30682,
+      "target": "simulator"
+    },
+    "artifacts": {
+      "appPath": "/tmp/achievement_coin_derived_20261014/Build/Products/Debug-iphonesimulator/ScreenTimeUI.app",
+      "bundleId": "com.antonioperedo.screentime.uidev",
+      "processId": 63678,
+      "simulatorId": "85DF6D3B-6622-491A-8996-3ED0725DB273",
+      "buildLogPath": "/Users/antonioperedo/Library/Developer/XcodeBuildMCP/workspaces/badges-aa906adb7ece/logs/build_run_sim_2026-10-14T22-42-29-967Z_pid43861_db5c82eb.log",
+      "runtimeLogPath": "/Users/antonioperedo/Library/Developer/XcodeBuildMCP/workspaces/badges-aa906adb7ece/logs/com.antonioperedo.screentime.uidev_2026-10-14T22-42-55-671Z_helperpid63639_ownerpid43861_c90d15c8.log",
+      "osLogPath": "/Users/antonioperedo/Library/Developer/XcodeBuildMCP/workspaces/badges-aa906adb7ece/logs/com.antonioperedo.screentime.uidev_oslog_2026-10-14T22-43-00-497Z_helperpid63836_ownerpid43861_1361fa8a.log"
+    },
+    "diagnostics": {
+      "warnings": [
+        {
+          "message": "will never be executed",
+          "location": "/tmp/achievement_coin_app_20261014/ScreenTime/Sources/Shared/Services/FocusSessionManager.swift:357"
+        }
+      ],
+      "errors": []
+    }
+  },
+  "hourglass_gold": {
+    "summary": {
+      "status": "SUCCEEDED",
+      "durationMs": 25203,
+      "target": "simulator"
+    },
+    "artifacts": {
+      "appPath": "/tmp/achievement_coin_derived_20261014/Build/Products/Debug-iphonesimulator/ScreenTimeUI.app",
+      "bundleId": "com.antonioperedo.screentime.uidev",
+      "processId": 64651,
+      "simulatorId": "85DF6D3B-6622-491A-8996-3ED0725DB273",
+      "buildLogPath": "/Users/antonioperedo/Library/Developer/XcodeBuildMCP/workspaces/badges-aa906adb7ece/logs/build_run_sim_2026-10-14T22-45-28-173Z_pid43861_bd6f67be.log",
+      "runtimeLogPath": "/Users/antonioperedo/Library/Developer/XcodeBuildMCP/workspaces/badges-aa906adb7ece/logs/com.antonioperedo.screentime.uidev_2026-10-14T22-45-48-805Z_helperpid64614_ownerpid43861_8459bc07.log",
+      "osLogPath": "/Users/antonioperedo/Library/Developer/XcodeBuildMCP/workspaces/badges-aa906adb7ece/logs/com.antonioperedo.screentime.uidev_oslog_2026-10-14T22-45-53-288Z_helperpid64805_ownerpid43861_e9ad1eee.log"
+    },
+    "diagnostics": {
+      "warnings": [
+        {
+          "message": "will never be executed",
+          "location": "/tmp/achievement_coin_app_20261014/ScreenTime/Sources/Shared/Services/FocusSessionManager.swift:357"
+        }
+      ],
+      "errors": []
+    }
+  },
+  "sunrise": {
+    "summary": {
+      "status": "SUCCEEDED",
+      "durationMs": 50122,
+      "target": "simulator"
+    },
+    "artifacts": {
+      "appPath": "/tmp/achievement_coin_derived_20261014/Build/Products/Debug-iphonesimulator/ScreenTimeUI.app",
+      "bundleId": "com.antonioperedo.screentime.uidev",
+      "processId": 65642,
+      "simulatorId": "85DF6D3B-6622-491A-8996-3ED0725DB273",
+      "buildLogPath": "/Users/antonioperedo/Library/Developer/XcodeBuildMCP/workspaces/badges-aa906adb7ece/logs/build_run_sim_2026-10-14T22-49-06-327Z_pid43861_47da052e.log",
+      "runtimeLogPath": "/Users/antonioperedo/Library/Developer/XcodeBuildMCP/workspaces/badges-aa906adb7ece/logs/com.antonioperedo.screentime.uidev_2026-10-14T22-49-51-646Z_helperpid65609_ownerpid43861_17fa2c0c.log",
+      "osLogPath": "/Users/antonioperedo/Library/Developer/XcodeBuildMCP/workspaces/badges-aa906adb7ece/logs/com.antonioperedo.screentime.uidev_oslog_2026-10-14T22-49-56-324Z_helperpid65797_ownerpid43861_373af631.log"
+    },
+    "diagnostics": {
+      "warnings": [
+        {
+          "message": "will never be executed",
+          "location": "/tmp/achievement_coin_app_20261014/ScreenTime/Sources/Shared/Services/FocusSessionManager.swift:357"
+        }
+      ],
+      "errors": []
+    }
+  },
+  "sprout": {
+    "summary": {
+      "status": "SUCCEEDED",
+      "durationMs": 77261,
+      "target": "simulator"
+    },
+    "artifacts": {
+      "appPath": "/tmp/achievement_coin_derived_20261014/Build/Products/Debug-iphonesimulator/ScreenTimeUI.app",
+      "bundleId": "com.antonioperedo.screentime.uidev",
+      "processId": 66607,
+      "simulatorId": "85DF6D3B-6622-491A-8996-3ED0725DB273",
+      "buildLogPath": "/Users/antonioperedo/Library/Developer/XcodeBuildMCP/workspaces/badges-aa906adb7ece/logs/build_run_sim_2026-10-14T22-52-59-743Z_pid43861_1e744fff.log",
+      "runtimeLogPath": "/Users/antonioperedo/Library/Developer/XcodeBuildMCP/workspaces/badges-aa906adb7ece/logs/com.antonioperedo.screentime.uidev_2026-10-14T22-53-52-116Z_helperpid66566_ownerpid43861_d874f3e6.log",
+      "osLogPath": "/Users/antonioperedo/Library/Developer/XcodeBuildMCP/workspaces/badges-aa906adb7ece/logs/com.antonioperedo.screentime.uidev_oslog_2026-10-14T22-54-16-757Z_helperpid66751_ownerpid43861_da4b3cc6.log"
+    },
+    "diagnostics": {
+      "warnings": [
+        {
+          "message": "will never be executed",
+          "location": "/tmp/achievement_coin_app_20261014/ScreenTime/Sources/Shared/Services/FocusSessionManager.swift:357"
+        }
+      ],
+      "errors": []
+    }
+  }
+}
