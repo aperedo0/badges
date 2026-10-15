@@ -39,3 +39,7 @@ Silver 2 c15 matches the app asset SHA-256 `45c2dd04daf079a24ebe14bee2df4a31a9be
 - Uncertain historical provenance: all five original `medallion/*.blend` source scenes remain (37.8 MiB including retained scripts); only `.blend1` backups and visual outputs were removed.
 
 Verification: all 644 retained paths have unchanged size and modification time; all 350 hashed source/reference files are byte-for-byte unchanged. No writes, builds, installations, commits or branch switches were performed in the app repo.
+
+## October 14 cleanup
+
+Removed 1,162 obsolete files (903,584,206 bytes): old renders and review crops, rejected candidate models, extracted test packages, duplicate initial coin models, caches and obsolete repository snapshots. Current models, Blender sources and required rebuild helpers were verified unchanged before the authorized rim revision. After the owner unstaged the earlier add, Git prune removed unused objects while preserving commit and reflog references; Git connectivity verification passed. Total size fell from about 6.8 GiB to 748 MiB immediately after cleanup. One previous USDZ per revised coin is retained for rollback. No commits, branch switches or main app edits were performed.

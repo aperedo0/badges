@@ -1,12 +1,12 @@
 {
   "name": "sunrise",
   "file": "/Users/antonioperedo/Desktop/badges/botanical_match_20261014/sunrise/mobile/sunrise_badge_mobile.usdz",
-  "bytes": 2992831,
+  "bytes": 3307275,
   "triangles": 36218,
   "shell_geometry_identical": true,
   "floor_y": -2.895,
   "calibration": false,
-  "sha256": "28e041d0602547a4fe3265642291b40a4b553c6c028348949e9677aa798060b1",
+  "sha256": "df662948711e838913d4c586a273a621c0183eb6f850c90550e4a915e397ed29",
   "matches_authorized_shell_template": true,
   "original_silver_unchanged": true,
   "shell_open_only_at_floor": true,
@@ -21,5 +21,15 @@
     3.015000104904175,
     3.015000104904175,
     0.3532869815826416
-  ]
+  ],
+  "contract": "passed",
+  "geometry_unchanged": true,
+  "same_shell_geometry": true,
+  "same_normals_and_uvs": true,
+  "same_emblem_textures": true,
+  "directional_brushing_covers_outer_wall": true,
+  "inner_bevel_separate": true,
+  "emblem_materials_unchanged": true,
+  "original_border_shaders_restored": true,
+  "geometry_and_brushed_textures_unchanged": true
 }

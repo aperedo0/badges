@@ -1,34 +1,66 @@
-{
-  "schema": "xcodebuildmcp.output.build-run-result",
-  "schemaVersion": "2",
-  "didError": false,
-  "error": null,
-  "data": {
-    "summary": {
-      "status": "SUCCEEDED",
-      "durationMs": 33863,
-      "target": "simulator"
-    },
-    "artifacts": {
-      "appPath": "/tmp/achievement_coin_derived_20261014/Build/Products/Debug-iphonesimulator/ScreenTimeUI.app",
-      "bundleId": "com.antonioperedo.screentime.uidev",
-      "processId": 93360,
-      "simulatorId": "85DF6D3B-6622-491A-8996-3ED0725DB273",
-      "buildLogPath": "/Users/antonioperedo/Library/Developer/XcodeBuildMCP/workspaces/badges-aa906adb7ece/logs/build_run_sim_2026-10-15T02-23-47-897Z_pid43861_23b0831d.log",
-      "runtimeLogPath": "/Users/antonioperedo/Library/Developer/XcodeBuildMCP/workspaces/badges-aa906adb7ece/logs/com.antonioperedo.screentime.uidev_2026-10-15T02-24-16-872Z_helperpid93307_ownerpid43861_48e2a9b3.log",
-      "osLogPath": "/Users/antonioperedo/Library/Developer/XcodeBuildMCP/workspaces/badges-aa906adb7ece/logs/com.antonioperedo.screentime.uidev_oslog_2026-10-15T02-24-21-708Z_helperpid93388_ownerpid43861_eab604e3.log"
-    },
-    "diagnostics": {
-      "warnings": [
-        {
-          "message": "will never be executed",
-          "location": "/tmp/achievement_coin_app_20261014/ScreenTime/Sources/Shared/Services/FocusSessionManager.swift:357"
-        }
-      ],
-      "errors": []
-    }
+[
+  {
+    "badge": "Water",
+    "name": "clean",
+    "build_proof": "ScreenTime-UIOnly: ** BUILD SUCCEEDED **",
+    "duration_ms": 26442,
+    "usdchecker": "Success!",
+    "source_rebuild_rendering_equivalent": true,
+    "app_front_back_sides_4x": true,
+    "full_turn_reviewed": true
   },
-  "nextSteps": [
-    "Stop app in simulator: stop_app_sim({ simulatorId: \"85DF6D3B-6622-491A-8996-3ED0725DB273\", bundleId: \"com.antonioperedo.screentime.uidev\" })"
-  ]
-}
+  {
+    "date": "2026-10-15",
+    "purpose": "Rim brushing and 95 percent hourglass emblems",
+    "scheme": "ScreenTime-UIOnly",
+    "proof": "ScreenTime-UIOnly: ** BUILD SUCCEEDED **",
+    "simulatorId": "85DF6D3B-6622-491A-8996-3ED0725DB273",
+    "buildLogPath": "/Users/antonioperedo/Library/Developer/XcodeBuildMCP/workspaces/badges-aa906adb7ece/logs/build_run_sim_2026-10-15T14-26-56-819Z_pid43861_f9018153.log",
+    "noScreenshots": true,
+    "checks": "5/5 model contracts passed",
+    "testSuite": "not run; external asset preview"
+  },
+  {
+    "date": "2026-10-15",
+    "purpose": "Fine brushed satin rim finish",
+    "scheme": "ScreenTime-UIOnly",
+    "proof": "ScreenTime-UIOnly: ** BUILD SUCCEEDED **",
+    "simulatorId": "85DF6D3B-6622-491A-8996-3ED0725DB273",
+    "buildLogPath": "/Users/antonioperedo/Library/Developer/XcodeBuildMCP/workspaces/badges-aa906adb7ece/logs/build_run_sim_2026-10-15T14-59-17-258Z_pid43861_5436c271.log",
+    "checks": "5/5 model contracts passed; geometry/normals/UVs and emblem maps unchanged",
+    "appScreenshotsTaken": false,
+    "testSuite": "not run; external asset preview"
+  },
+  {
+    "date": "2026-10-15",
+    "purpose": "Owner reference grain, directional outer wall and quieter inner bevel",
+    "scheme": "ScreenTime-UIOnly",
+    "proof": "ScreenTime-UIOnly: ** BUILD SUCCEEDED **",
+    "simulatorId": "85DF6D3B-6622-491A-8996-3ED0725DB273",
+    "buildLogPath": "/Users/antonioperedo/Library/Developer/XcodeBuildMCP/workspaces/badges-aa906adb7ece/logs/build_run_sim_2026-10-15T17-37-34-203Z_pid43861_ac4f6433.log",
+    "appScreenshotsTaken": false,
+    "checks": "5/5 model contracts passed; geometry, normals, existing UVs and emblem textures unchanged",
+    "testSuite": "not run; external asset preview"
+  },
+  {
+    "date": "2026-10-15",
+    "purpose": "Restore inner rim glint response; smaller smoothing adjustment",
+    "scheme": "ScreenTime-UIOnly",
+    "proof": "ScreenTime-UIOnly: ** BUILD SUCCEEDED **",
+    "buildLogPath": "/Users/antonioperedo/Library/Developer/XcodeBuildMCP/workspaces/badges-aa906adb7ece/logs/build_run_sim_2026-10-15T18-07-40-597Z_pid43861_28c111a4.log",
+    "simulatorId": "85DF6D3B-6622-491A-8996-3ED0725DB273",
+    "checks": "5/5 USD checks; only inner roughness chart pixels changed",
+    "testSuite": "not run; external asset preview",
+    "appScreenshotsTaken": false
+  },
+  {
+    "date": "2026-10-15",
+    "purpose": "Owner confirmed pictured glints; preserve exact original border shaders",
+    "scheme": "ScreenTime-UIOnly",
+    "proof": "ScreenTime-UIOnly: ** BUILD SUCCEEDED **",
+    "buildLogPath": "/Users/antonioperedo/Library/Developer/XcodeBuildMCP/workspaces/badges-aa906adb7ece/logs/build_run_sim_2026-10-15T18-26-19-778Z_pid43861_3415c882.log",
+    "checks": "5/5 USD checks; both border shaders match the earlier version; geometry and brushed textures unchanged",
+    "testSuite": "not run; external asset preview",
+    "ownerConfirmedGlintAppearance": true
+  }
+]

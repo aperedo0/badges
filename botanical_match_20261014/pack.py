@@ -79,7 +79,7 @@ def shell_signature(stage):
  result={}
  for p in stage.Traverse():
   if not p.IsA(UsdGeom.Mesh) or p.GetParent().GetName() not in SHELL_NAMES:continue
-  result[str(p.GetPath())]={a.GetName():str(a.Get()) for a in p.GetAttributes() if a.GetName() not in ['material:binding']}
+  result[str(p.GetPath())]={a.GetName():str(a.Get()) for a in p.GetAttributes() if a.GetName() not in ['material:binding','primvars:RimBrushUV']}
  return result
 
 def build(name,calibration=False):
@@ -107,20 +107,11 @@ def build(name,calibration=False):
     if sh.GetIdAttr().Get()=='UsdPreviewSurface' and ('polished_cut_edges' in str(p.GetPath())):
      c=np.array([.64,.62,.58])*np.array(tint[:3]);c=np.clip(c,0,1)
      sh.GetInput('diffuseColor').Set(Gf.Vec3f(*c.tolist()))
- # Finish the newly authorized shell without changing the template geometry.
- for role,matname in [('face','Silver___circumferential_brushed_steel_Mobile_Casing'),('bevel','Shell_bevel'),('inner','Shell_inner'),('side','Shell_side')]:
-  mat=UsdShade.Material(stage.GetPrimAtPath('/Badge/_materials/'+matname));sh=UsdShade.Shader(stage.GetPrimAtPath(str(mat.GetPath())+'/Surface'))
-  if role=='side':
-   color=(.24,.09,.03) if name=='sunrise' else (.24,.16,.035) if name=='sprout' else (.12,.13,.15)
-   glow=(.018,.008,.003) if name=='sunrise' else (.015,.010,.002) if name=='sprout' else (.012,.014,.018)
-   sh.GetInput('diffuseColor').Set(Gf.Vec3f(*color));sh.GetInput('roughness').Set(.56)
-   sh.CreateInput('emissiveColor',Sdf.ValueTypeNames.Color3f).Set(Gf.Vec3f(*glow))
-  elif not calibration:
-   texture(stage,mat,sh,'diffuseColor','shell_'+role+'_color.png')
-   texture(stage,mat,sh,'emissiveColor','shell_'+role+'_emission.png',strength=16.)
-  # The shell uses its own planar UV set.
-  if mat.GetPrim().GetChild('ReliefUV'):
-   UsdShade.Shader(mat.GetPrim().GetChild('ReliefUV')).GetInput('varname').Set('USDZ_UV')
+ # Rim highlights come only from the app's real lighting.
+ if not calibration:
+  sys.path.insert(0,str(ROOT.parent))
+  import coin_rim
+  coin_rim.apply(stage,name,pkg,raise_geometry=False)
  materials={role:(material(stage,name,role,False,calibration),material(stage,name,role,True,calibration)) for role in set(f['role'] for f in meta['features'])}
  total=0;front_geometry=[]
  for i,feature in enumerate(meta['features']):

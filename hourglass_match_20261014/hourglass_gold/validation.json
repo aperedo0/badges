@@ -1,12 +1,12 @@
 {
   "name": "hourglass_gold",
   "file": "/Users/antonioperedo/Desktop/badges/hourglass_match_20261014/hourglass_gold/mobile/hourglass_gold_badge_mobile.usdz",
-  "bytes": 3255479,
+  "bytes": 3687210,
   "triangles": 59166,
   "shell_geometry_identical": true,
   "floor_y": -2.895,
   "calibration": false,
-  "sha256": "39605265046ab5d06ef1a2990d85208024edf24b11565e08c131b4a0583fc301",
+  "sha256": "3636efbd0cda7a9910dc8992fb8bba3311929f60091e580fec3169f82bf12c62",
   "matches_authorized_shell_template": true,
   "original_silver_unchanged": true,
   "shell_open_only_at_floor": true,
@@ -15,11 +15,21 @@
   "bounds_min": [
     -3.015000104904175,
     -2.8949999809265137,
-    -0.8263678550720215
+    -0.8037494421005249
   ],
   "bounds_max": [
     3.015000104904175,
     3.015000104904175,
-    0.49636784195899963
-  ]
+    0.47374945878982544
+  ],
+  "contract": "passed",
+  "geometry_unchanged": true,
+  "same_shell_geometry": true,
+  "same_normals_and_uvs": true,
+  "same_emblem_textures": true,
+  "directional_brushing_covers_outer_wall": true,
+  "inner_bevel_separate": true,
+  "emblem_materials_unchanged": true,
+  "original_border_shaders_restored": true,
+  "geometry_and_brushed_textures_unchanged": true
 }

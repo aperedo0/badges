@@ -79,7 +79,7 @@ def shell_signature(stage):
  result={}
  for p in stage.Traverse():
   if not p.IsA(UsdGeom.Mesh) or p.GetParent().GetName() not in SHELL_NAMES:continue
-  result[str(p.GetPath())]={a.GetName():str(a.Get()) for a in p.GetAttributes() if a.GetName() not in ['material:binding']}
+  result[str(p.GetPath())]={a.GetName():str(a.Get()) for a in p.GetAttributes() if a.GetName() not in ['material:binding','primvars:RimBrushUV']}
  return result
 
 def build(name,calibration=False):
@@ -107,23 +107,22 @@ def build(name,calibration=False):
     if sh.GetIdAttr().Get()=='UsdPreviewSurface' and ('polished_cut_edges' in str(p.GetPath())):
      c=np.array([.64,.62,.58])*np.array(tint[:3]);c=np.clip(c,0,1)
      sh.GetInput('diffuseColor').Set(Gf.Vec3f(*c.tolist()))
- # Finish the newly authorized shell without changing the template geometry.
- for role,matname in [('face','Silver___circumferential_brushed_steel_Mobile_Casing'),('bevel','Shell_bevel'),('inner','Shell_inner'),('side','Shell_side')]:
-  mat=UsdShade.Material(stage.GetPrimAtPath('/Badge/_materials/'+matname));sh=UsdShade.Shader(stage.GetPrimAtPath(str(mat.GetPath())+'/Surface'))
-  if role=='side':
-   sh.GetInput('diffuseColor').Set(Gf.Vec3f(.12,.13,.15));sh.GetInput('roughness').Set(.56)
-   sh.CreateInput('emissiveColor',Sdf.ValueTypeNames.Color3f).Set(Gf.Vec3f(.012,.014,.018))
-  elif not calibration:
-   texture(stage,mat,sh,'diffuseColor','shell_'+role+'_color.png')
-   texture(stage,mat,sh,'emissiveColor','shell_'+role+'_emission.png',strength=16.)
-  # The shell uses its own planar UV set.
-  if mat.GetPrim().GetChild('ReliefUV'):
-   UsdShade.Shader(mat.GetPrim().GetChild('ReliefUV')).GetInput('varname').Set('USDZ_UV')
+ # Rim highlights come only from the app's real lighting.
+ if not calibration:
+  sys.path.insert(0,str(ROOT.parent))
+  import coin_rim
+  coin_rim.apply(stage,name,pkg,raise_geometry=False)
  materials={role:(material(stage,name,role,False,calibration),material(stage,name,role,True,calibration)) for role in set(f['role'] for f in meta['features'])}
  total=0;front_geometry=[]
  for i,feature in enumerate(meta['features']):
   p=data[f'{i}_points'];t=data[f'{i}_triangles'];n=data[f'{i}_normals'];fc=feature['front_count']
   facep=p[t];uv=(facep[:,:,:2]+3.015)/6.03
+  # Scale the complete emblem, including relief depth, about its own centre.
+  # Preserve the original UVs so fitted sand/glass details shrink with it.
+  if feature['role'] != 'background' and 'emblem_scale' in meta:
+   pivot=np.array(meta['emblem_pivot'])
+   p=pivot+(p-pivot)*meta['emblem_scale']
+   facep=p[t]
   mesh(stage,f'/Badge/ReliefFront_{i}_{feature["role"]}',p,t,n,uv,fc,*materials[feature['role']])
   front_geometry.append({'role':feature['role'],'points':facep[:fc].tolist(),'uv':uv[:fc].tolist()})
   back=p*np.array([-1,1,-1]);back[:,2]-=.33;bn=n*np.array([-1,1,-1])

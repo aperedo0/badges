@@ -1,0 +1,218 @@
+--- a/ScreenTime/Sources/App/Features/Badges/BadgeHeroCard.swift
++++ b/ScreenTime/Sources/App/Features/Badges/BadgeHeroCard.swift
+@@ -101,6 +101,9 @@
+     /// ones while the owner flips through the ladder. It never touches progress,
+     /// and `nil` means the real badge shows.
+     @State private var previewTier: MonthlyTier?
++    @State private var previewCoin = CoinBadgePreview(
++        rawValue: UserDefaults.standard.string(forKey: "CoinBadgePreview") ?? ""
++    )
+     #endif
+ 
+     /// A pick held while Home is covered. `badge` is nil when the pick was
+@@ -296,8 +299,8 @@
+                 // one) unless the user chose another. The live 3D coin for a
+                 // tier that has one, its flat art on the same stage for every
+                 // other badge.
+-                Badge3DSlot(badge: homeBadge)
+-                    .id(homeBadge)
++                Badge3DSlot(badge: homeBadge, modelDatasetOverride: previewDatasetName)
++                    .id(previewDatasetName ?? homeBadge.storageValue)
+                     .transition(
+                         reduceMotion
+                             ? .opacity
+@@ -310,7 +313,7 @@
+             .padding(.top, Badge3DLayout.slotTopPadding)
+             .animation(Animations.tierPromotionSwap, value: homeBadge)
+             titleRow(newAchievementCount: newAchievementCount) {
+-                heroTitle(BadgeStatePresenter.homeBadgeName(homeBadge))
++                heroTitle(previewTitle(for: homeBadge))
+                     .contentTransition(.opacity)
+                     .animation(Animations.tierPromotionSwap, value: homeBadge)
+             }
+@@ -493,48 +496,79 @@
+     /// false in Release.
+     private var isBadgePreviewActive: Bool {
+         #if DEBUG
+-        return previewTier != nil
++        return previewTier != nil || previewCoin != nil
+         #else
+         return false
+         #endif
+     }
+ 
++    private var previewDatasetName: String? {
++        #if DEBUG
++        return previewCoin?.datasetName
++        #else
++        return nil
++        #endif
++    }
++
++    private func previewTitle(for badge: BadgeRef) -> String {
++        #if DEBUG
++        if let previewCoin { return previewCoin.displayName }
++        #endif
++        return BadgeStatePresenter.homeBadgeName(badge)
++    }
++
+     #if DEBUG
+-    /// "BADGE PREVIEW" on the left and the button that steps through the
+-    /// ladder on the right, under the real progress row so the layout above
+-    /// never moves.
++    /// The existing Home preview control also offers the five named coin models.
+     private var badgePreviewRow: some View {
+-        let nextPreviewTier = Self.previewTier(after: previewTier)
+-        return HStack(alignment: .center) {
++        HStack(alignment: .center) {
+             Text("Badge preview")
+                 .foregroundStyle(DS.Colors.textSecondary)
+                 .heroCapsStyle(weight: .semibold)
+             Spacer()
+-            Button {
+-                previewTier = nextPreviewTier
++            Menu {
++                Button("Mine") {
++                    previewCoin = nil
++                    previewTier = nil
++                }
++                Section("Coin previews") {
++                    ForEach(CoinBadgePreview.allCases) { coin in
++                        Button {
++                            previewTier = nil
++                            previewCoin = coin
++                        } label: {
++                            if previewCoin == coin {
++                                Label(coin.displayName, systemImage: "checkmark")
++                            } else {
++                                Text(coin.displayName)
++                            }
++                        }
++                    }
++                }
++                Section("Original badges") {
++                    ForEach(MonthlyTier.allCases, id: \.self) { tier in
++                        Button {
++                            previewCoin = nil
++                            previewTier = tier
++                        } label: {
++                            if previewCoin == nil && previewTier == tier {
++                                Label(tier.displayName, systemImage: "checkmark")
++                            } else {
++                                Text(tier.displayName)
++                            }
++                        }
++                    }
++                }
+             } label: {
+-                Text("Show \(nextPreviewTier?.displayName ?? "Mine")")
++                Text("Choose badge")
+                     .foregroundStyle(DS.Colors.accent)
+                     .heroCapsStyle(weight: .bold)
+                     .frame(minHeight: Self.linkTouchHeight)
+                     .contentShape(Rectangle())
+             }
+-            .buttonStyle(.plain)
+-            .accessibilityHint("Shows another badge without changing your progress")
++            .accessibilityIdentifier("coinPreviewPicker")
++            .accessibilityHint("Choose a coin preview or an original badge")
+         }
+         .padding(.top, 16)
+-    }
+-
+-    /// The next stop in the preview cycle: nothing goes to the first tier,
+-    /// each tier goes to the one above it, and the top tier goes back to
+-    /// nothing (the real badge).
+-    private static func previewTier(after currentTier: MonthlyTier?) -> MonthlyTier? {
+-        let ladder = MonthlyTier.allCases
+-        guard let currentTier else { return ladder.first }
+-        guard let currentIndex = ladder.firstIndex(of: currentTier),
+-            currentIndex + 1 < ladder.count
+-        else { return nil }
+-        return ladder[currentIndex + 1]
+     }
+     #endif
+ 
+@@ -557,11 +591,11 @@
+             // moves to, from or between 3D models. A flat-to-flat swap (a new
+             // achievement) keeps the same slot, so it stays as instant as it
+             // always was. No transition: achievement mode never animated.
+-            Badge3DSlot(badge: homeBadge)
+-                .id(Badge3DModels.datasetName(for: homeBadge))
++            Badge3DSlot(badge: homeBadge, modelDatasetOverride: previewDatasetName)
++                .id(previewDatasetName ?? Badge3DModels.datasetName(for: homeBadge))
+                 .padding(.top, Badge3DLayout.slotTopPadding)
+             titleRow(newAchievementCount: newAchievementCount) {
+-                heroTitle(title)
++                heroTitle(previewDatasetName == nil ? title : previewTitle(for: homeBadge))
+             }
+             .padding(.top, Badge3DLayout.titleTopPadding)
+             if let line = hero.achievementLine {
+@@ -811,6 +845,32 @@
+ /// one changed line here. The switch lists every tier and has no `default`, so
+ /// a tier added to the ladder cannot be forgotten: the compiler asks for its
+ /// line.
++#if DEBUG
++/// Temporary entries for the owner's five coin prototypes in this preview app.
++private enum CoinBadgePreview: String, CaseIterable, Identifiable {
++    case waterDrop, tealSands, goldenSands, sunrisePath, emeraldSprout
++    var id: String { rawValue }
++    var displayName: String {
++        switch self {
++        case .waterDrop: return "Water Drop"
++        case .tealSands: return "Teal Sands"
++        case .goldenSands: return "Golden Sands"
++        case .sunrisePath: return "Sunrise Path"
++        case .emeraldSprout: return "Emerald Sprout"
++        }
++    }
++    var datasetName: String {
++        switch self {
++        case .waterDrop: return "Badge3DPreviewWaterDrop"
++        case .tealSands: return "Badge3DPreviewTealSands"
++        case .goldenSands: return "Badge3DPreviewGoldenSands"
++        case .sunrisePath: return "Badge3DPreviewSunrisePath"
++        case .emeraldSprout: return "Badge3DPreviewEmeraldSprout"
++        }
++    }
++}
++#endif
++
+ private enum Badge3DModels {
+     static func datasetName(for tier: MonthlyTier) -> String? {
+         switch tier {
+@@ -862,6 +922,9 @@
+     /// and a data set belongs to one tier, so the scene finds its tier's look
+     /// from the name instead of every caller passing the tier along.
+     static func look(forDatasetName datasetName: String) -> Badge3DTierLook {
++        #if DEBUG
++        if datasetName.hasPrefix("Badge3DPreview") { return look(for: .silver) }
++        #endif
+         let tier = MonthlyTier.allCases.first { self.datasetName(for: $0) == datasetName }
+         return tier.map { look(for: $0) } ?? .neutral
+     }
+@@ -889,10 +952,11 @@
+ /// without one.
+ private struct Badge3DSlot: View {
+     let badge: BadgeRef
++    var modelDatasetOverride: String? = nil
+ 
+     var body: some View {
+         if #available(iOS 18.0, *) {
+-            Badge3DView(badge: badge)
++            Badge3DView(badge: badge, modelDatasetOverride: modelDatasetOverride)
+         } else {
+             Color.clear
+                 .frame(
+@@ -1193,9 +1257,9 @@
+     /// that never reports at all.
+     private static let firstFrameDeadlineSeconds: Double = 6
+ 
+-    init(badge: BadgeRef) {
++    init(badge: BadgeRef, modelDatasetOverride: String? = nil) {
+         self.badge = badge
+-        let modelDatasetName = Badge3DModels.datasetName(for: badge)
++        let modelDatasetName = modelDatasetOverride ?? Badge3DModels.datasetName(for: badge)
+         self.modelDatasetName = modelDatasetName
+         _studio = State(initialValue: Badge3DStudio.loaded)
+         _hasGivenUpWaitingForStudio = State(initialValue: Badge3DStudio.hasBeenGivenUpOn)

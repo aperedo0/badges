@@ -27,10 +27,7 @@ def raster(name):
  b=ROOT/name;m=json.loads((b/'design.json').read_text());a=np.load(b/'reliefs.npz');layers={}
  groups=[]
  for i,f in enumerate(m['features']):groups.append((f['role'],a[f'{i}_points'],a[f'{i}_triangles'][:f['front_count']]))
- shell=np.load(ROOT/'shell_geometry.npz')
- for role in ['face','bevel','inner']:
-  take=(shell['roles']==role)&(shell['normals'].mean(1)[:,2]>.05)
-  groups.append(('shell_'+role,shell['points'],shell['triangles'][take]))
+ # Rims use physical metal and roughness, never reference-fitted lighting.
  for role,points,triangles in groups:
   layer=layers.setdefault(role,{'cover':np.zeros((SIZE,SIZE),bool),'pos':np.zeros((SIZE,SIZE,3))})
   cover,pos=layer['cover'],layer['pos']
@@ -64,10 +61,6 @@ def solve(name,calibration_name=None):
   cover,pos=layer['cover'],layer['pos'];visible=cover&(pos[:,:,2]>=global_z-.002)
   # Fill regions hidden by other solids, rather than painting those solids twice.
   role_target=target.copy()
-  if role.startswith('shell_'):
-   radius=np.sqrt(wx*wx+wy*wy)
-   mapped=np.interp(radius,[2.420,2.485,2.945,3.015],[2.640,2.710,2.910,2.965])
-   role_target=sample(ref,cx+wx*mapped/np.maximum(radius,1e-6)*r/3.015,cy-wy*mapped/np.maximum(radius,1e-6)*r/3.015)
   if role in ['background','emerald_background','glass']:
    blocked=cover&~visible;blocked=binary_dilation(blocked,iterations=6)
    if role=='emerald_background':blocked|=(target[:,:,0]>target[:,:,1]*1.18)&cover

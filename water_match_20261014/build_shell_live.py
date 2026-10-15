@@ -4,7 +4,7 @@ import bpy,json,math,numpy as np
 from mathutils import Vector
 R=Path('/Users/antonioperedo/Desktop/badges/water_match_20261014')
 scene=bpy.data.scenes['water_match'];bpy.context.window.scene=scene
-profile=np.array([[2.420,.105],[2.485,.215],[2.945,.215],[3.015,.145],[3.015,-.475],[2.945,-.545],[2.485,-.545],[2.420,-.435]])
+profile=np.array([[2.420,.190],[2.485,.300],[2.945,.300],[3.015,.230],[3.015,-.560],[2.945,-.630],[2.485,-.630],[2.420,-.520]])
 roles=['inner','face','bevel','side','bevel','face','inner','inner'];segments=256
 points=[];triangles=[];normals=[];face_roles=[]
 def clipped(poly):
@@ -27,7 +27,7 @@ for j,(p1,p2) in enumerate(zip(profile,np.roll(profile,-1,axis=0))):
    angle=np.arctan2(tri[:,1],tri[:,0]);n=np.c_[-dz*np.cos(angle),-dz*np.sin(angle),np.full(3,dr)];n/=np.linalg.norm(n,axis=1,keepdims=True);normals.append(n)
 p=np.asarray(points);t=np.asarray(triangles);n=np.asarray(normals);assert p[:,1].min()>=-2.895001
 np.savez_compressed(R/'shell_geometry.npz',points=p,triangles=t,normals=n,roles=np.array(face_roles))
-(R/'shell_design.json').write_text(json.dumps({'outer_radius':3.015,'inner_radius':2.420,'flat_face_inner_radius':2.485,'flat_face_outer_radius':2.945,'band_width':.595,'depth':.760,'center_z':-.165,'floor_cut':-2.895,'profile':profile.tolist()},indent=2))
+(R/'shell_design.json').write_text(json.dumps({'outer_radius':3.015,'inner_radius':2.420,'flat_face_inner_radius':2.485,'flat_face_outer_radius':2.945,'band_width':.595,'depth':.930,'center_z':-.165,'floor_cut':-2.895,'profile':profile.tolist()},indent=2))
 for obj in list(scene.objects):
  if obj.type=='MESH' and (obj.name.startswith(('Casing___','Inner_channel___','Inner_edge___','Rim_inner_lip___','Rear_Inner_edge___'))):bpy.data.objects.remove(obj,do_unlink=True)
 mesh=bpy.data.meshes.new('Flat_wide_rim_geometry');mesh.from_pydata(p.tolist(),[],t.tolist());mesh.update();mesh.normals_split_custom_set(n.reshape(-1,3).tolist())
@@ -39,4 +39,4 @@ uv=mesh.uv_layers.new(name='USDZ_UV')
 for loop in mesh.loops:
  q=mesh.vertices[loop.vertex_index].co;uv.data[loop.index].uv=((q.x+3.015)/6.03,(q.y+3.015)/6.03)
 bpy.data.libraries.write(str(R/'water.blend'),{scene},compress=True)
-print('New flat, wider rim built: width .595, depth .760, original outer diameter retained.')
+print('New flat, wider rim built: width .595, depth .930, original outer diameter retained.')

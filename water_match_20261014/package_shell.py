@@ -21,7 +21,12 @@ for role,rough in [('face',.34),('bevel',.32),('side',.48),('inner',.48)]:
  mat=UsdShade.Material.Define(s,'/Badge/_materials/'+name);sh=UsdShade.Shader.Define(s,mat.GetPath().AppendChild('Surface'));sh.CreateIdAttr('UsdPreviewSurface');sh.CreateInput('diffuseColor',Sdf.ValueTypeNames.Color3f).Set(Gf.Vec3f(.15,.15,.15));sh.CreateInput('metallic',Sdf.ValueTypeNames.Float).Set(1.);sh.CreateInput('roughness',Sdf.ValueTypeNames.Float).Set(rough);sh.CreateInput('opacity',Sdf.ValueTypeNames.Float).Set(1.);sh.CreateOutput('surface',Sdf.ValueTypeNames.Token);mat.CreateSurfaceOutput().ConnectToSource(sh.ConnectableAPI(),'surface')
  sub=UsdGeom.Subset.Define(s,mesh.GetPath().AppendChild(role));sub.CreateElementTypeAttr('face');sub.CreateFamilyNameAttr('materialBind');sub.CreateIndicesAttr(np.flatnonzero(roles==role).tolist());UsdShade.MaterialBindingAPI.Apply(sub.GetPrim()).Bind(mat)
  if role=='face':UsdShade.MaterialBindingAPI.Apply(mesh.GetPrim()).Bind(mat)
-UsdGeom.Subset.SetFamilyType(mesh,'materialBind','partition');s.GetRootLayer().Save()
+UsdGeom.Subset.SetFamilyType(mesh,'materialBind','partition')
+import sys
+sys.path.insert(0,str(R.parent))
+import coin_rim
+coin_rim.apply(s,'clean',pkg,raise_geometry=False)
+s.GetRootLayer().Save()
 out=R/'shell_template.usdz';out.unlink(missing_ok=True);files=['shell.usdc']+sorted(str(p.relative_to(pkg)) for p in (pkg/'textures').glob('*.png'))
 subprocess.run(['/usr/bin/usdzip',str(out)]+files,cwd=pkg,check=True);subprocess.run(['/usr/bin/usdchecker','--arkit',str(out)],check=True)
 print('New shell template packaged; original source unchanged.')

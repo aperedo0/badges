@@ -1,7 +1,7 @@
 import bpy,json
 from pathlib import Path
-R=Path('/Users/antonioperedo/Desktop/badges/hourglass_match_20261014');name=globals().get('MATCHED_NAME','hourglass_teal');scene=bpy.data.scenes[name+'_matched'];bpy.context.window.scene=scene
-rough={'glass':.32,'sand':.52,'silver':.36,'background':.90,'shell_face':.34,'shell_bevel':.32,'shell_inner':.48}
+R=Path('/Users/antonioperedo/Desktop/badges/hourglass_match_20261014');name=globals().get('MATCHED_NAME','hourglass_teal');scene=bpy.data.scenes.get(name+'_physical_rim') or bpy.data.scenes[name+'_matched'];bpy.context.window.scene=scene
+rough={'glass':.32,'sand':.52,'silver':.36,'background':.90}
 mats={}
 for role,r in rough.items():
  mat=bpy.data.materials.new('Water_candidate_'+role);mat.use_nodes=True;nodes=mat.node_tree.nodes;links=mat.node_tree.links;p=nodes.get('Principled BSDF');p.inputs['Metallic'].default_value=1;p.inputs['Roughness'].default_value=r
@@ -14,9 +14,10 @@ meta=json.loads((R/name/'design.json').read_text())
 for i,f in enumerate(meta['features']):
  for side in ['Front','Back']:
   obj=next(o for o in scene.objects if o.name.startswith(f'Relief{side}_{i}_{f["role"]}'));obj.data.materials.clear();obj.data.materials.append(mats[f['role']])
-obj=next(o for o in scene.objects if o.name.startswith('Casing___smooth_rounded_outer_edge_mobile_geometry'))
-for index,role in [(0,'shell_face'),(1,'shell_bevel'),(3,'shell_inner')]:obj.data.materials[index]=mats[role]
-side=obj.data.materials[2].node_tree.nodes.get('Principled BSDF');side.inputs['Base Color'].default_value=(.12,.13,.15,1);side.inputs['Roughness'].default_value=.56;side.inputs['Emission Color'].default_value=(.012,.014,.018,1)
-side.inputs['Emission Strength'].default_value=1
+import sys
+sys.path.insert(0,str(R.parent))
+import coin_rim,importlib
+importlib.reload(coin_rim)
+coin_rim.apply_blender(scene,name)
 bpy.data.libraries.write(str(R/name/(name+'.blend')),{scene},compress=True)
 print(name+' material maps saved with the editable scene.')

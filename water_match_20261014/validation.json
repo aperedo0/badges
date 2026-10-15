@@ -1,12 +1,12 @@
 {
   "name": "clean",
   "file": "/Users/antonioperedo/Desktop/badges/water_match_20261014/clean/mobile/clean_badge_mobile.usdz",
-  "bytes": 3654326,
+  "bytes": 4123076,
   "triangles": 37556,
   "shell_geometry_identical": true,
   "floor_y": -2.895,
   "calibration": false,
-  "sha256": "b01c90aa0bf10a8dce48599cfbc6e773e7ef83f1f6e3cdef620417ad5fadadf6",
+  "sha256": "962d505367036098a75a02e3ea8febba472086cf65e7b0617cebf3463da82317",
   "matches_authorized_shell_template": true,
   "original_silver_unchanged": true,
   "shell_open_only_at_floor": true,
@@ -21,5 +21,15 @@
     3.015000104904175,
     3.015000104904175,
     0.6600000262260437
-  ]
+  ],
+  "contract": "passed",
+  "geometry_unchanged": true,
+  "same_shell_geometry": true,
+  "same_normals_and_uvs": true,
+  "same_emblem_textures": true,
+  "directional_brushing_covers_outer_wall": true,
+  "inner_bevel_separate": true,
+  "emblem_materials_unchanged": true,
+  "original_border_shaders_restored": true,
+  "geometry_and_brushed_textures_unchanged": true
 }
