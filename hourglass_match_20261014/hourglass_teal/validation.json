@@ -1,12 +1,12 @@
 {
   "name": "hourglass_teal",
   "file": "/Users/antonioperedo/Desktop/badges/hourglass_match_20261014/hourglass_teal/mobile/hourglass_teal_badge_mobile.usdz",
-  "bytes": 3676612,
+  "bytes": 3727924,
   "triangles": 59166,
   "shell_geometry_identical": true,
   "floor_y": -2.895,
   "calibration": false,
-  "sha256": "479e15998e94d9030f49510104c9c883a056205f222f29aed4f0bb4e1c8f31ae",
+  "sha256": "3227072d9dc2de2bd4da6d05f8377277e5f0555491886debf1880856440f3086",
   "matches_authorized_shell_template": true,
   "original_silver_unchanged": true,
   "shell_open_only_at_floor": true,
@@ -22,14 +22,7 @@
     3.015000104904175,
     0.47374945878982544
   ],
-  "contract": "passed",
   "geometry_unchanged": true,
-  "same_shell_geometry": true,
-  "same_normals_and_uvs": true,
-  "same_emblem_textures": true,
-  "directional_brushing_covers_outer_wall": true,
-  "inner_bevel_separate": true,
-  "emblem_materials_unchanged": true,
-  "original_border_shaders_restored": true,
-  "geometry_and_brushed_textures_unchanged": true
+  "front_band_and_glint_borders_unchanged_from_approved_preview": true,
+  "outside_wall_finish_strength": 1.1
 }

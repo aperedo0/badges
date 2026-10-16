@@ -25,6 +25,16 @@ Read this before working on a badge. It applies to every agent (Codex, Claude, a
 - At load the app changes nothing on a shape, except the Diamond: it replaces the material named `DiamondGem` with its own gem shader (section 2, rule 10). On a coin it only gives the brushed ring back its anisotropy, found by name (section 2).
 - **Known app limits:** under a floating shape the app still draws the coin's contact shadow line (a fix is planned, section 7); the first launch after an install shows the flat fallback picture while shaders compile.
 
+### Coin glint shield (owner approved, 2026-10-15)
+
+The owner calls this the **glint shield**. It contains highlight bloom outside a coin's silhouette, removing the occasional puff of light beside the edge while retaining the bright reflections and glints on the metal. It is app image processing, not geometry, a texture, or a material setting.
+
+- **Implementation:** `/Users/antonioperedo/Desktop/screen_time/ScreenTime/Sources/App/Features/Badges/BadgeHeroCard.swift`. Search for `confinesHighlightGlow` and `reflectionGlowLevels`.
+- **Automatic coin detection:** the model contains `Casing___smooth_rounded_outer_edge_mobile_geometry`. This covers Water Drop, Teal Sands, Golden Sands, Sunrise Path and Emerald Sprout, and future coins with that casing name. Floating shapes and Diamond keep their previous rendering path.
+- **What stays:** original highlight bloom inside the coin; antialiased coverage at its outline; separate reflection bloom outside it. The stage halo, background, floor reflection, lights and model finish are preserved. Never mask the combined bloom alone: that would also remove reflection bloom.
+- **Preserve the approved look:** do not dull the metal, remove the inner rim flashes, paint an outline, or change glint frequency to recreate this shield. It does not repair actual model gaps, white edge specks or texture seams; those still need the normal outline checks.
+- **Verification:** Teal Sands was checked through its full turn, including the offending side pose and outlines at 4x. The same code covers all five coins; the other four were not individually visually retested for this change. Future renderer edits must preserve the shield and check both side poses alongside the front, back and reflection.
+
 ## 2. The app contract (hard rules)
 
 Both kinds of badge:
@@ -42,7 +52,7 @@ Coins (round, stand in the floor):
 
 Shapes (custom outline, float above the floor):
 7. **Nothing below the floor** (Y = -2.895). How high a shape floats is the owner's design choice (section 3).
-8. **Never use the coin names** above: the app would apply the coin's ring shading to the shape.
+8. **Never use the coin names** above: the app would apply the coin's ring shading and glint shield to the shape.
 
 Files:
 9. **Work on copies.** Never modify an approved final, the shipped silver, the folders in `~/Downloads/badge_realitykit_*`, or the app repo, except the temporary test in section 5, which must leave the repo exactly as found.

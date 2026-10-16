@@ -1,0 +1,7 @@
+Teal Sands finish, 2026-10-15
+
+The owner approved the outside wall finish and requested ten percent more effect. The wall roughness is reduced ten percent (about 0.22 to 0.198), and its neutral brush-grain contrast is increased ten percent. This is a material adjustment, not a claim that perceived metallicity can be measured as a percentage. The front band and both glint-border finishes are identical to the preceding approved preview. Geometry, UVs, emblem and inset are unchanged.
+
+The current deliverable is `mobile/hourglass_teal_badge_mobile.usdz`. The approved preceding preview is preserved as `previous/hourglass_teal_side_100.usdz`. Rebuild the deliverable using system Python with Pillow/numpy: `python3 hourglass_match_20261014/hourglass_teal/refine_side_finish.py`. Run this last if rebuilding other artwork; the older generic packer and Blender source do not include this finish adjustment.
+
+USD ARKit validation and the isolated ScreenTime-UIOnly simulator build passed. The full turn, back and both side outlines were inspected at 4x; the unchanged front was checked at rest against the preceding preview. No new broken outline highlights were observed. The updated badge is running as Teal Sands in the dedicated Badge Coins Preview simulator. The production app repo and every other badge are untouched. Internal test images and video stay in `/tmp`; no Downloads review pack was made.
