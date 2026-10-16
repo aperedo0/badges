@@ -1,20 +1,20 @@
 {
   "name": "sprout",
   "file": "/Users/antonioperedo/Desktop/badges/botanical_match_20261014/sprout/mobile/sprout_badge_mobile.usdz",
-  "bytes": 3300793,
-  "triangles": 28008,
-  "shell_geometry_identical": true,
+  "bytes": 3335464,
+  "triangles": 28104,
+  "shell_geometry_identical": false,
   "floor_y": -2.895,
   "calibration": false,
-  "sha256": "60786a8fa77f4be1c84f2038af0783e91ba6a8dde1be8b86f935a007b04d7eb8",
-  "matches_authorized_shell_template": true,
+  "sha256": "fbbf4ae4eafb9a85f8a817f94f047720beb48629bc3799efeea63b8d20a875fd",
+  "matches_authorized_shell_template": false,
   "original_silver_unchanged": true,
-  "shell_open_only_at_floor": true,
+  "shell_open_only_at_floor": false,
   "identity_transforms": true,
   "textures_resolve": true,
   "bounds_min": [
     -3.015000104904175,
-    -2.8949999809265137,
+    -3.015000104904175,
     -0.672308087348938
   ],
   "bounds_max": [
@@ -23,13 +23,17 @@
     0.3423081040382385
   ],
   "contract": "passed",
-  "geometry_unchanged": true,
-  "same_shell_geometry": true,
-  "same_normals_and_uvs": true,
+  "geometry_unchanged": false,
   "same_emblem_textures": true,
   "directional_brushing_covers_outer_wall": true,
   "inner_bevel_separate": true,
   "emblem_materials_unchanged": true,
-  "original_border_shaders_restored": true,
-  "geometry_and_brushed_textures_unchanged": true
+  "matches_authorized_round_shell": true,
+  "shell_closed": true,
+  "floor_cut": null,
+  "required_preview_size": 0.96,
+  "required_preview_lift": 0.56,
+  "float_lowest_y": -2.455,
+  "emblem_geometry_materials_textures_unchanged": true,
+  "finish_matched_to_approved_teal": true
 }

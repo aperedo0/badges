@@ -1,3 +1,15 @@
+## Current delivery, October 15: matching brushed finish and complete floating coins
+
+The front bands and thick outside edges now match the approved Teal Sands finish, with each coin's metal hue retained. Inner rim flashes and all emblem geometry, textures and materials are unchanged. The outer bevel uses Teal Sands' softer reflection mapping. After raising the coins, the owner rejected the exposed flat floor cut, so all five shells are complete circles again. The rim profile, diameter, depth and recess remain unchanged.
+
+Current USDZs are in each badge's `mobile/` folder; the immediately preceding files are preserved as `previous/*_before_round_brushed_20261015.usdz`. Model metadata records current hashes and triangle counts. Rebuild the older artwork first, run `match_coin_finish.py NAME SOURCE.usdz OUTPUT.usdz` for these four finish transfers, then run `round_coin_bottom.py SOURCE.usdz OUTPUT.usdz` using Blender's bundled Python. Teal Sands retains its approved finish and needs only the rounding step after its existing finish builder. The older Blender files and floor standing shell templates alone do not reproduce this final state.
+
+Important placement requirement: raw shell minimum Y is now -3.015. The app must use size 0.96 and lift 0.56 so the coin's lowest point is -2.455, matching the existing floating badges. This setting is installed only in the separate Badge Coins Preview app; the production app was not changed by this model pass. Never install these files using the previous floor standing placement.
+
+All five closed-shell/ARKit validations passed. Complete models were inspected in live Blender and the app, including full turns and front, back and both sides at 4x. No new broken bright outlines or bloom puffs were observed. `ScreenTime-UIOnly: ** BUILD SUCCEEDED **`. Asset-only preview: the production test suite was not repeated. Water Drop is left at rest in Badge Coins Preview, with all five selectable. No Downloads artifacts were created.
+
+The notes below describe earlier revisions, not the current delivery.
+
 # Current coin rim revision, October 14
 
 Rims now use constant metal colors, no emission and no painted lighting bands. Fine circumferential machining is encoded only in roughness; the app supplies the highlights, reflections and anisotropy. `../coin_rim.py` defines the shared finish for export and Blender. Reference fitting is restricted to the emblems.

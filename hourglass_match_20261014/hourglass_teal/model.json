@@ -1,13 +1,34 @@
 {
   "name": "hourglass_teal",
   "file": "/Users/antonioperedo/Desktop/badges/hourglass_match_20261014/hourglass_teal/mobile/hourglass_teal_badge_mobile.usdz",
-  "bytes": 3727924,
-  "triangles": 59166,
-  "shell_geometry_identical": true,
+  "bytes": 3738095,
+  "triangles": 59262,
+  "shell_geometry_identical": false,
   "floor_y": -2.895,
   "calibration": false,
-  "sha256": "3227072d9dc2de2bd4da6d05f8377277e5f0555491886debf1880856440f3086",
-  "geometry_unchanged": true,
+  "sha256": "d8b651a74cad0cf5b000b0ee6152ebf4b701f9f9aa3c3600c84ddff17ce3e153",
+  "geometry_unchanged": false,
   "front_band_and_glint_borders_unchanged_from_approved_preview": true,
-  "outside_wall_finish_strength": 1.1
+  "outside_wall_finish_strength": 1.1,
+  "matches_authorized_shell_template": false,
+  "matches_authorized_round_shell": true,
+  "shell_closed": true,
+  "shell_open_only_at_floor": false,
+  "floor_cut": null,
+  "required_preview_size": 0.96,
+  "required_preview_lift": 0.56,
+  "float_lowest_y": -2.455,
+  "emblem_geometry_materials_textures_unchanged": true,
+  "finish_matched_to_approved_teal": true,
+  "bounds_min": [
+    -3.015000104904175,
+    -3.015000104904175,
+    -0.8037494421005249
+  ],
+  "bounds_max": [
+    3.015000104904175,
+    3.015000104904175,
+    0.47374945878982544
+  ],
+  "identity_transforms": true
 }

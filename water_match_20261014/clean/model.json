@@ -1,10 +1,32 @@
 {
   "name": "clean",
   "file": "/Users/antonioperedo/Desktop/badges/water_match_20261014/clean/mobile/clean_badge_mobile.usdz",
-  "bytes": 4123076,
-  "triangles": 37556,
-  "shell_geometry_identical": true,
+  "bytes": 4154764,
+  "triangles": 37652,
+  "shell_geometry_identical": false,
   "floor_y": -2.895,
   "calibration": false,
-  "sha256": "962d505367036098a75a02e3ea8febba472086cf65e7b0617cebf3463da82317"
+  "sha256": "8eb96d005686a3fe31a4b2d415341d9fcbc1b366e0f840c2bcaf1eee73d5b3d2",
+  "geometry_unchanged": false,
+  "matches_authorized_shell_template": false,
+  "matches_authorized_round_shell": true,
+  "shell_closed": true,
+  "shell_open_only_at_floor": false,
+  "floor_cut": null,
+  "required_preview_size": 0.96,
+  "required_preview_lift": 0.56,
+  "float_lowest_y": -2.455,
+  "emblem_geometry_materials_textures_unchanged": true,
+  "finish_matched_to_approved_teal": true,
+  "bounds_min": [
+    -3.015000104904175,
+    -3.015000104904175,
+    -0.9900000095367432
+  ],
+  "bounds_max": [
+    3.015000104904175,
+    3.015000104904175,
+    0.6600000262260437
+  ],
+  "identity_transforms": true
 }

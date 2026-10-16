@@ -1,20 +1,20 @@
 {
   "name": "hourglass_gold",
   "file": "/Users/antonioperedo/Desktop/badges/hourglass_match_20261014/hourglass_gold/mobile/hourglass_gold_badge_mobile.usdz",
-  "bytes": 3687210,
-  "triangles": 59166,
-  "shell_geometry_identical": true,
+  "bytes": 3744312,
+  "triangles": 59262,
+  "shell_geometry_identical": false,
   "floor_y": -2.895,
   "calibration": false,
-  "sha256": "3636efbd0cda7a9910dc8992fb8bba3311929f60091e580fec3169f82bf12c62",
-  "matches_authorized_shell_template": true,
+  "sha256": "b49f588211d721200f881b77e5ba68577c6a351b98a5ed2e13344633119e81bd",
+  "matches_authorized_shell_template": false,
   "original_silver_unchanged": true,
-  "shell_open_only_at_floor": true,
+  "shell_open_only_at_floor": false,
   "identity_transforms": true,
   "textures_resolve": true,
   "bounds_min": [
     -3.015000104904175,
-    -2.8949999809265137,
+    -3.015000104904175,
     -0.8037494421005249
   ],
   "bounds_max": [
@@ -23,13 +23,17 @@
     0.47374945878982544
   ],
   "contract": "passed",
-  "geometry_unchanged": true,
-  "same_shell_geometry": true,
-  "same_normals_and_uvs": true,
+  "geometry_unchanged": false,
   "same_emblem_textures": true,
   "directional_brushing_covers_outer_wall": true,
   "inner_bevel_separate": true,
   "emblem_materials_unchanged": true,
-  "original_border_shaders_restored": true,
-  "geometry_and_brushed_textures_unchanged": true
+  "matches_authorized_round_shell": true,
+  "shell_closed": true,
+  "floor_cut": null,
+  "required_preview_size": 0.96,
+  "required_preview_lift": 0.56,
+  "float_lowest_y": -2.455,
+  "emblem_geometry_materials_textures_unchanged": true,
+  "finish_matched_to_approved_teal": true
 }

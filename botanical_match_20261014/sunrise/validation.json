@@ -1,20 +1,20 @@
 {
   "name": "sunrise",
   "file": "/Users/antonioperedo/Desktop/badges/botanical_match_20261014/sunrise/mobile/sunrise_badge_mobile.usdz",
-  "bytes": 3307275,
-  "triangles": 36218,
-  "shell_geometry_identical": true,
+  "bytes": 3346749,
+  "triangles": 36314,
+  "shell_geometry_identical": false,
   "floor_y": -2.895,
   "calibration": false,
-  "sha256": "df662948711e838913d4c586a273a621c0183eb6f850c90550e4a915e397ed29",
-  "matches_authorized_shell_template": true,
+  "sha256": "4a6cef969761dfb3a02ed521b6fa864cc51cddf402bbcdfc2b11606165e17d20",
+  "matches_authorized_shell_template": false,
   "original_silver_unchanged": true,
-  "shell_open_only_at_floor": true,
+  "shell_open_only_at_floor": false,
   "identity_transforms": true,
   "textures_resolve": true,
   "bounds_min": [
     -3.015000104904175,
-    -2.8949999809265137,
+    -3.015000104904175,
     -0.6832869648933411
   ],
   "bounds_max": [
@@ -23,13 +23,17 @@
     0.3532869815826416
   ],
   "contract": "passed",
-  "geometry_unchanged": true,
-  "same_shell_geometry": true,
-  "same_normals_and_uvs": true,
+  "geometry_unchanged": false,
   "same_emblem_textures": true,
   "directional_brushing_covers_outer_wall": true,
   "inner_bevel_separate": true,
   "emblem_materials_unchanged": true,
-  "original_border_shaders_restored": true,
-  "geometry_and_brushed_textures_unchanged": true
+  "matches_authorized_round_shell": true,
+  "shell_closed": true,
+  "floor_cut": null,
+  "required_preview_size": 0.96,
+  "required_preview_lift": 0.56,
+  "float_lowest_y": -2.455,
+  "emblem_geometry_materials_textures_unchanged": true,
+  "finish_matched_to_approved_teal": true
 }
