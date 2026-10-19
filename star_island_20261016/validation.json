@@ -1,0 +1,44 @@
+{
+  "star_ascent": {
+    "rim_geometry_materials_and_maps": "unchanged",
+    "closed_round_shell": true,
+    "identity_transforms": true,
+    "Y_up_meters": true,
+    "no_lights_or_cameras": true,
+    "degenerate_triangles": 0,
+    "zero_normals": 0,
+    "bounds": [
+      [
+        -3.015000104904175,
+        -3.015000104904175,
+        -0.7599999904632568
+      ],
+      [
+        3.015000104904175,
+        3.015000104904175,
+        0.4300000071525574
+      ]
+    ]
+  },
+  "island_sunset": {
+    "rim_geometry_materials_and_maps": "unchanged",
+    "closed_round_shell": true,
+    "identity_transforms": true,
+    "Y_up_meters": true,
+    "no_lights_or_cameras": true,
+    "degenerate_triangles": 0,
+    "zero_normals": 0,
+    "bounds": [
+      [
+        -3.015000104904175,
+        -3.015000104904175,
+        -0.699999988079071
+      ],
+      [
+        3.015000104904175,
+        3.015000104904175,
+        0.3700000047683716
+      ]
+    ]
+  }
+}

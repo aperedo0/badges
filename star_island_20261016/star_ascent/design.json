@@ -1,0 +1,199 @@
+{
+  "groups": [
+    {
+      "name": "Recessed charcoal face.007",
+      "role": "charcoal"
+    },
+    {
+      "name": "Cloud_-1_0.007",
+      "role": "cloud"
+    },
+    {
+      "name": "Cloud_-1_1.007",
+      "role": "cloud"
+    },
+    {
+      "name": "Cloud_-1_2.007",
+      "role": "cloud"
+    },
+    {
+      "name": "Cloud_-1_3.007",
+      "role": "cloud"
+    },
+    {
+      "name": "Cloud_-1_4.007",
+      "role": "cloud"
+    },
+    {
+      "name": "Cloud_-1_5.007",
+      "role": "cloud"
+    },
+    {
+      "name": "Cloud_-1_6.007",
+      "role": "cloud"
+    },
+    {
+      "name": "Cloud_-1_7.007",
+      "role": "cloud"
+    },
+    {
+      "name": "Cloud_1_0.007",
+      "role": "cloud"
+    },
+    {
+      "name": "Cloud_1_1.007",
+      "role": "cloud"
+    },
+    {
+      "name": "Cloud_1_2.007",
+      "role": "cloud"
+    },
+    {
+      "name": "Cloud_1_3.007",
+      "role": "cloud"
+    },
+    {
+      "name": "Cloud_1_4.007",
+      "role": "cloud"
+    },
+    {
+      "name": "Cloud_1_5.007",
+      "role": "cloud"
+    },
+    {
+      "name": "Cloud_1_6.007",
+      "role": "cloud"
+    },
+    {
+      "name": "Cloud_1_7.007",
+      "role": "cloud"
+    },
+    {
+      "name": "Step_1.007",
+      "role": "silver"
+    },
+    {
+      "name": "Step_2.007",
+      "role": "silver"
+    },
+    {
+      "name": "Step_3.007",
+      "role": "silver"
+    },
+    {
+      "name": "Step_4.007",
+      "role": "silver"
+    },
+    {
+      "name": "Step_5.007",
+      "role": "silver"
+    },
+    {
+      "name": "Five point faceted star.007",
+      "role": "silver"
+    },
+    {
+      "name": "Ray_0.007",
+      "role": "silver"
+    },
+    {
+      "name": "Ray_1.007",
+      "role": "silver"
+    },
+    {
+      "name": "Ray_2.007",
+      "role": "silver"
+    },
+    {
+      "name": "Ray_3.007",
+      "role": "silver"
+    },
+    {
+      "name": "Ray_4.007",
+      "role": "silver"
+    },
+    {
+      "name": "Ray_5.007",
+      "role": "silver"
+    },
+    {
+      "name": "Ray_6.007",
+      "role": "silver"
+    }
+  ],
+  "palette": {
+    "silver": [
+      [
+        0.52,
+        0.5,
+        0.47
+      ],
+      1,
+      0.31
+    ],
+    "cloud": [
+      [
+        0.26,
+        0.25,
+        0.24
+      ],
+      1,
+      0.43
+    ],
+    "gold": [
+      [
+        0.78,
+        0.47,
+        0.065
+      ],
+      1,
+      0.28
+    ],
+    "leaf": [
+      [
+        0.008,
+        0.155,
+        0.026
+      ],
+      0.45,
+      0.22
+    ],
+    "charcoal": [
+      [
+        0.005,
+        0.006,
+        0.007
+      ],
+      0,
+      0.89
+    ],
+    "sky": [
+      [
+        0.25,
+        0.02,
+        0.1
+      ],
+      0,
+      0.76
+    ],
+    "sea": [
+      [
+        0.006,
+        0.205,
+        0.255
+      ],
+      0.35,
+      0.28
+    ],
+    "sun": [
+      [
+        1,
+        0.48,
+        0.015
+      ],
+      0.2,
+      0.3
+    ]
+  },
+  "source_shell": "clean"
+}

@@ -1,0 +1,379 @@
+{
+  "groups": [
+    {
+      "name": "Purple orange sunset enamel.007",
+      "role": "sky"
+    },
+    {
+      "name": "Teal sea.007",
+      "role": "sea"
+    },
+    {
+      "name": "Sun disc.007",
+      "role": "sun"
+    },
+    {
+      "name": "Sun raised gold arc.007",
+      "role": "gold"
+    },
+    {
+      "name": "Gold horizon.007",
+      "role": "gold"
+    },
+    {
+      "name": "Solid green frond base_0.006",
+      "role": "leaf"
+    },
+    {
+      "name": "Palm green frond_0.007",
+      "role": "leaf"
+    },
+    {
+      "name": "Continuous gold frond edge_0.007",
+      "role": "gold"
+    },
+    {
+      "name": "Solid green frond base_1.006",
+      "role": "leaf"
+    },
+    {
+      "name": "Palm green frond_1.007",
+      "role": "leaf"
+    },
+    {
+      "name": "Continuous gold frond edge_1.007",
+      "role": "gold"
+    },
+    {
+      "name": "Solid green frond base_2.006",
+      "role": "leaf"
+    },
+    {
+      "name": "Palm green frond_2.007",
+      "role": "leaf"
+    },
+    {
+      "name": "Continuous gold frond edge_2.007",
+      "role": "gold"
+    },
+    {
+      "name": "Solid green frond base_3.006",
+      "role": "leaf"
+    },
+    {
+      "name": "Palm green frond_3.007",
+      "role": "leaf"
+    },
+    {
+      "name": "Continuous gold frond edge_3.007",
+      "role": "gold"
+    },
+    {
+      "name": "Solid green frond base_4.006",
+      "role": "leaf"
+    },
+    {
+      "name": "Palm green frond_4.007",
+      "role": "leaf"
+    },
+    {
+      "name": "Continuous gold frond edge_4.007",
+      "role": "gold"
+    },
+    {
+      "name": "Solid green frond base_5.006",
+      "role": "leaf"
+    },
+    {
+      "name": "Palm green frond_5.007",
+      "role": "leaf"
+    },
+    {
+      "name": "Continuous gold frond edge_5.007",
+      "role": "gold"
+    },
+    {
+      "name": "Solid green frond base_6.006",
+      "role": "leaf"
+    },
+    {
+      "name": "Palm green frond_6.007",
+      "role": "leaf"
+    },
+    {
+      "name": "Continuous gold frond edge_6.007",
+      "role": "gold"
+    },
+    {
+      "name": "Solid green frond base_7.006",
+      "role": "leaf"
+    },
+    {
+      "name": "Palm green frond_7.007",
+      "role": "leaf"
+    },
+    {
+      "name": "Continuous gold frond edge_7.007",
+      "role": "gold"
+    },
+    {
+      "name": "Solid green frond base_8.006",
+      "role": "leaf"
+    },
+    {
+      "name": "Palm green frond_8.007",
+      "role": "leaf"
+    },
+    {
+      "name": "Continuous gold frond edge_8.007",
+      "role": "gold"
+    },
+    {
+      "name": "Solid green frond base_9.006",
+      "role": "leaf"
+    },
+    {
+      "name": "Palm green frond_9.007",
+      "role": "leaf"
+    },
+    {
+      "name": "Continuous gold frond edge_9.007",
+      "role": "gold"
+    },
+    {
+      "name": "Solid green frond base_10.006",
+      "role": "leaf"
+    },
+    {
+      "name": "Palm green frond_10.007",
+      "role": "leaf"
+    },
+    {
+      "name": "Continuous gold frond edge_10.007",
+      "role": "gold"
+    },
+    {
+      "name": "Solid green frond base_11.006",
+      "role": "leaf"
+    },
+    {
+      "name": "Palm green frond_11.007",
+      "role": "leaf"
+    },
+    {
+      "name": "Continuous gold frond edge_11.007",
+      "role": "gold"
+    },
+    {
+      "name": "Gold trunk segment_0_0.007",
+      "role": "gold"
+    },
+    {
+      "name": "Trunk segment bevel_0_0.007",
+      "role": "gold"
+    },
+    {
+      "name": "Gold trunk segment_0_1.007",
+      "role": "gold"
+    },
+    {
+      "name": "Trunk segment bevel_0_1.007",
+      "role": "gold"
+    },
+    {
+      "name": "Gold trunk segment_0_2.007",
+      "role": "gold"
+    },
+    {
+      "name": "Trunk segment bevel_0_2.007",
+      "role": "gold"
+    },
+    {
+      "name": "Gold trunk segment_0_3.007",
+      "role": "gold"
+    },
+    {
+      "name": "Trunk segment bevel_0_3.007",
+      "role": "gold"
+    },
+    {
+      "name": "Gold trunk segment_0_4.007",
+      "role": "gold"
+    },
+    {
+      "name": "Trunk segment bevel_0_4.007",
+      "role": "gold"
+    },
+    {
+      "name": "Gold trunk segment_0_5.007",
+      "role": "gold"
+    },
+    {
+      "name": "Trunk segment bevel_0_5.007",
+      "role": "gold"
+    },
+    {
+      "name": "Palm gold hub_0.007",
+      "role": "gold"
+    },
+    {
+      "name": "Gold trunk segment_1_0.007",
+      "role": "gold"
+    },
+    {
+      "name": "Trunk segment bevel_1_0.007",
+      "role": "gold"
+    },
+    {
+      "name": "Gold trunk segment_1_1.007",
+      "role": "gold"
+    },
+    {
+      "name": "Trunk segment bevel_1_1.007",
+      "role": "gold"
+    },
+    {
+      "name": "Gold trunk segment_1_2.007",
+      "role": "gold"
+    },
+    {
+      "name": "Trunk segment bevel_1_2.007",
+      "role": "gold"
+    },
+    {
+      "name": "Gold trunk segment_1_3.007",
+      "role": "gold"
+    },
+    {
+      "name": "Trunk segment bevel_1_3.007",
+      "role": "gold"
+    },
+    {
+      "name": "Gold trunk segment_1_4.007",
+      "role": "gold"
+    },
+    {
+      "name": "Trunk segment bevel_1_4.007",
+      "role": "gold"
+    },
+    {
+      "name": "Gold trunk segment_1_5.007",
+      "role": "gold"
+    },
+    {
+      "name": "Trunk segment bevel_1_5.007",
+      "role": "gold"
+    },
+    {
+      "name": "Palm gold hub_1.007",
+      "role": "gold"
+    },
+    {
+      "name": "Solid island base.006",
+      "role": "gold"
+    },
+    {
+      "name": "Golden island.007",
+      "role": "gold"
+    },
+    {
+      "name": "Island shore gold border.007",
+      "role": "gold"
+    },
+    {
+      "name": "Gold edged ocean swell_0.007",
+      "role": "gold"
+    },
+    {
+      "name": "Gold edged ocean swell_1.007",
+      "role": "gold"
+    },
+    {
+      "name": "Sun reflection_0.007",
+      "role": "gold"
+    },
+    {
+      "name": "Sun reflection_1.007",
+      "role": "gold"
+    },
+    {
+      "name": "Sun reflection_2.007",
+      "role": "gold"
+    }
+  ],
+  "palette": {
+    "silver": [
+      [
+        0.52,
+        0.5,
+        0.47
+      ],
+      1,
+      0.31
+    ],
+    "cloud": [
+      [
+        0.26,
+        0.25,
+        0.24
+      ],
+      1,
+      0.43
+    ],
+    "gold": [
+      [
+        0.78,
+        0.47,
+        0.065
+      ],
+      1,
+      0.28
+    ],
+    "leaf": [
+      [
+        0.008,
+        0.155,
+        0.026
+      ],
+      0.45,
+      0.22
+    ],
+    "charcoal": [
+      [
+        0.005,
+        0.006,
+        0.007
+      ],
+      0,
+      0.89
+    ],
+    "sky": [
+      [
+        0.25,
+        0.02,
+        0.1
+      ],
+      0,
+      0.76
+    ],
+    "sea": [
+      [
+        0.006,
+        0.205,
+        0.255
+      ],
+      0.35,
+      0.28
+    ],
+    "sun": [
+      [
+        1,
+        0.48,
+        0.015
+      ],
+      0.2,
+      0.3
+    ]
+  },
+  "source_shell": "sprout"
+}

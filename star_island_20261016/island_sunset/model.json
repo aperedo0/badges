@@ -1,0 +1,13 @@
+{
+  "name": "island_sunset",
+  "bytes": 3488961,
+  "triangles": 39882,
+  "relief_meshes": 10,
+  "sha256": "85d896234aae56101f3f7ebea8f8d651fed62b1fee5baffb39eb7c2ae70a693a",
+  "shell_data_unchanged": true,
+  "mirrored_matching_back": true,
+  "required_size": 0.96,
+  "required_lift": 0.56,
+  "calibration": false,
+  "USD_validation": "passed"
+}
