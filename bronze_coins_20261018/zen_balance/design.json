@@ -1,0 +1,45 @@
+{
+  "groups": [
+    {
+      "name": "Recessed dark charcoal.007",
+      "role": "backdrop"
+    },
+    {
+      "name": "Upper balancing stone.007",
+      "role": "bronze"
+    },
+    {
+      "name": "Middle balancing stone.007",
+      "role": "bronze"
+    },
+    {
+      "name": "Lower balancing stone.007",
+      "role": "bronze"
+    },
+    {
+      "name": "Broad bronze resting plinth.007",
+      "role": "bronze"
+    }
+  ],
+  "palette": {
+    "bronze": [
+      [
+        0.66,
+        0.32,
+        0.16
+      ],
+      1,
+      0.3
+    ],
+    "backdrop": [
+      [
+        0.003,
+        0.0025,
+        0.0022
+      ],
+      1,
+      0.9
+    ]
+  },
+  "source_shell": "sunrise"
+}

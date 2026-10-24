@@ -1,0 +1,65 @@
+{
+  "groups": [
+    {
+      "name": "Recessed warm charcoal.004",
+      "role": "backdrop"
+    },
+    {
+      "name": "Compass quarter 0.004",
+      "role": "bronze"
+    },
+    {
+      "name": "Compass quarter 1.004",
+      "role": "bronze"
+    },
+    {
+      "name": "Compass quarter 2.004",
+      "role": "bronze"
+    },
+    {
+      "name": "Compass quarter 3.004",
+      "role": "bronze"
+    },
+    {
+      "name": "Tapered cardinal needle 0.004",
+      "role": "bronze"
+    },
+    {
+      "name": "Tapered cardinal needle 1.004",
+      "role": "bronze"
+    },
+    {
+      "name": "Tapered cardinal needle 2.004",
+      "role": "bronze"
+    },
+    {
+      "name": "Tapered cardinal needle 3.004",
+      "role": "bronze"
+    },
+    {
+      "name": "Raised solid lightning bolt.004",
+      "role": "bronze"
+    }
+  ],
+  "palette": {
+    "bronze": [
+      [
+        0.66,
+        0.32,
+        0.16
+      ],
+      1,
+      0.3
+    ],
+    "backdrop": [
+      [
+        0.003,
+        0.0025,
+        0.0022
+      ],
+      1,
+      0.9
+    ]
+  },
+  "source_shell": "sunrise"
+}

@@ -1,0 +1,145 @@
+{
+  "groups": [
+    {
+      "name": "Recessed warm charcoal torch backing.005",
+      "role": "backdrop"
+    },
+    {
+      "name": "Faceted sunburst ray 1.005",
+      "role": "bronze"
+    },
+    {
+      "name": "Faceted sunburst ray 2.005",
+      "role": "bronze"
+    },
+    {
+      "name": "Faceted sunburst ray 3.005",
+      "role": "bronze"
+    },
+    {
+      "name": "Faceted sunburst ray 4.005",
+      "role": "bronze"
+    },
+    {
+      "name": "Faceted sunburst ray 5.005",
+      "role": "bronze"
+    },
+    {
+      "name": "Faceted sunburst ray 6.005",
+      "role": "bronze"
+    },
+    {
+      "name": "Faceted sunburst ray 7.005",
+      "role": "bronze"
+    },
+    {
+      "name": "Faceted sunburst ray 8.005",
+      "role": "bronze"
+    },
+    {
+      "name": "Faceted sunburst ray 9.005",
+      "role": "bronze"
+    },
+    {
+      "name": "Faceted sunburst ray 10.005",
+      "role": "bronze"
+    },
+    {
+      "name": "Faceted sunburst ray 11.005",
+      "role": "bronze"
+    },
+    {
+      "name": "Faceted sunburst ray 12.005",
+      "role": "bronze"
+    },
+    {
+      "name": "Faceted sunburst ray 13.005",
+      "role": "bronze"
+    },
+    {
+      "name": "Faceted sunburst ray 14.005",
+      "role": "bronze"
+    },
+    {
+      "name": "Faceted sunburst ray 15.005",
+      "role": "bronze"
+    },
+    {
+      "name": "Faceted sunburst ray 16.005",
+      "role": "bronze"
+    },
+    {
+      "name": "Faceted sunburst ray 17.005",
+      "role": "bronze"
+    },
+    {
+      "name": "Faceted sunburst ray 18.005",
+      "role": "bronze"
+    },
+    {
+      "name": "Faceted sunburst ray 19.005",
+      "role": "bronze"
+    },
+    {
+      "name": "Faceted sunburst ray 20.005",
+      "role": "bronze"
+    },
+    {
+      "name": "Faceted sunburst ray 21.005",
+      "role": "bronze"
+    },
+    {
+      "name": "Faceted sunburst ray 22.005",
+      "role": "bronze"
+    },
+    {
+      "name": "Faceted sunburst ray 23.005",
+      "role": "bronze"
+    },
+    {
+      "name": "Faceted sunburst ray 24.005",
+      "role": "bronze"
+    },
+    {
+      "name": "Large curling bronze flame.004",
+      "role": "bronze"
+    },
+    {
+      "name": "Small returning bronze flame.004",
+      "role": "bronze"
+    },
+    {
+      "name": "Turned bronze torch handle and collars.004",
+      "role": "bronze"
+    },
+    {
+      "name": "Rounded torch bowl.004",
+      "role": "bronze"
+    },
+    {
+      "name": "Broad beveled torch lip.004",
+      "role": "bronze"
+    }
+  ],
+  "palette": {
+    "bronze": [
+      [
+        0.66,
+        0.32,
+        0.16
+      ],
+      1,
+      0.3
+    ],
+    "backdrop": [
+      [
+        0.003,
+        0.0025,
+        0.0022
+      ],
+      1,
+      0.9
+    ]
+  },
+  "source_shell": "sunrise"
+}

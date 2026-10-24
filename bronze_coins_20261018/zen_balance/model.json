@@ -1,0 +1,13 @@
+{
+  "name": "zen_balance",
+  "bytes": 3263631,
+  "triangles": 39616,
+  "relief_meshes": 4,
+  "sha256": "721b1705623870dfbaa9830ee28266fc254a43b52b96d005af2d78a1a37793c3",
+  "shell_data_unchanged": true,
+  "mirrored_matching_back": true,
+  "required_size": 0.96,
+  "required_lift": 0.56,
+  "calibration": false,
+  "USD_validation": "passed"
+}

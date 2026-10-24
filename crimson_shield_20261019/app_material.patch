@@ -1,0 +1,99 @@
+--- a/ScreenTime/Sources/App/Features/Badges/BadgeHeroCard.swift
++++ b/ScreenTime/Sources/App/Features/Badges/BadgeHeroCard.swift
+@@ -836,8 +836,9 @@
+ // no normal maps (both for the nearby point lights used here), and the slice
+ // that sinks into the floor is already cut away (a floating badge has nothing
+ // below the floor to cut; see `Badge3DScene.floorY`). So the only changes made to it at load are
+-// the brushed ring's anisotropy, which USD cannot carry, and the Diamond's gem material, which
+-// swaps the model's plain `DiamondGem` material for the gem shader (see `Badge3DGem`).
++// the brushed ring and shield field anisotropy, which USD cannot carry,
++// and the Diamond gem material, which swaps the plain `DiamondGem` material
++// for the gem shader (see `Badge3DGem`).
+ 
+ /// Which tiers have a 3D badge, and the data set in Assets.xcassets that holds
+ /// each one's model: the one place that says so. Adding a tier's 3D badge is
+@@ -1834,6 +1835,7 @@
+         // coin by where its lowest point sits (see `Badge3DStage.pose`).
+         let lowestY = coin.visualBounds(relativeTo: nil).min.y
+         try await restoreBrushedSteel(in: coin)
++        try await restoreShieldFieldBrushing(in: coin)
+         let mirroredCoin = coin.clone(recursive: true)
+         try await mirrorTopToBottom(mirroredCoin)
+         // After the clone and the flip: each copy builds its facet planes
+@@ -1908,6 +1910,35 @@
+         }.value
+         model.mesh = try await MeshResource(from: edited)
+         casing.components.set(model)
++    }
++
++    /// Restores straight brushed reflections only on the shield's named field.
++    /// This runs before cloning so its floor reflection inherits the same grain.
++    private static func restoreShieldFieldBrushing(in entity: Entity) async throws {
++        if var model = entity.components[ModelComponent.self] {
++            var fieldMaterialIndices: Set<Int> = []
++            for (index, material) in model.materials.enumerated()
++            where material.name == "CrimsonShield_BrushedField" {
++                guard var field = material as? PhysicallyBasedMaterial else { continue }
++                field.anisotropyLevel = 0.55
++                field.anisotropyAngle = 0.0
++                model.materials[index] = field
++                fieldMaterialIndices.insert(index)
++            }
++            if !fieldMaterialIndices.isEmpty {
++                let contents = model.mesh.contents
++                let edited = await Task.detached(priority: .userInitiated) {
++                    Badge3DMeshEdits.withShieldFieldTangents(
++                        contents, onPartsUsing: fieldMaterialIndices
++                    )
++                }.value
++                model.mesh = try await MeshResource(from: edited)
++                entity.components.set(model)
++            }
++        }
++        for child in entity.children {
++            try await restoreShieldFieldBrushing(in: child)
++        }
+     }
+ 
+     /// Flips every mesh under `entity` top to bottom, for the mirror image
+@@ -3805,6 +3836,40 @@
+         }
+     }
+ 
++    /// Follows the shield texture's straight diagonal U direction. Its back
++    /// is a half turn of the front, so only the X direction reverses there.
++    static func withShieldFieldTangents(
++        _ contents: MeshResource.Contents,
++        onPartsUsing materialIndices: Set<Int>
++    ) -> MeshResource.Contents {
++        editingEveryPart(of: contents) { part in
++            guard materialIndices.contains(part.materialIndex), let normals = part.normals else { return part }
++            var tangents: [SIMD3<Float>] = []
++            var bitangents: [SIMD3<Float>] = []
++            for (position, normal) in zip(part.positions, normals) {
++                let brushDirection = SIMD3<Float>(position.z < 0 ? -0.840 : 0.840, 0.543, 0)
++                let tangent = projectedShieldBrushDirection(brushDirection, normal: normal)
++                tangents.append(tangent)
++                bitangents.append(simd_cross(normal, tangent))
++            }
++            var part = part
++            part.tangents = MeshBuffers.Tangents(tangents)
++            part.bitangents = MeshBuffers.Tangents(bitangents)
++            return part
++        }
++    }
++
++    private static func projectedShieldBrushDirection(
++        _ direction: SIMD3<Float>, normal: SIMD3<Float>
++    ) -> SIMD3<Float> {
++        let surfaceNormal = simd_normalize(normal)
++        let inSurface = direction - simd_dot(direction, surfaceNormal) * surfaceNormal
++        if simd_length(inSurface) > 1e-6 { return simd_normalize(inSurface) }
++        // A face parallel to the brush direction needs another tangent axis.
++        let fallbackAxis = abs(surfaceNormal.z) < 0.9 ? SIMD3<Float>(0, 0, 1) : SIMD3<Float>(1, 0, 0)
++        return simd_normalize(simd_cross(surfaceNormal, fallbackAxis))
++    }
++
+     /// The direction around the Z axis at `position`, laid flat into the
+     /// surface by dropping its component along `normal`.
+     private static func circumferentialTangent(

@@ -1,0 +1,65 @@
+{
+  "lightning_compass": {
+    "rim_geometry_materials_and_maps": "unchanged",
+    "closed_round_shell": true,
+    "identity_transforms": true,
+    "Y_up_meters": true,
+    "no_lights_or_cameras": true,
+    "degenerate_triangles": 0,
+    "zero_normals": 0,
+    "bounds": [
+      [
+        -3.015000104904175,
+        -3.015000104904175,
+        -0.6299999952316284
+      ],
+      [
+        3.015000104904175,
+        3.015000104904175,
+        0.30000001192092896
+      ]
+    ]
+  },
+  "zen_balance": {
+    "rim_geometry_materials_and_maps": "unchanged",
+    "closed_round_shell": true,
+    "identity_transforms": true,
+    "Y_up_meters": true,
+    "no_lights_or_cameras": true,
+    "degenerate_triangles": 0,
+    "zero_normals": 0,
+    "bounds": [
+      [
+        -3.015000104904175,
+        -3.015000104904175,
+        -0.6430000066757202
+      ],
+      [
+        3.015000104904175,
+        3.015000104904175,
+        0.31299999356269836
+      ]
+    ]
+  },
+  "torch_sunburst": {
+    "rim_geometry_materials_and_maps": "unchanged",
+    "closed_round_shell": true,
+    "identity_transforms": true,
+    "Y_up_meters": true,
+    "no_lights_or_cameras": true,
+    "degenerate_triangles": 0,
+    "zero_normals": 0,
+    "bounds": [
+      [
+        -3.015000104904175,
+        -3.015000104904175,
+        -0.6669999957084656
+      ],
+      [
+        3.015000104904175,
+        3.015000104904175,
+        0.3370000123977661
+      ]
+    ]
+  }
+}

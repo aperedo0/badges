@@ -22,8 +22,14 @@ Read this before working on a badge. It applies to every agent (Codex, Claude, a
 - The light is the original studio light: one environment map plus 8 point lights, key light from the upper left. It is fixed; a badge cannot change it.
 - The camera is fixed. As Home scrolls up, the badge makes one full turn about the Y axis while it shrinks and sinks toward the floor (angle and size follow the scroll: a quarter turn at three quarters size, the back facing the camera at half size, and so on). At rest it shows its front, but **the owner sees every side**, so the back, sides and top are part of the badge.
 - After rendering, the app applies Blender's AgX view transform (Medium High Contrast) and adds a glow to anything brighter than 1.5 in linear light. That glow is why a pure white face grows a halo.
-- At load the app changes nothing on a shape, except the Diamond: it replaces the material named `DiamondGem` with its own gem shader (section 2, rule 10). On a coin it only gives the brushed ring back its anisotropy, found by name (section 2).
+- At load the app retains the model's shape. On the Diamond it replaces the material named `DiamondGem` with its own gem shader (section 2, rule 10). On a coin it gives the brushed ring back its anisotropy, found by name (section 2). The Crimson Shield preview also restores its named field's brushed reflections, as described below.
 - **Known app limits:** under a floating shape the app still draws the coin's contact shadow line (a fix is planned, section 7); the first launch after an install shows the flat fallback picture while shaders compile.
+
+### Crimson Shield brushed field (owner approved, 2026-10-20)
+
+The owner approved a shield specific app material addition so its center has real directional brushed reflections. The USDZ field material is named exactly `CrimsonShield_BrushedField`. The preview app restores anisotropy 0.55 and straight diagonal tangents on that material only, before cloning the floor reflection. The front brush direction is `(0.840, 0.543, 0)`; the back reverses X because it is a Y half turn of the front. `ShieldUV` follows the same direction. Other shield materials, coins and Diamond keep their existing rendering.
+
+This exception is currently in the separate preview app, with the production integration patch and instructions at `crimson_shield_20261019/app_material.patch` and `app_material_README.txt`. Production integration must carry that patch: the USDZ alone cannot carry the runtime anisotropy. Never give this shape the coin casing or brushed ring names to trigger their code. The owner authorized this material addition; it is a scoped exception to the app editing restriction, not permission to change lighting, the gem shader or other badges.
 
 ### Coin glint shield (owner approved, 2026-10-15)
 

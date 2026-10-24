@@ -1,0 +1,13 @@
+{
+  "name": "lightning_compass",
+  "bytes": 1800423,
+  "triangles": 8696,
+  "relief_meshes": 4,
+  "sha256": "c81291d47a35022004ccfcbe77a5c8de9c5e1e156063711f77beaeb5dba04955",
+  "shell_data_unchanged": true,
+  "mirrored_matching_back": true,
+  "required_size": 0.96,
+  "required_lift": 0.56,
+  "calibration": false,
+  "USD_validation": "passed"
+}
