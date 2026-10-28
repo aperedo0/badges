@@ -1,0 +1,2 @@
+Replaced raster bezel edges with closed straight planar bronze frames.
+Native turn improved the top and lower frames; the chest support still needed a broader depth transition.

@@ -1,0 +1,30 @@
+[
+  {
+    "name": "Bronze Phoenix sculpted front and matching rear.012",
+    "role": "surface"
+  },
+  {
+    "name": "Bronze Phoenix continuous silver_edge.012",
+    "role": "silver_edge"
+  },
+  {
+    "name": "Bronze Phoenix continuous gold_edge.012",
+    "role": "gold_edge"
+  },
+  {
+    "name": "Three amber gems with exact planar front and rear.012",
+    "role": "star"
+  },
+  {
+    "name": "Amber gem straight bronze walls.012",
+    "role": "gold_edge"
+  },
+  {
+    "name": "Three bronze bezels with continuous straight bevels.008",
+    "role": "surface"
+  },
+  {
+    "name": "Straight bronze bezel walls.008",
+    "role": "gold_edge"
+  }
+]

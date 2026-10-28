@@ -1,0 +1,38 @@
+{
+  "name": "Bronze Phoenix",
+  "reference_size": [
+    1312,
+    1199
+  ],
+  "reference_bounds": [
+    [
+      88.67,
+      25.63
+    ],
+    [
+      1218.37,
+      1128.0
+    ]
+  ],
+  "reference_scale": 0.004962036339885883,
+  "reference_center": [
+    653.52,
+    576.815
+  ],
+  "front_triangles": 40031,
+  "wall_triangles": 6914,
+  "total_triangles": 86976,
+  "bounds_min": [
+    -2.8028062265845413,
+    -2.4549999999999996,
+    -0.73
+  ],
+  "bounds_max": [
+    2.8028062265845404,
+    3.015,
+    0.73
+  ],
+  "preview_size": 1,
+  "preview_lift": 0,
+  "method": "Reference contours, curved sculpted relief, continuous edge walls, matching sculpted rear"
+}

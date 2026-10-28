@@ -1,0 +1,36 @@
+{
+  "mode": "fitted",
+  "calibration_gain": 0.05,
+  "edge_colors": {
+    "silver_edge": [
+      0.025,
+      0.017,
+      0.009
+    ],
+    "gold_edge": [
+      0.3,
+      0.078,
+      0.013
+    ]
+  },
+  "edge_roughness": {
+    "silver_edge": 0.52,
+    "gold_edge": 0.36
+  },
+  "method": "Physical metallic reflections fitted against the approved front under the actual studio light",
+  "calibrated_in_native_app": true,
+  "fit": {
+    "surface": {
+      "metal_texels": 408161,
+      "clean_light_samples": 276102,
+      "mean_retained_physical_reflectance": 0.30171792188577756,
+      "roughness_metal": 0.36
+    },
+    "star": {
+      "metal_texels": 3178,
+      "clean_light_samples": 1229,
+      "mean_retained_physical_reflectance": 0.2286601074721293,
+      "roughness_metal": 0.2
+    }
+  }
+}

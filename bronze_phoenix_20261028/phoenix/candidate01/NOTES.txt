@@ -1,0 +1,2 @@
+First native candidate matched the front but exposed uneven bezel edges while turning.
+Kept for comparison; the next candidate uses independent straight planar bronze bezels.
