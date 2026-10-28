@@ -1,0 +1,8 @@
+{
+  "emission_scale": 8,
+  "metallic": 1,
+  "roughness": 0.53,
+  "method": "Actual app AgX inversion on real sculpted relief with restrained live metal reflections",
+  "mean_display_fit_error": 7.819931221972336e-05,
+  "texture_size": 1024
+}

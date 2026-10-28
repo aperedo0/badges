@@ -1,0 +1,6 @@
+*.blend1
+*.npz.safe
+recovery_timer.pid
+recovery_timer.lock
+recovery_timer_output.log
+__pycache__/

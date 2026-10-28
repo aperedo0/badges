@@ -1,0 +1,38 @@
+{
+  "name": "Crescent Ocean",
+  "reference_size": [
+    1254,
+    1254
+  ],
+  "reference_bounds": [
+    [
+      91.5,
+      68.54
+    ],
+    [
+      1163.25,
+      1124.5
+    ]
+  ],
+  "reference_scale": 0.005180120459108299,
+  "reference_center": [
+    627.375,
+    596.52
+  ],
+  "front_triangles": 45862,
+  "wall_triangles": 13460,
+  "total_triangles": 105184,
+  "bounds_min": [
+    -2.7758970510246597,
+    -2.4549999999999996,
+    -0.46
+  ],
+  "bounds_max": [
+    2.7758970510246597,
+    3.015,
+    0.46
+  ],
+  "preview_size": 1,
+  "preview_lift": 0,
+  "method": "Reference contours, curved sculpted relief, continuous edge walls, matching sculpted rear"
+}

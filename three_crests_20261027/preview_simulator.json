@@ -1,0 +1,12 @@
+{
+  "name": "Badge Studio Preview",
+  "simulator_id": "DF439C70-9FD7-4EF7-998E-43AF5F83A588",
+  "bundle_id": "com.antonioperedo.badgestudio.preview",
+  "scheme": "ScreenTime-UIOnly",
+  "selection_keys": [
+    "crescentOcean",
+    "mountainCrest",
+    "wingedSword"
+  ],
+  "selected_badge": "wingedSword"
+}

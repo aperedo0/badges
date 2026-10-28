@@ -1,0 +1,11 @@
+{
+  "name": "Crescent Ocean",
+  "min_component": 1000,
+  "fill_holes": 4000,
+  "close_iterations": 3,
+  "include": [],
+  "exclude": [],
+  "facets": [
+    {"center":[894,477],"outline":[[894,290],[933,438],[1047,477],[933,516],[894,665],[854,516],[738,477],[854,438]],"crest":0.46,"seat":0.20}
+  ]
+}

@@ -1,0 +1,19 @@
+--- a/Badge3DLiveBadge.swift
++++ b/Badge3DLiveBadge.swift
+@@ -37,7 +37,7 @@
+ 
+ enum PrivateBadgePreview {
+     nonisolated(unsafe) static var selection = UserDefaults.standard.string(forKey: "CoinBadgePreview") ?? "emeraldTrophy"
+-    static let items: [String: String] = ["waterDrop":"Water Drop","tealSands":"Teal Sands","goldenSands":"Golden Sands","sunrisePath":"Sunrise Path","emeraldSprout":"Emerald Sprout","starAscent":"Star Ascent","islandSunset":"Island Sunset","lightningCompass":"Lightning Compass","zenBalance":"Zen Balance","torchSunburst":"Torch Sunburst","crimsonShield":"Crimson Shield","emeraldArcher":"Emerald Archer","emeraldTrophy":"Emerald Trophy"]
++    static let items: [String: String] = ["waterDrop":"Water Drop","tealSands":"Teal Sands","goldenSands":"Golden Sands","sunrisePath":"Sunrise Path","emeraldSprout":"Emerald Sprout","starAscent":"Star Ascent","islandSunset":"Island Sunset","lightningCompass":"Lightning Compass","zenBalance":"Zen Balance","torchSunburst":"Torch Sunburst","crimsonShield":"Crimson Shield","emeraldArcher":"Emerald Archer","emeraldTrophy":"Emerald Trophy","crescentOcean":"Crescent Ocean","mountainCrest":"Mountain Crest","wingedSword":"Winged Sword"]
+     static var datasetName: String? {
+         guard items[selection] != nil else { return nil }
+         return "Badge3DPreview" + selection.prefix(1).uppercased() + selection.dropFirst()
+@@ -97,6 +97,7 @@
+     /// from the name instead of every caller passing the tier along.
+     static func look(forDatasetName datasetName: String) -> Badge3DTierLook {
+         if datasetName == "Badge3DPreviewCrimsonShield" { return .neutral }
++        if ["Badge3DPreviewCrescentOcean", "Badge3DPreviewMountainCrest", "Badge3DPreviewWingedSword"].contains(datasetName) { return .neutral }
+         if datasetName.hasPrefix("Badge3DPreview") { return Badge3DTierLook(size: 0.96, lift: 0.56) }
+         let tier = MonthlyTier.allCases.first { self.datasetName(for: $0) == datasetName }
+         return tier.map { look(for: $0) } ?? .neutral

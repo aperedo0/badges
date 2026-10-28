@@ -1,0 +1,20 @@
+{
+  "requested_work_minutes": 30,
+  "requested_break_minutes": 20,
+  "first_work_started_utc": "2026-10-28T06:49:18Z",
+  "first_break_due_utc": "2026-10-28T07:19:18Z",
+  "badges": [
+    "crescent_ocean",
+    "mountain_crest",
+    "winged_sword"
+  ],
+  "phase": "complete",
+  "work_block": 4,
+  "break_started_epoch": 1793178712.7424798,
+  "break_until_epoch": 1793179912.742481,
+  "active_badge": "all_side_finish",
+  "next_action": "Owner review in Badge Studio. All three final models and reports saved.",
+  "work_started_epoch": 1793180529.2813041,
+  "work_until_epoch": 1793182329.2813041,
+  "completed_utc": "2026-10-28T10:10:02.872792+00:00"
+}
