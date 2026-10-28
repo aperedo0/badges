@@ -1,0 +1,38 @@
+{
+  "name": "Winged Sword",
+  "reference_size": [
+    1254,
+    1254
+  ],
+  "reference_bounds": [
+    [
+      81.5,
+      26.75
+    ],
+    [
+      1172.5,
+      1174.0
+    ]
+  ],
+  "reference_scale": 0.004767923294835476,
+  "reference_center": [
+    627.0,
+    600.375
+  ],
+  "front_triangles": 47421,
+  "wall_triangles": 20618,
+  "total_triangles": 115460,
+  "bounds_min": [
+    -2.600902157332752,
+    -2.4549999999999996,
+    -0.53
+  ],
+  "bounds_max": [
+    2.600902157332752,
+    3.015,
+    0.53
+  ],
+  "preview_size": 1,
+  "preview_lift": 0,
+  "method": "Reference contours, curved sculpted relief, continuous edge walls, matching sculpted rear"
+}

@@ -9,15 +9,24 @@ sheet=Image.new('RGB',(1080,790),(17,18,21));draw=ImageDraw.Draw(sheet)
 for i,(key,name) in enumerate(ITEMS.items()):
  R=ROOT/key;candidate=(R/'candidate.txt').read_text().strip() if (R/'candidate.txt').exists() else 'candidate01';C=R/candidate
  validation=json.loads((C/'validation.json').read_text())
+ metal_finish=json.loads((C/'metal_finish.json').read_text()) if (C/'metal_finish.json').exists() else None
+ if metal_finish:assert metal_finish['mode']=='fitted' and metal_finish['calibrated_in_native_app']
  for required in ['comparison.jpg','every_side.jpg','app_front.png','app_side_left.png','app_back.png','app_side_right.png','full_turn.mp4']:assert (C/required).exists(),str(C/required)
  source=C/'mobile'/(key+'_badge_mobile.usdz');assert hashlib.sha256(source.read_bytes()).hexdigest()==validation['sha256']
  mobile=R/'mobile';mobile.mkdir(exist_ok=True);destination=mobile/source.name
  if destination.exists() and destination.read_bytes()!=source.read_bytes():
   previous=R/'previous';previous.mkdir(exist_ok=True);shutil.copyfile(destination,previous/(destination.stem+'_before_'+candidate+'.usdz'))
+  for name in [key+'.blend','comparison.jpg','REPORT.md','validation.json']:
+   if (R/name).exists():shutil.copyfile(R/name,previous/(Path(name).stem+'_before_'+candidate+Path(name).suffix))
  shutil.copyfile(source,destination);shutil.copyfile(C/(key+'.blend'),R/(key+'.blend'))
  for artifact in ['comparison.jpg','every_side.jpg','validation.json']:shutil.copyfile(C/artifact,R/artifact)
+ if metal_finish:shutil.copyfile(C/'metal_finish.json',R/'metal_finish.json')
  triangles=validation['triangles'];mb=validation['bytes']/1000000
- texture_note='Main finish maps are 1024 pixels; the separate compass maps are 512 pixels.' if (C/'compass.json').exists() else 'Both finish maps are 1024 pixels.'
+ texture_note='Main finish maps are 1024 pixels; the separate compass maps are 512 pixels.' if (C/'compass.json').exists() else 'The finish maps are 1024 pixels.'
+ material_note=("The metal now has polished physical reflections and moving glints from the unchanged studio light. Native app light measurements balance that reflection against the approved front colors. Reference fill retains the fine marks and design detail. Smooth reflection normals keep the flashes clean across the curved metal. The rock and night sky retain their previous finish." if metal_finish else "The reference finish uses detailed surface maps with the preview's AgX transform inverted. Most face highlights stay fixed to preserve the reference appearance; the side metal and a small face contribution reflect the studio lights.")
+ refinement=json.loads((C/'refinement.json').read_text()) if (C/'refinement.json').exists() else {}
+ if refinement.get('gentle_sword_metal'):material_note+=' The sword uses broader reflections and reduced reflected intensity to soften the change from its resting front to angled views.'
+ if refinement.get('continuous_moon_relief'):material_note+=' Removed the false horizontal fold in the middle left crescents by replacing the abrupt wave height join with a continuous curved span on the front and rear.'
  notes={
   'crescent_ocean':'Traced the silver and blue crescent contours, star field and breaking waves. The compass has real main facet planes. Removed detached background fragments and sealed small gaps in dark metal.',
   'mountain_crest':'Traced the open gold frame and mountain silhouettes. Sculpted overlapping peak ridges and the raised gold ornaments, with actual main diamond planes.',
@@ -35,7 +44,9 @@ Checked the complete model in the connected Blender application from the front, 
 
 This is a custom floating shape, with its lowest point at Y = minus 2.455 and its highest at 3.015. Preview size is 1 and lift is 0. The model carries no camera, lights or floor and uses CrestUV with UsdPreviewSurface materials.
 
-The reference finish uses detailed surface maps with the preview's AgX transform inverted. Most face highlights stay fixed to preserve the reference appearance; the side metal and a small face contribution reflect the studio lights. Fine scratches, smaller facet reflections and engraving are surface detail on the sculpted relief. The back repeats the sculpting and materials. Side and rear depth are inferred from the single front reference. Side normals use a smooth contour field and a front to rear blend to remove the raster contour's reflection bands while retaining the geometry.
+{material_note}
+
+Fine scratches, smaller facet reflections and engraving are surface detail on the sculpted relief. The back repeats the sculpting and materials. Side and rear depth are inferred from the single front reference. Side normals use a smooth contour field and a front to rear blend to remove the raster contour's reflection bands while retaining the geometry.
 
 The file contains {triangles:,} triangles and is {mb:.2f} MB, above the usual badge size guidance to preserve these detailed outlines and relief. {texture_note} Reference texture is retained through the lowest part to preserve the waves, stone and blade detail. Physical device load time is unmeasured.
 

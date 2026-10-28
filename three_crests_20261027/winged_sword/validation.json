@@ -2,8 +2,8 @@
   "closed_surface": true,
   "meshes": 3,
   "triangles": 115460,
-  "bytes": 9731754,
-  "sha256": "35ac4f68b72bdd4d47495d6c3c97a33977dd54ac2fe4f78435062346418869ca",
+  "bytes": 9622070,
+  "sha256": "00a0dfa50e3278cfd1a00d1a4d400b2cf0f047b162f563870267601fda665a56",
   "bounds_min": [
     -2.6009020805358887,
     -2.4549999237060547,

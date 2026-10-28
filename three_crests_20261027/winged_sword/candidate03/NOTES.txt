@@ -1,0 +1,2 @@
+Traced the individual feather contours, the openings around the blade and the guard. Added swept wing depth, a creased blade, wrapped handle and primary gem planes.
+Reference detail and matching rear retained; validated in the native preview.

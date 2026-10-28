@@ -4,6 +4,7 @@ import sys,json,subprocess,shutil,hashlib
 import numpy as np
 from pxr import Usd,UsdGeom,UsdShade,Sdf,Gf,Vt
 ROOT=Path(__file__).resolve().parent;key=sys.argv[1];R=ROOT/key;C=R/((R/'candidate.txt').read_text().strip() if (R/'candidate.txt').exists() else 'candidate01');PKG=Path('/tmp/crest_package')/key;PKG.mkdir(parents=True,exist_ok=True)
+finish=json.loads((C/'metal_finish.json').read_text()) if (C/'metal_finish.json').exists() else {}
 shutil.copytree(C/'textures',PKG/'textures',dirs_exist_ok=True)
 path=PKG/'crest.usdc'
 if path.exists():path.unlink()
@@ -11,9 +12,11 @@ stage=Usd.Stage.CreateNew(str(path));root=UsdGeom.Xform.Define(stage,'/Crest');s
 mats={}
 for role,color in [('surface',(.004,.004,.004)),('star',(.004,.004,.004)),('silver_edge',(.16,.20,.27)),('gold_edge',(.32,.14,.025)),('blue_edge',(.018,.045,.09))]:
  if role=='star' and not (C/'textures/star_color.png').exists():continue
+ color=finish.get('edge_colors',{}).get(role,color)
  base='/Crest/Materials/'+role;mat=UsdShade.Material.Define(stage,base);s=UsdShade.Shader.Define(stage,base+'/Surface');s.CreateIdAttr('UsdPreviewSurface')
  for name,value in [('metallic',1.),('roughness',.53 if role=='surface' else .55),('opacity',1.),('ior',1.46)]:s.CreateInput(name,Sdf.ValueTypeNames.Float).Set(value)
- s.CreateInput('diffuseColor',Sdf.ValueTypeNames.Color3f).Set(color);s.CreateOutput('surface',Sdf.ValueTypeNames.Token);mat.CreateSurfaceOutput().ConnectToSource(s.ConnectableAPI(),'surface')
+ if role in finish.get('edge_roughness',{}):s.CreateInput('roughness',Sdf.ValueTypeNames.Float).Set(finish['edge_roughness'][role])
+ s.CreateInput('diffuseColor',Sdf.ValueTypeNames.Color3f).Set(tuple(color));s.CreateOutput('surface',Sdf.ValueTypeNames.Token);mat.CreateSurfaceOutput().ConnectToSource(s.ConnectableAPI(),'surface')
  if role in ['surface','star']:
   reader=UsdShade.Shader.Define(stage,base+'/UV');reader.CreateIdAttr('UsdPrimvarReader_float2');reader.CreateInput('varname',Sdf.ValueTypeNames.String).Set('CrestUV');reader.CreateOutput('result',Sdf.ValueTypeNames.Float2)
   for suffix,param in [('color','diffuseColor'),('emission','emissiveColor')]:
@@ -21,6 +24,10 @@ for role,color in [('surface',(.004,.004,.004)),('star',(.004,.004,.004)),('silv
    tex.CreateInput('wrapS',Sdf.ValueTypeNames.Token).Set('clamp');tex.CreateInput('wrapT',Sdf.ValueTypeNames.Token).Set('clamp');tex.CreateInput('st',Sdf.ValueTypeNames.Float2).ConnectToSource(reader.ConnectableAPI(),'result')
    if suffix=='emission':tex.CreateInput('scale',Sdf.ValueTypeNames.Float4).Set((8,8,8,1))
    tex.CreateOutput('rgb',Sdf.ValueTypeNames.Float3);s.CreateInput(param,Sdf.ValueTypeNames.Color3f).ConnectToSource(tex.ConnectableAPI(),'rgb')
+  if (C/'textures'/(role+'_roughness.png')).exists():
+   tex=UsdShade.Shader.Define(stage,base+'/roughness');tex.CreateIdAttr('UsdUVTexture');tex.CreateInput('file',Sdf.ValueTypeNames.Asset).Set(Sdf.AssetPath('textures/'+role+'_roughness.png'));tex.CreateInput('sourceColorSpace',Sdf.ValueTypeNames.Token).Set('raw')
+   tex.CreateInput('wrapS',Sdf.ValueTypeNames.Token).Set('clamp');tex.CreateInput('wrapT',Sdf.ValueTypeNames.Token).Set('clamp');tex.CreateInput('st',Sdf.ValueTypeNames.Float2).ConnectToSource(reader.ConnectableAPI(),'result');tex.CreateOutput('r',Sdf.ValueTypeNames.Float)
+   s.CreateInput('roughness',Sdf.ValueTypeNames.Float).ConnectToSource(tex.ConnectableAPI(),'r')
  mats[role]=mat
 data=np.load(C/'blender_geometry.npz');groups=json.loads((C/'groups.json').read_text());allpoints=[];total=0
 for i,g in enumerate(groups):

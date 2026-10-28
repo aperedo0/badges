@@ -8,5 +8,7 @@
     "mountainCrest",
     "wingedSword"
   ],
-  "selected_badge": "wingedSword"
+  "selected_badge": "wingedSword",
+  "moving_metal_glints": true,
+  "sword_and_moon_refined": true
 }

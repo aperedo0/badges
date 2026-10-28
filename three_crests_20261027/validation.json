@@ -1,12 +1,12 @@
 {
   "crescent_ocean": {
-    "name": "Crescent Ocean",
-    "candidate": "candidate06",
+    "name": "validation.json",
+    "candidate": "candidate09",
     "closed_surface": true,
     "meshes": 5,
     "triangles": 95784,
-    "bytes": 8508612,
-    "sha256": "81d24ce0eab589ac393250cc63134dbc721a5bb4b56a90bf12077b27954a1035",
+    "bytes": 8416202,
+    "sha256": "9f8b386b77f815eb75527da162412580ff345e9ab5ff7ffacbfaa3b68450e071",
     "bounds_min": [
       -2.7758970260620117,
       -2.4549999237060547,
@@ -29,12 +29,12 @@
   },
   "mountain_crest": {
     "name": "Mountain Crest",
-    "candidate": "candidate02",
+    "candidate": "candidate04",
     "closed_surface": true,
     "meshes": 3,
     "triangles": 85740,
-    "bytes": 7653272,
-    "sha256": "8c6cc28bf4c00f980bd10988f089d8aa139946b758bcb03919972a45e9758a4d",
+    "bytes": 7596638,
+    "sha256": "45bc73ee3e1ca09161686ee00f4e449ca8fceb3ae46fe728fac8db6e468545b1",
     "bounds_min": [
       -2.866748332977295,
       -2.4549999237060547,
@@ -56,13 +56,13 @@
     "usdchecker_arkit_passed": true
   },
   "winged_sword": {
-    "name": "Winged Sword",
-    "candidate": "candidate02",
+    "name": "validation.json",
+    "candidate": "candidate06",
     "closed_surface": true,
     "meshes": 3,
     "triangles": 115460,
-    "bytes": 9731754,
-    "sha256": "35ac4f68b72bdd4d47495d6c3c97a33977dd54ac2fe4f78435062346418869ca",
+    "bytes": 9622070,
+    "sha256": "00a0dfa50e3278cfd1a00d1a4d400b2cf0f047b162f563870267601fda665a56",
     "bounds_min": [
       -2.6009020805358887,
       -2.4549999237060547,

@@ -1,0 +1,2 @@
+Removed the false horizontal fold from both metal crescents with a continuous depth join.
+Matching rear corrected; outline, waves and independent compass retained.

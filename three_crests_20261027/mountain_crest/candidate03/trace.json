@@ -1,0 +1,38 @@
+{
+  "name": "Mountain Crest",
+  "reference_size": [
+    1316,
+    1195
+  ],
+  "reference_bounds": [
+    [
+      78.62,
+      20.63
+    ],
+    [
+      1218.37,
+      1108.0
+    ]
+  ],
+  "reference_scale": 0.00503048640297231,
+  "reference_center": [
+    648.4949999999999,
+    564.315
+  ],
+  "front_triangles": 37971,
+  "wall_triangles": 9798,
+  "total_triangles": 85740,
+  "bounds_min": [
+    -2.8667484388938447,
+    -2.4549999999999996,
+    -0.6365423016341512
+  ],
+  "bounds_max": [
+    2.866748438893845,
+    3.015,
+    0.6365423016341512
+  ],
+  "preview_size": 1,
+  "preview_lift": 0,
+  "method": "Reference contours, curved sculpted relief, continuous edge walls, matching sculpted rear"
+}

@@ -1,0 +1,2 @@
+Softened and broadened sword reflections with smoother reflection normals.
+Compared the same native resting and turning poses; geometry and outline retained.

@@ -1,0 +1,35 @@
+{
+  "updated_utc": "2026-10-28T19:44:57.739051+00:00",
+  "badges": {
+    "crescent_ocean": {
+      "candidate": "candidate09",
+      "sha256": "9f8b386b77f815eb75527da162412580ff345e9ab5ff7ffacbfaa3b68450e071",
+      "geometry_preserved": false,
+      "moving_glints_observed_in_native_preview": true,
+      "closed_surface": true,
+      "usdchecker_arkit_passed": true,
+      "false_horizontal_fold_removed": true,
+      "front_and_rear_refined": true,
+      "outline_preserved": true
+    },
+    "mountain_crest": {
+      "candidate": "candidate04",
+      "sha256": "45bc73ee3e1ca09161686ee00f4e449ca8fceb3ae46fe728fac8db6e468545b1",
+      "geometry_preserved": true,
+      "moving_glints_observed_in_native_preview": true,
+      "closed_surface": true,
+      "usdchecker_arkit_passed": true
+    },
+    "winged_sword": {
+      "candidate": "candidate06",
+      "sha256": "00a0dfa50e3278cfd1a00d1a4d400b2cf0f047b162f563870267601fda665a56",
+      "geometry_preserved": true,
+      "moving_glints_observed_in_native_preview": true,
+      "closed_surface": true,
+      "usdchecker_arkit_passed": true,
+      "softer_angular_reflections": true,
+      "metallic_glints_retained": true
+    }
+  },
+  "production_app_changed": false
+}

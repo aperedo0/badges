@@ -1,0 +1,6 @@
+{
+  "primary_planes": 8,
+  "separate_compass_geometry": true,
+  "navy_backing_reconstructed_under_compass": true,
+  "star_texture_size": 512
+}

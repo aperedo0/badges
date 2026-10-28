@@ -6,18 +6,25 @@ from mathutils import Vector,Quaternion
 ROOT=Path('/Users/antonioperedo/Desktop/badges/three_crests_20261027')
 key=(ROOT/'active_badge.txt').read_text().strip();R=ROOT/key;C=R/((R/'candidate.txt').read_text().strip() if (R/'candidate.txt').exists() else 'candidate01')
 cfg=json.loads((R/'design.json').read_text());D=np.load(C/'geometry.npz')
+finish=json.loads((C/'metal_finish.json').read_text()) if (C/'metal_finish.json').exists() else {}
 scene=bpy.data.scenes.new(cfg['name']+' complete sculpture');bpy.context.window.scene=scene
 materials={}
 for role,col in [('surface',(.004,.004,.004)),('star',(.004,.004,.004)),('silver_edge',(.16,.20,.27)),('gold_edge',(.32,.14,.025)),('blue_edge',(.018,.045,.09))]:
+ col=finish.get('edge_colors',{}).get(role,col)
  m=bpy.data.materials.new(cfg['name']+' '+role);m.use_nodes=True;m.diffuse_color=(*col,1)
  nt=m.node_tree;bs=nt.nodes.get('Principled BSDF');bs.inputs['Base Color'].default_value=(*col,1)
  bs.inputs['Metallic'].default_value=1;bs.inputs['Roughness'].default_value=.53 if role=='surface' else .55
+ if role in finish.get('edge_roughness',{}):bs.inputs['Roughness'].default_value=finish['edge_roughness'][role]
  if role in ['surface','star'] and (role=='surface' or (C/'textures/star_color.png').exists()):
   uv=nt.nodes.new('ShaderNodeUVMap');uv.uv_map='CrestUV'
   for suffix,socket in [('color','Base Color'),('emission','Emission Color')]:
    tex=nt.nodes.new('ShaderNodeTexImage');tex.image=bpy.data.images.load(str(C/'textures'/(role+'_'+suffix+'.png')),check_existing=False);tex.image.pack()
    nt.links.new(uv.outputs['UV'],tex.inputs['Vector']);nt.links.new(tex.outputs['Color'],bs.inputs[socket])
   bs.inputs['Emission Strength'].default_value=8
+  rough_path=C/'textures'/(role+'_roughness.png')
+  if rough_path.exists():
+   tex=nt.nodes.new('ShaderNodeTexImage');tex.image=bpy.data.images.load(str(rough_path),check_existing=False);tex.image.colorspace_settings.name='Non-Color';tex.image.pack()
+   nt.links.new(uv.outputs['UV'],tex.inputs['Vector']);nt.links.new(tex.outputs['Color'],bs.inputs['Roughness'])
  materials[role]=m
 objects=[]
 def make(name,v,t,uv=None,role='surface',smooth=True):
@@ -38,6 +45,17 @@ for face in ob.data.polygons:
   for a,b in zip(polygon,polygon[1:]+polygon[:1]):
    if (a[1]>py)!=(b[1]>py) and px<(b[0]-a[0])*(py-a[1])/(b[1]-a[1])+a[0]:inside=not inside
   if inside:face.use_smooth=False;break
+if (C/'polished_normals.npz').exists():
+ polished=np.load(C/'polished_normals.npz');hints=polished['normals'];metal=polished['metal'];me=ob.data
+ corner_normals=np.array([n.vector[:] for n in me.corner_normals],float)
+ for face in me.polygons:
+  if not face.use_smooth:continue
+  actual=np.array(face.normal[:])
+  for index in face.loop_indices:
+   vertex=me.loops[index].vertex_index
+   if metal[vertex]:
+    normal=hints[vertex].astype(float);normal+=actual*max(0,.15-float(normal@actual));normal/=max(np.linalg.norm(normal),1e-8);corner_normals[index]=normal
+ me.normals_split_custom_set(corner_normals.tolist());me.update()
 for role,index in [('silver_edge',0),('gold_edge',1),('blue_edge',2)]:
  tt=D['wall_triangles'][D['wall_roles']==index]
  if len(tt):
@@ -67,6 +85,16 @@ for i,ob in enumerate(objects):
   if not len(bad):break
   for index in bad:me.polygons[me.loop_triangles[int(index)].polygon_index].use_smooth=False
   me.update()
+ # Custom reflection normals must remain in the actual face hemisphere,
+ # including the narrow triangles beside hard ornament cuts.
+ positions=p.astype(float);geometric=np.cross(positions[t[:,1]]-positions[t[:,0]],positions[t[:,2]]-positions[t[:,0]])
+ geometric/=np.maximum(np.linalg.norm(geometric,axis=1)[:,None],1e-20)
+ loop_normals=np.array([n.vector[:] for n in me.corner_normals],float);changed=False
+ for j,triangle in enumerate(me.loop_triangles):
+  indices=np.array(triangle.loops);values=loop_normals[indices];dots=values@geometric[j];bad=dots<.08
+  if bad.any():
+   values[bad]+=geometric[j]*(.12-dots[bad,None]);values/=np.maximum(np.linalg.norm(values,axis=1)[:,None],1e-10);loop_normals[indices]=values;changed=True
+ if changed:me.normals_split_custom_set(loop_normals.tolist());me.update()
  arrays[str(i)+'_points']=p;arrays[str(i)+'_triangles']=t
  arrays[str(i)+'_normals']=np.array([[me.corner_normals[l].vector[:] for l in t.loops] for t in me.loop_triangles],np.float32)
  if me.uv_layers.active:arrays[str(i)+'_uv']=np.array([[me.uv_layers.active.data[l].uv[:] for l in t.loops] for t in me.loop_triangles],np.float32)

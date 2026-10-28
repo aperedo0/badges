@@ -1,0 +1,22 @@
+[
+  {
+    "name": "Crescent Ocean sculpted front and matching rear.018",
+    "role": "surface"
+  },
+  {
+    "name": "Crescent Ocean continuous silver_edge.016",
+    "role": "silver_edge"
+  },
+  {
+    "name": "Crescent Ocean continuous blue_edge.014",
+    "role": "blue_edge"
+  },
+  {
+    "name": "Compass exact planar front and rear.007",
+    "role": "star"
+  },
+  {
+    "name": "Compass straight metallic walls.007",
+    "role": "silver_edge"
+  }
+]
