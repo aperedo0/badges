@@ -36,6 +36,10 @@ The model has {validation['triangles']:,} triangles and is {validation['bytes']/
 
 Only a separate entry in the existing private Badge Studio preview was added. The production app and existing badge models were not edited. Open Choose badge and select Bronze Phoenix.
 '''
+if finish.get('bronze_reflection_multiplier'):
+ report+='\nThe owner requested a 15 percent stronger metallic look. Bronze face and wall reflection colors were multiplied by 1.15 in linear light relative to candidate03. Roughness, geometry and amber face materials are preserved. This scales the bronze reflectance setting; the displayed increase varies with viewing angle and the app view transform.\n'
 (R/'REPORT.md').write_text(report)
 (C/'NOTES.txt').write_text('Matched bronze phoenix silhouette, recessed cracked center, raised feathers and three planar amber gems.\nGentle moving bronze reflections balanced against measured native studio light; matching rear and closed sides checked.\n')
+if finish.get('bronze_reflection_multiplier'):
+ (C/'NOTES.txt').write_text('Increased bronze face and wall reflectance by 15 percent in linear light relative to candidate03.\nRetained geometry, normals, roughness, reference fill and amber face finish; checked the native front and rotation.\n')
 print('Promoted Bronze Phoenix',validation['sha256'])

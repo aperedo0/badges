@@ -1,0 +1,2 @@
+Increased bronze face and wall reflectance by 15 percent in linear light relative to candidate03.
+Retained geometry, normals, roughness, reference fill and amber face finish; checked the native front and rotation.

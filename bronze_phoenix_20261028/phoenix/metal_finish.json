@@ -8,9 +8,9 @@
       0.009
     ],
     "gold_edge": [
-      0.3,
-      0.078,
-      0.013
+      0.345,
+      0.08969999999999999,
+      0.014949999999999998
     ]
   },
   "edge_roughness": {
@@ -32,5 +32,10 @@
       "mean_retained_physical_reflectance": 0.2286601074721293,
       "roughness_metal": 0.2
     }
-  }
+  },
+  "bronze_reflection_multiplier": 1.15,
+  "reflection_baseline": "candidate03",
+  "roughness_preserved": true,
+  "geometry_preserved": true,
+  "amber_face_material_preserved": true
 }
