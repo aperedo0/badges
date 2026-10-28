@@ -1,0 +1,33 @@
+{
+  "texture_maps": "identical",
+  "field_points_UVs_and_triangles": "identical",
+  "field_normal_max_difference": 6.61239e-08,
+  "remaining_material_difference": {
+    "property": "New_field/Surface.inputs:diffuseColor",
+    "arrow": [
+      0.004,
+      0.075,
+      0.025
+    ],
+    "trophy": [
+      0.0006,
+      0.014,
+      0.002
+    ],
+    "note": "Both inputs are connected to the identical color texture. The standalone value is not established as the cause of a visible difference."
+  },
+  "render_comparison": {
+    "common_clear_background_pixels": 5852,
+    "mean_arrow_RGB_255": [
+      21.0477,
+      34.2215,
+      18.6126
+    ],
+    "mean_trophy_RGB_255": [
+      21.8366,
+      34.9834,
+      18.9749
+    ]
+  },
+  "appearance_interpretation": "Brighter crest and warmer rim alter the surrounding contrast. Small warm differences near highlights are consistent with bloom."
+}

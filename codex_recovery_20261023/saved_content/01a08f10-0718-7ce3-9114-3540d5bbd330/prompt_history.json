@@ -1,0 +1,197 @@
+[
+  {
+    "session_id": "01a08f10-0718-7ce3-9114-3540d5bbd330",
+    "ts": 1789106631,
+    "text": "so this repo/app still has work left to be done. figure out what that is, then figure out if the plan for building this app can be better"
+  },
+  {
+    "session_id": "01a08f10-0718-7ce3-9114-3540d5bbd330",
+    "ts": 1789107361,
+    "text": "what do you mean by web/saas direction? short answer"
+  },
+  {
+    "session_id": "01a08f10-0718-7ce3-9114-3540d5bbd330",
+    "ts": 1789107408,
+    "text": "well what I want is for the app to be built for me, but then later be able to make it for other people. eventually if it works good enough for me, than I can sell it"
+  },
+  {
+    "session_id": "01a08f10-0718-7ce3-9114-3540d5bbd330",
+    "ts": 1789107469,
+    "text": "well.. it wouldn't be a desktop app. I mean I would launch it via desktop locally yes, but then I would want to sell it and I would sell it as a service through a website. lets keep that in mind. does that change the plan at all?"
+  },
+  {
+    "session_id": "01a08f10-0718-7ce3-9114-3540d5bbd330",
+    "ts": 1789107605,
+    "text": "ok then update the plan. it is good that we verify it is good locally first, then turn it into something for many users"
+  },
+  {
+    "session_id": "01a08f10-0718-7ce3-9114-3540d5bbd330",
+    "ts": 1789108992,
+    "text": "ok, can you start building from here?"
+  },
+  {
+    "session_id": "01a08f10-0718-7ce3-9114-3540d5bbd330",
+    "ts": 1789109465,
+    "text": "what happeend here? antonioperedo@Mac ebay listings enhancement % npm run spike:ebay -- --environment sandbox --item-id YOUR_SANDBOX_ITEM_ID\n\n> pokemon-listing-optimizer@0.1.0 spike:ebay\n> node scripts/run-ebay-spike.mjs --environment sandbox --item-id YOUR_SANDBOX_ITEM_ID\n\n\n> pokemon-listing-optimizer@0.1.0 package\n> npm run package:app && node scripts/smoke-packaged.mjs\n\n\n> pokemon-listing-optimizer@0.1.0 package:app\n> electron-forge package\n\n\u2714 Checking your system\n\u2714 Preparing to package application\n\u2714 Running packaging hooks\n  \u2714 Running generateAssets hook\n  \u2714 Running prePackage hook\n    \u2714 [plugin-webpack] Preparing webpack bundles\n      \u2714 Preparing native dependencies: 1 / 1 [0.1s]\n      \u2714 Building webpack bundles [3s]\n\u2714 Packaging application\n  \u2714 Packaging for arm64 on darwin [14s]\n\u2714 Running postPackage hook\nPackaged smoke PASS \u2014 schema 1.\n--item-id must be a numeric eBay item ID.\nantonioperedo@Mac ebay listings enhancement %"
+  },
+  {
+    "session_id": "01a08f10-0718-7ce3-9114-3540d5bbd330",
+    "ts": 1789109497,
+    "text": "how do I get that info? can you get that info?"
+  },
+  {
+    "session_id": "01a08f10-0718-7ce3-9114-3540d5bbd330",
+    "ts": 1789110695,
+    "text": "and it also does all of this > pokemon-listing-optimizer@0.1.0 spike:ebay\n> node scripts/run-ebay-spike.mjs --environment sandbox --item-id 123456789012\n\n\n> pokemon-listing-optimizer@0.1.0 package\n> npm run package:app && node scripts/smoke-packaged.mjs\n\n\n> pokemon-listing-optimizer@0.1.0 package:app\n> electron-forge package\n\n\u2714 Checking your system\n\u2714 Preparing to package application\n\u2714 Running packaging hooks\n  \u2714 Running generateAssets hook\n  \u2714 Running prePackage hook\n    \u2714 [plugin-webpack] Preparing webpack bundles\n      \u2714 Preparing native dependencies: 1 / 1 [0.1s]\n      \u2714 Building webpack bundles [3s]\n\u2714 Packaging application\n  \u2714 Packaging for arm64 on darwin [2s]\n\u2714 Running postPackage hook\nPackaged smoke PASS \u2014 schema 1.\nTrading GetItem returned Ack=Failure.\nantonioperedo@Mac ebay listings enhancement % it does not ask me to input anything"
+  },
+  {
+    "session_id": "01a08f10-0718-7ce3-9114-3540d5bbd330",
+    "ts": 1789110903,
+    "text": "listen, you are free to go look for the thing I need, the page is already open"
+  },
+  {
+    "session_id": "01a08f10-0718-7ce3-9114-3540d5bbd330",
+    "ts": 1789111855,
+    "text": "> pokemon-listing-optimizer@0.1.0 package:app\n> electron-forge package\n\n\u2714 Checking your system\n\u2714 Preparing to package application\n\u2714 Running packaging hooks\n  \u2714 Running generateAssets hook\n  \u2714 Running prePackage hook\n    \u2714 [plugin-webpack] Preparing webpack bundles\n      \u2714 Preparing native dependencies: 1 / 1 [0.1s]\n      \u2714 Building webpack bundles [3s]\n\u2714 Packaging application\n  \u2714 Packaging for arm64 on darwin [2s]\n\u2714 Running postPackage hook\nPackaged smoke PASS \u2014 schema 1.\nThe listing is missing required read-only condition descriptors.\nantonioperedo@Mac ebay listings enhancement %  fix that"
+  },
+  {
+    "session_id": "01a08f10-0718-7ce3-9114-3540d5bbd330",
+    "ts": 1789113441,
+    "text": "Listen maybe it is best we take out the sandbox from the plan and stop building it, it is a pain in the ass"
+  },
+  {
+    "session_id": "01a08f10-0718-7ce3-9114-3540d5bbd330",
+    "ts": 1789158671,
+    "text": "Ok let's do that, do the plan so we don't have to deal with the annoying sandbox. also could ebay ban me for using this? I heard they ban people for using ai features"
+  },
+  {
+    "session_id": "01a08f10-0718-7ce3-9114-3540d5bbd330",
+    "ts": 1789177870,
+    "text": "ok can you just start implementing now or is there something else you need from me?"
+  },
+  {
+    "session_id": "01a08f10-0718-7ce3-9114-3540d5bbd330",
+    "ts": 1789198447,
+    "text": "proceed"
+  },
+  {
+    "session_id": "01a08f10-0718-7ce3-9114-3540d5bbd330",
+    "ts": 1789201092,
+    "text": "can you continue? don't I am just asking since the status shows usage left though it said limit reached"
+  },
+  {
+    "session_id": "01a08f10-0718-7ce3-9114-3540d5bbd330",
+    "ts": 1789201159,
+    "text": "how do I see how many weekly limit resets I have without using one?"
+  },
+  {
+    "session_id": "01a08f10-0718-7ce3-9114-3540d5bbd330",
+    "ts": 1789201339,
+    "text": "we would implement wave 2 right? that is where we left off?"
+  },
+  {
+    "session_id": "01a08f10-0718-7ce3-9114-3540d5bbd330",
+    "ts": 1789201366,
+    "text": "ok then now resume"
+  },
+  {
+    "session_id": "01a08f10-0718-7ce3-9114-3540d5bbd330",
+    "ts": 1789201719,
+    "text": "how do I get these credentials?"
+  },
+  {
+    "session_id": "01a08f10-0718-7ce3-9114-3540d5bbd330",
+    "ts": 1789202053,
+    "text": "Packaged smoke PASS \u2014 schema 1.\nproduction Client ID: AntonioP-ebaylist-SBX-b449058ed-efd3595c\nproduction Cert ID: \nHTTP request failed with status 401.\nantonioperedo@Antonios-MacBook-Air ebay listings enhancement % i pasted it, it never showed that I pasted maybe it hides it. but that was it"
+  },
+  {
+    "session_id": "01a08f10-0718-7ce3-9114-3540d5bbd330",
+    "ts": 1789202135,
+    "text": "ok then reset what I input and I will try again"
+  },
+  {
+    "session_id": "01a08f10-0718-7ce3-9114-3540d5bbd330",
+    "ts": 1789202448,
+    "text": "failed again, look into it"
+  },
+  {
+    "session_id": "01a08f10-0718-7ce3-9114-3540d5bbd330",
+    "ts": 1789202727,
+    "text": "> What was the final error this time\u2014still \u201cHTTP request failed with status 401,\u201d or something different? Please paste only the error, not your credentials.\n\nHTTP request failed with status 401."
+  },
+  {
+    "session_id": "01a08f10-0718-7ce3-9114-3540d5bbd330",
+    "ts": 1789203329,
+    "text": "do I comply or do the excemption?"
+  },
+  {
+    "session_id": "01a08f10-0718-7ce3-9114-3540d5bbd330",
+    "ts": 1789246132,
+    "text": "[Image #1] what do I press here?"
+  },
+  {
+    "session_id": "01a08f10-0718-7ce3-9114-3540d5bbd330",
+    "ts": 1789246943,
+    "text": "what do I fill this out with Platform Notifications (push)\n\nMarketplace Account Deletion\nExempted from Marketplace Account Deletion\n\nEmail to notify if marketplace account deletion notification endpoint is down\n\nantonio.peredoc@gmail.com\nEdit\nMarketplace account deletion notification endpoint\n\nEnter the HTTPs endpoint\nVerification token\n\nEnter the verification token\nSend Test Notification\nSave"
+  },
+  {
+    "session_id": "01a08f10-0718-7ce3-9114-3540d5bbd330",
+    "ts": 1789246995,
+    "text": "ok so build that, what does that entail?"
+  },
+  {
+    "session_id": "01a08f10-0718-7ce3-9114-3540d5bbd330",
+    "ts": 1789256389,
+    "text": "wtf is all of this.. can we just go straight to production? and we test on one listing at a time in production?"
+  },
+  {
+    "session_id": "01a08f10-0718-7ce3-9114-3540d5bbd330",
+    "ts": 1789256488,
+    "text": "didn't I upload a picture? what else do you ened to find? you are free to go look for it online"
+  },
+  {
+    "session_id": "01a08f10-0718-7ce3-9114-3540d5bbd330",
+    "ts": 1789259387,
+    "text": "I opened the website, but idk where to submit my question, find it for me"
+  },
+  {
+    "session_id": "01a08f10-0718-7ce3-9114-3540d5bbd330",
+    "ts": 1789259433,
+    "text": "listen, open up the page, and find where"
+  },
+  {
+    "session_id": "01a08f10-0718-7ce3-9114-3540d5bbd330",
+    "ts": 1789259940,
+    "text": "how should I respond? Suggested Solution\n\nPlease provide more information or ask a specific question about eBay APIs.\n\nMark as Resolved\nProceed to Create a Ticket"
+  },
+  {
+    "session_id": "01a08f10-0718-7ce3-9114-3540d5bbd330",
+    "ts": 1789259977,
+    "text": "how do I fill all of this out? Platform\n\n\nAPIs\n\nMIP\nProduct\n\n-Select Product-\nBug Report\n\n\nYes\n\nNo\nRlogId\nrlogid from response header\nEnvironment\n\n\nSandbox\n\nProduction\n\nBoth\nDate Started \nMM/DD/YYYY\n\nAttachments \nBrowse files\nNo file chosen\nCC\nCC\nSubmit\nNext\nSave as Draft\nClear"
+  },
+  {
+    "session_id": "01a08f10-0718-7ce3-9114-3540d5bbd330",
+    "ts": 1789260199,
+    "text": "should I include more info in my question or will they know what I am talking about?"
+  },
+  {
+    "session_id": "01a08f10-0718-7ce3-9114-3540d5bbd330",
+    "ts": 1789260253,
+    "text": "type that in for me, because the way you gave it to me in uncopyable"
+  },
+  {
+    "session_id": "01a08f10-0718-7ce3-9114-3540d5bbd330",
+    "ts": 1789260733,
+    "text": "what should the subject be?"
+  },
+  {
+    "session_id": "01a08f10-0718-7ce3-9114-3540d5bbd330",
+    "ts": 1789283125,
+    "text": "here is what they said, what does this mean? Hello Antonio,\n\n\n\nThank you for submitting your support request regarding the Production keyset disabled.\n\n\n\nTo activate your production keyset, please address the eBay Marketplace Account Deletion/Closure Notifications requirement by either:\n\n\n\n1. Subscribing to the Notifications: If your application stores eBay user data, you must integrate the notifications workflow. This ensures you are notified when an eBay user requests the deletion of their personal data.\n\n\n\n2. Opting Out: If your application does not persist eBay user data, you may opt out of this requirement.\n\n\n\nFor more detailed information, please visit the following link which provides further guidance on each step of the process: https://developer.ebay.com/marketplace-account-deletion.\n\n\n\nIf you have any further questions or need additional assistance, please feel free to reach out."
+  },
+  {
+    "session_id": "01a08f10-0718-7ce3-9114-3540d5bbd330",
+    "ts": 1789283209,
+    "text": "well since I will eventually save user data, I quess we should set it up right? what does all of that entail? short answer"
+  }
+]

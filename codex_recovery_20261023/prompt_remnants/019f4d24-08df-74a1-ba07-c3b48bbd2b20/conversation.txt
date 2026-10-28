@@ -1,0 +1,52 @@
+codex keeps asking me for things like
+
+Conversation ID: 019f4d24-08df-74a1-ba07-c3b48bbd2b20
+Working folder: /Users/antonioperedo/Desktop/screen_time
+
+Only prompt remnants survived in the sources checked.
+No Codex replies were found for this conversation.
+
+OPENING PROMPT FROM THE HISTORY INDEX
+
+codex keeps asking me for things like
+
+SAVED TERMINAL PROMPT
+
+codex keeps asking me for things like
+
+SAVED TERMINAL PROMPT
+
+codex keeps asking me for things like  Would you like to run the following command?
+ 
+  Environment: local
+ 
+  Reason: Allow restarting the simulator app so it opens directly on the Block
+  List tab?
+ 
+  $ xcrun simctl terminate 66375819-1424-4FE8-A869-1F36910A020C
+  com.antonioperedo.screentime.uidev
+ 
+› 1. Yes, proceed (y)
+  2. Yes, and don't ask again for commands that start with `xcrun simctl
+     terminate` (p)
+  3. No, and tell Codex what to do differently (esc) is there a way to get this stuff auto approved?
+
+SAVED TERMINAL PROMPT
+
+this si what I want, I want a chatgpt bot to review the request and decide if it is ok or not   There is also automatic approval review:
+
+  # ~/.codex/config.toml
+  approval_policy = "on-request"
+  approvals_reviewer = "auto_review"
+
+SAVED TERMINAL PROMPT
+
+did it work and do I need to restart the terminal for it to work?
+
+SAVED TERMINAL PROMPT
+
+Ok well I have a separate codex run in session, how do I stop it, close it, then reopen aand have it continue?
+
+SAVED TERMINAL PROMPT
+
+How does the limit for the block get caluclated? is it from when the timer starts of sorts, is it from even before? how does the app deteremine when the time is up and how much time on an app has passed?

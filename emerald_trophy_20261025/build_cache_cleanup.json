@@ -1,0 +1,16 @@
+{
+  "removed_generated_directories": [
+    "Build/Intermediates.noindex",
+    "Index.noindex",
+    "ModuleCache.noindex",
+    "SDKStatCaches.noindex",
+    "CompilationCache.noindex"
+  ],
+  "allocated_bytes_removed": 507334656,
+  "free_before": 7623262208,
+  "free_after": 8060215296,
+  "finished_app_preserved": true,
+  "badge_files_preserved": true,
+  "chats_moved": 0,
+  "simulators_deleted": 0
+}

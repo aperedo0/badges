@@ -1,0 +1,291 @@
+Full app audit. Every file, every feature, every interaction. The app should be completely functional after this pass. Check everything.
+
+PART 1: COMPILATION AND TARGETS
+
+1. Build FocusGuard scheme (device) with zero errors, zero warnings.
+2. Build FocusGuard-UIOnly scheme (simulator) with zero errors, zero warnings.
+3. List every Swift file and which targets it belongs to. Verify no file is missing from a target it should be in. Verify no extension target includes files it shouldn't (InsightEngine, NotificationManager, and other heavy files should NOT be in extensions due to 6 MB limit).
+4. Verify every extension target only imports frameworks it needs. List imports per extension.
+
+PART 2: DATA FLOW END TO END
+
+Trace every complete user flow and verify the data moves correctly through the entire pipeline:
+
+Flow A — User sets up blocking for the first time:
+1. User opens Block List > taps Manage > FamilyActivityPicker appears
+2. User selects apps > picker closes > selection saved to App Group
+3. User taps a block card (Night Owl) > BlockingSchedule saved > DeviceActivitySchedule created > shields applied > monitoring started > unblocked monitoring started for non-blocked hours
+4. UI updates to show "Active now"
+Verify every step reads and writes the correct keys. Flag any broken link.
+
+Flow B — Shield fires during blocked hours:
+1. User tries to open blocked app > ShieldConfigurationProvider fires
+2. Provider reads hit count, increments, saves
+3. Provider checks for new day reset
+4. Provider reads shield tone, picks message, checks for personal message rotation
+5. Provider logs ShieldHitRecord with sourceType and action
+6. Provider returns ShieldConfiguration
+7. User taps "Go Back" > ShieldActionHandler returns .close
+Verify every step. Flag any missing data write.
+
+Flow C — Block period ends:
+1. FocusGuardMonitor.intervalDidEnd fires
+2. Monitor reads today's hit count
+3. Monitor calls StreakManager.evaluateDay
+4. Monitor checks for milestone > if yes, schedules notification (if toggle on)
+5. Monitor checks if hit count was 0 > if yes, schedules clean night notification (if toggle on)
+6. Monitor resets daily counter
+7. Monitor removes shields
+Verify the ORDER of operations is correct. Evaluate THEN reset. Shields removed AFTER logging.
+
+Flow D — User starts focus session:
+1. User taps 30m pill > taps Start Focus Session
+2. FocusSessionManager.startSession called > FocusSession saved > DeviceActivitySchedule created > shields applied
+3. Home screen detects active session > transforms to countdown UI
+4. Timer ticks every second > reads remainingSeconds from FocusSession
+5. User backgrounds app > reopens > timer recalculates from startTime
+6. Timer hits 0 > auto-end > endSession called > shields removed (unless regular block is active) > celebration shown > UI returns to normal
+Verify every step.
+
+Flow E — User opens app with no data (first launch):
+1. All views receive nil/empty data
+2. HomeView shows Day 0, all dots pending, "Your first night starts tonight", no suggested session
+3. BlockListView shows no schedule, no blocked apps, empty blocks, Create New Block
+4. InsightsView shows 0 attempts, empty charts, "Not enough data yet"
+5. No crashes anywhere
+Verify by tracing the live data path with empty SharedDataStore.
+
+Flow F — User deletes all data:
+1. User goes to Settings > Delete All Data > confirms twice
+2. SharedDataStore.deleteAllData() runs
+3. All JSON files deleted, all UserDefaults keys cleared
+4. App returns to first-launch state
+5. No crashes, no stale data displayed
+Verify deleteAllData clears EVERY key and EVERY file. List what it clears and check against what exists.
+
+PART 3: CONCURRENCY AND THREAD SAFETY
+
+1. SharedDataStore.atomicAppend is used for shield hit logging. Verify it's used everywhere arrays are appended, not just shield hits. Check threshold events, focus sessions, any other array-type storage.
+2. FocusSessionManager: can startSession and endSession be called simultaneously from different threads? Is the session state protected?
+3. UserDefaults writes from extensions: multiple extensions writing to the same UserDefaults suite. Are there any keys that two extensions write to simultaneously? Verify no write conflicts.
+4. Timer publisher on HomeView: does it create a retain cycle? Is it properly cancelled when the view disappears?
+
+PART 4: MEMORY BUDGET PER EXTENSION
+
+For each extension, list every file compiled into it and estimate worst-case memory:
+
+ShieldConfigurationExtension: loads message libraries (52 strings), reads UserDefaults, reads/writes JSON. Calculate approximate footprint. Must be under 6 MB.
+
+ShieldActionExtension: minimal. Verify it only has the handler and shared models.
+
+DeviceActivityMonitorExtension: loads StreakManager, reads/writes JSON, reads UserDefaults, schedules notifications. Calculate approximate footprint. Must be under 6 MB.
+
+DeviceActivityReportExtension: placeholder only. Verify nothing heavy is compiled into it.
+
+Flag anything that pushes an extension close to the limit.
+
+PART 5: SETTINGS PERSISTENCE MATRIX
+
+Create a complete table:
+| Setting | UserDefaults Key | Written Where | Read Where | Survives App Kill | Cleared by Delete All |
+
+Include every setting: shield tone, personal message, strict mode, every notification toggle, quiet hours start, quiet hours end, onboarding complete flag, intake answers, monitoring start time, and any other persisted value.
+
+Flag any setting that is written but never read, read but never written, or not cleared by Delete All Data.
+
+PART 6: EDGE CASES
+
+1. What happens if FamilyControls authorization is revoked while the app is running? Does the app detect this and prompt re-authorization?
+2. What happens if the user selects apps, sets up a schedule, then deletes and reinstalls the app? The tokens are gone. How does the app handle this?
+3. What happens if two blocking schedules overlap (Night Owl 9PM-12AM and a Focus Session at 10PM for 1 hour)? Do the shields stack? Does ending one remove shields that the other still needs?
+4. What happens if the DeviceActivityMonitor extension stops receiving callbacks (known iOS bug)? Is monitoring re-registered on app launch?
+5. What happens if the user changes their timezone? Do schedules adjust or break?
+6. What happens if the user's phone storage is full and JSON writes fail? Does the app handle this gracefully?
+7. What happens if maxRecordsPerFile (500) is reached during a heavy usage night? Does trimming work correctly under concurrent writes?
+
+PART 7: UI CONSISTENCY
+
+1. Search every view file for any remaining hardcoded colors, fonts, padding, or corner radius values not using DS tokens. List any found.
+2. Verify dark mode works on every screen. All colors should use semantic system colors or DS tokens that have dark mode variants.
+3. Verify every tappable element has adequate touch target size (minimum 44x44pt per Apple HIG).
+4. Verify every screen scrolls correctly if content exceeds screen height. Test with the smallest iPhone screen size (iPhone SE / iPhone 13 mini).
+5. Verify the tab bar is consistent across all three tabs: same icons, same labels, same selected color.
+
+PART 8: CODE QUALITY
+
+1. Search for any force unwraps (!) outside of IBOutlet patterns. Replace with safe unwrapping.
+2. Search for any print() statements. Replace with os_log via Logger.
+3. Search for any TODO, FIXME, or HACK comments. List them and resolve or document.
+4. Search for any unused imports, unused variables, unused methods. Clean up.
+5. Verify every public method has a brief comment explaining what it does.
+6. Verify SharedConstants has no duplicate keys.
+7. Verify DesignSystem has no duplicate token names.
+
+PART 9: SCALABILITY CHECK
+
+1. Can a new InsightEngine rule be added without modifying existing rules? Verify the rule registration pattern.
+2. Can a new notification type be added without modifying existing notification code? Verify the pattern.
+3. Can a new shield tone library be added without modifying existing libraries? Verify the pattern.
+4. Can a new blocking schedule template be added without modifying existing templates? Verify the pattern.
+5. Can a new contextual message be added without modifying existing messages? Verify the pattern.
+
+For each, if the answer is "no, you'd have to modify existing code," refactor to make it extensible.
+
+PART 10: FINAL BUILD
+
+After all fixes:
+1. Build FocusGuard scheme for device — zero errors, zero warnings
+2. Build FocusGuard-UIOnly scheme for simulator — zero errors, zero warnings
+3. List every fix made with file name and description
+4. List any known limitations that cannot be fixed without a physical device
+5. Confirm the app is ready for physical device testing
+
+Conversation ID: 019d70ed-ac0b-71c0-a462-a1a46da38ba3
+Working folder: /Users/antonioperedo/Desktop/screen_time
+
+Only prompt remnants survived in the sources checked.
+No Codex replies were found for this conversation.
+
+OPENING PROMPT FROM THE HISTORY INDEX
+
+Full app audit. Every file, every feature, every interaction. The app should be completely functional after this pass. Check everything.
+
+PART 1: COMPILATION AND TARGETS
+
+1. Build FocusGuard scheme (device) with zero errors, zero warnings.
+2. Build FocusGuard-UIOnly scheme (simulator) with zero errors, zero warnings.
+3. List every Swift file and which targets it belongs to. Verify no file is missing from a target it should be in. Verify no extension target includes files it shouldn't (InsightEngine, NotificationManager, and other heavy files should NOT be in extensions due to 6 MB limit).
+4. Verify every extension target only imports frameworks it needs. List imports per extension.
+
+PART 2: DATA FLOW END TO END
+
+Trace every complete user flow and verify the data moves correctly through the entire pipeline:
+
+Flow A — User sets up blocking for the first time:
+1. User opens Block List > taps Manage > FamilyActivityPicker appears
+2. User selects apps > picker closes > selection saved to App Group
+3. User taps a block card (Night Owl) > BlockingSchedule saved > DeviceActivitySchedule created > shields applied > monitoring started > unblocked monitoring started for non-blocked hours
+4. UI updates to show "Active now"
+Verify every step reads and writes the correct keys. Flag any broken link.
+
+Flow B — Shield fires during blocked hours:
+1. User tries to open blocked app > ShieldConfigurationProvider fires
+2. Provider reads hit count, increments, saves
+3. Provider checks for new day reset
+4. Provider reads shield tone, picks message, checks for personal message rotation
+5. Provider logs ShieldHitRecord with sourceType and action
+6. Provider returns ShieldConfiguration
+7. User taps "Go Back" > ShieldActionHandler returns .close
+Verify every step. Flag any missing data write.
+
+Flow C — Block period ends:
+1. FocusGuardMonitor.intervalDidEnd fires
+2. Monitor reads today's hit count
+3. Monitor calls StreakManager.evaluateDay
+4. Monitor checks for milestone > if yes, schedules notification (if toggle on)
+5. Monitor checks if hit count was 0 > if yes, schedules clean night notification (if toggle on)
+6. Monitor resets daily counter
+7. Monitor removes shields
+Verify the ORDER of operations is correct. Evaluate THEN reset. Shields removed AFTER logging.
+
+Flow D — User starts focus session:
+1. User taps 30m pill > taps Start Focus Session
+2. FocusSessionManager.startSession called > FocusSession saved > DeviceActivitySchedule created > shields applied
+3. Home screen detects active session > transforms to countdown UI
+4. Timer ticks every second > reads remainingSeconds from FocusSession
+5. User backgrounds app > reopens > timer recalculates from startTime
+6. Timer hits 0 > auto-end > endSession called > shields removed (unless regular block is active) > celebration shown > UI returns to normal
+Verify every step.
+
+Flow E — User opens app with no data (first launch):
+1. All views receive nil/empty data
+2. HomeView shows Day 0, all dots pending, "Your first night starts tonight", no suggested session
+3. BlockListView shows no schedule, no blocked apps, empty blocks, Create New Block
+4. InsightsView shows 0 attempts, empty charts, "Not enough data yet"
+5. No crashes anywhere
+Verify by tracing the live data path with empty SharedDataStore.
+
+Flow F — User deletes all data:
+1. User goes to Settings > Delete All Data > confirms twice
+2. SharedDataStore.deleteAllData() runs
+3. All JSON files deleted, all UserDefaults keys cleared
+4. App returns to first-launch state
+5. No crashes, no stale data displayed
+Verify deleteAllData clears EVERY key and EVERY file. List what it clears and check against what exists.
+
+PART 3: CONCURRENCY AND THREAD SAFETY
+
+1. SharedDataStore.atomicAppend is used for shield hit logging. Verify it's used everywhere arrays are appended, not just shield hits. Check threshold events, focus sessions, any other array-type storage.
+2. FocusSessionManager: can startSession and endSession be called simultaneously from different threads? Is the session state protected?
+3. UserDefaults writes from extensions: multiple extensions writing to the same UserDefaults suite. Are there any keys that two extensions write to simultaneously? Verify no write conflicts.
+4. Timer publisher on HomeView: does it create a retain cycle? Is it properly cancelled when the view disappears?
+
+PART 4: MEMORY BUDGET PER EXTENSION
+
+For each extension, list every file compiled into it and estimate worst-case memory:
+
+ShieldConfigurationExtension: loads message libraries (52 strings), reads UserDefaults, reads/writes JSON. Calculate approximate footprint. Must be under 6 MB.
+
+ShieldActionExtension: minimal. Verify it only has the handler and shared models.
+
+DeviceActivityMonitorExtension: loads StreakManager, reads/writes JSON, reads UserDefaults, schedules notifications. Calculate approximate footprint. Must be under 6 MB.
+
+DeviceActivityReportExtension: placeholder only. Verify nothing heavy is compiled into it.
+
+Flag anything that pushes an extension close to the limit.
+
+PART 5: SETTINGS PERSISTENCE MATRIX
+
+Create a complete table:
+| Setting | UserDefaults Key | Written Where | Read Where | Survives App Kill | Cleared by Delete All |
+
+Include every setting: shield tone, personal message, strict mode, every notification toggle, quiet hours start, quiet hours end, onboarding complete flag, intake answers, monitoring start time, and any other persisted value.
+
+Flag any setting that is written but never read, read but never written, or not cleared by Delete All Data.
+
+PART 6: EDGE CASES
+
+1. What happens if FamilyControls authorization is revoked while the app is running? Does the app detect this and prompt re-authorization?
+2. What happens if the user selects apps, sets up a schedule, then deletes and reinstalls the app? The tokens are gone. How does the app handle this?
+3. What happens if two blocking schedules overlap (Night Owl 9PM-12AM and a Focus Session at 10PM for 1 hour)? Do the shields stack? Does ending one remove shields that the other still needs?
+4. What happens if the DeviceActivityMonitor extension stops receiving callbacks (known iOS bug)? Is monitoring re-registered on app launch?
+5. What happens if the user changes their timezone? Do schedules adjust or break?
+6. What happens if the user's phone storage is full and JSON writes fail? Does the app handle this gracefully?
+7. What happens if maxRecordsPerFile (500) is reached during a heavy usage night? Does trimming work correctly under concurrent writes?
+
+PART 7: UI CONSISTENCY
+
+1. Search every view file for any remaining hardcoded colors, fonts, padding, or corner radius values not using DS tokens. List any found.
+2. Verify dark mode works on every screen. All colors should use semantic system colors or DS tokens that have dark mode variants.
+3. Verify every tappable element has adequate touch target size (minimum 44x44pt per Apple HIG).
+4. Verify every screen scrolls correctly if content exceeds screen height. Test with the smallest iPhone screen size (iPhone SE / iPhone 13 mini).
+5. Verify the tab bar is consistent across all three tabs: same icons, same labels, same selected color.
+
+PART 8: CODE QUALITY
+
+1. Search for any force unwraps (!) outside of IBOutlet patterns. Replace with safe unwrapping.
+2. Search for any print() statements. Replace with os_log via Logger.
+3. Search for any TODO, FIXME, or HACK comments. List them and resolve or document.
+4. Search for any unused imports, unused variables, unused methods. Clean up.
+5. Verify every public method has a brief comment explaining what it does.
+6. Verify SharedConstants has no duplicate keys.
+7. Verify DesignSystem has no duplicate token names.
+
+PART 9: SCALABILITY CHECK
+
+1. Can a new InsightEngine rule be added without modifying existing rules? Verify the rule registration pattern.
+2. Can a new notification type be added without modifying existing notification code? Verify the pattern.
+3. Can a new shield tone library be added without modifying existing libraries? Verify the pattern.
+4. Can a new blocking schedule template be added without modifying existing templates? Verify the pattern.
+5. Can a new contextual message be added without modifying existing messages? Verify the pattern.
+
+For each, if the answer is "no, you'd have to modify existing code," refactor to make it extensible.
+
+PART 10: FINAL BUILD
+
+After all fixes:
+1. Build FocusGuard scheme for device — zero errors, zero warnings
+2. Build FocusGuard-UIOnly scheme for simulator — zero errors, zero warnings
+3. List every fix made with file name and description
+4. List any known limitations that cannot be fixed without a physical device
+5. Confirm the app is ready for physical device testing

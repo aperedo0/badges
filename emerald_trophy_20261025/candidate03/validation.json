@@ -1,0 +1,28 @@
+{
+  "shell_geometry_materials_and_maps": "exactly preserved",
+  "round_shell_closed": true,
+  "Y_up_meters": true,
+  "identity_transforms": true,
+  "no_lights_or_cameras": true,
+  "matching_sculpted_back": true,
+  "degenerate_triangles": 0,
+  "zero_normals": 0,
+  "triangles": 76172,
+  "bytes": 4713148,
+  "bounds": [
+    [
+      -3.015000104904175,
+      -3.015000104904175,
+      -0.7799999713897705
+    ],
+    [
+      3.015000104904175,
+      3.015000104904175,
+      0.44999998807907104
+    ]
+  ],
+  "required_preview_size": 0.96,
+  "required_preview_lift": 0.56,
+  "lowest_world_y": -2.455,
+  "sha256": "8f2624fd62e2b30351361a8a866be1dfba629802b178216d431667c81324062c"
+}

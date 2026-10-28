@@ -1,0 +1,854 @@
+Your first task is to go to my screen time folder on this computer, copy all of the skills that are not ios related into this project
+
+Conversation ID: 019ff919-ed72-7332-a845-8078c7dece13
+Working folder: /Users/antonioperedo/Desktop/notify
+
+Only prompt remnants survived in the sources checked.
+No Codex replies were found for this conversation.
+
+OPENING PROMPT FROM THE HISTORY INDEX
+
+Your first task is to go to my screen time folder on this computer, copy all of the skills that are not ios related into this project
+
+SAVED TERMINAL PROMPT
+
+Your first task is to go to my screen time folder on this computer, copy all of the skills that are not ios related into this project
+
+SAVED TERMINAL PROMPT
+
+There's more skills, I think only one is ios specific from that folder
+
+SAVED TERMINAL PROMPT
+
+copy all ex except for swift ui pro
+
+SAVED TERMINAL PROMPT
+
+Read the repository and perform a read-only handoff audit.
+Do not modify, rename, delete, generate, or move any files yet.
+
+Your job is to verify that the Notify project handoff is complete, internally consistent, and located correctly before M0 begins.
+
+First, inspect the repository structure and read these files in full if present:
+
+PLAN.md
+PRODUCT_SPEC.md
+AGENTS.md
+CODEX_WORKFLOW.md
+docs/COMPETITOR_RESEARCH.md
+docs/UI_HANDOFF.md
+docs/mockups/MOCKUP_INDEX.md
+docs/mockups/manifest.json
+docs/assets/README.md
+
+Then inspect the screenshot folders:
+
+docs/mockups/desktop/
+docs/mockups/mobile/
+
+Expected desktop boards:
+
+board_01.png
+board_02.png
+board_03.png
+board_04.png
+board_05.png
+board_06.png
+board_07.png
+board_08.png
+board_09.png
+board_10.png
+board_11.png
+board_12.png
+
+Expected mobile boards:
+
+board_01.png
+board_02.png
+board_03.png
+board_04.png
+board_05.png
+board_06.png
+board_07.png
+board_08.png
+board_09.png
+board_10.png
+
+Also inspect:
+
+docs/assets/logo/
+docs/assets/product-images/
+docs/assets/icons/
+.codex/skills/
+
+Verify all of the following:
+
+Every expected file exists in the correct location.
+There are no ambiguous duplicate screenshot filenames such as imagegen.png, board_01(2).png, or multiple competing versions of the same board.
+UI_HANDOFF.md, MOCKUP_INDEX.md, and manifest.json all reference files that actually exist.
+Desktop references point only to desktop screenshots and mobile references point only to mobile screenshots.
+The documented authority order is consistent everywhere:
+PLAN.md
+PRODUCT_SPEC.md
+docs/UI_HANDOFF.md
+tests
+AGENTS.md
+implementation
+COMPETITOR_RESEARCH.md is clearly marked background-only and does not act as implementation authority.
+Screenshot-specific conflicts are documented in UI_HANDOFF.md, especially:
+legacy Poké Watch branding → product is Notify
+Target-only V1
+no Walmart/Best Buy/TCGPlayer customer features
+no market-price/history features
+no Alert Type or notification-method dropdowns
+no Forgot Password unless PLAN explicitly adds it
+Alerts owns management; Recent owns event history
+Product Details secondary Open at Target
+Recent Detail primary Open at Target
+No documentation instructs the agent to re-plan the architecture from scratch.
+AGENTS.md instructs the agent to work one PLAN milestone at a time and STOP after each milestone.
+PLAN.md references every document it expects to exist.
+No file path in the documentation points to an old or nonexistent mockup structure.
+No duplicate or contradictory AGENTS.md, UI_HANDOFF.md, PRODUCT_SPEC.md, or PLAN-like files exist elsewhere in the repository.
+Skills under .codex/skills/ do not obviously conflict with the Notify stack or PLAN. Report suspicious skills; do not delete them.
+No secrets, service-role keys, proxy credentials, signing credentials, or production credentials are committed in the repository.
+M0 can begin without needing any missing documentation or file reorganization.
+
+Do not fix anything automatically.
+
+Return exactly this report format:
+
+NOTIFY HANDOFF AUDIT
+
+Overall status:
+PASS / PASS WITH FIXES / BLOCKED
+
+Required files:
+- PASS/FAIL: ...
+
+Screenshot structure:
+- PASS/FAIL: ...
+
+Documentation references:
+- PASS/FAIL: ...
+
+Authority consistency:
+- PASS/FAIL: ...
+
+Screenshot override coverage:
+- PASS/FAIL: ...
+
+Codex skills review:
+- PASS/FAIL: ...
+
+Secret/credential scan:
+- PASS/FAIL: ...
+
+M0 readiness:
+- READY / NOT READY
+
+Problems found:
+1. ...
+2. ...
+
+Exact fixes required:
+1. file/path → required change
+2. file/path → required change
+
+Files that should NOT be changed:
+- ...
+
+Final recommendation:
+- ...
+
+If anything is missing or contradictory, stop after the audit report.
+Do not begin M0.
+Do not rewrite PLAN.md unless I explicitly ask you to.
+
+SAVED TERMINAL PROMPT
+
+You are authorized to fully remediate the Notify handoff so that the repository passes the handoff audit and is genuinely ready for M0.
+
+**Do not merely audit, describe problems, recommend fixes, or stop because the current handoff is blocked. Perform the fixes yourself.**
+
+You have explicit authorization to modify `PLAN.md`, including Section 0.1, as necessary to resolve the authority-chain problems described below.
+
+## Objective
+
+Bring the repository from the current `BLOCKED / M0 NOT READY` state to a clean handoff where:
+
+1. Required repository files and directories exist in their canonical locations.
+2. All 22 screenshots are in their canonical locations with canonical filenames.
+3. Every documentation reference to those screenshots resolves successfully.
+4. Repository authority order is consistent everywhere.
+5. The Alerts empty-state contradiction is resolved in favor of the higher-authority `PLAN.md`.
+6. Notify-compatible Codex skills are available under `.codex/skills/`, while incompatible inherited skills are adapted or quarantined.
+7. Asset handoff structure exists and accurately documents what assets are available.
+8. Git metadata exists sufficiently to perform the requested repository secret/credential checks.
+9. The final read-only handoff audit passes with no M0 blockers.
+10. No implementation/M0 product work is started.
+
+## Required authority order
+
+Make the repository consistently use this authority order:
+
+1. `PLAN.md`
+2. `PRODUCT_SPEC.md`
+3. `docs/UI_HANDOFF.md`
+4. Tests
+5. `AGENTS.md`
+6. Implementation
+
+Update every document that defines or references authority/order so it either encodes this exact order or explicitly defers to the canonical definition.
+
+Remove stale references to nonexistent `CLAUDE.md` unless there is concrete evidence that such a file is intentionally required.
+
+When documents refer to the Product Spec or UI handoff, use their actual canonical paths consistently:
+
+* `PRODUCT_SPEC.md`
+* `docs/UI_HANDOFF.md`
+
+## Perform these filesystem fixes
+
+### 1. AGENTS.md
+
+The current authoritative file is incorrectly located at:
+
+`docs/AGENTS.md`
+
+Move or relocate the authoritative copy to:
+
+`AGENTS.md`
+
+at repository root.
+
+Do not leave a competing authoritative copy under `docs/`.
+
+Update references if necessary.
+
+### 2. Desktop screenshots
+
+Current source directory:
+
+`docs/mockups/desktop ui images/`
+
+Canonical destination:
+
+`docs/mockups/desktop/`
+
+Move the 12 desktop screenshots into that directory while preserving the canonical names:
+
+* `board_01.png`
+* `board_02.png`
+* `board_03.png`
+* `board_04.png`
+* `board_05.png`
+* `board_06.png`
+* `board_07.png`
+* `board_08.png`
+* `board_09.png`
+* `board_10.png`
+* `board_11.png`
+* `board_12.png`
+
+Do **not** alter screenshot pixel content.
+
+Remove obsolete empty/noncanonical screenshot directories after successful relocation if nothing still depends on them.
+
+### 3. Mobile screenshots
+
+Current source directory:
+
+`docs/mockups/mobile ui images/`
+
+Canonical destination:
+
+`docs/mockups/mobile/`
+
+Determine the existing files corresponding to the visible/generated board-number labels and map them exactly as follows:
+
+* visible/generated `(1)` → `board_01.png`
+* `(2)` → `board_02.png`
+* `(5)` → `board_03.png`
+* `(4)` → `board_04.png`
+* `(7)` → `board_05.png`
+* `(3)` → `board_06.png`
+* `(6)` → `board_07.png`
+* `(9)` → `board_08.png`
+* `(8)` → `board_09.png`
+* `(10)` → `board_10.png`
+
+Place the resulting files under:
+
+`docs/mockups/mobile/`
+
+Do not alter screenshot pixels.
+
+Verify there are exactly 10 correctly mapped mobile boards after the operation.
+
+### 4. Repair all screenshot references
+
+After moving the screenshots, search the **entire repository** for references to the old screenshot paths or filenames.
+
+At minimum, inspect and repair references in:
+
+* `docs/UI_HANDOFF.md`
+* `docs/MOCKUP_INDEX.md`
+* `docs/mockups/manifest.json`
+* `AGENTS.md`
+* `CODEX_WORKFLOW.md`
+* `PLAN.md`
+* `PRODUCT_SPEC.md`
+
+Do not assume this list is exhaustive.
+
+Every referenced screenshot path must resolve to a real file when finished.
+
+Use canonical paths:
+
+* `docs/mockups/desktop/board_XX.png`
+* `docs/mockups/mobile/board_XX.png`
+
+Validate them programmatically/filesystem-wise rather than by visual assumption.
+
+## Asset handoff structure
+
+Create:
+
+`docs/assets/`
+
+with:
+
+* `docs/assets/README.md`
+* `docs/assets/logo/`
+* `docs/assets/product-images/`
+* `docs/assets/icons/`
+
+Inspect the existing handoff/repository for actual assets that belong there.
+
+If intended assets already exist elsewhere, organize/copy/move them appropriately without fabricating assets.
+
+If a category genuinely has no required supplied assets, explicitly state that in `docs/assets/README.md`.
+
+The README should provide a concise inventory of:
+
+* supplied assets
+* their intended usage
+* missing/not-required asset categories
+* any screenshots that are references rather than production assets
+
+Do not invent fake logos/icons/product imagery merely to populate the directories.
+
+## Codex skills remediation
+
+The repository currently has skills under:
+
+`.claude/skills/`
+
+but requires Notify-compatible skills under:
+
+`.codex/skills/`
+
+Review every existing skill before installing/copying it.
+
+Known skills:
+
+* `animations`
+* `behavior-map`
+* `plan-audit`
+* `plan-code`
+* `post-edits`
+* `refactor`
+* `wave-manager`
+* `clarity`
+* `create-skill`
+
+The prior audit found these likely portable:
+
+* `clarity`
+* `create-skill`
+
+The prior audit found these suspicious/incompatible:
+
+* `animations`
+* `behavior-map`
+* `plan-audit`
+* `plan-code`
+* `post-edits`
+* `refactor`
+* `wave-manager`
+
+Do not blindly copy incompatible skills.
+
+For each skill:
+
+1. Inspect its instructions.
+2. Determine whether it is compatible with Notify's TypeScript/Electron/Expo repository and current milestone workflow.
+3. Remove or adapt assumptions involving unrelated technologies or repository conventions, including:
+
+   * Screen Time
+   * SwiftUI
+   * Xcode
+   * iOS simulator assumptions
+   * missing-agent assumptions
+   * missing-ledger assumptions
+   * architecture-replanning workflows that conflict with Notify's documented authority model
+4. Install only safe, relevant versions under `.codex/skills/`.
+
+If a suspicious skill cannot be safely generalized without changing its fundamental purpose, quarantine it instead of installing it as active Codex guidance. Use a clearly named non-active location such as:
+
+`.codex/quarantine/`
+
+Document what was adapted versus quarantined.
+
+Do not allow inherited instructions from another repository to override Notify's canonical documentation.
+
+## Fix PLAN.md
+
+You have **explicit user authorization to edit `PLAN.md`** for this remediation.
+
+Update Section 0.1 and any related references so that:
+
+* the authority order matches the required repository-wide order:
+
+  1. `PLAN.md`
+  2. `PRODUCT_SPEC.md`
+  3. `docs/UI_HANDOFF.md`
+  4. Tests
+  5. `AGENTS.md`
+  6. Implementation
+* stale `CLAUDE.md` references are removed unless independently justified
+* Product Spec is identified explicitly as `PRODUCT_SPEC.md`
+* UI handoff is identified explicitly as `docs/UI_HANDOFF.md`
+
+Do not otherwise rewrite unrelated product decisions in `PLAN.md`.
+
+## Resolve Alerts empty-state contradiction
+
+The higher-authority `PLAN.md` requires the **Browse Products CTA** in the Alerts empty state.
+
+Therefore align the lower-authority documents to that requirement.
+
+Inspect and update as necessary:
+
+* `PRODUCT_SPEC.md`
+* `docs/UI_HANDOFF.md`
+* `docs/mockups/manifest.json`
+* any other document containing the conflicting override
+
+The final canonical behavior must be:
+
+**Alerts empty state includes the Browse Products CTA, consistent with `PLAN.md`.**
+
+Do not change screenshot pixel content as part of this remediation. If an existing screenshot visually conflicts with the now-authoritative behavior, document that discrepancy clearly in the handoff rather than editing the pixels, because screenshot content has explicitly been marked as immutable for this task.
+
+Preserve the other already-documented overrides unless they conflict with higher-authority requirements:
+
+* Notify branding
+* Target-only V1
+* excluded retailers/features/dropdowns
+* no Forgot Password
+* Alerts vs. Recent ownership
+* both Open at Target placements
+
+## Manifest
+
+Update:
+
+`docs/mockups/manifest.json`
+
+so that:
+
+* all screenshot paths are canonical and exist
+* desktop/mobile board mappings are correct
+* the Alerts empty-state behavior is aligned with `PLAN.md`
+* the complete authority order is encoded or the manifest explicitly defers to the canonical authority definition
+* JSON remains valid
+* there are no stale references to old screenshot directories or ambiguous mobile filenames
+
+## Git metadata and secret audit
+
+The previous audit could not inspect committed history because `.git` metadata was absent.
+
+First determine whether this working directory is supposed to be an existing checkout whose `.git` metadata is available elsewhere or has accidentally been omitted.
+
+If valid existing Git metadata can be restored safely, restore/use it.
+
+If there is no recoverable Git metadata and this directory is intended to function as the working repository, initialize local Git metadata so the repository is Git-aware.
+
+Do **not** invent remote URLs.
+Do **not** force-push.
+Do **not** publish anything.
+Do **not** rewrite external history.
+Do **not** fabricate historical commits.
+
+Then perform the strongest secret/credential scan that is actually possible with the available repository state.
+
+Scan the current repository for at least:
+
+* private keys
+* API tokens
+* passwords
+* populated credential assignments
+* `.env` secrets
+* signing material
+* production credentials
+* proxy lists containing credentials
+* accidental auth headers/tokens
+
+If genuine Git history exists, include committed history in the scan.
+
+If fresh Git initialization was required and no prior history exists, explicitly state that historical-secret verification remains impossible because historical commits were never available; do **not** claim that initializing an empty `.git` reconstructed history.
+
+## Preserve these constraints
+
+Do **not** modify:
+
+* `docs/COMPETITOR_RESEARCH.md`, unless a path/reference inside it is objectively broken and the smallest possible reference-only repair is necessary
+* screenshot pixel content
+* product implementation/source code
+* application behavior
+* M0 implementation files
+
+This task is **handoff remediation only**.
+
+Do not begin M0.
+
+## Validation requirements
+
+After making all changes, perform a comprehensive validation.
+
+At minimum verify:
+
+### Required files
+
+Confirm these exist where expected:
+
+* `PLAN.md`
+* `PRODUCT_SPEC.md`
+* `CODEX_WORKFLOW.md`
+* `AGENTS.md`
+* `docs/UI_HANDOFF.md`
+* `docs/MOCKUP_INDEX.md`
+* `docs/mockups/manifest.json`
+* competitor research
+* `docs/assets/README.md`
+
+### Screenshot structure
+
+Verify:
+
+* exactly 12 desktop boards exist under `docs/mockups/desktop/`
+* exactly 10 mobile boards exist under `docs/mockups/mobile/`
+* filenames use canonical `board_XX.png` naming
+* all 22 files are valid PNGs
+* no unintended byte-identical duplicate boards exist
+* old ambiguous/noncanonical screenshot paths are no longer authoritative
+
+### Reference integrity
+
+Search the complete repository for:
+
+* `desktop ui images`
+* `mobile ui images`
+* stale generated ChatGPT screenshot filenames
+* `CLAUDE.md`
+* broken `docs/mockups/...` references
+* `docs/AGENTS.md` being treated as authoritative
+* obsolete screenshot paths
+
+Resolve every stale reference that should no longer exist.
+
+Programmatically verify that every local screenshot/file path referenced by the handoff documentation exists.
+
+### Authority consistency
+
+Verify the authority order is identical or explicitly deferred to everywhere it is defined:
+
+1. `PLAN.md`
+2. `PRODUCT_SPEC.md`
+3. `docs/UI_HANDOFF.md`
+4. Tests
+5. `AGENTS.md`
+6. Implementation
+
+### Override consistency
+
+Verify no active document contradicts these decisions:
+
+* Notify branding
+* Target-only V1
+* excluded retailers/features/dropdowns
+* no Forgot Password
+* Alerts vs. Recent ownership
+* both Open at Target placements
+* Alerts empty state **includes Browse Products CTA**
+
+### Skills
+
+Verify:
+
+* `.codex/skills/` exists
+* active skills contain no incompatible Screen Time/SwiftUI/Xcode/iOS-simulator assumptions unless explicitly generalized and relevant
+* incompatible inherited skills are quarantined rather than silently activated
+* Notify's own authority/workflow always wins over skill instructions
+
+### Secret scan
+
+Report exactly what was scanned and distinguish:
+
+* current working tree scan
+* Git tracked-file scan
+* Git-history scan, if real prior history exists
+* anything that could not be verified
+
+## Final handoff audit
+
+Once remediation and validation are complete, rerun the same handoff audit conceptually/read-only.
+
+Do not stop after finding another fixable issue. If the new audit reveals a handoff/documentation/filesystem problem that falls within the authorization above, fix it and rerun validation.
+
+Continue this fix → validate → audit loop until either:
+
+### A. PASS
+
+The handoff is genuinely ready for M0 with no remaining handoff blockers.
+
+Then report:
+
+* `Overall status: PASS`
+* `M0 readiness: READY`
+* concise summary of changes made
+* files moved/renamed
+* documents modified
+* skills installed/adapted/quarantined
+* screenshot/reference validation results
+* secret-scan scope/results
+* any non-blocking caveats
+
+### B. TRUE EXTERNAL BLOCKER
+
+A blocker remains that cannot be resolved from the repository or the authorization in this prompt.
+
+Only classify something as an external blocker if it genuinely requires unavailable information/data/access and cannot safely be inferred or repaired.
+
+If that happens, report the exact blocker and the evidence.
+
+**Do not treat a fixable repository inconsistency as a reason to stop. Fix it.**
+
+## Important execution rule
+
+This is an execution/remediation task, not another advisory audit.
+
+Make the filesystem and documentation changes yourself, validate them, and leave the repository in the corrected state.
+
+Do not begin application implementation or M0 work after the handoff passes.
+
+SAVED TERMINAL PROMPT
+
+why are those not permitted?
+
+SAVED TERMINAL PROMPT
+
+what would odex/quarantine and .git folder be for?
+
+SAVED TERMINAL PROMPT
+
+instead of git init I can just track it online? and why don't the current skills work with codex
+
+SAVED TERMINAL PROMPT
+
+I created a repo called https://github.com/aperedo0/collector-notify how do I link it up to this project? also I created the .codex folder, do what you think is best
+
+SAVED TERMINAL PROMPT
+
+now is the project ready to go?
+
+SAVED TERMINAL PROMPT
+
+should it be master or main? I think github remote is configured, check again
+
+SAVED TERMINAL PROMPT
+
+all good now?
+
+SAVED TERMINAL PROMPT
+
+ok then do the remaining work
+
+SAVED TERMINAL PROMPT
+
+there's no need to run git add . we are just getting the project ready for an ai agent
+
+SAVED TERMINAL PROMPT
+
+why is the session blocked from writing to .codex??
+
+SAVED TERMINAL PROMPT
+
+how do I make them write also? what is what we need right?
+
+SAVED TERMINAL PROMPT
+
+give me the command to make .codecx writeable
+
+SAVED TERMINAL PROMPT
+
+ok should be good now, write to it and finish what is needed to make the project ready
+
+SAVED TERMINAL PROMPT
+
+give me the command so codex can change .codex
+
+SAVED TERMINAL PROMPT
+
+try again before I restart
+
+SAVED TERMINAL PROMPT
+
+try again
+
+SAVED TERMINAL PROMPT
+
+is the project completely ready to start building? review it in depth again, do not start just review
+
+SAVED TERMINAL PROMPT
+
+can you fix all of that?
+
+SAVED TERMINAL PROMPT
+
+do I need docker for this project? eventually I will need it right?
+
+SAVED TERMINAL PROMPT
+
+is the project completely ready to start building? review it in depth again, do not start just review. we have to double make sure everything is ready
+
+SAVED TERMINAL PROMPT
+
+fix what you can. also, is it best to use supabase for this project? is there something better to use for the long term?
+
+SAVED TERMINAL PROMPT
+
+Is it better in the long term to use a custom api? also in the past I worked as a dev using dot net as an api layer, so using an api layer will be more familiar to me?
+
+SAVED TERMINAL PROMPT
+
+I am not saying I want .net, I am asking if using an api layer is better in the long term. if yes, what api layer format is best? it does not have to be .net, it can be anything
+
+SAVED TERMINAL PROMPT
+
+I have 6 months as an intern with C#. But ai will be writing most if not all of the code. Would you recommend using C# or fastify for the api layer for this project?
+
+SAVED TERMINAL PROMPT
+
+well I would want to completely remove supabase. so fastify plys drizzle is best?
+
+SAVED TERMINAL PROMPT
+
+this should be the same if not only a little different than what you said. what do you think of this? Language and workspace: TypeScript strict everywhere, one language across every process. pnpm workspaces + Turborepo, Node 22.13+.
+
+Database: PostgreSQL 17, hosted on Neon to start (plain Postgres, so RDS/Aurora/Cloud SQL later is a connection-string change). Docker Postgres for local dev.
+
+API (apps/api): Fastify, REST/JSON under /v1, OpenAPI contract, request and response schemas on every route from your shared Zod. Modular monolith, one service, not microservices. Only the API and monitor hold DB credentials; clients never touch Postgres.
+
+Data access: Drizzle ORM for ordinary queries. The hard floor stays in Postgres: constraints, partial unique indexes, row locks, and the fire_alert function. Migrations via drizzle-kit with raw-SQL files carrying the functions and triggers.
+
+Auth: Better Auth, with its official Electron and Expo integrations. Users and sessions are tables in your own Postgres. Every user_id FK points at Better Auth's user table. Authorization is where user_id = ? in the API (RLS is gone, since clients no longer reach the DB).
+
+Realtime: Postgres LISTEN/NOTIFY from AFTER-INSERT/UPDATE triggers on recent_events, alerts, user_preferences, relayed to clients over authenticated WebSockets. Thin invalidation messages (ids only); clients refetch via REST and refetch everything on reconnect, so a dropped message is harmless.
+
+Monitor (apps/monitor): unchanged. Separate internal TypeScript worker: OfferSource (fake, then feed/Target), central per-product polling, alert matching, fire_alert, notification outbox, ProxyPool. Now also owns the scheduled purge jobs (pg_cron is gone).
+
+Mobile push: Expo Push Service, drained from the notification_deliveries outbox by the monitor. Desktop uses no push; Electron main gets a WebSocket event and raises the native notification.
+
+Clients: Electron (React 19 renderer + Node main for tray, notifications, deep links, updater) and Expo SDK 57 / React Native 0.86. Both talk only to the API through a generated TypeScript client behind packages/data repositories, so screens never change when the backend does.
+
+Two known ceilings, with named successors (written into the decision log so nobody relitigates): single API replica with local WS fan-out relies on LISTEN/NOTIFY from day one for cross-process events; before multiple API replicas, the fan-out layer moves to Redis pub/sub or NATS, invisible to clients.
+
+That's the whole thing: Fastify + Drizzle + PostgreSQL 17 (Neon) + Better Auth + WebSockets over LISTEN/NOTIFY, TypeScript modular monolith, monitor and clients as separate concerns. that would be the stack. I want a good long term stack
+
+SAVED TERMINAL PROMPT
+
+update the plan with the new stack
+
+SAVED TERMINAL PROMPT
+
+Give me the entire plan in depth, so I can review it
+
+SAVED TERMINAL PROMPT
+
+Ok that is more than I was ready for. Maybe yo ucan go in and rename the mobile and desktop images based on what they have inside them?
+
+SAVED TERMINAL PROMPT
+
+is the project completely ready to start building? review it in depth again, do not start just review. we have to double make sure everything is ready. We have changed some stuff so time to make sure things are ready before launch
+
+SAVED TERMINAL PROMPT
+
+fix everything you can, anything left tell me so I can fix or we can plan
+
+SAVED TERMINAL PROMPT
+
+so all of the blockers can be done later right? we can start implementing now?
+
+SAVED TERMINAL PROMPT
+
+what are we using firebase for?
+
+SAVED TERMINAL PROMPT
+
+is something else better?
+
+SAVED TERMINAL PROMPT
+
+will firebase cost money? will any of my implementation cost money now or down the line?
+
+SAVED TERMINAL PROMPT
+
+explain Recurring infrastructure: roughly $40–80 per month. and Optional EAS Starter: $19/month. and what am I paying google for registration wise?
+
+SAVED TERMINAL PROMPT
+
+so neon, I can just host the database on a server? or why would I pay for neon over just hosting on a server?
+
+SAVED TERMINAL PROMPT
+
+before I begin, what skill went to the quarantine?
+
+SAVED TERMINAL PROMPT
+
+all skills should be turned into skills that can be used in any project. if anything is strictly IOS, then it should be removed. Do not change any skills yet, just plan on how to change them. I will review then approve
+
+SAVED TERMINAL PROMPT
+
+Now do another review, and see how you can better plan the skill changes
+
+SAVED TERMINAL PROMPT
+
+go ahead and implement that
+
+SAVED TERMINAL PROMPT
+
+what do you mean by 'Restart
+  Codex to load the renamed inventory'?
+
+SAVED TERMINAL PROMPT
+
+so now I can implement m0? just tell codex in another window 'implement m0'? first I should make a commit right?
+
+SAVED TERMINAL PROMPT
+
+why do I need docker to be open for local development?
+
+SAVED TERMINAL PROMPT
+
+I can't seem to open docker.. maybe something is not correctly installed. check for me
+
+SAVED TERMINAL PROMPT
+
+Can you reinstall docker for me?
+
+SAVED TERMINAL PROMPT
+
+what is everything m0 will accomplish?

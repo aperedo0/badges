@@ -1,0 +1,2019 @@
+in this repo is a plan, do you see everything needed in this repo to build the plan or to start planning the implementation?
+
+Conversation ID: 01a020ef-16ec-7b72-b7e1-cb997bba539a
+Working folder: /Users/antonioperedo/Desktop/ebay listings enhancement
+
+Saved conversation content exported from the Codex history database.
+This export does not establish that every original message or attachment survived.
+
+YOU
+
+in this repo is a plan, do you see everything needed in this repo to build the plan or to start planning the implementation?
+
+CODEX
+
+I’m using the repository’s `clarity` skill for the response, then I’ll locate the plan and check it against the actual project files, setup instructions, and missing `TODO(project)` prerequisites.
+
+CODEX
+
+I found one implementation plan plus a product spec, research notes, a screen mockup, and a text handoff—but no app source files yet. I’m checking whether those documents resolve the decisions needed to begin, and whether the repository’s own setup gate permits implementation.
+
+CODEX
+
+The documents are strong enough to plan the app, but the repository is not yet authorized or scaffolded for implementation. The main distinction is that the file under `.agents/plans/` is a completed workflow-setup plan; the product itself has a specification, not an implementation plan.
+
+CODEX
+
+Yes—you have enough to begin implementation planning now. You do not yet have enough to start writing production code safely.
+
+## What is ready
+
+- [SPEC.md](</Users/antonioperedo/Desktop/ebay listings enhancement/SPEC.md:7>) is a strong MVP definition: screens, workflows, data records, synchronization, failure handling, safety rules, undo behavior, and API constraints.
+- [RESEARCH.md](</Users/antonioperedo/Desktop/ebay listings enhancement/RESEARCH.md:300>) identifies the first integration spike and the remaining eBay API unknown.
+- The mockup provides sufficient visual direction, while the spec explicitly resolves disagreements.
+- The agent workflow itself is operational. The existing [plan](</Users/antonioperedo/Desktop/ebay listings enhancement/.agents/plans/2026-08-19-skill-suite-operational.md:346>) is completed, but it was for setting up the repository workflow—not for building the Pokémon optimizer.
+
+## What blocks implementation
+
+1. The repository has no application scaffold or source code: no chosen framework, package manifest, database setup, or tests.
+
+2. [AGENTS.md](</Users/antonioperedo/Desktop/ebay listings enhancement/AGENTS.md:8>) still needs its project authority order filled in.
+
+3. The documented build-and-test commands are undefined, and the repository explicitly prohibits implementation until they exist ([AGENTS.md](</Users/antonioperedo/Desktop/ebay listings enhancement/AGENTS.md:17>)).
+
+4. The architecture still needs decisions for:
+
+   - macOS-only versus cross-platform desktop;
+   - application framework and packaging;
+   - database and migration tooling;
+   - secure storage for eBay secrets and refresh tokens;
+   - AI provider, structured response format, confidence calculation, privacy, and cost controls.
+
+5. eBay integration will eventually require developer credentials, a sandbox seller/listing, and the authenticated Taxonomy call described in [RESEARCH.md](</Users/antonioperedo/Desktop/ebay listings enhancement/RESEARCH.md:300>). Those do not block planning, but they block completing the integration spike.
+
+There is also one harmless documentation inconsistency: [RESEARCH.md](</Users/antonioperedo/Desktop/ebay listings enhancement/RESEARCH.md:9>) says its findings are not integrated, while its later status says they are integrated. The spec confirms they are.
+
+## Readiness call
+
+| Activity | Ready? |
+|---|---|
+| Start the implementation plan | Yes |
+| Decide architecture and milestones | Yes |
+| Build UI against mocked data | After project setup |
+| Build and validate eBay integration | After setup and credentials |
+| Begin production implementation today | No—the repository gate forbids it |
+
+Next action: create the product implementation plan, beginning with a short architecture decision phase and completion of the `AGENTS.md` project setup fields.
+
+YOU
+
+Ok start planning the implementation
+
+CODEX
+
+I’m using `plan-code` to turn the product spec into an implementation-ready plan, with `clarity` shaping the handoff. I’ll first resolve the architecture choices from the repository’s actual requirements, then present the plan for your approval without changing code.
+
+CODEX
+
+Two choices materially shape the plan: whether this is a private macOS-first tool or a distributable cross-platform app, and which AI service produces suggestions. I’m validating a recommended default against current platform and API documentation before asking you to approve those assumptions. Because that default may use OpenAI, I’m also applying the `openai-docs` skill for the current API contract.
+
+CODEX
+
+Recommended baseline: a private, macOS-first desktop app using Tauri 2, React/TypeScript, a Rust application core, SQLite, native secure credential storage, and OpenAI’s Responses API with Structured Outputs using configurable GPT-5.6 Terra by default. Tauri preserves a path to Windows later, while OpenAI describes Terra as its intelligence/cost-balanced model and confirms JSON-schema outputs ([Tauri](https://v2.tauri.app/start/), [OpenAI models](https://developers.openai.com/api/docs/models/compare), [Structured Outputs](https://developers.openai.com/api/reference/java/resources/beta/subresources/responses)).
+
+Should I use that baseline for the implementation plan?
+
+YOU
+
+I want it to be a web app, since I may later create it as a software other people can use. so plan it with that in mind
+
+CODEX
+
+A web product changes one important part of the specification: customers should never enter an eBay App ID or client secret. The server owns one eBay application keyset, while each signed-in user only authorizes their own eBay account; I’m treating that as the central security boundary and checking current web, database, authentication, and background-job options before laying out the waves.
+
+CODEX
+
+Plan direction: build an invite-only web app for one seller first, while enforcing user isolation and server-owned credentials from the first database migration. Adding public signup, billing, and multiple eBay accounts remains later work, but the MVP will not require an architectural rewrite to support them.
+
+# Implementation plan
+
+## Routing
+
+**Normal — Full.** This is a five-wave program touching authentication, persistence, security, migrations, background processing, and build configuration.
+
+The simplicity exemption does not apply. After approval, this plan requires the repository’s full `plan-audit` process before implementation dispatch.
+
+## Authority check
+
+Implementation will establish this order in [AGENTS.md](</Users/antonioperedo/Desktop/ebay listings enhancement/AGENTS.md:8>):
+
+1. The approved implementation plan governs architecture, wave order, and verification.
+2. [SPEC.md](</Users/antonioperedo/Desktop/ebay listings enhancement/SPEC.md:1>) governs product behavior and safety.
+3. [RESEARCH.md](</Users/antonioperedo/Desktop/ebay listings enhancement/RESEARCH.md:1>) governs eBay and TCGdex integration facts.
+4. [screens mockups.png](</Users/antonioperedo/Desktop/ebay listings enhancement/screens mockups.png>) governs visible styling where the spec is silent.
+5. `screens.rtfd` is historical only.
+
+The web-app direction intentionally changes [SPEC.md §10.2](</Users/antonioperedo/Desktop/ebay listings enhancement/SPEC.md:554>): customers will not enter App ID, Cert ID, or RuName. Those belong to the server’s eBay application. Settings will only show **Connect eBay Account**, connection status, reconnect, and disconnect.
+
+## Goal
+
+Deliver a desktop-optimized web app where a signed-in seller connects eBay, imports listings, receives grounded optimization suggestions, reviews every change, applies an explicitly confirmed batch, verifies the live result, and can safely undo it.
+
+Success means:
+
+- Two users cannot read or change one another’s listings, tokens, reviews, or batches.
+- Closing the browser does not interrupt imports, analysis, apply, verification, or undo.
+- The outgoing eBay write type cannot contain price, quantity, shipping, returns, images, condition, or other protected fields.
+- Every successful write is read back and verified; interrupted jobs resume without blindly repeating writes.
+- The documented lint, type, unit, database, browser, and production-build commands all pass.
+
+## Architecture
+
+```text
+Browser
+   │ authenticated HTTPS
+   ▼
+Next.js web server ───────────────► PostgreSQL
+   │                                     │
+   │ enqueue job                         ▼
+   └──────────────────────────────► durable queue
+                                         │
+                                         ▼
+                                  Node worker process
+                                    │     │      │
+                                    ▼     ▼      ▼
+                                  eBay  OpenAI  TCGdex
+```
+
+### Technical foundation
+
+- **Web:** Next.js 16 App Router, React, TypeScript, Node 24 LTS, and pnpm. Pages use server rendering for initial data; mutations and progress polling use authenticated Route Handlers. Next.js documents Route Handlers as the App Router’s request-handler boundary ([Next.js](https://nextjs.org/docs/app/getting-started/route-handlers)).
+- **Data and login:** Supabase PostgreSQL and Auth. Email login is invite-only for MVP. Every seller-owned table carries `user_id` and Row Level Security using `auth.uid()`; Supabase Auth is designed to integrate with PostgreSQL RLS ([Supabase Auth](https://supabase.com/docs/guides/auth), [RLS](https://supabase.com/docs/guides/database/postgres/row-level-security)).
+- **Secrets:** The eBay refresh token is stored through Supabase Vault; the eBay client secret, OpenAI API key, and other application credentials remain deployment secrets. Vault uses authenticated encryption and keeps backups encrypted ([Supabase Vault](https://supabase.com/docs/guides/database/vault)).
+- **Jobs:** A separate Node worker consumes Supabase Queues/PGMQ. Queue messages contain only a job ID; durable state and progress live in ordinary tables. Supabase Queues provides PostgreSQL-backed durable delivery ([Supabase Queues](https://supabase.com/docs/guides/queues)). A worker is required because hosted function execution is time-limited and a large import or apply batch may exceed that limit ([Supabase function limits](https://supabase.com/docs/guides/functions/limits)).
+- **AI:** An `AiAnalyzer` interface with an OpenAI adapter. The default is configurable `gpt-5.6-terra`, using the Responses API, `store: false`, and strict JSON-schema output. Official OpenAI documentation identifies Terra as the intelligence/cost-balanced model and confirms Structured Outputs support ([model](https://developers.openai.com/api/docs/models/gpt-5.6-terra), [Responses API](https://developers.openai.com/api/reference/java/resources/beta/subresources/responses)).
+
+The strongest rejected alternative is running everything inside Next.js requests. It is smaller initially, but browser reloads, deployment restarts, and request-duration limits would make import and apply jobs unreliable.
+
+## State ownership
+
+- Supabase Auth owns application login and browser sessions.
+- PostgreSQL owns all durable listing, analysis, review, batch, history, and progress state.
+- The worker alone performs long-running external operations and batch state transitions.
+- The browser owns only temporary filters, selected row IDs, expanded panels, and optimistic display state.
+- eBay remains authoritative for live listing contents. AI output is an untrusted proposal until local validation and user confirmation.
+
+## Database model
+
+The first migration creates five groups of records:
+
+1. **Identity:** `profiles`, `ebay_connections`, and one-time `ebay_oauth_states`. `ebay_connections` stores a Vault secret reference, never a plaintext refresh token.
+2. **Listings:** `listing_snapshots`, `scan_results`, `traffic_cache`, `optimized_snapshots`, `aspect_dictionaries`, and `card_catalog_cache`.
+3. **Analysis:** `analyses`, `suggestions`, `review_sessions`, and `review_session_listings`.
+4. **Apply history:** `batches`, `batch_listings`, and `batch_changes`, including before, expected-after, actual-after, error, and verification state.
+5. **Work:** `jobs`, with type, status, progress, cancellation, retry, lease, sanitized error code, and deduplication key.
+
+Every user-owned record receives `user_id`, timestamps, foreign keys, and RLS. Shared Taxonomy and TCGdex caches are server-readable only. Migrations are append-only and tested with pgTAP.
+
+## Wave 1 — Project, login, database, and worker foundation
+
+### Files
+
+- Root: `package.json`, `pnpm-lock.yaml`, `.node-version`, `.env.example`, `next.config.ts`, `tsconfig.json`, ESLint, Vitest, and Playwright configuration.
+- Application: `app/`, `src/components/`, `src/lib/supabase/`, `src/server/auth/`.
+- Infrastructure: `supabase/config.toml`, `supabase/migrations/`, `supabase/tests/`, `worker/index.ts`.
+- Repository setup: `AGENTS.md`, `SPEC.md`, and the stale integration statement in `RESEARCH.md`.
+
+### Work
+
+1. Fill every project setup field in `AGENTS.md`, including authority, protected areas, and Health-Check Scopes.
+2. Establish Supabase cookie authentication through `proxy.ts`, but require `getClaims()` and `requireUser()` inside every protected page and endpoint; proxy redirects are not authorization.
+3. Add the complete initial schema, RLS policies, Vault access functions, generated database types, and an invite-only login screen.
+4. Add the worker runner and a harmless queue job proving enqueue, lease, progress, retry, completion, and duplicate suppression.
+
+### Documented gate established before scaffold work
+
+1. `pnpm lint`
+2. `pnpm typecheck`
+3. `pnpm test`
+4. `pnpm test:db`
+5. `pnpm test:e2e`
+6. `pnpm build`
+
+`test:db` must operate only on the local Supabase stack. `test:e2e` uses simulated external services and never requires real credentials.
+
+### Wave verification
+
+- RLS tests create two users and prove cross-user reads and writes fail.
+- Browser test covers login, logout, session refresh, and direct access to a protected URL.
+- Worker test kills a job midway, releases its lease, and proves another worker resumes it once.
+
+Tie-breaker: when framework redirects and explicit authorization disagree, explicit server authorization wins.
+
+## Wave 2 — eBay connection, integration spike, synchronization, and Listings
+
+### Files
+
+- `app/(app)/settings/`, `app/(app)/listings/`
+- `app/api/ebay/`, `app/api/listings/`, `app/api/jobs/`
+- `src/server/integrations/ebay/`
+- `src/server/services/sync/`, `src/server/domain/scan-rules.ts`
+- `src/server/jobs/handlers/import-listings.ts` and related handlers
+
+### Work
+
+1. Implement eBay OAuth with server-owned application credentials, a hashed one-time `state`, ten-minute expiry, exact callback-user matching, and single-use consumption.
+2. Complete the authenticated spike from [RESEARCH.md](</Users/antonioperedo/Desktop/ebay listings enhancement/RESEARCH.md:300>): Taxonomy flags, OAuth refresh, sandbox `GetItem → ReviseFixedPriceItem → GetItem`, then one user-approved harmless production test.
+3. Implement initial import, incremental event-window synchronization, listing hashes, Taxonomy caching, daily traffic caching, and Tier 1 scan rules.
+4. Build Settings connection states and the Listings table with search, server pagination, filters, sync progress, stale-sync refresh, selection, and interrupted-job banners.
+
+### Verification
+
+- XML fixtures prove complete parsing of Trading success, warnings, HTTP-200 failures, and listed auth errors.
+- A contract test proves OAuth secrets and tokens never enter browser responses or logs.
+- Sync tests cover pagination, overlapping event windows, hash reuse, false-positive events, title locks, and daily view-cache limits.
+- Playwright covers disconnected, importing, empty, populated, stale, changed-since-optimization, and interrupted-import states.
+
+Tie-breaker: if sandbox behavior conflicts with production or the documented API contract, stop and record the conflict; do not weaken the safety invariant.
+
+## Wave 3 — TCGdex, AI analysis, and persisted review
+
+### Files
+
+- `src/server/integrations/tcgdex/`
+- `src/server/integrations/openai/`
+- `src/server/domain/confidence.ts`, `analysis-contract.ts`
+- `src/server/jobs/handlers/analyze-listing.ts`
+- `app/(app)/review/` and analysis/review endpoints
+
+### Work
+
+1. Match cards against cached TCGdex data using set and card number before accepting variant evidence. Ambiguous matches remain ungrounded.
+2. Send only required listing fields and grounding facts to OpenAI. Validate the JSON-schema response, protected-field absence, lengths, Taxonomy vocabulary, and evidence before saving suggestions.
+3. Assign confidence locally; the model never chooses its percentage:
+
+   - `98 HIGH`: exact TCGdex identity and variant evidence.
+   - `96 HIGH`: deterministic correction validated by an eBay hard rule or dictionary.
+   - `85 REVIEW`: grounded but non-unique inference or language rewrite.
+   - `60 UNCERTAIN`: ambiguous match, unsupported free text, or incomplete evidence.
+
+4. Implement cached analysis, cancellation, persisted review sessions, immediate decision saving, inline edits, bulk HIGH approval, skip, next-undecided navigation, and resume/discard behavior.
+
+Before enabling HIGH preselection, a fixture set of at least 30 representative listings must contain no incorrect HIGH factual change. Any failure demotes that evidence rule until corrected.
+
+### Verification
+
+- Unit tests cover scores at 74/75/94/95 and edited suggestions becoming `EDITED`.
+- Prompt-contract tests reject extra fields, protected fields, invalid aspects, invented card facts, refusals, and partial responses.
+- Browser tests prove browser reloads and logout/login preserve every review decision.
+- OpenAI tests use recorded schema-compliant fixtures; live API tests remain opt-in.
+
+Tie-breaker: when AI text conflicts with TCGdex, Taxonomy, eBay limits, or the current listing snapshot, reject the AI suggestion.
+
+## Wave 4 — Pre-flight, apply, verification, results, history, and undo
+
+### Files
+
+- `src/server/domain/apply-payload.ts`, `batch-state.ts`
+- `src/server/services/batches/`
+- `src/server/jobs/handlers/preflight-batch.ts`, `apply-batch.ts`, `verify-batch.ts`, `undo-batch.ts`
+- `app/(app)/apply/`, `app/(app)/history/`
+- Batch endpoints and database transition functions
+
+### Work
+
+1. Build a narrow `WritableListingFields` type containing only title, complete item specifics, and complete description. The XML serializer accepts no other listing fields.
+2. Run pre-flight as a job: re-fetch affected listings, exclude drifted or newly title-locked changes, validate all limits, and recalculate the literal confirmation count.
+3. Apply sequentially per user. Before each request, persist the before-state, expected result, payload hash, and attempt state.
+4. After a restart in the uncertain “request sent, response not recorded” window, fetch the listing first. If expected fields already match, mark it applied; otherwise retry only when the live revision still matches the safe baseline.
+5. Verify every changed field, show expandable failures and retry choices, write optimized snapshots only after verification, build History, and implement drift-checked verified undo.
+
+### Verification
+
+- Serializer tests prove protected fields cannot appear in XML even if malicious input includes them.
+- State-machine tests cover every legal batch transition and reject illegal or repeated transitions.
+- Failure tests cover title sales races, partial field rejection, auth expiry, rate limits, worker death, verification mismatch, and undo drift.
+- End-to-end tests perform mocked import → analysis → review → counted apply → verification → history → undo.
+
+Tie-breaker: uncertain external state is resolved by reading eBay before sending another write.
+
+## Wave 5 — Visual fidelity, accessibility, security, and deployment readiness
+
+### UI handoff
+
+Absolute mock path: [screens mockups.png](</Users/antonioperedo/Desktop/ebay listings enhancement/screens mockups.png>) at 1536×1024.
+
+Priority is: the user’s web direction, then `SPEC.md` behavior, then the mock’s visible appearance. The spec’s vertically scrolling Review page overrides the mock’s tabs.
+
+Layout:
+
+| Element | Implementation value |
+|---|---|
+| Desktop reference viewport | 1440×900 |
+| Sidebar | 224px fixed; collapses below 1024px |
+| Main padding | 24px; 32px above 1440px |
+| Table row | 64px minimum |
+| Sticky workflow footer | 72px |
+| Radius/spacing scale | 8px radius; 4/8/12/16/24/32px spacing |
+
+Initial tokens:
+
+| Purpose | Token |
+|---|---|
+| Sidebar | `#101B2D` |
+| Primary action | `#2563EB` |
+| Text/background | `#0F172A` / `#F8FAFC` |
+| Border/muted text | `#E2E8F0` / `#64748B` |
+| Success/warning/danger | `#16A34A` / `#D97706` / `#DC2626` |
+
+Use bundled fonts or a system stack, never a runtime font CDN. Use accessible dialog, menu, tooltip, and progress primitives; do not create a second component package until reuse exists.
+
+Do not extract the Pikachu image from the mock. Use a neutral card-shaped placeholder mark until the public name and imagery receive a branding review.
+
+### Hardening work
+
+- Add Content Security Policy, secure cookies, same-origin checks for mutations, rate limits, sanitized structured logs, health endpoints, and secret-rotation documentation.
+- Add Docker images for web and worker, staging configuration, database migration deployment, worker shutdown handling, and backup/restore instructions.
+- Verify keyboard navigation, screen-reader labels, focus restoration, contrast, loading states, overflow, and desktop browser support.
+- Document what listing data is sent to OpenAI and TCGdex, retention behavior, account deletion, token revocation, and data export/deletion procedures.
+
+### Verification
+
+- Playwright runs Chromium, Firefox, and WebKit at 1024×768 and 1440×900.
+- Manual screenshot comparison covers Listings, analysis, Review, Confirm, Results, History, and Settings.
+- Security tests cover OAuth replay, forged user IDs, service-key exposure, cross-user job IDs, CSRF, and sanitized logs.
+- A staging smoke test proves web and worker deployment, migration, job resume after restart, and rollback from backup.
+
+Tie-breaker: preserve the mock at desktop widths; below 1024px favor safe scrolling and readable content over inventing a mobile design.
+
+## Blast radius
+
+| Consumer | Disposition |
+|---|---|
+| Existing repository | No production consumers exist; Wave 1 creates the first application |
+| `SPEC.md` Settings flow | Deliberately changed to server-owned eBay credentials |
+| eBay listings | Deliberately changed only in Wave 4 after counted confirmation |
+| PostgreSQL records | New, append-only migration history with RLS and migration tests |
+| OpenAI and TCGdex | Receive limited listing/card data in Wave 3; documented before release |
+
+No public API is introduced. Internal browser/server contracts use shared Zod schemas and remain versioned with the application.
+
+## Edge cases
+
+### Boundaries
+
+- Zero, one, and thousands of listings: empty state, ordinary flow, and 50-row server pagination.
+- Titles at 79/80/81 characters: accept, accept, block.
+- Aspect values at 64/65/66 characters: accept, accept, block.
+- Specific counts at 44/45/46: accept, accept, block.
+- Descriptions at 19/20/500,000/500,001 characters: scan warning, accept, accept, block.
+
+### Failures
+
+- Dead application session: redirect to login without losing server-side work.
+- Dead eBay token: pause the job and require reconnection.
+- OpenAI refusal, invalid schema, or rate limit: retry safely, then mark only that analysis failed.
+- TCGdex unavailable: allow non-card-grounded suggestions but never label variant facts HIGH.
+- Database or worker restart: release expired leases and resume from durable state.
+
+### Timing and concurrency
+
+- Two browser tabs cannot create two active review sessions or apply the same batch twice.
+- OAuth callbacks are one-time, user-bound, and expiry-bound.
+- Listings changed after analysis are excluded during pre-flight.
+- A crash after an eBay request is resolved through read-before-retry.
+- All stored times use UTC; relative display uses the browser timezone.
+
+## Open decisions
+
+None. Approval ratifies the web stack, Supabase foundation, invite-only MVP, server-owned eBay keyset, PostgreSQL worker queue, and configurable OpenAI/Terra default.
+
+Next action: approve this plan or name one change. Approval triggers the full plan audit; implementation remains paused until that audit converges and you give the post-audit go.
+
+YOU
+
+in another project I am using this. I want you to take as much of this that can apply, and fill in the blanks for the rest - React 19.2 + TypeScript
+  - electron-vite
+  - TanStack Query v5 + Zustand
+  - Fastify REST API + WebSockets
+  - Zod + generated OpenAPI client
+  - Better Auth
+  - PostgreSQL 17 + Drizzle ORM
+  - Node 24, pnpm, Turborepo
+  - Vitest + Playwright
+  - ESLint + Pino + Sentry
+
+CODEX
+
+I’m revising the architecture around your established stack. The only item that does not carry over is `electron-vite`: this project remains a web app, so its place becomes a Vite React frontend; the Fastify API and a separate worker stay responsible for secrets, eBay writes, and durable jobs. I’m using `plan-code` and `clarity` to update the plan without changing files.
+
+CODEX
+
+This stack fits the web product well. Everything carries over except `electron-vite`, which becomes a standard Vite React application; Electron can remain a future wrapper around the same API if ever needed.
+
+# Revised implementation architecture
+
+## Stack decisions
+
+| Existing choice | This project |
+|---|---|
+| React 19.2 + TypeScript | Keep |
+| electron-vite | Replace with Vite web SPA |
+| TanStack Query v5 + Zustand | Keep; strict state ownership below |
+| Fastify REST + WebSockets | Keep |
+| Zod + generated OpenAPI client | Keep; use Hey API generation |
+| Better Auth | Keep with its Fastify and Drizzle integrations |
+| PostgreSQL 17 + Drizzle | Keep |
+| Node 24, pnpm, Turborepo | Keep |
+| Vitest + Playwright | Keep |
+| ESLint + Pino + Sentry | Keep |
+
+Better Auth officially supports both Fastify and Drizzle/PostgreSQL ([Fastify integration](https://better-auth.com/docs/integrations/fastify), [Drizzle adapter](https://better-auth.com/docs/adapters/drizzle)). Fastify can generate OpenAPI from route schemas, and its type-provider system supports Zod ([Fastify schemas](https://fastify.dev/docs/latest/Reference/Type-Providers/), [OpenAPI generation](https://github.com/fastify/fastify-swagger)).
+
+## Filled-in choices
+
+- **Routing:** React Router 7 in Data mode. TanStack Query remains the only remote-data cache; route loaders do not duplicate API fetching.
+- **Generated client:** Hey API with its Fetch, TypeScript SDK, and TanStack Query v5 plugins. It generates query keys, query options, mutations, types, and the client from OpenAPI ([Hey API](https://heyapi.dev/)).
+- **Durable jobs:** `pg-boss`, using PostgreSQL instead of adding Redis. It supports Node 24, PostgreSQL 17, Drizzle transactions, retries, grouping, and durable job delivery ([pg-boss](https://github.com/timgit/pg-boss)).
+- **UI:** CSS Modules with global design tokens, Radix primitives for dialogs/menus/tooltips, TanStack Table for Listings, and React Hook Form for editable reviews.
+- **Deployment:** One container serves the built Vite app and Fastify API on the same origin; a second container runs the worker. PostgreSQL is the only stateful service.
+
+## Repository structure
+
+```text
+apps/
+  web/                     React/Vite browser application
+  api/                     Fastify REST, auth, OpenAPI, WebSockets
+  worker/                  pg-boss consumers and scheduled work
+
+packages/
+  config/                  shared TypeScript, ESLint, env validation
+  contracts/               Zod REST and WebSocket contracts
+  db/                      Drizzle schema, migrations, scoped repositories
+  domain/                  pure rules, hashes, confidence and state machines
+  integrations/            eBay, TCGdex and OpenAI adapters
+
+drizzle/                    generated and reviewed PostgreSQL migrations
+scripts/                    user creation, OpenAPI generation, test setup
+```
+
+`apps/web/src/api/generated/` is generated from the Fastify OpenAPI document and is never edited manually.
+
+## Runtime flow
+
+```text
+React/Vite
+  ├── generated REST client ──► Fastify ──► PostgreSQL
+  └── authenticated WebSocket ◄────┐
+                                   │ job progress
+                             PostgreSQL NOTIFY
+                                   ▲
+                                   │
+                              pg-boss worker
+                              ├── eBay
+                              ├── OpenAI
+                              └── TCGdex
+```
+
+The production deployment is same-origin:
+
+- `/` serves the Vite application.
+- `/api/*` serves REST and Better Auth.
+- `/ws` serves authenticated progress events.
+- During development, Vite proxies `/api` and `/ws` to Fastify.
+
+This avoids production CORS complexity and keeps Better Auth cookies first-party.
+
+## State ownership
+
+### TanStack Query
+
+Owns all server state:
+
+- listings, filters sent to the API, and pagination results;
+- connection status, analyses, review sessions, and suggestions;
+- jobs, batches, history, and verification results;
+- mutation state and cache invalidation.
+
+WebSocket events contain only `jobId`, status, progress, and version. Receiving an event invalidates the generated TanStack Query key; it does not write authoritative workflow state directly into the browser cache.
+
+### Zustand
+
+Owns browser-only interaction state:
+
+- selected listing IDs before analysis;
+- open dialogs, expanded rows, and sidebar state;
+- current client-side review focus;
+- non-sensitive display preferences.
+
+Zustand never stores listings, suggestions, review decisions, jobs, or batches. Review decisions persist through REST immediately.
+
+### PostgreSQL
+
+Owns every durable workflow and remains correct if the browser, API, WebSocket, or worker restarts.
+
+## Authentication and user isolation
+
+Better Auth uses invite-only email/password login for the MVP. Public registration is not exposed; the initial account is created with `pnpm user:create`.
+
+Every seller-owned table contains `user_id`. User-facing database operations run through:
+
+```ts
+withUserDb(userId, transaction => ...)
+```
+
+That helper starts a transaction and sets a transaction-local PostgreSQL user ID. RLS policies compare each row against that value. API repositories accept only the scoped transaction type, making an unscoped query difficult to write accidentally.
+
+The worker reads a job through its system connection, obtains its `user_id`, and performs all domain work through the same scoped database wrapper. Database tests prove two users cannot observe each other’s records.
+
+Better Auth tables and application tables share Drizzle, but have one migration authority:
+
+1. Better Auth generates its Drizzle schema.
+2. Drizzle Kit generates reviewed SQL.
+3. Only Drizzle migrations are applied.
+4. `better-auth migrate` is never run independently.
+
+## eBay credentials
+
+The deployment owns:
+
+- eBay App ID;
+- eBay Cert ID;
+- RuName;
+- OpenAI API key;
+- token-encryption key.
+
+Users only see **Connect eBay Account**. Their eBay refresh token is encrypted with AES-256-GCM before storage. Each encrypted record contains ciphertext, IV, authentication tag, and key version so a later KMS-backed key rotation does not change the table shape.
+
+The encryption service exposes only:
+
+```ts
+encryptRefreshToken()
+decryptRefreshToken()
+rotateRefreshTokenEncryption()
+```
+
+Plaintext tokens cannot be returned through REST, included in logs, or attached to Sentry events.
+
+## REST and OpenAPI contract
+
+Fastify routes use Zod schemas for params, query, body, success responses, and error responses. Every route also receives a stable `operationId`.
+
+Generation flow:
+
+1. `apps/api/src/openapi.ts` builds Fastify without listening.
+2. `@fastify/swagger` emits OpenAPI 3.1.
+3. Hey API generates the Fetch SDK and TanStack Query v5 options.
+4. ESLint formats the result.
+5. `pnpm api:check` regenerates into a temporary directory and fails on drift.
+
+WebSocket messages use a separate discriminated Zod union:
+
+```ts
+job.subscribe
+job.unsubscribe
+job.updated
+auth.expired
+server.error
+```
+
+A subscription request authorizes every job ID before attaching the socket.
+
+## Background jobs
+
+`pg-boss` queues:
+
+- `listing-import`
+- `listing-sync`
+- `listing-analyze`
+- `batch-preflight`
+- `batch-apply`
+- `batch-verify`
+- `batch-undo`
+
+Queue payloads contain only the application `jobId`. User-visible progress lives in the application’s `jobs` table rather than exposing pg-boss internals.
+
+Apply and undo use `group: { id: userId }` with concurrency one. Separate users may run concurrently, but one seller cannot apply and undo competing batches simultaneously.
+
+After a worker transaction commits, it publishes a small PostgreSQL `NOTIFY`. Every Fastify instance receives the notification and forwards it to its connected user. A reconnecting browser fetches current state through REST, so missed notifications cause no data loss.
+
+## Revised waves
+
+### Wave 1 — Turborepo foundation and security boundary
+
+Create all apps and packages, PostgreSQL development infrastructure, Drizzle migrations, Better Auth, scoped repositories, pg-boss, OpenAPI generation, the generated client, WebSocket authentication, Pino, and Sentry redaction.
+
+Observable result: the user can log in, load an authenticated application shell, submit a test job, watch its progress, reload the browser, and see the completed state.
+
+### Wave 2 — eBay connection, synchronization, and Listings
+
+Build eBay OAuth, encrypted token storage, the integration spike, initial import, incremental sync, traffic and Taxonomy caching, Tier 1 scanning, Settings, and Listings.
+
+Observable result: the user connects eBay and sees a searchable, paginated listing table whose sync continues after closing the browser.
+
+### Wave 3 — AI analysis and review
+
+Build TCGdex matching, OpenAI structured analysis, local evidence scoring, cached analysis, selection and cancellation, persisted review sessions, editable suggestions, and review navigation.
+
+Observable result: the user analyzes listings, reloads midway through review, and resumes with every decision intact.
+
+### Wave 4 — Apply, verify, history, and undo
+
+Build pre-flight, the protected write type, sequential apply, uncertain-state recovery, read-back verification, failure resolution, History, and drift-checked undo.
+
+Observable result: approved fields change on eBay, protected fields cannot enter the payload, every result is verified, and a safe rollback restores the recorded before-values.
+
+### Wave 5 — UI fidelity and production readiness
+
+Apply the existing mock handoff, accessibility, browser coverage, security headers, rate limits, Pino/Sentry monitoring, container builds, migration deployment, backup/restore instructions, and privacy/account-deletion behavior.
+
+Observable result: the complete workflow matches the desktop mock at 1440×900 and deploys as a web/API container, worker container, and PostgreSQL 17 database.
+
+## Documented build-and-test gate
+
+Run sequentially:
+
+1. `pnpm lint`
+2. `pnpm typecheck`
+3. `pnpm test`
+4. `pnpm db:test`
+5. `pnpm api:check`
+6. `pnpm test:e2e`
+7. `pnpm build`
+
+`db:test` starts an isolated PostgreSQL 17 database, applies every Drizzle migration, and runs RLS, constraint, repository, Better Auth, and pg-boss integration tests.
+
+`api:check` proves the committed OpenAPI document and generated web client match the Fastify routes.
+
+## Operational boundaries
+
+- Pino logs IDs, operation names, durations, external error codes, and retry counts—not listing descriptions, OAuth codes, tokens, or complete eBay payloads.
+- Sentry uses `beforeSend` redaction in all three apps and never records request bodies on OAuth or listing-write routes.
+- WebSockets are progress acceleration only. REST and PostgreSQL remain authoritative.
+- No Redis, GraphQL, Kubernetes, billing, organizations, or public registration enters the MVP.
+- `electron-vite` remains excluded. A future Electron shell can consume the same generated client without changing the API or database.
+
+The `plan-code` pass keeps each kind of state under one owner and makes every wave independently buildable and reviewable. Approval now ratifies this revised stack in place of the earlier Next.js/Supabase architecture.
+
+Next action: reply **approve** to send this revised plan through the required full audit before implementation.
+
+YOU
+
+how strong is the tech stack you chose? I want the best long term stack, short answer
+
+CODEX
+
+I’m using `clarity` to keep this to the decision and the one meaningful caveat.
+
+CODEX
+
+Very strong—about **9/10 for long-term use**. React, Fastify, PostgreSQL, TypeScript, and Node are durable choices; the architecture is portable and avoids vendor lock-in.
+
+The main risk is faster-moving dependencies like Better Auth and generated clients. Pin versions and isolate them behind small adapters; then this stack can comfortably grow from one user to a serious SaaS.
+
+YOU
+
+ok so what would you change to make the stack a 10/10?
+
+CODEX
+
+I’m using `plan-code` to separate genuine long-term improvements from extra machinery, with `clarity` keeping the recommendation compact. I’m checking only the few version and infrastructure choices that could materially change the answer.
+
+CODEX
+
+The core stack is already excellent. To make it as close to 10/10 as practical, I’d change only these things:
+
+- Upgrade PostgreSQL 17 → 18; it is supported through November 2030. [PostgreSQL version policy](https://www.postgresql.org/support/versioning/)
+- Replace WebSockets with Server-Sent Events for job progress. Communication is one-way, and SSE provides automatic reconnection with less operational complexity. [MDN SSE documentation](https://developer.mozilla.org/en-US/docs/Web/API/Server-sent_events/Using_server-sent_events)
+- Add OpenTelemetry for API, database, worker, and eBay request traces; retain Pino for logs and Sentry for errors. JavaScript traces and metrics are stable. [OpenTelemetry JavaScript](https://opentelemetry.io/docs/languages/js/)
+- Use managed PostgreSQL with point-in-time recovery and managed KMS envelope encryption for eBay tokens.
+- Keep Zustand optional—prefer URL state and TanStack Query until genuinely shared client state appears.
+- Keep `pg-boss`, but require transactional job creation, explicit operation state machines, and idempotent eBay mutations. Retries can still process work more than once. [pg-boss documentation](https://github.com/timgit/pg-boss/blob/master/docs/readme.md)
+- Isolate Better Auth behind an internal adapter, pin exact versions, and test migrations so it can be replaced without touching the application.
+- Add GitHub Actions, Renovate, Docker images, OpenTofu infrastructure, preview environments, and automated backup-restore tests.
+
+I would keep React, Vite, Fastify, Zod/OpenAPI, Drizzle, Turborepo, Vitest, and Playwright exactly as planned.
+
+YOU
+
+and that would be 10/10 ?
+
+CODEX
+
+Yes—for this product, I’d rate it 10/10 architecturally.
+
+It is modern, scalable, testable, secure, avoids premature distributed systems, and leaves clean upgrade paths. The remaining risks would come from implementation quality, eBay API constraints, and operations—not the technology choices.
+
+YOU
+
+ok then did you already create a full plan with that tech stack?
+
+CODEX
+
+No. I created the architecture, stack decisions, repository layout, and five-wave outline, but not the complete implementation-ready plan.
+
+The full plan still needs database schemas, API contracts, queue/state flows, file-level work, acceptance criteria, deployment design, and the remaining `AGENTS.md` project setup decisions.
+
+YOU
+
+Ok then do that
+
+CODEX
+
+I’m using the repository’s `plan-code` workflow to turn the approved stack into an implementation-ready web-app plan. I’ll first verify the product spec, research, mockup, and repository rules, then define the data model, APIs, jobs, security boundaries, delivery waves, and exact build gate.
+
+CODEX
+
+The repository has no application code yet, so this is a greenfield plan governed by `SPEC.md`. I confirmed one important conflict resolution already exists: the written spec overrides the older mockup wherever behavior or layout differs; the PNG remains the visual-style reference.
+
+CODEX
+
+The plan needs one updated product decision to support a future public web app: the deployment owns the eBay developer keyset, while each seller only completes eBay consent. That intentionally replaces the spec’s older “each user edits App ID/Cert ID/RuName” screen and prevents every future customer from needing an eBay developer account.
+
+I’m also using the `openai-docs` guidance for the AI-analysis contract because model and API choices change faster than the rest of the stack.
+
+CODEX
+
+The core workflow is now mapped. Two safeguards are being added because they close real data-loss paths the product spec leaves implicit: every write will use a server-calculated confirmation hash, and any legacy condition field will block that portion of an eBay update instead of being silently removed during eBay’s wholesale item-specific replacement.
+
+CODEX
+
+The full plan is ready. It uses six independently testable waves: repository rules, secure foundation, eBay sync/Listings, AI Review, Apply/Verify/Undo, and production hardening. It also keeps public signup, billing, multiple eBay accounts, and cloud-provider selection outside the MVP while preserving clean paths to add them later.
+
+CODEX
+
+# Pokémon Listing Optimizer — implementation plan
+
+This is implementation-ready, with no unresolved product or architecture decisions. No files were changed; per the repository’s planning workflow, the plan stays in conversation until you approve it.
+
+## Routing
+
+- Route: **Normal — Full**
+- Reason: greenfield multi-wave build touching authentication, persistence, migrations, external writes, security, and deployment configuration.
+- Audit: **full `plan-audit` pipeline** after approval.
+- Simplicity exemption: not applicable.
+
+## Authority order
+
+Wave 0 will replace the `TODO(project)` section in [AGENTS.md](</Users/antonioperedo/Desktop/ebay listings enhancement/AGENTS.md>) with this order:
+
+1. `.agents/plans/2026-08-20-pokemon-listing-optimizer-web.md` — approved architecture, scope, delivery waves, and acceptance tests.
+2. [SPEC.md](</Users/antonioperedo/Desktop/ebay listings enhancement/SPEC.md>) — product behavior, safety promises, and UI workflow.
+3. [RESEARCH.md](</Users/antonioperedo/Desktop/ebay listings enhancement/RESEARCH.md>) — verified eBay integration facts and limits.
+4. [screens mockups.png](</Users/antonioperedo/Desktop/ebay listings enhancement/screens mockups.png>) — visual styling reference where it does not conflict with the written spec.
+5. `screens.rtfd` — historical ideation only.
+
+The implementation stays inside the product described by `SPEC.md`, with four explicit clarifications:
+
+- PostgreSQL is the server-side store; “local store” no longer means a desktop database.
+- Deployment-owned eBay credentials replace customer-entered App ID, Cert ID, and RuName.
+- Legacy condition item-specifics block an item-specific update instead of being silently removed.
+- Batch states add `rolling_back` and `partially_rolled_back` so partial undo is represented honestly.
+
+## Goal and success criteria
+
+Build a desktop-first web app where an invited seller can connect eBay, import listings, analyze selected Pokémon cards, approve changes, apply only those changes, verify eBay’s result, and safely undo them.
+
+Success means:
+
+1. Authentication, eBay consent, import, incremental sync, filtering, and local issue scanning work end to end.
+2. Analysis is cached, grounded with TCGdex, returned through a validated AI schema, and review decisions survive reloads.
+3. Apply, verification, failure recovery, history, and drift-aware undo work without any write path for protected fields.
+4. Every user-owned record is isolated through PostgreSQL row-level security, and interrupted jobs resume safely.
+5. The documented gate passes and the app produces deployable API and worker container images.
+
+## Locked technology stack
+
+| Area | Choice |
+|---|---|
+| Runtime | Node 24, TypeScript strict mode, pnpm, Turborepo |
+| Web | React 19.2, Vite, React Router 7 Data mode |
+| Web state | TanStack Query v5 for server state; URL state for filters; Zustand only for temporary table selection and expanded rows |
+| UI | CSS Modules, global design tokens, Radix primitives, TanStack Table, React Hook Form |
+| API | Fastify REST, Zod schemas, `@fastify/swagger` OpenAPI |
+| Client | Hey API generated Fetch client and TanStack Query hooks |
+| Authentication | Better Auth, email/password, invite-only signup |
+| Database | PostgreSQL 18, Drizzle ORM, checked-in SQL migrations |
+| Jobs | `pg-boss`, using PostgreSQL transactions rather than Redis |
+| Live progress | Server-Sent Events, with REST as the source of truth |
+| AI | OpenAI Responses API, Structured Outputs, `store:false`, configurable model defaulting to `gpt-5.6-terra` |
+| Testing | Vitest, Testcontainers, Playwright |
+| Operations | ESLint, Prettier, Pino, Sentry, OpenTelemetry, Renovate |
+| Packaging | Separate OCI images for API and worker |
+
+PostgreSQL 18 is supported through November 2030. [PostgreSQL support policy](https://www.postgresql.org/support/versioning/)
+
+SSE fits because progress travels from server to browser; browsers reconnect automatically. [MDN SSE documentation](https://developer.mozilla.org/en-US/docs/Web/API/Server-sent_events/Using_server-sent_events)
+
+The OpenAI response uses JSON Schema rather than free-form JSON. The official API supports Structured Outputs and stateless use with `store:false`. [OpenAI Responses API](https://developers.openai.com/api/reference/java/resources/beta/subresources/responses) GPT-5.6 Terra is the default balance between quality and cost, but the model remains configuration rather than domain logic. [OpenAI model documentation](https://developers.openai.com/api/docs/models/gpt-5.6-terra)
+
+## Repository layout
+
+```text
+apps/
+  web/
+  api/
+  worker/
+
+packages/
+  api-client/
+  config/
+  contracts/
+  db/
+  domain/
+  integrations/
+  observability/
+  test-utils/
+
+drizzle/
+scripts/
+  create-user/
+  ebay-spike/
+  live-smoke/
+
+deploy/
+  containers/
+  README.md
+
+tests/
+  e2e/
+  fixtures/
+```
+
+Ownership is explicit:
+
+| Owner | Responsibility |
+|---|---|
+| `apps/web` | Rendering, routing, accessibility, URL state, temporary selection |
+| `apps/api` | Authentication, authorization, REST contracts, SSE, static web serving |
+| `apps/worker` | Durable operations and external API work |
+| `packages/domain` | Pure scans, validation, state transitions, preflight, apply and undo planning |
+| `packages/integrations` | eBay, TCGdex, OpenAI, and token-encryption adapters |
+| `packages/db` | Schema, RLS, scoped transactions, repositories |
+| `packages/contracts` | Zod HTTP and SSE contracts |
+| `packages/api-client` | Generated web client; never manually edited |
+
+## Runtime architecture
+
+```text
+Browser
+   │ HTTPS: REST + SSE
+   ▼
+Fastify API ───────── PostgreSQL 18
+   │                       │
+   │ enqueue in same       │ pg-boss jobs
+   │ database transaction  ▼
+   └────────────────── Worker
+                           │
+                eBay · TCGdex · OpenAI
+```
+
+Fastify serves the built Vite application in production. API, auth, and SSE therefore share one origin, avoiding CORS and cross-site cookie complexity.
+
+The API and worker scale independently. PostgreSQL remains the only required stateful service until measured workload proves another system is necessary.
+
+## State ownership
+
+| State | Authority |
+|---|---|
+| Search, filters, sorting, pagination | React Router URL search parameters |
+| Selected listing IDs and expanded table rows | Small Zustand store, cleared after analysis starts |
+| Listings, reviews, batches, operations | PostgreSQL through TanStack Query |
+| Job scheduling and retry timing | `pg-boss` |
+| Current live listing | eBay; PostgreSQL contains the last fetched snapshot |
+| Authenticated identity | Better Auth session |
+| AI result | Validated database record; never browser-only state |
+
+The browser never calculates apply payloads or authoritative counts. It displays values returned by the server.
+
+## Database design
+
+Every user-owned table has `user_id`. Relationships use composite foreign keys such as `(review_session_id, user_id)` so rows cannot be linked across users accidentally.
+
+### Identity and integrations
+
+| Table | Purpose and important constraints |
+|---|---|
+| Better Auth tables | Users, accounts, sessions, and verification records in an `auth` schema |
+| `ebay_connections` | One per user; seller identifiers, encrypted refresh/access tokens, consent and expiry dates, status |
+| `ebay_oauth_states` | Short-lived, single-use OAuth state records bound to the logged-in user |
+| `ebay_deletion_receipts` | Hashed notification identifier and processing status for idempotent account-deletion handling |
+| `idempotency_keys` | Unique `(user_id, route, key)` for state-creating API mutations |
+
+### Listings and cached reference data
+
+| Table | Purpose and important constraints |
+|---|---|
+| `listings` | Stable local identity, unique `(user_id, ebay_item_id)`, current and optimized snapshot references |
+| `listing_snapshots` | Immutable fetched content, eBay revision, title-lock state, canonical SHA-256 hash |
+| `scan_results` | Deterministic Tier 1 issues keyed to a snapshot |
+| `traffic_cache` | Watch count and 30-day views with independent fetched timestamps |
+| `aspect_dictionaries` | Raw and normalized Taxonomy response, category/version/fetched date |
+| `tcgdex_sets` | Cached TCGdex set/card data, source version and fetched date |
+| `sync_cursors` | Last completed UTC event window and import/sync status |
+
+The content hash covers category, title, full description, sorted item specifics, and read-only condition descriptors. It excludes traffic, price, quantity, and sync timestamps.
+
+### Analysis and review
+
+| Table | Purpose and important constraints |
+|---|---|
+| `analyses` | Cache key: user, listing hash, taxonomy version, card-data version, prompt version, and model |
+| `analysis_suggestions` | Immutable validated output from an analysis |
+| `review_sessions` | `active`, `ready_to_apply`, `applying`, `completed`, or `discarded` |
+| `review_session_listings` | Ordered listings and current review position |
+| `review_suggestions` | Session-specific decision, edited value, and optimistic-lock version |
+
+A partial unique index permits at most one `active` or `ready_to_apply` review per user.
+
+### Operations and batches
+
+| Table | Purpose and important constraints |
+|---|---|
+| `operations` | Type, status, progress counters, cancellation request, error summary, version |
+| `operation_items` | Per-listing status and retry information |
+| `batches` | Apply/undo audit root and overall state |
+| `batch_listings` | Per-listing apply, verification, and undo state |
+| `batch_changes` | Append-only before/after values and per-field outcome |
+| `pgboss.*` | Queue-owned schema managed only by its migration procedure |
+
+All dates use `timestamptz` and UTC. Human dates are formatted in the browser’s locale.
+
+## Security model
+
+### Authentication and tenant isolation
+
+Better Auth provides invite-only email/password login. Public signup is disabled; `pnpm user:create` provisions users through the same Better Auth API used by the application.
+
+Application queries run inside:
+
+```text
+withUserDb(userId, transaction)
+```
+
+That transaction calls `set_config('app.user_id', userId, true)`. PostgreSQL RLS policies compare each row’s `user_id` with the transaction-local value.
+
+The API gets `userId` exclusively from the verified session. Workers receive only trusted `{ operationId, userId }` job payloads created by the API, set the same RLS context, and cannot access the auth schema.
+
+### eBay token protection
+
+- The deployment owns `EBAY_CLIENT_ID`, `EBAY_CLIENT_SECRET`, and `EBAY_RUNAME`.
+- Sellers see only Connect, Reconnect, Test Connection, and Disconnect controls.
+- Tokens use AES-256-GCM envelope encryption with a key version.
+- Development uses an explicit local key.
+- Production uses a `TokenCipher` adapter backed by managed KMS.
+- Access-token refresh locks the connection row to prevent concurrent refreshes.
+- Tokens, descriptions, prompts, cookies, authorization headers, and XML bodies are redacted from logs and Sentry.
+
+### eBay write boundary
+
+`buildRevisePayload()` accepts only:
+
+- title;
+- full description;
+- complete item-specific set.
+
+No TypeScript input type or serializer field exists for price, quantity, shipping, returns, promotions, images, listing status, category, or condition.
+
+Because eBay replaces the whole ItemSpecifics container, every update starts from a freshly fetched snapshot and merges approved changes into the unchanged remainder. [eBay documents the complete-replacement behavior](https://developer.ebay.com/DevZone/XML/docs/Reference/ebay/AddFixedPriceItem.html).
+
+If legacy condition-like item specifics appear, item-specific changes for that listing are blocked and explained. Title or description changes may still proceed separately.
+
+### Untrusted content
+
+Listing titles, descriptions, and specifics are treated as untrusted data:
+
+- XML parsing disables entities and DTD processing.
+- Active HTML content is detected and removed only in the user-visible suggested description.
+- OpenAI receives listing text as delimited data with no tools enabled.
+- Model output passes Zod and domain validation.
+- The apply allowlist remains authoritative even if a prompt-injected listing asks the model to change protected fields.
+
+## API and event contracts
+
+All application endpoints live under `/api/v1`. Better Auth keeps its own `/api/auth/*` routes.
+
+### Connection and listings
+
+| Method | Endpoint | Purpose |
+|---|---|---|
+| `GET` | `/ebay/connection` | Masked connection status and expiry |
+| `POST` | `/ebay/connect` | Create single-use OAuth state and return eBay consent URL |
+| `GET` | `/ebay/callback` | Validate state, exchange code, test account, enqueue import |
+| `POST` | `/ebay/test` | Test or refresh the connection |
+| `GET` | `/listings` | Cursor pagination, search, filters, sorting |
+| `POST` | `/syncs` | Start an idempotent manual sync |
+
+### Analysis and review
+
+| Method | Endpoint | Purpose |
+|---|---|---|
+| `POST` | `/analyses` | Analyze up to 500 authorized listing IDs |
+| `POST` | `/operations/:id/cancel` | Request analysis cancellation |
+| `POST` | `/review-sessions` | Create a review from completed suggestions |
+| `GET` | `/review-sessions/active` | Find resumable review |
+| `GET` | `/review-sessions/:id` | Review page data and progress |
+| `PATCH` | `/review-sessions/:id/suggestions/:suggestionId` | Edit and decide one suggestion |
+| `POST` | `/review-sessions/:id/listings/:listingId/decision` | Approve checked or skip listing |
+| `POST` | `/review-sessions/:id/approve-high` | Mark all HIGH suggestions decided |
+| `DELETE` | `/review-sessions/:id` | Explicitly discard the session |
+
+### Apply, history, and undo
+
+| Method | Endpoint | Purpose |
+|---|---|---|
+| `POST` | `/review-sessions/:id/preflight` | Re-sync, validate, and return confirmation hash |
+| `POST` | `/batches` | Confirm count/hash and enqueue apply |
+| `GET` | `/batches` | Paginated history |
+| `GET` | `/batches/:id` | Results and batch details |
+| `POST` | `/batches/:id/resume` | Resume a paused batch |
+| `POST` | `/batches/:id/retry` | Retry eligible failed fields |
+| `POST` | `/batches/:id/undo-preflight` | Drift check and safe defaults |
+| `POST` | `/batches/:id/undo` | Confirm selected listings and enqueue undo |
+
+Every state-creating mutation accepts an `Idempotency-Key`. Stale review versions or preflight hashes return `409 Conflict`, forcing a refetch instead of overwriting newer work.
+
+Errors use one Zod `application/problem+json` contract with `code`, `title`, `status`, `detail`, `requestId`, and optional field errors.
+
+### SSE
+
+`GET /api/v1/events` emits a validated union:
+
+- `operation.progress`
+- `operation.paused`
+- `operation.completed`
+- `operation.failed`
+- `connection.changed`
+
+PostgreSQL `NOTIFY` carries only user ID, operation ID, type, and version. The API never puts full records in the notification payload.
+
+The browser invalidates the matching TanStack Query key on receipt. On connection or reconnection it fetches current operations through REST, so lost notifications cannot produce incorrect state.
+
+## Core domain behavior
+
+### Sync and scanning
+
+`canonicalizeListingSnapshot()` sorts item-specific names and values before hashing. `scanListing()` implements every Tier 1 rule in `SPEC.md` as pure functions with fixture tests.
+
+Initial import:
+
+1. Enumerate active listings with GetSellerList windows.
+2. Fetch complete details and watch count with bounded concurrency.
+3. Store immutable snapshots and update current pointers transactionally.
+4. Run the local scan and emit progress after each listing.
+5. Fetch daily traffic and monthly Taxonomy data separately.
+
+Incremental sync walks `<48h` GetSellerEvents windows with two-minute overlap, deduplicates item IDs, and fetches flagged listings. A capped or unusable window triggers full re-enumeration.
+
+### AI analysis
+
+One listing is one Responses API request, with at most two concurrent requests per user. Completed listings are committed immediately, so cancellation keeps finished cache entries.
+
+The prompt input contains the listing snapshot, Taxonomy dictionary, and resolved TCGdex facts. The output schema allows:
+
+- at most one title suggestion;
+- at most one description suggestion;
+- item-specific set or remove suggestions;
+- confidence percentage and one-sentence reason;
+- evidence identifiers for factual card claims.
+
+The server derives `HIGH`, `REVIEW`, or `UNCERTAIN`; the model cannot choose the behavioral tier directly.
+
+`validateAnalysisOutput()` rejects protected fields, unsupported values, invalid lengths, false current values, ungrounded variant claims, and title suggestions for title-locked listings. Invalid schema responses retry once, then mark that listing as needing retry without inventing a result.
+
+### Preflight and confirmation
+
+Preflight fetches the current eBay state, compares its content hash with the analysis snapshot, validates the complete proposed result, and returns:
+
+- eligible changes;
+- excluded changes with reasons;
+- literal listing and field counts;
+- a server-generated confirmation hash.
+
+Creating a batch requires the same hash and count. The server recalculates both; changing browser data cannot widen the write.
+
+### Apply and crash recovery
+
+Apply runs sequentially per seller under a PostgreSQL advisory lock.
+
+Before each eBay call, the worker commits the batch listing, exact before/after plan, and attempt number. If the worker crashes after eBay succeeds but before the database update, resume first calls GetItem:
+
+- already matches expected state → record success and verify;
+- still matches before state → safely retry;
+- matches neither → pause that listing as a conflict.
+
+Auth errors pause the operation. Quota and transient errors reschedule with bounded exponential backoff. Permanent validation errors become per-field results and do not stop unrelated listings.
+
+### Verification and undo
+
+Each successful revise is followed by GetItem and one delayed read retry on mismatch. Only a verified listing receives a new optimized snapshot pointer.
+
+Undo performs a fresh drift check against each batch’s after values. Safe listings default checked; drifted listings default unchecked.
+
+Undo reconstructs complete item specifics from the latest snapshot, merges only the approved before-values, applies sequentially, and verifies. A batch becomes:
+
+- `rolled_back` when every applied listing is restored;
+- `partially_rolled_back` when only some are restored;
+- unchanged when the user cancels before writing.
+
+## UI specification
+
+Visual reference: [screens mockups.png](</Users/antonioperedo/Desktop/ebay listings enhancement/screens mockups.png>), 1536×1024 composite.
+
+Priority is user direction → approved plan → `SPEC.md` → PNG → historical RTF. Therefore the written one-page Review layout overrides the mockup’s tabs.
+
+### Layout and tokens
+
+| Element | Specification |
+|---|---|
+| Desktop shell | 224px sidebar, flexible main area, 24px page padding, 1440px content maximum |
+| Header | 64px minimum height; app name left, stepper centered during workflow |
+| Table rows | 64–72px; 40×56px card thumbnail; 13–14px table text |
+| Cards | White surface, 1px border, 8px radius, 16–24px internal padding |
+| Controls | 40px standard height; primary buttons 44px on confirmation screens |
+| Spacing | 4px base scale: 4, 8, 12, 16, 24, 32, 48 |
+| Typography | Inter Variable; 14px body, 12px metadata, 18px section title, 24px page title |
+
+Initial token values:
+
+```text
+--color-bg:             #f7f9fc
+--color-surface:        #ffffff
+--color-sidebar:        #0f1b2d
+--color-sidebar-muted:  #91a0b5
+--color-primary:        #0b5fe7
+--color-primary-hover:  #084fc4
+--color-text:           #101828
+--color-muted:          #667085
+--color-border:         #dde3ea
+--color-success:        #15803d
+--color-success-bg:     #ecfdf3
+--color-warning:        #b54708
+--color-warning-bg:     #fffaeb
+--color-danger:         #d92d20
+```
+
+Blue is the only primary-action color. Green appears only for success. Every state has one visually dominant action.
+
+### Routes
+
+```text
+/login
+/listings
+/review/:sessionId/:listingId
+/apply/:sessionId
+/history
+/history/:batchId
+/history/:batchId/listings/:listingId
+/settings/ebay
+/settings/optimizer
+```
+
+Only Listings, History, and Settings appear in permanent navigation. Review and Apply are temporary workflow routes.
+
+The UI meets WCAG 2.2 AA for contrast, focus, labels, keyboard access, and live progress announcements. Mobile layouts remain out of MVP, but components must not assume fixed screen coordinates.
+
+## Documented build-and-test gate
+
+Wave 0 writes this exact sequence into `AGENTS.md`:
+
+```bash
+pnpm lint
+pnpm typecheck
+pnpm test
+pnpm test:integration
+pnpm api:check
+pnpm build
+pnpm test:e2e
+```
+
+Meaning:
+
+- `lint`: ESLint plus formatting check.
+- `typecheck`: all workspaces, strict TypeScript.
+- `test`: Vitest unit and domain fixture tests.
+- `test:integration`: Testcontainers PostgreSQL, migrations, RLS, repositories, API, worker, and fake upstream servers.
+- `api:check`: regenerate OpenAPI and client, then prove the checked-in output is current.
+- `build`: production API, worker, and Vite builds.
+- `test:e2e`: Playwright against built apps and deterministic fake integrations.
+
+## Health-check scopes
+
+Wave 0 adds this table to `AGENTS.md`:
+
+| Scope | File globs | Focus |
+|---|---|---|
+| Web | `apps/web/**` | accessibility, state ownership, stale UI, route behavior |
+| API and contracts | `apps/api/**`, `packages/contracts/**`, `packages/api-client/**` | auth, validation, API drift, error consistency |
+| Domain | `packages/domain/**` | safety invariants, state transitions, edge cases |
+| Persistence | `packages/db/**`, `drizzle/**` | RLS, migrations, constraints, transaction boundaries |
+| Integrations | `packages/integrations/**` | secret leakage, upstream parsing, retries, protected fields |
+| Worker | `apps/worker/**` | idempotency, resume behavior, concurrency, lost jobs |
+| Operations | `packages/observability/**`, `deploy/**`, `.github/**` | redaction, health checks, build and release safety |
+
+Paths excluded from review: none.
+
+# Implementation waves
+
+## Wave 0 — Make the repository authoritative
+
+1. Save the approved plan to `.agents/plans/2026-08-20-pokemon-listing-optimizer-web.md`.
+2. Fill every `TODO(project)` in `AGENTS.md` using the authority, gate, protected areas, and health scopes above.
+3. Amend `SPEC.md` with the four web/SaaS clarifications described in the authority section.
+4. Keep the mock and RTF unchanged; append authenticated Taxonomy findings to `RESEARCH.md` only after the real spike.
+5. Verify `rg -n 'TODO\\(project\\)' AGENTS.md` returns no output and inspect the docs-only diff.
+
+This is the only wave that cannot run the application gate because the application does not exist yet.
+
+Tie-breaker: when a lower-level requirement conflicts with “never change protected eBay fields,” preserve the protected field and block the write.
+
+## Wave 1 — Secure foundation
+
+1. Create root workspace, strict TypeScript, lint/format configuration, package catalog, PostgreSQL 18 development compose file, environment validation, CI, and Renovate configuration.
+2. Create the complete Drizzle schema, checked-in first migration, database roles, RLS policies, `withUserDb()`, repositories, and Testcontainers harness.
+3. Configure Better Auth, invite-only user creation, secure cookie settings, authenticated Fastify hooks, and the `/login` flow.
+4. Add Zod contracts, OpenAPI generation, Hey API client generation, API error format, basic SSE plumbing, `pg-boss`, Pino, Sentry, and Node OpenTelemetry.
+5. Build the React shell with permanent navigation and placeholder Listings, History, and Settings routes.
+
+Wave-specific proof:
+
+- migration succeeds on an empty database;
+- migration rollback/forward test succeeds before production data exists;
+- two-user RLS tests prove cross-user reads and writes fail;
+- unauthenticated API and SSE access returns `401`;
+- generated client is clean;
+- the full documented gate passes.
+
+OpenTelemetry traces and metrics are stable in JavaScript; Pino remains the logging system because OpenTelemetry JavaScript logs are still under development. [OpenTelemetry JavaScript status](https://opentelemetry.io/docs/languages/js/)
+
+Tie-breaker: keep external libraries at application boundaries; domain code must remain framework-free.
+
+## Wave 2 — eBay connection, sync, and Listings
+
+1. Implement `EbayOAuthClient`, `TradingClient`, `TaxonomyClient`, `AnalyticsClient`, typed error mapping, secure XML parsing, token refresh locking, and deterministic fake transports.
+2. Implement OAuth endpoints, Settings connection states, initial import, incremental sync, monthly Taxonomy refresh, daily traffic refresh, and pause-on-auth-expiry behavior.
+3. Implement snapshot hashing, all Tier 1 rules, optimized-status calculation, title locking, search/filter pagination, and sync progress.
+4. Build the Listings table, empty states, filters, selection bar, sync indicator, resume banners, and Settings eBay page.
+5. Add `scripts/ebay-spike` for OAuth, Taxonomy, GetItem → Revise → GetItem verification, first in sandbox and then on one explicitly selected production listing.
+
+Wave-specific proof:
+
+- XML fixtures cover success, warnings, HTTP-200 failures, auth expiry, quota, and malformed responses;
+- imported listings preserve all read-only data;
+- every local scan rule has boundary fixtures;
+- sync overlap deduplicates repeated events;
+- Playwright covers connect, import, refresh, filters, and reconnect;
+- the full documented gate passes.
+
+The live production revise is a manual external acceptance gate and never runs in CI. It requires the user to supply the chosen harmless listing and confirm the exact test edit.
+
+Tie-breaker: if eBay’s response is incomplete or ambiguous, persist no guessed value and mark the listing for attention.
+
+## Wave 3 — AI analysis and persisted review
+
+1. Implement TCGdex set caching and deterministic card matching by set and card number.
+2. Implement the OpenAI Responses adapter, versioned prompt, Structured Output schema, domain validation, retry policy, token accounting, and golden analysis fixtures.
+3. Implement analysis operations, cache reuse, cancellation, incremental result persistence, review-session creation, and immediate decision persistence.
+4. Build analysis progress on Listings and the vertically scrolling Review route with editable suggestions, confidence labels, grouped specifics, bulk HIGH approval, navigation, and completion.
+5. Add evaluation fixtures covering normal, holo, reverse, Poke Ball, Master Ball, unknown-card, title-locked, malicious-description, and no-suggestion listings.
+
+Wave-specific proof:
+
+- unchanged hashes use the analysis cache without calling OpenAI;
+- prompt/schema/model version changes invalidate the cache;
+- protected fields and unsupported variant claims never produce stored suggestions;
+- reload and navigation preserve every review decision;
+- cancel keeps completed analyses and stops new calls;
+- the full documented gate passes.
+
+Tie-breaker: without sufficient evidence for a factual card claim, omit the suggestion instead of lowering confidence and guessing.
+
+## Wave 4 — Apply, verify, history, and undo
+
+1. Implement `buildPreflight()`, confirmation hashes, authoritative counts, protected-field validation, stale-analysis exclusion, and title-lock rechecking.
+2. Implement append-only batch records, sequential seller locking, revise payload construction, rate-limit scheduling, auth pause, crash recovery, and state-machine guards.
+3. Implement read-back verification, mismatch handling, field-level retry, batch result calculation, drift-aware undo, and rollback verification.
+4. Build Confirm, Applying, Verification, Results, History, Batch Details, Before/After, Undo Preflight, Resume, and Retry UI states.
+5. Add invariant and end-to-end tests proving only approved title, description, and item-specific fields can reach eBay.
+
+Wave-specific proof:
+
+- serialized revise payloads never contain any protected field;
+- item-specific updates always contain the complete latest safe set;
+- stale preflight hashes and duplicate confirmation clicks cannot create duplicate batches;
+- worker crashes before and after the eBay call recover correctly;
+- auth expiry pauses and reconnect resumes at the correct listing;
+- verification mismatch and partial rollback appear accurately in History;
+- the full documented gate passes.
+
+Tie-breaker: when the worker cannot prove whether a write occurred, perform a fresh read and pause on ambiguity—never blindly repeat the write.
+
+## Wave 5 — Production hardening and release packaging
+
+1. Implement eBay marketplace-account-deletion GET challenge and POST notification routes, immediate acknowledgement, idempotent cleanup jobs, and irreversible removal of seller data.
+2. Add managed-KMS token encryption, key rotation support, complete log/Sentry redaction, CSP, HSTS, request limits, origin checks, and dependency scanning.
+3. Add API/worker health endpoints, queue metrics, trace correlation, alerts for paused jobs and verification failures, and operational runbooks.
+4. Add API and worker container builds, non-root runtime users, migration release command, deployment contract, backup/PITR requirements, and restore-drill instructions.
+5. Complete visual snapshots, accessibility checks, slow-network tests, reconnect tests, and one production smoke pass against the authorized seller account.
+
+Wave-specific proof:
+
+- eBay’s challenge hash fixture matches its required byte order;
+- duplicate deletion notifications are harmless;
+- deleted connection data cannot be decrypted;
+- secret-scanning fixtures prove tokens and listing bodies are absent from telemetry;
+- containers start read-only except for their temporary directory;
+- restore drill reaches a verified database;
+- the full documented gate passes.
+
+eBay requires HTTPS challenge validation and deletion notifications to be acknowledged promptly. [eBay marketplace account deletion guide](https://developer.ebay.com/develop/guides-v2/marketplace-user-account-deletion)
+
+Tie-breaker: security and recoverability take priority over visual polish.
+
+## Edge cases and dispositions
+
+### Limits
+
+| Case | Behavior and proof |
+|---|---|
+| 0 listings | Listings empty state; no Analyze action; Playwright fixture |
+| 1 listing | Full workflow remains valid; end-to-end fixture |
+| 499 / 500 / 501 selected | 500 accepted; 501 blocked by API and UI |
+| Title 79 / 80 / 81 chars | 79–80 accepted; 81 blocked before approval |
+| Aspect value 64 / 65 / 66 chars | 64–65 accepted unless Taxonomy lowers the limit; 66 blocked |
+| 44 / 45 / 46 specifics | 44–45 accepted; 46 blocked |
+| Description 499,999 / 500,000 / 500,001 chars | first two accepted; last blocked |
+| No suggestions | Analysis completes, listing can be deselected, no empty review created |
+
+### Failures
+
+| Case | Behavior |
+|---|---|
+| eBay auth expires | Save progress, pause operation, show reconnect banner |
+| eBay quota or transient failure | Reschedule with bounded backoff and visible delayed progress |
+| eBay permanent rejection | Record exact field/message and offer valid exits |
+| Taxonomy unavailable | Use unexpired cache; otherwise block item-specific suggestions |
+| TCGdex cannot resolve card | Allow non-factual style suggestions only; no variant guess |
+| OpenAI refuses or returns invalid output | Retry once, then mark listing retryable |
+| PostgreSQL disconnects | Transaction rolls back; pg-boss retries from persisted state |
+| SSE disconnects | Browser reconnects and refetches REST state |
+| Sentry/telemetry fails | Application work continues; telemetry never blocks apply |
+
+### Timing and concurrency
+
+| Case | Behavior |
+|---|---|
+| Two browser tabs edit one review | Optimistic version conflict; stale tab refetches |
+| Double-click Analyze/Apply/Undo | Same idempotency key returns the existing operation |
+| Sync overlaps review | Existing review remains tied to its analysis snapshot; preflight catches drift |
+| Listing changes during apply | Read-back exposes mismatch and pauses only that listing |
+| Worker crashes after eBay success | Fresh GetItem proves whether to record or retry |
+| OAuth callback is replayed | Single-use state rejects the second callback |
+| Midnight, DST, timezone changes | UTC storage; browser-only human formatting |
+| Two applies for one seller | Advisory lock permits one writer; second operation remains queued |
+
+### Accepted service constraints
+
+- One SSE stream per tab; deployment should use HTTP/2 and send heartbeats.
+- PostgreSQL `NOTIFY` is non-durable and small, so it transports identifiers only.
+- `pg-boss` retries still require idempotent handlers and read-before-retry logic.
+- Better Auth and generated-client versions are pinned exactly and upgraded only through a green Renovate PR.
+- Live eBay and OpenAI tests remain manual smoke gates; deterministic substitutes run in CI.
+
+## Blast radius
+
+| Consumer | Disposition |
+|---|---|
+| `AGENTS.md` | Deliberately completed in Wave 0; `TODO(project)` check protects it |
+| `SPEC.md` | Four deliberate clarifications in Wave 0; product safety behavior otherwise unchanged |
+| `RESEARCH.md` | Existing findings preserved; authenticated Taxonomy facts appended after the spike |
+| Mock PNG and RTF | Must not change |
+| Database migration ledger | Deliberately created in Wave 1; migration integration tests protect every consumer |
+| Better Auth schema | Generated into Drizzle definitions; only checked-in Drizzle SQL may migrate |
+| API/OpenAPI client | Deliberately evolves with features; `pnpm api:check` prevents drift |
+| SSE events | API, worker, and web consume the Zod union; contract tests cover every variant |
+| eBay write adapter | Only batch apply and undo may call it; serialization tests enforce the allowlist |
+| Batch records | Results, History, diff, resume, retry, and undo consume them; end-to-end tests cover each |
+| OCI images | API and worker builds consume shared packages; `pnpm build` and container smoke tests protect them |
+
+There are no current code consumers because the repository contains no application code.
+
+## Rejected alternatives
+
+| Alternative | Reason rejected |
+|---|---|
+| Electron/electron-vite | Conflicts with the web-app direction; can later wrap the web app if needed |
+| Next.js full-stack | Adds a second server model while Fastify and a worker are already required |
+| WebSockets | Progress is server-to-browser; SSE is simpler and reconnects automatically |
+| Redis/BullMQ | Adds another stateful system without an MVP workload that needs it |
+| Customer-entered eBay developer keys | Prevents a normal SaaS onboarding experience and exposes unnecessary secrets |
+
+## Deliberately outside this MVP
+
+- Public registration, billing, subscriptions, and organizations.
+- Multiple eBay accounts per user.
+- Mobile-specific layouts and native apps.
+- Analytics dashboard and pricing intelligence.
+- Provider-specific cloud infrastructure; the app produces portable containers and a deployment contract first.
+
+These are future projects, not unresolved choices in this plan.
+
+The `plan-code` pass led to two important simplifications: REST remains authoritative instead of duplicating durable state through live events, and PostgreSQL handles both data and jobs instead of adding Redis.
+
+Next action: reply **“Approve this plan”**. I will then save it in `.agents/plans/`, run the mandatory full plan audit, and return the audited plan for the implementation go-ahead.
+
+YOU
+
+approved
+
+CODEX
+
+The plan is approved. I’m saving it as the repository’s local implementation plan, then using the required full `plan-audit` workflow to improve it, challenge it against the repository, and record the audit result before any implementation starts.
+
+YOU
+
+wait
+
+CODEX
+
+Paused. No plan file or project files were changed, and the audit has not started.
+
+YOU
+
+how do you feel about your current plan? 1-10
+
+CODEX
+
+**8.5/10.**
+
+The architecture and safety model are strong. It isn’t a 10 yet because the audit hasn’t challenged it, the first eBay integration spike could force changes, and Waves 1 and 4 may need splitting to stay manageable.
+
+YOU
+
+ok then approved so that the audit can challenge it, continue
+
+CODEX
+
+Approval is restored. I’ll now save only the approved plan, run fresh-context design critics, apply accepted risk reductions to that plan, then run the mandatory two verification rounds. No application code will be touched.
+
+CODEX
+
+Phase A found useful problems, not just wording. I’m accepting five changes: validate the real eBay contract earlier, grow migrations with their consuming features, force the live spike through the final write allowlist, postpone external telemetry until redaction is proven, and explicitly protect the eBay write/token boundaries. I’m retaining SSE and final OpenTelemetry because those were approved long-term choices and removing them would change the chosen product behavior or scope.
+
+CODEX
+
+Phase A round 2 removed more unnecessary state ownership. The revised plan will not force Zustand when route-local React state is sufficient, will persist only the long-lived eBay refresh token, will make the batch—not the review session—the sole owner after Apply begins, and will reserve idempotency records for durable commands. Turborepo stays because it was an explicitly approved monorepo choice and will own the build/code-generation graph.
+
+CODEX
+
+Phase A round 3 found one real data-loss race: a listing could change after preflight but before its turn in a long batch, and a wholesale item-specific update could overwrite that newer edit. The plan now requires a fresh GetItem immediately before every forward or undo write, then builds the payload from that exact response and pauses on any mismatch.
+
+CODEX
+
+The fourth design round still found two credible simplifications, so the audit has reached its required Phase A cap. I’m verifying the queue claim before deciding whether these are real improvements; if accepted, the audit rules require me to stop and ask whether you want one more stabilization pass or to freeze the revised design.
+
+CODEX
+
+Phase A improved the plan materially, but round 4 still found valid simplifications, so the audit protocol requires your direction before verification.
+
+The updated plan is [here](</Users/antonioperedo/Desktop/ebay listings enhancement/.agents/plans/2026-08-20-pokemon-listing-optimizer-web.md>). No application files were changed.
+
+Reply with:
+
+- **“One more stabilization round”** — recommended; seek a clean design verdict, then run verification.
+- **“Freeze and verify”** — accept the current design and proceed directly to the mandatory verification rounds.
+
+YOU
+
+one more stabilization round
+
+CODEX
+
+The extra stabilization round is authorized. I’m running two fresh critics against the revised plan; if they return no accepted material changes, Phase A freezes and the mandatory verification rounds begin.
+
+CODEX
+
+The extra round still found material simplifications, with both critics independently agreeing that current Tier-1 issues do not need their own history table. I’m folding that in, along with immutable AI output stored on its analysis record and a rule that batch rows—not generic operation items—own apply/undo listing status. Because the authorized extra round was not clean, verification still cannot start automatically.
+
+CODEX
+
+The extra round still found three valid schema simplifications, so Phase A is not clean yet. They are now applied to the [plan](</Users/antonioperedo/Desktop/ebay listings enhancement/.agents/plans/2026-08-20-pokemon-listing-optimizer-web.md>); no application files changed.
+
+Reply with:
+
+- **“One more stabilization round”** — recommended.
+- **“Freeze and verify”** — accept the current design and begin the mandatory verification rounds.
+
+YOU
+
+one more stabilization round
+
+CODEX
+
+A second extra stabilization round is authorized. Two fresh critics will test only for remaining simplifications or safety gaps; prior decisions are frozen unless new evidence disproves them.
+
+CODEX
+
+The second extra round is still producing useful, smaller changes rather than reopening architecture. I’m collapsing review readiness into derived data, reducing SSE to one invalidation event, deriving AI counts from validated output, and moving seller-write queue setup beside its first real consumer in the Apply wave.
+
+CODEX
+
+The second extra round still found four valid simplifications, now applied to the [plan](</Users/antonioperedo/Desktop/ebay listings enhancement/.agents/plans/2026-08-20-pokemon-listing-optimizer-web.md>). No application files changed.
+
+Phase A still lacks a clean verdict. Reply with:
+
+- **“One more stabilization round”** — recommended.
+- **“Freeze and verify”** — begin the mandatory verification rounds now.
+
+YOU
+
+as many stabalization rounds as needed
+
+CODEX
+
+Authorization is now open-ended: I’ll continue fresh stabilization rounds until one produces no accepted material changes. Then I’ll freeze the design and run both mandatory verification rounds without asking again unless a reviewer finds a behavior/scope conflict or the audit reaches a new impasse.
+
+CODEX
+
+Round 7 found the last duplicated progress layer: batch work does not need an `operations` row, and non-batch operation counters can be derived from their item rows. I’m applying both so every workflow has exactly one durable state owner.
+
+CODEX
+
+Round 8 is still simplifying the same boundaries: production token encryption will delegate directly to managed KMS, Taxonomy will have one persisted representation, and the single pending OAuth handshake will live on the one-per-user connection row. These remove custom cryptography and two more duplicate persistence paths without changing behavior.
+
+CODEX
+
+Phase A has converged: both round-9 critics independently returned clean, with no material or wording findings. The architecture is now frozen, and I’m moving into Phase B’s mandatory adversarial verification—first a source-by-source implementer walk, then a separate runtime and concurrency simulation even if round 1 is clean.
+
+CODEX
+
+Phase B found real dispatch blockers, so the plan is not converged yet. I’m adjudicating them now against the repository and official contracts; the largest issues are the apply/undo journal, operation recovery APIs, account-deletion recovery, and the still-unspecified production KMS.
+
+CODEX
+
+I’m using the plan-audit workflow’s adjudication rule here: every reviewer claim must be re-derived, accepted fixes are written into the plan, and the next verification round gets fresh context. No implementation files are being touched.
+
+CODEX
+
+The KMS omission is being closed with a concrete deployment choice: AWS KMS for refresh-token encryption. The same AWS boundary will hold an Object-Lock deletion tombstone ledger so a database restore cannot silently resurrect an eBay user’s deleted data; that is the smallest correction that satisfies the existing deletion promise.
+
+CODEX
+
+The apply path is being made recoverable at the exact crash boundary. Each listing will use one eBay call per approved field family, with a write-ahead journal and read-back before advancing; retries compare against the last verified family, not the stale original preflight.
+
+CODEX
+
+The account-deletion fix is now concrete: acknowledge only after the exact signed bytes and verification job are durable, verify with eBay’s Node SDK, block every later eBay call, and write a non-reversible deletion tombstone before deleting local data. Restores must scrub against that ledger before the app can become ready.
+
+CODEX
+
+Round 1 adjudication is complete: every blocker was accepted in substance. Where a reviewer proposed one specific mechanism, I kept the issue but chose the narrower verified fix—global public reference caches with narrow grants, AWS fixed now instead of a later provider gate, and pg-boss’s documented `migrate:false` without a nonexistent extra flag.
+
+CODEX
+
+Round 2 is now mandatory even after the large fix set. Three fresh reviewers are re-reading waves 0–2, 3–4, and 5–6 with runtime simulation, treating every Round 1 patch as a likely source of new contradictions.
+
+CODEX
+
+The runtime simulation is concentrating on two hard boundaries: expiring title eligibility as a listing approaches its final 12 hours, and deletion cleanup across queue jobs and old backups. I’ve already identified those as areas that must be explicit if the reviewers confirm them.
+
+CODEX
+
+Round 2 is still running. The plan remains code-free; the only file changed is the local audited plan, and the next action depends on whether these reviewers find blockers—not on risks or wording polish alone.
+
+CODEX
+
+Round 2 found genuine runtime faults, so the audit continues to Round 3 after repair. The main correction is bounded queue work: long imports, analyses, and 500-listing apply runs will use renewable ownership plus short continuation jobs, preventing pg-boss expiration from creating two live workers.
+
+CODEX
+
+The privacy boundary is also being tightened: eBay identity is now the immutable Identity API user ID, not a username; deletion uses named prepare/finalize/restore procedures; and restore scans every locked S3 object version under a fresh external database generation.
+
+CODEX
+
+Round 2 repairs are landed. Round 3 now checks whole-document coherence—especially whether the new short-job model, staged Disconnect behavior, and privacy procedures contradict any earlier schema, API, or wave promise.
+
+CODEX
+
+Round 3 is the coherence gate. I’m waiting for the three independent audits, then I’ll either declare convergence or use the single remaining audit round allowed by the plan-audit workflow.
+
+CODEX
+
+One reviewer found real cross-section blockers, so a fourth and final clean-slate audit will be necessary after repairs. The main gaps are reconnect resumption, durable connection tests, cache-hit accounting, approval invalidation after edits, and API read access to validated reference data.
+
+CODEX
+
+Round 3 did its job: it exposed fourteen substantive blockers across OAuth, worker ownership, undo semantics, deletion privileges, and review-state integrity. I’m applying all confirmed fixes—including the lower-severity coherence issues—before the mandatory final round.
+
+CODEX
+
+The Round 3 repairs are now integrated into the design itself. I’m doing a contradiction sweep before dispatching Round 4, so the final reviewers see one coherent plan rather than a patchwork of local fixes.
+
+CODEX
+
+The contradiction sweep is clean enough to dispatch the final gate. Round 4 will be a fresh re-derivation, not a review of the previous findings; any remaining blocker at this hard cap will be surfaced rather than hidden behind another round.
+
+CODEX
+
+The first final-round reviewer found hard-cap blockers, so the audit cannot honestly claim convergence yet. I’m waiting for the other two verdicts and then I’ll apply the plan-audit stop rule: consolidate the unresolved blockers and ask for a new user-authorized audit cycle rather than silently inventing Round 5.
+
+CODEX
+
+All three final reviewers returned `NEEDS EDITS`. The cap is reached with 18 reported blockers (17 distinct after deduplication) and eight risks; I’m recording them as open in the plan and stopping exactly where the plan-audit skill requires. No implementation can dispatch from this capped plan.
+
+CODEX
+
+The plan is not yet implementation-ready. Phase B hit its four-round hard cap with 17 distinct blockers still open, mainly around job handoff, OAuth fencing, seller-write ordering, and deletion safety.
+
+No implementation started. The capped findings are recorded in the [implementation plan](</Users/antonioperedo/Desktop/ebay listings enhancement/.agents/plans/2026-08-20-pokemon-listing-optimizer-web.md>).
+
+Say **“start a new audit cycle”** to continue stabilization.
+
+YOU
+
+Wait, are you doing multiple agents at once? shouldn't it be one agent at a time then if it finds stuff, do another agent and loop that until it's over? what is the best plan of action to get a plan that is implementatino ready with the least amount of roungs? lets gameplan
+
+CODEX
+
+I’m using the repository’s clarity rules to turn this into a concrete audit strategy, with the fewest likely rounds and a clear reason for when parallel reviewers help or hurt.
+
+CODEX
+
+Yes. I used three reviewers simultaneously, each covering different waves. That gave broad coverage quickly, but it was not ideal for convergence because most remaining problems cross wave boundaries.
+
+Your sequential approach is better now—with one important distinction: use a fresh reviewer each round, never the same agent that reviewed the previous version.
+
+## Recommended strategy
+
+1. I repair all 17 known blockers and eight risks in one comprehensive plan pass.
+2. One fresh agent reviews the entire plan, not selected waves.
+3. I fix every confirmed finding together.
+4. A different fresh agent reviews the entire updated plan.
+5. Repeat one reviewer at a time only while blockers remain.
+
+The target is two sequential review rounds after the initial repair. Additional rounds happen only when the latest reviewer finds a blocker.
+
+Implementation starts only when a fresh full-plan reviewer returns no blockers and the Audit Log says `CONVERGED`.
+
+Say **“use the sequential convergence plan”** to authorize this approach.
+
+YOU
+
+use the sequentia convergence plan
+
+CODEX
+
+I’m using `plan-audit` for the new user-authorized cycle and `clarity` for the handoff. I’ll first repair the entire known backlog myself; only after that will I dispatch one fresh full-plan reviewer at a time.
+
+CODEX
+
+The first repair block is locking the boundaries the earlier plan blurred: installed eBay credentials are now separate from pending reconnect attempts, live privacy work is separate from offline restore scrubbing, and application RLS no longer makes an impossible promise about Better Auth’s private schema.
+
+CODEX
+
+The seller-write model is now being replaced at its weak point. One drain job remains, but the order will come from durable per-user command rows—not from timestamps or assumptions about which batch the drain should inspect next.
+
+CODEX
+
+The privacy repair is the last major architecture change: verified deletion will lock the same retained identity row used by OAuth and command creation, while restored databases will be physically unable to claim jobs until the separate scrub role finishes.
+
+CODEX
+
+All capped findings are now represented in the design. I’m doing a full contradiction sweep before the first sequential reviewer—especially old terminology left behind by the OAuth, queue, privacy-role, and seller-command rewrites.
+
+CODEX
+
+Repair pass complete: every capped blocker and risk is now reflected in the plan, with no application files touched. I’m dispatching exactly one fresh reviewer to read the entire plan and repository from scratch; no other reviewer will run alongside it.
+
+CODEX
+
+Sequential Round 1 found six blockers and two risks. All are valid; I’m fixing them together now. The largest correction is replacing impossible raw pg-boss privilege promises with queue partitions plus narrow database functions that can act only on an operation or prepared deletion handle.
+
+CODEX
+
+Sequential Round 1 is repaired and logged. Round 2 now gets the entire updated plan with no hint list beyond “verify the previous fixes and re-derive everything”; it is the only active reviewer.
+
+CODEX
+
+Sequential Round 2 found three blockers and two risks. I’ve accepted them. Before editing the auth pin, I’m verifying the current stable Better Auth package and its supported bootstrap command from primary sources; the rest of the fixes are local plan corrections.
+
+CODEX
+
+Round 2 exposed three real implementation blockers and two specification risks. I’m folding those into the plan now—especially queue supervision ownership, editable retry data, and the Wave 6 maintenance cutover—then I’ll send the entire revised plan to one new reviewer.
+
+CODEX
+
+The corrections are coherent: no new infrastructure is needed. The revised design keeps pg-boss but makes maintenance explicit, preserves immutable original batch changes while allowing append-only corrected retries, and makes Wave 6 a real stop-the-world compatibility cutover instead of relying on new binaries to gate old ones.
+
+CODEX
+
+Round 2 is fully adjudicated and recorded. I’m starting Round 3 now with one new reviewer, giving it the whole revised plan and no prior reviewer conclusions; I’ll only run another round if this reviewer finds a blocker.
+
+CODEX
+
+Round 3 is still doing the clean-slate pass. I’m holding the plan unchanged while it reviews, so its verdict is against one stable document rather than a moving target.
+
+CODEX
+
+The reviewer is still working through the full plan and authority documents. No second reviewer has been started; this remains the single sequential Round 3 pass.
+
+CODEX
+
+Round 3 is taking longer because it is re-deriving all seven waves, not just checking the last edits. I’m continuing to wait without changing the plan or consuming another agent slot.
+
+CODEX
+
+Still one reviewer, still no plan edits during review. That separation is deliberate: the resulting findings will be independently attributable and can be adjudicated cleanly in one pass.
+
+CODEX
+
+The clean-slate audit is still running. I’ll interrupt only if it stalls materially; at this point a full read of the plan, spec, research, and external contracts reasonably takes several minutes.
+
+CODEX
+
+The reviewer is confirmed active, not stalled. I’m leaving it uninterrupted so Round 3 remains a genuinely complete single-context audit.
+
+CODEX
+
+Round 3 is still active after the full-plan read. No action is needed from you; I’m keeping the sequence strict and will adjudicate only after its single consolidated verdict arrives.
+
+CODEX
+
+Still running and still the only active reviewer. The longer pass is acceptable here because its purpose is to minimize additional rounds by checking cross-wave behavior in one context.
+
+CODEX
+
+The audit remains active. I’m not splitting or duplicating it; that would recreate the parallel-review problem you called out.
+
+CODEX
+
+No verdict yet, but the reviewer is still processing rather than waiting on a tool or user input. I’m continuing the single-reviewer pass unchanged.
+
+CODEX
+
+Round 3 is still underway. The plan is large enough that a true clean-slate audit can take this long; I’m preserving that depth because a shallow pass would likely cost more rounds later.
+
+CODEX
+
+I’ve asked the same reviewer to consolidate once all material checks are complete, without broadening into optional redesigns or wording nits. The round remains single-agent and uninterrupted.
+
+CODEX
+
+The reviewer has the consolidation request and is still active. I’m continuing to wait; no parallel work or speculative plan edits are happening.
+
+CODEX
+
+Round 3 has finished reading every required artifact and is now consolidating material findings. Its remaining checks are focused on pg-boss privilege feasibility and crash recovery, which are exactly the kinds of implementation blockers this loop is meant to catch.
+
+CODEX
+
+The final cross-wave check is still running. I’m holding off on any edits until the reviewer delivers precise evidence and a complete verdict.
+
+CODEX
+
+Still consolidating the same Round 3 findings. No second opinion has been introduced, so the next edit pass will remain traceable to one reviewer’s complete analysis.
+
+CODEX
+
+Round 3 is still active on the queue/crash-recovery cross-check. I’m continuing the strict sequence and leaving the document stable.
+
+CODEX
+
+The reviewer is taking longer than expected but remains on the bounded task. I’ll let it finish rather than replace it mid-round, which would waste the completed full-plan read and add another context.
+
+CODEX
+
+Round 3 found four blockers and one risk; all are material enough to pause convergence. I’m re-deriving them now before editing—most importantly, whether pg-boss can actually start and supervise under the stated grants—then I’ll record accepted or rejected findings explicitly and repair the full plan in one pass.
+
+CODEX
+
+The Round 3 findings hold up. The pg-boss issue is especially concrete: even with automatic supervision disabled, `start()` still loads queue metadata, and supervision writes metadata and performs shared dependency cleanup. I’m accepting all four blockers and the quota risk; the clean fix is one payload-blind maintenance mode plus a durable privacy coordinator/reconciler.
+
+CODEX
+
+Round 3’s five findings are now fully repaired and logged. The plan now has one dedicated maintenance security boundary and a replay-safe deletion coordinator rather than distributing hidden responsibilities across workers. Because Round 3 had blockers, I’m starting exactly one fresh Round 4 reviewer; if it returns with no blockers, the loop stops.
+
+CODEX
+
+Round 4 is reading the complete revised plan against the repository authorities. I’m holding the document unchanged and have not started any parallel reviewer.
+
+CODEX
+
+The single Round 4 audit is still active. Its verdict will decide whether the convergence loop stops or earns one more edit-and-review cycle.
+
+CODEX
+
+Round 4 remains on the whole-plan pass; there are no interim edits or additional agents.
+
+CODEX
+
+The reviewer is still working through cross-wave queue, privacy, and release contracts. I’m keeping the sequence strict and the plan stable.
+
+CODEX
+
+Round 4 is still active. A full clean-slate pass is again taking several minutes, but that is preferable to a superficial “looks good” verdict that forces another round during implementation.
+
+CODEX
+
+No verdict yet; still one reviewer, and the plan remains unchanged while it audits.
+
+CODEX
+
+The Round 4 reviewer is still processing the complete plan. I’ll ask it to consolidate only after its material checks are complete, without inviting optional redesigns.
+
+CODEX
+
+The same reviewer has the consolidation request and remains active. No parallel pass or moving-target edits have been introduced.
+
+CODEX
+
+Round 4 is still finishing its material cross-wave checks. I’m continuing the single-agent wait.
+
+CODEX
+
+Still active, still bounded, and still the only reviewer. The next update will be the consolidated verdict or a concrete status from that reviewer.
+
+CODEX
+
+Round 4 is confirmed active rather than stalled. I’m leaving it uninterrupted so its verdict remains a complete independent pass.
+
+CODEX
+
+The clean-slate review is still running. No new agent or plan edit has been introduced.
+
+CODEX
+
+Round 4 remains on its final material checks. I’m continuing the strict sequential wait.
+
+CODEX
+
+Still active and bounded. I’m not replacing the reviewer mid-pass because that would discard its completed context and add another round.
+
+CODEX
+
+No consolidated verdict yet. The reviewer is still the only active audit context, and the plan remains stable.
+
+CODEX
+
+Round 4 has confirmed new blockers rather than merely restating old ones. The key one is precise: pg-boss expiry maintenance internally returns and reinserts payload columns, so raw grants cannot make direct `boss.supervise()` payload-blind. I’m waiting for the consolidated verdict before redesigning that boundary, but the likely repair is fixed definer maintenance functions rather than broader runtime access.
+
+CODEX
+
+The same reviewer is finishing the remaining S3, cutover, and payload checks. I’m not editing from partial findings; the repair pass will use its single complete verdict.
+
+CODEX
+
+Round 4 is still consolidating. No second reviewer or interim plan mutation has been introduced.
+
+CODEX
+
+The final Round 4 checks are still active. I’m holding the plan stable until the complete finding set arrives.
+
+CODEX
+
+Still one active reviewer, now beyond the already confirmed findings and finishing the bounded cross-wave audit.
+
+CODEX
+
+No final verdict yet. I’m continuing the sequential wait rather than acting on an incomplete subset.
+
+CODEX
+
+Round 4 found seven blockers and three risks, and all ten withstand re-derivation. I’m accepting them. The important architectural adjustment is now clear: maintenance will not run pg-boss supervision under direct grants at all; it will call fixed, no-argument security-definer maintenance functions whose behavior is contract-tested against the pinned library.
+
+CODEX
+
+Round 4 exposed several deeper runtime-contract problems, so I’ve replaced the fragile maintenance approach and tightened startup privileges, job-output secrecy, duplicate-delivery handling, tombstone bytes, quota fencing, and deletion-record delinking. I’m doing a final contradiction scan now; then I’ll send the entire revised plan to one new reviewer for Round 5.
+
+CODEX
+
+The Round 4 repairs are now coherent in the plan and recorded in its audit log. I’m starting Round 5 with one fresh reviewer and no inherited conclusions; it will re-read the full plan, product spec, research, and repository rules from scratch before judging dispatch readiness.
+
+CODEX
+
+Round 5 is still working through the full runtime simulation. My own read-only seam check found no contradiction introduced by the repairs; I’m holding the plan unchanged until the reviewer finishes so it judges one stable artifact.
+
+CODEX
+
+The fresh reviewer is still active and has not returned a verdict yet. The plan remains frozen during review; this is the deliberate one-agent-at-a-time loop you asked for, so there is no second critic running in parallel.
+
+CODEX
+
+Round 5 is taking longer because it is checking the version-sensitive queue and privacy paths against their actual runtime behavior, not just reading the prose. No result has been reported yet, and I’m not starting another round until this reviewer completes.
+
+CODEX
+
+The reviewer has now completed Waves 0–5 and is finishing Wave 6 plus the cross-wave recovery/cutover simulation. It confirms the review is read-only and is filtering out non-material preferences.
+
+CODEX
+
+The cross-wave pass is still running. I’m leaving the artifact untouched until it returns, because editing during the pass would make its verdict refer to a moving target.
+
+CODEX
+
+Round 5 has not returned yet; the remaining work is the failure-path reconciliation across queue maintenance, account deletion, and release cutover. I’m requesting one more status check while keeping the single-reviewer sequence intact.
+
+CODEX
+
+The substantive Round 5 review is complete. The reviewer is only deduplicating findings, assigning blocker/risk severity, and writing the smallest exact edits now.
+
+CODEX
+
+The report is still being consolidated; no new repository reads or edits are happening. I’m waiting for the exact final findings rather than acting on a partial list.
+
+CODEX
+
+Round 5 found six real blockers and two material risks, so the loop correctly continues. The main failures are partitioned-job retry semantics, hidden delayed operations, an unreachable seller-abandon path, two privacy state/response contradictions, and an incomplete eBay token validator; I’m re-deriving each now, then I’ll repair the plan before sending it to a new Round 6 reviewer.
+
+CODEX
+
+Five Round 5 blockers were valid and are now repaired; both risks were also worth closing. I rejected the alleged pg-boss retry defect after checking the pinned source and PostgreSQL partition behavior: `pgboss.job` is the partitioned parent, so its update reaches the attached dedicated queue table. I added an explicit actual-role partition test so a later reviewer can verify that claim instead of repeating the false alarm.
+
+CODEX
+
+The Round 5 repair pass is complete and internally reconciled. It now includes the missing reload state, a user-executable failed-batch exit, crash-safe privacy verification and terminal replay, exact eBay token validation, a pinned HTML safety profile, and a nonwaivable OpenAI zero-retention production gate. I’m starting one fresh whole-plan Round 6 reviewer now.
+
+CODEX
+
+Round 6 is active on the frozen revised plan. No other reviewer is running, and I won’t edit the artifact until this whole-plan verdict returns.
+
+CODEX
+
+The reviewer is still in the full read/runtime simulation and has not reported a verdict. I’m keeping the sequence strict: no parallel critic and no mid-review plan changes.
+
+CODEX
+
+Round 6 is taking the same deep path as Round 5, especially around the seller Abandon control and terminal privacy replay. I’m asking for a progress checkpoint, not a partial verdict.
+
+CODEX
+
+The reviewer has completed every required document read and is now validating the pinned runtime claims and cross-wave failure paths. It confirms the workspace remains read-only.
+
+CODEX
+
+The clean-slate validation is still in progress. I’m continuing to wait on this single stable-artifact review before making any further move.
+
+CODEX
+
+No verdict yet. The remaining review is version- and failure-path sensitive, so I’m preserving the one-reviewer sequence rather than shortening it with overlapping opinions.
+
+CODEX
+
+All source and pinned-version checks are complete. Round 6 is finishing only three simulations: seller-lane terminal recovery/undo, deletion late-successor/restore replay, and final severity/per-wave consolidation.
+
+CODEX
+
+The final simulations are still running; the reviewer has not released any partial findings. The plan remains unchanged during this pass.
+
+CODEX
+
+Round 6 is still beyond the expected consolidation time, so I’m requesting the completed report now. I’m not starting another reviewer or altering the artifact in the meantime.
+
+CODEX
+
+Round 6 found five blockers and explicitly confirmed the pg-boss parent-partition retry design is valid. I’m checking the two version/SQL privilege findings against primary sources first, then I’ll repair the three cross-wave contract gaps and continue to Round 7 only after the plan is stable again.
+
+CODEX
+
+Round 6 produced four valid corrections and one false version claim. I’ve rejected the version claim using the live npm registry, applied the queue and Undo fixes, and I’m finishing the deletion-race repair before sending the entire plan to the next single fresh reviewer.
+
+CODEX
+
+Round 6 is fully repaired and logged. The next step is now exactly one clean-slate whole-plan review—no editor overlap, no parallel critics, and no inherited findings—so it can test whether the repaired plan truly converges.
+
+YOU
+
+after the next round lets freeze and tell me where we froze. my usage will run out soon. so I need to conserve tokens
+
+CODEX
+
+Yes. Round 7 will be the final round for now. I’ll record its verdict and any remaining blockers in the plan, make no further repair or review round, then give you the exact freeze point in a short handoff.
+
+CODEX
+
+Round 7 is still doing the single whole-plan pass. I’m not starting any additional work; once its report arrives, I’ll only record the freeze state and stop.
+
+CODEX
+
+Checkpoint: Round 7 is validating one likely remaining pg-boss maintenance privilege omission and checking whether anything else is dispatch-blocking. I’m still holding the freeze: no repair pass or Round 8 will follow.
+
+CODEX
+
+The reviewer is finishing the exact-source check now. Nothing new has been started; the only current candidate blocker is that one omitted maintenance column.
+
+CODEX
+
+I’ve asked the reviewer to conclude with the verified result now, without further exploration. The freeze handoff is the only remaining action.
+
+CODEX
+
+Frozen after Sequential Round 7. No implementation started.
+
+The plan has four open blockers:
+
+- Tenant-safe PostgreSQL notifications
+- Missing pg-boss `maintain_on` privilege
+- Finalized deletion semantic-redelivery comparison
+- Tombstone fence rebuilding for new production databases
+
+Resume at [Sequential Round 7](/Users/antonioperedo/Desktop/ebay%20listings%20enhancement/.agents/plans/2026-08-20-pokemon-listing-optimizer-web.md:1309). The next action is the Round 7 repair pass—no new audit round yet.

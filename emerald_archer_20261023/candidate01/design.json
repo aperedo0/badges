@@ -1,0 +1,1684 @@
+{
+  "groups": [
+    {
+      "name": "Recessed emerald green field.005",
+      "role": "field"
+    },
+    {
+      "name": "Upper left curved gold stem.003",
+      "role": "gold"
+    },
+    {
+      "name": "Upper left leaf 1.003",
+      "role": "gold"
+    },
+    {
+      "name": "Upper left leaf 1 engraved vein.018",
+      "role": "gold_vein"
+    },
+    {
+      "name": "Upper left leaf 1 engraved vein.019",
+      "role": "gold_vein"
+    },
+    {
+      "name": "Upper left leaf 1 engraved vein.020",
+      "role": "gold_vein"
+    },
+    {
+      "name": "Upper left leaf 1 engraved vein.021",
+      "role": "gold_vein"
+    },
+    {
+      "name": "Upper left leaf 1 engraved vein.022",
+      "role": "gold_vein"
+    },
+    {
+      "name": "Upper left leaf 1 engraved vein.023",
+      "role": "gold_vein"
+    },
+    {
+      "name": "Upper left leaf 1 center rib.003",
+      "role": "gold_edge"
+    },
+    {
+      "name": "Upper left leaf 2.003",
+      "role": "gold"
+    },
+    {
+      "name": "Upper left leaf 2 engraved vein.018",
+      "role": "gold_vein"
+    },
+    {
+      "name": "Upper left leaf 2 engraved vein.019",
+      "role": "gold_vein"
+    },
+    {
+      "name": "Upper left leaf 2 engraved vein.020",
+      "role": "gold_vein"
+    },
+    {
+      "name": "Upper left leaf 2 engraved vein.021",
+      "role": "gold_vein"
+    },
+    {
+      "name": "Upper left leaf 2 engraved vein.022",
+      "role": "gold_vein"
+    },
+    {
+      "name": "Upper left leaf 2 engraved vein.023",
+      "role": "gold_vein"
+    },
+    {
+      "name": "Upper left leaf 2 center rib.003",
+      "role": "gold_edge"
+    },
+    {
+      "name": "Upper left leaf 3.003",
+      "role": "gold"
+    },
+    {
+      "name": "Upper left leaf 3 engraved vein.018",
+      "role": "gold_vein"
+    },
+    {
+      "name": "Upper left leaf 3 engraved vein.019",
+      "role": "gold_vein"
+    },
+    {
+      "name": "Upper left leaf 3 engraved vein.020",
+      "role": "gold_vein"
+    },
+    {
+      "name": "Upper left leaf 3 engraved vein.021",
+      "role": "gold_vein"
+    },
+    {
+      "name": "Upper left leaf 3 engraved vein.022",
+      "role": "gold_vein"
+    },
+    {
+      "name": "Upper left leaf 3 engraved vein.023",
+      "role": "gold_vein"
+    },
+    {
+      "name": "Upper left leaf 3 center rib.003",
+      "role": "gold_edge"
+    },
+    {
+      "name": "Upper left leaf 4.003",
+      "role": "gold"
+    },
+    {
+      "name": "Upper left leaf 4 engraved vein.018",
+      "role": "gold_vein"
+    },
+    {
+      "name": "Upper left leaf 4 engraved vein.019",
+      "role": "gold_vein"
+    },
+    {
+      "name": "Upper left leaf 4 engraved vein.020",
+      "role": "gold_vein"
+    },
+    {
+      "name": "Upper left leaf 4 engraved vein.021",
+      "role": "gold_vein"
+    },
+    {
+      "name": "Upper left leaf 4 engraved vein.022",
+      "role": "gold_vein"
+    },
+    {
+      "name": "Upper left leaf 4 engraved vein.023",
+      "role": "gold_vein"
+    },
+    {
+      "name": "Upper left leaf 4 center rib.003",
+      "role": "gold_edge"
+    },
+    {
+      "name": "Upper left leaf 5.003",
+      "role": "gold"
+    },
+    {
+      "name": "Upper left leaf 5 engraved vein.018",
+      "role": "gold_vein"
+    },
+    {
+      "name": "Upper left leaf 5 engraved vein.019",
+      "role": "gold_vein"
+    },
+    {
+      "name": "Upper left leaf 5 engraved vein.020",
+      "role": "gold_vein"
+    },
+    {
+      "name": "Upper left leaf 5 engraved vein.021",
+      "role": "gold_vein"
+    },
+    {
+      "name": "Upper left leaf 5 engraved vein.022",
+      "role": "gold_vein"
+    },
+    {
+      "name": "Upper left leaf 5 engraved vein.023",
+      "role": "gold_vein"
+    },
+    {
+      "name": "Upper left leaf 5 center rib.003",
+      "role": "gold_edge"
+    },
+    {
+      "name": "Upper left leaf 6.003",
+      "role": "gold"
+    },
+    {
+      "name": "Upper left leaf 6 engraved vein.018",
+      "role": "gold_vein"
+    },
+    {
+      "name": "Upper left leaf 6 engraved vein.019",
+      "role": "gold_vein"
+    },
+    {
+      "name": "Upper left leaf 6 engraved vein.020",
+      "role": "gold_vein"
+    },
+    {
+      "name": "Upper left leaf 6 engraved vein.021",
+      "role": "gold_vein"
+    },
+    {
+      "name": "Upper left leaf 6 engraved vein.022",
+      "role": "gold_vein"
+    },
+    {
+      "name": "Upper left leaf 6 engraved vein.023",
+      "role": "gold_vein"
+    },
+    {
+      "name": "Upper left leaf 6 center rib.003",
+      "role": "gold_edge"
+    },
+    {
+      "name": "Upper left leaf 7.003",
+      "role": "gold"
+    },
+    {
+      "name": "Upper left leaf 7 engraved vein.018",
+      "role": "gold_vein"
+    },
+    {
+      "name": "Upper left leaf 7 engraved vein.019",
+      "role": "gold_vein"
+    },
+    {
+      "name": "Upper left leaf 7 engraved vein.020",
+      "role": "gold_vein"
+    },
+    {
+      "name": "Upper left leaf 7 engraved vein.021",
+      "role": "gold_vein"
+    },
+    {
+      "name": "Upper left leaf 7 engraved vein.022",
+      "role": "gold_vein"
+    },
+    {
+      "name": "Upper left leaf 7 engraved vein.023",
+      "role": "gold_vein"
+    },
+    {
+      "name": "Upper left leaf 7 center rib.003",
+      "role": "gold_edge"
+    },
+    {
+      "name": "Upper left leaf 8.003",
+      "role": "gold"
+    },
+    {
+      "name": "Upper left leaf 8 engraved vein.018",
+      "role": "gold_vein"
+    },
+    {
+      "name": "Upper left leaf 8 engraved vein.019",
+      "role": "gold_vein"
+    },
+    {
+      "name": "Upper left leaf 8 engraved vein.020",
+      "role": "gold_vein"
+    },
+    {
+      "name": "Upper left leaf 8 engraved vein.021",
+      "role": "gold_vein"
+    },
+    {
+      "name": "Upper left leaf 8 engraved vein.022",
+      "role": "gold_vein"
+    },
+    {
+      "name": "Upper left leaf 8 engraved vein.023",
+      "role": "gold_vein"
+    },
+    {
+      "name": "Upper left leaf 8 center rib.003",
+      "role": "gold_edge"
+    },
+    {
+      "name": "Upper left leaf 9.003",
+      "role": "gold"
+    },
+    {
+      "name": "Upper left leaf 9 engraved vein.018",
+      "role": "gold_vein"
+    },
+    {
+      "name": "Upper left leaf 9 engraved vein.019",
+      "role": "gold_vein"
+    },
+    {
+      "name": "Upper left leaf 9 engraved vein.020",
+      "role": "gold_vein"
+    },
+    {
+      "name": "Upper left leaf 9 engraved vein.021",
+      "role": "gold_vein"
+    },
+    {
+      "name": "Upper left leaf 9 engraved vein.022",
+      "role": "gold_vein"
+    },
+    {
+      "name": "Upper left leaf 9 engraved vein.023",
+      "role": "gold_vein"
+    },
+    {
+      "name": "Upper left leaf 9 center rib.003",
+      "role": "gold_edge"
+    },
+    {
+      "name": "Upper right curved gold stem.003",
+      "role": "gold"
+    },
+    {
+      "name": "Upper right leaf 1.003",
+      "role": "gold"
+    },
+    {
+      "name": "Upper right leaf 1 engraved vein.018",
+      "role": "gold_vein"
+    },
+    {
+      "name": "Upper right leaf 1 engraved vein.019",
+      "role": "gold_vein"
+    },
+    {
+      "name": "Upper right leaf 1 engraved vein.020",
+      "role": "gold_vein"
+    },
+    {
+      "name": "Upper right leaf 1 engraved vein.021",
+      "role": "gold_vein"
+    },
+    {
+      "name": "Upper right leaf 1 engraved vein.022",
+      "role": "gold_vein"
+    },
+    {
+      "name": "Upper right leaf 1 engraved vein.023",
+      "role": "gold_vein"
+    },
+    {
+      "name": "Upper right leaf 1 center rib.003",
+      "role": "gold_edge"
+    },
+    {
+      "name": "Upper right leaf 2.003",
+      "role": "gold"
+    },
+    {
+      "name": "Upper right leaf 2 engraved vein.018",
+      "role": "gold_vein"
+    },
+    {
+      "name": "Upper right leaf 2 engraved vein.019",
+      "role": "gold_vein"
+    },
+    {
+      "name": "Upper right leaf 2 engraved vein.020",
+      "role": "gold_vein"
+    },
+    {
+      "name": "Upper right leaf 2 engraved vein.021",
+      "role": "gold_vein"
+    },
+    {
+      "name": "Upper right leaf 2 engraved vein.022",
+      "role": "gold_vein"
+    },
+    {
+      "name": "Upper right leaf 2 engraved vein.023",
+      "role": "gold_vein"
+    },
+    {
+      "name": "Upper right leaf 2 center rib.003",
+      "role": "gold_edge"
+    },
+    {
+      "name": "Upper right leaf 3.003",
+      "role": "gold"
+    },
+    {
+      "name": "Upper right leaf 3 engraved vein.018",
+      "role": "gold_vein"
+    },
+    {
+      "name": "Upper right leaf 3 engraved vein.019",
+      "role": "gold_vein"
+    },
+    {
+      "name": "Upper right leaf 3 engraved vein.020",
+      "role": "gold_vein"
+    },
+    {
+      "name": "Upper right leaf 3 engraved vein.021",
+      "role": "gold_vein"
+    },
+    {
+      "name": "Upper right leaf 3 engraved vein.022",
+      "role": "gold_vein"
+    },
+    {
+      "name": "Upper right leaf 3 engraved vein.023",
+      "role": "gold_vein"
+    },
+    {
+      "name": "Upper right leaf 3 center rib.003",
+      "role": "gold_edge"
+    },
+    {
+      "name": "Upper right leaf 4.003",
+      "role": "gold"
+    },
+    {
+      "name": "Upper right leaf 4 engraved vein.018",
+      "role": "gold_vein"
+    },
+    {
+      "name": "Upper right leaf 4 engraved vein.019",
+      "role": "gold_vein"
+    },
+    {
+      "name": "Upper right leaf 4 engraved vein.020",
+      "role": "gold_vein"
+    },
+    {
+      "name": "Upper right leaf 4 engraved vein.021",
+      "role": "gold_vein"
+    },
+    {
+      "name": "Upper right leaf 4 engraved vein.022",
+      "role": "gold_vein"
+    },
+    {
+      "name": "Upper right leaf 4 engraved vein.023",
+      "role": "gold_vein"
+    },
+    {
+      "name": "Upper right leaf 4 center rib.003",
+      "role": "gold_edge"
+    },
+    {
+      "name": "Upper right leaf 5.003",
+      "role": "gold"
+    },
+    {
+      "name": "Upper right leaf 5 engraved vein.018",
+      "role": "gold_vein"
+    },
+    {
+      "name": "Upper right leaf 5 engraved vein.019",
+      "role": "gold_vein"
+    },
+    {
+      "name": "Upper right leaf 5 engraved vein.020",
+      "role": "gold_vein"
+    },
+    {
+      "name": "Upper right leaf 5 engraved vein.021",
+      "role": "gold_vein"
+    },
+    {
+      "name": "Upper right leaf 5 engraved vein.022",
+      "role": "gold_vein"
+    },
+    {
+      "name": "Upper right leaf 5 engraved vein.023",
+      "role": "gold_vein"
+    },
+    {
+      "name": "Upper right leaf 5 center rib.003",
+      "role": "gold_edge"
+    },
+    {
+      "name": "Upper right leaf 6.003",
+      "role": "gold"
+    },
+    {
+      "name": "Upper right leaf 6 engraved vein.018",
+      "role": "gold_vein"
+    },
+    {
+      "name": "Upper right leaf 6 engraved vein.019",
+      "role": "gold_vein"
+    },
+    {
+      "name": "Upper right leaf 6 engraved vein.020",
+      "role": "gold_vein"
+    },
+    {
+      "name": "Upper right leaf 6 engraved vein.021",
+      "role": "gold_vein"
+    },
+    {
+      "name": "Upper right leaf 6 engraved vein.022",
+      "role": "gold_vein"
+    },
+    {
+      "name": "Upper right leaf 6 engraved vein.023",
+      "role": "gold_vein"
+    },
+    {
+      "name": "Upper right leaf 6 center rib.003",
+      "role": "gold_edge"
+    },
+    {
+      "name": "Upper right leaf 7.003",
+      "role": "gold"
+    },
+    {
+      "name": "Upper right leaf 7 engraved vein.018",
+      "role": "gold_vein"
+    },
+    {
+      "name": "Upper right leaf 7 engraved vein.019",
+      "role": "gold_vein"
+    },
+    {
+      "name": "Upper right leaf 7 engraved vein.020",
+      "role": "gold_vein"
+    },
+    {
+      "name": "Upper right leaf 7 engraved vein.021",
+      "role": "gold_vein"
+    },
+    {
+      "name": "Upper right leaf 7 engraved vein.022",
+      "role": "gold_vein"
+    },
+    {
+      "name": "Upper right leaf 7 engraved vein.023",
+      "role": "gold_vein"
+    },
+    {
+      "name": "Upper right leaf 7 center rib.003",
+      "role": "gold_edge"
+    },
+    {
+      "name": "Upper right leaf 8.003",
+      "role": "gold"
+    },
+    {
+      "name": "Upper right leaf 8 engraved vein.018",
+      "role": "gold_vein"
+    },
+    {
+      "name": "Upper right leaf 8 engraved vein.019",
+      "role": "gold_vein"
+    },
+    {
+      "name": "Upper right leaf 8 engraved vein.020",
+      "role": "gold_vein"
+    },
+    {
+      "name": "Upper right leaf 8 engraved vein.021",
+      "role": "gold_vein"
+    },
+    {
+      "name": "Upper right leaf 8 engraved vein.022",
+      "role": "gold_vein"
+    },
+    {
+      "name": "Upper right leaf 8 engraved vein.023",
+      "role": "gold_vein"
+    },
+    {
+      "name": "Upper right leaf 8 center rib.003",
+      "role": "gold_edge"
+    },
+    {
+      "name": "Upper right leaf 9.003",
+      "role": "gold"
+    },
+    {
+      "name": "Upper right leaf 9 engraved vein.018",
+      "role": "gold_vein"
+    },
+    {
+      "name": "Upper right leaf 9 engraved vein.019",
+      "role": "gold_vein"
+    },
+    {
+      "name": "Upper right leaf 9 engraved vein.020",
+      "role": "gold_vein"
+    },
+    {
+      "name": "Upper right leaf 9 engraved vein.021",
+      "role": "gold_vein"
+    },
+    {
+      "name": "Upper right leaf 9 engraved vein.022",
+      "role": "gold_vein"
+    },
+    {
+      "name": "Upper right leaf 9 engraved vein.023",
+      "role": "gold_vein"
+    },
+    {
+      "name": "Upper right leaf 9 center rib.003",
+      "role": "gold_edge"
+    },
+    {
+      "name": "Lower left curved gold stem.003",
+      "role": "gold"
+    },
+    {
+      "name": "Lower left leaf 1.003",
+      "role": "gold"
+    },
+    {
+      "name": "Lower left leaf 1 engraved vein.018",
+      "role": "gold_vein"
+    },
+    {
+      "name": "Lower left leaf 1 engraved vein.019",
+      "role": "gold_vein"
+    },
+    {
+      "name": "Lower left leaf 1 engraved vein.020",
+      "role": "gold_vein"
+    },
+    {
+      "name": "Lower left leaf 1 engraved vein.021",
+      "role": "gold_vein"
+    },
+    {
+      "name": "Lower left leaf 1 engraved vein.022",
+      "role": "gold_vein"
+    },
+    {
+      "name": "Lower left leaf 1 engraved vein.023",
+      "role": "gold_vein"
+    },
+    {
+      "name": "Lower left leaf 1 center rib.003",
+      "role": "gold_edge"
+    },
+    {
+      "name": "Lower left leaf 2.003",
+      "role": "gold"
+    },
+    {
+      "name": "Lower left leaf 2 engraved vein.018",
+      "role": "gold_vein"
+    },
+    {
+      "name": "Lower left leaf 2 engraved vein.019",
+      "role": "gold_vein"
+    },
+    {
+      "name": "Lower left leaf 2 engraved vein.020",
+      "role": "gold_vein"
+    },
+    {
+      "name": "Lower left leaf 2 engraved vein.021",
+      "role": "gold_vein"
+    },
+    {
+      "name": "Lower left leaf 2 engraved vein.022",
+      "role": "gold_vein"
+    },
+    {
+      "name": "Lower left leaf 2 engraved vein.023",
+      "role": "gold_vein"
+    },
+    {
+      "name": "Lower left leaf 2 center rib.003",
+      "role": "gold_edge"
+    },
+    {
+      "name": "Lower left leaf 3.003",
+      "role": "gold"
+    },
+    {
+      "name": "Lower left leaf 3 engraved vein.018",
+      "role": "gold_vein"
+    },
+    {
+      "name": "Lower left leaf 3 engraved vein.019",
+      "role": "gold_vein"
+    },
+    {
+      "name": "Lower left leaf 3 engraved vein.020",
+      "role": "gold_vein"
+    },
+    {
+      "name": "Lower left leaf 3 engraved vein.021",
+      "role": "gold_vein"
+    },
+    {
+      "name": "Lower left leaf 3 engraved vein.022",
+      "role": "gold_vein"
+    },
+    {
+      "name": "Lower left leaf 3 engraved vein.023",
+      "role": "gold_vein"
+    },
+    {
+      "name": "Lower left leaf 3 center rib.003",
+      "role": "gold_edge"
+    },
+    {
+      "name": "Lower left leaf 4.003",
+      "role": "gold"
+    },
+    {
+      "name": "Lower left leaf 4 engraved vein.018",
+      "role": "gold_vein"
+    },
+    {
+      "name": "Lower left leaf 4 engraved vein.019",
+      "role": "gold_vein"
+    },
+    {
+      "name": "Lower left leaf 4 engraved vein.020",
+      "role": "gold_vein"
+    },
+    {
+      "name": "Lower left leaf 4 engraved vein.021",
+      "role": "gold_vein"
+    },
+    {
+      "name": "Lower left leaf 4 engraved vein.022",
+      "role": "gold_vein"
+    },
+    {
+      "name": "Lower left leaf 4 engraved vein.023",
+      "role": "gold_vein"
+    },
+    {
+      "name": "Lower left leaf 4 center rib.003",
+      "role": "gold_edge"
+    },
+    {
+      "name": "Lower left leaf 5.003",
+      "role": "gold"
+    },
+    {
+      "name": "Lower left leaf 5 engraved vein.018",
+      "role": "gold_vein"
+    },
+    {
+      "name": "Lower left leaf 5 engraved vein.019",
+      "role": "gold_vein"
+    },
+    {
+      "name": "Lower left leaf 5 engraved vein.020",
+      "role": "gold_vein"
+    },
+    {
+      "name": "Lower left leaf 5 engraved vein.021",
+      "role": "gold_vein"
+    },
+    {
+      "name": "Lower left leaf 5 engraved vein.022",
+      "role": "gold_vein"
+    },
+    {
+      "name": "Lower left leaf 5 engraved vein.023",
+      "role": "gold_vein"
+    },
+    {
+      "name": "Lower left leaf 5 center rib.003",
+      "role": "gold_edge"
+    },
+    {
+      "name": "Lower left leaf 6.003",
+      "role": "gold"
+    },
+    {
+      "name": "Lower left leaf 6 engraved vein.018",
+      "role": "gold_vein"
+    },
+    {
+      "name": "Lower left leaf 6 engraved vein.019",
+      "role": "gold_vein"
+    },
+    {
+      "name": "Lower left leaf 6 engraved vein.020",
+      "role": "gold_vein"
+    },
+    {
+      "name": "Lower left leaf 6 engraved vein.021",
+      "role": "gold_vein"
+    },
+    {
+      "name": "Lower left leaf 6 engraved vein.022",
+      "role": "gold_vein"
+    },
+    {
+      "name": "Lower left leaf 6 engraved vein.023",
+      "role": "gold_vein"
+    },
+    {
+      "name": "Lower left leaf 6 center rib.003",
+      "role": "gold_edge"
+    },
+    {
+      "name": "Lower left leaf 7.003",
+      "role": "gold"
+    },
+    {
+      "name": "Lower left leaf 7 engraved vein.018",
+      "role": "gold_vein"
+    },
+    {
+      "name": "Lower left leaf 7 engraved vein.019",
+      "role": "gold_vein"
+    },
+    {
+      "name": "Lower left leaf 7 engraved vein.020",
+      "role": "gold_vein"
+    },
+    {
+      "name": "Lower left leaf 7 engraved vein.021",
+      "role": "gold_vein"
+    },
+    {
+      "name": "Lower left leaf 7 engraved vein.022",
+      "role": "gold_vein"
+    },
+    {
+      "name": "Lower left leaf 7 engraved vein.023",
+      "role": "gold_vein"
+    },
+    {
+      "name": "Lower left leaf 7 center rib.003",
+      "role": "gold_edge"
+    },
+    {
+      "name": "Lower left leaf 8.003",
+      "role": "gold"
+    },
+    {
+      "name": "Lower left leaf 8 engraved vein.018",
+      "role": "gold_vein"
+    },
+    {
+      "name": "Lower left leaf 8 engraved vein.019",
+      "role": "gold_vein"
+    },
+    {
+      "name": "Lower left leaf 8 engraved vein.020",
+      "role": "gold_vein"
+    },
+    {
+      "name": "Lower left leaf 8 engraved vein.021",
+      "role": "gold_vein"
+    },
+    {
+      "name": "Lower left leaf 8 engraved vein.022",
+      "role": "gold_vein"
+    },
+    {
+      "name": "Lower left leaf 8 engraved vein.023",
+      "role": "gold_vein"
+    },
+    {
+      "name": "Lower left leaf 8 center rib.003",
+      "role": "gold_edge"
+    },
+    {
+      "name": "Lower left leaf 9.003",
+      "role": "gold"
+    },
+    {
+      "name": "Lower left leaf 9 engraved vein.018",
+      "role": "gold_vein"
+    },
+    {
+      "name": "Lower left leaf 9 engraved vein.019",
+      "role": "gold_vein"
+    },
+    {
+      "name": "Lower left leaf 9 engraved vein.020",
+      "role": "gold_vein"
+    },
+    {
+      "name": "Lower left leaf 9 engraved vein.021",
+      "role": "gold_vein"
+    },
+    {
+      "name": "Lower left leaf 9 engraved vein.022",
+      "role": "gold_vein"
+    },
+    {
+      "name": "Lower left leaf 9 engraved vein.023",
+      "role": "gold_vein"
+    },
+    {
+      "name": "Lower left leaf 9 center rib.003",
+      "role": "gold_edge"
+    },
+    {
+      "name": "Lower left leaf 10.003",
+      "role": "gold"
+    },
+    {
+      "name": "Lower left leaf 10 engraved vein.018",
+      "role": "gold_vein"
+    },
+    {
+      "name": "Lower left leaf 10 engraved vein.019",
+      "role": "gold_vein"
+    },
+    {
+      "name": "Lower left leaf 10 engraved vein.020",
+      "role": "gold_vein"
+    },
+    {
+      "name": "Lower left leaf 10 engraved vein.021",
+      "role": "gold_vein"
+    },
+    {
+      "name": "Lower left leaf 10 engraved vein.022",
+      "role": "gold_vein"
+    },
+    {
+      "name": "Lower left leaf 10 engraved vein.023",
+      "role": "gold_vein"
+    },
+    {
+      "name": "Lower left leaf 10 center rib.003",
+      "role": "gold_edge"
+    },
+    {
+      "name": "Lower right curved gold stem.003",
+      "role": "gold"
+    },
+    {
+      "name": "Lower right leaf 1.003",
+      "role": "gold"
+    },
+    {
+      "name": "Lower right leaf 1 engraved vein.018",
+      "role": "gold_vein"
+    },
+    {
+      "name": "Lower right leaf 1 engraved vein.019",
+      "role": "gold_vein"
+    },
+    {
+      "name": "Lower right leaf 1 engraved vein.020",
+      "role": "gold_vein"
+    },
+    {
+      "name": "Lower right leaf 1 engraved vein.021",
+      "role": "gold_vein"
+    },
+    {
+      "name": "Lower right leaf 1 engraved vein.022",
+      "role": "gold_vein"
+    },
+    {
+      "name": "Lower right leaf 1 engraved vein.023",
+      "role": "gold_vein"
+    },
+    {
+      "name": "Lower right leaf 1 center rib.003",
+      "role": "gold_edge"
+    },
+    {
+      "name": "Lower right leaf 2.003",
+      "role": "gold"
+    },
+    {
+      "name": "Lower right leaf 2 engraved vein.018",
+      "role": "gold_vein"
+    },
+    {
+      "name": "Lower right leaf 2 engraved vein.019",
+      "role": "gold_vein"
+    },
+    {
+      "name": "Lower right leaf 2 engraved vein.020",
+      "role": "gold_vein"
+    },
+    {
+      "name": "Lower right leaf 2 engraved vein.021",
+      "role": "gold_vein"
+    },
+    {
+      "name": "Lower right leaf 2 engraved vein.022",
+      "role": "gold_vein"
+    },
+    {
+      "name": "Lower right leaf 2 engraved vein.023",
+      "role": "gold_vein"
+    },
+    {
+      "name": "Lower right leaf 2 center rib.003",
+      "role": "gold_edge"
+    },
+    {
+      "name": "Lower right leaf 3.003",
+      "role": "gold"
+    },
+    {
+      "name": "Lower right leaf 3 engraved vein.018",
+      "role": "gold_vein"
+    },
+    {
+      "name": "Lower right leaf 3 engraved vein.019",
+      "role": "gold_vein"
+    },
+    {
+      "name": "Lower right leaf 3 engraved vein.020",
+      "role": "gold_vein"
+    },
+    {
+      "name": "Lower right leaf 3 engraved vein.021",
+      "role": "gold_vein"
+    },
+    {
+      "name": "Lower right leaf 3 engraved vein.022",
+      "role": "gold_vein"
+    },
+    {
+      "name": "Lower right leaf 3 engraved vein.023",
+      "role": "gold_vein"
+    },
+    {
+      "name": "Lower right leaf 3 center rib.003",
+      "role": "gold_edge"
+    },
+    {
+      "name": "Lower right leaf 4.003",
+      "role": "gold"
+    },
+    {
+      "name": "Lower right leaf 4 engraved vein.018",
+      "role": "gold_vein"
+    },
+    {
+      "name": "Lower right leaf 4 engraved vein.019",
+      "role": "gold_vein"
+    },
+    {
+      "name": "Lower right leaf 4 engraved vein.020",
+      "role": "gold_vein"
+    },
+    {
+      "name": "Lower right leaf 4 engraved vein.021",
+      "role": "gold_vein"
+    },
+    {
+      "name": "Lower right leaf 4 engraved vein.022",
+      "role": "gold_vein"
+    },
+    {
+      "name": "Lower right leaf 4 engraved vein.023",
+      "role": "gold_vein"
+    },
+    {
+      "name": "Lower right leaf 4 center rib.003",
+      "role": "gold_edge"
+    },
+    {
+      "name": "Lower right leaf 5.003",
+      "role": "gold"
+    },
+    {
+      "name": "Lower right leaf 5 engraved vein.018",
+      "role": "gold_vein"
+    },
+    {
+      "name": "Lower right leaf 5 engraved vein.019",
+      "role": "gold_vein"
+    },
+    {
+      "name": "Lower right leaf 5 engraved vein.020",
+      "role": "gold_vein"
+    },
+    {
+      "name": "Lower right leaf 5 engraved vein.021",
+      "role": "gold_vein"
+    },
+    {
+      "name": "Lower right leaf 5 engraved vein.022",
+      "role": "gold_vein"
+    },
+    {
+      "name": "Lower right leaf 5 engraved vein.023",
+      "role": "gold_vein"
+    },
+    {
+      "name": "Lower right leaf 5 center rib.003",
+      "role": "gold_edge"
+    },
+    {
+      "name": "Lower right leaf 6.003",
+      "role": "gold"
+    },
+    {
+      "name": "Lower right leaf 6 engraved vein.018",
+      "role": "gold_vein"
+    },
+    {
+      "name": "Lower right leaf 6 engraved vein.019",
+      "role": "gold_vein"
+    },
+    {
+      "name": "Lower right leaf 6 engraved vein.020",
+      "role": "gold_vein"
+    },
+    {
+      "name": "Lower right leaf 6 engraved vein.021",
+      "role": "gold_vein"
+    },
+    {
+      "name": "Lower right leaf 6 engraved vein.022",
+      "role": "gold_vein"
+    },
+    {
+      "name": "Lower right leaf 6 engraved vein.023",
+      "role": "gold_vein"
+    },
+    {
+      "name": "Lower right leaf 6 center rib.003",
+      "role": "gold_edge"
+    },
+    {
+      "name": "Lower right leaf 7.003",
+      "role": "gold"
+    },
+    {
+      "name": "Lower right leaf 7 engraved vein.018",
+      "role": "gold_vein"
+    },
+    {
+      "name": "Lower right leaf 7 engraved vein.019",
+      "role": "gold_vein"
+    },
+    {
+      "name": "Lower right leaf 7 engraved vein.020",
+      "role": "gold_vein"
+    },
+    {
+      "name": "Lower right leaf 7 engraved vein.021",
+      "role": "gold_vein"
+    },
+    {
+      "name": "Lower right leaf 7 engraved vein.022",
+      "role": "gold_vein"
+    },
+    {
+      "name": "Lower right leaf 7 engraved vein.023",
+      "role": "gold_vein"
+    },
+    {
+      "name": "Lower right leaf 7 center rib.003",
+      "role": "gold_edge"
+    },
+    {
+      "name": "Lower right leaf 8.003",
+      "role": "gold"
+    },
+    {
+      "name": "Lower right leaf 8 engraved vein.018",
+      "role": "gold_vein"
+    },
+    {
+      "name": "Lower right leaf 8 engraved vein.019",
+      "role": "gold_vein"
+    },
+    {
+      "name": "Lower right leaf 8 engraved vein.020",
+      "role": "gold_vein"
+    },
+    {
+      "name": "Lower right leaf 8 engraved vein.021",
+      "role": "gold_vein"
+    },
+    {
+      "name": "Lower right leaf 8 engraved vein.022",
+      "role": "gold_vein"
+    },
+    {
+      "name": "Lower right leaf 8 engraved vein.023",
+      "role": "gold_vein"
+    },
+    {
+      "name": "Lower right leaf 8 center rib.003",
+      "role": "gold_edge"
+    },
+    {
+      "name": "Lower right leaf 9.003",
+      "role": "gold"
+    },
+    {
+      "name": "Lower right leaf 9 engraved vein.018",
+      "role": "gold_vein"
+    },
+    {
+      "name": "Lower right leaf 9 engraved vein.019",
+      "role": "gold_vein"
+    },
+    {
+      "name": "Lower right leaf 9 engraved vein.020",
+      "role": "gold_vein"
+    },
+    {
+      "name": "Lower right leaf 9 engraved vein.021",
+      "role": "gold_vein"
+    },
+    {
+      "name": "Lower right leaf 9 engraved vein.022",
+      "role": "gold_vein"
+    },
+    {
+      "name": "Lower right leaf 9 engraved vein.023",
+      "role": "gold_vein"
+    },
+    {
+      "name": "Lower right leaf 9 center rib.003",
+      "role": "gold_edge"
+    },
+    {
+      "name": "Upper left bud stem.003",
+      "role": "gold"
+    },
+    {
+      "name": "Upper left pointed bud.003",
+      "role": "gold"
+    },
+    {
+      "name": "Lower left bud stem.003",
+      "role": "gold"
+    },
+    {
+      "name": "Lower left pointed bud.003",
+      "role": "gold"
+    },
+    {
+      "name": "Lower right bud stem.003",
+      "role": "gold"
+    },
+    {
+      "name": "Lower right pointed bud.003",
+      "role": "gold"
+    },
+    {
+      "name": "Upper carved recurve bow limb.003",
+      "role": "gold"
+    },
+    {
+      "name": "Upper carved recurve bow limb outside bead.003",
+      "role": "gold_edge"
+    },
+    {
+      "name": "Upper carved recurve bow limb inside bead.003",
+      "role": "gold_edge"
+    },
+    {
+      "name": "Upper carved recurve bow limb sweeping central ridge.003",
+      "role": "gold"
+    },
+    {
+      "name": "Upper carved recurve bow limb swept feather engraving.008",
+      "role": "gold_vein"
+    },
+    {
+      "name": "Upper carved recurve bow limb swept feather engraving.009",
+      "role": "gold_vein"
+    },
+    {
+      "name": "Upper carved recurve bow limb swept feather engraving.010",
+      "role": "gold_vein"
+    },
+    {
+      "name": "Upper carved recurve bow limb swept feather engraving.011",
+      "role": "gold_vein"
+    },
+    {
+      "name": "Upper carved recurve bow limb swept feather engraving.012",
+      "role": "gold_vein"
+    },
+    {
+      "name": "Upper carved recurve bow limb swept feather engraving.013",
+      "role": "gold_vein"
+    },
+    {
+      "name": "Upper carved recurve bow limb swept feather engraving.014",
+      "role": "gold_vein"
+    },
+    {
+      "name": "Upper carved recurve bow limb swept feather engraving.015",
+      "role": "gold_vein"
+    },
+    {
+      "name": "Lower carved recurve bow limb.003",
+      "role": "gold"
+    },
+    {
+      "name": "Lower carved recurve bow limb outside bead.003",
+      "role": "gold_edge"
+    },
+    {
+      "name": "Lower carved recurve bow limb inside bead.003",
+      "role": "gold_edge"
+    },
+    {
+      "name": "Lower carved recurve bow limb sweeping central ridge.003",
+      "role": "gold"
+    },
+    {
+      "name": "Lower carved recurve bow limb swept feather engraving.008",
+      "role": "gold_vein"
+    },
+    {
+      "name": "Lower carved recurve bow limb swept feather engraving.009",
+      "role": "gold_vein"
+    },
+    {
+      "name": "Lower carved recurve bow limb swept feather engraving.010",
+      "role": "gold_vein"
+    },
+    {
+      "name": "Lower carved recurve bow limb swept feather engraving.011",
+      "role": "gold_vein"
+    },
+    {
+      "name": "Lower carved recurve bow limb swept feather engraving.012",
+      "role": "gold_vein"
+    },
+    {
+      "name": "Lower carved recurve bow limb swept feather engraving.013",
+      "role": "gold_vein"
+    },
+    {
+      "name": "Lower carved recurve bow limb swept feather engraving.014",
+      "role": "gold_vein"
+    },
+    {
+      "name": "Lower carved recurve bow limb swept feather engraving.015",
+      "role": "gold_vein"
+    },
+    {
+      "name": "Upper sculpted grip shoulder.002",
+      "role": "gold"
+    },
+    {
+      "name": "Lower sculpted grip shoulder.002",
+      "role": "gold"
+    },
+    {
+      "name": "Upper diagonal taut bowstring.002",
+      "role": "gold"
+    },
+    {
+      "name": "Lower diagonal taut bowstring.002",
+      "role": "gold"
+    },
+    {
+      "name": "Fine vertical gold sight line.002",
+      "role": "gold_edge"
+    },
+    {
+      "name": "Polished horizontal arrow shaft.002",
+      "role": "gold"
+    },
+    {
+      "name": "Arrow shaft lower warm edge.002",
+      "role": "gold_edge"
+    },
+    {
+      "name": "Upper arrow feather 1.002",
+      "role": "gold"
+    },
+    {
+      "name": "Lower arrow feather 1.002",
+      "role": "gold"
+    },
+    {
+      "name": "Upper feather fine cut 1.002",
+      "role": "gold_edge"
+    },
+    {
+      "name": "Lower feather fine cut 1.002",
+      "role": "gold_edge"
+    },
+    {
+      "name": "Upper arrow feather 2.002",
+      "role": "gold"
+    },
+    {
+      "name": "Lower arrow feather 2.002",
+      "role": "gold"
+    },
+    {
+      "name": "Upper feather fine cut 2.002",
+      "role": "gold_edge"
+    },
+    {
+      "name": "Lower feather fine cut 2.002",
+      "role": "gold_edge"
+    },
+    {
+      "name": "Upper arrow feather 3.002",
+      "role": "gold"
+    },
+    {
+      "name": "Lower arrow feather 3.002",
+      "role": "gold"
+    },
+    {
+      "name": "Upper feather fine cut 3.002",
+      "role": "gold_edge"
+    },
+    {
+      "name": "Lower feather fine cut 3.002",
+      "role": "gold_edge"
+    },
+    {
+      "name": "Upper arrow feather 4.002",
+      "role": "gold"
+    },
+    {
+      "name": "Lower arrow feather 4.002",
+      "role": "gold"
+    },
+    {
+      "name": "Upper feather fine cut 4.002",
+      "role": "gold_edge"
+    },
+    {
+      "name": "Lower feather fine cut 4.002",
+      "role": "gold_edge"
+    },
+    {
+      "name": "Upper arrow feather 5.002",
+      "role": "gold"
+    },
+    {
+      "name": "Lower arrow feather 5.002",
+      "role": "gold"
+    },
+    {
+      "name": "Upper feather fine cut 5.002",
+      "role": "gold_edge"
+    },
+    {
+      "name": "Lower feather fine cut 5.002",
+      "role": "gold_edge"
+    },
+    {
+      "name": "Upper arrow feather 6.002",
+      "role": "gold"
+    },
+    {
+      "name": "Lower arrow feather 6.002",
+      "role": "gold"
+    },
+    {
+      "name": "Upper feather fine cut 6.002",
+      "role": "gold_edge"
+    },
+    {
+      "name": "Lower feather fine cut 6.002",
+      "role": "gold_edge"
+    },
+    {
+      "name": "Turned gold arrow collar 1.002",
+      "role": "gold"
+    },
+    {
+      "name": "Turned gold arrow collar 2.002",
+      "role": "gold"
+    },
+    {
+      "name": "Turned gold arrow collar 3.002",
+      "role": "gold"
+    },
+    {
+      "name": "Turned gold arrow collar 4.002",
+      "role": "gold"
+    },
+    {
+      "name": "Upper bow tip raised curved gold frame.002",
+      "role": "gold"
+    },
+    {
+      "name": "Upper bow tip dark stone seat.002",
+      "role": "setting_shadow"
+    },
+    {
+      "name": "Upper bow tip emerald cut facets.002",
+      "role": "emerald"
+    },
+    {
+      "name": "Upper bow tip emerald cut facets.002",
+      "role": "emerald_light"
+    },
+    {
+      "name": "Upper bow tip emerald cut facets.002",
+      "role": "emerald_dark"
+    },
+    {
+      "name": "Lower bow tip raised curved gold frame.002",
+      "role": "gold"
+    },
+    {
+      "name": "Lower bow tip dark stone seat.002",
+      "role": "setting_shadow"
+    },
+    {
+      "name": "Lower bow tip emerald cut facets.002",
+      "role": "emerald"
+    },
+    {
+      "name": "Lower bow tip emerald cut facets.002",
+      "role": "emerald_light"
+    },
+    {
+      "name": "Lower bow tip emerald cut facets.002",
+      "role": "emerald_dark"
+    },
+    {
+      "name": "Upper grip raised curved gold frame.002",
+      "role": "gold"
+    },
+    {
+      "name": "Upper grip dark stone seat.002",
+      "role": "setting_shadow"
+    },
+    {
+      "name": "Upper grip emerald cut facets.002",
+      "role": "emerald"
+    },
+    {
+      "name": "Upper grip emerald cut facets.002",
+      "role": "emerald_light"
+    },
+    {
+      "name": "Upper grip emerald cut facets.002",
+      "role": "emerald_dark"
+    },
+    {
+      "name": "Lower grip raised curved gold frame.002",
+      "role": "gold"
+    },
+    {
+      "name": "Lower grip dark stone seat.002",
+      "role": "setting_shadow"
+    },
+    {
+      "name": "Lower grip emerald cut facets.002",
+      "role": "emerald"
+    },
+    {
+      "name": "Lower grip emerald cut facets.002",
+      "role": "emerald_light"
+    },
+    {
+      "name": "Lower grip emerald cut facets.002",
+      "role": "emerald_dark"
+    },
+    {
+      "name": "Central emerald raised curved gold frame.002",
+      "role": "gold"
+    },
+    {
+      "name": "Central emerald dark stone seat.002",
+      "role": "setting_shadow"
+    },
+    {
+      "name": "Central emerald emerald cut facets.002",
+      "role": "emerald"
+    },
+    {
+      "name": "Central emerald emerald cut facets.002",
+      "role": "emerald_light"
+    },
+    {
+      "name": "Central emerald emerald cut facets.002",
+      "role": "emerald_dark"
+    },
+    {
+      "name": "Swept gold arrowhead.002",
+      "role": "gold"
+    },
+    {
+      "name": "Arrowhead emerald seat.002",
+      "role": "setting_shadow"
+    },
+    {
+      "name": "Arrowhead emerald facets.002",
+      "role": "emerald"
+    },
+    {
+      "name": "Arrowhead emerald facets.002",
+      "role": "emerald_light"
+    },
+    {
+      "name": "Arrowhead emerald facets.002",
+      "role": "emerald_dark"
+    },
+    {
+      "name": "Small arrow nock raised curved gold frame.002",
+      "role": "gold"
+    },
+    {
+      "name": "Small arrow nock dark stone seat.002",
+      "role": "gold"
+    },
+    {
+      "name": "Small arrow nock emerald cut facets.002",
+      "role": "gold"
+    },
+    {
+      "name": "Faceted arrow draw grip.002",
+      "role": "gold"
+    }
+  ],
+  "palette": {
+    "gold": [
+      [
+        0.73,
+        0.365,
+        0.065
+      ],
+      1,
+      0.265
+    ],
+    "gold_edge": [
+      [
+        0.4,
+        0.175,
+        0.028
+      ],
+      1,
+      0.44
+    ],
+    "gold_vein": [
+      [
+        0.22,
+        0.08,
+        0.014
+      ],
+      0.65,
+      0.55
+    ],
+    "field": [
+      [
+        0.004,
+        0.075,
+        0.025
+      ],
+      0.72,
+      0.32
+    ],
+    "emerald": [
+      [
+        0.0015,
+        0.19,
+        0.075
+      ],
+      0.5,
+      0.14
+    ],
+    "emerald_light": [
+      [
+        0.014,
+        0.36,
+        0.18
+      ],
+      0.45,
+      0.14
+    ],
+    "emerald_dark": [
+      [
+        0.001,
+        0.042,
+        0.019
+      ],
+      0.65,
+      0.19
+    ],
+    "setting_shadow": [
+      [
+        0.008,
+        0.023,
+        0.012
+      ],
+      0.8,
+      0.3
+    ]
+  },
+  "source_shell": "sprout",
+  "reference_center": [
+    627,
+    566
+  ],
+  "reference_inner_radius": 458
+}

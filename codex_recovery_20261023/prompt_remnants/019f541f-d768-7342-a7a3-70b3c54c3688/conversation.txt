@@ -1,0 +1,47 @@
+I want you to tell me about every single skill I have in this project, also tell me about both my claude.md files. Can these skills or both claude.md files be improved? if so, how?
+
+Conversation ID: 019f541f-d768-7342-a7a3-70b3c54c3688
+Working folder: /Users/antonioperedo/Desktop/screen_time
+
+Only prompt remnants survived in the sources checked.
+No Codex replies were found for this conversation.
+
+OPENING PROMPT FROM THE HISTORY INDEX
+
+I want you to tell me about every single skill I have in this project, also tell me about both my claude.md files. Can these skills or both claude.md files be improved? if so, how?
+
+SAVED TERMINAL PROMPT
+
+I want you to tell me about every single skill I have in this project, also tell me about both my claude.md files. Can these skills or both claude.md files be improved? if so, how?
+
+SAVED TERMINAL PROMPT
+
+So there is no planning skill huh, I want a planning skill that creates plans to implement code that are first and foremost easy to understand. I want a junior dev to be able to understand the code without knowledge of it because of the code reads very easily. I want plans to be scaleable, follow best practices, easily maintainable, super fast as in performance wise, very efficient. How would you create that skill?
+
+SAVED TERMINAL PROMPT
+
+Can we shorten the skill? also I would prefer to not have whatever coding agent I use not to write the skill to a file, I will tell it to do so if I want that. It can keep the plan internally
+
+SAVED TERMINAL PROMPT
+
+How does the wave reviewer work? short answer
+
+SAVED TERMINAL PROMPT
+
+what determines how many waves there are?
+
+SAVED TERMINAL PROMPT
+
+so now will the planning phase decide this? or how will you implement it? what do you think is best?
+
+SAVED TERMINAL PROMPT
+
+I see you keep referring to skill-creator, where are you getting that from?
+
+SAVED TERMINAL PROMPT
+
+any coding agent can use that?
+
+SAVED TERMINAL PROMPT
+
+I want a skill that is compatible with any agent a skill creator. Here's what I'm thinking. I think it's best that skills are very purposeful. The shorter the better I want each word to matter. I don't want the words to sacrifice effectiveness, though I don't want it to be so short that effectiveness is sacrificed. The skills must be very effective. I want the skills to be short effective and so easy to read that even a junior Developer will be able to understand them Very easily I want the skills to be easy on the human eye. Very intuitive to read. How would you create that skill, creator skill that is compatible with any coding agent?

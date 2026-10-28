@@ -130,24 +130,14 @@ What fixed the outlines for good (Copper, Bronze, Platinum, 2026-10-13, `rim_fix
 The app repo is `/Users/antonioperedo/Desktop/screen_time`. All eight tiers have a 3D model in `ScreenTime/SupportingFiles/Assets.xcassets/Badge3DModel<Tier>.dataset/<tier>_badge_mobile.usdz` and a Badges screen picture in `BadgeArt<Tier>.imageset/BadgeArt<Tier>.png` (600 x 600, cut at the fixed Home frame: `stills/make_still_fixed.py`, or `edge_fix_20261010/tools/still_cut.py` from a Home screenshot). **The installed files are the newest versions**: Copper, Bronze, Steel, Silver and Platinum carry the 2026-10-10 outline fix that the finals in the older working folders lack, and the Diamond is the 2026-10-11 gem (section 2, rule 10), so start any change from a copy of the installed file. Whatever file is in a data set, back it up and put it back byte for byte after a test.
 
 ```sh
-cd /Users/antonioperedo/Desktop/screen_time
-SIM=69A29DD2-C91E-487A-81B9-3B146DF8F07B; BID=com.antonioperedo.screentime.uidev
-TIER=silver; F=ScreenTime/SupportingFiles/Assets.xcassets/Badge3DModelSilver.dataset/silver_badge_mobile.usdz
-cp "$F" /tmp/${TIER}_model_backup.usdz
-cp <candidate.usdz> "$F"                       # same filename on purpose
-tools/sim/app build
-APP=$(ls -dt ~/Library/Developer/Xcode/DerivedData/*/Build/Products/Debug-iphonesimulator/ScreenTimeUI.app | head -1)
-xcrun simctl install $SIM "$APP"
-# the first launch shows the flat fallback; launch three times with the tier argument
-for i in 1 2 3; do xcrun simctl terminate $SIM $BID; sleep 1; xcrun simctl launch $SIM $BID -BadgeHeroTier $TIER; sleep 15; done
-tools/sim/shot <your_folder>/app.png
-cp /tmp/${TIER}_model_backup.usdz "$F"         # ALWAYS restore, also after a failure
-cmp "$F" /tmp/${TIER}_model_backup.usdz        # must print nothing
+/Users/antonioperedo/Desktop/screen_time/tools/sim/badge-try <tier> <candidate.usdz> --out <candidate folder>
 ```
+
+It swaps the model only while it builds, restores it byte for byte even after a failure, and shoots the front plus the 94, 133 and 171 point turns on its own BestSpent Badge Lab simulator. It takes several minutes: allow at least 15, and if it is killed, copy the backup named on its first line (`backup: ...`) back over the model, delete the backup, then run `/Users/antonioperedo/Desktop/screen_time/tools/sim/app build`.
 
 Prove the 3D badge is showing by looking (beveled edges catching light, a matching reflection; the fallback is flat art), or with a slow upward drag of 80 to 180 points, after which the badge is turned and smaller (the flat still never turns). Then check the outline (section 3, rule 9): a 4x nearest neighbor zoom of every tip, point and long edge, next to the previous version. Never edit app code, never commit, never switch branches.
 
-**Every side (section 3, rule 10):** the turn starts after about 56 points of scroll and takes about 153 more. Slow drags (bundled axe from XcodeBuildMCP: `axe swipe --start-x 200 --start-y 600 --end-x 200 --end-y <600 minus distance> --duration 1.5 --udid $SIM`, relaunching between drags) of about 94, 133 and 171 points show the badge from the side, from the back (half size) and from the other side; adjust until each pose shows. Shoot every pose and check it like the front, outline included. A recording of one slow scroll (`xcrun simctl io $SIM recordVideo`) shows the whole turn.
+**Every side (section 3, rule 10):** the turn starts after about 56 points of scroll and takes about 153 more. Slow drags of about 94, 133 and 171 points show the badge from the side, from the back (half size) and from the other side. `badge-try` shoots the 94, 133 and 171 point turns by default; adjust with `--poses a,b,c` until each pose shows. Check every pose like the front, outline included.
 
 ## 6. Working and delivering
 

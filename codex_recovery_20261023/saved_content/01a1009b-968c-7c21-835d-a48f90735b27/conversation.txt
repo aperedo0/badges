@@ -1,0 +1,538 @@
+before starting make this this has to do with streaks Read AGENTS.md, then implement /Users/antonioperedo/Desktop/screen_time/.claude/plans/2026-10-02-streak-vacation-clean.md. Follow its "Handoff" section first, and start at Wave 1.
+
+Conversation ID: 01a1009b-968c-7c21-835d-a48f90735b27
+Working folder: /Users/antonioperedo/Desktop/screen_time
+
+Saved conversation content exported from the Codex history database.
+This export does not establish that every original message or attachment survived.
+
+YOU
+
+before starting make this this has to do with streaks Read AGENTS.md, then implement /Users/antonioperedo/Desktop/screen_time/.claude/plans/2026-10-02-streak-vacation-clean.md. Follow its "Handoff" section first, and start at Wave 1.
+
+CODEX
+
+I’ll read AGENTS.md and the streak vacation plan, follow its Handoff section, and start at Wave 1. I’m using the clarity skill and the repository’s wave-manager workflow.
+
+CODEX
+
+The plan is approved, its audit converged, and the working tree is clean. Wave 1 builds the repeat Clean badge; vacation mode, streak tracking, and the Home indicator follow in Waves 2 through 4. Each wave must pass builds, tests, and a fresh review before the next starts.
+
+The animations skill supplies the celebration rules. XcodeBuildMCP tools are unavailable in this session, so verification will use the plan’s simulator helpers.
+
+CODEX
+
+Wave 1 is capturing the existing Clean Session coin before edits. That screenshot will provide the baseline for checking that the repeat Clean badge preserves the artwork.
+
+CODEX
+
+The coin baseline is saved, and Wave 1 edits have started. The key checks are the 1-hour minimum, disqualification by pauses or temporary access, and milestone celebrations that stay latched if late data lowers the Clean count.
+
+CODEX
+
+Wave 1 is in progress across badge counting, ledger milestones, celebrations, and the Badges screen. It has not reached verification yet; the next milestone is the build and test gate.
+
+CODEX
+
+The current work is still Wave 1. Vacation enforcement and streak tracking remain queued until the Clean badge passes its build, test, screenshot, and review checks.
+
+YOU
+
+token usage is back, continue
+
+CODEX
+
+Continuing Wave 1. The Clean counting logic and UI are implemented; the implementer is updating tests before running the full gate and fresh review.
+
+YOU
+
+stop
+
+CODEX
+
+Stopped. Wave 1 edits remain uncommitted. All three builds and 1,577 tests passed; screenshot verification and independent review are unfinished. Waves 2 through 4 have not started.
+
+YOU
+
+Did we accidently implement the wrong this in this chat at first? or did we start with the streak system in this chat?
+
+CODEX
+
+We started the correct streak-system plan you provided, at Wave 1 as requested.
+
+That plan’s order is:
+
+1. Repeat Clean badge.
+2. Vacation mode.
+3. Streak tracking.
+4. Home streak indicator and alerts.
+
+We only worked on Wave 1. The streak tracking itself has not been implemented yet.
+
+YOU
+
+ok then we are in the right chat, token usage is back, continue
+
+CODEX
+
+Resuming Wave 1’s screenshot checks and independent review, then continuing through vacation mode, streak tracking, and the Home indicator in order. I’m using the clarity and wave-manager skills.
+
+CODEX
+
+The simulator check found a duplicate accessibility label on the Clean row. That has been corrected, and the presenter test was strengthened. Wave 1 will run the full gate again because those changes followed the earlier passing run.
+
+CODEX
+
+Wave 1’s remaining checks cover the Clean row at counts 24 and 0, its detail sheet, and the milestone celebration. The fresh reviewer will also check that the original coin art and existing badge behavior were preserved.
+
+CODEX
+
+Wave 1 is still completing its visual and verification checks. Vacation mode and streak tracking have not started.
+
+CODEX
+
+The screenshots match the plan: Clean has its own “Earn again” section, the 1-hour rule appears in the row and sheet, and the achievements grid has 15 cells with “Days Total” captions. The locked coin also matches the saved baseline. The celebration capture is being retried after the test run finishes using the simulator.
+
+CODEX
+
+Wave 1’s final gate passed again: all three schemes built successfully, with 1,577 tests passed, 0 failed, and 0 skipped. The last remaining step before independent review is the Clean x10 celebration screenshot.
+
+CODEX
+
+The build and test checks are complete. The implementer is finishing the celebration capture and restoring the simulator’s default preview before handing Wave 1 to the reviewer.
+
+CODEX
+
+Wave 1’s screenshots and file-scope check passed. A fresh reviewer will now check the Clean rules, milestone behavior, old-ledger compatibility, and regressions before Wave 2 begins.
+
+CODEX
+
+The reviewer confirmed the 1,577 passing tests on the required simulator. Clean counting, milestone latching, queue order, and recap wiring match the plan so far; the UI, art, and test review is still underway.
+
+CODEX
+
+Wave 1 passed independent review with no code issues. Wave 2 now begins: vacation mode, including scheduled-block suppression, reminders, the return notification, and Settings and Block List UI. The review left one documentation note about the Badges screen overview.
+
+CODEX
+
+Wave 2 is capturing the existing Block List before edits. Its main correctness check is that vacation suppresses scheduled blocks in both the app and extension while preserving Quick Starts and daily limits.
+
+CODEX
+
+Wave 2 will check return dates across daylight saving time and refuse vacation starts while a scheduled block is running. It will also check that manual ends cancel the welcome-back alert and automatic ends retain it until its fire time.
+
+CODEX
+
+The simulator’s current Block List shows a mock running block but no saved schedules, so the required “Up next” baseline is unavailable yet. The implementer is checking fixture setup; this does not change the vacation feature’s scope.
+
+CODEX
+
+Wave 2 is still establishing the before-edit Block List baseline. The vacation rules remain as approved: up to 14 days, scheduled blocks off while away, and a welcome-back alert only after an automatic end.
+
+CODEX
+
+The before-edit Block List screenshot is saved. Wave 2 will proceed with the feature work and document any simulator fixture limitation in its verification report.
+
+CODEX
+
+Vacation mode’s model, storage, schedule exclusions, notifications, controller, and UI are implemented. The implementer is adding tests and target membership before running the gate. The missing “Up next” baseline will be recorded as a simulator verification limitation.
+
+CODEX
+
+Wave 2’s tests are being added for vacation storage, date boundaries, schedule exclusions, notification timing, and Delete All Data registration. The code still needs the build and test gate and independent review.
+
+CODEX
+
+Wave 2 has 25 new focused tests, and the full gate is running. They cover DST dates, preserved stopped-block exclusions, target selection, return-alert timing, and vacation filtering of win-back alerts.
+
+CODEX
+
+All three Wave 2 builds passed, including the report extension. The test suite is running. The enforcement search also confirms that recording and shielding paths use the vacation exclusion function.
+
+CODEX
+
+Wave 2’s gate passed with 1,597 tests, 0 failures, and 0 skips. The implementer is now checking the vacation page’s off, active, and blocked states, plus Settings and Block List.
+
+CODEX
+
+The simulator checks are in progress. They will confirm the date picker, active vacation state, running-block refusal message, and vacation banner before independent review.
+
+CODEX
+
+Wave 2’s builds and tests are green. Its remaining work is visual verification and independent review; streak tracking starts only after those pass.
+
+CODEX
+
+Wave 2 is finishing its screenshot evidence. The review will check both the vacation UI and the app and extension paths that suppress scheduled blocks.
+
+CODEX
+
+The vacation page and Settings screenshots match the plan. I caught a capture error: two files labeled “Block List” actually show Home. Those are being recaptured with the correct tab confirmed.
+
+CODEX
+
+The capture ran before the tab transition settled. The implementer is waiting for Block List content before recapturing. The pre-edit screenshot is invalid, so the report will state that limitation and provide a verified vacation-off reference for the later toolbar check.
+
+CODEX
+
+Wave 2 is finishing the corrected Block List captures and the active and running-block page checks. Its build and test gate remains green.
+
+CODEX
+
+The corrected screenshots match the vacation UI spec: Block List shows the banner, Settings shows the return date, and the page shows its active state. The running-block preview disables Start and displays the block’s end time.
+
+CODEX
+
+Wave 2’s visual checks are complete except for the final vacation-off Block List reference and simulator restore. After that, the fresh reviewer will check enforcement, storage, notifications, and regressions.
+
+CODEX
+
+The vacation UI checks passed. The handoff is finishing the verified Block List reference and report; no additional feature changes are planned for Wave 2.
+
+CODEX
+
+Wave 2 is ready for independent review. Its 1,597 tests pass, screenshots match the written UI spec, and changed files stay within scope. The report records the invalid pre-edit Block List capture and the fixture’s missing “Up next” section.
+
+CODEX
+
+The reviewer confirmed the 1,597 passing tests and that Wave 1-only files remain unchanged. Vacation start checks, manual alert cancellation, and midnight UI reload match the plan so far. Enforcement paths and target membership are still under review.
+
+CODEX
+
+The reviewer is tracing scheduled-block recording and shielding paths in both processes. This checks that vacation suppresses enforcement and recording, in addition to hiding UI.
+
+CODEX
+
+The vacation review is still checking enforcement completeness and regression risk. No blocking finding has been reported so far; Wave 3 remains queued until the verdict arrives.
+
+CODEX
+
+The reviewer raised the overnight return case. The plan already accepts that a block spanning vacation’s midnight end resumes shielding on the next app open or block start. The review is checking for any behavior outside that accepted limitation.
+
+CODEX
+
+The reviewer confirmed that target membership is correct and found no scheduled-block shielding or recording path that bypasses vacation exclusions. The overnight return behavior matches the plan’s accepted limitation.
+
+CODEX
+
+Wave 2 passed independent review with no code issues. Wave 3 now begins: streak tracking, weekly passes, 30-minute Quick Start rescues, kept-limit days, and vacation-neutral days. This wave adds the engine and live state; Wave 4 adds the Home indicator and alerts.
+
+CODEX
+
+Wave 3 is building the recorder and streak engine first. It records schedule and limit facts that cannot be recovered later, then derives the streak from those facts and the existing blocked-time calculation.
+
+CODEX
+
+Wave 3’s tests will cover weekly passes, one rescue per missed day, and deadlines calculated with local calendar days. They will also cover overnight blocks so a running source does not create a false miss at midnight.
+
+CODEX
+
+The engine follows the approved rules: blocked time or a kept daily limit adds a day, only scheduled misses can break the streak, and vacation-touched days are neutral. Earlier history will not be backfilled.
+
+CODEX
+
+Wave 3 implementation is still in progress. Its state will use the existing badge coordinator and ledger so streak evaluation shares the app’s refresh and save lifecycle.
+
+CODEX
+
+The recorder, engine, and coordinator wiring are implemented. The log is assigned before persistence, blocked days come from the badge evaluation, and the unfinished-block fallback is preserved. The implementer is now adding the rule tests.
+
+CODEX
+
+The Wave 3 test matrix is being added for counting, passes, rescues, vacation neutrality, recorder freezing, and ledger decoding. The Home indicator and risk notification remain in Wave 4.
+
+CODEX
+
+Wave 3 has not reached verification yet. The new rules still need the build and test gate, followed by a fresh review of the engine and coordinator inputs.
+
+CODEX
+
+The recorder tests are checking that closed days stay frozen while today can be rewritten. The engine tests are checking pending misses and rescues, including a running rescue that later ends too early.
+
+CODEX
+
+Wave 3’s test matrix is complete, and the full gate is starting. It covers rescue boundaries, early-end reversal, DST deadlines, overnight sources, risk projection, and recorder rules.
+
+CODEX
+
+The gate is running with the cache and CoreSimulator access Xcode requires. The scope check found only the planned Wave 3 files changed.
+
+CODEX
+
+All three Wave 3 builds passed. The full test suite is running with 72 new tests; the expected total is 1,669.
+
+CODEX
+
+Wave 3’s test run is still in progress. After it finishes, the fresh reviewer will check that the coordinator feeds the correct inputs and saves the updated log before publishing.
+
+CODEX
+
+Wave 3’s first gate passed all 1,669 tests. Self-review found that one test did not isolate the 30-minute rescue minimum, so it was strengthened and an exact-end boundary assertion was added. A fresh full gate is running on the final state.
+
+CODEX
+
+The strengthened test now checks that a running 15-minute Quick Start fails the rescue rule because of its duration, rather than because it has already ended. The final gate is still running.
+
+CODEX
+
+Wave 3’s final gate passed: all three builds succeeded, with 1,669 tests passed, 0 failed, and 0 skipped. Its 12 changed files match the planned scope. A fresh reviewer will now check the streak rules and coordinator wiring.
+
+CODEX
+
+The Wave 3 review is underway. It will check the engine rules and the coordinator’s data wiring, including the saved log, blocked days, vacation periods, and live-source fallback.
+
+CODEX
+
+The reviewer verified all 1,669 passing tests, correct target membership, and unchanged earlier-wave files outside Wave 3’s scope. The pure rules and required coordinator bindings match the plan so far; lifecycle and test-coverage checks remain.
+
+CODEX
+
+The reviewer is finishing the last Wave 3 checks: backward clock changes, frozen closed days, one rescue per miss, and streak updates that preserve badge publication behavior. No blocking finding has been reported.
+
+CODEX
+
+Wave 3 passed independent review with no findings. Wave 4 now begins: the Home streak indicator, vacation umbrella, at-risk dot, and 9:00 AM rescue reminder. It is the final wave and will receive the independent final build and test run.
+
+CODEX
+
+Wave 4 adds a display-only indicator: hidden at zero, a flame for an active streak, an umbrella during vacation, and a dot when at risk. Its alert copy names the final day available for a 30-minute Quick Start rescue.
+
+CODEX
+
+Wave 4 will check notification timing before and after 9:00 AM, deadlines across DST, and removal of the risk alert when a rescue clears the miss. The simulator checks include a 1,000-day streak to catch layout problems.
+
+CODEX
+
+The final wave is still in progress. Its verification includes tapping the indicator and comparing the Block List Pro toolbar with the saved Wave 2 reference.
+
+CODEX
+
+Wave 4’s indicator and notification wiring are implemented, with eight new risk tests. The changed files match the planned scope, and the full gate is starting. Screenshot checks will follow the test run.
+
+CODEX
+
+Wave 4’s gate is running with Xcode’s required cache and simulator access. No compilation failure has been reported.
+
+CODEX
+
+All three Wave 4 builds passed. The test suite is running; the expected total is 1,677 after the eight new notification tests.
+
+CODEX
+
+Wave 4’s gate passed with 1,677 tests, 0 failures, and 0 skips. The implementer is now checking steady, at-risk, vacation, zero, and 1,000-day Home states, plus the unchanged Block List toolbar.
+
+CODEX
+
+The final screenshot checks are underway. They will confirm the flame, risk dot, vacation umbrella, hidden zero state, and room for a four-digit count.
+
+CODEX
+
+The indicator also needs one combined VoiceOver label and no button behavior. Those checks are part of Wave 4’s simulator verification and final review.
+
+CODEX
+
+The simulator check caught toolbar compression clipping the second digit of “12.” The implementer is fixing the indicator’s sizing, then will repeat the full gate and layout checks. Accessibility reports no button trait.
+
+CODEX
+
+The sizing correction is being verified against the two-digit and 1,000-day states. The earlier passing gate does not cover that source change, so Wave 4 needs a fresh run before review.
+
+CODEX
+
+Wave 4 is still checking the toolbar sizing fix. After it passes, the final reviewer will inspect the completed code and run the independent build and test gate.
+
+CODEX
+
+The remaining checks are the corrected indicator layout, a fresh gate, and final review. All feature code from the four waves is now in place, but completion still depends on those checks.
+
+CODEX
+
+The sizing fix displays both “12” and “1,000” without clipping. The five indicator states match the spec, and tapping leaves the screen unchanged. The implementer is finishing the toolbar comparison and checking that the full Home captures have settled before the fresh gate.
+
+CODEX
+
+Some cold-launch screenshots captured Home before all content rendered. Those are being recaptured after a longer wait. The indicator checks passed; no unrelated Home code is being changed.
+
+CODEX
+
+The longer wait fixed the incomplete Home capture. The remaining scenarios are being recaptured the same way. The Block List toolbar is pixel-identical to the Wave 2 reference.
+
+CODEX
+
+The settled Home screenshots now pass, including the four-digit count, and the Block List toolbar is unchanged. All three builds passed the fresh gate; its test run is still in progress.
+
+CODEX
+
+Wave 4’s fresh gate passed all 1,677 tests with no failures or skips. Its 11 changed files match the planned scope. The final reviewer will now inspect the completed work and run the independent build and test gate.
+
+YOU
+
+token usage is back, continue, and only continue if you were working on the streak system. I believe that was this chat. I am not able to fully check the history since I am about to leave
+
+CODEX
+
+Yes, this is the streak-system chat. All four waves are implemented, and the implementer’s final gate passed 1,677 tests with no failures or skips. Resuming the interrupted final review and its independent build and test run.
+
+CODEX
+
+The final reviewer found no code issues and confirmed the indicator states, tap behavior, and unchanged Block List toolbar. All three independent builds passed; the independent test suite is running.
+
+CODEX
+
+All four waves passed independent review. The final independent gate also passed all three builds and 1,677 tests with no failures or skips. I’m recording the final plan-conformance check, including the documented screenshot limitation and the device checks that remain for you.
+
+CODEX
+
+Implemented all four waves, left uncommitted:
+
+| Wave | Result | Tests passed |
+|---|---|---:|
+| 1 | Repeat Clean badge | 1,577 |
+| 2 | Vacation mode | 1,597 |
+| 3 | Streak tracking, passes, and rescues | 1,669 |
+| 4 | Home indicator and risk alerts | 1,677 |
+
+Every wave passed fresh review. The final independent gate confirmed:
+
+```text
+ScreenTime: ** BUILD SUCCEEDED **
+ScreenTime-UIOnly: ** BUILD SUCCEEDED **
+DeviceActivityReportExtension: ** BUILD SUCCEEDED **
+tests: ** TEST SUCCEEDED ** | xcresult: 1677 passed, 0 failed, 0 skipped (total 1677)
+```
+
+All implementation items passed [plan conformance](/Users/antonioperedo/Desktop/screen_time/.claude/plans/2026-10-02-streak-vacation-clean.md). One verification limitation remains: the original Block List baseline captured Home, and the simulator fixture lacked “Up next.” Corrected screenshots and source review passed.
+
+Reviewers left two documentation-only notes: the Badges overview omits “Earn again,” and one notification comment still says five instead of seven. The behavior map needs a later refresh for Badges, Home, Settings, and Block List.
+
+Device checks remain user-run:
+
+Device: iPhone 13 mini, notifications ON, Screen Time authorized, a Quick Start selection set.
+
+1. Clean count. Create a block from now + 3 min lasting exactly 60 min on an app you can open. Do not touch it. After it ends, open BestSpent. Expected: Badges shows "Earn again" with Clean one higher than before and, if it was your first, the "BADGE EARNED" celebration titled "Clean".
+2. Clean minimum. Repeat with a 59-min block. Expected: the Clean count does not change.
+3. Clean with a pause. Repeat with a 60-min block and take one 15-min pause. Expected: the count does not change.
+4. Vacation blocks nothing. Create a block starting in 20 min. Within 5 minutes, open Settings, Vacation mode, pick tomorrow, Start vacation. Wait for the block's start. Expected: no reminder at start minus 5 min, and at the start the block's apps open normally, no Live Activity appears, Home shows no active block, Block List shows the "On vacation" banner and no dashed window for that block.
+5. Vacation start refused mid-block. End vacation, wait until a block is running, open Vacation mode. Expected: Start is disabled with "Your <name> block runs until <time>. You can start vacation after it ends."
+6. End vacation mid-window. Start vacation when no block runs, then create a block covering now, then tap "End vacation" on the Block List banner. Expected: the block's apps are blocked again within a few seconds and the Block List shows it running from the moment you ended vacation. No "welcome back" notification arrives later.
+7. Quick Start during vacation. On a vacation day with no blocked time yet and no daily limit on, start a 15-min Quick Start. Expected: apps are blocked, and within 2 minutes the umbrella indicator appears or its number rises by 1.
+8. Streak indicator. On a day with any blocked time, Home shows the flame and the number top-left; tapping it does nothing. On a fresh install before any blocked time and with no daily limit, no indicator.
+9. At risk (two days). Run it in a week where this is your ONLY schedule since that week began (the week's pass allowance is fixed the first time the app sees the week), with a streak of at least 1 and no daily limit on. Make a 15-minute block active only on today's weekday (allowance 0). Power the phone off before it starts and back on after it ends, and do no Quick Start that day (Stop or a pause would still leave a few blocked seconds, which counts the day). Open BestSpent once after midnight and before 9:00 (the alert is planned only while the app runs). Expected: next morning at 9:00 "Your <n>-day streak is at risk. A 30-minute Quick Start by the end of <weekday> keeps it." arrives and the indicator shows an amber dot. Start a 30-minute Quick Start from Home's bar and let it finish. Expected: the dot disappears and the number is not reset.
+10. Welcome back. With a block that starts at 8:30 AM tomorrow, start a vacation with tomorrow as the return day. Open BestSpent once between 12:00 AM and 7:30 AM. Expected: at 7:30 AM tomorrow "Welcome back. Your scheduled blocks are on again." arrives, and the 8:30 block blocks normally.
+
+YOU
+
+how do I see the rules for the streak in my app? and the welcome back message, it doesn't tell me a block starts at 8:30am every time right, only if a block actually does? so if a block actually will start at 10am then it'll say 10am? or maybe I am misunderstanding something. also I don't understand 9
+
+CODEX
+
+The streak indicator does not open a rules page. I’m checking the notification copy and timing so I can explain the welcome-back message and test 9 accurately.
+
+CODEX
+
+**The streak rules aren’t shown inside the app yet.** The flame is display-only, so tapping it does nothing. Currently:
+
+- A day adds 1 when you block any time or keep a daily limit without skipping or unlocking it.
+- Only missed scheduled days can break the streak.
+- Weekly passes automatically forgive misses: 0 for one scheduled day, 1 for two or three, 2 for four or more.
+- After passes run out, a 30-minute Quick Start can rescue a miss during the following two calendar days.
+- Vacation days preserve your streak; blocking time during vacation can still add days.
+
+**8:30 AM was just an example in the testing instructions.** The welcome-back message never mentions a block’s start time. It says:
+
+> Welcome back. Your scheduled blocks are on again.
+
+Its delivery time depends on your actual schedules for the return day:
+
+| First block starts | Message arrives |
+|---|---|
+| 8:30 AM | 7:30 AM |
+| 10:00 AM | 9:00 AM |
+| No block that day | 9:00 AM |
+
+Ending vacation manually cancels that message.
+
+**Test 9 checks the streak rescue alert.** Imagine you already have a streak, have no weekly passes left, and completely miss Monday’s block.
+
+On Tuesday, open the app before 9:00 AM. At 9:00, it should warn that your streak is at risk. Complete a 30-minute Quick Start on Tuesday or Wednesday to save it.
+
+The test asks you to switch the phone off during Monday’s block because even a few seconds of blocked time would make Monday count. The amber dot should disappear when you start the rescue; let the Quick Start finish so the rescue remains valid.
+
+YOU
+
+make the flame or number next to the flame clickable, as a matter of fact that general area top left should be clickable. there it will bring up the rules for the streak. it will bring the up bottom up, like when a user clicks to create a new schedule, and make sure it looks good
+
+CODEX
+
+I’ll plan a tappable streak area that opens the rules in a bottom sheet, matching the New Schedule sheet’s presentation and the app’s existing style. I’m using the plan-code, wave-manager, and animations skills for this change.
+
+CODEX
+
+The whole flame-and-number area will open the rules, with a larger tap target. I’ll use the same bottom-sheet style as New Schedule and explain how days count, weekly passes, rescues, and vacation work.
+
+CODEX
+
+The rules will distinguish between adding a streak day and saving a missed day. Passes and rescues protect the streak, but they don’t increase the count.
+
+CODEX
+
+The tap target and rules sheet are in place, and all three builds passed. Tests are running now; next is checking the sheet’s layout, opening animation, and dismissal in the simulator.
+
+CODEX
+
+All 1,677 tests passed. The simulator check will confirm that tapping the flame, number, or nearby space opens the sheet, and that the rules remain readable at larger text sizes.
+
+CODEX
+
+Builds and tests are green. The final visual check is running on Home, including the native slide-up presentation and the sheet’s dark, rounded style.
+
+CODEX
+
+The sheet opens correctly from the flame, and the screenshots look good: an amber flame header, clear rule cards, and a weekly-pass table. One accessibility label needs a small correction so VoiceOver identifies the streak area as a button.
+
+CODEX
+
+The rules cover all five cases, including the two-day rescue window and vacation protection. The remaining checks are VoiceOver, larger text, and tapping the number or surrounding space.
+
+CODEX
+
+Tapping the flame, number, and nearby empty space all opens the sheet. Done and swipe-down both dismiss it, and the existing Quick Start menu still opens normally. The accessibility button label is now corrected.
+
+CODEX
+
+The change is confined to the streak indicator file. The earlier streak and vacation work is preserved; final checks are covering the risk dot, vacation icon, and long streak counts.
+
+CODEX
+
+At the largest text size, all five rules remain reachable by scrolling, and Done stays available. The simulator’s preview override isn’t switching streak states, so the long-count and vacation checks remain unconfirmed.
+
+CODEX
+
+The opening animation, tap targets, dismissal, and large-text layout passed their checks. The final build-and-test run includes the VoiceOver correction.
+
+CODEX
+
+All three final builds passed, and self-review found no issues. The last test run is still running.
+
+CODEX
+
+Done. Tap the flame, number, or surrounding top-left area to open the streak rules in a bottom-up sheet matching New Schedule’s style.
+
+Verified tapping, dismissal, reopening, and large-text scrolling. [See the sheet](/tmp/streak-rules-sheet-top.png).
+
+```text
+ScreenTime: ** BUILD SUCCEEDED **
+ScreenTime-UIOnly: ** BUILD SUCCEEDED **
+DeviceActivityReportExtension: ** BUILD SUCCEEDED **
+tests: ** TEST SUCCEEDED ** | xcresult: 1677 passed, 0 failed, 0 skipped (total 1677)
+```
+
+Alternate streak-state previews couldn’t be verified because the simulator fixture stayed unchanged.
+
+YOU
+
+what's a one short sentence I can do to commit everything we worked on and still knwo what we worked on?
+
+CODEX
+
+Add streak tracking and rules, vacation mode, and repeatable Clean badges.

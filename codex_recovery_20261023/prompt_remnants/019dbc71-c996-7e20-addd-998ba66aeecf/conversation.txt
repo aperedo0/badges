@@ -1,0 +1,156 @@
+Audit current window changes
+
+Conversation ID: 019dbc71-c996-7e20-addd-998ba66aeecf
+Working folder: /Users/antonioperedo/Desktop/screen_time
+
+Only prompt remnants survived in the sources checked.
+No Codex replies were found for this conversation.
+
+OPENING PROMPT FROM THE HISTORY INDEX
+
+I want a fresh, independent health check of everything implemented in this current window.
+
+Do not trust prior conclusions in this window.
+Do not assume the implementation is correct because it compiles or because earlier checks were positive.
+Approach this like a skeptical senior engineer doing a pre-merge audit on a risky feature.
+
+Your task:
+Review every code change you have made in this window and evaluate it for:
+1. correctness
+2. hidden bugs
+3. edge cases
+4. state consistency
+5. rollback safety
+6. idempotency
+7. scalability
+8. performance
+9. maintainability
+10. best practices
+11. architectural fit with the existing codebase
+12. test coverage gaps
+
+Context:
+This is not just a style pass. I want a real health check.
+I want you to actively try to break the implementation mentally.
+Assume there may still be trust-breaking bugs even if the happy path works.
+
+What I want you to do:
+
+First, identify the exact files and functions changed in this window.
+
+Then audit the implementation from these angles:
+
+A. Correctness and logic
+Check whether the code actually does what it claims in all realistic flows, not just the intended happy path.
+Look for:
+- wrong assumptions
+- incomplete condition handling
+- missed branches
+- off by one or time boundary issues
+- overnight or cross-day logic bugs
+- duplicate creation or duplicate processing
+- missed cleanup
+- premature finalization
+- stale state
+- incorrect reconciliation logic
+- mismatch between in-memory state and persisted state
+- mismatch between schedule truth and session truth
+
+B. Failure handling and rollback safety
+Look for places where partial failure can leave the system corrupted or inconsistent.
+Check whether writes are transactional enough for the current architecture.
+Check whether rollback paths restore every mutated artifact, not just some of them.
+Check whether exceptions or sync failures can leave the app in a half-applied state.
+
+C. Reentrancy and idempotency
+Assume restore, reconciliation, start, end, save, delete, and sync flows may run more than once.
+Look for:
+- duplicate inserts
+- duplicate finalization
+- repeated reconciliation drift
+- race-prone behavior
+- operations that are safe once but unsafe twice
+
+D. Scalability and performance
+Even if the app is small today, identify anything that will become problematic as schedules and session history grow.
+Look for:
+- repeated full scans
+- repeated file reads and writes
+- quadratic behavior
+- unnecessary recomputation
+- expensive work on app launch or restore
+- tight coupling that will hurt Phase 3 or future reporting features
+
+E. Best practices and code quality
+Check for:
+- overly fragile logic
+- helpers that are doing too much
+- naming that hides risk
+- poor separation of concerns
+- logic duplicated across files
+- dangerous hidden assumptions
+- code that is technically working but built in a brittle way
+
+F. Tests
+Identify what is well covered, what is missing, and what absolutely needs tests before further work.
+Focus on tests that protect trust, especially around time boundaries, rollback, repeated reconciliation, and persistence consistency.
+
+Important instructions:
+- Be harsh and specific
+- Do not give me fake reassurance
+- Do not just list generic best practices
+- Only call something “good” if you actually verified it through code inspection
+- Distinguish between confirmed bugs, likely bugs, and weaker concerns
+- If you are uncertain, say exactly why
+- If something depends on assumptions, state the assumptions explicitly
+- Prioritize issues that can corrupt user trust or analytics truth
+
+Output format:
+
+SECTION 1: OVERALL HEALTH
+Give a blunt verdict such as:
+- healthy
+- mostly solid with some risks
+- risky, fix before moving on
+- not trustworthy yet
+
+SECTION 2: WHAT YOU REVIEWED
+List the exact files and functions changed in this window.
+
+SECTION 3: CONFIRMED GOOD
+List only the parts you actually verified are solid.
+
+SECTION 4: CONFIRMED BUGS
+For each one include:
+- severity
+- file
+- function or symbol
+- exact bug
+- why it matters
+- real-world trigger
+- whether it blocks moving forward
+
+SECTION 5: LIKELY BUGS OR RISKY AREAS
+Same format, but clearly mark them as not fully proven.
+
+SECTION 6: SCALABILITY / PERFORMANCE CONCERNS
+Focus on what could hurt as data grows or restore runs repeatedly.
+
+SECTION 7: BEST PRACTICE / DESIGN CONCERNS
+Only meaningful ones, not fluff.
+
+SECTION 8: TEST GAPS
+List the highest-value missing tests.
+
+SECTION 9: GO / NO-GO
+Should we trust this enough to build on top of it right now?
+Answer yes or no and defend it.
+
+SECTION 10: MINIMUM FIX LIST
+Give only the smallest set of changes required before moving on.
+
+Extra requirement:
+At the end, give me a short “If I only read 5 lines” summary with the most important truth.
+
+Do the review based on the actual code in this window, not memory.
+If needed, inspect surrounding code outside the changed lines so you can judge the implementation in context.

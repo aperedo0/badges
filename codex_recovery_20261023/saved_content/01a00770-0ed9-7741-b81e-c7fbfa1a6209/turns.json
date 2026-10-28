@@ -1,0 +1,18 @@
+[
+  {
+    "thread_id": "01a00770-0ed9-7741-b81e-c7fbfa1a6209",
+    "turn_id": "01a00770-2a0c-7d61-b5f5-1f590996bd5a",
+    "rollout_ordinal": 1,
+    "status": "failed",
+    "error_json": "{\"message\":\"You've hit your usage limit. Upgrade to Pro (https://chatgpt.com/explore/pro), visit https://chatgpt.com/codex/settings/usage to purchase more credits or try again at Aug 19th, 2026 9:15 PM.\",\"codexErrorInfo\":\"usageLimitExceeded\",\"additionalDetails\":null}",
+    "started_at": 1786831186,
+    "completed_at": 1786831187,
+    "duration_ms": 566,
+    "first_user_item_id": "01a00770-2b44-7fc2-9fd5-67f781d630bb",
+    "final_agent_item_id": null,
+    "rollout_byte_offset": 18602,
+    "rollout_end_ordinal": 11,
+    "rollout_end_byte_offset": 91097,
+    "root_turn_id": null
+  }
+]

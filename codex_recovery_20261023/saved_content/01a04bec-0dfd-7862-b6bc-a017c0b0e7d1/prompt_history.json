@@ -1,0 +1,327 @@
+[
+  {
+    "session_id": "01a04bec-0dfd-7862-b6bc-a017c0b0e7d1",
+    "ts": 1787980197,
+    "text": "this repo has a plan, the plan is not perfect. make the first part of the plan perfect, the first thing there is to execute, then tell me when it is ready to execute. and ask any questions you may have before starting to plan"
+  },
+  {
+    "session_id": "01a04bec-0dfd-7862-b6bc-a017c0b0e7d1",
+    "ts": 1787980655,
+    "text": "1, yes, 2, I believe that is already in the plan somewhere I do have an ebay developer account. 4, whatever you recommend. 5, yes"
+  },
+  {
+    "session_id": "01a04bec-0dfd-7862-b6bc-a017c0b0e7d1",
+    "ts": 1787981096,
+    "text": "Yes plan with that"
+  },
+  {
+    "session_id": "01a04bec-0dfd-7862-b6bc-a017c0b0e7d1",
+    "ts": 1788069931,
+    "text": "continue"
+  },
+  {
+    "session_id": "01a04bec-0dfd-7862-b6bc-a017c0b0e7d1",
+    "ts": 1788073234,
+    "text": "Yes, go with what you recommend"
+  },
+  {
+    "session_id": "01a04bec-0dfd-7862-b6bc-a017c0b0e7d1",
+    "ts": 1788155246,
+    "text": "execute it"
+  },
+  {
+    "session_id": "01a04bec-0dfd-7862-b6bc-a017c0b0e7d1",
+    "ts": 1788202493,
+    "text": "continue"
+  },
+  {
+    "session_id": "01a04bec-0dfd-7862-b6bc-a017c0b0e7d1",
+    "ts": 1788236820,
+    "text": "authorize one extra repair/review round"
+  },
+  {
+    "session_id": "01a04bec-0dfd-7862-b6bc-a017c0b0e7d1",
+    "ts": 1788239810,
+    "text": "can I just commit with 'wave 1 done\"?"
+  },
+  {
+    "session_id": "01a04bec-0dfd-7862-b6bc-a017c0b0e7d1",
+    "ts": 1788239964,
+    "text": "has wave 2 been audited and fully ready for deployment?"
+  },
+  {
+    "session_id": "01a04bec-0dfd-7862-b6bc-a017c0b0e7d1",
+    "ts": 1788240020,
+    "text": "what do you mean by enter secrets only through the\n  local harness ?"
+  },
+  {
+    "session_id": "01a04bec-0dfd-7862-b6bc-a017c0b0e7d1",
+    "ts": 1788240151,
+    "text": "where do I get this information and what commands do I run?"
+  },
+  {
+    "session_id": "01a04bec-0dfd-7862-b6bc-a017c0b0e7d1",
+    "ts": 1788241447,
+    "text": "do I get an oauth application token? short answer"
+  },
+  {
+    "session_id": "01a04bec-0dfd-7862-b6bc-a017c0b0e7d1",
+    "ts": 1788241535,
+    "text": "I am not sure the link you gave me gets me the runame"
+  },
+  {
+    "session_id": "01a04bec-0dfd-7862-b6bc-a017c0b0e7d1",
+    "ts": 1788241601,
+    "text": "where do I click here? User Tokens (eBay Sign-In)\nebay-listings-test\n\nEnvironment:\n\nSandbox\n\nProduction\n\nebay-listings-test\nApp ID / Client ID: \nAntonioP-ebaylist-SBX-b449058ed-efd3595c\n\nGet OAuth Application Token\n|\n\nOAuth Scopes\nUser Tokens (eBay Sign-In)\nAlerts & Notifications\nGet a User Token Here\nGet a token for an eBay Sandbox user. Learn more\n\n\nAuth'n'Auth\n\nOAuth (new security)\n\nSign in to Sandbox\nRevoke a Token\nRegister a new Sandbox user\nLearn more\n\nUsers need to login to eBay to get OAuth tokens. Get a token quickly here if you have an eBay member login. If your app supports multiple users, use the form below to create a branded eBay sign-in and consent form on eBay, so that you can redirect your users to it to login.\n\nLearn more about getting tokens\nGet a Token from eBay via Your Application\nConfigure OAuth sign-in settings for your application. Learn more\n\nYour eBay Sign-in Settings\nAdd eBay Redirect URL\n\nYou have no Redirect URLs. Click here to add one.\n\neBay for Developers.\nCommunity Forum\nTechnical Support\nAPIs\nFAQs\nCopyright 1999\u20142026 eBay Inc. All rights reserved.\n\nAPI License Agreement\nUser agreement"
+  },
+  {
+    "session_id": "01a04bec-0dfd-7862-b6bc-a017c0b0e7d1",
+    "ts": 1788241775,
+    "text": "what from here? Get OAuth Application Token\n|\n\nOAuth Scopes\nUser Tokens (eBay Sign-In)\nAlerts & Notifications\nGet a User Token Here\nGet a token for an eBay Sandbox user. Learn more\n\n\nAuth'n'Auth\n\nOAuth (new security)\n\nSign in to Sandbox\nRevoke a Token\nRegister a new Sandbox user\nLearn more\n\nUsers need to login to eBay to get OAuth tokens. Get a token quickly here if you have an eBay member login. If your app supports multiple users, use the form below to create a branded eBay sign-in and consent form on eBay, so that you can redirect your users to it to login.\n\nLearn more about getting tokens\nGet a Token from eBay via Your Application\nConfigure OAuth sign-in settings for your application. Learn more\n\nYour eBay Sign-in Settings\nAdd eBay Redirect URL\n\nRuName (eBay Redirect URL name)\tDisplay Title\tOAuth Enabled\t\nAntonio_Peredo-AntonioP-ebayli-zixesyrn\t\u2014\t\t\nYour branded eBay Sandbox Sign In (Auth'n'auth)\nhttps://signin.sandbox.ebay.c...zixesyrn&SessID=<SESSION_ID>\n\nSee all\nYour branded eBay Sandbox Sign In (OAuth)\nhttps://auth.sandbox.ebay.com...uth%2Fscope%2Fsell.edelivery\n\nSee all\nSelect OAuth Scopes\nChoose which API scopes to include in your OAuth authorization request.\n\nDisplay Title\nYour App Name\nYour privacy policy URL\nhttps://\nURLs must be secure (https://) and should not be eBay's Privacy Policy URL.\n\nYour auth accepted URL\nhttps://signin.ebay.com/ws/eBaySAPI.dll?Third\nYour auth declined URL\nhttps://signin.ebay.com/ws/eBaySAPI.dll?Third\nIf you leave these fields blank, the eBay default accept and reject pages will be used.\n\nYour eBay Sign-in Branding\nYour Logo Library:\n\nClick on a thumbnail to select logo from the library or \"+\" to add a new one from your disk.\n\n\nAdd Image\n\nEnable Application Branding\n\nAuth'n'Auth\n\nOAuth (new security)\n\nReview User Consent page\nReview and Grant Application Access: <Display Title Here> (ebay-listings-test)\nReady to use <Display Title Here> (ebay-listings-test) ? Great! To share info about your eBay account and let <Display Title Here> (ebay-listings-test) act on your behalf, we need your consent first. Don't worry: We won't give the application your eBay password.\n\nPermissions\nView public data from eBay\nView your order details\nPurchase eBay items off eBay\nView your eBay marketing activities, such as ad campaigns and listing promotions\nView and manage your eBay marketing activities, such as ad campaigns and listing promotions\nView your inventory and offers\nView and manage your inventory and offers\nView your account settings\nView and manage your account settings\nView your order fulfillments\nView and manage your order fulfillments\nView your selling analytics data, such as performance reports\nThis scope would allow signed in users read only access to marketplace insights.\nThis scope would allow signed in user to read catalog data.\nThis scope would allow signed in user to access shopping carts\nView and manage bidding activities for auctions\nView a user's basic information, such as username or business account details, from their eBay member account\nView a user's personal email information from their eBay member account\nView a user's personal telephone information from their eBay member account\nView a user's personal address information from their eBay member account\nView a user's first and last name from their eBay member account\nView a user's eBay member account status\nView and manage your payment and order information to display this information to you and allow you to initiate refunds using the third party application\nView and manage disputes and related details (including payment and order information).\nView and manage your item drafts.\nView and manage your item information.\nView and manage your reputation data, such as feedback.\nView your reputation data, such as feedback.\nView and manage your event notification subscriptions\nView your event notification subscriptions\nView and manage eBay stores\nView eBay stores\nAllows access to APIs that are related to eBay's Verified Rights Owner (VeRO) program.\nEnables applications to manage and enhance inventory listings through the Inventory Mapping Public API.\nAllows access to eBay Message APIs.\nAllows access to Feedback APIs.\nView and manage shipping information\nAllows access to eDelivery International Shipping APIs.\nTerms of Service and Privacy Policy\nPlease be sure to read the <Display Title Here> (ebay-listings-test) terms of service and privacy policy , because these are the terms and policy that will apply when you use this application.\n\nAgree and Continue\nNot now\nDelete\nClone\nRevert to Saved\nSave\nYou have to save your new settings to test them.\n\neBay for Developers.\nCommunity Forum\nTechnical Support\nAPIs\nFAQs\nCopyright 1999\u20142026 eBay Inc. All rights reserved.\n\nAPI License Agreement\nUser agreement\nPrivacy policy"
+  },
+  {
+    "session_id": "01a04bec-0dfd-7862-b6bc-a017c0b0e7d1",
+    "ts": 1788241851,
+    "text": "what do I select here api_scope\n\napi_scope/buy.order.readonly\n\napi_scope/buy.guest.order\n\napi_scope/sell.marketing.readonly\n\napi_scope/sell.marketing\n\napi_scope/sell.inventory.readonly\n\napi_scope/sell.inventory\n\napi_scope/sell.account.readonly\n\napi_scope/sell.account\n\napi_scope/sell.fulfillment.readonly\n\napi_scope/sell.fulfillment\n\napi_scope/sell.analytics.readonly\n\napi_scope/sell.marketplace.insights.readonly\n\napi_scope/commerce.catalog.readonly\n\napi_scope/buy.shopping.cart\n\napi_scope/buy.offer.auction\n\napi_scope/commerce.identity.readonly\n\napi_scope/commerce.identity.email.readonly\n\napi_scope/commerce.identity.phone.readonly\n\napi_scope/commerce.identity.address.readonly\n\napi_scope/commerce.identity.name.readonly\n\napi_scope/commerce.identity.status.readonly\n\napi_scope/sell.finances\n\napi_scope/sell.payment.dispute\n\napi_scope/sell.item.draft\n\napi_scope/sell.item\n\napi_scope/sell.reputation\n\napi_scope/sell.reputation.readonly\n\napi_scope/commerce.notification.subscription\n\napi_scope/commerce.notification.subscription.readonly\n\napi_scope/sell.stores\n\napi_scope/sell.stores.readonly\n\napi_scope/commerce.vero\n\napi_scope/sell.inventory.mapping\n\napi_scope/commerce.message\n\napi_scope/commerce.feedback\n\napi_scope/commerce.shipping\n\nscope/sell.edelivery\nCancel"
+  },
+  {
+    "session_id": "01a04bec-0dfd-7862-b6bc-a017c0b0e7d1",
+    "ts": 1788242228,
+    "text": "ok now give me the rest of the instructions starting from sandbox seller"
+  },
+  {
+    "session_id": "01a04bec-0dfd-7862-b6bc-a017c0b0e7d1",
+    "ts": 1788242748,
+    "text": "on number 2 what do I select here? Welcome to Developer Sandbox\nThe Sandbox allows you to test applications developed with the eBay API in a simulated environment. Find out more about the eBay Developers Program.\n\nGetting started\nCreate a Sandbox User\nCreate a User Token\nTest My API Requests\nCheck My API Call Volume\nResources\nAPI Site Status\nSandbox Supported / Unsupported Features\nDeveloper Forums\nDocumentation Center\nKnowledge Base\nLive Help\nSandbox sites\nAustralia\nAustria\nBelgium-FR\nBelgium-NL\nCanada\nFrance\nGermany\nItaly\nNetherlands\nSpain\nSwitzerland\nUnited Kingdom\nUnited States"
+  },
+  {
+    "session_id": "01a04bec-0dfd-7862-b6bc-a017c0b0e7d1",
+    "ts": 1788242777,
+    "text": "takes me back to the same page"
+  },
+  {
+    "session_id": "01a04bec-0dfd-7862-b6bc-a017c0b0e7d1",
+    "ts": 1788243434,
+    "text": "why do I need production keys at this moment? and can I skip that and the rest of the instructions from there?"
+  },
+  {
+    "session_id": "01a04bec-0dfd-7862-b6bc-a017c0b0e7d1",
+    "ts": 1788243539,
+    "text": "so everything I got for sandbox, get the same for production, the keys? can't I complete wave 2 with sandbox and put in production keys at the end?"
+  },
+  {
+    "session_id": "01a04bec-0dfd-7862-b6bc-a017c0b0e7d1",
+    "ts": 1788243583,
+    "text": "can I just give yo umy sandbox keys and you do what you need to with them for wave 2?"
+  },
+  {
+    "session_id": "01a04bec-0dfd-7862-b6bc-a017c0b0e7d1",
+    "ts": 1788243998,
+    "text": "Looks like the server is down on ebays side, complete wave 2 and then at the end I will input what I need to, to finish wave 2"
+  },
+  {
+    "session_id": "01a04bec-0dfd-7862-b6bc-a017c0b0e7d1",
+    "ts": 1788246608,
+    "text": "give me the commands to complete wave 2"
+  },
+  {
+    "session_id": "01a04bec-0dfd-7862-b6bc-a017c0b0e7d1",
+    "ts": 1788246688,
+    "text": "where do I find my sandbox item id?"
+  },
+  {
+    "session_id": "01a04bec-0dfd-7862-b6bc-a017c0b0e7d1",
+    "ts": 1788247407,
+    "text": "I can't do that untl their server is back up huh. can we continue with wave 3 and come back to finishing this when ebay lets me?"
+  },
+  {
+    "session_id": "01a04bec-0dfd-7862-b6bc-a017c0b0e7d1",
+    "ts": 1788296534,
+    "text": "[Image #1] in the sandbox I cannot get past this, multiple days now. well yesterday and today. so what now? go with live testing?"
+  },
+  {
+    "session_id": "01a04bec-0dfd-7862-b6bc-a017c0b0e7d1",
+    "ts": 1788296782,
+    "text": "the images are 905 kb each and already jpg"
+  },
+  {
+    "session_id": "01a04bec-0dfd-7862-b6bc-a017c0b0e7d1",
+    "ts": 1788303202,
+    "text": "same issue"
+  },
+  {
+    "session_id": "01a04bec-0dfd-7862-b6bc-a017c0b0e7d1",
+    "ts": 1788303376,
+    "text": "ok so make this easy for me, wnat do I do, just give you a photo and you set it up?"
+  },
+  {
+    "session_id": "01a04bec-0dfd-7862-b6bc-a017c0b0e7d1",
+    "ts": 1788303483,
+    "text": "[Image #1] [Image #2] here's the front and back, tell me when to do the terminal thing and give me the exact commands"
+  },
+  {
+    "session_id": "01a04bec-0dfd-7862-b6bc-a017c0b0e7d1",
+    "ts": 1788304104,
+    "text": "[Image #1] [Image #2] what the heck is going on, this thing is so buggy, I can't seem to do anything and do anything sandbox related.. do we need the sandbox? what are ways around this stupid this? It is so incredibly buggy"
+  },
+  {
+    "session_id": "01a04bec-0dfd-7862-b6bc-a017c0b0e7d1",
+    "ts": 1788304809,
+    "text": "I didn't get a runame how do I get that, I got client dev and cert id"
+  },
+  {
+    "session_id": "01a04bec-0dfd-7862-b6bc-a017c0b0e7d1",
+    "ts": 1788304903,
+    "text": "not sure what to put for Sign in with the TESTUSER_ Sandbox seller and choose Agree and Continue.\nAfter eBay redirects, paste the COMPLETE final address-bar URL here (hidden): or what page to get that page in"
+  },
+  {
+    "session_id": "01a04bec-0dfd-7862-b6bc-a017c0b0e7d1",
+    "ts": 1788304980,
+    "text": "Open this URL in your browser:\nhttps://auth.sandbox.ebay.com/oauth2/authorize?client_id=AntonioP-ebaylist-SBX-b449058ed-efd3595c&locale=en-US&prompt=login&redirect_uri=Antonio_Peredo-AntonioP-ebayli-zixesyrn&response_type=code&scope=https%3A%2F%2Fapi.ebay.com%2Foauth%2Fapi_scope+https%3A%2F%2Fapi.ebay.com%2Foauth%2Fapi_scope%2Fsell.analytics.readonly&state=423594b7-ec06-450b-8001-27ec6065e86d\n\nSign in with the TESTUSER_ Sandbox seller and choose Agree and Continue.\nAfter eBay redirects, paste the COMPLETE final address-bar URL here (hidden): \n\nStopped: The callback did not come from the expected eBay Sandbox response page.\nantonioperedo@Mac ebay listings enhancement %"
+  },
+  {
+    "session_id": "01a04bec-0dfd-7862-b6bc-a017c0b0e7d1",
+    "ts": 1788305128,
+    "text": "here is what I got redirected to https://auth2.ebay.com/oauth2/ThirdPartyAuthSucessFailure?isAuthSuccessful=true&state=423594b7-ec06-450b-8001-27ec6065e86d&code=v%5E1.1%23i%5E1%23f%5E0%23r%5E1%23p%5E3%23I%5E3%23t%5EUl41XzExOjZFNTdFMzlGQTlBQUE1NjgwNjVCMzJFRTM3RUNCNTQwXzFfMSNFXjEyODQ%3D&expires_in=299"
+  },
+  {
+    "session_id": "01a04bec-0dfd-7862-b6bc-a017c0b0e7d1",
+    "ts": 1788317870,
+    "text": "this is what I type in for runname? TESTUSER_test_user_12345"
+  },
+  {
+    "session_id": "01a04bec-0dfd-7862-b6bc-a017c0b0e7d1",
+    "ts": 1788317947,
+    "text": "same issue Sign in with the TESTUSER_ Sandbox seller and choose Agree and Continue.\nAfter eBay redirects, paste the COMPLETE final address-bar URL here (hidden): \n\nStopped: The OAuth callback state did not match this run.\nantonioperedo@Mac ebay listings enhancement %"
+  },
+  {
+    "session_id": "01a04bec-0dfd-7862-b6bc-a017c0b0e7d1",
+    "ts": 1788318325,
+    "text": "Sign in with the TESTUSER_ Sandbox seller and choose Agree and Continue.\nAfter eBay redirects, paste the COMPLETE final address-bar URL here (hidden): \nSandbox OAuth PASS. The token is held in memory only.\nUploading Emolga front to eBay Sandbox...\nUploading Emolga back to eBay Sandbox...\nValidating the Sandbox listing request...\nValidation PASS. No listing has been created yet.\nWill create: 1 Sandbox listing, fixed price $1.00, quantity 1, category 183454.\nType \"CREATE SANDBOX LISTING\" to continue: CREATE SANDBOX LISTING\n\nSANDBOX LISTING CREATED\nItem ID: 110590464693\nNext command:\ncd \"/Users/antonioperedo/Desktop/ebay listings enhancement\"\nnpm run spike:ebay -- --environment sandbox --item-id 110590464693\nantonioperedo@Mac ebay listings enhancement %"
+  },
+  {
+    "session_id": "01a04bec-0dfd-7862-b6bc-a017c0b0e7d1",
+    "ts": 1788318334,
+    "text": "I want the price to be 1.79 though"
+  },
+  {
+    "session_id": "01a04bec-0dfd-7862-b6bc-a017c0b0e7d1",
+    "ts": 1788318443,
+    "text": "can you set it?"
+  },
+  {
+    "session_id": "01a04bec-0dfd-7862-b6bc-a017c0b0e7d1",
+    "ts": 1788318534,
+    "text": "ok what do we do now?"
+  },
+  {
+    "session_id": "01a04bec-0dfd-7862-b6bc-a017c0b0e7d1",
+    "ts": 1788318818,
+    "text": "so I accidently ran the wrong credentials and now I gotta do it again, when I run it again I get this Checking your system\n\u2714 Preparing to package application\n\u2714 Running packaging hooks\n  \u2714 Running generateAssets hook\n  \u2714 Running prePackage hook\n    \u2714 [plugin-webpack] Preparing webpack bundles\n      \u2714 Preparing native dependencies: 1 / 1 [0.1s]\n      \u2714 Building webpack bundles [3s]\n\u2714 Packaging application\n  \u2714 Packaging for arm64 on darwin [2s]\n\u2714 Running postPackage hook\nPackaged smoke PASS \u2014 schema 1.\nsandbox Client ID: SBX-449058ed94c0-941b-4cc8-bec0-d20d\nsandbox Cert ID: \nsandbox RuName: dsfd\nOAuth navigation left the expected eBay hosts.\nantonioperedo@Mac ebay listings enhancement % npm run spike:ebay -- --environment sandbox --item-id 110590464693\n\n> pokemon-listing-optimizer@0.1.0 spike:ebay\n> node scripts/run-ebay-spike.mjs --environment sandbox --item-id 110590464693\n\n\n> pokemon-listing-optimizer@0.1.0 package\n> npm run package:app && node scripts/smoke-packaged.mjs\n\n\n> pokemon-listing-optimizer@0.1.0 package:app\n> electron-forge package\n\n\u2714 Checking your system\n\u2714 Preparing to package application\n\u2714 Running packaging hooks\n  \u2714 Running generateAssets hook\n  \u2714 Running prePackage hook\n    \u2714 [plugin-webpack] Preparing webpack bundles\n      \u2714 Preparing native dependencies: 1 / 1 [0.2s]\n      \u2714 Building webpack bundles [3s]\n\u2714 Packaging application\n  \u2714 Packaging for arm64 on darwin [2s]\n\u2714 Running postPackage hook\nPackaged smoke PASS \u2014 schema 1.\nOAuth navigation left the expected eBay hosts.\nantonioperedo@Mac ebay listings enhancement %"
+  },
+  {
+    "session_id": "01a04bec-0dfd-7862-b6bc-a017c0b0e7d1",
+    "ts": 1788318994,
+    "text": "Packaged smoke PASS \u2014 schema 1.\nOAuth navigation left the expected eBay hosts.\nantonioperedo@Mac ebay listings enhancement % mv \"/Users/antonioperedo/Library/Application Support/Pokemon Listing Optimizer/pokemon-listing-\n  optimizer.sqlite3\" \"/Users/antonioperedo/Library/Application Support/Pokemon Listing Optimizer/\n  pokemon-listing-optimizer.sqlite3.wrong-credentials-backup\"\nmv: rename /Users/antonioperedo/Library/Application Support/Pokemon Listing Optimizer/pokemon-listing-\n  optimizer.sqlite3 to /Users/antonioperedo/Library/Application Support/Pokemon Listing Optimizer/\n  pokemon-listing-optimizer.sqlite3.wrong-credentials-backup: No such file or directory\nantonioperedo@Mac ebay listings enhancement % npm run spike:ebay -- --environment sandbox --item-id 110590464693\n\n> pokemon-listing-optimizer@0.1.0 spike:ebay\n> node scripts/run-ebay-spike.mjs --environment sandbox --item-id 110590464693\n\n\n> pokemon-listing-optimizer@0.1.0 package\n> npm run package:app && node scripts/smoke-packaged.mjs\n\n\n> pokemon-listing-optimizer@0.1.0 package:app\n> electron-forge package\n\n\u2714 Checking your system\n\u2714 Preparing to package application\n\u2714 Running packaging hooks\n  \u2714 Running generateAssets hook\n  \u2714 Running prePackage hook\n    \u2714 [plugin-webpack] Preparing webpack bundles\n      \u2714 Preparing native dependencies: 1 / 1 [0.1s]\n      \u2714 Building webpack bundles [3s]\n\u2714 Packaging application\n  \u2714 Packaging for arm64 on darwin [2s]\n\u2714 Running postPackage hook\nPackaged smoke PASS \u2014 schema 1.\nOAuth navigation left the expected eBay hosts.\nantonioperedo@Mac ebay listings enhancement %"
+  },
+  {
+    "session_id": "01a04bec-0dfd-7862-b6bc-a017c0b0e7d1",
+    "ts": 1788319092,
+    "text": "reset it again"
+  },
+  {
+    "session_id": "01a04bec-0dfd-7862-b6bc-a017c0b0e7d1",
+    "ts": 1788319206,
+    "text": "sandbox Client ID: AntonioP-ebaylist-SBX-b449058ed-efd3595c\nsandbox Cert ID: \nsandbox RuName: Antonio_Peredo-AntonioP-ebayli-zixesyrn\nOAuth navigation left the expected eBay hosts. did it work? cert id kept not showing"
+  },
+  {
+    "session_id": "01a04bec-0dfd-7862-b6bc-a017c0b0e7d1",
+    "ts": 1788319279,
+    "text": "antonioperedo@Mac ebay listings enhancement % npm run spike:ebay -- --environment sandbox --item-id 110590464693\n\n> pokemon-listing-optimizer@0.1.0 spike:ebay\n> node scripts/run-ebay-spike.mjs --environment sandbox --item-id 110590464693\n\n\n> pokemon-listing-optimizer@0.1.0 package\n> npm run package:app && node scripts/smoke-packaged.mjs\n\n\n> pokemon-listing-optimizer@0.1.0 package:app\n> electron-forge package\n\n\u2714 Checking your system\n\u2714 Preparing to package application\n\u2714 Running packaging hooks\n  \u2714 Running generateAssets hook\n  \u2714 Running prePackage hook\n    \u2714 [plugin-webpack] Preparing webpack bundles\n      \u2714 Preparing native dependencies: 1 / 1 [0.1s]\n      \u2714 Building webpack bundles [3s]\n\u2714 Packaging application\n  \u2714 Packaging for arm64 on darwin [2s]\n\u2714 Running postPackage hook\nPackaged smoke PASS \u2014 schema 1.\nOAuth navigation left the expected eBay hosts at https://auth2.sandbox.ebay.com/oauth2/authorize.\nantonioperedo@Mac ebay listings enhancement %"
+  },
+  {
+    "session_id": "01a04bec-0dfd-7862-b6bc-a017c0b0e7d1",
+    "ts": 1788324278,
+    "text": "do I sign in with my actual account or with my test user one?"
+  },
+  {
+    "session_id": "01a04bec-0dfd-7862-b6bc-a017c0b0e7d1",
+    "ts": 1788324371,
+    "text": "Packaged smoke PASS \u2014 schema 1.\nhttps://auth.ebay.com/oauth2/ThirdPartyAuthSucessFailure\nantonioperedo@Mac ebay listings enhancement % what now?"
+  },
+  {
+    "session_id": "01a04bec-0dfd-7862-b6bc-a017c0b0e7d1",
+    "ts": 1788334389,
+    "text": "ok now what?"
+  },
+  {
+    "session_id": "01a04bec-0dfd-7862-b6bc-a017c0b0e7d1",
+    "ts": 1788334603,
+    "text": "All I see is this after > pokemon-listing-optimizer@0.1.0 package:app\n> electron-forge package\n\n\u2714 Checking your system\n\u2714 Preparing to package application\n\u2714 Running packaging hooks\n  \u2714 Running generateAssets hook\n  \u2714 Running prePackage hook\n    \u2714 [plugin-webpack] Preparing webpack bundles\n      \u2714 Preparing native dependencies: 1 / 1 [0.1s]\n      \u2714 Building webpack bundles [3s]\n\u2714 Packaging application\n  \u2714 Packaging for arm64 on darwin [2s]\n\u2714 Running postPackage hook\nPackaged smoke PASS \u2014 schema 1."
+  },
+  {
+    "session_id": "01a04bec-0dfd-7862-b6bc-a017c0b0e7d1",
+    "ts": 1788397073,
+    "text": "token usage has been reset, continue"
+  },
+  {
+    "session_id": "01a04bec-0dfd-7862-b6bc-a017c0b0e7d1",
+    "ts": 1788397265,
+    "text": "I believe I did sign in"
+  },
+  {
+    "session_id": "01a04bec-0dfd-7862-b6bc-a017c0b0e7d1",
+    "ts": 1788397384,
+    "text": "what is the point of the sandbox anyways? and I am unsure, can you open it up again so I can go through it"
+  },
+  {
+    "session_id": "01a04bec-0dfd-7862-b6bc-a017c0b0e7d1",
+    "ts": 1788397491,
+    "text": "it just closed"
+  },
+  {
+    "session_id": "01a04bec-0dfd-7862-b6bc-a017c0b0e7d1",
+    "ts": 1788399297,
+    "text": "Ok I signed in"
+  },
+  {
+    "session_id": "01a04bec-0dfd-7862-b6bc-a017c0b0e7d1",
+    "ts": 1788399830,
+    "text": "so like this? antonioperedo@Antonios-MacBook-Air ebay listings enhancement % TRADING MODEL\nzsh: command not found: TRADING\nantonioperedo@Antonios-MacBook-Air ebay listings enhancement %"
+  },
+  {
+    "session_id": "01a04bec-0dfd-7862-b6bc-a017c0b0e7d1",
+    "ts": 1788399968,
+    "text": "I sign in, then the window closes, no agree to continue"
+  },
+  {
+    "session_id": "01a04bec-0dfd-7862-b6bc-a017c0b0e7d1",
+    "ts": 1788400041,
+    "text": "yes"
+  },
+  {
+    "session_id": "01a04bec-0dfd-7862-b6bc-a017c0b0e7d1",
+    "ts": 1788400203,
+    "text": "> pokemon-listing-optimizer@0.1.0 package:app\n> electron-forge package\n\n\u2714 Checking your system\n\u2714 Preparing to package application\n\u2714 Running packaging hooks\n  \u2714 Running generateAssets hook\n  \u2714 Running prePackage hook\n    \u2714 [plugin-webpack] Preparing webpack bundles\n      \u2714 Preparing native dependencies: 1 / 1 [1s]\n      \u2714 Building webpack bundles [9s]\n\u2714 Packaging application\n  \u2714 Packaging for arm64 on darwin [6s]\n\u2714 Running postPackage hook\nPackaged smoke PASS \u2014 schema 1.\nsandbox Client ID: AntonioP-ebaylist-SBX-b449058ed-efd3595c\nsandbox Cert ID: \nsandbox RuName: Antonio_Peredo-AntonioP-ebayli-zixesyrn\nGetItem response is missing ListingDetails.ListingStatus.\nantonioperedo@Antonios-MacBook-Air ebay listings enhancement %"
+  },
+  {
+    "session_id": "01a04bec-0dfd-7862-b6bc-a017c0b0e7d1",
+    "ts": 1788415088,
+    "text": "token usage is back, continue where you left off"
+  },
+  {
+    "session_id": "01a04bec-0dfd-7862-b6bc-a017c0b0e7d1",
+    "ts": 1788416619,
+    "text": "ok maybe I took too long where do I input what again?"
+  },
+  {
+    "session_id": "01a04bec-0dfd-7862-b6bc-a017c0b0e7d1",
+    "ts": 1788416746,
+    "text": "ok I got this what now \u2714 Checking your system\n\u2714 Preparing to package application\n\u2714 Running packaging hooks\n  \u2714 Running generateAssets hook\n  \u2714 Running prePackage hook\n    \u2714 [plugin-webpack] Preparing webpack bundles\n      \u2714 Preparing native dependencies: 1 / 1 [0.1s]\n      \u2714 Building webpack bundles [3s]\n\u2714 Packaging application\n  \u2714 Packaging for arm64 on darwin [2s]\n\u2714 Running postPackage hook\nPackaged smoke PASS \u2014 schema 1.\nConfirm this listing was created through the eBay UI or Trading model by typing \"TRADING MODEL\": TRADING MODEL\nsandbox item 110590464693; 1 listing; 2 temporary fields; at most 2 Revise calls (apply and restore).\nFields: Description, PLO Integration Marker.\nType \"SANDBOX 1 LISTING 2 FIELDS\": SANDBOX 1 LISTING 2 FIELDS\nType item ID 110590464693: 110590464693\nTrading ReviseFixedPriceItem returned Ack=Warning.\nantonioperedo@Antonios-MacBook-Air ebay listings enhancement %"
+  },
+  {
+    "session_id": "01a04bec-0dfd-7862-b6bc-a017c0b0e7d1",
+    "ts": 1788416937,
+    "text": "I got this \n> pokemon-listing-optimizer@0.1.0 package:app\n> electron-forge package\n\n\u2714 Checking your system\n\u2714 Preparing to package application\n\u2714 Running packaging hooks\n  \u2714 Running generateAssets hook\n  \u2714 Running prePackage hook\n    \u2714 [plugin-webpack] Preparing webpack bundles\n      \u2714 Preparing native dependencies: 1 / 1 [0.2s]\n      \u2714 Building webpack bundles [3s]\n\u2714 Packaging application\n  \u2714 Packaging for arm64 on darwin [2s]\n\u2714 Running postPackage hook\nPackaged smoke PASS \u2014 schema 1.\nProtected fields DRIFT during recovery.\nantonioperedo@Antonios-MacBook-Air ebay listings enhancement %"
+  }
+]

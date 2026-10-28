@@ -1,0 +1,27 @@
+lok at my skills, when implementing a small change my current skills do a lot of extra stuff that does not need to be done. At least I don't feel that way, I think the changes can be a lot less. read through and tell me if you agree
+
+Conversation ID: 019f63b1-4652-7bb2-9ff7-f849913d5208
+Working folder: /Users/antonioperedo/Desktop/screen_time
+
+Only prompt remnants survived in the sources checked.
+No Codex replies were found for this conversation.
+
+OPENING PROMPT FROM THE HISTORY INDEX
+
+lok at my skills, when implementing a small change my current skills do a lot of extra stuff that does not need to be done. At least I don't feel that way, I think the changes can be a lot less. read through and tell me if you agree
+
+SAVED TERMINAL PROMPT
+
+lok at my skills, when implementing a small change my current skills do a lot of extra stuff that does not need to be done. At least I don't feel that way, I think the changes can be a lot less. read through and tell me if you agree
+
+SAVED TERMINAL PROMPT
+
+do not change anything, we are just planning
+
+SAVED TERMINAL PROMPT
+
+Ok actually here is what I want, no changes we are just planning. If the change is super duper simple, like changing a variable from false to true, or changing a value form 22 to 44, something super duper simple. I want the skill to just tell me how to do it myself. and I want a very short description of what to do
+
+SAVED TERMINAL PROMPT
+
+ok add that

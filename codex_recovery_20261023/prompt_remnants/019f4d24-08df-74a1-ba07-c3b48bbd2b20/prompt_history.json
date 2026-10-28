@@ -1,0 +1,32 @@
+[
+  {
+    "session_id": "019f4d24-08df-74a1-ba07-c3b48bbd2b20",
+    "ts": 1783708662,
+    "text": "codex keeps asking me for things like"
+  },
+  {
+    "session_id": "019f4d24-08df-74a1-ba07-c3b48bbd2b20",
+    "ts": 1783708691,
+    "text": "codex keeps asking me for things like  Would you like to run the following command?\n \n  Environment: local\n \n  Reason: Allow restarting the simulator app so it opens directly on the Block\n  List tab?\n \n  $ xcrun simctl terminate 66375819-1424-4FE8-A869-1F36910A020C\n  com.antonioperedo.screentime.uidev\n \n\u203a 1. Yes, proceed (y)\n  2. Yes, and don't ask again for commands that start with `xcrun simctl\n     terminate` (p)\n  3. No, and tell Codex what to do differently (esc) is there a way to get this stuff auto approved?"
+  },
+  {
+    "session_id": "019f4d24-08df-74a1-ba07-c3b48bbd2b20",
+    "ts": 1783708813,
+    "text": "this si what I want, I want a chatgpt bot to review the request and decide if it is ok or not   There is also automatic approval review:\n\n  # ~/.codex/config.toml\n  approval_policy = \"on-request\"\n  approvals_reviewer = \"auto_review\""
+  },
+  {
+    "session_id": "019f4d24-08df-74a1-ba07-c3b48bbd2b20",
+    "ts": 1783708907,
+    "text": "did it work and do I need to restart the terminal for it to work?"
+  },
+  {
+    "session_id": "019f4d24-08df-74a1-ba07-c3b48bbd2b20",
+    "ts": 1783709003,
+    "text": "Ok well I have a separate codex run in session, how do I stop it, close it, then reopen aand have it continue?"
+  },
+  {
+    "session_id": "019f4d24-08df-74a1-ba07-c3b48bbd2b20",
+    "ts": 1783713030,
+    "text": "How does the limit for the block get caluclated? is it from when the timer starts of sorts, is it from even before? how does the app deteremine when the time is up and how much time on an app has passed?"
+  }
+]

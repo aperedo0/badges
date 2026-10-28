@@ -1,0 +1,50 @@
+[
+  {
+    "thread_id": "01a0a8d3-5290-7bf0-8f21-fd19e09e0239",
+    "turn_id": "01a0a8d3-e6ec-7483-a1a7-27ddaf43f55c",
+    "rollout_ordinal": 1,
+    "status": "completed",
+    "error_json": null,
+    "started_at": 1789538854,
+    "completed_at": 1789540154,
+    "duration_ms": 1300000,
+    "first_user_item_id": "01a0a8d3-e888-77d3-8989-6031cbbf6a57",
+    "final_agent_item_id": "msg_0ac4471a1ab3799f016aaa3737bfcc87d08ba5750d3a67edeb",
+    "rollout_byte_offset": 22209,
+    "rollout_end_ordinal": 445,
+    "rollout_end_byte_offset": 31483046,
+    "root_turn_id": null
+  },
+  {
+    "thread_id": "01a0a8d3-5290-7bf0-8f21-fd19e09e0239",
+    "turn_id": "01a0a8ee-2df5-7480-b479-8376f59d3182",
+    "rollout_ordinal": 447,
+    "status": "completed",
+    "error_json": null,
+    "started_at": 1789540576,
+    "completed_at": 1789540596,
+    "duration_ms": 20074,
+    "first_user_item_id": "01a0a8ee-2ec0-7930-a9eb-150af58081e6",
+    "final_agent_item_id": "msg_0ac4471a1ab3799f016aaa38f2de0887d0bf3fac3230996c6f",
+    "rollout_byte_offset": 31485767,
+    "rollout_end_ordinal": 457,
+    "rollout_end_byte_offset": 31498942,
+    "root_turn_id": null
+  },
+  {
+    "thread_id": "01a0a8d3-5290-7bf0-8f21-fd19e09e0239",
+    "turn_id": "01a0a8f0-e7a6-71a1-be5f-1a977a19303e",
+    "rollout_ordinal": 459,
+    "status": "failed",
+    "error_json": "{\"message\":\"You've hit your usage limit. Upgrade to Pro (https://chatgpt.com/explore/pro), visit https://chatgpt.com/codex/settings/usage to purchase more credits or try again at Sep 16th, 2026 4:07 AM.\",\"codexErrorInfo\":\"usageLimitExceeded\",\"additionalDetails\":null,\"misalignment\":null}",
+    "started_at": 1789540755,
+    "completed_at": 1789541622,
+    "duration_ms": 867073,
+    "first_user_item_id": "01a0a8f0-e88d-7132-83d1-15ff75d23e1e",
+    "final_agent_item_id": null,
+    "rollout_byte_offset": 31501663,
+    "rollout_end_ordinal": 649,
+    "rollout_end_byte_offset": 34220911,
+    "root_turn_id": null
+  }
+]

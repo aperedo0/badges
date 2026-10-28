@@ -1,0 +1,41 @@
+--- a/ScreenTime/Sources/App/Features/Badges/BadgeHeroCard.swift
++++ b/ScreenTime/Sources/App/Features/Badges/BadgeHeroCard.swift
+@@ -854,6 +854,7 @@
+     case lightningCompass, zenBalance
+     case torchSunburst
+     case crimsonShield
++    case emeraldArcher
+     var id: String { rawValue }
+     var displayName: String {
+         switch self {
+@@ -868,6 +869,7 @@
+         case .zenBalance: return "Zen Balance"
+         case .torchSunburst: return "Torch Sunburst"
+         case .crimsonShield: return "Crimson Shield"
++        case .emeraldArcher: return "Emerald Archer"
+         }
+     }
+     var datasetName: String {
+@@ -883,6 +885,7 @@
+         case .zenBalance: return "Badge3DPreviewZenBalance"
+         case .torchSunburst: return "Badge3DPreviewTorchSunburst"
+         case .crimsonShield: return "Badge3DPreviewCrimsonShield"
++        case .emeraldArcher: return "Badge3DPreviewEmeraldArcher"
+         }
+     }
+ }
+@@ -1441,7 +1444,13 @@
+     }
+ 
+     private func fallBackIfNoFrameDrawnInTime(markReady: @MainActor () -> Void) async {
+-        try? await Task.sleep(nanoseconds: UInt64(Self.firstFrameDeadlineSeconds * 1_000_000_000))
++        #if DEBUG
++        let deadline = modelDatasetName == CoinBadgePreview.emeraldArcher.datasetName
++            ? 90.0 : Self.firstFrameDeadlineSeconds
++        #else
++        let deadline = Self.firstFrameDeadlineSeconds
++        #endif
++        try? await Task.sleep(nanoseconds: UInt64(deadline * 1_000_000_000))
+         // A cancelled clock (the slot was torn down by a tier promotion, a mode
+         // switch or a tab switch) must never fall back: the cancelled sleep
+         // returns early, and without this it would blame a coin that was simply

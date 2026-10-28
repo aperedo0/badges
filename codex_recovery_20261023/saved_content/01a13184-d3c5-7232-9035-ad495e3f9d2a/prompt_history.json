@@ -1,0 +1,12 @@
+[
+  {
+    "session_id": "01a13184-d3c5-7232-9035-ad495e3f9d2a",
+    "ts": 1791832232,
+    "text": "ok here are some changes I want to implement. We can do that \"protected for\" give me the copy is would say. lets merge the two\n  tabs, and in the activities tab there is currently a up to top 5 things the person did in the past 7 days, lets remove that. ok\n  lets track how often peope correct it. lets change the \"no purpose\" label for activities to \"no label\" and that will be the\n  default. we won't do suggested activites for now.. maybe later."
+  },
+  {
+    "session_id": "01a13184-d3c5-7232-9035-ad495e3f9d2a",
+    "ts": 1791832323,
+    "text": "> For \u201cNo label\u201d as the default, should new sessions and blocks start unlabeled, or should they still inherit an activity you previously chose?\n\nwait stop"
+  }
+]

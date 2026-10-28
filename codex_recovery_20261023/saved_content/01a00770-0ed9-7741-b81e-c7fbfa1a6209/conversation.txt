@@ -1,0 +1,11 @@
+there's a plan inside .agents/plans/2026-08-15-m0-remediation.md can you see it?
+
+Conversation ID: 01a00770-0ed9-7741-b81e-c7fbfa1a6209
+Working folder: /Users/antonioperedo/Desktop/notify
+
+Saved conversation content exported from the Codex history database.
+This export does not establish that every original message or attachment survived.
+
+YOU
+
+there's a plan inside .agents/plans/2026-08-15-m0-remediation.md can you see it?

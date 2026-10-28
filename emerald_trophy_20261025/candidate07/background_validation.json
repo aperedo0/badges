@@ -1,0 +1,9 @@
+{
+  "complete_background_shader_graph": "exact copy of final arrow model",
+  "front_and_back_geometry_normals_UVs": "exact copy of final arrow model",
+  "background_texture_bytes": "exact copy of final arrow model",
+  "rim_and_crest": "unchanged from candidate06",
+  "USD_ARKit_validation": "passed",
+  "bytes": 10711415,
+  "sha256": "55ffe2135d6f4eff3569a5f1332b538b7b27609aa171b92814424f05783e447c"
+}

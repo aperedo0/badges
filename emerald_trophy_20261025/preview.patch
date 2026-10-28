@@ -1,0 +1,233 @@
+--- a/ScreenTime/Sources/App/Features/Badges/Badge3DLiveBadge.swift
++++ b/ScreenTime/Sources/App/Features/Badges/Badge3DLiveBadge.swift
+@@ -34,8 +34,19 @@
+ /// one changed line here. The switch lists every tier and has no `default`, so
+ /// a tier added to the ladder cannot be forgotten: the compiler asks for its
+ /// line.
++
++enum PrivateBadgePreview {
++    nonisolated(unsafe) static var selection = UserDefaults.standard.string(forKey: "CoinBadgePreview") ?? "emeraldTrophy"
++    static let items: [String: String] = ["waterDrop":"Water Drop","tealSands":"Teal Sands","goldenSands":"Golden Sands","sunrisePath":"Sunrise Path","emeraldSprout":"Emerald Sprout","starAscent":"Star Ascent","islandSunset":"Island Sunset","lightningCompass":"Lightning Compass","zenBalance":"Zen Balance","torchSunburst":"Torch Sunburst","crimsonShield":"Crimson Shield","emeraldArcher":"Emerald Archer","emeraldTrophy":"Emerald Trophy"]
++    static var datasetName: String? {
++        guard items[selection] != nil else { return nil }
++        return "Badge3DPreview" + selection.prefix(1).uppercased() + selection.dropFirst()
++    }
++}
++
+ enum Badge3DModels {
+     static func datasetName(for tier: MonthlyTier) -> String? {
++        if tier == .silver, let dataset = PrivateBadgePreview.datasetName { return dataset }
+         switch tier {
+         case .iron: return "Badge3DModelIron"
+         case .silver: return "Badge3DModelSilver"
+@@ -85,6 +96,8 @@
+     /// and a data set belongs to one tier, so the scene finds its tier's look
+     /// from the name instead of every caller passing the tier along.
+     static func look(forDatasetName datasetName: String) -> Badge3DTierLook {
++        if datasetName == "Badge3DPreviewCrimsonShield" { return .neutral }
++        if datasetName.hasPrefix("Badge3DPreview") { return Badge3DTierLook(size: 0.96, lift: 0.56) }
+         let tier = MonthlyTier.allCases.first { self.datasetName(for: $0) == datasetName }
+         return tier.map { look(for: $0) } ?? .neutral
+     }
+@@ -411,7 +424,7 @@
+     /// fallback is decided (and the splash can leave) before
+     /// `LaunchSplashTimeline.hardCap`, which stays the last resort for a slot
+     /// that never reports at all.
+-    private static let firstFrameDeadlineSeconds: Double = 6
++    private static let firstFrameDeadlineSeconds: Double = 30
+ 
+     init(badge: BadgeRef, nextTierToWarm: MonthlyTier?) {
+         self.badge = badge
+@@ -991,6 +1004,7 @@
+         // coin by where its lowest point sits (see `Badge3DStage.pose`).
+         let lowestY = coin.visualBounds(relativeTo: nil).min.y
+         try await restoreBrushedSteel(in: coin)
++        try await restoreShieldFieldBrushing(in: coin)
+         let mirroredCoin = coin.clone(recursive: true)
+         try await mirrorTopToBottom(mirroredCoin)
+         // After the clone and the flip: each copy builds its facet planes
+@@ -1070,6 +1084,33 @@
+     /// Flips every mesh under `entity` top to bottom, for the mirror image
+     /// under the floor. The flip is baked into the mesh data because RealityKit
+     /// lights a model with a negative scale as if its normals pointed inward.
++    private static func restoreShieldFieldBrushing(in entity: Entity) async throws {
++        if var model = entity.components[ModelComponent.self] {
++            var fieldMaterialIndices: Set<Int> = []
++            for (index, material) in model.materials.enumerated()
++            where material.name == "CrimsonShield_BrushedField" {
++                guard var field = material as? PhysicallyBasedMaterial else { continue }
++                field.anisotropyLevel = 0.55
++                field.anisotropyAngle = 0.0
++                model.materials[index] = field
++                fieldMaterialIndices.insert(index)
++            }
++            if !fieldMaterialIndices.isEmpty {
++                let contents = model.mesh.contents
++                let edited = await Task.detached(priority: .userInitiated) {
++                    Badge3DMeshEdits.withShieldFieldTangents(
++                        contents, onPartsUsing: fieldMaterialIndices
++                    )
++                }.value
++                model.mesh = try await MeshResource(from: edited)
++                entity.components.set(model)
++            }
++        }
++        for child in entity.children {
++            try await restoreShieldFieldBrushing(in: child)
++        }
++    }
++
+     private static func mirrorTopToBottom(_ entity: Entity) async throws {
+         if var model = entity.components[ModelComponent.self] {
+             let contents = model.mesh.contents
+--- a/ScreenTime/Sources/App/Features/Badges/Badge3DImagePipeline.swift
++++ b/ScreenTime/Sources/App/Features/Badges/Badge3DImagePipeline.swift
+@@ -750,6 +750,38 @@
+ 
+     /// The direction around the Z axis at `position`, laid flat into the
+     /// surface by dropping its component along `normal`.
++    static func withShieldFieldTangents(
++        _ contents: MeshResource.Contents,
++        onPartsUsing materialIndices: Set<Int>
++    ) -> MeshResource.Contents {
++        editingEveryPart(of: contents) { part in
++            guard materialIndices.contains(part.materialIndex), let normals = part.normals else { return part }
++            var tangents: [SIMD3<Float>] = []
++            var bitangents: [SIMD3<Float>] = []
++            for (position, normal) in zip(part.positions, normals) {
++                let brushDirection = SIMD3<Float>(position.z < 0 ? -0.840 : 0.840, 0.543, 0)
++                let tangent = projectedShieldBrushDirection(brushDirection, normal: normal)
++                tangents.append(tangent)
++                bitangents.append(simd_cross(normal, tangent))
++            }
++            var part = part
++            part.tangents = MeshBuffers.Tangents(tangents)
++            part.bitangents = MeshBuffers.Tangents(bitangents)
++            return part
++        }
++    }
++
++    private static func projectedShieldBrushDirection(
++        _ direction: SIMD3<Float>, normal: SIMD3<Float>
++    ) -> SIMD3<Float> {
++        let surfaceNormal = simd_normalize(normal)
++        let inSurface = direction - simd_dot(direction, surfaceNormal) * surfaceNormal
++        if simd_length(inSurface) > 1e-6 { return simd_normalize(inSurface) }
++        // A face parallel to the brush direction needs another tangent axis.
++        let fallbackAxis = abs(surfaceNormal.z) < 0.9 ? SIMD3<Float>(0, 0, 1) : SIMD3<Float>(1, 0, 0)
++        return simd_normalize(simd_cross(surfaceNormal, fallbackAxis))
++    }
++
+     private static func circumferentialTangent(
+         at position: SIMD3<Float>, normal: SIMD3<Float>
+     ) -> SIMD3<Float> {
+--- a/ScreenTime/Sources/App/Features/Badges/BadgeHeroCard.swift
++++ b/ScreenTime/Sources/App/Features/Badges/BadgeHeroCard.swift
+@@ -89,7 +89,8 @@
+     /// Debug only badge preview: the tier whose badge and name replace the real
+     /// ones while the owner flips through the ladder. It never touches progress,
+     /// and `nil` means the real badge shows.
+-    @State private var previewTier: MonthlyTier?
++    @State private var previewTier: MonthlyTier? = .silver
++    @State private var previewCoin = PrivateBadgePreview.selection
+     #endif
+ 
+     /// A pick Home has applied. `badge` is nil when the pick was Automatic. A
+@@ -246,7 +247,7 @@
+                 // newer badge. The live 3D coin for a tier that has one, its
+                 // flat art on the same stage for every other badge.
+                 Badge3DSlot(badge: homeBadge, nextTierToWarm: nextTierToWarm)
+-                    .id(homeBadge)
++                    .id(Badge3DModels.datasetName(for: homeBadge))
+                     .transition(
+                         reduceMotion
+                             ? .opacity
+@@ -400,25 +401,32 @@
+     /// ladder on the right, under the real progress bar so the layout above
+     /// never moves.
+     private var badgePreviewRow: some View {
+-        let nextPreviewTier = Self.previewTier(after: previewTier)
+-        return HStack(alignment: .center) {
+-            Text("Badge preview")
+-                .foregroundStyle(DS.Colors.textSecondary)
+-                .heroCapsStyle(weight: .semibold)
++        HStack {
++            Text("Badge preview").foregroundStyle(DS.Colors.textSecondary).heroCapsStyle(weight: .semibold)
+             Spacer()
+-            Button {
+-                previewTier = nextPreviewTier
++            Menu {
++                ForEach(PrivateBadgePreview.items.keys.sorted(), id: \.self) { key in
++                    Button(PrivateBadgePreview.items[key] ?? key) {
++                        previewCoin = key
++                        PrivateBadgePreview.selection = key
++                        UserDefaults.standard.set(key, forKey: "CoinBadgePreview")
++                        previewTier = .silver
++                    }
++                }
++                Divider()
++                ForEach(MonthlyTier.allCases, id: \.self) { tier in
++                    Button(tier.displayName) {
++                        previewCoin = ""
++                        PrivateBadgePreview.selection = ""
++                        UserDefaults.standard.set("", forKey: "CoinBadgePreview")
++                        previewTier = tier
++                    }
++                }
+             } label: {
+-                Text("Show \(nextPreviewTier?.displayName ?? "Mine")")
+-                    .foregroundStyle(DS.Colors.accent)
+-                    .heroCapsStyle(weight: .bold)
+-                    .frame(minHeight: Self.linkTouchHeight)
+-                    .contentShape(Rectangle())
++                Text("Choose badge").foregroundStyle(DS.Colors.accent).heroCapsStyle(weight: .bold).frame(minHeight: Self.linkTouchHeight)
+             }
+-            .buttonStyle(.plain)
+-            .accessibilityHint("Shows another badge without changing your progress")
+-        }
+-        .padding(.top, 16)
++            .accessibilityIdentifier("coinPreviewPicker")
++        }.padding(.top, 16)
+     }
+ 
+     /// The next stop in the preview cycle: nothing goes to the first tier,
+@@ -505,7 +513,7 @@
+     /// onto a second line, and shrinks a little if it still does not fit,
+     /// rather than truncating.
+     private func heroTitle(_ text: String) -> some View {
+-        Text(text)
++        Text(PrivateBadgePreview.items[previewCoin] ?? text)
+             .font(.system(size: 30, weight: .heavy))
+             .kerning(-0.8)
+             .foregroundStyle(BadgeHeroPalette.primary)
+--- a/ScreenTime.xcodeproj/project.pbxproj
++++ b/ScreenTime.xcodeproj/project.pbxproj
+@@ -4025,7 +4025,7 @@
+ 					"$(inherited)",
+ 					"@executable_path/Frameworks",
+ 				);
+-				PRODUCT_BUNDLE_IDENTIFIER = com.antonioperedo.screentime.uidev;
++				PRODUCT_BUNDLE_IDENTIFIER = com.antonioperedo.badgestudio.preview;
+ 				PRODUCT_NAME = ScreenTimeUI;
+ 				SDKROOT = iphoneos;
+ 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "UI_ONLY DEBUG $(inherited)";
+@@ -4204,7 +4204,7 @@
+ 					"$(inherited)",
+ 					"@executable_path/Frameworks",
+ 				);
+-				PRODUCT_BUNDLE_IDENTIFIER = com.antonioperedo.screentime.uidev;
++				PRODUCT_BUNDLE_IDENTIFIER = com.antonioperedo.badgestudio.preview;
+ 				PRODUCT_NAME = ScreenTimeUI;
+ 				SDKROOT = iphoneos;
+ 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "UI_ONLY $(inherited)";
+--- a/ScreenTime/SupportingFiles/Info.plist
++++ b/ScreenTime/SupportingFiles/Info.plist
+@@ -5,7 +5,7 @@
+ 	<key>CFBundleDevelopmentRegion</key>
+ 	<string>en</string>
+ 	<key>CFBundleDisplayName</key>
+-	<string>BestSpent</string>
++	<string>Badge Studio</string>
+ 	<key>CFBundleExecutable</key>
+ 	<string>$(EXECUTABLE_NAME)</string>
+ 	<key>CFBundleIdentifier</key>

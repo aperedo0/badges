@@ -1,0 +1,72 @@
+[
+  {
+    "session_id": "019f5418-9c3d-78e2-8b97-c2fc63d094a2",
+    "ts": 1783822516,
+    "text": "so in my app on the home screen when you go to click on see all badges and then or just that you click on all badges there's an animation I like that animation so after you click on seal badges, you go to a badge screen I want the same animation for when a user clicks on all months and achievementson that screen. Also, when they click on achievements, they get taken to a achievements screen, which allows them to be taken to monthly I want the same animation for when somebody clicks on monthly as well. When I first want you to do is plan plan the best way to implement all of this. I like my coat to be very easy to understand very readable very scalable. I want so easy to understand that a junior Dave, without much coding knowledge can look at the code and fully understand it. I meant to say Dave not Dave. I meant Developer speech to text can see the code and fully understand it. You're just planning right now OK and I want the code to follow best practices as well."
+  },
+  {
+    "session_id": "019f5418-9c3d-78e2-8b97-c2fc63d094a2",
+    "ts": 1783822708,
+    "text": "Check the plan once more"
+  },
+  {
+    "session_id": "019f5418-9c3d-78e2-8b97-c2fc63d094a2",
+    "ts": 1783822859,
+    "text": "Implement it and make sure it builds properly"
+  },
+  {
+    "session_id": "019f5418-9c3d-78e2-8b97-c2fc63d094a2",
+    "ts": 1783824011,
+    "text": "One more place I want the animation, I want it also from the all months tab, when a user clicks on all months they get taken to the badges for that month, I want the animation on that transition as well"
+  },
+  {
+    "session_id": "019f5418-9c3d-78e2-8b97-c2fc63d094a2",
+    "ts": 1783824575,
+    "text": "if there is no need for multiple waves, then don't use multiple waves, if you feel there is a need for them, then continue"
+  },
+  {
+    "session_id": "019f5418-9c3d-78e2-8b97-c2fc63d094a2",
+    "ts": 1783825460,
+    "text": "the animations are slow, the one that was already there, the one to see all badges is fast, yet the others is slow, find out why and report only, do not fix"
+  },
+  {
+    "session_id": "019f5418-9c3d-78e2-8b97-c2fc63d094a2",
+    "ts": 1783825559,
+    "text": "I want the other animations, all the ones you implemented ot use the same animation implementation system as see all badges, do that"
+  },
+  {
+    "session_id": "019f5418-9c3d-78e2-8b97-c2fc63d094a2",
+    "ts": 1783825718,
+    "text": "Is there a way to get that same animation without returning to the previous page and returning to home as it does now?"
+  },
+  {
+    "session_id": "019f5418-9c3d-78e2-8b97-c2fc63d094a2",
+    "ts": 1783825775,
+    "text": "How much faster can you make the tuning animation?"
+  },
+  {
+    "session_id": "019f5418-9c3d-78e2-8b97-c2fc63d094a2",
+    "ts": 1783825869,
+    "text": "I want the same exact animation, and the user can always press the home button to go back home, so lets do that"
+  },
+  {
+    "session_id": "019f5418-9c3d-78e2-8b97-c2fc63d094a2",
+    "ts": 1783825966,
+    "text": "actually stop"
+  },
+  {
+    "session_id": "019f5418-9c3d-78e2-8b97-c2fc63d094a2",
+    "ts": 1783825973,
+    "text": "undo what you just did"
+  },
+  {
+    "session_id": "019f5418-9c3d-78e2-8b97-c2fc63d094a2",
+    "ts": 1783826312,
+    "text": "Won't using the same animation and making the screens stack have an affect on performance if the screens keep stacking?"
+  },
+  {
+    "session_id": "019f5418-9c3d-78e2-8b97-c2fc63d094a2",
+    "ts": 1783826406,
+    "text": "Do the best that you can to make the custom animation as efficient as possible, the issue is not the animation speed, the issue is that it looks, how do I put it, spotty, not smooth, do you know why that is?"
+  }
+]

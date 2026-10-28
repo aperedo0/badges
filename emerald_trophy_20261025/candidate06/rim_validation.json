@@ -1,0 +1,32 @@
+{
+  "owner_requested_rim_finish": {
+    "source": "candidate05/mobile/emerald_trophy_badge_mobile.usdz",
+    "gold_linear": [
+      0.84,
+      0.45,
+      0.1
+    ],
+    "grain_source": "Clean central cup area from the owner reference, with broad illumination removed",
+    "band_roughness": 0.205,
+    "wall_roughness": 0.195,
+    "rim_emission": 0,
+    "geometry_changed": false,
+    "authorization": "Owner: make the rim texture match the trophy",
+    "preserved": "All geometry, normals, UVs, relief materials and maps, field, border roughness graphs, glints and runtime brushing"
+  },
+  "changed_attributes": [
+    "/Badge/_materials/Silver___circumferential_brushed_steel_Mobile_Casing/Surface.inputs:diffuseColor",
+    "/Badge/_materials/Shell_inner/Surface.inputs:diffuseColor",
+    "/Badge/_materials/Shell_bevel/Surface.inputs:diffuseColor"
+  ],
+  "changed_texture_files": [
+    "textures/Rim_brushed_reference_color.png",
+    "textures/Rim_brushed_reference_roughness.png"
+  ],
+  "all_geometry_normals_UVs_and_relief_data": "exactly preserved",
+  "inner_and_outer_border_roughness": "exactly preserved",
+  "no_rim_emission_or_painted_lighting": true,
+  "USD_ARKit_validation": "passed",
+  "bytes": 10666268,
+  "sha256": "c48074adbc608f71735cf40cb562ba2b73ee72b1d657054eb233dc19ac8b156e"
+}

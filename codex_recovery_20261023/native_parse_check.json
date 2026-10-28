@@ -1,0 +1,123 @@
+{
+  "outcomes": [
+    {
+      "thread_id": "01a16b89-703a-763a-bacc-2c5bb9faa98a",
+      "rollout_path": "/private/tmp/codex_recovery_native_validation/sessions/2026/10/24/rollout-2026-10-24T01-32-10-01a16b89-703a-763a-bacc-2c5bb9faa98a.jsonl",
+      "status": "migrated",
+      "bytes_processed": 41911,
+      "message": null
+    },
+    {
+      "thread_id": "01a16b89-702d-7343-8da2-dca287993e3f",
+      "rollout_path": "/private/tmp/codex_recovery_native_validation/sessions/2026/10/24/rollout-2026-10-24T01-32-10-01a16b89-702d-7343-8da2-dca287993e3f.jsonl",
+      "status": "migrated",
+      "bytes_processed": 191648,
+      "message": null
+    },
+    {
+      "thread_id": "01a16b89-6e7c-7426-8448-dcf96f3165cb",
+      "rollout_path": "/private/tmp/codex_recovery_native_validation/sessions/2026/10/24/rollout-2026-10-24T01-32-10-01a16b89-6e7c-7426-8448-dcf96f3165cb.jsonl",
+      "status": "migrated",
+      "bytes_processed": 2466493,
+      "message": null
+    },
+    {
+      "thread_id": "01a16b89-6e72-75b6-915d-99e924f72d72",
+      "rollout_path": "/private/tmp/codex_recovery_native_validation/sessions/2026/10/24/rollout-2026-10-24T01-32-10-01a16b89-6e72-75b6-915d-99e924f72d72.jsonl",
+      "status": "migrated",
+      "bytes_processed": 134404,
+      "message": null
+    },
+    {
+      "thread_id": "01a16b89-6de9-702b-956f-b9c7943869ff",
+      "rollout_path": "/private/tmp/codex_recovery_native_validation/sessions/2026/10/24/rollout-2026-10-24T01-32-10-01a16b89-6de9-702b-956f-b9c7943869ff.jsonl",
+      "status": "migrated",
+      "bytes_processed": 1196251,
+      "message": null
+    },
+    {
+      "thread_id": "01a16b89-6dbf-7009-b037-2e426130f980",
+      "rollout_path": "/private/tmp/codex_recovery_native_validation/sessions/2026/10/24/rollout-2026-10-24T01-32-10-01a16b89-6dbf-7009-b037-2e426130f980.jsonl",
+      "status": "migrated",
+      "bytes_processed": 374106,
+      "message": null
+    },
+    {
+      "thread_id": "01a16b89-6da8-73cb-b5de-8b31e2a19670",
+      "rollout_path": "/private/tmp/codex_recovery_native_validation/sessions/2026/10/24/rollout-2026-10-24T01-32-10-01a16b89-6da8-73cb-b5de-8b31e2a19670.jsonl",
+      "status": "migrated",
+      "bytes_processed": 260850,
+      "message": null
+    },
+    {
+      "thread_id": "01a16b89-6d7a-75ea-bff8-0e0af31dfc51",
+      "rollout_path": "/private/tmp/codex_recovery_native_validation/sessions/2026/10/24/rollout-2026-10-24T01-32-10-01a16b89-6d7a-75ea-bff8-0e0af31dfc51.jsonl",
+      "status": "migrated",
+      "bytes_processed": 768805,
+      "message": null
+    },
+    {
+      "thread_id": "01a16b89-6d3e-72f9-9b87-60d915e052b1",
+      "rollout_path": "/private/tmp/codex_recovery_native_validation/sessions/2026/10/24/rollout-2026-10-24T01-32-10-01a16b89-6d3e-72f9-9b87-60d915e052b1.jsonl",
+      "status": "migrated",
+      "bytes_processed": 93192,
+      "message": null
+    },
+    {
+      "thread_id": "01a16b89-6d32-7264-9bb1-f5fe2566ff7d",
+      "rollout_path": "/private/tmp/codex_recovery_native_validation/sessions/2026/10/24/rollout-2026-10-24T01-32-10-01a16b89-6d32-7264-9bb1-f5fe2566ff7d.jsonl",
+      "status": "migrated",
+      "bytes_processed": 83777,
+      "message": null
+    },
+    {
+      "thread_id": "01a16b89-6d26-778c-9f11-46a80df24b0a",
+      "rollout_path": "/private/tmp/codex_recovery_native_validation/sessions/2026/10/24/rollout-2026-10-24T01-32-10-01a16b89-6d26-778c-9f11-46a80df24b0a.jsonl",
+      "status": "migrated",
+      "bytes_processed": 270644,
+      "message": null
+    },
+    {
+      "thread_id": "01a16b89-6ce4-7653-b457-a2895b7b649e",
+      "rollout_path": "/private/tmp/codex_recovery_native_validation/sessions/2026/10/24/rollout-2026-10-24T01-32-10-01a16b89-6ce4-7653-b457-a2895b7b649e.jsonl",
+      "status": "migrated",
+      "bytes_processed": 692515,
+      "message": null
+    },
+    {
+      "thread_id": "01a16b89-6c56-7720-8139-b432efa0955f",
+      "rollout_path": "/private/tmp/codex_recovery_native_validation/sessions/2026/10/24/rollout-2026-10-24T01-32-10-01a16b89-6c56-7720-8139-b432efa0955f.jsonl",
+      "status": "migrated",
+      "bytes_processed": 1605498,
+      "message": null
+    },
+    {
+      "thread_id": "01a16b89-6c4c-7481-8479-730620bb3057",
+      "rollout_path": "/private/tmp/codex_recovery_native_validation/sessions/2026/10/24/rollout-2026-10-24T01-32-10-01a16b89-6c4c-7481-8479-730620bb3057.jsonl",
+      "status": "migrated",
+      "bytes_processed": 46285,
+      "message": null
+    },
+    {
+      "thread_id": "01a16b89-6bf0-7080-8372-a4aefc88d42f",
+      "rollout_path": "/private/tmp/codex_recovery_native_validation/sessions/2026/10/24/rollout-2026-10-24T01-32-10-01a16b89-6bf0-7080-8372-a4aefc88d42f.jsonl",
+      "status": "migrated",
+      "bytes_processed": 1172077,
+      "message": null
+    },
+    {
+      "thread_id": "01a16b89-6bec-7437-8d16-886c25d30f22",
+      "rollout_path": "/private/tmp/codex_recovery_native_validation/sessions/2026/10/24/rollout-2026-10-24T01-32-10-01a16b89-6bec-7437-8d16-886c25d30f22.jsonl",
+      "status": "migrated",
+      "bytes_processed": 19753,
+      "message": null
+    },
+    {
+      "thread_id": "01a16b89-6b79-70cb-b686-493b2f36618f",
+      "rollout_path": "/private/tmp/codex_recovery_native_validation/sessions/2026/10/24/rollout-2026-10-24T01-32-10-01a16b89-6b79-70cb-b686-493b2f36618f.jsonl",
+      "status": "migrated",
+      "bytes_processed": 909178,
+      "message": null
+    }
+  ]
+}

@@ -1,0 +1,15 @@
+I want you to look through my app, then find skills I can use with codex and claude code, and tell me which skills would be an actual good addition to add to my project and why
+
+Conversation ID: 019f6694-0e96-7d42-ac13-416dfe491f74
+Working folder: /Users/antonioperedo/Desktop/screen_time
+
+Only prompt remnants survived in the sources checked.
+No Codex replies were found for this conversation.
+
+OPENING PROMPT FROM THE HISTORY INDEX
+
+I want you to look through my app, then find skills I can use with codex and claude code, and tell me which skills would be an actual good addition to add to my project and why
+
+SAVED TERMINAL PROMPT
+
+I want you to look through my app, then find skills I can use with codex and claude code, and tell me which skills would be an actual good addition to add to my project and why

@@ -1,0 +1,2 @@
+Copied the complete final Emerald Archer background material and both field meshes, including every color value, texture, roughness setting, UV, point, triangle and normal.
+Preserved the reconstructed trophy, matched gold rim, floating placement, app lighting, reflection and all other materials and maps.

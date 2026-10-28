@@ -1,0 +1,19 @@
+{
+  "exact_map_and_metal_match": true,
+  "models": [
+    {
+      "file": "emerald_archer_badge_mobile.usdz",
+      "metallic": 0.7200000286102295,
+      "uv": "CoinReliefUV",
+      "field_color.png": "bcd21b2c4eeeb2bee127fbd2a4195d8c33228511e615dda2392c9edc83f5a9e6",
+      "field_roughness.png": "e48873044c1cd68a2c04ae25a2b0bc664a975c2f1e87460a92071a7e13bbc906"
+    },
+    {
+      "file": "emerald_trophy_badge_mobile.usdz",
+      "metallic": 0.7200000286102295,
+      "uv": "CoinReliefUV",
+      "field_color.png": "bcd21b2c4eeeb2bee127fbd2a4195d8c33228511e615dda2392c9edc83f5a9e6",
+      "field_roughness.png": "e48873044c1cd68a2c04ae25a2b0bc664a975c2f1e87460a92071a7e13bbc906"
+    }
+  ]
+}

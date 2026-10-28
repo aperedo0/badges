@@ -1,0 +1,3221 @@
+this repo has a plan, the plan is not perfect. make the first part of the plan perfect, the first thing there is to execute, then tell me when it is ready to execute. and ask any questions you may have before starting to plan
+
+Conversation ID: 01a04bec-0dfd-7862-b6bc-a017c0b0e7d1
+Working folder: /Users/antonioperedo/Desktop/ebay listings enhancement
+
+Saved conversation content exported from the Codex history database.
+This export does not establish that every original message or attachment survived.
+
+YOU
+
+this repo has a plan, the plan is not perfect. make the first part of the plan perfect, the first thing there is to execute, then tell me when it is ready to execute. and ask any questions you may have before starting to plan
+
+CODEX
+
+I’m using the `clarity`, `plan-code`, and `plan-audit` workflows: first I’ll locate the existing plan and inspect only enough repository context to identify the first executable slice and any decisions you need to make. I’ll ask those questions before I revise or audit the plan.
+
+CODEX
+
+I’ve finished the workflow read. I’m now locating the plan and tracing its first proposed change; I won’t rewrite or audit anything until I’ve surfaced any decisions that the repository cannot answer.
+
+CODEX
+
+I found the first executable part: the five-step integration spike in [RESEARCH.md](/Users/antonioperedo/Desktop/ebay%20listings%20enhancement/RESEARCH.md:300). Before I revise it:
+
+1. Should this integration spike be the slice I perfect? I recommend yes.
+2. What platform and stack should the app use—native macOS/Swift, Electron/TypeScript, or something else? The repository currently has no application code.
+3. Do you already have an eBay developer account, sandbox/production keysets, RuName, and a sandbox listing? Don’t send secrets; availability is enough.
+4. Should the production-listing test remain in this first slice? I recommend keeping it as a final, separately confirmed manual gate after the sandbox passes.
+5. May I define the unfinished repository setup as part of this work? I recommend authority order `SPEC.md` → `RESEARCH.md` → mockup for visual reference, with the exact build-and-test commands determined by your stack answer. Until those TODOs are filled, [AGENTS.md](/Users/antonioperedo/Desktop/ebay%20listings%20enhancement/AGENTS.md:17) prohibits implementation.
+
+YOU
+
+1, yes, 2, I believe that is already in the plan somewhere I do have an ebay developer account. 4, whatever you recommend. 5, yes
+
+CODEX
+
+The integration spike is confirmed as the first slice. I’m resolving the stack from the repository now, then I’ll turn the five bullets into an executable plan with the production test as a separately confirmed final gate.
+
+CODEX
+
+The plan specifies “desktop first” but names no framework or language; I checked every repository file. This choice changes OAuth, secure credential storage, local database design, and the build gate.
+
+Should I plan for **Electron + React + TypeScript + SQLite**? I recommend it because the UI is desktop-first but intentionally responsive, while Electron supports localhost OAuth callbacks, system credential storage, and cross-platform packaging.
+
+YOU
+
+Yes plan with that
+
+CODEX
+
+The stack is settled: Electron, React, TypeScript, SQLite, and npm. I’m now tracing the OAuth, Taxonomy, Trading API, secret-storage, sandbox, and production-check flows so the plan names exact interfaces, files, failure handling, and proof—not just outcomes.
+
+CODEX
+
+The repository does not contain a hidden stack decision; “desktop first” was the full extent of it. I’ve treated your answer as the missing architecture decision. The next check is against current primary documentation because token exchange, redirect handling, Electron security, and native SQLite support are the parts most likely to invalidate an otherwise good spike.
+
+CODEX
+
+Two decisions from the source check are now locked into the draft. OAuth will use an isolated Electron consent window that visibly shows the full eBay URL and intercepts the RuName redirect; it will not add a localhost certificate or hosted callback service. The production check will make one short, visible description marker only after exact confirmation, verify it, immediately restore the original, and block further writes until restoration is proven.
+
+CODEX
+
+The draft and repository setup are now complete. The `plan-audit` skill is triggering its required fresh-context review: two read-only critics will try to find a materially simpler or safer design before the plan is frozen, then separate reviewers will re-derive every file, API, runtime, and recovery claim.
+
+CODEX
+
+The draft is 578 lines because the live write path must be executable without improvising around secrets, crashes, partial responses, or rollback. The critics are now testing whether any of that machinery can be removed safely; no implementation or eBay call has started.
+
+CODEX
+
+Phase A found five material improvements, all within the same scope: remove the unused preload/IPC boundary, use stateless OAuth grant functions, remove the flaky Sandbox Taxonomy call, shrink recovery data, and make restoration drift-aware instead of unconditional. I’m applying those now; the suggestion to require a newly created production listing is rejected because it adds a listing/fee operation that the approved spike does not need.
+
+CODEX
+
+Phase A Round 2 is testing the simplified draft for another material reduction. The current plan no longer stores plaintext keysets, no longer builds unused IPC/token-cache machinery, and no longer performs a flaky Sandbox metadata call; the live write recovery remains because it is the only copy that survives a crash.
+
+CODEX
+
+Round 2 found two final safety reductions: recovery will be an existence-only row instead of a mini history/state machine, and any code change after a Sandbox pass must rerun Sandbox before production. I’m accepting both; this prevents an untested “production-only fix” from bypassing the exact code-version proof.
+
+CODEX
+
+Phase A Round 3 is the stabilization check. The plan now has one persisted recovery fact—“an unresolved write exists”—and no production attempt can proceed after a code change until the same build passes Sandbox restoration again.
+
+CODEX
+
+Round 3 tightened the plan again. I’m accepting: a singleton `--recover` path with no identifier, no general retry framework beyond the specified verification re-read, construction of the intended snapshot before committing recovery, and exact environment callback origin/path validation. I’m retaining the minimal React shell because you explicitly chose React as part of this stack; deferring it would contradict that decision.
+
+CODEX
+
+Phase A is at its hard-cap Round 4. One fresh critic is performing the final simplification pass; if it finds another material redesign, the workflow requires me to stop and tell you the design has not stabilized. If it returns clean, the design freezes and factual verification begins.
+
+CODEX
+
+Phase A is converged and frozen. I’m now running the mandatory implementation-readiness pass; the first dispatch hit the repository’s agent-slot limit, so I’m clearing completed critic slots and continuing with a genuinely fresh reviewer.
+
+CODEX
+
+The readiness review is still working through the plan file by file. One concrete check is already resolved: the pinned Electron/Node versions and the newer asynchronous `safeStorage` API are current and available; I’m holding any plan edits until the fresh reviewer finishes the full execution simulation.
+
+CODEX
+
+The review is taking longer because it is validating the live-write recovery path, not just wording. I’ve independently found one acceptance-check phrase that may be impossible as written (“no-network dry run reaches preflight”); if the reviewer confirms it, I’ll replace it with a deterministic offline preflight fixture rather than leave an implementer to invent behavior.
+
+CODEX
+
+The first readiness pass found real execution gaps, so the audit is doing its job. I’m accepting the safety-critical fixes: a production Taxonomy-only mode, enforceable same-code Sandbox proof, revoked-token recovery, lossless XML parsing, counted write confirmations, an explicit drift-recovery path, packaged migration/native-module handling, and a deterministic offline smoke test. I’m also recording one stale eBay error-code claim in `RESEARCH.md` as the first documentation correction for execution; I will not silently rely on it.
+
+YOU
+
+continue
+
+CODEX
+
+Continuing from the accepted Round 1 fixes. I’m tightening the remaining cross-references now—especially recovery after a revoked token, the Sandbox validation receipt, and the stale Inventory-model/error-code language—then a second fresh reviewer will simulate the corrected plan from scratch.
+
+CODEX
+
+Round 1’s corrections are in the plan. The second fresh-review dispatch hit the same slot cap; I’m releasing an older completed critic thread and retrying, without substituting a reviewer that has already seen the design.
+
+CODEX
+
+The second reviewer is now running with fresh context. Its focus is narrow: prove the corrected CLI modes, token/recovery transitions, fingerprint invalidation, packaged SQLite path, and each live-write confirmation can be implemented exactly as written.
+
+CODEX
+
+Round 2 is still in the runtime simulation. No new edits are being made underneath it; the plan is stable while it checks the crash boundaries and the “same executable inputs” production gate.
+
+CODEX
+
+Round 2 found six concrete blockers, all within the frozen design. I’m applying them now: no async encryption inside SQLite transactions, a literal packaged-binary spike launcher with exclusive stdin and single-instance locking, seller-identity continuity across re-consent, exact standalone recovery phrases, Taxonomy optional-field handling, and removal of one contradictory mid-wave review gate.
+
+CODEX
+
+The third reviewer is now checking only the newly repaired boundaries. The plan is frozen during that pass; the main remaining concern under scrutiny is whether a freshly packaged process can prove the same source fingerprint and safely reopen recovery after re-consent.
+
+CODEX
+
+Round 3 is still validating primary-source behavior for Electron’s new async encryption API and the packaged launcher. I’m not declaring readiness until those two paths either converge cleanly or produce exact final edits.
+
+CODEX
+
+Round 3 reduced the audit to two blockers. I’m fixing both: wrong-account recovery tokens will remain in memory until seller identity matches, and packaged smoke will set its isolated `userData` path before acquiring the singleton lock, with explicit nonzero failure propagation. After that, the audit’s hard-cap Round 4 will make the final readiness call.
+
+CODEX
+
+The hard-cap review is in progress. It is checking only for residual contradictions now; if it returns clean, the first executable wave is ready, and if it finds anything concrete I’ll record the residual instead of pretending the plan converged.
+
+CODEX
+
+The final reviewer is still tracing launcher exit codes and recovery retry state. No additional scope is being added; this is the last audit round permitted by the repository workflow.
+
+CODEX
+
+The hard-cap reviewer found two remaining safety blockers, so the plan cannot honestly be called ready. I’m still landing the exact fixes—fresh read after every confirmation, and an immutable build-time fingerprint embedded in the packaged main bundle—plus atomic migration recording and the literal recovery command. Per the audit rules, these final-round repairs cannot be declared verified without user direction after the cap.
+
+CODEX
+
+The first slice is **not ready to execute yet**.
+
+The audited [integration-spike plan](</Users/antonioperedo/Desktop/ebay listings enhancement/.agents/plans/2026-08-28-ebay-integration-spike.md>) reached the four-round audit cap. The final reviewer found two safety blockers:
+
+- Recheck the listing after every confirmation to prevent overwriting edits made while the prompt was open.
+- Bind Sandbox validation to the packaged code’s embedded fingerprint.
+
+Both fixes are now written into the plan, but the workflow requires independent verification before calling it ready. [AGENTS.md](</Users/antonioperedo/Desktop/ebay listings enhancement/AGENTS.md>) is fully configured, `git diff --check` passes, and no code or eBay calls have started.
+
+Do you want me to begin a new, narrowly focused verification of those two final repairs? That is my recommendation.
+
+YOU
+
+Yes, go with what you recommend
+
+CODEX
+
+I’m starting a new, narrowly scoped `plan-audit` verification because the prior audit cap left exactly two repaired-but-unverified safety boundaries. I’ll also apply the repository’s `clarity` skill to keep the handoff explicit; this pass will not reopen settled architecture or touch production code.
+
+CODEX
+
+The supplemental reviewer is tracing both repaired paths against the actual plan sequence. It is also checking that the packaged fingerprint cannot accidentally read newer workspace bytes and that stale confirmation exits differ correctly between a new apply and an existing recovery.
+
+CODEX
+
+The supplemental `plan-audit` review returned clean: both capped blockers are closed, with no risks or nits. I’m recording that clean result after the historical capped entry; this skill-driven edit changes only the plan’s Audit Log and makes the latest status converged.
+
+CODEX
+
+The independent verification is clean. I’m doing the final consistency check now, then I’ll hand you the exact execution starting point.
+
+CODEX
+
+The first slice is ready to execute.
+
+The [audited integration-spike plan](</Users/antonioperedo/Desktop/ebay listings enhancement/.agents/plans/2026-08-28-ebay-integration-spike.md>) passed fresh independent verification with no blockers, risks, or nits. The Audit Log now records `CONVERGED`.
+
+Wave 1 starts with the `RESEARCH.md` correction, then builds the offline Electron/React/TypeScript/SQLite foundation. It requires no credentials or live eBay calls.
+
+Project authority and the future build gate are defined in [AGENTS.md](</Users/antonioperedo/Desktop/ebay listings enhancement/AGENTS.md>). No implementation has started yet. The next command from you can simply be: **execute Wave 1**.
+
+YOU
+
+execute it
+
+CODEX
+
+I’m using the repository’s wave workflow to execute the approved plan. I’ll dispatch Wave 1 to a fresh implementation context, run its required review, and stop at the plan’s next approval boundary.
+
+CODEX
+
+Wave 1 is authorized and its baseline is recorded: only the earlier `AGENTS.md` setup is dirty. The fresh implementer is starting the offline foundation now; this wave will not use eBay credentials or make live network calls.
+
+CODEX
+
+Wave 1 is still being implemented. The current work is the package scaffold, secure Electron boundary, SQLite migrations, eBay client boundaries, and offline safety tests specified in the approved plan.
+
+CODEX
+
+Implementation is still in progress; no question or scope deviation has been reported. I’m keeping the wave isolated until its full lint, typecheck, test, and package proof is available.
+
+CODEX
+
+The implementer is still working through Wave 1’s deterministic tests and packaged-app checks. Review will begin only after the repository’s four-command gate passes.
+
+CODEX
+
+The implementer remains active and has not raised a blocker. Because Wave 1 creates the project foundation from an empty repository, the first gate run includes dependency locking, native SQLite packaging, and the full offline test suite.
+
+CODEX
+
+Wave 1 is still running. I’m waiting for the implementer’s exact command output rather than accepting partial completion; the next checkpoint is either a concrete blocker or a fully green gate.
+
+CODEX
+
+The implementation context is still active with no reported deviation. The wave remains confined to offline code and tests; no eBay account action has started.
+
+CODEX
+
+I’ve asked for a lightweight progress signal at the implementer’s next safe boundary without interrupting the build. The completion standard remains the entire Wave 1 contract and all four gate commands.
+
+CODEX
+
+No blocker has arrived yet. I’m leaving the implementation context uninterrupted so native-module setup and packaging checks can finish cleanly.
+
+CODEX
+
+Progress: the research correction and pinned Electron/React/Forge scaffold are complete. The implementer is now building the database, eBay boundaries, crash-safe orchestrator, tests, and final package proof.
+
+CODEX
+
+The remaining work is still in progress, with no product decision or credential request needed. Review will remain separate and read-only once the implementation report lands.
+
+CODEX
+
+Wave 1 is still active. The implementer has not reported any off-plan files or live-network activity; the current checkpoint remains the deterministic test and packaging gate.
+
+CODEX
+
+The foundation build is continuing without a blocker. I’m holding the wave open until all persistence, recovery, OAuth, Taxonomy, Trading, and orchestrator branches have their planned offline coverage.
+
+CODEX
+
+No handoff yet; implementation remains underway. The next user-visible result will include exact lint, typecheck, test, and package output, followed by an independent code review.
+
+CODEX
+
+The implementer is still working through the approved Wave 1 scope. Nothing requires your input at this point, and no external eBay state is being touched.
+
+CODEX
+
+I’ve requested one more non-interrupting progress signal so I can distinguish implementation time from a gate failure being repaired. The implementer remains responsible for resolving its own failures before review.
+
+CODEX
+
+Wave 1 remains active with no blocker message. I’m continuing to wait for either the requested gate status or the completed proof report.
+
+CODEX
+
+Progress: database, encrypted storage, OAuth, consent handling, and Taxonomy are implemented. Trading XML safety and the crash-recovery orchestrator are the last construction pieces before the first typecheck and repair pass.
+
+CODEX
+
+The implementer is still completing Trading and recovery logic. No approval or account input is needed for this offline wave.
+
+CODEX
+
+Wave 1 is still in implementation, before its first full gate. I’m preserving the single-writer workflow so the eventual diff and generated lockfile remain attributable to one context.
+
+CODEX
+
+The remaining offline foundation work is still underway. Once the implementer reaches the gate, it will fix any failures and rerun all four commands in the repository-defined order.
+
+CODEX
+
+No blocker has been reported. The wave remains on its planned Trading and recovery safety work, with the independent review still queued after a green package proof.
+
+CODEX
+
+Implementation continues. I’m not shortening the wave because these recovery and replacement-write checks are the core safety boundary for the later Sandbox and production proofs.
+
+CODEX
+
+I’ve requested another progress marker at the next safe boundary. The implementer is still active and has not asked to change scope.
+
+CODEX
+
+Progress: the full offline write-and-restore state machine is implemented, including freshness checks, encrypted recovery, read-back verification, three-way restore handling, and build fingerprints. Startup wiring and tests remain before the first gate run.
+
+CODEX
+
+The implementer is now connecting the completed safety logic to startup modes and writing the planned deterministic tests. No live calls are involved.
+
+CODEX
+
+The first typecheck found one Electron layout typing issue; it has been repaired and typecheck now passes. The implementer is finishing permanent unit and integration tests before the full ordered gate.
+
+CODEX
+
+Test construction is still in progress. The earlier typecheck repair stayed within the planned OAuth consent-window code and did not change product behavior.
+
+CODEX
+
+Wave 1 remains in its test phase. The final proof still requires lint, typecheck, tests, and packaged-app smoke in that exact order.
+
+CODEX
+
+The implementer is still expanding the permanent offline coverage around the new foundation. No blocker or deviation has been reported.
+
+CODEX
+
+Testing work continues. I’m keeping the completion bar at the audited plan’s safety cases, especially failure injection and recovery persistence, before review begins.
+
+CODEX
+
+No handoff yet; the implementer remains active. The next checkpoint will identify either the current gate failure or the completed four-command proof.
+
+CODEX
+
+Progress: production wiring still typechecks, and database, security, OAuth, Taxonomy, Trading tests plus scrubbed fixtures are in place. Recovery/orchestrator and packaging/startup tests are the remaining test groups before the final gate.
+
+CODEX
+
+The last planned offline test groups are still being built. No credentials, network calls, or live listing changes have occurred.
+
+CODEX
+
+Wave 1 is still in recovery and startup test coverage. The implementation context has not reported an unresolved failure or scope change.
+
+CODEX
+
+The implementer remains active on the final test groups. Independent review will start only after the packaged executable can open, migrate, reopen, and verify a fresh temporary database.
+
+CODEX
+
+No handoff yet. The current work is still the deterministic recovery and packaging proof required before any later Sandbox exercise is allowed.
+
+CODEX
+
+Wave 1 continues without a reported blocker. I’m waiting for the implementer to complete and repair the full gate rather than accepting an incomplete test set.
+
+CODEX
+
+I’ve requested the current gate position at the next safe boundary. The wave remains isolated and in scope.
+
+CODEX
+
+The test suite now passes 54 of 54. The implementer is repairing lint findings in typed test adapters and one production error-cause path, then will run the full gate in order.
+
+CODEX
+
+Lint repair is still in progress. The only reported production finding is an error-cause handling detail; no design change has been introduced.
+
+CODEX
+
+Wave 1 remains at the lint-and-gate stage. The 54-test suite is green; packaging proof is still required before review.
+
+CODEX
+
+The implementer is still clearing the deterministic gate. I’m waiting for exact proof from the final clean run rather than intermediate output.
+
+CODEX
+
+No blocker has been reported at the gate stage. The remaining proof is lint cleanup followed by typecheck, the green test suite, and packaged-app smoke.
+
+CODEX
+
+I’ve requested the current lint/package status without interrupting the run. The wave remains active and has not requested user input.
+
+CODEX
+
+The full repository gate is green: lint, typecheck, 54 tests, and packaged native-SQLite smoke all pass. The implementer is completing the final local-shell launch check required by Wave 1.
+
+CODEX
+
+The final Electron shell smoke is still running. This check verifies the local renderer launches cleanly without app-created security warnings.
+
+CODEX
+
+The implementer is still finishing the local launch check; all automated gate commands remain green. No live eBay path has been invoked.
+
+CODEX
+
+The local-shell smoke has not returned yet, likely because Electron remains open during the manual launch check. I’m waiting for the implementer to close it cleanly and provide the formal handoff.
+
+CODEX
+
+I’ve asked the implementer to close the shell smoke cleanly and hand off, or report an exact environment limitation instead of waiting indefinitely.
+
+CODEX
+
+The local shell was inspected successfully: the window launched, the renderer was sandboxed, and no app-configuration security warnings appeared. The implementer is doing its final safety review, then one clean ordered gate run will supply the formal proof.
+
+CODEX
+
+The final ordered gate is still running. This rerun ensures the proof corresponds exactly to the code state handed to the reviewer.
+
+CODEX
+
+Wave 1 remains on its final clean gate run. No new issue or deviation has been reported.
+
+CODEX
+
+The implementer is still producing the final proof run. The next handoff must include all four command outputs in repository order.
+
+CODEX
+
+No blocker has arrived during the final rerun. Packaging is the longest command because it rebuilds and exercises the native SQLite module in the packaged app.
+
+CODEX
+
+I’ve requested the exact position in the final ordered gate. The implementer is still active, and the previously completed smoke checks remain green.
+
+CODEX
+
+Final QA now passes 60 of 60 tests with clean lint and typecheck. The implementer tightened CSP and recovery identity/rollback coverage; after a quick post-CSP shell check, it will run the final ordered gate from `npm run lint`.
+
+CODEX
+
+The post-CSP launch check and final gate are still underway. No new behavior or scope has been added beyond the plan.
+
+CODEX
+
+Wave 1 remains at final verification. The current code state has already reached 60 green tests; the formal ordered proof is the remaining handoff requirement.
+
+CODEX
+
+The post-CSP smoke caught a blank renderer even though Electron itself was healthy. The implementer is tracing that renderer/CSP interaction now; the final gate will not start until the shell visibly renders again.
+
+CODEX
+
+The blank-renderer regression is still being repaired. It was found before handoff, so Wave 1 remains unreviewed and cannot pass until the visible shell and full gate are both green.
+
+CODEX
+
+Renderer/CSP diagnosis is still in progress. No live eBay path is involved, and no user decision is needed.
+
+CODEX
+
+The implementer is still fixing the local-shell rendering issue introduced by the CSP tightening. The safety tests remain separate from this presentation regression.
+
+CODEX
+
+I’ve requested the renderer root cause at the next safe boundary while the implementer continues the repair and final verification.
+
+CODEX
+
+The blank shell is narrowed to one renderer error: the secure Webpack target is corrected, and DevTools shows the root element remains empty. The implementer is reading the exact CSP/runtime error now before re-running the visible-shell smoke.
+
+CODEX
+
+The implementer’s model hit a temporary capacity error while reading the renderer failure; the code and workspace are intact. I’m resuming the same implementation context at that exact point so ownership and diff attribution stay unchanged.
+
+CODEX
+
+The same implementation context is active again and continuing from the blank-renderer diagnosis. No work was discarded or reassigned.
+
+CODEX
+
+Renderer repair is still underway in the resumed context. The full ordered gate remains pending behind the visible-shell check.
+
+CODEX
+
+The implementer is still active after the capacity recovery. No new blocker or scope deviation has been reported.
+
+CODEX
+
+The resumed implementation remains focused on the single blank-renderer error. Review has not started, and the wave is not being treated as complete.
+
+CODEX
+
+Root cause fixed: the native asset-relocator rule was incorrectly applied to the sandboxed renderer and injected `__dirname`. Native loaders are now main-process-only; the shell renders correctly with no CSP/runtime error, temporary diagnostics are being removed, and the final ordered gate is starting.
+
+CODEX
+
+The visible-shell smoke is now clean, all temporary listeners are closed, and `git diff --check` passes. The formal gate is running from `npm run lint` on the final code state.
+
+CODEX
+
+The final gate is green through lint, typecheck, and all 60 tests. `npm run package`—including the packaged SQLite migration smoke—is the last active command.
+
+CODEX
+
+Packaging is still running. The earlier three gate commands remain green on the exact handoff state.
+
+CODEX
+
+The packaged-app command is still active, rebuilding the native module and exercising a fresh temporary database. No failure has been reported.
+
+CODEX
+
+The same model-capacity interruption occurred during the final package command. The repository state is intact; I’m resuming the same implementer again to finish packaging and return the required proof, without changing ownership or scope.
+
+CODEX
+
+The earlier package did finish successfully. The implementer then aligned one integration test with the plan’s exact filename, so it correctly restarted the entire gate; lint and typecheck are green, with tests running now.
+
+CODEX
+
+The restarted final gate is still active. This rerun ensures the proof includes the test-file conformance adjustment.
+
+CODEX
+
+Wave 1 implementation is complete with 60 passing tests and a successful packaged SQLite smoke. I’m checking the changed-file boundary now; if it matches the plan, a fresh read-only reviewer will audit the wave.
+
+CODEX
+
+The changed-file boundary matches Wave 1 exactly; `AGENTS.md` is the only pre-existing dirty file and was not claimed by the implementer. I’m dispatching the mandatory fresh-context review now.
+
+CODEX
+
+The independent reviewer is reading the Wave 1 files against the audited plan and the implementer’s proof. It is checking conformance, safety, regressions, readability, and test coverage without editing anything.
+
+CODEX
+
+Review Round 1 is still in progress. No verdict or issue list has arrived yet.
+
+CODEX
+
+The reviewer’s model hit the same temporary capacity limit before returning a verdict. Because it is read-only and still independent from the implementer, I’m resuming that reviewer context to finish Round 1.
+
+CODEX
+
+Review Round 1 is still active after the capacity recovery. The implementation remains unchanged while the read-only audit finishes.
+
+CODEX
+
+The reviewer is still working through the large Wave 1 diff. No code is changing during this review.
+
+CODEX
+
+Review remains in progress with no verdict yet. I’m waiting for the complete issue classification rather than interrupting the fresh-context audit.
+
+CODEX
+
+The read-only reviewer is still tracing changed code and tests against the plan. No blocker has been surfaced to the manager yet.
+
+YOU
+
+continue
+
+CODEX
+
+I’m continuing the wave workflow from the failed review handoff. The first reviewer exhausted its usage allowance without returning a verdict, so I’ll replace it with a new fresh-context reviewer on the strongest available fallback model; the implementation will remain untouched.
+
+CODEX
+
+The original reviewer is confirmed failed without a verdict, so it does not count as a review round. A new independent reviewer is starting Round 1 on the available frontier fallback model.
+
+CODEX
+
+The replacement reviewer is now reading the full Wave 1 implementation and tests. The code remains unchanged while this audit runs.
+
+CODEX
+
+Round 1 review is still in progress. No findings have been returned yet.
+
+CODEX
+
+The reviewer is still tracing the persistence, recovery, and API-boundary code against the audited contract. No edits are occurring during review.
+
+CODEX
+
+Review Round 1 remains active with no verdict yet. The fresh reviewer is checking every changed file rather than sampling the green test suite.
+
+CODEX
+
+The independent audit is still underway. The implementation is frozen pending the reviewer’s complete issue classification.
+
+CODEX
+
+No verdict has arrived yet. The reviewer remains active on the large first-wave foundation.
+
+CODEX
+
+The reviewer is still working through Wave 1. I’m keeping the code untouched until it returns a strict pass or a concrete fix list.
+
+CODEX
+
+Review remains in progress with no reported finding yet. This round is read-only and does not duplicate the already green gate.
+
+CODEX
+
+The fresh reviewer is still auditing the wave. No scope change, account input, or external action is needed.
+
+CODEX
+
+Review Round 1 found four blocking safety gaps: production hashes include fields the production flow cannot restore, condition-descriptor checks accept unrelated descriptors, active-content detection misses event handlers and other executable markup, and stale apply confirmations lack the required drift tests. I’m sending all four findings back to the same implementer for repair and a full gate rerun.
+
+CODEX
+
+The original implementer has resumed with the reviewer’s four findings and is adding focused tests alongside each repair. The wave remains offline and confined to its planned files.
+
+CODEX
+
+Round 1 repairs are in progress. No new question or plan deviation has been reported.
+
+CODEX
+
+The implementer is still working through the hashing, preflight, active-content, and stale-confirmation fixes. Review Round 2 will use a new fresh context after the gate passes.
+
+CODEX
+
+The four blocking repairs remain underway, with no reported expansion beyond Wave 1.
+
+CODEX
+
+I’ve requested a lightweight repair status at the implementer’s next safe boundary without interrupting the work.
+
+CODEX
+
+Progress: the field-scoped hash and recovery paths are mapped. Descriptor and active-content validation are being tightened, and four stale-apply tests are being added for writable and protected drift across both confirmation paths.
+
+CODEX
+
+The focused repair tests are still being implemented. No further issue has been raised.
+
+CODEX
+
+Round 1 fixes remain in progress. The gate will be rerun only after all four findings have direct coverage.
+
+CODEX
+
+The implementer is still completing the focused fixes and tests. The code has not returned to review yet.
+
+CODEX
+
+No blocker has been reported during the repair pass. The next checkpoint is the focused test result or the full gate.
+
+CODEX
+
+I’ve requested the focused-test or gate position at the next safe boundary. The repair remains with the original implementer.
+
+CODEX
+
+The repair context is still active with no blocker message. Review Round 2 remains pending.
+
+CODEX
+
+The implementer is still finishing the four reviewer-driven test cases and their production code repairs.
+
+CODEX
+
+All four Round 1 repairs and their focused tests are written. The implementer is running the targeted hash, preflight, recovery, stale-confirmation, and typecheck checks before the full gate.
+
+CODEX
+
+The focused verification is still running. No new regression has been reported.
+
+CODEX
+
+Targeted repair tests remain in progress. The full gate will follow only after these safety cases are green.
+
+CODEX
+
+No blocker has arrived from the targeted checks. The implementer is still validating the reviewer fixes before the final rerun.
+
+CODEX
+
+Focused validation is green: 27 targeted tests, lint, and typecheck pass. The stale-apply matrix now covers writable and protected drift during both counted prompts; the final diff check precedes the full ordered gate.
+
+CODEX
+
+The repair gate is green through lint, typecheck, and all 67 tests. Packaging with the native SQLite smoke is the only remaining command.
+
+CODEX
+
+Packaging is still active on the repaired code state. The first three gate commands remain green.
+
+CODEX
+
+All four repairs are complete, 67 tests pass, and the packaged smoke is green. I’m checking the repaired file boundary, then a new fresh reviewer will run Round 2 against the fixes.
+
+CODEX
+
+The repaired status boundary is unchanged and still matches Wave 1. A brand-new Round 2 reviewer is starting now, focused on the four fixes while checking the full wave for regressions.
+
+CODEX
+
+Round 2 review is active on the repaired code and fresh 67-test proof. The implementation is frozen during this read-only pass.
+
+CODEX
+
+The Round 2 reviewer is still checking all four fixes and their neighboring recovery behavior. No verdict has arrived yet.
+
+CODEX
+
+Review Round 2 remains in progress. No code is changing while the fresh reviewer audits the repair.
+
+CODEX
+
+The second reviewer is still tracing production/sandbox hash scope, preflight rejection, and stale-confirmation coverage. No finding has been returned yet.
+
+CODEX
+
+Round 2 remains active with the implementation unchanged. I’m waiting for the complete verdict rather than sampling partial findings.
+
+CODEX
+
+The fresh reviewer is still completing its full-wave regression check. No user decision is needed at this point.
+
+CODEX
+
+Review Round 2 is still in progress with no verdict yet. The 67-test proof remains the current implementation handoff.
+
+CODEX
+
+The Round 2 audit remains active and read-only. No further implementation work will begin until this verdict lands.
+
+CODEX
+
+Round 2 confirmed all four first-round fixes, then found two adjacent blockers: same-run Sandbox restore can overwrite a newly changed non-target item specific, and a `GetUser` authentication failure does not trigger the plan’s confirmatory refresh-and-clear path. I’m returning both to the original implementer; the next review is the third and final allowed round for Wave 1.
+
+CODEX
+
+The original implementer has resumed both Round 2 repairs and is explicitly self-reviewing adjacent recovery and authentication branches before the final gate.
+
+CODEX
+
+The Sandbox restore guard and stored-token reconnect fixes are in progress. No new question or scope deviation has been reported.
+
+CODEX
+
+Round 2 repairs remain underway, with focused regression coverage being added before the final review round.
+
+CODEX
+
+The implementer is still working through the recovery and authentication edge cases. Review Round 3 has not started.
+
+CODEX
+
+I’ve requested a repair status at the next safe boundary. The same implementer still owns the fixes and final gate.
+
+CODEX
+
+Both code fixes are in place: Sandbox full-specific restore now stops on protected drift, and stored-token Trading auth failure now requires a confirmatory refresh before clearing authorization. Recovery, post-apply, and reconnect regression tests are being added.
+
+CODEX
+
+The focused regression tests are still being completed. No new blocker has been reported.
+
+CODEX
+
+The implementer remains in the focused recovery/auth test pass. The full gate and final review round are still pending.
+
+CODEX
+
+Round 2 fixes are still being validated. The implementation has not returned to review yet.
+
+CODEX
+
+The focused recovery, post-apply, and reconnect suites now pass 22 of 22 tests. The implementer is finishing its adjacent-path review before the exact ordered gate.
+
+CODEX
+
+The adjacent auth/recovery self-review is still in progress. No new issue has been surfaced.
+
+CODEX
+
+The implementer is still completing the pre-gate safety review. The focused fixes remain green.
+
+CODEX
+
+No blocker has arrived from the adjacent-path review. The formal repository gate remains the next checkpoint.
+
+CODEX
+
+The final repair gate is green through lint, typecheck, and all 71 tests. Packaging with native SQLite smoke is the last remaining command.
+
+CODEX
+
+Packaging is still active on the 71-test code state. No failure has been reported.
+
+CODEX
+
+Packaging passed after the dependency step was retried with network access. The implementer is repeating all four commands once more so the final proof is one uninterrupted exact-order run.
+
+CODEX
+
+The uninterrupted final gate rerun is still active. This is the proof that will be handed to Review Round 3.
+
+CODEX
+
+The second repair pass is complete with 71 tests and a green packaged smoke. I’m verifying the file boundary now, then the mandatory Round 3 reviewer will decide whether Wave 1 passes or stops at the review cap.
+
+CODEX
+
+The file boundary is unchanged and still matches Wave 1. Review Round 3 is starting in a brand-new read-only context with the fresh 71-test proof.
+
+CODEX
+
+The final allowed review round is active on the repaired recovery and authentication paths. The implementation remains frozen pending its verdict.
+
+CODEX
+
+Round 3 is still in progress. No finding or pass verdict has arrived yet.
+
+CODEX
+
+The final reviewer is still checking protected-drift restore behavior and stored-token failure recovery against the full wave. No edits are occurring.
+
+CODEX
+
+Review Round 3 remains active with the 71-test handoff unchanged. I’m waiting for the complete strict verdict.
+
+CODEX
+
+The capped review round is still underway. No user input is needed unless it returns a remaining Big issue.
+
+CODEX
+
+The reviewer remains active on the full regression pass. The Wave 1 status is still pending, not assumed passed.
+
+CODEX
+
+Round 3 is still in progress without a verdict. The code remains untouched during this final review.
+
+CODEX
+
+The final reviewer is still completing the code-and-test walk. No partial result has been returned.
+
+CODEX
+
+Wave 1 is implemented but not approved. The third and final review round found three remaining safety blockers:
+
+- Recovery can be deleted after a Sandbox restore even when protected fields no longer match.
+- Drifted recovery confirmation omits the planned field names and state hashes.
+- Failed or timed-out confirmations do not cancel immediately and may leave a terminal read pending.
+
+The gate was green—lint, typecheck, 71 tests, and packaged SQLite smoke—but the review cap requires me to stop. Wave 2 and all live eBay activity have not started.
+
+I recommend one additional repair-and-review exception. Reply **authorize one extra repair/review round** to continue.
+
+YOU
+
+authorize one extra repair/review round
+
+CODEX
+
+I’m applying the authorized one-round exception through the wave workflow. The original implementer will repair the three remaining blockers and rerun the full gate; one new fresh-context reviewer will then issue the final Wave 1 verdict.
+
+CODEX
+
+The original implementer has resumed the authorized exception and is tracing restore proof and cancellable terminal-confirmation behavior before editing.
+
+CODEX
+
+The three authorized repairs are in progress. No new question or scope change has been reported.
+
+CODEX
+
+The implementer is still working through recovery deletion, drift evidence, and immediate confirmation cancellation.
+
+CODEX
+
+The exception repair remains active, with focused tests required before the full gate. No blocker has arrived.
+
+CODEX
+
+All focused confirmation and recovery regressions now pass, 28 of 28. The implementer is checking prompt cleanup, production restore behavior, and drift evidence before the final gate.
+
+CODEX
+
+The adjacent-path self-review is still in progress. The focused repairs remain green.
+
+CODEX
+
+Adjacent review confirms exact input followed by EOF still succeeds, while mismatch, bare EOF, and timeout now clean up immediately. The final ordered gate is starting.
+
+CODEX
+
+The exception-round gate is still active. No failure has been reported.
+
+CODEX
+
+The exception repair is complete: 85 tests and the packaged SQLite smoke pass. I’m checking the file boundary now, then the one authorized fresh Round 4 reviewer will issue the final Wave 1 verdict.
+
+CODEX
+
+The repaired file boundary is unchanged and remains fully inside Wave 1. The authorized Round 4 reviewer is starting in a brand-new read-only context with the 85-test proof.
+
+CODEX
+
+The authorized final reviewer is checking all three latest repairs plus the earlier safety fixes. The implementation is frozen during this read-only verdict round.
+
+CODEX
+
+Round 4 remains in progress. No verdict or new finding has arrived yet.
+
+CODEX
+
+The fresh reviewer is still tracing recovery deletion, drift evidence, and terminal cleanup against the plan. No code is changing.
+
+CODEX
+
+The authorized review round remains active with the 85-test handoff unchanged. I’m waiting for the complete final verdict.
+
+CODEX
+
+No verdict has arrived yet. The reviewer continues its full-wave regression check in read-only mode.
+
+CODEX
+
+Round 4 is still in progress. No user input or external eBay action is occurring.
+
+CODEX
+
+Wave 1 passed the authorized final review with no big issues, small issues, or notes. I’m recording the pass in the plan’s Progress Log and verifying the final workspace boundary; Wave 2 will not start because it requires your Sandbox credentials and a purpose-built test listing.
+
+CODEX
+
+Wave 1 is complete and approved.
+
+It now includes the offline Electron/React/TypeScript/SQLite foundation, encrypted credential storage, OAuth and eBay API boundaries, crash-safe write recovery, build fingerprinting, and 85 tests. The authorized final review passed with no big issues, small issues, or notes.
+
+No credentials were collected and no live eBay calls occurred. Everything remains uncommitted. Progress is recorded in the [audited plan](</Users/antonioperedo/Desktop/ebay listings enhancement/.agents/plans/2026-08-28-ebay-integration-spike.md>), and `git diff --check` passes.
+
+Final gate proof:
+
+```text
+> pokemon-listing-optimizer@0.1.0 lint
+> eslint .
+
+> pokemon-listing-optimizer@0.1.0 typecheck
+> tsc --noEmit
+
+> pokemon-listing-optimizer@0.1.0 test
+> vitest run
+
+ RUN  v4.1.11 /Users/antonioperedo/Desktop/ebay listings enhancement
+
+ Test Files  18 passed (18)
+      Tests  85 passed (85)
+   Start at  21:32:32
+   Duration  656ms (transform 648ms, setup 0ms, import 1.46s, tests 554ms, environment 1ms)
+
+> pokemon-listing-optimizer@0.1.0 package
+> npm run package:app && node scripts/smoke-packaged.mjs
+
+> pokemon-listing-optimizer@0.1.0 package:app
+> electron-forge package
+
+✔ Found npm@11.16.0
+✔ Preparing native dependencies: 1 / 1
+✔ Building webpack bundles
+✔ Packaging for arm64 on darwin
+Packaged smoke PASS — schema 1.
+```
+
+Next, reply **start Wave 2** when your Sandbox keyset, OAuth RuName, Sandbox seller, and purpose-built test listing are ready. Secrets will be entered only through the local harness—not chat.
+
+YOU
+
+can I just commit with 'wave 1 done"?
+
+CODEX
+
+I’m applying the repository’s clarity rules so the commit guidance is exact and safe.
+
+CODEX
+
+Yes. Everything currently shown in `git status` belongs to Wave 1 and its project setup.
+
+```bash
+git add -A
+git commit -m "Wave 1 done"
+```
+
+The audited plan remains uncommitted because `.agents/plans/` is intentionally gitignored.
+
+YOU
+
+has wave 2 been audited and fully ready for deployment?
+
+CODEX
+
+I’m checking the audited plan and its Progress Log to distinguish “ready to execute” from “implemented and ready to deploy.” I’m using the repository’s clarity rules because that distinction is the whole answer.
+
+CODEX
+
+Wave 2’s plan has been fully audited and is ready to execute. It is not implemented, validated, or ready for deployment yet—the Progress Log contains only a Wave 1 pass.
+
+Wave 2 requires:
+
+- Sandbox keyset and OAuth-enabled RuName
+- Sandbox seller test account
+- Purpose-built active fixed-price Sandbox listing
+- Active Production keyset for the read-only Taxonomy call
+
+Wave 2 performs a reversible Sandbox mutation and a read-only Production metadata check. Production listing mutation does not occur until Wave 3.
+
+See the [audited Wave 2 plan](</Users/antonioperedo/Desktop/ebay listings enhancement/.agents/plans/2026-08-28-ebay-integration-spike.md:744>). Once those prerequisites are ready, reply **start Wave 2**; enter secrets only through the local harness.
+
+YOU
+
+what do you mean by enter secrets only through the
+  local harness ?
+
+CODEX
+
+I’m using the repository’s clarity rules to explain this as the exact interaction you’ll see, without implementation jargon.
+
+CODEX
+
+It means you type the eBay credentials into the app on your Mac—not into this chat, a command, or a source file.
+
+For Wave 2:
+
+1. You run a command in your own Terminal.
+2. The packaged Electron app asks for the App ID, Cert ID, and RuName.
+3. The Cert ID is hidden while you type it.
+4. An eBay window opens for the Sandbox seller login and consent.
+5. The app encrypts the credentials and tokens locally using macOS secure storage.
+
+I’ll provide the exact command when Wave 2 starts. Never paste the Cert ID, authorization code, or tokens here.
+
+YOU
+
+where do I get this information and what commands do I run?
+
+CODEX
+
+I’m checking two things: the exact commands implemented in this repository, and the current eBay Developer Portal locations for Sandbox keys, RuName, test users, and Production keys. I’m using the clarity skill so the result is a short preparation checklist you can follow directly.
+
+CODEX
+
+You need five values before running Wave 2. You do not need to generate access or refresh tokens—the app obtains those during eBay sign-in.
+
+## 1. Sandbox application keys
+
+Open [eBay Application Keys](https://developer.ebay.com/my/keys), sign in, and select the Sandbox keyset.
+
+Copy these somewhere secure:
+
+- App ID, labeled Client ID
+- Cert ID, labeled Client Secret
+
+Create the Sandbox keyset there if it does not exist. Sandbox and Production use separate keysets. [eBay’s keyset guide](https://www.developer.ebay.com/api-docs/static/gs_create-the-ebay-api-keysets.html)
+
+## 2. Sandbox RuName
+
+Beside the Sandbox App ID, select **User Tokens**. Under **Get a Token from eBay via Your Application**, copy the OAuth-enabled RuName.
+
+If no RuName exists, create a redirect URL configuration. Use eBay’s standard Sandbox accepted/declined response pages; this app expects the response on `signin.sandbox.ebay.com/ws/eBayISAPI.dll`. The portal may also request a display title and a legitimate privacy-policy URL. [eBay’s RuName instructions](https://developer.ebay.com/develop/guides/sell/authorization)
+
+Copy the generated RuName—not the accepted URL and not a manually generated token.
+
+## 3. Sandbox seller
+
+Create a test seller through **Develop → Tools → eBay Sandbox → Create Test Users**. Its username will start with `TESTUSER_`. [Official test-user instructions](https://developer.ebay.com/api-docs/static/gs_create-a-test-sandbox-user.html)
+
+Keep its username and password. You will enter them into the eBay consent window, not the terminal.
+
+## 4. Sandbox listing
+
+Sign in to the [eBay Sandbox site](https://sandbox.ebay.com/) with the test seller and create a disposable listing with these properties:
+
+- Active, fixed-price, US listing with no variations
+- Category ID `183454`
+- `Game = Pokémon TCG`
+- Current graded or ungraded trading-card condition
+- At least two item specifics, fewer than 45
+- Simple static description without scripts, forms, iframes, or event handlers
+
+Copy its numeric item ID from the listing page. The listing must be created through the eBay site—not the Inventory API.
+
+## 5. Production keys
+
+Return to [Application Keys](https://developer.ebay.com/my/keys) and collect the Production App ID and Cert ID.
+
+Wave 2 uses them only for a read-only Taxonomy request. It does not need a Production RuName, seller login, or production listing. If the keyset says it is disabled, complete or opt out of eBay’s marketplace account-deletion notification process. [eBay’s production-key instructions](https://www.developer.ebay.com/api-docs/static/gs_create-the-ebay-api-keysets.html)
+
+## Commands
+
+Run these from your Terminal:
+
+```bash
+cd "/Users/antonioperedo/Desktop/ebay listings enhancement"
+nvm use 24.18.1
+npm ci
+```
+
+Run the Sandbox proof, replacing the placeholder with the numeric Sandbox item ID:
+
+```bash
+npm run spike:ebay -- --environment sandbox --item-id YOUR_SANDBOX_ITEM_ID
+```
+
+The app will request the Sandbox Client ID, hidden Cert ID, and RuName. It then opens the eBay Sandbox login window and later asks you to type these exact safety confirmations:
+
+```text
+TRADING MODEL
+SANDBOX 1 LISTING 2 FIELDS
+```
+
+It will also ask you to retype the item ID. Read the displayed listing details before confirming.
+
+After the Sandbox listing has been restored successfully, run the read-only Production Taxonomy check:
+
+```bash
+npm run spike:ebay -- --environment production --taxonomy-only
+```
+
+If either run reports a pending recovery, do not rerun a normal command. Use:
+
+```bash
+npm run spike:ebay -- --recover
+```
+
+The safest next action is to gather the five items above, then reply **credentials and Sandbox listing ready** before running the live commands.
+
+YOU
+
+do I get an oauth application token? short answer
+
+CODEX
+
+No. Gather the App ID, Cert ID, and Sandbox RuName; the harness generates the required OAuth tokens automatically.
+
+YOU
+
+I am not sure the link you gave me gets me the runame
+
+CODEX
+
+I’m verifying the current signed-in portal path because the RuName is not displayed on the general Application Keys page itself.
+
+CODEX
+
+You’re right—the general keys page doesn’t display it directly.
+
+1. Sign in, then open the [Sandbox User Tokens page](https://developer.ebay.com/my/auth?env=sandbox&index=0).
+2. Expand **Get a Token from eBay via Your Application**.
+3. Copy the value labeled **OAuth Enabled RuName**.
+
+If that link selects the wrong application, open **Application Keys** and click **User Tokens** beside your Sandbox App ID. If no RuName exists, select **You have no Redirect URLs—click here to add one**. [Official eBay instructions](https://developer.ebay.com/develop/guides/sell/authorization)
+
+Do not select **Get OAuth Application Token**; that is a different value.
+
+YOU
+
+where do I click here? User Tokens (eBay Sign-In)
+ebay-listings-test
+
+Environment:
+
+Sandbox
+
+Production
+
+ebay-listings-test
+App ID / Client ID: 
+AntonioP-ebaylist-SBX-b449058ed-efd3595c
+
+Get OAuth Application Token
+|
+
+OAuth Scopes
+User Tokens (eBay Sign-In)
+Alerts & Notifications
+Get a User Token Here
+Get a token for an eBay Sandbox user. Learn more
+
+
+Auth'n'Auth
+
+OAuth (new security)
+
+Sign in to Sandbox
+Revoke a Token
+Register a new Sandbox user
+Learn more
+
+Users need to login to eBay to get OAuth tokens. Get a token quickly here if you have an eBay member login. If your app supports multiple users, use the form below to create a branded eBay sign-in and consent form on eBay, so that you can redirect your users to it to login.
+
+Learn more about getting tokens
+Get a Token from eBay via Your Application
+Configure OAuth sign-in settings for your application. Learn more
+
+Your eBay Sign-in Settings
+Add eBay Redirect URL
+
+You have no Redirect URLs. Click here to add one.
+
+eBay for Developers.
+Community Forum
+Technical Support
+APIs
+FAQs
+Copyright 1999—2026 eBay Inc. All rights reserved.
+
+API License Agreement
+User agreement
+
+CODEX
+
+Click **“You have no Redirect URLs. Click here to add one.”**
+
+That creates the OAuth Redirect URL entry and generates your RuName. Do not click **Get OAuth Application Token** or **Sign in to Sandbox** yet.
+
+YOU
+
+what from here? Get OAuth Application Token
+|
+
+OAuth Scopes
+User Tokens (eBay Sign-In)
+Alerts & Notifications
+Get a User Token Here
+Get a token for an eBay Sandbox user. Learn more
+
+
+Auth'n'Auth
+
+OAuth (new security)
+
+Sign in to Sandbox
+Revoke a Token
+Register a new Sandbox user
+Learn more
+
+Users need to login to eBay to get OAuth tokens. Get a token quickly here if you have an eBay member login. If your app supports multiple users, use the form below to create a branded eBay sign-in and consent form on eBay, so that you can redirect your users to it to login.
+
+Learn more about getting tokens
+Get a Token from eBay via Your Application
+Configure OAuth sign-in settings for your application. Learn more
+
+Your eBay Sign-in Settings
+Add eBay Redirect URL
+
+RuName (eBay Redirect URL name)	Display Title	OAuth Enabled	
+Antonio_Peredo-AntonioP-ebayli-zixesyrn	—		
+Your branded eBay Sandbox Sign In (Auth'n'auth)
+https://signin.sandbox.ebay.c...zixesyrn&SessID=<SESSION_ID>
+
+See all
+Your branded eBay Sandbox Sign In (OAuth)
+https://auth.sandbox.ebay.com...uth%2Fscope%2Fsell.edelivery
+
+See all
+Select OAuth Scopes
+Choose which API scopes to include in your OAuth authorization request.
+
+Display Title
+Your App Name
+Your privacy policy URL
+https://
+URLs must be secure (https://) and should not be eBay's Privacy Policy URL.
+
+Your auth accepted URL
+https://signin.ebay.com/ws/eBaySAPI.dll?Third
+Your auth declined URL
+https://signin.ebay.com/ws/eBaySAPI.dll?Third
+If you leave these fields blank, the eBay default accept and reject pages will be used.
+
+Your eBay Sign-in Branding
+Your Logo Library:
+
+Click on a thumbnail to select logo from the library or "+" to add a new one from your disk.
+
+
+Add Image
+
+Enable Application Branding
+
+Auth'n'Auth
+
+OAuth (new security)
+
+Review User Consent page
+Review and Grant Application Access: <Display Title Here> (ebay-listings-test)
+Ready to use <Display Title Here> (ebay-listings-test) ? Great! To share info about your eBay account and let <Display Title Here> (ebay-listings-test) act on your behalf, we need your consent first. Don't worry: We won't give the application your eBay password.
+
+Permissions
+View public data from eBay
+View your order details
+Purchase eBay items off eBay
+View your eBay marketing activities, such as ad campaigns and listing promotions
+View and manage your eBay marketing activities, such as ad campaigns and listing promotions
+View your inventory and offers
+View and manage your inventory and offers
+View your account settings
+View and manage your account settings
+View your order fulfillments
+View and manage your order fulfillments
+View your selling analytics data, such as performance reports
+This scope would allow signed in users read only access to marketplace insights.
+This scope would allow signed in user to read catalog data.
+This scope would allow signed in user to access shopping carts
+View and manage bidding activities for auctions
+View a user's basic information, such as username or business account details, from their eBay member account
+View a user's personal email information from their eBay member account
+View a user's personal telephone information from their eBay member account
+View a user's personal address information from their eBay member account
+View a user's first and last name from their eBay member account
+View a user's eBay member account status
+View and manage your payment and order information to display this information to you and allow you to initiate refunds using the third party application
+View and manage disputes and related details (including payment and order information).
+View and manage your item drafts.
+View and manage your item information.
+View and manage your reputation data, such as feedback.
+View your reputation data, such as feedback.
+View and manage your event notification subscriptions
+View your event notification subscriptions
+View and manage eBay stores
+View eBay stores
+Allows access to APIs that are related to eBay's Verified Rights Owner (VeRO) program.
+Enables applications to manage and enhance inventory listings through the Inventory Mapping Public API.
+Allows access to eBay Message APIs.
+Allows access to Feedback APIs.
+View and manage shipping information
+Allows access to eDelivery International Shipping APIs.
+Terms of Service and Privacy Policy
+Please be sure to read the <Display Title Here> (ebay-listings-test) terms of service and privacy policy , because these are the terms and policy that will apply when you use this application.
+
+Agree and Continue
+Not now
+Delete
+Clone
+Revert to Saved
+Save
+You have to save your new settings to test them.
+
+eBay for Developers.
+Community Forum
+Technical Support
+APIs
+FAQs
+Copyright 1999—2026 eBay Inc. All rights reserved.
+
+API License Agreement
+User agreement
+Privacy policy
+
+CODEX
+
+Your RuName has been generated. I’m checking the exact scopes and callback host the app uses so you can fill only the fields this harness needs.
+
+CODEX
+
+You already have the RuName—the value beginning `Antonio_Peredo-...`. Now configure it:
+
+1. Under **Select OAuth Scopes**, select only:
+
+   - **View public data from eBay**
+   - **View your selling analytics data, such as performance reports**
+
+2. Enter a display title, such as:
+
+   ```text
+   Pokémon Listing Optimizer
+   ```
+
+3. Enter a real public HTTPS privacy-policy URL you control. If you do not have one, stop here rather than entering a fake URL.
+
+4. Replace the callback URLs with:
+
+   **Accepted**
+   ```text
+   https://signin.sandbox.ebay.com/ws/eBayISAPI.dll?ThirdPartyAuthSucessFailure&isAuthSuccessful=true
+   ```
+
+   **Declined**
+   ```text
+   https://signin.sandbox.ebay.com/ws/eBayISAPI.dll?ThirdPartyAuthSucessFailure&isAuthSuccessful=false
+   ```
+
+5. Under branding, choose **OAuth (new security)**. A logo is optional.
+
+6. Click **Save**. After saving, confirm the RuName row shows OAuth enabled.
+
+Do not click **Agree and Continue** in the preview.
+
+YOU
+
+what do I select here api_scope
+
+api_scope/buy.order.readonly
+
+api_scope/buy.guest.order
+
+api_scope/sell.marketing.readonly
+
+api_scope/sell.marketing
+
+api_scope/sell.inventory.readonly
+
+api_scope/sell.inventory
+
+api_scope/sell.account.readonly
+
+api_scope/sell.account
+
+api_scope/sell.fulfillment.readonly
+
+api_scope/sell.fulfillment
+
+api_scope/sell.analytics.readonly
+
+api_scope/sell.marketplace.insights.readonly
+
+api_scope/commerce.catalog.readonly
+
+api_scope/buy.shopping.cart
+
+api_scope/buy.offer.auction
+
+api_scope/commerce.identity.readonly
+
+api_scope/commerce.identity.email.readonly
+
+api_scope/commerce.identity.phone.readonly
+
+api_scope/commerce.identity.address.readonly
+
+api_scope/commerce.identity.name.readonly
+
+api_scope/commerce.identity.status.readonly
+
+api_scope/sell.finances
+
+api_scope/sell.payment.dispute
+
+api_scope/sell.item.draft
+
+api_scope/sell.item
+
+api_scope/sell.reputation
+
+api_scope/sell.reputation.readonly
+
+api_scope/commerce.notification.subscription
+
+api_scope/commerce.notification.subscription.readonly
+
+api_scope/sell.stores
+
+api_scope/sell.stores.readonly
+
+api_scope/commerce.vero
+
+api_scope/sell.inventory.mapping
+
+api_scope/commerce.message
+
+api_scope/commerce.feedback
+
+api_scope/commerce.shipping
+
+scope/sell.edelivery
+Cancel
+
+CODEX
+
+Select only:
+
+- `api_scope`
+- `api_scope/sell.analytics.readonly`
+
+Leave every other scope unselected, then save.
+
+YOU
+
+ok now give me the rest of the instructions starting from sandbox seller
+
+CODEX
+
+I’m using the repository’s clarity rules and checking the current Sandbox listing path so the remaining steps match both eBay’s portal and this harness’s preflight checks.
+
+CODEX
+
+## 1. Create the Sandbox seller
+
+On the page you are already viewing:
+
+1. Click **Register a new Sandbox user**.
+2. Choose the United States registration site.
+3. Create a memorable username and password.
+4. Save the complete username, including the automatic `TESTUSER_` prefix.
+
+One Sandbox user is enough for this seller-only test. [Official eBay instructions](https://developer.ebay.com/api-docs/static/gs_create-a-test-sandbox-user.html)
+
+## 2. Create the Sandbox listing
+
+Open the [eBay Sandbox](https://sandbox.ebay.com/), sign in with the `TESTUSER_` account, and select **Sell**.
+
+Create a disposable listing with:
+
+- Category: **Collectible Card Games**, ID `183454`
+- Game: **Pokémon TCG**
+- Format: **Fixed price**, quantity `1`, no variations
+- Condition: **Ungraded — Near Mint or Better** is recommended
+- At least one additional item specific, such as Card Name
+
+Use a short plain-text description. Do not manually add item specifics named Card Condition, Grade, Graded, or Professional Grader. Keep fewer than 45 item specifics.
+
+Publish the listing, confirm it is active, and copy its numeric item ID. Creating listings in Sandbox uses fictional transactions, not real money. [eBay listing guide](https://developer.ebay.com/develop/guides/sell/listing-creation)
+
+## 3. Collect Production keys
+
+Return to [Application Keys](https://developer.ebay.com/my/keys) and select **Production**.
+
+Copy:
+
+- App ID / Client ID
+- Cert ID / Client Secret
+
+You do not need a Production RuName or production seller for Wave 2. Confirm the Production keyset is enabled; if disabled, follow the marketplace-account-deletion compliance link shown by eBay.
+
+## 4. Prepare the repository
+
+In your Terminal:
+
+```bash
+cd "/Users/antonioperedo/Desktop/ebay listings enhancement"
+nvm use 24.18.1
+npm ci
+```
+
+If `nvm` says Node 24.18.1 is missing:
+
+```bash
+nvm install 24.18.1
+nvm use 24.18.1
+```
+
+## 5. Run the Sandbox proof
+
+Replace the placeholder with the numeric Sandbox listing ID:
+
+```bash
+npm run spike:ebay -- --environment sandbox --item-id YOUR_SANDBOX_ITEM_ID
+```
+
+The app will ask for:
+
+- Sandbox Client ID
+- Sandbox Cert ID—the input remains hidden
+- Sandbox RuName
+- Sandbox seller login inside the eBay window
+
+Before writing, it asks you to type:
+
+```text
+TRADING MODEL
+SANDBOX 1 LISTING 2 FIELDS
+```
+
+It also asks you to retype the item ID. Read every prompt before confirming. The app temporarily changes the description and one test item specific, verifies them, then restores the original listing.
+
+## Production metadata check
+
+Only after the Sandbox command reports exact restoration, run:
+
+```bash
+npm run spike:ebay -- --environment production --taxonomy-only
+```
+
+Enter the Production Client ID and hidden Cert ID when prompted. This command is read-only and does not touch a production listing.
+
+If either command reports pending recovery, stop and run only:
+
+```bash
+npm run spike:ebay -- --recover
+```
+
+If you want the managed Wave 2 workflow and review, stop after creating the Sandbox listing and collecting the Production keys; reply **credentials and Sandbox listing ready** without pasting any values.
+
+YOU
+
+on number 2 what do I select here? Welcome to Developer Sandbox
+The Sandbox allows you to test applications developed with the eBay API in a simulated environment. Find out more about the eBay Developers Program.
+
+Getting started
+Create a Sandbox User
+Create a User Token
+Test My API Requests
+Check My API Call Volume
+Resources
+API Site Status
+Sandbox Supported / Unsupported Features
+Developer Forums
+Documentation Center
+Knowledge Base
+Live Help
+Sandbox sites
+Australia
+Austria
+Belgium-FR
+Belgium-NL
+Canada
+France
+Germany
+Italy
+Netherlands
+Spain
+Switzerland
+United Kingdom
+United States
+
+CODEX
+
+Click **United States** under **Sandbox sites**.
+
+Then:
+
+1. Sign in with your full `TESTUSER_...` Sandbox account.
+2. Click **Sell**.
+3. Choose **List an item** to create the test listing.
+
+YOU
+
+takes me back to the same page
+
+CODEX
+
+The country link is looping to the Sandbox landing page. I’m checking the direct Sandbox sign-in and seller-listing routes so you can bypass that page safely.
+
+CODEX
+
+The country link is looping. Bypass it:
+
+1. Open a private/incognito window.
+2. Open [Sandbox sign-in](https://signin.sandbox.ebay.com/ws/eBayISAPI.dll?SignIn).
+3. Sign in with your complete `TESTUSER_...` username and Sandbox password—not your developer account.
+4. Then open the [Sandbox Sell page](https://www.sandbox.ebay.com/sl/sell).
+
+If that also returns to the Developer Sandbox page, tell me the exact page heading or error you see. Do not create a Production listing.
+
+YOU
+
+why do I need production keys at this moment? and can I skip that and the rest of the instructions from there?
+
+CODEX
+
+I’m using the clarity guidance to separate what Sandbox testing needs now from what can safely wait until Production.
+
+CODEX
+
+No—you do not need Production keys right now. I included a later Wave 2 requirement too early.
+
+### Continue now
+
+You only need:
+
+- Sandbox App ID and Cert ID
+- Sandbox RuName
+- Sandbox `TESTUSER_...` seller
+- One Sandbox test listing
+
+You can skip all Production-key, Production-consent, and real-listing instructions for now. Production keys are only needed later for a read-only category-data check; skipping them means Wave 2 cannot be declared complete, but it does not block the Sandbox test.
+
+Next action: stay in Sandbox and finish creating/signing into the `TESTUSER_...` seller account.
+
+YOU
+
+so everything I got for sandbox, get the same for production, the keys? can't I complete wave 2 with sandbox and put in production keys at the end?
+
+CODEX
+
+I’m using the clarity guidance to separate the two Wave 2 checks and put them in the safest order.
+
+CODEX
+
+Yes—that is the correct order.
+
+1. Finish the entire Sandbox test first.
+2. At the end of Wave 2, get the separate Production **App ID/Client ID** and **Cert ID/Client Secret**.
+3. Enter them only when this read-only command prompts you:
+
+```bash
+npm run spike:ebay -- --environment production --taxonomy-only
+```
+
+For Wave 2, you do **not** need a Production RuName, user token, seller consent, or real listing. Wave 2 becomes complete after both the Sandbox test and that final Production read-only check pass.
+
+YOU
+
+can I just give yo umy sandbox keys and you do what you need to with them for wave 2?
+
+CODEX
+
+I’m using the clarity guidance to give you the shortest safe handoff without exposing the Cert ID.
+
+CODEX
+
+Yes—I can handle Wave 2, but **do not paste your Cert ID/client secret into chat**.
+
+The safe handoff is:
+
+1. Create the Sandbox listing.
+2. Send me only its Sandbox item ID.
+3. I’ll launch the Wave 2 harness.
+4. You’ll enter the App ID, Cert ID, and RuName into its local prompts; the Cert ID is hidden and stored encrypted.
+
+The Sandbox listing is the only remaining prerequisite before I can take over execution.
+
+YOU
+
+Looks like the server is down on ebays side, complete wave 2 and then at the end I will input what I need to, to finish wave 2
+
+CODEX
+
+I’m using the wave manager because this is the approved Wave 2 execution, and the clarity guidance for the handoff. I’ll complete every offline/preparatory step now and leave only the live eBay checks that require your credentials and Sandbox item ID.
+
+CODEX
+
+Wave 2’s code is already present from Wave 1; this pass is validating the packaged harness and preparing the exact live run. The Sandbox mutation and Production metadata read will remain unclaimed until you enter the credentials and Sandbox item ID locally.
+
+CODEX
+
+The implementer is checking the packaged harness against the approved Wave 2 contract. No credentials will be entered or stored during this preparation pass.
+
+CODEX
+
+The preparation check is still running. The expected stopping point is the live Sandbox listing/consent prompt; reaching it safely is preparation, not a Wave 2 pass.
+
+CODEX
+
+The harness review has not found a reason to request secrets early. It is finishing the local package/readiness checks before reporting the exact input boundary.
+
+CODEX
+
+Everything possible without live eBay access is finished. Wave 2 is staged at the credential/listing boundary, but it cannot honestly be marked complete yet.
+
+### Ready
+
+- Lint passed.
+- Typecheck passed.
+- All 85 tests passed.
+- Packaging and database smoke test passed.
+- Worktree remains clean.
+- No credentials were requested or stored.
+
+### Final live steps
+
+Once eBay Sandbox returns:
+
+1. Send me only the Sandbox listing item ID.
+2. Enter Sandbox credentials through the local hidden prompts.
+3. Complete the Sandbox verification and restoration.
+4. Enter Production Client ID and Cert ID for the final read-only metadata check.
+5. Record the sanitized results and run the final gate/review.
+
+Do not send your Cert IDs here. Your next action is simply to send the Sandbox item ID once eBay is available.
+
+YOU
+
+give me the commands to complete wave 2
+
+CODEX
+
+I’m using the clarity guidance to give you the exact Wave 2 command sequence, including where each credential is entered safely.
+
+CODEX
+
+Run these from macOS Terminal. Replace only `YOUR_SANDBOX_ITEM_ID`; never put credentials in a command.
+
+### 1. Open the project
+
+```bash
+cd "/Users/antonioperedo/Desktop/ebay listings enhancement"
+nvm use 24.18.1
+```
+
+If `nvm` is unavailable but `node --version` prints `v24.18.1`, continue.
+
+### 2. Run the Sandbox proof
+
+```bash
+npm run spike:ebay -- --environment sandbox --item-id YOUR_SANDBOX_ITEM_ID
+```
+
+Enter these when prompted:
+
+- `sandbox Client ID:` Sandbox App ID
+- `sandbox Cert ID:` Sandbox Cert ID—the input stays hidden
+- `sandbox RuName:` Sandbox RuName
+- Sign into the OAuth window using the `TESTUSER_...` seller
+
+Type these confirmations exactly when requested:
+
+```text
+TRADING MODEL
+SANDBOX 1 LISTING 2 FIELDS
+```
+
+Then type the item ID when requested. The harness automatically applies, verifies, restores, and verifies again.
+
+### 3. Recover only if instructed
+
+If the Sandbox command reports a pending recovery, stop and run:
+
+```bash
+npm run spike:ebay -- --recover
+```
+
+Type the exact restoration phrase displayed by the harness. Do not rerun the normal Sandbox command while recovery is pending.
+
+### 4. Run the Production read-only check
+
+```bash
+npm run spike:ebay -- --environment production --taxonomy-only
+```
+
+Enter the Production Client ID and Cert ID when prompted. This command does not request a Production RuName, seller login, listing, or write confirmation.
+
+### 5. Final gate
+
+After both live commands report `PASS`, send me their sanitized output so I can update `RESEARCH.md`. Then run:
+
+```bash
+npm run lint
+npm run typecheck
+npm test
+npm run package
+```
+
+Do not paste either Cert ID, OAuth code, or token into chat.
+
+YOU
+
+where do I find my sandbox item id?
+
+CODEX
+
+I’m using the clarity guidance and checking eBay’s current Sandbox pages so the clicks match what you should see.
+
+CODEX
+
+You receive a Sandbox item ID only after successfully publishing a Sandbox listing. It is **not** your App ID or Client ID.
+
+1. Sign into Sandbox with your `TESTUSER_...` seller.
+2. Open **Seller Hub → Listings → Active**.
+3. Find your Pokémon test listing.
+4. Copy its **Item ID/Item number**. Opening the listing also shows it in the URL after `/itm/`.
+
+Example:
+
+```text
+https://www.sandbox.ebay.com/itm/123456789012
+                                  ^^^^^^^^^^^^
+                                  Sandbox item ID
+```
+
+eBay assigns the unique Item ID when the listing is created, and Seller Hub’s Active Listings area displays active listings. [eBay ItemID explanation](https://developer.ebay.com/support/knowledge-base/1854), [Seller Hub guide](https://developer.ebay.com/api-docs/user-guides/static/trading-user-guide/seller-hub.html)
+
+If **Active Listings is empty**, you do not have an item ID yet—you must publish the Sandbox test listing first.
+
+YOU
+
+I can't do that untl their server is back up huh. can we continue with wave 3 and come back to finishing this when ebay lets me?
+
+CODEX
+
+I’m using the clarity guidance to separate what can continue offline from the live safety gate that cannot be skipped.
+
+CODEX
+
+No. Wave 3 cannot start until Wave 2 passes.
+
+Wave 3 temporarily modifies a real Production listing, so the app requires a matching successful Sandbox receipt first. Without it, the Production command stops before making any listing call.
+
+While Sandbox is unavailable, you may complete Wave 2’s read-only Production check:
+
+```bash
+cd "/Users/antonioperedo/Desktop/ebay listings enhancement"
+npm run spike:ebay -- --environment production --taxonomy-only
+```
+
+That requires only the Production Client ID and Cert ID and makes no listing changes. Wave 2 will remain open until the Sandbox proof and final review pass.
+
+YOU
+
+[Attachment reference retained in items.jsonl]
+[Image #1] in the sandbox I cannot get past this, multiple days now. well yesterday and today. so what now? go with live testing?
+
+CODEX
+
+The screenshot shows the listing form is working but Sandbox photo hosting is rejecting both uploads. I’m checking eBay’s current API/Sandbox status and the supported fallback before deciding whether any live test is safe.
+
+CODEX
+
+No—do not switch to live Production testing. Wave 3 modifies a real listing and is intentionally blocked until Sandbox restoration passes.
+
+The screenshot proves only that Sandbox photo hosting rejected the files. It does not prove the entire Sandbox is unavailable. eBay’s latest matching official incident is marked resolved, and its image service requires a supported format, RGB color, no more than 12 MB, and combined width plus height under 15,000 pixels. [eBay Sandbox status](https://developer.ebay.com/support/api-status/sandbox/resolved-the-uploadsitehostedpictures-api-call-in-the-sandbox-environment-is-not-working), [image requirements](https://developer.ebay.com/devzone/XML/docs/Reference/eBay/UploadSiteHostedPictures.html)
+
+### Try this once
+
+1. Open the front photo in Preview.
+2. Choose **File → Export**.
+3. Select **JPEG**, medium/high quality.
+4. Remove both failed uploads from eBay.
+5. Upload only the new JPEG.
+
+If that JPEG also fails, we should create the test listing through eBay’s **Sandbox Trading API**, which the approved plan allows, rather than risking a Production listing.
+
+YOU
+
+the images are 905 kb each and already jpg
+
+CODEX
+
+I’m using the clarity guidance to narrow this to the one remaining image check before treating Sandbox photo hosting as the blocker.
+
+CODEX
+
+Then file size and extension are not the problem. The remaining local possibility is the JPEG’s internal encoding or color profile; otherwise this is a Sandbox photo-hosting failure.
+
+Re-export one image through Preview as a new JPEG. This rewrites the file and removes problematic metadata even though the original is already `.jpg`:
+
+1. Open it in Preview.
+2. Select **File → Export**.
+3. Choose **JPEG** and save under a new name.
+4. Remove the failed uploads and try only that new file.
+
+If the new copy also fails, stop retrying the UI. We should use the Sandbox Trading API route—not live Production testing.
+
+YOU
+
+same issue
+
+CODEX
+
+The clean re-encoded JPEG failing confirms the browser route is blocked. I’m switching to the plan-approved Sandbox Trading API path and checking the shortest official route; Production testing remains locked.
+
+CODEX
+
+Stop retrying the Sandbox website. Do **not** move to Production.
+
+The safe fallback is to create the listing through Sandbox’s **Trading API**. This is allowed by the approved plan, avoids the broken listing form, and returns the Sandbox item ID needed for Wave 2. eBay officially supports `AddFixedPriceItem` in Sandbox. [eBay documentation](https://developer.ebay.com/devzone/xml/docs/reference/ebay/AddFixedPriceItem.html)
+
+I recommend uploading one photo and creating the test listing through a secure local Terminal workflow. Your token and Cert ID will stay out of chat.
+
+Reply **“start Sandbox API listing”** and I’ll set up that workflow.
+
+YOU
+
+ok so make this easy for me, wnat do I do, just give you a photo and you set it up?
+
+CODEX
+
+I’m using the clarity guidance to reduce this to the photo handoff and one private eBay authorization step.
+
+CODEX
+
+Yes—attach one original JPG and I’ll prepare the Sandbox listing creator.
+
+I’ll use safe test defaults:
+
+- Sandbox only—no Production access
+- Fixed-price, quantity 1, $1
+- Pokémon category `183454`
+- `Game = Pokémon TCG`
+- No variations
+- Simple inactive HTML description
+
+You will have one private step: enter your Sandbox OAuth user token into a hidden local Terminal prompt and confirm the Sandbox listing creation. Do not send the token or Cert ID here.
+
+Next action: attach the original front-photo JPG, not a screenshot of the eBay page.
+
+YOU
+
+[Attachment reference retained in items.jsonl]
+[Attachment reference retained in items.jsonl]
+[Image #1] [Image #2] here's the front and back, tell me when to do the terminal thing and give me the exact commands
+
+CODEX
+
+I have both original JPGs. I’m setting up a temporary Sandbox-only creator that uploads them, validates the listing request, creates the listing, and prints the item ID; it will keep the OAuth token hidden and outside the repository.
+
+CODEX
+
+Do the Terminal step now. The temporary Sandbox-only creator is ready and both photos were verified as valid RGB JPEGs.
+
+### 1. Get a temporary Sandbox OAuth token
+
+On eBay’s **User Tokens** page:
+
+1. Select **Sandbox**.
+2. Under **Get a User Token Here**, select **OAuth (new security)**.
+3. Click **Sign in to Sandbox**.
+4. Sign in with your `TESTUSER_...` seller and approve access.
+5. Copy the OAuth user token eBay displays.
+
+Do not paste that token into chat.
+
+### 2. Run the creator
+
+Open Terminal and run:
+
+```bash
+cd "/Users/antonioperedo/Desktop/ebay listings enhancement"
+node --version
+node /private/tmp/plo-create-sandbox-listing.mjs
+```
+
+If the Node version is not `v24.18.1`, run this before the final command:
+
+```bash
+nvm use 24.18.1
+```
+
+### 3. Complete the prompts
+
+At this prompt:
+
+```text
+Paste Sandbox OAuth user token (hidden):
+```
+
+Paste the token and press Return. Nothing will appear while you paste—that is intentional.
+
+The tool will:
+
+1. Upload both photos to Sandbox.
+2. validate the listing without creating it;
+3. show the exact listing count and test price;
+4. ask you to type:
+
+```text
+CREATE SANDBOX LISTING
+```
+
+After success, it prints the Sandbox item ID and the next Wave 2 command. The script uses eBay’s official Sandbox-supported [`UploadSiteHostedPictures`](https://developer.ebay.com/devzone/XML/docs/Reference/eBay/UploadSiteHostedPictures.html) and [`AddFixedPriceItem`](https://developer.ebay.com/devzone/xml/docs/reference/ebay/AddFixedPriceItem.html) calls.
+
+If it stops, send me only the displayed eBay error lines—never the token.
+
+YOU
+
+[Attachment reference retained in items.jsonl]
+[Attachment reference retained in items.jsonl]
+[Image #1] [Image #2] what the heck is going on, this thing is so buggy, I can't seem to do anything and do anything sandbox related.. do we need the sandbox? what are ways around this stupid this? It is so incredibly buggy
+
+CODEX
+
+The screenshots show two separate eBay failures: the Sandbox listing photo service rejects uploads, and the Developer Portal’s “Create a User Token” link now routes to a 404. That is not something you configured wrong. I’m replacing the broken portal step with a direct local OAuth/API flow; the only eBay page it will still need is the Sandbox sign-in/consent page.
+
+CODEX
+
+Yes, the current safety plan still needs one successful Sandbox write-and-restore test. But we no longer need the broken **Create User Token** or listing pages.
+
+I updated the temporary tool to use eBay’s official direct Sandbox OAuth and API endpoints. [eBay OAuth documentation](https://developer.ebay.com/develop/guides/sell/authorization)
+
+### Run this now
+
+```bash
+cd "/Users/antonioperedo/Desktop/ebay listings enhancement"
+node /private/tmp/plo-create-sandbox-listing.mjs
+```
+
+Enter these locally:
+
+1. Sandbox App ID/Client ID.
+2. Sandbox Cert ID—the input is hidden.
+3. Sandbox RuName.
+
+The tool prints a direct `auth.sandbox.ebay.com` URL. Copy that URL into your browser, sign in with the `TESTUSER_...` seller, and click **Agree and Continue**.
+
+After eBay redirects:
+
+1. Copy the **complete URL from the browser address bar**.
+2. Paste it into the hidden Terminal prompt.
+3. When validation passes, type:
+
+```text
+CREATE SANDBOX LISTING
+```
+
+The tool will upload both photos, create the Sandbox listing, and print its item ID.
+
+If even the direct `auth.sandbox.ebay.com` page fails, stop there. That means Sandbox authorization itself is unavailable, and Production testing is not a safe substitute.
+
+YOU
+
+I didn't get a runame how do I get that, I got client dev and cert id
+
+CODEX
+
+I’m using the clarity guidance to point you to the RuName you already created earlier.
+
+CODEX
+
+You already created the Sandbox RuName earlier. Use:
+
+```text
+Antonio_Peredo-AntonioP-ebayli-zixesyrn
+```
+
+Paste that exact value at:
+
+```text
+Sandbox RuName:
+```
+
+The **Dev ID is not needed** for this OAuth flow. Only the Sandbox Client ID, Cert ID, and that RuName are required.
+
+YOU
+
+not sure what to put for Sign in with the TESTUSER_ Sandbox seller and choose Agree and Continue.
+After eBay redirects, paste the COMPLETE final address-bar URL here (hidden): or what page to get that page in
+
+CODEX
+
+I’m using the clarity guidance to map the Terminal prompt to the exact browser page and value you need.
+
+CODEX
+
+Do **not** enter your username or RuName at that final prompt. It expects a URL from your browser.
+
+### What to do
+
+1. Look slightly above the prompt in Terminal for:
+
+```text
+Open this URL in your browser:
+https://auth.sandbox.ebay.com/oauth2/authorize?...
+```
+
+2. Copy that entire long `https://auth.sandbox.ebay.com/...` URL and open it in your browser.
+
+3. Sign in using your Sandbox seller’s:
+
+```text
+Username: TESTUSER_...
+Password: the password created for that Sandbox user
+```
+
+Do not use your normal eBay or Developer Program login.
+
+4. Click **Agree and Continue**. eBay will redirect to a page whose address begins approximately:
+
+```text
+https://signin.sandbox.ebay.com/ws/eBayISAPI.dll?...
+```
+
+5. Copy that **entire final browser address**, return to Terminal, paste it at:
+
+```text
+After eBay redirects, paste the COMPLETE final address-bar URL here (hidden):
+```
+
+The paste will be invisible. Press Return afterward. Never paste that final URL into chat because it contains a temporary authorization code.
+
+YOU
+
+Open this URL in your browser:
+https://auth.sandbox.ebay.com/oauth2/authorize?client_id=AntonioP-ebaylist-SBX-b449058ed-efd3595c&locale=en-US&prompt=login&redirect_uri=Antonio_Peredo-AntonioP-ebayli-zixesyrn&response_type=code&scope=https%3A%2F%2Fapi.ebay.com%2Foauth%2Fapi_scope+https%3A%2F%2Fapi.ebay.com%2Foauth%2Fapi_scope%2Fsell.analytics.readonly&state=423594b7-ec06-450b-8001-27ec6065e86d
+
+Sign in with the TESTUSER_ Sandbox seller and choose Agree and Continue.
+After eBay redirects, paste the COMPLETE final address-bar URL here (hidden): 
+
+Stopped: The callback did not come from the expected eBay Sandbox response page.
+antonioperedo@Mac ebay listings enhancement %
+
+CODEX
+
+The tool stopped for the right reason: the URL pasted after consent was not the configured Sandbox callback it is allowed to trust. I’m checking whether your RuName is still pointing at the Production `signin.ebay.com` address you showed earlier before changing anything.
+
+CODEX
+
+Nothing was created—the safety check stopped before exchanging the code or calling the listing APIs.
+
+Check what the URL you pasted **started with**:
+
+### If it started with `auth.sandbox.ebay.com`
+
+You pasted the original authorization link. That is not the callback.
+
+Rerun:
+
+```bash
+node /private/tmp/plo-create-sandbox-listing.mjs
+```
+
+Open the URL it prints, sign in, click **Agree and Continue**, and wait for the browser to redirect. Copy the new URL beginning with:
+
+```text
+https://signin.sandbox.ebay.com/ws/eBayISAPI.dll?
+```
+
+### If it started with `signin.ebay.com` without `sandbox`
+
+Your Sandbox RuName is pointing to a Production callback. Open **Application Keys → Sandbox → User Tokens → OAuth settings**, edit your RuName, and use:
+
+```text
+Auth accepted URL:
+https://signin.sandbox.ebay.com/ws/eBayISAPI.dll?ThirdPartyAuthSucessFailure&isAuthSuccessful=true
+```
+
+```text
+Auth declined URL:
+https://signin.sandbox.ebay.com/ws/eBayISAPI.dll?ThirdPartyAuthSucessFailure&isAuthSuccessful=false
+```
+
+Save, then rerun the script. eBay documents separate RuName configurations and callback destinations for Sandbox and Production. [OAuth guide](https://developer.ebay.com/develop/guides/sell/authorization)
+
+If neither prefix matches, send me only the part before the `?`. Do not send the query string because it contains the authorization code.
+
+YOU
+
+here is what I got redirected to https://auth2.ebay.com/oauth2/ThirdPartyAuthSucessFailure?isAuthSuccessful=true&state=423594b7-ec06-450b-8001-27ec6065e86d&code=v%5E1.1%23i%5E1%23f%5E0%23r%5E1%23p%5E3%23I%5E3%23t%5EUl41XzExOjZFNTdFMzlGQTlBQUE1NjgwNjVCMzJFRTM3RUNCNTQwXzFfMSNFXjEyODQ%3D&expires_in=299
+
+CODEX
+
+That URL reveals the actual compatibility problem: eBay now redirected this Sandbox consent to `auth2.ebay.com/oauth2/ThirdPartyAuthSucessFailure`, while the audited app only allows the older `signin.sandbox.ebay.com` callback. The code in the URL was exposed in chat, so I will not use it; it expires in about five minutes, and we’ll generate a fresh one after the callback boundary is repaired.
+
+CODEX
+
+I’m using the Wave 2 workflow for this repair because callback acceptance is an authentication boundary. A fresh implementer will update only the observed eBay callback behavior with tests, then a separate fresh reviewer will audit it before we retry consent.
+
+CODEX
+
+That redirect proves the problem: eBay’s current Sandbox flow is using a new exact callback address that our allowlist does not recognize. I’m updating the approved Wave 2 plan to support that address safely—without widening it to arbitrary eBay pages—then I’ll have the authentication-boundary change independently reviewed before we generate a fresh code. Do not reuse or repost the code you pasted; it expires in about five minutes and no token was created.
+
+CODEX
+
+The plan amendment is now recorded with the narrow rule: accept only the legacy Sandbox callback and the one exact callback eBay actually returned, while preserving exact state matching and rejecting broader `auth2.ebay.com` URLs. The plan-audit workflow now requires a fresh-context reviewer to challenge that security boundary before code changes begin.
+
+CODEX
+
+The fresh reviewer returned READY with no findings: the two exact Sandbox forms are sufficient, Production stays unchanged, and the defensive cases cover wrong paths, hosts, schemes, state, duplicate events, and cleanup. I found one wording ambiguity while adjudicating the verdict, so I’m making the reviewer’s interpretation explicit: `auth2.ebay.com` will not become a general browsing host; only its exact callback path can be intercepted.
+
+CODEX
+
+The security review is complete and the repair is being implemented now. The expected end state is simple: you will run the listing helper again, receive a new one-time code in the hidden terminal prompt, and the callback eBay is actually returning will be accepted; the old pasted code will never be used.
+
+CODEX
+
+The repair is implemented and the full repository gate passes: lint, typecheck, 101 tests, and packaged-app smoke. It added 16 focused regressions without changing the consent window itself. The mandatory fresh code review is next; only after that passes will I update the local listing helper and give you the exact retry command.
+
+CODEX
+
+The reviewer found two real ambiguity bugs before we touched eBay again: duplicate callback parameters could be accepted by taking only the first value, and conflicting “success/decline/error” signals had precedence instead of failing closed. I’m sending those exact findings into repair now, with regression tests for duplicate, encoded, and contradictory callbacks.
+
+CODEX
+
+The repair round is still running. The key safety rule is now stricter than the original implementation: a callback must have one unambiguous state and outcome, and contradictory or duplicated security fields will cancel the consent attempt instead of being interpreted.
+
+CODEX
+
+Both reviewer findings are repaired. The test suite is now 112/112, and the full packaging smoke passes again. A second fresh reviewer is checking the repair specifically; this is reviewer round 2 of the maximum 3.
+
+CODEX
+
+Reviewer round 2 passed with no issues. The repository repair is now reviewed and green; Wave 2 itself is still not complete until the live Sandbox listing is created, revised, restored, and the read-only Production metadata check runs. I’m now updating only the temporary local listing helper to mirror the reviewed callback rules, then I’ll give you one exact command to run.
+
+CODEX
+
+Ready. In Terminal, run:
+
+```bash
+node /private/tmp/plo-create-sandbox-listing.mjs
+```
+
+Then:
+
+1. Enter your Sandbox Client ID.
+2. Enter your Sandbox Cert ID—the terminal hides it.
+3. Enter your RuName.
+4. Open the newly generated authorization URL.
+5. Sign in with your `TESTUSER_` seller and approve.
+6. Paste the complete redirected URL into the hidden terminal prompt—not here.
+7. When asked, type exactly:
+
+```text
+CREATE SANDBOX LISTING
+```
+
+The helper will upload both photos, create the listing, and print the Sandbox Item ID and next command. The callback repair passed 112 tests, packaging, and two review rounds. Do not reuse the old callback.
+
+YOU
+
+this is what I type in for runname? TESTUSER_test_user_12345
+
+CODEX
+
+No. That is your Sandbox seller username.
+
+For **RuName**, enter:
+
+```text
+Antonio_Peredo-AntonioP-ebayli-zixesyrn
+```
+
+Use the `TESTUSER_...` username only when eBay asks you to sign in.
+
+YOU
+
+same issue Sign in with the TESTUSER_ Sandbox seller and choose Agree and Continue.
+After eBay redirects, paste the COMPLETE final address-bar URL here (hidden): 
+
+Stopped: The OAuth callback state did not match this run.
+antonioperedo@Mac ebay listings enhancement %
+
+CODEX
+
+That means the callback came from a different authorization URL—usually an older browser tab—because every helper restart previously generated a new state. I’m changing the temporary helper to keep one pending state across retries, so the terminal and browser cannot drift apart again; no credentials or authorization codes will be saved.
+
+CODEX
+
+Close all old eBay authorization tabs, then run:
+
+```bash
+node /private/tmp/plo-create-sandbox-listing.mjs
+```
+
+Use only the authorization URL printed during this run. The helper now preserves the expected state across retries. Paste the final redirected URL into Terminal—not here.
+
+YOU
+
+Sign in with the TESTUSER_ Sandbox seller and choose Agree and Continue.
+After eBay redirects, paste the COMPLETE final address-bar URL here (hidden): 
+Sandbox OAuth PASS. The token is held in memory only.
+Uploading Emolga front to eBay Sandbox...
+Uploading Emolga back to eBay Sandbox...
+Validating the Sandbox listing request...
+Validation PASS. No listing has been created yet.
+Will create: 1 Sandbox listing, fixed price $1.00, quantity 1, category 183454.
+Type "CREATE SANDBOX LISTING" to continue: CREATE SANDBOX LISTING
+
+SANDBOX LISTING CREATED
+Item ID: 110590464693
+Next command:
+cd "/Users/antonioperedo/Desktop/ebay listings enhancement"
+npm run spike:ebay -- --environment sandbox --item-id 110590464693
+antonioperedo@Mac ebay listings enhancement %
+
+CODEX
+
+The Sandbox listing is ready. Run exactly:
+
+```bash
+cd "/Users/antonioperedo/Desktop/ebay listings enhancement"
+npm run spike:ebay -- --environment sandbox --item-id 110590464693
+```
+
+Use the same Sandbox Client ID, Cert ID, and RuName. Follow the prompts and type each confirmation phrase exactly as displayed. Do not paste secrets or callback URLs here.
+
+YOU
+
+I want the price to be 1.79 though
+
+CODEX
+
+I’ll update the existing Sandbox listing to `$1.79`; there’s no need to create another listing. I’m adding a one-time, Sandbox-only price adjustment to the temporary helper with an exact confirmation and read-back verification. The application itself will still treat price as protected and never change it during Wave 2.
+
+CODEX
+
+Run the helper again:
+
+```bash
+node /private/tmp/plo-create-sandbox-listing.mjs
+```
+
+It will find listing `110590464693`, reconnect to Sandbox, and ask you to type:
+
+```text
+SET SANDBOX PRICE 1.79
+```
+
+It will then read the listing back and verify the `$1.79` price before printing the Wave 2 command again.
+
+YOU
+
+can you set it?
+
+CODEX
+
+I can prepare and verify the change, but I cannot complete your private eBay login or enter your Cert ID.
+
+Run:
+
+```bash
+node /private/tmp/plo-create-sandbox-listing.mjs
+```
+
+Then authenticate and type:
+
+```text
+SET SANDBOX PRICE 1.79
+```
+
+Everything else is automated.
+
+YOU
+
+ok what do we do now?
+
+CODEX
+
+First set the requested price:
+
+```bash
+node /private/tmp/plo-create-sandbox-listing.mjs
+```
+
+Authenticate, then type:
+
+```text
+SET SANDBOX PRICE 1.79
+```
+
+After it verifies the price, run Wave 2:
+
+```bash
+cd "/Users/antonioperedo/Desktop/ebay listings enhancement"
+npm run spike:ebay -- --environment sandbox --item-id 110590464693
+```
+
+Follow the displayed confirmations exactly. When it finishes, paste the final redacted output here—never paste credentials, tokens, or callback URLs.
+
+YOU
+
+so I accidently ran the wrong credentials and now I gotta do it again, when I run it again I get this Checking your system
+✔ Preparing to package application
+✔ Running packaging hooks
+  ✔ Running generateAssets hook
+  ✔ Running prePackage hook
+    ✔ [plugin-webpack] Preparing webpack bundles
+      ✔ Preparing native dependencies: 1 / 1 [0.1s]
+      ✔ Building webpack bundles [3s]
+✔ Packaging application
+  ✔ Packaging for arm64 on darwin [2s]
+✔ Running postPackage hook
+Packaged smoke PASS — schema 1.
+sandbox Client ID: SBX-449058ed94c0-941b-4cc8-bec0-d20d
+sandbox Cert ID: 
+sandbox RuName: dsfd
+OAuth navigation left the expected eBay hosts.
+antonioperedo@Mac ebay listings enhancement % npm run spike:ebay -- --environment sandbox --item-id 110590464693
+
+> pokemon-listing-optimizer@0.1.0 spike:ebay
+> node scripts/run-ebay-spike.mjs --environment sandbox --item-id 110590464693
+
+
+> pokemon-listing-optimizer@0.1.0 package
+> npm run package:app && node scripts/smoke-packaged.mjs
+
+
+> pokemon-listing-optimizer@0.1.0 package:app
+> electron-forge package
+
+✔ Checking your system
+✔ Preparing to package application
+✔ Running packaging hooks
+  ✔ Running generateAssets hook
+  ✔ Running prePackage hook
+    ✔ [plugin-webpack] Preparing webpack bundles
+      ✔ Preparing native dependencies: 1 / 1 [0.2s]
+      ✔ Building webpack bundles [3s]
+✔ Packaging application
+  ✔ Packaging for arm64 on darwin [2s]
+✔ Running postPackage hook
+Packaged smoke PASS — schema 1.
+OAuth navigation left the expected eBay hosts.
+antonioperedo@Mac ebay listings enhancement %
+
+CODEX
+
+The first run saved the incorrect Client ID and RuName, so the second run reused them and skipped the prompts. I’m locating the app’s exact local credential record and checking that no recovery write exists; then I’ll give you a safe reset command that removes only the bad Sandbox connection.
+
+CODEX
+
+The wrong Client ID and RuName were saved locally. I verified there is no refresh token, pending recovery, or Sandbox validation receipt, so resetting this database is safe.
+
+Run once:
+
+```bash
+mv "/Users/antonioperedo/Library/Application Support/Pokemon Listing Optimizer/pokemon-listing-optimizer.sqlite3" "/Users/antonioperedo/Library/Application Support/Pokemon Listing Optimizer/pokemon-listing-optimizer.sqlite3.wrong-credentials-backup"
+```
+
+Then retry:
+
+```bash
+cd "/Users/antonioperedo/Desktop/ebay listings enhancement"
+npm run spike:ebay -- --environment sandbox --item-id 110590464693
+```
+
+Enter:
+
+```text
+Client ID: AntonioP-ebaylist-SBX-b449058ed-efd3595c
+RuName: Antonio_Peredo-AntonioP-ebayli-zixesyrn
+```
+
+For Cert ID, enter your actual Sandbox Cert ID. It remains hidden. Packaging on every run is expected.
+
+YOU
+
+Packaged smoke PASS — schema 1.
+OAuth navigation left the expected eBay hosts.
+antonioperedo@Mac ebay listings enhancement % mv "/Users/antonioperedo/Library/Application Support/Pokemon Listing Optimizer/pokemon-listing-
+  optimizer.sqlite3" "/Users/antonioperedo/Library/Application Support/Pokemon Listing Optimizer/
+  pokemon-listing-optimizer.sqlite3.wrong-credentials-backup"
+mv: rename /Users/antonioperedo/Library/Application Support/Pokemon Listing Optimizer/pokemon-listing-
+  optimizer.sqlite3 to /Users/antonioperedo/Library/Application Support/Pokemon Listing Optimizer/
+  pokemon-listing-optimizer.sqlite3.wrong-credentials-backup: No such file or directory
+antonioperedo@Mac ebay listings enhancement % npm run spike:ebay -- --environment sandbox --item-id 110590464693
+
+> pokemon-listing-optimizer@0.1.0 spike:ebay
+> node scripts/run-ebay-spike.mjs --environment sandbox --item-id 110590464693
+
+
+> pokemon-listing-optimizer@0.1.0 package
+> npm run package:app && node scripts/smoke-packaged.mjs
+
+
+> pokemon-listing-optimizer@0.1.0 package:app
+> electron-forge package
+
+✔ Checking your system
+✔ Preparing to package application
+✔ Running packaging hooks
+  ✔ Running generateAssets hook
+  ✔ Running prePackage hook
+    ✔ [plugin-webpack] Preparing webpack bundles
+      ✔ Preparing native dependencies: 1 / 1 [0.1s]
+      ✔ Building webpack bundles [3s]
+✔ Packaging application
+  ✔ Packaging for arm64 on darwin [2s]
+✔ Running postPackage hook
+Packaged smoke PASS — schema 1.
+OAuth navigation left the expected eBay hosts.
+antonioperedo@Mac ebay listings enhancement %
+
+CODEX
+
+The `mv` failed because the terminal inserted a line break inside `pokemon-listing-optimizer.sqlite3`, so nothing was moved and the bad credentials remained. I’m checking the exact source and backup names, then I’ll move only that database aside for you.
+
+CODEX
+
+I moved the bad-credential database aside successfully. It remains recoverable as a backup.
+
+Now rerun:
+
+```bash
+npm run spike:ebay -- --environment sandbox --item-id 110590464693
+```
+
+Use:
+
+```text
+Client ID: AntonioP-ebaylist-SBX-b449058ed-efd3595c
+RuName: Antonio_Peredo-AntonioP-ebayli-zixesyrn
+```
+
+Enter your actual Sandbox Cert ID when prompted.
+
+YOU
+
+reset it again
+
+CODEX
+
+I’ll reset it again. First I’m verifying this new database still has no token, validation receipt, or pending recovery; then I’ll preserve it as a second backup and remove it from the app’s active path.
+
+CODEX
+
+Reset complete. I verified there was no token, pending recovery, or validation receipt, and preserved the database as a second backup.
+
+Retry:
+
+```bash
+npm run spike:ebay -- --environment sandbox --item-id 110590464693
+```
+
+YOU
+
+sandbox Client ID: AntonioP-ebaylist-SBX-b449058ed-efd3595c
+sandbox Cert ID: 
+sandbox RuName: Antonio_Peredo-AntonioP-ebayli-zixesyrn
+OAuth navigation left the expected eBay hosts. did it work? cert id kept not showing
+
+CODEX
+
+No—it did not finish OAuth. The blank Cert ID display is correct because the terminal deliberately hides every character you type.
+
+The failure is a different eBay navigation address occurring before the callback. I’m adding a temporary safe diagnostic that prints only the rejected host and path—never the authorization code, state, token, or query—so the next run will tell us exactly which eBay page must be handled.
+
+CODEX
+
+No, OAuth did not complete. The hidden Cert ID is normal—nothing appears while typing, including dots.
+
+Run the same command again; no reset is needed:
+
+```bash
+npm run spike:ebay -- --environment sandbox --item-id 110590464693
+```
+
+The new error will include only the rejected eBay host and path. Paste that error line here. Do not paste any complete URL, code, state, or token.
+
+YOU
+
+antonioperedo@Mac ebay listings enhancement % npm run spike:ebay -- --environment sandbox --item-id 110590464693
+
+> pokemon-listing-optimizer@0.1.0 spike:ebay
+> node scripts/run-ebay-spike.mjs --environment sandbox --item-id 110590464693
+
+
+> pokemon-listing-optimizer@0.1.0 package
+> npm run package:app && node scripts/smoke-packaged.mjs
+
+
+> pokemon-listing-optimizer@0.1.0 package:app
+> electron-forge package
+
+✔ Checking your system
+✔ Preparing to package application
+✔ Running packaging hooks
+  ✔ Running generateAssets hook
+  ✔ Running prePackage hook
+    ✔ [plugin-webpack] Preparing webpack bundles
+      ✔ Preparing native dependencies: 1 / 1 [0.1s]
+      ✔ Building webpack bundles [3s]
+✔ Packaging application
+  ✔ Packaging for arm64 on darwin [2s]
+✔ Running postPackage hook
+Packaged smoke PASS — schema 1.
+OAuth navigation left the expected eBay hosts at https://auth2.sandbox.ebay.com/oauth2/authorize.
+antonioperedo@Mac ebay listings enhancement %
+
+CODEX
+
+Found it: eBay first moves the embedded Sandbox session to `auth2.sandbox.ebay.com/oauth2/authorize`, then later returns the callback. That exact Sandbox authentication host is missing from the navigation allowlist.
+
+Because this changes the authentication boundary, I’m using the Wave 2 workflow again: record the observed host, independently audit the narrow rule, implement it with defensive tests, and review it before you retry. Your correctly entered credentials are already stored, so another reset should not be needed.
+
+CODEX
+
+The plan review is still running. The boundary under review is deliberately narrow: `auth2.sandbox.ebay.com` may display Sandbox consent pages, but it can never supply an authorization code; only the separately validated exact callback can do that.
+
+CODEX
+
+The reviewer found no design flaw, but required four explicit regressions: non-default ports, fragment redaction, code-bearing URLs on the new host remaining ordinary navigation, and a window-level “intermediate host then real callback” sequence. I’m adding those tests to the plan and sending the corrected amendment through one fresh verification round.
+
+CODEX
+
+The corrected plan is now READY. Implementation starts with the exact observed host plus the safe origin/path diagnostic already in the worktree; the implementer will add the defensive classifier and consent-window tests, then run the full gate.
+
+CODEX
+
+Implementation is still running. Once it passes, you should not need to re-enter credentials: the app will reuse the correct encrypted Sandbox keyset and allow the newly observed intermediate eBay host.
+
+CODEX
+
+The host repair passes the full gate with 120/120 tests and packaged smoke. The final mandatory fresh reviewer is now checking that code-bearing URLs on the intermediate host remain nonterminal and that all rejected variants redact their query and fragment.
+
+CODEX
+
+The reviewer is still checking the authentication paths. If it passes, your next action will be just the same `npm run spike:ebay` command—no database reset and no credential prompts.
+
+CODEX
+
+The new host repair passed 120 tests, packaging, and independent review.
+
+Run again—no reset needed:
+
+```bash
+npm run spike:ebay -- --environment sandbox --item-id 110590464693
+```
+
+It should reuse the saved credentials. Complete the eBay sign-in window and follow every terminal confirmation exactly.
+
+YOU
+
+do I sign in with my actual account or with my test user one?
+
+CODEX
+
+Sign in with your **`TESTUSER_...` Sandbox seller account**, not your real eBay account.
+
+YOU
+
+Packaged smoke PASS — schema 1.
+https://auth.ebay.com/oauth2/ThirdPartyAuthSucessFailure
+antonioperedo@Mac ebay listings enhancement % what now?
+
+CODEX
+
+It did not finish; the terminal returned because eBay used yet another exact callback location: `auth.ebay.com/oauth2/ThirdPartyAuthSucessFailure`. That is host/path-only diagnostic output—no secret was exposed.
+
+Do nothing for now and do not reset the database. I’m adding this exact observed callback to Sandbox only, with the same state/code checks and no broader access, then running the authentication-boundary audit, tests, packaging, and fresh review again.
+
+CODEX
+
+The plan reviewer found two missing proof requirements, not a design problem: Production must treat this callback-shaped URL as ordinary nonterminal navigation, and every existing callback security matrix must explicitly include the third callback. I’m adding those exact requirements and sending the corrected amendment through a fresh verification round.
+
+CODEX
+
+Round 2 found wording ambiguity only: the plan’s Sandbox rejection sentence could be misread as rejecting `auth.ebay.com` in Production, where it is an ordinary login host. I’m making the environment split explicit and sending the final corrected wording through Round 3.
+
+CODEX
+
+The amended authentication rule is now READY after three plan-review rounds. Implementation is limited to one new Sandbox callback descriptor plus the full cross-environment and cleanup matrices; the full gate and a fresh code review follow.
+
+CODEX
+
+The third callback implementation is still running through its expanded matrices and package smoke. Your saved credentials remain untouched; there is still no need to reset or re-enter them.
+
+CODEX
+
+The third callback repair passes lint, typecheck, 141/141 tests, and packaged smoke. One fresh reviewer is now checking the Sandbox/Production split and every callback matrix before you retry.
+
+CODEX
+
+The reviewer is still working through the larger 141-test callback matrix. If it passes, the retry remains the same command and should reuse the saved Sandbox credentials.
+
+CODEX
+
+The third callback repair passed 141 tests, packaging, and independent review.
+
+Retry—no reset or credential re-entry needed:
+
+```bash
+npm run spike:ebay -- --environment sandbox --item-id 110590464693
+```
+
+Sign in with the `TESTUSER_...` Sandbox seller and follow the terminal confirmations exactly.
+
+YOU
+
+ok now what?
+
+CODEX
+
+Run the Sandbox proof now:
+
+```bash
+npm run spike:ebay -- --environment sandbox --item-id 110590464693
+```
+
+Then:
+
+1. Sign in with the `TESTUSER_...` Sandbox seller.
+2. Approve access.
+3. Follow each terminal prompt exactly.
+4. Paste the final terminal output here—omit any credentials, codes, tokens, or complete callback URLs.
+
+YOU
+
+All I see is this after > pokemon-listing-optimizer@0.1.0 package:app
+> electron-forge package
+
+✔ Checking your system
+✔ Preparing to package application
+✔ Running packaging hooks
+  ✔ Running generateAssets hook
+  ✔ Running prePackage hook
+    ✔ [plugin-webpack] Preparing webpack bundles
+      ✔ Preparing native dependencies: 1 / 1 [0.1s]
+      ✔ Building webpack bundles [3s]
+✔ Packaging application
+  ✔ Packaging for arm64 on darwin [2s]
+✔ Running postPackage hook
+Packaged smoke PASS — schema 1.
+
+CODEX
+
+That means packaging finished and the live app is probably still running; the missing shell prompt confirms it has not exited. Look for a “Pokemon Listing Optimizer” window or macOS Keychain prompt behind Terminal. I’m checking the running process so I can tell you exactly where it is stuck.
+
+YOU
+
+token usage has been reset, continue
+
+CODEX
+
+I’m using the clarity skill to reduce this to one concrete diagnosis. I’ll check whether OAuth actually saved a connection and whether the app left any recovery state; that will tell us whether it exited successfully, failed silently, or is waiting elsewhere.
+
+CODEX
+
+I launched the proof directly. It is still running after packaging, so it is waiting in the OAuth window rather than exiting. On your Mac, press `⌘ Tab` and select **Pokemon Listing Optimizer**, then sign in with the `TESTUSER_...` Sandbox seller and choose **Agree and Continue**.
+
+CODEX
+
+The proof is running and waiting in its OAuth window.
+
+Press `⌘ Tab`, select **Pokemon Listing Optimizer**, sign in with your `TESTUSER_...` Sandbox seller, and click **Agree and Continue**. Then tell me what appears; I’m monitoring the running process.
+
+YOU
+
+I believe I did sign in
+
+CODEX
+
+I’m checking the running proof now to see whether OAuth completed and which confirmation it is waiting for.
+
+CODEX
+
+The run exited cleanly, so I’m checking the saved connection and receipt now. If OAuth and the listing proof actually completed, the database will show a refresh token and Sandbox validation receipt; otherwise we know the app exited before the live work.
+
+CODEX
+
+OAuth did not complete: no refresh token, seller connection, recovery record, or Sandbox receipt was saved.
+
+After signing in, did you also see and click **Agree and Continue** inside the **Pokemon Listing Optimizer** window?
+
+YOU
+
+what is the point of the sandbox anyways? and I am unsure, can you open it up again so I can go through it
+
+CODEX
+
+The Sandbox is a fake eBay environment where this app can temporarily edit and restore listing `110590464693` without touching your real store, charging fees, changing real inventory, or affecting buyers. It proves the OAuth, safety checks, recovery record, write, read-back, and rollback all work before any Production listing is allowed.
+
+I’m opening the Sandbox sign-in window again now. This time, continue past login until you click **Agree and Continue**.
+
+CODEX
+
+The Sandbox protects your real eBay store while proving the app can safely edit and restore a listing.
+
+I reopened the proof and brought **Pokemon Listing Optimizer** to the front. In that window:
+
+1. Sign in with the `TESTUSER_...` seller.
+2. Click **Agree and Continue**.
+3. Keep the window open until it closes automatically.
+
+Tell me when it closes; I’m monitoring the running process.
+
+YOU
+
+it just closed
+
+CODEX
+
+I’m checking whether it closed because OAuth succeeded or because eBay rejected the callback.
+
+CODEX
+
+The window closed, but OAuth still was not saved: the database has no refresh token and no seller identity. The likely failure is app lifetime—the consent window closes after approval, and the packaged process exits before token exchange and `GetUser` finish. I’m verifying that against Electron’s official lifecycle behavior before changing another protected path.
+
+CODEX
+
+The first lifecycle check kept the app alive because the diagnostic itself listened for “all windows closed.” I’m rerunning it without that listener; this distinguishes the real packaged behavior from the diagnostic’s interference.
+
+CODEX
+
+Confirmed: closing the OAuth window triggers Electron’s default quit before the token exchange can run. This is why the window looked successful but nothing was saved.
+
+I’m using the Wave Manager and Plan Audit skills because the fix changes the protected app-lifecycle/authentication boundary. The fix will keep the packaged process alive only while the live spike is still running, then exit normally after success or failure.
+
+CODEX
+
+It closed because Electron quit when the OAuth window became the last open window—not because your sign-in failed. I’ve reproduced that lifecycle bug; I’m fixing the spike runner so it stays alive through token exchange and then exits normally. You won’t need to re-enter the saved credentials.
+
+CODEX
+
+The repair is deliberately small: add a spike-only “keep alive after the last window closes” guard before OAuth begins, remove it after the spike settles, and prove both success and failure cleanup. Normal app behavior and packaged smoke behavior stay unchanged.
+
+CODEX
+
+The amendment is now written into the audited plan. A fresh reviewer is checking that the lifecycle guard cannot leak into normal mode, suppress real failures, or leave the packaged process running.
+
+CODEX
+
+The review is still running. The main point under scrutiny is cleanup ordering: the guard must remain active until the entire spike finishes, but be removed before the final exit path so it cannot affect later launches or normal windows.
+
+CODEX
+
+The plan review passed cleanly. The repair is ready to implement with the exact two-file scope: startup lifecycle code plus deterministic startup tests. I’m dispatching a fresh implementer now; no credentials or live eBay calls are part of this step.
+
+CODEX
+
+Implementation and the full four-command gate are still running. After that finishes, a different fresh reviewer will inspect the complete uncommitted diff—including the earlier OAuth callback fixes—before we reopen the Sandbox flow.
+
+CODEX
+
+The implementation is complete and all 144 tests plus packaging passed. The fix added three lifecycle tests; a fresh reviewer is now checking listener identity, cleanup timing, and whether the tests truly reproduce the premature-quit failure.
+
+CODEX
+
+The reviewer is taking a deeper look at whether the simulated “last window closed” test would have failed on the old implementation. The build remains green; this is the final code-review gate before reopening OAuth.
+
+CODEX
+
+The reviewer has split out a focused Electron lifecycle check, which is why this is taking longer. No new problem has been reported; I’m letting that independent check finish instead of reopening the same broken flow prematurely.
+
+CODEX
+
+The fresh code review passed with no findings. I’m recording the reviewed repair, then I’ll reopen the spike in a visible Terminal window so the prompts remain under your control.
+
+CODEX
+
+It’s reopened in a visible Terminal window with the reviewed fix. Let packaging finish, then use your `TESTUSER_…` Sandbox seller in the eBay window. When that window closes, the Terminal should now continue instead of silently ending—tell me exactly what it prints next.
+
+CODEX
+
+It’s open again in Terminal with the fix applied.
+
+Sign in using your `TESTUSER_…` Sandbox seller. After the eBay window closes, paste the next Terminal output here—do not paste credentials or tokens.
+
+YOU
+
+Ok I signed in
+
+CODEX
+
+Go back to the Terminal window. The OAuth window closing is expected now; the Terminal should have continued to a seller/listing verification message or a confirmation prompt. Do not close Terminal or rerun the command.
+
+CODEX
+
+Great. Return to Terminal—it should now show:
+
+`Confirm this listing was created... by typing "TRADING MODEL":`
+
+Tell me what Terminal displays before entering anything.
+
+YOU
+
+so like this? antonioperedo@Antonios-MacBook-Air ebay listings enhancement % TRADING MODEL
+zsh: command not found: TRADING
+antonioperedo@Antonios-MacBook-Air ebay listings enhancement %
+
+CODEX
+
+No—`TRADING MODEL` must be entered only when the app explicitly asks for it. Seeing the `%` shell prompt means the spike exited again, so don’t rerun it yet; I’m checking whether authorization was saved and why it returned.
+
+CODEX
+
+Authorization was not saved, and no spike process is still running. I’m reopening it once more in a captured diagnostic session so I can see the exact failure instead of making you hunt through Terminal output. You’ll still perform the eBay sign-in yourself; don’t type anything into your shell prompt.
+
+CODEX
+
+The Sandbox sign-in window is open again and brought to the front.
+
+Sign in with the `TESTUSER_…` account and click **Agree and Continue**. Then tell me “done”—I’m capturing the app’s output this time, so you should not type anything in Terminal.
+
+YOU
+
+I sign in, then the window closes, no agree to continue
+
+CODEX
+
+That explains the behavior: eBay is returning immediately after login instead of showing a separate consent page. I’m reading the captured result now; don’t rerun anything.
+
+CODEX
+
+Captured result: `HTTP request failed with status 401.` The window no longer closes silently—the lifecycle fix worked. The failure is now an authentication rejection after eBay redirects, most likely the saved Sandbox Cert ID not matching the saved Client ID. I’m identifying which request returned 401 before asking you to re-enter anything.
+
+CODEX
+
+The missing consent screen is okay—eBay likely remembered the prior approval. The captured failure is a `401` from the token endpoint, meaning the saved Sandbox Client ID/Cert ID pair was rejected.
+
+May I clear only the saved Sandbox credentials so you can re-enter the **Sandbox Cert ID**—not the Dev ID—in a visible Terminal?
+
+YOU
+
+yes
+
+CODEX
+
+I’ll remove only the rejected Sandbox Client ID/Cert ID row. Your RuName, listing, backups, and all other app data will remain untouched. Then I’ll reopen the spike in Terminal for fresh entry.
+
+CODEX
+
+Fresh Terminal run is open. After packaging, enter:
+
+- `sandbox Client ID:`  
+  `AntonioP-ebaylist-SBX-b449058ed-efd3595c`
+
+- `sandbox Cert ID:`  
+  Paste the **Sandbox Cert ID** from eBay—not the Dev ID. Nothing will appear while typing; that is normal. Press Return once.
+
+- `sandbox RuName:`  
+  `Antonio_Peredo-AntonioP-ebayli-zixesyrn`
+
+Then sign in with the `TESTUSER_…` account. Do not paste the Cert ID here. Tell me what Terminal displays afterward.
+
+YOU
+
+> pokemon-listing-optimizer@0.1.0 package:app
+> electron-forge package
+
+✔ Checking your system
+✔ Preparing to package application
+✔ Running packaging hooks
+  ✔ Running generateAssets hook
+  ✔ Running prePackage hook
+    ✔ [plugin-webpack] Preparing webpack bundles
+      ✔ Preparing native dependencies: 1 / 1 [1s]
+      ✔ Building webpack bundles [9s]
+✔ Packaging application
+  ✔ Packaging for arm64 on darwin [6s]
+✔ Running postPackage hook
+Packaged smoke PASS — schema 1.
+sandbox Client ID: AntonioP-ebaylist-SBX-b449058ed-efd3595c
+sandbox Cert ID: 
+sandbox RuName: Antonio_Peredo-AntonioP-ebayli-zixesyrn
+GetItem response is missing ListingDetails.ListingStatus.
+antonioperedo@Antonios-MacBook-Air ebay listings enhancement %
+
+CODEX
+
+Good—authentication worked this time, and the app reached `GetItem`. The new blocker is unrelated to your credentials: eBay Sandbox returned the listing without `ListingDetails.ListingStatus`, which our parser currently requires. I’m checking whether Sandbox places that status elsewhere or legitimately omits it before changing anything.
+
+CODEX
+
+The official eBay schema confirms the bug: listing status is always at `Item.SellingStatus.ListingStatus`; our code and test fixture incorrectly expect `Item.ListingDetails.ListingStatus`. I’m applying the repository’s Wave Manager and Plan Audit workflow to correct that exact field path and its fixtures, then we’ll rerun the same listing. Your Sandbox token is now saved, so the next run should not require another login.
+
+CODEX
+
+The repair plan now requires a strict correction—no fallback to the wrong location—plus fixtures that would fail against the old parser. A fresh plan reviewer is checking that the status remains part of the protected-field hash and that no write behavior expands.
+
+CODEX
+
+Confirmed safely: the Sandbox refresh token and seller identity are now stored encrypted, and there is no recovery row—so no listing write occurred. You should not have to sign in again on the next attempt.
+
+CODEX
+
+The plan audit is still running. So far the confirmed scope remains one parser field path, two synthetic response sources, one targeted unit-test file, and the verified research note; no database or mutation code is involved.
+
+CODEX
+
+The reviewer found one documentation issue, not a code-design issue: our wording blurred eBay’s call-specific “Always” guarantee with the reusable type’s optional cardinality. I’m correcting the evidence date and the two distinct official claims before implementation.
+
+YOU
+
+token usage is back, continue where you left off
+
+CODEX
+
+Continuing at the interrupted gate: the listing-status repair plan has its evidence wording corrected, and it only needs a fresh verification pass before implementation. Your Sandbox authorization remains saved; no listing write has occurred.
+
+CODEX
+
+The replacement reviewer is still working through the full plan and the official eBay field definitions. The implementation scope has not expanded, and the saved token remains untouched.
+
+CODEX
+
+The corrected plan now passes audit with no findings. I’m dispatching the strict field-path repair; it will update the parser, both synthetic `GetItem` sources, targeted tests, and the dated research fact—nothing else.
+
+CODEX
+
+The parser repair is implemented and the implementer is running the full lint, typecheck, test, and packaged-app gate. Once that passes, a separate reviewer must approve it before we touch the Sandbox listing again.
+
+CODEX
+
+The repair passed the full gate with 146 tests and packaged smoke. A fresh code reviewer is now checking the strict field-path behavior and ensuring the protected listing-status hash and timing fields are unchanged.
+
+CODEX
+
+The code review passed with no findings. The field path is corrected, the old wrong location is explicitly rejected by tests, and the protected-field hash is unchanged. I’m recording that review and reopening the same Sandbox listing now; the stored token should bypass login.
+
+CODEX
+
+The reviewed run is open in Terminal. It should reuse your saved authorization.
+
+Only type responses when Terminal displays the matching prompt:
+
+1. When asked for provenance, enter:
+   `TRADING MODEL`
+
+2. When asked for counted confirmation, enter:
+   `SANDBOX 1 LISTING 2 FIELDS`
+
+3. When asked for the item ID, enter:
+   `110590464693`
+
+Then paste the resulting Terminal output here.
+
+YOU
+
+ok maybe I took too long where do I input what again?
+
+CODEX
+
+Enter everything in the **Terminal window**, only after the app asks—not at the `%` shell prompt.
+
+If you currently see `%`, rerun:
+
+```bash
+npm run spike:ebay -- --environment sandbox --item-id 110590464693
+```
+
+After packaging, respond to these prompts:
+
+```text
+Confirm ... by typing "TRADING MODEL":
+```
+
+Enter:
+
+```text
+TRADING MODEL
+```
+
+Then enter when asked:
+
+```text
+SANDBOX 1 LISTING 2 FIELDS
+```
+
+Finally:
+
+```text
+110590464693
+```
+
+Each prompt times out after about five minutes.
+
+YOU
+
+ok I got this what now ✔ Checking your system
+✔ Preparing to package application
+✔ Running packaging hooks
+  ✔ Running generateAssets hook
+  ✔ Running prePackage hook
+    ✔ [plugin-webpack] Preparing webpack bundles
+      ✔ Preparing native dependencies: 1 / 1 [0.1s]
+      ✔ Building webpack bundles [3s]
+✔ Packaging application
+  ✔ Packaging for arm64 on darwin [2s]
+✔ Running postPackage hook
+Packaged smoke PASS — schema 1.
+Confirm this listing was created through the eBay UI or Trading model by typing "TRADING MODEL": TRADING MODEL
+sandbox item 110590464693; 1 listing; 2 temporary fields; at most 2 Revise calls (apply and restore).
+Fields: Description, PLO Integration Marker.
+Type "SANDBOX 1 LISTING 2 FIELDS": SANDBOX 1 LISTING 2 FIELDS
+Type item ID 110590464693: 110590464693
+Trading ReviseFixedPriceItem returned Ack=Warning.
+antonioperedo@Antonios-MacBook-Air ebay listings enhancement %
+
+CODEX
+
+The safety flow did what it was designed to do: eBay accepted the revise request but returned a warning, so the spike treated it as a failed proof and attempted immediate restoration. Don’t rerun it yet—I’m confirming the listing was restored and that no recovery row remains.
+
+CODEX
+
+A recovery row is still pending, so stop: do not run the normal item command again. The app will block new writes until it proves the original listing state. I’m checking the recovery flow now so I can give you the exact safe command and prompt.
+
+CODEX
+
+The listing is **not yet proven restored**; a recovery record remains. Run this now:
+
+```bash
+npm run spike:ebay -- --recover
+```
+
+Then:
+
+- If asked to type this exact phrase, enter it:
+
+```text
+RESTORE SANDBOX 1 LISTING 2 FIELDS 110590464693
+```
+
+- If it says `RESTORE DRIFTED SANDBOX`, stop and paste the output here without confirming.
+- If it finishes automatically, paste that output here.
+
+Do not run the normal item command again until recovery succeeds.
+
+YOU
+
+I got this 
+> pokemon-listing-optimizer@0.1.0 package:app
+> electron-forge package
+
+✔ Checking your system
+✔ Preparing to package application
+✔ Running packaging hooks
+  ✔ Running generateAssets hook
+  ✔ Running prePackage hook
+    ✔ [plugin-webpack] Preparing webpack bundles
+      ✔ Preparing native dependencies: 1 / 1 [0.2s]
+      ✔ Building webpack bundles [3s]
+✔ Packaging application
+  ✔ Packaging for arm64 on darwin [2s]
+✔ Running postPackage hook
+Packaged smoke PASS — schema 1.
+Protected fields DRIFT during recovery.
+antonioperedo@Antonios-MacBook-Air ebay listings enhancement %
+
+CODEX
+
+The safety system detected that at least one protected field changed and refused to overwrite anything. The recovery record is still intact. I’m switching to a read-only diagnosis to identify whether the temporary description/marker remains and which current fields differ; do not run `--recover` again or edit the listing meanwhile.
+
+CODEX
+
+The recovery record only stores the original description, original Sandbox item specifics, and aggregate protected hashes—not a full plaintext before-snapshot. I’m preparing a temporary read-only inspector that will decrypt those values in memory, fetch the current listing, and report only comparisons and field names. It will not issue a revise or expose credentials/tokens.
+
+CODEX
+
+The first inspector attempt made no request and no database change; Electron loaded the temporary file but resolved its own module incorrectly from `/private/tmp`. I’m correcting only that temporary loader path and rerunning it.
+
+CODEX
+
+Important correction: the recovery command found the writable fields already back at their original values, reported protected-field drift, and then cleared the recovery row as designed. The temporary marker is therefore no longer pending, but Wave 2 still fails because the earlier revise altered or normalized a protected field. I’m removing the unused temporary inspector and investigating the warning before any new write.
+
+CODEX
+
+I found the protected drift: before the revise, the listing had the required ungraded-card condition descriptor, which is why pre-flight passed. After eBay processed the full item-specific replacement—even after the description/specific restoration—the current `GetItem` has `ConditionID=4000` but no `ConditionDescriptors`. eBay removed protected condition metadata as a side effect. This is exactly the kind of hidden destructive behavior the Sandbox proof was meant to catch.
+
+CODEX
+
+Stop here: Wave 2 exposed a real conflict.
+
+The listing is active at **$1.79**, its original description/item specifics are restored, the temporary marker is gone, and no recovery remains. However, eBay removed its **Card Condition descriptor** during the revise.
+
+[eBay requires condition descriptors when revising trading-card listings](https://developer.ebay.com/Devzone/XML/docs/Reference/eBay/ReviseFixedPriceItem.html), while `SPEC.md` explicitly forbids condition fields in any write payload. Both requirements cannot currently be satisfied.
+
+I recommend revising the spec to permit round-tripping the exact, freshly fetched condition ID/descriptors solely for preservation—never allowing the app or AI to change them—then restoring the Sandbox descriptor and rerunning Wave 2.
+
+Do you approve that spec change?

@@ -1,0 +1,7 @@
+[
+  {
+    "session_id": "019f5494-328b-7dc3-a84f-842228c1e891",
+    "ts": 1783830455,
+    "text": "So I'm having an issue. On my home screen, on my app, there's a see all badges button. That button has an animation. I really like that animation. I want the animation in other places. There's a monthly badge screen that has a all months and achievements button. I want the same animation on those as well. On the all month screen, when a user clicks on the month, I want the same animation there. on the achievement screen when a user clicks on the monthly, I want the same animation there as well. Issue is that from my understanding what I heard, the see all badges button, when a user clicks on another month or when they go to all months or achievements or go anywhere, you know, after that, that's not back or another tab, it gets added to a stack. Therefore, the same animation can't happen because of a conflict with the stack and the animation. First, I wanna know if that's true. Also, the other animation is there, though it doesn't look the same. It's not nearly as crisp as the one from Sea All Badge. Sea All Badge's animation is crisp. The one on all months achievements, clicking on the month or going back to the monthly badges. None of those are as crisp and I want the same animation throughout it all. So I want you to see how the best way to get that done is... you're not implementing any code, you're only planning. You're telling me the plan. You're telling me what you see. You're telling me what's possible and giving me that plan."
+  }
+]

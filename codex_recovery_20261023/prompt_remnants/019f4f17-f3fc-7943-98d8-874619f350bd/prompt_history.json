@@ -1,0 +1,12 @@
+[
+  {
+    "session_id": "019f4f17-f3fc-7943-98d8-874619f350bd",
+    "ts": 1783738572,
+    "text": "in the block list tab I have a daily limit feature, when a user selects a an app to block they can select a custom time. I want this time to be in selections of 15 mins, right now it is by the minute. I want it by every 15 mins. and once it gets to one hours it says 1h 0m, 1h 15m, 1h 30m, so that I am doing no math in my head. I want the selector to go up to 4h"
+  },
+  {
+    "session_id": "019f4f17-f3fc-7943-98d8-874619f350bd",
+    "ts": 1783776103,
+    "text": "how many tess passed?"
+  }
+]

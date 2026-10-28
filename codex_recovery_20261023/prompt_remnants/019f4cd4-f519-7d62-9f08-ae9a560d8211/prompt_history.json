@@ -1,0 +1,12 @@
+[
+  {
+    "session_id": "019f4cd4-f519-7d62-9f08-ae9a560d8211",
+    "ts": 1783701078,
+    "text": "Your project instructions are wrong and I need you to fix them before we do any work. Change no source code. Do not commit.\n\nThe AGENTS.md at the project root is NOT about this app. It is boilerplate copied from a SwiftUI skill-authoring guide. It tells you agents cannot use external tools and forbids command-line usage. Both are false here. Do not follow it.\n\nThe real project rules live in CLAUDE.md, which you do not auto-load. Read it.\n\nThen read every SKILL.md under .claude/skills/ (review-loop, swiftui-pro, ultrareview-local, xcodebuildmcp) plus .claude/agents/health-reviewer.md and .claude/agents/bug-confirmer.md if they exist. The review-loop skill defines a four-phase QA pipeline (inline health check, confirmation pass that filters false positives by confidence score, targeted fix on CONFIRMED and PARTIAL only, build verify all schemes, with iteration caps) that I rely on. It reads its project specifics from CLAUDE.md.\n\nRewrite AGENTS.md so it is the correct, self-contained instruction file for THIS iOS app and for YOU. It must contain:\n- The real build and test commands, including that the three schemes build sequentially because concurrent builds hit \"build database is locked\", and the exact simulator id for tests.\n- The standing rules: never commit, never create or switch branches, the four invariants, the single enforcement writer, and never calling stopMonitoring() with no arguments.\n- The test conventions: pure XCTest, Foundation-only, no @testable import, ScreenTimeTests is filesystem-synchronized, production Shared files need hand-added per-target membership.\n- The review-loop pipeline, restated so you can run it without Claude Code's skill loader, including the phase gates and the abort caps.\n- The SwiftUI correctness rules from swiftui-pro that are actual facts (stable ForEach identity, private @State, and so on), not the authoring-guide meta content.\n\nDrop anything Claude-specific: the skill-authoring meta guidance, and the xcodebuildmcp skill, since I have configured XcodeBuildMCP as an MCP server for you directly.\n\nDo not weaken any existing rule from CLAUDE.md. Where CLAUDE.md and the old AGENTS.md conflict, CLAUDE.md wins. Show me the full proposed AGENTS.md before writing it."
+  },
+  {
+    "session_id": "019f4cd4-f519-7d62-9f08-ae9a560d8211",
+    "ts": 1783701191,
+    "text": "stop"
+  }
+]

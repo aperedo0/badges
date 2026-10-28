@@ -1,0 +1,15 @@
+{
+  "source": "candidate05/mobile/emerald_trophy_badge_mobile.usdz",
+  "gold_linear": [
+    0.84,
+    0.45,
+    0.1
+  ],
+  "grain_source": "Clean central cup area from the owner reference, with broad illumination removed",
+  "band_roughness": 0.205,
+  "wall_roughness": 0.195,
+  "rim_emission": 0,
+  "geometry_changed": false,
+  "authorization": "Owner: make the rim texture match the trophy",
+  "preserved": "All geometry, normals, UVs, relief materials and maps, field, border roughness graphs, glints and runtime brushing"
+}

@@ -1,0 +1,12 @@
+{
+  "reference_inner_radius": 490,
+  "reference_center": [
+    627,
+    590
+  ],
+  "reference_to_world_scale": 0.0049387755102040815,
+  "front_surface_vertices": 32439,
+  "front_surface_triangles": 55026,
+  "wall_triangles": 19784,
+  "method": "Reference contours with true curved relief, folded sheet depth, explicit gem facets, calibrated material maps"
+}

@@ -1,0 +1,24 @@
+{
+  "measured_app_light": true,
+  "reference_contours": true,
+  "interior_samples": 242872,
+  "relief_texels": 269234,
+  "target_display_max": 0.965,
+  "emission_scale": 8,
+  "albedo_mean": [
+    0.5062849932932821,
+    0.3481740972300129,
+    0.051374773294251684
+  ],
+  "emission_mean": [
+    0.3650334891618082,
+    0.2552258638389174,
+    0.0333251693990288
+  ],
+  "predicted_error": 0.011825854062058347,
+  "reference_color_fill_dominant": true,
+  "live_metal_fraction": 0.012,
+  "metallic": 1,
+  "roughness": 0.55,
+  "reason": "Reference fidelity, removing the neutral dielectric wash and duplicate highlights"
+}

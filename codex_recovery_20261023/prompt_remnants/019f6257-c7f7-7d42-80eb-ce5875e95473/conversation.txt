@@ -1,0 +1,23 @@
+Peer review my skills, I want the best balance between effectiveness, token efficiency, simplicity
+
+Conversation ID: 019f6257-c7f7-7d42-80eb-ce5875e95473
+Working folder: /Users/antonioperedo/Desktop/screen_time
+
+Only prompt remnants survived in the sources checked.
+No Codex replies were found for this conversation.
+
+OPENING PROMPT FROM THE HISTORY INDEX
+
+Peer review my skills, I want the best balance between effectiveness, token efficiency, simplicity
+
+SAVED TERMINAL PROMPT
+
+Peer review my skills, I want the best balance between effectiveness, token efficiency, simplicity
+
+SAVED TERMINAL PROMPT
+
+Only do the stuff related to review loop, and I want anything that is confirmed to be automatically fixed, but the ai must plan first, be confident that the plan is an amazing plan, then fix it, any questions?
+
+SAVED TERMINAL PROMPT
+
+now peer review the rest of my skills, focus on them to see how they can be better

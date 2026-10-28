@@ -1,0 +1,587 @@
+So in my app, I am balancing trade offs. So the home screen shows the total time and the badges and stuff. And there's a quick start. I can turn the quick start into something that brings up different options like block now, um, schedules, time limit, things like that. Right? But then quick start is a little harder to start, but then all of it is easier, I guess, to navigate. But then if I leave that at the bottom, right, it would be pretty much essentially kind of glued to the bottom of... the home page. I guess I could make it in a way that was very nonsuperdisturbing, but then I would be taking away from the badges. You know? I can make it... I I guess I could do it in a nondisturbing way, but then quick start would be harder to access. But, I mean, it would just be a few more clicks. So quick start would be harder to just start and... but the rest of it would be a little easier to navigate and access. So I'm weighing the pros and cons of everything. I want to know what what the best mix is. I want to optimize for retention of users. I want as many new users and returning users, and I wanna retain them. So look through my app. Tell me what you recommend and why.
+
+Conversation ID: 01a09229-b6f5-7233-b6e0-ab79d86b53e5
+Working folder: /Users/antonioperedo/Desktop/screen_time
+
+Saved conversation content exported from the Codex history database.
+This export does not establish that every original message or attachment survived.
+
+YOU
+
+So in my app, I am balancing trade offs. So the home screen shows the total time and the badges and stuff. And there's a quick start. I can turn the quick start into something that brings up different options like block now, um, schedules, time limit, things like that. Right? But then quick start is a little harder to start, but then all of it is easier, I guess, to navigate. But then if I leave that at the bottom, right, it would be pretty much essentially kind of glued to the bottom of... the home page. I guess I could make it in a way that was very nonsuperdisturbing, but then I would be taking away from the badges. You know? I can make it... I I guess I could do it in a nondisturbing way, but then quick start would be harder to access. But, I mean, it would just be a few more clicks. So quick start would be harder to just start and... but the rest of it would be a little easier to navigate and access. So I'm weighing the pros and cons of everything. I want to know what what the best mix is. I want to optimize for retention of users. I want as many new users and returning users, and I wanna retain them. So look through my app. Tell me what you recommend and why.
+
+CODEX
+
+I’ll look at the home screen and how people reach Quick Start, schedules, and time limits, then weigh the options for retention. I’m using the clarity skill to keep the recommendation concrete and the Xcode skill to inspect the app.
+
+CODEX
+
+Home already gives badges the top position, while “Block List” is a separate tab. That suggests a useful middle ground: keep a direct way to block now, and make the existing destination for schedules and limits easier to recognize. I’m checking the actual screens to see how much space that would need.
+
+CODEX
+
+The current build has Quick Start inside Block List, and Home’s fixed bottom panel is “Active Now.” On the simulator, that panel and the badge card already leave the time total partly below the first screen. I’d keep any new Home action compact and avoid stacking another permanent panel above it.
+
+CODEX
+
+My recommendation is a compact “Block now” action on Home, with schedules and daily limits clearly accessible through the existing “Blocks” tab. Keep badges prominent, and preserve a direct path for someone who opens the app wanting to stop scrolling immediately.
+
+That is the best balance I’d test for retention. It supports three different needs: act now, set up protection for later, and see progress.
+
+I checked Home and Blocks in the simulator and read the navigation, onboarding, and Quick Start flows. One detail about the current version: Quick Start lives inside Block List; Home’s fixed bottom panel is “Active Now.”
+
+Here’s the arrangement I recommend:
+
+| Area | What belongs there |
+|---|---|
+| Home content | Badge progress, reclaimed time, and the existing summaries |
+| Home bottom area | One compact “Block now” button when idle; the relevant active status when blocking |
+| Blocks tab | Clearly visible access to Block now, Schedules, and Daily limits |
+
+The compact button can open Quick Start’s controls directly. Apps, duration, and purpose belong in that setup view. A returning user should see their saved choices and a clear Start button, without first choosing which kind of blocking they want.
+
+Your proposed options menu makes sense as the entrance to the Blocks tab. I would put it there because that is where someone goes to explore or manage their protection.
+
+The reason I favor this arrangement is that the actions have different timing:
+
+- **Block now serves an immediate intention.** Someone has decided, “I need to put my phone down.” An extra choice interrupts that intention every time they use it.
+- **Schedules and limits serve a recurring need.** Making them easy to discover matters because they can keep helping without another daily decision.
+- **Badges make progress visible.** They give someone a reason to feel good about continuing, but that progress depends on getting protection running.
+
+Your onboarding already creates a first schedule. That changes the tradeoff: new users have already encountered scheduling before reaching Home. Their next visit should make it clear that their setup is working and show what they have achieved.
+
+I would also rename “Block List” to “Blocks,” matching the screen’s existing heading. “Block List” sounds like a list of selected apps; “Blocks” better fits the broader destination. Put Schedules and Daily limits near the top, since limits currently sit below several other sections.
+
+For the visual concern, I agree that the bottom area can compete with badges. In the simulator, the badge card already occupies much of the first screen, and Active Now reduces the space available for the time summary. Use one compact bottom area that changes with the current state, rather than adding another panel. Keep the button easy to notice through its label and placement; it does not need a large card.
+
+This direction fits [Apple’s guidance on giving the preferred action more prominence](https://developer.apple.com/design/human-interface-guidelines/buttons). [NN/g’s navigation research](https://www.nngroup.com/articles/hamburger-menus/) also supports keeping important destinations visible, although that research does not establish a retention lift for BestSpent.
+
+The retention result still needs measurement. Compare first successful blocks, repeat Quick Starts, continued schedule or limit use, and returns after 7 and 30 days. Track days with protection actually running alongside app opens: someone whose schedule keeps working can still be getting value while opening BestSpent less often.
+
+The next useful step is a rough Home mock with that single compact action. Check whether the badge, a meaningful progress number, and “Block now” are all understandable at first glance on your iPhone 13 mini.
+
+YOU
+
+show me in ascii what you mean
+
+CODEX
+
+Home keeps the progress front and center, with one compact action fixed above the tabs:
+
+```text
+┌───────────────────────────────────────┐
+│ Home                              ⚙   │
+│                                       │
+│ ┌───────────────────────────────────┐ │
+│ │              BADGE                │ │
+│ │              Silver               │ │
+│ │            28h to go               │ │
+│ │       [=============-------]      │ │
+│ │                                   │ │
+│ │ See all badges                  > │ │
+│ └───────────────────────────────────┘ │
+│                                       │
+│              127h 20m                 │
+│            Time reclaimed             │
+│                                       │
+│           Weekly progress             │
+│           ▂ ▄ ▃ ▆ ▅ ▇ ▄              │
+│                                       │
+│          More content scrolls         │
+│                                       │
+│ ┌───────────────────────────────────┐ │
+│ │           Block now               │ │
+│ └───────────────────────────────────┘ │
+│                                       │
+│ Home  Blocks  Insights  Time  Activities│
+└───────────────────────────────────────┘
+```
+
+“Block now” opens your Quick Start controls directly: apps, duration, optional purpose, and Start.
+
+The Blocks tab makes all three options visible:
+
+```text
+┌───────────────────────────────────────┐
+│ Blocks                            ⚙   │
+│                                       │
+│ ┌───────────────────────────────────┐ │
+│ │ Block now                       > │ │
+│ │ Start a focus session             │ │
+│ ├───────────────────────────────────┤ │
+│ │ Schedules                       > │ │
+│ │ Block at repeating times          │ │
+│ ├───────────────────────────────────┤ │
+│ │ Daily limits                    > │ │
+│ │ Set an allowance for each app     │ │
+│ └───────────────────────────────────┘ │
+│                                       │
+│ TODAY                                 │
+│ ┌───────────────────────────────────┐ │
+│ │ Your existing timeline            │ │
+│ └───────────────────────────────────┘ │
+│                                       │
+│ Your blocks and limits below          │
+│                                       │
+│ Home  Blocks  Insights  Time  Activities│
+└───────────────────────────────────────┘
+```
+
+When a block is running, Home’s bottom action changes to the active status in that same space:
+
+```text
+Idle:       [             Block now             ]
+
+Active:     [ Block active           Details >  ]
+```
+
+The tradeoff is a little permanent space on Home. In return, starting stays easy, and the broader options remain one tab away.
+
+YOU
+
+do you think this plan is better?  So in my app, I am balancing trade offs. So the home screen shows the total time and the badges and stuff. And
+  there's a quick start. I can turn the quick start into something that brings up different options like block
+  now, um, schedules, time limit, things like that. Right? But then quick start is a little harder to start, but
+  then all of it is easier, I guess, to navigate. But then if I leave that at the bottom, right, it would be
+  pretty much essentially kind of glued to the bottom of... the home page. I guess I could make it in a way that
+  was very nonsuperdisturbing, but then I would be taking away from the badges. You know? I can make it... I I
+  guess I could do it in a nondisturbing way, but then quick start would be harder to access. But, I mean, it
+  would just be a few more clicks. So quick start would be harder to just start and... but the rest of it would
+  be a little easier to navigate and access. So I'm weighing the pros and cons of everything. I want to know what
+  what the best mix is. I want to optimize for retention of users. I want as many new users and returning users,
+  and I wanna retain them. So look through my app. Tell me what you recommend and why.
+
+
+• I’ll look at the home screen and how people reach Quick Start, schedules, and time limits, then weigh the
+  options for retention. I’m using the clarity skill to keep the recommendation concrete and the Xcode skill to
+  inspect the app.
+
+• Explored
+  └ Read SKILL.md (clarity skill), SKILL.md (xcodebuildmcp skill)
+
+• Ran pwd && rg --files -g 'AGENTS.md' -g 'CLAUDE.md' -g '*Home*' -g '*Dashboard*' -g '*QuickStart*' -g
+  │ '*Schedule*' -g '*TimeLimit*' -g '*Onboard*' -g '*Navigation*' -g '*Tab*' -g '*Badge*' -g '*Analytics*' -g
+  │ '*Retention*' -g '*README*' -g '*DESIGN*' -g '*BEHAVIOR*' -g '*plan*' .
+  └ /Users/antonioperedo/Desktop/screen_time
+    ./BEHAVIOR_MAP.md
+    … +102 lines (ctrl + t to view transcript)
+    ./ScreenTime/Sources/App/Features/Time/TimeTabRow.swift
+    ./ScreenTime/Sources/App/Features/BlockList/QuickStartSection.swift
+
+• Searching the web
+
+• Called XcodeBuildMCP.session_show_defaults({})
+  └
+    ⚙️ Show Defaults
+
+    📁 (default)
+      ├ projectPath: (not set)
+      ├ workspacePath: (not set)
+      ├ scheme: (not set)
+      ├ configuration: (not set)
+      ├ simulatorName: (not set)
+      ├ simulatorId: (not set)
+      ├ simulatorPlatform: (not set)
+      ├ deviceId: (not set)
+      ├ useLatestOS: (not set)
+      ├ arch: (not set)
+      ├ suppressWarnings: (not set)
+      ├ derivedDataPath: (not set)
+      ├ preferXcodebuild: (not set)
+      ├ platform: (not set)
+      ├ bundleId: (not set)
+      ├ env: (not set)
+      └ extraArgs: (not set)
+
+
+• Explored
+  └ Read QuickStartSection.swift
+    Search quickStart|Quick Start|Block Now|Time Limit|time limit|TabView|DEBUG|launchArguments|ProcessInfo|ui.?
+    test|
+           preview|fixture in Core
+
+• Ran git status --short && cat CLAUDE.md && sed -n '1,280p' ScreenTime/Sources/App/Features/Home/HomeView.swift
+  │ && sed -n '1,260p' ScreenTime/Sources/App/Core/MainTabView.swift
+  └  M ScreenTime/Sources/App/Features/Badges/BadgeMonthDetailView.swift
+    # BestSpent agent instructions
+    … +666 lines (ctrl + t to view transcript)
+                }
+            }
+
+• Searched the web for site.nngroup.com visible navigation hidden navigation discoverability mobile primary
+  actions ...
+
+• Explored
+  └ Read HomeView.swift, MainTabView.swift, QuickStartSection.swift
+
+• Called
+  └ XcodeBuildMCP.session_set_defaults({"projectPath":"/Users/antonioperedo/Desktop/screen_time/
+        ScreenTime.xcodeproj","scheme":"ScreenTime-UIOnly","simulatorId":"69A29DD2-C91E-487A-81B9-3B146DF8F07B"})
+
+    ⚙️ Set Defaults
+
+    ✅ Session defaults updated (default profile)
+      ├ projectPath: /Users/antonioperedo/Desktop/screen_time/ScreenTime.xcodeproj
+      ├ workspacePath: (not set)
+      ├ scheme: ScreenTime-UIOnly
+      ├ configuration: (not set)
+      ├ simulatorName: (not set)
+      ├ simulatorId: 69A29DD2-C91E-487A-81B9-3B146DF8F07B
+      ├ simulatorPlatform: (not set)
+      ├ deviceId: (not set)
+      ├ useLatestOS: (not set)
+      ├ arch: (not set)
+      ├ suppressWarnings: (not set)
+      ├ derivedDataPath: (not set)
+      ├ preferXcodebuild: (not set)
+      ├ platform: (not set)
+      ├ bun...
+
+• Searching the web
+
+• Explored
+  └ List App
+    Search ActiveNow|BlockListView|Sheet|Mock|App.swift|Root|AnalyticsCatalog
+    Search onboarding|quick.start|schedule|limit|session|badge|retention in AnalyticsCatalog.swift
+    Read ActiveNowPanel.swift
+
+• Searched the web for site.nngroup.com/articles "Hamburger Menus" "Discoverability" ...
+
+• Calling XcodeBuildMCP.build_run_sim({})
+
+──────────────────────────────────────────────────────────────────────────────────────────────────────────────────
+
+• Home already gives badges the top position, while “Block List” is a separate tab. That suggests a useful middle
+  ground: keep a direct way to block now, and make the existing destination for schedules and limits easier to
+  recognize. I’m checking the actual screens to see how much space that would need.
+
+• Explored
+  └ List App
+    Search ActiveNow|BlockListView|App.swift|Root|Mock
+    Read BlockListView.swift, OnboardingAppsScheduleScreen.swift
+
+• Called XcodeBuildMCP.build_run_sim({})
+  └
+    🚀 Build & Run
+
+    Warnings (2):
+
+      ⚠ will never be executed
+        /Users/antonioperedo/Desktop/screen_time/ScreenTime/Sources/Shared/Services/FocusSessionManager.swift:312
+
+      ⚠ 'allowBluetooth' was deprecated in iOS 8.0: renamed to 'AVAudioSession.CategoryOptions.allowBluetoothHFP'
+        /Users/antonioperedo/Desktop/screen_time/ScreenTime/Sources/App/Features/VoiceCapsule/
+        VoiceCapsuleRecorder.swift:152
+
+    ℹ️ Resolving app path
+    ✅ Resolving app path
+    ℹ️ Booting simulator
+    ✅ Booting simulator
+    ℹ️ Installing app
+    ✅ Installing app
+    ℹ️ Launching app
+
+    ✅ Build ...
+
+• Explored
+  └ Read ActiveNowPanel.swift
+    Search scrollContent|quickStart|QuickStart|Up Next|Limits|limitSheetMode|createSheetMode|toolbar in
+           BlockListView.swift
+    Search Quick Start|quickStart|quick_start|schedule|limit|session|badge|onboarding|retention in
+           AnalyticsCatalog.swift
+    Search ProcessInfo|arguments|onboarding|skip|mock in ScreenTimeApp.swift
+    Read BadgeHeroCard.swift
+
+• Calling XcodeBuildMCP.screenshot({})
+
+• Calling XcodeBuildMCP.snapshot_ui({})
+
+• Searching the web
+
+• Explored
+  └ Read BlockListView.swift, AnalyticsCatalog.swift, ScreenTimeApp.swift
+
+• Searched the web for https://www.nngroup.com/articles/hamburger-menus/
+
+• Called XcodeBuildMCP.snapshot_ui({})
+  └
+    📷 Snapshot UI
+
+    Targets (9) — ref|action|role|label|value|id
+      e40|tap|button|See all badges, 1 NEW||
+      e94|tap|button|Block active, Need access?, Unblock||
+      e15|tap|button|Settings||gearshape
+      e93|tap|button|Block active|Need access?|
+      e108|tap|tab|Home|1|
+      e110|tap|tab|Block List|0|
+      e112|tap|tab|Insights|0|
+      e114|tap|tab|Time|0|
+      e116|tap|tab|Activities|0|
+
+    Scroll (1) — ref|action|role|label|value|id
+      e21|swipe|scroll-view|||
+
+    Tips
+      - Use target refs with tap, type_text, long_press, and touch.
+      - Use scroll refs with swipe....
+
+• Called XcodeBuildMCP.screenshot({})
+  └
+    📷 Screenshot
+
+    ✅ Screenshot captured
+      ├ Format: image/jpeg
+      └ Size: 368x800px
+
+    <image content>
+
+tool result (image output)
+
+──────────────────────────────────────────────────────────────────────────────────────────────────────────────────
+
+• The current build has Quick Start inside Block List, and Home’s fixed bottom panel is “Active Now.” On the
+  simulator, that panel and the badge card already leave the time total partly below the first screen. I’d keep
+  any new Home action compact and avoid stacking another permanent panel above it.
+
+• Called XcodeBuildMCP.tap({"elementRef":"e110"})
+  └
+    👆 Tap
+
+    Warnings (1):
+
+      ⚠ UI action succeeded, but the refreshed runtime snapshot did not settle before timeout. Run snapshot_ui
+        again before reusing elementRefs from the previous snapshot.
+
+    ✅ Tap on elementRef e110 simulated successfully.
+
+    Next steps:
+    1. Refresh after UI action: snapshot_ui({ simulatorId: "69A29DD2-C91E-487A-81B9-3B146DF8F07B" })
+
+
+• Called XcodeBuildMCP.snapshot_ui({})
+  └
+    📷 Snapshot UI
+
+    Targets (14) — ref|action|role|label|value|id
+      e40|tap|button|Block active, Need access?, Unblock||
+      e60|tap|button|YouTube, 30m a day||
+      e65|tap|button|Instagram, 20m a day||
+      e15|tap|button|Settings||gearshape
+      e34|tap|button|New block||plus
+      e39|tap|button|Block active|Need access?|
+      e52|tap|button|Pause 15 min||
+      e55|tap|button|Stop||
+      e56|tap|button|New block||
+      e264|tap|tab|Home|0|
+      e266|tap|tab|Block List|1|
+      e268|tap|tab|Insights|0|
+      e270|tap|tab|Time|0|
+      e272|tap|tab|Activities|0|
+
+    Scroll (1) — ref...
+
+• Called XcodeBuildMCP.screenshot({})
+  └
+    📷 Screenshot
+
+    ✅ Screenshot captured
+      ├ Format: image/jpeg
+      └ Size: 368x800px
+
+    <image content>
+
+tool result (image output)
+
+• Searching the web
+
+• Ran sed -n '1,175p' ScreenTime/Sources/App/Features/Time/TimeTabView.swift && sed -n '1,145p' ScreenTime/
+  │ Sources/App/Features/Activities/ActivitiesTabView.swift && rg -n 'Text\(|navigationTitle|tab|reclaim|usage|
+  │ Screen Time' ScreenTime/Sources/App/Features/Insights/InsightsView.swift && sed -n '205,290p' ScreenTime/
+  │ … +3 lines
+  └  M ScreenTime/Sources/App/Features/Badges/BadgeMonthDetailView.swift
+
+• Searched the web for site.developer.apple.com/design/human-interface-guidelines/buttons "most likely" ...
+
+• Explored
+  └ Read OnboardingModel.swift, ActivationMarkers.swift, BlockListDailyLimitsSection.swift
+
+• Called XcodeBuildMCP.tap({"elementRef":"e264"})
+  └
+    👆 Tap
+
+    ✅ Tap on elementRef e264 simulated successfully.
+
+    Next steps:
+    1. Tap an elementRef: tap({ simulatorId: "69A29DD2-C91E-487A-81B9-3B146DF8F07B", elementRef: "e40" })
+    2. Scroll visible content: swipe({ simulatorId: "69A29DD2-C91E-487A-81B9-3B146DF8F07B", withinElementRef:
+        "e21", direction: "up", distance: 0.5 })
+
+
+──────────────────────────────────────────────────────────────────────────────────────────────────────────────────
+
+• My recommendation is a compact “Block now” action on Home, with schedules and daily limits clearly accessible
+  through the existing “Blocks” tab. Keep badges prominent, and preserve a direct path for someone who opens the
+  app wanting to stop scrolling immediately.
+
+  That is the best balance I’d test for retention. It supports three different needs: act now, set up protection
+  for later, and see progress.
+
+  I checked Home and Blocks in the simulator and read the navigation, onboarding, and Quick Start flows. One
+  detail about the current version: Quick Start lives inside Block List; Home’s fixed bottom panel is “Active
+  Now.”
+
+  Here’s the arrangement I recommend:
+
+   Area                What belongs there
+  ━━━━━━━━━━━━━━━━━━  ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+   Home content        Badge progress, reclaimed time, and the existing summaries
+  ──────────────────  ────────────────────────────────────────────────────────────────────────────────────
+   Home bottom area    One compact “Block now” button when idle; the relevant active status when blocking
+  ──────────────────  ────────────────────────────────────────────────────────────────────────────────────
+   Blocks tab          Clearly visible access to Block now, Schedules, and Daily limits
+
+  The compact button can open Quick Start’s controls directly. Apps, duration, and purpose belong in that setup
+  view. A returning user should see their saved choices and a clear Start button, without first choosing which
+  kind of blocking they want.
+
+  Your proposed options menu makes sense as the entrance to the Blocks tab. I would put it there because that is
+  where someone goes to explore or manage their protection.
+
+  The reason I favor this arrangement is that the actions have different timing:
+
+  - Block now serves an immediate intention. Someone has decided, “I need to put my phone down.” An extra choice
+    interrupts that intention every time they use it.
+
+  - Schedules and limits serve a recurring need. Making them easy to discover matters because they can keep
+    helping without another daily decision.
+
+  - Badges make progress visible. They give someone a reason to feel good about continuing, but that progress
+    depends on getting protection running.
+
+  Your onboarding already creates a first schedule. That changes the tradeoff: new users have already encountered
+  scheduling before reaching Home. Their next visit should make it clear that their setup is working and show what
+  they have achieved.
+
+  I would also rename “Block List” to “Blocks,” matching the screen’s existing heading. “Block List” sounds like a
+  list of selected apps; “Blocks” better fits the broader destination. Put Schedules and Daily limits near the
+  top, since limits currently sit below several other sections.
+
+  For the visual concern, I agree that the bottom area can compete with badges. In the simulator, the badge card
+  already occupies much of the first screen, and Active Now reduces the space available for the time summary. Use
+  one compact bottom area that changes with the current state, rather than adding another panel. Keep the button
+  easy to notice through its label and placement; it does not need a large card.
+
+  This direction fits Apple’s guidance on giving the preferred action more prominence
+  (https://developer.apple.com/design/human-interface-guidelines/buttons). NN/g’s navigation research
+  (https://www.nngroup.com/articles/hamburger-menus/) also supports keeping important destinations visible,
+  although that research does not establish a retention lift for BestSpent.
+
+  The retention result still needs measurement. Compare first successful blocks, repeat Quick Starts, continued
+  schedule or limit use, and returns after 7 and 30 days. Track days with protection actually running alongside
+  app opens: someone whose schedule keeps working can still be getting value while opening BestSpent less often.
+
+  The next useful step is a rough Home mock with that single compact action. Check whether the badge, a meaningful
+  progress number, and “Block now” are all understandable at first glance on your iPhone 13 mini.
+
+─ Worked for 3m 52s ──────────────────────────────────────────────────────────────────────────────────────────────
+
+
+› show me in ascii what you mean
+
+
+• Home keeps the progress front and center, with one compact action fixed above the tabs:
+
+  ┌───────────────────────────────────────┐
+  │ Home                              ⚙   │
+  │                                       │
+  │ ┌───────────────────────────────────┐ │
+  │ │              BADGE                │ │
+  │ │              Silver               │ │
+  │ │            28h to go               │ │
+  │ │       [=============-------]      │ │
+  │ │                                   │ │
+  │ │ See all badges                  > │ │
+  │ └───────────────────────────────────┘ │
+  │                                       │
+  │              127h 20m                 │
+  │            Time reclaimed             │
+  │                                       │
+  │           Weekly progress             │
+  │           ▂ ▄ ▃ ▆ ▅ ▇ ▄              │
+  │                                       │
+  │          More content scrolls         │
+  │                                       │
+  │ ┌───────────────────────────────────┐ │
+  │ │           Block now               │ │
+  │ └───────────────────────────────────┘ │
+  │                                       │
+  │ Home  Blocks  Insights  Time  Activities│
+  └───────────────────────────────────────┘
+
+  “Block now” opens your Quick Start controls directly: apps, duration, optional purpose, and Start.
+
+  The Blocks tab makes all three options visible:
+
+  ┌───────────────────────────────────────┐
+  │ Blocks                            ⚙   │
+  │                                       │
+  │ ┌───────────────────────────────────┐ │
+  │ │ Block now                       > │ │
+  │ │ Start a focus session             │ │
+  │ ├───────────────────────────────────┤ │
+  │ │ Schedules                       > │ │
+  │ │ Block at repeating times          │ │
+  │ ├───────────────────────────────────┤ │
+  │ │ Daily limits                    > │ │
+  │ │ Set an allowance for each app     │ │
+  │ └───────────────────────────────────┘ │
+  │                                       │
+  │ TODAY                                 │
+  │ ┌───────────────────────────────────┐ │
+  │ │ Your existing timeline            │ │
+  │ └───────────────────────────────────┘ │
+  │                                       │
+  │ Your blocks and limits below          │
+  │                                       │
+  │ Home  Blocks  Insights  Time  Activities│
+  └───────────────────────────────────────┘
+
+  When a block is running, Home’s bottom action changes to the active status in that same space:
+
+  Idle:       [             Block now             ]
+
+  Active:     [ Block active           Details >  ]
+
+  The tradeoff is a little permanent space on Home. In return, starting stays easy, and the broader options remain
+  one tab away.
+
+CODEX
+
+Yes. Compared with making Home’s button open a menu of blocking options, I prefer this plan. Someone opening BestSpent to focus gets an obvious action, while someone managing schedules has a clear destination.
+
+But I would simplify two parts of the mock.
+
+1. **Keep the compact Home button.** “Block now” should open the setup with saved choices already filled in. Badges and reclaimed time keep the main content area.
+
+2. **Make the Blocks shortcuts smaller.** Three large navigation rows above the timeline would push useful information farther down. Keep your existing Blocks screen and add compact, clearly labeled access to Schedules and Daily limits near the top.
+
+3. **Preserve useful controls while blocking.** The mock’s generic “Details” button was too vague. The active state should clearly show what is running and preserve the relevant controls you already provide.
+
+One correction to my earlier reasoning: **the proposed Home shortcut does not automatically save taps.**
+
+```text
+Current, when Quick Start is visible:
+Home -> Blocks -> Start
+
+Proposed:
+Home -> Block now -> Start
+
+General options menu:
+Home -> Options -> Block now -> Start
+```
+
+The shortcut’s advantage is that people can immediately see where to start, without searching or scrolling. The general menu introduces another choice.
+
+For retention, I’d favor the compact shortcut because it supports both immediate action and automatic routines. But the permanent space it takes on idle Home is a real cost, especially with your large badge card. There is no evidence yet that this tradeoff improves BestSpent’s retention.
+
+**I’d prototype the Home button first and keep the Blocks changes modest.** Check that the badge, reclaimed-time number, and action fit comfortably on your iPhone 13 mini before committing to the larger redesign.

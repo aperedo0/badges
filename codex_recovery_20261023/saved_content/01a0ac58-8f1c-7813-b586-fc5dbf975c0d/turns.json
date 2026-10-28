@@ -1,0 +1,50 @@
+[
+  {
+    "thread_id": "01a0ac58-8f1c-7813-b586-fc5dbf975c0d",
+    "turn_id": "01a0ac58-dd2f-7863-8a94-a234fd00664c",
+    "rollout_ordinal": 1,
+    "status": "completed",
+    "error_json": null,
+    "started_at": 1789597900,
+    "completed_at": 1789599380,
+    "duration_ms": 1480683,
+    "first_user_item_id": "01a0ac58-def1-7371-b605-627ef6c62110",
+    "final_agent_item_id": "msg_0f3b3da914f45b36016aab1e8fce0087d09942e3bd0be70c20",
+    "rollout_byte_offset": 22393,
+    "rollout_end_ordinal": 364,
+    "rollout_end_byte_offset": 44287163,
+    "root_turn_id": null
+  },
+  {
+    "thread_id": "01a0ac58-8f1c-7813-b586-fc5dbf975c0d",
+    "turn_id": "01a0ac97-41bb-7ca3-9061-5f1581ce4465",
+    "rollout_ordinal": 366,
+    "status": "completed",
+    "error_json": null,
+    "started_at": 1789601989,
+    "completed_at": 1789602063,
+    "duration_ms": 74531,
+    "first_user_item_id": "01a0ac97-42db-7c90-bd1d-8a5a1604a4c9",
+    "final_agent_item_id": "msg_0f3b3da914f45b36016aab290c625487d0a710544a1b5557af",
+    "rollout_byte_offset": 44289954,
+    "rollout_end_ordinal": 386,
+    "rollout_end_byte_offset": 44308392,
+    "root_turn_id": null
+  },
+  {
+    "thread_id": "01a0ac58-8f1c-7813-b586-fc5dbf975c0d",
+    "turn_id": "01a0ac99-7c79-72d3-8a8f-f4371f10f33c",
+    "rollout_ordinal": 388,
+    "status": "failed",
+    "error_json": "{\"message\":\"You've hit your usage limit. Upgrade to Pro (https://chatgpt.com/explore/pro), visit https://chatgpt.com/codex/settings/usage to purchase more credits or try again at 8:32 PM.\",\"codexErrorInfo\":\"usageLimitExceeded\",\"additionalDetails\":null,\"misalignment\":null}",
+    "started_at": 1789602135,
+    "completed_at": 1789603621,
+    "duration_ms": 1485931,
+    "first_user_item_id": "01a0ac99-7dbb-71a3-8875-506cd6ebc461",
+    "final_agent_item_id": "call_KSuA03oC8yqyLZSImGmD6bFi",
+    "rollout_byte_offset": 44311183,
+    "rollout_end_ordinal": 626,
+    "rollout_end_byte_offset": 83469911,
+    "root_turn_id": null
+  }
+]

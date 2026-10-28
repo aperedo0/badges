@@ -1,0 +1,60 @@
+{
+  "groups": [
+    {
+      "name": "Reference traced curved trophy and botanical relief.002",
+      "role": "relief"
+    },
+    {
+      "name": "Continuous relief side walls.002",
+      "role": "wall"
+    },
+    {
+      "name": "Upper reference emerald flat facets.002",
+      "role": "relief"
+    },
+    {
+      "name": "Pedestal reference emerald flat facets.002",
+      "role": "relief"
+    },
+    {
+      "name": "Exact Archer brushed emerald field.002",
+      "role": "field"
+    }
+  ],
+  "palette": {
+    "relief": [
+      [
+        0.001,
+        0.001,
+        0.001
+      ],
+      1.0,
+      0.55
+    ],
+    "wall": [
+      [
+        0.24,
+        0.09,
+        0.012
+      ],
+      0.8,
+      0.53
+    ],
+    "field": [
+      [
+        0.0006,
+        0.014,
+        0.002
+      ],
+      0.72,
+      0.32
+    ]
+  },
+  "emission": {},
+  "source_shell": "sprout",
+  "reference_center": [
+    627,
+    590
+  ],
+  "reference_inner_radius": 490
+}

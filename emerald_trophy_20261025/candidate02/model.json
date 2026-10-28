@@ -1,0 +1,13 @@
+{
+  "name": "candidate02",
+  "bytes": 4722266,
+  "triangles": 76172,
+  "relief_meshes": 18,
+  "sha256": "c7d8356a03f3c0a72eb6098cc4c2f7342a756b39b8d469dc3439fa4f90aec7c9",
+  "shell_data_unchanged": true,
+  "mirrored_matching_back": true,
+  "required_size": 0.96,
+  "required_lift": 0.56,
+  "calibration": false,
+  "USD_validation": "passed"
+}

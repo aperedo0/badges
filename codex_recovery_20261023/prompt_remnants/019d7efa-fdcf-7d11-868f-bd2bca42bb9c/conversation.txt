@@ -1,0 +1,307 @@
+MEMORY INVESTIGATION — READ ONLY. DO NOT MAKE ANY CHANGES. REPORT ONLY. Spawn as many agents as possible. Every agent reports findings with file names, line numbers, and exact code snippets. No fixes, no edits, no modifications.
+
+Project: /Users/antonioperedo/Desktop/screen_time/
+The app is killed by iOS for excessive memory on iPhone 13 mini after ~20 minutes. Previous fixes helped (crashed at 5.5 min before, 20 min now) but didn't fully solve it.
+
+AGENT 1 — AnyView AUDIT:
+Search the ENTIRE codebase for every instance of "AnyView". Every file, every line. List them all. Were the AnyView wrappers in MainTabView actually removed? Show me the FULL current code of homeTab, blockListTab, and insightsTab computed properties in MainTabView.swift. Print every line. Are they using @ViewBuilder with compile-time #if branching or are they still wrapping in AnyView?
+
+AGENT 2 — TASK AND TIMER INVENTORY:
+Find every single Task {}, .task(, Task.sleep, Timer.publish, Timer.scheduledTimer, TimelineView, DispatchQueue.asyncAfter, and RunLoop reference in the entire codebase. For EACH one, report:
+- File name and line number
+- What it does
+- How often it fires
+- What it captures (self, strong references?)
+- Is it cancelled when the view disappears?
+- Could multiple instances accumulate?
+- Is there an infinite loop? What's the exit condition?
+
+Print the full code block for each one found. Not summaries. Full code.
+
+AGENT 3 — FamilyActivitySelection INSTANCES:
+Search every file for FamilyActivitySelection. List every @State, @Binding, stored property, local variable, and parameter of this type. For each one:
+- File name and line number
+- Is it stored permanently or created temporarily?
+- When is it populated? From disk? From the picker?
+- Could multiple copies exist simultaneously?
+- How large is it in memory? (Apple's opaque framework objects can be multi-MB)
+
+Count the total number of simultaneous live instances during normal app use.
+
+AGENT 4 — NotificationCenter OBSERVERS:
+Search for every NotificationCenter.default.publisher, .onReceive, NotificationCenter.default.addObserver in the entire codebase. For each:
+- File name and line number
+- What notification is being observed?
+- Is the observer scoped to view lifecycle (SwiftUI manages it) or manually added?
+- Could observers accumulate if a view is recreated?
+- Print the full code block
+
+AGENT 5 — LiveDataSnapshot SIZE:
+Find the LiveDataSnapshot struct definition. Print the ENTIRE struct with every field. For each field:
+- What type is it?
+- Could it be large? (arrays of records, strings, etc.)
+- Where is it populated in computeLiveSnapshot?
+
+Then read computeLiveSnapshot. Print the FULL method. For every allocation inside it:
+- Does it load data from disk?
+- Does it create arrays?
+- How large could each allocation be with 500 shield hit records and 500 threshold events?
+- Are temporary arrays released after the snapshot is built?
+
+AGENT 6 — SharedDataStore CACHE:
+Find the file cache implementation in SharedDataStore. Print the FULL cache code (the struct, the dictionary, the TTL, the read/write/invalidate methods). Answer:
+- How many entries can the cache hold simultaneously?
+- Is there a maximum size or entry limit?
+- Are old entries ever evicted?
+- If the app reads shield_hits.json, threshold_events.json, blocking_schedules.json, focus_session.json, selection.json, streak_state.json, and last_shield_message.txt over its lifetime, does the cache hold ALL of them decoded in memory simultaneously?
+- What is the worst-case memory size of the cache with all files at maximum size (500 records each)?
+
+AGENT 7 — SWIFTUI BODY RE-EVALUATION:
+Read MainTabView.swift body. How often is it re-evaluated? What @State changes trigger it? Print every @State and @StateObject on MainTabView. For each one:
+- How often does it change?
+- Does changing it trigger a full body re-evaluation?
+- Does a full body re-evaluation reconstruct all three tab views?
+
+Then check: does TabView in SwiftUI eagerly instantiate all tabs or lazily? If eagerly, all three tab views exist in memory simultaneously. What is the combined memory cost?
+
+Read HomeView.swift body. How many lines is it? Is there a TimelineView inside? Does the TimelineView's content closure capture heavy data? Print the TimelineView code.
+
+Read BlockListView.swift body. Same questions.
+
+Read InsightsView.swift body. Same questions.
+
+AGENT 8 — RETAIN CYCLE SEARCH:
+Search every closure in the codebase for potential retain cycles. Specifically:
+- Closures that capture self without [weak self]
+- .task modifiers that reference instance properties
+- .onReceive closures that hold strong references
+- NotificationCenter observers that capture self
+- Timer callbacks that capture self
+- Any closure stored as a property that references the owning object
+
+For each potential cycle found: file name, line number, full code block, and whether it's actually a cycle or safe.
+
+AGENT 9 — IMAGE AND ASSET MEMORY:
+Search for every Image(, UIImage(, SF Symbol usage in the codebase. Are any images loaded repeatedly? Are large images cached? Are there any custom images (not SF Symbols) that could be large?
+
+Search for any .resizable() without explicit frame sizes that could cause an image to render at full resolution.
+
+AGENT 10 — EXTENSION MEMORY IMPACT:
+When the main app is running and extensions fire (ShieldConfiguration, ShieldAction, DeviceActivityMonitor), does the extension's memory count against the main app's jetsam budget? Or are extensions separate processes? Research this. If extensions share the budget, that could explain why the app gets killed when shields are firing.
+
+AGENT 11 — XCODE DEBUGGING OVERHEAD:
+The crash logs show these debugging params are enabled:
+- param_diag_MallocStackLogging_enableForXPC = 1
+- param_diag_viewDebugging_insertDylibOnLaunch = 1
+- param_diag_viewDebugging_enabled = 1
+- param_diag_queueDebugging_enable = 1
+- param_diag_checker_tpc_enable = 1
+- param_diag_mtc_enable = 1
+
+Research: how much memory does each of these debugging tools add to the app process? Could the combined overhead push the app over the iPhone 13 mini's jetsam limit even if the app itself is within budget? What is the iPhone 13 mini's jetsam limit for foreground apps?
+
+AGENT 12 — MEMORY LOGGER ANALYSIS:
+Find the runMemoryWatch code. Print it in full. Then:
+- What interval does it log at? (should be 5 seconds after the recent change, verify)
+- Is the logger itself leaking? Does the Task hold a strong reference?
+- What is os_proc_available_memory() actually measuring? Is it the right metric?
+- Could the app be killed for a reason OTHER than RSS? (e.g. dirty memory pages, memory pressure from other apps)
+
+AGENT 13 — COMPUTED PROPERTIES THAT DO WORK:
+Search for computed properties (var ... { ... }) that perform significant work (disk reads, JSON decoding, array operations). Computed properties re-execute every time they're accessed. If a computed property that decodes JSON is accessed multiple times per second, it creates and discards objects continuously.
+
+Specifically check SharedDataStore.defaults and SharedDataStore.containerURL. Are these still computed properties that create new instances on every access? How often are they accessed? Count the number of access points across the codebase.
+
+AGENT 14 — STRING AND DATA ALLOCATIONS:
+Search for any place where large strings or Data objects are created repeatedly:
+- JSON encoding/decoding (JSONEncoder().encode, JSONDecoder().decode)
+- String interpolation in logging (Logger messages with large interpolated values)
+- DateFormatter creation (these are expensive, should be cached)
+- Are DateFormatters being created inside loops or frequently-called methods?
+
+AGENT 15 — THIRD PARTY OR SYSTEM FRAMEWORK MEMORY:
+List every import statement across all files. For each framework imported:
+- Is it necessary?
+- Does it load additional system libraries that consume memory?
+- Are FamilyControls, ManagedSettings, DeviceActivity loaded even when not being actively used?
+
+AGENT 16 — WORST CASE SCENARIO CALCULATION:
+Based on all findings from all other agents, calculate the theoretical worst-case memory footprint of the app:
+- Base app binary loaded in memory
+- All three tabs instantiated simultaneously (SwiftUI TabView)
+- LiveDataSnapshot with 500 shield hits + 500 threshold events + 10 schedules
+- SharedDataStore cache with all files decoded
+- 2-3 FamilyActivitySelection instances
+- All timers and tasks running
+- All notification observers registered
+- Xcode debugging overhead
+
+Add it all up. Compare to the iPhone 13 mini's jetsam limit. Is the budget physically possible to stay within? Or is the device simply too constrained for an app of this complexity with debugging tools attached?
+
+REPORT FORMAT:
+For each agent, provide:
+1. What you searched for
+2. Every instance found with file:line and full code
+3. Whether it's a problem and why
+4. Estimated memory impact (bytes/KB/MB)
+5. Severity ranking (critical / moderate / low / not an issue)
+
+At the end, provide a RANKED list of the top 5 most likely causes of the OOM crash, with estimated memory savings if each were fixed.
+
+Conversation ID: 019d7efa-fdcf-7d11-868f-bd2bca42bb9c
+Working folder: /Users/antonioperedo/Desktop/screen_time
+
+Only prompt remnants survived in the sources checked.
+No Codex replies were found for this conversation.
+
+OPENING PROMPT FROM THE HISTORY INDEX
+
+MEMORY INVESTIGATION — READ ONLY. DO NOT MAKE ANY CHANGES. REPORT ONLY. Spawn as many agents as possible. Every agent reports findings with file names, line numbers, and exact code snippets. No fixes, no edits, no modifications.
+
+Project: /Users/antonioperedo/Desktop/screen_time/
+The app is killed by iOS for excessive memory on iPhone 13 mini after ~20 minutes. Previous fixes helped (crashed at 5.5 min before, 20 min now) but didn't fully solve it.
+
+AGENT 1 — AnyView AUDIT:
+Search the ENTIRE codebase for every instance of "AnyView". Every file, every line. List them all. Were the AnyView wrappers in MainTabView actually removed? Show me the FULL current code of homeTab, blockListTab, and insightsTab computed properties in MainTabView.swift. Print every line. Are they using @ViewBuilder with compile-time #if branching or are they still wrapping in AnyView?
+
+AGENT 2 — TASK AND TIMER INVENTORY:
+Find every single Task {}, .task(, Task.sleep, Timer.publish, Timer.scheduledTimer, TimelineView, DispatchQueue.asyncAfter, and RunLoop reference in the entire codebase. For EACH one, report:
+- File name and line number
+- What it does
+- How often it fires
+- What it captures (self, strong references?)
+- Is it cancelled when the view disappears?
+- Could multiple instances accumulate?
+- Is there an infinite loop? What's the exit condition?
+
+Print the full code block for each one found. Not summaries. Full code.
+
+AGENT 3 — FamilyActivitySelection INSTANCES:
+Search every file for FamilyActivitySelection. List every @State, @Binding, stored property, local variable, and parameter of this type. For each one:
+- File name and line number
+- Is it stored permanently or created temporarily?
+- When is it populated? From disk? From the picker?
+- Could multiple copies exist simultaneously?
+- How large is it in memory? (Apple's opaque framework objects can be multi-MB)
+
+Count the total number of simultaneous live instances during normal app use.
+
+AGENT 4 — NotificationCenter OBSERVERS:
+Search for every NotificationCenter.default.publisher, .onReceive, NotificationCenter.default.addObserver in the entire codebase. For each:
+- File name and line number
+- What notification is being observed?
+- Is the observer scoped to view lifecycle (SwiftUI manages it) or manually added?
+- Could observers accumulate if a view is recreated?
+- Print the full code block
+
+AGENT 5 — LiveDataSnapshot SIZE:
+Find the LiveDataSnapshot struct definition. Print the ENTIRE struct with every field. For each field:
+- What type is it?
+- Could it be large? (arrays of records, strings, etc.)
+- Where is it populated in computeLiveSnapshot?
+
+Then read computeLiveSnapshot. Print the FULL method. For every allocation inside it:
+- Does it load data from disk?
+- Does it create arrays?
+- How large could each allocation be with 500 shield hit records and 500 threshold events?
+- Are temporary arrays released after the snapshot is built?
+
+AGENT 6 — SharedDataStore CACHE:
+Find the file cache implementation in SharedDataStore. Print the FULL cache code (the struct, the dictionary, the TTL, the read/write/invalidate methods). Answer:
+- How many entries can the cache hold simultaneously?
+- Is there a maximum size or entry limit?
+- Are old entries ever evicted?
+- If the app reads shield_hits.json, threshold_events.json, blocking_schedules.json, focus_session.json, selection.json, streak_state.json, and last_shield_message.txt over its lifetime, does the cache hold ALL of them decoded in memory simultaneously?
+- What is the worst-case memory size of the cache with all files at maximum size (500 records each)?
+
+AGENT 7 — SWIFTUI BODY RE-EVALUATION:
+Read MainTabView.swift body. How often is it re-evaluated? What @State changes trigger it? Print every @State and @StateObject on MainTabView. For each one:
+- How often does it change?
+- Does changing it trigger a full body re-evaluation?
+- Does a full body re-evaluation reconstruct all three tab views?
+
+Then check: does TabView in SwiftUI eagerly instantiate all tabs or lazily? If eagerly, all three tab views exist in memory simultaneously. What is the combined memory cost?
+
+Read HomeView.swift body. How many lines is it? Is there a TimelineView inside? Does the TimelineView's content closure capture heavy data? Print the TimelineView code.
+
+Read BlockListView.swift body. Same questions.
+
+Read InsightsView.swift body. Same questions.
+
+AGENT 8 — RETAIN CYCLE SEARCH:
+Search every closure in the codebase for potential retain cycles. Specifically:
+- Closures that capture self without [weak self]
+- .task modifiers that reference instance properties
+- .onReceive closures that hold strong references
+- NotificationCenter observers that capture self
+- Timer callbacks that capture self
+- Any closure stored as a property that references the owning object
+
+For each potential cycle found: file name, line number, full code block, and whether it's actually a cycle or safe.
+
+AGENT 9 — IMAGE AND ASSET MEMORY:
+Search for every Image(, UIImage(, SF Symbol usage in the codebase. Are any images loaded repeatedly? Are large images cached? Are there any custom images (not SF Symbols) that could be large?
+
+Search for any .resizable() without explicit frame sizes that could cause an image to render at full resolution.
+
+AGENT 10 — EXTENSION MEMORY IMPACT:
+When the main app is running and extensions fire (ShieldConfiguration, ShieldAction, DeviceActivityMonitor), does the extension's memory count against the main app's jetsam budget? Or are extensions separate processes? Research this. If extensions share the budget, that could explain why the app gets killed when shields are firing.
+
+AGENT 11 — XCODE DEBUGGING OVERHEAD:
+The crash logs show these debugging params are enabled:
+- param_diag_MallocStackLogging_enableForXPC = 1
+- param_diag_viewDebugging_insertDylibOnLaunch = 1
+- param_diag_viewDebugging_enabled = 1
+- param_diag_queueDebugging_enable = 1
+- param_diag_checker_tpc_enable = 1
+- param_diag_mtc_enable = 1
+
+Research: how much memory does each of these debugging tools add to the app process? Could the combined overhead push the app over the iPhone 13 mini's jetsam limit even if the app itself is within budget? What is the iPhone 13 mini's jetsam limit for foreground apps?
+
+AGENT 12 — MEMORY LOGGER ANALYSIS:
+Find the runMemoryWatch code. Print it in full. Then:
+- What interval does it log at? (should be 5 seconds after the recent change, verify)
+- Is the logger itself leaking? Does the Task hold a strong reference?
+- What is os_proc_available_memory() actually measuring? Is it the right metric?
+- Could the app be killed for a reason OTHER than RSS? (e.g. dirty memory pages, memory pressure from other apps)
+
+AGENT 13 — COMPUTED PROPERTIES THAT DO WORK:
+Search for computed properties (var ... { ... }) that perform significant work (disk reads, JSON decoding, array operations). Computed properties re-execute every time they're accessed. If a computed property that decodes JSON is accessed multiple times per second, it creates and discards objects continuously.
+
+Specifically check SharedDataStore.defaults and SharedDataStore.containerURL. Are these still computed properties that create new instances on every access? How often are they accessed? Count the number of access points across the codebase.
+
+AGENT 14 — STRING AND DATA ALLOCATIONS:
+Search for any place where large strings or Data objects are created repeatedly:
+- JSON encoding/decoding (JSONEncoder().encode, JSONDecoder().decode)
+- String interpolation in logging (Logger messages with large interpolated values)
+- DateFormatter creation (these are expensive, should be cached)
+- Are DateFormatters being created inside loops or frequently-called methods?
+
+AGENT 15 — THIRD PARTY OR SYSTEM FRAMEWORK MEMORY:
+List every import statement across all files. For each framework imported:
+- Is it necessary?
+- Does it load additional system libraries that consume memory?
+- Are FamilyControls, ManagedSettings, DeviceActivity loaded even when not being actively used?
+
+AGENT 16 — WORST CASE SCENARIO CALCULATION:
+Based on all findings from all other agents, calculate the theoretical worst-case memory footprint of the app:
+- Base app binary loaded in memory
+- All three tabs instantiated simultaneously (SwiftUI TabView)
+- LiveDataSnapshot with 500 shield hits + 500 threshold events + 10 schedules
+- SharedDataStore cache with all files decoded
+- 2-3 FamilyActivitySelection instances
+- All timers and tasks running
+- All notification observers registered
+- Xcode debugging overhead
+
+Add it all up. Compare to the iPhone 13 mini's jetsam limit. Is the budget physically possible to stay within? Or is the device simply too constrained for an app of this complexity with debugging tools attached?
+
+REPORT FORMAT:
+For each agent, provide:
+1. What you searched for
+2. Every instance found with file:line and full code
+3. Whether it's a problem and why
+4. Estimated memory impact (bytes/KB/MB)
+5. Severity ranking (critical / moderate / low / not an issue)
+
+At the end, provide a RANKED list of the top 5 most likely causes of the OOM crash, with estimated memory savings if each were fixed.

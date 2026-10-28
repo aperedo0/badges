@@ -1,0 +1,62 @@
+what is the tech stack in this project?
+
+Conversation ID: 01a020fc-7b66-7262-909e-caf8f3227b17
+Working folder: /Users/antonioperedo/Desktop/notify
+
+Saved conversation content exported from the Codex history database.
+This export does not establish that every original message or attachment survived.
+
+YOU
+
+what is the tech stack in this project?
+
+CODEX
+
+I’m using the repository’s `clarity` skill, then I’ll read the project manifests and architecture docs so the answer reflects what this codebase actually uses.
+
+CODEX
+
+Notify is a strict TypeScript monorepo targeting desktop and mobile apps, backed by a Fastify API, PostgreSQL, and a monitoring worker.
+
+Important: only the M0 database/auth foundation is currently scaffolded. The rest is the approved stack in [PLAN.md](/Users/antonioperedo/Desktop/notify/PLAN.md:127).
+
+| Area | Stack |
+|---|---|
+| Monorepo | Node 24, pnpm workspaces, Turborepo, strict TypeScript |
+| Desktop | Electron, electron-vite, React 19.2, electron-builder/updater |
+| Mobile | Expo SDK 57, React Native 0.86, React 19.2, Expo Router |
+| API | Fastify modular monolith, REST/JSON, OpenAPI, WebSockets |
+| Authentication | Better Auth with PostgreSQL sessions and Electron/Expo integrations |
+| Database | PostgreSQL 17, Drizzle ORM, Drizzle Kit migrations, `postgres.js` |
+| Hosting | Docker locally; Neon PostgreSQL in hosted environments |
+| Client state | TanStack Query v5 and Zustand |
+| Validation | Shared Zod schemas and an OpenAPI-generated client |
+| Monitoring | Node worker, Axios, proxy agents, Expo Push Service |
+| Realtime | PostgreSQL `LISTEN/NOTIFY` relayed through authenticated WebSockets |
+| Testing | Vitest, Docker integration tests, API authorization tests, Playwright Electron smoke tests |
+| Quality/observability | ESLint, TypeScript checks, Pino logging, Sentry planned for all runtimes |
+
+Currently installed code is mostly PostgreSQL, Drizzle, Better Auth, Vitest, ESLint, TypeScript, pnpm, and Turborepo; see [package.json](/Users/antonioperedo/Desktop/notify/package.json) and [apps/api/package.json](/Users/antonioperedo/Desktop/notify/apps/api/package.json).
+
+YOU
+
+give me the web stack only
+
+CODEX
+
+I’m applying the repository’s `clarity` guidance to narrow this to the browser-style frontend and backend technologies.
+
+CODEX
+
+There is no standalone browser web app. The web-style stack used by the Electron renderer and backend is:
+
+- React 19.2 + TypeScript
+- electron-vite
+- TanStack Query v5 + Zustand
+- Fastify REST API + WebSockets
+- Zod + generated OpenAPI client
+- Better Auth
+- PostgreSQL 17 + Drizzle ORM
+- Node 24, pnpm, Turborepo
+- Vitest + Playwright
+- ESLint + Pino + Sentry

@@ -1,0 +1,15 @@
+{
+  "baseline": {
+    "status": "a00d55eb8eb63f85ed25667669d728402cd4d4966e425b61ea9c49c92b64a330",
+    "working": "292964233bc1f8cf7ae95a744dd7d0994b90eea7f68c6c2055ee8d39ca737f4e",
+    "index": "c051250b52adddefa47e7aa070e968a1b94cce357c124d9d4267edc7098e5c30"
+  },
+  "current": {
+    "status": "2bb3937b3b4402a18d38bc54d7e6cb6d1f834a1ef772d899572efb432f583338",
+    "working": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "index": "38e867b34bd13690e9ffc7fb97857aff4b8e7bef675d284294fafb3a97df1cd9"
+  },
+  "same_snapshot": false,
+  "production_writes_by_this_task": false,
+  "note": "Production is also being used by a separate app task. No production writes were performed in this badge task."
+}

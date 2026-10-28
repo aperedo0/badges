@@ -1,0 +1,2 @@
+Rebuilt the leaves, upper sprigs, flames, ribbon and emerald surfaces from the actual reference contours and detail.
+Replaced generic repeated shapes with curved traced relief and reference surface maps, calibrated against the app light; preserved the approved shell and arrow field.

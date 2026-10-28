@@ -1,0 +1,55 @@
+My iOS app "ScreenTime" is being killed by the OS for excessive memory usage on iPhone 12 mini (~180 MB jetsam limit). The Xcode memory gauge shows memory climbing steadily and never dropping, starting around 22 MB and growing continuously. The app stores very little data (a few hundred JSON records at most). It crashes after about 7 minutes of normal use.
+
+A prior audit identified these likely causes, ranked by impact:
+
+1. computeLiveSnapshot() in MainTabView.swift (around lines 316-550) is the main hot path. Every invocation calls store.loadShieldHits(), loadThresholdEvents(), and loadBlockingSchedules(), each of which does a full disk read through NSFileCoordinator + JSONDecoder. It runs on .onAppear, .onChange(of: scenePhase), .onReceive(liveDataNeedsRefresh), and on schedule boundary wakeups. There is zero caching. Every call allocates fresh arrays of up to 500 records, runs 5+ separate .filter passes over them, and invokes 4 analysis engines that each do their own filtering.
+
+2. InsightEngine.swift has a detectQuietNight function (around lines 402-462) that runs records.filter { ... } once per day for up to 30 days in a loop, then potentially another 30 days. That is up to 60 fresh array allocations per snapshot refresh. Other rules (detectBurst, detectTimeWindowClustering, detectFrequencySpike) have the same pattern.
+
+3. SharedDataStore.swift has no file-level caching at all. loadShieldHits, loadThresholdEvents, loadBlockingSchedules, and loadSelection are pure pass-throughs to readJSONFile. Every caller across the entire app triggers a full decode from disk.
+
+4. HomeView.swift and BlockListView.swift have multiple concurrent TimelineView(.periodic(from: .now, by: 1)) instances (at least 5 across both views), each creating a fresh SwiftUI render tree every second.
+
+5. FamilyActivitySelection carries opaque ApplicationToken blobs that can be large. BlockListView rehydrates this selection on every refreshLiveState call.
+
+Please:
+
+1. Read every file mentioned above and confirm or refute each finding against the actual code.
+2. Search for any other sources of memory growth I may have missed: retain cycles, observers registered without removal, singletons accumulating data, closures capturing self strongly, images or large objects held in @State, timers that never cancel, any allocation pattern that grows over time.
+3. For each confirmed issue, show the exact code causing it and write the minimal fix.
+4. Implement a SharedDataStore cache layer that caches decoded JSON in memory, keyed by file modification time, and invalidates on every write path (appendShieldHit, appendShieldHitAndCountForDay, appendThresholdEvent, saveBlockingSchedules, writeJSONFile). Model it after the existing TTL cache pattern already in SharedDataStore around lines 42-67.
+5. Refactor computeLiveSnapshot to decode each data source once and pass pre-filtered slices to the engines instead of each engine re-reading from disk.
+6. Refactor InsightEngine to group records by calendar day once using Dictionary(grouping:by:) and share that dictionary across all rules, instead of each rule doing its own repeated .filter loops.
+7. After all fixes, the app should sit flat at a stable memory footprint during normal use. No steady climb.
+
+Conversation ID: 019d7a8d-1cb5-75f2-8a27-f4983e37e60a
+Working folder: /Users/antonioperedo/Desktop/screen_time
+
+Only prompt remnants survived in the sources checked.
+No Codex replies were found for this conversation.
+
+OPENING PROMPT FROM THE HISTORY INDEX
+
+My iOS app "ScreenTime" is being killed by the OS for excessive memory usage on iPhone 12 mini (~180 MB jetsam limit). The Xcode memory gauge shows memory climbing steadily and never dropping, starting around 22 MB and growing continuously. The app stores very little data (a few hundred JSON records at most). It crashes after about 7 minutes of normal use.
+
+A prior audit identified these likely causes, ranked by impact:
+
+1. computeLiveSnapshot() in MainTabView.swift (around lines 316-550) is the main hot path. Every invocation calls store.loadShieldHits(), loadThresholdEvents(), and loadBlockingSchedules(), each of which does a full disk read through NSFileCoordinator + JSONDecoder. It runs on .onAppear, .onChange(of: scenePhase), .onReceive(liveDataNeedsRefresh), and on schedule boundary wakeups. There is zero caching. Every call allocates fresh arrays of up to 500 records, runs 5+ separate .filter passes over them, and invokes 4 analysis engines that each do their own filtering.
+
+2. InsightEngine.swift has a detectQuietNight function (around lines 402-462) that runs records.filter { ... } once per day for up to 30 days in a loop, then potentially another 30 days. That is up to 60 fresh array allocations per snapshot refresh. Other rules (detectBurst, detectTimeWindowClustering, detectFrequencySpike) have the same pattern.
+
+3. SharedDataStore.swift has no file-level caching at all. loadShieldHits, loadThresholdEvents, loadBlockingSchedules, and loadSelection are pure pass-throughs to readJSONFile. Every caller across the entire app triggers a full decode from disk.
+
+4. HomeView.swift and BlockListView.swift have multiple concurrent TimelineView(.periodic(from: .now, by: 1)) instances (at least 5 across both views), each creating a fresh SwiftUI render tree every second.
+
+5. FamilyActivitySelection carries opaque ApplicationToken blobs that can be large. BlockListView rehydrates this selection on every refreshLiveState call.
+
+Please:
+
+1. Read every file mentioned above and confirm or refute each finding against the actual code.
+2. Search for any other sources of memory growth I may have missed: retain cycles, observers registered without removal, singletons accumulating data, closures capturing self strongly, images or large objects held in @State, timers that never cancel, any allocation pattern that grows over time.
+3. For each confirmed issue, show the exact code causing it and write the minimal fix.
+4. Implement a SharedDataStore cache layer that caches decoded JSON in memory, keyed by file modification time, and invalidates on every write path (appendShieldHit, appendShieldHitAndCountForDay, appendThresholdEvent, saveBlockingSchedules, writeJSONFile). Model it after the existing TTL cache pattern already in SharedDataStore around lines 42-67.
+5. Refactor computeLiveSnapshot to decode each data source once and pass pre-filtered slices to the engines instead of each engine re-reading from disk.
+6. Refactor InsightEngine to group records by calendar day once using Dictionary(grouping:by:) and share that dictionary across all rules, instead of each rule doing its own repeated .filter loops.
+7. After all fixes, the app should sit flat at a stable memory footprint during normal use. No steady climb.

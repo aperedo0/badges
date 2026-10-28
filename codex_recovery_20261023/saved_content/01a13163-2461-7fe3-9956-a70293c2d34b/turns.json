@@ -1,0 +1,50 @@
+[
+  {
+    "thread_id": "01a13163-2461-7fe3-9956-a70293c2d34b",
+    "turn_id": "01a13163-6866-7771-83a0-8f6d66a3015e",
+    "rollout_ordinal": 1,
+    "status": "completed",
+    "error_json": null,
+    "started_at": 1791829960,
+    "completed_at": 1791830185,
+    "duration_ms": 224697,
+    "first_user_item_id": "01a13163-6aa3-7843-9853-1b094f6e5aff",
+    "final_agent_item_id": "msg_0f51c68971e475b7016acd28775a6c8191ae1fc89181ba04dd",
+    "rollout_byte_offset": 22679,
+    "rollout_end_ordinal": 98,
+    "rollout_end_byte_offset": 888968,
+    "root_turn_id": "01a13163-6866-7771-83a0-8f6d66a3015e"
+  },
+  {
+    "thread_id": "01a13163-2461-7fe3-9956-a70293c2d34b",
+    "turn_id": "01a13173-1263-7ff3-9622-13706de2d5db",
+    "rollout_ordinal": 100,
+    "status": "completed",
+    "error_json": null,
+    "started_at": 1791830987,
+    "completed_at": 1791831041,
+    "duration_ms": 53972,
+    "first_user_item_id": "01a13173-13fe-7cf1-b054-26a029214a9a",
+    "final_agent_item_id": "msg_0f51c68971e475b7016acd2bf3f7348191a6e35413952429bd",
+    "rollout_byte_offset": 891885,
+    "rollout_end_ordinal": 125,
+    "rollout_end_byte_offset": 1021276,
+    "root_turn_id": "01a13173-1263-7ff3-9622-13706de2d5db"
+  },
+  {
+    "thread_id": "01a13163-2461-7fe3-9956-a70293c2d34b",
+    "turn_id": "01a13175-1ff1-72a1-8ac8-efb6cd46b8bd",
+    "rollout_ordinal": 127,
+    "status": "completed",
+    "error_json": null,
+    "started_at": 1791831121,
+    "completed_at": 1791831260,
+    "duration_ms": 138589,
+    "first_user_item_id": "01a13175-20a4-7c32-bc19-b7182d0c215b",
+    "final_agent_item_id": "msg_0f51c68971e475b7016acd2cbd712c8191ab8995a295f99b13",
+    "rollout_byte_offset": 1024194,
+    "rollout_end_ordinal": 184,
+    "rollout_end_byte_offset": 1295438,
+    "root_turn_id": "01a13175-1ff1-72a1-8ac8-efb6cd46b8bd"
+  }
+]

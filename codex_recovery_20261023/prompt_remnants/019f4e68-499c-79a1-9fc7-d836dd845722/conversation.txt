@@ -1,0 +1,89 @@
+Peer-review the per-app daily time limits feature that was recently added to this iOS app. Read the actual source. Do not run the build or tests; this is a static review. Change no code. Cite everything by file and line.
+
+Produce exactly these four sections, in this order:
+
+1. HOW IT WORKS
+Explain how the time-limit feature functions, derived from the code itself, not from any external description. Cover: how a limit is stored, how it becomes a registered iOS monitor, what fires when the allowance is consumed, how the app is then shielded, how the shield is removed, how it resets daily, and how the UI reflects state. If any part of the mechanism is unclear from the code, say so rather than guessing.
+
+2. ARCHITECTURE ASSESSMENT
+State whether the code is well-structured or should be refactored. If you believe it is fine, say so plainly and defend that. If you would refactor, name the specific change, the file:line it applies to, what it improves (readability, testability, safety, scalability), and what it costs. Do not refactor for taste; only where it is a real improvement. Rank your suggestions by value, most important first. It is a valid answer that no refactor is warranted.
+
+3. BUGS
+List every defect you find. For each: a file:line citation, what goes wrong, the conditions that trigger it, and the consequence. Then classify it as REAL (you can trace the exact code path that fails) or UNCERTAIN (it looks wrong but you cannot fully confirm from static reading). Be honest about which is which; do not inflate UNCERTAIN findings into REAL ones. If you find no real bugs, say so explicitly rather than padding the list.
+
+4. CONFIDENCE
+State how confident you are in this review overall, and name what you could not verify by static reading alone (anything that would require running the code, a device, or the Screen Time framework at runtime).
+
+Constraints on the review itself:
+- Every claim about behavior must point to specific code. A claim with no citation does not belong in the review.
+- Do not flag style, naming, or formatting. Those are not bugs.
+- Pay particular attention to: whether anything other than the single sanctioned writer mutates the shield state; whether the daily reset can fail or leave a stale shield; concurrency around any shared file the app and its extension both write; and whether the feature's data can leak into the app's time-accounting or blocking behavior.
+- Distinguish what the code does from what you assume it intends.
+
+Output only these four sections. Be specific, be cited, be honest about uncertainty.
+
+Conversation ID: 019f4e68-499c-79a1-9fc7-d836dd845722
+Working folder: /Users/antonioperedo/Desktop/screen_time
+
+Only prompt remnants survived in the sources checked.
+No Codex replies were found for this conversation.
+
+OPENING PROMPT FROM THE HISTORY INDEX
+
+Peer-review the per-app daily time limits feature that was recently added to this iOS app. Read the actual source. Do not run the build or tests; this is a static review. Change no code. Cite everything by file and line.
+
+Produce exactly these four sections, in this order:
+
+1. HOW IT WORKS
+Explain how the time-limit feature functions, derived from the code itself, not from any external description. Cover: how a limit is stored, how it becomes a registered iOS monitor, what fires when the allowance is consumed, how the app is then shielded, how the shield is removed, how it resets daily, and how the UI reflects state. If any part of the mechanism is unclear from the code, say so rather than guessing.
+
+2. ARCHITECTURE ASSESSMENT
+State whether the code is well-structured or should be refactored. If you believe it is fine, say so plainly and defend that. If you would refactor, name the specific change, the file:line it applies to, what it improves (readability, testability, safety, scalability), and what it costs. Do not refactor for taste; only where it is a real improvement. Rank your suggestions by value, most important first. It is a valid answer that no refactor is warranted.
+
+3. BUGS
+List every defect you find. For each: a file:line citation, what goes wrong, the conditions that trigger it, and the consequence. Then classify it as REAL (you can trace the exact code path that fails) or UNCERTAIN (it looks wrong but you cannot fully confirm from static reading). Be honest about which is which; do not inflate UNCERTAIN findings into REAL ones. If you find no real bugs, say so explicitly rather than padding the list.
+
+4. CONFIDENCE
+State how confident you are in this review overall, and name what you could not verify by static reading alone (anything that would require running the code, a device, or the Screen Time framework at runtime).
+
+Constraints on the review itself:
+- Every claim about behavior must point to specific code. A claim with no citation does not belong in the review.
+- Do not flag style, naming, or formatting. Those are not bugs.
+- Pay particular attention to: whether anything other than the single sanctioned writer mutates the shield state; whether the daily reset can fail or leave a stale shield; concurrency around any shared file the app and its extension both write; and whether the feature's data can leak into the app's time-accounting or blocking behavior.
+- Distinguish what the code does from what you assume it intends.
+
+Output only these four sections. Be specific, be cited, be honest about uncertainty.
+
+SAVED TERMINAL PROMPT
+
+Peer-review the per-app daily time limits feature that was recently added to this iOS app. Read the actual source. Do not run the build or tests; this is a static review. Change no code. Cite everything by file and line.
+
+Produce exactly these four sections, in this order:
+
+1. HOW IT WORKS
+Explain how the time-limit feature functions, derived from the code itself, not from any external description. Cover: how a limit is stored, how it becomes a registered iOS monitor, what fires when the allowance is consumed, how the app is then shielded, how the shield is removed, how it resets daily, and how the UI reflects state. If any part of the mechanism is unclear from the code, say so rather than guessing.
+
+2. ARCHITECTURE ASSESSMENT
+State whether the code is well-structured or should be refactored. If you believe it is fine, say so plainly and defend that. If you would refactor, name the specific change, the file:line it applies to, what it improves (readability, testability, safety, scalability), and what it costs. Do not refactor for taste; only where it is a real improvement. Rank your suggestions by value, most important first. It is a valid answer that no refactor is warranted.
+
+3. BUGS
+List every defect you find. For each: a file:line citation, what goes wrong, the conditions that trigger it, and the consequence. Then classify it as REAL (you can trace the exact code path that fails) or UNCERTAIN (it looks wrong but you cannot fully confirm from static reading). Be honest about which is which; do not inflate UNCERTAIN findings into REAL ones. If you find no real bugs, say so explicitly rather than padding the list.
+
+4. CONFIDENCE
+State how confident you are in this review overall, and name what you could not verify by static reading alone (anything that would require running the code, a device, or the Screen Time framework at runtime).
+
+Constraints on the review itself:
+- Every claim about behavior must point to specific code. A claim with no citation does not belong in the review.
+- Do not flag style, naming, or formatting. Those are not bugs.
+- Pay particular attention to: whether anything other than the single sanctioned writer mutates the shield state; whether the daily reset can fail or leave a stale shield; concurrency around any shared file the app and its extension both write; and whether the feature's data can leak into the app's time-accounting or blocking behavior.
+- Distinguish what the code does from what you assume it intends.
+
+Output only these four sections. Be specific, be cited, be honest about uncertainty.
+
+SAVED TERMINAL PROMPT
+
+verify if the bugs you found are real
+
+SAVED TERMINAL PROMPT
+
+fix any bugs you found that are real

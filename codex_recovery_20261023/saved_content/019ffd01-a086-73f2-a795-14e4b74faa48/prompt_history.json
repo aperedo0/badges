@@ -1,0 +1,82 @@
+[
+  {
+    "session_id": "019ffd01-a086-73f2-a795-14e4b74faa48",
+    "ts": 1786656197,
+    "text": "go ahead and implement m0, if you have any questions before starting, ask"
+  },
+  {
+    "session_id": "019ffd01-a086-73f2-a795-14e4b74faa48",
+    "ts": 1786663704,
+    "text": "do a review on everything you just implemented, to make sure there are no bugs"
+  },
+  {
+    "session_id": "019ffd01-a086-73f2-a795-14e4b74faa48",
+    "ts": 1786664358,
+    "text": "can you fix all of that?"
+  },
+  {
+    "session_id": "019ffd01-a086-73f2-a795-14e4b74faa48",
+    "ts": 1786664527,
+    "text": "yes"
+  },
+  {
+    "session_id": "019ffd01-a086-73f2-a795-14e4b74faa48",
+    "ts": 1786669613,
+    "text": "check once more for bugs or any issues. we are working on the foundation layer and it is very important that we get this as solid as possible"
+  },
+  {
+    "session_id": "019ffd01-a086-73f2-a795-14e4b74faa48",
+    "ts": 1786670567,
+    "text": "verify anything you found to weed ouot false flags. anything that remains, then fix it"
+  },
+  {
+    "session_id": "019ffd01-a086-73f2-a795-14e4b74faa48",
+    "ts": 1786672054,
+    "text": "audit the implementation of m0 again. we must make sure this foundation layer is super solid"
+  },
+  {
+    "session_id": "019ffd01-a086-73f2-a795-14e4b74faa48",
+    "ts": 1786673528,
+    "text": "verify anything you found to weed ouot false flags. anything that remains, then fix it"
+  },
+  {
+    "session_id": "019ffd01-a086-73f2-a795-14e4b74faa48",
+    "ts": 1786675076,
+    "text": "audit the implementation of m0 again. we must make sure this foundation layer is super solid"
+  },
+  {
+    "session_id": "019ffd01-a086-73f2-a795-14e4b74faa48",
+    "ts": 1786676448,
+    "text": "verify anything you found to weed ouot false flags. anything that remains, then fix it"
+  },
+  {
+    "session_id": "019ffd01-a086-73f2-a795-14e4b74faa48",
+    "ts": 1786758817,
+    "text": "audit the implementation of m0 again. we must make sure this foundation layer is super solid"
+  },
+  {
+    "session_id": "019ffd01-a086-73f2-a795-14e4b74faa48",
+    "ts": 1786759979,
+    "text": "would this code benefit from a refactor, or is just fixing the bugs best?"
+  },
+  {
+    "session_id": "019ffd01-a086-73f2-a795-14e4b74faa48",
+    "ts": 1786760015,
+    "text": "verify anything you found to weed ouot false flags. anything that remains, then fix it"
+  },
+  {
+    "session_id": "019ffd01-a086-73f2-a795-14e4b74faa48",
+    "ts": 1786768151,
+    "text": "audit the implementation of m0 again. we must make sure this foundation layer is super solid"
+  },
+  {
+    "session_id": "019ffd01-a086-73f2-a795-14e4b74faa48",
+    "ts": 1786770965,
+    "text": "verify anything you found to weed ouot false flags. anything that remains, then fix it"
+  },
+  {
+    "session_id": "019ffd01-a086-73f2-a795-14e4b74faa48",
+    "ts": 1786816574,
+    "text": "audit the implementation of m0 again. we must make sure this foundation layer is super solid"
+  }
+]

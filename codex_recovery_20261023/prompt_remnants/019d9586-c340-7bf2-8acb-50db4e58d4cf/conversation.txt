@@ -1,0 +1,139 @@
+INVESTIGATION AND FIX TASK.
+
+We're debugging a DeviceActivityMonitor threshold ladder implementation that isn't firing events. Here's the current state:
+
+- 13 activities are registered successfully (verified via DeviceActivityCenter().activities)
+- Authorization is approved (FamilyControls .approved status)
+- Selection has 13 categoryTokens (no applicationTokens)
+- UsageTrackingManager tracks 8 categories after ranking/capping
+- Activities registered: screentime.usage.block.0 through screentime.usage.block.11 (each 2-hour windows repeating daily) and screentime.usage.daily (full 24 hour repeating daily)
+- Each activity has per-category threshold events at: hourly [2, 5, 10, 15, 20, 30, 45, 60, 90, 120] minutes, daily [5, 10, 15, 20, 25, 30, 45, 60, 90, 120, 180, 240] minutes
+- After 5+ minutes of active Instagram use (which is in the "Social" category that should be tracked), zero usage events are written to usage_events.json
+- The monitor extension's eventDidReachThreshold callback appears to not be firing for usage.* events
+
+FILES TO READ:
+- ScreenTime/Sources/Shared/Services/UsageTrackingManager.swift (registration logic)
+- ScreenTime/Sources/Extensions/DeviceActivityMonitor/ScreenTimeMonitor.swift (extension callbacks)
+- ScreenTime/Sources/Shared/Models/UsageEvent.swift (data model)
+- ScreenTime/Sources/Shared/Services/SharedDataStore.swift (read/write usage events)
+- ScreenTime/Sources/Shared/Core/SharedConstants.swift (constants and helpers)
+- ScreenTime/Sources/App/ScreenTimeApp.swift (lifecycle calls)
+
+RESEARCH ONLINE:
+
+Check Apple Developer Forums, Stack Overflow, and open source iOS Screen Time projects to verify our implementation is correct. Specifically research:
+
+1. Does DeviceActivityEvent.categories work the same way as DeviceActivityEvent.applications? When you pass an ActivityCategoryToken to the categories parameter, does the threshold fire based on cumulative usage across ALL apps in that category, or does it require individual app tokens?
+
+2. Is there a known issue where thresholds for category-based events don't fire? Any documented behavior differences between application-based and category-based thresholds?
+
+3. Are there any timing requirements we might be missing? Does the DeviceActivitySchedule have to be currently active (within its time window) for thresholds to fire, or can thresholds accumulate even outside the active window?
+
+4. Is there a known issue with the ExtensionKit vs Foundation extension mismatch? Our DeviceActivityMonitor is a Foundation extension. Could there be entitlement or build configuration issues preventing callbacks?
+
+5. Is there a specific way to VERIFY that the system is actually routing events to our extension? Any debugging tool or log filter that shows "deviceactivityd sent event X to extension Y"?
+
+6. Research if adding very low thresholds (like 10 seconds or 1 minute) reliably triggers callbacks for quick debugging purposes. Is there a minimum threshold value?
+
+IMPLEMENT THESE CHANGES:
+
+1. Add aggressive extension logging at the TOP of eventDidReachThreshold, BEFORE any filtering:
+   
+   logger.notice("[EXT-WAKE] eventDidReachThreshold fired: \(event.rawValue) / \(activity.rawValue)")
+   
+   Use subsystem "com.antonioperedo.screentime.monitor", category "callbacks".
+
+2. Add similar logging at the top of intervalDidStart and intervalDidEnd.
+
+3. Add a VERY LOW debug threshold of 1 minute to every hourly activity so we can verify callbacks work at all. Add "1" to the front of the hourly thresholds array making it [1, 2, 5, 10, 15, 20, 30, 45, 60, 90, 120]. This is 11 thresholds per entity per hourly activity. Update event count math accordingly.
+
+4. Add a new debug button "Debug: Inspect Selection" in Settings that shows:
+   - Application tokens count and each token's hashValue
+   - Category tokens count and each token's hashValue (and any localized name if accessible)
+   - Web domain tokens count
+
+5. Fix the scenePhase race condition in ScreenTimeApp.swift. Where syncUsageTracking is called on scenePhase .active, defer the call until authorization is confirmed. Check authorization status first, and if still .notDetermined, wait or skip silently (don't log as error).
+
+6. Based on your research, implement any additional fixes needed. If you discover the category-based threshold registration is done incorrectly, fix it. If there's a known workaround, apply it.
+
+After implementing, build both schemes and confirm zero errors.
+
+REPORT:
+
+1. Your findings from online research (cite sources)
+2. Any fixes beyond the listed changes
+3. A step-by-step testing procedure for me to verify on device
+
+Conversation ID: 019d9586-c340-7bf2-8acb-50db4e58d4cf
+Working folder: /Users/antonioperedo/Desktop/screen_time
+
+Only prompt remnants survived in the sources checked.
+No Codex replies were found for this conversation.
+
+OPENING PROMPT FROM THE HISTORY INDEX
+
+INVESTIGATION AND FIX TASK.
+
+We're debugging a DeviceActivityMonitor threshold ladder implementation that isn't firing events. Here's the current state:
+
+- 13 activities are registered successfully (verified via DeviceActivityCenter().activities)
+- Authorization is approved (FamilyControls .approved status)
+- Selection has 13 categoryTokens (no applicationTokens)
+- UsageTrackingManager tracks 8 categories after ranking/capping
+- Activities registered: screentime.usage.block.0 through screentime.usage.block.11 (each 2-hour windows repeating daily) and screentime.usage.daily (full 24 hour repeating daily)
+- Each activity has per-category threshold events at: hourly [2, 5, 10, 15, 20, 30, 45, 60, 90, 120] minutes, daily [5, 10, 15, 20, 25, 30, 45, 60, 90, 120, 180, 240] minutes
+- After 5+ minutes of active Instagram use (which is in the "Social" category that should be tracked), zero usage events are written to usage_events.json
+- The monitor extension's eventDidReachThreshold callback appears to not be firing for usage.* events
+
+FILES TO READ:
+- ScreenTime/Sources/Shared/Services/UsageTrackingManager.swift (registration logic)
+- ScreenTime/Sources/Extensions/DeviceActivityMonitor/ScreenTimeMonitor.swift (extension callbacks)
+- ScreenTime/Sources/Shared/Models/UsageEvent.swift (data model)
+- ScreenTime/Sources/Shared/Services/SharedDataStore.swift (read/write usage events)
+- ScreenTime/Sources/Shared/Core/SharedConstants.swift (constants and helpers)
+- ScreenTime/Sources/App/ScreenTimeApp.swift (lifecycle calls)
+
+RESEARCH ONLINE:
+
+Check Apple Developer Forums, Stack Overflow, and open source iOS Screen Time projects to verify our implementation is correct. Specifically research:
+
+1. Does DeviceActivityEvent.categories work the same way as DeviceActivityEvent.applications? When you pass an ActivityCategoryToken to the categories parameter, does the threshold fire based on cumulative usage across ALL apps in that category, or does it require individual app tokens?
+
+2. Is there a known issue where thresholds for category-based events don't fire? Any documented behavior differences between application-based and category-based thresholds?
+
+3. Are there any timing requirements we might be missing? Does the DeviceActivitySchedule have to be currently active (within its time window) for thresholds to fire, or can thresholds accumulate even outside the active window?
+
+4. Is there a known issue with the ExtensionKit vs Foundation extension mismatch? Our DeviceActivityMonitor is a Foundation extension. Could there be entitlement or build configuration issues preventing callbacks?
+
+5. Is there a specific way to VERIFY that the system is actually routing events to our extension? Any debugging tool or log filter that shows "deviceactivityd sent event X to extension Y"?
+
+6. Research if adding very low thresholds (like 10 seconds or 1 minute) reliably triggers callbacks for quick debugging purposes. Is there a minimum threshold value?
+
+IMPLEMENT THESE CHANGES:
+
+1. Add aggressive extension logging at the TOP of eventDidReachThreshold, BEFORE any filtering:
+   
+   logger.notice("[EXT-WAKE] eventDidReachThreshold fired: \(event.rawValue) / \(activity.rawValue)")
+   
+   Use subsystem "com.antonioperedo.screentime.monitor", category "callbacks".
+
+2. Add similar logging at the top of intervalDidStart and intervalDidEnd.
+
+3. Add a VERY LOW debug threshold of 1 minute to every hourly activity so we can verify callbacks work at all. Add "1" to the front of the hourly thresholds array making it [1, 2, 5, 10, 15, 20, 30, 45, 60, 90, 120]. This is 11 thresholds per entity per hourly activity. Update event count math accordingly.
+
+4. Add a new debug button "Debug: Inspect Selection" in Settings that shows:
+   - Application tokens count and each token's hashValue
+   - Category tokens count and each token's hashValue (and any localized name if accessible)
+   - Web domain tokens count
+
+5. Fix the scenePhase race condition in ScreenTimeApp.swift. Where syncUsageTracking is called on scenePhase .active, defer the call until authorization is confirmed. Check authorization status first, and if still .notDetermined, wait or skip silently (don't log as error).
+
+6. Based on your research, implement any additional fixes needed. If you discover the category-based threshold registration is done incorrectly, fix it. If there's a known workaround, apply it.
+
+After implementing, build both schemes and confirm zero errors.
+
+REPORT:
+
+1. Your findings from online research (cite sources)
+2. Any fixes beyond the listed changes
+3. A step-by-step testing procedure for me to verify on device

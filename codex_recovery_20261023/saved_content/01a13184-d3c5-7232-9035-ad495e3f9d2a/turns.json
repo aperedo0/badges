@@ -1,0 +1,18 @@
+[
+  {
+    "thread_id": "01a13184-d3c5-7232-9035-ad495e3f9d2a",
+    "turn_id": "01a13186-1334-7272-99c8-c5f63e7a06e7",
+    "rollout_ordinal": 1,
+    "status": "completed",
+    "error_json": null,
+    "started_at": 1791832232,
+    "completed_at": 1791832325,
+    "duration_ms": 92970,
+    "first_user_item_id": "01a13186-16ea-7f40-b9d4-17022e5b448e",
+    "final_agent_item_id": "msg_0f665b9103db25bf016acd31055d9c8191922fe9664c91c57e",
+    "rollout_byte_offset": 22325,
+    "rollout_end_ordinal": 91,
+    "rollout_end_byte_offset": 773628,
+    "root_turn_id": "01a13186-1334-7272-99c8-c5f63e7a06e7"
+  }
+]

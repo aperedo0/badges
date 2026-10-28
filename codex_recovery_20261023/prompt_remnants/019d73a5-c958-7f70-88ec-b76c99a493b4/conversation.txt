@@ -1,0 +1,349 @@
+Review the attached Claude-generated audit against the actual repository and tell me which findings are truly worth implementing now.
+
+Do not make any code changes in this pass.
+Do not start editing files.
+Do not blindly trust the audit.
+Validate it against the real codebase.
+
+Primary goal:
+Decide which audit items are:
+1. correct and worth implementing now
+2. correct but already implemented
+3. correct but low priority / cleanup only
+4. device-only validation items, not code changes
+5. product decisions, not engineering bugs
+6. wrong / overstated / unnecessary
+
+Use the attached audit as input, but treat it as a hypothesis document, not as truth.
+
+==================================================
+WHAT I WANT FROM YOU
+==================================================
+
+Read the attached audit and compare it to the actual repo.
+
+For every meaningful finding or proposed fix, classify it into one of these buckets:
+
+A. IMPLEMENT NOW
+- real issue
+- clearly beneficial
+- low risk
+- not already fixed
+
+B. ALREADY DONE
+- audit is correct in spirit, but repo already reflects the fix
+
+C. LOW PRIORITY CLEANUP
+- nice to have
+- style / DS consistency / polish
+- not important before device testing
+
+D. DEVICE TEST ONLY
+- not something to “fix” in code right now
+- needs physical iPhone validation
+
+E. PRODUCT / UX DECISION
+- not objectively a bug
+- depends on product choice
+
+F. REJECT
+- incorrect
+- overstated
+- unsupported by the actual code
+- unnecessary churn
+
+==================================================
+IMPORTANT RULES
+==================================================
+
+1. Do not implement anything yet.
+2. Do not modify files.
+3. Do not rewrite the audit.
+4. Validate findings against the real code.
+5. Be skeptical.
+6. Prefer high-signal, low-churn recommendations.
+7. Call out anything that would create unnecessary churn for little value.
+8. Distinguish clearly between:
+   - correctness fix
+   - resilience fix
+   - style cleanup
+   - device-only test item
+   - product choice
+
+==================================================
+SPECIFIC AREAS TO EVALUATE CAREFULLY
+==================================================
+
+Please evaluate these areas especially carefully:
+
+1. BlockingSchedule backwards-compatible decoder
+- Is this actually worth adding now?
+- Is there a real decode-compatibility risk without it?
+- Would the proposed decoder be correct and safe?
+
+2. ShieldConfigurationProvider hardcoded accent color
+- Is the hardcoded UIColor actually a real issue?
+- Does moving UIColor.dsAccent into SharedConstants make sense architecturally?
+- Is this worth doing before device testing?
+
+3. DesignSystem token cleanup items
+- weeklyDotLabel
+- sessionCountdown
+- proBadge
+- chartBarCornerRadius
+- chartSparklineCornerRadius
+- proOverlayCornerRadius
+- replacing hardcoded font/padding/corner values in HomeView, InsightsView, SettingsView, ShieldSettingsView, etc.
+
+I want you to be strict here:
+- which of these are real consistency wins
+- which are just churn
+- which can wait until after device testing
+
+4. “redirected” action / detectDismissRedirectRatio
+- Is this truly a bug?
+- Or is it just an incomplete feature that should stay on backlog?
+
+5. App-wide authorization warning vs BlockList-only warning
+- Is this a must-fix now, or acceptable for the current stage?
+
+6. Storage-full JSON write handling
+- Is logging only acceptable right now?
+- Or does this need UI error surfacing before device testing?
+
+7. Any other audit item that sounds plausible but is actually weak
+
+==================================================
+OUTPUT FORMAT
+==================================================
+
+Give me the answer in this exact structure:
+
+1. OVERALL VERDICT
+- short judgment on whether the audit is broadly good, mixed, or too aggressive
+
+2. IMPLEMENT NOW
+For each item:
+- finding / proposed fix
+- why it is real
+- affected files
+- risk level
+- why it should happen before device testing
+
+3. ALREADY DONE
+For each item:
+- finding
+- evidence it is already done
+
+4. LOW PRIORITY CLEANUP
+For each item:
+- finding
+- why it is non-blocking
+- whether it should wait until after device testing
+
+5. DEVICE TEST ONLY
+For each item:
+- finding
+- what must be tested on a physical iPhone instead of “fixed” now
+
+6. PRODUCT / UX DECISIONS
+For each item:
+- finding
+- why it is not an objective bug
+
+7. REJECT
+For each item:
+- finding
+- why it is wrong / overstated / unnecessary
+
+8. TOP 5 NEXT ACTIONS
+Give me the 5 best next moves in order, with the least churn and highest value.
+
+==================================================
+FINAL INSTRUCTION
+==================================================
+
+Be blunt.
+If part of the audit is just token-churn or overengineering, say so.
+If part of it is genuinely high value, say so.
+Do not implement anything in this pass.
+This is a validation and prioritization pass only.
+
+Conversation ID: 019d73a5-c958-7f70-88ec-b76c99a493b4
+Working folder: /Users/antonioperedo/Desktop/screen_time
+
+Only prompt remnants survived in the sources checked.
+No Codex replies were found for this conversation.
+
+OPENING PROMPT FROM THE HISTORY INDEX
+
+Review the attached Claude-generated audit against the actual repository and tell me which findings are truly worth implementing now.
+
+Do not make any code changes in this pass.
+Do not start editing files.
+Do not blindly trust the audit.
+Validate it against the real codebase.
+
+Primary goal:
+Decide which audit items are:
+1. correct and worth implementing now
+2. correct but already implemented
+3. correct but low priority / cleanup only
+4. device-only validation items, not code changes
+5. product decisions, not engineering bugs
+6. wrong / overstated / unnecessary
+
+Use the attached audit as input, but treat it as a hypothesis document, not as truth.
+
+==================================================
+WHAT I WANT FROM YOU
+==================================================
+
+Read the attached audit and compare it to the actual repo.
+
+For every meaningful finding or proposed fix, classify it into one of these buckets:
+
+A. IMPLEMENT NOW
+- real issue
+- clearly beneficial
+- low risk
+- not already fixed
+
+B. ALREADY DONE
+- audit is correct in spirit, but repo already reflects the fix
+
+C. LOW PRIORITY CLEANUP
+- nice to have
+- style / DS consistency / polish
+- not important before device testing
+
+D. DEVICE TEST ONLY
+- not something to “fix” in code right now
+- needs physical iPhone validation
+
+E. PRODUCT / UX DECISION
+- not objectively a bug
+- depends on product choice
+
+F. REJECT
+- incorrect
+- overstated
+- unsupported by the actual code
+- unnecessary churn
+
+==================================================
+IMPORTANT RULES
+==================================================
+
+1. Do not implement anything yet.
+2. Do not modify files.
+3. Do not rewrite the audit.
+4. Validate findings against the real code.
+5. Be skeptical.
+6. Prefer high-signal, low-churn recommendations.
+7. Call out anything that would create unnecessary churn for little value.
+8. Distinguish clearly between:
+   - correctness fix
+   - resilience fix
+   - style cleanup
+   - device-only test item
+   - product choice
+
+==================================================
+SPECIFIC AREAS TO EVALUATE CAREFULLY
+==================================================
+
+Please evaluate these areas especially carefully:
+
+1. BlockingSchedule backwards-compatible decoder
+- Is this actually worth adding now?
+- Is there a real decode-compatibility risk without it?
+- Would the proposed decoder be correct and safe?
+
+2. ShieldConfigurationProvider hardcoded accent color
+- Is the hardcoded UIColor actually a real issue?
+- Does moving UIColor.dsAccent into SharedConstants make sense architecturally?
+- Is this worth doing before device testing?
+
+3. DesignSystem token cleanup items
+- weeklyDotLabel
+- sessionCountdown
+- proBadge
+- chartBarCornerRadius
+- chartSparklineCornerRadius
+- proOverlayCornerRadius
+- replacing hardcoded font/padding/corner values in HomeView, InsightsView, SettingsView, ShieldSettingsView, etc.
+
+I want you to be strict here:
+- which of these are real consistency wins
+- which are just churn
+- which can wait until after device testing
+
+4. “redirected” action / detectDismissRedirectRatio
+- Is this truly a bug?
+- Or is it just an incomplete feature that should stay on backlog?
+
+5. App-wide authorization warning vs BlockList-only warning
+- Is this a must-fix now, or acceptable for the current stage?
+
+6. Storage-full JSON write handling
+- Is logging only acceptable right now?
+- Or does this need UI error surfacing before device testing?
+
+7. Any other audit item that sounds plausible but is actually weak
+
+==================================================
+OUTPUT FORMAT
+==================================================
+
+Give me the answer in this exact structure:
+
+1. OVERALL VERDICT
+- short judgment on whether the audit is broadly good, mixed, or too aggressive
+
+2. IMPLEMENT NOW
+For each item:
+- finding / proposed fix
+- why it is real
+- affected files
+- risk level
+- why it should happen before device testing
+
+3. ALREADY DONE
+For each item:
+- finding
+- evidence it is already done
+
+4. LOW PRIORITY CLEANUP
+For each item:
+- finding
+- why it is non-blocking
+- whether it should wait until after device testing
+
+5. DEVICE TEST ONLY
+For each item:
+- finding
+- what must be tested on a physical iPhone instead of “fixed” now
+
+6. PRODUCT / UX DECISIONS
+For each item:
+- finding
+- why it is not an objective bug
+
+7. REJECT
+For each item:
+- finding
+- why it is wrong / overstated / unnecessary
+
+8. TOP 5 NEXT ACTIONS
+Give me the 5 best next moves in order, with the least churn and highest value.
+
+==================================================
+FINAL INSTRUCTION
+==================================================
+
+Be blunt.
+If part of the audit is just token-churn or overengineering, say so.
+If part of it is genuinely high value, say so.
+Do not implement anything in this pass.
+This is a validation and prioritization pass only.

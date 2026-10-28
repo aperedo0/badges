@@ -1,0 +1,67 @@
+so in my app on the home screen when you go to click on see all badges and then or just that you click on all badges there's an animation I like that animation so after you click on seal badges, you go to a badge screen I want the same animation for when a user clicks on all months and achievementson that screen. Also, when they click on achievements, they get taken to a achievements screen, which allows them to be taken to monthly I want the same animation for when somebody clicks on monthly as well. When I first want you to do is plan plan the best way to implement all of this. I like my coat to be very easy to understand very readable very scalable. I want so easy to understand that a junior Dave, without much coding knowledge can look at the code and fully understand it. I meant to say Dave not Dave. I meant Developer speech to text can see the code and fully understand it. You're just planning right now OK and I want the code to follow best practices as well.
+
+Conversation ID: 019f5418-9c3d-78e2-8b97-c2fc63d094a2
+Working folder: /Users/antonioperedo/Desktop/screen_time
+
+Only prompt remnants survived in the sources checked.
+No Codex replies were found for this conversation.
+
+OPENING PROMPT FROM THE HISTORY INDEX
+
+so in my app on the home screen when you go to click on see all badges and then or just that you click on all badges there's an animation I like that animation so after you click on seal badges, you go to a badge screen I want the same animation for when a user clicks on all months and achievementson that screen. Also, when they click on achievements, they get taken to a achievements screen, which allows them to be taken to monthly I want the same animation for when somebody clicks on monthly as well. When I first want you to do is plan plan the best way to implement all of this. I like my coat to be very easy to understand very readable very scalable. I want so easy to understand that a junior Dave, without much coding knowledge can look at the code and fully understand it. I meant to say Dave not Dave. I meant Developer speech to text can see the code and fully understand it. You're just planning right now OK and I want the code to follow best practices as well.
+
+SAVED TERMINAL PROMPT
+
+so in my app on the home screen when you go to click on see all badges and then or just that you click on all badges there's an animation I like that animation so after you click on seal badges, you go to a badge screen I want the same animation for when a user clicks on all months and achievementson that screen. Also, when they click on achievements, they get taken to a achievements screen, which allows them to be taken to monthly I want the same animation for when somebody clicks on monthly as well. When I first want you to do is plan plan the best way to implement all of this. I like my coat to be very easy to understand very readable very scalable. I want so easy to understand that a junior Dave, without much coding knowledge can look at the code and fully understand it. I meant to say Dave not Dave. I meant Developer speech to text can see the code and fully understand it. You're just planning right now OK and I want the code to follow best practices as well.
+
+SAVED TERMINAL PROMPT
+
+Check the plan once more
+
+SAVED TERMINAL PROMPT
+
+Implement it and make sure it builds properly
+
+SAVED TERMINAL PROMPT
+
+One more place I want the animation, I want it also from the all months tab, when a user clicks on all months they get taken to the badges for that month, I want the animation on that transition as well
+
+SAVED TERMINAL PROMPT
+
+if there is no need for multiple waves, then don't use multiple waves, if you feel there is a need for them, then continue
+
+SAVED TERMINAL PROMPT
+
+the animations are slow, the one that was already there, the one to see all badges is fast, yet the others is slow, find out why and report only, do not fix
+
+SAVED TERMINAL PROMPT
+
+I want the other animations, all the ones you implemented ot use the same animation implementation system as see all badges, do that
+
+SAVED TERMINAL PROMPT
+
+Is there a way to get that same animation without returning to the previous page and returning to home as it does now?
+
+SAVED TERMINAL PROMPT
+
+How much faster can you make the tuning animation?
+
+SAVED TERMINAL PROMPT
+
+I want the same exact animation, and the user can always press the home button to go back home, so lets do that
+
+SAVED TERMINAL PROMPT
+
+actually stop
+
+SAVED TERMINAL PROMPT
+
+undo what you just did
+
+SAVED TERMINAL PROMPT
+
+Won't using the same animation and making the screens stack have an affect on performance if the screens keep stacking?
+
+SAVED TERMINAL PROMPT
+
+Do the best that you can to make the custom animation as efficient as possible, the issue is not the animation speed, the issue is that it looks, how do I put it, spotty, not smooth, do you know why that is?

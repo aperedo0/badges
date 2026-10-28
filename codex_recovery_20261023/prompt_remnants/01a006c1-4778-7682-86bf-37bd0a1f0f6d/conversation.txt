@@ -1,0 +1,11 @@
+List the exact names of every skill you can currently use in this workspace, one per line, nothing else. If you have no skills available, reply exactly: NO SKILLS.
+
+Conversation ID: 01a006c1-4778-7682-86bf-37bd0a1f0f6d
+Working folder: /Users/antonioperedo/Desktop/notify
+
+Only prompt remnants survived in the sources checked.
+No Codex replies were found for this conversation.
+
+OPENING PROMPT FROM THE HISTORY INDEX
+
+List the exact names of every skill you can currently use in this workspace, one per line, nothing else. If you have no skills available, reply exactly: NO SKILLS.

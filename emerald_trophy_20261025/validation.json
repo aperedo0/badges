@@ -1,0 +1,28 @@
+{
+  "shell_geometry_materials_and_maps": "geometry preserved; owner requested matching rim finish",
+  "round_shell_closed": true,
+  "Y_up_meters": true,
+  "identity_transforms": true,
+  "no_lights_or_cameras": true,
+  "matching_sculpted_back": true,
+  "degenerate_triangles": 0,
+  "zero_normals": 0,
+  "triangles": 154724,
+  "bytes": 10711415,
+  "bounds": [
+    [
+      -3.015000104904175,
+      -3.015000104904175,
+      -0.6852572560310364
+    ],
+    [
+      3.015000104904175,
+      3.015000104904175,
+      0.3552572727203369
+    ]
+  ],
+  "required_preview_size": 0.96,
+  "required_preview_lift": 0.56,
+  "lowest_world_y": -2.455,
+  "sha256": "55ffe2135d6f4eff3569a5f1332b538b7b27609aa171b92814424f05783e447c"
+}

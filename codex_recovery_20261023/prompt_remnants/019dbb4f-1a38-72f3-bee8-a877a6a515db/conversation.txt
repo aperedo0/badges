@@ -1,0 +1,158 @@
+Stress-test fresh-window design
+
+Conversation ID: 019dbb4f-1a38-72f3-bee8-a877a6a515db
+Working folder: /Users/antonioperedo/Desktop/screen_time
+
+Only prompt remnants survived in the sources checked.
+No Codex replies were found for this conversation.
+
+OPENING PROMPT FROM THE HISTORY INDEX
+
+I want a fresh-window architecture stress test for a feature I am about to rebuild from scratch on top of the current `main` branch.
+
+Do not write code.
+Do not give me an implementation roadmap yet.
+Do not assume the previous architecture proposals were correct.
+This is a design stress test only.
+
+I want you to think from first principles and actively try to break your own recommendations before you give me a final answer.
+
+Context:
+I reverted back to a clean `main` branch before a lot of earlier feature work.
+The current repo already has:
+- recurring block templates / schedules
+- runtime blocking logic
+- break / pause / bypass logging
+- quick-start / focus sessions
+- Home / Block List / Insights UI
+But it does NOT yet have the new feature I want:
+- no activity model
+- no block-template purpose field
+- no scheduled block-session history
+- no Time tab
+- no Activities tab
+- no completed block-session editor
+
+The product direction is now intentionally much simpler than before:
+
+1. One thing per block
+2. A recurring block template can have one optional purpose/activity
+3. In the block UI, the user sees a `Purpose` section
+4. User can choose:
+   - No Purpose
+   - one activity
+5. No split block
+6. No custom timing
+7. No multi-activity allocation
+8. Completed scheduled block sessions should later be editable from a Time tab to change what that session was spent on
+9. Session edits should NOT change the block template
+10. Activities tab should total time by activity
+11. Breaks should be excluded from activity totals
+12. Quick Start / focus sessions may or may not be included later, but do NOT assume they must be in v1
+13. UI must stay extremely low-friction
+
+I want you to aggressively challenge the architecture before recommending anything.
+
+What I want you to do:
+
+SECTION 1: RESTATE THE PROBLEM CLEANLY
+In your own words, define the actual product and technical problem.
+Do not reuse prior solution framing if it is not necessary.
+
+SECTION 2: PROPOSE 3 COMPETING ARCHITECTURES
+I want 3 genuinely different architecture options, for example:
+- Option A: minimal / almost no new abstractions
+- Option B: balanced / likely best
+- Option C: more future-proof but still plausible
+
+Each option must explain:
+- how block template purpose is stored
+- how completed session history works
+- how break-excluded effective time works
+- how session editing would work later
+- how Activities totals would work later
+- whether Quick Start is excluded or included in v1
+- why this option is attractive
+- what its biggest downside is
+
+Do NOT make the 3 options fake variations of the same idea.
+I want real tradeoffs.
+
+SECTION 3: ATTACK EACH OPTION
+For each of the 3 options, give me the strongest arguments AGAINST it.
+I want you to be adversarial here:
+- what could go wrong
+- what is overbuilt
+- what is underbuilt
+- what would cause future rewrites
+- what would create bug surface area
+- what would confuse the user
+- what would make implementation harder than it looks
+
+SECTION 4: REPO FIT
+For each option, explain how well it fits the current repo.
+Ground this in the actual codebase shape:
+- recurring block templates already exist
+- runtime blocking already exists
+- break/pause logging already exists
+- quick-start/focus history already exists
+- current save/delete paths already exist
+- current Home chart is schedule-estimated and not a source of truth for this feature
+
+Be concrete about which existing systems each option reuses well or fights against.
+
+SECTION 5: DECIDE THE ACTIVITY MODEL
+You must explicitly decide whether v1 should use:
+- a real `Activity` model/catalog
+or
+- a bare string purpose
+
+Do not dodge this.
+Choose one and explain why for THIS product and THIS repo.
+
+SECTION 6: DECIDE THE SESSION MODEL
+You must explicitly decide:
+- do I need a scheduled `BlockSession` model in v1 or not?
+- if yes, what is the minimum version of it?
+- if no, how would Time and Activities ever be trustworthy?
+
+Be decisive.
+
+SECTION 7: DECIDE BREAK HANDLING
+You must explicitly decide:
+- should break-excluded effective time be computed from existing `BypassEvent` history at finalization time?
+- or should session-local break information be stored?
+- what is the minimum correct approach for v1?
+
+SECTION 8: DECIDE QUICK START SCOPE
+You must explicitly decide:
+- should Quick Start / focus sessions be excluded from v1 Time/Activities?
+- or included from the beginning?
+I want a clear yes/no and why.
+
+SECTION 9: CHOOSE THE WINNING ARCHITECTURE
+After attacking all 3, choose the one you actually recommend.
+Then explain:
+- why it wins
+- what you are intentionally NOT building yet
+- what the MVP cutline is
+- what the biggest remaining risk is even if I choose this option
+
+SECTION 10: GIVE ME THE LEANEST IMPLEMENTATION SHAPE
+Do NOT give me a full roadmap.
+Just tell me the minimum shape of the system that must exist before any UI beyond the picker:
+- what model(s)
+- what fields
+- what storage
+- what runtime hooks
+- what later screens depend on them
+
+Rules:
+- Do not write code
+- Do not assume prior proposals were right
+- Challenge your own ideas
+- Prefer the simplest architecture that still keeps the feature honest
+- If something is overkill, say so plainly
+- If something is too thin and will cause a rewrite, say so plainly
+- Be specific, not generic
+- Optimize for low user friction and low bug surface area
