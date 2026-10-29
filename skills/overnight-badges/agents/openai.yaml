@@ -1,0 +1,4 @@
+interface:
+  display_name: "Overnight badge building"
+  short_description: "Detailed badges with paced work and recovery"
+  default_prompt: "Use $overnight-badges to build these reference badges overnight with 30 minute work blocks, 20 minute breaks and 10 minute recovery checks."
