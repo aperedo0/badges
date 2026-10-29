@@ -1,0 +1,22 @@
+{
+  "frostwing": {
+    "name": "Frostwing Crystal",
+    "selection": "frostwingCrystal",
+    "reference": "/Users/antonioperedo/Desktop/badges/four_crests_20261029/frostwing/reference.png"
+  },
+  "battle_steel": {
+    "name": "Battle Steel",
+    "selection": "battleSteel",
+    "reference": "/Users/antonioperedo/Desktop/badges/four_crests_20261029/battle_steel/reference.png"
+  },
+  "lunar_compass": {
+    "name": "Lunar Compass",
+    "selection": "lunarCompass",
+    "reference": "/Users/antonioperedo/Desktop/badges/four_crests_20261029/lunar_compass/reference.png"
+  },
+  "celestial_orbit": {
+    "name": "Celestial Orbit",
+    "selection": "celestialOrbit",
+    "reference": "/Users/antonioperedo/Desktop/badges/four_crests_20261029/celestial_orbit/reference.png"
+  }
+}

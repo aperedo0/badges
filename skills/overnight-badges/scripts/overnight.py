@@ -24,7 +24,7 @@ ARTIFACTS = ('blend', 'usdz', 'report', 'comparison', 'front', 'back', 'left', '
 def advance(state, now):
     if state['status'] != 'active':
         return
-    if now >= state['deadline_epoch']:
+    if state['deadline_epoch'] is not None and now >= state['deadline_epoch']:
         state.update(status='window_expired', busy_until_epoch=0)
         return
     if state['phase'] == 'work' and now >= state['work_until_epoch']:
@@ -71,18 +71,18 @@ class Run:
                 self.save(state)
             return state
 
-    def init(self, thread, badges, hours=5, now=None):
+    def init(self, thread, badges, hours=None, now=None):
         now = time.time() if now is None else now
         thread = str(uuid.UUID(thread))
-        if not badges or len(set(badges)) != len(badges) or hours <= 0:
+        if not badges or len(set(badges)) != len(badges) or (hours is not None and hours <= 0):
             raise ValueError('Supply unique badge names and a positive duration')
         with self.locked():
             if self.path.exists():
                 raise ValueError('Run exists. Read its state and resume; do not initialize again')
             state = dict(version=1, thread_id=thread, workspace=str(Path.cwd()),
                          status='active', phase='work', block=1, started_epoch=now,
-                         deadline_epoch=now + hours * 3600,
-                         work_until_epoch=min(now + WORK, now + hours * 3600),
+                         deadline_epoch=now + hours * 3600 if hours is not None else None,
+                         work_until_epoch=min(now + WORK, now + hours * 3600) if hours is not None else now + WORK,
                          break_until_epoch=None, busy_until_epoch=0,
                          heartbeat_epoch=now, checkpoint_seq=0,
                          active_badge=badges[0], next_action='Inspect references and source files',
@@ -107,7 +107,7 @@ def begin(state, now):
     if state['phase'] != 'ready':
         raise ValueError('The current work block or required break has not ended')
     state.update(phase='work', block=state['block'] + 1,
-                 work_until_epoch=min(now + WORK, state['deadline_epoch']),
+                 work_until_epoch=min(now + WORK, state['deadline_epoch']) if state['deadline_epoch'] is not None else now + WORK,
                  busy_until_epoch=0, heartbeat_epoch=now,
                  checkpoint_seq=state['checkpoint_seq'] + 1)
 
@@ -261,7 +261,7 @@ def decide(state, now, activity, network):
 def recovery_message(run):
     return ('Owner authorized overnight badge continuation. Read ' + str(run.path) +
             ' and its saved Blender checkpoints before acting. Honor the 30 minute work and '
-            '20 minute break schedule and the original deadline. Resume the saved next action '
+            '20 minute break schedule. There is no overall time limit unless the owner explicitly set one. Resume the saved next action '
             'only if interrupted or the scheduled break has ended. Do no duplicate work if the '
             'run is healthy. Never restart completed badges. Stop this run timer when all badges '
             'are reviewed and complete. A paused, cancelled, expired or completed run must not '
@@ -378,7 +378,7 @@ def main():
         if name == 'init':
             sub.add_argument('--thread', default=os.environ.get('CODEX_THREAD_ID'), required=not os.environ.get('CODEX_THREAD_ID'))
             sub.add_argument('--badge', action='append', required=True)
-            sub.add_argument('--hours', type=float, default=5)
+            sub.add_argument('--hours', type=float)
         if name == 'resume':
             sub.add_argument('--hours', type=float)
         if name == 'checkpoint':
@@ -441,7 +441,7 @@ def main():
                         if args.hours <= 0:
                             raise ValueError('Duration must be positive')
                         state['deadline_epoch'] = now + args.hours * 3600
-                    if now >= state['deadline_epoch']:
+                    if state['deadline_epoch'] is not None and now >= state['deadline_epoch']:
                         raise ValueError('Window expired; an owner authorized extension is needed')
                     state['status'] = 'active'
                     advance(state, now)

@@ -1,0 +1,2 @@
+Raise the small diamond setting above the long crystal and smooth contour normals.
+Preserve source proportions and blue inlays while removing buried settings and busy edges.

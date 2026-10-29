@@ -12,7 +12,7 @@ Make the badges closely match the owner's references, including the small detail
 1. Read the workspace `AGENTS.md`. For BestSpent, use `/Users/antonioperedo/Desktop/badges/AGENTS.md` and [the badge workflow](references/badge-workflow.md). The owner's request takes priority over general taste guidance. Preserve the app contract and approved files.
 2. Identify the references, requested badges, source files, preview project and current thread. Reuse available local context before asking questions. Inspect each reference and verify live Blender with an actual viewport capture.
 3. Create a unique run folder in the badge workspace with reference copies and numbered candidates. To recover, open the existing `schedule.json` and saved Blender files. Never initialize over saved work or rebuild a completed badge.
-4. Work for 30 minutes, then rest for 20, repeating until finished or the owner's time window ends. Default to five hours, matching the previous overnight request, unless the owner gives another duration or wake time. Record an explicit deadline. Breaks reduce activity; they do not guarantee a token allowance or reset a usage limit.
+4. Work for 30 minutes, then rest for 20, repeating until every badge is finished. There is no overall time limit. Do not infer a deadline from an earlier request, a wake time assumption or a token window. Only an explicit new owner instruction can add a deadline or stop the run. Breaks reduce activity; they do not guarantee a token allowance or reset a usage limit.
 5. Read [the runtime instructions](references/runtime.md), then set up and verify the local timer before leaving work unattended. An overnight run authorizes recovery messages into that same thread. Creating or editing this skill alone does not start a run or timer.
 
 ## Work for 30 minutes
@@ -45,14 +45,14 @@ The local timer lives independently of model connectivity. It checks every 10 mi
 
 On a recovery wake, first inspect `schedule.json`, deadline, completion states, saved candidate and Blender scene. A paused, cancelled, completed or expired run does no badge work. Recovery is not an owner request to resume a paused run or extend its window. If work is running normally, do no duplicate work. If inside a break, wait. If the connection failed, resume the saved next action when tools respond. Completed badges stay completed.
 
-The timer must use a single instance lock, avoid duplicate messages for unchanged activity, respect finite busy periods, and stop on completion, pause, cancellation or deadline. Retry failed queue delivery at the next 10 minute check. Authentication, approval, usage limit and sandbox failures need attention rather than repeated network retries.
+The timer must use a single instance lock, avoid duplicate messages for unchanged activity, respect finite busy periods, and stop on completion, owner requested pause or cancellation, or a deadline the owner explicitly requested. With the normal unlimited run, it does not stop after five hours or any other elapsed duration. Retry failed queue delivery at the next 10 minute check. Authentication, approval, usage limit and sandbox failures need attention rather than repeated network retries.
 
-A skill cannot repair internet service, restart a closed app or operate a sleeping Mac. Verify the queue transport before claiming recovery is active. Keep the Mac awake for the bounded run with a scoped local helper when available; stop it when the timer exits. If recovery is unavailable, retain resumable state and report that limitation rather than substituting an untested scheduler or UI typing hack.
+A skill cannot repair internet service, restart a closed app or operate a sleeping Mac. Verify the queue transport before claiming recovery is active. Keep the Mac awake for the active run with a scoped local helper when available; stop it when the timer exits. If recovery is unavailable, retain resumable state and report that limitation rather than substituting an untested scheduler or UI typing hack.
 
 ## Finish
 
 Only mark a badge done after saving and visually reviewing its final USDZ, editable Blender scene, report, same size comparison, native front, back, both sides and full turn evidence. Runtime `done` requires these artifact paths and a review assertion. Preserve the previous approved final.
 
-When every badge is done, run `complete`. This creates this run's own completion marker and stops its timer. A deadline, connection failure or missing reference is not completion. Preserve an honest next action for unfinished work and stop retries at the deadline. Pause or cancel promptly when the owner asks.
+When every badge is done, run `complete`. This creates this run's own completion marker and stops its timer. A connection failure, missing reference or long elapsed time is not completion. Preserve an honest next action for unfinished work and continue on the next work block until it is finished. Honor a deadline only if the owner explicitly adds one. Pause or cancel promptly when the owner asks.
 
 Leave the final badge open in the separate preview and verify its selection survives reopening. Deliver short comparisons, final model and source paths, and any real uncertainty. Keep the production app exactly as found. Do not commit or push for the owner.

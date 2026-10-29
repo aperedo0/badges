@@ -1,0 +1,67 @@
+{
+  "badges": {
+    "frostwing": {
+      "name": "Frostwing Crystal",
+      "candidate": "candidate02",
+      "usdz": "/Users/antonioperedo/Desktop/badges/four_crests_20261029/frostwing/mobile/frostwing_badge_mobile.usdz",
+      "blend": "/Users/antonioperedo/Desktop/badges/four_crests_20261029/frostwing/source/frostwing.blend",
+      "report": "/Users/antonioperedo/Desktop/badges/four_crests_20261029/frostwing/REPORT.md",
+      "comparison": "/Users/antonioperedo/Desktop/badges/four_crests_20261029/frostwing/candidate02/comparison.jpg",
+      "turn": "/Users/antonioperedo/Desktop/badges/four_crests_20261029/frostwing/candidate02/full_turn.mp4",
+      "sha256": "08305eacd0ae5b8cdbf66285fd6f8da8566dbb1e5432d27a35fbb2a3afd878d9",
+      "bytes": 9216454,
+      "triangles": 106448,
+      "preview_dataset": "Badge3DPreviewFrostwingCrystal",
+      "preview_selection": "frostwingCrystal"
+    },
+    "battle_steel": {
+      "name": "Battle Steel",
+      "candidate": "candidate03",
+      "usdz": "/Users/antonioperedo/Desktop/badges/four_crests_20261029/battle_steel/mobile/battle_steel_badge_mobile.usdz",
+      "blend": "/Users/antonioperedo/Desktop/badges/four_crests_20261029/battle_steel/source/battle_steel.blend",
+      "report": "/Users/antonioperedo/Desktop/badges/four_crests_20261029/battle_steel/REPORT.md",
+      "comparison": "/Users/antonioperedo/Desktop/badges/four_crests_20261029/battle_steel/candidate03/comparison.jpg",
+      "turn": "/Users/antonioperedo/Desktop/badges/four_crests_20261029/battle_steel/candidate03/full_turn.mp4",
+      "sha256": "3729b12e8fba92035042f6e01ef3fc449d7ec673a816a36775456a90c306a037",
+      "bytes": 9541569,
+      "triangles": 111268,
+      "preview_dataset": "Badge3DPreviewBattleSteel",
+      "preview_selection": "battleSteel"
+    },
+    "lunar_compass": {
+      "name": "Lunar Compass",
+      "candidate": "candidate02",
+      "usdz": "/Users/antonioperedo/Desktop/badges/four_crests_20261029/lunar_compass/mobile/lunar_compass_badge_mobile.usdz",
+      "blend": "/Users/antonioperedo/Desktop/badges/four_crests_20261029/lunar_compass/source/lunar_compass.blend",
+      "report": "/Users/antonioperedo/Desktop/badges/four_crests_20261029/lunar_compass/REPORT.md",
+      "comparison": "/Users/antonioperedo/Desktop/badges/four_crests_20261029/lunar_compass/candidate02/comparison.jpg",
+      "turn": "/Users/antonioperedo/Desktop/badges/four_crests_20261029/lunar_compass/candidate02/full_turn.mp4",
+      "sha256": "03364708446b021e43585bbe862d440a44c82b85932d0296388865881b213e19",
+      "bytes": 8332822,
+      "triangles": 88876,
+      "preview_dataset": "Badge3DPreviewLunarCompass",
+      "preview_selection": "lunarCompass"
+    },
+    "celestial_orbit": {
+      "name": "Celestial Orbit",
+      "candidate": "candidate02",
+      "usdz": "/Users/antonioperedo/Desktop/badges/four_crests_20261029/celestial_orbit/mobile/celestial_orbit_badge_mobile.usdz",
+      "blend": "/Users/antonioperedo/Desktop/badges/four_crests_20261029/celestial_orbit/source/celestial_orbit.blend",
+      "report": "/Users/antonioperedo/Desktop/badges/four_crests_20261029/celestial_orbit/REPORT.md",
+      "comparison": "/Users/antonioperedo/Desktop/badges/four_crests_20261029/celestial_orbit/candidate02/comparison.jpg",
+      "turn": "/Users/antonioperedo/Desktop/badges/four_crests_20261029/celestial_orbit/candidate02/full_turn.mp4",
+      "sha256": "c048534dd688eb84d53724ba6178532530978a38fdeb8f8dc67b46254e654c82",
+      "bytes": 7977219,
+      "triangles": 84372,
+      "preview_dataset": "Badge3DPreviewCelestialOrbit",
+      "preview_selection": "celestialOrbit"
+    }
+  },
+  "separate_preview_project": "/Users/antonioperedo/Desktop/badges/emerald_trophy_20261025/preview/ScreenTime.xcodeproj",
+  "bundle_id": "com.antonioperedo.badgestudio.preview",
+  "simulator": "Badge Studio Preview",
+  "simulator_id": "DF439C70-9FD7-4EF7-998E-43AF5F83A588",
+  "selection_survives_reopening": true,
+  "production_app_changed": false,
+  "all_final_files_match_private_preview": true
+}

@@ -1,0 +1,34 @@
+[
+  {
+    "name": "Battle Steel sculpted front and matching rear.005",
+    "role": "surface"
+  },
+  {
+    "name": "Battle Steel continuous silver_edge.005",
+    "role": "silver_edge"
+  },
+  {
+    "name": "Battle Steel continuous gold_edge.005",
+    "role": "gold_edge"
+  },
+  {
+    "name": "Battle Steel continuous blue_edge.005",
+    "role": "blue_edge"
+  },
+  {
+    "name": "Closed faceted crystal fronts and matching backs.013",
+    "role": "star"
+  },
+  {
+    "name": "Crystal straight matching metal walls.013",
+    "role": "gold_edge"
+  },
+  {
+    "name": "Planar metal crystal settings.013",
+    "role": "surface"
+  },
+  {
+    "name": "Straight metal setting walls.013",
+    "role": "gold_edge"
+  }
+]

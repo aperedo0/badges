@@ -1,0 +1,2 @@
+Replace the glow contaminated rim outline with a measured full metal ellipse.
+Preserve the dark lower rim wall, separate settings, lens gems and all clock details.

@@ -1,0 +1,30 @@
+[
+  {
+    "name": "Lunar Compass sculpted front and matching rear.001",
+    "role": "surface"
+  },
+  {
+    "name": "Lunar Compass continuous silver_edge.001",
+    "role": "silver_edge"
+  },
+  {
+    "name": "Lunar Compass continuous blue_edge.001",
+    "role": "blue_edge"
+  },
+  {
+    "name": "Closed faceted crystal fronts and matching backs.014",
+    "role": "star"
+  },
+  {
+    "name": "Crystal straight matching metal walls.014",
+    "role": "silver_edge"
+  },
+  {
+    "name": "Planar metal crystal settings.014",
+    "role": "surface"
+  },
+  {
+    "name": "Straight metal setting walls.014",
+    "role": "silver_edge"
+  }
+]

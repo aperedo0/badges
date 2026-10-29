@@ -1,0 +1,42 @@
+{
+  "mode": "fitted",
+  "calibration_gain": 0.05,
+  "edge_colors": {
+    "silver_edge": [
+      0.18,
+      0.2,
+      0.24
+    ],
+    "gold_edge": [
+      0.3,
+      0.11,
+      0.035
+    ],
+    "blue_edge": [
+      0.018,
+      0.06,
+      0.14
+    ]
+  },
+  "edge_roughness": {
+    "silver_edge": 0.38,
+    "gold_edge": 0.4,
+    "blue_edge": 0.3
+  },
+  "method": "Measured physical metal with broad continuous reflections",
+  "calibrated_in_native_app": true,
+  "fit": {
+    "surface": {
+      "metal_texels": 295365,
+      "clean_light_samples": 227587,
+      "mean_retained_physical_reflectance": 0.5920110517191527,
+      "roughness_metal": 0.36
+    },
+    "star": {
+      "metal_texels": 47766,
+      "clean_light_samples": 39123,
+      "mean_retained_physical_reflectance": 0.9702938181693562,
+      "roughness_metal": 0.18
+    }
+  }
+}

@@ -7,12 +7,12 @@ Read this before unattended work. The helper uses Python 3 and its standard libr
 Create a unique run directory in the badge workspace. Use the exact current UUID from `CODEX_THREAD_ID` or verified session metadata. Do not use another chat or a guessed name. Use the skill's absolute script path in actual tool calls.
 
 ```sh
-python3 scripts/overnight.py init --run-dir /absolute/run/folder --thread CURRENT_UUID --badge crescent --badge mountain --hours 5
+python3 scripts/overnight.py init --run-dir /absolute/run/folder --thread CURRENT_UUID --badge crescent --badge mountain
 python3 scripts/overnight.py watch --run-dir /absolute/run/folder --start
 python3 scripts/overnight.py status --run-dir /absolute/run/folder
 ```
 
-Defaults are 30 minutes of work, 20 minutes of break, 10 minute checks and a five hour window. Override duration when the owner supplies one. Initialization refuses to overwrite an existing run. Record reference paths and the precise next action in the checkpoint.
+Use 30 minutes of work, 20 minutes of break and 10 minute recovery checks. There is no overall time limit. `deadline_epoch` is null and the run continues until every badge is reviewed and done or the owner stops it. Do not pass `--hours` or copy a deadline from an earlier run. That optional setting exists only for an explicit future owner request for a deadline. Initialization refuses to overwrite an existing run. Record reference paths and the precise next action in the checkpoint.
 
 The watcher verifies the installed `codex queue --help`, then finds this thread's rollout through the local state database in read only mode. Alternatively pass a verified `--rollout` path and `--codex` executable. This command was present on the owner's CLI; verify it for every new run. No app settings, accounts, production files or database records are changed.
 

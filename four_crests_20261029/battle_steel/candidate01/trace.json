@@ -1,0 +1,38 @@
+{
+  "name": "Battle Steel",
+  "reference_size": [
+    1254,
+    1254
+  ],
+  "reference_bounds": [
+    [
+      100.59,
+      26.0
+    ],
+    [
+      1148.14,
+      1153.66
+    ]
+  ],
+  "reference_scale": 0.004850752886508344,
+  "reference_center": [
+    624.365,
+    589.83
+  ],
+  "front_triangles": 49867,
+  "wall_triangles": 15378,
+  "total_triangles": 115112,
+  "bounds_min": [
+    -2.5407030931309076,
+    -2.4549999999999996,
+    -0.2812972477987322
+  ],
+  "bounds_max": [
+    2.5407030931309085,
+    3.015,
+    0.2812972477987322
+  ],
+  "preview_size": 1,
+  "preview_lift": 0,
+  "method": "Reference contours, curved sculpted relief, continuous edge walls, matching sculpted rear"
+}

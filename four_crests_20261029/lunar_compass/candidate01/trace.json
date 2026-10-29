@@ -1,0 +1,38 @@
+{
+  "name": "Lunar Compass",
+  "reference_size": [
+    1254,
+    1254
+  ],
+  "reference_bounds": [
+    [
+      41.5,
+      25.5
+    ],
+    [
+      1210.47,
+      1164.0
+    ]
+  ],
+  "reference_scale": 0.004804567413263065,
+  "reference_center": [
+    625.985,
+    594.75
+  ],
+  "front_triangles": 41388,
+  "wall_triangles": 3568,
+  "total_triangles": 86344,
+  "bounds_min": [
+    -2.808197584541063,
+    -2.4549999999999996,
+    -0.30854226857181255
+  ],
+  "bounds_max": [
+    2.808197584541063,
+    3.015,
+    0.30854226857181255
+  ],
+  "preview_size": 1,
+  "preview_lift": 0,
+  "method": "Reference contours, curved sculpted relief, continuous edge walls, matching sculpted rear"
+}

@@ -1,0 +1,26 @@
+{
+  "closed_surface": true,
+  "meshes": 7,
+  "triangles": 88876,
+  "bytes": 8332822,
+  "sha256": "03364708446b021e43585bbe862d440a44c82b85932d0296388865881b213e19",
+  "bounds_min": [
+    -2.8071000576019287,
+    -2.4549999237060547,
+    -0.5899999737739563
+  ],
+  "bounds_max": [
+    2.8071000576019287,
+    3.015000104904175,
+    0.5899999737739563
+  ],
+  "all_transforms_identity": true,
+  "usd_y_up": true,
+  "meters_per_unit": 1,
+  "matching_sculpted_rear": true,
+  "no_coin_names": true,
+  "no_lights_or_cameras": true,
+  "material_uv": "CrestUV",
+  "original_app_lighting_preserved": true,
+  "usdchecker_arkit_passed": true
+}

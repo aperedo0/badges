@@ -19,7 +19,7 @@ class OvernightTests(unittest.TestCase):
         self.temp = tempfile.TemporaryDirectory(prefix='badge skill test ')
         self.addCleanup(self.temp.cleanup)
         self.run = job.Run(Path(self.temp.name) / 'run with spaces')
-        self.run.init(THREAD, ['moon', 'phoenix'], now=NOW)
+        self.run.init(THREAD, ['moon', 'phoenix'], hours=5, now=NOW)
         self.rollout = Path(self.temp.name) / 'rollout.jsonl'
         self.event('task_started')
 
@@ -46,6 +46,17 @@ class OvernightTests(unittest.TestCase):
         ready = self.state(job.WORK + job.BREAK)
         self.assertEqual(ready['phase'], 'ready')
         self.assertEqual(ready['block'], 1)
+
+    def test_default_run_has_no_overall_time_limit(self):
+        other = job.Run(Path(self.temp.name) / 'unlimited')
+        initial = other.init(THREAD, ['moon'], now=NOW)
+        self.assertIsNone(initial['deadline_epoch'])
+        late = other.update(now=NOW + 10 * 86400)
+        self.assertEqual(late['status'], 'active')
+        self.assertEqual(late['phase'], 'ready')
+        resumed = other.update(job.begin, now=NOW + 10 * 86400)
+        self.assertIsNone(resumed['deadline_epoch'])
+        self.assertEqual(resumed['work_until_epoch'], NOW + 10 * 86400 + job.WORK)
 
     def test_cannot_begin_early_and_resume_never_resets_window(self):
         with self.assertRaises(ValueError):

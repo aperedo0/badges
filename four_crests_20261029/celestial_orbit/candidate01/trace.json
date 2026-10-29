@@ -1,0 +1,38 @@
+{
+  "name": "Celestial Orbit",
+  "reference_size": [
+    1254,
+    1254
+  ],
+  "reference_bounds": [
+    [
+      71.51,
+      37.5
+    ],
+    [
+      1180.4,
+      1118.0
+    ]
+  ],
+  "reference_scale": 0.005062471078204535,
+  "reference_center": [
+    625.955,
+    577.75
+  ],
+  "front_triangles": 38794,
+  "wall_triangles": 2352,
+  "total_triangles": 79940,
+  "bounds_min": [
+    -2.8068617769551136,
+    -2.4549999999999996,
+    -0.3061031570438032
+  ],
+  "bounds_max": [
+    2.8068617769551136,
+    3.015,
+    0.3061031570438032
+  ],
+  "preview_size": 1,
+  "preview_lift": 0,
+  "method": "Reference contours, curved sculpted relief, continuous edge walls, matching sculpted rear"
+}

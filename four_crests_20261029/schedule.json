@@ -1,0 +1,97 @@
+{
+  "version": 1,
+  "thread_id": "01a16b8e-9f81-76d1-8bd7-d0a939464547",
+  "workspace": "/Users/antonioperedo/Desktop/badges",
+  "status": "complete",
+  "phase": "work",
+  "block": 4,
+  "started_epoch": 1793259849.9806368,
+  "deadline_epoch": null,
+  "work_until_epoch": 1793270850.344975,
+  "break_until_epoch": 1793268958.2648041,
+  "busy_until_epoch": 0,
+  "heartbeat_epoch": 1793270119.16727,
+  "checkpoint_seq": 16,
+  "active_badge": "lunar_compass",
+  "next_action": "Owner review in the separate badge preview",
+  "badges": {
+    "frostwing": {
+      "status": "done",
+      "candidate": "/Users/antonioperedo/Desktop/badges/four_crests_20261029/frostwing/candidate02",
+      "reference": "/Users/antonioperedo/Desktop/badges/four_crests_20261029/frostwing/reference.png",
+      "blend": "/Users/antonioperedo/Desktop/badges/four_crests_20261029/frostwing/candidate02/frostwing.blend",
+      "artifacts": {
+        "blend": "/Users/antonioperedo/Desktop/badges/four_crests_20261029/frostwing/source/frostwing.blend",
+        "usdz": "/Users/antonioperedo/Desktop/badges/four_crests_20261029/frostwing/mobile/frostwing_badge_mobile.usdz",
+        "report": "/Users/antonioperedo/Desktop/badges/four_crests_20261029/frostwing/REPORT.md",
+        "comparison": "/Users/antonioperedo/Desktop/badges/four_crests_20261029/frostwing/candidate02/comparison.jpg",
+        "front": "/Users/antonioperedo/Desktop/badges/four_crests_20261029/frostwing/candidate02/app_front.png",
+        "back": "/Users/antonioperedo/Desktop/badges/four_crests_20261029/frostwing/candidate02/app_back.png",
+        "left": "/Users/antonioperedo/Desktop/badges/four_crests_20261029/frostwing/candidate02/app_side_left.png",
+        "right": "/Users/antonioperedo/Desktop/badges/four_crests_20261029/frostwing/candidate02/app_side_right.png",
+        "turn": "/Users/antonioperedo/Desktop/badges/four_crests_20261029/frostwing/candidate02/full_turn.mp4"
+      },
+      "reviewed": true
+    },
+    "battle_steel": {
+      "status": "done",
+      "candidate": "/Users/antonioperedo/Desktop/badges/four_crests_20261029/battle_steel/candidate02",
+      "reference": "/Users/antonioperedo/Desktop/badges/four_crests_20261029/battle_steel/reference.png",
+      "artifacts": {
+        "blend": "/Users/antonioperedo/Desktop/badges/four_crests_20261029/battle_steel/source/battle_steel.blend",
+        "usdz": "/Users/antonioperedo/Desktop/badges/four_crests_20261029/battle_steel/mobile/battle_steel_badge_mobile.usdz",
+        "report": "/Users/antonioperedo/Desktop/badges/four_crests_20261029/battle_steel/REPORT.md",
+        "comparison": "/Users/antonioperedo/Desktop/badges/four_crests_20261029/battle_steel/candidate03/comparison.jpg",
+        "front": "/Users/antonioperedo/Desktop/badges/four_crests_20261029/battle_steel/candidate03/app_front.png",
+        "back": "/Users/antonioperedo/Desktop/badges/four_crests_20261029/battle_steel/candidate03/app_back.png",
+        "left": "/Users/antonioperedo/Desktop/badges/four_crests_20261029/battle_steel/candidate03/app_side_left.png",
+        "right": "/Users/antonioperedo/Desktop/badges/four_crests_20261029/battle_steel/candidate03/app_side_right.png",
+        "turn": "/Users/antonioperedo/Desktop/badges/four_crests_20261029/battle_steel/candidate03/full_turn.mp4"
+      },
+      "reviewed": true
+    },
+    "lunar_compass": {
+      "status": "done",
+      "blend": "/Users/antonioperedo/Desktop/badges/four_crests_20261029/lunar_compass/candidate02/lunar_compass.blend",
+      "candidate": "/Users/antonioperedo/Desktop/badges/four_crests_20261029/lunar_compass/candidate02",
+      "reference": "/Users/antonioperedo/Desktop/badges/four_crests_20261029/lunar_compass/reference.png",
+      "artifacts": {
+        "blend": "/Users/antonioperedo/Desktop/badges/four_crests_20261029/lunar_compass/source/lunar_compass.blend",
+        "usdz": "/Users/antonioperedo/Desktop/badges/four_crests_20261029/lunar_compass/mobile/lunar_compass_badge_mobile.usdz",
+        "report": "/Users/antonioperedo/Desktop/badges/four_crests_20261029/lunar_compass/REPORT.md",
+        "comparison": "/Users/antonioperedo/Desktop/badges/four_crests_20261029/lunar_compass/candidate02/comparison.jpg",
+        "front": "/Users/antonioperedo/Desktop/badges/four_crests_20261029/lunar_compass/candidate02/app_front.png",
+        "back": "/Users/antonioperedo/Desktop/badges/four_crests_20261029/lunar_compass/candidate02/app_back.png",
+        "left": "/Users/antonioperedo/Desktop/badges/four_crests_20261029/lunar_compass/candidate02/app_side_left.png",
+        "right": "/Users/antonioperedo/Desktop/badges/four_crests_20261029/lunar_compass/candidate02/app_side_right.png",
+        "turn": "/Users/antonioperedo/Desktop/badges/four_crests_20261029/lunar_compass/candidate02/full_turn.mp4"
+      },
+      "reviewed": true
+    },
+    "celestial_orbit": {
+      "status": "done",
+      "artifacts": {
+        "blend": "/Users/antonioperedo/Desktop/badges/four_crests_20261029/celestial_orbit/source/celestial_orbit.blend",
+        "usdz": "/Users/antonioperedo/Desktop/badges/four_crests_20261029/celestial_orbit/mobile/celestial_orbit_badge_mobile.usdz",
+        "report": "/Users/antonioperedo/Desktop/badges/four_crests_20261029/celestial_orbit/REPORT.md",
+        "comparison": "/Users/antonioperedo/Desktop/badges/four_crests_20261029/celestial_orbit/candidate02/comparison.jpg",
+        "front": "/Users/antonioperedo/Desktop/badges/four_crests_20261029/celestial_orbit/candidate02/app_front.png",
+        "back": "/Users/antonioperedo/Desktop/badges/four_crests_20261029/celestial_orbit/candidate02/app_back.png",
+        "left": "/Users/antonioperedo/Desktop/badges/four_crests_20261029/celestial_orbit/candidate02/app_side_left.png",
+        "right": "/Users/antonioperedo/Desktop/badges/four_crests_20261029/celestial_orbit/candidate02/app_side_right.png",
+        "turn": "/Users/antonioperedo/Desktop/badges/four_crests_20261029/celestial_orbit/candidate02/full_turn.mp4"
+      },
+      "reviewed": true
+    }
+  },
+  "owner_instruction": "Continue until all four badges are done; no overall time limit",
+  "last_queue_basis": [
+    "ready",
+    3,
+    11,
+    1793268959196359044
+  ],
+  "last_queue_epoch": 1793268958.459418,
+  "had_outage": false,
+  "completed_epoch": 1793270119.232085
+}
