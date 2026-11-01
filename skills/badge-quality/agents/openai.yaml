@@ -1,0 +1,4 @@
+interface:
+  display_name: "Badge Quality"
+  short_description: "Check badge detail and believable moving materials"
+  default_prompt: "Use $badge-quality to build or review this badge with reference details and realistic materials through a full turn."

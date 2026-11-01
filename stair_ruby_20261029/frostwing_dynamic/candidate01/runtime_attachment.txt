@@ -1,0 +1,7 @@
+Source: /Users/antonioperedo/Library/Developer/XcodeBuildMCP/workspaces/badges-aa906adb7ece/logs/com.antonioperedo.badgestudio.preview_2026-10-29T20-04-49-602Z_helperpid38535_ownerpid952_083d2e2c.log
+Badge gem attached: CrestGem_Ice mesh=Relief_5 mirror=false
+Badge gem attached: CrestGem_Ice mesh=Relief_6 mirror=false
+Badge gem attached: CrestGem_Ice mesh=Relief_7 mirror=false
+Badge gem attached: CrestGem_Ice mesh=Relief_5 mirror=true
+Badge gem attached: CrestGem_Ice mesh=Relief_6 mirror=true
+Badge gem attached: CrestGem_Ice mesh=Relief_7 mirror=true

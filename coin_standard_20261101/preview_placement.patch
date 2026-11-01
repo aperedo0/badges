@@ -1,0 +1,10 @@
+--- a/ScreenTime/Sources/App/Features/Badges/Badge3DLiveBadge.swift
++++ b/ScreenTime/Sources/App/Features/Badges/Badge3DLiveBadge.swift
+@@ -96,6 +96,7 @@
+     /// and a data set belongs to one tier, so the scene finds its tier's look
+     /// from the name instead of every caller passing the tier along.
+     static func look(forDatasetName datasetName: String) -> Badge3DTierLook {
++        if datasetName == "Badge3DPreviewEmeraldSprout" { return Badge3DTierLook(size: 0.96, lift: 0.441) }
+         if datasetName == "Badge3DPreviewCrimsonShield" { return .neutral }
+         if datasetName == "Badge3DPreviewSapphireStairway" { return .neutral }
+         if datasetName == "Badge3DPreviewRubyWingedCrest" { return .neutral }

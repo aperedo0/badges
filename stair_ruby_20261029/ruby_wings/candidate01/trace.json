@@ -1,0 +1,38 @@
+{
+  "name": "Ruby Winged Crest",
+  "reference_size": [
+    1024,
+    1024
+  ],
+  "reference_bounds": [
+    [
+      43.5,
+      18.55
+    ],
+    [
+      980.5,
+      993.89
+    ]
+  ],
+  "reference_scale": 0.005608300695142206,
+  "reference_center": [
+    512.0,
+    506.21999999999997
+  ],
+  "front_triangles": 50954,
+  "wall_triangles": 26716,
+  "total_triangles": 128624,
+  "bounds_min": [
+    -2.6274888756741235,
+    -2.4549999999999996,
+    -0.3774535511420658
+  ],
+  "bounds_max": [
+    2.6274888756741235,
+    3.015,
+    0.3774535511420658
+  ],
+  "preview_size": 1,
+  "preview_lift": 0,
+  "method": "Reference contours, curved sculpted relief, continuous edge walls, matching sculpted rear"
+}

@@ -1,0 +1,35 @@
+{
+  "gems": {
+    "/Crest/Relief_4": {
+      "planes": 20,
+      "reflectionPlanes": 20
+    },
+    "/Crest/Relief_5": {
+      "planes": 25,
+      "reflectionPlanes": 25
+    },
+    "/Crest/Relief_6": {
+      "planes": 20,
+      "reflectionPlanes": 20
+    },
+    "/Crest/Relief_7": {
+      "planes": 20,
+      "reflectionPlanes": 20
+    },
+    "/Crest/Relief_8": {
+      "planes": 20,
+      "reflectionPlanes": 20
+    },
+    "/Crest/Relief_9": {
+      "planes": 15,
+      "reflectionPlanes": 15
+    },
+    "/Crest/Relief_10": {
+      "planes": 15,
+      "reflectionPlanes": 15
+    }
+  },
+  "no_appearance_textures": true,
+  "actual_renderer_convexity_passed": true,
+  "reflection_convexity_passed": true
+}

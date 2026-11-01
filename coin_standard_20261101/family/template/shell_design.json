@@ -1,0 +1,21 @@
+{
+  "status": "owner approved",
+  "rim_reduction_from_original": 0.2,
+  "whole_coin_depth_reduction_from_original": 0.3,
+  "outer_radius": 2.896,
+  "inner_radius": 2.42,
+  "band_width": 0.476,
+  "shell_depth": 0.651,
+  "center_z": -0.1155,
+  "front_rim_z": 0.21,
+  "front_plain_background_z": 0.0308,
+  "front_recess": 0.1792,
+  "closed_circular_bottom": true,
+  "preview_size": 0.96,
+  "preview_lift": 0.441,
+  "lowest_world_y": -2.455,
+  "casing_name": "Casing___smooth_rounded_outer_edge_mobile_geometry",
+  "brushed_material_name": "Silver___circumferential_brushed_steel",
+  "source": "Emerald Sprout candidate03",
+  "notes": "Keep each badge finish. Template gold is only a starter finish. Never apply the reductions twice."
+}

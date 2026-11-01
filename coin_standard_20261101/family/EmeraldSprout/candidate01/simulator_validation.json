@@ -1,0 +1,13 @@
+{
+  "name": "EmeraldSprout",
+  "loaded_model_matches": true,
+  "poses": [
+    "front",
+    "early_turn",
+    "side_left",
+    "back",
+    "side_right",
+    "full_turn"
+  ],
+  "returned_to_front": true
+}

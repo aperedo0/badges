@@ -1,0 +1,38 @@
+{
+  "sapphire_stairway": {
+    "name": "Sapphire Stairway",
+    "candidate": "candidate01",
+    "model": "sapphire_stairway/mobile/sapphire_stairway_badge_mobile.usdz",
+    "sha256": "fcb626fd2da38a1326a9d3dd136415159745d9baf24852bab2c91a212fcdfe9f",
+    "matches_private_preview": true,
+    "gems": 8,
+    "reviewed_front_back_both_sides_and_motion": true,
+    "owner_approval": "pending"
+  },
+  "ruby_wings": {
+    "name": "Ruby Winged Crest",
+    "candidate": "candidate02",
+    "model": "ruby_wings/mobile/ruby_wings_badge_mobile.usdz",
+    "sha256": "a956f46e998fc46b6b54213ebf6336660499904f09a27c8a88758b8ec575409a",
+    "matches_private_preview": true,
+    "gems": 7,
+    "reviewed_front_back_both_sides_and_motion": true,
+    "owner_approval": "pending"
+  },
+  "frostwing_dynamic": {
+    "name": "Frostwing Crystal",
+    "candidate": "candidate01",
+    "model": "frostwing_dynamic/mobile/frostwing_dynamic_badge_mobile.usdz",
+    "sha256": "691a57794db470e168d2bf86173af381f23af1783b3f27cff1ff2defc9209d3c",
+    "matches_private_preview": true,
+    "gems": 3,
+    "reviewed_front_back_both_sides_and_motion": true,
+    "owner_approval": "pending"
+  },
+  "checks": {
+    "original_frostwing_preserved": true,
+    "diamond_shader_unchanged": true,
+    "quality_skill_installed": true,
+    "production_app_edited": false
+  }
+}

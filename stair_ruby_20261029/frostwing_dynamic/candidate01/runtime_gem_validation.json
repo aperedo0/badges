@@ -1,0 +1,22 @@
+{
+  "gems": {
+    "/Crest/Relief_5": {
+      "maximumCoefficientErrorInNanounits": 59,
+      "planes": 25,
+      "reflectionPlanes": 25
+    },
+    "/Crest/Relief_6": {
+      "maximumCoefficientErrorInNanounits": 59,
+      "planes": 25,
+      "reflectionPlanes": 25
+    },
+    "/Crest/Relief_7": {
+      "maximumCoefficientErrorInNanounits": 59,
+      "planes": 20,
+      "reflectionPlanes": 20
+    }
+  },
+  "no_appearance_textures": true,
+  "actual_renderer_convexity_passed": true,
+  "reflection_convexity_passed": true
+}

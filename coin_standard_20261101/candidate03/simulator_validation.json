@@ -1,0 +1,14 @@
+{
+  "rim_reduction": 0.2,
+  "body_reduction": 0.3,
+  "body_depth_identical_to_candidate02": true,
+  "loaded_model_matches": true,
+  "other_11_assets_unchanged": true,
+  "poses": [
+    "front",
+    "side_left",
+    "back",
+    "side_right"
+  ],
+  "left_at_front": true
+}

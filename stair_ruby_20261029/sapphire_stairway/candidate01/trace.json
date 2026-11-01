@@ -1,0 +1,38 @@
+{
+  "name": "Sapphire Stairway",
+  "reference_size": [
+    1254,
+    1254
+  ],
+  "reference_bounds": [
+    [
+      65.0,
+      27.94
+    ],
+    [
+      1186.0,
+      1184.0
+    ]
+  ],
+  "reference_scale": 0.00473158832586544,
+  "reference_center": [
+    625.5,
+    605.97
+  ],
+  "front_triangles": 42484,
+  "wall_triangles": 2896,
+  "total_triangles": 87864,
+  "bounds_min": [
+    -2.652055256647579,
+    -2.4549999999999996,
+    -0.510797349930878
+  ],
+  "bounds_max": [
+    2.652055256647579,
+    3.015,
+    0.510797349930878
+  ],
+  "preview_size": 1,
+  "preview_lift": 0,
+  "method": "Reference contours, curved sculpted relief, continuous edge walls, matching sculpted rear"
+}

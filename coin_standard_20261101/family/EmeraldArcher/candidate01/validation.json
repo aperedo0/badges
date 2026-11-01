@@ -1,0 +1,38 @@
+{
+  "name": "EmeraldArcher",
+  "mesh_count": 17,
+  "rim_width_factor": 0.8,
+  "whole_coin_depth_factor": 0.7,
+  "inner_radius": 2.419999892146004,
+  "outer_radius": 2.896000098446122,
+  "shell_depth": 0.6510000050067901,
+  "closed_shell": true,
+  "matches_live_blender": true,
+  "preserved_materials_textures_uv_topology": true,
+  "arkit_validation_passed": true,
+  "sha256": "b80d96f546d76237ed3eeedc41614f8ffe21b86f1e55eb721b8e6afae0c353c2",
+  "before_bounds": [
+    [
+      -3.015000104904175,
+      -3.015000104904175,
+      -0.7289999723434448
+    ],
+    [
+      3.015000104904175,
+      3.015000104904175,
+      0.39899998903274536
+    ]
+  ],
+  "after_bounds": [
+    [
+      -2.8960000839233397,
+      -2.8960000839233397,
+      -0.5102999806404114
+    ],
+    [
+      2.8960000839233397,
+      2.8960000839233397,
+      0.27929999232292174
+    ]
+  ]
+}

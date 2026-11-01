@@ -1,0 +1,74 @@
+[
+  {
+    "name": "North sapphire",
+    "role": "CrestGem_Sapphire",
+    "convex": true,
+    "closed": true,
+    "planes": 20,
+    "triangles": 32,
+    "appearance_textures": false
+  },
+  {
+    "name": "West sapphire",
+    "role": "CrestGem_Sapphire",
+    "convex": true,
+    "closed": true,
+    "planes": 20,
+    "triangles": 32,
+    "appearance_textures": false
+  },
+  {
+    "name": "East sapphire",
+    "role": "CrestGem_Sapphire",
+    "convex": true,
+    "closed": true,
+    "planes": 20,
+    "triangles": 32,
+    "appearance_textures": false
+  },
+  {
+    "name": "South sapphire",
+    "role": "CrestGem_Sapphire",
+    "convex": true,
+    "closed": true,
+    "planes": 20,
+    "triangles": 32,
+    "appearance_textures": false
+  },
+  {
+    "name": "Star upper",
+    "role": "CrestGem_Sapphire",
+    "convex": true,
+    "closed": true,
+    "planes": 25,
+    "triangles": 40,
+    "appearance_textures": false
+  },
+  {
+    "name": "Star right",
+    "role": "CrestGem_Sapphire",
+    "convex": true,
+    "closed": true,
+    "planes": 25,
+    "triangles": 40,
+    "appearance_textures": false
+  },
+  {
+    "name": "Star lower",
+    "role": "CrestGem_Sapphire",
+    "convex": true,
+    "closed": true,
+    "planes": 25,
+    "triangles": 40,
+    "appearance_textures": false
+  },
+  {
+    "name": "Star left",
+    "role": "CrestGem_Sapphire",
+    "convex": true,
+    "closed": true,
+    "planes": 25,
+    "triangles": 40,
+    "appearance_textures": false
+  }
+]

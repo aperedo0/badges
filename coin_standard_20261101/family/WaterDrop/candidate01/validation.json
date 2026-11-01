@@ -1,0 +1,38 @@
+{
+  "name": "WaterDrop",
+  "mesh_count": 12,
+  "rim_width_factor": 0.8,
+  "whole_coin_depth_factor": 0.7,
+  "inner_radius": 2.419999892146004,
+  "outer_radius": 2.896000098446122,
+  "shell_depth": 0.6510000050067901,
+  "closed_shell": true,
+  "matches_live_blender": true,
+  "preserved_materials_textures_uv_topology": true,
+  "arkit_validation_passed": true,
+  "sha256": "dac3cea5d0ecf94cddfd8ee907fcbc5f9ebffda42b5d4f45dce3c7ad1ffbca29",
+  "before_bounds": [
+    [
+      -3.015000104904175,
+      -3.015000104904175,
+      -0.9900000095367432
+    ],
+    [
+      3.015000104904175,
+      3.015000104904175,
+      0.6600000262260437
+    ]
+  ],
+  "after_bounds": [
+    [
+      -2.8960000839233397,
+      -2.8960000839233397,
+      -0.6930000066757201
+    ],
+    [
+      2.8960000839233397,
+      2.8960000839233397,
+      0.46200001835823057
+    ]
+  ]
+}

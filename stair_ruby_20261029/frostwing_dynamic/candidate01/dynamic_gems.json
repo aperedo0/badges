@@ -1,0 +1,29 @@
+[
+  {
+    "name": "Upper ice crystal",
+    "role": "CrestGem_Ice",
+    "convex": true,
+    "closed": true,
+    "planes": 25,
+    "triangles": 40,
+    "appearance_textures": false
+  },
+  {
+    "name": "Lower ice crystal",
+    "role": "CrestGem_Ice",
+    "convex": true,
+    "closed": true,
+    "planes": 25,
+    "triangles": 40,
+    "appearance_textures": false
+  },
+  {
+    "name": "Small central diamond",
+    "role": "CrestGem_Ice",
+    "convex": true,
+    "closed": true,
+    "planes": 20,
+    "triangles": 32,
+    "appearance_textures": false
+  }
+]

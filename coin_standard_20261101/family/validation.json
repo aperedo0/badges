@@ -1,0 +1,458 @@
+[
+  {
+    "name": "EmeraldArcher",
+    "mesh_count": 17,
+    "rim_width_factor": 0.8,
+    "whole_coin_depth_factor": 0.7,
+    "inner_radius": 2.419999892146004,
+    "outer_radius": 2.896000098446122,
+    "shell_depth": 0.6510000050067901,
+    "closed_shell": true,
+    "matches_live_blender": true,
+    "preserved_materials_textures_uv_topology": true,
+    "arkit_validation_passed": true,
+    "sha256": "b80d96f546d76237ed3eeedc41614f8ffe21b86f1e55eb721b8e6afae0c353c2",
+    "before_bounds": [
+      [
+        -3.015000104904175,
+        -3.015000104904175,
+        -0.7289999723434448
+      ],
+      [
+        3.015000104904175,
+        3.015000104904175,
+        0.39899998903274536
+      ]
+    ],
+    "after_bounds": [
+      [
+        -2.8960000839233397,
+        -2.8960000839233397,
+        -0.5102999806404114
+      ],
+      [
+        2.8960000839233397,
+        2.8960000839233397,
+        0.27929999232292174
+      ]
+    ]
+  },
+  {
+    "name": "EmeraldSprout",
+    "mesh_count": 22,
+    "rim_width_factor": 0.8,
+    "whole_coin_depth_factor": 0.7,
+    "inner_radius": 2.419999892146004,
+    "outer_radius": 2.896000098446122,
+    "shell_depth": 0.6510000050067901,
+    "closed_shell": true,
+    "matches_live_blender": true,
+    "preserved_materials_textures_uv_topology": true,
+    "arkit_validation_passed": true,
+    "sha256": "97129c73a399f82212b3a6064110019eac5529c0db6ac532599113ba3b00248e",
+    "before_bounds": [
+      [
+        -3.015000104904175,
+        -3.015000104904175,
+        -0.672308087348938
+      ],
+      [
+        3.015000104904175,
+        3.015000104904175,
+        0.3423081040382385
+      ]
+    ],
+    "after_bounds": [
+      [
+        -2.8960000839233397,
+        -2.8960000839233397,
+        -0.47061566114425657
+      ],
+      [
+        2.8960000839233397,
+        2.8960000839233397,
+        0.23961567282676696
+      ]
+    ]
+  },
+  {
+    "name": "EmeraldTrophy",
+    "mesh_count": 7,
+    "rim_width_factor": 0.8,
+    "whole_coin_depth_factor": 0.7,
+    "inner_radius": 2.419999892146004,
+    "outer_radius": 2.896000098446122,
+    "shell_depth": 0.6510000050067901,
+    "closed_shell": true,
+    "matches_live_blender": true,
+    "preserved_materials_textures_uv_topology": true,
+    "arkit_validation_passed": true,
+    "sha256": "40da381680ec0b2e427b4dadb05e1fb8b0525aa800959cb0cba119e6c2027c0f",
+    "before_bounds": [
+      [
+        -3.015000104904175,
+        -3.015000104904175,
+        -0.6852572560310364
+      ],
+      [
+        3.015000104904175,
+        3.015000104904175,
+        0.3552572727203369
+      ]
+    ],
+    "after_bounds": [
+      [
+        -2.8960000839233397,
+        -2.8960000839233397,
+        -0.47968007922172545
+      ],
+      [
+        2.8960000839233397,
+        2.8960000839233397,
+        0.24868009090423582
+      ]
+    ]
+  },
+  {
+    "name": "GoldenSands",
+    "mesh_count": 22,
+    "rim_width_factor": 0.8,
+    "whole_coin_depth_factor": 0.7,
+    "inner_radius": 2.419999892146004,
+    "outer_radius": 2.896000098446122,
+    "shell_depth": 0.6510000050067901,
+    "closed_shell": true,
+    "matches_live_blender": true,
+    "preserved_materials_textures_uv_topology": true,
+    "arkit_validation_passed": true,
+    "sha256": "a2bfc47deae88172c05b257638d778dc393ed3f5ee54958f05f5b37fe1d53603",
+    "before_bounds": [
+      [
+        -3.015000104904175,
+        -3.015000104904175,
+        -0.8037494421005249
+      ],
+      [
+        3.015000104904175,
+        3.015000104904175,
+        0.47374945878982544
+      ]
+    ],
+    "after_bounds": [
+      [
+        -2.8960000839233397,
+        -2.8960000839233397,
+        -0.5626246094703674
+      ],
+      [
+        2.8960000839233397,
+        2.8960000839233397,
+        0.3316246211528778
+      ]
+    ]
+  },
+  {
+    "name": "IslandSunset",
+    "mesh_count": 11,
+    "rim_width_factor": 0.8,
+    "whole_coin_depth_factor": 0.7,
+    "inner_radius": 2.419999892146004,
+    "outer_radius": 2.896000098446122,
+    "shell_depth": 0.6510000050067901,
+    "closed_shell": true,
+    "matches_live_blender": true,
+    "preserved_materials_textures_uv_topology": true,
+    "arkit_validation_passed": true,
+    "sha256": "5875dc664b2794f53052bc8157a3fcb1e9a59d9d83a919f3aefebb2033e8a053",
+    "before_bounds": [
+      [
+        -3.015000104904175,
+        -3.015000104904175,
+        -0.699999988079071
+      ],
+      [
+        3.015000104904175,
+        3.015000104904175,
+        0.3700000047683716
+      ]
+    ],
+    "after_bounds": [
+      [
+        -2.8960000839233397,
+        -2.8960000839233397,
+        -0.4899999916553497
+      ],
+      [
+        2.8960000839233397,
+        2.8960000839233397,
+        0.2590000033378601
+      ]
+    ]
+  },
+  {
+    "name": "LightningCompass",
+    "mesh_count": 5,
+    "rim_width_factor": 0.8,
+    "whole_coin_depth_factor": 0.7,
+    "inner_radius": 2.419999892146004,
+    "outer_radius": 2.896000098446122,
+    "shell_depth": 0.6510000050067901,
+    "closed_shell": true,
+    "matches_live_blender": true,
+    "preserved_materials_textures_uv_topology": true,
+    "arkit_validation_passed": true,
+    "sha256": "1b7577bd34c0655c5babe98c6af29bb59e7d70e41e36a0358b1bc95fd66d0116",
+    "before_bounds": [
+      [
+        -3.015000104904175,
+        -3.015000104904175,
+        -0.6299999952316284
+      ],
+      [
+        3.015000104904175,
+        3.015000104904175,
+        0.30000001192092896
+      ]
+    ],
+    "after_bounds": [
+      [
+        -2.8960000839233397,
+        -2.8960000839233397,
+        -0.44099999666213985
+      ],
+      [
+        2.8960000839233397,
+        2.8960000839233397,
+        0.21000000834465027
+      ]
+    ]
+  },
+  {
+    "name": "StarAscent",
+    "mesh_count": 7,
+    "rim_width_factor": 0.8,
+    "whole_coin_depth_factor": 0.7,
+    "inner_radius": 2.419999892146004,
+    "outer_radius": 2.896000098446122,
+    "shell_depth": 0.6510000050067901,
+    "closed_shell": true,
+    "matches_live_blender": true,
+    "preserved_materials_textures_uv_topology": true,
+    "arkit_validation_passed": true,
+    "sha256": "bcd70449eb26d061a6fb1af9997a14a87c9eaa571b1fda9e8880bd8da4bc5d8c",
+    "before_bounds": [
+      [
+        -3.015000104904175,
+        -3.015000104904175,
+        -0.7599999904632568
+      ],
+      [
+        3.015000104904175,
+        3.015000104904175,
+        0.4300000071525574
+      ]
+    ],
+    "after_bounds": [
+      [
+        -2.8960000839233397,
+        -2.8960000839233397,
+        -0.5319999933242797
+      ],
+      [
+        2.8960000839233397,
+        2.8960000839233397,
+        0.30100000500679014
+      ]
+    ]
+  },
+  {
+    "name": "SunrisePath",
+    "mesh_count": 24,
+    "rim_width_factor": 0.8,
+    "whole_coin_depth_factor": 0.7,
+    "inner_radius": 2.419999892146004,
+    "outer_radius": 2.896000098446122,
+    "shell_depth": 0.6510000050067901,
+    "closed_shell": true,
+    "matches_live_blender": true,
+    "preserved_materials_textures_uv_topology": true,
+    "arkit_validation_passed": true,
+    "sha256": "66cc669091b7627244beec99c9241931ff46c106566bcd4224ae7ac49e911687",
+    "before_bounds": [
+      [
+        -3.015000104904175,
+        -3.015000104904175,
+        -0.6832869648933411
+      ],
+      [
+        3.015000104904175,
+        3.015000104904175,
+        0.3532869815826416
+      ]
+    ],
+    "after_bounds": [
+      [
+        -2.8960000839233397,
+        -2.8960000839233397,
+        -0.4783008754253387
+      ],
+      [
+        2.8960000839233397,
+        2.8960000839233397,
+        0.24730088710784912
+      ]
+    ]
+  },
+  {
+    "name": "TealSands",
+    "mesh_count": 22,
+    "rim_width_factor": 0.8,
+    "whole_coin_depth_factor": 0.7,
+    "inner_radius": 2.419999892146004,
+    "outer_radius": 2.896000098446122,
+    "shell_depth": 0.6510000050067901,
+    "closed_shell": true,
+    "matches_live_blender": true,
+    "preserved_materials_textures_uv_topology": true,
+    "arkit_validation_passed": true,
+    "sha256": "b053a3cebd721a4efd928ce332404e879d6fd52d3931706d9631f9c9046caada",
+    "before_bounds": [
+      [
+        -3.015000104904175,
+        -3.015000104904175,
+        -0.8037494421005249
+      ],
+      [
+        3.015000104904175,
+        3.015000104904175,
+        0.47374945878982544
+      ]
+    ],
+    "after_bounds": [
+      [
+        -2.8960000839233397,
+        -2.8960000839233397,
+        -0.5626246094703674
+      ],
+      [
+        2.8960000839233397,
+        2.8960000839233397,
+        0.3316246211528778
+      ]
+    ]
+  },
+  {
+    "name": "TorchSunburst",
+    "mesh_count": 5,
+    "rim_width_factor": 0.8,
+    "whole_coin_depth_factor": 0.7,
+    "inner_radius": 2.419999892146004,
+    "outer_radius": 2.896000098446122,
+    "shell_depth": 0.6510000050067901,
+    "closed_shell": true,
+    "matches_live_blender": true,
+    "preserved_materials_textures_uv_topology": true,
+    "arkit_validation_passed": true,
+    "sha256": "8d848920a55b35d0a12a448bf379bf49dffdeef1d4752ebbd40f3caee1184d12",
+    "before_bounds": [
+      [
+        -3.015000104904175,
+        -3.015000104904175,
+        -0.6669999957084656
+      ],
+      [
+        3.015000104904175,
+        3.015000104904175,
+        0.3370000123977661
+      ]
+    ],
+    "after_bounds": [
+      [
+        -2.8960000839233397,
+        -2.8960000839233397,
+        -0.4668999969959259
+      ],
+      [
+        2.8960000839233397,
+        2.8960000839233397,
+        0.23590000867843627
+      ]
+    ]
+  },
+  {
+    "name": "WaterDrop",
+    "mesh_count": 12,
+    "rim_width_factor": 0.8,
+    "whole_coin_depth_factor": 0.7,
+    "inner_radius": 2.419999892146004,
+    "outer_radius": 2.896000098446122,
+    "shell_depth": 0.6510000050067901,
+    "closed_shell": true,
+    "matches_live_blender": true,
+    "preserved_materials_textures_uv_topology": true,
+    "arkit_validation_passed": true,
+    "sha256": "dac3cea5d0ecf94cddfd8ee907fcbc5f9ebffda42b5d4f45dce3c7ad1ffbca29",
+    "before_bounds": [
+      [
+        -3.015000104904175,
+        -3.015000104904175,
+        -0.9900000095367432
+      ],
+      [
+        3.015000104904175,
+        3.015000104904175,
+        0.6600000262260437
+      ]
+    ],
+    "after_bounds": [
+      [
+        -2.8960000839233397,
+        -2.8960000839233397,
+        -0.6930000066757201
+      ],
+      [
+        2.8960000839233397,
+        2.8960000839233397,
+        0.46200001835823057
+      ]
+    ]
+  },
+  {
+    "name": "ZenBalance",
+    "mesh_count": 5,
+    "rim_width_factor": 0.8,
+    "whole_coin_depth_factor": 0.7,
+    "inner_radius": 2.419999892146004,
+    "outer_radius": 2.896000098446122,
+    "shell_depth": 0.6510000050067901,
+    "closed_shell": true,
+    "matches_live_blender": true,
+    "preserved_materials_textures_uv_topology": true,
+    "arkit_validation_passed": true,
+    "sha256": "22a5dcfdfa42ec19fbbcae1da415b471781eb945e87e2b5780029a303a3d14cb",
+    "before_bounds": [
+      [
+        -3.015000104904175,
+        -3.015000104904175,
+        -0.6430000066757202
+      ],
+      [
+        3.015000104904175,
+        3.015000104904175,
+        0.31299999356269836
+      ]
+    ],
+    "after_bounds": [
+      [
+        -2.8960000839233397,
+        -2.8960000839233397,
+        -0.4501000046730041
+      ],
+      [
+        2.8960000839233397,
+        2.8960000839233397,
+        0.21909999549388884
+      ]
+    ]
+  }
+]

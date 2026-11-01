@@ -1,0 +1,524 @@
+--- a/ScreenTime/Sources/App/Features/Badges/Badge3DLiveBadge.swift
++++ b/ScreenTime/Sources/App/Features/Badges/Badge3DLiveBadge.swift
+@@ -37,7 +37,7 @@
+ 
+ enum PrivateBadgePreview {
+     nonisolated(unsafe) static var selection = UserDefaults.standard.string(forKey: "CoinBadgePreview") ?? "emeraldTrophy"
+-    static let items: [String: String] = ["waterDrop":"Water Drop","tealSands":"Teal Sands","goldenSands":"Golden Sands","sunrisePath":"Sunrise Path","emeraldSprout":"Emerald Sprout","starAscent":"Star Ascent","islandSunset":"Island Sunset","lightningCompass":"Lightning Compass","zenBalance":"Zen Balance","torchSunburst":"Torch Sunburst","crimsonShield":"Crimson Shield","emeraldArcher":"Emerald Archer","emeraldTrophy":"Emerald Trophy","crescentOcean":"Crescent Ocean","mountainCrest":"Mountain Crest","wingedSword":"Winged Sword","bronzePhoenix":"Bronze Phoenix","frostwingCrystal":"Frostwing Crystal","battleSteel":"Battle Steel","lunarCompass":"Lunar Compass","celestialOrbit":"Celestial Orbit"]
++    static let items: [String: String] = ["waterDrop":"Water Drop","tealSands":"Teal Sands","goldenSands":"Golden Sands","sunrisePath":"Sunrise Path","emeraldSprout":"Emerald Sprout","starAscent":"Star Ascent","islandSunset":"Island Sunset","lightningCompass":"Lightning Compass","zenBalance":"Zen Balance","torchSunburst":"Torch Sunburst","crimsonShield":"Crimson Shield","emeraldArcher":"Emerald Archer","emeraldTrophy":"Emerald Trophy","crescentOcean":"Crescent Ocean","mountainCrest":"Mountain Crest","wingedSword":"Winged Sword","bronzePhoenix":"Bronze Phoenix","frostwingCrystal":"Frostwing Crystal","battleSteel":"Battle Steel","lunarCompass":"Lunar Compass","celestialOrbit":"Celestial Orbit","rubyWingedCrest":"Ruby Winged Crest","sapphireStairway":"Sapphire Stairway"]
+     static var datasetName: String? {
+         guard items[selection] != nil else { return nil }
+         return "Badge3DPreview" + selection.prefix(1).uppercased() + selection.dropFirst()
+@@ -97,6 +97,8 @@
+     /// from the name instead of every caller passing the tier along.
+     static func look(forDatasetName datasetName: String) -> Badge3DTierLook {
+         if datasetName == "Badge3DPreviewCrimsonShield" { return .neutral }
++        if datasetName == "Badge3DPreviewSapphireStairway" { return .neutral }
++        if datasetName == "Badge3DPreviewRubyWingedCrest" { return .neutral }
+         if datasetName == "Badge3DPreviewCelestialOrbit" { return .neutral }
+         if datasetName == "Badge3DPreviewLunarCompass" { return .neutral }
+         if datasetName == "Badge3DPreviewBattleSteel" { return .neutral }
+@@ -1131,36 +1133,33 @@
+         }
+     }
+ 
+-    /// Swaps the material named `Badge3DGem.materialName` for the gem shader,
+-    /// on the coin or on its mirror image. A model without that material
+-    /// (every tier but the Diamond) is left exactly as it is; so is a gem
+-    /// whose shader or planes cannot be built, which then keeps its plain
+-    /// material and is lit like any other model.
++    /// Applies the approved Diamond shader and the separate crest profiles to
++    /// each independent closed gemstone. Other materials remain unchanged.
++    /// A failed plane check is reported and retains the plain USD fallback.
+     private static func applyGemMaterial(to coin: Entity, isMirrorImage: Bool) async -> Bool {
+-        guard let gemEntity = entityWithGemMaterial(in: coin),
+-              var model = gemEntity.components[ModelComponent.self],
+-              let gem = await Badge3DGem.shared(),
+-              let gemMaterial = try? await gem.material(
+-                  for: model.mesh.contents, isMirrorImage: isMirrorImage
+-              )
+-        else { return false }
+-        for (index, material) in model.materials.enumerated()
+-        where material.name == Badge3DGem.materialName {
+-            model.materials[index] = gemMaterial
+-        }
+-        gemEntity.components.set(model)
+-        return true
+-    }
+-
+-    private static func entityWithGemMaterial(in entity: Entity) -> Entity? {
+-        if let model = entity.components[ModelComponent.self],
+-           model.materials.contains(where: { $0.name == Badge3DGem.materialName }) {
+-            return entity
+-        }
+-        for child in entity.children {
+-            if let found = entityWithGemMaterial(in: child) { return found }
+-        }
+-        return nil
++        var applied = false
++        if var model = coin.components[ModelComponent.self] {
++            for (index, material) in model.materials.enumerated() {
++                let style = Badge3DGem.crestStyle(material.name)
++                guard material.name == Badge3DGem.materialName || style != nil else { continue }
++                if let gem = await Badge3DGem.shared(),
++                   let replacement = try? await gem.material(
++                       for: model.mesh.contents, isMirrorImage: isMirrorImage, crestStyle: style
++                   ) {
++                    model.materials[index] = replacement
++                    applied = true
++                    print("Badge gem attached: \(material.name ?? "unnamed") mesh=\(coin.name) mirror=\(isMirrorImage)")
++                } else {
++                    print("Badge gem FAILED: \(material.name ?? "unnamed") mesh=\(coin.name)")
++                }
++            }
++            coin.components.set(model)
++        }
++        for child in coin.children {
++            let childApplied = await applyGemMaterial(to: child, isMirrorImage: isMirrorImage)
++            applied = childApplied || applied
++        }
++        return applied
+     }
+ 
+     // MARK: Rendering
+@@ -1310,7 +1309,17 @@
+     /// The shader function in `BadgeGemSurface.metal`.
+     private static let shaderFunctionName = "badgeGemSurface"
+ 
++    nonisolated static func crestStyle(_ name: String?) -> Float? {
++        switch name {
++        case "CrestGem_Ice": return 0
++        case "CrestGem_Sapphire": return 1
++        case "CrestGem_Ruby": return 2
++        default: return nil
++        }
++    }
++
+     private let surfaceShader: CustomMaterial.SurfaceShader
++    private let crestSurfaceShader: CustomMaterial.SurfaceShader
+     /// The studio's full-strength light, as an equirectangular HDR texture
+     /// with its mipmaps (the shader reads a sharp and a blurred level).
+     private let studioLight: TextureResource
+@@ -1340,11 +1349,12 @@
+             image: lightImage,
+             options: TextureResource.CreateOptions(semantic: .hdrColor, mipmapsMode: .allocateAndGenerateAll)
+         )
+-        return Badge3DGem(surfaceShader: surfaceShader, studioLight: studioLight)
+-    }
+-
+-    private init(surfaceShader: CustomMaterial.SurfaceShader, studioLight: TextureResource) {
++        return Badge3DGem(surfaceShader: surfaceShader, crestSurfaceShader: CustomMaterial.SurfaceShader(named: "badgeCrestGemSurface", in: library), studioLight: studioLight)
++    }
++
++    private init(surfaceShader: CustomMaterial.SurfaceShader, crestSurfaceShader: CustomMaterial.SurfaceShader, studioLight: TextureResource) {
+         self.surfaceShader = surfaceShader
++        self.crestSurfaceShader = crestSurfaceShader
+         self.studioLight = studioLight
+     }
+ 
+@@ -1355,16 +1365,21 @@
+     /// mesh's facet planes in the base color texture slot (one pixel per
+     /// plane) and the studio's light in the custom one. Nil when the mesh is
+     /// not a convex gem.
+-    func material(for contents: MeshResource.Contents, isMirrorImage: Bool) async throws -> CustomMaterial? {
++    func material(for contents: MeshResource.Contents, isMirrorImage: Bool, crestStyle: Float? = nil) async throws -> CustomMaterial? {
+         let planes = await Task.detached(priority: .userInitiated) {
+             GemFacetPlanes.outwardPlanes(ofTriangles: Self.triangleCorners(of: contents))
+         }.value
+         guard let planes else { return nil }
+-        var material = try CustomMaterial(surfaceShader: surfaceShader, lightingModel: .unlit)
+-        material.baseColor.texture = CustomMaterial.Texture(try Self.planeTexture(for: planes))
++        var material = try CustomMaterial(surfaceShader: crestStyle == nil ? surfaceShader : crestSurfaceShader, lightingModel: .unlit)
++        material.baseColor.texture = CustomMaterial.Texture(try Self.planeTexture(for: planes, splitPrecision: crestStyle != nil))
+         material.custom.texture = CustomMaterial.Texture(studioLight)
+         // The mirror image is lit by the studio flipped through the floor.
+         material.custom.value = SIMD4(isMirrorImage ? 1 : 0, 0, 0, 0)
++        if let crestStyle {
++            let points = Self.triangleCorners(of: contents)
++            let thickness = (points.map(\.z).max() ?? 0.5) - (points.map(\.z).min() ?? -0.5)
++            material.custom.value = SIMD4(isMirrorImage ? 1 : 0, crestStyle, min(8, max(0.5, 1 / thickness)), crestStyle == 0 ? 0.12 : 0.28)
++        }
+         return material
+     }
+ 
+@@ -1385,14 +1400,20 @@
+     }
+ 
+     /// One pixel per plane: the unit outward normal in red, green and blue and
+-    /// the offset in alpha. The shader reads it at half precision, which is
+-    /// why it traces with a small tolerance (see `BadgeGemSurface.metal`).
+-    private static func planeTexture(for planes: [SIMD4<Float>]) throws -> TextureResource {
+-        let planeData = planes.withUnsafeBytes { Data($0) }
++    /// the offset in alpha. Diamond retains its original single row. Crest
++    /// stones add a residual row because RealityKit exposes half precision reads.
++    private static func planeTexture(for planes: [SIMD4<Float>], splitPrecision: Bool = false) throws -> TextureResource {
++        var rows = planes
++        if splitPrecision {
++            let high = planes.map { p in SIMD4<Float>(Float(Float16(p.x)), Float(Float16(p.y)), Float(Float16(p.z)), Float(Float16(p.w))) }
++            let residual = zip(planes, high).map { ($0 - $1) * 1024 }
++            rows = high + residual
++        }
++        let planeData = rows.withUnsafeBytes { Data($0) }
+         return try TextureResource(
+-            dimensions: .dimensions(width: planes.count, height: 1),
++            dimensions: .dimensions(width: planes.count, height: splitPrecision ? 2 : 1),
+             format: .raw(pixelFormat: .rgba32Float),
+-            contents: .init(mipmapLevels: [.mip(data: planeData, bytesPerRow: planeData.count)])
++            contents: .init(mipmapLevels: [.mip(data: planeData, bytesPerRow: planes.count * MemoryLayout<SIMD4<Float>>.stride)])
+         )
+     }
+ }
+--- /dev/null
++++ b/ScreenTime/Sources/App/Features/Badges/BadgeCrestGemSurface.metal
+@@ -0,0 +1,307 @@
++// Crest ice, sapphire and ruby optics. The approved Diamond shader stays separate.
++#include <metal_stdlib>
++#include <RealityKit/RealityKit.h>
++using namespace metal;
++
++// Ice, sapphire and ruby use independent closed convex stones. Each pixel
++// traces the fixed studio environment through the current facet directions.
++// custom_parameter: x mirror flag, y stone profile, z optical density, w exposure.
++// Paired half precision rows preserve the plane data; no appearance picture is sampled on a gem.
++// Three outer facet hits keep motion continuous at the preview's mobile size.
++constant int cMaxInternalHits = 3;
++// Light lost per scene unit of path inside the stone, per color: red is
++// absorbed fastest, so long paths turn the blue diamond's deep blue.
++// The sharp light: the studio's map at this mip level, clamped so its tiny
++// overhead spot cannot make pixel sized specks. Surface reflections use only
++// this light, like a polished surface does.
++constant float cSharpMipLevel = 1.0;
++constant float cSharpClamp = 24.0;
++// The light tent, added to the light that comes out of the gem: the same map,
++// strongly blurred, so every direction gets some soft light and the gem is not
++// mostly black between the flashes. The blur spreads the overhead spot's huge
++// brightness over a wide patch of sky, so the tent is clamped too.
++constant float cTentMipLevel = 8.0;
++constant float cTentClamp = 3.0;
++constant float cTentGain = 3.0;
++// Tolerance for full precision facet planes and exported float vertices.
++constant float cPlaneRoundingTolerance = 0.00001;
++
++// ---- The studio's light ----
++
++constexpr sampler cLightSampler(filter::linear, mip_filter::linear,
++                                s_address::repeat, t_address::clamp_to_edge);
++
++// Where a world direction lands on the equirectangular light map: RealityKit's
++// own convention for an environment map, which centers it on -Z (the stage is
++// turned half a circle so the studio's lights face the camera). A mirror
++// sphere lit by this lookup and by RealityKit's own environment lighting
++// showed the same softboxes in the same places at the same brightness.
++static float2 crestLightMapPosition(float3 direction)
++{
++    float u = 0.5 + atan2(direction.x, -direction.z) / (2.0 * M_PI_F);
++    float v = 0.5 - asin(clamp(direction.y, -1.0, 1.0)) / M_PI_F;
++    return float2(u, v);
++}
++
++struct crestStudioLight {
++    texture2d<half> map;
++    bool isMirrorImage;
++
++    // Where `direction` (world space) looks into the light map. The mirror
++    // image sees the studio flipped through the floor, so it looks the other
++    // way up. Every lookup starts here, so the flip happens exactly once.
++    float2 mapPosition(float3 direction) const
++    {
++        if (isMirrorImage) direction.y = -direction.y;
++        return crestLightMapPosition(direction);
++    }
++
++    // The studio's own light along `direction`, as a polished surface would
++    // reflect it.
++    float3 sharp(float3 direction) const
++    {
++        return sharpAt(mapPosition(direction));
++    }
++
++    // The light that comes out of the gem along `direction`: the sharp light
++    // plus the light tent.
++    float3 along(float3 direction) const
++    {
++        float2 position = mapPosition(direction);
++        float3 tent = float3(map.sample(cLightSampler, position, level(cTentMipLevel)).rgb);
++        return sharpAt(position) + min(tent, cTentClamp) * cTentGain;
++    }
++
++    // The sharp light at a position in the map, which is already flipped for
++    // the mirror image.
++    float3 sharpAt(float2 position) const
++    {
++        return min(float3(map.sample(cLightSampler, position, level(cSharpMipLevel)).rgb), cSharpClamp);
++    }
++};
++
++// ---- Spaces ----
++
++static float3 crestModelToWorldDirection(float3 direction, float4x4 modelToWorld)
++{
++    float3x3 rotationAndScale = float3x3(modelToWorld[0].xyz, modelToWorld[1].xyz, modelToWorld[2].xyz);
++    return normalize(rotationAndScale * direction);
++}
++
++// The scale cancels in the normalize, so the transpose stands in for the
++// inverse (the gem turns and scales uniformly).
++static float3 crestWorldToModelDirection(float3 direction, float4x4 modelToWorld)
++{
++    float3x3 rotationAndScale = float3x3(modelToWorld[0].xyz, modelToWorld[1].xyz, modelToWorld[2].xyz);
++    return normalize(transpose(rotationAndScale) * direction);
++}
++
++// ---- Optics ----
++
++// The share of unpolarized light a surface reflects, from the medium the
++// light travels in into the other one; 1 when it cannot get through (total
++// internal reflection).
++static float crestFresnelReflectance(float cosIncident, float indexIncident, float indexTransmitted)
++{
++    float sinTransmittedSquared = (indexIncident / indexTransmitted) * (indexIncident / indexTransmitted)
++                                  * (1.0 - cosIncident * cosIncident);
++    if (sinTransmittedSquared >= 1.0) return 1.0;
++    float cosTransmitted = sqrt(1.0 - sinTransmittedSquared);
++    float perpendicular = (indexIncident * cosIncident - indexTransmitted * cosTransmitted)
++                          / (indexIncident * cosIncident + indexTransmitted * cosTransmitted);
++    float parallel = (indexIncident * cosTransmitted - indexTransmitted * cosIncident)
++                     / (indexIncident * cosTransmitted + indexTransmitted * cosIncident);
++    return 0.5 * (perpendicular * perpendicular + parallel * parallel);
++}
++
++struct crestFacetPlane {
++    float3 normal;
++    float offset;
++};
++
++static crestFacetPlane crestReadPlane(texture2d<half> planes, uint index)
++{
++    float4 texel = float4(planes.read(uint2(index, 0)));
++    if (planes.get_height() > 1) texel += float4(planes.read(uint2(index, 1))) / 1024.0;
++    return crestFacetPlane{texel.xyz, texel.w};
++}
++
++struct crestGemExit {
++    bool found;
++    float distance;
++    float3 normal;
++};
++
++// The facet a ray at `position` going along `direction` leaves the gem
++// through: the plane it reaches first. The tolerance is on the point's
++// distance from the plane, never on the travelled distance, because dividing
++// an error by a small `dot(normal, direction)` would skip a facet the ray is
++// about to be totally reflected from.
++static crestGemExit crestFindExit(texture2d<half> planes, float3 position, float3 direction)
++{
++    crestGemExit nearest = crestGemExit{false, INFINITY, float3(0.0)};
++    uint planeCount = planes.get_width();
++    for (uint index = 0; index < planeCount; index++) {
++        crestFacetPlane plane = crestReadPlane(planes, index);
++        float approach = dot(plane.normal, direction);
++        if (approach <= 1e-4) continue;
++        float gap = plane.offset - dot(plane.normal, position);
++        if (gap <= -cPlaneRoundingTolerance) continue;
++        float distance = max(gap, 0.0) / approach;
++        if (distance < nearest.distance) nearest = crestGemExit{true, distance, plane.normal};
++    }
++    return nearest;
++}
++
++// The light that comes out of the gem along three exit directions, one per
++// color: each color bends by its own index of refraction as it leaves, which
++// is the rainbow.
++static float3 crestLightLeaving(crestStudioLight studio, float3 modelDirectionRed, float3 modelDirectionGreen,
++                           float3 modelDirectionBlue, float4x4 modelToWorld)
++{
++    float red = studio.along(crestModelToWorldDirection(modelDirectionRed, modelToWorld)).r;
++    float green = studio.along(crestModelToWorldDirection(modelDirectionGreen, modelToWorld)).g;
++    float blue = studio.along(crestModelToWorldDirection(modelDirectionBlue, modelToWorld)).b;
++    return float3(red, green, blue);
++}
++
++// Where a ray leaving through a facet goes, bent by `index`; if that color is
++// totally reflected while green leaves, it follows green.
++static float3 crestExitDirection(float3 direction, float3 outwardNormal, float index, float3 greenDirection)
++{
++    float3 bent = refract(direction, -outwardNormal, index);
++    return all(bent == float3(0.0)) ? greenDirection : bent;
++}
++
++// Intrinsic inclusions occupy the stone's model space. Rays sample this
++// volume along their refracted paths, so the interior changes with view angle.
++static float crestHash(float3 p) {
++    return fract(sin(dot(p, float3(127.1, 311.7, 74.7))) * 43758.5453);
++}
++static float crestNoise(float3 p) {
++    float3 a = floor(p), f = fract(p); f = f * f * (3.0 - 2.0 * f);
++    float x00 = mix(crestHash(a), crestHash(a + float3(1,0,0)), f.x);
++    float x10 = mix(crestHash(a + float3(0,1,0)), crestHash(a + float3(1,1,0)), f.x);
++    float x01 = mix(crestHash(a + float3(0,0,1)), crestHash(a + float3(1,0,1)), f.x);
++    float x11 = mix(crestHash(a + float3(0,1,1)), crestHash(a + float3(1,1,1)), f.x);
++    return mix(mix(x00, x10, f.y), mix(x01, x11, f.y), f.z);
++}
++static float crestOpticalDensity(float3 p) {
++    float cloud = crestNoise(p * float3(10, 7, 12));
++    float detail = crestNoise(p * float3(23, 17, 19));
++    return 0.28 + cloud * cloud * 2.5 + detail * 0.4;
++}
++
++// The light the studio sends into the gem along the path that enters at
++// `entryPoint` with the refracted `entryDirection` (model space).
++static float3 crestLightThroughGem(texture2d<half> planes, crestStudioLight studio, float4x4 modelToWorld,
++                              float3 entryPoint, float3 entryDirection, float3 entryWeight, float3 indices, float3 absorption, bool ice)
++{
++    float3 position = entryPoint;
++    float3 direction = entryDirection;
++    float3 weight = entryWeight;
++    float3 collected = float3(0.0);
++    for (int hit = 0; hit < cMaxInternalHits; hit++) {
++        crestGemExit facet = crestFindExit(planes, position, direction);
++        if (!facet.found) break;
++        float density = 0.0;
++        for (int step = 0; step < 4; step++) {
++            float3 samplePosition = position + direction * facet.distance * (float(step) + 0.5) / 4.0;
++            if (studio.isMirrorImage) samplePosition.y = -samplePosition.y;
++            density += crestOpticalDensity(samplePosition);
++        }
++        // Thin internal cleavage surfaces reflect actual studio light. Their
++        // bounded planes stay inside the crystal and never alter its silhouette.
++        if (ice) {
++            float3 lastCell = float3(INFINITY);
++            for (int sample = 0; sample < 6; sample++) {
++                float3 probe = position + direction * facet.distance * (float(sample) + 0.5) / 6.0;
++                if (studio.isMirrorImage) probe.y = -probe.y;
++                float cellSize = 0.28;
++                float3 cell = floor(probe / cellSize);
++                if (all(cell == lastCell)) continue;
++                lastCell = cell;
++                float3 center = (cell + 0.5) * cellSize;
++                float3 normal = normalize(float3(crestHash(cell), crestHash(cell + 13.0), crestHash(cell + 29.0)) * 2.0 - 1.0);
++                if (studio.isMirrorImage) { center.y = -center.y; normal.y = -normal.y; }
++                float approach = dot(direction, normal);
++                if (abs(approach) < 0.001) continue;
++                float distance = dot(center - position, normal) / approach;
++                float3 hitPoint = position + direction * distance;
++                if (distance <= 0.001 || distance >= facet.distance || any(abs(hitPoint - center) > cellSize * 0.5)) continue;
++                if (approach > 0.0) normal = -normal;
++                float share = 0.10 * crestFresnelReflectance(abs(approach), indices.y, 1.0);
++                float3 secondaryPosition = hitPoint;
++                float3 secondaryDirection = reflect(direction, normal);
++                float3 secondaryWeight = weight * share * exp(-absorption * distance);
++                for (int bounce = 0; bounce < 2; bounce++) {
++                    crestGemExit exit = crestFindExit(planes, secondaryPosition, secondaryDirection);
++                    if (!exit.found) break;
++                    secondaryPosition += secondaryDirection * exit.distance;
++                    secondaryWeight *= exp(-absorption * exit.distance);
++                    float reflection = crestFresnelReflectance(dot(exit.normal, secondaryDirection), indices.y, 1.0);
++                    if (reflection < 1.0) {
++                        float3 outside = refract(secondaryDirection, -exit.normal, indices.y);
++                        collected += secondaryWeight * (1.0 - reflection) * studio.along(crestModelToWorldDirection(outside, modelToWorld));
++                    }
++                    secondaryWeight *= reflection;
++                    secondaryDirection = reflect(secondaryDirection, exit.normal);
++                }
++                weight *= 1.0 - share;
++                break;
++            }
++        }
++        position += direction * facet.distance;
++        weight *= exp(-absorption * facet.distance * density / 4.0);
++
++        float cosIncident = dot(facet.normal, direction);
++        float reflected = crestFresnelReflectance(cosIncident, indices.y, 1.0);
++        if (reflected < 1.0) {
++            float3 greenDirection = refract(direction, -facet.normal, indices.y);
++            float3 redDirection = crestExitDirection(direction, facet.normal, indices.x, greenDirection);
++            float3 blueDirection = crestExitDirection(direction, facet.normal, indices.z, greenDirection);
++            collected += weight * (1.0 - reflected)
++                       * crestLightLeaving(studio, redDirection, greenDirection, blueDirection, modelToWorld);
++        }
++        weight *= reflected;
++        direction = reflect(direction, facet.normal);
++    }
++    // A ray that ran out of hits, or was found outside the gem (a pixel at the
++    // silhouette), takes the light along its last direction.
++    float3 lastDirection = crestModelToWorldDirection(direction, modelToWorld);
++    return collected + weight * studio.along(lastDirection);
++}
++
++// ---- The surface shader ----
++
++[[visible]]
++void badgeCrestGemSurface(realitykit::surface_parameters params)
++{
++    float4 profile = params.uniforms().custom_parameter();
++    float3 indices = profile.y < 0.5 ? float3(1.45, 1.46, 1.475) : float3(1.76, 1.77, 1.79);
++    float3 absorption = profile.y < 0.5 ? float3(0.50, 0.20, 0.04)
++                        : profile.y < 1.5 ? float3(8.0, 4.0, 0.25) : float3(1.25, 16.0, 12.0);
++    absorption *= profile.z;
++
++    realitykit::surface::surface_properties surface = params.surface();
++    float4x4 modelToWorld = params.uniforms().model_to_world();
++    crestStudioLight studio = crestStudioLight{params.textures().custom(), params.uniforms().custom_parameter().x > 0.5};
++    texture2d<half> planes = params.textures().base_color();
++
++    // Which way the camera's ray travels, in model space.
++    float3 incident = -crestWorldToModelDirection(params.geometry().view_direction(), modelToWorld);
++    float3 facetNormal = crestWorldToModelDirection(params.geometry().normal(), modelToWorld);
++    // Face the camera, so a pixel at the silhouette never shades from behind.
++    if (dot(facetNormal, incident) > 0.0) facetNormal = -facetNormal;
++
++    float cosEntry = dot(facetNormal, -incident);
++    float surfaceReflection = crestFresnelReflectance(cosEntry, 1.0, indices.y);
++    float3 mirrored = crestModelToWorldDirection(reflect(incident, facetNormal), modelToWorld);
++    float3 refractedDirection = refract(incident, facetNormal, 1.0 / indices.y);
++    float3 throughGem = crestLightThroughGem(planes, studio, modelToWorld, params.geometry().model_position(),
++                                        refractedDirection, float3(1.0 - surfaceReflection), indices, absorption, profile.y < 0.5);
++    float3 color = surfaceReflection * studio.sharp(mirrored) + throughGem;
++
++    surface.set_emissive_color(half3(color * profile.w));
++    surface.set_opacity(1.0h);
++}
+--- a/ScreenTime.xcodeproj/project.pbxproj
++++ b/ScreenTime.xcodeproj/project.pbxproj
+@@ -709,7 +709,9 @@
+ 		BADE00030000000000000B16 /* BadgeNavigation.swift in Sources */ = {isa = PBXBuildFile; fileRef = BADE00030000000000000F0B /* BadgeNavigation.swift */; };
+ 		BADE00030000000000000B17 /* BadgeNavigation.swift in Sources */ = {isa = PBXBuildFile; fileRef = BADE00030000000000000F0B /* BadgeNavigation.swift */; };
+ 		BADE00030000000000000B20 /* BadgeGemSurface.metal in Sources */ = {isa = PBXBuildFile; fileRef = BADE00030000000000000F20 /* BadgeGemSurface.metal */; };
++		C2E500030000000000000B20 /* BadgeCrestGemSurface.metal in Sources */ = {isa = PBXBuildFile; fileRef = C2E500030000000000000F20 /* BadgeCrestGemSurface.metal */; };
+ 		BADE00030000000000000B21 /* BadgeGemSurface.metal in Sources */ = {isa = PBXBuildFile; fileRef = BADE00030000000000000F20 /* BadgeGemSurface.metal */; };
++		C2E500030000000000000B21 /* BadgeCrestGemSurface.metal in Sources */ = {isa = PBXBuildFile; fileRef = C2E500030000000000000F20 /* BadgeCrestGemSurface.metal */; };
+ 		BADE00030000000000000B22 /* GemFacetPlanes.swift in Sources */ = {isa = PBXBuildFile; fileRef = BADE00030000000000000F21 /* GemFacetPlanes.swift */; };
+ 		BADE00030000000000000B23 /* GemFacetPlanes.swift in Sources */ = {isa = PBXBuildFile; fileRef = BADE00030000000000000F21 /* GemFacetPlanes.swift */; };
+ 		BADE00030000000000000B24 /* GemFacetPlanes.swift in Sources */ = {isa = PBXBuildFile; fileRef = BADE00030000000000000F21 /* GemFacetPlanes.swift */; };
+@@ -1443,6 +1445,7 @@
+ 		BADE00030000000000000F0A /* BadgeMorphGeometry.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BadgeMorphGeometry.swift; sourceTree = "<group>"; };
+ 		BADE00030000000000000F0B /* BadgeNavigation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BadgeNavigation.swift; sourceTree = "<group>"; };
+ 		BADE00030000000000000F20 /* BadgeGemSurface.metal */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.metal; path = BadgeGemSurface.metal; sourceTree = "<group>"; };
++		C2E500030000000000000F20 /* BadgeCrestGemSurface.metal */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.metal; path = BadgeCrestGemSurface.metal; sourceTree = "<group>"; };
+ 		BADE00030000000000000F21 /* GemFacetPlanes.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GemFacetPlanes.swift; sourceTree = "<group>"; };
+ 		BADE00030000000000000F30 /* HomeBadgePicker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeBadgePicker.swift; sourceTree = "<group>"; };
+ 		BADE00030000000000000F40 /* Badge3DImagePipeline.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Badge3DImagePipeline.swift; sourceTree = "<group>"; };
+@@ -2183,6 +2186,7 @@
+ 				BADE00030000000000000F0B /* BadgeNavigation.swift */,
+ 				BADE00030000000000000F21 /* GemFacetPlanes.swift */,
+ 				BADE00030000000000000F20 /* BadgeGemSurface.metal */,
++				C2E500030000000000000F20 /* BadgeCrestGemSurface.metal */,
+ 				5B75000000000000000000A1 /* ReviewPromptPolicy.swift */,
+ 			);
+ 			path = Badges;
+@@ -2766,6 +2770,7 @@
+ 				BADE00030000000000000B13 /* BadgeMorphGeometry.swift in Sources */,
+ 				BADE00030000000000000B22 /* GemFacetPlanes.swift in Sources */,
+ 				BADE00030000000000000B20 /* BadgeGemSurface.metal in Sources */,
++				C2E500030000000000000B20 /* BadgeCrestGemSurface.metal in Sources */,
+ 				BADE00010000000000000B07 /* BadgeLedger.swift in Sources */,
+ 				0A7488804A0F4126BDA6F0AC /* StreakLog.swift in Sources */,
+ 				BADE00010000000000000B0A /* BadgeView.swift in Sources */,
+@@ -3130,6 +3135,7 @@
+ 				BADE00030000000000000B14 /* BadgeMorphGeometry.swift in Sources */,
+ 				BADE00030000000000000B23 /* GemFacetPlanes.swift in Sources */,
+ 				BADE00030000000000000B21 /* BadgeGemSurface.metal in Sources */,
++				C2E500030000000000000B21 /* BadgeCrestGemSurface.metal in Sources */,
+ 				BADE00010000000000000B08 /* BadgeLedger.swift in Sources */,
+ 				572FED91B243434E9BA0740B /* StreakLog.swift in Sources */,
+ 				BADE00010000000000000B0B /* BadgeView.swift in Sources */,

@@ -1,0 +1,46 @@
+[
+  {
+    "name": "Ruby Winged Crest sculpted front and matching rear.006",
+    "role": "surface"
+  },
+  {
+    "name": "Ruby Winged Crest continuous silver_edge.006",
+    "role": "silver_edge"
+  },
+  {
+    "name": "Planar metal crystal settings.029",
+    "role": "surface"
+  },
+  {
+    "name": "Straight metal setting walls.029",
+    "role": "silver_edge"
+  },
+  {
+    "name": "Crown ruby.006",
+    "role": "CrestGem_Ruby"
+  },
+  {
+    "name": "Long ruby crystal.006",
+    "role": "CrestGem_Ruby"
+  },
+  {
+    "name": "Lower ruby.006",
+    "role": "CrestGem_Ruby"
+  },
+  {
+    "name": "Suspended ruby 380.006",
+    "role": "CrestGem_Ruby"
+  },
+  {
+    "name": "Suspended ruby 644.006",
+    "role": "CrestGem_Ruby"
+  },
+  {
+    "name": "Lower inset ruby 416.006",
+    "role": "CrestGem_Ruby"
+  },
+  {
+    "name": "Lower inset ruby 608.006",
+    "role": "CrestGem_Ruby"
+  }
+]

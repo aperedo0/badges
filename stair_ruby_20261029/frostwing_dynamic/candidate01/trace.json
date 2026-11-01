@@ -1,0 +1,38 @@
+{
+  "name": "Frostwing Crystal",
+  "reference_size": [
+    1254,
+    1254
+  ],
+  "reference_bounds": [
+    [
+      55.49,
+      72.44
+    ],
+    [
+      1197.5,
+      1113.56
+    ]
+  ],
+  "reference_scale": 0.005253957276778854,
+  "reference_center": [
+    626.495,
+    593.0
+  ],
+  "front_triangles": 45356,
+  "wall_triangles": 15640,
+  "total_triangles": 106352,
+  "bounds_min": [
+    -3.0000358748271094,
+    -2.4549999999999996,
+    -0.3486802603613911
+  ],
+  "bounds_max": [
+    3.0000358748271094,
+    3.015,
+    0.3486802603613911
+  ],
+  "preview_size": 1,
+  "preview_lift": 0,
+  "method": "Reference contours, curved sculpted relief, continuous edge walls, matching sculpted rear"
+}

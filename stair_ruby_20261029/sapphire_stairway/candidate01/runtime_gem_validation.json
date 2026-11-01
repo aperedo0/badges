@@ -1,0 +1,47 @@
+{
+  "gems": {
+    "/Crest/Relief_6": {
+      "maximumCoefficientErrorInNanounits": 119,
+      "planes": 20,
+      "reflectionPlanes": 20
+    },
+    "/Crest/Relief_7": {
+      "maximumCoefficientErrorInNanounits": 119,
+      "planes": 20,
+      "reflectionPlanes": 20
+    },
+    "/Crest/Relief_8": {
+      "maximumCoefficientErrorInNanounits": 119,
+      "planes": 20,
+      "reflectionPlanes": 20
+    },
+    "/Crest/Relief_9": {
+      "maximumCoefficientErrorInNanounits": 119,
+      "planes": 20,
+      "reflectionPlanes": 20
+    },
+    "/Crest/Relief_10": {
+      "maximumCoefficientErrorInNanounits": 119,
+      "planes": 25,
+      "reflectionPlanes": 25
+    },
+    "/Crest/Relief_11": {
+      "maximumCoefficientErrorInNanounits": 119,
+      "planes": 25,
+      "reflectionPlanes": 25
+    },
+    "/Crest/Relief_12": {
+      "maximumCoefficientErrorInNanounits": 119,
+      "planes": 25,
+      "reflectionPlanes": 25
+    },
+    "/Crest/Relief_13": {
+      "maximumCoefficientErrorInNanounits": 119,
+      "planes": 25,
+      "reflectionPlanes": 25
+    }
+  },
+  "no_appearance_textures": true,
+  "actual_renderer_convexity_passed": true,
+  "reflection_convexity_passed": true
+}

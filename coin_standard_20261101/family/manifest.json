@@ -1,0 +1,86 @@
+[
+  {
+    "name": "EmeraldArcher",
+    "selection": "emeraldArcher",
+    "dataset": "Badge3DPreviewEmeraldArcher",
+    "preview_asset": "/Users/antonioperedo/Desktop/badges/emerald_trophy_20261025/preview/ScreenTime/SupportingFiles/Assets.xcassets/Badge3DPreviewEmeraldArcher.dataset/coin.usdz",
+    "original_sha256": "ad3bb3ecfe7f6706a6f891318b71a4803bdc5eb47f51fc6a86d69c7992fa5e3d"
+  },
+  {
+    "name": "EmeraldSprout",
+    "selection": "emeraldSprout",
+    "dataset": "Badge3DPreviewEmeraldSprout",
+    "preview_asset": "/Users/antonioperedo/Desktop/badges/emerald_trophy_20261025/preview/ScreenTime/SupportingFiles/Assets.xcassets/Badge3DPreviewEmeraldSprout.dataset/coin.usdz",
+    "original_sha256": "fbbf4ae4eafb9a85f8a817f94f047720beb48629bc3799efeea63b8d20a875fd"
+  },
+  {
+    "name": "EmeraldTrophy",
+    "selection": "emeraldTrophy",
+    "dataset": "Badge3DPreviewEmeraldTrophy",
+    "preview_asset": "/Users/antonioperedo/Desktop/badges/emerald_trophy_20261025/preview/ScreenTime/SupportingFiles/Assets.xcassets/Badge3DPreviewEmeraldTrophy.dataset/coin.usdz",
+    "original_sha256": "55ffe2135d6f4eff3569a5f1332b538b7b27609aa171b92814424f05783e447c"
+  },
+  {
+    "name": "GoldenSands",
+    "selection": "goldenSands",
+    "dataset": "Badge3DPreviewGoldenSands",
+    "preview_asset": "/Users/antonioperedo/Desktop/badges/emerald_trophy_20261025/preview/ScreenTime/SupportingFiles/Assets.xcassets/Badge3DPreviewGoldenSands.dataset/coin.usdz",
+    "original_sha256": "b49f588211d721200f881b77e5ba68577c6a351b98a5ed2e13344633119e81bd"
+  },
+  {
+    "name": "IslandSunset",
+    "selection": "islandSunset",
+    "dataset": "Badge3DPreviewIslandSunset",
+    "preview_asset": "/Users/antonioperedo/Desktop/badges/emerald_trophy_20261025/preview/ScreenTime/SupportingFiles/Assets.xcassets/Badge3DPreviewIslandSunset.dataset/coin.usdz",
+    "original_sha256": "85d896234aae56101f3f7ebea8f8d651fed62b1fee5baffb39eb7c2ae70a693a"
+  },
+  {
+    "name": "LightningCompass",
+    "selection": "lightningCompass",
+    "dataset": "Badge3DPreviewLightningCompass",
+    "preview_asset": "/Users/antonioperedo/Desktop/badges/emerald_trophy_20261025/preview/ScreenTime/SupportingFiles/Assets.xcassets/Badge3DPreviewLightningCompass.dataset/coin.usdz",
+    "original_sha256": "c81291d47a35022004ccfcbe77a5c8de9c5e1e156063711f77beaeb5dba04955"
+  },
+  {
+    "name": "StarAscent",
+    "selection": "starAscent",
+    "dataset": "Badge3DPreviewStarAscent",
+    "preview_asset": "/Users/antonioperedo/Desktop/badges/emerald_trophy_20261025/preview/ScreenTime/SupportingFiles/Assets.xcassets/Badge3DPreviewStarAscent.dataset/coin.usdz",
+    "original_sha256": "cbf43504d5be9ee4bf11b11fdfdb733ef2ea6e160d9906cfed7fa5e32fa6d3be"
+  },
+  {
+    "name": "SunrisePath",
+    "selection": "sunrisePath",
+    "dataset": "Badge3DPreviewSunrisePath",
+    "preview_asset": "/Users/antonioperedo/Desktop/badges/emerald_trophy_20261025/preview/ScreenTime/SupportingFiles/Assets.xcassets/Badge3DPreviewSunrisePath.dataset/coin.usdz",
+    "original_sha256": "4a6cef969761dfb3a02ed521b6fa864cc51cddf402bbcdfc2b11606165e17d20"
+  },
+  {
+    "name": "TealSands",
+    "selection": "tealSands",
+    "dataset": "Badge3DPreviewTealSands",
+    "preview_asset": "/Users/antonioperedo/Desktop/badges/emerald_trophy_20261025/preview/ScreenTime/SupportingFiles/Assets.xcassets/Badge3DPreviewTealSands.dataset/coin.usdz",
+    "original_sha256": "d8b651a74cad0cf5b000b0ee6152ebf4b701f9f9aa3c3600c84ddff17ce3e153"
+  },
+  {
+    "name": "TorchSunburst",
+    "selection": "torchSunburst",
+    "dataset": "Badge3DPreviewTorchSunburst",
+    "preview_asset": "/Users/antonioperedo/Desktop/badges/emerald_trophy_20261025/preview/ScreenTime/SupportingFiles/Assets.xcassets/Badge3DPreviewTorchSunburst.dataset/coin.usdz",
+    "original_sha256": "a0575a64e643408511664bf1f460962328ccaec2f52153b15fa53bcb564b07b9"
+  },
+  {
+    "name": "WaterDrop",
+    "selection": "waterDrop",
+    "dataset": "Badge3DPreviewWaterDrop",
+    "preview_asset": "/Users/antonioperedo/Desktop/badges/emerald_trophy_20261025/preview/ScreenTime/SupportingFiles/Assets.xcassets/Badge3DPreviewWaterDrop.dataset/coin.usdz",
+    "original_sha256": "8eb96d005686a3fe31a4b2d415341d9fcbc1b366e0f840c2bcaf1eee73d5b3d2"
+  },
+  {
+    "name": "ZenBalance",
+    "selection": "zenBalance",
+    "dataset": "Badge3DPreviewZenBalance",
+    "preview_asset": "/Users/antonioperedo/Desktop/badges/emerald_trophy_20261025/preview/ScreenTime/SupportingFiles/Assets.xcassets/Badge3DPreviewZenBalance.dataset/coin.usdz",
+    "original_sha256": "721b1705623870dfbaa9830ee28266fc254a43b52b96d005af2d78a1a37793c3"
+  }
+]

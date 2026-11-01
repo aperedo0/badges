@@ -1,0 +1,38 @@
+{
+  "name": "ZenBalance",
+  "mesh_count": 5,
+  "rim_width_factor": 0.8,
+  "whole_coin_depth_factor": 0.7,
+  "inner_radius": 2.419999892146004,
+  "outer_radius": 2.896000098446122,
+  "shell_depth": 0.6510000050067901,
+  "closed_shell": true,
+  "matches_live_blender": true,
+  "preserved_materials_textures_uv_topology": true,
+  "arkit_validation_passed": true,
+  "sha256": "22a5dcfdfa42ec19fbbcae1da415b471781eb945e87e2b5780029a303a3d14cb",
+  "before_bounds": [
+    [
+      -3.015000104904175,
+      -3.015000104904175,
+      -0.6430000066757202
+    ],
+    [
+      3.015000104904175,
+      3.015000104904175,
+      0.31299999356269836
+    ]
+  ],
+  "after_bounds": [
+    [
+      -2.8960000839233397,
+      -2.8960000839233397,
+      -0.4501000046730041
+    ],
+    [
+      2.8960000839233397,
+      2.8960000839233397,
+      0.21909999549388884
+    ]
+  ]
+}

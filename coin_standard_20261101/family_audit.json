@@ -1,0 +1,686 @@
+[
+  {
+    "dataset": "Badge3DPreviewEmeraldArcher",
+    "source": "/Users/antonioperedo/Desktop/badges/emerald_trophy_20261025/preview/ScreenTime/SupportingFiles/Assets.xcassets/Badge3DPreviewEmeraldArcher.dataset/coin.usdz",
+    "shell_path": "/Badge/Casing___smooth_rounded_outer_edge/Casing___smooth_rounded_outer_edge_mobile_geometry",
+    "points": 12288,
+    "profile": [
+      [
+        2.42,
+        -0.52
+      ],
+      [
+        2.42,
+        0.19
+      ],
+      [
+        2.485,
+        -0.63
+      ],
+      [
+        2.485,
+        0.3
+      ],
+      [
+        2.945,
+        -0.63
+      ],
+      [
+        2.945,
+        0.3
+      ],
+      [
+        3.015,
+        -0.56
+      ],
+      [
+        3.015,
+        0.23
+      ]
+    ],
+    "radial_min": 2.419999892146004,
+    "radial_max": 3.0150001230576526,
+    "z_min": -0.6299999952316284,
+    "z_max": 0.30000001192092896,
+    "model_bounds": [
+      [
+        -3.015000104904175,
+        -3.015000104904175,
+        -0.7289999723434448
+      ],
+      [
+        3.015000104904175,
+        3.015000104904175,
+        0.39899998903274536
+      ]
+    ],
+    "sha256": "ad3bb3ecfe7f6706a6f891318b71a4803bdc5eb47f51fc6a86d69c7992fa5e3d"
+  },
+  {
+    "dataset": "Badge3DPreviewEmeraldSprout",
+    "source": "/Users/antonioperedo/Desktop/badges/emerald_trophy_20261025/preview/ScreenTime/SupportingFiles/Assets.xcassets/Badge3DPreviewEmeraldSprout.dataset/coin.usdz",
+    "shell_path": "/Badge/Casing___smooth_rounded_outer_edge/Casing___smooth_rounded_outer_edge_mobile_geometry",
+    "points": 12288,
+    "profile": [
+      [
+        2.42,
+        -0.52
+      ],
+      [
+        2.42,
+        0.19
+      ],
+      [
+        2.485,
+        -0.63
+      ],
+      [
+        2.485,
+        0.3
+      ],
+      [
+        2.945,
+        -0.63
+      ],
+      [
+        2.945,
+        0.3
+      ],
+      [
+        3.015,
+        -0.56
+      ],
+      [
+        3.015,
+        0.23
+      ]
+    ],
+    "radial_min": 2.419999892146004,
+    "radial_max": 3.0150001230576526,
+    "z_min": -0.6299999952316284,
+    "z_max": 0.30000001192092896,
+    "model_bounds": [
+      [
+        -3.015000104904175,
+        -3.015000104904175,
+        -0.672308087348938
+      ],
+      [
+        3.015000104904175,
+        3.015000104904175,
+        0.3423081040382385
+      ]
+    ],
+    "sha256": "fbbf4ae4eafb9a85f8a817f94f047720beb48629bc3799efeea63b8d20a875fd"
+  },
+  {
+    "dataset": "Badge3DPreviewEmeraldTrophy",
+    "source": "/Users/antonioperedo/Desktop/badges/emerald_trophy_20261025/preview/ScreenTime/SupportingFiles/Assets.xcassets/Badge3DPreviewEmeraldTrophy.dataset/coin.usdz",
+    "shell_path": "/Badge/Casing___smooth_rounded_outer_edge/Casing___smooth_rounded_outer_edge_mobile_geometry",
+    "points": 12288,
+    "profile": [
+      [
+        2.42,
+        -0.52
+      ],
+      [
+        2.42,
+        0.19
+      ],
+      [
+        2.485,
+        -0.63
+      ],
+      [
+        2.485,
+        0.3
+      ],
+      [
+        2.945,
+        -0.63
+      ],
+      [
+        2.945,
+        0.3
+      ],
+      [
+        3.015,
+        -0.56
+      ],
+      [
+        3.015,
+        0.23
+      ]
+    ],
+    "radial_min": 2.419999892146004,
+    "radial_max": 3.0150001230576526,
+    "z_min": -0.6299999952316284,
+    "z_max": 0.30000001192092896,
+    "model_bounds": [
+      [
+        -3.015000104904175,
+        -3.015000104904175,
+        -0.6852572560310364
+      ],
+      [
+        3.015000104904175,
+        3.015000104904175,
+        0.3552572727203369
+      ]
+    ],
+    "sha256": "55ffe2135d6f4eff3569a5f1332b538b7b27609aa171b92814424f05783e447c"
+  },
+  {
+    "dataset": "Badge3DPreviewGoldenSands",
+    "source": "/Users/antonioperedo/Desktop/badges/emerald_trophy_20261025/preview/ScreenTime/SupportingFiles/Assets.xcassets/Badge3DPreviewGoldenSands.dataset/coin.usdz",
+    "shell_path": "/Badge/Casing___smooth_rounded_outer_edge/Casing___smooth_rounded_outer_edge_mobile_geometry",
+    "points": 12288,
+    "profile": [
+      [
+        2.42,
+        -0.52
+      ],
+      [
+        2.42,
+        0.19
+      ],
+      [
+        2.485,
+        -0.63
+      ],
+      [
+        2.485,
+        0.3
+      ],
+      [
+        2.945,
+        -0.63
+      ],
+      [
+        2.945,
+        0.3
+      ],
+      [
+        3.015,
+        -0.56
+      ],
+      [
+        3.015,
+        0.23
+      ]
+    ],
+    "radial_min": 2.419999892146004,
+    "radial_max": 3.0150001230576526,
+    "z_min": -0.6299999952316284,
+    "z_max": 0.30000001192092896,
+    "model_bounds": [
+      [
+        -3.015000104904175,
+        -3.015000104904175,
+        -0.8037494421005249
+      ],
+      [
+        3.015000104904175,
+        3.015000104904175,
+        0.47374945878982544
+      ]
+    ],
+    "sha256": "b49f588211d721200f881b77e5ba68577c6a351b98a5ed2e13344633119e81bd"
+  },
+  {
+    "dataset": "Badge3DPreviewIslandSunset",
+    "source": "/Users/antonioperedo/Desktop/badges/emerald_trophy_20261025/preview/ScreenTime/SupportingFiles/Assets.xcassets/Badge3DPreviewIslandSunset.dataset/coin.usdz",
+    "shell_path": "/Badge/Casing___smooth_rounded_outer_edge/Casing___smooth_rounded_outer_edge_mobile_geometry",
+    "points": 12288,
+    "profile": [
+      [
+        2.42,
+        -0.52
+      ],
+      [
+        2.42,
+        0.19
+      ],
+      [
+        2.485,
+        -0.63
+      ],
+      [
+        2.485,
+        0.3
+      ],
+      [
+        2.945,
+        -0.63
+      ],
+      [
+        2.945,
+        0.3
+      ],
+      [
+        3.015,
+        -0.56
+      ],
+      [
+        3.015,
+        0.23
+      ]
+    ],
+    "radial_min": 2.419999892146004,
+    "radial_max": 3.0150001230576526,
+    "z_min": -0.6299999952316284,
+    "z_max": 0.30000001192092896,
+    "model_bounds": [
+      [
+        -3.015000104904175,
+        -3.015000104904175,
+        -0.699999988079071
+      ],
+      [
+        3.015000104904175,
+        3.015000104904175,
+        0.3700000047683716
+      ]
+    ],
+    "sha256": "85d896234aae56101f3f7ebea8f8d651fed62b1fee5baffb39eb7c2ae70a693a"
+  },
+  {
+    "dataset": "Badge3DPreviewLightningCompass",
+    "source": "/Users/antonioperedo/Desktop/badges/emerald_trophy_20261025/preview/ScreenTime/SupportingFiles/Assets.xcassets/Badge3DPreviewLightningCompass.dataset/coin.usdz",
+    "shell_path": "/Badge/Casing___smooth_rounded_outer_edge/Casing___smooth_rounded_outer_edge_mobile_geometry",
+    "points": 12288,
+    "profile": [
+      [
+        2.42,
+        -0.52
+      ],
+      [
+        2.42,
+        0.19
+      ],
+      [
+        2.485,
+        -0.63
+      ],
+      [
+        2.485,
+        0.3
+      ],
+      [
+        2.945,
+        -0.63
+      ],
+      [
+        2.945,
+        0.3
+      ],
+      [
+        3.015,
+        -0.56
+      ],
+      [
+        3.015,
+        0.23
+      ]
+    ],
+    "radial_min": 2.419999892146004,
+    "radial_max": 3.0150001230576526,
+    "z_min": -0.6299999952316284,
+    "z_max": 0.30000001192092896,
+    "model_bounds": [
+      [
+        -3.015000104904175,
+        -3.015000104904175,
+        -0.6299999952316284
+      ],
+      [
+        3.015000104904175,
+        3.015000104904175,
+        0.30000001192092896
+      ]
+    ],
+    "sha256": "c81291d47a35022004ccfcbe77a5c8de9c5e1e156063711f77beaeb5dba04955"
+  },
+  {
+    "dataset": "Badge3DPreviewStarAscent",
+    "source": "/Users/antonioperedo/Desktop/badges/emerald_trophy_20261025/preview/ScreenTime/SupportingFiles/Assets.xcassets/Badge3DPreviewStarAscent.dataset/coin.usdz",
+    "shell_path": "/Badge/Casing___smooth_rounded_outer_edge/Casing___smooth_rounded_outer_edge_mobile_geometry",
+    "points": 12288,
+    "profile": [
+      [
+        2.42,
+        -0.52
+      ],
+      [
+        2.42,
+        0.19
+      ],
+      [
+        2.485,
+        -0.63
+      ],
+      [
+        2.485,
+        0.3
+      ],
+      [
+        2.945,
+        -0.63
+      ],
+      [
+        2.945,
+        0.3
+      ],
+      [
+        3.015,
+        -0.56
+      ],
+      [
+        3.015,
+        0.23
+      ]
+    ],
+    "radial_min": 2.419999892146004,
+    "radial_max": 3.0150001230576526,
+    "z_min": -0.6299999952316284,
+    "z_max": 0.30000001192092896,
+    "model_bounds": [
+      [
+        -3.015000104904175,
+        -3.015000104904175,
+        -0.7599999904632568
+      ],
+      [
+        3.015000104904175,
+        3.015000104904175,
+        0.4300000071525574
+      ]
+    ],
+    "sha256": "cbf43504d5be9ee4bf11b11fdfdb733ef2ea6e160d9906cfed7fa5e32fa6d3be"
+  },
+  {
+    "dataset": "Badge3DPreviewSunrisePath",
+    "source": "/Users/antonioperedo/Desktop/badges/emerald_trophy_20261025/preview/ScreenTime/SupportingFiles/Assets.xcassets/Badge3DPreviewSunrisePath.dataset/coin.usdz",
+    "shell_path": "/Badge/Casing___smooth_rounded_outer_edge/Casing___smooth_rounded_outer_edge_mobile_geometry",
+    "points": 12288,
+    "profile": [
+      [
+        2.42,
+        -0.52
+      ],
+      [
+        2.42,
+        0.19
+      ],
+      [
+        2.485,
+        -0.63
+      ],
+      [
+        2.485,
+        0.3
+      ],
+      [
+        2.945,
+        -0.63
+      ],
+      [
+        2.945,
+        0.3
+      ],
+      [
+        3.015,
+        -0.56
+      ],
+      [
+        3.015,
+        0.23
+      ]
+    ],
+    "radial_min": 2.419999892146004,
+    "radial_max": 3.0150001230576526,
+    "z_min": -0.6299999952316284,
+    "z_max": 0.30000001192092896,
+    "model_bounds": [
+      [
+        -3.015000104904175,
+        -3.015000104904175,
+        -0.6832869648933411
+      ],
+      [
+        3.015000104904175,
+        3.015000104904175,
+        0.3532869815826416
+      ]
+    ],
+    "sha256": "4a6cef969761dfb3a02ed521b6fa864cc51cddf402bbcdfc2b11606165e17d20"
+  },
+  {
+    "dataset": "Badge3DPreviewTealSands",
+    "source": "/Users/antonioperedo/Desktop/badges/emerald_trophy_20261025/preview/ScreenTime/SupportingFiles/Assets.xcassets/Badge3DPreviewTealSands.dataset/coin.usdz",
+    "shell_path": "/Badge/Casing___smooth_rounded_outer_edge/Casing___smooth_rounded_outer_edge_mobile_geometry",
+    "points": 12288,
+    "profile": [
+      [
+        2.42,
+        -0.52
+      ],
+      [
+        2.42,
+        0.19
+      ],
+      [
+        2.485,
+        -0.63
+      ],
+      [
+        2.485,
+        0.3
+      ],
+      [
+        2.945,
+        -0.63
+      ],
+      [
+        2.945,
+        0.3
+      ],
+      [
+        3.015,
+        -0.56
+      ],
+      [
+        3.015,
+        0.23
+      ]
+    ],
+    "radial_min": 2.419999892146004,
+    "radial_max": 3.0150001230576526,
+    "z_min": -0.6299999952316284,
+    "z_max": 0.30000001192092896,
+    "model_bounds": [
+      [
+        -3.015000104904175,
+        -3.015000104904175,
+        -0.8037494421005249
+      ],
+      [
+        3.015000104904175,
+        3.015000104904175,
+        0.47374945878982544
+      ]
+    ],
+    "sha256": "d8b651a74cad0cf5b000b0ee6152ebf4b701f9f9aa3c3600c84ddff17ce3e153"
+  },
+  {
+    "dataset": "Badge3DPreviewTorchSunburst",
+    "source": "/Users/antonioperedo/Desktop/badges/emerald_trophy_20261025/preview/ScreenTime/SupportingFiles/Assets.xcassets/Badge3DPreviewTorchSunburst.dataset/coin.usdz",
+    "shell_path": "/Badge/Casing___smooth_rounded_outer_edge/Casing___smooth_rounded_outer_edge_mobile_geometry",
+    "points": 12288,
+    "profile": [
+      [
+        2.42,
+        -0.52
+      ],
+      [
+        2.42,
+        0.19
+      ],
+      [
+        2.485,
+        -0.63
+      ],
+      [
+        2.485,
+        0.3
+      ],
+      [
+        2.945,
+        -0.63
+      ],
+      [
+        2.945,
+        0.3
+      ],
+      [
+        3.015,
+        -0.56
+      ],
+      [
+        3.015,
+        0.23
+      ]
+    ],
+    "radial_min": 2.419999892146004,
+    "radial_max": 3.0150001230576526,
+    "z_min": -0.6299999952316284,
+    "z_max": 0.30000001192092896,
+    "model_bounds": [
+      [
+        -3.015000104904175,
+        -3.015000104904175,
+        -0.6669999957084656
+      ],
+      [
+        3.015000104904175,
+        3.015000104904175,
+        0.3370000123977661
+      ]
+    ],
+    "sha256": "a0575a64e643408511664bf1f460962328ccaec2f52153b15fa53bcb564b07b9"
+  },
+  {
+    "dataset": "Badge3DPreviewWaterDrop",
+    "source": "/Users/antonioperedo/Desktop/badges/emerald_trophy_20261025/preview/ScreenTime/SupportingFiles/Assets.xcassets/Badge3DPreviewWaterDrop.dataset/coin.usdz",
+    "shell_path": "/Badge/Casing___smooth_rounded_outer_edge/Casing___smooth_rounded_outer_edge_mobile_geometry",
+    "points": 12288,
+    "profile": [
+      [
+        2.42,
+        -0.52
+      ],
+      [
+        2.42,
+        0.19
+      ],
+      [
+        2.485,
+        -0.63
+      ],
+      [
+        2.485,
+        0.3
+      ],
+      [
+        2.945,
+        -0.63
+      ],
+      [
+        2.945,
+        0.3
+      ],
+      [
+        3.015,
+        -0.56
+      ],
+      [
+        3.015,
+        0.23
+      ]
+    ],
+    "radial_min": 2.419999892146004,
+    "radial_max": 3.0150001230576526,
+    "z_min": -0.6299999952316284,
+    "z_max": 0.30000001192092896,
+    "model_bounds": [
+      [
+        -3.015000104904175,
+        -3.015000104904175,
+        -0.9900000095367432
+      ],
+      [
+        3.015000104904175,
+        3.015000104904175,
+        0.6600000262260437
+      ]
+    ],
+    "sha256": "8eb96d005686a3fe31a4b2d415341d9fcbc1b366e0f840c2bcaf1eee73d5b3d2"
+  },
+  {
+    "dataset": "Badge3DPreviewZenBalance",
+    "source": "/Users/antonioperedo/Desktop/badges/emerald_trophy_20261025/preview/ScreenTime/SupportingFiles/Assets.xcassets/Badge3DPreviewZenBalance.dataset/coin.usdz",
+    "shell_path": "/Badge/Casing___smooth_rounded_outer_edge/Casing___smooth_rounded_outer_edge_mobile_geometry",
+    "points": 12288,
+    "profile": [
+      [
+        2.42,
+        -0.52
+      ],
+      [
+        2.42,
+        0.19
+      ],
+      [
+        2.485,
+        -0.63
+      ],
+      [
+        2.485,
+        0.3
+      ],
+      [
+        2.945,
+        -0.63
+      ],
+      [
+        2.945,
+        0.3
+      ],
+      [
+        3.015,
+        -0.56
+      ],
+      [
+        3.015,
+        0.23
+      ]
+    ],
+    "radial_min": 2.419999892146004,
+    "radial_max": 3.0150001230576526,
+    "z_min": -0.6299999952316284,
+    "z_max": 0.30000001192092896,
+    "model_bounds": [
+      [
+        -3.015000104904175,
+        -3.015000104904175,
+        -0.6430000066757202
+      ],
+      [
+        3.015000104904175,
+        3.015000104904175,
+        0.31299999356269836
+      ]
+    ],
+    "sha256": "721b1705623870dfbaa9830ee28266fc254a43b52b96d005af2d78a1a37793c3"
+  }
+]

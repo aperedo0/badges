@@ -1,0 +1,38 @@
+{
+  "name": "EmeraldSprout",
+  "mesh_count": 22,
+  "rim_width_factor": 0.8,
+  "whole_coin_depth_factor": 0.7,
+  "inner_radius": 2.419999892146004,
+  "outer_radius": 2.896000098446122,
+  "shell_depth": 0.6510000050067901,
+  "closed_shell": true,
+  "matches_live_blender": true,
+  "preserved_materials_textures_uv_topology": true,
+  "arkit_validation_passed": true,
+  "sha256": "97129c73a399f82212b3a6064110019eac5529c0db6ac532599113ba3b00248e",
+  "before_bounds": [
+    [
+      -3.015000104904175,
+      -3.015000104904175,
+      -0.672308087348938
+    ],
+    [
+      3.015000104904175,
+      3.015000104904175,
+      0.3423081040382385
+    ]
+  ],
+  "after_bounds": [
+    [
+      -2.8960000839233397,
+      -2.8960000839233397,
+      -0.47061566114425657
+    ],
+    [
+      2.8960000839233397,
+      2.8960000839233397,
+      0.23961567282676696
+    ]
+  ]
+}

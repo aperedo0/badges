@@ -1,0 +1,58 @@
+[
+  {
+    "name": "Sapphire Stairway sculpted front and matching rear.001",
+    "role": "surface"
+  },
+  {
+    "name": "Sapphire Stairway continuous silver_edge.001",
+    "role": "silver_edge"
+  },
+  {
+    "name": "Sapphire Stairway continuous gold_edge.001",
+    "role": "gold_edge"
+  },
+  {
+    "name": "Sapphire Stairway continuous blue_edge.001",
+    "role": "blue_edge"
+  },
+  {
+    "name": "Planar metal crystal settings.024",
+    "role": "surface"
+  },
+  {
+    "name": "Straight metal setting walls.024",
+    "role": "gold_edge"
+  },
+  {
+    "name": "North sapphire.001",
+    "role": "CrestGem_Sapphire"
+  },
+  {
+    "name": "West sapphire.001",
+    "role": "CrestGem_Sapphire"
+  },
+  {
+    "name": "East sapphire.001",
+    "role": "CrestGem_Sapphire"
+  },
+  {
+    "name": "South sapphire.001",
+    "role": "CrestGem_Sapphire"
+  },
+  {
+    "name": "Star upper.001",
+    "role": "CrestGem_Sapphire"
+  },
+  {
+    "name": "Star right.001",
+    "role": "CrestGem_Sapphire"
+  },
+  {
+    "name": "Star lower.001",
+    "role": "CrestGem_Sapphire"
+  },
+  {
+    "name": "Star left.001",
+    "role": "CrestGem_Sapphire"
+  }
+]

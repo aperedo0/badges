@@ -1,0 +1,38 @@
+{
+  "name": "TorchSunburst",
+  "mesh_count": 5,
+  "rim_width_factor": 0.8,
+  "whole_coin_depth_factor": 0.7,
+  "inner_radius": 2.419999892146004,
+  "outer_radius": 2.896000098446122,
+  "shell_depth": 0.6510000050067901,
+  "closed_shell": true,
+  "matches_live_blender": true,
+  "preserved_materials_textures_uv_topology": true,
+  "arkit_validation_passed": true,
+  "sha256": "8d848920a55b35d0a12a448bf379bf49dffdeef1d4752ebbd40f3caee1184d12",
+  "before_bounds": [
+    [
+      -3.015000104904175,
+      -3.015000104904175,
+      -0.6669999957084656
+    ],
+    [
+      3.015000104904175,
+      3.015000104904175,
+      0.3370000123977661
+    ]
+  ],
+  "after_bounds": [
+    [
+      -2.8960000839233397,
+      -2.8960000839233397,
+      -0.4668999969959259
+    ],
+    [
+      2.8960000839233397,
+      2.8960000839233397,
+      0.23590000867843627
+    ]
+  ]
+}

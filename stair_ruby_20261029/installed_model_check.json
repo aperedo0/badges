@@ -1,0 +1,14 @@
+{
+  "sapphire_stairway": {
+    "cached_model_exists": true,
+    "matches_working_model": true
+  },
+  "ruby_wings": {
+    "cached_model_exists": true,
+    "matches_working_model": true
+  },
+  "frostwing_dynamic": {
+    "cached_model_exists": true,
+    "matches_working_model": true
+  }
+}

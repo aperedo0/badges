@@ -1,0 +1,17 @@
+Source: /Users/antonioperedo/Library/Developer/XcodeBuildMCP/workspaces/badges-aa906adb7ece/logs/com.antonioperedo.badgestudio.preview_2026-10-29T19-56-19-801Z_helperpid36600_ownerpid952_731a6a5e.log
+Badge gem attached: CrestGem_Sapphire mesh=Relief_6 mirror=false
+Badge gem attached: CrestGem_Sapphire mesh=Relief_7 mirror=false
+Badge gem attached: CrestGem_Sapphire mesh=Relief_8 mirror=false
+Badge gem attached: CrestGem_Sapphire mesh=Relief_9 mirror=false
+Badge gem attached: CrestGem_Sapphire mesh=Relief_10 mirror=false
+Badge gem attached: CrestGem_Sapphire mesh=Relief_11 mirror=false
+Badge gem attached: CrestGem_Sapphire mesh=Relief_12 mirror=false
+Badge gem attached: CrestGem_Sapphire mesh=Relief_13 mirror=false
+Badge gem attached: CrestGem_Sapphire mesh=Relief_6 mirror=true
+Badge gem attached: CrestGem_Sapphire mesh=Relief_7 mirror=true
+Badge gem attached: CrestGem_Sapphire mesh=Relief_8 mirror=true
+Badge gem attached: CrestGem_Sapphire mesh=Relief_9 mirror=true
+Badge gem attached: CrestGem_Sapphire mesh=Relief_10 mirror=true
+Badge gem attached: CrestGem_Sapphire mesh=Relief_11 mirror=true
+Badge gem attached: CrestGem_Sapphire mesh=Relief_12 mirror=true
+Badge gem attached: CrestGem_Sapphire mesh=Relief_13 mirror=true

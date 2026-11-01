@@ -1,0 +1,38 @@
+{
+  "scope": "Emerald Sprout only",
+  "closed_rim": true,
+  "mesh_count": 22,
+  "rim_band_factor": 0.75,
+  "coin_depth_factor": 0.7,
+  "outer_radius": 2.8662500922932397,
+  "inner_radius": 2.419999892146004,
+  "shell_depth": 0.6510000050067901,
+  "model_before_bounds": [
+    [
+      -3.015000104904175,
+      -3.015000104904175,
+      -0.672308087348938
+    ],
+    [
+      3.015000104904175,
+      3.015000104904175,
+      0.3423081040382385
+    ]
+  ],
+  "model_after_bounds": [
+    [
+      -2.866250078678131,
+      -2.866250078678131,
+      -0.47061566114425657
+    ],
+    [
+      2.866250078678131,
+      2.866250078678131,
+      0.23961567282676696
+    ]
+  ],
+  "preserved_materials_textures_uv_topology": true,
+  "matches_inspected_blender_points": true,
+  "arkit_validation_passed": true,
+  "sha256": "725ff85beff285bfc46bc701f3d0373553f22a4810246481dc7f9728f8c5b996"
+}

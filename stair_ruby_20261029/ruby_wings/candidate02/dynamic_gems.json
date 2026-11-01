@@ -1,0 +1,65 @@
+[
+  {
+    "name": "Crown ruby",
+    "role": "CrestGem_Ruby",
+    "convex": true,
+    "closed": true,
+    "planes": 20,
+    "triangles": 32,
+    "appearance_textures": false
+  },
+  {
+    "name": "Long ruby crystal",
+    "role": "CrestGem_Ruby",
+    "convex": true,
+    "closed": true,
+    "planes": 19,
+    "triangles": 24,
+    "appearance_textures": false
+  },
+  {
+    "name": "Lower ruby",
+    "role": "CrestGem_Ruby",
+    "convex": true,
+    "closed": true,
+    "planes": 20,
+    "triangles": 32,
+    "appearance_textures": false
+  },
+  {
+    "name": "Suspended ruby 380",
+    "role": "CrestGem_Ruby",
+    "convex": true,
+    "closed": true,
+    "planes": 20,
+    "triangles": 32,
+    "appearance_textures": false
+  },
+  {
+    "name": "Suspended ruby 644",
+    "role": "CrestGem_Ruby",
+    "convex": true,
+    "closed": true,
+    "planes": 20,
+    "triangles": 32,
+    "appearance_textures": false
+  },
+  {
+    "name": "Lower inset ruby 416",
+    "role": "CrestGem_Ruby",
+    "convex": true,
+    "closed": true,
+    "planes": 15,
+    "triangles": 24,
+    "appearance_textures": false
+  },
+  {
+    "name": "Lower inset ruby 608",
+    "role": "CrestGem_Ruby",
+    "convex": true,
+    "closed": true,
+    "planes": 15,
+    "triangles": 24,
+    "appearance_textures": false
+  }
+]

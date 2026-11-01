@@ -1,0 +1,19 @@
+{
+  "sapphire_stairway": {
+    "name": "Sapphire Stairway",
+    "selection": "sapphireStairway",
+    "reference": "/Users/antonioperedo/Desktop/badges/stair_ruby_20261029/sapphire_stairway/reference.png",
+    "original_reference": "/Users/antonioperedo/Downloads/ChatGPT Image Oct 29, 2026, 11_31_14 AM.png"
+  },
+  "ruby_wings": {
+    "name": "Ruby Winged Crest",
+    "selection": "rubyWingedCrest",
+    "reference": "/Users/antonioperedo/Desktop/badges/stair_ruby_20261029/ruby_wings/reference.png",
+    "original_reference": "/Users/antonioperedo/Downloads/ruby.png"
+  },
+  "frostwing_dynamic": {
+    "name": "Frostwing Crystal",
+    "selection": "frostwingCrystal",
+    "reference": "/Users/antonioperedo/Desktop/badges/stair_ruby_20261029/frostwing_dynamic/reference.png"
+  }
+}
