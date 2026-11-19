@@ -1,0 +1,66 @@
+{
+  "name": "Sapphire Teardrop",
+  "mockup": "/Users/antonioperedo/Desktop/badges/camp_owl_mountain_sapphire_20261111/sapphire_teardrop/reference.png",
+  "mockup_box": [
+    626,
+    138,
+    1027
+  ],
+  "build_front": "/Users/antonioperedo/Desktop/badges/camp_owl_mountain_sapphire_20261111/sapphire_teardrop/candidate07/app/front.png",
+  "build_box": [
+    603,
+    359.54016057146663,
+    778.7956727346159
+  ],
+  "regions": [
+    [
+      "upper point",
+      -0.18,
+      0,
+      0.18,
+      0.3
+    ],
+    [
+      "left facets",
+      -0.36,
+      0.25,
+      0,
+      0.82
+    ],
+    [
+      "right facets",
+      0,
+      0.25,
+      0.36,
+      0.82
+    ],
+    [
+      "central table",
+      -0.22,
+      0.32,
+      0.22,
+      0.8
+    ],
+    [
+      "bottom facets",
+      -0.31,
+      0.72,
+      0.31,
+      0.98
+    ],
+    [
+      "gold frame",
+      -0.4,
+      0.4,
+      -0.23,
+      0.85
+    ]
+  ],
+  "poses": {
+    "early_turn": "/Users/antonioperedo/Desktop/badges/camp_owl_mountain_sapphire_20261111/sapphire_teardrop/candidate07/app/early_turn.png",
+    "side_left": "/Users/antonioperedo/Desktop/badges/camp_owl_mountain_sapphire_20261111/sapphire_teardrop/candidate07/app/side_left.png",
+    "back": "/Users/antonioperedo/Desktop/badges/camp_owl_mountain_sapphire_20261111/sapphire_teardrop/candidate07/app/back.png",
+    "side_right": "/Users/antonioperedo/Desktop/badges/camp_owl_mountain_sapphire_20261111/sapphire_teardrop/candidate07/app/side_right.png"
+  },
+  "intended": []
+}

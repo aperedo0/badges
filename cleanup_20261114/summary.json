@@ -1,0 +1,12 @@
+{
+  "checked_files": 19613,
+  "removed_files": 1283,
+  "removed_bytes": 1289522461,
+  "consolidated_identical_files": 1266,
+  "consolidated_logical_duplicate_bytes": 5485474108,
+  "free_bytes_now": 4461834240,
+  "unstaged_other_paths_preserved": 7186,
+  "time": "2026-11-14T13:17:23.051350",
+  "core_assets_preserved": 2536,
+  "ruby_versions_verified": true
+}

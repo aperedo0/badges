@@ -1,0 +1,44 @@
+{
+  "source_size": [
+    2172,
+    724
+  ],
+  "source_core_bbox": [
+    544,
+    274,
+    680,
+    411
+  ],
+  "physical_crop": [
+    53.779864426755125,
+    122.47162539448746,
+    2131.8256245899292,
+    683.7477106150311
+  ],
+  "crop_aspect": 3.702359346642468,
+  "physical_aspect": 3.702359346642468,
+  "inner_canvas": [
+    2016,
+    736
+  ],
+  "mapped_core_radii": [
+    0.16688756650516118,
+    0.16811468096475796
+  ],
+  "mapped_center": [
+    -1.18,
+    -1.38
+  ],
+  "wrong_aspect_and_stretch_negative_controls_rejected": true,
+  "canvas": [
+    2048,
+    768
+  ],
+  "physical_height_min": -0.0047999999147787225,
+  "physical_height_max": 0.0002975764143624049,
+  "normal_tilt_max": 19.99999999996763,
+  "roughness_min": 0.7281237478795393,
+  "roughness_max": 0.8319996253048142,
+  "provenance": "Built in generation of photographic rough timber anatomy after owner rejected stylized grain. Intrinsic chart with matched roughness and inferred shallow cavity relief. Physical aspect rectification; restrained relief inferred from cavity contrast, not a measured scan.",
+  "no_emission": true
+}

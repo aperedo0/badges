@@ -1,0 +1,56 @@
+{
+  "complete_mesh_count": 6,
+  "triangles": 32844,
+  "all_used_images_packed_and_match_usdz": true,
+  "images": [
+    {
+      "name": "field_roughness.png.026",
+      "sha256": "a152290cdfc57537a31b1df5e69c296a228fbe336f91f145ddf4fbf60a5b3fcb"
+    },
+    {
+      "name": "field_color.png.026",
+      "sha256": "c251d1801bb1687d59185ab18f73590123f87841cfb813f8e62a3d5151d65a91"
+    },
+    {
+      "name": "metal_emission.png.026",
+      "sha256": "1e4586bb38a1285ab1cdd94b848c3de259d0b03e3ac0c3ea1fe158f57ab557ce"
+    },
+    {
+      "name": "metal_roughness.png.026",
+      "sha256": "86b6ad72189b8372ea2cd45df7c20436a26c0341eefa5029716e4b271a6dc837"
+    },
+    {
+      "name": "pearl_emission.png.011",
+      "sha256": "7418e68cadeb5873156522537d26947f2f3ce96f313ab7ebb3d50234676401df"
+    },
+    {
+      "name": "wave_color.png.011",
+      "sha256": "85ed17b7de56f402d81fa03df525e2d2e7fa87fb942cdfabe714f8b29aa5459c"
+    },
+    {
+      "name": "wave_roughness.png.011",
+      "sha256": "d161797ca629d2fca7088a573c14dcd3b8c342e9f7e17da496ea0776b4cf0fc0"
+    },
+    {
+      "name": "metal_color.png.026",
+      "sha256": "42d0672dc9f7f218d4746719679d75b00762ca6163f2f7cfcbce533e44f89b4f"
+    },
+    {
+      "name": "field_emission.png.026",
+      "sha256": "0ffe55a817021d4f0d3c68b0b3012381ecc10d6eb3e841f76dbe7080802a497e"
+    },
+    {
+      "name": "pearl_color.png.011",
+      "sha256": "be7e1f10d398a32598171e52c362d42aa90f375a74a1366e10fdd80066217912"
+    },
+    {
+      "name": "pearl_roughness.png.011",
+      "sha256": "f7d21964d1dffbe04e07d6d1314e3e94d622ac1300714f6003600560dccaf9dc"
+    },
+    {
+      "name": "wave_emission.png.011",
+      "sha256": "d88f025dbe8b478c9296a8e89c6a64383f3dcb68fe007f663308e62009df832d"
+    }
+  ],
+  "usdz_unchanged_sha256": "c45df0f16a674751062e29d8914e66c26cc74f5e918e1b99dd814654c309c97c"
+}

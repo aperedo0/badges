@@ -1,0 +1,32 @@
+{
+  "pine_left_lower": {
+    "visible_samples": 614,
+    "p90_source_pixel_distance": 15.00987404727825,
+    "fraction_over_six_pixels": 0.3127035830618892
+  },
+  "pine_left_middle": {
+    "visible_samples": 560,
+    "p90_source_pixel_distance": 8.754153728163411,
+    "fraction_over_six_pixels": 0.18571428571428572
+  },
+  "pine_left_top": {
+    "visible_samples": 516,
+    "p90_source_pixel_distance": 4.795228972562404,
+    "fraction_over_six_pixels": 0.06976744186046512
+  },
+  "pine_right_lower": {
+    "visible_samples": 522,
+    "p90_source_pixel_distance": 18.26257381185955,
+    "fraction_over_six_pixels": 0.5842911877394636
+  },
+  "pine_right_middle": {
+    "visible_samples": 433,
+    "p90_source_pixel_distance": 18.011002815005767,
+    "fraction_over_six_pixels": 0.48036951501154734
+  },
+  "pine_right_top": {
+    "visible_samples": 520,
+    "p90_source_pixel_distance": 12.941859910491713,
+    "fraction_over_six_pixels": 0.23846153846153847
+  }
+}

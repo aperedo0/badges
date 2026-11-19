@@ -1,0 +1,8 @@
+{
+  "accepted": false,
+  "purpose": "Single direct texture versus geometry test for persistent red flame pinholes",
+  "geometry_normals_uv_materials_identical_to": "candidate18",
+  "only_change": "Red enamel emission image replaced by a uniform RGB155,16,8 image. Other layers are unchanged.",
+  "evidence": "Candidate18 pinhole_pixel_diagnosis.json maps three dark native pixels to valid red enamel triangles with continuous texture samples and finite face normals. Normal smoothing and old cell fixes did not remove these spots.",
+  "next": "Compare native front at pixels593,531;597,531;595,541. If spots remain, inspect renderer/geometry; if gone, inspect texture fitting or zero channels. This flat version is a diagnosis, not final appearance."
+}

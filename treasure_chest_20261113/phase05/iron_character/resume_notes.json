@@ -1,0 +1,40 @@
+{
+  "starting_checkpoint": "11_restored_pigment/master.blend",
+  "selected": "14_edge_review/master.blend",
+  "actual_shader_change": "Invert only the existing new scale boundary bump; original hammer and fine pit layers exact",
+  "lighting": "Narrow linked warm reflection sources aimed at existing upper and lower bevels, in isolated review scene only. Environmental fill 0.35.",
+  "verified_observations": [
+    "Strong wide sources brighten the face too much",
+    "A small lower reflection reveals existing lower chips that otherwise reflect a black environment",
+    "A wide source span is needed to reveal both front bays",
+    "Shallow recessed marking interpretation reads less raised than the starting marking layer"
+  ],
+  "rejected": [
+    "12_exposed_facets: negligible visible gain",
+    "edge1000 and lower30: excessive face brightening",
+    "edge_fine: incomplete reflection coverage across both bays",
+    "Wider tilted lower emitter makes the bright wedge larger",
+    "Long tilted reflection emitter crossing floor and prop height ranges"
+  ],
+  "diagnostic_basis": "Previously verified AOVs show actual functioning metallic, oxide, wear, roughness and relief signals. No duplicate AOV system was built.",
+  "limits": [
+    "Reference has sharper irregular overlapping scale",
+    "Some broad existing pits remain rounder",
+    "Warm edge highlights still differ in exact shape from reference",
+    "Other materials in context are temporary placeholders"
+  ],
+  "main_scene_lighting_unchanged": true,
+  "geometry_and_source_maps_unchanged": true,
+  "environment": "edge_floor",
+  "additional_aov_passes_verified": [
+    "Iron_ExposedBlend",
+    "Iron_OxideCoverage",
+    "Iron_RoughBare",
+    "Iron_GeometryNormal",
+    "Iron_FinalNormal",
+    "Iron_SurfaceAlpha"
+  ],
+  "aov_finding": "At the abrupt lower highlight end, enlarged passes show no matching wear, oxide, roughness or normal boundary.",
+  "lighting_correction": "The extended lower emitter had a vertical long axis component 0.32025 and corner heights spanning about negative 3.48 to negative 1.55. Leveling its long axis keeps all corners between negative 2.521 and negative 2.514, clear of floor and rim. The sharp wedge disappears in the actual corrected renders.",
+  "diagnostic_workflow_reused": true
+}

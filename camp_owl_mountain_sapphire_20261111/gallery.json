@@ -1,0 +1,34 @@
+[
+  {
+    "slug": "campfire_night",
+    "key": "campfireNight",
+    "name": "Campfire Night",
+    "candidate": "candidate26",
+    "dataset": "Badge3DPreviewCampfireNight",
+    "asset": "/Users/antonioperedo/Desktop/badges/emerald_trophy_20261025/preview/ScreenTime/SupportingFiles/Assets.xcassets/Badge3DPreviewCampfireNight.dataset/coin.usdz"
+  },
+  {
+    "slug": "amber_owl",
+    "key": "amberOwl",
+    "name": "Amber Owl",
+    "candidate": "candidate03",
+    "dataset": "Badge3DPreviewAmberOwl",
+    "asset": "/Users/antonioperedo/Desktop/badges/emerald_trophy_20261025/preview/ScreenTime/SupportingFiles/Assets.xcassets/Badge3DPreviewAmberOwl.dataset/coin.usdz"
+  },
+  {
+    "slug": "radiant_mountain",
+    "key": "radiantMountainLaurel",
+    "name": "Radiant Mountain",
+    "candidate": "candidate08",
+    "dataset": "Badge3DPreviewRadiantMountainLaurel",
+    "asset": "/Users/antonioperedo/Desktop/badges/emerald_trophy_20261025/preview/ScreenTime/SupportingFiles/Assets.xcassets/Badge3DPreviewRadiantMountainLaurel.dataset/coin.usdz"
+  },
+  {
+    "slug": "sapphire_teardrop",
+    "key": "sapphireTeardrop",
+    "name": "Sapphire Teardrop",
+    "candidate": "candidate27",
+    "dataset": "Badge3DPreviewSapphireTeardrop",
+    "asset": "/Users/antonioperedo/Desktop/badges/emerald_trophy_20261025/preview/ScreenTime/SupportingFiles/Assets.xcassets/Badge3DPreviewSapphireTeardrop.dataset/coin.usdz"
+  }
+]

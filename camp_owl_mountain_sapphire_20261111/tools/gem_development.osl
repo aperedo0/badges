@@ -1,0 +1,58 @@
+/* Same three hit physical optics as the existing private preview sapphire profile.
+   This is calculated per camera ray; no appearance image or reference is sampled. */
+float fshare(float c, float ni, float nt) {
+ float ci=clamp(c,0,1);float s=(ni/nt)*(ni/nt)*(1-ci*ci);if(s>=1)return 1;
+ float ct=sqrt(1-s);float a=(ni*ci-nt*ct)/(ni*ci+nt*ct);float b=(ni*ct-nt*ci)/(ni*ct+nt*ci);return .5*(a*a+b*b);
+}
+color studio(vector d, string sharpfile, string tentfile, int withtent) {
+ vector w=normalize(transform("object","world",d));
+ /* Blender world X,Y,Z becomes app X,Z,-Y, then the existing half turn. */
+ vector e=vector(-w[0],w[2],w[1]);
+ float u=.5+atan2(e[0],-e[2])/(2*M_PI);float v=1-(.5-asin(clamp(e[1],-1,1))/M_PI);
+ color a=texture(sharpfile,u,v,"swrap","periodic","twrap","clamp","interp","bilinear");a=clamp(a,color(0),color(24));
+ if(withtent){color b=texture(tentfile,u,v,"swrap","periodic","twrap","clamp","interp","bilinear");a+=clamp(b,color(0),color(3))*1.4576831;}
+ return a;
+}
+int findexit(point p, vector d, vector planes[], float offsets[], output float distance, output vector norm) {
+ int found=0;distance=1e30;norm=vector(0);
+ for(int k=0;k<arraylength(planes);k++) {
+  float approach=dot(planes[k],d);if(approach<=.0001)continue;
+  float gap=offsets[k]-dot(planes[k],vector(p));if(gap<=-.00001)continue;
+  float t=max(gap,0)/approach;if(t<distance){found=1;distance=t;norm=planes[k];}
+ }
+ return found;
+}
+shader badge_sapphire_development(
+ string SharpMap="SHARP_FILE",
+ string TentMap="TENT_FILE",
+ float Density=DENSITY_VALUE,
+ float Exposure=.28,
+ output closure color BSDF=0)
+{
+ vector planes[PLANE_COUNT]={PLANE_VECTORS};
+ float offsets[PLANE_COUNT]={PLANE_OFFSETS};
+ point pos=transform("world","object",P);
+ vector inc=-normalize(transform("world","object",I));
+ normal on=normalize(transform("world","object",N));vector n=vector(on);
+ if(dot(n,inc)>0)n=-n;
+ float f=fshare(dot(n,-inc),1,1.77);
+ color result=f*studio(reflect(inc,n),SharpMap,TentMap,0);
+ color weight=color(1-f);vector dir=refract(inc,n,1/1.77);
+ color extinction=color(8,4.3503597,.2)*Density;
+ for(int hit=0;hit<3;hit++) {
+  float distance;vector fn;
+  if(!findexit(pos,dir,planes,offsets,distance,fn))break;
+  pos+=dir*distance;
+  weight*=color(exp(-extinction[0]*distance),exp(-extinction[1]*distance),exp(-extinction[2]*distance));
+  float share=fshare(dot(fn,dir),1.77,1);
+  if(share<1) {
+   vector green=refract(dir,-fn,1.77);vector red=refract(dir,-fn,1.76);vector blue=refract(dir,-fn,1.79);
+   if(dot(red,red)<1e-15)red=green;if(dot(blue,blue)<1e-15)blue=green;
+   color r=studio(red,SharpMap,TentMap,1);color g=studio(green,SharpMap,TentMap,1);color b=studio(blue,SharpMap,TentMap,1);
+   result+=weight*(1-share)*color(r[0],g[1],b[2]);
+  }
+  weight*=share;dir=reflect(dir,fn);
+ }
+ result+=weight*studio(dir,SharpMap,TentMap,1);
+ BSDF=emission()*result*Exposure;
+}

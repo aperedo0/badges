@@ -1,0 +1,11 @@
+import bpy,numpy as np,json,shutil,math
+from pathlib import Path
+from mathutils import Matrix
+D=Path(__file__).resolve().parent;A=D/'08_bevel_facets';C=D/'09_surface_character';C.mkdir(exist_ok=True);bpy.ops.wm.open_mainfile(filepath=str(A/'master.blend'));sc=bpy.data.scenes['Test plank master'];o=sc.objects['Lab Chest Lower Rim'];o.data=o.data.copy();m=o.data.materials[0].copy();o.data.materials[0]=m;m.name='Forged iron refined weathered surface'
+for name in ['Lab Chest Rail Rivet 1 3','Lab Chest Rail Rivet 1 4']:sc.objects[name].data.materials[0]=m
+m.node_tree.nodes['Independent shallow fractured scale markings'].inputs['Distance'].default_value=.00055
+me=o.data;co=np.empty((len(me.vertices),3),np.float32);me.vertices.foreach_get('co',co.ravel());R=np.array(Matrix.Rotation(math.radians(32),3,'Y'));q=np.c_[co[:,0],co[:,2],-co[:,1]]@R;older=np.load(D/'07_integrated/edge_geometry.npz');co[q[:,1]<-1.96]=older['after'].astype(np.float32)[q[:,1]<-1.96];attr=me.attributes['Damaged bevel facet wear'];v=np.empty(len(me.vertices),np.float32);attr.data.foreach_get('value',v);v[q[:,1]<-1.96]=0;attr.data.foreach_set('value',v)
+original=older['before'];rest=np.c_[original[:,0],original[:,2],-original[:,1]]@R;protected=np.zeros(len(me.vertices),bool)
+for xc in [-1.1255,1.1255]:protected|=np.hypot(rest[:,0]-xc,rest[:,1]+1.96575)<=.105
+edge=((rest[:,1]>-1.81)|(rest[:,1]<-2.12))&(rest[:,2]>1.70)&(~protected);edge&=np.linalg.norm(co-original,axis=1)>1e-6;co[~edge]=original[~edge];me.vertices.foreach_set('co',co.ravel());me.update();np.savez_compressed(C/'edge_geometry.npz',before=original,after=co,changed_vertices=edge,local_before=rest,local_after=np.c_[co[:,0],co[:,2],-co[:,1]]@R);assert np.array_equal(co[~edge],original[~edge])
+bpy.context.preferences.filepaths.save_version=0;bpy.ops.wm.save_as_mainfile(filepath=str(C/'master.blend'),compress=True);a=json.loads((A/'design.json').read_text());a.update(mesh=me.name,material=m.name,source='08_bevel_facets with lower bevel facet regression reverted',mark_height_distance=.00055,upper_bevel_facets_only=True,non_edge_vertices_exact=True,changed_vertices=int(edge.sum()));(C/'design.json').write_text(json.dumps(a,indent=2));print('Combined retained surface changes; exact protected geometry')

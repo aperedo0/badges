@@ -1,0 +1,70 @@
+[
+  {
+    "asset": "Metal055A",
+    "page": "https://ambientcg.com/view?id=Metal055A",
+    "download": "https://ambientcg.com/get?file=Metal055A_1K-PNG.zip",
+    "license": "CC0 1.0",
+    "license_url": "https://docs.ambientcg.com/license/",
+    "archive_sha256": "9db9e009a1418d4f2310296dbfe16f0643cf27fce49ba2f5dba0f1d756ce8860",
+    "files": [
+      "Metal055A_1K-PNG_Color.png",
+      "Metal055A_1K-PNG_Displacement.png",
+      "Metal055A_1K-PNG_Metalness.png",
+      "Metal055A_1K-PNG_NormalGL.png",
+      "Metal055A_1K-PNG_Roughness.png"
+    ]
+  },
+  {
+    "asset": "Metal003",
+    "page": "https://ambientcg.com/view?id=Metal003",
+    "download": "https://ambientcg.com/get?file=Metal003_1K-PNG.zip",
+    "license": "CC0 1.0",
+    "license_url": "https://docs.ambientcg.com/license/",
+    "archive_sha256": "b664c3a54bb5e5fc879bb0f69f0f51e2bfd7925c014ca076c779912a72ef2e50",
+    "files": [
+      "Metal003_1K-PNG_Color.png",
+      "Metal003_1K-PNG_Displacement.png",
+      "Metal003_1K-PNG_Metalness.png",
+      "Metal003_1K-PNG_NormalGL.png",
+      "Metal003_1K-PNG_Roughness.png"
+    ]
+  },
+  {
+    "asset": "Metal025",
+    "page": "https://ambientcg.com/view?id=Metal025",
+    "download": "https://ambientcg.com/get?file=Metal025_1K-PNG.zip",
+    "license": "CC0 1.0",
+    "license_url": "https://docs.ambientcg.com/license/",
+    "archive_sha256": "04f52435040d7d179bef2b3bc9fb0a70f7ebd40d207d4dfcb1a41a623feef4c6",
+    "use": "Physical height and fine roughness only; rusty coloration excluded",
+    "files": [
+      "Metal025_1K-PNG_Displacement.png",
+      "Metal025_1K-PNG_NormalGL.png",
+      "Metal025_1K-PNG_Roughness.png"
+    ]
+  },
+  {
+    "asset": "Hammered and Oxidized Metal Plate Metal 0009",
+    "page": "https://www.texturecan.com/details/57/",
+    "download": "https://www.texturecan.com/downloads/metal_0009/metal_0009_1k_eE9eKX.zip",
+    "license": "CC0 1.0",
+    "license_url": "https://www.texturecan.com/terms/",
+    "archive_sha256": "782e7f9f92dc7642e860b3072ab7eacc5ab9c8ddc0ad1221860645a299b8b11e",
+    "files": [
+      "._metal_0009_ao_1k.jpg",
+      "._metal_0009_color_1k.jpg",
+      "._metal_0009_height_1k.png",
+      "._metal_0009_metallic_1k.jpg",
+      "._metal_0009_normal_directx_1k.png",
+      "._metal_0009_normal_opengl_1k.png",
+      "._metal_0009_roughness_1k.jpg",
+      "metal_0009_ao_1k.jpg",
+      "metal_0009_color_1k.jpg",
+      "metal_0009_height_1k.png",
+      "metal_0009_metallic_1k.jpg",
+      "metal_0009_normal_directx_1k.png",
+      "metal_0009_normal_opengl_1k.png",
+      "metal_0009_roughness_1k.jpg"
+    ]
+  }
+]

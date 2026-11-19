@@ -1,0 +1,17 @@
+{
+  "file": "/Users/antonioperedo/Desktop/badges/treasure_chest_20261113/phase05/iron_fidelity/N_charcoal_scale/master.blend",
+  "target": "Lab Chest Lower Rim",
+  "wood_geometry_hash": "6c52635229763ca44c5b7cf1b842746e0c435463f3925b296fb97f50af05ea80",
+  "iron_geometry_hash": "4cd5156201724d2da3020f6c70faf82ed545813aa9163a11382a46ca6a0fadfc",
+  "original_scene_lighting_preserved": true,
+  "review_scene": "Bottom iron reflection review",
+  "reference_preserved": true,
+  "review_image_shown": true,
+  "only_target_mesh_material_swapped": true,
+  "dirty": false,
+  "saved_file_sha256": "0b0c4e317a443bd9989a37c0ca3d97bd56918b3ecaa30559dca38b0d97f90abc",
+  "image_editors": [
+    "reference.png",
+    "Bottom iron test review.001"
+  ]
+}

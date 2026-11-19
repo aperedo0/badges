@@ -1,0 +1,44 @@
+{
+  "loaded": true,
+  "model_sha256": "890818f91aa508c4836a5fa3fbb1d3e595b855db2a2634b18ab7044db6c7863d",
+  "actual_cached_model": "/Users/antonioperedo/Library/Developer/CoreSimulator/Devices/C18E609E-6C2F-49C4-BCFE-E5D365F4E4E8/data/Containers/Data/Application/B012DE3B-79ED-4D7E-95A9-4B80B334F6BD/tmp/Badge3DPreviewCampfireNight.usdz",
+  "front_header_y": 1413.5,
+  "native_image_size": [
+    1206,
+    2622
+  ],
+  "capture_method": "Native PNG because MCP screenshot is compressed to 368 by 800 JPEG",
+  "gesture_method": "Precise local coordinates because MCP root swipe starts on the badge picker",
+  "poses": {
+    "front": {
+      "target_scroll_points": 0,
+      "actual_scroll_points": 0.0,
+      "header_y": 1413.5
+    },
+    "early_turn": {
+      "target_scroll_points": 68,
+      "actual_scroll_points": 68.0,
+      "header_y": 1209.5
+    },
+    "turn45": {
+      "target_scroll_points": 75.1,
+      "actual_scroll_points": 75.0,
+      "header_y": 1188.5
+    },
+    "side_left": {
+      "target_scroll_points": 94.2528,
+      "actual_scroll_points": 94.33333333333333,
+      "header_y": 1130.5
+    },
+    "back": {
+      "target_scroll_points": 132.5056,
+      "actual_scroll_points": 132.66666666666666,
+      "header_y": 1015.5
+    },
+    "side_right": {
+      "target_scroll_points": 170.7583,
+      "actual_scroll_points": 170.66666666666666,
+      "header_y": 901.5
+    }
+  }
+}

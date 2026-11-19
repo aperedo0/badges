@@ -1,0 +1,130 @@
+[
+  {
+    "name": "Iron_BaseBlack",
+    "type": "COLOR",
+    "source_node": "Blackened conductive iron",
+    "source_socket": "Base Color",
+    "connection": "Actual linked signal"
+  },
+  {
+    "name": "Iron_BaseOxide",
+    "type": "COLOR",
+    "source_node": "Opaque dark oxide and forge scale",
+    "source_socket": "Base Color",
+    "connection": "Actual linked signal"
+  },
+  {
+    "name": "Iron_BaseBare",
+    "type": "COLOR",
+    "source_node": "Exposed iron Filament diagnostic reflectance",
+    "source_socket": "Base Color",
+    "connection": "Actual constant input copied without changing the shader",
+    "constant": [
+      0.5520114302635193,
+      0.5647115111351013,
+      0.5647115111351013,
+      1.0
+    ]
+  },
+  {
+    "name": "Iron_RoughBlack",
+    "type": "VALUE",
+    "source_node": "Blackened conductive iron",
+    "source_socket": "Roughness",
+    "connection": "Actual linked signal"
+  },
+  {
+    "name": "Iron_RoughOxide",
+    "type": "VALUE",
+    "source_node": "Opaque dark oxide and forge scale",
+    "source_socket": "Roughness",
+    "connection": "Actual linked signal"
+  },
+  {
+    "name": "Iron_RoughBare",
+    "type": "VALUE",
+    "source_node": "Exposed iron Filament diagnostic reflectance",
+    "source_socket": "Roughness",
+    "connection": "Actual linked signal"
+  },
+  {
+    "name": "Iron_MetalFe",
+    "type": "VALUE",
+    "source_node": "Exposed iron Filament diagnostic reflectance",
+    "source_socket": "Metallic",
+    "connection": "Actual constant input copied without changing the shader",
+    "constant": 1.0
+  },
+  {
+    "name": "Iron_MetalOxide",
+    "type": "VALUE",
+    "source_node": "Opaque dark oxide and forge scale",
+    "source_socket": "Metallic",
+    "connection": "Actual constant input copied without changing the shader",
+    "constant": 0.0
+  },
+  {
+    "name": "Iron_OxideCoverage",
+    "type": "VALUE",
+    "source_node": "Opaque scale coverage",
+    "source_socket": "Factor",
+    "connection": "Actual linked signal"
+  },
+  {
+    "name": "Iron_ExposedBlend",
+    "type": "VALUE",
+    "source_node": "Localized exposed iron",
+    "source_socket": "Factor",
+    "connection": "Actual linked signal"
+  },
+  {
+    "name": "Iron_FacetWear",
+    "type": "VALUE",
+    "source_node": "Attribute",
+    "source_socket": "Factor",
+    "connection": "Actual linked signal"
+  },
+  {
+    "name": "Iron_MarkHeight",
+    "type": "VALUE",
+    "source_node": "Independent shallow fractured scale markings",
+    "source_socket": "Height",
+    "connection": "Actual linked signal"
+  },
+  {
+    "name": "Iron_FineHeight",
+    "type": "VALUE",
+    "source_node": "fine16.png independent strength",
+    "source_socket": "Height",
+    "connection": "Actual linked signal"
+  },
+  {
+    "name": "Iron_PigmentSource",
+    "type": "VALUE",
+    "source_node": "Character pigment.png",
+    "source_socket": "Color",
+    "connection": "Actual linked signal"
+  },
+  {
+    "name": "Iron_FinalNormal",
+    "type": "COLOR",
+    "source_node": "Blackened conductive iron",
+    "source_socket": "Normal",
+    "connection": "Actual linked signal"
+  },
+  {
+    "name": "Iron_GeometryNormal",
+    "type": "COLOR",
+    "source_node": "Diagnostic actual geometry normal",
+    "source_socket": "True Normal",
+    "connection": "Actual linked signal"
+  },
+  {
+    "name": "Iron_SurfaceAlpha",
+    "type": "VALUE",
+    "source_node": "Blackened conductive iron",
+    "source_socket": "Alpha",
+    "connection": "Actual constant input copied without changing the shader",
+    "constant": 1.0
+  }
+]

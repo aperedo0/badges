@@ -1,0 +1,17 @@
+{
+  "equations": "Same profile10 foil, Fresnel, absorption, four internal bounces and studio maps",
+  "camera": "Measured native perspective, model front +Z transformed to Blender -Y",
+  "cpu_native_mean_absolute_error": [
+    0.005,
+    0.004,
+    0.003
+  ],
+  "final_blender_cpu_mean_absolute_error": [
+    0.01893759446928358,
+    0.014010791910885435,
+    0.006065501389369871
+  ],
+  "light_map_correction": "Blender numeric studio maps saved Non Color to prevent display encoding; OSL uses bottom origin t and explicit sampling of each existing mip.",
+  "ray_convention": "Live OSL ray and facet normal probes match the native model basis",
+  "remaining_difference": "Small differences in AgX implementation, texture filtering and renderer precision. Native preview remains authoritative."
+}

@@ -43,3 +43,9 @@ __pycache__/
 /botanical_match_20261014/*/front_geometry.json
 /botanical_match_20261014/*/calibration.usdz
 /botanical_match_20261014/*/calibration.json
+
+# Working plans stay local
+/plans/
+
+# Blender files stay out of Git (too big for GitHub); back them up to the USB drive
+*.blend

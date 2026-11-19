@@ -1,0 +1,32 @@
+{
+  "complete_mesh_count": 4,
+  "triangles": 88876,
+  "all_used_images_packed_and_match_usdz": true,
+  "images": [
+    {
+      "name": "star_roughness.png",
+      "sha256": "1389c2703f9ceebe43516e3482f35f496dcdc0ae9438b9f775150451ccdec757"
+    },
+    {
+      "name": "surface_color.png",
+      "sha256": "1f21900dc137b1d37b935e3db43a6375ffabba8543aa6d20108812ed8969032f"
+    },
+    {
+      "name": "star_color.png",
+      "sha256": "8d0ce85a933c65ed644f93732eee3dca67f50a094d19ea2ef8194d83a7a1bbf6"
+    },
+    {
+      "name": "star_emission.png",
+      "sha256": "6ccaf950586d5fb47a78e095abee60de969373bcd4e7f49a6968c3086674a634"
+    },
+    {
+      "name": "surface_emission.png",
+      "sha256": "6ba3738743b3036ae7c27621ef22fee5b79ef18ace1276bfa169f8b92f16d193"
+    },
+    {
+      "name": "surface_roughness.png",
+      "sha256": "7c28b5e965cbada41507b3666e54a35132e1047dbb1f974ebaa8369e480bd894"
+    }
+  ],
+  "usdz_unchanged_sha256": "deb3e74f607ba8c4b1613269958e13d0eb29fe3f92c42dc21f8f0693b6dbbd58"
+}

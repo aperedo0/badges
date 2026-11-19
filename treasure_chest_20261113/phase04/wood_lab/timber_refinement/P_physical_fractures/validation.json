@@ -1,0 +1,11 @@
+{
+  "key": "P_physical_fractures",
+  "vertices": 641121,
+  "polygons": 643262,
+  "watertight": true,
+  "original_boundary_vertices_exact": true,
+  "max_recession": 0.062137557841196456,
+  "front_datum_preserved": true,
+  "source_scene_untouched": true,
+  "images_packed": true
+}

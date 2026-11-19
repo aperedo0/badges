@@ -1,0 +1,19 @@
+{
+  "native_recording": true,
+  "model_sha256": "3d4dbb98107a1db5f0c26b785de4062a87b366c8690bc27fec195188cb7e2f79",
+  "local_watchdog_seconds": 16,
+  "process_pid": 41157,
+  "recording_began_epoch": 1794553253.14917,
+  "gesture_began_epoch": 1794553253.954251,
+  "verified_rest_header_y": 1413.5,
+  "video": {
+    "width": 1206,
+    "height": 2622,
+    "duration": "10.640000",
+    "nb_frames": "744"
+  },
+  "recording_stopped": true,
+  "motion_review_pending": false,
+  "reason": "Native local fallback gives a duration limit that separate MCP start and stop calls cannot guarantee during a connection or tool failure",
+  "review_result": "Root inspected actual turn frames and native poses; independent review confirms clean finish, retained blue through rotation and requested gold and liveliness improvement."
+}

@@ -1,0 +1,11 @@
+{
+  "FineGold": {
+    "albedo": [
+      0.83,
+      0.43,
+      0.045
+    ],
+    "metallic": 1,
+    "roughness": 0.26
+  }
+}

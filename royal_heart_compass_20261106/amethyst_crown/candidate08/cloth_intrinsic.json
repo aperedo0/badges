@@ -1,0 +1,16 @@
+{
+  "color": [
+    0.034,
+    0.00065,
+    0.044
+  ],
+  "fiber_noise_scale_texels": [
+    0.5,
+    1.65
+  ],
+  "fiber_noise_weights": [
+    0.1,
+    0.26
+  ],
+  "photographic_appearance_used": false
+}

@@ -1,0 +1,497 @@
+[
+  {
+    "key": "bronze",
+    "title": "Bronze",
+    "origin": "preview",
+    "target": "/Users/antonioperedo/Desktop/badges/emerald_trophy_20261025/preview/ScreenTime/SupportingFiles/Assets.xcassets/Badge3DModelBronze.dataset/bronze_badge_mobile.usdz",
+    "source": "/Users/antonioperedo/Desktop/badges/badge_family_compact_20261106/mobile/bronze_badge_mobile.usdz",
+    "expected_original_sha256": "2e48a10355d7e09ddf1a078adcdb27332c5e74ec58d10e4ad1f3f9a84fea5ba9",
+    "replacement_sha256": "1d3893de626e7520281a82871c316a2d7dc00c4dabc9cc097d69c34b6660fb10"
+  },
+  {
+    "key": "bronze",
+    "title": "Bronze",
+    "origin": "production",
+    "target": "/Users/antonioperedo/Desktop/screen_time/ScreenTime/SupportingFiles/Assets.xcassets/Badge3DModelBronze.dataset/bronze_badge_mobile.usdz",
+    "source": "/Users/antonioperedo/Desktop/badges/badge_family_compact_20261106/mobile/bronze_badge_mobile.usdz",
+    "expected_original_sha256": "2e48a10355d7e09ddf1a078adcdb27332c5e74ec58d10e4ad1f3f9a84fea5ba9",
+    "replacement_sha256": "1d3893de626e7520281a82871c316a2d7dc00c4dabc9cc097d69c34b6660fb10"
+  },
+  {
+    "key": "copper",
+    "title": "Copper",
+    "origin": "preview",
+    "target": "/Users/antonioperedo/Desktop/badges/emerald_trophy_20261025/preview/ScreenTime/SupportingFiles/Assets.xcassets/Badge3DModelCopper.dataset/copper_badge_mobile.usdz",
+    "source": "/Users/antonioperedo/Desktop/badges/badge_family_compact_20261106/mobile/copper_badge_mobile.usdz",
+    "expected_original_sha256": "19c483cdc0064185f47320c90a6bb681c3c3641dbc4911b1b775ef7e1475ae6f",
+    "replacement_sha256": "cdf815ae8f55d4824a62673bfc8b5214d9c835e88cf90c7508ff25f4c7631058"
+  },
+  {
+    "key": "copper",
+    "title": "Copper",
+    "origin": "production",
+    "target": "/Users/antonioperedo/Desktop/screen_time/ScreenTime/SupportingFiles/Assets.xcassets/Badge3DModelCopper.dataset/copper_badge_mobile.usdz",
+    "source": "/Users/antonioperedo/Desktop/badges/badge_family_compact_20261106/mobile/copper_badge_mobile.usdz",
+    "expected_original_sha256": "19c483cdc0064185f47320c90a6bb681c3c3641dbc4911b1b775ef7e1475ae6f",
+    "replacement_sha256": "cdf815ae8f55d4824a62673bfc8b5214d9c835e88cf90c7508ff25f4c7631058"
+  },
+  {
+    "key": "gold",
+    "title": "Gold",
+    "origin": "preview",
+    "target": "/Users/antonioperedo/Desktop/badges/emerald_trophy_20261025/preview/ScreenTime/SupportingFiles/Assets.xcassets/Badge3DModelGold.dataset/gold_badge_mobile.usdz",
+    "source": "/Users/antonioperedo/Desktop/badges/badge_family_compact_20261106/mobile/gold_badge_mobile.usdz",
+    "expected_original_sha256": "260cff06cdff8193727c49cae8525cc2a3e911f7d0b7e8a117866b0c7062e5bb",
+    "replacement_sha256": "0210e9abed7763898911e0e8727e5e8d3593a921953bc68ce8dc645908f9e6cb"
+  },
+  {
+    "key": "gold",
+    "title": "Gold",
+    "origin": "production",
+    "target": "/Users/antonioperedo/Desktop/screen_time/ScreenTime/SupportingFiles/Assets.xcassets/Badge3DModelGold.dataset/gold_badge_mobile.usdz",
+    "source": "/Users/antonioperedo/Desktop/badges/badge_family_compact_20261106/mobile/gold_badge_mobile.usdz",
+    "expected_original_sha256": "260cff06cdff8193727c49cae8525cc2a3e911f7d0b7e8a117866b0c7062e5bb",
+    "replacement_sha256": "0210e9abed7763898911e0e8727e5e8d3593a921953bc68ce8dc645908f9e6cb"
+  },
+  {
+    "key": "iron",
+    "title": "Original Iron",
+    "origin": "preview",
+    "target": "/Users/antonioperedo/Desktop/badges/emerald_trophy_20261025/preview/ScreenTime/SupportingFiles/Assets.xcassets/Badge3DModelIron.dataset/iron_badge_mobile.usdz",
+    "source": "/Users/antonioperedo/Desktop/badges/badge_family_compact_20261106/mobile/original_iron_badge_mobile.usdz",
+    "expected_original_sha256": "0400817c22a28c8402679e639bb6ddc3a3081134a80d99128c3efb907b8c34d3",
+    "replacement_sha256": "597b02e21fdf8e4f9933d4d97ba1374aae78ba4b4d6fdd6a041a477e2310daf4"
+  },
+  {
+    "key": "silver",
+    "title": "Silver",
+    "origin": "preview",
+    "target": "/Users/antonioperedo/Desktop/badges/emerald_trophy_20261025/preview/ScreenTime/SupportingFiles/Assets.xcassets/Badge3DModelSilver.dataset/silver_badge_mobile.usdz",
+    "source": "/Users/antonioperedo/Desktop/badges/badge_family_compact_20261106/mobile/silver_badge_mobile.usdz",
+    "expected_original_sha256": "bddcce62bad9d3ad013b79514d3708f07f6c2c6a8949492b16e1e4a9de50acbd",
+    "replacement_sha256": "0934e42a320ca6e3412246509f43fcf44512f398291a1252d71647705f434733"
+  },
+  {
+    "key": "silver",
+    "title": "Silver",
+    "origin": "production",
+    "target": "/Users/antonioperedo/Desktop/screen_time/ScreenTime/SupportingFiles/Assets.xcassets/Badge3DModelSilver.dataset/silver_badge_mobile.usdz",
+    "source": "/Users/antonioperedo/Desktop/badges/badge_family_compact_20261106/mobile/silver_badge_mobile.usdz",
+    "expected_original_sha256": "bddcce62bad9d3ad013b79514d3708f07f6c2c6a8949492b16e1e4a9de50acbd",
+    "replacement_sha256": "0934e42a320ca6e3412246509f43fcf44512f398291a1252d71647705f434733"
+  },
+  {
+    "key": "auroraMountain",
+    "title": "Aurora Mountain",
+    "origin": "preview",
+    "target": "/Users/antonioperedo/Desktop/badges/emerald_trophy_20261025/preview/ScreenTime/SupportingFiles/Assets.xcassets/Badge3DPreviewAuroraMountain.dataset/coin.usdz",
+    "source": "/Users/antonioperedo/Desktop/badges/badge_family_compact_20261106/mobile/aurora_mountain_badge_mobile.usdz",
+    "expected_original_sha256": "13ba8517f5f94b2695b64eb5035c011d41ed01ce3e0fa807911b521745ca33e9",
+    "replacement_sha256": "8492201b63a4191fb5d86aa34c6218a765b37bc34b630081e38bb5d235d847e0"
+  },
+  {
+    "key": "auroraMountain",
+    "title": "Aurora Mountain",
+    "origin": "production",
+    "target": "/Users/antonioperedo/Desktop/screen_time/ScreenTime/SupportingFiles/Assets.xcassets/Badge3DPreviewAuroraMountain.dataset/aurora_mountain_badge_mobile.usdz",
+    "source": "/Users/antonioperedo/Desktop/badges/badge_family_compact_20261106/mobile/aurora_mountain_badge_mobile.usdz",
+    "expected_original_sha256": "13ba8517f5f94b2695b64eb5035c011d41ed01ce3e0fa807911b521745ca33e9",
+    "replacement_sha256": "8492201b63a4191fb5d86aa34c6218a765b37bc34b630081e38bb5d235d847e0"
+  },
+  {
+    "key": "battleSteel",
+    "title": "Battle Steel",
+    "origin": "preview",
+    "target": "/Users/antonioperedo/Desktop/badges/emerald_trophy_20261025/preview/ScreenTime/SupportingFiles/Assets.xcassets/Badge3DPreviewBattleSteel.dataset/coin.usdz",
+    "source": "/Users/antonioperedo/Desktop/badges/badge_family_compact_20261106/mobile/battle_steel_badge_mobile.usdz",
+    "expected_original_sha256": "3729b12e8fba92035042f6e01ef3fc449d7ec673a816a36775456a90c306a037",
+    "replacement_sha256": "60fdfe092ee4582fd4c58b37c43fa84935cef6842d3b67108fda24e658873c08"
+  },
+  {
+    "key": "battleSteel",
+    "title": "Battle Steel",
+    "origin": "production",
+    "target": "/Users/antonioperedo/Desktop/screen_time/ScreenTime/SupportingFiles/Assets.xcassets/Badge3DPreviewBattleSteel.dataset/battle_steel_badge_mobile.usdz",
+    "source": "/Users/antonioperedo/Desktop/badges/badge_family_compact_20261106/mobile/battle_steel_badge_mobile.usdz",
+    "expected_original_sha256": "3729b12e8fba92035042f6e01ef3fc449d7ec673a816a36775456a90c306a037",
+    "replacement_sha256": "60fdfe092ee4582fd4c58b37c43fa84935cef6842d3b67108fda24e658873c08"
+  },
+  {
+    "key": "bronzePhoenix",
+    "title": "Bronze Phoenix",
+    "origin": "preview",
+    "target": "/Users/antonioperedo/Desktop/badges/emerald_trophy_20261025/preview/ScreenTime/SupportingFiles/Assets.xcassets/Badge3DPreviewBronzePhoenix.dataset/coin.usdz",
+    "source": "/Users/antonioperedo/Desktop/badges/badge_family_compact_20261106/mobile/bronze_phoenix_badge_mobile.usdz",
+    "expected_original_sha256": "bbcc490975f53353fadcc3dc457e953fb966b259a1007b4c9d18d47f55f9369d",
+    "replacement_sha256": "0af5996d869e8ca7b96845ba9d5e799a641ebf648558965f01d9427f03b288ae"
+  },
+  {
+    "key": "bronzePhoenix",
+    "title": "Bronze Phoenix",
+    "origin": "production",
+    "target": "/Users/antonioperedo/Desktop/screen_time/ScreenTime/SupportingFiles/Assets.xcassets/Badge3DPreviewBronzePhoenix.dataset/phoenix_badge_mobile.usdz",
+    "source": "/Users/antonioperedo/Desktop/badges/badge_family_compact_20261106/mobile/bronze_phoenix_badge_mobile.usdz",
+    "expected_original_sha256": "bbcc490975f53353fadcc3dc457e953fb966b259a1007b4c9d18d47f55f9369d",
+    "replacement_sha256": "0af5996d869e8ca7b96845ba9d5e799a641ebf648558965f01d9427f03b288ae"
+  },
+  {
+    "key": "celestialOrbit",
+    "title": "Celestial Orbit",
+    "origin": "preview",
+    "target": "/Users/antonioperedo/Desktop/badges/emerald_trophy_20261025/preview/ScreenTime/SupportingFiles/Assets.xcassets/Badge3DPreviewCelestialOrbit.dataset/coin.usdz",
+    "source": "/Users/antonioperedo/Desktop/badges/badge_family_compact_20261106/mobile/celestial_orbit_badge_mobile.usdz",
+    "expected_original_sha256": "c048534dd688eb84d53724ba6178532530978a38fdeb8f8dc67b46254e654c82",
+    "replacement_sha256": "8065590e44eb5b122ea023a5c8b90e657826913536fec971b61317af7cfceef9"
+  },
+  {
+    "key": "celestialOrbit",
+    "title": "Celestial Orbit",
+    "origin": "production",
+    "target": "/Users/antonioperedo/Desktop/screen_time/ScreenTime/SupportingFiles/Assets.xcassets/Badge3DPreviewCelestialOrbit.dataset/celestial_orbit_badge_mobile.usdz",
+    "source": "/Users/antonioperedo/Desktop/badges/badge_family_compact_20261106/mobile/celestial_orbit_badge_mobile.usdz",
+    "expected_original_sha256": "c048534dd688eb84d53724ba6178532530978a38fdeb8f8dc67b46254e654c82",
+    "replacement_sha256": "8065590e44eb5b122ea023a5c8b90e657826913536fec971b61317af7cfceef9"
+  },
+  {
+    "key": "crescentOcean",
+    "title": "Crescent Ocean",
+    "origin": "preview",
+    "target": "/Users/antonioperedo/Desktop/badges/emerald_trophy_20261025/preview/ScreenTime/SupportingFiles/Assets.xcassets/Badge3DPreviewCrescentOcean.dataset/coin.usdz",
+    "source": "/Users/antonioperedo/Desktop/badges/badge_family_compact_20261106/mobile/crescent_ocean_badge_mobile.usdz",
+    "expected_original_sha256": "9f8b386b77f815eb75527da162412580ff345e9ab5ff7ffacbfaa3b68450e071",
+    "replacement_sha256": "f3ee72f97431a0d20f4e84ddb1e83ac7eeab46b3cc57f92d9a8da2fdf9e5beff"
+  },
+  {
+    "key": "crescentOcean",
+    "title": "Crescent Ocean",
+    "origin": "production",
+    "target": "/Users/antonioperedo/Desktop/screen_time/ScreenTime/SupportingFiles/Assets.xcassets/Badge3DPreviewCrescentOcean.dataset/crescent_ocean_badge_mobile.usdz",
+    "source": "/Users/antonioperedo/Desktop/badges/badge_family_compact_20261106/mobile/crescent_ocean_badge_mobile.usdz",
+    "expected_original_sha256": "9f8b386b77f815eb75527da162412580ff345e9ab5ff7ffacbfaa3b68450e071",
+    "replacement_sha256": "f3ee72f97431a0d20f4e84ddb1e83ac7eeab46b3cc57f92d9a8da2fdf9e5beff"
+  },
+  {
+    "key": "emberForge",
+    "title": "Ember Forge",
+    "origin": "preview",
+    "target": "/Users/antonioperedo/Desktop/badges/emerald_trophy_20261025/preview/ScreenTime/SupportingFiles/Assets.xcassets/Badge3DPreviewEmberForge.dataset/coin.usdz",
+    "source": "/Users/antonioperedo/Desktop/badges/badge_family_compact_20261106/mobile/ember_forge_badge_mobile.usdz",
+    "expected_original_sha256": "9026afdfb81d71490084a7ecba84d6e6fc2e9a8577a9b326e9b0798e0d038921",
+    "replacement_sha256": "b9b642895a8fc0a0fc83d2281af6377dbd1f02c84a70dab0808c25f3640a111c"
+  },
+  {
+    "key": "emberForge",
+    "title": "Ember Forge",
+    "origin": "production",
+    "target": "/Users/antonioperedo/Desktop/screen_time/ScreenTime/SupportingFiles/Assets.xcassets/Badge3DPreviewEmberForge.dataset/ember_forge_badge_mobile.usdz",
+    "source": "/Users/antonioperedo/Desktop/badges/badge_family_compact_20261106/mobile/ember_forge_badge_mobile.usdz",
+    "expected_original_sha256": "9026afdfb81d71490084a7ecba84d6e6fc2e9a8577a9b326e9b0798e0d038921",
+    "replacement_sha256": "b9b642895a8fc0a0fc83d2281af6377dbd1f02c84a70dab0808c25f3640a111c"
+  },
+  {
+    "key": "emeraldArcher",
+    "title": "Emerald Archer",
+    "origin": "preview",
+    "target": "/Users/antonioperedo/Desktop/badges/emerald_trophy_20261025/preview/ScreenTime/SupportingFiles/Assets.xcassets/Badge3DPreviewEmeraldArcher.dataset/coin.usdz",
+    "source": "/Users/antonioperedo/Desktop/badges/badge_family_compact_20261106/mobile/emerald_archer_badge_mobile.usdz",
+    "expected_original_sha256": "b80d96f546d76237ed3eeedc41614f8ffe21b86f1e55eb721b8e6afae0c353c2",
+    "replacement_sha256": "6941651371b922b416d27929fdc6857744b8bf39d9ea7268e73eb3a2194c4017"
+  },
+  {
+    "key": "emeraldArcher",
+    "title": "Emerald Archer",
+    "origin": "production",
+    "target": "/Users/antonioperedo/Desktop/screen_time/ScreenTime/SupportingFiles/Assets.xcassets/Badge3DModelEmeraldArcher.dataset/emerald_archer_badge_mobile.usdz",
+    "source": "/Users/antonioperedo/Desktop/badges/badge_family_compact_20261106/mobile/emerald_archer_badge_mobile.usdz",
+    "expected_original_sha256": "b80d96f546d76237ed3eeedc41614f8ffe21b86f1e55eb721b8e6afae0c353c2",
+    "replacement_sha256": "6941651371b922b416d27929fdc6857744b8bf39d9ea7268e73eb3a2194c4017"
+  },
+  {
+    "key": "emeraldSprout",
+    "title": "Emerald Sprout",
+    "origin": "preview",
+    "target": "/Users/antonioperedo/Desktop/badges/emerald_trophy_20261025/preview/ScreenTime/SupportingFiles/Assets.xcassets/Badge3DPreviewEmeraldSprout.dataset/coin.usdz",
+    "source": "/Users/antonioperedo/Desktop/badges/badge_family_compact_20261106/mobile/emerald_sprout_badge_mobile.usdz",
+    "expected_original_sha256": "97129c73a399f82212b3a6064110019eac5529c0db6ac532599113ba3b00248e",
+    "replacement_sha256": "90462a9ebb1c0c60d1ca33a1d8cf23b8e2bd709ac5ddc2aa72fe95f6f0c02feb"
+  },
+  {
+    "key": "emeraldSprout",
+    "title": "Emerald Sprout",
+    "origin": "production",
+    "target": "/Users/antonioperedo/Desktop/screen_time/ScreenTime/SupportingFiles/Assets.xcassets/Badge3DModelEmeraldSprout.dataset/sprout_badge_mobile.usdz",
+    "source": "/Users/antonioperedo/Desktop/badges/badge_family_compact_20261106/mobile/emerald_sprout_badge_mobile.usdz",
+    "expected_original_sha256": "97129c73a399f82212b3a6064110019eac5529c0db6ac532599113ba3b00248e",
+    "replacement_sha256": "90462a9ebb1c0c60d1ca33a1d8cf23b8e2bd709ac5ddc2aa72fe95f6f0c02feb"
+  },
+  {
+    "key": "emeraldTrophy",
+    "title": "Emerald Trophy",
+    "origin": "preview",
+    "target": "/Users/antonioperedo/Desktop/badges/emerald_trophy_20261025/preview/ScreenTime/SupportingFiles/Assets.xcassets/Badge3DPreviewEmeraldTrophy.dataset/coin.usdz",
+    "source": "/Users/antonioperedo/Desktop/badges/badge_family_compact_20261106/mobile/emerald_trophy_badge_mobile.usdz",
+    "expected_original_sha256": "40da381680ec0b2e427b4dadb05e1fb8b0525aa800959cb0cba119e6c2027c0f",
+    "replacement_sha256": "625b6de8a5d212d1202660523bfcb99fada062352a0b6856e41a576c64670b87"
+  },
+  {
+    "key": "emeraldTrophy",
+    "title": "Emerald Trophy",
+    "origin": "production",
+    "target": "/Users/antonioperedo/Desktop/screen_time/ScreenTime/SupportingFiles/Assets.xcassets/Badge3DModelEmeraldTrophy.dataset/emerald_trophy_badge_mobile.usdz",
+    "source": "/Users/antonioperedo/Desktop/badges/badge_family_compact_20261106/mobile/emerald_trophy_badge_mobile.usdz",
+    "expected_original_sha256": "40da381680ec0b2e427b4dadb05e1fb8b0525aa800959cb0cba119e6c2027c0f",
+    "replacement_sha256": "625b6de8a5d212d1202660523bfcb99fada062352a0b6856e41a576c64670b87"
+  },
+  {
+    "key": "frostwingCrystal",
+    "title": "Frostwing Crystal",
+    "origin": "preview",
+    "target": "/Users/antonioperedo/Desktop/badges/emerald_trophy_20261025/preview/ScreenTime/SupportingFiles/Assets.xcassets/Badge3DPreviewFrostwingCrystal.dataset/coin.usdz",
+    "source": "/Users/antonioperedo/Desktop/badges/badge_family_compact_20261106/mobile/frostwing_crystal_badge_mobile.usdz",
+    "expected_original_sha256": "691a57794db470e168d2bf86173af381f23af1783b3f27cff1ff2defc9209d3c",
+    "replacement_sha256": "bd0ae00b65e0ee00806f9fea93902b951f53c065f84dd142e512ffb512cb3a10"
+  },
+  {
+    "key": "frostwingCrystal",
+    "title": "Frostwing Crystal",
+    "origin": "production",
+    "target": "/Users/antonioperedo/Desktop/screen_time/ScreenTime/SupportingFiles/Assets.xcassets/Badge3DPreviewFrostwingCrystal.dataset/frostwing_dynamic_badge_mobile.usdz",
+    "source": "/Users/antonioperedo/Desktop/badges/badge_family_compact_20261106/mobile/frostwing_crystal_badge_mobile.usdz",
+    "expected_original_sha256": "691a57794db470e168d2bf86173af381f23af1783b3f27cff1ff2defc9209d3c",
+    "replacement_sha256": "bd0ae00b65e0ee00806f9fea93902b951f53c065f84dd142e512ffb512cb3a10"
+  },
+  {
+    "key": "goldenSands",
+    "title": "Golden Sands",
+    "origin": "preview",
+    "target": "/Users/antonioperedo/Desktop/badges/emerald_trophy_20261025/preview/ScreenTime/SupportingFiles/Assets.xcassets/Badge3DPreviewGoldenSands.dataset/coin.usdz",
+    "source": "/Users/antonioperedo/Desktop/badges/badge_family_compact_20261106/mobile/golden_sands_badge_mobile.usdz",
+    "expected_original_sha256": "a2bfc47deae88172c05b257638d778dc393ed3f5ee54958f05f5b37fe1d53603",
+    "replacement_sha256": "a747ac40b1c7dc64468a5ae913fd07743315d08e4df6889ee4af0bc71522b895"
+  },
+  {
+    "key": "goldenSands",
+    "title": "Golden Sands",
+    "origin": "production",
+    "target": "/Users/antonioperedo/Desktop/screen_time/ScreenTime/SupportingFiles/Assets.xcassets/Badge3DModelGoldenSands.dataset/hourglass_gold_badge_mobile.usdz",
+    "source": "/Users/antonioperedo/Desktop/badges/badge_family_compact_20261106/mobile/golden_sands_badge_mobile.usdz",
+    "expected_original_sha256": "a2bfc47deae88172c05b257638d778dc393ed3f5ee54958f05f5b37fe1d53603",
+    "replacement_sha256": "a747ac40b1c7dc64468a5ae913fd07743315d08e4df6889ee4af0bc71522b895"
+  },
+  {
+    "key": "islandSunset",
+    "title": "Island Sunset",
+    "origin": "preview",
+    "target": "/Users/antonioperedo/Desktop/badges/emerald_trophy_20261025/preview/ScreenTime/SupportingFiles/Assets.xcassets/Badge3DPreviewIslandSunset.dataset/coin.usdz",
+    "source": "/Users/antonioperedo/Desktop/badges/badge_family_compact_20261106/mobile/island_sunset_badge_mobile.usdz",
+    "expected_original_sha256": "5875dc664b2794f53052bc8157a3fcb1e9a59d9d83a919f3aefebb2033e8a053",
+    "replacement_sha256": "1e79512cb2956fc90d76e6c96e3fc0fe9c611f92b9dc8e85c329cee657dcf795"
+  },
+  {
+    "key": "islandSunset",
+    "title": "Island Sunset",
+    "origin": "production",
+    "target": "/Users/antonioperedo/Desktop/screen_time/ScreenTime/SupportingFiles/Assets.xcassets/Badge3DModelIslandSunset.dataset/island_sunset_badge_mobile.usdz",
+    "source": "/Users/antonioperedo/Desktop/badges/badge_family_compact_20261106/mobile/island_sunset_badge_mobile.usdz",
+    "expected_original_sha256": "5875dc664b2794f53052bc8157a3fcb1e9a59d9d83a919f3aefebb2033e8a053",
+    "replacement_sha256": "1e79512cb2956fc90d76e6c96e3fc0fe9c611f92b9dc8e85c329cee657dcf795"
+  },
+  {
+    "key": "lightningCompass",
+    "title": "Lightning Compass",
+    "origin": "preview",
+    "target": "/Users/antonioperedo/Desktop/badges/emerald_trophy_20261025/preview/ScreenTime/SupportingFiles/Assets.xcassets/Badge3DPreviewLightningCompass.dataset/coin.usdz",
+    "source": "/Users/antonioperedo/Desktop/badges/badge_family_compact_20261106/mobile/lightning_compass_badge_mobile.usdz",
+    "expected_original_sha256": "1b7577bd34c0655c5babe98c6af29bb59e7d70e41e36a0358b1bc95fd66d0116",
+    "replacement_sha256": "8b3c0bb1e007d604276f12275f7db52e36b430b802cc59e7a5baf891a5a0ff92"
+  },
+  {
+    "key": "lightningCompass",
+    "title": "Lightning Compass",
+    "origin": "production",
+    "target": "/Users/antonioperedo/Desktop/screen_time/ScreenTime/SupportingFiles/Assets.xcassets/Badge3DModelLightningCompass.dataset/lightning_compass_badge_mobile.usdz",
+    "source": "/Users/antonioperedo/Desktop/badges/badge_family_compact_20261106/mobile/lightning_compass_badge_mobile.usdz",
+    "expected_original_sha256": "1b7577bd34c0655c5babe98c6af29bb59e7d70e41e36a0358b1bc95fd66d0116",
+    "replacement_sha256": "8b3c0bb1e007d604276f12275f7db52e36b430b802cc59e7a5baf891a5a0ff92"
+  },
+  {
+    "key": "lunarCompass",
+    "title": "Lunar Compass",
+    "origin": "preview",
+    "target": "/Users/antonioperedo/Desktop/badges/emerald_trophy_20261025/preview/ScreenTime/SupportingFiles/Assets.xcassets/Badge3DPreviewLunarCompass.dataset/coin.usdz",
+    "source": "/Users/antonioperedo/Desktop/badges/badge_family_compact_20261106/mobile/lunar_compass_badge_mobile.usdz",
+    "expected_original_sha256": "03364708446b021e43585bbe862d440a44c82b85932d0296388865881b213e19",
+    "replacement_sha256": "deb3e74f607ba8c4b1613269958e13d0eb29fe3f92c42dc21f8f0693b6dbbd58"
+  },
+  {
+    "key": "lunarCompass",
+    "title": "Lunar Compass",
+    "origin": "production",
+    "target": "/Users/antonioperedo/Desktop/screen_time/ScreenTime/SupportingFiles/Assets.xcassets/Badge3DPreviewLunarCompass.dataset/lunar_compass_badge_mobile.usdz",
+    "source": "/Users/antonioperedo/Desktop/badges/badge_family_compact_20261106/mobile/lunar_compass_badge_mobile.usdz",
+    "expected_original_sha256": "03364708446b021e43585bbe862d440a44c82b85932d0296388865881b213e19",
+    "replacement_sha256": "deb3e74f607ba8c4b1613269958e13d0eb29fe3f92c42dc21f8f0693b6dbbd58"
+  },
+  {
+    "key": "rubyWingedCrest",
+    "title": "Ruby Winged Crest",
+    "origin": "preview",
+    "target": "/Users/antonioperedo/Desktop/badges/emerald_trophy_20261025/preview/ScreenTime/SupportingFiles/Assets.xcassets/Badge3DPreviewRubyWingedCrest.dataset/coin.usdz",
+    "source": "/Users/antonioperedo/Desktop/badges/badge_family_compact_20261106/mobile/ruby_winged_crest_badge_mobile.usdz",
+    "expected_original_sha256": "a956f46e998fc46b6b54213ebf6336660499904f09a27c8a88758b8ec575409a",
+    "replacement_sha256": "3de32bfd5c13c349504717af058a8d302ea3679ae08215e3cafaaac07d43f15f"
+  },
+  {
+    "key": "rubyWingedCrest",
+    "title": "Ruby Winged Crest",
+    "origin": "production",
+    "target": "/Users/antonioperedo/Desktop/screen_time/ScreenTime/SupportingFiles/Assets.xcassets/Badge3DPreviewRubyWingedCrest.dataset/ruby_wings_badge_mobile.usdz",
+    "source": "/Users/antonioperedo/Desktop/badges/badge_family_compact_20261106/mobile/ruby_winged_crest_badge_mobile.usdz",
+    "expected_original_sha256": "a956f46e998fc46b6b54213ebf6336660499904f09a27c8a88758b8ec575409a",
+    "replacement_sha256": "3de32bfd5c13c349504717af058a8d302ea3679ae08215e3cafaaac07d43f15f"
+  },
+  {
+    "key": "sapphireStairway",
+    "title": "Sapphire Stairway",
+    "origin": "preview",
+    "target": "/Users/antonioperedo/Desktop/badges/emerald_trophy_20261025/preview/ScreenTime/SupportingFiles/Assets.xcassets/Badge3DPreviewSapphireStairway.dataset/coin.usdz",
+    "source": "/Users/antonioperedo/Desktop/badges/badge_family_compact_20261106/mobile/sapphire_stairway_badge_mobile.usdz",
+    "expected_original_sha256": "fcb626fd2da38a1326a9d3dd136415159745d9baf24852bab2c91a212fcdfe9f",
+    "replacement_sha256": "04c61061e4ddf489903706af547f188036b4e98184902a659d6cf1bc047f5a6e"
+  },
+  {
+    "key": "sapphireStairway",
+    "title": "Sapphire Stairway",
+    "origin": "production",
+    "target": "/Users/antonioperedo/Desktop/screen_time/ScreenTime/SupportingFiles/Assets.xcassets/Badge3DPreviewSapphireStairway.dataset/sapphire_stairway_badge_mobile.usdz",
+    "source": "/Users/antonioperedo/Desktop/badges/badge_family_compact_20261106/mobile/sapphire_stairway_badge_mobile.usdz",
+    "expected_original_sha256": "fcb626fd2da38a1326a9d3dd136415159745d9baf24852bab2c91a212fcdfe9f",
+    "replacement_sha256": "04c61061e4ddf489903706af547f188036b4e98184902a659d6cf1bc047f5a6e"
+  },
+  {
+    "key": "starAscent",
+    "title": "Star Ascent",
+    "origin": "preview",
+    "target": "/Users/antonioperedo/Desktop/badges/emerald_trophy_20261025/preview/ScreenTime/SupportingFiles/Assets.xcassets/Badge3DPreviewStarAscent.dataset/coin.usdz",
+    "source": "/Users/antonioperedo/Desktop/badges/badge_family_compact_20261106/mobile/star_ascent_badge_mobile.usdz",
+    "expected_original_sha256": "bcd70449eb26d061a6fb1af9997a14a87c9eaa571b1fda9e8880bd8da4bc5d8c",
+    "replacement_sha256": "144a908dbf2cc68e6ff939ba553f940bd1953840ccc90f2020f196c6c8c22ee2"
+  },
+  {
+    "key": "starAscent",
+    "title": "Star Ascent",
+    "origin": "production",
+    "target": "/Users/antonioperedo/Desktop/screen_time/ScreenTime/SupportingFiles/Assets.xcassets/Badge3DModelStarAscent.dataset/star_ascent_badge_mobile.usdz",
+    "source": "/Users/antonioperedo/Desktop/badges/badge_family_compact_20261106/mobile/star_ascent_badge_mobile.usdz",
+    "expected_original_sha256": "bcd70449eb26d061a6fb1af9997a14a87c9eaa571b1fda9e8880bd8da4bc5d8c",
+    "replacement_sha256": "144a908dbf2cc68e6ff939ba553f940bd1953840ccc90f2020f196c6c8c22ee2"
+  },
+  {
+    "key": "sunrisePath",
+    "title": "Sunrise Path",
+    "origin": "preview",
+    "target": "/Users/antonioperedo/Desktop/badges/emerald_trophy_20261025/preview/ScreenTime/SupportingFiles/Assets.xcassets/Badge3DPreviewSunrisePath.dataset/coin.usdz",
+    "source": "/Users/antonioperedo/Desktop/badges/badge_family_compact_20261106/mobile/sunrise_path_badge_mobile.usdz",
+    "expected_original_sha256": "66cc669091b7627244beec99c9241931ff46c106566bcd4224ae7ac49e911687",
+    "replacement_sha256": "5dc5f2d7bbc5c130262308879b7f579edd4578b5abfc55093e4a596327292947"
+  },
+  {
+    "key": "sunrisePath",
+    "title": "Sunrise Path",
+    "origin": "production",
+    "target": "/Users/antonioperedo/Desktop/screen_time/ScreenTime/SupportingFiles/Assets.xcassets/Badge3DModelSunrisePath.dataset/sunrise_badge_mobile.usdz",
+    "source": "/Users/antonioperedo/Desktop/badges/badge_family_compact_20261106/mobile/sunrise_path_badge_mobile.usdz",
+    "expected_original_sha256": "66cc669091b7627244beec99c9241931ff46c106566bcd4224ae7ac49e911687",
+    "replacement_sha256": "5dc5f2d7bbc5c130262308879b7f579edd4578b5abfc55093e4a596327292947"
+  },
+  {
+    "key": "tealSands",
+    "title": "Teal Sands",
+    "origin": "preview",
+    "target": "/Users/antonioperedo/Desktop/badges/emerald_trophy_20261025/preview/ScreenTime/SupportingFiles/Assets.xcassets/Badge3DPreviewTealSands.dataset/coin.usdz",
+    "source": "/Users/antonioperedo/Desktop/badges/badge_family_compact_20261106/mobile/teal_sands_badge_mobile.usdz",
+    "expected_original_sha256": "b053a3cebd721a4efd928ce332404e879d6fd52d3931706d9631f9c9046caada",
+    "replacement_sha256": "32f76af777b67b17b9ed8ef5eb764ab1da0dc1bfc84110fc0c59239e8fd550d9"
+  },
+  {
+    "key": "tealSands",
+    "title": "Teal Sands",
+    "origin": "production",
+    "target": "/Users/antonioperedo/Desktop/screen_time/ScreenTime/SupportingFiles/Assets.xcassets/Badge3DModelTealSands.dataset/hourglass_teal_badge_mobile.usdz",
+    "source": "/Users/antonioperedo/Desktop/badges/badge_family_compact_20261106/mobile/teal_sands_badge_mobile.usdz",
+    "expected_original_sha256": "b053a3cebd721a4efd928ce332404e879d6fd52d3931706d9631f9c9046caada",
+    "replacement_sha256": "32f76af777b67b17b9ed8ef5eb764ab1da0dc1bfc84110fc0c59239e8fd550d9"
+  },
+  {
+    "key": "tidalCompass",
+    "title": "Tidal Compass",
+    "origin": "preview",
+    "target": "/Users/antonioperedo/Desktop/badges/emerald_trophy_20261025/preview/ScreenTime/SupportingFiles/Assets.xcassets/Badge3DPreviewTidalCompass.dataset/coin.usdz",
+    "source": "/Users/antonioperedo/Desktop/badges/badge_family_compact_20261106/mobile/tidal_compass_badge_mobile.usdz",
+    "expected_original_sha256": "eb6b400a35a783ec3ba7f7fcc9e3d8a09cadb1befc0008df3c2eaf9ce42a46ab",
+    "replacement_sha256": "c45df0f16a674751062e29d8914e66c26cc74f5e918e1b99dd814654c309c97c"
+  },
+  {
+    "key": "tidalCompass",
+    "title": "Tidal Compass",
+    "origin": "production",
+    "target": "/Users/antonioperedo/Desktop/screen_time/ScreenTime/SupportingFiles/Assets.xcassets/Badge3DPreviewTidalCompass.dataset/tidal_compass_badge_mobile.usdz",
+    "source": "/Users/antonioperedo/Desktop/badges/badge_family_compact_20261106/mobile/tidal_compass_badge_mobile.usdz",
+    "expected_original_sha256": "eb6b400a35a783ec3ba7f7fcc9e3d8a09cadb1befc0008df3c2eaf9ce42a46ab",
+    "replacement_sha256": "c45df0f16a674751062e29d8914e66c26cc74f5e918e1b99dd814654c309c97c"
+  },
+  {
+    "key": "torchSunburst",
+    "title": "Torch Sunburst",
+    "origin": "preview",
+    "target": "/Users/antonioperedo/Desktop/badges/emerald_trophy_20261025/preview/ScreenTime/SupportingFiles/Assets.xcassets/Badge3DPreviewTorchSunburst.dataset/coin.usdz",
+    "source": "/Users/antonioperedo/Desktop/badges/badge_family_compact_20261106/mobile/torch_sunburst_badge_mobile.usdz",
+    "expected_original_sha256": "8d848920a55b35d0a12a448bf379bf49dffdeef1d4752ebbd40f3caee1184d12",
+    "replacement_sha256": "945c271fef1266645f85ed4dc56332495a6b6424df7485d8e9744400ef90cf06"
+  },
+  {
+    "key": "torchSunburst",
+    "title": "Torch Sunburst",
+    "origin": "production",
+    "target": "/Users/antonioperedo/Desktop/screen_time/ScreenTime/SupportingFiles/Assets.xcassets/Badge3DModelTorchSunburst.dataset/torch_sunburst_badge_mobile.usdz",
+    "source": "/Users/antonioperedo/Desktop/badges/badge_family_compact_20261106/mobile/torch_sunburst_badge_mobile.usdz",
+    "expected_original_sha256": "8d848920a55b35d0a12a448bf379bf49dffdeef1d4752ebbd40f3caee1184d12",
+    "replacement_sha256": "945c271fef1266645f85ed4dc56332495a6b6424df7485d8e9744400ef90cf06"
+  },
+  {
+    "key": "waterDrop",
+    "title": "Water Drop",
+    "origin": "preview",
+    "target": "/Users/antonioperedo/Desktop/badges/emerald_trophy_20261025/preview/ScreenTime/SupportingFiles/Assets.xcassets/Badge3DPreviewWaterDrop.dataset/coin.usdz",
+    "source": "/Users/antonioperedo/Desktop/badges/badge_family_compact_20261106/mobile/water_drop_badge_mobile.usdz",
+    "expected_original_sha256": "dac3cea5d0ecf94cddfd8ee907fcbc5f9ebffda42b5d4f45dce3c7ad1ffbca29",
+    "replacement_sha256": "e47137ce82a5c55fde0b12fbf08e262c684a62574cd5b3dd2958e0d981b5a7ab"
+  },
+  {
+    "key": "waterDrop",
+    "title": "Water Drop",
+    "origin": "production",
+    "target": "/Users/antonioperedo/Desktop/screen_time/ScreenTime/SupportingFiles/Assets.xcassets/Badge3DModelWaterDrop.dataset/clean_badge_mobile.usdz",
+    "source": "/Users/antonioperedo/Desktop/badges/badge_family_compact_20261106/mobile/water_drop_badge_mobile.usdz",
+    "expected_original_sha256": "dac3cea5d0ecf94cddfd8ee907fcbc5f9ebffda42b5d4f45dce3c7ad1ffbca29",
+    "replacement_sha256": "e47137ce82a5c55fde0b12fbf08e262c684a62574cd5b3dd2958e0d981b5a7ab"
+  },
+  {
+    "key": "zenBalance",
+    "title": "Zen Balance",
+    "origin": "preview",
+    "target": "/Users/antonioperedo/Desktop/badges/emerald_trophy_20261025/preview/ScreenTime/SupportingFiles/Assets.xcassets/Badge3DPreviewZenBalance.dataset/coin.usdz",
+    "source": "/Users/antonioperedo/Desktop/badges/badge_family_compact_20261106/mobile/zen_balance_badge_mobile.usdz",
+    "expected_original_sha256": "22a5dcfdfa42ec19fbbcae1da415b471781eb945e87e2b5780029a303a3d14cb",
+    "replacement_sha256": "8208ca05752c292a17176b3b4c89fb25e95759be1c8fab30d6bbf2d1aea36f50"
+  },
+  {
+    "key": "zenBalance",
+    "title": "Zen Balance",
+    "origin": "production",
+    "target": "/Users/antonioperedo/Desktop/screen_time/ScreenTime/SupportingFiles/Assets.xcassets/Badge3DModelZenBalance.dataset/zen_balance_badge_mobile.usdz",
+    "source": "/Users/antonioperedo/Desktop/badges/badge_family_compact_20261106/mobile/zen_balance_badge_mobile.usdz",
+    "expected_original_sha256": "22a5dcfdfa42ec19fbbcae1da415b471781eb945e87e2b5780029a303a3d14cb",
+    "replacement_sha256": "8208ca05752c292a17176b3b4c89fb25e95759be1c8fab30d6bbf2d1aea36f50"
+  }
+]

@@ -1,0 +1,29 @@
+{
+  "source_bezel": "candidate17",
+  "source_cut": "candidate16",
+  "geometry_only": true,
+  "actual_studio_key_measured": true,
+  "appearance_maps_on_gem": false,
+  "exposure_and_optical_shader_unchanged": true,
+  "domains": [
+    {
+      "name": "Ruby heart left optical lobe",
+      "approximate_planes": 226,
+      "upper_crown_bias": 0.15,
+      "key_facet_gradient": [
+        0.35,
+        -0.35
+      ]
+    },
+    {
+      "name": "Ruby heart right optical lobe",
+      "approximate_planes": 226,
+      "upper_crown_bias": 0.15,
+      "key_facet_gradient": [
+        0.35,
+        -0.35
+      ]
+    }
+  ],
+  "native_review_pending": true
+}

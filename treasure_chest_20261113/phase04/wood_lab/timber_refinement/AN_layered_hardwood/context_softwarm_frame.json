@@ -1,0 +1,13 @@
+{
+  "projected_chest_bounds": [
+    97.39964157342911,
+    204.92774844169617,
+    1001.0527431964874,
+    922.8026866912842
+  ],
+  "render_size": [
+    1100,
+    1100
+  ],
+  "scope": "Chest geometry bounds only, stage excluded"
+}

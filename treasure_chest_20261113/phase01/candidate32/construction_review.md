@@ -1,0 +1,3 @@
+CONSTRUCTION READY: no
+
+Both end arches show broad radial dents at their lower shoulders. Restore the previous smooth geometry before any further correction. Fresh reviewer also reported crown tabs needing distinct side/lower boundaries, handle plates too tall below housings, and an overly broad shield inner bevel. Review cannot establish hidden motion. Builder confirms the new arch dents are a regression; foot seat exposure is an improvement. Crown tab contacts remain measured and were previously approved in scope; do not blindly reshape them. Recheck handle plate proportions and shield bevel against original matched crops before acting.

@@ -1,0 +1,15 @@
+{
+  "timer_alive": true,
+  "single_instance_lock_verified": true,
+  "caffeinate_alive": true,
+  "target_epoch": 1794480247.0,
+  "thread_id": "01a16b8e-9f81-76d1-8bd7-d0a939464547",
+  "pid": 66756,
+  "queue_transport_accepted": true,
+  "badge_work_started": false,
+  "checked_epoch": 1794473384.763403,
+  "second_lock_check_alive": true,
+  "second_checked_epoch": 1794473454.499723,
+  "actual_transport_delivery_verified": true,
+  "delivery_check_epoch": 1794473479.038816
+}

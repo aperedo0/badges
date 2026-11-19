@@ -1,0 +1,9 @@
+{
+  "target": "Lab Chest Lower Rim",
+  "mesh": "Locally forged lower rim.001",
+  "material": "Forged iron H_scale_relief",
+  "source": "G_planished_displaced",
+  "scale_thickness_bump": 0.00035,
+  "coverage_balanced": false,
+  "geometry_unchanged_from_source": true
+}

@@ -1,0 +1,2 @@
+Badges: reduce 28 models from 363 meshes to 170 while preserving artwork textures metal finishes live gems and approved coin rims
+Badges: keep the same artwork and live gems with fewer pieces

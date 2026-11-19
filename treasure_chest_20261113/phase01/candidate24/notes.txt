@@ -1,0 +1,2 @@
+Added actual metal depth at body rails, uprights, central strap and handle mounting plates by extending metal backs and recessing body wood 0.050 per face. Preserved outer metal faces, silhouette, feet, joints and every rivet.
+Saved all four Blender renders, contact and unchanged geometry proofs, complete editable source. Fresh scoped review passes visible depth and preserved attachments.

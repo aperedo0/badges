@@ -1,0 +1,21 @@
+{
+  "cause": "16 bit source converted through 8 bit clipping path before normalization",
+  "correction": "Preserve native uint16 data and normalize by 65535",
+  "before_range": [
+    0.0,
+    0.0
+  ],
+  "after_range": [
+    0.0,
+    1.0
+  ],
+  "after_std": 0.26997560262680054,
+  "other_fields_exact": [
+    "weather",
+    "roughness",
+    "mark",
+    "exposed",
+    "edge",
+    "protection"
+  ]
+}

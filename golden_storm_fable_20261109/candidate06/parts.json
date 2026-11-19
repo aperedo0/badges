@@ -1,0 +1,82 @@
+{
+  "parts": [
+    {
+      "name": "Gold body",
+      "role": "gold_side",
+      "triangles": 1934
+    },
+    {
+      "name": "Gold body side walls",
+      "role": "gold_side",
+      "triangles": 806
+    },
+    {
+      "name": "Blue enamel field and ribbons",
+      "role": "art",
+      "triangles": 3430
+    },
+    {
+      "name": "Blue enamel field and ribbons side walls",
+      "role": "art",
+      "triangles": 1838
+    },
+    {
+      "name": "Pearl clouds",
+      "role": "art",
+      "triangles": 6118
+    },
+    {
+      "name": "Pearl clouds side walls",
+      "role": "art",
+      "triangles": 2030
+    },
+    {
+      "name": "Bolt yellow face",
+      "role": "art_bolt",
+      "triangles": 1664
+    },
+    {
+      "name": "Bolt yellow face side walls",
+      "role": "art_bolt",
+      "triangles": 1332
+    },
+    {
+      "name": "Bolt gold rim",
+      "role": "gold",
+      "triangles": 3866
+    },
+    {
+      "name": "Bolt gold rim side walls",
+      "role": "gold",
+      "triangles": 1126
+    },
+    {
+      "name": "Gold frame, points and cloud outlines",
+      "role": "gold",
+      "triangles": 29116
+    },
+    {
+      "name": "Gold frame, points and cloud outlines side walls",
+      "role": "gold_side",
+      "triangles": 7264
+    }
+  ],
+  "triangles": 60524,
+  "units_per_pixel": 0.004727744165946413,
+  "center_x": 627.0,
+  "top": 45,
+  "bounds_min": [
+    -2.7105218318411333,
+    -2.4455445116681065,
+    -0.36421315388491177
+  ],
+  "bounds_max": [
+    2.7010663465108595,
+    3.015,
+    0.36421315388491177
+  ],
+  "mockup_size": [
+    1254,
+    1254
+  ]
+}

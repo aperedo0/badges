@@ -1,0 +1,2 @@
+Badge skills: build full detail first then reduce pieces only while preserving the exact finished appearance
+Badge skills: preserve the finished look while reducing pieces

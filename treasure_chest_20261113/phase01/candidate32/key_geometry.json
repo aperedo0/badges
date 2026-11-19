@@ -1,0 +1,18 @@
+{
+  "name": "Chest Removable Crank Key",
+  "connected": true,
+  "closed": true,
+  "intended_euler": 0,
+  "excluded_from_closed_static_export": true,
+  "hidden_at_locked_rest": true,
+  "actual_crank_segments": 192,
+  "insertion_test_complete": false,
+  "full_turn_test_complete": false,
+  "actual_geometry_proof": {
+    "part": "Complete connected removable key",
+    "closed": true,
+    "euler_characteristic": 0,
+    "positive_volume": 0.011627584513599689,
+    "triangles": 9684
+  }
+}

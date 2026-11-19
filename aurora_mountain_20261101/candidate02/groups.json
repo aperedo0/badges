@@ -1,0 +1,137 @@
+[
+  {
+    "name": "Aurora sky and purple channel",
+    "role": "sky",
+    "smooth": true
+  },
+  {
+    "name": "Aurora sky and purple channel finished side walls",
+    "role": "gold_side",
+    "smooth": false
+  },
+  {
+    "name": "Outer warm silver frame",
+    "role": "silver",
+    "smooth": true
+  },
+  {
+    "name": "Fine gold perimeter 591",
+    "role": "gold_trim",
+    "smooth": true
+  },
+  {
+    "name": "Fine gold perimeter 550",
+    "role": "gold_trim",
+    "smooth": true
+  },
+  {
+    "name": "Swept silver inner frame",
+    "role": "silver",
+    "smooth": false
+  },
+  {
+    "name": "Inner frame gold inner fillet",
+    "role": "gold_trim",
+    "smooth": false
+  },
+  {
+    "name": "Inner frame gold outer fillet",
+    "role": "gold_trim",
+    "smooth": false
+  },
+  {
+    "name": "Indigo mountain ridges and snow",
+    "role": "rock",
+    "smooth": true
+  },
+  {
+    "name": "Indigo mountain ridges and snow finished side walls",
+    "role": "rock_edge",
+    "smooth": false
+  },
+  {
+    "name": "Winding gold summit path",
+    "role": "gold",
+    "smooth": true
+  },
+  {
+    "name": "Winding gold summit path finished side walls",
+    "role": "gold_side",
+    "smooth": false
+  },
+  {
+    "name": "Four point guiding gold star",
+    "role": "star",
+    "smooth": false
+  },
+  {
+    "name": "Luminous guiding star center",
+    "role": "star_core",
+    "smooth": false
+  },
+  {
+    "name": "Small gold star 0",
+    "role": "star_minor",
+    "smooth": false
+  },
+  {
+    "name": "Small gold star 1",
+    "role": "star_minor",
+    "smooth": false
+  },
+  {
+    "name": "Small gold star 2",
+    "role": "star_minor",
+    "smooth": false
+  },
+  {
+    "name": "Small gold star 3",
+    "role": "star_minor",
+    "smooth": false
+  },
+  {
+    "name": "Small gold star 4",
+    "role": "star_minor",
+    "smooth": false
+  },
+  {
+    "name": "Small gold star 5",
+    "role": "star_minor",
+    "smooth": false
+  },
+  {
+    "name": "Small gold star 6",
+    "role": "star_minor",
+    "smooth": false
+  },
+  {
+    "name": "Small gold star 7",
+    "role": "star_minor",
+    "smooth": false
+  },
+  {
+    "name": "Small gold star 8",
+    "role": "star_minor",
+    "smooth": false
+  },
+  {
+    "name": "Small gold star 9",
+    "role": "star_minor",
+    "smooth": false
+  },
+  {
+    "name": "Small gold star 10",
+    "role": "star_minor",
+    "smooth": false
+  },
+  {
+    "name": "Gold amethyst diamond setting",
+    "role": "gold",
+    "smooth": false
+  },
+  {
+    "name": "Closed faceted amethyst",
+    "role": "CrestGem_Amethyst",
+    "smooth": false
+  }
+]

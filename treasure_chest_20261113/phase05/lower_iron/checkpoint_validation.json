@@ -1,0 +1,17 @@
+{
+  "restored_in_fresh_Blender": true,
+  "wood_geometry_exact": true,
+  "required_images_packed": [
+    "albedo.png.005",
+    "normal.png.005",
+    "reference.png",
+    "roughness.png.005",
+    "wood_albedo.png.007",
+    "wood_normal.png.007",
+    "wood_roughness.png.007"
+  ],
+  "single_reference": true,
+  "unused_empty_images": [
+    "owner_comparison.jpg"
+  ]
+}

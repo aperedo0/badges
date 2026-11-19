@@ -1,0 +1,17 @@
+{
+  "name": "AuroraMountain",
+  "loaded_model_matches": true,
+  "poses": [
+    "front",
+    "early_turn",
+    "side_left",
+    "back",
+    "side_right",
+    "full_turn"
+  ],
+  "returned_to_front": true,
+  "sha256": "13ba8517f5f94b2695b64eb5035c011d41ed01ce3e0fa807911b521745ca33e9",
+  "all_views_visually_reviewed": true,
+  "slow_motion_reviewed": true,
+  "outline_views_4x_reviewed": true
+}

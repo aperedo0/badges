@@ -1,0 +1,53 @@
+--- a/emerald_trophy_20261025/preview/ScreenTime/Sources/App/Features/Badges/Badge3DLiveBadge.swift
++++ b/emerald_trophy_20261025/preview/ScreenTime/Sources/App/Features/Badges/Badge3DLiveBadge.swift
+@@ -1345,6 +1345,7 @@
+ 
+     /// Ruby Heart foil stone brightness (the shader's exposure).
+     /// Emerald Stag foil stones brightness.
++    nonisolated static let teardropSapphireExposure: Float = 0.28
+     nonisolated static let emeraldFoilExposure: Float = 1.6
+     nonisolated static let heartFoilExposure: Float = 1.700000
+ 
+@@ -1353,6 +1354,7 @@
+         case "CrestGem_Ice": return 0
+         case "CrestGem_Sapphire": return 1
+         case "CrestGem_SapphireClear": return 18
++        case "CrestGem_SapphireTeardrop": return 19
+         case "CrestGem_SapphireAstral": return 4
+         case "CrestGem_SapphireOcean": return 7
+         case "CrestGem_SeaGlass": return 8
+@@ -1479,7 +1481,7 @@
+         if let crestStyle {
+             let points = Self.triangleCorners(of: contents)
+             let thickness = (points.map(\.z).max() ?? 0.5) - (points.map(\.z).min() ?? -0.5)
+-            material.custom.value = SIMD4(isMirrorImage ? 1 : 0, crestStyle, min(8, max(0.5, 1 / thickness)), crestStyle == 0 ? 0.12 : crestStyle == 3 ? 0.18 : crestStyle == 9 ? 0.24 : crestStyle == 8 ? 0.07 : crestStyle == 7 ? 0.20 : crestStyle == 6 ? 0.681357060 : crestStyle == 5 ? 0.18 : 0.28)
++            material.custom.value = SIMD4(isMirrorImage ? 1 : 0, crestStyle, min(8, max(0.5, 1 / thickness)), crestStyle == 19 ? Self.teardropSapphireExposure : crestStyle == 0 ? 0.12 : crestStyle == 3 ? 0.18 : crestStyle == 9 ? 0.24 : crestStyle == 8 ? 0.07 : crestStyle == 7 ? 0.20 : crestStyle == 6 ? 0.681357060 : crestStyle == 5 ? 0.18 : 0.28)
+             if crestStyle == 6 {
+                 print("Badge Rose optics: density=\(material.custom.value.z) exposure=\(material.custom.value.w)")
+             }
+--- a/emerald_trophy_20261025/preview/ScreenTime/Sources/App/Features/Badges/BadgeCrestGemSurface.metal
++++ b/emerald_trophy_20261025/preview/ScreenTime/Sources/App/Features/Badges/BadgeCrestGemSurface.metal
+@@ -457,7 +457,8 @@
+ void badgeCrestGemSurface(realitykit::surface_parameters params)
+ {
+     float4 profile = params.uniforms().custom_parameter();
+-    bool pristineSapphire = profile.y > 17.5 && profile.y < 18.5;
++    bool teardropSapphire = profile.y > 18.5 && profile.y < 19.5;
++    bool pristineSapphire = teardropSapphire || (profile.y > 17.5 && profile.y < 18.5);
+     if (pristineSapphire) profile.y = 1.0;
+     // Blue Hourglass glass (profile 16): colorless, see through; Fresnel reflections of the studio,
+     // softened so the small lights never become pin dots, and a bright rim where the glass turns away.
+@@ -539,11 +540,12 @@
+                         : profile.y < 1.5 ? float3(8.0, 4.0, 0.25)
+                         : profile.y > 2.5 ? float3(0.90, 12.0, 0.50) : float3(1.25, 16.0, 12.0);
+     if (pristineSapphire) absorption = float3(8.0, 4.3503597, 0.2);
++    if (teardropSapphire) absorption = float3(8.0, 4.3503597, 0.2);
+     absorption *= profile.z;
+ 
+     realitykit::surface::surface_properties surface = params.surface();
+     float4x4 modelToWorld = params.uniforms().model_to_world();
+-    float softTentGain = pristineSapphire ? 1.4576831 : profile.y > 8.5 && profile.y < 9.5 ? 1.2
++    float softTentGain = teardropSapphire ? 1.4576831 : pristineSapphire ? 1.4576831 : profile.y > 8.5 && profile.y < 9.5 ? 1.2
+                        : profile.y > 5.5 && profile.y < 6.5 ? 0.9
+                        : profile.y > 2.5 && profile.y < 3.5 ? 1.2
+                        : profile.y > 7.5 && profile.y < 8.5 ? 1.2 : cTentGain;

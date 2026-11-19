@@ -1,0 +1,8 @@
+{
+  "source": "candidate10",
+  "only_fine_gold_normals_changed": true,
+  "flat_normals_for_diagnosis": true,
+  "positions_uvs_materials_textures_unchanged": true,
+  "changed_faces": 37344,
+  "native_review_pending": true
+}

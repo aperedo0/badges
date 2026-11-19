@@ -1,0 +1,4 @@
+interface:
+  display_name: "Badge build"
+  short_description: "Build a badge as stacked 3D pieces in Blender and check it in the app"
+  default_prompt: "Use $badge-build to build this badge from its approved plan as stacked pieces with real depth in the open Blender, prove it with validate.py, and capture it in the simulator."

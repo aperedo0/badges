@@ -1,0 +1,710 @@
+{
+  "geometry_sha256": "af6c7482688731284a9838bf5ad03fadf05daf158c3e56d5ff25348a32d53b33",
+  "certified": true,
+  "method": "Adaptive nearest surface distance minus triangle radius and angular displacement bound",
+  "tolerance": 1e-05,
+  "parts": {
+    "Chest Front Hasp Barrel": {
+      "pending": [],
+      "certified_intervals": [
+        {
+          "start": 0.0,
+          "end": 60.0,
+          "clearance_lower_bound": 0.00018203177044134877
+        }
+      ],
+      "unresolved": [],
+      "rotation_envelope_certified": true,
+      "envelope": {
+        "inner_radius": 0.0858941995860909,
+        "outer_radius": 0.16800223209916165,
+        "x_min": -0.2400020655386414,
+        "x_max": 0.2400020353814633,
+        "maximum_measured_sector": 0.09818000000000016
+      },
+      "axis_radius_bound": 0.16800016664713519
+    },
+    "Chest Curved Hasp Tongue": {
+      "pending": [],
+      "certified_intervals": [
+        {
+          "start": 0.0,
+          "end": 0.625,
+          "endpoint_lower_bound": 0.0038734507259703677,
+          "nearest_endpoint_displacement_bound": 0.003863065007928562,
+          "clearance_lower_bound": 1.038571804180561e-05
+        },
+        {
+          "start": 0.625,
+          "end": 1.25,
+          "endpoint_lower_bound": 0.00387419330071939,
+          "nearest_endpoint_displacement_bound": 0.003863065007928562,
+          "clearance_lower_bound": 1.1128292790828047e-05
+        },
+        {
+          "start": 1.25,
+          "end": 1.875,
+          "endpoint_lower_bound": 0.00387420564818277,
+          "nearest_endpoint_displacement_bound": 0.003863065007928562,
+          "clearance_lower_bound": 1.1140640254207919e-05
+        },
+        {
+          "start": 1.875,
+          "end": 2.5,
+          "endpoint_lower_bound": 0.00387420564818277,
+          "nearest_endpoint_displacement_bound": 0.003863065007928562,
+          "clearance_lower_bound": 1.1140640254207919e-05
+        },
+        {
+          "start": 2.5,
+          "end": 3.125,
+          "endpoint_lower_bound": 0.0038742687283235162,
+          "nearest_endpoint_displacement_bound": 0.003863065007928562,
+          "clearance_lower_bound": 1.1203720394954188e-05
+        },
+        {
+          "start": 3.125,
+          "end": 3.75,
+          "endpoint_lower_bound": 0.003873635714107702,
+          "nearest_endpoint_displacement_bound": 0.003863065007928562,
+          "clearance_lower_bound": 1.0570706179140014e-05
+        },
+        {
+          "start": 3.75,
+          "end": 4.375,
+          "endpoint_lower_bound": 0.0038732167142265517,
+          "nearest_endpoint_displacement_bound": 0.003863065007928562,
+          "clearance_lower_bound": 1.0151706297989622e-05
+        },
+        {
+          "start": 4.375,
+          "end": 5.0,
+          "endpoint_lower_bound": 0.0038732167142265517,
+          "nearest_endpoint_displacement_bound": 0.003863065007928562,
+          "clearance_lower_bound": 1.0151706297989622e-05
+        },
+        {
+          "start": 5.0,
+          "end": 5.625,
+          "endpoint_lower_bound": 0.0038734170714263376,
+          "nearest_endpoint_displacement_bound": 0.003863065007928562,
+          "clearance_lower_bound": 1.0352063497775545e-05
+        },
+        {
+          "start": 5.625,
+          "end": 6.25,
+          "endpoint_lower_bound": 0.0038734170714263376,
+          "nearest_endpoint_displacement_bound": 0.003863065007928562,
+          "clearance_lower_bound": 1.0352063497775545e-05
+        },
+        {
+          "start": 6.25,
+          "end": 6.875,
+          "endpoint_lower_bound": 0.0038741302509194483,
+          "nearest_endpoint_displacement_bound": 0.003863065007928562,
+          "clearance_lower_bound": 1.10652429908863e-05
+        },
+        {
+          "start": 6.875,
+          "end": 7.5,
+          "endpoint_lower_bound": 0.0038741302509194483,
+          "nearest_endpoint_displacement_bound": 0.003863065007928562,
+          "clearance_lower_bound": 1.10652429908863e-05
+        },
+        {
+          "start": 7.5,
+          "end": 8.125,
+          "endpoint_lower_bound": 0.0038741820351958344,
+          "nearest_endpoint_displacement_bound": 0.003863065007928562,
+          "clearance_lower_bound": 1.1117027267272366e-05
+        },
+        {
+          "start": 8.125,
+          "end": 8.75,
+          "endpoint_lower_bound": 0.003874130210472438,
+          "nearest_endpoint_displacement_bound": 0.003863065007928562,
+          "clearance_lower_bound": 1.1065202543875975e-05
+        },
+        {
+          "start": 8.75,
+          "end": 9.375,
+          "endpoint_lower_bound": 0.0038735640514527174,
+          "nearest_endpoint_displacement_bound": 0.003863065007928562,
+          "clearance_lower_bound": 1.0499043524155385e-05
+        },
+        {
+          "start": 9.375,
+          "end": 10.0,
+          "endpoint_lower_bound": 0.0038735640514527174,
+          "nearest_endpoint_displacement_bound": 0.003863065007928562,
+          "clearance_lower_bound": 1.0499043524155385e-05
+        },
+        {
+          "start": 10.0,
+          "end": 10.625,
+          "endpoint_lower_bound": 0.0038742317754052926,
+          "nearest_endpoint_displacement_bound": 0.003863065007928562,
+          "clearance_lower_bound": 1.1166767476730559e-05
+        },
+        {
+          "start": 10.625,
+          "end": 11.25,
+          "endpoint_lower_bound": 0.0038733556472934708,
+          "nearest_endpoint_displacement_bound": 0.003863065007928562,
+          "clearance_lower_bound": 1.0290639364908712e-05
+        },
+        {
+          "start": 11.25,
+          "end": 11.875,
+          "endpoint_lower_bound": 0.0038733556472934708,
+          "nearest_endpoint_displacement_bound": 0.003863065007928562,
+          "clearance_lower_bound": 1.0290639364908712e-05
+        },
+        {
+          "start": 11.875,
+          "end": 12.5,
+          "endpoint_lower_bound": 0.003873068076859566,
+          "nearest_endpoint_displacement_bound": 0.003863065007928562,
+          "clearance_lower_bound": 1.0003068931003882e-05
+        },
+        {
+          "start": 12.5,
+          "end": 13.125,
+          "endpoint_lower_bound": 0.003873068076859566,
+          "nearest_endpoint_displacement_bound": 0.003863065007928562,
+          "clearance_lower_bound": 1.0003068931003882e-05
+        },
+        {
+          "start": 13.125,
+          "end": 13.75,
+          "endpoint_lower_bound": 0.003874418292394392,
+          "nearest_endpoint_displacement_bound": 0.003863065007928562,
+          "clearance_lower_bound": 1.1353284465829769e-05
+        },
+        {
+          "start": 13.75,
+          "end": 14.375,
+          "endpoint_lower_bound": 0.003874418292394392,
+          "nearest_endpoint_displacement_bound": 0.003863065007928562,
+          "clearance_lower_bound": 1.1353284465829769e-05
+        },
+        {
+          "start": 14.375,
+          "end": 15.0,
+          "endpoint_lower_bound": 0.003873660901248569,
+          "nearest_endpoint_displacement_bound": 0.003863065007928562,
+          "clearance_lower_bound": 1.0595893320006905e-05
+        },
+        {
+          "start": 15.0,
+          "end": 15.625,
+          "endpoint_lower_bound": 0.003873660901248569,
+          "nearest_endpoint_displacement_bound": 0.003863065007928562,
+          "clearance_lower_bound": 1.0595893320006905e-05
+        },
+        {
+          "start": 15.625,
+          "end": 16.25,
+          "endpoint_lower_bound": 0.0038747981829223193,
+          "nearest_endpoint_displacement_bound": 0.003863065007928562,
+          "clearance_lower_bound": 1.1733174993757214e-05
+        },
+        {
+          "start": 16.25,
+          "end": 16.875,
+          "endpoint_lower_bound": 0.003873452198322261,
+          "nearest_endpoint_displacement_bound": 0.003863065007928562,
+          "clearance_lower_bound": 1.0387190393698793e-05
+        },
+        {
+          "start": 16.875,
+          "end": 17.5,
+          "endpoint_lower_bound": 0.003873452198322261,
+          "nearest_endpoint_displacement_bound": 0.003863065007928562,
+          "clearance_lower_bound": 1.0387190393698793e-05
+        },
+        {
+          "start": 17.5,
+          "end": 18.125,
+          "endpoint_lower_bound": 0.0038774815913966837,
+          "nearest_endpoint_displacement_bound": 0.003863065007928562,
+          "clearance_lower_bound": 1.4416583468121642e-05
+        },
+        {
+          "start": 18.125,
+          "end": 18.75,
+          "endpoint_lower_bound": 0.0038774815913966837,
+          "nearest_endpoint_displacement_bound": 0.003863065007928562,
+          "clearance_lower_bound": 1.4416583468121642e-05
+        },
+        {
+          "start": 18.75,
+          "end": 19.375,
+          "endpoint_lower_bound": 0.0038745141521070205,
+          "nearest_endpoint_displacement_bound": 0.003863065007928562,
+          "clearance_lower_bound": 1.1449144178458416e-05
+        },
+        {
+          "start": 19.375,
+          "end": 20.0,
+          "endpoint_lower_bound": 0.0038745141521070205,
+          "nearest_endpoint_displacement_bound": 0.003863065007928562,
+          "clearance_lower_bound": 1.1449144178458416e-05
+        },
+        {
+          "start": 20.0,
+          "end": 20.625,
+          "endpoint_lower_bound": 0.003873683199875213,
+          "nearest_endpoint_displacement_bound": 0.003863065007928562,
+          "clearance_lower_bound": 1.0618191946650847e-05
+        },
+        {
+          "start": 20.625,
+          "end": 21.25,
+          "endpoint_lower_bound": 0.003873683199875213,
+          "nearest_endpoint_displacement_bound": 0.003863065007928562,
+          "clearance_lower_bound": 1.0618191946650847e-05
+        },
+        {
+          "start": 21.25,
+          "end": 21.875,
+          "endpoint_lower_bound": 0.0038747450437227812,
+          "nearest_endpoint_displacement_bound": 0.003863065007928562,
+          "clearance_lower_bound": 1.1680035794219175e-05
+        },
+        {
+          "start": 21.875,
+          "end": 22.5,
+          "endpoint_lower_bound": 0.0038733241249564836,
+          "nearest_endpoint_displacement_bound": 0.003863065007928562,
+          "clearance_lower_bound": 1.0259117027921517e-05
+        },
+        {
+          "start": 22.5,
+          "end": 23.125,
+          "endpoint_lower_bound": 0.0038733241249564836,
+          "nearest_endpoint_displacement_bound": 0.003863065007928562,
+          "clearance_lower_bound": 1.0259117027921517e-05
+        },
+        {
+          "start": 23.125,
+          "end": 23.75,
+          "endpoint_lower_bound": 0.0038775581244401775,
+          "nearest_endpoint_displacement_bound": 0.003863065007928562,
+          "clearance_lower_bound": 1.4493116511615431e-05
+        },
+        {
+          "start": 23.75,
+          "end": 24.375,
+          "endpoint_lower_bound": 0.003875036853530467,
+          "nearest_endpoint_displacement_bound": 0.003863065007928562,
+          "clearance_lower_bound": 1.1971845601904847e-05
+        },
+        {
+          "start": 24.375,
+          "end": 25.0,
+          "endpoint_lower_bound": 0.0038745439428387075,
+          "nearest_endpoint_displacement_bound": 0.003863065007928562,
+          "clearance_lower_bound": 1.147893491014549e-05
+        },
+        {
+          "start": 25.0,
+          "end": 25.625,
+          "endpoint_lower_bound": 0.0038745439428387075,
+          "nearest_endpoint_displacement_bound": 0.003863065007928562,
+          "clearance_lower_bound": 1.147893491014549e-05
+        },
+        {
+          "start": 25.625,
+          "end": 26.25,
+          "endpoint_lower_bound": 0.0038738080723227115,
+          "nearest_endpoint_displacement_bound": 0.003863065007928562,
+          "clearance_lower_bound": 1.0743064394149425e-05
+        },
+        {
+          "start": 26.25,
+          "end": 26.875,
+          "endpoint_lower_bound": 0.0038738080723227115,
+          "nearest_endpoint_displacement_bound": 0.003863065007928562,
+          "clearance_lower_bound": 1.0743064394149425e-05
+        },
+        {
+          "start": 26.875,
+          "end": 27.5,
+          "endpoint_lower_bound": 0.003874835409871943,
+          "nearest_endpoint_displacement_bound": 0.003863065007928562,
+          "clearance_lower_bound": 1.1770401943380845e-05
+        },
+        {
+          "start": 27.5,
+          "end": 28.125,
+          "endpoint_lower_bound": 0.0038734244524701623,
+          "nearest_endpoint_displacement_bound": 0.003863065007928562,
+          "clearance_lower_bound": 1.0359444541600295e-05
+        },
+        {
+          "start": 28.125,
+          "end": 28.75,
+          "endpoint_lower_bound": 0.0038734244524701623,
+          "nearest_endpoint_displacement_bound": 0.003863065007928562,
+          "clearance_lower_bound": 1.0359444541600295e-05
+        },
+        {
+          "start": 28.75,
+          "end": 29.375,
+          "endpoint_lower_bound": 0.00387543024003556,
+          "nearest_endpoint_displacement_bound": 0.003863065007928562,
+          "clearance_lower_bound": 1.2365232106997977e-05
+        },
+        {
+          "start": 29.375,
+          "end": 30.0,
+          "endpoint_lower_bound": 0.003877440785880341,
+          "nearest_endpoint_displacement_bound": 0.003863065007928562,
+          "clearance_lower_bound": 1.4375777951779016e-05
+        },
+        {
+          "start": 30.0,
+          "end": 30.625,
+          "endpoint_lower_bound": 0.0038742206149900314,
+          "nearest_endpoint_displacement_bound": 0.003863065007928562,
+          "clearance_lower_bound": 1.1155607061469341e-05
+        },
+        {
+          "start": 30.625,
+          "end": 31.25,
+          "endpoint_lower_bound": 0.0038742206149900314,
+          "nearest_endpoint_displacement_bound": 0.003863065007928562,
+          "clearance_lower_bound": 1.1155607061469341e-05
+        },
+        {
+          "start": 31.25,
+          "end": 31.875,
+          "endpoint_lower_bound": 0.0038737679603508355,
+          "nearest_endpoint_displacement_bound": 0.003863065007928562,
+          "clearance_lower_bound": 1.0702952422273447e-05
+        },
+        {
+          "start": 31.875,
+          "end": 32.5,
+          "endpoint_lower_bound": 0.0038737679603508355,
+          "nearest_endpoint_displacement_bound": 0.003863065007928562,
+          "clearance_lower_bound": 1.0702952422273447e-05
+        },
+        {
+          "start": 32.5,
+          "end": 33.125,
+          "endpoint_lower_bound": 0.0038748681545378305,
+          "nearest_endpoint_displacement_bound": 0.003863065007928562,
+          "clearance_lower_bound": 1.1803146609268463e-05
+        },
+        {
+          "start": 33.125,
+          "end": 33.75,
+          "endpoint_lower_bound": 0.0038734742505180837,
+          "nearest_endpoint_displacement_bound": 0.003863065007928562,
+          "clearance_lower_bound": 1.0409242589521674e-05
+        },
+        {
+          "start": 33.75,
+          "end": 34.375,
+          "endpoint_lower_bound": 0.0038734742505180837,
+          "nearest_endpoint_displacement_bound": 0.003863065007928562,
+          "clearance_lower_bound": 1.0409242589521674e-05
+        },
+        {
+          "start": 34.375,
+          "end": 35.0,
+          "endpoint_lower_bound": 0.003877558947670343,
+          "nearest_endpoint_displacement_bound": 0.003863065007928562,
+          "clearance_lower_bound": 1.4493939741780891e-05
+        },
+        {
+          "start": 35.0,
+          "end": 35.625,
+          "endpoint_lower_bound": 0.003877558947670343,
+          "nearest_endpoint_displacement_bound": 0.003863065007928562,
+          "clearance_lower_bound": 1.4493939741780891e-05
+        },
+        {
+          "start": 35.625,
+          "end": 36.25,
+          "endpoint_lower_bound": 0.00387438557478396,
+          "nearest_endpoint_displacement_bound": 0.003863065007928562,
+          "clearance_lower_bound": 1.1320566855398118e-05
+        },
+        {
+          "start": 36.25,
+          "end": 36.875,
+          "endpoint_lower_bound": 0.00387438557478396,
+          "nearest_endpoint_displacement_bound": 0.003863065007928562,
+          "clearance_lower_bound": 1.1320566855398118e-05
+        },
+        {
+          "start": 36.875,
+          "end": 37.5,
+          "endpoint_lower_bound": 0.003873820031411533,
+          "nearest_endpoint_displacement_bound": 0.003863065007928562,
+          "clearance_lower_bound": 1.075502348297109e-05
+        },
+        {
+          "start": 37.5,
+          "end": 38.125,
+          "endpoint_lower_bound": 0.003873820031411533,
+          "nearest_endpoint_displacement_bound": 0.003863065007928562,
+          "clearance_lower_bound": 1.075502348297109e-05
+        },
+        {
+          "start": 38.125,
+          "end": 38.75,
+          "endpoint_lower_bound": 0.003874712475592069,
+          "nearest_endpoint_displacement_bound": 0.003863065007928562,
+          "clearance_lower_bound": 1.1647467663506925e-05
+        },
+        {
+          "start": 38.75,
+          "end": 39.375,
+          "endpoint_lower_bound": 0.0038734523850402804,
+          "nearest_endpoint_displacement_bound": 0.003863065007928562,
+          "clearance_lower_bound": 1.0387377111718311e-05
+        },
+        {
+          "start": 39.375,
+          "end": 40.0,
+          "endpoint_lower_bound": 0.0038734523850402804,
+          "nearest_endpoint_displacement_bound": 0.003863065007928562,
+          "clearance_lower_bound": 1.0387377111718311e-05
+        },
+        {
+          "start": 40.0,
+          "end": 40.625,
+          "endpoint_lower_bound": 0.0038773317467236043,
+          "nearest_endpoint_displacement_bound": 0.003863065007928562,
+          "clearance_lower_bound": 1.4266738795042262e-05
+        },
+        {
+          "start": 40.625,
+          "end": 41.25,
+          "endpoint_lower_bound": 0.0038773317467236043,
+          "nearest_endpoint_displacement_bound": 0.003863065007928562,
+          "clearance_lower_bound": 1.4266738795042262e-05
+        },
+        {
+          "start": 41.25,
+          "end": 41.875,
+          "endpoint_lower_bound": 0.003874308160804623,
+          "nearest_endpoint_displacement_bound": 0.003863065007928562,
+          "clearance_lower_bound": 1.124315287606096e-05
+        },
+        {
+          "start": 41.875,
+          "end": 42.5,
+          "endpoint_lower_bound": 0.003874308160804623,
+          "nearest_endpoint_displacement_bound": 0.003863065007928562,
+          "clearance_lower_bound": 1.124315287606096e-05
+        },
+        {
+          "start": 42.5,
+          "end": 43.125,
+          "endpoint_lower_bound": 0.00387378749976652,
+          "nearest_endpoint_displacement_bound": 0.003863065007928562,
+          "clearance_lower_bound": 1.072249183795785e-05
+        },
+        {
+          "start": 43.125,
+          "end": 43.75,
+          "endpoint_lower_bound": 0.00387378749976652,
+          "nearest_endpoint_displacement_bound": 0.003863065007928562,
+          "clearance_lower_bound": 1.072249183795785e-05
+        },
+        {
+          "start": 43.75,
+          "end": 44.375,
+          "endpoint_lower_bound": 0.0038748275117435477,
+          "nearest_endpoint_displacement_bound": 0.003863065007928562,
+          "clearance_lower_bound": 1.1762503814985621e-05
+        },
+        {
+          "start": 44.375,
+          "end": 45.0,
+          "endpoint_lower_bound": 0.003873295874617641,
+          "nearest_endpoint_displacement_bound": 0.003863065007928562,
+          "clearance_lower_bound": 1.0230866689078973e-05
+        },
+        {
+          "start": 45.0,
+          "end": 45.625,
+          "endpoint_lower_bound": 0.003873295874617641,
+          "nearest_endpoint_displacement_bound": 0.003863065007928562,
+          "clearance_lower_bound": 1.0230866689078973e-05
+        },
+        {
+          "start": 45.625,
+          "end": 46.25,
+          "endpoint_lower_bound": 0.003877426680065475,
+          "nearest_endpoint_displacement_bound": 0.003863065007928562,
+          "clearance_lower_bound": 1.4361672136913028e-05
+        },
+        {
+          "start": 46.25,
+          "end": 46.875,
+          "endpoint_lower_bound": 0.003877426680065475,
+          "nearest_endpoint_displacement_bound": 0.003863065007928562,
+          "clearance_lower_bound": 1.4361672136913028e-05
+        },
+        {
+          "start": 46.875,
+          "end": 47.5,
+          "endpoint_lower_bound": 0.003874529022729256,
+          "nearest_endpoint_displacement_bound": 0.003863065007928562,
+          "clearance_lower_bound": 1.1464014800693749e-05
+        },
+        {
+          "start": 47.5,
+          "end": 48.125,
+          "endpoint_lower_bound": 0.003874529022729256,
+          "nearest_endpoint_displacement_bound": 0.003863065007928562,
+          "clearance_lower_bound": 1.1464014800693749e-05
+        },
+        {
+          "start": 48.125,
+          "end": 48.75,
+          "endpoint_lower_bound": 0.0038739831384386834,
+          "nearest_endpoint_displacement_bound": 0.003863065007928562,
+          "clearance_lower_bound": 1.0918130510121325e-05
+        },
+        {
+          "start": 48.75,
+          "end": 49.375,
+          "endpoint_lower_bound": 0.0038739831384386834,
+          "nearest_endpoint_displacement_bound": 0.003863065007928562,
+          "clearance_lower_bound": 1.0918130510121325e-05
+        },
+        {
+          "start": 49.375,
+          "end": 50.0,
+          "endpoint_lower_bound": 0.003874815800283379,
+          "nearest_endpoint_displacement_bound": 0.003863065007928562,
+          "clearance_lower_bound": 1.1750792354816783e-05
+        },
+        {
+          "start": 50.0,
+          "end": 50.625,
+          "endpoint_lower_bound": 0.0038734988871224306,
+          "nearest_endpoint_displacement_bound": 0.003863065007928562,
+          "clearance_lower_bound": 1.0433879193868546e-05
+        },
+        {
+          "start": 50.625,
+          "end": 51.25,
+          "endpoint_lower_bound": 0.0038734988871224306,
+          "nearest_endpoint_displacement_bound": 0.003863065007928562,
+          "clearance_lower_bound": 1.0433879193868546e-05
+        },
+        {
+          "start": 51.25,
+          "end": 51.875,
+          "endpoint_lower_bound": 0.0038774723645365458,
+          "nearest_endpoint_displacement_bound": 0.003863065007928562,
+          "clearance_lower_bound": 1.4407356607983729e-05
+        },
+        {
+          "start": 51.875,
+          "end": 52.5,
+          "endpoint_lower_bound": 0.0038774723645365458,
+          "nearest_endpoint_displacement_bound": 0.003863065007928562,
+          "clearance_lower_bound": 1.4407356607983729e-05
+        },
+        {
+          "start": 52.5,
+          "end": 53.125,
+          "endpoint_lower_bound": 0.003874458295164758,
+          "nearest_endpoint_displacement_bound": 0.003863065007928562,
+          "clearance_lower_bound": 1.1393287236195933e-05
+        },
+        {
+          "start": 53.125,
+          "end": 53.75,
+          "endpoint_lower_bound": 0.003874458295164758,
+          "nearest_endpoint_displacement_bound": 0.003863065007928562,
+          "clearance_lower_bound": 1.1393287236195933e-05
+        },
+        {
+          "start": 53.75,
+          "end": 54.375,
+          "endpoint_lower_bound": 0.003873807137862708,
+          "nearest_endpoint_displacement_bound": 0.003863065007928562,
+          "clearance_lower_bound": 1.0742129934146125e-05
+        },
+        {
+          "start": 54.375,
+          "end": 55.0,
+          "endpoint_lower_bound": 0.003873807137862708,
+          "nearest_endpoint_displacement_bound": 0.003863065007928562,
+          "clearance_lower_bound": 1.0742129934146125e-05
+        },
+        {
+          "start": 55.0,
+          "end": 55.625,
+          "endpoint_lower_bound": 0.003874710491436002,
+          "nearest_endpoint_displacement_bound": 0.003863065007928562,
+          "clearance_lower_bound": 1.1645483507440046e-05
+        },
+        {
+          "start": 55.625,
+          "end": 56.25,
+          "endpoint_lower_bound": 0.0038734094715992297,
+          "nearest_endpoint_displacement_bound": 0.003863065007928562,
+          "clearance_lower_bound": 1.0344463670667638e-05
+        },
+        {
+          "start": 56.25,
+          "end": 56.875,
+          "endpoint_lower_bound": 0.0038734094715992297,
+          "nearest_endpoint_displacement_bound": 0.003863065007928562,
+          "clearance_lower_bound": 1.0344463670667638e-05
+        },
+        {
+          "start": 56.875,
+          "end": 57.5,
+          "endpoint_lower_bound": 0.003877623940092406,
+          "nearest_endpoint_displacement_bound": 0.003863065007928562,
+          "clearance_lower_bound": 1.4558932163843963e-05
+        },
+        {
+          "start": 57.5,
+          "end": 58.125,
+          "endpoint_lower_bound": 0.003877623940092406,
+          "nearest_endpoint_displacement_bound": 0.003863065007928562,
+          "clearance_lower_bound": 1.4558932163843963e-05
+        },
+        {
+          "start": 58.125,
+          "end": 58.75,
+          "endpoint_lower_bound": 0.0038743110424633046,
+          "nearest_endpoint_displacement_bound": 0.003863065007928562,
+          "clearance_lower_bound": 1.12460345347426e-05
+        },
+        {
+          "start": 58.75,
+          "end": 59.375,
+          "endpoint_lower_bound": 0.0038743110424633046,
+          "nearest_endpoint_displacement_bound": 0.003863065007928562,
+          "clearance_lower_bound": 1.12460345347426e-05
+        },
+        {
+          "start": 59.375,
+          "end": 60.0,
+          "endpoint_lower_bound": 0.0038737354829556153,
+          "nearest_endpoint_displacement_bound": 0.003863065007928562,
+          "clearance_lower_bound": 1.0670475027053233e-05
+        }
+      ],
+      "unresolved": [],
+      "axis_radius_bound": 0.70828030491179
+    }
+  },
+  "initial_containment_checked": true,
+  "nearest_queries": 3832079,
+  "updated_epoch": 1794679001.8014562
+}

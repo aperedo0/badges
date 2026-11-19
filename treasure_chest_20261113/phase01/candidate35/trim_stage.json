@@ -1,0 +1,66 @@
+{
+  "Chest Angular Boot -1 -1": {
+    "old_vertices": 80,
+    "new_vertices": 100,
+    "old_triangles": 156,
+    "new_polygons": 152,
+    "original_surface_loops": 465,
+    "new_cut_loops": 35
+  },
+  "Chest Angular Boot -1 1": {
+    "old_vertices": 80,
+    "new_vertices": 101,
+    "old_triangles": 156,
+    "new_polygons": 152,
+    "original_surface_loops": 466,
+    "new_cut_loops": 36
+  },
+  "Chest Angular Boot 1 -1": {
+    "old_vertices": 80,
+    "new_vertices": 101,
+    "old_triangles": 156,
+    "new_polygons": 152,
+    "original_surface_loops": 466,
+    "new_cut_loops": 36
+  },
+  "Chest Angular Boot 1 1": {
+    "old_vertices": 80,
+    "new_vertices": 100,
+    "old_triangles": 156,
+    "new_polygons": 152,
+    "original_surface_loops": 465,
+    "new_cut_loops": 35
+  },
+  "Chest Body Corner Collar -1 -1": {
+    "old_vertices": 176,
+    "new_vertices": 153,
+    "old_triangles": 348,
+    "new_polygons": 254,
+    "original_surface_loops": 775,
+    "new_cut_loops": 35
+  },
+  "Chest Body Corner Collar -1 1": {
+    "old_vertices": 176,
+    "new_vertices": 153,
+    "old_triangles": 348,
+    "new_polygons": 254,
+    "original_surface_loops": 775,
+    "new_cut_loops": 35
+  },
+  "Chest Body Corner Collar 1 -1": {
+    "old_vertices": 176,
+    "new_vertices": 153,
+    "old_triangles": 348,
+    "new_polygons": 254,
+    "original_surface_loops": 775,
+    "new_cut_loops": 35
+  },
+  "Chest Body Corner Collar 1 1": {
+    "old_vertices": 176,
+    "new_vertices": 153,
+    "old_triangles": 348,
+    "new_polygons": 254,
+    "original_surface_loops": 775,
+    "new_cut_loops": 35
+  }
+}

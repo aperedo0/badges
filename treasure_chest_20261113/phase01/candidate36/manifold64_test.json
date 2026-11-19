@@ -1,0 +1,114 @@
+{
+  "Chest Body Upper Rim": {
+    "inputs": [
+      {
+        "name": "Chest Body Upper Rim",
+        "triangles": 544,
+        "volume": 0.9998923466676146,
+        "tolerance": 3.1790931224823e-12
+      },
+      {
+        "name": "Chest Body Corner Collar -1 -1",
+        "triangles": 302,
+        "volume": 0.18501295983075672,
+        "tolerance": 3.272790431976318e-12
+      },
+      {
+        "name": "Chest Body Corner Collar -1 1",
+        "triangles": 302,
+        "volume": 0.18501289123577871,
+        "tolerance": 2.9867877960205076e-12
+      },
+      {
+        "name": "Chest Body Corner Collar 1 -1",
+        "triangles": 302,
+        "volume": 0.18501289145546923,
+        "tolerance": 2.9867877960205076e-12
+      },
+      {
+        "name": "Chest Body Corner Collar 1 1",
+        "triangles": 302,
+        "volume": 0.1850129596340717,
+        "tolerance": 3.272790431976318e-12
+      }
+    ],
+    "seconds": 0.012256860733032227,
+    "closed": true,
+    "euler": 0,
+    "genus": 1,
+    "triangles": 1848,
+    "vertices": 924,
+    "minimum_area": 1.411459337663453e-11,
+    "below_old_area_gate": 1,
+    "volume": 1.4870869243728382,
+    "tolerance": 3.272790431976318e-12
+  },
+  "Chest Upper Lid Rim": {
+    "inputs": [
+      {
+        "name": "Chest Upper Lid Rim",
+        "triangles": 630,
+        "volume": 1.3148739916478347,
+        "tolerance": 3.2872121334075927e-12
+      },
+      {
+        "name": "Chest Lid Corner Armor -1 -1",
+        "triangles": 178,
+        "volume": 0.11093154581311034,
+        "tolerance": 3.336333751678467e-12
+      },
+      {
+        "name": "Chest Lid Corner Armor -1 1",
+        "triangles": 174,
+        "volume": 0.11093156038431594,
+        "tolerance": 3.0500175952911376e-12
+      },
+      {
+        "name": "Chest Lid Corner Armor 1 -1",
+        "triangles": 174,
+        "volume": 0.11093156038431594,
+        "tolerance": 3.0500175952911376e-12
+      },
+      {
+        "name": "Chest Lid Corner Armor 1 1",
+        "triangles": 178,
+        "volume": 0.11093154581311031,
+        "tolerance": 3.336333751678467e-12
+      },
+      {
+        "name": "Chest Broad End Arch -1",
+        "triangles": 5156,
+        "volume": 1.0400058928997467,
+        "tolerance": 3.2739458084106446e-12
+      },
+      {
+        "name": "Chest Broad End Arch 1",
+        "triangles": 5156,
+        "volume": 1.0400058933852605,
+        "tolerance": 3.2739458084106446e-12
+      },
+      {
+        "name": "Chest Lid Hoop 2",
+        "triangles": 2204,
+        "volume": 0.5292340242304906,
+        "tolerance": 2.4992499351501465e-12
+      },
+      {
+        "name": "Chest Lid Hoop 3",
+        "triangles": 2204,
+        "volume": 0.5292340383755011,
+        "tolerance": 2.4992499351501465e-12
+      }
+    ],
+    "seconds": 0.10770797729492188,
+    "closed": true,
+    "euler": -8,
+    "genus": 5,
+    "triangles": 15516,
+    "vertices": 7750,
+    "minimum_area": 7.861416580057244e-13,
+    "below_old_area_gate": 12,
+    "volume": 4.130324351538438,
+    "tolerance": 3.336333751678467e-12
+  }
+}

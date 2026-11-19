@@ -1,0 +1,40 @@
+{
+  "selected": "AW_depth_hierarchy",
+  "live_file": "/Users/antonioperedo/Desktop/badges/treasure_chest_20261113/phase04/wood_lab/timber_refinement/AW_depth_hierarchy/master.blend",
+  "live_confirmed": true,
+  "artwork_frozen": true,
+  "working": false,
+  "owner_review_pending": true,
+  "baseline": "baseline.blend, complete initial AE owner state",
+  "immediate_previous": "live_before_AW.blend, complete AT owner state",
+  "previous_best": "../AT_hardwood_faces/master.blend",
+  "scope": "Only the existing test plank; original complete scene, reference, camera and rig retained",
+  "retained": [
+    "Flow aligned organization of existing medium formations",
+    "Selective alignment of crosswise secondary modulation, fine band retained",
+    "Actual mesh based cap correction",
+    "Healthy natural core growth and fine normal data, existing split clearer",
+    "Width selective depth hierarchy retains narrow channels as secondary grain"
+  ],
+  "rejected": {
+    "AJ": "Vertical bands from independent column profiles",
+    "AL": "Fingerprint appearance",
+    "AO": "Smooth uniform vertical core",
+    "AP": "Tight crop transferred source pith defect",
+    "AS": "Structural cap mask missed much of actual raised geometry",
+    "AU": "Traced core read as engraving",
+    "AV": "No clear extra visual gain"
+  },
+  "remaining": "Broad transitions still smoother and rounder than reference; pith contour differs. Unapproved.",
+  "next": "Previous round preserved at 97cce9c. Read root PROJECT_STATE.md for final polish.",
+  "background_jobs_running": false,
+  "final_views_inspected": [
+    "close",
+    "right",
+    "plank",
+    "context_contact",
+    "equivalent_scale_knot"
+  ],
+  "window_capture": "Final AW window capture unavailable; live API confirms AW. Existing owner_window shows preceding AT.",
+  "superseded_by": "BC_final_polish"
+}

@@ -1,0 +1,8 @@
+{
+  "source": "candidate05",
+  "gem_geometry_unchanged": true,
+  "profile_vertices_before": 8,
+  "profile_vertices_after": 17,
+  "real_convex_front_cross_section": true,
+  "original_shader_restored": true
+}

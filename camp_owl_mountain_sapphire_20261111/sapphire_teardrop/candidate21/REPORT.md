@@ -1,0 +1,1 @@
+Rejected development test. A taller actual crown on the physical flat backed cut retained an overly plain glass appearance and weakened the desired upper highlight. No native deployment. Retain candidate18 instead.

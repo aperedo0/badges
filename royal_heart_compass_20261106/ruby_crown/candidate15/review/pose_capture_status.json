@@ -1,0 +1,14 @@
+{
+  "actual_model_verified": true,
+  "capture_version": 4,
+  "sha256": "6c526d41bbe49201e87b4a6d7629592ec21aa75eb635dcb039cfc234a547877d",
+  "completed_poses": [
+    "front",
+    "early_turn",
+    "side_left",
+    "back",
+    "side_right",
+    "full_turn"
+  ],
+  "all_six_measured_poses_complete": true
+}

@@ -1,0 +1,1174 @@
+{
+  "moved": 43,
+  "unchanged": 115,
+  "hidden": [
+    "Chest Rail Rivet -1 2"
+  ],
+  "new": "Chest Small Front Rail Rivet -1",
+  "band_land_centers": [
+    -2.4275000846355823,
+    -0.8091667555754416,
+    0.809166693213454,
+    2.4275000846355823
+  ],
+  "band_center_intervals": [
+    1.6183333290601407,
+    1.6183334487888956,
+    1.6183333914221283
+  ],
+  "rear_rivet_clearance": [
+    {
+      "name": "Chest Rail Rivet -1 0",
+      "lateral_gap": 0.08799995727446586
+    },
+    {
+      "name": "Chest Rail Rivet -1 1",
+      "lateral_gap": 0.08799994143095002
+    }
+  ],
+  "handles": [
+    {
+      "side": -1,
+      "centered": true,
+      "ring_plate_intersections": 0,
+      "ring_cover_intersections": 0,
+      "root_support_x": [
+        -2.795000161253107,
+        -2.7950001321710474,
+        -2.795000242108131,
+        -2.795000161253107,
+        -2.7950001321710474,
+        -2.795000242108131,
+        -2.795000161253107,
+        -2.7950001321710474,
+        -2.795000242108131
+      ]
+    },
+    {
+      "side": 1,
+      "centered": true,
+      "ring_plate_intersections": 0,
+      "ring_cover_intersections": 0,
+      "root_support_x": [
+        2.7950001789368386,
+        2.7950001321710474,
+        2.795000224424399,
+        2.7950001789368386,
+        2.7950001321710474,
+        2.795000224424399,
+        2.7950001789368386,
+        2.7950001321710474,
+        2.795000224424399
+      ]
+    }
+  ],
+  "parts": [
+    {
+      "name": "Chest Body Envelope",
+      "moved": false,
+      "maximum_coordinate_error": 0.0,
+      "maximum_normal_error": 0.0,
+      "maximum_normal_degrees": 1.2074182697257333e-06
+    },
+    {
+      "name": "Chest Barrel Lid Envelope",
+      "moved": false,
+      "maximum_coordinate_error": 0.0,
+      "maximum_normal_error": 0.0,
+      "maximum_normal_degrees": 1.7075472925031877e-06
+    },
+    {
+      "name": "Chest Lid Hoop 2",
+      "moved": true,
+      "maximum_coordinate_error": 7.64429568533842e-08,
+      "maximum_normal_error": 2.16066837310791e-05,
+      "maximum_normal_degrees": 0.0013063690970687297
+    },
+    {
+      "name": "Chest Lid Hoop 3",
+      "moved": true,
+      "maximum_coordinate_error": 3.382563584786169e-08,
+      "maximum_normal_error": 1.132860779762268e-05,
+      "maximum_normal_degrees": 0.0006492778777079156
+    },
+    {
+      "name": "Chest Broad End Arch -1",
+      "moved": false,
+      "maximum_coordinate_error": 0.0,
+      "maximum_normal_error": 0.0,
+      "maximum_normal_degrees": 1.7075472925031877e-06
+    },
+    {
+      "name": "Chest Broad End Arch 1",
+      "moved": false,
+      "maximum_coordinate_error": 0.0,
+      "maximum_normal_error": 0.0,
+      "maximum_normal_degrees": 1.7075472925031877e-06
+    },
+    {
+      "name": "Chest Upper Lid Rim",
+      "moved": false,
+      "maximum_coordinate_error": 0.0,
+      "maximum_normal_error": 0.0,
+      "maximum_normal_degrees": 1.7075472925031877e-06
+    },
+    {
+      "name": "Chest Body Upper Rim",
+      "moved": false,
+      "maximum_coordinate_error": 0.0,
+      "maximum_normal_error": 0.0,
+      "maximum_normal_degrees": 1.2074182697257333e-06
+    },
+    {
+      "name": "Chest Lower Rim",
+      "moved": false,
+      "maximum_coordinate_error": 0.0,
+      "maximum_normal_error": 0.0,
+      "maximum_normal_degrees": 1.2074182697257333e-06
+    },
+    {
+      "name": "Chest Corner Upright -1 -1",
+      "moved": false,
+      "maximum_coordinate_error": 0.0,
+      "maximum_normal_error": 0.0,
+      "maximum_normal_degrees": 1.2074182697257333e-06
+    },
+    {
+      "name": "Chest Angular Boot -1 -1",
+      "moved": false,
+      "maximum_coordinate_error": 0.0,
+      "maximum_normal_error": 0.0,
+      "maximum_normal_degrees": 1.2074182697257333e-06
+    },
+    {
+      "name": "Chest Lid Corner Armor -1 -1",
+      "moved": false,
+      "maximum_coordinate_error": 0.0,
+      "maximum_normal_error": 0.0,
+      "maximum_normal_degrees": 1.7075472925031877e-06
+    },
+    {
+      "name": "Chest Corner Upright -1 1",
+      "moved": false,
+      "maximum_coordinate_error": 0.0,
+      "maximum_normal_error": 0.0,
+      "maximum_normal_degrees": 1.2074182697257333e-06
+    },
+    {
+      "name": "Chest Angular Boot -1 1",
+      "moved": false,
+      "maximum_coordinate_error": 0.0,
+      "maximum_normal_error": 0.0,
+      "maximum_normal_degrees": 1.7075472925031877e-06
+    },
+    {
+      "name": "Chest Lid Corner Armor -1 1",
+      "moved": false,
+      "maximum_coordinate_error": 0.0,
+      "maximum_normal_error": 0.0,
+      "maximum_normal_degrees": 1.2074182697257333e-06
+    },
+    {
+      "name": "Chest Corner Upright 1 -1",
+      "moved": false,
+      "maximum_coordinate_error": 0.0,
+      "maximum_normal_error": 0.0,
+      "maximum_normal_degrees": 1.2074182697257333e-06
+    },
+    {
+      "name": "Chest Angular Boot 1 -1",
+      "moved": false,
+      "maximum_coordinate_error": 0.0,
+      "maximum_normal_error": 0.0,
+      "maximum_normal_degrees": 1.7075472925031877e-06
+    },
+    {
+      "name": "Chest Lid Corner Armor 1 -1",
+      "moved": false,
+      "maximum_coordinate_error": 0.0,
+      "maximum_normal_error": 0.0,
+      "maximum_normal_degrees": 1.2074182697257333e-06
+    },
+    {
+      "name": "Chest Corner Upright 1 1",
+      "moved": false,
+      "maximum_coordinate_error": 0.0,
+      "maximum_normal_error": 0.0,
+      "maximum_normal_degrees": 1.2074182697257333e-06
+    },
+    {
+      "name": "Chest Angular Boot 1 1",
+      "moved": false,
+      "maximum_coordinate_error": 0.0,
+      "maximum_normal_error": 0.0,
+      "maximum_normal_degrees": 1.2074182697257333e-06
+    },
+    {
+      "name": "Chest Lid Corner Armor 1 1",
+      "moved": false,
+      "maximum_coordinate_error": 0.0,
+      "maximum_normal_error": 0.0,
+      "maximum_normal_degrees": 1.7075472925031877e-06
+    },
+    {
+      "name": "Chest Central Lock Strap",
+      "moved": false,
+      "maximum_coordinate_error": 0.0,
+      "maximum_normal_error": 0.0,
+      "maximum_normal_degrees": 1.2074182697257333e-06
+    },
+    {
+      "name": "Chest Central Lower Cuff",
+      "moved": false,
+      "maximum_coordinate_error": 0.0,
+      "maximum_normal_error": 0.0,
+      "maximum_normal_degrees": 1.7075472925031877e-06
+    },
+    {
+      "name": "Chest Crown Fastener Mass 1",
+      "moved": false,
+      "maximum_coordinate_error": 0.0,
+      "maximum_normal_error": 0.0,
+      "maximum_normal_degrees": 1.2074182697257333e-06
+    },
+    {
+      "name": "Chest Crown Fastener Mass 2",
+      "moved": true,
+      "maximum_coordinate_error": 2.995133385752524e-08,
+      "maximum_normal_error": 6.3478946685791016e-06,
+      "maximum_normal_degrees": 0.0003913711804459212
+    },
+    {
+      "name": "Chest Crown Fastener Mass 3",
+      "moved": true,
+      "maximum_coordinate_error": 2.5779008927528935e-08,
+      "maximum_normal_error": 4.366040229797363e-06,
+      "maximum_normal_degrees": 0.0002812429399799899
+    },
+    {
+      "name": "Chest Crown Fastener Mass 4",
+      "moved": false,
+      "maximum_coordinate_error": 0.0,
+      "maximum_normal_error": 0.0,
+      "maximum_normal_degrees": 1.2074182697257333e-06
+    },
+    {
+      "name": "Chest Hasp Mount",
+      "moved": false,
+      "maximum_coordinate_error": 0.0,
+      "maximum_normal_error": 0.0,
+      "maximum_normal_degrees": 1.7075472925031877e-06
+    },
+    {
+      "name": "Chest Front Hasp Barrel",
+      "moved": false,
+      "maximum_coordinate_error": 0.0,
+      "maximum_normal_error": 0.0,
+      "maximum_normal_degrees": 1.7075472925031877e-06
+    },
+    {
+      "name": "Chest Shield Lock Plate With Bore",
+      "moved": false,
+      "maximum_coordinate_error": 0.0,
+      "maximum_normal_error": 0.0,
+      "maximum_normal_degrees": 1.7075472925031877e-06
+    },
+    {
+      "name": "Chest Curved Hasp Tongue",
+      "moved": false,
+      "maximum_coordinate_error": 0.0,
+      "maximum_normal_error": 0.0,
+      "maximum_normal_degrees": 1.7075472925031877e-06
+    },
+    {
+      "name": "Chest Handle Mount -1",
+      "moved": true,
+      "maximum_coordinate_error": 9.536743172944284e-08,
+      "maximum_normal_error": 1.7583370208740234e-05,
+      "maximum_normal_degrees": 0.0011798731692697169
+    },
+    {
+      "name": "Chest Solid Ring Handle -1",
+      "moved": true,
+      "maximum_coordinate_error": 1.1563301072214927e-07,
+      "maximum_normal_error": 0.0018512159585952759,
+      "maximum_normal_degrees": 0.10849715844428329
+    },
+    {
+      "name": "Chest Handle Mount 1",
+      "moved": true,
+      "maximum_coordinate_error": 7.152557390810443e-08,
+      "maximum_normal_error": 2.3312866687774658e-05,
+      "maximum_normal_degrees": 0.0013414520221148492
+    },
+    {
+      "name": "Chest Solid Ring Handle 1",
+      "moved": true,
+      "maximum_coordinate_error": 8.225440994991118e-08,
+      "maximum_normal_error": 0.0019183382391929626,
+      "maximum_normal_degrees": 0.11480294582862989
+    },
+    {
+      "name": "Chest Rear Hinge Lower -1",
+      "moved": false,
+      "maximum_coordinate_error": 0.0,
+      "maximum_normal_error": 0.0,
+      "maximum_normal_degrees": 1.2074182697257333e-06
+    },
+    {
+      "name": "Chest Rear Hinge Upper -1",
+      "moved": false,
+      "maximum_coordinate_error": 0.0,
+      "maximum_normal_error": 0.0,
+      "maximum_normal_degrees": 1.2074182697257333e-06
+    },
+    {
+      "name": "Chest Rear Hinge Barrel -1",
+      "moved": false,
+      "maximum_coordinate_error": 0.0,
+      "maximum_normal_error": 0.0,
+      "maximum_normal_degrees": 1.7075472925031877e-06
+    },
+    {
+      "name": "Chest Rear Hinge Lower 1",
+      "moved": false,
+      "maximum_coordinate_error": 0.0,
+      "maximum_normal_error": 0.0,
+      "maximum_normal_degrees": 1.2074182697257333e-06
+    },
+    {
+      "name": "Chest Rear Hinge Upper 1",
+      "moved": false,
+      "maximum_coordinate_error": 0.0,
+      "maximum_normal_error": 0.0,
+      "maximum_normal_degrees": 1.2074182697257333e-06
+    },
+    {
+      "name": "Chest Rear Hinge Barrel 1",
+      "moved": false,
+      "maximum_coordinate_error": 0.0,
+      "maximum_normal_error": 0.0,
+      "maximum_normal_degrees": 1.7075472925031877e-06
+    },
+    {
+      "name": "Chest Body Corner Collar -1 -1",
+      "moved": false,
+      "maximum_coordinate_error": 0.0,
+      "maximum_normal_error": 0.0,
+      "maximum_normal_degrees": 1.7075472925031877e-06
+    },
+    {
+      "name": "Chest Body Corner Collar -1 1",
+      "moved": false,
+      "maximum_coordinate_error": 0.0,
+      "maximum_normal_error": 0.0,
+      "maximum_normal_degrees": 1.2074182697257333e-06
+    },
+    {
+      "name": "Chest Body Corner Collar 1 -1",
+      "moved": false,
+      "maximum_coordinate_error": 0.0,
+      "maximum_normal_error": 0.0,
+      "maximum_normal_degrees": 1.2074182697257333e-06
+    },
+    {
+      "name": "Chest Body Corner Collar 1 1",
+      "moved": false,
+      "maximum_coordinate_error": 0.0,
+      "maximum_normal_error": 0.0,
+      "maximum_normal_degrees": 1.7075472925031877e-06
+    },
+    {
+      "name": "Chest Lock Backing With Bore",
+      "moved": false,
+      "maximum_coordinate_error": 0.0,
+      "maximum_normal_error": 0.0,
+      "maximum_normal_degrees": 1.7075472925031877e-06
+    },
+    {
+      "name": "Chest Lock Border With Bore",
+      "moved": false,
+      "maximum_coordinate_error": 0.0,
+      "maximum_normal_error": 0.0,
+      "maximum_normal_degrees": 1.2074182697257333e-06
+    },
+    {
+      "name": "Chest Hoop Rivet 0 0",
+      "moved": false,
+      "maximum_coordinate_error": 0.0,
+      "maximum_normal_error": 0.0,
+      "maximum_normal_degrees": 1.2074182697257333e-06
+    },
+    {
+      "name": "Chest Hoop Rivet 0 1",
+      "moved": false,
+      "maximum_coordinate_error": 0.0,
+      "maximum_normal_error": 0.0,
+      "maximum_normal_degrees": 1.2074182697257333e-06
+    },
+    {
+      "name": "Chest Hoop Rivet 1 0",
+      "moved": true,
+      "maximum_coordinate_error": 7.64429568533842e-08,
+      "maximum_normal_error": 3.8504600524902344e-05,
+      "maximum_normal_degrees": 0.002319455053185354
+    },
+    {
+      "name": "Chest Hoop Rivet 1 1",
+      "moved": true,
+      "maximum_coordinate_error": 4.276633269739705e-08,
+      "maximum_normal_error": 2.238154411315918e-05,
+      "maximum_normal_degrees": 0.001400330113940337
+    },
+    {
+      "name": "Chest Hoop Rivet 1 2",
+      "moved": true,
+      "maximum_coordinate_error": 4.276633269739705e-08,
+      "maximum_normal_error": 9.894371032714844e-06,
+      "maximum_normal_degrees": 0.000841024246787906
+    },
+    {
+      "name": "Chest Hoop Rivet 1 3",
+      "moved": true,
+      "maximum_coordinate_error": 4.276633269739705e-08,
+      "maximum_normal_error": 1.9550323486328125e-05,
+      "maximum_normal_degrees": 0.0013873241173700118
+    },
+    {
+      "name": "Chest Hoop Rivet 1 4",
+      "moved": true,
+      "maximum_coordinate_error": 2.995133385752524e-08,
+      "maximum_normal_error": 1.531839370727539e-05,
+      "maximum_normal_degrees": 0.0011859834839484528
+    },
+    {
+      "name": "Chest Hoop Rivet 1 5",
+      "moved": true,
+      "maximum_coordinate_error": 2.995133385752524e-08,
+      "maximum_normal_error": 6.467103958129883e-06,
+      "maximum_normal_degrees": 0.00040109282731662355
+    },
+    {
+      "name": "Chest Hoop Rivet 2 0",
+      "moved": true,
+      "maximum_coordinate_error": 3.382563584786169e-08,
+      "maximum_normal_error": 1.7687678337097168e-05,
+      "maximum_normal_degrees": 0.0010696373230648765
+    },
+    {
+      "name": "Chest Hoop Rivet 2 1",
+      "moved": true,
+      "maximum_coordinate_error": 2.5779008927528935e-08,
+      "maximum_normal_error": 1.2516975402832031e-05,
+      "maximum_normal_degrees": 0.0008779192955680351
+    },
+    {
+      "name": "Chest Hoop Rivet 2 2",
+      "moved": true,
+      "maximum_coordinate_error": 4.023313515677529e-09,
+      "maximum_normal_error": 7.927417755126953e-06,
+      "maximum_normal_degrees": 0.0004879366807785623
+    },
+    {
+      "name": "Chest Hoop Rivet 2 3",
+      "moved": true,
+      "maximum_coordinate_error": 2.5779008927528935e-08,
+      "maximum_normal_error": 3.883242607116699e-05,
+      "maximum_normal_degrees": 0.002262077424720713
+    },
+    {
+      "name": "Chest Hoop Rivet 2 4",
+      "moved": true,
+      "maximum_coordinate_error": 2.5779008927528935e-08,
+      "maximum_normal_error": 1.4275312423706055e-05,
+      "maximum_normal_degrees": 0.0009269851050267349
+    },
+    {
+      "name": "Chest Hoop Rivet 2 5",
+      "moved": true,
+      "maximum_coordinate_error": 2.5779008927528935e-08,
+      "maximum_normal_error": 6.0498714447021484e-06,
+      "maximum_normal_degrees": 0.0005839337402429792
+    },
+    {
+      "name": "Chest Hoop Rivet 3 0",
+      "moved": false,
+      "maximum_coordinate_error": 0.0,
+      "maximum_normal_error": 0.0,
+      "maximum_normal_degrees": 1.7075472925031877e-06
+    },
+    {
+      "name": "Chest Hoop Rivet 3 1",
+      "moved": false,
+      "maximum_coordinate_error": 0.0,
+      "maximum_normal_error": 0.0,
+      "maximum_normal_degrees": 1.7075472925031877e-06
+    },
+    {
+      "name": "Chest Upper Corner Front Rivet -1 -1",
+      "moved": false,
+      "maximum_coordinate_error": 0.0,
+      "maximum_normal_error": 0.0,
+      "maximum_normal_degrees": 1.2074182697257333e-06
+    },
+    {
+      "name": "Chest Upper Corner End Rivet -1 -1",
+      "moved": false,
+      "maximum_coordinate_error": 0.0,
+      "maximum_normal_error": 0.0,
+      "maximum_normal_degrees": 1.2074182697257333e-06
+    },
+    {
+      "name": "Chest Boot Front Rivet -1 -1",
+      "moved": false,
+      "maximum_coordinate_error": 0.0,
+      "maximum_normal_error": 0.0,
+      "maximum_normal_degrees": 1.2074182697257333e-06
+    },
+    {
+      "name": "Chest Boot End Rivet -1 -1",
+      "moved": false,
+      "maximum_coordinate_error": 0.0,
+      "maximum_normal_error": 0.0,
+      "maximum_normal_degrees": 1.2074182697257333e-06
+    },
+    {
+      "name": "Chest Upper Corner Front Rivet -1 1",
+      "moved": false,
+      "maximum_coordinate_error": 0.0,
+      "maximum_normal_error": 0.0,
+      "maximum_normal_degrees": 1.2074182697257333e-06
+    },
+    {
+      "name": "Chest Upper Corner End Rivet -1 1",
+      "moved": false,
+      "maximum_coordinate_error": 0.0,
+      "maximum_normal_error": 0.0,
+      "maximum_normal_degrees": 1.2074182697257333e-06
+    },
+    {
+      "name": "Chest Boot Front Rivet -1 1",
+      "moved": false,
+      "maximum_coordinate_error": 0.0,
+      "maximum_normal_error": 0.0,
+      "maximum_normal_degrees": 1.2074182697257333e-06
+    },
+    {
+      "name": "Chest Boot End Rivet -1 1",
+      "moved": false,
+      "maximum_coordinate_error": 0.0,
+      "maximum_normal_error": 0.0,
+      "maximum_normal_degrees": 1.2074182697257333e-06
+    },
+    {
+      "name": "Chest Upper Corner Front Rivet 1 -1",
+      "moved": false,
+      "maximum_coordinate_error": 0.0,
+      "maximum_normal_error": 0.0,
+      "maximum_normal_degrees": 1.2074182697257333e-06
+    },
+    {
+      "name": "Chest Upper Corner End Rivet 1 -1",
+      "moved": false,
+      "maximum_coordinate_error": 0.0,
+      "maximum_normal_error": 0.0,
+      "maximum_normal_degrees": 1.2074182697257333e-06
+    },
+    {
+      "name": "Chest Boot Front Rivet 1 -1",
+      "moved": false,
+      "maximum_coordinate_error": 0.0,
+      "maximum_normal_error": 0.0,
+      "maximum_normal_degrees": 1.2074182697257333e-06
+    },
+    {
+      "name": "Chest Boot End Rivet 1 -1",
+      "moved": false,
+      "maximum_coordinate_error": 0.0,
+      "maximum_normal_error": 0.0,
+      "maximum_normal_degrees": 1.7075472925031877e-06
+    },
+    {
+      "name": "Chest Upper Corner Front Rivet 1 1",
+      "moved": false,
+      "maximum_coordinate_error": 0.0,
+      "maximum_normal_error": 0.0,
+      "maximum_normal_degrees": 1.2074182697257333e-06
+    },
+    {
+      "name": "Chest Upper Corner End Rivet 1 1",
+      "moved": false,
+      "maximum_coordinate_error": 0.0,
+      "maximum_normal_error": 0.0,
+      "maximum_normal_degrees": 1.2074182697257333e-06
+    },
+    {
+      "name": "Chest Boot Front Rivet 1 1",
+      "moved": false,
+      "maximum_coordinate_error": 0.0,
+      "maximum_normal_error": 0.0,
+      "maximum_normal_degrees": 1.2074182697257333e-06
+    },
+    {
+      "name": "Chest Boot End Rivet 1 1",
+      "moved": false,
+      "maximum_coordinate_error": 0.0,
+      "maximum_normal_error": 0.0,
+      "maximum_normal_degrees": 1.2074182697257333e-06
+    },
+    {
+      "name": "Chest Body Lip Rivet -1 0",
+      "moved": true,
+      "maximum_coordinate_error": 1.6808509806232053e-08,
+      "maximum_normal_error": 0.0001499652862548828,
+      "maximum_normal_degrees": 0.01019031604052607
+    },
+    {
+      "name": "Chest Body Lip Rivet -1 1",
+      "moved": true,
+      "maximum_coordinate_error": 7.641315491468958e-08,
+      "maximum_normal_error": 7.165223360061646e-05,
+      "maximum_normal_degrees": 0.004109028603695037
+    },
+    {
+      "name": "Chest Body Lip Rivet 1 0",
+      "moved": true,
+      "maximum_coordinate_error": 7.641315447060038e-08,
+      "maximum_normal_error": 6.989575922489166e-05,
+      "maximum_normal_degrees": 0.004046739202012308
+    },
+    {
+      "name": "Chest Body Lip Rivet 1 1",
+      "moved": true,
+      "maximum_coordinate_error": 1.6808509917254355e-08,
+      "maximum_normal_error": 0.00013044476509094238,
+      "maximum_normal_degrees": 0.00766578806044738
+    },
+    {
+      "name": "Chest Handle Mount Rivet -1 -1",
+      "moved": true,
+      "maximum_coordinate_error": 6.753206260867728e-08,
+      "maximum_normal_error": 9.584426879882812e-05,
+      "maximum_normal_degrees": 0.006358866228740738
+    },
+    {
+      "name": "Chest Handle Mount Rivet -1 1",
+      "moved": true,
+      "maximum_coordinate_error": 6.753206260867728e-08,
+      "maximum_normal_error": 5.543231964111328e-05,
+      "maximum_normal_degrees": 0.0037917275711365933
+    },
+    {
+      "name": "Chest Handle Mount Rivet 1 -1",
+      "moved": true,
+      "maximum_coordinate_error": 9.888410579250717e-08,
+      "maximum_normal_error": 5.8770179748535156e-05,
+      "maximum_normal_degrees": 0.00402292724538511
+    },
+    {
+      "name": "Chest Handle Mount Rivet 1 1",
+      "moved": true,
+      "maximum_coordinate_error": 6.753206260867728e-08,
+      "maximum_normal_error": 7.361173629760742e-05,
+      "maximum_normal_degrees": 0.004960821265341507
+    },
+    {
+      "name": "Chest Lock Rivet 0",
+      "moved": false,
+      "maximum_coordinate_error": 0.0,
+      "maximum_normal_error": 0.0,
+      "maximum_normal_degrees": 1.2074182697257333e-06
+    },
+    {
+      "name": "Chest Lock Rivet 1",
+      "moved": false,
+      "maximum_coordinate_error": 0.0,
+      "maximum_normal_error": 0.0,
+      "maximum_normal_degrees": 1.7075472925031877e-06
+    },
+    {
+      "name": "Chest Lock Rivet 2",
+      "moved": false,
+      "maximum_coordinate_error": 0.0,
+      "maximum_normal_error": 0.0,
+      "maximum_normal_degrees": 1.2074182697257333e-06
+    },
+    {
+      "name": "Chest Lock Rivet 3",
+      "moved": false,
+      "maximum_coordinate_error": 0.0,
+      "maximum_normal_error": 0.0,
+      "maximum_normal_degrees": 1.2074182697257333e-06
+    },
+    {
+      "name": "Chest Lock Rivet 4",
+      "moved": false,
+      "maximum_coordinate_error": 0.0,
+      "maximum_normal_error": 0.0,
+      "maximum_normal_degrees": 1.2074182697257333e-06
+    },
+    {
+      "name": "Chest Lock Rivet 5",
+      "moved": false,
+      "maximum_coordinate_error": 0.0,
+      "maximum_normal_error": 0.0,
+      "maximum_normal_degrees": 1.2074182697257333e-06
+    },
+    {
+      "name": "Chest Lock Rivet 6",
+      "moved": false,
+      "maximum_coordinate_error": 0.0,
+      "maximum_normal_error": 0.0,
+      "maximum_normal_degrees": 1.2074182697257333e-06
+    },
+    {
+      "name": "Chest Lower Strap Rivet",
+      "moved": false,
+      "maximum_coordinate_error": 0.0,
+      "maximum_normal_error": 0.0,
+      "maximum_normal_degrees": 1.2074182697257333e-06
+    },
+    {
+      "name": "Chest Upright Diamond -1 -1",
+      "moved": false,
+      "maximum_coordinate_error": 0.0,
+      "maximum_normal_error": 0.0,
+      "maximum_normal_degrees": 1.2074182697257333e-06
+    },
+    {
+      "name": "Chest Upright Diamond -1 1",
+      "moved": false,
+      "maximum_coordinate_error": 0.0,
+      "maximum_normal_error": 0.0,
+      "maximum_normal_degrees": 1.2074182697257333e-06
+    },
+    {
+      "name": "Chest Upright Diamond 1 -1",
+      "moved": false,
+      "maximum_coordinate_error": 0.0,
+      "maximum_normal_error": 0.0,
+      "maximum_normal_degrees": 1.2074182697257333e-06
+    },
+    {
+      "name": "Chest Upright Diamond 1 1",
+      "moved": false,
+      "maximum_coordinate_error": 0.0,
+      "maximum_normal_error": 0.0,
+      "maximum_normal_degrees": 1.2074182697257333e-06
+    },
+    {
+      "name": "Chest End Arch Rivet -1 0",
+      "moved": false,
+      "maximum_coordinate_error": 0.0,
+      "maximum_normal_error": 0.0,
+      "maximum_normal_degrees": 1.2074182697257333e-06
+    },
+    {
+      "name": "Chest End Arch Rivet -1 1",
+      "moved": false,
+      "maximum_coordinate_error": 0.0,
+      "maximum_normal_error": 0.0,
+      "maximum_normal_degrees": 1.2074182697257333e-06
+    },
+    {
+      "name": "Chest Corner Body Cuff Front Rivet -1 -1",
+      "moved": false,
+      "maximum_coordinate_error": 0.0,
+      "maximum_normal_error": 0.0,
+      "maximum_normal_degrees": 1.2074182697257333e-06
+    },
+    {
+      "name": "Chest Corner Body Cuff End Rivet -1 -1",
+      "moved": false,
+      "maximum_coordinate_error": 0.0,
+      "maximum_normal_error": 0.0,
+      "maximum_normal_degrees": 1.7075472925031877e-06
+    },
+    {
+      "name": "Chest Corner Body Cuff Front Rivet -1 1",
+      "moved": false,
+      "maximum_coordinate_error": 0.0,
+      "maximum_normal_error": 0.0,
+      "maximum_normal_degrees": 1.7075472925031877e-06
+    },
+    {
+      "name": "Chest Corner Body Cuff End Rivet -1 1",
+      "moved": false,
+      "maximum_coordinate_error": 0.0,
+      "maximum_normal_error": 0.0,
+      "maximum_normal_degrees": 1.7075472925031877e-06
+    },
+    {
+      "name": "Chest End Arch Rivet 1 0",
+      "moved": false,
+      "maximum_coordinate_error": 0.0,
+      "maximum_normal_error": 0.0,
+      "maximum_normal_degrees": 1.7075472925031877e-06
+    },
+    {
+      "name": "Chest End Arch Rivet 1 1",
+      "moved": false,
+      "maximum_coordinate_error": 0.0,
+      "maximum_normal_error": 0.0,
+      "maximum_normal_degrees": 1.2074182697257333e-06
+    },
+    {
+      "name": "Chest Corner Body Cuff Front Rivet 1 -1",
+      "moved": false,
+      "maximum_coordinate_error": 0.0,
+      "maximum_normal_error": 0.0,
+      "maximum_normal_degrees": 1.7075472925031877e-06
+    },
+    {
+      "name": "Chest Corner Body Cuff End Rivet 1 -1",
+      "moved": false,
+      "maximum_coordinate_error": 0.0,
+      "maximum_normal_error": 0.0,
+      "maximum_normal_degrees": 1.7075472925031877e-06
+    },
+    {
+      "name": "Chest Corner Body Cuff Front Rivet 1 1",
+      "moved": false,
+      "maximum_coordinate_error": 0.0,
+      "maximum_normal_error": 0.0,
+      "maximum_normal_degrees": 1.2074182697257333e-06
+    },
+    {
+      "name": "Chest Corner Body Cuff End Rivet 1 1",
+      "moved": false,
+      "maximum_coordinate_error": 0.0,
+      "maximum_normal_error": 0.0,
+      "maximum_normal_degrees": 1.7075472925031877e-06
+    },
+    {
+      "name": "Chest Hasp Pivot Dome -1",
+      "moved": false,
+      "maximum_coordinate_error": 0.0,
+      "maximum_normal_error": 0.0,
+      "maximum_normal_degrees": 1.7075472925031877e-06
+    },
+    {
+      "name": "Chest Hasp Mount Fastener -1",
+      "moved": false,
+      "maximum_coordinate_error": 0.0,
+      "maximum_normal_error": 0.0,
+      "maximum_normal_degrees": 1.2074182697257333e-06
+    },
+    {
+      "name": "Chest End Arch Crown Tab -1",
+      "moved": false,
+      "maximum_coordinate_error": 0.0,
+      "maximum_normal_error": 0.0,
+      "maximum_normal_degrees": 1.7075472925031877e-06
+    },
+    {
+      "name": "Chest End Crown Fastener -1",
+      "moved": false,
+      "maximum_coordinate_error": 0.0,
+      "maximum_normal_error": 0.0,
+      "maximum_normal_degrees": 1.7075472925031877e-06
+    },
+    {
+      "name": "Chest Hasp Pivot Dome 1",
+      "moved": false,
+      "maximum_coordinate_error": 0.0,
+      "maximum_normal_error": 0.0,
+      "maximum_normal_degrees": 1.7075472925031877e-06
+    },
+    {
+      "name": "Chest Hasp Mount Fastener 1",
+      "moved": false,
+      "maximum_coordinate_error": 0.0,
+      "maximum_normal_error": 0.0,
+      "maximum_normal_degrees": 1.7075472925031877e-06
+    },
+    {
+      "name": "Chest End Arch Crown Tab 1",
+      "moved": false,
+      "maximum_coordinate_error": 0.0,
+      "maximum_normal_error": 0.0,
+      "maximum_normal_degrees": 1.7075472925031877e-06
+    },
+    {
+      "name": "Chest End Crown Fastener 1",
+      "moved": false,
+      "maximum_coordinate_error": 0.0,
+      "maximum_normal_error": 0.0,
+      "maximum_normal_degrees": 1.7075472925031877e-06
+    },
+    {
+      "name": "Chest Upper Corner Front Rivet -1 -1 Seat",
+      "moved": false,
+      "maximum_coordinate_error": 0.0,
+      "maximum_normal_error": 0.0,
+      "maximum_normal_degrees": 1.2074182697257333e-06
+    },
+    {
+      "name": "Chest Upper Corner End Rivet -1 -1 Seat",
+      "moved": false,
+      "maximum_coordinate_error": 0.0,
+      "maximum_normal_error": 0.0,
+      "maximum_normal_degrees": 1.2074182697257333e-06
+    },
+    {
+      "name": "Chest Boot Front Rivet -1 -1 Seat",
+      "moved": false,
+      "maximum_coordinate_error": 0.0,
+      "maximum_normal_error": 0.0,
+      "maximum_normal_degrees": 1.2074182697257333e-06
+    },
+    {
+      "name": "Chest Boot End Rivet -1 -1 Seat",
+      "moved": false,
+      "maximum_coordinate_error": 0.0,
+      "maximum_normal_error": 0.0,
+      "maximum_normal_degrees": 1.7075472925031877e-06
+    },
+    {
+      "name": "Chest Upper Corner Front Rivet -1 1 Seat",
+      "moved": false,
+      "maximum_coordinate_error": 0.0,
+      "maximum_normal_error": 0.0,
+      "maximum_normal_degrees": 1.2074182697257333e-06
+    },
+    {
+      "name": "Chest Upper Corner End Rivet -1 1 Seat",
+      "moved": false,
+      "maximum_coordinate_error": 0.0,
+      "maximum_normal_error": 0.0,
+      "maximum_normal_degrees": 1.2074182697257333e-06
+    },
+    {
+      "name": "Chest Boot Front Rivet -1 1 Seat",
+      "moved": false,
+      "maximum_coordinate_error": 0.0,
+      "maximum_normal_error": 0.0,
+      "maximum_normal_degrees": 1.2074182697257333e-06
+    },
+    {
+      "name": "Chest Boot End Rivet -1 1 Seat",
+      "moved": false,
+      "maximum_coordinate_error": 0.0,
+      "maximum_normal_error": 0.0,
+      "maximum_normal_degrees": 1.7075472925031877e-06
+    },
+    {
+      "name": "Chest Upper Corner Front Rivet 1 -1 Seat",
+      "moved": false,
+      "maximum_coordinate_error": 0.0,
+      "maximum_normal_error": 0.0,
+      "maximum_normal_degrees": 1.7075472925031877e-06
+    },
+    {
+      "name": "Chest Upper Corner End Rivet 1 -1 Seat",
+      "moved": false,
+      "maximum_coordinate_error": 0.0,
+      "maximum_normal_error": 0.0,
+      "maximum_normal_degrees": 1.2074182697257333e-06
+    },
+    {
+      "name": "Chest Boot Front Rivet 1 -1 Seat",
+      "moved": false,
+      "maximum_coordinate_error": 0.0,
+      "maximum_normal_error": 0.0,
+      "maximum_normal_degrees": 1.2074182697257333e-06
+    },
+    {
+      "name": "Chest Boot End Rivet 1 -1 Seat",
+      "moved": false,
+      "maximum_coordinate_error": 0.0,
+      "maximum_normal_error": 0.0,
+      "maximum_normal_degrees": 1.7075472925031877e-06
+    },
+    {
+      "name": "Chest Upper Corner Front Rivet 1 1 Seat",
+      "moved": false,
+      "maximum_coordinate_error": 0.0,
+      "maximum_normal_error": 0.0,
+      "maximum_normal_degrees": 1.2074182697257333e-06
+    },
+    {
+      "name": "Chest Upper Corner End Rivet 1 1 Seat",
+      "moved": false,
+      "maximum_coordinate_error": 0.0,
+      "maximum_normal_error": 0.0,
+      "maximum_normal_degrees": 1.2074182697257333e-06
+    },
+    {
+      "name": "Chest Boot Front Rivet 1 1 Seat",
+      "moved": false,
+      "maximum_coordinate_error": 0.0,
+      "maximum_normal_error": 0.0,
+      "maximum_normal_degrees": 1.7075472925031877e-06
+    },
+    {
+      "name": "Chest Boot End Rivet 1 1 Seat",
+      "moved": false,
+      "maximum_coordinate_error": 0.0,
+      "maximum_normal_error": 0.0,
+      "maximum_normal_degrees": 1.7075472925031877e-06
+    },
+    {
+      "name": "Chest Rail Rivet -1 0",
+      "moved": true,
+      "maximum_coordinate_error": 4.392862318347568e-08,
+      "maximum_normal_error": 3.179721534252167e-05,
+      "maximum_normal_degrees": 0.0024416379890400924
+    },
+    {
+      "name": "Chest Rail Rivet -1 1",
+      "moved": true,
+      "maximum_coordinate_error": 1.035332677368217e-07,
+      "maximum_normal_error": 3.865733742713928e-05,
+      "maximum_normal_degrees": 0.002217673389591809
+    },
+    {
+      "name": "Chest Rail Rivet -1 3",
+      "moved": true,
+      "maximum_coordinate_error": 4.646182061307513e-08,
+      "maximum_normal_error": 1.9088387489318848e-05,
+      "maximum_normal_degrees": 0.0011967945481893786
+    },
+    {
+      "name": "Chest Rail Rivet -1 4",
+      "moved": true,
+      "maximum_coordinate_error": 7.25090503195247e-08,
+      "maximum_normal_error": 4.135258495807648e-05,
+      "maximum_normal_degrees": 0.002370054113191252
+    },
+    {
+      "name": "Chest Rail Rivet 1 0",
+      "moved": true,
+      "maximum_coordinate_error": 1.0353326818091091e-07,
+      "maximum_normal_error": 3.8489699363708496e-05,
+      "maximum_normal_degrees": 0.002225280060447101
+    },
+    {
+      "name": "Chest Rail Rivet 1 1",
+      "moved": true,
+      "maximum_coordinate_error": 2.092123030372761e-08,
+      "maximum_normal_error": 4.516914486885071e-05,
+      "maximum_normal_degrees": 0.0026173677084385103
+    },
+    {
+      "name": "Chest Rail Rivet 1 2",
+      "moved": true,
+      "maximum_coordinate_error": 1.8358230602366632e-08,
+      "maximum_normal_error": 5.9545040130615234e-05,
+      "maximum_normal_degrees": 0.004010528435188314
+    },
+    {
+      "name": "Chest Rail Rivet 1 3",
+      "moved": true,
+      "maximum_coordinate_error": 7.25090503195247e-08,
+      "maximum_normal_error": 4.89354133605957e-05,
+      "maximum_normal_degrees": 0.0028165902013331887
+    },
+    {
+      "name": "Chest Rail Rivet 1 4",
+      "moved": true,
+      "maximum_coordinate_error": 4.646182061307513e-08,
+      "maximum_normal_error": 3.5762786865234375e-05,
+      "maximum_normal_degrees": 0.002537642068311274
+    },
+    {
+      "name": "Chest End Rail Rivet -1 0",
+      "moved": true,
+      "maximum_coordinate_error": 1.1742115013646526e-07,
+      "maximum_normal_error": 8.738040924072266e-05,
+      "maximum_normal_degrees": 0.005801023644726614
+    },
+    {
+      "name": "Chest End Rail Rivet -1 1",
+      "moved": true,
+      "maximum_coordinate_error": 1.1742115013646526e-07,
+      "maximum_normal_error": 8.159875869750977e-05,
+      "maximum_normal_degrees": 0.005343932053526186
+    },
+    {
+      "name": "Chest End Rail Rivet 1 0",
+      "moved": true,
+      "maximum_coordinate_error": 1.1742115013646526e-07,
+      "maximum_normal_error": 7.832050323486328e-05,
+      "maximum_normal_degrees": 0.00506802675849979
+    },
+    {
+      "name": "Chest End Rail Rivet 1 1",
+      "moved": true,
+      "maximum_coordinate_error": 1.1742115013646526e-07,
+      "maximum_normal_error": 8.308887481689453e-05,
+      "maximum_normal_degrees": 0.0054020426406938575
+    },
+    {
+      "name": "Chest Measured Rolled Handle Cover -1",
+      "moved": true,
+      "maximum_coordinate_error": 3.695487982291468e-08,
+      "maximum_normal_error": 0.0069033801555633545,
+      "maximum_normal_degrees": 0.40827442847010204
+    },
+    {
+      "name": "Chest Measured Rolled Handle Cover 1",
+      "moved": true,
+      "maximum_coordinate_error": 3.695487982291468e-08,
+      "maximum_normal_error": 0.010731011629104614,
+      "maximum_normal_degrees": 0.6321348035717633
+    },
+    {
+      "name": "Chest Fixed Front Hinge Knuckle -1",
+      "moved": false,
+      "maximum_coordinate_error": 0.0,
+      "maximum_normal_error": 0.0,
+      "maximum_normal_degrees": 1.7075472925031877e-06
+    },
+    {
+      "name": "Chest Fixed Front Hinge Knuckle 1",
+      "moved": false,
+      "maximum_coordinate_error": 0.0,
+      "maximum_normal_error": 0.0,
+      "maximum_normal_degrees": 1.7075472925031877e-06
+    },
+    {
+      "name": "Chest Front Hinge Pin",
+      "moved": false,
+      "maximum_coordinate_error": 0.0,
+      "maximum_normal_error": 0.0,
+      "maximum_normal_degrees": 1.2074182697257333e-06
+    },
+    {
+      "name": "Chest Case Back With Key Bore",
+      "moved": false,
+      "maximum_coordinate_error": 0.0,
+      "maximum_normal_error": 0.0,
+      "maximum_normal_degrees": 1.7075472925031877e-06
+    },
+    {
+      "name": "Chest Hollow Lock Case Walls",
+      "moved": false,
+      "maximum_coordinate_error": 0.0,
+      "maximum_normal_error": 0.0,
+      "maximum_normal_degrees": 1.7075472925031877e-06
+    },
+    {
+      "name": "Chest Key Driven Slider",
+      "moved": false,
+      "maximum_coordinate_error": 0.0,
+      "maximum_normal_error": 0.0,
+      "maximum_normal_degrees": 1.7075472925031877e-06
+    },
+    {
+      "name": "Chest Compliant Catch Leaf",
+      "moved": false,
+      "maximum_coordinate_error": 0.0,
+      "maximum_normal_error": 0.0,
+      "maximum_normal_degrees": 1.7075472925031877e-06
+    },
+    {
+      "name": "Chest Fixed Leaf Clamp",
+      "moved": false,
+      "maximum_coordinate_error": 0.0,
+      "maximum_normal_error": 0.0,
+      "maximum_normal_degrees": 1.2074182697257333e-06
+    }
+  ],
+  "baseline33_files_unchanged": true
+}

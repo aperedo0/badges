@@ -1,0 +1,11 @@
+{
+  "source": "/Users/antonioperedo/Desktop/badges/treasure_chest_20261113/phase04/wood_lab/timber_refinement/AE_controlled_fibers/master.blend",
+  "source_file_sha256": "b6d750678979478829e1c816985d0934764b70e6ed3d2f7e3425fd0183438ea8",
+  "geometry_sha256": "e937f8fa06cbc244a96933b97e07e16aa36180da66654c48125758edb94146e5",
+  "material": [
+    "Chest Phase 1 neutral clay",
+    "Wood Lab AE_controlled_fibers"
+  ],
+  "reference_camera": "Owner reference comparison camera",
+  "live_dirty": false
+}

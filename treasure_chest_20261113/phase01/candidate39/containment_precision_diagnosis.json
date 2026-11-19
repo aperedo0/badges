@@ -1,0 +1,28 @@
+{
+  "source": "Chest Key Driven Slider",
+  "target": "Chest Lock Backing With Bore",
+  "point_local": [
+    -0.045405917325330045,
+    -0.47099998593330383,
+    1.830000134430883
+  ],
+  "target_bounds": [
+    [
+      -0.96500013032778,
+      -1.5290281772613525,
+      2.0399997688097042
+    ],
+    [
+      0.9649998243286069,
+      0.25725001096725464,
+      2.080000076740798
+    ]
+  ],
+  "nearest_actual_surface_distance": 0.22528505798519052,
+  "double_precision_inside": false,
+  "original_bvh_votes": [
+    true,
+    false,
+    false
+  ]
+}

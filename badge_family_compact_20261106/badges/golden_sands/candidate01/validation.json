@@ -1,0 +1,27 @@
+{
+  "status": "validated_candidate",
+  "before": {
+    "meshes": 22,
+    "sections": 42,
+    "triangles": 59262,
+    "vertices": 41569
+  },
+  "after": {
+    "meshes": 9,
+    "sections": 11,
+    "triangles": 59262,
+    "vertices": 44125
+  },
+  "source_sha256": "a2bfc47deae88172c05b257638d778dc393ed3f5ee54958f05f5b37fe1d53603",
+  "output_sha256": "a747ac40b1c7dc64468a5ae913fd07743315d08e4df6889ee4af0bc71522b895",
+  "bytes_before": 3744312,
+  "bytes_after": 4002419,
+  "all_triangle_corner_attributes_and_materials_identical": true,
+  "all_material_graphs_unchanged": true,
+  "protected_meshes_unchanged": [
+    "/Badge/Inset___charcoal_textured_disk/Inset___charcoal_textured_disk_mobile_geometry",
+    "/Badge/Casing___smooth_rounded_outer_edge/Casing___smooth_rounded_outer_edge_mobile_geometry"
+  ],
+  "all_textures_byte_identical": true,
+  "arkit_valid": true
+}

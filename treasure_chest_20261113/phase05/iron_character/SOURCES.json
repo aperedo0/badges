@@ -1,0 +1,28 @@
+{
+  "files": [
+    {
+      "path": "/Users/antonioperedo/Desktop/badges/treasure_chest_20261113/reference.png",
+      "sha256": "d2e2989e9f27099c59bdee7693c7f1fa208aab5810b81d999c4147fc4c82a92d"
+    },
+    {
+      "path": "/Users/antonioperedo/Desktop/badges/treasure_chest_20261113/phase05/lower_iron/resources/Metal025/Metal025_1K-PNG_Roughness.png",
+      "sha256": "56237ebd51b4b199661261f701f075771a41d575ff672b1cdd1f2fc32aca9ce0"
+    },
+    {
+      "path": "/Users/antonioperedo/Desktop/badges/treasure_chest_20261113/phase05/lower_iron/resources/Metal025/Metal025_1K-PNG_Displacement.png",
+      "sha256": "8e69bb9d11643d3f7d3f528c0da9174e95c045f2c5313b8f9f641ec983f3be44"
+    },
+    {
+      "path": "/Users/antonioperedo/Desktop/badges/treasure_chest_20261113/phase05/lower_iron/resources/Metal003/Metal003_1K-PNG_Roughness.png",
+      "sha256": "4e47df543f5f96aa7f54d5d1a6eb4c5d46164fc27569e7a612730a4170d692a5"
+    },
+    {
+      "path": "/Users/antonioperedo/Desktop/badges/treasure_chest_20261113/phase05/iron_fidelity/resources/studio_small_03_1k.hdr",
+      "sha256": "30933d55e45f0795daf49f3cbefbe0e5ebcb821ee04fb0a2818c02ffc3938817"
+    }
+  ],
+  "reference": "Owner supplied reference. Only interior feature shapes guide new shallow scale relief; no source color copied.",
+  "professional_data": "Previously downloaded official free CC0 ambientCG Metal025 and Metal003, source license records preserved in ../lower_iron/resources/SOURCES.json. Rust pigmentation not used.",
+  "environment": "Previously cached Poly Haven CC0 Studio Small 03. Source records in ../iron_fidelity/resources/SOURCES.json.",
+  "downloads_this_round": 0
+}

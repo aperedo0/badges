@@ -1,0 +1,11 @@
+{
+  "key": "M_scanned_knot",
+  "vertices": 641121,
+  "polygons": 643262,
+  "watertight": true,
+  "original_boundary_vertices_exact": true,
+  "max_recession": 0.041999999433755875,
+  "front_datum_preserved": true,
+  "source_scene_untouched": true,
+  "images_packed": true
+}

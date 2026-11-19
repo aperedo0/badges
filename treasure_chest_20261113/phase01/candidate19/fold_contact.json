@@ -1,0 +1,16 @@
+[
+  {
+    "side": -1,
+    "width_samples": 17,
+    "fold_contact_min": 0.001950603851582855,
+    "fold_contact_max": 0.0019735301611945033,
+    "actual_beveled_mesh": true
+  },
+  {
+    "side": 1,
+    "width_samples": 17,
+    "fold_contact_min": 0.0019507221586536616,
+    "fold_contact_max": 0.0019735301611945033,
+    "actual_beveled_mesh": true
+  }
+]

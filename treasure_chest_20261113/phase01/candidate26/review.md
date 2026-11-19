@@ -1,0 +1,5 @@
+Scoped visual result: NOT APPROVED for the moving strap and center sleeve appearance. Thick shield case, visible front pin, fixed knuckles, keyhole depth and seven fixings pass visual construction review. No clear speckle, cracks or surface dents. Enlarged pixel steps do not establish final mobile finish.
+
+The strap hides nearly the entire center sleeve. Expose the actual horizontal barrel and attach the strap below it. Lower left edge resembles stacked sheets; build the raised edge as part of the same strap section and blend its ending. Black slits above and below strap read looser than reference; reduce only when actual clearance permits. No motion approval. Key internals, hollow wood, rear hinge and opening rig remain pending.
+
+Mechanism27 affected plan is APPROVED round1 and resolves the buried lower sleeve root and integral ridged strap. Build it next. Candidate26 continuous certificate is incomplete: full sleeve envelope certified, tongue only partially certified, no whole assembly pass. Discrete0..60degree screen has no triangle collisions, but does not prove the intervals between poses. All evidence retained.

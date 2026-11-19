@@ -1,0 +1,28 @@
+{
+  "complete_mesh_count": 3,
+  "triangles": 8696,
+  "all_used_images_packed_and_match_usdz": true,
+  "images": [
+    {
+      "name": "Rim_brushed_reference_roughness.png.003",
+      "sha256": "2dd0421486bac68bd1dc669b879074954dd7fa21e377f19c6012d1bd510c0a54"
+    },
+    {
+      "name": "backdrop_color.png",
+      "sha256": "bee109de376f0a754adaabf558c2612c1bdf267f5ee1d18450eed093d4b451b9"
+    },
+    {
+      "name": "bronze_color.png",
+      "sha256": "c9f273ca21b207ea05b3c22a93fcee47f70d00269930235ee77947e2f5affe83"
+    },
+    {
+      "name": "Rim_brushed_reference_color.png.003",
+      "sha256": "785b8c8c0442241d3cda6b2a30190d1d258abccba33412d76613fa7391bff0f9"
+    },
+    {
+      "name": "Rim_glint_reference_roughness.png.003",
+      "sha256": "a060290fd7cfd42597e0be088a7577b29ea5147a3e9ef9b81b67e652f3a7ece1"
+    }
+  ],
+  "usdz_unchanged_sha256": "8b3c0bb1e007d604276f12275f7db52e36b430b802cc59e7a5baf891a5a0ff92"
+}

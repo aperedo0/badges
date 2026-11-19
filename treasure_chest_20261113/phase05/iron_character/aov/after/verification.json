@@ -1,0 +1,29 @@
+{
+  "version": "5.2.2 LTS",
+  "passes_verified": [
+    "Iron_BaseBlack",
+    "Iron_BaseOxide",
+    "Iron_BaseBare",
+    "Iron_RoughBlack",
+    "Iron_RoughOxide",
+    "Iron_RoughBare",
+    "Iron_MetalFe",
+    "Iron_MetalOxide",
+    "Iron_OxideCoverage",
+    "Iron_ExposedBlend",
+    "Iron_FacetWear",
+    "Iron_MarkHeight",
+    "Iron_FineHeight",
+    "Iron_PigmentSource",
+    "Iron_FinalNormal",
+    "Iron_GeometryNormal",
+    "Iron_SurfaceAlpha"
+  ],
+  "exposed_color_scene_linear_verified": true,
+  "clean_metal_constant_one_verified": true,
+  "oxide_metal_constant_zero_verified": true,
+  "zero_channel_control_verified": true,
+  "scope_pixels": 243429,
+  "production_bsdf_values_unchanged": true,
+  "diagnostics_only_in_temporary_copy": true
+}

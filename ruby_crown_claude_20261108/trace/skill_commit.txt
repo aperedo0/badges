@@ -1,0 +1,2 @@
+Badge skills: add a fresh review step where a new agent with no context checks each badge version against the owner mockup from far views and matching close ups, goes through a mockup checklist written once per badge, rates closeness and lists everything off, and work continues until it scores 90
+Badge skills: a fresh reviewer checks each badge far and up close against a mockup checklist and work continues until it scores 90

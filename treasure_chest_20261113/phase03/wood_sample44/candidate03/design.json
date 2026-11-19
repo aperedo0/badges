@@ -1,0 +1,33 @@
+{
+  "part": "Chest Body Envelope",
+  "sample": "lower front plank only",
+  "uv": "ChestWoodUV_Sample44",
+  "material": "Chest Wood Sample44 v3",
+  "bounds": {
+    "xmin": -2.55,
+    "xmax": 2.55,
+    "ymin": -2.2175,
+    "ymax": -0.84
+  },
+  "texture_width": 2048,
+  "texture_height": 768,
+  "padding": 16,
+  "metallic": 0.0,
+  "roughness_min": 0.68,
+  "roughness_max": 0.85,
+  "ior": 1.46,
+  "specular_level": 0.25,
+  "coat": 0.0,
+  "emission_strength": 0.0,
+  "maximum_normal_degrees": 20.0,
+  "knot": {
+    "x": -1.18,
+    "y": -1.38,
+    "rx": 0.34,
+    "ry": 0.17
+  },
+  "seed": 4417,
+  "texture_provenance": "Built in generation of photographic rough timber anatomy after owner rejected stylized grain. Intrinsic chart with matched roughness and inferred shallow cavity relief.",
+  "target_luminance": 0.075,
+  "illumination_flatten_strength": 0.35
+}

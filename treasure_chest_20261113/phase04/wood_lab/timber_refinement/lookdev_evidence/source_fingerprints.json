@@ -1,0 +1,15 @@
+{
+  "master_height.npz": "78662be56299352e16e497e9dd6360e3b8ffed2d1416bc0e284ad9039a4a32a7",
+  "surface.npz": "f25fa9c99a3829c2b21c0b0cf330f01f177de3ad516c5dda672fcb978ed9bab8",
+  "albedo.png": "89897831bf983fabd9d527611ae6441a95c242533c2b426c22b36dd8bee5e80e",
+  "cinema_close.png": "ff856d56441a081615fd6015a4c71ccf8eabe9a84550539d9418296f50493382",
+  "clay_graze.png": "b1d55b1ae1f4622fe45da908d36db7e4318dc6bf2ebf1582325050219f9c7917",
+  "cinema_full.png": "4253c2c73c9b2d29cd0c5d299ea6a871361c3b5eec38270f9930b3af71cd68f7",
+  "master.blend": "db859fe3e237e36eff2f75e07d5911dab31b0633f9a7018d32621fd8462a985d",
+  "validation.json": "9d1c9c77c19c8b6c20c5d1434872ae830a22ef502b1216d53628215ab3710d98",
+  "normal.png": "d30c7606b48a7b4f88fb9741e619792a3497804f954271db2fa472ab3d75b939",
+  "roughness.png": "49914dba84cc5481e99a3945e0b6445fcadc90a4921eea1ae9bab26969ecf5e9",
+  "neutral_close.png": "4934563f656fda80c8f4ccb5acfa0eb64888dac5f9338e4f1e38cb3c4d64eb1f",
+  "design.json": "d321c63b46327dde1dec7f4260a4d0ac2633deb1fc3963034c044fe0e0c240ef",
+  "saved_validation.json": "21c04631f13d091d5ba1d8036ad6da1847572bc08d587b671dedcfe7b6b3baf3"
+}

@@ -1,0 +1,11 @@
+{
+  "source_geometry": "candidate10",
+  "source_enamel": "candidate12",
+  "geometry_and_uvs_unchanged": true,
+  "fine_border_normal_source_weight": 0.3,
+  "fine_border_normal_face_weight": 0.7,
+  "fine_gold_roughness": 0.3,
+  "broad_setting_and_gold_beads_unchanged": true,
+  "changed_faces": 32174,
+  "native_review_pending": true
+}

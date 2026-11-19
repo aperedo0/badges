@@ -1,0 +1,10 @@
+{
+ "emission_scale": 2.0,
+ "cap": 1.42,
+ "lightness_weight": 0.3,
+ "white_shown": [
+  0.859,
+  0.859,
+  0.859
+ ]
+}

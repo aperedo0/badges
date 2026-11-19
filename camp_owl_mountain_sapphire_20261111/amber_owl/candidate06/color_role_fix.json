@@ -1,0 +1,105 @@
+{
+  "cause": "One shared enamel role sampled blue, cream and orange together. Gold hue exclusion also removed genuine amber glass and filled it from other colors. Separate roles with only border gold exclusion preserve the intended amber and cream.",
+  "pieces": [
+    {
+      "piece": "blue_enamel_backplate",
+      "colored_roles": [
+        "EnamelOwlBlue"
+      ]
+    },
+    {
+      "piece": "head_amber_disc",
+      "colored_roles": [
+        "EnamelOwlAmber"
+      ]
+    },
+    {
+      "piece": "left_amber_wing",
+      "colored_roles": [
+        "EnamelOwlAmber"
+      ]
+    },
+    {
+      "piece": "right_amber_wing",
+      "colored_roles": [
+        "EnamelOwlAmber"
+      ]
+    },
+    {
+      "piece": "outer_left_feather",
+      "colored_roles": [
+        "EnamelOwlCream"
+      ]
+    },
+    {
+      "piece": "outer_right_feather",
+      "colored_roles": [
+        "EnamelOwlCream"
+      ]
+    },
+    {
+      "piece": "inner_left_feather",
+      "colored_roles": [
+        "EnamelOwlCream"
+      ]
+    },
+    {
+      "piece": "inner_right_feather",
+      "colored_roles": [
+        "EnamelOwlCream"
+      ]
+    },
+    {
+      "piece": "central_cream_breast",
+      "colored_roles": [
+        "EnamelOwlCream"
+      ]
+    },
+    {
+      "piece": "cream_face_mask",
+      "colored_roles": [
+        "EnamelOwlCream"
+      ]
+    },
+    {
+      "piece": "left_amber_iris",
+      "colored_roles": [
+        "EnamelOwlAmber"
+      ]
+    },
+    {
+      "piece": "right_amber_iris",
+      "colored_roles": [
+        "EnamelOwlAmber"
+      ]
+    },
+    {
+      "piece": "left_cream_brow_blade",
+      "colored_roles": [
+        "EnamelOwlAmber",
+        "EnamelOwlCream"
+      ]
+    },
+    {
+      "piece": "right_cream_brow_blade",
+      "colored_roles": [
+        "EnamelOwlAmber",
+        "EnamelOwlCream"
+      ]
+    },
+    {
+      "piece": "central_gold_beak",
+      "colored_roles": [
+        "EnamelOwlAmber"
+      ]
+    },
+    {
+      "piece": "top_four_point_star",
+      "colored_roles": [
+        "EnamelOwlLemon"
+      ]
+    }
+  ],
+  "pupils": "Real cap depth increased by0.06 units with new geometry normals, to catch fixed studio highlights.",
+  "blender_review_pending": true
+}

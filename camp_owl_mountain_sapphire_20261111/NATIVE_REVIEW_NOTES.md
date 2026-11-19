@@ -1,0 +1,11 @@
+# Native review status
+
+Initial Campfire Night candidate08 is not shippable: native real pixel captures show speckling on fine gold rims. The modeled sine crest was only about 1.2 screen pixels across with a rise about 1.7 pixels, so the first direct cause test removes that crest while preserving the outer bevel, roughness, colors and studio. candidate09 is that diagnostic. It is not accepted. Native source08 is preserved, also in the private Campfire Night Baseline dataset for a direct comparison. This is a diagnostic baseline, not the final optimization baseline.
+
+Sapphire Teardrop candidate04 was captured at ten measured real native poses. Both true gem attachments and its mirror succeeded. Its central table is visibly cloudy from the old procedural optical density. It is not shippable. candidate05 has exactly the same closed geometry, with the new independent profile18 named CrestGem_SapphireClear. It uses constant density with real ray traced reflection, refraction and absorption, uniform absorption 8,2,0.2 and the existing exposure 0.28. Other profiles and the shared studio are preserved. The new shader compiled and installed in the second official MCP build. Native review is pending.
+
+The first sapphire recording includes a long static tail after the actual eight second turn. It was stopped, is valid native 1206 by 2622 video, and the actual turn is in its first 14 seconds. Later recordings must start, perform the bounded gesture and stop within one functions script with finally, to avoid a delayed stop during analysis.
+
+XcodeBuildMCP works for build, launch, snapshots and video. Its screenshot function returns a compressed 368 by 800 JPEG, so full size PNGs use native simctl capture. Its relative scroll gesture lands on the badge picker and did not move the scroll, so capture_native.py uses exact local AXE gestures with actual screenshot header measurements. It verifies the actual visible gallery heading and cached model bytes. It does not edit any app code or start another run.
+
+No fresh visual reviewer has been called yet. Do not claim a score or any badge complete. Next work is finish diagnosis, then full clean finish and reference reviews, then final material batching with native detailed comparisons.

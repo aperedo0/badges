@@ -1,0 +1,39 @@
+{
+  "loaded": true,
+  "model_sha256": "2e93c57ed2121fb919e9047f5ef723e9a9d8e9d695fbb7f2eaf9b042e43fe6bd",
+  "actual_cached_model": "/Users/antonioperedo/Library/Developer/CoreSimulator/Devices/C18E609E-6C2F-49C4-BCFE-E5D365F4E4E8/data/Containers/Data/Application/E834D8F7-8B3E-4D1B-B0D9-360E0CE7DFB0/tmp/Badge3DPreviewSapphireTeardrop.usdz",
+  "front_header_y": 1413.5,
+  "native_image_size": [
+    1206,
+    2622
+  ],
+  "capture_method": "Native PNG because MCP screenshot is compressed to 368 by 800 JPEG",
+  "gesture_method": "Precise local coordinates because MCP root swipe starts on the badge picker",
+  "poses": {
+    "front": {
+      "target_scroll_points": 0,
+      "actual_scroll_points": 0.0,
+      "header_y": 1413.5
+    },
+    "early_turn": {
+      "target_scroll_points": 68,
+      "actual_scroll_points": 68.0,
+      "header_y": 1209.5
+    },
+    "side_left": {
+      "target_scroll_points": 94.2528,
+      "actual_scroll_points": 94.33333333333333,
+      "header_y": 1130.5
+    },
+    "back": {
+      "target_scroll_points": 132.5056,
+      "actual_scroll_points": 132.66666666666666,
+      "header_y": 1015.5
+    },
+    "side_right": {
+      "target_scroll_points": 170.7583,
+      "actual_scroll_points": 170.66666666666666,
+      "header_y": 901.5
+    }
+  }
+}

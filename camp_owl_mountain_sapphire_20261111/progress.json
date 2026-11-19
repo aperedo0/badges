@@ -1,0 +1,49 @@
+{
+  "status": "working",
+  "owner_skips_planning_skills": true,
+  "previous_royal_run_remains_paused": true,
+  "badges": {
+    "campfire_night": {
+      "name": "Campfire Night",
+      "status": "Blender metal improved; exact color masks unresolved; candidate28 rejected",
+      "candidate": "candidate27",
+      "blend": "/Users/antonioperedo/Desktop/badges/camp_owl_mountain_sapphire_20261111/campfire_night/campfire_night.blend",
+      "owner_hold": true
+    },
+    "amber_owl": {
+      "name": "Amber Owl",
+      "status": "Blender inspection",
+      "candidate": "candidate07",
+      "blend": "/Users/antonioperedo/Desktop/badges/camp_owl_mountain_sapphire_20261111/amber_owl/amber_owl.blend",
+      "owner_hold": true
+    },
+    "radiant_mountain": {
+      "name": "Radiant Mountain",
+      "status": "Paused; initial native poses captured; finish unresolved",
+      "candidate": "candidate08",
+      "blend": "/Users/antonioperedo/Desktop/badges/camp_owl_mountain_sapphire_20261111/radiant_mountain/radiant_mountain.blend",
+      "owner_hold": true
+    },
+    "sapphire_teardrop": {
+      "name": "Sapphire Teardrop",
+      "status": "Blender inspection",
+      "candidate": "candidate27",
+      "blend": "/Users/antonioperedo/Desktop/badges/camp_owl_mountain_sapphire_20261111/sapphire_teardrop/sapphire_teardrop.blend",
+      "owner_hold": false,
+      "saved_detail": "Ruby Heart gold and brighter Sapphire cut. Final native poses and full turn reviewed; independent finish pass. Installed for owner inspection."
+    }
+  },
+  "active_badge": "sapphire_teardrop",
+  "phase": "Continuous Blender development",
+  "next_action": "Sapphire27 requested revision installed and open for owner inspection. Ruby Heart warm gold color/profile matched, brush ripple corrected with direct intrinsic map, brighter actual sapphire cut. Independent review passes clean finish and requested improvement; original mockup80/100 remains a separate acceptance question. Await owner feedback. No app code edits or timer; other badges remain on hold.",
+  "scheduled_resume_epoch": 1794480247.0,
+  "scheduled_resume_local": "2026-11-12 02:44:07 America/Los_Angeles",
+  "schedule_authorization": "55ab66df-31c9-4dd5-8cfc-818b66ed5e84",
+  "resumed_at_epoch": 1794480247.003534,
+  "break_until_epoch": null,
+  "owner_workflow": "Actual Blender renders for development and judgment. Simulator only for final judgments.",
+  "pacing_mode": "continuous",
+  "owner_scope": "Only Sapphire Teardrop. Do not work on the other three badges.",
+  "heartbeat_epoch": 1794553446.646773,
+  "owner_no_app_code_edits": true
+}

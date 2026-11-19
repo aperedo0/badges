@@ -1,0 +1,837 @@
+[
+  {
+    "name": "Continuous solid crown base",
+    "mat": "gold_recess",
+    "smooth": true
+  },
+  {
+    "name": "Embossed velvet base band",
+    "mat": "purple_velvet",
+    "smooth": true,
+    "band_grid": [
+      384,
+      16
+    ],
+    "quilt_repeat": 48,
+    "quilt_vertical_phase": 1.5444613275157872
+  },
+  {
+    "name": "Rolled polished gold crown rim",
+    "mat": "gold",
+    "smooth": true
+  },
+  {
+    "name": "Rolled polished gold crown rim",
+    "mat": "gold",
+    "smooth": true
+  },
+  {
+    "name": "Rolled polished gold crown rim",
+    "mat": "gold",
+    "smooth": true
+  },
+  {
+    "name": "Rolled polished gold crown rim",
+    "mat": "gold",
+    "smooth": true
+  },
+  {
+    "name": "Complete deeply folded amethyst velvet cushion",
+    "mat": "purple_fold_velvet",
+    "smooth": true,
+    "cloth_grid": [
+      288,
+      56
+    ]
+  },
+  {
+    "name": "Continuous 1 crown arch to central hub",
+    "mat": "gold",
+    "smooth": true
+  },
+  {
+    "name": "Polished arch raised edge",
+    "mat": "gold",
+    "smooth": true
+  },
+  {
+    "name": "Polished arch raised edge",
+    "mat": "gold",
+    "smooth": true
+  },
+  {
+    "name": "Continuous 2 crown arch to central hub",
+    "mat": "gold",
+    "smooth": true
+  },
+  {
+    "name": "Polished arch raised edge",
+    "mat": "gold",
+    "smooth": true
+  },
+  {
+    "name": "Polished arch raised edge",
+    "mat": "gold",
+    "smooth": true
+  },
+  {
+    "name": "Measured arch curled gold vine 1 leaf 0",
+    "mat": "gold",
+    "smooth": true
+  },
+  {
+    "name": "Measured arch curled gold vine 1 leaf 1",
+    "mat": "gold",
+    "smooth": true
+  },
+  {
+    "name": "Measured arch curled gold vine 1 leaf 2",
+    "mat": "gold",
+    "smooth": true
+  },
+  {
+    "name": "Measured arch curled gold vine 1 leaf 3",
+    "mat": "gold",
+    "smooth": true
+  },
+  {
+    "name": "Measured arch curled gold vine 1 leaf 4",
+    "mat": "gold",
+    "smooth": true
+  },
+  {
+    "name": "Measured arch curled gold vine 1 leaf 5",
+    "mat": "gold",
+    "smooth": true
+  },
+  {
+    "name": "Measured arch curled gold vine 1 leaf 6",
+    "mat": "gold",
+    "smooth": true
+  },
+  {
+    "name": "Measured arch curled gold vine 1 leaf 7",
+    "mat": "gold",
+    "smooth": true
+  },
+  {
+    "name": "Measured arch curled gold vine 1 leaf 8",
+    "mat": "gold",
+    "smooth": true
+  },
+  {
+    "name": "Arch 2 amethyst stone broad sculpted fleur gold setting",
+    "mat": "gold",
+    "smooth": false
+  },
+  {
+    "name": "Arch 2 amethyst stone independent gemstone",
+    "mat": "CrestGem_Amethyst",
+    "smooth": false
+  },
+  {
+    "name": "Continuous 3 crown arch to central hub",
+    "mat": "gold",
+    "smooth": true
+  },
+  {
+    "name": "Polished arch raised edge",
+    "mat": "gold",
+    "smooth": true
+  },
+  {
+    "name": "Polished arch raised edge",
+    "mat": "gold",
+    "smooth": true
+  },
+  {
+    "name": "Continuous 4 crown arch to central hub",
+    "mat": "gold",
+    "smooth": true
+  },
+  {
+    "name": "Polished arch raised edge",
+    "mat": "gold",
+    "smooth": true
+  },
+  {
+    "name": "Polished arch raised edge",
+    "mat": "gold",
+    "smooth": true
+  },
+  {
+    "name": "Measured arch curled gold vine 3 leaf 0",
+    "mat": "gold",
+    "smooth": true
+  },
+  {
+    "name": "Measured arch curled gold vine 3 leaf 1",
+    "mat": "gold",
+    "smooth": true
+  },
+  {
+    "name": "Measured arch curled gold vine 3 leaf 2",
+    "mat": "gold",
+    "smooth": true
+  },
+  {
+    "name": "Measured arch curled gold vine 3 leaf 3",
+    "mat": "gold",
+    "smooth": true
+  },
+  {
+    "name": "Measured arch curled gold vine 3 leaf 4",
+    "mat": "gold",
+    "smooth": true
+  },
+  {
+    "name": "Measured arch curled gold vine 3 leaf 5",
+    "mat": "gold",
+    "smooth": true
+  },
+  {
+    "name": "Measured arch curled gold vine 3 leaf 6",
+    "mat": "gold",
+    "smooth": true
+  },
+  {
+    "name": "Measured arch curled gold vine 3 leaf 7",
+    "mat": "gold",
+    "smooth": true
+  },
+  {
+    "name": "Measured arch curled gold vine 3 leaf 8",
+    "mat": "gold",
+    "smooth": true
+  },
+  {
+    "name": "Arch 4 amethyst stone broad sculpted fleur gold setting",
+    "mat": "gold",
+    "smooth": false
+  },
+  {
+    "name": "Arch 4 amethyst stone independent gemstone",
+    "mat": "CrestGem_Amethyst",
+    "smooth": false
+  },
+  {
+    "name": "Continuous 5 crown arch to central hub",
+    "mat": "gold",
+    "smooth": true
+  },
+  {
+    "name": "Polished arch raised edge",
+    "mat": "gold",
+    "smooth": true
+  },
+  {
+    "name": "Polished arch raised edge",
+    "mat": "gold",
+    "smooth": true
+  },
+  {
+    "name": "Continuous 6 crown arch to central hub",
+    "mat": "gold",
+    "smooth": true
+  },
+  {
+    "name": "Polished arch raised edge",
+    "mat": "gold",
+    "smooth": true
+  },
+  {
+    "name": "Polished arch raised edge",
+    "mat": "gold",
+    "smooth": true
+  },
+  {
+    "name": "Measured arch curled gold vine 5 leaf 0",
+    "mat": "gold",
+    "smooth": true
+  },
+  {
+    "name": "Measured arch curled gold vine 5 leaf 1",
+    "mat": "gold",
+    "smooth": true
+  },
+  {
+    "name": "Measured arch curled gold vine 5 leaf 2",
+    "mat": "gold",
+    "smooth": true
+  },
+  {
+    "name": "Measured arch curled gold vine 5 leaf 3",
+    "mat": "gold",
+    "smooth": true
+  },
+  {
+    "name": "Measured arch curled gold vine 5 leaf 4",
+    "mat": "gold",
+    "smooth": true
+  },
+  {
+    "name": "Measured arch curled gold vine 5 leaf 5",
+    "mat": "gold",
+    "smooth": true
+  },
+  {
+    "name": "Measured arch curled gold vine 5 leaf 6",
+    "mat": "gold",
+    "smooth": true
+  },
+  {
+    "name": "Measured arch curled gold vine 5 leaf 7",
+    "mat": "gold",
+    "smooth": true
+  },
+  {
+    "name": "Measured arch curled gold vine 5 leaf 8",
+    "mat": "gold",
+    "smooth": true
+  },
+  {
+    "name": "Arch 6 amethyst stone broad sculpted fleur gold setting",
+    "mat": "gold",
+    "smooth": false
+  },
+  {
+    "name": "Arch 6 amethyst stone independent gemstone",
+    "mat": "CrestGem_Amethyst",
+    "smooth": false
+  },
+  {
+    "name": "Continuous 7 crown arch to central hub",
+    "mat": "gold",
+    "smooth": true
+  },
+  {
+    "name": "Polished arch raised edge",
+    "mat": "gold",
+    "smooth": true
+  },
+  {
+    "name": "Polished arch raised edge",
+    "mat": "gold",
+    "smooth": true
+  },
+  {
+    "name": "Continuous 8 crown arch to central hub",
+    "mat": "gold",
+    "smooth": true
+  },
+  {
+    "name": "Polished arch raised edge",
+    "mat": "gold",
+    "smooth": true
+  },
+  {
+    "name": "Polished arch raised edge",
+    "mat": "gold",
+    "smooth": true
+  },
+  {
+    "name": "Measured arch curled gold vine 7 leaf 0",
+    "mat": "gold",
+    "smooth": true
+  },
+  {
+    "name": "Measured arch curled gold vine 7 leaf 1",
+    "mat": "gold",
+    "smooth": true
+  },
+  {
+    "name": "Measured arch curled gold vine 7 leaf 2",
+    "mat": "gold",
+    "smooth": true
+  },
+  {
+    "name": "Measured arch curled gold vine 7 leaf 3",
+    "mat": "gold",
+    "smooth": true
+  },
+  {
+    "name": "Measured arch curled gold vine 7 leaf 4",
+    "mat": "gold",
+    "smooth": true
+  },
+  {
+    "name": "Measured arch curled gold vine 7 leaf 5",
+    "mat": "gold",
+    "smooth": true
+  },
+  {
+    "name": "Measured arch curled gold vine 7 leaf 6",
+    "mat": "gold",
+    "smooth": true
+  },
+  {
+    "name": "Measured arch curled gold vine 7 leaf 7",
+    "mat": "gold",
+    "smooth": true
+  },
+  {
+    "name": "Measured arch curled gold vine 7 leaf 8",
+    "mat": "gold",
+    "smooth": true
+  },
+  {
+    "name": "Arch 8 amethyst stone broad sculpted fleur gold setting",
+    "mat": "gold",
+    "smooth": false
+  },
+  {
+    "name": "Arch 8 amethyst stone independent gemstone",
+    "mat": "CrestGem_Amethyst",
+    "smooth": false
+  },
+  {
+    "name": "Gold central joining hub",
+    "mat": "gold",
+    "smooth": true
+  },
+  {
+    "name": "Central arch joining collar",
+    "mat": "gold",
+    "smooth": true
+  },
+  {
+    "name": "Base circlet amethyst diamond 0 closed gold prong frame",
+    "mat": "gold",
+    "smooth": true
+  },
+  {
+    "name": "Base circlet amethyst diamond 0 independent gemstone",
+    "mat": "CrestGem_Amethyst",
+    "smooth": false
+  },
+  {
+    "name": "Base circlet faceted gold kite",
+    "mat": "gold",
+    "smooth": false
+  },
+  {
+    "name": "Base circlet faceted gold kite",
+    "mat": "gold",
+    "smooth": false
+  },
+  {
+    "name": "Base circlet amethyst diamond 6 closed gold prong frame",
+    "mat": "gold",
+    "smooth": true
+  },
+  {
+    "name": "Base circlet amethyst diamond 6 independent gemstone",
+    "mat": "CrestGem_Amethyst",
+    "smooth": false
+  },
+  {
+    "name": "Base circlet faceted gold kite",
+    "mat": "gold",
+    "smooth": false
+  },
+  {
+    "name": "Base circlet faceted gold kite",
+    "mat": "gold",
+    "smooth": false
+  },
+  {
+    "name": "Large central amethyst jewel independent gemstone",
+    "mat": "CrestGem_Amethyst",
+    "smooth": false
+  },
+  {
+    "name": "Large central amethyst jewel clean faceted gold shield setting",
+    "mat": "gold",
+    "smooth": true
+  },
+  {
+    "name": "Large central amethyst jewel separately sculpted gold leaf -1 0",
+    "mat": "gold",
+    "smooth": true
+  },
+  {
+    "name": "Large central amethyst jewel separately sculpted gold leaf -1 1",
+    "mat": "gold",
+    "smooth": true
+  },
+  {
+    "name": "Large central amethyst jewel separately sculpted gold leaf -1 2",
+    "mat": "gold",
+    "smooth": true
+  },
+  {
+    "name": "Large central amethyst jewel separately sculpted gold leaf -1 3",
+    "mat": "gold",
+    "smooth": true
+  },
+  {
+    "name": "Large central amethyst jewel separately sculpted gold leaf 1 0",
+    "mat": "gold",
+    "smooth": true
+  },
+  {
+    "name": "Large central amethyst jewel separately sculpted gold leaf 1 1",
+    "mat": "gold",
+    "smooth": true
+  },
+  {
+    "name": "Large central amethyst jewel separately sculpted gold leaf 1 2",
+    "mat": "gold",
+    "smooth": true
+  },
+  {
+    "name": "Large central amethyst jewel separately sculpted gold leaf 1 3",
+    "mat": "gold",
+    "smooth": true
+  },
+  {
+    "name": "Side fleur scroll",
+    "mat": "gold",
+    "smooth": true
+  },
+  {
+    "name": "Side fleur scroll",
+    "mat": "gold",
+    "smooth": true
+  },
+  {
+    "name": "Large central amethyst jewel independent gemstone",
+    "mat": "CrestGem_Amethyst",
+    "smooth": false
+  },
+  {
+    "name": "Large central amethyst jewel clean faceted gold shield setting",
+    "mat": "gold",
+    "smooth": true
+  },
+  {
+    "name": "Large central amethyst jewel separately sculpted gold leaf -1 0",
+    "mat": "gold",
+    "smooth": true
+  },
+  {
+    "name": "Large central amethyst jewel separately sculpted gold leaf -1 1",
+    "mat": "gold",
+    "smooth": true
+  },
+  {
+    "name": "Large central amethyst jewel separately sculpted gold leaf -1 2",
+    "mat": "gold",
+    "smooth": true
+  },
+  {
+    "name": "Large central amethyst jewel separately sculpted gold leaf -1 3",
+    "mat": "gold",
+    "smooth": true
+  },
+  {
+    "name": "Large central amethyst jewel separately sculpted gold leaf 1 0",
+    "mat": "gold",
+    "smooth": true
+  },
+  {
+    "name": "Large central amethyst jewel separately sculpted gold leaf 1 1",
+    "mat": "gold",
+    "smooth": true
+  },
+  {
+    "name": "Large central amethyst jewel separately sculpted gold leaf 1 2",
+    "mat": "gold",
+    "smooth": true
+  },
+  {
+    "name": "Large central amethyst jewel separately sculpted gold leaf 1 3",
+    "mat": "gold",
+    "smooth": true
+  },
+  {
+    "name": "Side fleur scroll",
+    "mat": "gold",
+    "smooth": true
+  },
+  {
+    "name": "Side fleur scroll",
+    "mat": "gold",
+    "smooth": true
+  },
+  {
+    "name": "Amethyst pointed finial measured independent gemstone",
+    "mat": "CrestGem_Amethyst",
+    "smooth": false
+  },
+  {
+    "name": "Top fleur clean faceted gold finial frame",
+    "mat": "gold",
+    "smooth": true
+  },
+  {
+    "name": "Top fleur separately sculpted gold leaf -1 0",
+    "mat": "gold",
+    "smooth": true
+  },
+  {
+    "name": "Top fleur separately sculpted gold leaf -1 1",
+    "mat": "gold",
+    "smooth": true
+  },
+  {
+    "name": "Top fleur separately sculpted gold leaf -1 2",
+    "mat": "gold",
+    "smooth": true
+  },
+  {
+    "name": "Top fleur separately sculpted gold leaf 1 0",
+    "mat": "gold",
+    "smooth": true
+  },
+  {
+    "name": "Top fleur separately sculpted gold leaf 1 1",
+    "mat": "gold",
+    "smooth": true
+  },
+  {
+    "name": "Top fleur separately sculpted gold leaf 1 2",
+    "mat": "gold",
+    "smooth": true
+  },
+  {
+    "name": "Top fleur solid joining stem",
+    "mat": "gold",
+    "smooth": true
+  },
+  {
+    "name": "Amethyst pointed finial measured independent gemstone",
+    "mat": "CrestGem_Amethyst",
+    "smooth": false
+  },
+  {
+    "name": "Top fleur clean faceted gold finial frame",
+    "mat": "gold",
+    "smooth": true
+  },
+  {
+    "name": "Top fleur separately sculpted gold leaf -1 0",
+    "mat": "gold",
+    "smooth": true
+  },
+  {
+    "name": "Top fleur separately sculpted gold leaf -1 1",
+    "mat": "gold",
+    "smooth": true
+  },
+  {
+    "name": "Top fleur separately sculpted gold leaf -1 2",
+    "mat": "gold",
+    "smooth": true
+  },
+  {
+    "name": "Top fleur separately sculpted gold leaf 1 0",
+    "mat": "gold",
+    "smooth": true
+  },
+  {
+    "name": "Top fleur separately sculpted gold leaf 1 1",
+    "mat": "gold",
+    "smooth": true
+  },
+  {
+    "name": "Top fleur separately sculpted gold leaf 1 2",
+    "mat": "gold",
+    "smooth": true
+  },
+  {
+    "name": "Top fleur solid joining stem",
+    "mat": "gold",
+    "smooth": true
+  },
+  {
+    "name": "Large central reference outer sculpted gold crest leaf 0",
+    "mat": "gold",
+    "smooth": true
+  },
+  {
+    "name": "Large central reference outer sculpted gold crest leaf 1",
+    "mat": "gold",
+    "smooth": true
+  },
+  {
+    "name": "Large central reference outer sculpted gold crest leaf 2",
+    "mat": "gold",
+    "smooth": true
+  },
+  {
+    "name": "Large central reference outer sculpted gold crest leaf 0",
+    "mat": "gold",
+    "smooth": true
+  },
+  {
+    "name": "Large central reference outer sculpted gold crest leaf 1",
+    "mat": "gold",
+    "smooth": true
+  },
+  {
+    "name": "Large central reference outer sculpted gold crest leaf 2",
+    "mat": "gold",
+    "smooth": true
+  },
+  {
+    "name": "Circlet reference closed gold leaf 1 -1 0",
+    "mat": "gold",
+    "smooth": true
+  },
+  {
+    "name": "Circlet reference closed gold leaf 1 -1 1",
+    "mat": "gold",
+    "smooth": true
+  },
+  {
+    "name": "Circlet reference closed gold leaf 1 -1 2",
+    "mat": "gold",
+    "smooth": true
+  },
+  {
+    "name": "Circlet reference closed gold leaf 1 -1 3",
+    "mat": "gold",
+    "smooth": true
+  },
+  {
+    "name": "Circlet reference closed gold leaf 1 -1 4",
+    "mat": "gold",
+    "smooth": true
+  },
+  {
+    "name": "Circlet reference closed gold leaf 1 -1 5",
+    "mat": "gold",
+    "smooth": true
+  },
+  {
+    "name": "Circlet reference closed gold leaf 1 -1 6",
+    "mat": "gold",
+    "smooth": true
+  },
+  {
+    "name": "Circlet reference closed gold leaf 1 -1 7",
+    "mat": "gold",
+    "smooth": true
+  },
+  {
+    "name": "Circlet reference closed gold leaf 1 1 0",
+    "mat": "gold",
+    "smooth": true
+  },
+  {
+    "name": "Circlet reference closed gold leaf 1 1 1",
+    "mat": "gold",
+    "smooth": true
+  },
+  {
+    "name": "Circlet reference closed gold leaf 1 1 2",
+    "mat": "gold",
+    "smooth": true
+  },
+  {
+    "name": "Circlet reference closed gold leaf 1 1 3",
+    "mat": "gold",
+    "smooth": true
+  },
+  {
+    "name": "Circlet reference closed gold leaf 1 1 4",
+    "mat": "gold",
+    "smooth": true
+  },
+  {
+    "name": "Circlet reference closed gold leaf 1 1 5",
+    "mat": "gold",
+    "smooth": true
+  },
+  {
+    "name": "Circlet reference closed gold leaf 1 1 6",
+    "mat": "gold",
+    "smooth": true
+  },
+  {
+    "name": "Circlet reference closed gold leaf 1 1 7",
+    "mat": "gold",
+    "smooth": true
+  },
+  {
+    "name": "Circlet reference closed gold leaf -1 -1 0",
+    "mat": "gold",
+    "smooth": true
+  },
+  {
+    "name": "Circlet reference closed gold leaf -1 -1 1",
+    "mat": "gold",
+    "smooth": true
+  },
+  {
+    "name": "Circlet reference closed gold leaf -1 -1 2",
+    "mat": "gold",
+    "smooth": true
+  },
+  {
+    "name": "Circlet reference closed gold leaf -1 -1 3",
+    "mat": "gold",
+    "smooth": true
+  },
+  {
+    "name": "Circlet reference closed gold leaf -1 -1 4",
+    "mat": "gold",
+    "smooth": true
+  },
+  {
+    "name": "Circlet reference closed gold leaf -1 -1 5",
+    "mat": "gold",
+    "smooth": true
+  },
+  {
+    "name": "Circlet reference closed gold leaf -1 -1 6",
+    "mat": "gold",
+    "smooth": true
+  },
+  {
+    "name": "Circlet reference closed gold leaf -1 -1 7",
+    "mat": "gold",
+    "smooth": true
+  },
+  {
+    "name": "Circlet reference closed gold leaf -1 1 0",
+    "mat": "gold",
+    "smooth": true
+  },
+  {
+    "name": "Circlet reference closed gold leaf -1 1 1",
+    "mat": "gold",
+    "smooth": true
+  },
+  {
+    "name": "Circlet reference closed gold leaf -1 1 2",
+    "mat": "gold",
+    "smooth": true
+  },
+  {
+    "name": "Circlet reference closed gold leaf -1 1 3",
+    "mat": "gold",
+    "smooth": true
+  },
+  {
+    "name": "Circlet reference closed gold leaf -1 1 4",
+    "mat": "gold",
+    "smooth": true
+  },
+  {
+    "name": "Circlet reference closed gold leaf -1 1 5",
+    "mat": "gold",
+    "smooth": true
+  },
+  {
+    "name": "Circlet reference closed gold leaf -1 1 6",
+    "mat": "gold",
+    "smooth": true
+  },
+  {
+    "name": "Circlet reference closed gold leaf -1 1 7",
+    "mat": "gold",
+    "smooth": true
+  }
+]

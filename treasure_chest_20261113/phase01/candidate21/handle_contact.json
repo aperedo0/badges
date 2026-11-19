@@ -1,0 +1,36 @@
+[
+  {
+    "side": -1,
+    "ring_plate_min_clearance": 0.0090999031066894,
+    "ring_plate_intersections": false,
+    "ring_cover_intersections": false,
+    "anchor_back_positions": [
+      2.7950000762939453,
+      2.7950000762939453,
+      2.7950000762939453,
+      2.7950000762939453,
+      2.7950000762939453,
+      2.7950000762939453
+    ],
+    "plate_top": 0.105,
+    "strip_bottom": 0.15,
+    "plate_wood_overlap": 0.005
+  },
+  {
+    "side": 1,
+    "ring_plate_min_clearance": 0.0090999031066894,
+    "ring_plate_intersections": false,
+    "ring_cover_intersections": false,
+    "anchor_back_positions": [
+      2.7950000762939453,
+      2.7950000762939453,
+      2.7950000762939453,
+      2.7950000762939453,
+      2.7950000762939453,
+      2.7950000762939453
+    ],
+    "plate_top": 0.105,
+    "strip_bottom": 0.15,
+    "plate_wood_overlap": 0.005
+  }
+]

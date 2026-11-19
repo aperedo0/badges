@@ -1,0 +1,6 @@
+Traceback (most recent call last):
+  File "<string>", line 4, in <module>
+  File "build36", line 6, in <module>
+  File "frame36.py", line 34, in <module>
+  File "frame36_geometry.py", line 38, in transfer36
+AssertionError: ('Chest Upper Lid Rim', 'new surface has no original normal field', 8691, (-1.5684154033660889, -2.4078729152679443, 0.7668376564979553))

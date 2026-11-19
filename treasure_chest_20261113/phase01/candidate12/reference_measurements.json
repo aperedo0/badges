@@ -1,0 +1,145 @@
+{
+  "front_fasteners_local_xy": {
+    "upper_left": [
+      -1.2352,
+      0.6593
+    ],
+    "upper_right_inner": [
+      0.9812,
+      0.6462
+    ],
+    "upper_right_outer": [
+      1.8023,
+      0.6308
+    ],
+    "lower_left": [
+      -1.1544,
+      -2.1301
+    ],
+    "lower_right": [
+      1.0966,
+      -2.1533
+    ],
+    "lower_strap": [
+      0.004,
+      -2.1324
+    ],
+    "lip_left": [
+      -1.7581,
+      0.2461
+    ],
+    "lip_right": [
+      1.4023,
+      0.2476
+    ]
+  },
+  "end_fasteners_local_zy": {
+    "upper": [
+      0.1361,
+      0.6891
+    ],
+    "lower": [
+      0.1296,
+      -2.1149
+    ],
+    "handle_plate_left": [
+      -0.292,
+      -0.0955
+    ],
+    "handle_plate_right": [
+      0.8386,
+      -0.0679
+    ]
+  },
+  "roof_band_fits": [
+    {
+      "x": -2.4452262100302424,
+      "angles": [
+        1.3947832684309511,
+        0.7663774134140143
+      ],
+      "pixel_residuals": [
+        [
+          4.9,
+          -10.9
+        ],
+        [
+          -4.9,
+          2.0
+        ]
+      ]
+    },
+    {
+      "x": -1.196572076938806,
+      "angles": [
+        1.6346128502097987,
+        1.0677496978608425,
+        0.5734528956512364,
+        0.23692160814771682
+      ],
+      "pixel_residuals": [
+        [
+          -0.4,
+          -3.3
+        ],
+        [
+          5.3,
+          -4.2
+        ],
+        [
+          -3.3,
+          0.9
+        ],
+        [
+          -1.7,
+          0.2
+        ]
+      ]
+    },
+    {
+      "x": 0.854385078440559,
+      "angles": [
+        1.640403192500243,
+        1.0630424868524242,
+        0.5589598794909193,
+        0.22627867262946125
+      ],
+      "pixel_residuals": [
+        [
+          -0.6,
+          -4.2
+        ],
+        [
+          7.8,
+          -6.4
+        ],
+        [
+          -3.0,
+          0.9
+        ],
+        [
+          -4.3,
+          0.5
+        ]
+      ]
+    },
+    {
+      "x": 2.2649290776641013,
+      "angles": [
+        1.381306878912178,
+        0.7231451635738062
+      ],
+      "pixel_residuals": [
+        [
+          6.2,
+          -14.8
+        ],
+        [
+          -6.2,
+          2.6
+        ]
+      ]
+    }
+  ],
+  "method": "Reference rivets measured on actual front and end planes using four corner fasteners as plane landmarks. Roof fits use existing Blender camera and ellipse, for diagnosis only. Roof widths are not independently fitted."
+}

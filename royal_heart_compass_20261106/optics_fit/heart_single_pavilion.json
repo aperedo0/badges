@@ -1,0 +1,79 @@
+{
+  "status": "diagnostic_only_not_native",
+  "no_appearance_textures": true,
+  "single_shared_pavilion_keel": true,
+  "variants": [
+    {
+      "center": 0,
+      "depth": 1.2,
+      "planes": [
+        215,
+        215
+      ]
+    },
+    {
+      "center": 0,
+      "depth": 1.8,
+      "planes": [
+        215,
+        215
+      ]
+    },
+    {
+      "center": 0,
+      "depth": 2.4,
+      "planes": [
+        215,
+        215
+      ]
+    },
+    {
+      "center": 0.9,
+      "depth": 1.2,
+      "planes": [
+        198,
+        198
+      ]
+    },
+    {
+      "center": 0.9,
+      "depth": 1.8,
+      "planes": [
+        198,
+        198
+      ]
+    },
+    {
+      "center": 0.9,
+      "depth": 2.4,
+      "planes": [
+        198,
+        198
+      ]
+    },
+    {
+      "center": 1.1,
+      "depth": 1.2,
+      "planes": [
+        193,
+        193
+      ]
+    },
+    {
+      "center": 1.1,
+      "depth": 1.8,
+      "planes": [
+        193,
+        193
+      ]
+    },
+    {
+      "center": 1.1,
+      "depth": 2.4,
+      "planes": [
+        193,
+        193
+      ]
+    }
+  ]
+}

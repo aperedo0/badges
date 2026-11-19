@@ -1,58 +1,68 @@
-# Local run timer
+# Run timer commands
 
-Read this before unattended work. The helper uses Python 3 and its standard library. Installing this skill does not start a run.
-
-## Initialize and verify once
-
-Create a unique run directory in the badge workspace. Use the exact current UUID from `CODEX_THREAD_ID` or verified session metadata. Do not use another chat or a guessed name. Use the skill's absolute script path in actual tool calls.
+Every command uses the absolute interpreter and script path. Set them once per shell:
 
 ```sh
-python3 scripts/overnight.py init --run-dir /absolute/run/folder --thread CURRENT_UUID --badge crescent --badge mountain
-python3 scripts/overnight.py watch --run-dir /absolute/run/folder --start
-python3 scripts/overnight.py status --run-dir /absolute/run/folder
+PY=/Library/Frameworks/Python.framework/Versions/3.11/bin/python3
+OV=/Users/antonioperedo/Desktop/badges/skills/overnight-badges/scripts/overnight.py
+RUN=/Users/antonioperedo/Desktop/badges/<run folder>
 ```
 
-Use 30 minutes of work, 20 minutes of break and 10 minute recovery checks. There is no overall time limit. `deadline_epoch` is null and the run continues until every badge is reviewed and done or the owner stops it. Do not pass `--hours` or copy a deadline from an earlier run. That optional setting exists only for an explicit future owner request for a deadline. Initialization refuses to overwrite an existing run. Record reference paths and the precise next action in the checkpoint.
-
-The watcher verifies the installed `codex queue --help`, then finds this thread's rollout through the local state database in read only mode. Alternatively pass a verified `--rollout` path and `--codex` executable. This command was present on the owner's CLI; verify it for every new run. No app settings, accounts, production files or database records are changed.
-
-Inspect the process ID, live watcher status and first `recovery.jsonl` entry before calling recovery active. A scoped `caffeinate` process follows the watcher when available. Keep the computer and desktop app running for local file work. [Official local task guidance](https://learn.chatgpt.com/docs/automations).
-
-## Checkpoint and pace
+## Start
 
 ```sh
-python3 scripts/overnight.py checkpoint --run-dir /absolute/run/folder --badge crescent --blend /absolute/candidate/crescent.blend --candidate /absolute/candidate --next 'Inspect the upper crescent in Blender'
-python3 scripts/overnight.py checkpoint --run-dir /absolute/run/folder --next 'Inspect the completed native build' --busy-minutes 8
-python3 scripts/overnight.py status --run-dir /absolute/run/folder
-python3 scripts/overnight.py begin --run-dir /absolute/run/folder
+$PY $OV init --run-dir $RUN --thread "$CODEX_THREAD_ID" --badge crescent --badge mountain
+$PY $OV watch --run-dir $RUN --start
+$PY $OV status --run-dir $RUN
 ```
 
-Checkpoint after substantial changes, before long operations and before breaks. Busy periods are finite and cannot outlast the work block. `status` advances expired work into its scheduled break, then into `ready`. It never fabricates new work blocks while offline. `begin` starts the next block only after the break. An interruption preserves the existing work and overall deadlines.
+* Pacing is continuous; add `--pacing breaks` only when the owner asks for breaks. The workspace is the badges folder unless `--workspace` says otherwise.
+* `--hours` sets a deadline and exists only for an explicit owner request.
+* `init` refuses to overwrite an existing run.
+* The watcher checks `codex queue --help` for `--thread`, `--message` and `--resume`, then finds this thread's rollout in the local state database (read only), or takes `--rollout` and `--codex`. Before calling recovery active, look at the watcher's process ID, `status` (watcher alive) and the first `recovery.jsonl` entry. A scoped `caffeinate` keeps the Mac awake while the watcher runs.
 
-## Done, pause or cancel
-
-After actually reviewing all artifacts, mark a badge done. The helper checks their existence, while the agent is responsible for their content and visual quality.
+## Checkpoint
 
 ```sh
-python3 scripts/overnight.py done --run-dir /absolute/run/folder --badge crescent --reviewed --blend /absolute/final/crescent.blend --usdz /absolute/final/crescent.usdz --report /absolute/final/REPORT.md --comparison /absolute/final/comparison.jpg --front /absolute/front.png --back /absolute/back.png --left /absolute/left.png --right /absolute/right.png --turn /absolute/full_turn.mp4
-python3 scripts/overnight.py complete --run-dir /absolute/run/folder
-python3 scripts/overnight.py pause --run-dir /absolute/run/folder
-python3 scripts/overnight.py cancel --run-dir /absolute/run/folder
+$PY $OV checkpoint --run-dir $RUN --badge crescent --blend /abs/crescent.blend --candidate /abs/candidate07 --next 'Fix the lower tip the review flagged'
+$PY $OV checkpoint --run-dir $RUN --next 'Wait for the simulator capture' --busy-minutes 20
+$PY $OV begin --run-dir $RUN          # breaks pacing only, after a break
 ```
 
-Only pause or cancel at the owner's request. `complete` requires all badges done and creates this run's completion marker. Between bounded probe or queue operations, the watcher checks for shutdown every five seconds; connection checks happen every ten minutes. Deadline expiry stops retries and preserves progress without claiming completion. Extending a deadline requires a new owner instruction.
+A busy period is finite: up to 60 minutes in continuous pacing, never past the work block with breaks. A checkpoint on a blocked badge sets it back to working.
 
-When the owner explicitly resumes paused work or resolves an account issue, use `resume`, then restart `watch --start`. Existing deadlines stay in place. Add `resume --hours 2` only if the owner authorizes that extension. A run whose badges were already reviewed and done can record completion after expiry without doing more badge work.
-
-## Recovery and diagnostics
-
-The watcher queues into the existing thread rather than starting another worker. It skips healthy activity, finite busy periods and unexpired breaks. It can wake the thread after a break or retry a stalled connection on the ten minute cadence. It remembers activity after an accepted message, preventing duplicates until there is new activity or a new failure. Failed delivery retries at the next check.
-
-A responding website proves reachability, not model service health. Authentication, approval and usage errors require attention rather than repeated network retries. Do not print chat contents or credentials. If queue transport is unavailable, retain the checkpoint and report that automatic recovery was not activated.
+## Done, blocked, complete
 
 ```sh
-python3 scripts/overnight.py watch --run-dir /absolute/run/folder --once --dry-run
-python3 -m unittest discover -s scripts -p 'test_overnight.py' -v
+$PY $OV done --run-dir $RUN --badge crescent \
+  --blend /abs/crescent.blend --usdz /abs/candidate09/model.usdz --report /abs/REPORT.md \
+  --comparison /abs/candidate09/review/far_same_height.png \
+  --front /abs/candidate09/app/front.png --back /abs/candidate09/app/back.png \
+  --side-left /abs/candidate09/app/side_left.png --side-right /abs/candidate09/app/side_right.png \
+  --turns /abs/candidate09/review/turns.png --review /abs/candidate09/review/review.md \
+  --reduction 'Merged 12 meshes into 7 with the same look'
+$PY $OV block --run-dir $RUN --badge mountain --reason 'Three versions at 74 to 76, same top fixes' --evidence /abs/candidate06/review
+$PY $OV complete --run-dir $RUN
 ```
 
-Dry runs inspect state and report an action without internet probes or queued messages. Tests use temporary directories, fake time and mocked queue delivery. Creating this skill must not send a real recovery message as a side effect.
+* `done` needs every file present and nonempty, a review that says `SHIPPABLE: yes` with `CLOSENESS` of 90 or more (a scoped score such as "gem improvement: 92/100" does not count), and a reduction note.
+* `complete` needs every badge done or blocked. Deadline expiry is never completion.
+
+## Pause, cancel, resume
+
+```sh
+$PY $OV pause --run-dir $RUN
+$PY $OV cancel --run-dir $RUN
+$PY $OV resume --run-dir $RUN         # then: watch --start
+```
+
+Pause or cancel only at the owner's request. `resume` keeps any existing deadline; `resume --hours 2` only with the owner's permission. A cancelled or complete run cannot resume.
+
+## Diagnostics and tests
+
+```sh
+$PY $OV watch --run-dir $RUN --once --dry-run
+PYTHONDONTWRITEBYTECODE=1 $PY -m unittest discover -s /Users/antonioperedo/Desktop/badges/skills/overnight-badges/scripts -p 'test_overnight.py'
+```
+
+A dry run reports the action it would take with no network probe and no queued message. The tests use temporary folders, fake time and a mocked queue; they never send a real message.

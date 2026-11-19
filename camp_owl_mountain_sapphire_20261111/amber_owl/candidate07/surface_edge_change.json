@@ -1,0 +1,163 @@
+{
+  "geometry_faces_and_relief_preserved": true,
+  "thin_roll_replaced_with_continuous_wall": true,
+  "wall_finish": "Side, rough metal with normals blended toward the corresponding face",
+  "flat_enamel_proof": "Candidate21 removed the three persistent native flame dark pixels by changing only its colored face normals",
+  "parts": [
+    {
+      "name": "blue_enamel_backplate",
+      "before": 2044,
+      "after": 1404,
+      "flat_enamel_faces": 542,
+      "rolled_lips_removed": true
+    },
+    {
+      "name": "outer_gold_setting",
+      "before": 4096,
+      "after": 2816,
+      "flat_enamel_faces": 0,
+      "rolled_lips_removed": true
+    },
+    {
+      "name": "upper_star_arc",
+      "before": 1032,
+      "after": 696,
+      "flat_enamel_faces": 0,
+      "rolled_lips_removed": true
+    },
+    {
+      "name": "head_amber_disc",
+      "before": 3580,
+      "after": 2940,
+      "flat_enamel_faces": 94,
+      "rolled_lips_removed": true
+    },
+    {
+      "name": "left_amber_wing",
+      "before": 2012,
+      "after": 1464,
+      "flat_enamel_faces": 78,
+      "rolled_lips_removed": true
+    },
+    {
+      "name": "right_amber_wing",
+      "before": 1972,
+      "after": 1432,
+      "flat_enamel_faces": 77,
+      "rolled_lips_removed": true
+    },
+    {
+      "name": "outer_left_feather",
+      "before": 1016,
+      "after": 800,
+      "flat_enamel_faces": 23,
+      "rolled_lips_removed": true
+    },
+    {
+      "name": "outer_right_feather",
+      "before": 1016,
+      "after": 800,
+      "flat_enamel_faces": 23,
+      "rolled_lips_removed": true
+    },
+    {
+      "name": "inner_left_feather",
+      "before": 1172,
+      "after": 900,
+      "flat_enamel_faces": 31,
+      "rolled_lips_removed": true
+    },
+    {
+      "name": "inner_right_feather",
+      "before": 1172,
+      "after": 900,
+      "flat_enamel_faces": 31,
+      "rolled_lips_removed": true
+    },
+    {
+      "name": "central_cream_breast",
+      "before": 1908,
+      "after": 1484,
+      "flat_enamel_faces": 52,
+      "rolled_lips_removed": true
+    },
+    {
+      "name": "cream_face_mask",
+      "before": 3484,
+      "after": 2804,
+      "flat_enamel_faces": 99,
+      "rolled_lips_removed": true
+    },
+    {
+      "name": "left_amber_iris",
+      "before": 2300,
+      "after": 1660,
+      "flat_enamel_faces": 190,
+      "rolled_lips_removed": true
+    },
+    {
+      "name": "left_dark_pupil",
+      "before": 1716,
+      "after": 1076,
+      "flat_enamel_faces": 0,
+      "rolled_lips_removed": true
+    },
+    {
+      "name": "right_amber_iris",
+      "before": 2300,
+      "after": 1660,
+      "flat_enamel_faces": 190,
+      "rolled_lips_removed": true
+    },
+    {
+      "name": "right_dark_pupil",
+      "before": 1716,
+      "after": 1076,
+      "flat_enamel_faces": 0,
+      "rolled_lips_removed": true
+    },
+    {
+      "name": "left_amber_ear_with_cream_edge",
+      "before": 9200,
+      "after": 6568,
+      "flat_enamel_faces": 124,
+      "rolled_lips_removed": true
+    },
+    {
+      "name": "left_sweeping_cream_brow",
+      "before": 1276,
+      "after": 980,
+      "flat_enamel_faces": 40,
+      "rolled_lips_removed": true
+    },
+    {
+      "name": "right_amber_ear_with_cream_edge",
+      "before": 9188,
+      "after": 6556,
+      "flat_enamel_faces": 124,
+      "rolled_lips_removed": true
+    },
+    {
+      "name": "right_sweeping_cream_brow",
+      "before": 1276,
+      "after": 980,
+      "flat_enamel_faces": 40,
+      "rolled_lips_removed": true
+    },
+    {
+      "name": "central_gold_beak",
+      "before": 700,
+      "after": 516,
+      "flat_enamel_faces": 14,
+      "rolled_lips_removed": true
+    },
+    {
+      "name": "top_four_point_star",
+      "before": 728,
+      "after": 632,
+      "flat_enamel_faces": 18,
+      "rolled_lips_removed": true
+    }
+  ],
+  "native_review_pending": true
+}

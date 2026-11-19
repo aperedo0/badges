@@ -1,0 +1,27 @@
+[
+  {
+    "target": "/Users/antonioperedo/.codex/skills/badge-quality/SKILL.md",
+    "proposed": "proposed/badge-quality/SKILL.md",
+    "old_sha256": "33a7b2e4302859a5f004e7ebe7e26ee8efce04107c8dd10e82a2fab47493c32b",
+    "new_sha256": "0f4227c8937415d01e821a5a88bccb880720de4e8581f5e8074eea37554df601",
+    "previously_installed_sha256": "110a0107a1f9dc6ebe0e3a88b2ad0b4442e7d10699edc6b6025b173a6fcc599c"
+  },
+  {
+    "target": "/Users/antonioperedo/.codex/skills/badge-quality/references/finish-optimization.md",
+    "proposed": "proposed/badge-quality/references/finish-optimization.md",
+    "old_sha256": null,
+    "new_sha256": "ac4e00ba706575bad1a750ff96595da6a8b2605d397f4ac359041d9505d4e3be"
+  },
+  {
+    "target": "/Users/antonioperedo/.codex/skills/badge-quality/agents/openai.yaml",
+    "proposed": "proposed/badge-quality/agents/openai.yaml",
+    "old_sha256": "1c8a340c43cad062d1198e9a341fce8b415006ab432a53720aa66ee8f1470283",
+    "new_sha256": "b5024c8bd311083688065acd01fab965d3d1e3a8b8cedbc25dcd2786507e427f"
+  },
+  {
+    "target": "/Users/antonioperedo/.agents/skills/overnight-badges/SKILL.md",
+    "proposed": "proposed/overnight-badges/SKILL.md",
+    "old_sha256": "edeb3c3b8283ec2f0e735f5ba54a1ab46ac2a9ed9ca3973d1c335d38c229aab8",
+    "new_sha256": "871a825bfdf8d54fd56cb8db0a66e28eaed52ee6f78acdabe3914cfeaea3ab14"
+  }
+]

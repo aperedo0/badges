@@ -1,0 +1,37 @@
+{
+  "status": "diagnostic_only_not_native",
+  "measured_reference_crown_faces_preserved": true,
+  "pavilion_shared_across_entire_ruby": true,
+  "no_appearance_map": true,
+  "current_reviewed_candidate24_unmodified": true,
+  "variants": [
+    {
+      "crown_source": "candidate16",
+      "planes": [
+        182,
+        182
+      ]
+    },
+    {
+      "crown_source": "candidate18",
+      "planes": [
+        171,
+        171
+      ]
+    },
+    {
+      "crown_source": "candidate20",
+      "planes": [
+        178,
+        178
+      ]
+    },
+    {
+      "crown_source": "candidate21",
+      "planes": [
+        104,
+        104
+      ]
+    }
+  ]
+}

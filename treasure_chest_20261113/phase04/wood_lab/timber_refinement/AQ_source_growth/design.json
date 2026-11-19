@@ -1,0 +1,50 @@
+{
+  "source": "AN organized formations with cached natural raw_plank_wall knot growth constrained to existing core boundary",
+  "seed": 161143,
+  "texture_size": [
+    4096,
+    1536
+  ],
+  "fine_fibers": 2600,
+  "secondary_fibers": 1800,
+  "core_center": [
+    -1.31,
+    -1.35
+  ],
+  "core_radii": [
+    0.145,
+    0.17
+  ],
+  "normal_split": 0.0038,
+  "macro_grain_and_fractures_preserved": true,
+  "material": "Independent aged pigment, exposed broken fibers and roughness",
+  "height_min": -0.05104067549109459,
+  "normal_policy": "Actual source height gradient in reconstructed core; blend 0.7 on raised faces; inherited normal retained elsewhere",
+  "core_horizontal_pigment_mark_removed": true,
+  "extra_outer_growth_rings": false,
+  "organization_halfspan": 0.15,
+  "organization_method": "Curved directional closing of short interruptions and opening of isolated lumps, restricted by local fragmentation response",
+  "correction_min": -0.0009843320585787296,
+  "correction_max": 0.006180226802825928,
+  "fine_layers_preserved": true,
+  "core_and_major_fractures_protected": true,
+  "new_cracks": 0,
+  "new_fibers": 0,
+  "secondary_policy": "Transport existing middle band along grain, preserve local variance with gain limited to 1.4; blend only where crosswise response is high",
+  "secondary_correction_min": -0.003309953957796097,
+  "secondary_correction_max": 0.003502749837934971,
+  "core_source": "Poly Haven raw_plank_wall CC0, cached official displacement, diffuse and roughness",
+  "source_center": [
+    1864,
+    2596
+  ],
+  "source_radii": [
+    80,
+    65
+  ],
+  "core_source_height_rms": 0.00125,
+  "source_pith_hole_excluded": true,
+  "core_split_depth": 0.014,
+  "core_split_pigmentation": "Localized aged fracture only, no directional light painted",
+  "core_size_and_location_preserved": true
+}

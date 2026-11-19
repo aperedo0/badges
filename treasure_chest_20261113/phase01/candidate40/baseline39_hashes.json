@@ -1,0 +1,22 @@
+{
+  "rig_stage.json": "fc63e7c8893a5cb7d6d43d0e2760ea69c11e53b2f73c236cd61daf9ed7698ecd",
+  "baseline38_hashes.json": "8b69382d6c467d982c5393e58b6c3b14b1d916a297e5a980ee10bba1b7c856cb",
+  "actual_hinge_geometry_proof.json": "d35c70291629a3e8764a1a0a161ffd0d7d3efb0f131da5a2eda8ff9883d13e43",
+  "whole_motion_initial_bvh_ray_probe.json": "dc376e5d8a3697ce60dbb81a71d2bdb3fbd4a86b333e532b455aa021e07bb636",
+  "motion_progress.json": "3014e9a0fab037653d546457b3282d5e8f71e54c3d1181809796a18ea9d79d1e",
+  "open_render_progress.json": "bbf194656d50341288450f3f032116fdd922063b916f9fbeb90efd0ba8c9ffb0",
+  "whole_motion_screen.json": "fcbaa4956e6ab2b82b07f6ac5f80417dca269e843e81201dd6d00fd3ad74efc5",
+  "failed_initial_driver_cache.txt": "845f7821d4d9ca69881fdb0334d555d3ee1d480a63ebd8c0c2ece85c66484e09",
+  "containment_precision_diagnosis.json": "dd0eacf8a4bff9ed5f6e4f8f7b5813f6e0ff289162edb7ac05eaced8fb9283b7",
+  "open95_front.png": "cbf1c50e85fc68f27e00f5f5b9291eb6c6b9fdd93adcd9fdb1c26b5df3307003",
+  "validation.json": "48a446b05a22da7250cf731a5bded0e287c09b517edc9b2013ca990aa5abc7b9",
+  "safe_cold_load_proof.json": "36587a9c7e8ccb6571fcb08cb6b8947e5f572149d791bbd947f6d98f01e6212f",
+  "inspection_ownership.json": "9e95ff44aca76d5b47d136bfb73a8dc0aa2a619e8632c6485a4e58d95c2711ce",
+  "boundary_probe_diagnosis.json": "15994a64ef120a233028b78ca3f7f27eb7d298fc6c8600bf5a984aae6a635a10",
+  "geometry.npz": "d7bdae995775dfae3acc03b87c5abc1e76bbe0e30229b4c5a3bc485613fbe860",
+  "key_return_contact_diagnosis.json": "556f7b8b0acfd5c8a0c34ebf9832833f4c7534a4674a32523266f90a44852895",
+  "chest.blend": "70a40d7080b64bc581ae374f070152e4e95eac18683b2b14d741741b899113f8",
+  "source/hinge38_geometry.py": "9a4471395902498c0637603579c2caf1696d4d4148ddc74ccb2c74886d679389",
+  "source/frame36_geometry.py": "e65475d0f6a517fa62eedfeb21362541bd3e11878e18ee27437f5e2ddc29184f",
+  "source/rig39_live.py": "c78fd85f9d4906462ae6bedb77c8f62bbebd565618865e26b338bdc5138bf220"
+}

@@ -1,0 +1,10 @@
+{
+  "target": "Lab Chest Lower Rim",
+  "mesh": "Locally forged lower rim.002",
+  "material": "Forged iron G_planished_displaced",
+  "medium_source": "relief_planished",
+  "representation": "Physical vertex displacement plus complementary fine bump",
+  "coarse_scale": 0.01,
+  "fine_scale": 0.004,
+  "geometry_original": false
+}

@@ -1,0 +1,5746 @@
+{
+"objs": {
+"Lab Chest Barrel Lid Envelope": {
+"v": 1368,
+"p": 2732,
+"mn": [
+-2.6,
+-1.649,
+0.381
+],
+"mx": [
+2.6,
+1.649,
+2.328
+],
+"mats": [
+"Chest wood shared varied atlas"
+],
+"ident": true,
+"hide": false,
+"parent": null,
+"mods": []
+},
+"Iron review Lab Development floor": {
+"v": 52,
+"p": 25,
+"mn": [
+-275.593,
+-122.945,
+-55.349
+],
+"mx": [
+180.208,
+275.593,
+-2.454
+],
+"mats": [
+"Chest development floor"
+],
+"ident": false,
+"hide": false,
+"parent": null,
+"mods": []
+},
+"Lab Chest Upper Lid Rim": {
+"v": 10622,
+"p": 21260,
+"mn": [
+-2.775,
+-1.875,
+0.381
+],
+"mx": [
+2.775,
+1.875,
+2.499
+],
+"mats": [
+"Chest forged iron shared varied surface"
+],
+"ident": true,
+"hide": false,
+"parent": null,
+"mods": []
+},
+"Lab Chest Body Upper Rim": {
+"v": 1264,
+"p": 2528,
+"mn": [
+-2.725,
+-1.825,
+-0.104
+],
+"mx": [
+2.725,
+1.825,
+0.364
+],
+"mats": [
+"Chest forged iron shared varied surface"
+],
+"ident": true,
+"hide": false,
+"parent": null,
+"mods": []
+},
+"Lab Chest Lower Rim": {
+"v": 695296,
+"p": 695296,
+"mn": [
+-2.73,
+-1.78,
+-2.217
+],
+"mx": [
+2.73,
+1.78,
+-1.714
+],
+"mats": [
+"Claude forged iron"
+],
+"ident": true,
+"hide": false,
+"parent": null,
+"mods": []
+},
+"Lab Chest Corner Upright -1 -1": {
+"v": 144,
+"p": 146,
+"mn": [
+-2.72,
+-1.77,
+-2.175
+],
+"mx": [
+-2.24,
+-1.29,
+0.343
+],
+"mats": [
+"Chest forged iron shared varied surface"
+],
+"ident": true,
+"hide": false,
+"parent": null,
+"mods": []
+},
+"Lab Chest Angular Boot -1 -1": {
+"v": 100,
+"p": 152,
+"mn": [
+-2.775,
+-1.865,
+-2.455
+],
+"mx": [
+-1.887,
+-0.85,
+-1.571
+],
+"mats": [
+"Chest forged iron shared varied surface"
+],
+"ident": true,
+"hide": false,
+"parent": null,
+"mods": []
+},
+"Lab Chest Corner Upright -1 1": {
+"v": 144,
+"p": 146,
+"mn": [
+-2.72,
+1.29,
+-2.175
+],
+"mx": [
+-2.24,
+1.77,
+0.343
+],
+"mats": [
+"Chest forged iron shared varied surface"
+],
+"ident": true,
+"hide": false,
+"parent": null,
+"mods": []
+},
+"Lab Chest Angular Boot -1 1": {
+"v": 101,
+"p": 152,
+"mn": [
+-2.775,
+0.85,
+-2.455
+],
+"mx": [
+-1.887,
+1.865,
+-1.571
+],
+"mats": [
+"Chest forged iron shared varied surface"
+],
+"ident": true,
+"hide": false,
+"parent": null,
+"mods": []
+},
+"Lab Chest Corner Upright 1 -1": {
+"v": 144,
+"p": 146,
+"mn": [
+2.24,
+-1.77,
+-2.175
+],
+"mx": [
+2.72,
+-1.29,
+0.343
+],
+"mats": [
+"Chest forged iron shared varied surface"
+],
+"ident": true,
+"hide": false,
+"parent": null,
+"mods": []
+},
+"Lab Chest Angular Boot 1 -1": {
+"v": 101,
+"p": 152,
+"mn": [
+1.887,
+-1.865,
+-2.455
+],
+"mx": [
+2.775,
+-0.85,
+-1.571
+],
+"mats": [
+"Chest forged iron shared varied surface"
+],
+"ident": true,
+"hide": false,
+"parent": null,
+"mods": []
+},
+"Lab Chest Corner Upright 1 1": {
+"v": 144,
+"p": 146,
+"mn": [
+2.24,
+1.29,
+-2.175
+],
+"mx": [
+2.72,
+1.77,
+0.343
+],
+"mats": [
+"Chest forged iron shared varied surface"
+],
+"ident": true,
+"hide": false,
+"parent": null,
+"mods": []
+},
+"Lab Chest Angular Boot 1 1": {
+"v": 100,
+"p": 152,
+"mn": [
+1.887,
+0.85,
+-2.455
+],
+"mx": [
+2.775,
+1.865,
+-1.571
+],
+"mats": [
+"Chest forged iron shared varied surface"
+],
+"ident": true,
+"hide": false,
+"parent": null,
+"mods": []
+},
+"Lab Chest Central Lock Strap": {
+"v": 96,
+"p": 98,
+"mn": [
+-0.25,
+1.595,
+-2.184
+],
+"mx": [
+0.25,
+1.8,
+0.343
+],
+"mats": [
+"Chest forged iron shared varied surface"
+],
+"ident": true,
+"hide": false,
+"parent": null,
+"mods": []
+},
+"Lab Chest Central Lower Cuff": {
+"v": 96,
+"p": 98,
+"mn": [
+-0.37,
+1.78,
+-2.217
+],
+"mx": [
+0.37,
+2.0,
+-1.714
+],
+"mats": [
+"Chest forged iron shared varied surface"
+],
+"ident": true,
+"hide": false,
+"parent": null,
+"mods": []
+},
+"Lab Chest Crown Fastener Mass 1": {
+"v": 182,
+"p": 200,
+"mn": [
+-2.5,
+-0.1,
+2.433
+],
+"mx": [
+-2.3,
+0.1,
+2.566
+],
+"mats": [
+"Chest rough hardware forms"
+],
+"ident": true,
+"hide": false,
+"parent": null,
+"mods": []
+},
+"Lab Chest Crown Fastener Mass 2": {
+"v": 182,
+"p": 200,
+"mn": [
+-0.909,
+-0.1,
+2.433
+],
+"mx": [
+-0.709,
+0.1,
+2.566
+],
+"mats": [
+"Chest rough hardware forms"
+],
+"ident": true,
+"hide": false,
+"parent": null,
+"mods": []
+},
+"Lab Chest Crown Fastener Mass 3": {
+"v": 182,
+"p": 200,
+"mn": [
+0.709,
+-0.1,
+2.433
+],
+"mx": [
+0.909,
+0.1,
+2.566
+],
+"mats": [
+"Chest rough hardware forms"
+],
+"ident": true,
+"hide": false,
+"parent": null,
+"mods": []
+},
+"Lab Chest Crown Fastener Mass 4": {
+"v": 182,
+"p": 200,
+"mn": [
+2.3,
+-0.1,
+2.433
+],
+"mx": [
+2.5,
+0.1,
+2.566
+],
+"mats": [
+"Chest rough hardware forms"
+],
+"ident": true,
+"hide": false,
+"parent": null,
+"mods": []
+},
+"Lab Chest Hasp Mount": {
+"v": 224,
+"p": 444,
+"mn": [
+-0.64,
+1.76,
+0.381
+],
+"mx": [
+0.64,
+1.96,
+0.884
+],
+"mats": [
+"Chest rough structural forms",
+"Chest rough hardware forms"
+],
+"ident": true,
+"hide": false,
+"parent": null,
+"mods": []
+},
+"Lab Chest Front Hasp Barrel": {
+"v": 512,
+"p": 512,
+"mn": [
+-0.24,
+1.832,
+0.317
+],
+"mx": [
+0.24,
+2.168,
+0.653
+],
+"mats": [
+"Chest rough hardware forms"
+],
+"ident": true,
+"hide": false,
+"parent": null,
+"mods": []
+},
+"Lab Chest Shield Lock Plate With Bore": {
+"v": 840,
+"p": 1680,
+"mn": [
+-0.636,
+2.08,
+-1.321
+],
+"mx": [
+0.636,
+2.107,
+-0.078
+],
+"mats": [
+"Chest rough hardware forms"
+],
+"ident": true,
+"hide": false,
+"parent": null,
+"mods": []
+},
+"Lab Chest Curved Hasp Tongue": {
+"v": 1796,
+"p": 3592,
+"mn": [
+-0.228,
+1.9,
+-0.216
+],
+"mx": [
+0.228,
+2.24,
+0.457
+],
+"mats": [
+"Chest rough hardware forms"
+],
+"ident": true,
+"hide": false,
+"parent": null,
+"mods": []
+},
+"Lab Chest Handle Mount -1": {
+"v": 96,
+"p": 98,
+"mn": [
+-2.81,
+-0.72,
+-0.726
+],
+"mx": [
+-2.545,
+0.72,
+-0.023
+],
+"mats": [
+"Chest rough structural forms"
+],
+"ident": true,
+"hide": false,
+"parent": null,
+"mods": []
+},
+"Lab Chest Solid Ring Handle -1": {
+"v": 8192,
+"p": 8192,
+"mn": [
+-3.059,
+-0.751,
+-1.454
+],
+"mx": [
+-2.801,
+0.751,
+-0.228
+],
+"mats": [
+"Chest rough hardware forms"
+],
+"ident": true,
+"hide": false,
+"parent": null,
+"mods": []
+},
+"Lab Chest Handle Mount 1": {
+"v": 96,
+"p": 98,
+"mn": [
+2.545,
+-0.72,
+-0.726
+],
+"mx": [
+2.81,
+0.72,
+-0.023
+],
+"mats": [
+"Chest rough structural forms"
+],
+"ident": true,
+"hide": false,
+"parent": null,
+"mods": []
+},
+"Lab Chest Solid Ring Handle 1": {
+"v": 8192,
+"p": 8192,
+"mn": [
+2.801,
+-0.751,
+-1.454
+],
+"mx": [
+3.059,
+0.751,
+-0.228
+],
+"mats": [
+"Chest rough hardware forms"
+],
+"ident": true,
+"hide": false,
+"parent": null,
+"mods": []
+},
+"Lab Chest Rear Hinge Lower -1": {
+"v": 2064,
+"p": 4136,
+"mn": [
+-1.85,
+-2.05,
+-0.009
+],
+"mx": [
+-1.25,
+-1.75,
+0.476
+],
+"mats": [
+"Chest rough structural forms"
+],
+"ident": true,
+"hide": false,
+"parent": null,
+"mods": []
+},
+"Lab Chest Rear Hinge Upper -1": {
+"v": 1466,
+"p": 2936,
+"mn": [
+-1.83,
+-2.05,
+0.248
+],
+"mx": [
+-1.27,
+-1.75,
+0.752
+],
+"mats": [
+"Chest rough structural forms"
+],
+"ident": true,
+"hide": false,
+"parent": null,
+"mods": []
+},
+"Lab Chest Rear Hinge Barrel -1": {
+"v": 640,
+"p": 578,
+"mn": [
+-1.905,
+-2.01,
+0.282
+],
+"mx": [
+-1.195,
+-1.85,
+0.442
+],
+"mats": [
+"Chest rough hardware forms"
+],
+"ident": true,
+"hide": false,
+"parent": null,
+"mods": []
+},
+"Lab Chest Rear Hinge Lower 1": {
+"v": 2063,
+"p": 4134,
+"mn": [
+1.25,
+-2.05,
+-0.009
+],
+"mx": [
+1.85,
+-1.75,
+0.476
+],
+"mats": [
+"Chest rough structural forms"
+],
+"ident": true,
+"hide": false,
+"parent": null,
+"mods": []
+},
+"Lab Chest Rear Hinge Upper 1": {
+"v": 1459,
+"p": 2922,
+"mn": [
+1.27,
+-2.05,
+0.248
+],
+"mx": [
+1.83,
+-1.75,
+0.752
+],
+"mats": [
+"Chest rough structural forms"
+],
+"ident": true,
+"hide": false,
+"parent": null,
+"mods": []
+},
+"Lab Chest Rear Hinge Barrel 1": {
+"v": 640,
+"p": 578,
+"mn": [
+1.195,
+-2.01,
+0.282
+],
+"mx": [
+1.905,
+-1.85,
+0.442
+],
+"mats": [
+"Chest rough hardware forms"
+],
+"ident": true,
+"hide": false,
+"parent": null,
+"mods": []
+},
+"Lab Chest Lock Backing With Bore": {
+"v": 1058,
+"p": 2116,
+"mn": [
+-0.965,
+2.04,
+-1.529
+],
+"mx": [
+0.965,
+2.08,
+0.257
+],
+"mats": [
+"Chest rough hardware forms"
+],
+"ident": true,
+"hide": false,
+"parent": null,
+"mods": []
+},
+"Lab Chest Lock Border With Bore": {
+"v": 236,
+"p": 472,
+"mn": [
+-0.714,
+2.04,
+-1.403
+],
+"mx": [
+0.714,
+2.115,
+0.016
+],
+"mats": [
+"Chest rough hardware forms"
+],
+"ident": true,
+"hide": false,
+"parent": null,
+"mods": []
+},
+"Lab Chest Hoop Rivet 0 0": {
+"v": 289,
+"p": 289,
+"mn": [
+-2.506,
+1.255,
+1.758
+],
+"mx": [
+-2.294,
+1.413,
+1.932
+],
+"mats": [
+"Chest rough hardware forms"
+],
+"ident": true,
+"hide": false,
+"parent": null,
+"mods": []
+},
+"Lab Chest Hoop Rivet 0 1": {
+"v": 289,
+"p": 289,
+"mn": [
+-2.506,
+-1.413,
+1.758
+],
+"mx": [
+-2.294,
+-1.255,
+1.932
+],
+"mats": [
+"Chest rough hardware forms"
+],
+"ident": true,
+"hide": false,
+"parent": null,
+"mods": []
+},
+"Lab Chest Hoop Rivet 1 0": {
+"v": 289,
+"p": 289,
+"mn": [
+-0.915,
+1.747,
+0.788
+],
+"mx": [
+-0.703,
+1.85,
+0.987
+],
+"mats": [
+"Chest rough hardware forms"
+],
+"ident": true,
+"hide": false,
+"parent": null,
+"mods": []
+},
+"Lab Chest Hoop Rivet 1 1": {
+"v": 289,
+"p": 289,
+"mn": [
+-0.915,
+1.498,
+1.409
+],
+"mx": [
+-0.703,
+1.634,
+1.597
+],
+"mats": [
+"Chest rough hardware forms"
+],
+"ident": true,
+"hide": false,
+"parent": null,
+"mods": []
+},
+"Lab Chest Hoop Rivet 1 2": {
+"v": 289,
+"p": 289,
+"mn": [
+-0.915,
+0.81,
+2.161
+],
+"mx": [
+-0.703,
+0.998,
+2.306
+],
+"mats": [
+"Chest rough hardware forms"
+],
+"ident": true,
+"hide": false,
+"parent": null,
+"mods": []
+},
+"Lab Chest Hoop Rivet 1 3": {
+"v": 289,
+"p": 289,
+"mn": [
+-0.915,
+-1.85,
+0.788
+],
+"mx": [
+-0.703,
+-1.747,
+0.987
+],
+"mats": [
+"Chest rough hardware forms"
+],
+"ident": true,
+"hide": false,
+"parent": null,
+"mods": []
+},
+"Lab Chest Hoop Rivet 1 4": {
+"v": 289,
+"p": 289,
+"mn": [
+-0.915,
+-1.634,
+1.409
+],
+"mx": [
+-0.703,
+-1.498,
+1.597
+],
+"mats": [
+"Chest rough hardware forms"
+],
+"ident": true,
+"hide": false,
+"parent": null,
+"mods": []
+},
+"Lab Chest Hoop Rivet 1 5": {
+"v": 289,
+"p": 289,
+"mn": [
+-0.915,
+-0.998,
+2.161
+],
+"mx": [
+-0.703,
+-0.81,
+2.306
+],
+"mats": [
+"Chest rough hardware forms"
+],
+"ident": true,
+"hide": false,
+"parent": null,
+"mods": []
+},
+"Lab Chest Hoop Rivet 2 0": {
+"v": 289,
+"p": 289,
+"mn": [
+0.703,
+1.747,
+0.788
+],
+"mx": [
+0.915,
+1.85,
+0.987
+],
+"mats": [
+"Chest rough hardware forms"
+],
+"ident": true,
+"hide": false,
+"parent": null,
+"mods": []
+},
+"Lab Chest Hoop Rivet 2 1": {
+"v": 289,
+"p": 289,
+"mn": [
+0.703,
+1.498,
+1.409
+],
+"mx": [
+0.915,
+1.634,
+1.597
+],
+"mats": [
+"Chest rough hardware forms"
+],
+"ident": true,
+"hide": false,
+"parent": null,
+"mods": []
+},
+"Lab Chest Hoop Rivet 2 2": {
+"v": 289,
+"p": 289,
+"mn": [
+0.703,
+0.81,
+2.161
+],
+"mx": [
+0.915,
+0.998,
+2.306
+],
+"mats": [
+"Chest rough hardware forms"
+],
+"ident": true,
+"hide": false,
+"parent": null,
+"mods": []
+},
+"Lab Chest Hoop Rivet 2 3": {
+"v": 289,
+"p": 289,
+"mn": [
+0.703,
+-1.85,
+0.788
+],
+"mx": [
+0.915,
+-1.747,
+0.987
+],
+"mats": [
+"Chest rough hardware forms"
+],
+"ident": true,
+"hide": false,
+"parent": null,
+"mods": []
+},
+"Lab Chest Hoop Rivet 2 4": {
+"v": 289,
+"p": 289,
+"mn": [
+0.703,
+-1.634,
+1.409
+],
+"mx": [
+0.915,
+-1.498,
+1.597
+],
+"mats": [
+"Chest rough hardware forms"
+],
+"ident": true,
+"hide": false,
+"parent": null,
+"mods": []
+},
+"Lab Chest Hoop Rivet 2 5": {
+"v": 289,
+"p": 289,
+"mn": [
+0.703,
+-0.998,
+2.161
+],
+"mx": [
+0.915,
+-0.81,
+2.306
+],
+"mats": [
+"Chest rough hardware forms"
+],
+"ident": true,
+"hide": false,
+"parent": null,
+"mods": []
+},
+"Lab Chest Hoop Rivet 3 0": {
+"v": 289,
+"p": 289,
+"mn": [
+2.294,
+1.255,
+1.758
+],
+"mx": [
+2.506,
+1.413,
+1.932
+],
+"mats": [
+"Chest rough hardware forms"
+],
+"ident": true,
+"hide": false,
+"parent": null,
+"mods": []
+},
+"Lab Chest Hoop Rivet 3 1": {
+"v": 289,
+"p": 289,
+"mn": [
+2.294,
+-1.413,
+1.758
+],
+"mx": [
+2.506,
+-1.255,
+1.932
+],
+"mats": [
+"Chest rough hardware forms"
+],
+"ident": true,
+"hide": false,
+"parent": null,
+"mods": []
+},
+"Lab Chest Upper Corner Front Rivet -1 -1": {
+"v": 289,
+"p": 289,
+"mn": [
+-2.504,
+-1.957,
+0.444
+],
+"mx": [
+-2.256,
+-1.873,
+0.679
+],
+"mats": [
+"Chest rough hardware forms"
+],
+"ident": true,
+"hide": false,
+"parent": null,
+"mods": []
+},
+"Lab Chest Upper Corner End Rivet -1 -1": {
+"v": 289,
+"p": 289,
+"mn": [
+-2.85,
+-1.592,
+0.455
+],
+"mx": [
+-2.773,
+-1.368,
+0.668
+],
+"mats": [
+"Chest rough hardware forms"
+],
+"ident": true,
+"hide": false,
+"parent": null,
+"mods": []
+},
+"Lab Chest Boot Front Rivet -1 -1": {
+"v": 289,
+"p": 289,
+"mn": [
+-2.436,
+-1.941,
+-2.218
+],
+"mx": [
+-2.164,
+-1.85,
+-1.96
+],
+"mats": [
+"Chest rough hardware forms"
+],
+"ident": true,
+"hide": false,
+"parent": null,
+"mods": []
+},
+"Lab Chest Boot End Rivet -1 -1": {
+"v": 289,
+"p": 289,
+"mn": [
+-2.844,
+-1.524,
+-2.207
+],
+"mx": [
+-2.76,
+-1.276,
+-1.972
+],
+"mats": [
+"Chest rough hardware forms"
+],
+"ident": true,
+"hide": false,
+"parent": null,
+"mods": []
+},
+"Lab Chest Upper Corner Front Rivet -1 1": {
+"v": 289,
+"p": 289,
+"mn": [
+-2.504,
+1.873,
+0.444
+],
+"mx": [
+-2.256,
+1.957,
+0.679
+],
+"mats": [
+"Chest rough hardware forms"
+],
+"ident": true,
+"hide": false,
+"parent": null,
+"mods": []
+},
+"Lab Chest Upper Corner End Rivet -1 1": {
+"v": 289,
+"p": 289,
+"mn": [
+-2.85,
+1.368,
+0.455
+],
+"mx": [
+-2.773,
+1.592,
+0.668
+],
+"mats": [
+"Chest rough hardware forms"
+],
+"ident": true,
+"hide": false,
+"parent": null,
+"mods": []
+},
+"Lab Chest Boot Front Rivet -1 1": {
+"v": 289,
+"p": 289,
+"mn": [
+-2.436,
+1.85,
+-2.218
+],
+"mx": [
+-2.164,
+1.941,
+-1.96
+],
+"mats": [
+"Chest rough hardware forms"
+],
+"ident": true,
+"hide": false,
+"parent": null,
+"mods": []
+},
+"Lab Chest Boot End Rivet -1 1": {
+"v": 289,
+"p": 289,
+"mn": [
+-2.844,
+1.276,
+-2.207
+],
+"mx": [
+-2.76,
+1.524,
+-1.972
+],
+"mats": [
+"Chest rough hardware forms"
+],
+"ident": true,
+"hide": false,
+"parent": null,
+"mods": []
+},
+"Lab Chest Upper Corner Front Rivet 1 -1": {
+"v": 289,
+"p": 289,
+"mn": [
+2.256,
+-1.957,
+0.444
+],
+"mx": [
+2.504,
+-1.873,
+0.679
+],
+"mats": [
+"Chest rough hardware forms"
+],
+"ident": true,
+"hide": false,
+"parent": null,
+"mods": []
+},
+"Lab Chest Upper Corner End Rivet 1 -1": {
+"v": 289,
+"p": 289,
+"mn": [
+2.773,
+-1.592,
+0.455
+],
+"mx": [
+2.85,
+-1.368,
+0.668
+],
+"mats": [
+"Chest rough hardware forms"
+],
+"ident": true,
+"hide": false,
+"parent": null,
+"mods": []
+},
+"Lab Chest Boot Front Rivet 1 -1": {
+"v": 289,
+"p": 289,
+"mn": [
+2.164,
+-1.941,
+-2.218
+],
+"mx": [
+2.436,
+-1.85,
+-1.96
+],
+"mats": [
+"Chest rough hardware forms"
+],
+"ident": true,
+"hide": false,
+"parent": null,
+"mods": []
+},
+"Lab Chest Boot End Rivet 1 -1": {
+"v": 289,
+"p": 289,
+"mn": [
+2.76,
+-1.524,
+-2.207
+],
+"mx": [
+2.844,
+-1.276,
+-1.972
+],
+"mats": [
+"Chest rough hardware forms"
+],
+"ident": true,
+"hide": false,
+"parent": null,
+"mods": []
+},
+"Lab Chest Upper Corner Front Rivet 1 1": {
+"v": 289,
+"p": 289,
+"mn": [
+2.256,
+1.873,
+0.444
+],
+"mx": [
+2.504,
+1.957,
+0.679
+],
+"mats": [
+"Chest rough hardware forms"
+],
+"ident": true,
+"hide": false,
+"parent": null,
+"mods": []
+},
+"Lab Chest Upper Corner End Rivet 1 1": {
+"v": 289,
+"p": 289,
+"mn": [
+2.773,
+1.368,
+0.455
+],
+"mx": [
+2.85,
+1.592,
+0.668
+],
+"mats": [
+"Chest rough hardware forms"
+],
+"ident": true,
+"hide": false,
+"parent": null,
+"mods": []
+},
+"Lab Chest Boot Front Rivet 1 1": {
+"v": 289,
+"p": 289,
+"mn": [
+2.164,
+1.85,
+-2.218
+],
+"mx": [
+2.436,
+1.941,
+-1.96
+],
+"mats": [
+"Chest rough hardware forms"
+],
+"ident": true,
+"hide": false,
+"parent": null,
+"mods": []
+},
+"Lab Chest Boot End Rivet 1 1": {
+"v": 289,
+"p": 289,
+"mn": [
+2.76,
+1.276,
+-2.207
+],
+"mx": [
+2.844,
+1.524,
+-1.972
+],
+"mats": [
+"Chest rough hardware forms"
+],
+"ident": true,
+"hide": false,
+"parent": null,
+"mods": []
+},
+"Lab Chest Body Lip Rivet -1 0": {
+"v": 289,
+"p": 289,
+"mn": [
+-1.618,
+-1.793,
+0.156
+],
+"mx": [
+-1.543,
+-1.773,
+0.227
+],
+"mats": [
+"Chest rough hardware forms"
+],
+"ident": true,
+"hide": false,
+"parent": null,
+"mods": []
+},
+"Lab Chest Body Lip Rivet -1 1": {
+"v": 289,
+"p": 289,
+"mn": [
+1.542,
+-1.792,
+0.156
+],
+"mx": [
+1.617,
+-1.773,
+0.227
+],
+"mats": [
+"Chest rough hardware forms"
+],
+"ident": true,
+"hide": false,
+"parent": null,
+"mods": []
+},
+"Lab Chest Body Lip Rivet 1 0": {
+"v": 289,
+"p": 289,
+"mn": [
+-1.618,
+1.773,
+0.156
+],
+"mx": [
+-1.542,
+1.793,
+0.227
+],
+"mats": [
+"Chest rough hardware forms"
+],
+"ident": true,
+"hide": false,
+"parent": null,
+"mods": []
+},
+"Lab Chest Body Lip Rivet 1 1": {
+"v": 289,
+"p": 289,
+"mn": [
+1.542,
+1.773,
+0.156
+],
+"mx": [
+1.618,
+1.792,
+0.227
+],
+"mats": [
+"Chest rough hardware forms"
+],
+"ident": true,
+"hide": false,
+"parent": null,
+"mods": []
+},
+"Lab Chest Handle Mount Rivet -1 -1": {
+"v": 289,
+"p": 289,
+"mn": [
+-2.861,
+-0.629,
+-0.227
+],
+"mx": [
+-2.803,
+-0.489,
+-0.094
+],
+"mats": [
+"Chest rough hardware forms"
+],
+"ident": true,
+"hide": false,
+"parent": null,
+"mods": []
+},
+"Lab Chest Handle Mount Rivet -1 1": {
+"v": 289,
+"p": 289,
+"mn": [
+-2.861,
+0.489,
+-0.227
+],
+"mx": [
+-2.803,
+0.629,
+-0.094
+],
+"mats": [
+"Chest rough hardware forms"
+],
+"ident": true,
+"hide": false,
+"parent": null,
+"mods": []
+},
+"Lab Chest Handle Mount Rivet 1 -1": {
+"v": 289,
+"p": 289,
+"mn": [
+2.803,
+-0.629,
+-0.227
+],
+"mx": [
+2.861,
+-0.489,
+-0.094
+],
+"mats": [
+"Chest rough hardware forms"
+],
+"ident": true,
+"hide": false,
+"parent": null,
+"mods": []
+},
+"Lab Chest Handle Mount Rivet 1 1": {
+"v": 289,
+"p": 289,
+"mn": [
+2.803,
+0.489,
+-0.227
+],
+"mx": [
+2.861,
+0.629,
+-0.094
+],
+"mats": [
+"Chest rough hardware forms"
+],
+"ident": true,
+"hide": false,
+"parent": null,
+"mods": []
+},
+"Lab Chest Lock Rivet 0": {
+"v": 289,
+"p": 289,
+"mn": [
+-0.835,
+2.073,
+-0.047
+],
+"mx": [
+-0.625,
+2.146,
+0.153
+],
+"mats": [
+"Chest rough hardware forms"
+],
+"ident": true,
+"hide": false,
+"parent": null,
+"mods": []
+},
+"Lab Chest Lock Rivet 1": {
+"v": 289,
+"p": 289,
+"mn": [
+0.625,
+2.073,
+-0.047
+],
+"mx": [
+0.835,
+2.146,
+0.153
+],
+"mats": [
+"Chest rough hardware forms"
+],
+"ident": true,
+"hide": false,
+"parent": null,
+"mods": []
+},
+"Lab Chest Lock Rivet 2": {
+"v": 289,
+"p": 289,
+"mn": [
+-0.488,
+2.1,
+-0.411
+],
+"mx": [
+-0.372,
+2.15,
+-0.3
+],
+"mats": [
+"Chest rough hardware forms"
+],
+"ident": true,
+"hide": false,
+"parent": null,
+"mods": []
+},
+"Lab Chest Lock Rivet 3": {
+"v": 289,
+"p": 289,
+"mn": [
+0.372,
+2.1,
+-0.411
+],
+"mx": [
+0.488,
+2.15,
+-0.3
+],
+"mats": [
+"Chest rough hardware forms"
+],
+"ident": true,
+"hide": false,
+"parent": null,
+"mods": []
+},
+"Lab Chest Lock Rivet 4": {
+"v": 289,
+"p": 289,
+"mn": [
+-0.488,
+2.1,
+-0.952
+],
+"mx": [
+-0.372,
+2.15,
+-0.842
+],
+"mats": [
+"Chest rough hardware forms"
+],
+"ident": true,
+"hide": false,
+"parent": null,
+"mods": []
+},
+"Lab Chest Lock Rivet 5": {
+"v": 289,
+"p": 289,
+"mn": [
+0.372,
+2.1,
+-0.952
+],
+"mx": [
+0.488,
+2.15,
+-0.842
+],
+"mats": [
+"Chest rough hardware forms"
+],
+"ident": true,
+"hide": false,
+"parent": null,
+"mods": []
+},
+"Lab Chest Lock Rivet 6": {
+"v": 289,
+"p": 289,
+"mn": [
+-0.058,
+2.1,
+-1.228
+],
+"mx": [
+0.058,
+2.15,
+-1.117
+],
+"mats": [
+"Chest rough hardware forms"
+],
+"ident": true,
+"hide": false,
+"parent": null,
+"mods": []
+},
+"Lab Chest Lower Strap Rivet": {
+"v": 289,
+"p": 289,
+"mn": [
+-0.105,
+1.993,
+-2.066
+],
+"mx": [
+0.105,
+2.066,
+-1.866
+],
+"mats": [
+"Chest rough hardware forms"
+],
+"ident": true,
+"hide": false,
+"parent": null,
+"mods": []
+},
+"Lab Chest Upright Diamond -1 -1": {
+"v": 76,
+"p": 79,
+"mn": [
+-2.574,
+-1.859,
+-1.025
+],
+"mx": [
+-2.386,
+-1.746,
+-0.65
+],
+"mats": [
+"Chest rough hardware forms"
+],
+"ident": true,
+"hide": false,
+"parent": null,
+"mods": []
+},
+"Lab Chest Upright Diamond -1 1": {
+"v": 76,
+"p": 79,
+"mn": [
+-2.574,
+1.746,
+-1.025
+],
+"mx": [
+-2.386,
+1.859,
+-0.65
+],
+"mats": [
+"Chest rough hardware forms"
+],
+"ident": true,
+"hide": false,
+"parent": null,
+"mods": []
+},
+"Lab Chest Upright Diamond 1 -1": {
+"v": 76,
+"p": 79,
+"mn": [
+2.386,
+-1.859,
+-1.025
+],
+"mx": [
+2.574,
+-1.746,
+-0.65
+],
+"mats": [
+"Chest rough hardware forms"
+],
+"ident": true,
+"hide": false,
+"parent": null,
+"mods": []
+},
+"Lab Chest Upright Diamond 1 1": {
+"v": 76,
+"p": 79,
+"mn": [
+2.386,
+1.746,
+-1.025
+],
+"mx": [
+2.574,
+1.859,
+-0.65
+],
+"mats": [
+"Chest rough hardware forms"
+],
+"ident": true,
+"hide": false,
+"parent": null,
+"mods": []
+},
+"Lab Chest End Arch Rivet -1 0": {
+"v": 289,
+"p": 289,
+"mn": [
+-2.814,
+0.967,
+1.576
+],
+"mx": [
+-2.746,
+1.159,
+1.759
+],
+"mats": [
+"Chest rough hardware forms"
+],
+"ident": true,
+"hide": false,
+"parent": null,
+"mods": []
+},
+"Lab Chest End Arch Rivet -1 1": {
+"v": 289,
+"p": 289,
+"mn": [
+-2.814,
+-1.159,
+1.576
+],
+"mx": [
+-2.746,
+-0.967,
+1.759
+],
+"mats": [
+"Chest rough hardware forms"
+],
+"ident": true,
+"hide": false,
+"parent": null,
+"mods": []
+},
+"Lab Chest Corner Body Cuff Front Rivet -1 -1": {
+"v": 289,
+"p": 289,
+"mn": [
+-2.423,
+-1.843,
+0.103
+],
+"mx": [
+-2.338,
+-1.823,
+0.184
+],
+"mats": [
+"Chest rough hardware forms"
+],
+"ident": true,
+"hide": false,
+"parent": null,
+"mods": []
+},
+"Lab Chest Corner Body Cuff End Rivet -1 -1": {
+"v": 289,
+"p": 289,
+"mn": [
+-2.743,
+-1.522,
+0.103
+],
+"mx": [
+-2.723,
+-1.437,
+0.184
+],
+"mats": [
+"Chest rough hardware forms"
+],
+"ident": true,
+"hide": false,
+"parent": null,
+"mods": []
+},
+"Lab Chest Corner Body Cuff Front Rivet -1 1": {
+"v": 289,
+"p": 289,
+"mn": [
+-2.423,
+1.823,
+0.103
+],
+"mx": [
+-2.338,
+1.844,
+0.184
+],
+"mats": [
+"Chest rough hardware forms"
+],
+"ident": true,
+"hide": false,
+"parent": null,
+"mods": []
+},
+"Lab Chest Corner Body Cuff End Rivet -1 1": {
+"v": 289,
+"p": 289,
+"mn": [
+-2.744,
+1.438,
+0.103
+],
+"mx": [
+-2.723,
+1.523,
+0.184
+],
+"mats": [
+"Chest rough hardware forms"
+],
+"ident": true,
+"hide": false,
+"parent": null,
+"mods": []
+},
+"Lab Chest End Arch Rivet 1 0": {
+"v": 289,
+"p": 289,
+"mn": [
+2.746,
+0.967,
+1.576
+],
+"mx": [
+2.814,
+1.159,
+1.759
+],
+"mats": [
+"Chest rough hardware forms"
+],
+"ident": true,
+"hide": false,
+"parent": null,
+"mods": []
+},
+"Lab Chest End Arch Rivet 1 1": {
+"v": 289,
+"p": 289,
+"mn": [
+2.746,
+-1.159,
+1.576
+],
+"mx": [
+2.814,
+-0.967,
+1.759
+],
+"mats": [
+"Chest rough hardware forms"
+],
+"ident": true,
+"hide": false,
+"parent": null,
+"mods": []
+},
+"Lab Chest Corner Body Cuff Front Rivet 1 -1": {
+"v": 289,
+"p": 289,
+"mn": [
+2.338,
+-1.844,
+0.103
+],
+"mx": [
+2.423,
+-1.823,
+0.184
+],
+"mats": [
+"Chest rough hardware forms"
+],
+"ident": true,
+"hide": false,
+"parent": null,
+"mods": []
+},
+"Lab Chest Corner Body Cuff End Rivet 1 -1": {
+"v": 289,
+"p": 289,
+"mn": [
+2.723,
+-1.523,
+0.103
+],
+"mx": [
+2.744,
+-1.438,
+0.184
+],
+"mats": [
+"Chest rough hardware forms"
+],
+"ident": true,
+"hide": false,
+"parent": null,
+"mods": []
+},
+"Lab Chest Corner Body Cuff Front Rivet 1 1": {
+"v": 289,
+"p": 289,
+"mn": [
+2.338,
+1.823,
+0.103
+],
+"mx": [
+2.423,
+1.843,
+0.184
+],
+"mats": [
+"Chest rough hardware forms"
+],
+"ident": true,
+"hide": false,
+"parent": null,
+"mods": []
+},
+"Lab Chest Corner Body Cuff End Rivet 1 1": {
+"v": 289,
+"p": 289,
+"mn": [
+2.723,
+1.437,
+0.103
+],
+"mx": [
+2.743,
+1.522,
+0.184
+],
+"mats": [
+"Chest rough hardware forms"
+],
+"ident": true,
+"hide": false,
+"parent": null,
+"mods": []
+},
+"Lab Chest Hasp Pivot Dome -1": {
+"v": 289,
+"p": 289,
+"mn": [
+-0.418,
+1.935,
+0.424
+],
+"mx": [
+-0.395,
+2.065,
+0.547
+],
+"mats": [
+"Chest rough hardware forms"
+],
+"ident": true,
+"hide": false,
+"parent": null,
+"mods": []
+},
+"Lab Chest Hasp Mount Fastener -1": {
+"v": 289,
+"p": 289,
+"mn": [
+-0.6,
+1.953,
+0.433
+],
+"mx": [
+-0.45,
+2.014,
+0.576
+],
+"mats": [
+"Chest rough hardware forms"
+],
+"ident": true,
+"hide": false,
+"parent": null,
+"mods": []
+},
+"Lab Chest End Arch Crown Tab -1": {
+"v": 1107,
+"p": 1156,
+"mn": [
+-2.793,
+-0.142,
+1.937
+],
+"mx": [
+-2.5,
+0.322,
+2.535
+],
+"mats": [
+"Chest forged iron shared varied surface"
+],
+"ident": true,
+"hide": false,
+"parent": null,
+"mods": []
+},
+"Lab Chest End Crown Fastener -1": {
+"v": 289,
+"p": 289,
+"mn": [
+-2.849,
+-0.032,
+2.115
+],
+"mx": [
+-2.783,
+0.134,
+2.273
+],
+"mats": [
+"Chest rough hardware forms"
+],
+"ident": true,
+"hide": false,
+"parent": null,
+"mods": []
+},
+"Lab Chest Hasp Pivot Dome 1": {
+"v": 289,
+"p": 289,
+"mn": [
+0.395,
+1.935,
+0.424
+],
+"mx": [
+0.418,
+2.065,
+0.547
+],
+"mats": [
+"Chest rough hardware forms"
+],
+"ident": true,
+"hide": false,
+"parent": null,
+"mods": []
+},
+"Lab Chest Hasp Mount Fastener 1": {
+"v": 289,
+"p": 289,
+"mn": [
+0.45,
+1.953,
+0.433
+],
+"mx": [
+0.6,
+2.014,
+0.576
+],
+"mats": [
+"Chest rough hardware forms"
+],
+"ident": true,
+"hide": false,
+"parent": null,
+"mods": []
+},
+"Lab Chest End Arch Crown Tab 1": {
+"v": 1107,
+"p": 1156,
+"mn": [
+2.5,
+-0.142,
+1.937
+],
+"mx": [
+2.793,
+0.322,
+2.535
+],
+"mats": [
+"Chest forged iron shared varied surface"
+],
+"ident": true,
+"hide": false,
+"parent": null,
+"mods": []
+},
+"Lab Chest End Crown Fastener 1": {
+"v": 289,
+"p": 289,
+"mn": [
+2.783,
+-0.032,
+2.115
+],
+"mx": [
+2.849,
+0.134,
+2.273
+],
+"mats": [
+"Chest rough hardware forms"
+],
+"ident": true,
+"hide": false,
+"parent": null,
+"mods": []
+},
+"Lab Chest Upper Corner Front Rivet -1 -1 Seat": {
+"v": 320,
+"p": 282,
+"mn": [
+-2.514,
+-1.884,
+0.434
+],
+"mx": [
+-2.246,
+-1.871,
+0.688
+],
+"mats": [
+"Chest forged iron shared varied surface"
+],
+"ident": true,
+"hide": false,
+"parent": null,
+"mods": []
+},
+"Lab Chest Upper Corner End Rivet -1 -1 Seat": {
+"v": 320,
+"p": 282,
+"mn": [
+-2.784,
+-1.601,
+0.446
+],
+"mx": [
+-2.771,
+-1.359,
+0.676
+],
+"mats": [
+"Chest forged iron shared varied surface"
+],
+"ident": true,
+"hide": false,
+"parent": null,
+"mods": []
+},
+"Lab Chest Boot Front Rivet -1 -1 Seat": {
+"v": 320,
+"p": 282,
+"mn": [
+-2.449,
+-1.874,
+-2.231
+],
+"mx": [
+-2.151,
+-1.863,
+-1.947
+],
+"mats": [
+"Chest forged iron shared varied surface"
+],
+"ident": true,
+"hide": false,
+"parent": null,
+"mods": []
+},
+"Lab Chest Boot End Rivet -1 -1 Seat": {
+"v": 320,
+"p": 282,
+"mn": [
+-2.784,
+-1.536,
+-2.219
+],
+"mx": [
+-2.773,
+-1.264,
+-1.96
+],
+"mats": [
+"Chest forged iron shared varied surface"
+],
+"ident": true,
+"hide": false,
+"parent": null,
+"mods": []
+},
+"Lab Chest Upper Corner Front Rivet -1 1 Seat": {
+"v": 320,
+"p": 282,
+"mn": [
+-2.514,
+1.871,
+0.434
+],
+"mx": [
+-2.246,
+1.884,
+0.688
+],
+"mats": [
+"Chest forged iron shared varied surface"
+],
+"ident": true,
+"hide": false,
+"parent": null,
+"mods": []
+},
+"Lab Chest Upper Corner End Rivet -1 1 Seat": {
+"v": 320,
+"p": 282,
+"mn": [
+-2.784,
+1.359,
+0.446
+],
+"mx": [
+-2.771,
+1.601,
+0.676
+],
+"mats": [
+"Chest forged iron shared varied surface"
+],
+"ident": true,
+"hide": false,
+"parent": null,
+"mods": []
+},
+"Lab Chest Boot Front Rivet -1 1 Seat": {
+"v": 320,
+"p": 282,
+"mn": [
+-2.449,
+1.863,
+-2.231
+],
+"mx": [
+-2.151,
+1.874,
+-1.947
+],
+"mats": [
+"Chest forged iron shared varied surface"
+],
+"ident": true,
+"hide": false,
+"parent": null,
+"mods": []
+},
+"Lab Chest Boot End Rivet -1 1 Seat": {
+"v": 320,
+"p": 282,
+"mn": [
+-2.784,
+1.264,
+-2.219
+],
+"mx": [
+-2.773,
+1.536,
+-1.96
+],
+"mats": [
+"Chest forged iron shared varied surface"
+],
+"ident": true,
+"hide": false,
+"parent": null,
+"mods": []
+},
+"Lab Chest Upper Corner Front Rivet 1 -1 Seat": {
+"v": 320,
+"p": 282,
+"mn": [
+2.246,
+-1.884,
+0.434
+],
+"mx": [
+2.514,
+-1.871,
+0.688
+],
+"mats": [
+"Chest forged iron shared varied surface"
+],
+"ident": true,
+"hide": false,
+"parent": null,
+"mods": []
+},
+"Lab Chest Upper Corner End Rivet 1 -1 Seat": {
+"v": 320,
+"p": 282,
+"mn": [
+2.771,
+-1.601,
+0.446
+],
+"mx": [
+2.784,
+-1.359,
+0.676
+],
+"mats": [
+"Chest forged iron shared varied surface"
+],
+"ident": true,
+"hide": false,
+"parent": null,
+"mods": []
+},
+"Lab Chest Boot Front Rivet 1 -1 Seat": {
+"v": 320,
+"p": 282,
+"mn": [
+2.151,
+-1.874,
+-2.231
+],
+"mx": [
+2.449,
+-1.863,
+-1.947
+],
+"mats": [
+"Chest forged iron shared varied surface"
+],
+"ident": true,
+"hide": false,
+"parent": null,
+"mods": []
+},
+"Lab Chest Boot End Rivet 1 -1 Seat": {
+"v": 320,
+"p": 282,
+"mn": [
+2.773,
+-1.536,
+-2.219
+],
+"mx": [
+2.784,
+-1.264,
+-1.96
+],
+"mats": [
+"Chest forged iron shared varied surface"
+],
+"ident": true,
+"hide": false,
+"parent": null,
+"mods": []
+},
+"Lab Chest Upper Corner Front Rivet 1 1 Seat": {
+"v": 320,
+"p": 282,
+"mn": [
+2.246,
+1.871,
+0.434
+],
+"mx": [
+2.514,
+1.884,
+0.688
+],
+"mats": [
+"Chest forged iron shared varied surface"
+],
+"ident": true,
+"hide": false,
+"parent": null,
+"mods": []
+},
+"Lab Chest Upper Corner End Rivet 1 1 Seat": {
+"v": 320,
+"p": 282,
+"mn": [
+2.771,
+1.359,
+0.446
+],
+"mx": [
+2.784,
+1.601,
+0.676
+],
+"mats": [
+"Chest forged iron shared varied surface"
+],
+"ident": true,
+"hide": false,
+"parent": null,
+"mods": []
+},
+"Lab Chest Boot Front Rivet 1 1 Seat": {
+"v": 320,
+"p": 282,
+"mn": [
+2.151,
+1.863,
+-2.231
+],
+"mx": [
+2.449,
+1.874,
+-1.947
+],
+"mats": [
+"Chest forged iron shared varied surface"
+],
+"ident": true,
+"hide": false,
+"parent": null,
+"mods": []
+},
+"Lab Chest Boot End Rivet 1 1 Seat": {
+"v": 320,
+"p": 282,
+"mn": [
+2.773,
+1.264,
+-2.219
+],
+"mx": [
+2.784,
+1.536,
+-1.96
+],
+"mats": [
+"Chest forged iron shared varied surface"
+],
+"ident": true,
+"hide": false,
+"parent": null,
+"mods": []
+},
+"Lab Chest Rail Rivet -1 0": {
+"v": 289,
+"p": 289,
+"mn": [
+-1.182,
+-1.893,
+0.505
+],
+"mx": [
+-1.034,
+-1.833,
+0.646
+],
+"mats": [
+"Chest rough hardware forms"
+],
+"ident": true,
+"hide": false,
+"parent": null,
+"mods": []
+},
+"Lab Chest Rail Rivet -1 1": {
+"v": 289,
+"p": 289,
+"mn": [
+1.034,
+-1.893,
+0.505
+],
+"mx": [
+1.182,
+-1.833,
+0.646
+],
+"mats": [
+"Chest rough hardware forms"
+],
+"ident": true,
+"hide": false,
+"parent": null,
+"mods": []
+},
+"Lab Chest Rail Rivet -1 3": {
+"v": 289,
+"p": 289,
+"mn": [
+-1.2,
+-1.833,
+-2.036
+],
+"mx": [
+-1.052,
+-1.773,
+-1.895
+],
+"mats": [
+"Chest rough hardware forms"
+],
+"ident": true,
+"hide": false,
+"parent": null,
+"mods": []
+},
+"Lab Chest Rail Rivet -1 4": {
+"v": 289,
+"p": 289,
+"mn": [
+1.051,
+-1.833,
+-2.036
+],
+"mx": [
+1.199,
+-1.773,
+-1.895
+],
+"mats": [
+"Chest rough hardware forms"
+],
+"ident": true,
+"hide": false,
+"parent": null,
+"mods": []
+},
+"Lab Chest Rail Rivet 1 0": {
+"v": 289,
+"p": 289,
+"mn": [
+-1.182,
+1.833,
+0.505
+],
+"mx": [
+-1.034,
+1.893,
+0.646
+],
+"mats": [
+"Chest rough hardware forms"
+],
+"ident": true,
+"hide": false,
+"parent": null,
+"mods": []
+},
+"Lab Chest Rail Rivet 1 1": {
+"v": 289,
+"p": 289,
+"mn": [
+1.034,
+1.833,
+0.505
+],
+"mx": [
+1.182,
+1.893,
+0.646
+],
+"mats": [
+"Chest rough hardware forms"
+],
+"ident": true,
+"hide": false,
+"parent": null,
+"mods": []
+},
+"Lab Chest Rail Rivet 1 2": {
+"v": 289,
+"p": 289,
+"mn": [
+1.759,
+1.833,
+0.535
+],
+"mx": [
+1.845,
+1.873,
+0.616
+],
+"mats": [
+"Chest rough hardware forms"
+],
+"ident": true,
+"hide": false,
+"parent": null,
+"mods": []
+},
+"Lab Chest Rail Rivet 1 3": {
+"v": 289,
+"p": 289,
+"mn": [
+-1.2,
+1.773,
+-2.036
+],
+"mx": [
+-1.052,
+1.833,
+-1.895
+],
+"mats": [
+"Claude forged iron knob"
+],
+"ident": true,
+"hide": false,
+"parent": null,
+"mods": []
+},
+"Lab Chest Rail Rivet 1 4": {
+"v": 289,
+"p": 289,
+"mn": [
+1.051,
+1.773,
+-2.036
+],
+"mx": [
+1.199,
+1.833,
+-1.895
+],
+"mats": [
+"Claude forged iron knob"
+],
+"ident": true,
+"hide": false,
+"parent": null,
+"mods": []
+},
+"Lab Chest End Rail Rivet -1 0": {
+"v": 289,
+"p": 289,
+"mn": [
+-2.823,
+-0.074,
+0.505
+],
+"mx": [
+-2.763,
+0.074,
+0.646
+],
+"mats": [
+"Chest rough hardware forms"
+],
+"ident": true,
+"hide": false,
+"parent": null,
+"mods": []
+},
+"Lab Chest End Rail Rivet -1 1": {
+"v": 289,
+"p": 289,
+"mn": [
+-2.783,
+-0.074,
+-2.036
+],
+"mx": [
+-2.723,
+0.074,
+-1.895
+],
+"mats": [
+"Chest rough hardware forms"
+],
+"ident": true,
+"hide": false,
+"parent": null,
+"mods": []
+},
+"Lab Chest End Rail Rivet 1 0": {
+"v": 289,
+"p": 289,
+"mn": [
+2.763,
+-0.074,
+0.505
+],
+"mx": [
+2.823,
+0.074,
+0.646
+],
+"mats": [
+"Chest rough hardware forms"
+],
+"ident": true,
+"hide": false,
+"parent": null,
+"mods": []
+},
+"Lab Chest End Rail Rivet 1 1": {
+"v": 289,
+"p": 289,
+"mn": [
+2.723,
+-0.074,
+-2.036
+],
+"mx": [
+2.783,
+0.074,
+-1.895
+],
+"mats": [
+"Chest rough hardware forms"
+],
+"ident": true,
+"hide": false,
+"parent": null,
+"mods": []
+},
+"Lab Chest Measured Rolled Handle Cover -1": {
+"v": 1930,
+"p": 3860,
+"mn": [
+-3.117,
+-0.31,
+-0.571
+],
+"mx": [
+-2.795,
+0.31,
+-0.105
+],
+"mats": [
+"Chest rough hardware forms"
+],
+"ident": true,
+"hide": false,
+"parent": null,
+"mods": []
+},
+"Lab Chest Measured Rolled Handle Cover 1": {
+"v": 1930,
+"p": 3860,
+"mn": [
+2.795,
+-0.31,
+-0.571
+],
+"mx": [
+3.117,
+0.31,
+-0.105
+],
+"mats": [
+"Chest rough hardware forms"
+],
+"ident": true,
+"hide": false,
+"parent": null,
+"mods": []
+},
+"Lab Chest Fixed Front Hinge Knuckle -1": {
+"v": 1024,
+"p": 1024,
+"mn": [
+-0.36,
+1.81,
+0.295
+],
+"mx": [
+-0.25,
+2.19,
+0.675
+],
+"mats": [
+"Chest rough hardware forms"
+],
+"ident": true,
+"hide": false,
+"parent": null,
+"mods": []
+},
+"Lab Chest Fixed Front Hinge Knuckle 1": {
+"v": 1024,
+"p": 1024,
+"mn": [
+0.25,
+1.81,
+0.295
+],
+"mx": [
+0.36,
+2.19,
+0.675
+],
+"mats": [
+"Chest rough hardware forms"
+],
+"ident": true,
+"hide": false,
+"parent": null,
+"mods": []
+},
+"Lab Chest Front Hinge Pin": {
+"v": 512,
+"p": 450,
+"mn": [
+-0.4,
+1.922,
+0.407
+],
+"mx": [
+0.4,
+2.078,
+0.563
+],
+"mats": [
+"Chest rough hardware forms"
+],
+"ident": true,
+"hide": false,
+"parent": null,
+"mods": []
+},
+"Lab Chest Case Back With Key Bore": {
+"v": 1210,
+"p": 2420,
+"mn": [
+-0.965,
+1.78,
+-1.529
+],
+"mx": [
+0.965,
+1.87,
+0.257
+],
+"mats": [
+"Chest rough hardware forms"
+],
+"ident": true,
+"hide": false,
+"parent": null,
+"mods": []
+},
+"Lab Chest Hollow Lock Case Walls": {
+"v": 1184,
+"p": 2376,
+"mn": [
+-0.965,
+1.81,
+-1.529
+],
+"mx": [
+0.965,
+2.08,
+0.257
+],
+"mats": [
+"Chest rough hardware forms"
+],
+"ident": true,
+"hide": false,
+"parent": null,
+"mods": []
+},
+"Lab Chest Key Driven Slider": {
+"v": 1112,
+"p": 2224,
+"mn": [
+-0.5,
+1.83,
+-0.741
+],
+"mx": [
+0.25,
+1.998,
+-0.119
+],
+"mats": [
+"Chest rough hardware forms"
+],
+"ident": true,
+"hide": false,
+"parent": null,
+"mods": []
+},
+"Lab Chest Compliant Catch Leaf": {
+"v": 720,
+"p": 1436,
+"mn": [
+0.092,
+1.833,
+-0.186
+],
+"mx": [
+0.3,
+1.852,
+-0.143
+],
+"mats": [
+"Chest rough hardware forms"
+],
+"ident": true,
+"hide": false,
+"parent": null,
+"mods": []
+},
+"Lab Chest Fixed Leaf Clamp": {
+"v": 96,
+"p": 98,
+"mn": [
+0.29,
+1.81,
+-0.15
+],
+"mx": [
+0.32,
+1.85,
+-0.135
+],
+"mats": [
+"Chest rough hardware forms"
+],
+"ident": true,
+"hide": false,
+"parent": null,
+"mods": []
+},
+"Lab Chest Small Front Rail Rivet -1": {
+"v": 289,
+"p": 289,
+"mn": [
+-1.845,
+1.833,
+0.535
+],
+"mx": [
+-1.759,
+1.873,
+0.616
+],
+"mats": [
+"Chest rough hardware forms"
+],
+"ident": true,
+"hide": false,
+"parent": null,
+"mods": []
+},
+"Lab Chest Rear Hinge Lower Rivet -1 0": {
+"v": 321,
+"p": 321,
+"mn": [
+-1.765,
+-1.929,
+0.1
+],
+"mx": [
+-1.695,
+-1.895,
+0.17
+],
+"mats": [
+"Chest rough hardware forms"
+],
+"ident": true,
+"hide": false,
+"parent": null,
+"mods": []
+},
+"Lab Chest Rear Hinge Lower Rivet -1 1": {
+"v": 321,
+"p": 321,
+"mn": [
+-1.405,
+-1.929,
+0.1
+],
+"mx": [
+-1.335,
+-1.895,
+0.17
+],
+"mats": [
+"Chest rough hardware forms"
+],
+"ident": true,
+"hide": false,
+"parent": null,
+"mods": []
+},
+"Lab Chest Rear Hinge Upper Rivet -1 0": {
+"v": 321,
+"p": 321,
+"mn": [
+-1.765,
+-1.929,
+0.564
+],
+"mx": [
+-1.695,
+-1.895,
+0.634
+],
+"mats": [
+"Chest rough hardware forms"
+],
+"ident": true,
+"hide": false,
+"parent": null,
+"mods": []
+},
+"Lab Chest Rear Hinge Upper Rivet -1 1": {
+"v": 321,
+"p": 321,
+"mn": [
+-1.405,
+-1.929,
+0.564
+],
+"mx": [
+-1.335,
+-1.895,
+0.634
+],
+"mats": [
+"Chest rough hardware forms"
+],
+"ident": true,
+"hide": false,
+"parent": null,
+"mods": []
+},
+"Lab Chest Rear Hinge Lower Rivet 1 0": {
+"v": 321,
+"p": 321,
+"mn": [
+1.335,
+-1.929,
+0.1
+],
+"mx": [
+1.405,
+-1.895,
+0.17
+],
+"mats": [
+"Chest rough hardware forms"
+],
+"ident": true,
+"hide": false,
+"parent": null,
+"mods": []
+},
+"Lab Chest Rear Hinge Lower Rivet 1 1": {
+"v": 321,
+"p": 321,
+"mn": [
+1.695,
+-1.929,
+0.1
+],
+"mx": [
+1.765,
+-1.895,
+0.17
+],
+"mats": [
+"Chest rough hardware forms"
+],
+"ident": true,
+"hide": false,
+"parent": null,
+"mods": []
+},
+"Lab Chest Rear Hinge Upper Rivet 1 0": {
+"v": 321,
+"p": 321,
+"mn": [
+1.335,
+-1.929,
+0.564
+],
+"mx": [
+1.405,
+-1.895,
+0.634
+],
+"mats": [
+"Chest rough hardware forms"
+],
+"ident": true,
+"hide": false,
+"parent": null,
+"mods": []
+},
+"Lab Chest Rear Hinge Upper Rivet 1 1": {
+"v": 321,
+"p": 321,
+"mn": [
+1.695,
+-1.929,
+0.564
+],
+"mx": [
+1.765,
+-1.895,
+0.634
+],
+"mats": [
+"Chest rough hardware forms"
+],
+"ident": true,
+"hide": false,
+"parent": null,
+"mods": []
+},
+"Master Chest Body Envelope": {
+"v": 187,
+"p": 352,
+"mn": [
+-2.55,
+-1.6,
+-2.217
+],
+"mx": [
+2.55,
+1.6,
+0.347
+],
+"mats": [
+"Chest wood shared varied atlas",
+"Wood Lab BC_final_polish"
+],
+"ident": true,
+"hide": false,
+"parent": null,
+"mods": []
+},
+"Claude Bottom Planks": {
+"v": 686829,
+"p": 684800,
+"mn": [
+-2.545,
+1.6,
+-2.201
+],
+"mx": [
+2.546,
+1.6,
+-0.84
+],
+"mats": [
+"Claude carved chestnut planks"
+],
+"ident": true,
+"hide": false,
+"parent": null,
+"mods": []
+}
+},
+"Master Chest Body Envelope": [
+{
+"normal": [
+-0.0,
+-1.0,
+0.0
+],
+"n": 14,
+"area": 23.022,
+"mn": [
+-2.543,
+-1.6,
+-1.728
+],
+"mx": [
+2.543,
+1.4,
+-0.079
+],
+"mi": [
+0
+]
+},
+{
+"normal": [
+0.0,
+1.0,
+0.0
+],
+"n": 11,
+"area": 16.738,
+"mn": [
+-2.543,
+-1.4,
+-1.229
+],
+"mx": [
+2.543,
+1.6,
+-0.079
+],
+"mi": [
+0
+]
+},
+{
+"normal": [
+0.0,
+0.0,
+-1.0
+],
+"n": 2,
+"area": 15.364,
+"mn": [
+-0.83,
+-0.514,
+-2.217
+],
+"mx": [
+0.83,
+0.514,
+-2.217
+],
+"mi": [
+0
+]
+},
+{
+"normal": [
+0.0,
+0.0,
+1.0
+],
+"n": 10,
+"area": 15.364,
+"mn": [
+-2.437,
+-1.488,
+-2.017
+],
+"mx": [
+2.437,
+1.488,
+0.347
+],
+"mi": [
+0
+]
+},
+{
+"normal": [
+-1.0,
+-0.0,
+-0.0
+],
+"n": 14,
+"area": 13.96,
+"mn": [
+-2.55,
+-1.593,
+-1.728
+],
+"mx": [
+2.35,
+1.593,
+-0.079
+],
+"mi": [
+0
+]
+},
+{
+"normal": [
+1.0,
+0.0,
+0.0
+],
+"n": 14,
+"area": 13.96,
+"mn": [
+-2.35,
+-1.593,
+-1.728
+],
+"mx": [
+2.55,
+1.593,
+-0.079
+],
+"mi": [
+0
+]
+},
+{
+"normal": [
+-0.0,
+-0.7,
+-0.7
+],
+"n": 3,
+"area": 0.141,
+"mn": [
+-1.646,
+-1.593,
+-0.832
+],
+"mx": [
+1.487,
+-1.587,
+-0.825
+],
+"mi": [
+0
+]
+},
+{
+"normal": [
+0.0,
+0.7,
+-0.7
+],
+"n": 3,
+"area": 0.141,
+"mn": [
+-1.487,
+1.587,
+-0.832
+],
+"mx": [
+1.646,
+1.593,
+-0.825
+],
+"mi": [
+0
+]
+},
+{
+"normal": [
+-0.0,
+-0.7,
+0.7
+],
+"n": 3,
+"area": 0.141,
+"mn": [
+-1.616,
+-1.593,
+-0.855
+],
+"mx": [
+1.518,
+-1.587,
+-0.848
+],
+"mi": [
+0
+]
+},
+{
+"normal": [
+-0.0,
+-0.2,
+1.0
+],
+"n": 2,
+"area": 0.113,
+"mn": [
+-0.83,
+-1.557,
+0.345
+],
+"mx": [
+0.83,
+-1.549,
+0.346
+],
+"mi": [
+0
+]
+},
+{
+"normal": [
+0.0,
+0.2,
+1.0
+],
+"n": 2,
+"area": 0.113,
+"mn": [
+-0.83,
+1.549,
+0.345
+],
+"mx": [
+0.83,
+1.557,
+0.346
+],
+"mi": [
+0
+]
+},
+{
+"normal": [
+-0.0,
+-0.2,
+-1.0
+],
+"n": 2,
+"area": 0.113,
+"mn": [
+-0.83,
+-1.557,
+-2.216
+],
+"mx": [
+0.83,
+-1.549,
+-2.215
+],
+"mi": [
+0
+]
+},
+{
+"normal": [
+0.0,
+0.2,
+-1.0
+],
+"n": 2,
+"area": 0.113,
+"mn": [
+-0.83,
+1.549,
+-2.216
+],
+"mx": [
+0.83,
+1.557,
+-2.215
+],
+"mi": [
+0
+]
+},
+{
+"normal": [
+-0.0,
+-0.5,
+-0.8
+],
+"n": 2,
+"area": 0.112,
+"mn": [
+-0.83,
+-1.577,
+-2.209
+],
+"mx": [
+0.83,
+-1.57,
+-2.205
+],
+"mi": [
+0
+]
+},
+{
+"normal": [
+0.0,
+0.5,
+-0.8
+],
+"n": 2,
+"area": 0.112,
+"mn": [
+-0.83,
+1.57,
+-2.209
+],
+"mx": [
+0.83,
+1.577,
+-2.205
+],
+"mi": [
+0
+]
+},
+{
+"normal": [
+-0.0,
+-0.5,
+0.8
+],
+"n": 2,
+"area": 0.112,
+"mn": [
+-0.83,
+-1.577,
+0.335
+],
+"mx": [
+0.83,
+-1.57,
+0.339
+],
+"mi": [
+0
+]
+},
+{
+"normal": [
+0.0,
+0.5,
+0.8
+],
+"n": 2,
+"area": 0.112,
+"mn": [
+-0.83,
+1.57,
+0.335
+],
+"mx": [
+0.83,
+1.577,
+0.339
+],
+"mi": [
+0
+]
+},
+{
+"normal": [
+0.0,
+-0.8,
+-0.6
+],
+"n": 2,
+"area": 0.112,
+"mn": [
+-0.83,
+-1.591,
+-2.195
+],
+"mx": [
+0.83,
+-1.587,
+-2.188
+],
+"mi": [
+0
+]
+},
+{
+"normal": [
+-0.0,
+-0.8,
+0.6
+],
+"n": 2,
+"area": 0.112,
+"mn": [
+-0.83,
+-1.591,
+0.318
+],
+"mx": [
+0.83,
+-1.587,
+0.325
+],
+"mi": [
+0
+]
+},
+{
+"normal": [
+0.0,
+0.8,
+0.6
+],
+"n": 2,
+"area": 0.112,
+"mn": [
+-0.83,
+1.587,
+0.318
+],
+"mx": [
+0.83,
+1.591,
+0.325
+],
+"mi": [
+0
+]
+},
+{
+"normal": [
+-0.0,
+-1.0,
+0.2
+],
+"n": 2,
+"area": 0.111,
+"mn": [
+-0.83,
+-1.599,
+0.298
+],
+"mx": [
+0.83,
+-1.597,
+0.305
+],
+"mi": [
+0
+]
+},
+{
+"normal": [
+0.0,
+1.0,
+0.2
+],
+"n": 2,
+"area": 0.111,
+"mn": [
+-0.83,
+1.597,
+0.298
+],
+"mx": [
+0.83,
+1.599,
+0.305
+],
+"mi": [
+0
+]
+},
+{
+"normal": [
+0.0,
+-1.0,
+-0.2
+],
+"n": 2,
+"area": 0.111,
+"mn": [
+-0.83,
+-1.599,
+-2.175
+],
+"mx": [
+0.83,
+-1.597,
+-2.168
+],
+"mi": [
+0
+]
+},
+{
+"normal": [
+-0.7,
+0.0,
+0.7
+],
+"n": 3,
+"area": 0.084,
+"mn": [
+-2.543,
+-0.903,
+-0.855
+],
+"mx": [
+-2.537,
+0.964,
+-0.847
+],
+"mi": [
+0
+]
+},
+{
+"normal": [
+0.7,
+-0.0,
+0.7
+],
+"n": 3,
+"area": 0.084,
+"mn": [
+2.537,
+-0.964,
+-0.855
+],
+"mx": [
+2.543,
+0.903,
+-0.847
+],
+"mi": [
+0
+]
+},
+{
+"normal": [
+-0.7,
+-0.0,
+-0.7
+],
+"n": 3,
+"area": 0.084,
+"mn": [
+-2.543,
+-0.884,
+-0.832
+],
+"mx": [
+-2.537,
+0.983,
+-0.825
+],
+"mi": [
+0
+]
+},
+{
+"normal": [
+0.7,
+0.0,
+-0.7
+],
+"n": 3,
+"area": 0.084,
+"mn": [
+2.537,
+-0.983,
+-0.832
+],
+"mx": [
+2.543,
+0.884,
+-0.825
+],
+"mi": [
+0
+]
+},
+{
+"normal": [
+0.2,
+-0.0,
+1.0
+],
+"n": 2,
+"area": 0.071,
+"mn": [
+2.499,
+-0.514,
+0.345
+],
+"mx": [
+2.506,
+0.514,
+0.346
+],
+"mi": [
+0
+]
+},
+{
+"normal": [
+-0.2,
+0.0,
+1.0
+],
+"n": 2,
+"area": 0.071,
+"mn": [
+-2.506,
+-0.514,
+0.345
+],
+"mx": [
+-2.499,
+0.514,
+0.346
+],
+"mi": [
+0
+]
+},
+{
+"normal": [
+-0.2,
+0.0,
+-1.0
+],
+"n": 2,
+"area": 0.071,
+"mn": [
+-2.506,
+-0.514,
+-2.216
+],
+"mx": [
+-2.499,
+0.514,
+-2.215
+],
+"mi": [
+0
+]
+},
+{
+"normal": [
+0.2,
+-0.0,
+-1.0
+],
+"n": 2,
+"area": 0.071,
+"mn": [
+2.499,
+-0.514,
+-2.216
+],
+"mx": [
+2.506,
+0.514,
+-2.215
+],
+"mi": [
+0
+]
+},
+{
+"normal": [
+-0.5,
+0.0,
+-0.8
+],
+"n": 2,
+"area": 0.07,
+"mn": [
+-2.526,
+-0.514,
+-2.209
+],
+"mx": [
+-2.52,
+0.514,
+-2.205
+],
+"mi": [
+0
+]
+},
+{
+"normal": [
+0.5,
+-0.0,
+-0.8
+],
+"n": 2,
+"area": 0.07,
+"mn": [
+2.52,
+-0.514,
+-2.209
+],
+"mx": [
+2.526,
+0.514,
+-2.205
+],
+"mi": [
+0
+]
+},
+{
+"normal": [
+-0.5,
+0.0,
+0.8
+],
+"n": 2,
+"area": 0.07,
+"mn": [
+-2.526,
+-0.514,
+0.335
+],
+"mx": [
+-2.52,
+0.514,
+0.339
+],
+"mi": [
+0
+]
+},
+{
+"normal": [
+0.5,
+-0.0,
+0.8
+],
+"n": 2,
+"area": 0.07,
+"mn": [
+2.52,
+-0.514,
+0.335
+],
+"mx": [
+2.526,
+0.514,
+0.339
+],
+"mi": [
+0
+]
+},
+{
+"normal": [
+-0.8,
+0.0,
+-0.6
+],
+"n": 2,
+"area": 0.069,
+"mn": [
+-2.541,
+-0.514,
+-2.195
+],
+"mx": [
+-2.537,
+0.514,
+-2.188
+],
+"mi": [
+0
+]
+},
+{
+"normal": [
+0.8,
+-0.0,
+-0.6
+],
+"n": 2,
+"area": 0.069,
+"mn": [
+2.537,
+-0.514,
+-2.195
+],
+"mx": [
+2.541,
+0.514,
+-2.188
+],
+"mi": [
+0
+]
+},
+{
+"normal": [
+-0.8,
+0.0,
+0.6
+],
+"n": 2,
+"area": 0.069,
+"mn": [
+-2.541,
+-0.514,
+0.318
+],
+"mx": [
+-2.537,
+0.514,
+0.325
+],
+"mi": [
+0
+]
+},
+{
+"normal": [
+0.8,
+-0.0,
+0.6
+],
+"n": 2,
+"area": 0.069,
+"mn": [
+2.537,
+-0.514,
+0.318
+],
+"mx": [
+2.541,
+0.514,
+0.325
+],
+"mi": [
+0
+]
+},
+{
+"normal": [
+1.0,
+-0.0,
+0.2
+],
+"n": 2,
+"area": 0.069,
+"mn": [
+2.547,
+-0.514,
+0.298
+],
+"mx": [
+2.549,
+0.514,
+0.305
+],
+"mi": [
+0
+]
+}
+],
+"Master Chest Body Envelope_bounds": [
+[
+-2.55,
+-1.6,
+-2.2175
+],
+[
+2.55,
+1.6,
+0.3475
+]
+],
+"Lab Chest Barrel Lid Envelope": [
+{
+"normal": [
+1.0,
+-0.0,
+-0.0
+],
+"n": 224,
+"area": 8.577,
+"mn": [
+-2.38,
+-1.598,
+0.4
+],
+"mx": [
+2.6,
+1.592,
+2.279
+],
+"mi": [
+0
+]
+},
+{
+"normal": [
+-1.0,
+0.0,
+-0.0
+],
+"n": 224,
+"area": 8.577,
+"mn": [
+-2.6,
+-1.592,
+0.4
+],
+"mx": [
+2.38,
+1.598,
+2.279
+],
+"mi": [
+0
+]
+},
+{
+"normal": [
+-0.0,
+-0.0,
+-1.0
+],
+"n": 12,
+"area": 2.773,
+"mn": [
+-2.493,
+-1.557,
+0.381
+],
+"mx": [
+2.493,
+1.557,
+2.148
+],
+"mi": [
+0
+]
+},
+{
+"normal": [
+-0.0,
+-1.0,
+0.2
+],
+"n": 8,
+"area": 1.29,
+"mn": [
+-0.85,
+-1.625,
+0.719
+],
+"mx": [
+0.85,
+-1.584,
+0.926
+],
+"mi": [
+0
+]
+},
+{
+"normal": [
+-0.0,
+1.0,
+0.2
+],
+"n": 8,
+"area": 1.29,
+"mn": [
+-0.85,
+1.584,
+0.719
+],
+"mx": [
+0.85,
+1.625,
+0.926
+],
+"mi": [
+0
+]
+},
+{
+"normal": [
+0.0,
+0.8,
+0.6
+],
+"n": 8,
+"area": 1.218,
+"mn": [
+-0.85,
+1.179,
+1.583
+],
+"mx": [
+0.85,
+1.298,
+1.743
+],
+"mi": [
+0
+]
+},
+{
+"normal": [
+0.0,
+-0.8,
+0.6
+],
+"n": 8,
+"area": 1.218,
+"mn": [
+-0.85,
+-1.298,
+1.583
+],
+"mx": [
+0.85,
+-1.179,
+1.743
+],
+"mi": [
+0
+]
+},
+{
+"normal": [
+-0.0,
+1.0,
+-0.2
+],
+"n": 10,
+"area": 1.202,
+"mn": [
+-0.85,
+-1.447,
+0.416
+],
+"mx": [
+0.85,
+1.648,
+0.882
+],
+"mi": [
+0
+]
+},
+{
+"normal": [
+0.0,
+-1.0,
+-0.2
+],
+"n": 10,
+"area": 1.202,
+"mn": [
+-0.85,
+-1.648,
+0.416
+],
+"mx": [
+0.85,
+1.447,
+0.882
+],
+"mi": [
+0
+]
+},
+{
+"normal": [
+0.0,
+0.4,
+0.9
+],
+"n": 12,
+"area": 1.124,
+"mn": [
+-1.978,
+-0.38,
+1.209
+],
+"mx": [
+1.332,
+1.486,
+2.269
+],
+"mi": [
+0
+]
+},
+{
+"normal": [
+-0.0,
+-0.4,
+0.9
+],
+"n": 12,
+"area": 1.124,
+"mn": [
+-1.332,
+-1.486,
+1.209
+],
+"mx": [
+1.978,
+0.38,
+2.269
+],
+"mi": [
+0
+]
+},
+{
+"normal": [
+0.0,
+0.8,
+-0.6
+],
+"n": 10,
+"area": 1.124,
+"mn": [
+-0.85,
+-1.148,
+0.4
+],
+"mx": [
+0.85,
+1.642,
+1.628
+],
+"mi": [
+0
+]
+},
+{
+"normal": [
+-0.0,
+-0.8,
+-0.6
+],
+"n": 10,
+"area": 1.124,
+"mn": [
+-0.85,
+-1.642,
+0.4
+],
+"mx": [
+0.85,
+1.148,
+1.628
+],
+"mi": [
+0
+]
+},
+{
+"normal": [
+0.0,
+1.0,
+0.1
+],
+"n": 9,
+"area": 1.113,
+"mn": [
+-1.043,
+1.013,
+0.529
+],
+"mx": [
+2.103,
+1.645,
+1.909
+],
+"mi": [
+0
+]
+},
+{
+"normal": [
+0.0,
+-1.0,
+0.1
+],
+"n": 9,
+"area": 1.113,
+"mn": [
+-2.103,
+-1.645,
+0.529
+],
+"mx": [
+1.043,
+-1.013,
+1.909
+],
+"mi": [
+0
+]
+},
+{
+"normal": [
+-0.0,
+1.0,
+0.0
+],
+"n": 8,
+"area": 0.967,
+"mn": [
+-0.85,
+-1.47,
+0.4
+],
+"mx": [
+0.85,
+1.649,
+0.487
+],
+"mi": [
+0
+]
+},
+{
+"normal": [
+0.0,
+-1.0,
+0.0
+],
+"n": 8,
+"area": 0.967,
+"mn": [
+-0.85,
+-1.649,
+0.4
+],
+"mx": [
+0.85,
+1.47,
+0.487
+],
+"mi": [
+0
+]
+},
+{
+"normal": [
+0.0,
+0.9,
+0.5
+],
+"n": 6,
+"area": 0.934,
+"mn": [
+-0.85,
+1.351,
+1.373
+],
+"mx": [
+0.85,
+1.42,
+1.498
+],
+"mi": [
+0
+]
+},
+{
+"normal": [
+-0.0,
+-0.9,
+0.5
+],
+"n": 6,
+"area": 0.934,
+"mn": [
+-0.85,
+-1.42,
+1.373
+],
+"mx": [
+0.85,
+-1.351,
+1.498
+],
+"mi": [
+0
+]
+},
+{
+"normal": [
+-0.0,
+-0.6,
+0.8
+],
+"n": 6,
+"area": 0.873,
+"mn": [
+-0.85,
+-0.946,
+1.976
+],
+"mx": [
+0.85,
+-0.84,
+2.056
+],
+"mi": [
+0
+]
+},
+{
+"normal": [
+-0.0,
+0.6,
+0.8
+],
+"n": 6,
+"area": 0.873,
+"mn": [
+-0.85,
+0.84,
+1.976
+],
+"mx": [
+0.85,
+0.946,
+2.056
+],
+"mi": [
+0
+]
+},
+{
+"normal": [
+-0.0,
+-0.5,
+0.9
+],
+"n": 6,
+"area": 0.855,
+"mn": [
+-0.85,
+-0.762,
+2.108
+],
+"mx": [
+0.85,
+-0.648,
+2.172
+],
+"mi": [
+0
+]
+},
+{
+"normal": [
+-0.0,
+0.5,
+0.9
+],
+"n": 6,
+"area": 0.855,
+"mn": [
+-0.85,
+0.648,
+2.108
+],
+"mx": [
+0.85,
+0.762,
+2.172
+],
+"mi": [
+0
+]
+},
+{
+"normal": [
+-0.0,
+-1.0,
+-0.1
+],
+"n": 6,
+"area": 0.837,
+"mn": [
+-0.793,
+1.452,
+0.518
+],
+"mx": [
+0.793,
+1.465,
+0.654
+],
+"mi": [
+0
+]
+},
+{
+"normal": [
+0.0,
+1.0,
+-0.1
+],
+"n": 6,
+"area": 0.837,
+"mn": [
+-0.793,
+-1.465,
+0.518
+],
+"mx": [
+0.793,
+-1.452,
+0.654
+],
+"mi": [
+0
+]
+},
+{
+"normal": [
+0.0,
+0.0,
+1.0
+],
+"n": 10,
+"area": 0.832,
+"mn": [
+-2.348,
+-1.035,
+1.888
+],
+"mx": [
+2.348,
+1.035,
+2.328
+],
+"mi": [
+0
+]
+},
+{
+"normal": [
+0.0,
+0.1,
+1.0
+],
+"n": 6,
+"area": 0.827,
+"mn": [
+-0.85,
+0.072,
+2.314
+],
+"mx": [
+0.85,
+0.197,
+2.326
+],
+"mi": [
+0
+]
+},
+{
+"normal": [
+0.0,
+-0.1,
+1.0
+],
+"n": 6,
+"area": 0.827,
+"mn": [
+-0.85,
+-0.197,
+2.314
+],
+"mx": [
+0.85,
+-0.072,
+2.326
+],
+"mi": [
+0
+]
+},
+{
+"normal": [
+0.0,
+0.9,
+-0.4
+],
+"n": 6,
+"area": 0.807,
+"mn": [
+-0.793,
+-1.328,
+1.138
+],
+"mx": [
+0.793,
+-1.275,
+1.258
+],
+"mi": [
+0
+]
+},
+{
+"normal": [
+-0.0,
+-0.9,
+-0.4
+],
+"n": 6,
+"area": 0.807,
+"mn": [
+-0.793,
+1.275,
+1.138
+],
+"mx": [
+0.793,
+1.328,
+1.258
+],
+"mi": [
+0
+]
+},
+{
+"normal": [
+-0.0,
+-0.9,
+-0.5
+],
+"n": 6,
+"area": 0.794,
+"mn": [
+-0.793,
+1.197,
+1.292
+],
+"mx": [
+0.793,
+1.259,
+1.406
+],
+"mi": [
+0
+]
+},
+{
+"normal": [
+0.0,
+0.9,
+-0.5
+],
+"n": 6,
+"area": 0.794,
+"mn": [
+-0.793,
+-1.259,
+1.292
+],
+"mx": [
+0.793,
+-1.197,
+1.406
+],
+"mi": [
+0
+]
+},
+{
+"normal": [
+-0.0,
+0.2,
+-1.0
+],
+"n": 8,
+"area": 0.777,
+"mn": [
+-0.85,
+-0.312,
+0.382
+],
+"mx": [
+0.85,
+1.613,
+2.131
+],
+"mi": [
+0
+]
+},
+{
+"normal": [
+0.0,
+-0.2,
+-1.0
+],
+"n": 8,
+"area": 0.777,
+"mn": [
+-0.85,
+-1.613,
+0.382
+],
+"mx": [
+0.85,
+0.312,
+2.131
+],
+"mi": [
+0
+]
+},
+{
+"normal": [
+-0.0,
+-0.7,
+-0.7
+],
+"n": 6,
+"area": 0.747,
+"mn": [
+-0.793,
+0.896,
+1.694
+],
+"mx": [
+0.793,
+0.982,
+1.781
+],
+"mi": [
+0
+]
+},
+{
+"normal": [
+0.0,
+0.7,
+-0.7
+],
+"n": 6,
+"area": 0.747,
+"mn": [
+-0.793,
+-0.982,
+1.694
+],
+"mx": [
+0.793,
+-0.896,
+1.781
+],
+"mi": [
+0
+]
+},
+{
+"normal": [
+-0.0,
+-0.9,
+0.4
+],
+"n": 18,
+"area": 0.736,
+"mn": [
+-2.487,
+-1.5,
+1.191
+],
+"mx": [
+2.487,
+-1.438,
+1.336
+],
+"mi": [
+0
+]
+},
+{
+"normal": [
+-0.0,
+0.9,
+0.4
+],
+"n": 18,
+"area": 0.736,
+"mn": [
+-2.487,
+1.438,
+1.191
+],
+"mx": [
+2.487,
+1.5,
+1.336
+],
+"mi": [
+0
+]
+},
+{
+"normal": [
+-0.0,
+0.6,
+-0.8
+],
+"n": 6,
+"area": 0.725,
+"mn": [
+-0.793,
+-0.832,
+1.837
+],
+"mx": [
+0.793,
+-0.737,
+1.909
+],
+"mi": [
+0
+]
+},
+{
+"normal": [
+-0.0,
+-0.6,
+-0.8
+],
+"n": 6,
+"area": 0.725,
+"mn": [
+-0.793,
+0.737,
+1.837
+],
+"mx": [
+0.793,
+0.832,
+1.909
+],
+"mi": [
+0
+]
+}
+],
+"Lab Chest Barrel Lid Envelope_bounds": [
+[
+-2.6,
+-1.6493,
+0.3807
+],
+[
+2.6,
+1.6493,
+2.3282
+]
+],
+"lid_section_maxu": [
+[
+2.6,
+1.5993,
+0.4282
+],
+[
+2.6,
+1.5991,
+0.4432
+],
+[
+2.6,
+1.5965,
+0.5056
+],
+[
+2.6,
+1.5922,
+0.5679
+],
+[
+2.6,
+1.5862,
+0.6299
+],
+[
+2.6,
+1.5784,
+0.6917
+],
+[
+2.6,
+1.5689,
+0.7532
+],
+[
+2.6,
+1.5578,
+0.8142
+],
+[
+2.6,
+1.5449,
+0.8748
+],
+[
+2.6,
+1.5304,
+0.9348
+],
+[
+2.6,
+1.5142,
+0.9942
+],
+[
+2.6,
+1.4964,
+1.053
+],
+[
+2.6,
+1.477,
+1.111
+],
+[
+2.6,
+1.4559,
+1.1682
+],
+[
+2.6,
+1.4334,
+1.2246
+],
+[
+2.5998,
+1.4112,
+1.2777
+],
+[
+2.6,
+1.4103,
+1.2775
+],
+[
+2.6,
+1.4094,
+1.2775
+],
+[
+2.6,
+1.4074,
+1.2775
+],
+[
+2.6,
+1.4036,
+1.2775
+],
+[
+2.6,
+1.3892,
+1.3225
+],
+[
+2.6,
+1.389,
+1.3225
+],
+[
+2.6,
+1.3886,
+1.3225
+],
+[
+2.6,
+1.3878,
+1.3225
+],
+[
+2.6,
+1.3836,
+1.3345
+],
+[
+2.6,
+1.3442,
+1.3225
+],
+[
+2.6,
+1.3565,
+1.3879
+],
+[
+2.6,
+1.196,
+1.2775
+],
+[
+2.6,
+1.3279,
+1.4402
+],
+[
+2.6,
+1.2979,
+1.4914
+],
+[
+2.6,
+1.2665,
+1.5414
+],
+[
+2.6,
+1.2337,
+1.59
+],
+[
+2.6,
+1.1997,
+1.6374
+],
+[
+2.6,
+1.1643,
+1.6834
+],
+[
+2.6,
+1.1278,
+1.7281
+],
+[
+2.6,
+1.09,
+1.7712
+],
+[
+2.6,
+1.0511,
+1.8128
+],
+[
+2.6,
+1.011,
+1.8529
+],
+[
+2.6,
+0.97,
+1.8914
+],
+[
+2.6,
+0.9278,
+1.9283
+],
+[
+2.6,
+0.8847,
+1.9635
+],
+[
+2.6,
+0.8407,
+1.997
+],
+[
+2.6,
+0.7959,
+2.0287
+],
+[
+2.6,
+0.7501,
+2.0587
+],
+[
+2.6,
+0.7037,
+2.0869
+],
+[
+2.6,
+0.6564,
+2.1133
+],
+[
+2.6,
+0.6085,
+2.1378
+],
+[
+2.6,
+0.56,
+2.1604
+],
+[
+2.6,
+0.5109,
+2.1811
+],
+[
+2.6,
+0.4613,
+2.1999
+],
+[
+2.6,
+0.4113,
+2.2168
+],
+[
+2.6,
+0.3608,
+2.2317
+],
+[
+2.6,
+0.3099,
+2.2447
+],
+[
+2.6,
+0.2587,
+2.2557
+],
+[
+2.6,
+0.2073,
+2.2647
+],
+[
+2.6,
+0.1557,
+2.2717
+],
+[
+2.6,
+0.1039,
+2.2767
+],
+[
+2.6,
+0.052,
+2.2797
+],
+[
+2.6,
+-0.0,
+2.2807
+],
+[
+2.6,
+-0.052,
+2.2797
+],
+[
+2.6,
+-0.1039,
+2.2767
+],
+[
+2.6,
+-0.1557,
+2.2717
+],
+[
+2.6,
+-0.2073,
+2.2647
+],
+[
+2.6,
+-0.2587,
+2.2557
+],
+[
+2.6,
+-0.3099,
+2.2447
+],
+[
+2.6,
+-0.3608,
+2.2317
+],
+[
+2.6,
+-0.4113,
+2.2168
+],
+[
+2.6,
+-0.4613,
+2.1999
+],
+[
+2.6,
+-0.2611,
+1.3225
+],
+[
+2.6,
+-0.5109,
+2.1811
+],
+[
+2.6,
+-0.56,
+2.1604
+],
+[
+2.6,
+-0.6085,
+2.1378
+],
+[
+2.6,
+-0.3284,
+1.2775
+],
+[
+2.6,
+-0.6564,
+2.1133
+],
+[
+2.6,
+-0.7037,
+2.0869
+],
+[
+2.6,
+-0.7501,
+2.0587
+],
+[
+2.6,
+-0.7959,
+2.0287
+],
+[
+2.6,
+-0.8407,
+1.997
+],
+[
+2.6,
+-0.8847,
+1.9635
+],
+[
+2.6,
+-0.9278,
+1.9283
+],
+[
+2.6,
+-0.97,
+1.8914
+],
+[
+2.6,
+-1.011,
+1.8529
+],
+[
+2.6,
+-1.0511,
+1.8128
+],
+[
+2.6,
+-1.09,
+1.7712
+],
+[
+2.6,
+-1.1278,
+1.7281
+],
+[
+2.6,
+-1.1643,
+1.6834
+],
+[
+2.6,
+-1.1997,
+1.6374
+],
+[
+2.6,
+-1.2337,
+1.59
+],
+[
+2.6,
+-1.2665,
+1.5414
+],
+[
+2.6,
+-1.2979,
+1.4914
+],
+[
+2.6,
+-1.1504,
+1.3225
+],
+[
+2.6,
+-1.3279,
+1.4402
+],
+[
+2.6,
+-1.173,
+1.2775
+],
+[
+2.6,
+-1.3565,
+1.3879
+],
+[
+2.6,
+-1.3836,
+1.3345
+],
+[
+2.6,
+-1.3864,
+1.3225
+],
+[
+2.6,
+-1.3878,
+1.3225
+],
+[
+2.6,
+-1.3886,
+1.3225
+],
+[
+2.6,
+-1.389,
+1.3225
+],
+[
+2.6,
+-1.3892,
+1.3225
+],
+[
+2.6,
+-1.3972,
+1.2775
+],
+[
+2.6,
+-1.4036,
+1.2775
+],
+[
+2.6,
+-1.4074,
+1.2775
+],
+[
+2.6,
+-1.4094,
+1.2775
+],
+[
+2.6,
+-1.4103,
+1.2775
+],
+[
+2.6,
+-1.4334,
+1.2246
+],
+[
+2.6,
+-1.4559,
+1.1682
+],
+[
+2.6,
+-1.477,
+1.111
+],
+[
+2.6,
+-1.4964,
+1.053
+],
+[
+2.6,
+-1.5142,
+0.9942
+],
+[
+2.6,
+-1.5304,
+0.9348
+],
+[
+2.6,
+-1.5449,
+0.8748
+],
+[
+2.6,
+-1.5578,
+0.8142
+],
+[
+2.6,
+-1.5689,
+0.7532
+],
+[
+2.6,
+-1.5784,
+0.6917
+],
+[
+2.6,
+-1.5862,
+0.6299
+],
+[
+2.6,
+-1.5922,
+0.5679
+],
+[
+2.6,
+-1.5965,
+0.5056
+],
+[
+2.6,
+-1.5991,
+0.4432
+],
+[
+2.6,
+-1.5993,
+0.4282
+]
+],
+"lid_u_values": [
+-2.6,
+-2.599,
+-2.598,
+-2.597,
+-2.596,
+-2.595,
+-2.592,
+-2.589,
+-2.587,
+-2.585,
+-2.583,
+-2.58,
+-2.579,
+-2.57,
+-2.569,
+-2.55,
+-2.38,
+-2.36,
+-2.323,
+-2.171,
+-1.59,
+-1.215,
+-0.724,
+-0.242,
+0.242,
+0.724,
+1.215,
+1.59,
+2.171,
+2.323,
+2.36,
+2.38,
+2.55,
+2.569,
+2.57,
+2.579,
+2.58,
+2.583,
+2.585,
+2.587,
+2.589,
+2.592,
+2.595,
+2.596,
+2.597,
+2.598,
+2.599,
+2.6
+],
+"lid_uv": [
+"ChestRolloutWood"
+]
+}

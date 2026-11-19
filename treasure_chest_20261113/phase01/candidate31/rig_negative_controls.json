@@ -1,0 +1,76 @@
+{
+  "controls": {
+    "no_spring_lift": {
+      "correct_surface_intersections": 0,
+      "negative_surface_intersections": 31,
+      "rejected": true
+    },
+    "engaged_pin_during_release": {
+      "correct_surface_intersections": 0,
+      "negative_surface_intersections": 293,
+      "hasp_degrees": 2.0,
+      "rejected": true
+    },
+    "centered_fake_opening_and_wrong_return_branch": [
+      {
+        "frame": 70,
+        "branch": "opening",
+        "actual_driving_side_gap": -2.5224314123550862e-08,
+        "negative_wrong_side_gap": 0.019999986900725103,
+        "rejected": true
+      },
+      {
+        "frame": 160,
+        "branch": "return",
+        "actual_driving_side_gap": 2.4186203192999578e-08,
+        "negative_wrong_side_gap": 0.020000022790000037,
+        "rejected": true
+      }
+    ],
+    "wrong_key_withdrawal_orientation": {
+      "key_degrees": 45.0,
+      "actual_obstructed_offsets": [
+        {
+          "outward_offset": 0.19,
+          "surface_intersections": 130
+        },
+        {
+          "outward_offset": 0.2,
+          "surface_intersections": 134
+        },
+        {
+          "outward_offset": 0.21000000000000002,
+          "surface_intersections": 134
+        },
+        {
+          "outward_offset": 0.22,
+          "surface_intersections": 198
+        },
+        {
+          "outward_offset": 0.23,
+          "surface_intersections": 200
+        },
+        {
+          "outward_offset": 0.24000000000000002,
+          "surface_intersections": 200
+        },
+        {
+          "outward_offset": 0.25,
+          "surface_intersections": 133
+        },
+        {
+          "outward_offset": 0.26,
+          "surface_intersections": 133
+        },
+        {
+          "outward_offset": 0.27,
+          "surface_intersections": 131
+        }
+      ],
+      "rejected": true,
+      "not_a_claim_of_captivity_at_every_nonzero_angle": true
+    }
+  },
+  "complete_continuous_motion_proof": false,
+  "method": "Actual finished surfaces and measured driving side support gaps"
+}

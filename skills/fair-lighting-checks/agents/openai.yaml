@@ -1,0 +1,4 @@
+interface:
+  display_name: "Fair lighting checks"
+  short_description: "Prove a problem is not the light before changing a material"
+  default_prompt: "Use $fair-lighting-checks to find whether this render problem comes from the lighting, environment, denoising or the material, changing one thing at a time."

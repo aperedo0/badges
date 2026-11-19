@@ -1,0 +1,9 @@
+{
+  "change": "Rear sapphire planes slope toward a deeper top, giving real variation in optical path lengths across the broad front table. Measured front planes and XY outline retained.",
+  "rear_shear": 0.3,
+  "centering_shift": 0.47558402823997536,
+  "depth": 1.9511680564799512,
+  "no_reference_appearance_texture": true,
+  "no_app_changes": true,
+  "blender_review_pending": true
+}

@@ -1,0 +1,845 @@
+{
+ "units": {
+  "S": 0.004831560283687943,
+  "axis": 628,
+  "top": 70,
+  "width_px": 1254,
+  "height_px": 1254
+ },
+ "box": [
+  0,
+  0,
+  1254,
+  1254
+ ],
+ "parts": [
+  {
+   "name": "blue_glass_sky",
+   "base": 0.07,
+   "materials": [
+    "Enamel",
+    "Gold",
+    "Side"
+   ],
+   "triangles": 20496,
+   "front": 3438
+  },
+  {
+   "name": "sun_ray_0_dark_setting",
+   "base": 0.11722303582763315,
+   "materials": [
+    "DarkMetal",
+    "Side"
+   ],
+   "triangles": 788,
+   "front": 127
+  },
+  {
+   "name": "sun_ray_0",
+   "base": 0.13685984162515566,
+   "materials": [
+    "Enamel",
+    "Gold",
+    "Side"
+   ],
+   "triangles": 92,
+   "front": 37
+  },
+  {
+   "name": "sun_ray_1_dark_setting",
+   "base": 0.11940568179581665,
+   "materials": [
+    "DarkMetal",
+    "Side"
+   ],
+   "triangles": 656,
+   "front": 115
+  },
+  {
+   "name": "sun_ray_1",
+   "base": 0.13904569533037364,
+   "materials": [
+    "Enamel",
+    "Gold",
+    "Side"
+   ],
+   "triangles": 92,
+   "front": 37
+  },
+  {
+   "name": "sun_ray_2_dark_setting",
+   "base": 0.11925945443470413,
+   "materials": [
+    "DarkMetal",
+    "Side"
+   ],
+   "triangles": 640,
+   "front": 113
+  },
+  {
+   "name": "sun_ray_2",
+   "base": 0.13888635154922996,
+   "materials": [
+    "Enamel",
+    "Gold",
+    "Side"
+   ],
+   "triangles": 92,
+   "front": 37
+  },
+  {
+   "name": "sun_ray_3_dark_setting",
+   "base": 0.11811968191967412,
+   "materials": [
+    "DarkMetal",
+    "Side"
+   ],
+   "triangles": 1320,
+   "front": 180
+  },
+  {
+   "name": "sun_ray_3",
+   "base": 0.13775634223902472,
+   "materials": [
+    "Enamel",
+    "Gold",
+    "Side"
+   ],
+   "triangles": 604,
+   "front": 92
+  },
+  {
+   "name": "sun_ray_4_dark_setting",
+   "base": 0.11885575497275976,
+   "materials": [
+    "DarkMetal",
+    "Side"
+   ],
+   "triangles": 1576,
+   "front": 224
+  },
+  {
+   "name": "sun_ray_4",
+   "base": 0.13849366196721521,
+   "materials": [
+    "Enamel",
+    "Gold",
+    "Side"
+   ],
+   "triangles": 380,
+   "front": 64
+  },
+  {
+   "name": "round_amber_sun_dark_setting",
+   "base": 0.18781698524269472,
+   "materials": [
+    "DarkMetal",
+    "Side"
+   ],
+   "triangles": 3100,
+   "front": 512
+  },
+  {
+   "name": "round_amber_sun",
+   "base": 0.20745643790865048,
+   "materials": [
+    "Enamel",
+    "Gold",
+    "Side"
+   ],
+   "triangles": 2652,
+   "front": 918
+  },
+  {
+   "name": "rear_mountain_ridge_dark_setting",
+   "base": 0.11823225766268185,
+   "materials": [
+    "DarkMetal",
+    "Side"
+   ],
+   "triangles": 2872,
+   "front": 365
+  },
+  {
+   "name": "rear_mountain_ridge",
+   "base": 0.13787167758903757,
+   "materials": [
+    "Enamel",
+    "Gold",
+    "Side"
+   ],
+   "triangles": 3120,
+   "front": 471
+  },
+  {
+   "name": "highest_snow_peak_dark_setting",
+   "base": 0.26586960946138644,
+   "materials": [
+    "DarkMetal",
+    "Side"
+   ],
+   "triangles": 740,
+   "front": 109
+  },
+  {
+   "name": "highest_snow_peak",
+   "base": 0.2855087297741497,
+   "materials": [
+    "Enamel",
+    "Gold",
+    "Side"
+   ],
+   "triangles": 2596,
+   "front": 932
+  },
+  {
+   "name": "left_foreground_peak_dark_setting",
+   "base": 0.3575060555839975,
+   "materials": [
+    "DarkMetal",
+    "Side"
+   ],
+   "triangles": 596,
+   "front": 88
+  },
+  {
+   "name": "left_foreground_peak",
+   "base": 0.3771457276849391,
+   "materials": [
+    "Enamel",
+    "Gold",
+    "Side"
+   ],
+   "triangles": 2008,
+   "front": 602
+  },
+  {
+   "name": "right_foreground_peak_dark_setting",
+   "base": 0.35811050106970904,
+   "materials": [
+    "DarkMetal",
+    "Side"
+   ],
+   "triangles": 944,
+   "front": 124
+  },
+  {
+   "name": "right_foreground_peak",
+   "base": 0.3777491120746806,
+   "materials": [
+    "Enamel",
+    "Gold",
+    "Side"
+   ],
+   "triangles": 1832,
+   "front": 484
+  },
+  {
+   "name": "central_foreground_peak_dark_setting",
+   "base": 0.43727294413729395,
+   "materials": [
+    "DarkMetal",
+    "Side"
+   ],
+   "triangles": 760,
+   "front": 107
+  },
+  {
+   "name": "central_foreground_peak",
+   "base": 0.4569092641877325,
+   "materials": [
+    "Enamel",
+    "Gold",
+    "Side"
+   ],
+   "triangles": 2068,
+   "front": 665
+  },
+  {
+   "name": "left_cloud_dark_setting",
+   "base": 0.19528800210252462,
+   "materials": [
+    "DarkMetal",
+    "Side"
+   ],
+   "triangles": 5060,
+   "front": 757
+  },
+  {
+   "name": "left_cloud",
+   "base": 0.21492761636667707,
+   "materials": [
+    "Enamel",
+    "Gold",
+    "Side"
+   ],
+   "triangles": 2456,
+   "front": 670
+  },
+  {
+   "name": "right_cloud_dark_setting",
+   "base": 0.4388419241903489,
+   "materials": [
+    "DarkMetal",
+    "Side"
+   ],
+   "triangles": 5036,
+   "front": 745
+  },
+  {
+   "name": "right_cloud",
+   "base": 0.45848153809307224,
+   "materials": [
+    "Enamel",
+    "Gold",
+    "Side"
+   ],
+   "triangles": 2468,
+   "front": 676
+  },
+  {
+   "name": "far_left_hills_dark_setting",
+   "base": 0.5163624046375345,
+   "materials": [
+    "DarkMetal",
+    "Side"
+   ],
+   "triangles": 1460,
+   "front": 229
+  },
+  {
+   "name": "far_left_hills",
+   "base": 0.5359925618212461,
+   "materials": [
+    "Enamel",
+    "Gold",
+    "Side"
+   ],
+   "triangles": 2020,
+   "front": 320
+  },
+  {
+   "name": "far_right_hills_dark_setting",
+   "base": 0.5526280629993263,
+   "materials": [
+    "DarkMetal",
+    "Side"
+   ],
+   "triangles": 1360,
+   "front": 215
+  },
+  {
+   "name": "far_right_hills",
+   "base": 0.5722671634449583,
+   "materials": [
+    "Enamel",
+    "Gold",
+    "Side"
+   ],
+   "triangles": 1944,
+   "front": 318
+  },
+  {
+   "name": "lime_rear_meadow_dark_setting",
+   "base": 0.630239285879833,
+   "materials": [
+    "DarkMetal",
+    "Side"
+   ],
+   "triangles": 1848,
+   "front": 297
+  },
+  {
+   "name": "lime_rear_meadow",
+   "base": 0.6498784791133623,
+   "materials": [
+    "Enamel",
+    "Gold",
+    "Side"
+   ],
+   "triangles": 836,
+   "front": 286
+  },
+  {
+   "name": "left_emerald_meadow_dark_setting",
+   "base": 0.7085812550298815,
+   "materials": [
+    "DarkMetal",
+    "Side"
+   ],
+   "triangles": 3504,
+   "front": 510
+  },
+  {
+   "name": "left_emerald_meadow",
+   "base": 0.7282204051881873,
+   "materials": [
+    "Enamel",
+    "Gold",
+    "Side"
+   ],
+   "triangles": 6096,
+   "front": 939
+  },
+  {
+   "name": "right_emerald_meadow_dark_setting",
+   "base": 0.7463883927255154,
+   "materials": [
+    "DarkMetal",
+    "Side"
+   ],
+   "triangles": 3184,
+   "front": 470
+  },
+  {
+   "name": "right_emerald_meadow",
+   "base": 0.7660203527783781,
+   "materials": [
+    "Enamel",
+    "Gold",
+    "Side"
+   ],
+   "triangles": 6020,
+   "front": 922
+  },
+  {
+   "name": "left_lime_meadow_dark_setting",
+   "base": 0.786245059868628,
+   "materials": [
+    "DarkMetal",
+    "Side"
+   ],
+   "triangles": 2200,
+   "front": 359
+  },
+  {
+   "name": "left_lime_meadow",
+   "base": 0.805884130428962,
+   "materials": [
+    "Enamel",
+    "Gold",
+    "Side"
+   ],
+   "triangles": 912,
+   "front": 261
+  },
+  {
+   "name": "right_lime_meadow_dark_setting",
+   "base": 0.8248624742439005,
+   "materials": [
+    "DarkMetal",
+    "Side"
+   ],
+   "triangles": 2232,
+   "front": 366
+  },
+  {
+   "name": "right_lime_meadow",
+   "base": 0.8444965107353684,
+   "materials": [
+    "Enamel",
+    "Gold",
+    "Side"
+   ],
+   "triangles": 984,
+   "front": 267
+  },
+  {
+   "name": "left_laurel_branch",
+   "base": 0.7784646558041294,
+   "materials": [
+    "Gold",
+    "Side"
+   ],
+   "triangles": 1484,
+   "front": 214
+  },
+  {
+   "name": "right_laurel_branch",
+   "base": 0.8140043749790853,
+   "materials": [
+    "Gold",
+    "Side"
+   ],
+   "triangles": 1484,
+   "front": 214
+  },
+  {
+   "name": "left_laurel_leaf_0_dark_setting",
+   "base": 0.8185506575983857,
+   "materials": [
+    "DarkMetal",
+    "Side"
+   ],
+   "triangles": 2020,
+   "front": 338
+  },
+  {
+   "name": "left_laurel_leaf_0",
+   "base": 0.8381876263828779,
+   "materials": [
+    "Enamel",
+    "Gold",
+    "Side"
+   ],
+   "triangles": 900,
+   "front": 258
+  },
+  {
+   "name": "right_laurel_leaf_0_dark_setting",
+   "base": 0.8540728185771798,
+   "materials": [
+    "DarkMetal",
+    "Side"
+   ],
+   "triangles": 2020,
+   "front": 338
+  },
+  {
+   "name": "right_laurel_leaf_0",
+   "base": 0.8737001161395205,
+   "materials": [
+    "Enamel",
+    "Gold",
+    "Side"
+   ],
+   "triangles": 900,
+   "front": 258
+  },
+  {
+   "name": "left_laurel_leaf_1_dark_setting",
+   "base": 0.8381304913181408,
+   "materials": [
+    "DarkMetal",
+    "Side"
+   ],
+   "triangles": 2032,
+   "front": 335
+  },
+  {
+   "name": "left_laurel_leaf_1",
+   "base": 0.8577506681088259,
+   "materials": [
+    "Enamel",
+    "Gold",
+    "Side"
+   ],
+   "triangles": 904,
+   "front": 257
+  },
+  {
+   "name": "right_laurel_leaf_1_dark_setting",
+   "base": 0.8740733670214875,
+   "materials": [
+    "DarkMetal",
+    "Side"
+   ],
+   "triangles": 2032,
+   "front": 335
+  },
+  {
+   "name": "right_laurel_leaf_1",
+   "base": 0.8937141064809988,
+   "materials": [
+    "Enamel",
+    "Gold",
+    "Side"
+   ],
+   "triangles": 904,
+   "front": 257
+  },
+  {
+   "name": "left_laurel_leaf_2_dark_setting",
+   "base": 0.8627262136802583,
+   "materials": [
+    "DarkMetal",
+    "Side"
+   ],
+   "triangles": 2032,
+   "front": 341
+  },
+  {
+   "name": "left_laurel_leaf_2",
+   "base": 0.8823432260994798,
+   "materials": [
+    "Enamel",
+    "Gold",
+    "Side"
+   ],
+   "triangles": 904,
+   "front": 260
+  },
+  {
+   "name": "right_laurel_leaf_2_dark_setting",
+   "base": 0.9030998946533499,
+   "materials": [
+    "DarkMetal",
+    "Side"
+   ],
+   "triangles": 2032,
+   "front": 341
+  },
+  {
+   "name": "right_laurel_leaf_2",
+   "base": 0.9227135330527668,
+   "materials": [
+    "Enamel",
+    "Gold",
+    "Side"
+   ],
+   "triangles": 904,
+   "front": 260
+  },
+  {
+   "name": "left_laurel_leaf_3_dark_setting",
+   "base": 0.8872048131924978,
+   "materials": [
+    "DarkMetal",
+    "Side"
+   ],
+   "triangles": 2036,
+   "front": 343
+  },
+  {
+   "name": "left_laurel_leaf_3",
+   "base": 0.9068418758504403,
+   "materials": [
+    "Enamel",
+    "Gold",
+    "Side"
+   ],
+   "triangles": 888,
+   "front": 255
+  },
+  {
+   "name": "right_laurel_leaf_3_dark_setting",
+   "base": 0.9289338250925339,
+   "materials": [
+    "DarkMetal",
+    "Side"
+   ],
+   "triangles": 1976,
+   "front": 316
+  },
+  {
+   "name": "right_laurel_leaf_3",
+   "base": 0.9485499304103574,
+   "materials": [
+    "Enamel",
+    "Gold",
+    "Side"
+   ],
+   "triangles": 888,
+   "front": 255
+  },
+  {
+   "name": "left_laurel_leaf_4_dark_setting",
+   "base": 0.8186234781197327,
+   "materials": [
+    "DarkMetal",
+    "Side"
+   ],
+   "triangles": 1872,
+   "front": 297
+  },
+  {
+   "name": "left_laurel_leaf_4",
+   "base": 0.8382600823367896,
+   "materials": [
+    "Enamel",
+    "Gold",
+    "Side"
+   ],
+   "triangles": 884,
+   "front": 253
+  },
+  {
+   "name": "right_laurel_leaf_4_dark_setting",
+   "base": 0.8539023546722532,
+   "materials": [
+    "DarkMetal",
+    "Side"
+   ],
+   "triangles": 1756,
+   "front": 275
+  },
+  {
+   "name": "right_laurel_leaf_4",
+   "base": 0.8735365724977303,
+   "materials": [
+    "Enamel",
+    "Gold",
+    "Side"
+   ],
+   "triangles": 876,
+   "front": 249
+  },
+  {
+   "name": "bottom_four_point_star_dark_setting",
+   "base": 0.19466344263823832,
+   "materials": [
+    "DarkMetal",
+    "Side"
+   ],
+   "triangles": 1904,
+   "front": 358
+  },
+  {
+   "name": "bottom_four_point_star",
+   "base": 0.2143043414685456,
+   "materials": [
+    "Enamel",
+    "Gold",
+    "Side"
+   ],
+   "triangles": 664,
+   "front": 260
+  },
+  {
+   "name": "outer_gold_setting",
+   "base": 0.9876148096031974,
+   "materials": [
+    "Gold",
+    "Side"
+   ],
+   "triangles": 3588,
+   "front": 1089
+  }
+ ],
+ "order": [
+  "blue_glass_sky",
+  "sun_ray_0_dark_setting",
+  "sun_ray_0",
+  "sun_ray_1_dark_setting",
+  "sun_ray_1",
+  "sun_ray_2_dark_setting",
+  "sun_ray_2",
+  "sun_ray_3_dark_setting",
+  "sun_ray_3",
+  "sun_ray_4_dark_setting",
+  "sun_ray_4",
+  "round_amber_sun_dark_setting",
+  "round_amber_sun",
+  "rear_mountain_ridge_dark_setting",
+  "rear_mountain_ridge",
+  "highest_snow_peak_dark_setting",
+  "highest_snow_peak",
+  "left_foreground_peak_dark_setting",
+  "left_foreground_peak",
+  "right_foreground_peak_dark_setting",
+  "right_foreground_peak",
+  "central_foreground_peak_dark_setting",
+  "central_foreground_peak",
+  "left_cloud_dark_setting",
+  "left_cloud",
+  "right_cloud_dark_setting",
+  "right_cloud",
+  "far_left_hills_dark_setting",
+  "far_left_hills",
+  "far_right_hills_dark_setting",
+  "far_right_hills",
+  "lime_rear_meadow_dark_setting",
+  "lime_rear_meadow",
+  "left_emerald_meadow_dark_setting",
+  "left_emerald_meadow",
+  "right_emerald_meadow_dark_setting",
+  "right_emerald_meadow",
+  "left_lime_meadow_dark_setting",
+  "left_lime_meadow",
+  "right_lime_meadow_dark_setting",
+  "right_lime_meadow",
+  "left_laurel_branch",
+  "right_laurel_branch",
+  "left_laurel_leaf_0_dark_setting",
+  "left_laurel_leaf_0",
+  "right_laurel_leaf_0_dark_setting",
+  "right_laurel_leaf_0",
+  "left_laurel_leaf_1_dark_setting",
+  "left_laurel_leaf_1",
+  "right_laurel_leaf_1_dark_setting",
+  "right_laurel_leaf_1",
+  "left_laurel_leaf_2_dark_setting",
+  "left_laurel_leaf_2",
+  "right_laurel_leaf_2_dark_setting",
+  "right_laurel_leaf_2",
+  "left_laurel_leaf_3_dark_setting",
+  "left_laurel_leaf_3",
+  "right_laurel_leaf_3_dark_setting",
+  "right_laurel_leaf_3",
+  "left_laurel_leaf_4_dark_setting",
+  "left_laurel_leaf_4",
+  "right_laurel_leaf_4_dark_setting",
+  "right_laurel_leaf_4",
+  "bottom_four_point_star_dark_setting",
+  "bottom_four_point_star",
+  "outer_gold_setting"
+ ],
+ "validate_order": [
+  "blue_glass_sky",
+  "sun_ray_0_dark_setting",
+  "sun_ray_0",
+  "sun_ray_1_dark_setting",
+  "sun_ray_1",
+  "sun_ray_2_dark_setting",
+  "sun_ray_2",
+  "sun_ray_3_dark_setting",
+  "sun_ray_3",
+  "sun_ray_4_dark_setting",
+  "sun_ray_4",
+  "round_amber_sun_dark_setting",
+  "round_amber_sun",
+  "rear_mountain_ridge_dark_setting",
+  "rear_mountain_ridge",
+  "highest_snow_peak_dark_setting",
+  "highest_snow_peak",
+  "left_foreground_peak_dark_setting",
+  "left_foreground_peak",
+  "right_foreground_peak_dark_setting",
+  "right_foreground_peak",
+  "central_foreground_peak_dark_setting",
+  "central_foreground_peak",
+  "left_cloud_dark_setting",
+  "left_cloud",
+  "right_cloud_dark_setting",
+  "right_cloud",
+  "far_left_hills_dark_setting",
+  "far_left_hills",
+  "far_right_hills_dark_setting",
+  "far_right_hills",
+  "lime_rear_meadow_dark_setting",
+  "lime_rear_meadow",
+  "left_emerald_meadow_dark_setting",
+  "left_emerald_meadow",
+  "right_emerald_meadow_dark_setting",
+  "right_emerald_meadow",
+  "left_lime_meadow_dark_setting",
+  "left_lime_meadow",
+  "right_lime_meadow_dark_setting",
+  "right_lime_meadow",
+  "left_laurel_branch",
+  "right_laurel_branch",
+  "left_laurel_leaf_0_dark_setting",
+  "left_laurel_leaf_0",
+  "right_laurel_leaf_0_dark_setting",
+  "right_laurel_leaf_0",
+  "left_laurel_leaf_1_dark_setting",
+  "left_laurel_leaf_1",
+  "right_laurel_leaf_1_dark_setting",
+  "right_laurel_leaf_1",
+  "left_laurel_leaf_2_dark_setting",
+  "left_laurel_leaf_2",
+  "right_laurel_leaf_2_dark_setting",
+  "right_laurel_leaf_2",
+  "left_laurel_leaf_3_dark_setting",
+  "left_laurel_leaf_3",
+  "right_laurel_leaf_3_dark_setting",
+  "right_laurel_leaf_3",
+  "left_laurel_leaf_4_dark_setting",
+  "left_laurel_leaf_4",
+  "right_laurel_leaf_4_dark_setting",
+  "right_laurel_leaf_4",
+  "bottom_four_point_star_dark_setting",
+  "bottom_four_point_star",
+  "outer_gold_setting"
+ ]
+}

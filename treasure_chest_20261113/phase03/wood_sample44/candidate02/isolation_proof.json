@@ -1,0 +1,64 @@
+{
+  "single_plank_only": true,
+  "part": "Chest Body Envelope",
+  "faces": [
+    32,
+    33,
+    34,
+    35,
+    36,
+    37,
+    38,
+    39,
+    44,
+    120,
+    121,
+    122,
+    123,
+    124,
+    125,
+    126,
+    127,
+    139,
+    280,
+    281,
+    282,
+    283,
+    350,
+    354,
+    356,
+    357,
+    360,
+    361
+  ],
+  "polygon_count": 28,
+  "all155_mesh_geometry_and_normals_unchanged": true,
+  "other154_parts_materials_unchanged": true,
+  "original_shared_gray_material_unchanged": true,
+  "opposite_back_faces_rejected": 59,
+  "parents_unchanged": true,
+  "material": "Chest Wood Sample44 v2",
+  "uv": "ChestWoodUV_Sample44",
+  "uv_min": [
+    0.012576465893125326,
+    0.04261233066690366
+  ],
+  "uv_max": [
+    0.9874235564951955,
+    0.9687500178489407
+  ],
+  "images": {
+    "albedo": "wood_albedo.png.001",
+    "roughness": "wood_roughness.png.001",
+    "normal": "wood_normal.png.001"
+  },
+  "all_images_packed": true,
+  "metallic": 0,
+  "emission": 0,
+  "other_planks_finished": false,
+  "texture_canvas": [
+    2048,
+    768
+  ],
+  "one_plank_continues": true
+}

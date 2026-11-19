@@ -1,0 +1,7 @@
+{
+  "pines": "Six separate semantic enamel regions from original reference, smoothed contours and real gold bands; hidden tier overlap preserved",
+  "reference_masks": "/Users/antonioperedo/Desktop/badges/camp_owl_mountain_sapphire_20261111/campfire_night/pine_face_masks.npz",
+  "flames": "The underlying red and amber layers now leave the inner flame notch open for the actual log, with separate hidden side walls",
+  "planar_grid_surface": false,
+  "native_acceptance_pending": true
+}

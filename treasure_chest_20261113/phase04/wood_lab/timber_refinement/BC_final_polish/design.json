@@ -1,0 +1,24 @@
+{
+  "source": "AW_depth_hierarchy",
+  "retained": [
+    "AZ bounded broad grain transitions",
+    "BB existing right bay channel hierarchy",
+    "AX luminance preserving chestnut pigment"
+  ],
+  "unchanged": [
+    "topology",
+    "UV",
+    "normal strength",
+    "roughness",
+    "lighting",
+    "core relief",
+    "primary fracture source",
+    "fine source band"
+  ],
+  "new_features": 0,
+  "correction_range": [
+    -0.001402175985276699,
+    0.007156712003052235
+  ],
+  "checkpoint": "97cce9c"
+}

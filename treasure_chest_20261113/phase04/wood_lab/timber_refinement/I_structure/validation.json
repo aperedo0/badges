@@ -1,0 +1,11 @@
+{
+  "key": "I_structure",
+  "vertices": 641121,
+  "polygons": 643262,
+  "watertight": true,
+  "original_boundary_vertices_exact": true,
+  "max_recession": 0.027094351163016395,
+  "front_datum_preserved": true,
+  "source_scene_untouched": true,
+  "images_packed": true
+}

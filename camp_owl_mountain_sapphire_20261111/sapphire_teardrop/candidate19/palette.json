@@ -1,0 +1,68 @@
+{
+ "Gold": {
+  "albedo": [
+   0.83,
+   0.43,
+   0.045
+  ],
+  "metallic": 1,
+  "roughness": 0.26
+ },
+ "Side": {
+  "albedo": [
+   0.3,
+   0.115,
+   0.015
+  ],
+  "metallic": 1,
+  "roughness": 0.5
+ },
+ "DarkMetal": {
+  "albedo": [
+   0.055,
+   0.025,
+   0.008
+  ],
+  "metallic": 1,
+  "roughness": 0.32
+ },
+ "Enamel": {
+  "albedo": [
+   0.03,
+   0.06,
+   0.12
+  ],
+  "metallic": 1,
+  "roughness": 0.18
+ },
+ "WoodInlay": {
+  "albedo": [
+   0.24,
+   0.055,
+   0.009
+  ],
+  "metallic": 0.1,
+  "roughness": 0.4
+ },
+ "Pupil": {
+  "albedo": [
+   0.015,
+   0.006,
+   0.002
+  ],
+  "metallic": 0.25,
+  "roughness": 0.12
+ },
+ "Sapphire": {
+  "albedo": [
+   0.005,
+   0.04,
+   0.65
+  ],
+  "metallic": 0,
+  "roughness": 0.08
+ },
+ "Gem": {
+  "material_name": "CrestGem_SapphireClear"
+ }
+}

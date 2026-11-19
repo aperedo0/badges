@@ -1,0 +1,12 @@
+{
+  "source": "candidate07",
+  "reason": "Measured studio ray trace agrees with native at mean error .00368. Shallow rear pavilion lets all primary rays escape, suppressing facet contrast. Culet depth1.5 gives real total internal reflection on the first hit.",
+  "reference_appearance_texture": false,
+  "changes": [
+    "Rear culet moved from original Z negative .64 to negative1.5",
+    "All geometry translated positive .43 through Z to center total thickness on spin axis"
+  ],
+  "frame_geometry_and_materials_preserved": true,
+  "uniform_optical_profile_unchanged": true,
+  "native_inspection_pending": true
+}

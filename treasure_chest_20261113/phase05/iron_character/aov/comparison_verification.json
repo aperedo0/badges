@@ -1,0 +1,49 @@
+{
+  "all_17_passes_verified_before_and_after": true,
+  "only_base_pigment_signals_changed": true,
+  "unchanged_aovs": [
+    "Iron_BaseBare",
+    "Iron_RoughBlack",
+    "Iron_RoughOxide",
+    "Iron_RoughBare",
+    "Iron_MetalFe",
+    "Iron_MetalOxide",
+    "Iron_OxideCoverage",
+    "Iron_ExposedBlend",
+    "Iron_FacetWear",
+    "Iron_MarkHeight",
+    "Iron_FineHeight",
+    "Iron_FinalNormal",
+    "Iron_GeometryNormal",
+    "Iron_SurfaceAlpha"
+  ],
+  "pigment_before": [
+    0,
+    0
+  ],
+  "pigment_after": {
+    "min": [
+      0.0,
+      0.0,
+      0.0
+    ],
+    "max": [
+      1.0000003576278687,
+      1.0000003576278687,
+      1.0000003576278687
+    ],
+    "mean": [
+      0.5097414255142212,
+      0.5097414255142212,
+      0.5097414255142212
+    ],
+    "std": [
+      0.2738635540008545,
+      0.2738635540008545,
+      0.2738635540008545
+    ],
+    "nonzero_fraction": 0.9702418364286918,
+    "scope_pixels": 243429
+  },
+  "production_diagnostics_not_saved": true
+}

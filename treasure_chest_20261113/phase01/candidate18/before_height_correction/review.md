@@ -1,0 +1,1 @@
+Scoped review FAIL. Corner divot corrected, horizontal strip nesting corrected, no new surface defect or lower band or foot regression. Upper band projects farther but is vertically thinner than lower body band. Correct their visible height relationship.

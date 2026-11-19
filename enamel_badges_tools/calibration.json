@@ -1,0 +1,17 @@
+{
+ "gain": [
+  2.1881,
+  2.382,
+  1.6466
+ ],
+ "offset": [
+  0.0299,
+  0.0318,
+  0.0356
+ ],
+ "note": "display_linear = gain * albedo_linear + offset, fitted on the three badges' version 3 app captures (enamel interiors), Nov 8 2026",
+ "enamel_roughness": 0.05,
+ "ignore_offset": false,
+ "note2": "v4 trial: sharp gloss, offset assumed gone; remeasure after",
+ "model": "display = agx(gain * albedo_linear + offset), fitted with the full transform on v4 captures, white streak pixels excluded"
+}

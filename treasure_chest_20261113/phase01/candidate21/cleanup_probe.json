@@ -1,0 +1,34 @@
+[
+  {
+    "dist": 1e-07,
+    "min_area_before": 6.159213139511621e-10,
+    "min_area_after": 4.687428288401019e-13,
+    "nonmanifold": 0,
+    "faces": 4229,
+    "volume": 0.035447143022409866
+  },
+  {
+    "dist": 1e-06,
+    "min_area_before": 6.159213139511621e-10,
+    "min_area_after": 3.215549300352588e-13,
+    "nonmanifold": 0,
+    "faces": 4221,
+    "volume": 0.035447142761969745
+  },
+  {
+    "dist": 1e-05,
+    "min_area_before": 6.159213139511621e-10,
+    "min_area_after": 3.215549300352588e-13,
+    "nonmanifold": 0,
+    "faces": 4187,
+    "volume": 0.03544714161826507
+  },
+  {
+    "dist": 2e-05,
+    "min_area_before": 6.159213139511621e-10,
+    "min_area_after": 3.485633559563439e-09,
+    "nonmanifold": 0,
+    "faces": 4177,
+    "volume": 0.035447141639804926
+  }
+]

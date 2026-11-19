@@ -1,0 +1,1 @@
+Scoped closed appearance PASS. Fresh review found no new visible speckle, cracks or broken edges. Keyhole reads dark again, close to28, with less than one sixth occupied by shaded inner wall. The pale plug from29 is absent. Closed hinge and case have no visible regression. Insertion, spring detent, controls and prior full construction findings were not approved by this review.

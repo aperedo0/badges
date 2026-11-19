@@ -1,0 +1,16 @@
+{
+  "reduction_accepted": true,
+  "appearance_fidelity_not_yet_final": true,
+  "detailed_meshes": 5,
+  "compact_meshes": 3,
+  "detailed_bytes": 1305066,
+  "compact_bytes": 444279,
+  "triangles_unchanged": 17980,
+  "all_triangle_attributes_materials_and_texture_bytes_preserved": true,
+  "protected_optical_domains_unchanged": true,
+  "actual_native_front_early_turn_both_sides_back_and_full_turn_visually_compared": true,
+  "actual_visible_Ruby_Heart_identity_and_model_bytes_verified": true,
+  "reflection_glints_outlines_and_gem_color_preserved": true,
+  "no_measured_frame_rate_claim": true,
+  "review_epoch": 1794112583.941362
+}

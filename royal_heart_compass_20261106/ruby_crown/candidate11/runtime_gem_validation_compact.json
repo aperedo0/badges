@@ -1,0 +1,967 @@
+{
+  "gems": {
+    "/Badge/Part_59": {
+      "maximumCoefficientErrorInNanounits": 119,
+      "planes": 33,
+      "reflectionPlanes": 33
+    },
+    "/Badge/Part_61": {
+      "maximumCoefficientErrorInNanounits": 238,
+      "planes": 33,
+      "reflectionPlanes": 33
+    },
+    "/Badge/Part_62": {
+      "maximumCoefficientErrorInNanounits": 238,
+      "planes": 113,
+      "reflectionPlanes": 113
+    },
+    "/Badge/Part_63": {
+      "maximumCoefficientErrorInNanounits": 238,
+      "planes": 113,
+      "reflectionPlanes": 113
+    },
+    "/Badge/Part_64": {
+      "maximumCoefficientErrorInNanounits": 238,
+      "planes": 113,
+      "reflectionPlanes": 113
+    },
+    "/Badge/Part_65": {
+      "maximumCoefficientErrorInNanounits": 119,
+      "planes": 113,
+      "reflectionPlanes": 113
+    },
+    "/Badge/Part_66": {
+      "maximumCoefficientErrorInNanounits": 119,
+      "planes": 113,
+      "reflectionPlanes": 113
+    },
+    "/Badge/Part_119": {
+      "maximumCoefficientErrorInNanounits": 238,
+      "planes": 33,
+      "reflectionPlanes": 33
+    },
+    "/Badge/Part_121": {
+      "maximumCoefficientErrorInNanounits": 238,
+      "planes": 33,
+      "reflectionPlanes": 33
+    },
+    "/Badge/Part_122": {
+      "maximumCoefficientErrorInNanounits": 238,
+      "planes": 113,
+      "reflectionPlanes": 113
+    },
+    "/Badge/Part_123": {
+      "maximumCoefficientErrorInNanounits": 238,
+      "planes": 113,
+      "reflectionPlanes": 113
+    },
+    "/Badge/Part_124": {
+      "maximumCoefficientErrorInNanounits": 238,
+      "planes": 113,
+      "reflectionPlanes": 113
+    },
+    "/Badge/Part_125": {
+      "maximumCoefficientErrorInNanounits": 238,
+      "planes": 113,
+      "reflectionPlanes": 113
+    },
+    "/Badge/Part_126": {
+      "maximumCoefficientErrorInNanounits": 119,
+      "planes": 113,
+      "reflectionPlanes": 113
+    },
+    "/Badge/Part_179": {
+      "maximumCoefficientErrorInNanounits": 238,
+      "planes": 33,
+      "reflectionPlanes": 33
+    },
+    "/Badge/Part_181": {
+      "maximumCoefficientErrorInNanounits": 238,
+      "planes": 33,
+      "reflectionPlanes": 33
+    },
+    "/Badge/Part_234": {
+      "maximumCoefficientErrorInNanounits": 238,
+      "planes": 33,
+      "reflectionPlanes": 33
+    },
+    "/Badge/Part_236": {
+      "maximumCoefficientErrorInNanounits": 238,
+      "planes": 33,
+      "reflectionPlanes": 33
+    },
+    "/Badge/Part_237": {
+      "maximumCoefficientErrorInNanounits": 238,
+      "planes": 113,
+      "reflectionPlanes": 113
+    },
+    "/Badge/Part_238": {
+      "maximumCoefficientErrorInNanounits": 238,
+      "planes": 113,
+      "reflectionPlanes": 113
+    },
+    "/Badge/Part_239": {
+      "maximumCoefficientErrorInNanounits": 238,
+      "planes": 113,
+      "reflectionPlanes": 113
+    },
+    "/Badge/Part_240": {
+      "maximumCoefficientErrorInNanounits": 238,
+      "planes": 113,
+      "reflectionPlanes": 113
+    },
+    "/Badge/Part_241": {
+      "maximumCoefficientErrorInNanounits": 119,
+      "planes": 113,
+      "reflectionPlanes": 113
+    },
+    "/Badge/Part_294": {
+      "maximumCoefficientErrorInNanounits": 238,
+      "planes": 33,
+      "reflectionPlanes": 33
+    },
+    "/Badge/Part_296": {
+      "maximumCoefficientErrorInNanounits": 119,
+      "planes": 33,
+      "reflectionPlanes": 33
+    },
+    "/Badge/Part_297": {
+      "maximumCoefficientErrorInNanounits": 238,
+      "planes": 113,
+      "reflectionPlanes": 113
+    },
+    "/Badge/Part_298": {
+      "maximumCoefficientErrorInNanounits": 238,
+      "planes": 113,
+      "reflectionPlanes": 113
+    },
+    "/Badge/Part_299": {
+      "maximumCoefficientErrorInNanounits": 238,
+      "planes": 113,
+      "reflectionPlanes": 113
+    },
+    "/Badge/Part_300": {
+      "maximumCoefficientErrorInNanounits": 238,
+      "planes": 113,
+      "reflectionPlanes": 113
+    },
+    "/Badge/Part_301": {
+      "maximumCoefficientErrorInNanounits": 119,
+      "planes": 113,
+      "reflectionPlanes": 113
+    },
+    "/Badge/Part_354": {
+      "maximumCoefficientErrorInNanounits": 238,
+      "planes": 33,
+      "reflectionPlanes": 33
+    },
+    "/Badge/Part_356": {
+      "maximumCoefficientErrorInNanounits": 238,
+      "planes": 33,
+      "reflectionPlanes": 33
+    },
+    "/Badge/Part_357": {
+      "maximumCoefficientErrorInNanounits": 238,
+      "planes": 113,
+      "reflectionPlanes": 113
+    },
+    "/Badge/Part_358": {
+      "maximumCoefficientErrorInNanounits": 238,
+      "planes": 113,
+      "reflectionPlanes": 113
+    },
+    "/Badge/Part_359": {
+      "maximumCoefficientErrorInNanounits": 238,
+      "planes": 113,
+      "reflectionPlanes": 113
+    },
+    "/Badge/Part_360": {
+      "maximumCoefficientErrorInNanounits": 238,
+      "planes": 113,
+      "reflectionPlanes": 113
+    },
+    "/Badge/Part_361": {
+      "maximumCoefficientErrorInNanounits": 119,
+      "planes": 113,
+      "reflectionPlanes": 113
+    },
+    "/Badge/Part_414": {
+      "maximumCoefficientErrorInNanounits": 238,
+      "planes": 33,
+      "reflectionPlanes": 33
+    },
+    "/Badge/Part_416": {
+      "maximumCoefficientErrorInNanounits": 238,
+      "planes": 33,
+      "reflectionPlanes": 33
+    },
+    "/Badge/Part_469": {
+      "maximumCoefficientErrorInNanounits": 238,
+      "planes": 33,
+      "reflectionPlanes": 33
+    },
+    "/Badge/Part_471": {
+      "maximumCoefficientErrorInNanounits": 238,
+      "planes": 33,
+      "reflectionPlanes": 33
+    },
+    "/Badge/Part_472": {
+      "maximumCoefficientErrorInNanounits": 238,
+      "planes": 113,
+      "reflectionPlanes": 113
+    },
+    "/Badge/Part_473": {
+      "maximumCoefficientErrorInNanounits": 238,
+      "planes": 113,
+      "reflectionPlanes": 113
+    },
+    "/Badge/Part_474": {
+      "maximumCoefficientErrorInNanounits": 238,
+      "planes": 113,
+      "reflectionPlanes": 113
+    },
+    "/Badge/Part_475": {
+      "maximumCoefficientErrorInNanounits": 238,
+      "planes": 113,
+      "reflectionPlanes": 113
+    },
+    "/Badge/Part_476": {
+      "maximumCoefficientErrorInNanounits": 119,
+      "planes": 113,
+      "reflectionPlanes": 113
+    },
+    "/Badge/Part_480": {
+      "maximumCoefficientErrorInNanounits": 238,
+      "planes": 33,
+      "reflectionPlanes": 33
+    },
+    "/Badge/Part_486": {
+      "maximumCoefficientErrorInNanounits": 238,
+      "planes": 113,
+      "reflectionPlanes": 113
+    },
+    "/Badge/Part_492": {
+      "maximumCoefficientErrorInNanounits": 238,
+      "planes": 33,
+      "reflectionPlanes": 33
+    },
+    "/Badge/Part_498": {
+      "maximumCoefficientErrorInNanounits": 238,
+      "planes": 113,
+      "reflectionPlanes": 113
+    },
+    "/Badge/Part_504": {
+      "maximumCoefficientErrorInNanounits": 238,
+      "planes": 33,
+      "reflectionPlanes": 33
+    },
+    "/Badge/Part_510": {
+      "maximumCoefficientErrorInNanounits": 238,
+      "planes": 113,
+      "reflectionPlanes": 113
+    },
+    "/Badge/Part_516": {
+      "maximumCoefficientErrorInNanounits": 238,
+      "planes": 33,
+      "reflectionPlanes": 33
+    },
+    "/Badge/Part_522": {
+      "maximumCoefficientErrorInNanounits": 238,
+      "planes": 113,
+      "reflectionPlanes": 113
+    },
+    "/Badge/Part_528": {
+      "maximumCoefficientErrorInNanounits": 238,
+      "planes": 33,
+      "reflectionPlanes": 33
+    },
+    "/Badge/Part_534": {
+      "maximumCoefficientErrorInNanounits": 238,
+      "planes": 113,
+      "reflectionPlanes": 113
+    },
+    "/Badge/Part_540": {
+      "maximumCoefficientErrorInNanounits": 238,
+      "planes": 33,
+      "reflectionPlanes": 33
+    },
+    "/Badge/Part_546": {
+      "maximumCoefficientErrorInNanounits": 238,
+      "planes": 113,
+      "reflectionPlanes": 113
+    },
+    "/Badge/Part_839": {
+      "maximumCoefficientErrorInNanounits": 238,
+      "planes": 33,
+      "reflectionPlanes": 33
+    },
+    "/Badge/Part_840": {
+      "maximumCoefficientErrorInNanounits": 238,
+      "planes": 33,
+      "reflectionPlanes": 33
+    },
+    "/Badge/Part_846": {
+      "maximumCoefficientErrorInNanounits": 119,
+      "planes": 113,
+      "reflectionPlanes": 113
+    },
+    "/Badge/Part_848": {
+      "maximumCoefficientErrorInNanounits": 59,
+      "planes": 33,
+      "reflectionPlanes": 33
+    },
+    "/Badge/Part_854": {
+      "maximumCoefficientErrorInNanounits": 119,
+      "planes": 113,
+      "reflectionPlanes": 113
+    },
+    "/Badge/Part_856": {
+      "maximumCoefficientErrorInNanounits": 59,
+      "planes": 33,
+      "reflectionPlanes": 33
+    },
+    "/Badge/Part_889": {
+      "maximumCoefficientErrorInNanounits": 238,
+      "planes": 113,
+      "reflectionPlanes": 113
+    },
+    "/Badge/Part_891": {
+      "maximumCoefficientErrorInNanounits": 238,
+      "planes": 113,
+      "reflectionPlanes": 113
+    },
+    "/Badge/Part_893": {
+      "maximumCoefficientErrorInNanounits": 238,
+      "planes": 113,
+      "reflectionPlanes": 113
+    },
+    "/Badge/Part_895": {
+      "maximumCoefficientErrorInNanounits": 238,
+      "planes": 113,
+      "reflectionPlanes": 113
+    },
+    "/Badge/Part_897": {
+      "maximumCoefficientErrorInNanounits": 238,
+      "planes": 113,
+      "reflectionPlanes": 113
+    },
+    "/Badge/Part_899": {
+      "maximumCoefficientErrorInNanounits": 238,
+      "planes": 113,
+      "reflectionPlanes": 113
+    },
+    "/Badge/Part_901": {
+      "maximumCoefficientErrorInNanounits": 238,
+      "planes": 113,
+      "reflectionPlanes": 113
+    },
+    "/Badge/Part_903": {
+      "maximumCoefficientErrorInNanounits": 238,
+      "planes": 113,
+      "reflectionPlanes": 113
+    },
+    "/Badge/Part_905": {
+      "maximumCoefficientErrorInNanounits": 238,
+      "planes": 113,
+      "reflectionPlanes": 113
+    },
+    "/Badge/Part_907": {
+      "maximumCoefficientErrorInNanounits": 238,
+      "planes": 113,
+      "reflectionPlanes": 113
+    },
+    "/Badge/Part_909": {
+      "maximumCoefficientErrorInNanounits": 238,
+      "planes": 113,
+      "reflectionPlanes": 113
+    },
+    "/Badge/Part_911": {
+      "maximumCoefficientErrorInNanounits": 238,
+      "planes": 113,
+      "reflectionPlanes": 113
+    },
+    "/Badge/Part_913": {
+      "maximumCoefficientErrorInNanounits": 238,
+      "planes": 113,
+      "reflectionPlanes": 113
+    },
+    "/Badge/Part_915": {
+      "maximumCoefficientErrorInNanounits": 238,
+      "planes": 113,
+      "reflectionPlanes": 113
+    },
+    "/Badge/Part_917": {
+      "maximumCoefficientErrorInNanounits": 238,
+      "planes": 113,
+      "reflectionPlanes": 113
+    },
+    "/Badge/Part_919": {
+      "maximumCoefficientErrorInNanounits": 238,
+      "planes": 113,
+      "reflectionPlanes": 113
+    },
+    "/Badge/Part_921": {
+      "maximumCoefficientErrorInNanounits": 238,
+      "planes": 113,
+      "reflectionPlanes": 113
+    },
+    "/Badge/Part_923": {
+      "maximumCoefficientErrorInNanounits": 238,
+      "planes": 113,
+      "reflectionPlanes": 113
+    },
+    "/Badge/Part_925": {
+      "maximumCoefficientErrorInNanounits": 238,
+      "planes": 113,
+      "reflectionPlanes": 113
+    },
+    "/Badge/Part_927": {
+      "maximumCoefficientErrorInNanounits": 238,
+      "planes": 113,
+      "reflectionPlanes": 113
+    },
+    "/Badge/Part_929": {
+      "maximumCoefficientErrorInNanounits": 238,
+      "planes": 113,
+      "reflectionPlanes": 113
+    },
+    "/Badge/Part_931": {
+      "maximumCoefficientErrorInNanounits": 238,
+      "planes": 113,
+      "reflectionPlanes": 113
+    },
+    "/Badge/Part_933": {
+      "maximumCoefficientErrorInNanounits": 238,
+      "planes": 113,
+      "reflectionPlanes": 113
+    },
+    "/Badge/Part_935": {
+      "maximumCoefficientErrorInNanounits": 238,
+      "planes": 113,
+      "reflectionPlanes": 113
+    },
+    "/Badge/Part_937": {
+      "maximumCoefficientErrorInNanounits": 238,
+      "planes": 113,
+      "reflectionPlanes": 113
+    },
+    "/Badge/Part_939": {
+      "maximumCoefficientErrorInNanounits": 238,
+      "planes": 113,
+      "reflectionPlanes": 113
+    },
+    "/Badge/Part_941": {
+      "maximumCoefficientErrorInNanounits": 238,
+      "planes": 113,
+      "reflectionPlanes": 113
+    },
+    "/Badge/Part_943": {
+      "maximumCoefficientErrorInNanounits": 238,
+      "planes": 113,
+      "reflectionPlanes": 113
+    },
+    "/Badge/Part_945": {
+      "maximumCoefficientErrorInNanounits": 238,
+      "planes": 113,
+      "reflectionPlanes": 113
+    },
+    "/Badge/Part_947": {
+      "maximumCoefficientErrorInNanounits": 238,
+      "planes": 113,
+      "reflectionPlanes": 113
+    },
+    "/Badge/Part_949": {
+      "maximumCoefficientErrorInNanounits": 238,
+      "planes": 113,
+      "reflectionPlanes": 113
+    },
+    "/Badge/Part_951": {
+      "maximumCoefficientErrorInNanounits": 238,
+      "planes": 113,
+      "reflectionPlanes": 113
+    },
+    "/Badge/Part_953": {
+      "maximumCoefficientErrorInNanounits": 238,
+      "planes": 113,
+      "reflectionPlanes": 113
+    },
+    "/Badge/Part_955": {
+      "maximumCoefficientErrorInNanounits": 238,
+      "planes": 113,
+      "reflectionPlanes": 113
+    },
+    "/Badge/Part_957": {
+      "maximumCoefficientErrorInNanounits": 238,
+      "planes": 113,
+      "reflectionPlanes": 113
+    },
+    "/Badge/Part_959": {
+      "maximumCoefficientErrorInNanounits": 238,
+      "planes": 113,
+      "reflectionPlanes": 113
+    },
+    "/Badge/Part_961": {
+      "maximumCoefficientErrorInNanounits": 238,
+      "planes": 113,
+      "reflectionPlanes": 113
+    },
+    "/Badge/Part_963": {
+      "maximumCoefficientErrorInNanounits": 238,
+      "planes": 113,
+      "reflectionPlanes": 113
+    },
+    "/Badge/Part_965": {
+      "maximumCoefficientErrorInNanounits": 238,
+      "planes": 113,
+      "reflectionPlanes": 113
+    },
+    "/Badge/Part_967": {
+      "maximumCoefficientErrorInNanounits": 238,
+      "planes": 113,
+      "reflectionPlanes": 113
+    },
+    "/Badge/Part_969": {
+      "maximumCoefficientErrorInNanounits": 238,
+      "planes": 113,
+      "reflectionPlanes": 113
+    },
+    "/Badge/Part_971": {
+      "maximumCoefficientErrorInNanounits": 238,
+      "planes": 113,
+      "reflectionPlanes": 113
+    },
+    "/Badge/Part_973": {
+      "maximumCoefficientErrorInNanounits": 238,
+      "planes": 113,
+      "reflectionPlanes": 113
+    },
+    "/Badge/Part_975": {
+      "maximumCoefficientErrorInNanounits": 238,
+      "planes": 113,
+      "reflectionPlanes": 113
+    },
+    "/Badge/Part_977": {
+      "maximumCoefficientErrorInNanounits": 238,
+      "planes": 113,
+      "reflectionPlanes": 113
+    },
+    "/Badge/Part_979": {
+      "maximumCoefficientErrorInNanounits": 238,
+      "planes": 113,
+      "reflectionPlanes": 113
+    },
+    "/Badge/Part_981": {
+      "maximumCoefficientErrorInNanounits": 238,
+      "planes": 113,
+      "reflectionPlanes": 113
+    },
+    "/Badge/Part_983": {
+      "maximumCoefficientErrorInNanounits": 238,
+      "planes": 113,
+      "reflectionPlanes": 113
+    },
+    "/Badge/Part_985": {
+      "maximumCoefficientErrorInNanounits": 238,
+      "planes": 113,
+      "reflectionPlanes": 113
+    },
+    "/Badge/Part_987": {
+      "maximumCoefficientErrorInNanounits": 238,
+      "planes": 113,
+      "reflectionPlanes": 113
+    },
+    "/Badge/Part_989": {
+      "maximumCoefficientErrorInNanounits": 238,
+      "planes": 113,
+      "reflectionPlanes": 113
+    },
+    "/Badge/Part_991": {
+      "maximumCoefficientErrorInNanounits": 238,
+      "planes": 113,
+      "reflectionPlanes": 113
+    },
+    "/Badge/Part_993": {
+      "maximumCoefficientErrorInNanounits": 238,
+      "planes": 113,
+      "reflectionPlanes": 113
+    },
+    "/Badge/Part_995": {
+      "maximumCoefficientErrorInNanounits": 238,
+      "planes": 113,
+      "reflectionPlanes": 113
+    },
+    "/Badge/Part_997": {
+      "maximumCoefficientErrorInNanounits": 238,
+      "planes": 113,
+      "reflectionPlanes": 113
+    },
+    "/Badge/Part_999": {
+      "maximumCoefficientErrorInNanounits": 238,
+      "planes": 113,
+      "reflectionPlanes": 113
+    },
+    "/Badge/Part_1001": {
+      "maximumCoefficientErrorInNanounits": 238,
+      "planes": 113,
+      "reflectionPlanes": 113
+    },
+    "/Badge/Part_1003": {
+      "maximumCoefficientErrorInNanounits": 238,
+      "planes": 113,
+      "reflectionPlanes": 113
+    },
+    "/Badge/Part_1005": {
+      "maximumCoefficientErrorInNanounits": 238,
+      "planes": 113,
+      "reflectionPlanes": 113
+    },
+    "/Badge/Part_1007": {
+      "maximumCoefficientErrorInNanounits": 238,
+      "planes": 113,
+      "reflectionPlanes": 113
+    },
+    "/Badge/Part_1009": {
+      "maximumCoefficientErrorInNanounits": 238,
+      "planes": 113,
+      "reflectionPlanes": 113
+    },
+    "/Badge/Part_1011": {
+      "maximumCoefficientErrorInNanounits": 238,
+      "planes": 113,
+      "reflectionPlanes": 113
+    },
+    "/Badge/Part_1013": {
+      "maximumCoefficientErrorInNanounits": 238,
+      "planes": 113,
+      "reflectionPlanes": 113
+    },
+    "/Badge/Part_1015": {
+      "maximumCoefficientErrorInNanounits": 238,
+      "planes": 113,
+      "reflectionPlanes": 113
+    },
+    "/Badge/Part_1048": {
+      "maximumCoefficientErrorInNanounits": 238,
+      "planes": 113,
+      "reflectionPlanes": 113
+    },
+    "/Badge/Part_1050": {
+      "maximumCoefficientErrorInNanounits": 238,
+      "planes": 113,
+      "reflectionPlanes": 113
+    },
+    "/Badge/Part_1052": {
+      "maximumCoefficientErrorInNanounits": 238,
+      "planes": 113,
+      "reflectionPlanes": 113
+    },
+    "/Badge/Part_1054": {
+      "maximumCoefficientErrorInNanounits": 238,
+      "planes": 113,
+      "reflectionPlanes": 113
+    },
+    "/Badge/Part_1056": {
+      "maximumCoefficientErrorInNanounits": 238,
+      "planes": 113,
+      "reflectionPlanes": 113
+    },
+    "/Badge/Part_1058": {
+      "maximumCoefficientErrorInNanounits": 238,
+      "planes": 113,
+      "reflectionPlanes": 113
+    },
+    "/Badge/Part_1060": {
+      "maximumCoefficientErrorInNanounits": 238,
+      "planes": 113,
+      "reflectionPlanes": 113
+    },
+    "/Badge/Part_1062": {
+      "maximumCoefficientErrorInNanounits": 238,
+      "planes": 113,
+      "reflectionPlanes": 113
+    },
+    "/Badge/Part_1064": {
+      "maximumCoefficientErrorInNanounits": 238,
+      "planes": 113,
+      "reflectionPlanes": 113
+    },
+    "/Badge/Part_1066": {
+      "maximumCoefficientErrorInNanounits": 238,
+      "planes": 113,
+      "reflectionPlanes": 113
+    },
+    "/Badge/Part_1068": {
+      "maximumCoefficientErrorInNanounits": 238,
+      "planes": 113,
+      "reflectionPlanes": 113
+    },
+    "/Badge/Part_1070": {
+      "maximumCoefficientErrorInNanounits": 238,
+      "planes": 113,
+      "reflectionPlanes": 113
+    },
+    "/Badge/Part_1072": {
+      "maximumCoefficientErrorInNanounits": 238,
+      "planes": 113,
+      "reflectionPlanes": 113
+    },
+    "/Badge/Part_1074": {
+      "maximumCoefficientErrorInNanounits": 238,
+      "planes": 113,
+      "reflectionPlanes": 113
+    },
+    "/Badge/Part_1076": {
+      "maximumCoefficientErrorInNanounits": 238,
+      "planes": 113,
+      "reflectionPlanes": 113
+    },
+    "/Badge/Part_1078": {
+      "maximumCoefficientErrorInNanounits": 238,
+      "planes": 113,
+      "reflectionPlanes": 113
+    },
+    "/Badge/Part_1080": {
+      "maximumCoefficientErrorInNanounits": 238,
+      "planes": 113,
+      "reflectionPlanes": 113
+    },
+    "/Badge/Part_1082": {
+      "maximumCoefficientErrorInNanounits": 238,
+      "planes": 113,
+      "reflectionPlanes": 113
+    },
+    "/Badge/Part_1084": {
+      "maximumCoefficientErrorInNanounits": 238,
+      "planes": 113,
+      "reflectionPlanes": 113
+    },
+    "/Badge/Part_1086": {
+      "maximumCoefficientErrorInNanounits": 238,
+      "planes": 113,
+      "reflectionPlanes": 113
+    },
+    "/Badge/Part_1088": {
+      "maximumCoefficientErrorInNanounits": 238,
+      "planes": 113,
+      "reflectionPlanes": 113
+    },
+    "/Badge/Part_1090": {
+      "maximumCoefficientErrorInNanounits": 238,
+      "planes": 113,
+      "reflectionPlanes": 113
+    },
+    "/Badge/Part_1092": {
+      "maximumCoefficientErrorInNanounits": 238,
+      "planes": 113,
+      "reflectionPlanes": 113
+    },
+    "/Badge/Part_1094": {
+      "maximumCoefficientErrorInNanounits": 238,
+      "planes": 113,
+      "reflectionPlanes": 113
+    },
+    "/Badge/Part_1096": {
+      "maximumCoefficientErrorInNanounits": 238,
+      "planes": 113,
+      "reflectionPlanes": 113
+    },
+    "/Badge/Part_1098": {
+      "maximumCoefficientErrorInNanounits": 238,
+      "planes": 113,
+      "reflectionPlanes": 113
+    },
+    "/Badge/Part_1100": {
+      "maximumCoefficientErrorInNanounits": 238,
+      "planes": 113,
+      "reflectionPlanes": 113
+    },
+    "/Badge/Part_1102": {
+      "maximumCoefficientErrorInNanounits": 238,
+      "planes": 113,
+      "reflectionPlanes": 113
+    },
+    "/Badge/Part_1104": {
+      "maximumCoefficientErrorInNanounits": 238,
+      "planes": 113,
+      "reflectionPlanes": 113
+    },
+    "/Badge/Part_1106": {
+      "maximumCoefficientErrorInNanounits": 238,
+      "planes": 113,
+      "reflectionPlanes": 113
+    },
+    "/Badge/Part_1108": {
+      "maximumCoefficientErrorInNanounits": 238,
+      "planes": 113,
+      "reflectionPlanes": 113
+    },
+    "/Badge/Part_1110": {
+      "maximumCoefficientErrorInNanounits": 238,
+      "planes": 113,
+      "reflectionPlanes": 113
+    },
+    "/Badge/Part_1112": {
+      "maximumCoefficientErrorInNanounits": 238,
+      "planes": 113,
+      "reflectionPlanes": 113
+    },
+    "/Badge/Part_1114": {
+      "maximumCoefficientErrorInNanounits": 238,
+      "planes": 113,
+      "reflectionPlanes": 113
+    },
+    "/Badge/Part_1116": {
+      "maximumCoefficientErrorInNanounits": 238,
+      "planes": 113,
+      "reflectionPlanes": 113
+    },
+    "/Badge/Part_1118": {
+      "maximumCoefficientErrorInNanounits": 238,
+      "planes": 113,
+      "reflectionPlanes": 113
+    },
+    "/Badge/Part_1120": {
+      "maximumCoefficientErrorInNanounits": 238,
+      "planes": 113,
+      "reflectionPlanes": 113
+    },
+    "/Badge/Part_1122": {
+      "maximumCoefficientErrorInNanounits": 238,
+      "planes": 113,
+      "reflectionPlanes": 113
+    },
+    "/Badge/Part_1124": {
+      "maximumCoefficientErrorInNanounits": 238,
+      "planes": 113,
+      "reflectionPlanes": 113
+    },
+    "/Badge/Part_1126": {
+      "maximumCoefficientErrorInNanounits": 238,
+      "planes": 113,
+      "reflectionPlanes": 113
+    },
+    "/Badge/Part_1128": {
+      "maximumCoefficientErrorInNanounits": 238,
+      "planes": 113,
+      "reflectionPlanes": 113
+    },
+    "/Badge/Part_1130": {
+      "maximumCoefficientErrorInNanounits": 238,
+      "planes": 113,
+      "reflectionPlanes": 113
+    },
+    "/Badge/Part_1132": {
+      "maximumCoefficientErrorInNanounits": 238,
+      "planes": 113,
+      "reflectionPlanes": 113
+    },
+    "/Badge/Part_1134": {
+      "maximumCoefficientErrorInNanounits": 238,
+      "planes": 113,
+      "reflectionPlanes": 113
+    },
+    "/Badge/Part_1136": {
+      "maximumCoefficientErrorInNanounits": 238,
+      "planes": 113,
+      "reflectionPlanes": 113
+    },
+    "/Badge/Part_1138": {
+      "maximumCoefficientErrorInNanounits": 238,
+      "planes": 113,
+      "reflectionPlanes": 113
+    },
+    "/Badge/Part_1140": {
+      "maximumCoefficientErrorInNanounits": 238,
+      "planes": 113,
+      "reflectionPlanes": 113
+    },
+    "/Badge/Part_1142": {
+      "maximumCoefficientErrorInNanounits": 238,
+      "planes": 113,
+      "reflectionPlanes": 113
+    },
+    "/Badge/Part_1144": {
+      "maximumCoefficientErrorInNanounits": 238,
+      "planes": 113,
+      "reflectionPlanes": 113
+    },
+    "/Badge/Part_1146": {
+      "maximumCoefficientErrorInNanounits": 238,
+      "planes": 113,
+      "reflectionPlanes": 113
+    },
+    "/Badge/Part_1148": {
+      "maximumCoefficientErrorInNanounits": 238,
+      "planes": 113,
+      "reflectionPlanes": 113
+    },
+    "/Badge/Part_1150": {
+      "maximumCoefficientErrorInNanounits": 238,
+      "planes": 113,
+      "reflectionPlanes": 113
+    },
+    "/Badge/Part_1152": {
+      "maximumCoefficientErrorInNanounits": 238,
+      "planes": 113,
+      "reflectionPlanes": 113
+    },
+    "/Badge/Part_1154": {
+      "maximumCoefficientErrorInNanounits": 238,
+      "planes": 113,
+      "reflectionPlanes": 113
+    },
+    "/Badge/Part_1156": {
+      "maximumCoefficientErrorInNanounits": 238,
+      "planes": 113,
+      "reflectionPlanes": 113
+    },
+    "/Badge/Part_1158": {
+      "maximumCoefficientErrorInNanounits": 238,
+      "planes": 113,
+      "reflectionPlanes": 113
+    },
+    "/Badge/Part_1160": {
+      "maximumCoefficientErrorInNanounits": 238,
+      "planes": 113,
+      "reflectionPlanes": 113
+    },
+    "/Badge/Part_1162": {
+      "maximumCoefficientErrorInNanounits": 238,
+      "planes": 113,
+      "reflectionPlanes": 113
+    },
+    "/Badge/Part_1164": {
+      "maximumCoefficientErrorInNanounits": 238,
+      "planes": 113,
+      "reflectionPlanes": 113
+    },
+    "/Badge/Part_1166": {
+      "maximumCoefficientErrorInNanounits": 238,
+      "planes": 113,
+      "reflectionPlanes": 113
+    },
+    "/Badge/Part_1168": {
+      "maximumCoefficientErrorInNanounits": 238,
+      "planes": 113,
+      "reflectionPlanes": 113
+    },
+    "/Badge/Part_1170": {
+      "maximumCoefficientErrorInNanounits": 238,
+      "planes": 113,
+      "reflectionPlanes": 113
+    },
+    "/Badge/Part_1172": {
+      "maximumCoefficientErrorInNanounits": 238,
+      "planes": 113,
+      "reflectionPlanes": 113
+    },
+    "/Badge/Part_1174": {
+      "maximumCoefficientErrorInNanounits": 238,
+      "planes": 113,
+      "reflectionPlanes": 113
+    }
+  },
+  "no_appearance_textures": true,
+  "actual_renderer_convexity_passed": true,
+  "reflection_convexity_passed": true
+}

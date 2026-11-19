@@ -1,0 +1,115 @@
+{
+  "vertices": [
+    [
+      -1.5684154033660889,
+      -2.4078729152679443,
+      0.7668376564979553
+    ],
+    [
+      -1.5684305429458618,
+      -2.407881259918213,
+      0.7668426036834717
+    ],
+    [
+      -1.5788965225219727,
+      -2.4136126041412354,
+      0.7702500224113464
+    ]
+  ],
+  "normal": [
+    -0.13254040208439086,
+    -0.31641421239404866,
+    -0.9393162875253264
+  ],
+  "float_normal": [
+    -0.13254038989543915,
+    -0.3164142072200775,
+    -0.9393162131309509
+  ],
+  "near": [
+    [
+      {
+        "distance": 1.6240390166421798e-08,
+        "dot": -0.008924891087113473,
+        "smooth": true,
+        "source": "Chest Broad End Arch -1"
+      },
+      {
+        "distance": 2.3938732756873745e-08,
+        "dot": -0.98012073247113,
+        "smooth": true,
+        "source": "Chest Upper Lid Rim"
+      },
+      {
+        "distance": 0.00018332370411982459,
+        "dot": -0.980120654171139,
+        "smooth": true,
+        "source": "Chest Upper Lid Rim"
+      },
+      {
+        "distance": 0.003381681565608253,
+        "dot": -0.8739061918268131,
+        "smooth": true,
+        "source": "Chest Upper Lid Rim"
+      },
+      {
+        "distance": 0.0018374412809982969,
+        "dot": -0.873903241176124,
+        "smooth": true,
+        "source": "Chest Upper Lid Rim"
+      }
+    ],
+    [
+      {
+        "distance": 3.209280411721328e-08,
+        "dot": -0.008924891087113473,
+        "smooth": true,
+        "source": "Chest Broad End Arch -1"
+      },
+      {
+        "distance": 1.4281247821022235e-08,
+        "dot": -0.98012073247113,
+        "smooth": true,
+        "source": "Chest Upper Lid Rim"
+      },
+      {
+        "distance": 0.00020127531530990625,
+        "dot": -0.980120654171139,
+        "smooth": true,
+        "source": "Chest Upper Lid Rim"
+      },
+      {
+        "distance": 0.003399185610107956,
+        "dot": -0.8739061918268131,
+        "smooth": true,
+        "source": "Chest Upper Lid Rim"
+      },
+      {
+        "distance": 0.0018553973252525035,
+        "dot": -0.873903241176124,
+        "smooth": true,
+        "source": "Chest Upper Lid Rim"
+      }
+    ],
+    [
+      {
+        "distance": 4.9657985942956436e-08,
+        "dot": -0.008924891087113473,
+        "smooth": true,
+        "source": "Chest Broad End Arch -1"
+      },
+      {
+        "distance": 1.6222384971007053e-08,
+        "dot": -0.98012073247113,
+        "smooth": true,
+        "source": "Chest Upper Lid Rim"
+      },
+      {
+        "distance": 5.899063179668305e-08,
+        "dot": -0.9393162875253264,
+        "smooth": false,
+        "source": "Chest Upper Lid Rim"
+      }
+    ]
+  ]
+}

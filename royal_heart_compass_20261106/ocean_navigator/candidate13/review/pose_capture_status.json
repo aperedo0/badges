@@ -1,0 +1,16 @@
+{
+  "actual_model_verified": true,
+  "visible_gallery_heading_verified": true,
+  "expected_badge": "Ocean Navigator",
+  "capture_version": 5,
+  "sha256": "29e3e6ae521a5a2395041aa1aee821fe5d72bd8f75a1325b5339a22fa85d80bc",
+  "completed_poses": [
+    "front",
+    "early_turn",
+    "side_left",
+    "back",
+    "side_right",
+    "full_turn"
+  ],
+  "all_six_measured_poses_complete": true
+}

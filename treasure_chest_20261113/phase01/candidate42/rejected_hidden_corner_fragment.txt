@@ -1,0 +1,5 @@
+Traceback (most recent call last):
+  File "<string>", line 4, in <module>
+  File "board42", line 50, in <module>
+  File "geometry36", line 38, in transfer36
+AssertionError: ('Chest Body Envelope', 'new surface has no original normal field', 762, (-2.982877016067505, -0.0007696010288782418, -1.1999648809432983))

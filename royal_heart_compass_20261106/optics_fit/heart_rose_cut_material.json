@@ -1,0 +1,45 @@
+{
+  "status": "diagnostic_only_not_native",
+  "old_shallow_raised_rear_cut_removed": true,
+  "detailed_crown_preserved": true,
+  "original_clear_optics": true,
+  "no_appearance_map": true,
+  "variants": [
+    {
+      "red": 0.16,
+      "exposure": 0.434211563
+    },
+    {
+      "red": 0.16,
+      "exposure": 0.7
+    },
+    {
+      "red": 0.16,
+      "exposure": 1.0
+    },
+    {
+      "red": 0.5,
+      "exposure": 0.434211563
+    },
+    {
+      "red": 0.5,
+      "exposure": 0.7
+    },
+    {
+      "red": 0.5,
+      "exposure": 1.0
+    },
+    {
+      "red": 1.0,
+      "exposure": 0.434211563
+    },
+    {
+      "red": 1.0,
+      "exposure": 0.7
+    },
+    {
+      "red": 1.0,
+      "exposure": 1.0
+    }
+  ]
+}

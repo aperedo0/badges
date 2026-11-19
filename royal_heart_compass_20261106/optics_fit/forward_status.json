@@ -1,0 +1,13 @@
+{
+  "status": "diagnostic_only",
+  "native_validated": false,
+  "reference_fit_performed": false,
+  "resolution": 192,
+  "surface_rays": 15472,
+  "seconds": 0.8025860786437988,
+  "omissions": [
+    "Sparse internal cleavage paths",
+    "Spatial optical density noise",
+    "Native raster projection and coverage"
+  ]
+}

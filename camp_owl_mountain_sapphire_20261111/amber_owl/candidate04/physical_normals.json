@@ -1,0 +1,106 @@
+{
+  "method": "Angle weighted actual geometric bevel normals, colored face normals retained, no artificial shallow tilt or side barrel sweep.",
+  "parts": [
+    {
+      "name": "blue_enamel_backplate",
+      "real_metal_triangles": 0,
+      "walls_constant_through_depth": true
+    },
+    {
+      "name": "upper_star_arc",
+      "real_metal_triangles": 266,
+      "walls_constant_through_depth": true
+    },
+    {
+      "name": "head_amber_disc",
+      "real_metal_triangles": 856,
+      "walls_constant_through_depth": true
+    },
+    {
+      "name": "left_amber_wing",
+      "real_metal_triangles": 463,
+      "walls_constant_through_depth": true
+    },
+    {
+      "name": "right_amber_wing",
+      "real_metal_triangles": 462,
+      "walls_constant_through_depth": true
+    },
+    {
+      "name": "outer_left_feather",
+      "real_metal_triangles": 349,
+      "walls_constant_through_depth": true
+    },
+    {
+      "name": "outer_right_feather",
+      "real_metal_triangles": 348,
+      "walls_constant_through_depth": true
+    },
+    {
+      "name": "inner_left_feather",
+      "real_metal_triangles": 294,
+      "walls_constant_through_depth": true
+    },
+    {
+      "name": "inner_right_feather",
+      "real_metal_triangles": 311,
+      "walls_constant_through_depth": true
+    },
+    {
+      "name": "central_cream_breast",
+      "real_metal_triangles": 467,
+      "walls_constant_through_depth": true
+    },
+    {
+      "name": "cream_face_mask",
+      "real_metal_triangles": 955,
+      "walls_constant_through_depth": true
+    },
+    {
+      "name": "left_amber_iris",
+      "real_metal_triangles": 336,
+      "walls_constant_through_depth": true
+    },
+    {
+      "name": "left_dark_pupil",
+      "real_metal_triangles": 0,
+      "walls_constant_through_depth": true
+    },
+    {
+      "name": "right_amber_iris",
+      "real_metal_triangles": 336,
+      "walls_constant_through_depth": true
+    },
+    {
+      "name": "right_dark_pupil",
+      "real_metal_triangles": 0,
+      "walls_constant_through_depth": true
+    },
+    {
+      "name": "left_cream_brow_blade",
+      "real_metal_triangles": 1576,
+      "walls_constant_through_depth": true
+    },
+    {
+      "name": "right_cream_brow_blade",
+      "real_metal_triangles": 1573,
+      "walls_constant_through_depth": true
+    },
+    {
+      "name": "central_gold_beak",
+      "real_metal_triangles": 198,
+      "walls_constant_through_depth": true
+    },
+    {
+      "name": "top_four_point_star",
+      "real_metal_triangles": 274,
+      "walls_constant_through_depth": true
+    },
+    {
+      "name": "outer_gold_setting",
+      "real_metal_triangles": 1088,
+      "walls_constant_through_depth": true
+    }
+  ],
+  "blender_review_pending": true
+}

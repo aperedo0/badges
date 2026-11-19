@@ -1,0 +1,10 @@
+{
+  "renderer": "Cycles",
+  "development_only": true,
+  "environment": "Existing private preview EXR with separate Blender development area lights",
+  "gem": "Principled transmission, IOR 1.77 and actual volume absorption coefficients [8,4.3503596878,0.2] times0.78125",
+  "native_shader_unchanged": true,
+  "not_a_native_capture": true,
+  "reference": "Owner sapphire teardrop",
+  "pending": "Review front, both sides and back before final native judgments"
+}

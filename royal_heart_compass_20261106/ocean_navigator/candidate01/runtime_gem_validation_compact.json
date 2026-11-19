@@ -1,0 +1,57 @@
+{
+  "gems": {
+    "/Badge/Part_35": {
+      "maximumCoefficientErrorInNanounits": 59,
+      "planes": 113,
+      "reflectionPlanes": 113
+    },
+    "/Badge/Part_38": {
+      "maximumCoefficientErrorInNanounits": 238,
+      "planes": 113,
+      "reflectionPlanes": 113
+    },
+    "/Badge/Part_41": {
+      "maximumCoefficientErrorInNanounits": 238,
+      "planes": 113,
+      "reflectionPlanes": 113
+    },
+    "/Badge/Part_44": {
+      "maximumCoefficientErrorInNanounits": 119,
+      "planes": 113,
+      "reflectionPlanes": 113
+    },
+    "/Badge/Part_47": {
+      "maximumCoefficientErrorInNanounits": 238,
+      "planes": 113,
+      "reflectionPlanes": 113
+    },
+    "/Badge/Part_85": {
+      "maximumCoefficientErrorInNanounits": 59,
+      "planes": 113,
+      "reflectionPlanes": 113
+    },
+    "/Badge/Part_88": {
+      "maximumCoefficientErrorInNanounits": 238,
+      "planes": 113,
+      "reflectionPlanes": 113
+    },
+    "/Badge/Part_91": {
+      "maximumCoefficientErrorInNanounits": 238,
+      "planes": 113,
+      "reflectionPlanes": 113
+    },
+    "/Badge/Part_94": {
+      "maximumCoefficientErrorInNanounits": 119,
+      "planes": 113,
+      "reflectionPlanes": 113
+    },
+    "/Badge/Part_97": {
+      "maximumCoefficientErrorInNanounits": 238,
+      "planes": 113,
+      "reflectionPlanes": 113
+    }
+  },
+  "no_appearance_textures": true,
+  "actual_renderer_convexity_passed": true,
+  "reflection_convexity_passed": true
+}

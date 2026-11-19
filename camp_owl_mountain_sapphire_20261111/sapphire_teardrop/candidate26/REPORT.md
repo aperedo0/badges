@@ -1,0 +1,1 @@
+Rejected native export test. Texture scale and bias did not preserve the Blender finish in the native preview and produced an overly mirror like dark band. Candidate27 uses direct intrinsic roughness pixel values with the same mean instead. Geometry, brighter sapphire cut and base gold color remain unchanged.

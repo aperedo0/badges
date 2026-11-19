@@ -1,0 +1,116 @@
+[
+  {
+    "name": "Hammered hexagonal steel case",
+    "closed": true,
+    "consistent_winding": true,
+    "no_degenerate_triangles": true
+  },
+  {
+    "name": "Continuous inset copper hexagon",
+    "closed": true,
+    "consistent_winding": true,
+    "no_degenerate_triangles": true
+  },
+  {
+    "name": "Dark forged recessed hexagonal field",
+    "closed": true,
+    "consistent_winding": true,
+    "no_degenerate_triangles": true
+  },
+  {
+    "name": "Left ember channel",
+    "closed": true,
+    "consistent_winding": true,
+    "no_degenerate_triangles": true
+  },
+  {
+    "name": "Right ember channel",
+    "closed": true,
+    "consistent_winding": true,
+    "no_degenerate_triangles": true
+  },
+  {
+    "name": "Five carved ember flame tongues",
+    "closed": true,
+    "consistent_winding": true,
+    "no_degenerate_triangles": true
+  },
+  {
+    "name": "Continuous cylindrical hammer grip",
+    "closed": true,
+    "consistent_winding": true,
+    "no_degenerate_triangles": true
+  },
+  {
+    "name": "Continuous raised copper spiral wrapping the handle",
+    "closed": true,
+    "consistent_winding": true,
+    "no_degenerate_triangles": true
+  },
+  {
+    "name": "Hexagonal hammer pommel",
+    "closed": true,
+    "consistent_winding": true,
+    "no_degenerate_triangles": true
+  },
+  {
+    "name": "Hammer neck collar",
+    "closed": true,
+    "consistent_winding": true,
+    "no_degenerate_triangles": true
+  },
+  {
+    "name": "Broad forged hammer head",
+    "closed": true,
+    "consistent_winding": true,
+    "no_degenerate_triangles": true
+  },
+  {
+    "name": "Single anvil with twin curved waists and feet",
+    "closed": true,
+    "consistent_winding": true,
+    "no_degenerate_triangles": true
+  },
+  {
+    "name": "Tapered flying copper spark 1",
+    "closed": true,
+    "consistent_winding": true,
+    "no_degenerate_triangles": true
+  },
+  {
+    "name": "Tapered flying copper spark 2",
+    "closed": true,
+    "consistent_winding": true,
+    "no_degenerate_triangles": true
+  },
+  {
+    "name": "Tapered flying copper spark 3",
+    "closed": true,
+    "consistent_winding": true,
+    "no_degenerate_triangles": true
+  },
+  {
+    "name": "Tapered flying copper spark 4",
+    "closed": true,
+    "consistent_winding": true,
+    "no_degenerate_triangles": true
+  },
+  {
+    "name": "Lower raised copper diamond surround",
+    "closed": true,
+    "consistent_winding": true,
+    "no_degenerate_triangles": true
+  },
+  {
+    "name": "Faceted glowing forged ember inset",
+    "closed": true,
+    "consistent_winding": true,
+    "no_degenerate_triangles": true
+  },
+  {
+    "name": "Copper ridge on lower inset",
+    "closed": true,
+    "consistent_winding": true,
+    "no_degenerate_triangles": true
+  }
+]

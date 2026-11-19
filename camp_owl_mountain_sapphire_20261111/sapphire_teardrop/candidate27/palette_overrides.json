@@ -1,0 +1,15 @@
+{
+  "Gem": {
+    "material_name": "CrestGem_SapphireClear"
+  },
+  "Gold": {
+    "albedo": [
+      1,
+      0.44,
+      0.07
+    ],
+    "metallic": 1,
+    "roughness": 0.3,
+    "roughness_texture": "textures/gold_brush_roughness.png"
+  }
+}

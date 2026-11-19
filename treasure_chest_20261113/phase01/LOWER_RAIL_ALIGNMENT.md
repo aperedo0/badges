@@ -1,0 +1,3 @@
+Owner directed alignment correction
+
+The November 14 screenshot shows the lower horizontal band below the top of the center square plate. Raise the wraparound band top from local Y negative 1.840 to negative 1.675, matching the existing center plate. Keep bottom Y negative 2.205. Recenter lower front, back and end band rivets at negative 1.940. Match the center plate bevel to the band bevel 0.028 so both front top edges align, not just their maximum bounds. This is a measured dimension correction within the existing closed rail construction, not a new modeling method. Preserve candidate16 and all other hardware. Validate closedness, compare actual reference and model crops, and render both ends and back.

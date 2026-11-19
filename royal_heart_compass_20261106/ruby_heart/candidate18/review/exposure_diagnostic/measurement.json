@@ -1,0 +1,14 @@
+{
+  "status": "diagnostic_only_not_adopted",
+  "actual_native_pixels_used": true,
+  "no_material_texture_created": true,
+  "one_scalar_optical_throughput_only": true,
+  "sample_count": 16545,
+  "outline_excluded_pixels": 3,
+  "uniform_reference_scale": 2.344988344988345,
+  "baseline_exposure": 0.32,
+  "predicted_gain": 1.3569111338070958,
+  "predicted_exposure": 0.43421156281827067,
+  "loss_before": 0.031290705752006126,
+  "loss_after": 0.02772119641201858
+}

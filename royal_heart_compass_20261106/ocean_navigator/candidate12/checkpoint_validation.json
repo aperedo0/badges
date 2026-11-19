@@ -1,0 +1,14 @@
+{
+  "meshes": 14,
+  "triangles": 290940,
+  "all_asset_textures_packed_byte_identically": true,
+  "packed_textures": {
+    "gold_color.png": "3e973ba9066d84510fffd155a0cb4b4925a7d096e60254c0562d980f5f9ac94f",
+    "chart_metallic.png": "a48d965c252c0155c5f766044f6541510efadc914b2ebecba7eea8c39f4e6b30",
+    "gold_roughness.png": "afece34ff04655f433ab9cc1ed5fab6a6b09106da87795e2b877e90900c82c5a",
+    "chart_color.png": "2a386bd395423eb3e9cc83998406f05e31f24c3ddbcf2c88c5ff7cc8cd684187",
+    "chart_roughness.png": "88d6ee602b552d14d6f8aad34bbf28c0a2fa53c107fdd36e03dbca3ae379705f"
+  },
+  "complete_editable_checkpoint": "/Users/antonioperedo/Desktop/badges/royal_heart_compass_20261106/ocean_navigator/candidate12/source/ocean_navigator_compact.blend",
+  "native_gem_profiles_preserved": true
+}

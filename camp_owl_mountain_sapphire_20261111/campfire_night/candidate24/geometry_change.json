@@ -1,0 +1,9 @@
+{
+  "source": "candidate22",
+  "cause": "Moved and resized closed solids retained old inset color polygons, leaving a gold patch over the shifted rear right stone and extra internal gold near other boundaries.",
+  "change": "Every single enamel fill owns its current full solid outline. Existing real rim and bevel classification retain the intended gold band.",
+  "changed_parts": [
+    "stone_back_right"
+  ],
+  "native_review_pending": true
+}

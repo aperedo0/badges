@@ -1,0 +1,5 @@
+Surface finish: remaining grip shoulder correction. Scoped PASS for handle plate, forward ring placement and cover support. This is neutral construction only, not a finished mobile badge.
+
+Fresh review found no obvious holes, speckle or unintended handle seams in the four pictures. The lower grip right shoulder has a sharper raised crescent than the reference, about one fifth of the tube width. Soften the shoulder by about ten percent, make the central divisions about twice as legible through geometry, and reduce the plate edge rounding about half. Verify these observations against the actual source before changing it. The plate reads as one rectangle below the body strip. The ring visibly sits forward of the plate and enters the rolled cover instead. The cover remains supported.
+
+The whole chest remains unfinished. Lock mechanics, metal upright and lower rail thickness, hollow interior and opening rig remain pending. Final materials, phone rendering and motion are not approved by this review.

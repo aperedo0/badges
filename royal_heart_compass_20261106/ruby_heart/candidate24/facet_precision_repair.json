@@ -1,0 +1,20 @@
+{
+  "original_positions_and_cut_planes_preserved": true,
+  "new_center_vertices_on_actual_facet_planes": true,
+  "renderer_tolerance_unchanged": true,
+  "reason": "Arbitrary hull triangulation created narrow triangles whose Float32 normals exceeded the strict heart tolerance",
+  "domains": [
+    {
+      "name": "Ruby heart left optical lobe",
+      "exact_cut_planes": 68,
+      "triangles": 380,
+      "maximum_float32_support_violation": 6.616115570068359e-06
+    },
+    {
+      "name": "Ruby heart right optical lobe",
+      "exact_cut_planes": 68,
+      "triangles": 380,
+      "maximum_float32_support_violation": 6.616115570068359e-06
+    }
+  ]
+}

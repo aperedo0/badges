@@ -1,0 +1,18 @@
+{
+  "change": "Gently tilted real front and rear tables create different optical path lengths and actual crown reflection angles. All facets remain real flat planes on a closed convex sapphire.",
+  "table_slope": 0.14,
+  "table_heights": [
+    0.7106512844810884,
+    0.5451189285765091,
+    0.41234841230014957,
+    0.3778624761352936,
+    0.4088998520622651,
+    0.5451190464446942
+  ],
+  "xy_girdle_and_table_outlines_preserved": true,
+  "gem_triangles": 132,
+  "native_shader_and_exposure_unchanged": true,
+  "no_gem_appearance_texture": true,
+  "gold_matches_actual_ruby_heart": true,
+  "blender_review_pending": true
+}

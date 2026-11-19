@@ -1,0 +1,9 @@
+{
+  "short_external_notch_intervals_checked": 0,
+  "raster_edge_extrapolation_checks": 56,
+  "rays_checked": 2000,
+  "paths_crossing_lobe_join_without_air_interface": 395,
+  "reflection_symmetry_checks": 2000,
+  "one_continuous_ruby_volume": true,
+  "split_plane_precision_preserved": true
+}

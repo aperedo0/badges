@@ -1,0 +1,8 @@
+{
+  "ambient_occlusion_from_real_geometry": true,
+  "lights_baked": false,
+  "diffuse_visibility_floor": 0.12,
+  "diffuse_visibility_power": 1.8,
+  "reason": "Native point lights keep filling recesses. Geometric visibility is included in cloth diffuse to retain the fold depth under the fixed studio.",
+  "native_review_pending": true
+}

@@ -1,0 +1,69 @@
+{
+ "name": "Ornate Golden Storm",
+ "mockup": "/Users/antonioperedo/Desktop/badges/golden_storm_claude_20261108/reference/mockup.png",
+ "mockup_box": [
+  626.8,
+  45.4,
+  1201.9
+ ],
+ "build_front": "/Users/antonioperedo/Desktop/badges/golden_storm_claude_20261108/candidate07/app/front.png",
+ "build_box": [
+  603.0,
+  360.2,
+  776.6
+ ],
+ "poses": {
+  "early turn": "/Users/antonioperedo/Desktop/badges/golden_storm_claude_20261108/candidate07/app/early_turn.png",
+  "left side": "/Users/antonioperedo/Desktop/badges/golden_storm_claude_20261108/candidate07/app/side_left.png",
+  "back": "/Users/antonioperedo/Desktop/badges/golden_storm_claude_20261108/candidate07/app/back.png",
+  "right side": "/Users/antonioperedo/Desktop/badges/golden_storm_claude_20261108/candidate07/app/side_right.png"
+ },
+ "regions": [
+  [
+   "upper left",
+   -0.56,
+   -0.01,
+   0.02,
+   0.37
+  ],
+  [
+   "upper right",
+   -0.02,
+   -0.01,
+   0.56,
+   0.37
+  ],
+  [
+   "middle left",
+   -0.56,
+   0.31,
+   0.02,
+   0.69
+  ],
+  [
+   "middle right",
+   -0.02,
+   0.31,
+   0.56,
+   0.69
+  ],
+  [
+   "lower left",
+   -0.56,
+   0.63,
+   0.02,
+   1.01
+  ],
+  [
+   "lower right",
+   -0.02,
+   0.63,
+   0.56,
+   1.01
+  ]
+ ],
+ "intended": [
+  "The badge is a 3D object that turns on the app's Home screen, so its back and sides must look finished too."
+ ],
+ "checklist": "/Users/antonioperedo/Desktop/badges/golden_storm_claude_20261108/review/checklist.md"
+}

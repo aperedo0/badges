@@ -1,0 +1,13 @@
+{
+  "source": "candidate10",
+  "generic_parts_replaced": 198,
+  "closed_new_leaves": 60,
+  "reference_projector_scale": 0.0002359993274664459,
+  "reference_projector_floor": -0.08995213359594345,
+  "gem_y_scale": 0.8749009040015323,
+  "gem_y_shift": -0.2435183393264597,
+  "pave_stones": 128,
+  "all_upper_stones_remain_red": true,
+  "top_fleur_width_scale": 0.76,
+  "no_appearance_photo_maps": true
+}

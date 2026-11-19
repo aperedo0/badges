@@ -1,0 +1,16 @@
+{
+  "actual_model_verified": true,
+  "visible_gallery_heading_verified": true,
+  "expected_badge": "Ruby Heart",
+  "capture_version": 5,
+  "sha256": "7f8d74ec96740cef7b901b3600f60b00e11b02e88bc09ee1e7e7297a4d6c6d9a",
+  "completed_poses": [
+    "front",
+    "early_turn",
+    "side_left",
+    "back",
+    "side_right",
+    "full_turn"
+  ],
+  "all_six_measured_poses_complete": true
+}

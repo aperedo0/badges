@@ -1,0 +1,46 @@
+{
+  "body_frame_minimum_back_distance_in_moving_slots": 0.1499999198868196,
+  "maximum_moving_sleeve_radius": 0.12,
+  "guaranteed_back_coordinate_gap": 0.029999919886819604,
+  "body_frame_relief_required": false,
+  "actual_deliberately_intruding_body_sample_count": 124,
+  "intruder_samples": [
+    [
+      -1.6725,
+      0.36175,
+      -1.8579999999999999
+    ],
+    [
+      -1.6725,
+      0.3550456276014581,
+      -1.8583466996796019
+    ],
+    [
+      -1.6725,
+      0.34840582197409686,
+      -1.8593834598109673
+    ],
+    [
+      -1.6725,
+      0.36175,
+      -1.8339999999999999
+    ],
+    [
+      -1.6725,
+      0.3528108368019441,
+      -1.834462266239469
+    ],
+    [
+      -1.6725,
+      0.3439577626321291,
+      -1.8358446130812898
+    ]
+  ],
+  "missing_lid_relief_actual_containment": true,
+  "nominal_bore_radius": 0.056,
+  "minimum_polygonal_bore_radius": 0.05593254554748966,
+  "minimum_pin_clearance": 0.005932545547489655,
+  "minimum_running_cut_radius": 0.12584822748185173,
+  "minimum_running_sleeve_clearance": 0.005848227481851737,
+  "model_modified": false
+}

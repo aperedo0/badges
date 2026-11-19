@@ -1,0 +1,60 @@
+{
+  "complete_mesh_count": 9,
+  "triangles": 28104,
+  "all_used_images_packed_and_match_usdz": true,
+  "images": [
+    {
+      "name": "emerald_emission.png",
+      "sha256": "4edd79e6982c798b40c3f4f9de3fcc7e70cf8fd0a87294ba7c5b3478e3f78c42"
+    },
+    {
+      "name": "Rim_brushed_reference_color.png.003",
+      "sha256": "1eacca256806c88507e22b25a355edf75a20257deed73d85d391a18fc93b79c4"
+    },
+    {
+      "name": "Rim_brushed_reference_roughness.png.003",
+      "sha256": "2dd0421486bac68bd1dc669b879074954dd7fa21e377f19c6012d1bd510c0a54"
+    },
+    {
+      "name": "emerald_background_color.png",
+      "sha256": "535144acad62644c6109bd5531f665e5554eaf08a67012e94d0770fe54aacbc8"
+    },
+    {
+      "name": "emerald_background_emission.png",
+      "sha256": "1abedf6aa894889e4011137c9bbbefb87305378fdd736b38d98257b6e45bb6cd"
+    },
+    {
+      "name": "gold_emission.png",
+      "sha256": "6edf765ea607d75eacac3096bf1c812c97d91da0274885eb9939b13cb58fb3a4"
+    },
+    {
+      "name": "soil_color.png",
+      "sha256": "7e76dbdc28367a0ce877941512a1b2dca2a646248bc5519572606b38b145dd99"
+    },
+    {
+      "name": "USDZ_Inset_base_color.png.003",
+      "sha256": "b7e5fc22746a7c0833dadd0995553cc5acb292d85627e218feaafa66019afcf4"
+    },
+    {
+      "name": "emerald_color.png",
+      "sha256": "a2a35b495b3517f4d173b86dfd03a3c9239f7fd96c1d068f45999f56d27bfae3"
+    },
+    {
+      "name": "Rim_glint_reference_roughness.png.003",
+      "sha256": "a060290fd7cfd42597e0be088a7577b29ea5147a3e9ef9b81b67e652f3a7ece1"
+    },
+    {
+      "name": "gold_color.png",
+      "sha256": "9f180fd57f497ce4385cf48b2512b0ece42f51fa109d7d2dd1bf16a2fd13b565"
+    },
+    {
+      "name": "soil_emission.png",
+      "sha256": "2fb59d36db8d57d28260f47766211d11e07bedde12714150fe705ef35ec6a191"
+    },
+    {
+      "name": "USDZ_Inset_normal.png.003",
+      "sha256": "9f5707f3a260602318afc7bd4190435bedb8ff03ccc6a453fcdb8b4eb0d59d1e"
+    }
+  ],
+  "usdz_unchanged_sha256": "90462a9ebb1c0c60d1ca33a1d8cf23b8e2bd709ac5ddc2aa72fe95f6f0c02feb"
+}

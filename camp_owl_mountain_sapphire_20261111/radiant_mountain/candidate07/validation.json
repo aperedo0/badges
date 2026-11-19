@@ -1,0 +1,54 @@
+{
+ "bounds": [
+  [
+   -2.575500011444092,
+   -2.4549999237060547,
+   -0.7021999955177307
+  ],
+  [
+   2.527100086212158,
+   2.994999885559082,
+   0.7021999955177307
+  ]
+ ],
+ "triangles": 58356,
+ "max_front_z": {
+  "blue_glass_sky": 0.124,
+  "sun_ray_0": 0.183,
+  "sun_ray_1": 0.183,
+  "sun_ray_2": 0.183,
+  "sun_ray_3": 0.183,
+  "sun_ray_4": 0.183,
+  "round_amber_sun": 0.262,
+  "highest_snow_peak": 0.321,
+  "left_foreground_peak": 0.388,
+  "right_foreground_peak": 0.39,
+  "central_foreground_peak": 0.449,
+  "left_cloud": 0.239,
+  "right_cloud": 0.427,
+  "far_left_hills": 0.485,
+  "far_right_hills": 0.49,
+  "lime_rear_meadow": 0.547,
+  "left_emerald_meadow": 0.543,
+  "right_emerald_meadow": 0.57,
+  "left_lime_meadow": 0.601,
+  "right_lime_meadow": 0.628,
+  "left_laurel_branch": 0.574,
+  "right_laurel_branch": 0.599,
+  "left_laurel_leaf_0": 0.632,
+  "right_laurel_leaf_0": 0.657,
+  "left_laurel_leaf_1": 0.632,
+  "right_laurel_leaf_1": 0.658,
+  "left_laurel_leaf_2": 0.655,
+  "right_laurel_leaf_2": 0.683,
+  "left_laurel_leaf_3": 0.632,
+  "right_laurel_leaf_3": 0.658,
+  "left_laurel_leaf_4": 0.632,
+  "right_laurel_leaf_4": 0.658,
+  "bottom_four_point_star": 0.159,
+  "outer_gold_setting": 0.702
+ },
+ "failures": [
+  "lime_rear_meadow and right_emerald_meadow: outlines run together for 65 px (side walls in the same place): 34 px at (666, 834), 31 px at (759, 800)"
+ ]
+}

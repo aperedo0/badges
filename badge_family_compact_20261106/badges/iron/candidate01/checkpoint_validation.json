@@ -1,0 +1,24 @@
+{
+  "complete_mesh_count": 11,
+  "triangles": 59392,
+  "all_used_images_packed_and_match_usdz": true,
+  "images": [
+    {
+      "name": "Iron2_PlateLeft_Satin_roughness.png",
+      "sha256": "334600b6e41f12eb68dec71d8d4bcf201e65071578aaa5154132c7b618768f0a"
+    },
+    {
+      "name": "Iron2_Border_Satin_color.png",
+      "sha256": "e1e5e3ef1d46d5092c9508cbb2afd6374edf51215acfbc0cffdac3aa3f032379"
+    },
+    {
+      "name": "Iron2_Border_Satin_roughness.png",
+      "sha256": "334600b6e41f12eb68dec71d8d4bcf201e65071578aaa5154132c7b618768f0a"
+    },
+    {
+      "name": "Iron2_PlateLeft_Satin_color.png",
+      "sha256": "368cd2bfd83d6972d940ab3c3ad5c4635f73fee98792f6e49b5226d6dc61f88a"
+    }
+  ],
+  "usdz_unchanged_sha256": "597b02e21fdf8e4f9933d4d97ba1374aae78ba4b4d6fdd6a041a477e2310daf4"
+}

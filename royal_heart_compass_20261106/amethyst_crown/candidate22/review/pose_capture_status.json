@@ -1,0 +1,17 @@
+{
+  "actual_model_verified": true,
+  "capture_version": 4,
+  "sha256": "8f0d0c83f833ab963560ae0062e3c24934595d3d81a3ae79263e321bcff604c1",
+  "completed_poses": [
+    "front",
+    "early_turn",
+    "side_left",
+    "back",
+    "side_right",
+    "full_turn"
+  ],
+  "all_six_measured_poses_complete": false,
+  "visible_badge_not_verified": true,
+  "appearance_evidence_valid": false,
+  "reason": "Following motion capture shows Bronze Phoenix. Recheck every pose image before retaining any amethyst evidence."
+}

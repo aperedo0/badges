@@ -1,0 +1,1993 @@
+[
+  {
+    "key": "bronze",
+    "slug": "bronze",
+    "title": "Bronze",
+    "dataset": "Badge3DModelBronze",
+    "source_sha256": "2e48a10355d7e09ddf1a078adcdb27332c5e74ec58d10e4ad1f3f9a84fea5ba9",
+    "aliases": [
+      {
+        "origin": "preview",
+        "dataset": "Badge3DModelBronze",
+        "name": "bronze_badge_mobile.usdz",
+        "path": "/Users/antonioperedo/Desktop/badges/emerald_trophy_20261025/preview/ScreenTime/SupportingFiles/Assets.xcassets/Badge3DModelBronze.dataset/bronze_badge_mobile.usdz",
+        "sha256": "2e48a10355d7e09ddf1a078adcdb27332c5e74ec58d10e4ad1f3f9a84fea5ba9",
+        "bytes": 3552159
+      },
+      {
+        "origin": "production",
+        "dataset": "Badge3DModelBronze",
+        "name": "bronze_badge_mobile.usdz",
+        "path": "/Users/antonioperedo/Desktop/screen_time/ScreenTime/SupportingFiles/Assets.xcassets/Badge3DModelBronze.dataset/bronze_badge_mobile.usdz",
+        "sha256": "2e48a10355d7e09ddf1a078adcdb27332c5e74ec58d10e4ad1f3f9a84fea5ba9",
+        "bytes": 3552159
+      }
+    ],
+    "source": "/Users/antonioperedo/Desktop/badges/badge_family_compact_20261106/badges/bronze/baseline/model.usdz",
+    "meshes": 14,
+    "material_sections": 42,
+    "materials": 2,
+    "material_names": {
+      "BronzeSun_Front": 12,
+      "<subsets>": 2
+    },
+    "normal_interpolations": {
+      "faceVarying": 14
+    },
+    "primvars": {
+      "BadgeUV:texCoord2f[]:faceVarying": 14,
+      "displayColor:color3f[]:constant": 14,
+      "displayOpacity:float[]:constant": 14
+    },
+    "other_authored_attributes": {
+      "doubleSided": 14,
+      "subsetFamily:materialBind:familyType": 14
+    },
+    "non_triangular_faces": 0,
+    "transformed_meshes": [],
+    "protected_mesh_paths": [],
+    "triangles": 46176,
+    "vertices": 39476,
+    "bytes": 3552159,
+    "status": "pending"
+  },
+  {
+    "key": "copper",
+    "slug": "copper",
+    "title": "Copper",
+    "dataset": "Badge3DModelCopper",
+    "source_sha256": "19c483cdc0064185f47320c90a6bb681c3c3641dbc4911b1b775ef7e1475ae6f",
+    "aliases": [
+      {
+        "origin": "preview",
+        "dataset": "Badge3DModelCopper",
+        "name": "copper_badge_mobile.usdz",
+        "path": "/Users/antonioperedo/Desktop/badges/emerald_trophy_20261025/preview/ScreenTime/SupportingFiles/Assets.xcassets/Badge3DModelCopper.dataset/copper_badge_mobile.usdz",
+        "sha256": "19c483cdc0064185f47320c90a6bb681c3c3641dbc4911b1b775ef7e1475ae6f",
+        "bytes": 1147277
+      },
+      {
+        "origin": "production",
+        "dataset": "Badge3DModelCopper",
+        "name": "copper_badge_mobile.usdz",
+        "path": "/Users/antonioperedo/Desktop/screen_time/ScreenTime/SupportingFiles/Assets.xcassets/Badge3DModelCopper.dataset/copper_badge_mobile.usdz",
+        "sha256": "19c483cdc0064185f47320c90a6bb681c3c3641dbc4911b1b775ef7e1475ae6f",
+        "bytes": 1147277
+      }
+    ],
+    "source": "/Users/antonioperedo/Desktop/badges/badge_family_compact_20261106/badges/copper/baseline/model.usdz",
+    "meshes": 3,
+    "material_sections": 12,
+    "materials": 1,
+    "material_names": {
+      "CopperFlame_PolishedFront": 3
+    },
+    "normal_interpolations": {
+      "vertex": 3
+    },
+    "primvars": {
+      "displayColor:color3f[]:constant": 3,
+      "displayOpacity:float[]:constant": 3,
+      "FlameUV:texCoord2f[]:vertex": 3
+    },
+    "other_authored_attributes": {
+      "doubleSided": 3,
+      "subsetFamily:materialBind:familyType": 3
+    },
+    "non_triangular_faces": 0,
+    "transformed_meshes": [],
+    "protected_mesh_paths": [],
+    "triangles": 40812,
+    "vertices": 20412,
+    "bytes": 1147277,
+    "status": "pending"
+  },
+  {
+    "key": "diamond",
+    "slug": "diamond",
+    "title": "Diamond",
+    "dataset": "Badge3DModelDiamond",
+    "source_sha256": "51b86378706c87ef8cd5a43a170ea3d5b1da42c88e9d65f9741681186d9cdadf",
+    "aliases": [
+      {
+        "origin": "preview",
+        "dataset": "Badge3DModelDiamond",
+        "name": "diamond_badge_mobile.usdz",
+        "path": "/Users/antonioperedo/Desktop/badges/emerald_trophy_20261025/preview/ScreenTime/SupportingFiles/Assets.xcassets/Badge3DModelDiamond.dataset/diamond_badge_mobile.usdz",
+        "sha256": "51b86378706c87ef8cd5a43a170ea3d5b1da42c88e9d65f9741681186d9cdadf",
+        "bytes": 16643
+      },
+      {
+        "origin": "production",
+        "dataset": "Badge3DModelDiamond",
+        "name": "diamond_badge_mobile.usdz",
+        "path": "/Users/antonioperedo/Desktop/screen_time/ScreenTime/SupportingFiles/Assets.xcassets/Badge3DModelDiamond.dataset/diamond_badge_mobile.usdz",
+        "sha256": "51b86378706c87ef8cd5a43a170ea3d5b1da42c88e9d65f9741681186d9cdadf",
+        "bytes": 16643
+      }
+    ],
+    "source": "/Users/antonioperedo/Desktop/badges/badge_family_compact_20261106/badges/diamond/baseline/model.usdz",
+    "meshes": 1,
+    "material_sections": 1,
+    "materials": 1,
+    "material_names": {
+      "DiamondGem": 1
+    },
+    "normal_interpolations": {
+      "vertex": 1
+    },
+    "primvars": {
+      "displayColor:color3f[]:constant": 1,
+      "displayOpacity:float[]:constant": 1
+    },
+    "other_authored_attributes": {
+      "doubleSided": 1
+    },
+    "non_triangular_faces": 0,
+    "transformed_meshes": [],
+    "protected_mesh_paths": [
+      "/DiamondGem/DiamondGem_Facets"
+    ],
+    "triangles": 206,
+    "vertices": 618,
+    "bytes": 16643,
+    "status": "pending"
+  },
+  {
+    "key": "gold",
+    "slug": "gold",
+    "title": "Gold",
+    "dataset": "Badge3DModelGold",
+    "source_sha256": "260cff06cdff8193727c49cae8525cc2a3e911f7d0b7e8a117866b0c7062e5bb",
+    "aliases": [
+      {
+        "origin": "preview",
+        "dataset": "Badge3DModelGold",
+        "name": "gold_badge_mobile.usdz",
+        "path": "/Users/antonioperedo/Desktop/badges/emerald_trophy_20261025/preview/ScreenTime/SupportingFiles/Assets.xcassets/Badge3DModelGold.dataset/gold_badge_mobile.usdz",
+        "sha256": "260cff06cdff8193727c49cae8525cc2a3e911f7d0b7e8a117866b0c7062e5bb",
+        "bytes": 4014554
+      },
+      {
+        "origin": "production",
+        "dataset": "Badge3DModelGold",
+        "name": "gold_badge_mobile.usdz",
+        "path": "/Users/antonioperedo/Desktop/screen_time/ScreenTime/SupportingFiles/Assets.xcassets/Badge3DModelGold.dataset/gold_badge_mobile.usdz",
+        "sha256": "260cff06cdff8193727c49cae8525cc2a3e911f7d0b7e8a117866b0c7062e5bb",
+        "bytes": 4014554
+      }
+    ],
+    "source": "/Users/antonioperedo/Desktop/badges/badge_family_compact_20261106/badges/gold/baseline/model.usdz",
+    "meshes": 21,
+    "material_sections": 45,
+    "materials": 1,
+    "material_names": {
+      "<subsets>": 21
+    },
+    "normal_interpolations": {
+      "faceVarying": 21
+    },
+    "primvars": {
+      "BadgeUV:texCoord2f[]:faceVarying": 18,
+      "displayColor:color3f[]:constant": 21,
+      "displayOpacity:float[]:constant": 21
+    },
+    "other_authored_attributes": {
+      "doubleSided": 21,
+      "subsetFamily:materialBind:familyType": 21
+    },
+    "non_triangular_faces": 0,
+    "transformed_meshes": [],
+    "protected_mesh_paths": [],
+    "triangles": 59680,
+    "vertices": 29860,
+    "bytes": 4014554,
+    "status": "pending"
+  },
+  {
+    "key": "iron",
+    "slug": "iron",
+    "title": "Original Iron",
+    "dataset": "Badge3DModelIron",
+    "source_sha256": "0400817c22a28c8402679e639bb6ddc3a3081134a80d99128c3efb907b8c34d3",
+    "aliases": [
+      {
+        "origin": "preview",
+        "dataset": "Badge3DModelIron",
+        "name": "iron_badge_mobile.usdz",
+        "path": "/Users/antonioperedo/Desktop/badges/emerald_trophy_20261025/preview/ScreenTime/SupportingFiles/Assets.xcassets/Badge3DModelIron.dataset/iron_badge_mobile.usdz",
+        "sha256": "0400817c22a28c8402679e639bb6ddc3a3081134a80d99128c3efb907b8c34d3",
+        "bytes": 4670316
+      }
+    ],
+    "source": "/Users/antonioperedo/Desktop/badges/badge_family_compact_20261106/badges/iron/baseline/model.usdz",
+    "meshes": 17,
+    "material_sections": 36,
+    "materials": 7,
+    "material_names": {
+      "Iron2_PlateLeft_Satin": 1,
+      "Iron2_Reveal_Satin": 1,
+      "Iron2_Back_Satin": 1,
+      "Iron2_PlateRight_Satin": 1,
+      "Iron2_Channel_Satin": 1,
+      "Iron2_Lip_Satin": 1,
+      "<subsets>": 11
+    },
+    "normal_interpolations": {
+      "faceVarying": 17
+    },
+    "primvars": {
+      "displayColor:color3f[]:constant": 17,
+      "displayOpacity:float[]:constant": 17,
+      "USDZ_UV:texCoord2f[]:faceVarying": 6
+    },
+    "other_authored_attributes": {
+      "doubleSided": 17,
+      "subsetFamily:materialBind:familyType": 17
+    },
+    "non_triangular_faces": 0,
+    "transformed_meshes": [],
+    "protected_mesh_paths": [],
+    "triangles": 59392,
+    "vertices": 32022,
+    "bytes": 4670316,
+    "status": "pending"
+  },
+  {
+    "key": "platinum",
+    "slug": "platinum",
+    "title": "Platinum",
+    "dataset": "Badge3DModelPlatinum",
+    "source_sha256": "ecffeb03b8c1b20cc0d8ff3c21ae1aeeedbb98f83b20cb0a37465bbab90e29dd",
+    "aliases": [
+      {
+        "origin": "preview",
+        "dataset": "Badge3DModelPlatinum",
+        "name": "platinum_badge_mobile.usdz",
+        "path": "/Users/antonioperedo/Desktop/badges/emerald_trophy_20261025/preview/ScreenTime/SupportingFiles/Assets.xcassets/Badge3DModelPlatinum.dataset/platinum_badge_mobile.usdz",
+        "sha256": "ecffeb03b8c1b20cc0d8ff3c21ae1aeeedbb98f83b20cb0a37465bbab90e29dd",
+        "bytes": 3717227
+      },
+      {
+        "origin": "production",
+        "dataset": "Badge3DModelPlatinum",
+        "name": "platinum_badge_mobile.usdz",
+        "path": "/Users/antonioperedo/Desktop/screen_time/ScreenTime/SupportingFiles/Assets.xcassets/Badge3DModelPlatinum.dataset/platinum_badge_mobile.usdz",
+        "sha256": "ecffeb03b8c1b20cc0d8ff3c21ae1aeeedbb98f83b20cb0a37465bbab90e29dd",
+        "bytes": 3717227
+      }
+    ],
+    "source": "/Users/antonioperedo/Desktop/badges/badge_family_compact_20261106/badges/platinum/baseline/model.usdz",
+    "meshes": 1,
+    "material_sections": 6,
+    "materials": 1,
+    "material_names": {
+      "PlatinumKnot_Front": 1
+    },
+    "normal_interpolations": {
+      "faceVarying": 1
+    },
+    "primvars": {
+      "BadgeUV:texCoord2f[]:faceVarying": 1,
+      "displayColor:color3f[]:constant": 1,
+      "displayOpacity:float[]:constant": 1
+    },
+    "other_authored_attributes": {
+      "doubleSided": 1,
+      "subsetFamily:materialBind:familyType": 1
+    },
+    "non_triangular_faces": 0,
+    "transformed_meshes": [],
+    "protected_mesh_paths": [],
+    "triangles": 43008,
+    "vertices": 21504,
+    "bytes": 3717227,
+    "status": "pending"
+  },
+  {
+    "key": "silver",
+    "slug": "silver",
+    "title": "Silver",
+    "dataset": "Badge3DModelSilver",
+    "source_sha256": "bddcce62bad9d3ad013b79514d3708f07f6c2c6a8949492b16e1e4a9de50acbd",
+    "aliases": [
+      {
+        "origin": "preview",
+        "dataset": "Badge3DModelSilver",
+        "name": "silver_badge_mobile.usdz",
+        "path": "/Users/antonioperedo/Desktop/badges/emerald_trophy_20261025/preview/ScreenTime/SupportingFiles/Assets.xcassets/Badge3DModelSilver.dataset/silver_badge_mobile.usdz",
+        "sha256": "bddcce62bad9d3ad013b79514d3708f07f6c2c6a8949492b16e1e4a9de50acbd",
+        "bytes": 3940923
+      },
+      {
+        "origin": "production",
+        "dataset": "Badge3DModelSilver",
+        "name": "silver_badge_mobile.usdz",
+        "path": "/Users/antonioperedo/Desktop/screen_time/ScreenTime/SupportingFiles/Assets.xcassets/Badge3DModelSilver.dataset/silver_badge_mobile.usdz",
+        "sha256": "bddcce62bad9d3ad013b79514d3708f07f6c2c6a8949492b16e1e4a9de50acbd",
+        "bytes": 3940923
+      }
+    ],
+    "source": "/Users/antonioperedo/Desktop/badges/badge_family_compact_20261106/badges/silver/baseline/model.usdz",
+    "meshes": 6,
+    "material_sections": 22,
+    "materials": 3,
+    "material_names": {
+      "Silver2_LeafLit_Satin": 4,
+      "Silver2_StemsLit_Satin": 1,
+      "Silver2_StarShaded_Satin": 1
+    },
+    "normal_interpolations": {
+      "faceVarying": 6
+    },
+    "primvars": {
+      "displayColor:color3f[]:constant": 6,
+      "displayOpacity:float[]:constant": 6,
+      "USDZ_UV:texCoord2f[]:faceVarying": 6
+    },
+    "other_authored_attributes": {
+      "doubleSided": 6,
+      "subsetFamily:materialBind:familyType": 6
+    },
+    "non_triangular_faces": 0,
+    "transformed_meshes": [],
+    "protected_mesh_paths": [],
+    "triangles": 43924,
+    "vertices": 42756,
+    "bytes": 3940923,
+    "status": "pending"
+  },
+  {
+    "key": "steel",
+    "slug": "steel",
+    "title": "Steel",
+    "dataset": "Badge3DModelSteel",
+    "source_sha256": "65b2047e8503ddddcfe6330164e694856d2bce4dea9bad60fedaa177b40acfb1",
+    "aliases": [
+      {
+        "origin": "preview",
+        "dataset": "Badge3DModelSteel",
+        "name": "steel_badge_mobile.usdz",
+        "path": "/Users/antonioperedo/Desktop/badges/emerald_trophy_20261025/preview/ScreenTime/SupportingFiles/Assets.xcassets/Badge3DModelSteel.dataset/steel_badge_mobile.usdz",
+        "sha256": "65b2047e8503ddddcfe6330164e694856d2bce4dea9bad60fedaa177b40acfb1",
+        "bytes": 744538
+      },
+      {
+        "origin": "production",
+        "dataset": "Badge3DModelSteel",
+        "name": "steel_badge_mobile.usdz",
+        "path": "/Users/antonioperedo/Desktop/screen_time/ScreenTime/SupportingFiles/Assets.xcassets/Badge3DModelSteel.dataset/steel_badge_mobile.usdz",
+        "sha256": "65b2047e8503ddddcfe6330164e694856d2bce4dea9bad60fedaa177b40acfb1",
+        "bytes": 744538
+      }
+    ],
+    "source": "/Users/antonioperedo/Desktop/badges/badge_family_compact_20261106/badges/steel/baseline/model.usdz",
+    "meshes": 2,
+    "material_sections": 6,
+    "materials": 1,
+    "material_names": {
+      "SilverChevron_Front": 2
+    },
+    "normal_interpolations": {
+      "faceVarying": 2
+    },
+    "primvars": {
+      "BadgeUV:texCoord2f[]:faceVarying": 2,
+      "displayColor:color3f[]:constant": 2,
+      "displayOpacity:float[]:constant": 2
+    },
+    "other_authored_attributes": {
+      "doubleSided": 2,
+      "subsetFamily:materialBind:familyType": 2
+    },
+    "non_triangular_faces": 0,
+    "transformed_meshes": [],
+    "protected_mesh_paths": [],
+    "triangles": 600,
+    "vertices": 448,
+    "bytes": 744538,
+    "status": "pending"
+  },
+  {
+    "key": "astralNavigator",
+    "slug": "astral_navigator",
+    "title": "Astral Navigator",
+    "dataset": "Badge3DPreviewAstralNavigator",
+    "source_sha256": "7722cd04d3b97da56fdb78d6c2801eeee7b64d0712845d836c5aee88c917dba8",
+    "aliases": [
+      {
+        "origin": "preview",
+        "dataset": "Badge3DPreviewAstralNavigator",
+        "name": "coin.usdz",
+        "path": "/Users/antonioperedo/Desktop/badges/emerald_trophy_20261025/preview/ScreenTime/SupportingFiles/Assets.xcassets/Badge3DPreviewAstralNavigator.dataset/coin.usdz",
+        "sha256": "7722cd04d3b97da56fdb78d6c2801eeee7b64d0712845d836c5aee88c917dba8",
+        "bytes": 5091458
+      },
+      {
+        "origin": "production",
+        "dataset": "Badge3DPreviewAstralNavigator",
+        "name": "astral_navigator_badge_mobile.usdz",
+        "path": "/Users/antonioperedo/Desktop/screen_time/ScreenTime/SupportingFiles/Assets.xcassets/Badge3DPreviewAstralNavigator.dataset/astral_navigator_badge_mobile.usdz",
+        "sha256": "7722cd04d3b97da56fdb78d6c2801eeee7b64d0712845d836c5aee88c917dba8",
+        "bytes": 5091458
+      }
+    ],
+    "source": "/Users/antonioperedo/Desktop/badges/badge_family_compact_20261106/badges/astral_navigator/baseline/model.usdz",
+    "meshes": 23,
+    "material_sections": 23,
+    "materials": 4,
+    "material_names": {
+      "CrestGem_SapphireAstral": 18,
+      "astral_navigator_field": 1,
+      "astral_navigator_metal": 2,
+      "astral_navigator_side": 2
+    },
+    "normal_interpolations": {
+      "uniform": 21,
+      "vertex": 2
+    },
+    "primvars": {
+      "displayColor:color3f[]:constant": 23,
+      "displayOpacity:float[]:constant": 23,
+      "BadgeUV:texCoord2f[]:vertex": 3
+    },
+    "other_authored_attributes": {},
+    "non_triangular_faces": 0,
+    "transformed_meshes": [],
+    "protected_mesh_paths": [
+      "/Badge/Part_202",
+      "/Badge/Part_203",
+      "/Badge/Part_205",
+      "/Badge/Part_206",
+      "/Badge/Part_208",
+      "/Badge/Part_209",
+      "/Badge/Part_211",
+      "/Badge/Part_212",
+      "/Badge/Part_214",
+      "/Badge/Part_215",
+      "/Badge/Part_217",
+      "/Badge/Part_218",
+      "/Badge/Part_220",
+      "/Badge/Part_221",
+      "/Badge/Part_223",
+      "/Badge/Part_224",
+      "/Badge/Part_226",
+      "/Badge/Part_227"
+    ],
+    "triangles": 88556,
+    "vertices": 73850,
+    "bytes": 5091458,
+    "status": "already_optimized"
+  },
+  {
+    "key": "auroraMountain",
+    "slug": "aurora_mountain",
+    "title": "Aurora Mountain",
+    "dataset": "Badge3DPreviewAuroraMountain",
+    "source_sha256": "13ba8517f5f94b2695b64eb5035c011d41ed01ce3e0fa807911b521745ca33e9",
+    "aliases": [
+      {
+        "origin": "preview",
+        "dataset": "Badge3DPreviewAuroraMountain",
+        "name": "coin.usdz",
+        "path": "/Users/antonioperedo/Desktop/badges/emerald_trophy_20261025/preview/ScreenTime/SupportingFiles/Assets.xcassets/Badge3DPreviewAuroraMountain.dataset/coin.usdz",
+        "sha256": "13ba8517f5f94b2695b64eb5035c011d41ed01ce3e0fa807911b521745ca33e9",
+        "bytes": 3926900
+      },
+      {
+        "origin": "production",
+        "dataset": "Badge3DPreviewAuroraMountain",
+        "name": "aurora_mountain_badge_mobile.usdz",
+        "path": "/Users/antonioperedo/Desktop/screen_time/ScreenTime/SupportingFiles/Assets.xcassets/Badge3DPreviewAuroraMountain.dataset/aurora_mountain_badge_mobile.usdz",
+        "sha256": "13ba8517f5f94b2695b64eb5035c011d41ed01ce3e0fa807911b521745ca33e9",
+        "bytes": 3926900
+      }
+    ],
+    "source": "/Users/antonioperedo/Desktop/badges/badge_family_compact_20261106/badges/aurora_mountain/baseline/model.usdz",
+    "meshes": 27,
+    "material_sections": 27,
+    "materials": 11,
+    "material_names": {
+      "AuroraMountain_sky": 1,
+      "AuroraMountain_gold_side": 2,
+      "AuroraMountain_silver": 2,
+      "AuroraMountain_gold_trim": 4,
+      "AuroraMountain_rock": 1,
+      "AuroraMountain_rock_edge": 1,
+      "AuroraMountain_gold": 2,
+      "AuroraMountain_star": 1,
+      "AuroraMountain_star_core": 1,
+      "AuroraMountain_star_minor": 11,
+      "CrestGem_Amethyst": 1
+    },
+    "normal_interpolations": {
+      "uniform": 19,
+      "vertex": 7,
+      "faceVarying": 1
+    },
+    "primvars": {
+      "AuroraUV:texCoord2f[]:vertex": 2,
+      "displayColor:color3f[]:constant": 27,
+      "displayOpacity:float[]:constant": 27
+    },
+    "other_authored_attributes": {},
+    "non_triangular_faces": 0,
+    "transformed_meshes": [],
+    "protected_mesh_paths": [
+      "/AuroraMountain/Part_26"
+    ],
+    "triangles": 51076,
+    "vertices": 38476,
+    "bytes": 3926900,
+    "status": "pending"
+  },
+  {
+    "key": "battleSteel",
+    "slug": "battle_steel",
+    "title": "Battle Steel",
+    "dataset": "Badge3DPreviewBattleSteel",
+    "source_sha256": "3729b12e8fba92035042f6e01ef3fc449d7ec673a816a36775456a90c306a037",
+    "aliases": [
+      {
+        "origin": "preview",
+        "dataset": "Badge3DPreviewBattleSteel",
+        "name": "coin.usdz",
+        "path": "/Users/antonioperedo/Desktop/badges/emerald_trophy_20261025/preview/ScreenTime/SupportingFiles/Assets.xcassets/Badge3DPreviewBattleSteel.dataset/coin.usdz",
+        "sha256": "3729b12e8fba92035042f6e01ef3fc449d7ec673a816a36775456a90c306a037",
+        "bytes": 9541569
+      },
+      {
+        "origin": "production",
+        "dataset": "Badge3DPreviewBattleSteel",
+        "name": "battle_steel_badge_mobile.usdz",
+        "path": "/Users/antonioperedo/Desktop/screen_time/ScreenTime/SupportingFiles/Assets.xcassets/Badge3DPreviewBattleSteel.dataset/battle_steel_badge_mobile.usdz",
+        "sha256": "3729b12e8fba92035042f6e01ef3fc449d7ec673a816a36775456a90c306a037",
+        "bytes": 9541569
+      }
+    ],
+    "source": "/Users/antonioperedo/Desktop/badges/badge_family_compact_20261106/badges/battle_steel/baseline/model.usdz",
+    "meshes": 8,
+    "material_sections": 8,
+    "materials": 5,
+    "material_names": {
+      "surface": 2,
+      "silver_edge": 1,
+      "gold_edge": 3,
+      "blue_edge": 1,
+      "star": 1
+    },
+    "normal_interpolations": {
+      "faceVarying": 8
+    },
+    "primvars": {
+      "CrestUV:texCoord2f[]:faceVarying": 8,
+      "displayColor:color3f[]:constant": 8,
+      "displayOpacity:float[]:constant": 8
+    },
+    "other_authored_attributes": {},
+    "non_triangular_faces": 0,
+    "transformed_meshes": [],
+    "protected_mesh_paths": [],
+    "triangles": 111268,
+    "vertices": 97332,
+    "bytes": 9541569,
+    "status": "pending"
+  },
+  {
+    "key": "bronzePhoenix",
+    "slug": "bronze_phoenix",
+    "title": "Bronze Phoenix",
+    "dataset": "Badge3DPreviewBronzePhoenix",
+    "source_sha256": "bbcc490975f53353fadcc3dc457e953fb966b259a1007b4c9d18d47f55f9369d",
+    "aliases": [
+      {
+        "origin": "preview",
+        "dataset": "Badge3DPreviewBronzePhoenix",
+        "name": "coin.usdz",
+        "path": "/Users/antonioperedo/Desktop/badges/emerald_trophy_20261025/preview/ScreenTime/SupportingFiles/Assets.xcassets/Badge3DPreviewBronzePhoenix.dataset/coin.usdz",
+        "sha256": "bbcc490975f53353fadcc3dc457e953fb966b259a1007b4c9d18d47f55f9369d",
+        "bytes": 7793876
+      },
+      {
+        "origin": "production",
+        "dataset": "Badge3DPreviewBronzePhoenix",
+        "name": "phoenix_badge_mobile.usdz",
+        "path": "/Users/antonioperedo/Desktop/screen_time/ScreenTime/SupportingFiles/Assets.xcassets/Badge3DPreviewBronzePhoenix.dataset/phoenix_badge_mobile.usdz",
+        "sha256": "bbcc490975f53353fadcc3dc457e953fb966b259a1007b4c9d18d47f55f9369d",
+        "bytes": 7793876
+      }
+    ],
+    "source": "/Users/antonioperedo/Desktop/badges/badge_family_compact_20261106/badges/bronze_phoenix/baseline/model.usdz",
+    "meshes": 7,
+    "material_sections": 7,
+    "materials": 4,
+    "material_names": {
+      "surface": 2,
+      "silver_edge": 1,
+      "gold_edge": 3,
+      "star": 1
+    },
+    "normal_interpolations": {
+      "faceVarying": 7
+    },
+    "primvars": {
+      "CrestUV:texCoord2f[]:faceVarying": 7,
+      "displayColor:color3f[]:constant": 7,
+      "displayOpacity:float[]:constant": 7
+    },
+    "other_authored_attributes": {},
+    "non_triangular_faces": 0,
+    "transformed_meshes": [],
+    "protected_mesh_paths": [],
+    "triangles": 87168,
+    "vertices": 57560,
+    "bytes": 7793876,
+    "status": "pending"
+  },
+  {
+    "key": "celestialOrbit",
+    "slug": "celestial_orbit",
+    "title": "Celestial Orbit",
+    "dataset": "Badge3DPreviewCelestialOrbit",
+    "source_sha256": "c048534dd688eb84d53724ba6178532530978a38fdeb8f8dc67b46254e654c82",
+    "aliases": [
+      {
+        "origin": "preview",
+        "dataset": "Badge3DPreviewCelestialOrbit",
+        "name": "coin.usdz",
+        "path": "/Users/antonioperedo/Desktop/badges/emerald_trophy_20261025/preview/ScreenTime/SupportingFiles/Assets.xcassets/Badge3DPreviewCelestialOrbit.dataset/coin.usdz",
+        "sha256": "c048534dd688eb84d53724ba6178532530978a38fdeb8f8dc67b46254e654c82",
+        "bytes": 7977219
+      },
+      {
+        "origin": "production",
+        "dataset": "Badge3DPreviewCelestialOrbit",
+        "name": "celestial_orbit_badge_mobile.usdz",
+        "path": "/Users/antonioperedo/Desktop/screen_time/ScreenTime/SupportingFiles/Assets.xcassets/Badge3DPreviewCelestialOrbit.dataset/celestial_orbit_badge_mobile.usdz",
+        "sha256": "c048534dd688eb84d53724ba6178532530978a38fdeb8f8dc67b46254e654c82",
+        "bytes": 7977219
+      }
+    ],
+    "source": "/Users/antonioperedo/Desktop/badges/badge_family_compact_20261106/badges/celestial_orbit/baseline/model.usdz",
+    "meshes": 6,
+    "material_sections": 6,
+    "materials": 3,
+    "material_names": {
+      "surface": 2,
+      "silver_edge": 3,
+      "star": 1
+    },
+    "normal_interpolations": {
+      "faceVarying": 6
+    },
+    "primvars": {
+      "CrestUV:texCoord2f[]:faceVarying": 6,
+      "displayColor:color3f[]:constant": 6,
+      "displayOpacity:float[]:constant": 6
+    },
+    "other_authored_attributes": {},
+    "non_triangular_faces": 0,
+    "transformed_meshes": [],
+    "protected_mesh_paths": [],
+    "triangles": 84372,
+    "vertices": 47158,
+    "bytes": 7977219,
+    "status": "pending"
+  },
+  {
+    "key": "crescentOcean",
+    "slug": "crescent_ocean",
+    "title": "Crescent Ocean",
+    "dataset": "Badge3DPreviewCrescentOcean",
+    "source_sha256": "9f8b386b77f815eb75527da162412580ff345e9ab5ff7ffacbfaa3b68450e071",
+    "aliases": [
+      {
+        "origin": "preview",
+        "dataset": "Badge3DPreviewCrescentOcean",
+        "name": "coin.usdz",
+        "path": "/Users/antonioperedo/Desktop/badges/emerald_trophy_20261025/preview/ScreenTime/SupportingFiles/Assets.xcassets/Badge3DPreviewCrescentOcean.dataset/coin.usdz",
+        "sha256": "9f8b386b77f815eb75527da162412580ff345e9ab5ff7ffacbfaa3b68450e071",
+        "bytes": 8416202
+      },
+      {
+        "origin": "production",
+        "dataset": "Badge3DPreviewCrescentOcean",
+        "name": "crescent_ocean_badge_mobile.usdz",
+        "path": "/Users/antonioperedo/Desktop/screen_time/ScreenTime/SupportingFiles/Assets.xcassets/Badge3DPreviewCrescentOcean.dataset/crescent_ocean_badge_mobile.usdz",
+        "sha256": "9f8b386b77f815eb75527da162412580ff345e9ab5ff7ffacbfaa3b68450e071",
+        "bytes": 8416202
+      }
+    ],
+    "source": "/Users/antonioperedo/Desktop/badges/badge_family_compact_20261106/badges/crescent_ocean/baseline/model.usdz",
+    "meshes": 5,
+    "material_sections": 5,
+    "materials": 4,
+    "material_names": {
+      "surface": 1,
+      "silver_edge": 2,
+      "blue_edge": 1,
+      "star": 1
+    },
+    "normal_interpolations": {
+      "faceVarying": 5
+    },
+    "primvars": {
+      "CrestUV:texCoord2f[]:faceVarying": 5,
+      "displayColor:color3f[]:constant": 5,
+      "displayOpacity:float[]:constant": 5
+    },
+    "other_authored_attributes": {},
+    "non_triangular_faces": 0,
+    "transformed_meshes": [],
+    "protected_mesh_paths": [],
+    "triangles": 95784,
+    "vertices": 69204,
+    "bytes": 8416202,
+    "status": "pending"
+  },
+  {
+    "key": "crimsonShield",
+    "slug": "crimson_shield",
+    "title": "Crimson Shield",
+    "dataset": "Badge3DPreviewCrimsonShield",
+    "source_sha256": "4f24cdfc041fcbd8d474eda1865c537fa8c20401a01dea45a308cafcacc4ada1",
+    "aliases": [
+      {
+        "origin": "preview",
+        "dataset": "Badge3DPreviewCrimsonShield",
+        "name": "coin.usdz",
+        "path": "/Users/antonioperedo/Desktop/badges/emerald_trophy_20261025/preview/ScreenTime/SupportingFiles/Assets.xcassets/Badge3DPreviewCrimsonShield.dataset/coin.usdz",
+        "sha256": "4f24cdfc041fcbd8d474eda1865c537fa8c20401a01dea45a308cafcacc4ada1",
+        "bytes": 4023595
+      },
+      {
+        "origin": "production",
+        "dataset": "Badge3DModelIron",
+        "name": "crimson_shield_badge_mobile.usdz",
+        "path": "/Users/antonioperedo/Desktop/screen_time/ScreenTime/SupportingFiles/Assets.xcassets/Badge3DModelIron.dataset/crimson_shield_badge_mobile.usdz",
+        "sha256": "4f24cdfc041fcbd8d474eda1865c537fa8c20401a01dea45a308cafcacc4ada1",
+        "bytes": 4023595
+      }
+    ],
+    "source": "/Users/antonioperedo/Desktop/badges/badge_family_compact_20261106/badges/crimson_shield/baseline/model.usdz",
+    "meshes": 6,
+    "material_sections": 6,
+    "materials": 6,
+    "material_names": {
+      "steel": 1,
+      "edge": 1,
+      "channel": 1,
+      "CrimsonShield_BrushedField": 1,
+      "red": 1,
+      "gem": 1
+    },
+    "normal_interpolations": {
+      "faceVarying": 6
+    },
+    "primvars": {
+      "displayColor:color3f[]:constant": 6,
+      "displayOpacity:float[]:constant": 6,
+      "ShieldUV:texCoord2f[]:faceVarying": 6
+    },
+    "other_authored_attributes": {},
+    "non_triangular_faces": 0,
+    "transformed_meshes": [],
+    "protected_mesh_paths": [],
+    "triangles": 47376,
+    "vertices": 33552,
+    "bytes": 4023595,
+    "status": "pending"
+  },
+  {
+    "key": "emberForge",
+    "slug": "ember_forge",
+    "title": "Ember Forge",
+    "dataset": "Badge3DPreviewEmberForge",
+    "source_sha256": "9026afdfb81d71490084a7ecba84d6e6fc2e9a8577a9b326e9b0798e0d038921",
+    "aliases": [
+      {
+        "origin": "preview",
+        "dataset": "Badge3DPreviewEmberForge",
+        "name": "coin.usdz",
+        "path": "/Users/antonioperedo/Desktop/badges/emerald_trophy_20261025/preview/ScreenTime/SupportingFiles/Assets.xcassets/Badge3DPreviewEmberForge.dataset/coin.usdz",
+        "sha256": "9026afdfb81d71490084a7ecba84d6e6fc2e9a8577a9b326e9b0798e0d038921",
+        "bytes": 2827811
+      },
+      {
+        "origin": "production",
+        "dataset": "Badge3DPreviewEmberForge",
+        "name": "ember_forge_badge_mobile.usdz",
+        "path": "/Users/antonioperedo/Desktop/screen_time/ScreenTime/SupportingFiles/Assets.xcassets/Badge3DPreviewEmberForge.dataset/ember_forge_badge_mobile.usdz",
+        "sha256": "9026afdfb81d71490084a7ecba84d6e6fc2e9a8577a9b326e9b0798e0d038921",
+        "bytes": 2827811
+      }
+    ],
+    "source": "/Users/antonioperedo/Desktop/badges/badge_family_compact_20261106/badges/ember_forge/baseline/model.usdz",
+    "meshes": 33,
+    "material_sections": 36,
+    "materials": 6,
+    "material_names": {
+      "ember_forge_metal": 6,
+      "ember_forge_copper": 8,
+      "ember_forge_field": 1,
+      "ember_forge_side": 13,
+      "ember_forge_flame": 4,
+      "ember_forge_ember_side": 1
+    },
+    "normal_interpolations": {
+      "uniform": 16,
+      "vertex": 17
+    },
+    "primvars": {
+      "BadgeUV:texCoord2f[]:vertex": 19,
+      "displayColor:color3f[]:constant": 33,
+      "displayOpacity:float[]:constant": 33
+    },
+    "other_authored_attributes": {
+      "subsetFamily:materialBind:familyType": 3
+    },
+    "non_triangular_faces": 0,
+    "transformed_meshes": [],
+    "protected_mesh_paths": [],
+    "triangles": 12340,
+    "vertices": 10832,
+    "bytes": 2827811,
+    "status": "pending"
+  },
+  {
+    "key": "emeraldArcher",
+    "slug": "emerald_archer",
+    "title": "Emerald Archer",
+    "dataset": "Badge3DPreviewEmeraldArcher",
+    "source_sha256": "b80d96f546d76237ed3eeedc41614f8ffe21b86f1e55eb721b8e6afae0c353c2",
+    "aliases": [
+      {
+        "origin": "preview",
+        "dataset": "Badge3DPreviewEmeraldArcher",
+        "name": "coin.usdz",
+        "path": "/Users/antonioperedo/Desktop/badges/emerald_trophy_20261025/preview/ScreenTime/SupportingFiles/Assets.xcassets/Badge3DPreviewEmeraldArcher.dataset/coin.usdz",
+        "sha256": "b80d96f546d76237ed3eeedc41614f8ffe21b86f1e55eb721b8e6afae0c353c2",
+        "bytes": 4413347
+      },
+      {
+        "origin": "production",
+        "dataset": "Badge3DModelEmeraldArcher",
+        "name": "emerald_archer_badge_mobile.usdz",
+        "path": "/Users/antonioperedo/Desktop/screen_time/ScreenTime/SupportingFiles/Assets.xcassets/Badge3DModelEmeraldArcher.dataset/emerald_archer_badge_mobile.usdz",
+        "sha256": "b80d96f546d76237ed3eeedc41614f8ffe21b86f1e55eb721b8e6afae0c353c2",
+        "bytes": 4413347
+      }
+    ],
+    "source": "/Users/antonioperedo/Desktop/badges/badge_family_compact_20261106/badges/emerald_archer/baseline/model.usdz",
+    "meshes": 17,
+    "material_sections": 21,
+    "materials": 9,
+    "material_names": {
+      "Silver___circumferential_brushed_steel_Mobile_Casing": 1,
+      "New_field": 2,
+      "New_gold": 2,
+      "New_gold_vein": 2,
+      "New_gold_edge": 2,
+      "New_setting_shadow": 2,
+      "New_emerald": 2,
+      "New_emerald_light": 2,
+      "New_emerald_dark": 2
+    },
+    "normal_interpolations": {
+      "faceVarying": 17
+    },
+    "primvars": {
+      "displayColor:color3f[]:constant": 17,
+      "displayOpacity:float[]:constant": 17,
+      "Machining_UV:texCoord2f[]:vertex": 1,
+      "RimBrushUV:texCoord2f[]:faceVarying": 1,
+      "RimSideUV:texCoord2f[]:faceVarying": 1,
+      "USDZ_UV:texCoord2f[]:vertex": 1,
+      "CoinReliefUV:texCoord2f[]:vertex": 16
+    },
+    "other_authored_attributes": {
+      "doubleSided": 17,
+      "subsetFamily:materialBind:familyType": 1
+    },
+    "non_triangular_faces": 0,
+    "transformed_meshes": [],
+    "protected_mesh_paths": [
+      "/Badge/Casing___smooth_rounded_outer_edge/Casing___smooth_rounded_outer_edge_mobile_geometry"
+    ],
+    "triangles": 62784,
+    "vertices": 44352,
+    "bytes": 4413347,
+    "status": "pending"
+  },
+  {
+    "key": "emeraldSprout",
+    "slug": "emerald_sprout",
+    "title": "Emerald Sprout",
+    "dataset": "Badge3DPreviewEmeraldSprout",
+    "source_sha256": "97129c73a399f82212b3a6064110019eac5529c0db6ac532599113ba3b00248e",
+    "aliases": [
+      {
+        "origin": "preview",
+        "dataset": "Badge3DPreviewEmeraldSprout",
+        "name": "coin.usdz",
+        "path": "/Users/antonioperedo/Desktop/badges/emerald_trophy_20261025/preview/ScreenTime/SupportingFiles/Assets.xcassets/Badge3DPreviewEmeraldSprout.dataset/coin.usdz",
+        "sha256": "97129c73a399f82212b3a6064110019eac5529c0db6ac532599113ba3b00248e",
+        "bytes": 3335464
+      },
+      {
+        "origin": "production",
+        "dataset": "Badge3DModelEmeraldSprout",
+        "name": "sprout_badge_mobile.usdz",
+        "path": "/Users/antonioperedo/Desktop/screen_time/ScreenTime/SupportingFiles/Assets.xcassets/Badge3DModelEmeraldSprout.dataset/sprout_badge_mobile.usdz",
+        "sha256": "97129c73a399f82212b3a6064110019eac5529c0db6ac532599113ba3b00248e",
+        "bytes": 3335464
+      }
+    ],
+    "source": "/Users/antonioperedo/Desktop/badges/badge_family_compact_20261106/badges/emerald_sprout/baseline/model.usdz",
+    "meshes": 22,
+    "material_sections": 62,
+    "materials": 6,
+    "material_names": {
+      "Inset___finely_textured_charcoal_Mobile_Inset": 1,
+      "Silver___circumferential_brushed_steel_Mobile_Casing": 1,
+      "Coin_emerald_Face": 4,
+      "Coin_gold_Face": 12,
+      "Coin_soil_Face": 2,
+      "Coin_emerald_background_Face": 2
+    },
+    "normal_interpolations": {
+      "faceVarying": 10,
+      "vertex": 12
+    },
+    "primvars": {
+      "displayColor:color3f[]:constant": 22,
+      "displayOpacity:float[]:constant": 22,
+      "USDZ_UV:texCoord2f[]:faceVarying": 1,
+      "UVMap:texCoord2f[]:faceVarying": 1,
+      "Machining_UV:texCoord2f[]:vertex": 1,
+      "RimBrushUV:texCoord2f[]:faceVarying": 1,
+      "RimSideUV:texCoord2f[]:faceVarying": 1,
+      "USDZ_UV:texCoord2f[]:vertex": 1,
+      "CoinReliefUV:texCoord2f[]:vertex": 20
+    },
+    "other_authored_attributes": {
+      "doubleSided": 22,
+      "userProperties:blender:data_name": 1,
+      "subsetFamily:materialBind:familyType": 19
+    },
+    "non_triangular_faces": 0,
+    "transformed_meshes": [],
+    "protected_mesh_paths": [
+      "/Badge/Inset___charcoal_textured_disk/Inset___charcoal_textured_disk_mobile_geometry",
+      "/Badge/Casing___smooth_rounded_outer_edge/Casing___smooth_rounded_outer_edge_mobile_geometry"
+    ],
+    "triangles": 28104,
+    "vertices": 25201,
+    "bytes": 3335464,
+    "status": "pending"
+  },
+  {
+    "key": "emeraldTrophy",
+    "slug": "emerald_trophy",
+    "title": "Emerald Trophy",
+    "dataset": "Badge3DPreviewEmeraldTrophy",
+    "source_sha256": "40da381680ec0b2e427b4dadb05e1fb8b0525aa800959cb0cba119e6c2027c0f",
+    "aliases": [
+      {
+        "origin": "preview",
+        "dataset": "Badge3DPreviewEmeraldTrophy",
+        "name": "coin.usdz",
+        "path": "/Users/antonioperedo/Desktop/badges/emerald_trophy_20261025/preview/ScreenTime/SupportingFiles/Assets.xcassets/Badge3DPreviewEmeraldTrophy.dataset/coin.usdz",
+        "sha256": "40da381680ec0b2e427b4dadb05e1fb8b0525aa800959cb0cba119e6c2027c0f",
+        "bytes": 10665594
+      },
+      {
+        "origin": "production",
+        "dataset": "Badge3DModelEmeraldTrophy",
+        "name": "emerald_trophy_badge_mobile.usdz",
+        "path": "/Users/antonioperedo/Desktop/screen_time/ScreenTime/SupportingFiles/Assets.xcassets/Badge3DModelEmeraldTrophy.dataset/emerald_trophy_badge_mobile.usdz",
+        "sha256": "40da381680ec0b2e427b4dadb05e1fb8b0525aa800959cb0cba119e6c2027c0f",
+        "bytes": 10665594
+      }
+    ],
+    "source": "/Users/antonioperedo/Desktop/badges/badge_family_compact_20261106/badges/emerald_trophy/baseline/model.usdz",
+    "meshes": 7,
+    "material_sections": 11,
+    "materials": 4,
+    "material_names": {
+      "Silver___circumferential_brushed_steel_Mobile_Casing": 1,
+      "New_relief": 2,
+      "New_wall": 2,
+      "New_field": 2
+    },
+    "normal_interpolations": {
+      "faceVarying": 7
+    },
+    "primvars": {
+      "displayColor:color3f[]:constant": 7,
+      "displayOpacity:float[]:constant": 7,
+      "Machining_UV:texCoord2f[]:vertex": 1,
+      "RimBrushUV:texCoord2f[]:faceVarying": 1,
+      "RimSideUV:texCoord2f[]:faceVarying": 1,
+      "USDZ_UV:texCoord2f[]:vertex": 1,
+      "CoinReliefUV:texCoord2f[]:vertex": 6
+    },
+    "other_authored_attributes": {
+      "doubleSided": 7,
+      "subsetFamily:materialBind:familyType": 1
+    },
+    "non_triangular_faces": 0,
+    "transformed_meshes": [],
+    "protected_mesh_paths": [
+      "/Badge/Casing___smooth_rounded_outer_edge/Casing___smooth_rounded_outer_edge_mobile_geometry"
+    ],
+    "triangles": 154724,
+    "vertices": 156916,
+    "bytes": 10665594,
+    "status": "pending"
+  },
+  {
+    "key": "frostwingCrystal",
+    "slug": "frostwing_crystal",
+    "title": "Frostwing Crystal",
+    "dataset": "Badge3DPreviewFrostwingCrystal",
+    "source_sha256": "691a57794db470e168d2bf86173af381f23af1783b3f27cff1ff2defc9209d3c",
+    "aliases": [
+      {
+        "origin": "preview",
+        "dataset": "Badge3DPreviewFrostwingCrystal",
+        "name": "coin.usdz",
+        "path": "/Users/antonioperedo/Desktop/badges/emerald_trophy_20261025/preview/ScreenTime/SupportingFiles/Assets.xcassets/Badge3DPreviewFrostwingCrystal.dataset/coin.usdz",
+        "sha256": "691a57794db470e168d2bf86173af381f23af1783b3f27cff1ff2defc9209d3c",
+        "bytes": 8899215
+      },
+      {
+        "origin": "production",
+        "dataset": "Badge3DPreviewFrostwingCrystal",
+        "name": "frostwing_dynamic_badge_mobile.usdz",
+        "path": "/Users/antonioperedo/Desktop/screen_time/ScreenTime/SupportingFiles/Assets.xcassets/Badge3DPreviewFrostwingCrystal.dataset/frostwing_dynamic_badge_mobile.usdz",
+        "sha256": "691a57794db470e168d2bf86173af381f23af1783b3f27cff1ff2defc9209d3c",
+        "bytes": 8899215
+      }
+    ],
+    "source": "/Users/antonioperedo/Desktop/badges/badge_family_compact_20261106/badges/frostwing_crystal/baseline/model.usdz",
+    "meshes": 8,
+    "material_sections": 8,
+    "materials": 4,
+    "material_names": {
+      "surface": 2,
+      "silver_edge": 2,
+      "blue_edge": 1,
+      "CrestGem_Ice": 3
+    },
+    "normal_interpolations": {
+      "faceVarying": 8
+    },
+    "primvars": {
+      "CrestUV:texCoord2f[]:faceVarying": 8,
+      "displayColor:color3f[]:constant": 8,
+      "displayOpacity:float[]:constant": 8
+    },
+    "other_authored_attributes": {},
+    "non_triangular_faces": 0,
+    "transformed_meshes": [],
+    "protected_mesh_paths": [
+      "/Crest/Relief_5",
+      "/Crest/Relief_6",
+      "/Crest/Relief_7"
+    ],
+    "triangles": 106512,
+    "vertices": 84566,
+    "bytes": 8899215,
+    "status": "pending"
+  },
+  {
+    "key": "goldenSands",
+    "slug": "golden_sands",
+    "title": "Golden Sands",
+    "dataset": "Badge3DPreviewGoldenSands",
+    "source_sha256": "a2bfc47deae88172c05b257638d778dc393ed3f5ee54958f05f5b37fe1d53603",
+    "aliases": [
+      {
+        "origin": "preview",
+        "dataset": "Badge3DPreviewGoldenSands",
+        "name": "coin.usdz",
+        "path": "/Users/antonioperedo/Desktop/badges/emerald_trophy_20261025/preview/ScreenTime/SupportingFiles/Assets.xcassets/Badge3DPreviewGoldenSands.dataset/coin.usdz",
+        "sha256": "a2bfc47deae88172c05b257638d778dc393ed3f5ee54958f05f5b37fe1d53603",
+        "bytes": 3744312
+      },
+      {
+        "origin": "production",
+        "dataset": "Badge3DModelGoldenSands",
+        "name": "hourglass_gold_badge_mobile.usdz",
+        "path": "/Users/antonioperedo/Desktop/screen_time/ScreenTime/SupportingFiles/Assets.xcassets/Badge3DModelGoldenSands.dataset/hourglass_gold_badge_mobile.usdz",
+        "sha256": "a2bfc47deae88172c05b257638d778dc393ed3f5ee54958f05f5b37fe1d53603",
+        "bytes": 3744312
+      }
+    ],
+    "source": "/Users/antonioperedo/Desktop/badges/badge_family_compact_20261106/badges/golden_sands/baseline/model.usdz",
+    "meshes": 22,
+    "material_sections": 62,
+    "materials": 6,
+    "material_names": {
+      "Inset___finely_textured_charcoal_Mobile_Inset": 1,
+      "Silver___circumferential_brushed_steel_Mobile_Casing": 1,
+      "Coin_glass_Face": 2,
+      "Coin_silver_Face": 10,
+      "Coin_sand_Face": 6,
+      "Coin_background_Face": 2
+    },
+    "normal_interpolations": {
+      "faceVarying": 2,
+      "vertex": 20
+    },
+    "primvars": {
+      "displayColor:color3f[]:constant": 22,
+      "displayOpacity:float[]:constant": 22,
+      "USDZ_UV:texCoord2f[]:faceVarying": 1,
+      "UVMap:texCoord2f[]:faceVarying": 1,
+      "Machining_UV:texCoord2f[]:vertex": 1,
+      "RimBrushUV:texCoord2f[]:faceVarying": 1,
+      "RimSideUV:texCoord2f[]:faceVarying": 1,
+      "USDZ_UV:texCoord2f[]:vertex": 1,
+      "CoinReliefUV:texCoord2f[]:vertex": 20
+    },
+    "other_authored_attributes": {
+      "doubleSided": 22,
+      "userProperties:blender:data_name": 1,
+      "subsetFamily:materialBind:familyType": 19
+    },
+    "non_triangular_faces": 0,
+    "transformed_meshes": [],
+    "protected_mesh_paths": [
+      "/Badge/Inset___charcoal_textured_disk/Inset___charcoal_textured_disk_mobile_geometry",
+      "/Badge/Casing___smooth_rounded_outer_edge/Casing___smooth_rounded_outer_edge_mobile_geometry"
+    ],
+    "triangles": 59262,
+    "vertices": 41569,
+    "bytes": 3744312,
+    "status": "pending"
+  },
+  {
+    "key": "islandSunset",
+    "slug": "island_sunset",
+    "title": "Island Sunset",
+    "dataset": "Badge3DPreviewIslandSunset",
+    "source_sha256": "5875dc664b2794f53052bc8157a3fcb1e9a59d9d83a919f3aefebb2033e8a053",
+    "aliases": [
+      {
+        "origin": "preview",
+        "dataset": "Badge3DPreviewIslandSunset",
+        "name": "coin.usdz",
+        "path": "/Users/antonioperedo/Desktop/badges/emerald_trophy_20261025/preview/ScreenTime/SupportingFiles/Assets.xcassets/Badge3DPreviewIslandSunset.dataset/coin.usdz",
+        "sha256": "5875dc664b2794f53052bc8157a3fcb1e9a59d9d83a919f3aefebb2033e8a053",
+        "bytes": 3488961
+      },
+      {
+        "origin": "production",
+        "dataset": "Badge3DModelIslandSunset",
+        "name": "island_sunset_badge_mobile.usdz",
+        "path": "/Users/antonioperedo/Desktop/screen_time/ScreenTime/SupportingFiles/Assets.xcassets/Badge3DModelIslandSunset.dataset/island_sunset_badge_mobile.usdz",
+        "sha256": "5875dc664b2794f53052bc8157a3fcb1e9a59d9d83a919f3aefebb2033e8a053",
+        "bytes": 3488961
+      }
+    ],
+    "source": "/Users/antonioperedo/Desktop/badges/badge_family_compact_20261106/badges/island_sunset/baseline/model.usdz",
+    "meshes": 11,
+    "material_sections": 15,
+    "materials": 6,
+    "material_names": {
+      "Silver___circumferential_brushed_steel_Mobile_Casing": 1,
+      "New_sky": 2,
+      "New_sea": 2,
+      "New_sun": 2,
+      "New_gold": 2,
+      "New_leaf": 2
+    },
+    "normal_interpolations": {
+      "faceVarying": 11
+    },
+    "primvars": {
+      "displayColor:color3f[]:constant": 11,
+      "displayOpacity:float[]:constant": 11,
+      "Machining_UV:texCoord2f[]:vertex": 1,
+      "RimBrushUV:texCoord2f[]:faceVarying": 1,
+      "RimSideUV:texCoord2f[]:faceVarying": 1,
+      "USDZ_UV:texCoord2f[]:vertex": 1,
+      "CoinReliefUV:texCoord2f[]:vertex": 10
+    },
+    "other_authored_attributes": {
+      "doubleSided": 11,
+      "subsetFamily:materialBind:familyType": 1
+    },
+    "non_triangular_faces": 0,
+    "transformed_meshes": [],
+    "protected_mesh_paths": [
+      "/Badge/Casing___smooth_rounded_outer_edge/Casing___smooth_rounded_outer_edge_mobile_geometry"
+    ],
+    "triangles": 39882,
+    "vertices": 35096,
+    "bytes": 3488961,
+    "status": "pending"
+  },
+  {
+    "key": "lightningCompass",
+    "slug": "lightning_compass",
+    "title": "Lightning Compass",
+    "dataset": "Badge3DPreviewLightningCompass",
+    "source_sha256": "1b7577bd34c0655c5babe98c6af29bb59e7d70e41e36a0358b1bc95fd66d0116",
+    "aliases": [
+      {
+        "origin": "preview",
+        "dataset": "Badge3DPreviewLightningCompass",
+        "name": "coin.usdz",
+        "path": "/Users/antonioperedo/Desktop/badges/emerald_trophy_20261025/preview/ScreenTime/SupportingFiles/Assets.xcassets/Badge3DPreviewLightningCompass.dataset/coin.usdz",
+        "sha256": "1b7577bd34c0655c5babe98c6af29bb59e7d70e41e36a0358b1bc95fd66d0116",
+        "bytes": 1800423
+      },
+      {
+        "origin": "production",
+        "dataset": "Badge3DModelLightningCompass",
+        "name": "lightning_compass_badge_mobile.usdz",
+        "path": "/Users/antonioperedo/Desktop/screen_time/ScreenTime/SupportingFiles/Assets.xcassets/Badge3DModelLightningCompass.dataset/lightning_compass_badge_mobile.usdz",
+        "sha256": "1b7577bd34c0655c5babe98c6af29bb59e7d70e41e36a0358b1bc95fd66d0116",
+        "bytes": 1800423
+      }
+    ],
+    "source": "/Users/antonioperedo/Desktop/badges/badge_family_compact_20261106/badges/lightning_compass/baseline/model.usdz",
+    "meshes": 5,
+    "material_sections": 9,
+    "materials": 3,
+    "material_names": {
+      "Silver___circumferential_brushed_steel_Mobile_Casing": 1,
+      "New_backdrop": 2,
+      "New_bronze": 2
+    },
+    "normal_interpolations": {
+      "faceVarying": 5
+    },
+    "primvars": {
+      "displayColor:color3f[]:constant": 5,
+      "displayOpacity:float[]:constant": 5,
+      "Machining_UV:texCoord2f[]:vertex": 1,
+      "RimBrushUV:texCoord2f[]:faceVarying": 1,
+      "RimSideUV:texCoord2f[]:faceVarying": 1,
+      "USDZ_UV:texCoord2f[]:vertex": 1,
+      "CoinReliefUV:texCoord2f[]:vertex": 4
+    },
+    "other_authored_attributes": {
+      "doubleSided": 5,
+      "subsetFamily:materialBind:familyType": 1
+    },
+    "non_triangular_faces": 0,
+    "transformed_meshes": [],
+    "protected_mesh_paths": [
+      "/Badge/Casing___smooth_rounded_outer_edge/Casing___smooth_rounded_outer_edge_mobile_geometry"
+    ],
+    "triangles": 8696,
+    "vertices": 14828,
+    "bytes": 1800423,
+    "status": "pending"
+  },
+  {
+    "key": "lunarCompass",
+    "slug": "lunar_compass",
+    "title": "Lunar Compass",
+    "dataset": "Badge3DPreviewLunarCompass",
+    "source_sha256": "03364708446b021e43585bbe862d440a44c82b85932d0296388865881b213e19",
+    "aliases": [
+      {
+        "origin": "preview",
+        "dataset": "Badge3DPreviewLunarCompass",
+        "name": "coin.usdz",
+        "path": "/Users/antonioperedo/Desktop/badges/emerald_trophy_20261025/preview/ScreenTime/SupportingFiles/Assets.xcassets/Badge3DPreviewLunarCompass.dataset/coin.usdz",
+        "sha256": "03364708446b021e43585bbe862d440a44c82b85932d0296388865881b213e19",
+        "bytes": 8332822
+      },
+      {
+        "origin": "production",
+        "dataset": "Badge3DPreviewLunarCompass",
+        "name": "lunar_compass_badge_mobile.usdz",
+        "path": "/Users/antonioperedo/Desktop/screen_time/ScreenTime/SupportingFiles/Assets.xcassets/Badge3DPreviewLunarCompass.dataset/lunar_compass_badge_mobile.usdz",
+        "sha256": "03364708446b021e43585bbe862d440a44c82b85932d0296388865881b213e19",
+        "bytes": 8332822
+      }
+    ],
+    "source": "/Users/antonioperedo/Desktop/badges/badge_family_compact_20261106/badges/lunar_compass/baseline/model.usdz",
+    "meshes": 7,
+    "material_sections": 7,
+    "materials": 4,
+    "material_names": {
+      "surface": 2,
+      "silver_edge": 3,
+      "blue_edge": 1,
+      "star": 1
+    },
+    "normal_interpolations": {
+      "faceVarying": 7
+    },
+    "primvars": {
+      "CrestUV:texCoord2f[]:faceVarying": 7,
+      "displayColor:color3f[]:constant": 7,
+      "displayOpacity:float[]:constant": 7
+    },
+    "other_authored_attributes": {},
+    "non_triangular_faces": 0,
+    "transformed_meshes": [],
+    "protected_mesh_paths": [],
+    "triangles": 88876,
+    "vertices": 51890,
+    "bytes": 8332822,
+    "status": "pending"
+  },
+  {
+    "key": "mountainCrest",
+    "slug": "mountain_crest",
+    "title": "Mountain Crest",
+    "dataset": "Badge3DPreviewMountainCrest",
+    "source_sha256": "45bc73ee3e1ca09161686ee00f4e449ca8fceb3ae46fe728fac8db6e468545b1",
+    "aliases": [
+      {
+        "origin": "preview",
+        "dataset": "Badge3DPreviewMountainCrest",
+        "name": "coin.usdz",
+        "path": "/Users/antonioperedo/Desktop/badges/emerald_trophy_20261025/preview/ScreenTime/SupportingFiles/Assets.xcassets/Badge3DPreviewMountainCrest.dataset/coin.usdz",
+        "sha256": "45bc73ee3e1ca09161686ee00f4e449ca8fceb3ae46fe728fac8db6e468545b1",
+        "bytes": 7596638
+      },
+      {
+        "origin": "production",
+        "dataset": "Badge3DPreviewMountainCrest",
+        "name": "mountain_crest_badge_mobile.usdz",
+        "path": "/Users/antonioperedo/Desktop/screen_time/ScreenTime/SupportingFiles/Assets.xcassets/Badge3DPreviewMountainCrest.dataset/mountain_crest_badge_mobile.usdz",
+        "sha256": "45bc73ee3e1ca09161686ee00f4e449ca8fceb3ae46fe728fac8db6e468545b1",
+        "bytes": 7596638
+      }
+    ],
+    "source": "/Users/antonioperedo/Desktop/badges/badge_family_compact_20261106/badges/mountain_crest/baseline/model.usdz",
+    "meshes": 3,
+    "material_sections": 3,
+    "materials": 3,
+    "material_names": {
+      "surface": 1,
+      "silver_edge": 1,
+      "gold_edge": 1
+    },
+    "normal_interpolations": {
+      "faceVarying": 3
+    },
+    "primvars": {
+      "CrestUV:texCoord2f[]:faceVarying": 3,
+      "displayColor:color3f[]:constant": 3,
+      "displayOpacity:float[]:constant": 3
+    },
+    "other_authored_attributes": {},
+    "non_triangular_faces": 0,
+    "transformed_meshes": [],
+    "protected_mesh_paths": [],
+    "triangles": 85740,
+    "vertices": 62570,
+    "bytes": 7596638,
+    "status": "pending"
+  },
+  {
+    "key": "rubyWingedCrest",
+    "slug": "ruby_winged_crest",
+    "title": "Ruby Winged Crest",
+    "dataset": "Badge3DPreviewRubyWingedCrest",
+    "source_sha256": "a956f46e998fc46b6b54213ebf6336660499904f09a27c8a88758b8ec575409a",
+    "aliases": [
+      {
+        "origin": "preview",
+        "dataset": "Badge3DPreviewRubyWingedCrest",
+        "name": "coin.usdz",
+        "path": "/Users/antonioperedo/Desktop/badges/emerald_trophy_20261025/preview/ScreenTime/SupportingFiles/Assets.xcassets/Badge3DPreviewRubyWingedCrest.dataset/coin.usdz",
+        "sha256": "a956f46e998fc46b6b54213ebf6336660499904f09a27c8a88758b8ec575409a",
+        "bytes": 9122356
+      },
+      {
+        "origin": "production",
+        "dataset": "Badge3DPreviewRubyWingedCrest",
+        "name": "ruby_wings_badge_mobile.usdz",
+        "path": "/Users/antonioperedo/Desktop/screen_time/ScreenTime/SupportingFiles/Assets.xcassets/Badge3DPreviewRubyWingedCrest.dataset/ruby_wings_badge_mobile.usdz",
+        "sha256": "a956f46e998fc46b6b54213ebf6336660499904f09a27c8a88758b8ec575409a",
+        "bytes": 9122356
+      }
+    ],
+    "source": "/Users/antonioperedo/Desktop/badges/badge_family_compact_20261106/badges/ruby_winged_crest/baseline/model.usdz",
+    "meshes": 11,
+    "material_sections": 11,
+    "materials": 3,
+    "material_names": {
+      "surface": 2,
+      "silver_edge": 2,
+      "CrestGem_Ruby": 7
+    },
+    "normal_interpolations": {
+      "faceVarying": 11
+    },
+    "primvars": {
+      "CrestUV:texCoord2f[]:faceVarying": 11,
+      "displayColor:color3f[]:constant": 11,
+      "displayOpacity:float[]:constant": 11
+    },
+    "other_authored_attributes": {},
+    "non_triangular_faces": 0,
+    "transformed_meshes": [],
+    "protected_mesh_paths": [
+      "/Crest/Relief_4",
+      "/Crest/Relief_5",
+      "/Crest/Relief_6",
+      "/Crest/Relief_7",
+      "/Crest/Relief_8",
+      "/Crest/Relief_9",
+      "/Crest/Relief_10"
+    ],
+    "triangles": 107132,
+    "vertices": 72862,
+    "bytes": 9122356,
+    "status": "pending"
+  },
+  {
+    "key": "sapphireStairway",
+    "slug": "sapphire_stairway",
+    "title": "Sapphire Stairway",
+    "dataset": "Badge3DPreviewSapphireStairway",
+    "source_sha256": "fcb626fd2da38a1326a9d3dd136415159745d9baf24852bab2c91a212fcdfe9f",
+    "aliases": [
+      {
+        "origin": "preview",
+        "dataset": "Badge3DPreviewSapphireStairway",
+        "name": "coin.usdz",
+        "path": "/Users/antonioperedo/Desktop/badges/emerald_trophy_20261025/preview/ScreenTime/SupportingFiles/Assets.xcassets/Badge3DPreviewSapphireStairway.dataset/coin.usdz",
+        "sha256": "fcb626fd2da38a1326a9d3dd136415159745d9baf24852bab2c91a212fcdfe9f",
+        "bytes": 7903811
+      },
+      {
+        "origin": "production",
+        "dataset": "Badge3DPreviewSapphireStairway",
+        "name": "sapphire_stairway_badge_mobile.usdz",
+        "path": "/Users/antonioperedo/Desktop/screen_time/ScreenTime/SupportingFiles/Assets.xcassets/Badge3DPreviewSapphireStairway.dataset/sapphire_stairway_badge_mobile.usdz",
+        "sha256": "fcb626fd2da38a1326a9d3dd136415159745d9baf24852bab2c91a212fcdfe9f",
+        "bytes": 7903811
+      }
+    ],
+    "source": "/Users/antonioperedo/Desktop/badges/badge_family_compact_20261106/badges/sapphire_stairway/baseline/model.usdz",
+    "meshes": 14,
+    "material_sections": 14,
+    "materials": 5,
+    "material_names": {
+      "surface": 2,
+      "silver_edge": 1,
+      "gold_edge": 2,
+      "blue_edge": 1,
+      "CrestGem_Sapphire": 8
+    },
+    "normal_interpolations": {
+      "faceVarying": 14
+    },
+    "primvars": {
+      "CrestUV:texCoord2f[]:faceVarying": 14,
+      "displayColor:color3f[]:constant": 14,
+      "displayOpacity:float[]:constant": 14
+    },
+    "other_authored_attributes": {},
+    "non_triangular_faces": 0,
+    "transformed_meshes": [],
+    "protected_mesh_paths": [
+      "/Crest/Relief_6",
+      "/Crest/Relief_7",
+      "/Crest/Relief_8",
+      "/Crest/Relief_9",
+      "/Crest/Relief_10",
+      "/Crest/Relief_11",
+      "/Crest/Relief_12",
+      "/Crest/Relief_13"
+    ],
+    "triangles": 88472,
+    "vertices": 53170,
+    "bytes": 7903811,
+    "status": "pending"
+  },
+  {
+    "key": "starAscent",
+    "slug": "star_ascent",
+    "title": "Star Ascent",
+    "dataset": "Badge3DPreviewStarAscent",
+    "source_sha256": "bcd70449eb26d061a6fb1af9997a14a87c9eaa571b1fda9e8880bd8da4bc5d8c",
+    "aliases": [
+      {
+        "origin": "preview",
+        "dataset": "Badge3DPreviewStarAscent",
+        "name": "coin.usdz",
+        "path": "/Users/antonioperedo/Desktop/badges/emerald_trophy_20261025/preview/ScreenTime/SupportingFiles/Assets.xcassets/Badge3DPreviewStarAscent.dataset/coin.usdz",
+        "sha256": "bcd70449eb26d061a6fb1af9997a14a87c9eaa571b1fda9e8880bd8da4bc5d8c",
+        "bytes": 2544168
+      },
+      {
+        "origin": "production",
+        "dataset": "Badge3DModelStarAscent",
+        "name": "star_ascent_badge_mobile.usdz",
+        "path": "/Users/antonioperedo/Desktop/screen_time/ScreenTime/SupportingFiles/Assets.xcassets/Badge3DModelStarAscent.dataset/star_ascent_badge_mobile.usdz",
+        "sha256": "bcd70449eb26d061a6fb1af9997a14a87c9eaa571b1fda9e8880bd8da4bc5d8c",
+        "bytes": 2544168
+      }
+    ],
+    "source": "/Users/antonioperedo/Desktop/badges/badge_family_compact_20261106/badges/star_ascent/baseline/model.usdz",
+    "meshes": 7,
+    "material_sections": 11,
+    "materials": 4,
+    "material_names": {
+      "Silver___circumferential_brushed_steel_Mobile_Casing": 1,
+      "New_charcoal": 2,
+      "New_cloud": 2,
+      "New_silver": 2
+    },
+    "normal_interpolations": {
+      "faceVarying": 7
+    },
+    "primvars": {
+      "displayColor:color3f[]:constant": 7,
+      "displayOpacity:float[]:constant": 7,
+      "Machining_UV:texCoord2f[]:vertex": 1,
+      "RimBrushUV:texCoord2f[]:faceVarying": 1,
+      "RimSideUV:texCoord2f[]:faceVarying": 1,
+      "USDZ_UV:texCoord2f[]:vertex": 1,
+      "CoinReliefUV:texCoord2f[]:vertex": 6
+    },
+    "other_authored_attributes": {
+      "doubleSided": 7,
+      "subsetFamily:materialBind:familyType": 1
+    },
+    "non_triangular_faces": 0,
+    "transformed_meshes": [],
+    "protected_mesh_paths": [
+      "/Badge/Casing___smooth_rounded_outer_edge/Casing___smooth_rounded_outer_edge_mobile_geometry"
+    ],
+    "triangles": 22604,
+    "vertices": 21934,
+    "bytes": 2544168,
+    "status": "pending"
+  },
+  {
+    "key": "sunrisePath",
+    "slug": "sunrise_path",
+    "title": "Sunrise Path",
+    "dataset": "Badge3DPreviewSunrisePath",
+    "source_sha256": "66cc669091b7627244beec99c9241931ff46c106566bcd4224ae7ac49e911687",
+    "aliases": [
+      {
+        "origin": "preview",
+        "dataset": "Badge3DPreviewSunrisePath",
+        "name": "coin.usdz",
+        "path": "/Users/antonioperedo/Desktop/badges/emerald_trophy_20261025/preview/ScreenTime/SupportingFiles/Assets.xcassets/Badge3DPreviewSunrisePath.dataset/coin.usdz",
+        "sha256": "66cc669091b7627244beec99c9241931ff46c106566bcd4224ae7ac49e911687",
+        "bytes": 3346749
+      },
+      {
+        "origin": "production",
+        "dataset": "Badge3DModelSunrisePath",
+        "name": "sunrise_badge_mobile.usdz",
+        "path": "/Users/antonioperedo/Desktop/screen_time/ScreenTime/SupportingFiles/Assets.xcassets/Badge3DModelSunrisePath.dataset/sunrise_badge_mobile.usdz",
+        "sha256": "66cc669091b7627244beec99c9241931ff46c106566bcd4224ae7ac49e911687",
+        "bytes": 3346749
+      }
+    ],
+    "source": "/Users/antonioperedo/Desktop/badges/badge_family_compact_20261106/badges/sunrise_path/baseline/model.usdz",
+    "meshes": 24,
+    "material_sections": 68,
+    "materials": 4,
+    "material_names": {
+      "Inset___finely_textured_charcoal_Mobile_Inset": 1,
+      "Silver___circumferential_brushed_steel_Mobile_Casing": 1,
+      "Coin_bronze_Face": 20,
+      "Coin_background_Face": 2
+    },
+    "normal_interpolations": {
+      "faceVarying": 2,
+      "vertex": 22
+    },
+    "primvars": {
+      "displayColor:color3f[]:constant": 24,
+      "displayOpacity:float[]:constant": 24,
+      "USDZ_UV:texCoord2f[]:faceVarying": 1,
+      "UVMap:texCoord2f[]:faceVarying": 1,
+      "Machining_UV:texCoord2f[]:vertex": 1,
+      "RimBrushUV:texCoord2f[]:faceVarying": 1,
+      "RimSideUV:texCoord2f[]:faceVarying": 1,
+      "USDZ_UV:texCoord2f[]:vertex": 1,
+      "CoinReliefUV:texCoord2f[]:vertex": 22
+    },
+    "other_authored_attributes": {
+      "doubleSided": 24,
+      "userProperties:blender:data_name": 1,
+      "subsetFamily:materialBind:familyType": 21
+    },
+    "non_triangular_faces": 0,
+    "transformed_meshes": [],
+    "protected_mesh_paths": [
+      "/Badge/Inset___charcoal_textured_disk/Inset___charcoal_textured_disk_mobile_geometry",
+      "/Badge/Casing___smooth_rounded_outer_edge/Casing___smooth_rounded_outer_edge_mobile_geometry"
+    ],
+    "triangles": 36314,
+    "vertices": 30029,
+    "bytes": 3346749,
+    "status": "pending"
+  },
+  {
+    "key": "tealSands",
+    "slug": "teal_sands",
+    "title": "Teal Sands",
+    "dataset": "Badge3DPreviewTealSands",
+    "source_sha256": "b053a3cebd721a4efd928ce332404e879d6fd52d3931706d9631f9c9046caada",
+    "aliases": [
+      {
+        "origin": "preview",
+        "dataset": "Badge3DPreviewTealSands",
+        "name": "coin.usdz",
+        "path": "/Users/antonioperedo/Desktop/badges/emerald_trophy_20261025/preview/ScreenTime/SupportingFiles/Assets.xcassets/Badge3DPreviewTealSands.dataset/coin.usdz",
+        "sha256": "b053a3cebd721a4efd928ce332404e879d6fd52d3931706d9631f9c9046caada",
+        "bytes": 3738095
+      },
+      {
+        "origin": "production",
+        "dataset": "Badge3DModelTealSands",
+        "name": "hourglass_teal_badge_mobile.usdz",
+        "path": "/Users/antonioperedo/Desktop/screen_time/ScreenTime/SupportingFiles/Assets.xcassets/Badge3DModelTealSands.dataset/hourglass_teal_badge_mobile.usdz",
+        "sha256": "b053a3cebd721a4efd928ce332404e879d6fd52d3931706d9631f9c9046caada",
+        "bytes": 3738095
+      }
+    ],
+    "source": "/Users/antonioperedo/Desktop/badges/badge_family_compact_20261106/badges/teal_sands/baseline/model.usdz",
+    "meshes": 22,
+    "material_sections": 62,
+    "materials": 6,
+    "material_names": {
+      "Inset___finely_textured_charcoal_Mobile_Inset": 1,
+      "Silver___circumferential_brushed_steel_Mobile_Casing": 1,
+      "Coin_glass_Face": 2,
+      "Coin_silver_Face": 10,
+      "Coin_sand_Face": 6,
+      "Coin_background_Face": 2
+    },
+    "normal_interpolations": {
+      "faceVarying": 2,
+      "vertex": 20
+    },
+    "primvars": {
+      "displayColor:color3f[]:constant": 22,
+      "displayOpacity:float[]:constant": 22,
+      "USDZ_UV:texCoord2f[]:faceVarying": 1,
+      "UVMap:texCoord2f[]:faceVarying": 1,
+      "Machining_UV:texCoord2f[]:vertex": 1,
+      "RimBrushUV:texCoord2f[]:faceVarying": 1,
+      "RimSideUV:texCoord2f[]:faceVarying": 1,
+      "USDZ_UV:texCoord2f[]:vertex": 1,
+      "CoinReliefUV:texCoord2f[]:vertex": 20
+    },
+    "other_authored_attributes": {
+      "doubleSided": 22,
+      "userProperties:blender:data_name": 1,
+      "subsetFamily:materialBind:familyType": 19
+    },
+    "non_triangular_faces": 0,
+    "transformed_meshes": [],
+    "protected_mesh_paths": [
+      "/Badge/Inset___charcoal_textured_disk/Inset___charcoal_textured_disk_mobile_geometry",
+      "/Badge/Casing___smooth_rounded_outer_edge/Casing___smooth_rounded_outer_edge_mobile_geometry"
+    ],
+    "triangles": 59262,
+    "vertices": 41569,
+    "bytes": 3738095,
+    "status": "pending"
+  },
+  {
+    "key": "tidalCompass",
+    "slug": "tidal_compass",
+    "title": "Tidal Compass",
+    "dataset": "Badge3DPreviewTidalCompass",
+    "source_sha256": "eb6b400a35a783ec3ba7f7fcc9e3d8a09cadb1befc0008df3c2eaf9ce42a46ab",
+    "aliases": [
+      {
+        "origin": "preview",
+        "dataset": "Badge3DPreviewTidalCompass",
+        "name": "coin.usdz",
+        "path": "/Users/antonioperedo/Desktop/badges/emerald_trophy_20261025/preview/ScreenTime/SupportingFiles/Assets.xcassets/Badge3DPreviewTidalCompass.dataset/coin.usdz",
+        "sha256": "eb6b400a35a783ec3ba7f7fcc9e3d8a09cadb1befc0008df3c2eaf9ce42a46ab",
+        "bytes": 2633693
+      },
+      {
+        "origin": "production",
+        "dataset": "Badge3DPreviewTidalCompass",
+        "name": "tidal_compass_badge_mobile.usdz",
+        "path": "/Users/antonioperedo/Desktop/screen_time/ScreenTime/SupportingFiles/Assets.xcassets/Badge3DPreviewTidalCompass.dataset/tidal_compass_badge_mobile.usdz",
+        "sha256": "eb6b400a35a783ec3ba7f7fcc9e3d8a09cadb1befc0008df3c2eaf9ce42a46ab",
+        "bytes": 2633693
+      }
+    ],
+    "source": "/Users/antonioperedo/Desktop/badges/badge_family_compact_20261106/badges/tidal_compass/baseline/model.usdz",
+    "meshes": 17,
+    "material_sections": 20,
+    "materials": 5,
+    "material_names": {
+      "tidal_compass_metal": 7,
+      "tidal_compass_field": 1,
+      "tidal_compass_side": 7,
+      "tidal_compass_wave": 1,
+      "tidal_compass_pearl": 1
+    },
+    "normal_interpolations": {
+      "vertex": 12,
+      "uniform": 5
+    },
+    "primvars": {
+      "BadgeUV:texCoord2f[]:vertex": 10,
+      "displayColor:color3f[]:constant": 17,
+      "displayOpacity:float[]:constant": 17
+    },
+    "other_authored_attributes": {
+      "subsetFamily:materialBind:familyType": 3
+    },
+    "non_triangular_faces": 0,
+    "transformed_meshes": [],
+    "protected_mesh_paths": [],
+    "triangles": 32844,
+    "vertices": 27722,
+    "bytes": 2633693,
+    "status": "pending"
+  },
+  {
+    "key": "torchSunburst",
+    "slug": "torch_sunburst",
+    "title": "Torch Sunburst",
+    "dataset": "Badge3DPreviewTorchSunburst",
+    "source_sha256": "8d848920a55b35d0a12a448bf379bf49dffdeef1d4752ebbd40f3caee1184d12",
+    "aliases": [
+      {
+        "origin": "preview",
+        "dataset": "Badge3DPreviewTorchSunburst",
+        "name": "coin.usdz",
+        "path": "/Users/antonioperedo/Desktop/badges/emerald_trophy_20261025/preview/ScreenTime/SupportingFiles/Assets.xcassets/Badge3DPreviewTorchSunburst.dataset/coin.usdz",
+        "sha256": "8d848920a55b35d0a12a448bf379bf49dffdeef1d4752ebbd40f3caee1184d12",
+        "bytes": 3242196
+      },
+      {
+        "origin": "production",
+        "dataset": "Badge3DModelTorchSunburst",
+        "name": "torch_sunburst_badge_mobile.usdz",
+        "path": "/Users/antonioperedo/Desktop/screen_time/ScreenTime/SupportingFiles/Assets.xcassets/Badge3DModelTorchSunburst.dataset/torch_sunburst_badge_mobile.usdz",
+        "sha256": "8d848920a55b35d0a12a448bf379bf49dffdeef1d4752ebbd40f3caee1184d12",
+        "bytes": 3242196
+      }
+    ],
+    "source": "/Users/antonioperedo/Desktop/badges/badge_family_compact_20261106/badges/torch_sunburst/baseline/model.usdz",
+    "meshes": 5,
+    "material_sections": 9,
+    "materials": 3,
+    "material_names": {
+      "Silver___circumferential_brushed_steel_Mobile_Casing": 1,
+      "New_backdrop": 2,
+      "New_bronze": 2
+    },
+    "normal_interpolations": {
+      "faceVarying": 5
+    },
+    "primvars": {
+      "displayColor:color3f[]:constant": 5,
+      "displayOpacity:float[]:constant": 5,
+      "Machining_UV:texCoord2f[]:vertex": 1,
+      "RimBrushUV:texCoord2f[]:faceVarying": 1,
+      "RimSideUV:texCoord2f[]:faceVarying": 1,
+      "USDZ_UV:texCoord2f[]:vertex": 1,
+      "CoinReliefUV:texCoord2f[]:vertex": 4
+    },
+    "other_authored_attributes": {
+      "doubleSided": 5,
+      "subsetFamily:materialBind:familyType": 1
+    },
+    "non_triangular_faces": 0,
+    "transformed_meshes": [],
+    "protected_mesh_paths": [
+      "/Badge/Casing___smooth_rounded_outer_edge/Casing___smooth_rounded_outer_edge_mobile_geometry"
+    ],
+    "triangles": 41888,
+    "vertices": 31400,
+    "bytes": 3242196,
+    "status": "pending"
+  },
+  {
+    "key": "waterDrop",
+    "slug": "water_drop",
+    "title": "Water Drop",
+    "dataset": "Badge3DPreviewWaterDrop",
+    "source_sha256": "dac3cea5d0ecf94cddfd8ee907fcbc5f9ebffda42b5d4f45dce3c7ad1ffbca29",
+    "aliases": [
+      {
+        "origin": "preview",
+        "dataset": "Badge3DPreviewWaterDrop",
+        "name": "coin.usdz",
+        "path": "/Users/antonioperedo/Desktop/badges/emerald_trophy_20261025/preview/ScreenTime/SupportingFiles/Assets.xcassets/Badge3DPreviewWaterDrop.dataset/coin.usdz",
+        "sha256": "dac3cea5d0ecf94cddfd8ee907fcbc5f9ebffda42b5d4f45dce3c7ad1ffbca29",
+        "bytes": 4154764
+      },
+      {
+        "origin": "production",
+        "dataset": "Badge3DModelWaterDrop",
+        "name": "clean_badge_mobile.usdz",
+        "path": "/Users/antonioperedo/Desktop/screen_time/ScreenTime/SupportingFiles/Assets.xcassets/Badge3DModelWaterDrop.dataset/clean_badge_mobile.usdz",
+        "sha256": "dac3cea5d0ecf94cddfd8ee907fcbc5f9ebffda42b5d4f45dce3c7ad1ffbca29",
+        "bytes": 4154764
+      }
+    ],
+    "source": "/Users/antonioperedo/Desktop/badges/badge_family_compact_20261106/badges/water_drop/baseline/model.usdz",
+    "meshes": 12,
+    "material_sections": 32,
+    "materials": 5,
+    "material_names": {
+      "Inset___finely_textured_charcoal_Mobile_Inset": 1,
+      "Silver___circumferential_brushed_steel_Mobile_Casing": 1,
+      "Coin_water_Face": 6,
+      "Coin_silver_Face": 2,
+      "Coin_background_Face": 2
+    },
+    "normal_interpolations": {
+      "faceVarying": 8,
+      "vertex": 4
+    },
+    "primvars": {
+      "displayColor:color3f[]:constant": 12,
+      "displayOpacity:float[]:constant": 12,
+      "USDZ_UV:texCoord2f[]:faceVarying": 1,
+      "UVMap:texCoord2f[]:faceVarying": 1,
+      "Machining_UV:texCoord2f[]:vertex": 1,
+      "RimBrushUV:texCoord2f[]:faceVarying": 1,
+      "RimSideUV:texCoord2f[]:faceVarying": 1,
+      "USDZ_UV:texCoord2f[]:vertex": 1,
+      "CoinReliefUV:texCoord2f[]:vertex": 10
+    },
+    "other_authored_attributes": {
+      "doubleSided": 12,
+      "userProperties:blender:data_name": 1,
+      "subsetFamily:materialBind:familyType": 9
+    },
+    "non_triangular_faces": 0,
+    "transformed_meshes": [],
+    "protected_mesh_paths": [
+      "/Badge/Inset___charcoal_textured_disk/Inset___charcoal_textured_disk_mobile_geometry",
+      "/Badge/Casing___smooth_rounded_outer_edge/Casing___smooth_rounded_outer_edge_mobile_geometry"
+    ],
+    "triangles": 37652,
+    "vertices": 30149,
+    "bytes": 4154764,
+    "status": "pending"
+  },
+  {
+    "key": "wingedSword",
+    "slug": "winged_sword",
+    "title": "Winged Sword",
+    "dataset": "Badge3DPreviewWingedSword",
+    "source_sha256": "00a0dfa50e3278cfd1a00d1a4d400b2cf0f047b162f563870267601fda665a56",
+    "aliases": [
+      {
+        "origin": "preview",
+        "dataset": "Badge3DPreviewWingedSword",
+        "name": "coin.usdz",
+        "path": "/Users/antonioperedo/Desktop/badges/emerald_trophy_20261025/preview/ScreenTime/SupportingFiles/Assets.xcassets/Badge3DPreviewWingedSword.dataset/coin.usdz",
+        "sha256": "00a0dfa50e3278cfd1a00d1a4d400b2cf0f047b162f563870267601fda665a56",
+        "bytes": 9622070
+      },
+      {
+        "origin": "production",
+        "dataset": "Badge3DPreviewWingedSword",
+        "name": "winged_sword_badge_mobile.usdz",
+        "path": "/Users/antonioperedo/Desktop/screen_time/ScreenTime/SupportingFiles/Assets.xcassets/Badge3DPreviewWingedSword.dataset/winged_sword_badge_mobile.usdz",
+        "sha256": "00a0dfa50e3278cfd1a00d1a4d400b2cf0f047b162f563870267601fda665a56",
+        "bytes": 9622070
+      }
+    ],
+    "source": "/Users/antonioperedo/Desktop/badges/badge_family_compact_20261106/badges/winged_sword/baseline/model.usdz",
+    "meshes": 3,
+    "material_sections": 3,
+    "materials": 3,
+    "material_names": {
+      "surface": 1,
+      "silver_edge": 1,
+      "blue_edge": 1
+    },
+    "normal_interpolations": {
+      "faceVarying": 3
+    },
+    "primvars": {
+      "CrestUV:texCoord2f[]:faceVarying": 3,
+      "displayColor:color3f[]:constant": 3,
+      "displayOpacity:float[]:constant": 3
+    },
+    "other_authored_attributes": {},
+    "non_triangular_faces": 0,
+    "transformed_meshes": [],
+    "protected_mesh_paths": [],
+    "triangles": 115460,
+    "vertices": 99004,
+    "bytes": 9622070,
+    "status": "pending"
+  },
+  {
+    "key": "zenBalance",
+    "slug": "zen_balance",
+    "title": "Zen Balance",
+    "dataset": "Badge3DPreviewZenBalance",
+    "source_sha256": "22a5dcfdfa42ec19fbbcae1da415b471781eb945e87e2b5780029a303a3d14cb",
+    "aliases": [
+      {
+        "origin": "preview",
+        "dataset": "Badge3DPreviewZenBalance",
+        "name": "coin.usdz",
+        "path": "/Users/antonioperedo/Desktop/badges/emerald_trophy_20261025/preview/ScreenTime/SupportingFiles/Assets.xcassets/Badge3DPreviewZenBalance.dataset/coin.usdz",
+        "sha256": "22a5dcfdfa42ec19fbbcae1da415b471781eb945e87e2b5780029a303a3d14cb",
+        "bytes": 3263631
+      },
+      {
+        "origin": "production",
+        "dataset": "Badge3DModelZenBalance",
+        "name": "zen_balance_badge_mobile.usdz",
+        "path": "/Users/antonioperedo/Desktop/screen_time/ScreenTime/SupportingFiles/Assets.xcassets/Badge3DModelZenBalance.dataset/zen_balance_badge_mobile.usdz",
+        "sha256": "22a5dcfdfa42ec19fbbcae1da415b471781eb945e87e2b5780029a303a3d14cb",
+        "bytes": 3263631
+      }
+    ],
+    "source": "/Users/antonioperedo/Desktop/badges/badge_family_compact_20261106/badges/zen_balance/baseline/model.usdz",
+    "meshes": 5,
+    "material_sections": 9,
+    "materials": 3,
+    "material_names": {
+      "Silver___circumferential_brushed_steel_Mobile_Casing": 1,
+      "New_backdrop": 2,
+      "New_bronze": 2
+    },
+    "normal_interpolations": {
+      "faceVarying": 5
+    },
+    "primvars": {
+      "displayColor:color3f[]:constant": 5,
+      "displayOpacity:float[]:constant": 5,
+      "Machining_UV:texCoord2f[]:vertex": 1,
+      "RimBrushUV:texCoord2f[]:faceVarying": 1,
+      "RimSideUV:texCoord2f[]:faceVarying": 1,
+      "USDZ_UV:texCoord2f[]:vertex": 1,
+      "CoinReliefUV:texCoord2f[]:vertex": 4
+    },
+    "other_authored_attributes": {
+      "doubleSided": 5,
+      "subsetFamily:materialBind:familyType": 1
+    },
+    "non_triangular_faces": 0,
+    "transformed_meshes": [],
+    "protected_mesh_paths": [
+      "/Badge/Casing___smooth_rounded_outer_edge/Casing___smooth_rounded_outer_edge_mobile_geometry"
+    ],
+    "triangles": 39616,
+    "vertices": 30164,
+    "bytes": 3263631,
+    "status": "pending"
+  }
+]

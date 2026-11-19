@@ -1,0 +1,2 @@
+Fresh review of Blue Hourglass version 10 (badge-reviewer), November 8, 2026. CLOSENESS: 66 (v8 66, v6 66, v3 55).
+Top fixes: glass walls and reflections with a smooth bright rim; deeper cobalt sand with shading and a wavy surface, no white stream segment; near black marble on both discs with crisp veins in the mockup's places and a flatter wall; narrower glass top with a collar and a lower shoulder; bottom stack proportions, plate brushing, platform step, post seats.

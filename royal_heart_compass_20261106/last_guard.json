@@ -1,0 +1,12 @@
+{
+  "action": "private native preview fallback",
+  "badge": "ruby_heart",
+  "owner_hold": false,
+  "allowed": true,
+  "required_seconds": 120.0,
+  "remaining_seconds": null,
+  "pacing_mode": "continuous",
+  "status": "active",
+  "phase": "work",
+  "checked_utc": "2026-11-08T04:56:07.833337+00:00"
+}

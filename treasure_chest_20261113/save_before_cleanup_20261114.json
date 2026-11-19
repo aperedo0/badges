@@ -1,0 +1,12 @@
+{
+  "saved_at": "2026-11-14T13:08:20.086534",
+  "scene": "Chest Complete Form Phase 1",
+  "objects": 315,
+  "scenes": 2,
+  "filepath": "/Users/antonioperedo/Desktop/badges/treasure_chest_20261113/treasure_chest.blend",
+  "candidate_copy": "/Users/antonioperedo/Desktop/badges/treasure_chest_20261113/phase01/candidate31/chest.blend",
+  "bytes": 9073826,
+  "sha256": "f6676c4901e0df21498c3b33fb61ed11a24743eac0000ec9ab70576ccd1bee9f",
+  "dirty": false,
+  "note": "Complete scene saved without rebuilding or changing modeling. Known candidate31 rig issues remain documented."
+}

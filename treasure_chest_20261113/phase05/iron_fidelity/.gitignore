@@ -1,0 +1,14 @@
+*.log
+render.lock
+__pycache__/
+.DS_Store
+live_before_selection.blend
+*/*.blend
+resources/*.html
+resources/*.js
+resources/*page*
+*/displacement.npz
+!N_charcoal_scale/displacement.npz
+!P_iron_knobs/displacement.npz
+O_local_planishing/local_planishing.npz
+relief_battered/

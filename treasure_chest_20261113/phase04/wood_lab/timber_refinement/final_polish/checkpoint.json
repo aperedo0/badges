@@ -1,0 +1,25 @@
+{
+  "commit": "97cce9c",
+  "baseline": "/Users/antonioperedo/Desktop/badges/treasure_chest_20261113/phase04/wood_lab/timber_refinement/AW_depth_hierarchy",
+  "sha256": "f16c9b03f31c882dcd732d5070b82e758ddd8b90d45ee0358550ba1f08b93c0b",
+  "dependencies": [
+    "master.blend",
+    "master_height.npz",
+    "surface.npz",
+    "albedo.png",
+    "roughness.png",
+    "normal.png",
+    "normal_masks.npz"
+  ],
+  "scope": "Existing test plank only",
+  "git_dependency_bytes_verified": {
+    "master.blend": true,
+    "master_height.npz": true,
+    "surface.npz": true,
+    "albedo.png": true,
+    "roughness.png": true,
+    "normal.png": true,
+    "normal_masks.npz": true
+  },
+  "reference": "treasure_chest_20261113/reference.png"
+}

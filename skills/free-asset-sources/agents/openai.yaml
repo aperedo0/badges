@@ -1,0 +1,4 @@
+interface:
+  display_name: "Free asset sources"
+  short_description: "Find, check and cache free CC0 textures and HDRIs with licenses recorded"
+  default_prompt: "Use $free-asset-sources to list, preview and download only the free maps or HDRI this material needs, and record their sources."

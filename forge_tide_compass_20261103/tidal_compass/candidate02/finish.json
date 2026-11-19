@@ -1,0 +1,27 @@
+{
+  "mode": "fitted",
+  "gain": 0.05,
+  "roles": [
+    "metal",
+    "field",
+    "side",
+    "wave",
+    "pearl"
+  ],
+  "texture_size": 1024,
+  "native_studio_measured": true,
+  "fit": {
+    "metal": {
+      "clean_samples": 18873,
+      "mean_physical_reflectance_factor": 0.6446879971731135
+    },
+    "pearl": {
+      "clean_samples": 75199,
+      "mean_physical_reflectance_factor": 0.592194917895792
+    },
+    "wave": {
+      "clean_samples": 58407,
+      "mean_physical_reflectance_factor": 0.39135655579376116
+    }
+  }
+}

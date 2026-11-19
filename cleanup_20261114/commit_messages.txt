@@ -1,0 +1,2 @@
+Badge workspace and chest: remove obsolete models, duplicate exports, screenshots, recordings and intermediate files, preserve current editable badges and both Ruby Heart versions, and save the spring driver fix and paused chest checkpoint
+Badge workspace and chest: remove obsolete files, preserve current badges and both Ruby Heart versions, and save the spring fix and paused checkpoint

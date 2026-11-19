@@ -1,0 +1,57 @@
+{
+  "status": "diagnostic_only_not_native",
+  "one_shared_crown_and_pavilion_plane_field": true,
+  "exact_original_front_silhouette": true,
+  "no_appearance_maps": true,
+  "original_clear_optical_shader": true,
+  "variants": [
+    {
+      "crown_slope": 0.45,
+      "pavilion_depth": 1.2,
+      "planes": [
+        67,
+        67
+      ]
+    },
+    {
+      "crown_slope": 0.45,
+      "pavilion_depth": 1.7,
+      "planes": [
+        67,
+        67
+      ]
+    },
+    {
+      "crown_slope": 0.45,
+      "pavilion_depth": 2.2,
+      "planes": [
+        67,
+        67
+      ]
+    },
+    {
+      "crown_slope": 0.65,
+      "pavilion_depth": 1.2,
+      "planes": [
+        68,
+        68
+      ]
+    },
+    {
+      "crown_slope": 0.65,
+      "pavilion_depth": 1.7,
+      "planes": [
+        68,
+        68
+      ]
+    },
+    {
+      "crown_slope": 0.65,
+      "pavilion_depth": 2.2,
+      "planes": [
+        68,
+        68
+      ]
+    }
+  ]
+}

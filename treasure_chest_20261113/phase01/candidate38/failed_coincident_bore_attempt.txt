@@ -1,0 +1,6 @@
+Traceback (most recent call last):
+  File "<string>", line 4, in <module>
+  File "hinge38", line 24, in <module>
+  File "hinge_geometry38", line 101, in boolean38
+  File "geometry36", line 81, in clean36
+AssertionError: ('Sliver cannot be locally collapsed', 2.3323810056443744e-11, 0.0026926021091639996)

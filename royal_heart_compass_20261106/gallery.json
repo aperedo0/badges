@@ -1,0 +1,42 @@
+[
+  {
+    "key": "rubyHeart",
+    "name": "Ruby Heart",
+    "slug": "ruby_heart",
+    "dataset": "Badge3DPreviewRubyHeart",
+    "source": "/Users/antonioperedo/Desktop/badges/royal_heart_compass_20261106/ruby_heart/candidate01/mobile/ruby_heart_badge_mobile.usdz",
+    "destination": "/Users/antonioperedo/Desktop/badges/emerald_trophy_20261025/preview/ScreenTime/SupportingFiles/Assets.xcassets/Badge3DPreviewRubyHeart.dataset"
+  },
+  {
+    "key": "amethystCrown",
+    "name": "Amethyst Crown",
+    "slug": "amethyst_crown",
+    "dataset": "Badge3DPreviewAmethystCrown",
+    "source": "/Users/antonioperedo/Desktop/badges/royal_heart_compass_20261106/amethyst_crown/candidate01/mobile/amethyst_crown_badge_mobile.usdz",
+    "destination": "/Users/antonioperedo/Desktop/badges/emerald_trophy_20261025/preview/ScreenTime/SupportingFiles/Assets.xcassets/Badge3DPreviewAmethystCrown.dataset"
+  },
+  {
+    "key": "rubyCrown",
+    "name": "Ruby Crown",
+    "slug": "ruby_crown",
+    "dataset": "Badge3DPreviewRubyCrown",
+    "source": "/Users/antonioperedo/Desktop/badges/royal_heart_compass_20261106/ruby_crown/candidate01/mobile/ruby_crown_badge_mobile.usdz",
+    "destination": "/Users/antonioperedo/Desktop/badges/emerald_trophy_20261025/preview/ScreenTime/SupportingFiles/Assets.xcassets/Badge3DPreviewRubyCrown.dataset"
+  },
+  {
+    "key": "emeraldCrown",
+    "name": "Emerald Crown",
+    "slug": "emerald_crown",
+    "dataset": "Badge3DPreviewEmeraldCrown",
+    "source": "/Users/antonioperedo/Desktop/badges/royal_heart_compass_20261106/emerald_crown/candidate01/mobile/emerald_crown_badge_mobile.usdz",
+    "destination": "/Users/antonioperedo/Desktop/badges/emerald_trophy_20261025/preview/ScreenTime/SupportingFiles/Assets.xcassets/Badge3DPreviewEmeraldCrown.dataset"
+  },
+  {
+    "key": "oceanNavigator",
+    "name": "Ocean Navigator",
+    "slug": "ocean_navigator",
+    "dataset": "Badge3DPreviewOceanNavigator",
+    "source": "/Users/antonioperedo/Desktop/badges/royal_heart_compass_20261106/ocean_navigator/candidate01/mobile/ocean_navigator_badge_mobile.usdz",
+    "destination": "/Users/antonioperedo/Desktop/badges/emerald_trophy_20261025/preview/ScreenTime/SupportingFiles/Assets.xcassets/Badge3DPreviewOceanNavigator.dataset"
+  }
+]

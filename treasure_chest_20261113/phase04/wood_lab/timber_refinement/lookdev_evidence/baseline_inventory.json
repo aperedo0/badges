@@ -1,0 +1,270 @@
+{
+  "source_file": "/Users/antonioperedo/Desktop/badges/treasure_chest_20261113/phase04/wood_lab/timber_refinement/U_scan_fibers/master.blend",
+  "source_sha256": "db859fe3e237e36eff2f75e07d5911dab31b0633f9a7018d32621fd8462a985d",
+  "live_was_dirty": false,
+  "frame": 0,
+  "scene": "Test plank master",
+  "vertices": 641121,
+  "geometry_sha256": "10c4200651f28b39f08d9dcecdad279bdcf666912af33ebfff8d62242992f5b4",
+  "material": "Wood Lab U_scan_fibers",
+  "nodes": [
+    {
+      "name": "Principled BSDF",
+      "type": "BSDF_PRINCIPLED",
+      "inputs": {
+        "Metallic": 0.0,
+        "IOR": 1.4600000381469727,
+        "Specular IOR Level": 0.5,
+        "Anisotropic": 0.11999999731779099,
+        "Coat Weight": 0.0
+      }
+    },
+    {
+      "name": "Material Output",
+      "type": "OUTPUT_MATERIAL"
+    },
+    {
+      "name": "Single plank explicit UV",
+      "type": "UVMAP"
+    },
+    {
+      "name": "Single plank albedo",
+      "type": "TEX_IMAGE",
+      "image": "albedo.png.002",
+      "path": "/Users/antonioperedo/Desktop/badges/treasure_chest_20261113/phase04/wood_lab/timber_refinement/U_scan_fibers/albedo.png",
+      "resolution": [
+        2048,
+        768
+      ],
+      "colorspace": "sRGB",
+      "interpolation": "Linear",
+      "extension": "EXTEND"
+    },
+    {
+      "name": "Single plank roughness",
+      "type": "TEX_IMAGE",
+      "image": "roughness.png.002",
+      "path": "/Users/antonioperedo/Desktop/badges/treasure_chest_20261113/phase04/wood_lab/timber_refinement/U_scan_fibers/roughness.png",
+      "resolution": [
+        2048,
+        768
+      ],
+      "colorspace": "Non-Color",
+      "interpolation": "Linear",
+      "extension": "EXTEND"
+    },
+    {
+      "name": "Single plank normal",
+      "type": "TEX_IMAGE",
+      "image": "normal.png.002",
+      "path": "/Users/antonioperedo/Desktop/badges/treasure_chest_20261113/phase04/wood_lab/timber_refinement/U_scan_fibers/normal.png",
+      "resolution": [
+        2048,
+        768
+      ],
+      "colorspace": "Non-Color",
+      "interpolation": "Linear",
+      "extension": "EXTEND"
+    },
+    {
+      "name": "Single plank physical tangent normal",
+      "type": "NORMAL_MAP",
+      "space": "TANGENT",
+      "uv": "ChestWoodUV_Sample44",
+      "strength": 1.0
+    }
+  ],
+  "lights": [
+    {
+      "name": "Lab Chest Development Key",
+      "matrix": [
+        [
+          0.8320503234863281,
+          0.3805597424507141,
+          -0.4035671651363373,
+          -4.0
+        ],
+        [
+          -0.5547001361846924,
+          0.5708398222923279,
+          -0.6053507924079895,
+          -6.0
+        ],
+        [
+          5.063652963599452e-08,
+          0.7275410294532776,
+          0.6860640645027161,
+          7.0
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "location": [
+        -4.0,
+        -6.0,
+        7.0
+      ],
+      "energy": 3300.0,
+      "color": [
+        1.0,
+        0.8399999737739563,
+        0.6499999761581421
+      ],
+      "size": 2.799999952316284,
+      "shape": "DISK",
+      "hide_render": false,
+      "data": "Chest Development Key.001"
+    },
+    {
+      "name": "Lab Chest Development Fill",
+      "matrix": [
+        [
+          0.5144954919815063,
+          -0.2529287040233612,
+          0.8193420767784119,
+          5.0
+        ],
+        [
+          0.8574931025505066,
+          0.15175704658031464,
+          -0.49160492420196533,
+          -3.0
+        ],
+        [
+          6.488523496273046e-08,
+          0.9555087089538574,
+          0.29496294260025024,
+          2.0
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "location": [
+        5.0,
+        -3.0,
+        2.0
+      ],
+      "energy": 440.0,
+      "color": [
+        0.7200000286102295,
+        0.8299999833106995,
+        1.0
+      ],
+      "size": 4.0,
+      "shape": "DISK",
+      "hide_render": false,
+      "data": "Chest Development Fill.001"
+    },
+    {
+      "name": "Lab Chest Development Rear",
+      "matrix": [
+        [
+          -0.8574929237365723,
+          0.36283382773399353,
+          -0.36477041244506836,
+          -3.0
+        ],
+        [
+          -0.5144957304000854,
+          -0.6047230362892151,
+          0.6079506874084473,
+          5.0
+        ],
+        [
+          4.2045561476911075e-10,
+          0.708986222743988,
+          0.7052223086357117,
+          6.0
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "location": [
+        -3.0,
+        5.0,
+        6.0
+      ],
+      "energy": 1200.0,
+      "color": [
+        1.0,
+        0.6000000238418579,
+        0.30000001192092896
+      ],
+      "size": 4.0,
+      "shape": "DISK",
+      "hide_render": false,
+      "data": "Chest Development Rear.001"
+    }
+  ],
+  "render": {
+    "engine": "CYCLES",
+    "samples": 128,
+    "device": "GPU",
+    "denoise": true,
+    "adaptive": true,
+    "threshold": 0.009999999776482582,
+    "resolution": [
+      1400,
+      1400,
+      100
+    ],
+    "filter_width": 1.5
+  },
+  "color": {
+    "view": "AgX",
+    "look": "AgX - Medium High Contrast",
+    "exposure": 0.0,
+    "gamma": 1.0
+  },
+  "camera": {
+    "name": "Whole chest evaluation",
+    "matrix": [
+      [
+        1.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      [
+        0.0,
+        0.0697563961148262,
+        -0.9975640773773193,
+        -45.0
+      ],
+      [
+        0.0,
+        0.9975640773773193,
+        0.0697563961148262,
+        3.0351459980010986
+      ],
+      [
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ]
+    ],
+    "type": "PERSP",
+    "ortho": 8.0,
+    "lens": 216.93966674804688
+  },
+  "layout": [
+    "PROPERTIES",
+    "OUTLINER",
+    "DOPESHEET_EDITOR",
+    "VIEW_3D",
+    "IMAGE_EDITOR"
+  ]
+}

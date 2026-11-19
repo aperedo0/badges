@@ -1,0 +1,34 @@
+[
+  {
+    "asset": "Studio Small 03",
+    "author": "Greg Zaal",
+    "page": "https://polyhaven.com/a/studio_small_03",
+    "license": "CC0",
+    "license_url": "https://polyhaven.com/license",
+    "download": "https://dl.polyhaven.org/file/ph-assets/HDRIs/hdr/1k/studio_small_03_1k.hdr",
+    "sha256": "30933d55e45f0795daf49f3cbefbe0e5ebcb821ee04fb0a2818c02ffc3938817",
+    "local": "studio_small_03_1k.hdr"
+  },
+  {
+    "asset": "Clean iron diagnostic",
+    "page": "https://google.github.io/filament/main/materials.html",
+    "srgb_hex": "#C4C6C6",
+    "purpose": "Published RGB approximation, diagnostic only"
+  },
+  {
+    "asset": "Battered Metal 02",
+    "author": "cgbookcase",
+    "page": "https://www.cgbookcase.com/textures/battered-metal-02",
+    "license": "CC0 as identified by official asset preview, free unrestricted per homepage",
+    "license_url": "https://www.cgbookcase.com/",
+    "source": "Official directly published 1K map images; archive CDN returned 403",
+    "urls": [
+      "https://cgbookcase.b-cdn.net/textures/thumbnails/BatteredMetal02_1K/BatteredMetal02_1K_Height.png",
+      "https://cgbookcase.b-cdn.net/textures/thumbnails/BatteredMetal02_1K/BatteredMetal02_1K_Roughness.png"
+    ],
+    "sha256": {
+      "Height.png": "521d57d4bb2a845775e7fc1781b308f0917b687b74cdc9738ba1617936e4ae80",
+      "Roughness.png": "a96f2e4eadf2676118129e8a9d25591a8851d5b5aef17e761bb285906d26632a"
+    }
+  }
+]

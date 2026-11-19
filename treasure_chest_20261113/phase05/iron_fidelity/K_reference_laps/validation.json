@@ -1,0 +1,36 @@
+{
+  "only_existing_lower_rim_changed": true,
+  "wood_geometry_uv_material_maps_exact": true,
+  "all_other_scene_objects_material_graphs_and_transforms_exact": true,
+  "original_complete_scene_preserved": true,
+  "lights_unchanged": true,
+  "original_environment_camera_and_color_management_unchanged": true,
+  "isolated_review_scene_allowed": true,
+  "original_outer_bounds_preserved": true,
+  "closed_two_faces_per_edge": true,
+  "rivet_contact_regions_exact": true,
+  "single_shared_reference": true,
+  "all_target_images_packed": true,
+  "vertices": 394816,
+  "polygons": 394816,
+  "file_sha256": "a5235d3308692778c3d7c6d6f7c5e1d0e914ab460fd132a405f4fd4147588d9d",
+  "wood_hashes": {
+    "points": "6c52635229763ca44c5b7cf1b842746e0c435463f3925b296fb97f50af05ea80",
+    "loops": "5cbf2e3d0a65a6430215841e19e6aec534cfed485b356131c9efbbb8c6dffb87",
+    "starts": "d021ef642310c2f7778e1048b088e88a2cd293aff069e35e8d8c0bfd5111771a",
+    "sizes": "23ce2905db386822b44dd927ef9e38c155c70a98c7de05d51b6d3bad2fd5ff10",
+    "material_indices": "0a6089fc9830affae5c8e0108fef850eeb4b67d835cc2befc1519c459273994b",
+    "normals": "f099cee7756bfeec0e1f1be65f62eff113e18b0876fba1a677d29f8a399f363d",
+    "uv:ChestWoodUV_Sample44": "aedc25160cff33ed5d42e961ba96a9d6a45e1915ca07305f42bb10aea43bf9e2",
+    "materials": [
+      [
+        "Chest Phase 1 neutral clay",
+        "abe93833dad709352cf209902e401fd352c16b8ebe711aaf956f7b8b46aff298"
+      ],
+      [
+        "Wood Lab BC_final_polish",
+        "2ee079d00500120a4c47da82e6104ace69fec4fc3f90e5539debb28b15897c3d"
+      ]
+    ]
+  }
+}

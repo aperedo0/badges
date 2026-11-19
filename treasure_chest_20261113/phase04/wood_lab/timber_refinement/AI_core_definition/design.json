@@ -1,0 +1,25 @@
+{
+  "source": "AH with local boundary reconstructed core pigment, one interrupted inner latewood arc and source gradient corrected normals",
+  "seed": 161143,
+  "texture_size": [
+    4096,
+    1536
+  ],
+  "fine_fibers": 2600,
+  "secondary_fibers": 1800,
+  "core_center": [
+    -1.31,
+    -1.35
+  ],
+  "core_radii": [
+    0.145,
+    0.17
+  ],
+  "normal_split": 0.0038,
+  "macro_grain_and_fractures_preserved": true,
+  "material": "Independent aged pigment, exposed broken fibers and roughness",
+  "height_min": -0.05104067549109459,
+  "normal_policy": "Actual source height gradient in reconstructed core; blend 0.7 on raised faces; inherited normal retained elsewhere",
+  "core_horizontal_pigment_mark_removed": true,
+  "extra_outer_growth_rings": false
+}

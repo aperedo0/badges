@@ -1,0 +1,4 @@
+interface:
+  display_name: "Badge plan"
+  short_description: "Plan a 3D badge build before modeling, with every risk in the app"
+  default_prompt: "Use $badge-plan to write this badge's build plan: how each part of the mockup is built in Blender, how it looks in the app at rest and through a full turn, and what can go wrong with a check for each. Then run $badge-plan-review."

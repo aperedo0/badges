@@ -1,0 +1,17 @@
+{
+ "Red": {"target": [0.90, 0.30, 0.09], "roughness": 0.18},
+ "Lemon": {"target": [0.84, 0.70, 0.22], "roughness": 0.22},
+ "Snow": {"target": [0.95, 0.94, 0.96], "roughness": 0.30},
+ "SnowLavender": {"target": [0.86, 0.82, 0.86], "roughness": 0.30},
+ "Cloud": {"target": [0.95, 0.93, 0.91], "roughness": 0.30},
+ "Teal": {"target": [0.09, 0.40, 0.54], "roughness": 0.18},
+ "Steel": {"target": [0.07, 0.30, 0.44], "roughness": 0.18},
+ "Navy": {"target": [0.05, 0.20, 0.38], "roughness": 0.18},
+ "Royal": {"target": [0.12, 0.23, 0.43], "roughness": 0.18},
+ "SunDisc": {"gradient": {"from": [0.86, 0.68, 0.22], "to": [0.90, 0.48, 0.12], "center": [653.5, 566.2], "radius": 195, "angle_deg": 250, "size_px": [1312, 1199]}, "roughness": 0.30},
+ "Gold": {"albedo": [1.0, 0.47, 0.0], "metallic": 1.0, "roughness": 0.26},
+ "GoldRing": {"albedo": [0.82, 0.31, 0.0], "metallic": 1.0, "roughness": 0.36},
+ "GoldLower": {"albedo": [0.30, 0.12, 0.004], "metallic": 1.0, "roughness": 0.30},
+ "Side": {"albedo": [0.48, 0.222, 0.009], "metallic": 1.0, "roughness": 0.55},
+ "Gem": {"albedo": [0.1, 0.55, 0.9], "roughness": 0.05}
+}

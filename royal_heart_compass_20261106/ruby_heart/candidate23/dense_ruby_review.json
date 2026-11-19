@@ -1,0 +1,22 @@
+{
+  "source_geometry": "candidate21",
+  "owner_confirmed_issue": "Large pink heart shape inside red edge",
+  "geometry_unchanged": true,
+  "material_representation": "Dense polished ruby body with native physical surface shading and reduced traced internal transmission",
+  "native_lit_body_color": [
+    0.3,
+    0.002,
+    0.06
+  ],
+  "surface_roughness": 0.13,
+  "dielectric_specular": 0.96,
+  "metallic": 0,
+  "clear_transport_weight": 0.15,
+  "real_refracted_paths_preserved": true,
+  "not_a_full_spectral_volume_solution": true,
+  "no_appearance_image_or_fixed_reflection": true,
+  "shared_studio_unchanged": true,
+  "other_profiles_unchanged": true,
+  "shader_sha256": "7f6c7ad8db3d7270a0d1905d39fb859dd854859021423acfab4f5dc29b7c0022",
+  "native_review_pending": true
+}

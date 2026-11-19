@@ -1,0 +1,284 @@
+[
+  {
+    "badge": "bronze",
+    "blender": "badge_family_compact_20261106/badges/bronze/candidate01/source/model.blend",
+    "export": "badge_family_compact_20261106/badges/bronze/candidate01/model.usdz",
+    "packed_textures_verified": true,
+    "superseded_folders": [
+      "bronze_silver_20261009/bronze"
+    ],
+    "export_sha256": "1d3893de626e7520281a82871c316a2d7dc00c4dabc9cc097d69c34b6660fb10"
+  },
+  {
+    "badge": "copper",
+    "blender": "badge_family_compact_20261106/badges/copper/candidate01/source/model.blend",
+    "export": "badge_family_compact_20261106/badges/copper/candidate01/model.usdz",
+    "packed_textures_verified": true,
+    "superseded_folders": [
+      "badge_realitykit_copper"
+    ],
+    "export_sha256": "cdf815ae8f55d4824a62673bfc8b5214d9c835e88cf90c7508ff25f4c7631058"
+  },
+  {
+    "badge": "gold",
+    "blender": "badge_family_compact_20261106/badges/gold/candidate01/source/model.blend",
+    "export": "badge_family_compact_20261106/badges/gold/candidate01/model.usdz",
+    "packed_textures_verified": true,
+    "superseded_folders": [
+      "gold_diamond_20261009/gold"
+    ],
+    "export_sha256": "0210e9abed7763898911e0e8727e5e8d3593a921953bc68ce8dc645908f9e6cb"
+  },
+  {
+    "badge": "iron",
+    "blender": "badge_family_compact_20261106/badges/iron/candidate01/source/model.blend",
+    "export": "badge_family_compact_20261106/badges/iron/candidate01/model.usdz",
+    "packed_textures_verified": true,
+    "superseded_folders": [
+      "badge_realitykit_iron",
+      "badge_variants2_20261008/iron2"
+    ],
+    "export_sha256": "597b02e21fdf8e4f9933d4d97ba1374aae78ba4b4d6fdd6a041a477e2310daf4"
+  },
+  {
+    "badge": "silver",
+    "blender": "badge_family_compact_20261106/badges/silver/candidate01/source/model.blend",
+    "export": "badge_family_compact_20261106/badges/silver/candidate01/model.usdz",
+    "packed_textures_verified": true,
+    "superseded_folders": [
+      "badge_variants2_20261008/silver2"
+    ],
+    "export_sha256": "0934e42a320ca6e3412246509f43fcf44512f398291a1252d71647705f434733"
+  },
+  {
+    "badge": "aurora_mountain",
+    "blender": "badge_family_compact_20261106/badges/aurora_mountain/candidate01/source/model.blend",
+    "export": "badge_family_compact_20261106/badges/aurora_mountain/candidate01/model.usdz",
+    "packed_textures_verified": true,
+    "superseded_folders": [
+      "aurora_mountain_20261101"
+    ],
+    "export_sha256": "8492201b63a4191fb5d86aa34c6218a765b37bc34b630081e38bb5d235d847e0"
+  },
+  {
+    "badge": "battle_steel",
+    "blender": "badge_family_compact_20261106/badges/battle_steel/candidate01/source/model.blend",
+    "export": "badge_family_compact_20261106/badges/battle_steel/candidate01/model.usdz",
+    "packed_textures_verified": true,
+    "superseded_folders": [
+      "four_crests_20261029/battle_steel"
+    ],
+    "export_sha256": "60fdfe092ee4582fd4c58b37c43fa84935cef6842d3b67108fda24e658873c08"
+  },
+  {
+    "badge": "bronze_phoenix",
+    "blender": "badge_family_compact_20261106/badges/bronze_phoenix/candidate01/source/model.blend",
+    "export": "badge_family_compact_20261106/badges/bronze_phoenix/candidate01/model.usdz",
+    "packed_textures_verified": true,
+    "superseded_folders": [
+      "bronze_phoenix_20261028/phoenix"
+    ],
+    "export_sha256": "0af5996d869e8ca7b96845ba9d5e799a641ebf648558965f01d9427f03b288ae"
+  },
+  {
+    "badge": "celestial_orbit",
+    "blender": "badge_family_compact_20261106/badges/celestial_orbit/candidate01/source/model.blend",
+    "export": "badge_family_compact_20261106/badges/celestial_orbit/candidate01/model.usdz",
+    "packed_textures_verified": true,
+    "superseded_folders": [
+      "four_crests_20261029/celestial_orbit"
+    ],
+    "export_sha256": "8065590e44eb5b122ea023a5c8b90e657826913536fec971b61317af7cfceef9"
+  },
+  {
+    "badge": "crescent_ocean",
+    "blender": "badge_family_compact_20261106/badges/crescent_ocean/candidate01/source/model.blend",
+    "export": "badge_family_compact_20261106/badges/crescent_ocean/candidate01/model.usdz",
+    "packed_textures_verified": true,
+    "superseded_folders": [
+      "three_crests_20261027/crescent_ocean"
+    ],
+    "export_sha256": "f3ee72f97431a0d20f4e84ddb1e83ac7eeab46b3cc57f92d9a8da2fdf9e5beff"
+  },
+  {
+    "badge": "ember_forge",
+    "blender": "badge_family_compact_20261106/badges/ember_forge/candidate01/source/model.blend",
+    "export": "badge_family_compact_20261106/badges/ember_forge/candidate01/model.usdz",
+    "packed_textures_verified": true,
+    "superseded_folders": [
+      "forge_tide_compass_20261103/ember_forge"
+    ],
+    "export_sha256": "b9b642895a8fc0a0fc83d2281af6377dbd1f02c84a70dab0808c25f3640a111c"
+  },
+  {
+    "badge": "emerald_archer",
+    "blender": "badge_family_compact_20261106/badges/emerald_archer/candidate01/source/model.blend",
+    "export": "badge_family_compact_20261106/badges/emerald_archer/candidate01/model.usdz",
+    "packed_textures_verified": true,
+    "superseded_folders": [
+      "emerald_archer_20261023"
+    ],
+    "export_sha256": "6941651371b922b416d27929fdc6857744b8bf39d9ea7268e73eb3a2194c4017"
+  },
+  {
+    "badge": "emerald_sprout",
+    "blender": "badge_family_compact_20261106/badges/emerald_sprout/candidate01/source/model.blend",
+    "export": "badge_family_compact_20261106/badges/emerald_sprout/candidate01/model.usdz",
+    "packed_textures_verified": true,
+    "superseded_folders": [
+      "botanical_match_20261014/sprout"
+    ],
+    "export_sha256": "90462a9ebb1c0c60d1ca33a1d8cf23b8e2bd709ac5ddc2aa72fe95f6f0c02feb"
+  },
+  {
+    "badge": "emerald_trophy",
+    "blender": "badge_family_compact_20261106/badges/emerald_trophy/candidate01/source/model.blend",
+    "export": "badge_family_compact_20261106/badges/emerald_trophy/candidate01/model.usdz",
+    "packed_textures_verified": true,
+    "superseded_folders": [
+      "emerald_trophy_20261025"
+    ],
+    "export_sha256": "625b6de8a5d212d1202660523bfcb99fada062352a0b6856e41a576c64670b87"
+  },
+  {
+    "badge": "frostwing_crystal",
+    "blender": "badge_family_compact_20261106/badges/frostwing_crystal/candidate01/source/model.blend",
+    "export": "badge_family_compact_20261106/badges/frostwing_crystal/candidate01/model.usdz",
+    "packed_textures_verified": true,
+    "superseded_folders": [
+      "four_crests_20261029/frostwing",
+      "stair_ruby_20261029/frostwing_dynamic"
+    ],
+    "export_sha256": "bd0ae00b65e0ee00806f9fea93902b951f53c065f84dd142e512ffb512cb3a10"
+  },
+  {
+    "badge": "golden_sands",
+    "blender": "badge_family_compact_20261106/badges/golden_sands/candidate01/source/model.blend",
+    "export": "badge_family_compact_20261106/badges/golden_sands/candidate01/model.usdz",
+    "packed_textures_verified": true,
+    "superseded_folders": [
+      "hourglass_match_20261014/hourglass_gold"
+    ],
+    "export_sha256": "a747ac40b1c7dc64468a5ae913fd07743315d08e4df6889ee4af0bc71522b895"
+  },
+  {
+    "badge": "island_sunset",
+    "blender": "badge_family_compact_20261106/badges/island_sunset/candidate01/source/model.blend",
+    "export": "badge_family_compact_20261106/badges/island_sunset/candidate01/model.usdz",
+    "packed_textures_verified": true,
+    "superseded_folders": [
+      "star_island_20261016/island_sunset"
+    ],
+    "export_sha256": "1e79512cb2956fc90d76e6c96e3fc0fe9c611f92b9dc8e85c329cee657dcf795"
+  },
+  {
+    "badge": "lightning_compass",
+    "blender": "badge_family_compact_20261106/badges/lightning_compass/candidate01/source/model.blend",
+    "export": "badge_family_compact_20261106/badges/lightning_compass/candidate01/model.usdz",
+    "packed_textures_verified": true,
+    "superseded_folders": [
+      "bronze_coins_20261018/lightning_compass"
+    ],
+    "export_sha256": "8b3c0bb1e007d604276f12275f7db52e36b430b802cc59e7a5baf891a5a0ff92"
+  },
+  {
+    "badge": "lunar_compass",
+    "blender": "badge_family_compact_20261106/badges/lunar_compass/candidate01/source/model.blend",
+    "export": "badge_family_compact_20261106/badges/lunar_compass/candidate01/model.usdz",
+    "packed_textures_verified": true,
+    "superseded_folders": [
+      "four_crests_20261029/lunar_compass"
+    ],
+    "export_sha256": "deb3e74f607ba8c4b1613269958e13d0eb29fe3f92c42dc21f8f0693b6dbbd58"
+  },
+  {
+    "badge": "ruby_winged_crest",
+    "blender": "badge_family_compact_20261106/badges/ruby_winged_crest/candidate01/source/model.blend",
+    "export": "badge_family_compact_20261106/badges/ruby_winged_crest/candidate01/model.usdz",
+    "packed_textures_verified": true,
+    "superseded_folders": [
+      "stair_ruby_20261029/ruby_wings"
+    ],
+    "export_sha256": "3de32bfd5c13c349504717af058a8d302ea3679ae08215e3cafaaac07d43f15f"
+  },
+  {
+    "badge": "sapphire_stairway",
+    "blender": "badge_family_compact_20261106/badges/sapphire_stairway/candidate01/source/model.blend",
+    "export": "badge_family_compact_20261106/badges/sapphire_stairway/candidate01/model.usdz",
+    "packed_textures_verified": true,
+    "superseded_folders": [
+      "stair_ruby_20261029/sapphire_stairway"
+    ],
+    "export_sha256": "04c61061e4ddf489903706af547f188036b4e98184902a659d6cf1bc047f5a6e"
+  },
+  {
+    "badge": "star_ascent",
+    "blender": "badge_family_compact_20261106/badges/star_ascent/candidate01/source/model.blend",
+    "export": "badge_family_compact_20261106/badges/star_ascent/candidate01/model.usdz",
+    "packed_textures_verified": true,
+    "superseded_folders": [
+      "star_island_20261016/star_ascent"
+    ],
+    "export_sha256": "144a908dbf2cc68e6ff939ba553f940bd1953840ccc90f2020f196c6c8c22ee2"
+  },
+  {
+    "badge": "sunrise_path",
+    "blender": "badge_family_compact_20261106/badges/sunrise_path/candidate01/source/model.blend",
+    "export": "badge_family_compact_20261106/badges/sunrise_path/candidate01/model.usdz",
+    "packed_textures_verified": true,
+    "superseded_folders": [
+      "botanical_match_20261014/sunrise"
+    ],
+    "export_sha256": "5dc5f2d7bbc5c130262308879b7f579edd4578b5abfc55093e4a596327292947"
+  },
+  {
+    "badge": "teal_sands",
+    "blender": "badge_family_compact_20261106/badges/teal_sands/candidate01/source/model.blend",
+    "export": "badge_family_compact_20261106/badges/teal_sands/candidate01/model.usdz",
+    "packed_textures_verified": true,
+    "superseded_folders": [
+      "hourglass_match_20261014/hourglass_teal"
+    ],
+    "export_sha256": "32f76af777b67b17b9ed8ef5eb764ab1da0dc1bfc84110fc0c59239e8fd550d9"
+  },
+  {
+    "badge": "tidal_compass",
+    "blender": "badge_family_compact_20261106/badges/tidal_compass/candidate01/source/model.blend",
+    "export": "badge_family_compact_20261106/badges/tidal_compass/candidate01/model.usdz",
+    "packed_textures_verified": true,
+    "superseded_folders": [
+      "forge_tide_compass_20261103/tidal_compass"
+    ],
+    "export_sha256": "c45df0f16a674751062e29d8914e66c26cc74f5e918e1b99dd814654c309c97c"
+  },
+  {
+    "badge": "torch_sunburst",
+    "blender": "badge_family_compact_20261106/badges/torch_sunburst/candidate01/source/model.blend",
+    "export": "badge_family_compact_20261106/badges/torch_sunburst/candidate01/model.usdz",
+    "packed_textures_verified": true,
+    "superseded_folders": [
+      "bronze_coins_20261018/torch_sunburst"
+    ],
+    "export_sha256": "945c271fef1266645f85ed4dc56332495a6b6424df7485d8e9744400ef90cf06"
+  },
+  {
+    "badge": "water_drop",
+    "blender": "badge_family_compact_20261106/badges/water_drop/candidate01/source/model.blend",
+    "export": "badge_family_compact_20261106/badges/water_drop/candidate01/model.usdz",
+    "packed_textures_verified": true,
+    "superseded_folders": [
+      "water_match_20261014"
+    ],
+    "export_sha256": "e47137ce82a5c55fde0b12fbf08e262c684a62574cd5b3dd2958e0d981b5a7ab"
+  },
+  {
+    "badge": "zen_balance",
+    "blender": "badge_family_compact_20261106/badges/zen_balance/candidate01/source/model.blend",
+    "export": "badge_family_compact_20261106/badges/zen_balance/candidate01/model.usdz",
+    "packed_textures_verified": true,
+    "superseded_folders": [
+      "bronze_coins_20261018/zen_balance"
+    ],
+    "export_sha256": "8208ca05752c292a17176b3b4c89fb25e95759be1c8fab30d6bbf2d1aea36f50"
+  }
+]

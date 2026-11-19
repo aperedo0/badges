@@ -1,0 +1,18 @@
+[
+ {
+  "asset": "Wood Cabinet Worn Long",
+  "site": "Poly Haven",
+  "page": "https://polyhaven.com/a/wood_cabinet_worn_long",
+  "license": "CC0",
+  "cache": "../../phase04/wood_lab/resources/wood_cabinet_worn_long",
+  "use": "fine fibre detail only (high pass of diffuse luminance and displacement); colour and broad bands not used"
+ },
+ {
+  "asset": "Metal055A",
+  "site": "ambientCG",
+  "page": "https://ambientcg.com/view?id=Metal055A",
+  "license": "CC0 1.0",
+  "cache": "../../phase05/lower_iron/resources/Metal055A",
+  "use": "roughness and displacement as fine grayscale surface detail on the simple iron; colour not used"
+ }
+]

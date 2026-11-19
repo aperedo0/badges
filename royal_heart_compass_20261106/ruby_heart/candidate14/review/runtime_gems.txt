@@ -1,0 +1,4 @@
+Badge gem attached: CrestGem_Rose mesh=Part_3 mirror=false
+Badge gem attached: CrestGem_Rose mesh=Part_4 mirror=false
+Badge gem attached: CrestGem_Rose mesh=Part_3 mirror=true
+Badge gem attached: CrestGem_Rose mesh=Part_4 mirror=true

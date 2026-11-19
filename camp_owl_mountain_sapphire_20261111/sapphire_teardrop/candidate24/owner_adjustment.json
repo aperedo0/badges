@@ -1,0 +1,27 @@
+{
+  "owner_request": "Front outline twenty percent thinner and more yellow gold.",
+  "rim_width_factor_min": 0.7999999999999995,
+  "rim_width_factor_max": 0.8000000000000009,
+  "rim_inner_edge_unchanged_before_whole_badge_translation": true,
+  "whole_badge_translation": [
+    -0.0018095970153808594,
+    -0.08498318493366241,
+    0.0
+  ],
+  "gem_cut_normals_uvs_and_runtime_unchanged": true,
+  "thickness_unchanged": true,
+  "expected_y_max": 2.7942428588867188,
+  "expected_y_min": -2.455,
+  "gold_reflectance_before": [
+    0.83,
+    0.43,
+    0.045
+  ],
+  "gold_reflectance_after": [
+    0.98,
+    0.68,
+    0.14
+  ],
+  "source": "candidate18",
+  "no_app_code_edits": true
+}

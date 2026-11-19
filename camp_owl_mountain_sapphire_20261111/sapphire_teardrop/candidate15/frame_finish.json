@@ -1,0 +1,9 @@
+{
+  "reason": "Reference broad gold band is an inward rising bezel chamfer. A parallel flat plate gives one flat reflection; smoothed normals across that plate make a false tube. This version changes actual geometry to a continuous inward rise.",
+  "outer_halfheight": 0.26,
+  "inner_halfheight": 0.4,
+  "frame_center_z": 0.43,
+  "gem_unchanged": true,
+  "all_uvs_unchanged": true,
+  "blender_review_pending": true
+}

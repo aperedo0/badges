@@ -1,0 +1,61 @@
+{
+  "version": 1,
+  "thread_id": "01a16b8e-9f81-76d1-8bd7-d0a939464547",
+  "workspace": "/Users/antonioperedo/Desktop/badges",
+  "status": "active",
+  "phase": "break",
+  "block": 15,
+  "started_epoch": 1794026623.244332,
+  "deadline_epoch": null,
+  "work_until_epoch": 1794075244.561768,
+  "break_until_epoch": 1794076444.561768,
+  "busy_until_epoch": 0,
+  "heartbeat_epoch": 1794075234.593697,
+  "checkpoint_seq": 80,
+  "active_badge": "amethyst_crown",
+  "next_action": "Block15 Amethyst17 retained working15meshes10realgems287004triangles; front/ref and genuine full turn9frames reviewed, exact cache verified. Six measured17poses guard DENIED and not started. Finial hard shading correction also guard DENIED; nothing changed, still needs smooth=True on two finial gold frames preserving hook geometry. Read RESUME.md for exact update and no unnecessary AO rebake.16allposes+turn now complete. No badge complete.",
+  "badges": {
+    "ruby_heart": {
+      "status": "working",
+      "blend": "/Users/antonioperedo/Desktop/badges/royal_heart_compass_20261106/ruby_heart/candidate15/source/ruby_heart_compact.blend",
+      "candidate": "/Users/antonioperedo/Desktop/badges/royal_heart_compass_20261106/ruby_heart/candidate15",
+      "reference": "/Users/antonioperedo/Desktop/badges/royal_heart_compass_20261106/ruby_heart/reference.png"
+    },
+    "amethyst_crown": {
+      "status": "working",
+      "blend": "/Users/antonioperedo/Desktop/badges/royal_heart_compass_20261106/amethyst_crown/candidate17/source/amethyst_crown_compact.blend",
+      "candidate": "/Users/antonioperedo/Desktop/badges/royal_heart_compass_20261106/amethyst_crown/candidate17",
+      "reference": "/Users/antonioperedo/Desktop/badges/royal_heart_compass_20261106/amethyst_crown/reference.png"
+    },
+    "ruby_crown": {
+      "status": "working",
+      "blend": "/Users/antonioperedo/Desktop/badges/royal_heart_compass_20261106/ruby_crown/candidate10/source/ruby_crown_compact.blend",
+      "candidate": "/Users/antonioperedo/Desktop/badges/royal_heart_compass_20261106/ruby_crown/candidate10",
+      "reference": "/Users/antonioperedo/Desktop/badges/royal_heart_compass_20261106/ruby_crown/reference.png"
+    },
+    "emerald_crown": {
+      "status": "working",
+      "blend": "/Users/antonioperedo/Desktop/badges/royal_heart_compass_20261106/emerald_crown/candidate04/source/emerald_crown_compact.blend",
+      "candidate": "/Users/antonioperedo/Desktop/badges/royal_heart_compass_20261106/emerald_crown/candidate04",
+      "reference": "/Users/antonioperedo/Desktop/badges/royal_heart_compass_20261106/emerald_crown/reference.png"
+    },
+    "ocean_navigator": {
+      "status": "working",
+      "blend": "/Users/antonioperedo/Desktop/badges/royal_heart_compass_20261106/ocean_navigator/candidate09/source/ocean_navigator_compact.blend",
+      "candidate": "/Users/antonioperedo/Desktop/badges/royal_heart_compass_20261106/ocean_navigator/candidate09",
+      "reference": "/Users/antonioperedo/Desktop/badges/royal_heart_compass_20261106/ocean_navigator/reference.png"
+    }
+  },
+  "owner_authorized_resume_epoch": 1794030000.0,
+  "owner_authorized_resume_local": "2026-11-06 21:40 America/Los_Angeles",
+  "resumed_at_epoch": 1794030000.008405,
+  "owner_scheduled_authorization_consumed": true,
+  "last_queue_basis": [
+    "ready",
+    14,
+    76,
+    1794073351965191387
+  ],
+  "last_queue_epoch": 1794073351.1907551,
+  "had_outage": false
+}

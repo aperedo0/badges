@@ -1,0 +1,43 @@
+{
+  "name": "Astral Navigator",
+  "selection": "astralNavigator",
+  "bounds": [
+    68,
+    48,
+    1178,
+    1158
+  ],
+  "textured_roles": [
+    "metal",
+    "field"
+  ],
+  "metal_roles": [
+    "metal"
+  ],
+  "desired_colors": {
+    "metal": [
+      0.48,
+      0.245,
+      0.067
+    ]
+  },
+  "roughness": {
+    "metal": 0.3,
+    "field": 0.52
+  },
+  "side_color": [
+    0.19,
+    0.115,
+    0.045
+  ],
+  "side_roughness": 0.49,
+  "method": "Concentric engraved gold dial, 180 physical scale marks, eight raised compass blades, reference traced scrolls and crescent ornaments, nine front Sapphire stones with nine matching reverse stones. Each is independently closed and convex with real crown and pavilion facets. Reference thin frame is local to this design and preserves all approved shared coin assets.",
+  "reference_size": [
+    1254,
+    1254
+  ],
+  "scale": 0.0049279279279279276,
+  "reference_center_x": 623.0000198981444,
+  "reference_top": 48,
+  "triangle_count": 88556
+}

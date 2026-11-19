@@ -1,0 +1,13 @@
+{
+  "original_complete_scene_geometry_materials_rig_and_transforms_preserved": true,
+  "test_plank_geometry_topology_corner_normals_uv_and_face_assignments_exact": true,
+  "other_parts_geometry_and_materials_exact": true,
+  "baseline_U_files_byte_identical": true,
+  "reference_shared_without_reimport": true,
+  "all_final_images_packed": true,
+  "normal_strength": 1.0,
+  "vertices": 641121,
+  "polygons": 643262,
+  "file_sha256": "cb6e1fa20ecf6537a70ae3a7951ed4c4a5f32bf8fbb38dcfe833c33b3d4d77b4",
+  "scope": "Fine normal texture, localized knot material and isolated review key light only"
+}

@@ -1,0 +1,114 @@
+[
+  {
+    "head": "Chest Upper Corner Front Rivet -1 -1",
+    "surface": 1.8750000157124553,
+    "seat_front": 1.8840000846944918,
+    "seat_exposure": 0.009000068982036424,
+    "dome_projection": 0.08186199575455433
+  },
+  {
+    "head": "Chest Upper Corner End Rivet -1 -1",
+    "surface": 2.775000021994355,
+    "seat_front": 2.784000360506198,
+    "seat_exposure": 0.009000338511842898,
+    "dome_projection": 0.07501803054286782
+  },
+  {
+    "head": "Chest Boot Front Rivet -1 -1",
+    "surface": 1.8650001041655706,
+    "seat_front": 1.8610001498141173,
+    "seat_exposure": -0.003999954351453283,
+    "dome_projection": 0.07570598731096467
+  },
+  {
+    "head": "Chest Boot End Rivet -1 -1",
+    "surface": 2.7750001316757924,
+    "seat_front": 2.7710003348597,
+    "seat_exposure": -0.003999796816092527,
+    "dome_projection": 0.06886198417535283
+  },
+  {
+    "head": "Chest Upper Corner Front Rivet -1 1",
+    "surface": 1.875000085733319,
+    "seat_front": 1.884000165189164,
+    "seat_exposure": 0.009000079455844912,
+    "dome_projection": 0.0818620463021631
+  },
+  {
+    "head": "Chest Upper Corner End Rivet -1 1",
+    "surface": 2.7750001440438297,
+    "seat_front": 2.7840003905931923,
+    "seat_exposure": 0.0090002465493626,
+    "dome_projection": 0.07501810005243925
+  },
+  {
+    "head": "Chest Boot Front Rivet -1 1",
+    "surface": 1.8650001281875817,
+    "seat_front": 1.861000230512328,
+    "seat_exposure": -0.00399989767525355,
+    "dome_projection": 0.0757059999346481
+  },
+  {
+    "head": "Chest Boot End Rivet -1 1",
+    "surface": 2.7750002365528275,
+    "seat_front": 2.771000270641075,
+    "seat_exposure": -0.003999965911752668,
+    "dome_projection": 0.06886188941841453
+  },
+  {
+    "head": "Chest Upper Corner Front Rivet 1 -1",
+    "surface": 1.875000085733319,
+    "seat_front": 1.884000165189164,
+    "seat_exposure": 0.009000079455844912,
+    "dome_projection": 0.0818620463021631
+  },
+  {
+    "head": "Chest Upper Corner End Rivet 1 -1",
+    "surface": 2.7750001440438297,
+    "seat_front": 2.7840003905931923,
+    "seat_exposure": 0.0090002465493626,
+    "dome_projection": 0.07501810005243925
+  },
+  {
+    "head": "Chest Boot Front Rivet 1 -1",
+    "surface": 1.8650001281875817,
+    "seat_front": 1.861000230512328,
+    "seat_exposure": -0.00399989767525355,
+    "dome_projection": 0.0757059999346481
+  },
+  {
+    "head": "Chest Boot End Rivet 1 -1",
+    "surface": 2.7750002365528275,
+    "seat_front": 2.771000270641075,
+    "seat_exposure": -0.003999965911752668,
+    "dome_projection": 0.06886188941841453
+  },
+  {
+    "head": "Chest Upper Corner Front Rivet 1 1",
+    "surface": 1.8750000157124553,
+    "seat_front": 1.8840000846944918,
+    "seat_exposure": 0.009000068982036424,
+    "dome_projection": 0.08186199575455433
+  },
+  {
+    "head": "Chest Upper Corner End Rivet 1 1",
+    "surface": 2.775000021994355,
+    "seat_front": 2.784000360506198,
+    "seat_exposure": 0.009000338511842898,
+    "dome_projection": 0.07501803054286782
+  },
+  {
+    "head": "Chest Boot Front Rivet 1 1",
+    "surface": 1.8650001041655706,
+    "seat_front": 1.8610001498141173,
+    "seat_exposure": -0.003999954351453283,
+    "dome_projection": 0.07570598731096467
+  },
+  {
+    "head": "Chest Boot End Rivet 1 1",
+    "surface": 2.7750001316757924,
+    "seat_front": 2.7710003348597,
+    "seat_exposure": -0.003999796816092527,
+    "dome_projection": 0.06886198417535283
+  }
+]

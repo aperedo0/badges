@@ -1,0 +1,37 @@
+{
+  "status": "validated_candidate",
+  "before": {
+    "meshes": 771,
+    "sections": 771,
+    "triangles": 289648,
+    "vertices": 148846
+  },
+  "after": {
+    "meshes": 17,
+    "sections": 17,
+    "triangles": 289648,
+    "vertices": 149273
+  },
+  "source_sha256": "720cef1f01186f167e3d3d29929b129afe6a16462df095f1f5c3b91fdb5c4530",
+  "output_sha256": "4bd163d246b04b316873cf4d0e6d50e4c85f5781cbf2ca5be13148f1825539e7",
+  "bytes_before": 23209114,
+  "bytes_after": 8966942,
+  "all_triangle_corner_attributes_and_materials_identical": true,
+  "all_material_graphs_unchanged": true,
+  "protected_meshes_unchanged": [
+    "/Badge/Part_110",
+    "/Badge/Part_163",
+    "/Badge/Part_216",
+    "/Badge/Part_320",
+    "/Badge/Part_373",
+    "/Badge/Part_426",
+    "/Badge/Part_430",
+    "/Badge/Part_434",
+    "/Badge/Part_725",
+    "/Badge/Part_737",
+    "/Badge/Part_749",
+    "/Badge/Part_758"
+  ],
+  "all_textures_byte_identical": true,
+  "arkit_valid": true
+}

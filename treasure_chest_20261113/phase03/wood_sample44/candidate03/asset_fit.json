@@ -1,0 +1,11 @@
+{
+  "core_bbox": [
+    544,
+    274,
+    680,
+    411
+  ],
+  "physical_core_mean_diameter": 0.335,
+  "measurement": "Approximate visible irregular rounded heartwood core bounds in the new photographic timber chart. Original reference styled map rejected after owner said the finish looked washed out and cartoony.",
+  "source": "wood_imagegen.png"
+}

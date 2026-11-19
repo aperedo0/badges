@@ -1,0 +1,19 @@
+{
+  "native_recording": true,
+  "model_sha256": "70f5887786199dfcb9d8538f7fc053e794ac4b383948f611d17fd1c7497cf809",
+  "local_watchdog_seconds": 16,
+  "process_pid": 19693,
+  "recording_began_epoch": 1794487826.013505,
+  "gesture_began_epoch": 1794487826.815169,
+  "verified_rest_header_y": 1413.5,
+  "video": {
+    "width": 1206,
+    "height": 2622,
+    "duration": "11.180000",
+    "nb_frames": "785"
+  },
+  "recording_stopped": true,
+  "motion_review_pending": false,
+  "reason": "Native local fallback gives a duration limit that separate MCP start and stop calls cannot guarantee during a connection or tool failure",
+  "motion_review": "Reviewed native one second interval contact sheet. Shows early turn, both sides, back and return with changing metal and gem facets. Finish defects remain, so this is not an appearance acceptance."
+}

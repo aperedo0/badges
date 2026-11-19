@@ -1,0 +1,3 @@
+import sys
+from pathlib import Path
+D=Path(__file__).resolve().parent;source=(D/'render.py').read_text();namespace={'__file__':str(D/'render.py'),'__name__':'__main__'};exec(source.rsplit('exec(compile(s,',1)[0],namespace);code=namespace['s'];injection="\nimport sys\nsys.path.insert(0,"+repr(str(D))+")\nfrom aov_iron import setup_iron_aovs\nsetup_iron_aovs(sc)\nraise SystemExit(0)\n";code=code.replace('code=code.replace(needle,setup+needle,1);exec',"code=code.replace(needle,setup+needle,1);code=code.replace('t=time.time();bpy.ops.render.render(write_still=True)',"+repr(injection)+"+'t=time.time();bpy.ops.render.render(write_still=True)');exec");exec(compile(code,'reused_render_with_temporary_aovs','exec'),namespace)

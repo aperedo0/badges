@@ -1,0 +1,6 @@
+{
+  "status": "diagnostic_only_not_native",
+  "actual_native_density_clamp_applied": true,
+  "one_uniform_absorption_in_actual_clear_ruby": true,
+  "no_color_or_reflection_images": true
+}

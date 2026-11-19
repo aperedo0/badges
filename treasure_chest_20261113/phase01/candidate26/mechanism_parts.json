@@ -1,0 +1,237 @@
+{
+  "stage": "Front hinge and hollow case constructed, clearance proof pending",
+  "moving_hasp": [
+    "Chest Front Hasp Barrel",
+    "Chest Curved Hasp Tongue",
+    "Chest Hasp Edge Rail -1",
+    "Chest Hasp Edge Rail 1"
+  ],
+  "lid_fixed": [
+    "Chest Hasp Mount",
+    "Chest Front Hinge Pin",
+    "Chest Fixed Front Hinge Knuckle -1",
+    "Chest Fixed Front Hinge Knuckle 1"
+  ],
+  "case_support": "Chest Central Lock Strap",
+  "body_fixed_case": [
+    "Chest Case Back With Key Bore",
+    "Chest Hollow Lock Case Walls",
+    "Chest Lock Backing With Bore",
+    "Chest Lock Border With Bore",
+    "Chest Shield Lock Plate With Bore"
+  ],
+  "actual_euler_proof": [
+    {
+      "part": "Attached receiver cheek -1 input A",
+      "closed": true,
+      "euler_characteristic": 0,
+      "positive_volume": 0.10048745493030731,
+      "triangles": 600
+    },
+    {
+      "part": "Attached receiver cheek -1 input B",
+      "closed": true,
+      "euler_characteristic": 2,
+      "positive_volume": 0.0060171620256624396,
+      "triangles": 188
+    },
+    {
+      "part": "Attached receiver cheek -1 result",
+      "closed": true,
+      "euler_characteristic": 0,
+      "positive_volume": 0.10517355991841648,
+      "triangles": 890
+    },
+    {
+      "part": "Chest Hollow Lock Case Walls",
+      "closed": true,
+      "euler_characteristic": 0,
+      "positive_volume": 0.10517355991841648,
+      "triangles": 890
+    },
+    {
+      "part": "Attached receiver cheek 1 input A",
+      "closed": true,
+      "euler_characteristic": 0,
+      "positive_volume": 0.10517355991841648,
+      "triangles": 890
+    },
+    {
+      "part": "Attached receiver cheek 1 input B",
+      "closed": true,
+      "euler_characteristic": 2,
+      "positive_volume": 0.006017164049900139,
+      "triangles": 188
+    },
+    {
+      "part": "Attached receiver cheek 1 result",
+      "closed": true,
+      "euler_characteristic": 0,
+      "positive_volume": 0.10985966703734047,
+      "triangles": 1174
+    },
+    {
+      "part": "Chest Hollow Lock Case Walls",
+      "closed": true,
+      "euler_characteristic": 0,
+      "positive_volume": 0.10985966703734047,
+      "triangles": 1174
+    },
+    {
+      "part": "Actual case receiver opening input A",
+      "closed": true,
+      "euler_characteristic": 0,
+      "positive_volume": 0.10985966703734047,
+      "triangles": 1174
+    },
+    {
+      "part": "Actual case receiver opening input B",
+      "closed": true,
+      "euler_characteristic": 2,
+      "positive_volume": 0.03628799873539137,
+      "triangles": 12
+    },
+    {
+      "part": "Actual case receiver opening result",
+      "closed": true,
+      "euler_characteristic": 0,
+      "positive_volume": 0.10314693251805007,
+      "triangles": 1254
+    },
+    {
+      "part": "Actual case receiver opening",
+      "closed": true,
+      "euler_characteristic": 0,
+      "positive_volume": 0.10314693251805007,
+      "triangles": 1254
+    },
+    {
+      "part": "Actual supported receiver guide bores input A",
+      "closed": true,
+      "euler_characteristic": 0,
+      "positive_volume": 0.10314693251805007,
+      "triangles": 1254
+    },
+    {
+      "part": "Actual supported receiver guide bores input B",
+      "closed": true,
+      "euler_characteristic": 2,
+      "positive_volume": 0.004098838275911822,
+      "triangles": 252
+    },
+    {
+      "part": "Actual supported receiver guide bores result",
+      "closed": true,
+      "euler_characteristic": -4,
+      "positive_volume": 0.10235002365068903,
+      "triangles": 2338
+    },
+    {
+      "part": "Actual supported receiver guide bores",
+      "closed": true,
+      "euler_characteristic": -4,
+      "positive_volume": 0.10235002365068903,
+      "triangles": 2338
+    },
+    {
+      "part": "Front cover receiver mouth input A",
+      "closed": true,
+      "euler_characteristic": 0,
+      "positive_volume": 0.08479341312538018,
+      "triangles": 2000
+    },
+    {
+      "part": "Front cover receiver mouth input B",
+      "closed": true,
+      "euler_characteristic": 2,
+      "positive_volume": 0.03628799873539137,
+      "triangles": 12
+    },
+    {
+      "part": "Front cover receiver mouth result",
+      "closed": true,
+      "euler_characteristic": 0,
+      "positive_volume": 0.08153286375265918,
+      "triangles": 2116
+    },
+    {
+      "part": "Front cover receiver mouth",
+      "closed": true,
+      "euler_characteristic": 0,
+      "positive_volume": 0.08153286375265918,
+      "triangles": 2116
+    },
+    {
+      "part": "Chest Lock Border With Bore",
+      "closed": true,
+      "euler_characteristic": 0,
+      "positive_volume": 0.018468428331589903,
+      "triangles": 440
+    },
+    {
+      "part": "Chest Lock Border With Bore receiver clearance input A",
+      "closed": true,
+      "euler_characteristic": 0,
+      "positive_volume": 0.018468432699604315,
+      "triangles": 440
+    },
+    {
+      "part": "Chest Lock Border With Bore receiver clearance input B",
+      "closed": true,
+      "euler_characteristic": 2,
+      "positive_volume": 0.03628799873539137,
+      "triangles": 12
+    },
+    {
+      "part": "Chest Lock Border With Bore receiver clearance result",
+      "closed": true,
+      "euler_characteristic": 0,
+      "positive_volume": 0.01802130028169065,
+      "triangles": 472
+    },
+    {
+      "part": "Chest Lock Border With Bore receiver clearance",
+      "closed": true,
+      "euler_characteristic": 0,
+      "positive_volume": 0.01802130028169065,
+      "triangles": 472
+    },
+    {
+      "part": "Chest Shield Lock Plate With Bore",
+      "closed": true,
+      "euler_characteristic": 0,
+      "positive_volume": 0.02323889107914756,
+      "triangles": 1680
+    },
+    {
+      "part": "Chest Shield Lock Plate With Bore receiver clearance input A",
+      "closed": true,
+      "euler_characteristic": 0,
+      "positive_volume": 0.023238890654256883,
+      "triangles": 1680
+    },
+    {
+      "part": "Chest Shield Lock Plate With Bore receiver clearance input B",
+      "closed": true,
+      "euler_characteristic": 2,
+      "positive_volume": 0.03628799873539137,
+      "triangles": 12
+    },
+    {
+      "part": "Chest Shield Lock Plate With Bore receiver clearance result",
+      "closed": true,
+      "euler_characteristic": 0,
+      "positive_volume": 0.02323889065425681,
+      "triangles": 1680
+    },
+    {
+      "part": "Chest Shield Lock Plate With Bore receiver clearance",
+      "closed": true,
+      "euler_characteristic": 0,
+      "positive_volume": 0.02323889065425681,
+      "triangles": 1680
+    }
+  ],
+  "complete_lock": false,
+  "opening_rig_complete": false
+}

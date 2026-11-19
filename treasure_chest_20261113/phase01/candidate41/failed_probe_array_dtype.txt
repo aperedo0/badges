@@ -1,0 +1,4 @@
+Traceback (most recent call last):
+  File "<string>", line 4, in <module>
+  File "board41", line 45, in <module>
+numpy._core._exceptions._UFuncOutputCastingError: Cannot cast ufunc 'divide' output from dtype('float64') to dtype('int64') with casting rule 'same_kind'

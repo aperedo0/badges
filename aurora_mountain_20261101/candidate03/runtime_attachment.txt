@@ -1,0 +1,4 @@
+Badge gem attached: CrestGem_Amethyst mesh=Part_26 mirror=false
+Badge gem attached: CrestGem_Amethyst mesh=Part_26 mirror=true
+Badge gem attached: DiamondGem mesh=DiamondGem_Facets mirror=false
+Badge gem attached: DiamondGem mesh=DiamondGem_Facets mirror=true

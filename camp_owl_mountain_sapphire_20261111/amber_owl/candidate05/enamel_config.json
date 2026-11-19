@@ -1,0 +1,25 @@
+{
+  "texture_px": 1024,
+  "materials": {
+    "EnamelOwlAmber": {
+      "roughness": 0.18,
+      "max_display": 0.93,
+      "gold_exclusion_border_px": 6
+    },
+    "EnamelOwlBlue": {
+      "roughness": 0.18,
+      "max_display": 0.93,
+      "gold_exclusion_border_px": 10000
+    },
+    "EnamelOwlCream": {
+      "roughness": 0.18,
+      "max_display": 0.93,
+      "gold_exclusion_border_px": 6
+    },
+    "EnamelOwlLemon": {
+      "roughness": 0.18,
+      "max_display": 0.93,
+      "gold_exclusion_border_px": 6
+    }
+  }
+}

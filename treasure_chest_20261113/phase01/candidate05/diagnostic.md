@@ -1,0 +1,5 @@
+Owner requested another detail pass after candidate04.
+
+Independent diagnostic: chest_detail_diagnostic, no build context. Hardware carried the main remaining differences: single flat lock instead of a raised shield and broad border over a backing; plain lock wings instead of stepped cheeks; narrow hasp with no rolled return or layered barrel ends; undersized keyhole; rectangular feet with weak flare and shoulders; low plain upper corner caps; small smooth handle pivots and narrow mounts; handle tube and bottom collars lacking mass; missing structural rivets and upright diamond studs; wide black lid seam. Lid band spacing and the basic body/lid proportions should stay.
+
+The refinement addresses those geometric points. Wood construction, surface weathering, final colors and material finish remain outside the current phase. The new backs retain plausible real chest construction, not a duplicated front lock. Actual Blender renders and a new independent review are required before returning the checkpoint.

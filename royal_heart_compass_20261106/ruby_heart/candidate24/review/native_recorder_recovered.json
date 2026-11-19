@@ -1,0 +1,21 @@
+{
+  "recording_valid": true,
+  "original_cli_returned_before_file_flush": true,
+  "original_early_size_assertion_failed": true,
+  "recovered_by_validated_ffprobe_and_actual_motion_review": true,
+  "no_recording_process_remains": true,
+  "validated_video": {
+    "programs": [],
+    "stream_groups": [],
+    "streams": [
+      {
+        "codec_name": "h264",
+        "width": 1206,
+        "height": 2622
+      }
+    ],
+    "format": {
+      "duration": "12.111667"
+    }
+  }
+}

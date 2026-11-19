@@ -1,0 +1,12 @@
+{
+  "source": "AW_depth_hierarchy",
+  "change": "One bounded shock step restricted to existing resolved broad grain transitions",
+  "max_change": [
+    -0.0014029741287231445,
+    0.0014031268656253815
+  ],
+  "fine_band_unchanged": true,
+  "core_primary_fractures_boundaries_protected": true,
+  "new_features": 0,
+  "material_lighting_unchanged": true
+}

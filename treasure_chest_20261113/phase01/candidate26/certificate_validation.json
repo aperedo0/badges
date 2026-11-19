@@ -1,0 +1,9 @@
+{
+  "actual_source_function_tested": true,
+  "tests": {
+    "clear_plane_triangle_certified": 0.06823843082631756,
+    "triangle_crossing_plane_rejected": true,
+    "long_thin_clear_triangle_certified": 0.0043716635506650565,
+    "arc_with_clear_endpoints_and_hidden_middle_obstacle_not_certified": true
+  }
+}

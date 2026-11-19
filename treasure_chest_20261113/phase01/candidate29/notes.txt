@@ -1,0 +1,2 @@
+Actual keyed cam, rear192segment crank, hub, axial flange and fixed front C bearing built and saved as connected closed solids. Cam and bearing have zero triangle intersection pairs at current rest.
+First internal group only. No carrier, retaining pin, guides, actual key or motion controllers yet. No closed keyhole appearance or internal cutaway review yet.

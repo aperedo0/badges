@@ -1,0 +1,30 @@
+{
+  "optical_meshes": 2,
+  "physical_stones": 1,
+  "model_and_reflection_attachments": 4,
+  "all_intended_profiles_attached": true,
+  "no_fallback_gems": true,
+  "log": "/Users/antonioperedo/Desktop/badges/royal_heart_compass_20261106/ruby_heart/candidate25/review/native_runtime_1794113767.log",
+  "one_continuous_ruby_volume": true,
+  "optical_domains": 2,
+  "runtime_shader_sha256": "03de776f19ea72cd81549d62460fa277c838ab4e459a6fc57571511287044845",
+  "actual_native_optical_profiles": [
+    {
+      "density": 0.5,
+      "exposure": 0.6813571
+    },
+    {
+      "density": 0.5,
+      "exposure": 0.6813571
+    },
+    {
+      "density": 0.5,
+      "exposure": 0.6813571
+    },
+    {
+      "density": 0.5,
+      "exposure": 0.6813571
+    }
+  ],
+  "expected_uniform_color_profile_verified": true
+}

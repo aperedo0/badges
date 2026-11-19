@@ -1,0 +1,13 @@
+{
+  "source": "candidate04",
+  "measured_projection": true,
+  "gem_scale_x": 1.2059824560695802,
+  "gem_scale_y": 0.7360759871030267,
+  "gem_shift_y": 0.17602993804355285,
+  "removed_generic_parts": 246,
+  "laurel_leaves": 44,
+  "closed_acanthus_leaves": 28,
+  "pave_stones": 112,
+  "all_arches_and_hub_preserved": true,
+  "no_appearance_photos_in_gems_or_gold": true
+}

@@ -1,0 +1,176 @@
+{
+  "method": "Angle weighted actual geometric bevel normals, colored face normals retained, no artificial shallow tilt or side barrel sweep.",
+  "parts": [
+    {
+      "name": "blue_glass_sky",
+      "real_metal_triangles": 665,
+      "walls_constant_through_depth": true
+    },
+    {
+      "name": "sun_ray_0",
+      "real_metal_triangles": 51,
+      "walls_constant_through_depth": true
+    },
+    {
+      "name": "sun_ray_1",
+      "real_metal_triangles": 66,
+      "walls_constant_through_depth": true
+    },
+    {
+      "name": "sun_ray_2",
+      "real_metal_triangles": 64,
+      "walls_constant_through_depth": true
+    },
+    {
+      "name": "sun_ray_3",
+      "real_metal_triangles": 102,
+      "walls_constant_through_depth": true
+    },
+    {
+      "name": "sun_ray_4",
+      "real_metal_triangles": 68,
+      "walls_constant_through_depth": true
+    },
+    {
+      "name": "round_amber_sun",
+      "real_metal_triangles": 552,
+      "walls_constant_through_depth": true
+    },
+    {
+      "name": "highest_snow_peak",
+      "real_metal_triangles": 1027,
+      "walls_constant_through_depth": true
+    },
+    {
+      "name": "left_foreground_peak",
+      "real_metal_triangles": 444,
+      "walls_constant_through_depth": true
+    },
+    {
+      "name": "right_foreground_peak",
+      "real_metal_triangles": 393,
+      "walls_constant_through_depth": true
+    },
+    {
+      "name": "central_foreground_peak",
+      "real_metal_triangles": 691,
+      "walls_constant_through_depth": true
+    },
+    {
+      "name": "left_cloud",
+      "real_metal_triangles": 476,
+      "walls_constant_through_depth": true
+    },
+    {
+      "name": "right_cloud",
+      "real_metal_triangles": 480,
+      "walls_constant_through_depth": true
+    },
+    {
+      "name": "far_left_hills",
+      "real_metal_triangles": 173,
+      "walls_constant_through_depth": true
+    },
+    {
+      "name": "far_right_hills",
+      "real_metal_triangles": 201,
+      "walls_constant_through_depth": true
+    },
+    {
+      "name": "lime_rear_meadow",
+      "real_metal_triangles": 159,
+      "walls_constant_through_depth": true
+    },
+    {
+      "name": "left_emerald_meadow",
+      "real_metal_triangles": 336,
+      "walls_constant_through_depth": true
+    },
+    {
+      "name": "right_emerald_meadow",
+      "real_metal_triangles": 347,
+      "walls_constant_through_depth": true
+    },
+    {
+      "name": "left_lime_meadow",
+      "real_metal_triangles": 230,
+      "walls_constant_through_depth": true
+    },
+    {
+      "name": "right_lime_meadow",
+      "real_metal_triangles": 232,
+      "walls_constant_through_depth": true
+    },
+    {
+      "name": "left_laurel_branch",
+      "real_metal_triangles": 202,
+      "walls_constant_through_depth": true
+    },
+    {
+      "name": "right_laurel_branch",
+      "real_metal_triangles": 202,
+      "walls_constant_through_depth": true
+    },
+    {
+      "name": "left_laurel_leaf_0",
+      "real_metal_triangles": 189,
+      "walls_constant_through_depth": true
+    },
+    {
+      "name": "right_laurel_leaf_0",
+      "real_metal_triangles": 189,
+      "walls_constant_through_depth": true
+    },
+    {
+      "name": "left_laurel_leaf_1",
+      "real_metal_triangles": 187,
+      "walls_constant_through_depth": true
+    },
+    {
+      "name": "right_laurel_leaf_1",
+      "real_metal_triangles": 187,
+      "walls_constant_through_depth": true
+    },
+    {
+      "name": "left_laurel_leaf_2",
+      "real_metal_triangles": 196,
+      "walls_constant_through_depth": true
+    },
+    {
+      "name": "right_laurel_leaf_2",
+      "real_metal_triangles": 196,
+      "walls_constant_through_depth": true
+    },
+    {
+      "name": "left_laurel_leaf_3",
+      "real_metal_triangles": 185,
+      "walls_constant_through_depth": true
+    },
+    {
+      "name": "right_laurel_leaf_3",
+      "real_metal_triangles": 185,
+      "walls_constant_through_depth": true
+    },
+    {
+      "name": "left_laurel_leaf_4",
+      "real_metal_triangles": 189,
+      "walls_constant_through_depth": true
+    },
+    {
+      "name": "right_laurel_leaf_4",
+      "real_metal_triangles": 189,
+      "walls_constant_through_depth": true
+    },
+    {
+      "name": "bottom_four_point_star",
+      "real_metal_triangles": 242,
+      "walls_constant_through_depth": true
+    },
+    {
+      "name": "outer_gold_setting",
+      "real_metal_triangles": 1089,
+      "walls_constant_through_depth": true
+    }
+  ],
+  "blender_review_pending": true
+}

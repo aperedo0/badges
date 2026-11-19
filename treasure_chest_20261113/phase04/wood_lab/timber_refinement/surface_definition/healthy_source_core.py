@@ -1,0 +1,24 @@
+from pathlib import Path
+import numpy as np,json,shutil,sys
+from PIL import Image
+from scipy.ndimage import gaussian_filter,map_coordinates
+D=Path(__file__).resolve().parent
+# Reuse boundary constrained core body and the accepted organized plank.
+sys.argv=[sys.argv[0],'AN_layered_hardwood'];s=(D/'organize_knot.py').read_text().split('rng=')[0];exec(compile(s,'existing_core_boundary_solver','exec'))
+C=W/'AQ_source_growth';C.mkdir(exist_ok=True);resources=W/'final_fibers/resources/raw_plank_wall';xp=X[y0:y1,x0:x1];yp=Y[y0:y1,x0:x1];cu=1864+(xp+1.31)/.145*80;cv=2596-(yp+1.35)/.17*65
+photo0=np.asarray(Image.open(next(resources.glob('*diff_4k*'))).convert('RGB'),dtype='float32')/255;source_lum=np.stack([map_coordinates(photo0[:,:,i],[cv,cu],order=1,mode='nearest') for i in range(3)],2)@np.array([.2126,.7152,.0722],dtype='float32');void=source_lum<.27
+height=np.asarray(Image.open(next(resources.glob('*disp_4k*'))),dtype='float32');height=map_coordinates(height,[cv,cu],order=1,mode='nearest')
+# Exclude the scanned pith hole. Use only its surrounding healthy growth anatomy.
+repaired=height.copy();repaired[void]=np.median(height[~void])
+for _ in range(700):
+ avg=(np.roll(repaired,1,0)+np.roll(repaired,-1,0)+np.roll(repaired,1,1)+np.roll(repaired,-1,1))*.25;repaired[void]=avg[void]
+blend=gaussian_filter(void.astype('float32'),(.003/dy,.003/dx));height=height*(1-blend)+repaired*blend;height-=gaussian_filter(height,(.045/dy,.045/dx));height/=max(float(np.std(height[cm>.65])),1e-8);height=np.clip(height,-2.4,2.4)*.00125
+ryp=yp+1.35;yrel=ryp/.17;line=-1.31+.0018*np.sin(yrel*8)+.0011*np.sin(yrel*17);width=.0035+.0012*(.5+.5*np.sin(yrel*5+.4));gate=np.clip((1-abs(yrel))/.20,0,1);gate=gate*gate*(3-2*gate);split=np.exp(-((xp-line)/width)**4)*gate
+coreheight=body.copy();coreheight[y0:y1,x0:x1]+=height-.014*split;new=np.minimum(H+(coreheight-H)*core,0);add=new-H;geo=np.load(A/'surface.npz')['height'];lo=gaussian_filter(add,(.0038/dy,.0038/dx));lo=np.asarray(Image.fromarray(lo).resize((geo.shape[1],geo.shape[0]),Image.Resampling.BICUBIC),dtype='float32');np.savez_compressed(C/'surface.npz',height=np.minimum(geo+lo,0));np.savez_compressed(C/'master_height.npz',height=new,delta=src['delta']+add)
+color=np.asarray(Image.open(A/'albedo.png').convert('RGB'),dtype='float32')/255;rgb=color[32:-32,32:-32];patch=rgb[y0:y1,x0:x1].copy();intrinsic=harmonic(patch)*np.array([.97,.95,.94],dtype='float32')
+photo=np.asarray(Image.open(next(resources.glob('*diff_4k*'))).convert('RGB'),dtype='float32')/255;photo=np.stack([map_coordinates(photo[:,:,i],[cv,cu],order=1,mode='nearest') for i in range(3)],2);lum=np.maximum(photo@np.array([.2126,.7152,.0722],dtype='float32'),.02);log=np.log(lum);pig=log-gaussian_filter(log,(.06/dy,.06/dx));pig=(pig-np.mean(pig[cm>.65]))/max(float(np.std(pig[cm>.65])),1e-8);pig=np.clip(pig,-2.2,2.2)
+chrom=photo/lum[:,:,None];chrom/=np.median(chrom[cm>.65],axis=0);chrom=np.clip(chrom**.20,.94,1.06);intrinsic*=np.exp(.14*pig)[:,:,None]*chrom;intrinsic*=1-.24*split[:,:,None];rgb[y0:y1,x0:x1]=patch*(1-cm[:,:,None])+intrinsic*cm[:,:,None]
+rough=np.asarray(Image.open(A/'roughness.png').convert('L'),dtype='float32')/255;rawrough=np.asarray(Image.open(next(resources.glob('*rough_2k*'))).convert('L'),dtype='float32')/255;rr=map_coordinates(rawrough,[cv*.5,cu*.5],order=1,mode='nearest');rr-=np.mean(rr[cm>.65]);rr/=max(float(np.std(rr[cm>.65])),1e-8);rpatch=rough[32+y0:32+y1,32+x0:32+x1];rpatch[:]=rpatch*(1-cm)+np.clip(.67+.026*np.clip(rr,-2,2),.58,.79)*cm
+for role,a in [('albedo',color),('roughness',rough)]:Image.fromarray(np.uint8(np.clip(a,0,1)*255+.5)).save(C/(role+'.png'))
+shutil.copy2(A/'normal_masks.npz',C/'normal_masks.npz');np.savez_compressed(D/'natural_core_layers.npz',source_height=height,source_pigment=pig,split=split,mask=cm)
+d=json.loads((A/'design.json').read_text());d.update(source='AN organized formations with cached natural raw_plank_wall knot growth constrained to existing core boundary',core_source='Poly Haven raw_plank_wall CC0, cached official displacement, diffuse and roughness',source_center=[1864,2596],source_radii=[80,65],core_source_height_rms=.00125,source_pith_hole_excluded=True,core_split_depth=.014,core_split_pigmentation='Localized aged fracture only, no directional light painted',core_size_and_location_preserved=True,height_min=float(new.min()));(C/'design.json').write_text(json.dumps(d,indent=2));print('Prepared scan assisted core',flush=True)

@@ -1,0 +1,179 @@
+{
+ "parts": [
+  {
+   "name": "plate",
+   "base": 0.0,
+   "materials": [
+    "Gold",
+    "GoldRing",
+    "Lemon",
+    "Red",
+    "Side"
+   ],
+   "triangles": 31836,
+   "front": 9609
+  },
+  {
+   "name": "spike_top",
+   "base": 0.13199968537758044,
+   "materials": [
+    "Gold",
+    "Side"
+   ],
+   "triangles": 80,
+   "front": 13
+  },
+  {
+   "name": "spike_140",
+   "base": 0.13199996395111774,
+   "materials": [
+    "Gold",
+    "Side"
+   ],
+   "triangles": 84,
+   "front": 18
+  },
+  {
+   "name": "spike_140_mirror",
+   "base": 0.13199996395111774,
+   "materials": [
+    "Gold",
+    "Side"
+   ],
+   "triangles": 84,
+   "front": 18
+  },
+  {
+   "name": "spike_178",
+   "base": 0.1319999572179814,
+   "materials": [
+    "Gold",
+    "Side"
+   ],
+   "triangles": 72,
+   "front": 15
+  },
+  {
+   "name": "spike_178_mirror",
+   "base": 0.1319999572179814,
+   "materials": [
+    "Gold",
+    "Side"
+   ],
+   "triangles": 80,
+   "front": 16
+  },
+  {
+   "name": "sun",
+   "base": 0.1175,
+   "materials": [
+    "Gold",
+    "Side",
+    "SunDisc"
+   ],
+   "triangles": 8656,
+   "front": 3428
+  },
+  {
+   "name": "mountain_side_left",
+   "base": 0.14549997519234387,
+   "materials": [
+    "Gold",
+    "Royal",
+    "Side",
+    "Snow",
+    "SnowLavender"
+   ],
+   "triangles": 1872,
+   "front": 642
+  },
+  {
+   "name": "mountain_side_right",
+   "base": 0.14549997519234387,
+   "materials": [
+    "Gold",
+    "Royal",
+    "Side",
+    "Snow",
+    "SnowLavender"
+   ],
+   "triangles": 1872,
+   "front": 642
+  },
+  {
+   "name": "mountain_central",
+   "base": 0.19818118018743536,
+   "materials": [
+    "Gold",
+    "Navy",
+    "Side",
+    "Snow",
+    "SnowLavender",
+    "Steel",
+    "Teal"
+   ],
+   "triangles": 5948,
+   "front": 2071
+  },
+  {
+   "name": "lower",
+   "base": 0.25473495852704353,
+   "materials": [
+    "Cloud",
+    "Gold",
+    "Side"
+   ],
+   "triangles": 11068,
+   "front": 2528
+  },
+  {
+   "name": "frame",
+   "base": 0.29673495852704357,
+   "materials": [
+    "Gold",
+    "Side"
+   ],
+   "triangles": 1744,
+   "front": 788
+  },
+  {
+   "name": "gem",
+   "base": 0.29673495852704357,
+   "materials": [
+    "Gem"
+   ],
+   "triangles": 80,
+   "front": 8
+  }
+ ],
+ "order": [
+  "plate",
+  "spike_top",
+  "spike_140",
+  "spike_140_mirror",
+  "spike_178",
+  "spike_178_mirror",
+  "sun",
+  "mountain_side_left",
+  "mountain_side_right",
+  "mountain_central",
+  "lower",
+  "frame",
+  "gem"
+ ],
+ "validate_order": [
+  "plate",
+  "spike_top",
+  "spike_140",
+  "spike_140_mirror",
+  "spike_178",
+  "spike_178_mirror",
+  "sun",
+  "mountain_side_left",
+  "mountain_side_right",
+  "mountain_central",
+  "lower",
+  "gem",
+  "frame"
+ ]
+}

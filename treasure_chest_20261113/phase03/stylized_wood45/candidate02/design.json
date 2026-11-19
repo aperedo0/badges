@@ -1,0 +1,34 @@
+{
+  "part": "Chest Body Envelope",
+  "sample": "lower front plank only",
+  "uv": "ChestWoodUV_Sample44",
+  "material": "Chest Wood Stylized Sample45 v2",
+  "bounds": {
+    "xmin": -2.55,
+    "xmax": 2.55,
+    "ymin": -2.2175,
+    "ymax": -0.84
+  },
+  "texture_width": 2048,
+  "texture_height": 768,
+  "padding": 16,
+  "metallic": 0.0,
+  "roughness_min": 0.62,
+  "roughness_max": 0.82,
+  "ior": 1.46,
+  "specular_level": 0.25,
+  "coat": 0.0,
+  "emission_strength": 0.0,
+  "maximum_normal_degrees": 50,
+  "knot": {
+    "x": -1.18,
+    "y": -1.38,
+    "target_core_diameter": 0.55
+  },
+  "seed": 4417,
+  "texture_provenance": "Built in scalar height artwork for stylized sculpted fantasy wood; base color roughness and tangent normal derived from the same physical height field. No photographic pigment or painted directional light.",
+  "target_luminance": 0.075,
+  "illumination_flatten_strength": 0.35,
+  "relief_depth": 0.035,
+  "physical_filter_sigma": 0.003
+}

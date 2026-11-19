@@ -1,0 +1,33 @@
+{
+  "status": "validated_candidate",
+  "before": {
+    "meshes": 14,
+    "sections": 14,
+    "triangles": 88472,
+    "vertices": 53170
+  },
+  "after": {
+    "meshes": 12,
+    "sections": 12,
+    "triangles": 88472,
+    "vertices": 107939
+  },
+  "source_sha256": "fcb626fd2da38a1326a9d3dd136415159745d9baf24852bab2c91a212fcdfe9f",
+  "output_sha256": "04c61061e4ddf489903706af547f188036b4e98184902a659d6cf1bc047f5a6e",
+  "bytes_before": 7903811,
+  "bytes_after": 5485883,
+  "all_triangle_corner_attributes_and_materials_identical": true,
+  "all_material_graphs_unchanged": true,
+  "protected_meshes_unchanged": [
+    "/Crest/Relief_6",
+    "/Crest/Relief_7",
+    "/Crest/Relief_8",
+    "/Crest/Relief_9",
+    "/Crest/Relief_10",
+    "/Crest/Relief_11",
+    "/Crest/Relief_12",
+    "/Crest/Relief_13"
+  ],
+  "all_textures_byte_identical": true,
+  "arkit_valid": true
+}

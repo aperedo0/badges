@@ -1,0 +1,58 @@
+/* Same three hit physical optics as the existing private preview sapphire profile.
+   This is calculated per camera ray; no appearance image or reference is sampled. */
+float fshare(float c, float ni, float nt) {
+ float ci=clamp(c,0,1);float s=(ni/nt)*(ni/nt)*(1-ci*ci);if(s>=1)return 1;
+ float ct=sqrt(1-s);float a=(ni*ci-nt*ct)/(ni*ci+nt*ct);float b=(ni*ct-nt*ci)/(ni*ct+nt*ci);return .5*(a*a+b*b);
+}
+color studio(vector d, string sharpfile, string tentfile, int withtent) {
+ vector w=normalize(transform("object","world",d));
+ /* Blender world X,Y,Z becomes app X,Z,-Y, then the existing half turn. */
+ vector e=vector(-w[0],w[2],w[1]);
+ float u=.5+atan2(e[0],-e[2])/(2*M_PI);float v=1-(.5-asin(clamp(e[1],-1,1))/M_PI);
+ color a=texture(sharpfile,u,v,"swrap","periodic","twrap","clamp","interp","bilinear");a=clamp(a,color(0),color(24));
+ if(withtent){color b=texture(tentfile,u,v,"swrap","periodic","twrap","clamp","interp","bilinear");a+=clamp(b,color(0),color(3))*1.4576831;}
+ return a;
+}
+int findexit(point p, vector d, vector planes[], float offsets[], output float distance, output vector norm) {
+ int found=0;distance=1e30;norm=vector(0);
+ for(int k=0;k<arraylength(planes);k++) {
+  float approach=dot(planes[k],d);if(approach<=.0001)continue;
+  float gap=offsets[k]-dot(planes[k],vector(p));if(gap<=-.00001)continue;
+  float t=max(gap,0)/approach;if(t<distance){found=1;distance=t;norm=planes[k];}
+ }
+ return found;
+}
+shader badge_sapphire_development(
+ string SharpMap="/Users/antonioperedo/Desktop/badges/camp_owl_mountain_sapphire_20261111/optics_fit/studio_mip1.exr",
+ string TentMap="/Users/antonioperedo/Desktop/badges/camp_owl_mountain_sapphire_20261111/optics_fit/studio_mip8.exr",
+ float Density=0.9523809956,
+ float Exposure=.28,
+ output closure color BSDF=0)
+{
+ vector planes[46]={vector(-0.9944660068,-0.1050620005,0),vector(-0.9801959991,0.198029995,-9.999999975e-07),vector(-0.9269919991,0.3750819862,0),vector(-0.9021430016,-0.431437999,-0),vector(-0.8749219775,0.4842639863,0),vector(-0.8322809935,0.554354012,0),vector(-0.7994660139,0.6007120013,0),vector(-0.774567008,0.6324920058,0),vector(-0.7187280059,-0.695291996,0),vector(-0.6746820211,-0.2146710008,0.7062010169),vector(-0.6326829791,-0.2038789988,0.7470920086),vector(-0.6234499812,0.4678069949,0.6264719963),vector(-0.6230580211,0.4669289887,0.6275159717),vector(-0.6224650145,0.4666779935,0.6282910109),vector(-0.6223270297,0.4666390121,0.6284559965),vector(-0.6222360134,0.4666149914,0.6285640001),vector(-0.6222259998,0.4667539895,0.6284710169),vector(-0.6221820116,0.4666379988,0.6286000013),vector(-0.6221579909,0.4666930139,0.628583014),vector(-0.5042809844,0.8635389805,1.999999995e-06),vector(-0.5042729974,0.8635439873,0),vector(-0.4748010039,-0.8800939918,0),vector(-0.2783780098,-0.6611499786,0.6966969967),vector(-0.2668429911,-0.6243309975,0.7341700196),vector(-0.2049430013,-0.9787740111,-0),vector(0,0,-1),vector(-0,0,1),vector(0.06408700347,-0.9979439974,0),vector(0.2493849993,-0.6703919768,0.6988430023),vector(0.2534840107,-0.6759560108,0.6919760108),vector(0.3380810022,-0.9411169887,0),vector(0.5901529789,0.4498290122,0.6703529954),vector(0.6017280221,-0.7987009883,0),vector(0.6184710264,0.4702959955,0.6295359731),vector(0.6741889715,-0.2137770057,0.7069429755),vector(0.6817010045,-0.2157289982,0.6991019845),vector(0.6899380088,-0.2125439942,0.6919609904),vector(0.7615209818,0.6481400132,-0),vector(0.7855769992,0.6187639832,0),vector(0.8179280162,0.5753200054,-0),vector(0.8211399913,-0.5707259774,0),vector(0.8559200168,0.5171080232,0),vector(0.9030299783,0.429576993,-0),vector(0.9559410214,0.2935599983,-0),vector(0.963079989,-0.2692149878,0),vector(0.9979249835,0.0643870011,0)};
+ float offsets[46]={1.621351957,1.468170047,1.393563986,1.767052054,1.376659036,1.392933011,1.42516005,1.464385986,1.866950989,1.045166969,0.967203021,0.9619140029,0.9602220058,0.9592289925,0.959025979,0.9588950276,0.9590870142,0.9588720202,0.9589269757,1.987687945,1.987699986,1.927870035,1.226552963,1.146525025,1.956135988,0.4071199894,0.6428800225,1.962102056,1.230265975,1.244171023,1.951622009,0.9126989841,1.911862016,0.9712629914,1.050681949,1.063313961,1.075942039,1.502346039,1.457680941,1.416293025,1.830371022,1.390164018,1.386955976,1.427965999,1.704535007,1.542073011};
+ point pos=transform("world","object",P);
+ vector inc=-normalize(transform("world","object",I));
+ normal on=normalize(transform("world","object",N));vector n=vector(on);
+ if(dot(n,inc)>0)n=-n;
+ float f=fshare(dot(n,-inc),1,1.77);
+ color result=f*studio(reflect(inc,n),SharpMap,TentMap,0);
+ color weight=color(1-f);vector dir=refract(inc,n,1/1.77);
+ color extinction=color(8,4.3503597,.2)*Density;
+ for(int hit=0;hit<3;hit++) {
+  float distance;vector fn;
+  if(!findexit(pos,dir,planes,offsets,distance,fn))break;
+  pos+=dir*distance;
+  weight*=color(exp(-extinction[0]*distance),exp(-extinction[1]*distance),exp(-extinction[2]*distance));
+  float share=fshare(dot(fn,dir),1.77,1);
+  if(share<1) {
+   vector green=refract(dir,-fn,1.77);vector red=refract(dir,-fn,1.76);vector blue=refract(dir,-fn,1.79);
+   if(dot(red,red)<1e-15)red=green;if(dot(blue,blue)<1e-15)blue=green;
+   color r=studio(red,SharpMap,TentMap,1);color g=studio(green,SharpMap,TentMap,1);color b=studio(blue,SharpMap,TentMap,1);
+   result+=weight*(1-share)*color(r[0],g[1],b[2]);
+  }
+  weight*=share;dir=reflect(dir,fn);
+ }
+ result+=weight*studio(dir,SharpMap,TentMap,1);
+ BSDF=emission()*result*Exposure;
+}

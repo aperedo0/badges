@@ -1,0 +1,9 @@
+Broader wood planks43
+
+The owner explicitly requested another approximately40percent wider than the already enlarged layout, not40percent from the original41. The roof changes from that larger layout's10 staves to7, approximately42.9percent wider in angular spacing. Body and lid end faces have two broad exposed rows instead of three. Because whole rows fit a fixed frame, their average exposed row height is approximately50percent larger, rather than exactly40percent. This is recorded rather than claiming exact uniform scaling.
+
+Only the two wood meshes change. All153 hardware meshes, the removable key, materials and rig are retained exactly from41. The clean original wood data was loaded as mesh datablocks without loading an older scene, and proved against the frozen original arrays before reconstruction. No wood grain, color, metal finish, app code or simulator change. The overnight run stays stopped.
+
+Body joints end beneath existing corner posts to avoid unnecessary intersections at the hidden wood corner. Actual ray checks prove cover at both endpoints and at offsets around the joint profile. Original surface and normal gates are retained. Closed connected solid checks, actual groove width and depth, cavity hit levels and retained source surface samples pass.155 static meshes,178252 triangles, the same6.675822 turn width.41 remains the preserved reviewed baseline.
+
+Safe cold loading passes all15 simple drivers with automatic scripts disabled. All56 lid positions and99 sequence frames pass with no unclassified contacts and all three failure controls detected. Nine actual Blender views,416pixel views and enlarged joint crops were inspected. Fresh independent construction review passes with no visible defects or exterior regressions. The main Blender file now matches this saved43 version exactly. Final finish work and phone acceptance remain outside the current scope.

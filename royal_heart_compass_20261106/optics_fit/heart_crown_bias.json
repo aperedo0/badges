@@ -1,0 +1,71 @@
+{
+  "status": "physical_diagnostic_not_native",
+  "no_appearance_map": true,
+  "variants": [
+    {
+      "bias": 0,
+      "domains": [
+        {
+          "active_front": 39,
+          "planes": 230
+        },
+        {
+          "active_front": 39,
+          "planes": 230
+        }
+      ]
+    },
+    {
+      "bias": 0.15,
+      "domains": [
+        {
+          "active_front": 37,
+          "planes": 226
+        },
+        {
+          "active_front": 37,
+          "planes": 226
+        }
+      ]
+    },
+    {
+      "bias": 0.3,
+      "domains": [
+        {
+          "active_front": 30,
+          "planes": 213
+        },
+        {
+          "active_front": 30,
+          "planes": 213
+        }
+      ]
+    },
+    {
+      "bias": 0.45,
+      "domains": [
+        {
+          "active_front": 22,
+          "planes": 196
+        },
+        {
+          "active_front": 22,
+          "planes": 196
+        }
+      ]
+    },
+    {
+      "bias": 0.6,
+      "domains": [
+        {
+          "active_front": 19,
+          "planes": 190
+        },
+        {
+          "active_front": 19,
+          "planes": 190
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,230 @@
+{
+  "translations": {
+    "Chest Lid Hoop 2": [
+      0.39083333333333325,
+      0,
+      0
+    ],
+    "Chest Crown Fastener Mass 2": [
+      0.39083333333333325,
+      0,
+      0
+    ],
+    "Chest Hoop Rivet 1 0": [
+      0.39083333333333325,
+      0,
+      0
+    ],
+    "Chest Hoop Rivet 1 1": [
+      0.39083333333333325,
+      0,
+      0
+    ],
+    "Chest Hoop Rivet 1 2": [
+      0.39083333333333325,
+      0,
+      0
+    ],
+    "Chest Hoop Rivet 1 3": [
+      0.39083333333333325,
+      0,
+      0
+    ],
+    "Chest Hoop Rivet 1 4": [
+      0.39083333333333325,
+      0,
+      0
+    ],
+    "Chest Hoop Rivet 1 5": [
+      0.39083333333333325,
+      0,
+      0
+    ],
+    "Chest Lid Hoop 3": [
+      -0.04083333333333328,
+      0,
+      0
+    ],
+    "Chest Crown Fastener Mass 3": [
+      -0.04083333333333328,
+      0,
+      0
+    ],
+    "Chest Hoop Rivet 2 0": [
+      -0.04083333333333328,
+      0,
+      0
+    ],
+    "Chest Hoop Rivet 2 1": [
+      -0.04083333333333328,
+      0,
+      0
+    ],
+    "Chest Hoop Rivet 2 2": [
+      -0.04083333333333328,
+      0,
+      0
+    ],
+    "Chest Hoop Rivet 2 3": [
+      -0.04083333333333328,
+      0,
+      0
+    ],
+    "Chest Hoop Rivet 2 4": [
+      -0.04083333333333328,
+      0,
+      0
+    ],
+    "Chest Hoop Rivet 2 5": [
+      -0.04083333333333328,
+      0,
+      0
+    ],
+    "Chest Rail Rivet -1 0": [
+      0.127,
+      0.07499999999999996,
+      0
+    ],
+    "Chest Rail Rivet -1 1": [
+      0.1270000000000001,
+      0.08499999999999996,
+      0
+    ],
+    "Chest Rail Rivet -1 3": [
+      0.02849999999999997,
+      0.0,
+      0
+    ],
+    "Chest Rail Rivet -1 4": [
+      0.02849999999999997,
+      0.0,
+      0
+    ],
+    "Chest Body Lip Rivet -1 0": [
+      0.17799999999999994,
+      0,
+      0
+    ],
+    "Chest Body Lip Rivet -1 1": [
+      0.17800000000000016,
+      0,
+      0
+    ],
+    "Chest Rail Rivet 1 0": [
+      0.127,
+      0.07499999999999996,
+      0
+    ],
+    "Chest Rail Rivet 1 1": [
+      0.1270000000000001,
+      0.08499999999999996,
+      0
+    ],
+    "Chest Rail Rivet 1 3": [
+      0.02849999999999997,
+      0.0,
+      0
+    ],
+    "Chest Rail Rivet 1 4": [
+      0.02849999999999997,
+      0.0,
+      0
+    ],
+    "Chest Body Lip Rivet 1 0": [
+      0.17799999999999994,
+      0,
+      0
+    ],
+    "Chest Body Lip Rivet 1 1": [
+      0.17800000000000016,
+      0,
+      0
+    ],
+    "Chest Rail Rivet 1 2": [
+      0,
+      0.085,
+      0
+    ],
+    "Chest End Rail Rivet -1 0": [
+      0,
+      0.045,
+      -0.13
+    ],
+    "Chest End Rail Rivet -1 1": [
+      0,
+      0,
+      -0.13
+    ],
+    "Chest Handle Mount -1": [
+      0,
+      0,
+      -0.4
+    ],
+    "Chest Solid Ring Handle -1": [
+      0,
+      0,
+      -0.26
+    ],
+    "Chest Measured Rolled Handle Cover -1": [
+      0,
+      0,
+      -0.26
+    ],
+    "Chest Handle Mount Rivet -1 -1": [
+      0,
+      0,
+      -0.357
+    ],
+    "Chest Handle Mount Rivet -1 1": [
+      0,
+      0,
+      -0.357
+    ],
+    "Chest End Rail Rivet 1 0": [
+      0,
+      0.045,
+      -0.13
+    ],
+    "Chest End Rail Rivet 1 1": [
+      0,
+      0,
+      -0.13
+    ],
+    "Chest Handle Mount 1": [
+      0,
+      0,
+      -0.4
+    ],
+    "Chest Solid Ring Handle 1": [
+      0,
+      0,
+      -0.26
+    ],
+    "Chest Measured Rolled Handle Cover 1": [
+      0,
+      0,
+      -0.26
+    ],
+    "Chest Handle Mount Rivet 1 -1": [
+      0,
+      0,
+      -0.357
+    ],
+    "Chest Handle Mount Rivet 1 1": [
+      0,
+      0,
+      -0.357
+    ]
+  },
+  "hide": [
+    "Chest Rail Rivet -1 2"
+  ],
+  "new_front_small": "Chest Small Front Rail Rivet -1",
+  "band_land_centers": [
+    -2.4275,
+    -0.8091666666666667,
+    0.8091666666666667,
+    2.4275
+  ],
+  "owner_scope": "True3D centering and rear hinge rivet clearance. Arch join correction deferred."
+}

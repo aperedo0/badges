@@ -1,0 +1,4 @@
+interface:
+  display_name: "Badge Quality"
+  short_description: "Match badge detail then reduce pieces without visual loss"
+  default_prompt: "Use $badge-quality to build or review this badge with reference details and realistic materials through a full turn, then reduce rendering pieces while preserving the exact finished appearance."

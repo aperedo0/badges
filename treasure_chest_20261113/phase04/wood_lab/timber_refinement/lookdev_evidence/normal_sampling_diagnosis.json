@@ -1,0 +1,12 @@
+{
+  "method": "Approximate tangent frame from actual mesh vertex normals, compared with current full height. Not an inference of target shape from the reference.",
+  "before_angle_error_median": 1.0475329843317456,
+  "before_angle_error_p95": 8.630700200496655,
+  "after_angle_error_median": 0.3788411980692008,
+  "after_angle_error_p95": 2.041226148344343,
+  "normal_change_median": 1.1122353466227368,
+  "geometry_changed": false,
+  "source_height_changed": false,
+  "broad_normal_delta_removed": true,
+  "visual_benefit": "Not yet tested. This is a numerical diagnostic, not proof of an artistic improvement."
+}

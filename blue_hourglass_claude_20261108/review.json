@@ -1,0 +1,69 @@
+{
+ "name": "Blue Hourglass",
+ "mockup": "/Users/antonioperedo/Desktop/badges/blue_hourglass_claude_20261108/reference/hourglass.png",
+ "mockup_box": [
+  623,
+  44,
+  1167
+ ],
+ "build_front": "/Users/antonioperedo/Desktop/badges/blue_hourglass_claude_20261108/candidate10/app/front.png",
+ "build_box": [
+  603.0,
+  366.3,
+  800.6
+ ],
+ "poses": {
+  "early turn": "/Users/antonioperedo/Desktop/badges/blue_hourglass_claude_20261108/candidate10/app/early_turn.png",
+  "left side": "/Users/antonioperedo/Desktop/badges/blue_hourglass_claude_20261108/candidate10/app/side_left.png",
+  "back": "/Users/antonioperedo/Desktop/badges/blue_hourglass_claude_20261108/candidate10/app/back.png",
+  "right side": "/Users/antonioperedo/Desktop/badges/blue_hourglass_claude_20261108/candidate10/app/side_right.png"
+ },
+ "regions": [
+  [
+   "top marble disc and gold ring",
+   -0.32,
+   -0.01,
+   0.32,
+   0.17
+  ],
+  [
+   "upper glass bulb and sand surface",
+   -0.22,
+   0.14,
+   0.22,
+   0.5
+  ],
+  [
+   "neck and falling sand",
+   -0.12,
+   0.42,
+   0.12,
+   0.62
+  ],
+  [
+   "lower bulb and sand pile",
+   -0.22,
+   0.55,
+   0.22,
+   0.9
+  ],
+  [
+   "left post and glass edge",
+   -0.32,
+   0.3,
+   -0.12,
+   0.7
+  ],
+  [
+   "bottom gold ring and marble disc",
+   -0.32,
+   0.84,
+   0.32,
+   1.01
+  ]
+ ],
+ "intended": [
+  "The hourglass is a full 3D object that turns on the app's Home screen, so its back and sides must look finished too."
+ ],
+ "checklist": "/Users/antonioperedo/Desktop/badges/blue_hourglass_claude_20261108/review/checklist.md"
+}

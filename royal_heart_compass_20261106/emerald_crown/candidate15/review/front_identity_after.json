@@ -1,0 +1,16 @@
+{
+  "expected": "Emerald Crown",
+  "observed": [
+    {
+      "name": "Emerald Crown",
+      "frame": {
+        "width": 211,
+        "y": 335.55,
+        "height": 36,
+        "x": 95.5
+      }
+    }
+  ],
+  "epoch": 1794096927.529103,
+  "visible_gallery_heading_verified": true
+}

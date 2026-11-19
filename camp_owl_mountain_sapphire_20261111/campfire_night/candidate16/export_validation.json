@@ -1,0 +1,53 @@
+{
+  "contract_passed": true,
+  "model_sha256": "3166b2afdb10f9f28970170896972b3ff83e97de800f64ad13b6e0d7559700b4",
+  "meshes": 53,
+  "triangles": 94432,
+  "bytes": 8593912,
+  "bounds": [
+    [
+      -2.613981008529663,
+      -2.4549999237060547,
+      -0.4562999904155731
+    ],
+    [
+      2.613981008529663,
+      2.994999885559082,
+      0.4562999904155731
+    ]
+  ],
+  "all_textures_present_and_byte_identical": true,
+  "texture_files": [
+    "0/nightfield_color.png",
+    "0/nightfield_emission.png",
+    "0/enamelmountain_color.png",
+    "0/enamelmountain_emission.png",
+    "0/enamelground_color.png",
+    "0/enamelground_emission.png",
+    "0/enamelmoonlight_color.png",
+    "0/enamelmoonlight_emission.png",
+    "0/enamelsmallpines_color.png",
+    "0/enamelsmallpines_emission.png",
+    "0/enamelwoodbody_color.png",
+    "0/enamelwoodbody_emission.png",
+    "0/enamelpinelower_color.png",
+    "0/enamelpinelower_emission.png",
+    "0/enamelpinemiddle_color.png",
+    "0/enamelpinemiddle_emission.png",
+    "0/enamelpinetop_color.png",
+    "0/enamelpinetop_emission.png",
+    "0/enamelstone_color.png",
+    "0/enamelstone_emission.png",
+    "0/enamelwoodend_color.png",
+    "0/enamelwoodend_emission.png",
+    "0/enamelredfire_color.png",
+    "0/enamelredfire_emission.png",
+    "0/enamelamberfire_color.png",
+    "0/enamelamberfire_emission.png",
+    "0/enamelyellowfire_color.png",
+    "0/enamelyellowfire_emission.png"
+  ],
+  "native_gems": {},
+  "no_gem_appearance_texture": true,
+  "production_app_untouched": true
+}

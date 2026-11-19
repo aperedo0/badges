@@ -1,0 +1,116 @@
+{
+  "amethyst_crown": {
+    "all_eight_arches_overlap_same_hub": true,
+    "arches": [
+      {
+        "arch": "Continuous 1 crown arch to central hub",
+        "end_vertices_inside_solid_hub": 8
+      },
+      {
+        "arch": "Continuous 2 crown arch to central hub",
+        "end_vertices_inside_solid_hub": 8
+      },
+      {
+        "arch": "Continuous 3 crown arch to central hub",
+        "end_vertices_inside_solid_hub": 8
+      },
+      {
+        "arch": "Continuous 4 crown arch to central hub",
+        "end_vertices_inside_solid_hub": 8
+      },
+      {
+        "arch": "Continuous 5 crown arch to central hub",
+        "end_vertices_inside_solid_hub": 8
+      },
+      {
+        "arch": "Continuous 6 crown arch to central hub",
+        "end_vertices_inside_solid_hub": 8
+      },
+      {
+        "arch": "Continuous 7 crown arch to central hub",
+        "end_vertices_inside_solid_hub": 8
+      },
+      {
+        "arch": "Continuous 8 crown arch to central hub",
+        "end_vertices_inside_solid_hub": 8
+      }
+    ],
+    "upper_stones_red": false
+  },
+  "ruby_crown": {
+    "all_eight_arches_overlap_same_hub": true,
+    "arches": [
+      {
+        "arch": "Continuous 1 crown arch to central hub",
+        "end_vertices_inside_solid_hub": 8
+      },
+      {
+        "arch": "Continuous 2 crown arch to central hub",
+        "end_vertices_inside_solid_hub": 8
+      },
+      {
+        "arch": "Continuous 3 crown arch to central hub",
+        "end_vertices_inside_solid_hub": 8
+      },
+      {
+        "arch": "Continuous 4 crown arch to central hub",
+        "end_vertices_inside_solid_hub": 8
+      },
+      {
+        "arch": "Continuous 5 crown arch to central hub",
+        "end_vertices_inside_solid_hub": 8
+      },
+      {
+        "arch": "Continuous 6 crown arch to central hub",
+        "end_vertices_inside_solid_hub": 8
+      },
+      {
+        "arch": "Continuous 7 crown arch to central hub",
+        "end_vertices_inside_solid_hub": 8
+      },
+      {
+        "arch": "Continuous 8 crown arch to central hub",
+        "end_vertices_inside_solid_hub": 8
+      }
+    ],
+    "upper_stones_red": true
+  },
+  "emerald_crown": {
+    "all_eight_arches_overlap_same_hub": true,
+    "arches": [
+      {
+        "arch": "Continuous 1 crown arch to central hub",
+        "end_vertices_inside_solid_hub": 8
+      },
+      {
+        "arch": "Continuous 2 crown arch to central hub",
+        "end_vertices_inside_solid_hub": 8
+      },
+      {
+        "arch": "Continuous 3 crown arch to central hub",
+        "end_vertices_inside_solid_hub": 8
+      },
+      {
+        "arch": "Continuous 4 crown arch to central hub",
+        "end_vertices_inside_solid_hub": 8
+      },
+      {
+        "arch": "Continuous 5 crown arch to central hub",
+        "end_vertices_inside_solid_hub": 8
+      },
+      {
+        "arch": "Continuous 6 crown arch to central hub",
+        "end_vertices_inside_solid_hub": 8
+      },
+      {
+        "arch": "Continuous 7 crown arch to central hub",
+        "end_vertices_inside_solid_hub": 8
+      },
+      {
+        "arch": "Continuous 8 crown arch to central hub",
+        "end_vertices_inside_solid_hub": 8
+      }
+    ],
+    "upper_stones_red": false
+  }
+}

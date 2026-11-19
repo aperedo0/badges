@@ -1,0 +1,1 @@
+Owner supplied examples from November 14. Model and reference pairs document the exact requested corrections. Read OWNER_FIXES.md and NEXT_WORK.md for status and scope. Keep these examples with the construction source.

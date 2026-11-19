@@ -1,0 +1,532 @@
+{
+  "file": "/Users/antonioperedo/Desktop/badges/treasure_chest_20261113/phase03/stylized_wood45/candidate05/chest.blend",
+  "dirty": false,
+  "scene": "Chest Complete Form Phase 1",
+  "frame": 0,
+  "engine": "CYCLES",
+  "cycles_device": "CPU",
+  "samples": 64,
+  "color": [
+    "AgX",
+    "AgX - Medium High Contrast",
+    0.0
+  ],
+  "camera": "Chest reference camera",
+  "objects": [
+    {
+      "name": "Chest reference camera",
+      "type": "CAMERA",
+      "hide": false
+    },
+    {
+      "name": "Chest Development Key",
+      "type": "LIGHT",
+      "hide": false
+    },
+    {
+      "name": "Chest Development Fill",
+      "type": "LIGHT",
+      "hide": false
+    },
+    {
+      "name": "Chest Development Rear",
+      "type": "LIGHT",
+      "hide": false
+    },
+    {
+      "name": "First chest owner reference",
+      "type": "EMPTY",
+      "hide": false
+    },
+    {
+      "name": "Chest Rig Master",
+      "type": "EMPTY",
+      "hide": false
+    },
+    {
+      "name": "Chest Rig KeyInsertTurn",
+      "type": "EMPTY",
+      "hide": false
+    },
+    {
+      "name": "Chest Rig BoltShift",
+      "type": "EMPTY",
+      "hide": false
+    },
+    {
+      "name": "Chest Rig HaspRelease",
+      "type": "EMPTY",
+      "hide": false
+    },
+    {
+      "name": "Chest Rig SpringLift",
+      "type": "EMPTY",
+      "hide": false
+    },
+    {
+      "name": "Chest Rig LidOpen",
+      "type": "EMPTY",
+      "hide": false
+    }
+  ],
+  "images": [
+    {
+      "name": "mcp_viewport",
+      "file": "treasure_chest_20261113/phase04/wood_lab/live_before.png",
+      "source": "GENERATED",
+      "size": [
+        1200,
+        703
+      ]
+    },
+    {
+      "name": "reference.png",
+      "file": "//../../../phase01/candidate31/reference.png",
+      "source": "FILE",
+      "size": [
+        1254,
+        1254
+      ]
+    },
+    {
+      "name": "Render Result",
+      "file": "",
+      "source": "VIEWER",
+      "size": [
+        0,
+        0
+      ]
+    },
+    {
+      "name": "Viewer Node",
+      "file": "",
+      "source": "VIEWER",
+      "size": [
+        256,
+        256
+      ]
+    },
+    {
+      "name": "wood_albedo.png",
+      "file": "/Users/antonioperedo/Desktop/badges/treasure_chest_20261113/phase03/wood_sample44/candidate01/textures/wood_albedo.png",
+      "source": "FILE",
+      "size": [
+        1024,
+        384
+      ]
+    },
+    {
+      "name": "wood_albedo.png.001",
+      "file": "/Users/antonioperedo/Desktop/badges/treasure_chest_20261113/phase03/wood_sample44/candidate02/textures/wood_albedo.png",
+      "source": "FILE",
+      "size": [
+        2048,
+        768
+      ]
+    },
+    {
+      "name": "wood_albedo.png.002",
+      "file": "/Users/antonioperedo/Desktop/badges/treasure_chest_20261113/phase03/wood_sample44/candidate03/textures/wood_albedo.png",
+      "source": "FILE",
+      "size": [
+        2048,
+        768
+      ]
+    },
+    {
+      "name": "wood_albedo.png.003",
+      "file": "/Users/antonioperedo/Desktop/badges/treasure_chest_20261113/phase03/stylized_wood45/candidate01/textures/wood_albedo.png",
+      "source": "FILE",
+      "size": [
+        2048,
+        768
+      ]
+    },
+    {
+      "name": "wood_albedo.png.004",
+      "file": "/Users/antonioperedo/Desktop/badges/treasure_chest_20261113/phase03/stylized_wood45/candidate02/textures/wood_albedo.png",
+      "source": "FILE",
+      "size": [
+        2048,
+        768
+      ]
+    },
+    {
+      "name": "wood_albedo.png.005",
+      "file": "/Users/antonioperedo/Desktop/badges/treasure_chest_20261113/phase03/stylized_wood45/candidate03/textures/wood_albedo.png",
+      "source": "FILE",
+      "size": [
+        2048,
+        768
+      ]
+    },
+    {
+      "name": "wood_albedo.png.006",
+      "file": "/Users/antonioperedo/Desktop/badges/treasure_chest_20261113/phase03/stylized_wood45/candidate04/textures/wood_albedo.png",
+      "source": "FILE",
+      "size": [
+        2048,
+        768
+      ]
+    },
+    {
+      "name": "wood_albedo.png.007",
+      "file": "/Users/antonioperedo/Desktop/badges/treasure_chest_20261113/phase03/stylized_wood45/candidate05/textures/wood_albedo.png",
+      "source": "FILE",
+      "size": [
+        2048,
+        768
+      ]
+    },
+    {
+      "name": "wood_normal.png",
+      "file": "/Users/antonioperedo/Desktop/badges/treasure_chest_20261113/phase03/wood_sample44/candidate01/textures/wood_normal.png",
+      "source": "FILE",
+      "size": [
+        1024,
+        384
+      ]
+    },
+    {
+      "name": "wood_normal.png.001",
+      "file": "/Users/antonioperedo/Desktop/badges/treasure_chest_20261113/phase03/wood_sample44/candidate02/textures/wood_normal.png",
+      "source": "FILE",
+      "size": [
+        2048,
+        768
+      ]
+    },
+    {
+      "name": "wood_normal.png.002",
+      "file": "/Users/antonioperedo/Desktop/badges/treasure_chest_20261113/phase03/wood_sample44/candidate03/textures/wood_normal.png",
+      "source": "FILE",
+      "size": [
+        2048,
+        768
+      ]
+    },
+    {
+      "name": "wood_normal.png.003",
+      "file": "/Users/antonioperedo/Desktop/badges/treasure_chest_20261113/phase03/stylized_wood45/candidate01/textures/wood_normal.png",
+      "source": "FILE",
+      "size": [
+        2048,
+        768
+      ]
+    },
+    {
+      "name": "wood_normal.png.004",
+      "file": "/Users/antonioperedo/Desktop/badges/treasure_chest_20261113/phase03/stylized_wood45/candidate02/textures/wood_normal.png",
+      "source": "FILE",
+      "size": [
+        2048,
+        768
+      ]
+    },
+    {
+      "name": "wood_normal.png.005",
+      "file": "/Users/antonioperedo/Desktop/badges/treasure_chest_20261113/phase03/stylized_wood45/candidate03/textures/wood_normal.png",
+      "source": "FILE",
+      "size": [
+        2048,
+        768
+      ]
+    },
+    {
+      "name": "wood_normal.png.006",
+      "file": "/Users/antonioperedo/Desktop/badges/treasure_chest_20261113/phase03/stylized_wood45/candidate04/textures/wood_normal.png",
+      "source": "FILE",
+      "size": [
+        2048,
+        768
+      ]
+    },
+    {
+      "name": "wood_normal.png.007",
+      "file": "/Users/antonioperedo/Desktop/badges/treasure_chest_20261113/phase03/stylized_wood45/candidate05/textures/wood_normal.png",
+      "source": "FILE",
+      "size": [
+        2048,
+        768
+      ]
+    },
+    {
+      "name": "wood_roughness.png",
+      "file": "/Users/antonioperedo/Desktop/badges/treasure_chest_20261113/phase03/wood_sample44/candidate01/textures/wood_roughness.png",
+      "source": "FILE",
+      "size": [
+        1024,
+        384
+      ]
+    },
+    {
+      "name": "wood_roughness.png.001",
+      "file": "/Users/antonioperedo/Desktop/badges/treasure_chest_20261113/phase03/wood_sample44/candidate02/textures/wood_roughness.png",
+      "source": "FILE",
+      "size": [
+        2048,
+        768
+      ]
+    },
+    {
+      "name": "wood_roughness.png.002",
+      "file": "/Users/antonioperedo/Desktop/badges/treasure_chest_20261113/phase03/wood_sample44/candidate03/textures/wood_roughness.png",
+      "source": "FILE",
+      "size": [
+        2048,
+        768
+      ]
+    },
+    {
+      "name": "wood_roughness.png.003",
+      "file": "/Users/antonioperedo/Desktop/badges/treasure_chest_20261113/phase03/stylized_wood45/candidate01/textures/wood_roughness.png",
+      "source": "FILE",
+      "size": [
+        2048,
+        768
+      ]
+    },
+    {
+      "name": "wood_roughness.png.004",
+      "file": "/Users/antonioperedo/Desktop/badges/treasure_chest_20261113/phase03/stylized_wood45/candidate02/textures/wood_roughness.png",
+      "source": "FILE",
+      "size": [
+        2048,
+        768
+      ]
+    },
+    {
+      "name": "wood_roughness.png.005",
+      "file": "/Users/antonioperedo/Desktop/badges/treasure_chest_20261113/phase03/stylized_wood45/candidate03/textures/wood_roughness.png",
+      "source": "FILE",
+      "size": [
+        2048,
+        768
+      ]
+    },
+    {
+      "name": "wood_roughness.png.006",
+      "file": "/Users/antonioperedo/Desktop/badges/treasure_chest_20261113/phase03/stylized_wood45/candidate04/textures/wood_roughness.png",
+      "source": "FILE",
+      "size": [
+        2048,
+        768
+      ]
+    },
+    {
+      "name": "wood_roughness.png.007",
+      "file": "/Users/antonioperedo/Desktop/badges/treasure_chest_20261113/phase03/stylized_wood45/candidate05/textures/wood_roughness.png",
+      "source": "FILE",
+      "size": [
+        2048,
+        768
+      ]
+    }
+  ],
+  "materials": [
+    {
+      "name": "Chest Phase 1 neutral clay",
+      "nodes": [
+        {
+          "name": "Principled BSDF",
+          "type": "BSDF_PRINCIPLED"
+        },
+        {
+          "name": "Material Output",
+          "type": "OUTPUT_MATERIAL"
+        }
+      ]
+    },
+    {
+      "name": "Chest Wood Stylized Sample45 v5",
+      "nodes": [
+        {
+          "name": "Principled BSDF",
+          "type": "BSDF_PRINCIPLED"
+        },
+        {
+          "name": "Material Output",
+          "type": "OUTPUT_MATERIAL"
+        },
+        {
+          "name": "Single plank explicit UV",
+          "type": "UVMAP"
+        },
+        {
+          "name": "Single plank albedo",
+          "type": "TEX_IMAGE"
+        },
+        {
+          "name": "Single plank roughness",
+          "type": "TEX_IMAGE"
+        },
+        {
+          "name": "Single plank normal",
+          "type": "TEX_IMAGE"
+        },
+        {
+          "name": "Single plank physical tangent normal",
+          "type": "NORMAL_MAP"
+        }
+      ]
+    }
+  ],
+  "model_hashes": {
+    "Chest Body Envelope": "6f6f52eaa120388d32d221d158a1e2ed663a1a78c3b062b7e38ff241b2a0bfd5",
+    "Chest Barrel Lid Envelope": "9a4ad3a74b16792bbd21b465ab53aa7e0d4d7f5d98d788c173528ebf714e11e7",
+    "Chest Upper Lid Rim": "83ade82a7bb11f855661cfe03132e348db571f618226f011557ebf3d4c6c1a2a",
+    "Chest Body Upper Rim": "93b4c721c5ed33946a77d18c663cd59e75f236cf1d41c19831b96e8ac96712cb",
+    "Chest Lower Rim": "7dacca3ccf8ab132d1c59ad10a8d0a2750afb2947a1212885c23bd6896f0a2e2",
+    "Chest Corner Upright -1 -1": "e958a7791be9485da313e60b7d259de9b4264ed3877e3ebbe6d84d67e814fddb",
+    "Chest Angular Boot -1 -1": "7b5ed18cfe8cd532766882f51d625c8b2927e12d76bd976a0670d793c3125a16",
+    "Chest Corner Upright -1 1": "efb9b958f838751a49cf272896a290f858d3ceac530fe9612259b25864ec9685",
+    "Chest Angular Boot -1 1": "8abea607dd2311a60107a2f33d259ab3c4031bcd992316a2721ad230548b3e87",
+    "Chest Corner Upright 1 -1": "e8f2e31b51bf92b4e4d56e805e20492017ba2f89c619ec7742d9da7333963f11",
+    "Chest Angular Boot 1 -1": "4a1c111f737b87826940400ae79ddc383c9509e2f3f0cfcfcff89f0661e27321",
+    "Chest Corner Upright 1 1": "81abc11c2f3d01a01edc90cabafcae3e1e9957172a7a746bbdeeba79fa2325af",
+    "Chest Angular Boot 1 1": "ed749fe42d77017109b47db994aa481fc1cde861d49de81ad53746bf4c7cee90",
+    "Chest Central Lock Strap": "5e0b5626cdd701e67eebf9646de429895f3721e240cd37fb325692612606af68",
+    "Chest Central Lower Cuff": "a4257d5770baebefa1ae887b2fef8a7faf51460cf8fe7b6b6e2787b96bb0bd9d",
+    "Chest Crown Fastener Mass 1": "c030028c933e9074e0a91034acb7f08109dfa76f1542c702dd34bc7d604eb97c",
+    "Chest Crown Fastener Mass 2": "eefa858885e74fe8838723695ba89437ff70e411e8e8bbc4bf9e49732e853b84",
+    "Chest Crown Fastener Mass 3": "de1585c2af9cdd7a725205cb108868166f52188aa30e424c8abeb3c0f06254d8",
+    "Chest Crown Fastener Mass 4": "e7fa6ea46d88f60fb2c9273d88453dbbacc20efbf8e9df5756ca51edafae194e",
+    "Chest Hasp Mount": "8e3f978de57a5171ee21d5679d9a11335639f7d720e42928f0ddaf8173f756de",
+    "Chest Front Hasp Barrel": "eb801cb99fdbbb87e30626e97cf1b415061b341c12b3c5981da55d8f08cc0f1a",
+    "Chest Shield Lock Plate With Bore": "59d550200ae6b50367ab994582aeab8b3a8785ca3d990c0274930ef7d2dcd6b4",
+    "Chest Curved Hasp Tongue": "7ce7fc4de16c0f3f3055d3b0037bc0af73f9f9b83a2fb77474219f0e25af8ef1",
+    "Chest Handle Mount -1": "e74014e11bccd1babd98d4c7e1f46b7ae027da238f76438c648e6aff75cd409c",
+    "Chest Solid Ring Handle -1": "dd4f6df4638b765bf10f714284c919c8f8284ed54111b000bb578329a311ee72",
+    "Chest Handle Mount 1": "b6c963c2c3abad8ee795dc138cb06059bf2f60238391823935827c478759f23f",
+    "Chest Solid Ring Handle 1": "0fdebecceb6095963062f09ee6a484ef2d83898c250fd5152864ad70984d7713",
+    "Chest Rear Hinge Lower -1": "f049290656b978f465c8ab326818ddb50202a09368e6226ca85eab0fef1acb43",
+    "Chest Rear Hinge Upper -1": "7fa09d61fd5bff2c05d3e88c4f1dc2ae60171d204023cad8787a8454820fc170",
+    "Chest Rear Hinge Barrel -1": "8f6b685187013af7fec1b91291af72d517f42f3bd1c69cf98561d91290a8ecae",
+    "Chest Rear Hinge Lower 1": "f924b1b3b6d0677562b0532fd4a33899f08c481e9f98351728555706ee1d0e5c",
+    "Chest Rear Hinge Upper 1": "61dec9221ec6257ba8fb9d7e12a645af00c29a095d2415a71c803bc824d3a300",
+    "Chest Rear Hinge Barrel 1": "41448d6311f40614fa7673ee7d06ddc70b28c3a5c851d3731dfefd64d002d9cd",
+    "Chest Lock Backing With Bore": "60b680d42981bc85104975a057821593e1640efd403b62fa87a3c00e901d851a",
+    "Chest Lock Border With Bore": "72e0b0d3bdf3a811460435ed3c3530480e70675ffc41a5c313389d3364349145",
+    "Chest Hoop Rivet 0 0": "202b657dfcec507b3e3fd6e98bbaa57ef6bcf05cb1362a5e98e5925f4d6810d7",
+    "Chest Hoop Rivet 0 1": "7a5cc2a4cf96266be3fde827aaa63c5341d30fb076145a837021aff5e7d0c592",
+    "Chest Hoop Rivet 1 0": "4e7225f14a83e69141eb95500bcad8475ae7e7e8d2da1190c28d5cf7f4933aa6",
+    "Chest Hoop Rivet 1 1": "cfdc70aabc34f7400c22d1054d0e79466173ddd999e3d950fa4188a326400ef6",
+    "Chest Hoop Rivet 1 2": "4a36563542cf6c376b93774545ee48f66e39eefcef4e67490fb002a4e44c533f",
+    "Chest Hoop Rivet 1 3": "f88b9078282915d6b6849027221784ef2962e0fe3df811a673a800a73a99324c",
+    "Chest Hoop Rivet 1 4": "212115719d69c74cc0fe8b3cae55bf951e4b6f5ae367ba96f736c9167d8e4d2b",
+    "Chest Hoop Rivet 1 5": "19d068f5b444aede4e9c77cfd0d2beba206d1e7bf094cb5c663b69a986867544",
+    "Chest Hoop Rivet 2 0": "87cee3f4fea54cefe88ac51c2c85a6e4ecc8ae3de838d861ded62ac719216878",
+    "Chest Hoop Rivet 2 1": "508eee89c11a326c803073ea8790675d6a7f02894eea4e58d7b054a1e56b9c6f",
+    "Chest Hoop Rivet 2 2": "ca34bc98f88d045e0f5a55e861fca5999edc02628ee59d885e7ae0298edd9d09",
+    "Chest Hoop Rivet 2 3": "9cc353632aac66964ee308316918c677c5ae440ffe2268eff8483468d5bf08fb",
+    "Chest Hoop Rivet 2 4": "22a21dcab735959559d96b34cef611fb01ad7f58c65e48e5121197fbbd3a9d26",
+    "Chest Hoop Rivet 2 5": "2ef228bcf5823f415c695d1c67a963b676fdbefa6af355c5e20517ef553cbea5",
+    "Chest Hoop Rivet 3 0": "454cc9e7e325fc9c8cd703bfeeee4e613532e563a7cf4a363c60b3363825fb8f",
+    "Chest Hoop Rivet 3 1": "1d22ab07d3e9ef2fe1d0f3563400a8edc5b4f6d84f12c8072d3dff391e3a5ef2",
+    "Chest Upper Corner Front Rivet -1 -1": "84037251a1a8af9dc9357cdf4b466b0d2a9937193e772abacd87276619fa0be0",
+    "Chest Upper Corner End Rivet -1 -1": "4d62683a1312d2f5b00c0e52546065a0d8060476a7cf9b4b099148b7560d3fb2",
+    "Chest Boot Front Rivet -1 -1": "4970e013694cd57c677648bd9dfcee3f3963ff8a5d429385f5ca3b8862e71bf7",
+    "Chest Boot End Rivet -1 -1": "d87f1f3bc53144104e645414f9dbe95dc6e70681e633b3bf3bde2b4f89a161ab",
+    "Chest Upper Corner Front Rivet -1 1": "f3cd9a8cd81fda415fe5a9d123d9f32818956dedb6d933ead49dbd144a1e7ea9",
+    "Chest Upper Corner End Rivet -1 1": "54572cee932bd2664f73be56b308c5e4043e98fe0afeae7854c7bbbb4e3da03c",
+    "Chest Boot Front Rivet -1 1": "eba8371cd5444f10cbd99d564bdde2bc9ed59c1f6e6d43be7dd2fe1a8e75427a",
+    "Chest Boot End Rivet -1 1": "219dbdfbebb249af251c0d5536a86baf5794219cf36721b68d5d00876d14417c",
+    "Chest Upper Corner Front Rivet 1 -1": "84a34878900e126f8ba381f7e8a1d81bffc1ffdf234667376512ab1fa8f262ca",
+    "Chest Upper Corner End Rivet 1 -1": "9df45bb62eeb19de51cba856176b7cf4a23d9475e6237184d0ed39c4ab1d73bb",
+    "Chest Boot Front Rivet 1 -1": "783eee5a117934d2a1154ec8fbd8692e6e197d7254d14eb364938cd8446d8411",
+    "Chest Boot End Rivet 1 -1": "e6e14cf27dd9bc06da21a3c397c94fbfde45f593e214bea18122866c7a2b90e9",
+    "Chest Upper Corner Front Rivet 1 1": "f12743fdd8c3782621832b2c7041024084e82c4aa457fd095edabc864cc33a17",
+    "Chest Upper Corner End Rivet 1 1": "beaf476c4d3f2c8dd74d8122fe8a3c6c8b264a12f8362bf5f448478a79fcd766",
+    "Chest Boot Front Rivet 1 1": "dc310d3722bc9ea39272725cb604fcc81515118153200b924dd3b16c895422b4",
+    "Chest Boot End Rivet 1 1": "1f6ca8a443d80e0ca9bf85c020f1556674aa40a6364485dc2610d8db95ecc06a",
+    "Chest Body Lip Rivet -1 0": "3a5add72461d472447495a007d534673811b6e5f43fa053fdca739416bde8b93",
+    "Chest Body Lip Rivet -1 1": "d313d712332dc600241384b3ee10251b1389c3e16c1045b692c29f66c7fdb037",
+    "Chest Body Lip Rivet 1 0": "3220ef6bcdba54d7e20a0ef8797a1eb86cf77058beddd45f4f5129d10e5d23e7",
+    "Chest Body Lip Rivet 1 1": "4e82d79cf7db50e7f326ba00235bd304a0cdaf3443b0f91fd48aef0f5ccec981",
+    "Chest Handle Mount Rivet -1 -1": "ff427396428786c0012f77eb0d2b14f291c0351ad98d559ac474554e5dd7fac3",
+    "Chest Handle Mount Rivet -1 1": "f0af14afaedaa9be4ba45a5df63fecad53502a0b559616c6d5236aab746bf607",
+    "Chest Handle Mount Rivet 1 -1": "a0e495dc683eeec529bef2973af3e827cec61a3a1b301aa03e6c31523e6f6b6e",
+    "Chest Handle Mount Rivet 1 1": "9c17f72907580b3778105b93124ff7926f4c168d1e8b816b3c4ecb1871c110b9",
+    "Chest Lock Rivet 0": "ae245ff46dfc02c7aab57351c9bb845ca406ba04ad04ed9af461817b8b54b09f",
+    "Chest Lock Rivet 1": "373ecb2cd3941708285c1abbb3632518dcaa93b293eb55b4ecc9af7cf529a64c",
+    "Chest Lock Rivet 2": "5faf53d0e443673760f4bcd506867358e1d7daa620cc7a6d552aca9bf53f6e31",
+    "Chest Lock Rivet 3": "b47471301aadc02295035595ae35144776ed116b971343187a33c5abec715513",
+    "Chest Lock Rivet 4": "5f831469052bcfbbd4eea84c1a97c3131418dc1126ccd4c7b9c4890fb3345310",
+    "Chest Lock Rivet 5": "394e08f04cb3fc24d760ea705c151048ec5a706182e47f9e88ddab9917dfb903",
+    "Chest Lock Rivet 6": "16b1e93130378d30bd6738c36647e32d457ee970f8cdee09ca94f223b215dc8c",
+    "Chest Lower Strap Rivet": "a0a07709858c184c6103e85e2403cac5dae65b4202c030527d5c26029255889c",
+    "Chest Upright Diamond -1 -1": "799ada3135eedd2e9032d2f452d6c87c2090390e56ac303eaa61380e662d695b",
+    "Chest Upright Diamond -1 1": "a9f2752cf6bc4b8c298c27d6f98b3f843417063c0c55bd190778c88fe3691fcf",
+    "Chest Upright Diamond 1 -1": "eda9ff8a659c2264aa5a8b75cdc3336ab9f37f9c0e86b9835ed9a41b92752981",
+    "Chest Upright Diamond 1 1": "c673b837cfb7dce696ab5d872cda988d3be5b67060508947a730ea3ff65d3768",
+    "Chest End Arch Rivet -1 0": "7e8130fb2dd7d5d6300b3403e0b83e5656eba4e63fb5a621f38f62948e9f6551",
+    "Chest End Arch Rivet -1 1": "480b2a9ceba8fdc23c98e8bf080270f264f2a563631d2494b6dcf04c1b2acf05",
+    "Chest Corner Body Cuff Front Rivet -1 -1": "1c75e5cd7252e4dc362247476b50ef459d81c9b4cbed2a0f36937fdcdc6da84a",
+    "Chest Corner Body Cuff End Rivet -1 -1": "77f9a12e7463791684aae18d8b772e98f9df497b922cb82ca5e594ccbf5f427c",
+    "Chest Corner Body Cuff Front Rivet -1 1": "499c68972d8a507d82068811c08767bc929f341fe2b30f7a9516da502e004ebb",
+    "Chest Corner Body Cuff End Rivet -1 1": "db22f5772b37700156218bee525b11aecd52d549bd5b61a5d0f0090a67eedeb1",
+    "Chest End Arch Rivet 1 0": "14313ca50a772607554c1000d4c84258804dbcd91a8172b44beed8d5cf554cec",
+    "Chest End Arch Rivet 1 1": "52ac363858052b9e736ba7c04e35a4128d20df208052c9ee61debb17173d4caa",
+    "Chest Corner Body Cuff Front Rivet 1 -1": "aa8b2bff04fd6a4b063692a2fb0ef46f3db4c18ca2189d61a152d151edf22bb5",
+    "Chest Corner Body Cuff End Rivet 1 -1": "299474c03d03f6ba9fd4f4d737fc292c49bedf4b19014a7892f7e4ddf204816e",
+    "Chest Corner Body Cuff Front Rivet 1 1": "1e9212fb927de5589a7511fb646d55f07b9f61b4b4e5b42f454573810d27a7ba",
+    "Chest Corner Body Cuff End Rivet 1 1": "d5a6dcbe6e58bbed36a9c7a67ae53f64c76d454941313e5a891f5c10418078ec",
+    "Chest Hasp Pivot Dome -1": "42eee3c0cb37576a1b8f4fc2cec2855199560be36338ae73380289bf5c4a17a5",
+    "Chest Hasp Mount Fastener -1": "c6e40c4eb9653637ee23f3cb3bf0677a2b68c47763ed99a41bc7bccb2d1af798",
+    "Chest End Arch Crown Tab -1": "3099beea3f9fcc9cba1bb1c1238ec57f83d6c7ac3a892c5d9a505f4ca53866e0",
+    "Chest End Crown Fastener -1": "8a34489d63bae490b4af8ea5e5401fbd98ce403fd77e626e649181a5c9571ce1",
+    "Chest Hasp Pivot Dome 1": "25a910c19aa5c90abcbe6010402e49d231407a237cdac10aebcbd03b2c21c53b",
+    "Chest Hasp Mount Fastener 1": "e562f2406964784658ceb2200c77fa57cd263d32d18806192fa6f02a4c457d2f",
+    "Chest End Arch Crown Tab 1": "e0eaa3da0d1e51c7ece9a22f1bb5ca628804a8362c510011eb38a62896c0ce24",
+    "Chest End Crown Fastener 1": "0bc0e6f3d14154aafe8a9878a8f69f982ddf86047c4df5dbf1b1861abe38a357",
+    "Chest Upper Corner Front Rivet -1 -1 Seat": "e1b5ac808caf504a6b4501fab0b12635fda4e5e6363cd27bfc21eefaad9d65fe",
+    "Chest Upper Corner End Rivet -1 -1 Seat": "cb14019fb728dc643dd15bffab47f6f4d5844d89640005dc0f02804c2246e163",
+    "Chest Boot Front Rivet -1 -1 Seat": "4ddf74e86a92c8f63abe96b2dda3bf2bb78ed9eb594dc1f887fbd4ac2d27718c",
+    "Chest Boot End Rivet -1 -1 Seat": "3abacd10dd2919366261bf479a8e18bedcbd5575f28018b4bd394c71a3c60d52",
+    "Chest Upper Corner Front Rivet -1 1 Seat": "3d2d81bcfa22c49d3e78071bd581b5a68650ccf4b069513bc1794ed3b97d53fe",
+    "Chest Upper Corner End Rivet -1 1 Seat": "77d26c72a7902b9010b0149c7e25273e186a64e876cad689726a7708cfb73338",
+    "Chest Boot Front Rivet -1 1 Seat": "c50062ea848291b4a6ad4d5f73ef1d1fd6dcdcab57058abbe1287a303b30b870",
+    "Chest Boot End Rivet -1 1 Seat": "0725b1323a5f0a518685b4fa220410563d3ed40ca4d01023deca8d7958142e64",
+    "Chest Upper Corner Front Rivet 1 -1 Seat": "ca57a61556d8733fde3e9b9ebdf2e02947a2ebec2ff54d2ef08f59106d677361",
+    "Chest Upper Corner End Rivet 1 -1 Seat": "9a66ab19aac45037b8c06989c5b1b9240f2c352a9c37f4c4cc94739244bd00e0",
+    "Chest Boot Front Rivet 1 -1 Seat": "0647b53dfa844e4f864347aeb85948add52660de757d97e886f5419f87c98c56",
+    "Chest Boot End Rivet 1 -1 Seat": "5036d95923d0830fcdeda16a83c9eb5a03d1798265a83229324e57d6cc233e9b",
+    "Chest Upper Corner Front Rivet 1 1 Seat": "243e721dbd882a91dc5d7d6971db80fdaebeb531dad681d4d78f556e9ac60852",
+    "Chest Upper Corner End Rivet 1 1 Seat": "dfe7f255697116293eb7d5b67942e08adcb25747bf57e51d4b3dd740e68e862b",
+    "Chest Boot Front Rivet 1 1 Seat": "4b23620749f160101b8e821bb29445e1cd3bee2e55a6b28d0fb04d926ee7ca11",
+    "Chest Boot End Rivet 1 1 Seat": "75af23ce02f35fb6163f8da53a814fdddbe56c8868aa0745ae56267d76de1802",
+    "Chest Rail Rivet -1 0": "3fa06ecf52ca995a436cc6557240b4c800c26bc3526f653138c45a32822399bc",
+    "Chest Rail Rivet -1 1": "b211e944b00c2f42e3a0aa82cd0129b3fe152e5ef4b5b18c4e833ced9aa3a6a0",
+    "Chest Rail Rivet -1 3": "9b3ed8cd80f018d1214ac259d30cf81e8a34642409681f888c22bf1456a86a0e",
+    "Chest Rail Rivet -1 4": "271a80edaa84a9d330ed123722f0c22db94e33fe94929d5226394bbef31ba639",
+    "Chest Rail Rivet 1 0": "19c0d9f2c1cf235571a3c966e8cb0b1a123d78830025a442a1ef3c1cb3da3a90",
+    "Chest Rail Rivet 1 1": "9ebc956bce496dabf9126a578c7d336262702404803e684427d1cd4879498608",
+    "Chest Rail Rivet 1 2": "c20a217866eed6ea0db15aeca369f9dfb668c7b0fd18a1f1395391af6cd9b2e1",
+    "Chest Rail Rivet 1 3": "f1e595d734a0f580aae4b6acc8e786cfd21f96c06cbba66b427df1f0e9863c20",
+    "Chest Rail Rivet 1 4": "7429c57f82bf7fed320a20fb4eccc07241f8c60ca0caede00d49c2d33fa54a36",
+    "Chest End Rail Rivet -1 0": "073d6350df5a030a3b186f3b1fbe2c5998356ca8fe307522f151f9d0b815e037",
+    "Chest End Rail Rivet -1 1": "b8b17218e92dd6218d1a65d47dcd5286ca8c8c4e322f0141a6eb67b41a17c0b1",
+    "Chest End Rail Rivet 1 0": "021f6357f6b45385d11aea8f8debf83cc88129861aed4c879e5bb56389c1ec01",
+    "Chest End Rail Rivet 1 1": "f6d9f8f27d1cbaf31bd4244b23f6ecfc16998aa23defd6e36e396691b6c9b70b",
+    "Chest Measured Rolled Handle Cover -1": "40ae31c31fdbbfc392818e59cf2ce069601a9a2e7b0455083c9fd8d254cb8c7f",
+    "Chest Measured Rolled Handle Cover 1": "2941c92dbbfd91ef48078878f2dcc77e1fd0b890abf09acc16bb3eddeca2c6c6",
+    "Chest Fixed Front Hinge Knuckle -1": "7f2f274fb11223a291378865be5c309c62983be218d91c27759ca0be7a3d0506",
+    "Chest Fixed Front Hinge Knuckle 1": "2662eeaaa3e0ba488146f1463d154308b99e78f9072da83abe1d3db2adca6471",
+    "Chest Front Hinge Pin": "9abb4282dea48e72d6fb2e5b4140d56fb89395c54ae3287de2694479967db83d",
+    "Chest Case Back With Key Bore": "ba02c86d678522f4e9c3bc239a2a13e90dc61e81ecad49d780faf92aea98b682",
+    "Chest Hollow Lock Case Walls": "50cf01b0c6a05c33848e7ddf2867454cb4b0d0e4a7180b83ddeb506fc8647068",
+    "Chest Key Driven Slider": "425cfa493461c0b17ab066e8cf58fdf8335ffbda812b7266e0b4c48d875ed08c",
+    "Chest Compliant Catch Leaf": "a303862a2ad3f1daacde783005c9d7b87a17fd6fb15730abfc4d8859d3611735",
+    "Chest Fixed Leaf Clamp": "798602fbdf5abf26696532fe6f7c7e564e1951583b7810abe89ea88ba9ceb005",
+    "Chest Small Front Rail Rivet -1": "136aed98e1f3f098fef721b8a2b29388629b9eecf9f70e7585ce96d944ccbab6",
+    "Chest Rear Hinge Lower Rivet -1 0": "158f3544e8eda939ca74a99f1cda37a0f531fc1dd067eb0c046cd34c94167a62",
+    "Chest Rear Hinge Lower Rivet -1 1": "073d0881fdf62ae026fd77b0ea12290a39164ef996f357a98b2a58d04f4307ff",
+    "Chest Rear Hinge Upper Rivet -1 0": "fabe6b320f92127cde1dabaf42115b0d8f3eb17d0b6b947b3f67f1766f0c6327",
+    "Chest Rear Hinge Upper Rivet -1 1": "16f391ea6077e3b8ce560605a01cf6428a4c25f09f430fd2e8c2e8a07adb285c",
+    "Chest Rear Hinge Lower Rivet 1 0": "1e8d9c57f0fe0e944c7458e7a0d484e0800e197a526bfc610fcbf2b2c82d092d",
+    "Chest Rear Hinge Lower Rivet 1 1": "a3cf5e2cbee96f60c6059d130cf1b42c675b49e5448373ccee6f841ad0634b2b",
+    "Chest Rear Hinge Upper Rivet 1 0": "47852433ddc20a05cf48ad0eefdbab20a7c3cda486c0032c1425a85df8897c14",
+    "Chest Rear Hinge Upper Rivet 1 1": "0176ecc261e9d77081bee5a3ff34fa5ff917732e3c75367020a2a1fe29fb55ad"
+  },
+  "modifiers": []
+}

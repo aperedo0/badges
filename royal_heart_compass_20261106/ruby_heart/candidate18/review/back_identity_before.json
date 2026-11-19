@@ -1,0 +1,16 @@
+{
+  "expected": "Ruby Heart",
+  "observed": [
+    {
+      "name": "Ruby Heart",
+      "frame": {
+        "x": 123.16666666666667,
+        "height": 36,
+        "y": 241.2166666666667,
+        "width": 155.66666666666663
+      }
+    }
+  ],
+  "epoch": 1794096165.9360042,
+  "visible_gallery_heading_verified": true
+}

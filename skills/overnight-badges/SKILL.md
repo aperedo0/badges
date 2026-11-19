@@ -1,58 +1,53 @@
 ---
 name: overnight-badges
-description: Build reference matched 3D badges overnight in Blender and a separate simulator preview, with 30 minute work blocks, 20 minute breaks, saved checkpoints and 10 minute connection recovery checks. Use when the owner requests overnight or unattended badge building, or explicitly requests this paced workflow. Ordinary daytime badge edits do not need overnight pacing unless requested.
+description: Codex only. Keep unattended badge work going overnight with saved run state, checkpoints, a done gate that reads the fresh review, blocked badges, crash and connection recovery into the same Codex thread, and optional pacing (continuous by default). The badge work itself runs through badge-plan, badge-plan-review, badge-build and badge-fresh-review. Use when the owner asks for overnight or unattended badge building. In Claude Code there is no recovery wake; use only the run state and checkpoints.
 ---
 
 # Overnight badge building
 
-Make the badges closely match the owner's references, including the small details, and leave the finished models visible in the separate simulator preview. Use the existing app lighting and approved material finish. Build real relief and finished backs in Blender, with changing metal reflections.
+This skill is a wrapper. It keeps a run alive and honest while nobody watches; it does not say how to build a badge. The badge work follows the normal skills, in order, for every badge:
+
+1. **badge-plan**, then **badge-plan-review** until approved (skip only if the owner says so for this run).
+2. **badge-build** in the open Blender, Blender first, the simulator only for versions ready to judge.
+3. **badge-fresh-review** after every version, with its caps and its "go back when worse" rule.
+4. **badge-quality's final piece reduction pass** (`badge-quality/references/finish-optimization.md`): build with as many pieces as the design needs first; once the look is final, keep that version as the baseline and look for fewer rendering pieces with the exact same look. Keep a version that cannot be reduced without changing its look, and say why.
+
+A badge is **done** only when its latest `review.md` says `SHIPPABLE: yes` with `CLOSENESS` of 90 or more and the reduction pass is recorded. The `done` command checks both.
+
+## Paths
+
+* Workspace: `/Users/antonioperedo/Desktop/badges` (read its `AGENTS.md` first; the owner's word beats it).
+* Production app: `/Users/antonioperedo/Desktop/screen_time`, never touched by a run.
+* Preview app: `emerald_trophy_20261025/preview/ScreenTime.xcodeproj`, scheme `ScreenTime-UIOnly`; verify with XcodeBuildMCP session defaults.
+* Blender: the open window, community bridge on port 9876 (`ruby_heart_claude_20261107/tools/blender_link.py`), Blender's official MCP plugin on 9877 for API lookup. If Blender closed, reopen it with `forge_tide_compass_20261103/start_blender.py`.
+* Script: `/Users/antonioperedo/Desktop/badges/skills/overnight-badges/scripts/overnight.py`, run with `/Library/Frameworks/Python.framework/Versions/3.11/bin/python3`. Commands are in [the runtime notes](references/runtime.md).
 
 ## Start or resume
 
-1. Read the workspace `AGENTS.md`. For BestSpent, use `/Users/antonioperedo/Desktop/badges/AGENTS.md` and [the badge workflow](references/badge-workflow.md). The owner's request takes priority over general taste guidance. Preserve the app contract and approved files.
-2. Identify the references, requested badges, source files, preview project and current thread. Reuse available local context before asking questions. Inspect each reference and verify live Blender with an actual viewport capture.
-3. Create a unique run folder in the badge workspace with reference copies and numbered candidates. To recover, open the existing `schedule.json` and saved Blender files. Never initialize over saved work or rebuild a completed badge.
-4. Work for 30 minutes, then rest for 20, repeating until every badge is finished. There is no overall time limit. Do not infer a deadline from an earlier request, a wake time assumption or a token window. Only an explicit new owner instruction can add a deadline or stop the run. Breaks reduce activity; they do not guarantee a token allowance or reset a usage limit.
-5. Read [the runtime instructions](references/runtime.md), then set up and verify the local timer before leaving work unattended. An overnight run authorizes recovery messages into that same thread. Creating or editing this skill alone does not start a run or timer.
+1. Identify the mockups, the badges, the current thread (`CODEX_THREAD_ID`) and any earlier run folder. Check the live Blender with an actual viewport capture.
+2. A new run gets its own folder in the workspace and `init`. An existing run is resumed from its `schedule.json` and saved Blender files; never initialize over saved work and never restart a done badge.
+3. **Pacing:** continuous by default (the owner removed scheduled breaks on November 12, 2026). Use `init --pacing breaks` (30 minute work blocks, 20 minute breaks) only when the owner asks for breaks; ask only if their request is unclear.
+4. **No deadline** unless the owner sets one in a new instruction. Never infer one from an earlier request, a wake time or a token window.
+5. Start the watcher (`watch --start`) and confirm it before leaving the run unattended. Creating or editing this skill never starts a run.
 
-## Work for 30 minutes
+## While working
 
-Focus each block on one badge or one remaining finish issue. Finish early when everything is ready; do not fill time with extra candidates. Move to the next unfinished badge when appropriate.
+* Check `status` before long operations. Declare a finite busy period for a long build (`checkpoint --busy-minutes`); never renew one to hide a failure.
+* Checkpoint after every real improvement, before switching badges and before a long operation: the saved `.blend`, the candidate folder, and the exact next action.
+* **Stuck badge:** after three versions with no clear gain, or when a cap in badge-fresh-review is reached, run `block --badge NAME --reason ... --evidence <comparison or review folder>` and move to the next badge. The owner decides in the morning.
+* **Unsaved changes in the open Blender** (`bpy.data.is_dirty` when you are about to load or switch files): someone worked there by hand and nobody can answer at night. Do not load or switch files; block that badge with the reason and continue with another badge that needs no file switch, or stop.
+* With breaks: during a break start no modeling, render, build or new candidate; when it ends run `begin`.
 
-Check runtime `status` before major modeling, render and build operations. Treat `work_until_epoch` as a real deadline. Do not start an operation expected to run beyond it. Save before long operations and declare a finite busy period, bounded by the work deadline. Do not renew a busy period to hide a failed connection.
+## Recovery
 
-After each substantial geometry or material improvement, save the complete `.blend`, candidate, latest evidence, unresolved details and exact next action. Refresh the checkpoint during active work, before switching badges, starting a build or entering a break. Model activity and a local timer heartbeat are different things.
+The watcher checks every 10 minutes, independent of the model connection. It queues one short continuation into this same thread (`codex queue --thread ... --resume`) when the run is stalled for 15 minutes, after a connection error, or when a break has ended. It never starts another agent or switches accounts, and it stops on completion, pause, cancel or an owner deadline. Account, approval and usage limit errors need the owner and are not retried.
 
-Make a small detail checklist from the actual reference: silhouette, proportions, negative spaces, feather or leaf shapes, head and eye, flame curves, ribbon folds, gem cuts and settings, rim profile, background texture and color, metal hue and moving highlights. Fix the shapes rather than hiding mistakes behind glow, grain or lighting changes.
+On a recovery wake, read `schedule.json` first. A paused, cancelled, complete or expired run does no badge work. If work is already running, do nothing. Otherwise resume the saved next action.
 
-Small details are part of done, not optional polish. Do not silently simplify them away to finish overnight.
-
-Develop the complete badge in Blender first. Use the simulator for final native lighting and rotation checks. Compare at the same badge size. Check front, back, both sides, every tip and long edge at 4x, reflection and a slow full turn. Confirm captures show the loaded 3D model before material fitting. Launch screens and flat fallback art are invalid measurements.
-
-If two or three candidates fail to move clearly closer, stop guessing. Save a comparison and diagnose geometry, UVs, material response or measured app light. Continue independent useful work while an optional owner question is pending. Do not mark a poor match finished to meet a clock.
-
-## Rest for 20 minutes
-
-Save the scene and next action before the work deadline. `status` advances an expired work block into its scheduled break. During the break, start no modeling, generation, render, build, material experiment or new candidate.
-
-Prefer the verified local timer to wake this same thread after the break, avoiding model work during rest. Only release the turn for a scheduled break after verifying the timer is alive and targets this exact thread. Otherwise use an available interruptible waiting mechanism with individual waits no longer than 60 seconds, and report that automatic waking is unavailable. Ending a turn alone does not resume work later.
-
-When the break ends, run `begin` for the next 30 minute block. An early recovery wake must honor the remaining break. An interruption never resets a partially used work block or creates a fresh overall time window.
-
-## Recover every 10 minutes
-
-The local timer lives independently of model connectivity. It checks every 10 minutes, sleeps locally and can queue a short continuation using the installed CLI's verified `queue` command. It reads only this run and this thread's local activity. It does not launch another agent or switch accounts.
-
-On a recovery wake, first inspect `schedule.json`, deadline, completion states, saved candidate and Blender scene. A paused, cancelled, completed or expired run does no badge work. Recovery is not an owner request to resume a paused run or extend its window. If work is running normally, do no duplicate work. If inside a break, wait. If the connection failed, resume the saved next action when tools respond. Completed badges stay completed.
-
-The timer must use a single instance lock, avoid duplicate messages for unchanged activity, respect finite busy periods, and stop on completion, owner requested pause or cancellation, or a deadline the owner explicitly requested. With the normal unlimited run, it does not stop after five hours or any other elapsed duration. Retry failed queue delivery at the next 10 minute check. Authentication, approval, usage limit and sandbox failures need attention rather than repeated network retries.
-
-A skill cannot repair internet service, restart a closed app or operate a sleeping Mac. Verify the queue transport before claiming recovery is active. Keep the Mac awake for the active run with a scoped local helper when available; stop it when the timer exits. If recovery is unavailable, retain resumable state and report that limitation rather than substituting an untested scheduler or UI typing hack.
+A skill cannot repair the network, reopen a closed app on a sleeping Mac or keep a thread alive without the queue transport. If `codex queue --help` lacks `--thread`, `--message` or `--resume`, the watcher refuses to start: keep the checkpoints and report that recovery is not active.
 
 ## Finish
 
-Only mark a badge done after saving and visually reviewing its final USDZ, editable Blender scene, report, same size comparison, native front, back, both sides and full turn evidence. Runtime `done` requires these artifact paths and a review assertion. Preserve the previous approved final.
-
-When every badge is done, run `complete`. This creates this run's own completion marker and stops its timer. A connection failure, missing reference or long elapsed time is not completion. Preserve an honest next action for unfinished work and continue on the next work block until it is finished. Honor a deadline only if the owner explicitly adds one. Pause or cancel promptly when the owner asks.
-
-Leave the final badge open in the separate preview and verify its selection survives reopening. Deliver short comparisons, final model and source paths, and any real uncertainty. Keep the production app exactly as found. Do not commit or push for the owner.
+1. Mark each finished badge `done` with its final files, its `review.md` and the reduction note. Keep the previous approved final.
+2. When every badge is done or blocked, run `complete`; it writes the run's `COMPLETE` marker and stops the watcher.
+3. Leave the final badge open in the preview. Report each badge: done (with its last review score) or blocked (with the reason and pictures). Keep the production app exactly as found; never commit or push for the owner.

@@ -1,0 +1,68 @@
+{
+  "version": 1,
+  "thread_id": "01a16b8e-9f81-76d1-8bd7-d0a939464547",
+  "workspace": "/Users/antonioperedo/Desktop/badges",
+  "status": "active",
+  "phase": "continuous",
+  "block": 6,
+  "started_epoch": 1794473303.828507,
+  "deadline_epoch": null,
+  "work_until_epoch": null,
+  "break_until_epoch": null,
+  "busy_until_epoch": 0,
+  "heartbeat_epoch": 1794553446.646255,
+  "checkpoint_seq": 31,
+  "active_badge": "sapphire_teardrop",
+  "next_action": "Sapphire27 requested revision installed and open for owner inspection. Ruby Heart warm gold color/profile matched, brush ripple corrected with direct intrinsic map, brighter actual sapphire cut. Independent review passes clean finish and requested improvement; original mockup80/100 remains a separate acceptance question. Await owner feedback. No app code edits or timer; other badges remain on hold.",
+  "badges": {
+    "campfire_night": {
+      "status": "working",
+      "blend": "/Users/antonioperedo/Desktop/badges/camp_owl_mountain_sapphire_20261111/campfire_night/candidate27/source/campfire_night.blend",
+      "candidate": "/Users/antonioperedo/Desktop/badges/camp_owl_mountain_sapphire_20261111/campfire_night/candidate27",
+      "reference": "/Users/antonioperedo/Desktop/badges/camp_owl_mountain_sapphire_20261111/campfire_night/reference.png",
+      "saved_detail": "Paused; native normal cause test captured; finish unresolved",
+      "owner_hold": true
+    },
+    "amber_owl": {
+      "status": "working",
+      "blend": "/Users/antonioperedo/Desktop/badges/camp_owl_mountain_sapphire_20261111/amber_owl/amber_owl.blend",
+      "candidate": "/Users/antonioperedo/Desktop/badges/camp_owl_mountain_sapphire_20261111/amber_owl/candidate06",
+      "reference": "/Users/antonioperedo/Desktop/badges/camp_owl_mountain_sapphire_20261111/amber_owl/reference.png",
+      "saved_detail": "native front and most poses captured; fine gold edge beading; remaining pose interrupted by disk full",
+      "owner_hold": true
+    },
+    "radiant_mountain": {
+      "status": "pending",
+      "blend": "/Users/antonioperedo/Desktop/badges/camp_owl_mountain_sapphire_20261111/radiant_mountain/radiant_mountain.blend",
+      "candidate": "/Users/antonioperedo/Desktop/badges/camp_owl_mountain_sapphire_20261111/radiant_mountain/candidate08",
+      "reference": "/Users/antonioperedo/Desktop/badges/camp_owl_mountain_sapphire_20261111/radiant_mountain/reference.png",
+      "saved_detail": "Paused; initial native poses captured; finish unresolved",
+      "owner_hold": true
+    },
+    "sapphire_teardrop": {
+      "status": "working",
+      "blend": "/Users/antonioperedo/Desktop/badges/camp_owl_mountain_sapphire_20261111/sapphire_teardrop/sapphire_teardrop.blend",
+      "candidate": "/Users/antonioperedo/Desktop/badges/camp_owl_mountain_sapphire_20261111/sapphire_teardrop/candidate27",
+      "reference": "/Users/antonioperedo/Desktop/badges/camp_owl_mountain_sapphire_20261111/sapphire_teardrop/reference.png",
+      "saved_detail": "Ruby Heart gold and brighter Sapphire cut. Final native poses and full turn reviewed; independent finish pass. Installed for owner inspection."
+    }
+  },
+  "pacing_mode": "continuous",
+  "schedule_authorization": "55ab66df-31c9-4dd5-8cfc-818b66ed5e84",
+  "owner_authorized_resume_epoch": 1794480247.0,
+  "owner_authorized_resume_local": "2026-11-12 02:44:07 America/Los_Angeles",
+  "owner_scheduled_authorization_consumed": true,
+  "owner_instruction": "Owner removed the overnight skill and scheduled breaks on November 12. Continue ordinary badge work. Develop and judge from actual Blender renders; simulator is for final judgments only.",
+  "previous_royal_run_remains_paused": true,
+  "resumed_at_epoch": 1794480247.003534,
+  "last_queue_basis": [
+    "ready",
+    5,
+    22,
+    1794501446485448623
+  ],
+  "last_queue_epoch": 1794501445.609376,
+  "had_outage": false,
+  "owner_scope": "Only Sapphire Teardrop is authorized for current work. Other badges remain on hold.",
+  "owner_no_app_code_edits": true
+}

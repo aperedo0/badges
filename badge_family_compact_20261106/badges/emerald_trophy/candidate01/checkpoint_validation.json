@@ -1,0 +1,36 @@
+{
+  "complete_mesh_count": 4,
+  "triangles": 154724,
+  "all_used_images_packed_and_match_usdz": true,
+  "images": [
+    {
+      "name": "Rim_brushed_reference_roughness.png.003",
+      "sha256": "f83a4667d09fd398c602868f84864162784074f492b77b4042dcd58c68f5dc3f"
+    },
+    {
+      "name": "field_roughness.png.026",
+      "sha256": "e48873044c1cd68a2c04ae25a2b0bc664a975c2f1e87460a92071a7e13bbc906"
+    },
+    {
+      "name": "relief_color.png",
+      "sha256": "c83381d12b6a3cb3fadfe7da5c274a0bb16affa3a71a8fdaa2b80deb6d2016ce"
+    },
+    {
+      "name": "relief_emission.png",
+      "sha256": "916b8bd2b9aaba877f9990517a433688e71859d2a527c763fccd49053abcd9d5"
+    },
+    {
+      "name": "Rim_brushed_reference_color.png.003",
+      "sha256": "229d5f45ec012b549921559f4287a3a98c8c3f76f715baf1862b648b23947f46"
+    },
+    {
+      "name": "Rim_glint_reference_roughness.png.003",
+      "sha256": "a060290fd7cfd42597e0be088a7577b29ea5147a3e9ef9b81b67e652f3a7ece1"
+    },
+    {
+      "name": "field_color.png.026",
+      "sha256": "bcd21b2c4eeeb2bee127fbd2a4195d8c33228511e615dda2392c9edc83f5a9e6"
+    }
+  ],
+  "usdz_unchanged_sha256": "625b6de8a5d212d1202660523bfcb99fada062352a0b6856e41a576c64670b87"
+}

@@ -1,0 +1,11 @@
+{
+  "meshes": 102,
+  "triangles": 185396,
+  "all_asset_textures_packed_byte_identically": true,
+  "packed_textures": {
+    "gold_roughness.png": "d8d40a86eaa6541366024bd130d763ea56ae92a25ed729f9010d566b470aae73",
+    "velvet_color.png": "c709c6bcab37b2c82abce7a596cb8eea09761b5279def36553d6a28a0ca84b10"
+  },
+  "complete_editable_checkpoint": "/Users/antonioperedo/Desktop/badges/royal_heart_compass_20261106/emerald_crown/candidate01/source/emerald_crown_compact.blend",
+  "native_gem_profiles_preserved": true
+}

@@ -1,0 +1,33 @@
+{
+ "units": {
+  "S": 0.00615819209039548,
+  "axis": 626,
+  "top": 140,
+  "width_px": 1254,
+  "height_px": 1254
+ },
+ "box": [
+  0,
+  0,
+  1254,
+  1254
+ ],
+ "parts": [
+  {
+   "name": "solid_gold_teardrop_setting",
+   "base": 0.24,
+   "materials": [
+    "Gold",
+    "Side"
+   ],
+   "triangles": 1880,
+   "front": 734
+  }
+ ],
+ "order": [
+  "solid_gold_teardrop_setting"
+ ],
+ "validate_order": [
+  "solid_gold_teardrop_setting"
+ ]
+}

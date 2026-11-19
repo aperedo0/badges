@@ -1,0 +1,45 @@
+{
+  "source": "V foundation; secondary internal fiber band replaced, medium anatomy and primary fracture centers retained",
+  "detail_source": "Directional quilt of fine reference wood detail; artistic relief interpretation, not a scan",
+  "reference_donor_boxes": [
+    [
+      930,
+      650,
+      1060,
+      907
+    ],
+    [
+      480,
+      645,
+      615,
+      780
+    ],
+    [
+      480,
+      891,
+      715,
+      932
+    ]
+  ],
+  "seed": 16117,
+  "secondary_plate_steps": [
+    0.002,
+    0.0026,
+    0.002
+  ],
+  "core_source": "Reference end grain band with broad illumination removed; existing center and proportions",
+  "core_center": [
+    -1.31,
+    -1.35
+  ],
+  "core_radii": [
+    0.145,
+    0.17
+  ],
+  "normal_split": 0.0038,
+  "normal_method": "Transport baseline shading into new geometric tangent frame, add only new height derivatives",
+  "material": "V albedo and roughness unchanged for structure control",
+  "height_min": -0.05089752376079559,
+  "delta_min": -0.009148652686457613,
+  "delta_max": 0.010879593614559604
+}

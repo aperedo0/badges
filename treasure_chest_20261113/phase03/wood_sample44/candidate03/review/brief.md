@@ -1,0 +1,7 @@
+Scoped fresh wood material review. Open every listed image in one batch before responding. Judge pictures only. This is a Blender development sample on exactly one lower front plank, with the other wood and all metal deliberately neutral gray. Do not grade those absent finishes or full badge shippability. Owner wants rough real wood rather than washed out, vector like or cartoony wood. The original inspiration remains the design reference; real 3D light may differ. Compare color, rough timber anatomy, knot, grain scale, whether the surface looks printed, drawn, inflated or convincingly wooden, and cleanliness at the small whole chest scale. The normal control disables just the bump normal for diagnosis. Turns use unchanged studio light relative to the chest turning. Still frames cannot prove continuous motion or light response by themselves. List visible defects and remaining uncertainty plainly. Reply READY FOR OWNER JUDGMENT: yes or no, then WOOD CHARACTER, VISIBLE ISSUES, MOTION LIMITS. No final phone score. Do not read other files or change anything.
+
+Images, absolute paths:
+/Users/antonioperedo/Desktop/badges/treasure_chest_20261113/phase03/wood_sample44/candidate03/review/whole.png
+/Users/antonioperedo/Desktop/badges/treasure_chest_20261113/phase03/wood_sample44/candidate03/review/close.png
+/Users/antonioperedo/Desktop/badges/treasure_chest_20261113/phase03/wood_sample44/candidate03/review/normal_control.png
+/Users/antonioperedo/Desktop/badges/treasure_chest_20261113/phase03/wood_sample44/candidate03/review/turns.png

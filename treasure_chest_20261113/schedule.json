@@ -1,0 +1,45 @@
+{
+  "version": 1,
+  "thread_id": "01a16b8e-9f81-76d1-8bd7-d0a939464547",
+  "workspace": "/Users/antonioperedo/Desktop/badges",
+  "status": "complete",
+  "phase": "work",
+  "block": 42,
+  "started_epoch": 1794654110.941612,
+  "deadline_epoch": null,
+  "work_until_epoch": 1794774934.732376,
+  "break_until_epoch": 1794715655.31081,
+  "busy_until_epoch": 0,
+  "heartbeat_epoch": 1794773941.688861,
+  "checkpoint_seq": 85,
+  "active_badge": "treasure_chest",
+  "next_action": "Await owner instructions for wood grain and metal finish. Reviewed construction41 is saved. Final phone review and optimization remain later.",
+  "badges": {
+    "treasure_chest": {
+      "status": "blocked",
+      "blend": "/Users/antonioperedo/Desktop/badges/treasure_chest_20261113/phase01/candidate41/chest.blend",
+      "candidate": "/Users/antonioperedo/Desktop/badges/treasure_chest_20261113/phase01/candidate41",
+      "reference": "/Users/antonioperedo/Desktop/badges/treasure_chest_20261113/reference.png",
+      "blocked_reason": "Neutral geometry and rig construction41 reviewed and saved. Further progress requires the wood grain and metal finish instructions explicitly withheld by the owner. Final phone review and optimization follow those finishes.",
+      "blocked_evidence": "/Users/antonioperedo/Desktop/badges/treasure_chest_20261113/phase01/candidate41"
+    }
+  },
+  "owner_authorized_resume_epoch": 1794656460.0,
+  "schedule_authorization": "fb5fc4f4-3ca7-4c98-9d8c-b1372f187e95",
+  "owner_scheduled_authorization_consumed": true,
+  "scheduled_resume_local": "2026-11-14T03:41:00-08:00",
+  "scope": "All remaining chest geometry, corrections, functional hinges, rigging and opening checks only. BOTH metal finish and wood grain wait for separate owner instructions.",
+  "resumed_at_epoch": 1794656460.000492,
+  "last_queue_basis": [
+    "work",
+    42,
+    84,
+    1794773174749850773
+  ],
+  "last_queue_epoch": 1794773173.987417,
+  "had_outage": false,
+  "overnight_enabled": false,
+  "owner_paused_badge_work": false,
+  "pacing": "continuous",
+  "completed_epoch": 1794773941.806653
+}

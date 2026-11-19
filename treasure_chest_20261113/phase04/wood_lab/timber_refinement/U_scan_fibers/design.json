@@ -1,0 +1,23 @@
+{
+  "source_baseline": "R_layers_full",
+  "source": "Existing R anatomy with cached CC0 normal assisted physical fiber relief",
+  "normal_source": "rough_wood_nor_gl_2k.png",
+  "normal_crop": [
+    500,
+    0,
+    1000,
+    2048
+  ],
+  "tangent_rotation": "New X is old Y, new Y is negative old X",
+  "physical_source_scale": "Amplitude is a controlled artistic test, not a measurement recovered from mockup",
+  "normal_split": 0.0022,
+  "split_policy": "Original R geometry band retained exactly; only additions use sharper 0.0022 low pass. Complementary residual normal excludes both geometry bands.",
+  "height_min": -0.05089752504136413,
+  "primary_groove_and_fracture_positions_preserved": true,
+  "knot_center": [
+    -1.31,
+    -1.35
+  ],
+  "material_variant": "T identical albedo and roughness",
+  "layer_file": "/Users/antonioperedo/Desktop/badges/treasure_chest_20261113/phase04/wood_lab/timber_refinement/surface_fibers/normal_reconstruction.npz"
+}

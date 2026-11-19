@@ -1,0 +1,13 @@
+{
+  "active": false,
+  "candidate": "/Users/antonioperedo/Desktop/badges/treasure_chest_20261113/phase04/wood_lab/timber_refinement/U_scan_fibers",
+  "blend": "/Users/antonioperedo/Desktop/badges/treasure_chest_20261113/phase04/wood_lab/timber_refinement/U_scan_fibers/master.blend",
+  "recorded_epoch": 1794811396.541753,
+  "next_action": "Wait for owner review of U on the actual chest beside the reference. No agent review, further refinement or other plank work.",
+  "overnight_enabled": false,
+  "paused": true,
+  "paused_epoch": 1794719906.8705769,
+  "resumed_epoch": 1794720705.461035,
+  "current_stage": "awaiting_owner_test_plank_review",
+  "waiting_for_owner_review": true
+}

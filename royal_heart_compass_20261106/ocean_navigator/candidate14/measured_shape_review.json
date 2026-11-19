@@ -1,0 +1,15 @@
+{
+  "source": "candidate13",
+  "reference_center_pixels": [
+    627,
+    570
+  ],
+  "reference_inner_band_radius_pixels": 360,
+  "model_inner_band_radius": 2.015,
+  "model_inner_band_width": 0.085,
+  "compass_length_factor": 0.88,
+  "compass_actual_ridge_height": 0.14099954393582412,
+  "physical_gold_only": true,
+  "source_gems_and_frame_preserved": true,
+  "native_review_pending": true
+}

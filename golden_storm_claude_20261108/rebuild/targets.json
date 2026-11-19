@@ -1,0 +1,13 @@
+{
+ "Field": {"gradient": {"from": [0.16, 0.18, 0.47], "to": [0.22, 0.13, 0.38], "center": [626.5, 623], "radius": 578, "angle_deg": 270, "size_px": [1254, 1254]}, "roughness": 0.18},
+ "Ribbon": {"target": [0.44, 0.62, 0.84], "roughness": 0.18},
+ "Pearl": {"target": [0.88, 0.82, 0.82], "roughness": 0.30},
+ "BoltLight": {"target": [0.95, 0.88, 0.40], "roughness": 0.22},
+ "BoltDeep": {"target": [0.92, 0.66, 0.10], "roughness": 0.22},
+ "GoldFrame": {"albedo": [1.0, 0.47, 0.0], "metallic": 1.0, "roughness": 0.34},
+ "GoldPoint": {"albedo": [0.82, 0.31, 0.0], "metallic": 1.0, "roughness": 0.32},
+ "GoldCloud": {"albedo": [1.0, 0.47, 0.0], "metallic": 1.0, "roughness": 0.26},
+ "GoldBolt": {"albedo": [0.95, 0.42, 0.0], "metallic": 1.0, "roughness": 0.26},
+ "GoldRibbon": {"albedo": [1.0, 0.47, 0.0], "metallic": 1.0, "roughness": 0.26},
+ "Side": {"albedo": [0.48, 0.222, 0.009], "metallic": 1.0, "roughness": 0.55}
+}

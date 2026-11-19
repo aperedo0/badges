@@ -1,0 +1,17 @@
+{
+  "cause": "Blender and native rendering disagree when the texture uses scale and bias. Final intrinsic roughness values are encoded directly in the grayscale image instead; no runtime or app changes.",
+  "original_mean": 0.29807540295170804,
+  "final_mean": 0.29804920869715074,
+  "source_min_max": [
+    0.23137254901960785,
+    0.3686274509803922
+  ],
+  "final_min_max": [
+    0.28627450980392155,
+    0.3137254901960784
+  ],
+  "source_texture_sha256": "b4ec354ad6d22cf9d5ca36634966ffd024e7bf03c64b0521552b6abc970d6d3b",
+  "final_texture_sha256": "06c3b6ebeb721a8435b353eedb8ced2568c1554e7a89c625d8615de6a025f296",
+  "all_geometry_normals_uvs_and_gem_shader_unchanged": true,
+  "no_app_code_edits": true
+}

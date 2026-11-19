@@ -1,0 +1,11 @@
+{
+  "source": "candidate11",
+  "gold_wave_width_factor": 1.35,
+  "physical_wave_volume_preserved": true,
+  "metal_emblem_fraction": 0.96,
+  "emblem_roughness": 0.32,
+  "chart_has_genuine_metallic_and_roughness_maps": true,
+  "no_baked_highlights_or_emission": true,
+  "independent_gems_and_rope_frame_preserved": true,
+  "native_appearance_review_pending": true
+}

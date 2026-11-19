@@ -1,0 +1,1 @@
+Native test of a flat gold rim crest. The narrow steep crest in candidate08 showed speckling. The outer bevel, color maps, shared studio and material roughness are preserved. This is not a finished badge.

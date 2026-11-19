@@ -1,0 +1,15 @@
+{
+  "source": "Existing anatomical height plus CC0 Rough Wood fine detail",
+  "depth_min": -0.04912723051679205,
+  "depth_max": 0.0010092969750944696,
+  "knot": [
+    -1.18,
+    -1.38
+  ],
+  "source_relief_factor": 0.7,
+  "fractures": 4,
+  "pigment": "independent broad chestnut stains and scanned fiber variation",
+  "normal": "residual after 0.003 unit low pass",
+  "height16_zero": -0.08,
+  "height16_one": 0
+}

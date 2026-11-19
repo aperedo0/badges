@@ -1,0 +1,45 @@
+[
+  {
+    "name": "Iron_ExposedBlend",
+    "type": "VALUE",
+    "source_node": "Localized exposed iron",
+    "source_socket": "Factor",
+    "connection": "Actual linked signal"
+  },
+  {
+    "name": "Iron_OxideCoverage",
+    "type": "VALUE",
+    "source_node": "Opaque scale coverage",
+    "source_socket": "Factor",
+    "connection": "Actual linked signal"
+  },
+  {
+    "name": "Iron_RoughBare",
+    "type": "VALUE",
+    "source_node": "Exposed iron Filament diagnostic reflectance",
+    "source_socket": "Roughness",
+    "connection": "Actual linked signal"
+  },
+  {
+    "name": "Iron_GeometryNormal",
+    "type": "COLOR",
+    "source_node": "Geometry",
+    "source_socket": "True Normal",
+    "connection": "Actual linked signal"
+  },
+  {
+    "name": "Iron_FinalNormal",
+    "type": "COLOR",
+    "source_node": "Blackened conductive iron",
+    "source_socket": "Normal",
+    "connection": "Actual linked signal"
+  },
+  {
+    "name": "Iron_SurfaceAlpha",
+    "type": "VALUE",
+    "source_node": "Blackened conductive iron",
+    "source_socket": "Alpha",
+    "connection": "Actual constant input copied without changing the shader",
+    "constant": 1.0
+  }
+]

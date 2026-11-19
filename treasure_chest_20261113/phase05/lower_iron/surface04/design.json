@@ -1,0 +1,16 @@
+{
+  "source": "Independent professional forming and erosion bands with restrained existing broad impressions",
+  "professional_sources": [
+    "Metal055A height",
+    "Metal025 height"
+  ],
+  "fine_rms": 1.613793028809596e-05,
+  "height_range": [
+    -0.0033642002381384373,
+    0.0026683607138693333
+  ],
+  "no_closed_polygon_stamps": true,
+  "quiet_faces": true,
+  "material_channels_independent": true,
+  "geometry_relief_complementary": true
+}

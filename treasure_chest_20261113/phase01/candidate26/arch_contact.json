@@ -1,0 +1,24 @@
+[
+  {
+    "side": -1,
+    "strap": {
+      "top_contact_min": 0.0020001091638413016,
+      "top_contact_max": 0.00204688990634061,
+      "width_samples": 17,
+      "face_seated": true,
+      "bottom_front_offset": -0.375,
+      "bottom_back_offset": -0.377
+    }
+  },
+  {
+    "side": 1,
+    "strap": {
+      "top_contact_min": 0.0020001091638413016,
+      "top_contact_max": 0.00204688990634061,
+      "width_samples": 17,
+      "face_seated": true,
+      "bottom_front_offset": -0.375,
+      "bottom_back_offset": -0.377
+    }
+  }
+]

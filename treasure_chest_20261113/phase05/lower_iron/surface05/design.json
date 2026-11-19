@@ -1,0 +1,8 @@
+{
+  "change": "Quiet forged planes with sparse surface damage",
+  "broken_scale_depth": 0.0006,
+  "forming_fraction": 0.16,
+  "fine_rms": 3.062493124161847e-05,
+  "no_closed_stamp_faces": true,
+  "source": "Existing fields and free professional fine pitting"
+}

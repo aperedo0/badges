@@ -1,0 +1,135 @@
+{
+  "method": "Five visibility rays per light from the original front datum. This tests hardware occlusion, not fine grain self shadow or total rendered irradiance.",
+  "samples": [
+    {
+      "local_x": -1.7,
+      "light": "Key",
+      "hardware_blockers": [
+        null,
+        null,
+        null,
+        null,
+        null
+      ],
+      "distance": 7.812983215646989,
+      "incidence_from_flat_front_normal": 65.23774703261006
+    },
+    {
+      "local_x": -1.7,
+      "light": "Fill",
+      "hardware_blockers": [
+        null,
+        null,
+        null,
+        null,
+        "Lab Chest Hollow Lock Case Walls"
+      ],
+      "distance": 6.6117652692198385,
+      "incidence_from_flat_front_normal": 57.116527769491626
+    },
+    {
+      "local_x": -1.2,
+      "light": "Key",
+      "hardware_blockers": [
+        null,
+        null,
+        null,
+        null,
+        null
+      ],
+      "distance": 8.062148537478999,
+      "incidence_from_flat_front_normal": 66.05189897972993
+    },
+    {
+      "local_x": -1.2,
+      "light": "Fill",
+      "hardware_blockers": [
+        null,
+        null,
+        null,
+        "Lab Chest Lock Backing With Bore",
+        "Lab Chest Hollow Lock Case Walls"
+      ],
+      "distance": 6.294041367560642,
+      "incidence_from_flat_front_normal": 55.226093304338804
+    },
+    {
+      "local_x": 1.0,
+      "light": "Key",
+      "hardware_blockers": [
+        "Lab Chest Hollow Lock Case Walls",
+        "Lab Chest Case Back With Key Bore",
+        "Lab Chest Case Back With Key Bore",
+        "Lab Chest Hollow Lock Case Walls",
+        "Lab Chest Hollow Lock Case Walls"
+      ],
+      "distance": 9.39907299502954,
+      "incidence_from_flat_front_normal": 69.62442041223593
+    },
+    {
+      "local_x": 1.0,
+      "light": "Fill",
+      "hardware_blockers": [
+        null,
+        null,
+        null,
+        null,
+        null
+      ],
+      "distance": 5.245267460697589,
+      "incidence_from_flat_front_normal": 46.81336978381741
+    },
+    {
+      "local_x": 1.6,
+      "light": "Key",
+      "hardware_blockers": [
+        "Lab Chest Hollow Lock Case Walls",
+        "Lab Chest Hollow Lock Case Walls",
+        "Lab Chest Hollow Lock Case Walls",
+        "Lab Chest Lock Backing With Bore",
+        "Lab Chest Hollow Lock Case Walls"
+      ],
+      "distance": 9.817800657342481,
+      "incidence_from_flat_front_normal": 70.52940450511272
+    },
+    {
+      "local_x": 1.6,
+      "light": "Fill",
+      "hardware_blockers": [
+        null,
+        null,
+        null,
+        null,
+        null
+      ],
+      "distance": 5.088442887044078,
+      "incidence_from_flat_front_normal": 45.132526195034266
+    },
+    {
+      "local_x": 2.0,
+      "light": "Key",
+      "hardware_blockers": [
+        null,
+        null,
+        "Lab Chest Lock Backing With Bore",
+        null,
+        null
+      ],
+      "distance": 10.107108049173897,
+      "incidence_from_flat_front_normal": 71.10820734731092
+    },
+    {
+      "local_x": 2.0,
+      "light": "Fill",
+      "hardware_blockers": [
+        null,
+        null,
+        null,
+        null,
+        null
+      ],
+      "distance": 5.021141702302216,
+      "incidence_from_flat_front_normal": 44.36293553868004
+    }
+  ]
+}

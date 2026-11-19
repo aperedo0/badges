@@ -1,0 +1,48 @@
+{
+  "upper_band_front_projection": 1.8400002386318557,
+  "body_band_front_projection": 1.7800002050372723,
+  "upper_band_end_projection": 2.770000333510273,
+  "body_band_end_projection": 2.6800003253602096,
+  "corner_joints": [
+    {
+      "sx": -1,
+      "sz": -1,
+      "uniform_seam_gap": 0.01799994393398885,
+      "corner_plate_in_front_of_end_band": true,
+      "upper_min_y": 0.5299999691310684,
+      "body_collar_top": 0.5120000251970795
+    },
+    {
+      "sx": -1,
+      "sz": 1,
+      "uniform_seam_gap": 0.01799994393398885,
+      "corner_plate_in_front_of_end_band": true,
+      "upper_min_y": 0.5299999691310684,
+      "body_collar_top": 0.5120000251970795
+    },
+    {
+      "sx": 1,
+      "sz": -1,
+      "uniform_seam_gap": 0.01799994393398885,
+      "corner_plate_in_front_of_end_band": true,
+      "upper_min_y": 0.5299999691310684,
+      "body_collar_top": 0.5120000251970795
+    },
+    {
+      "sx": 1,
+      "sz": 1,
+      "uniform_seam_gap": 0.01799994393398885,
+      "corner_plate_in_front_of_end_band": true,
+      "upper_min_y": 0.5299999691310684,
+      "body_collar_top": 0.5120000251970795
+    }
+  ],
+  "lower_band_alignment_feet_and_centered_diamonds_preserved": true,
+  "upper_band_height": 0.41000005445982257,
+  "body_band_height": 0.3620000183582306,
+  "upper_to_body_visible_height_ratio": 1.1325967780866015,
+  "lowest_inner_hoop_fixing_clearance": {
+    "Chest Hoop Rivet 1 0": 0.0068629415411698425,
+    "Chest Hoop Rivet 2 0": 0.0068629415411698425
+  }
+}

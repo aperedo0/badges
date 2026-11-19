@@ -1,0 +1,9 @@
+{
+  "source": "Controlled return to pitted forged iron, excluding cloudy coarse color and closed stamps",
+  "coarse_fraction": 0.62,
+  "fine_fraction": 0.45,
+  "fine_rms": 8.61326334415935e-05,
+  "pit_source": "CC0 ambientCG Metal003",
+  "pit_depth": 0.0009,
+  "geometry": "Protected physical dents and edge chips"
+}

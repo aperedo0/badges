@@ -1,0 +1,35 @@
+{
+  "source": "candidate19",
+  "measured_upper_facet_vertices": [
+    [
+      282,
+      291
+    ],
+    [
+      420,
+      232
+    ],
+    [
+      369,
+      371
+    ],
+    [
+      455,
+      328
+    ]
+  ],
+  "true_closed_convex_cut": true,
+  "not_an_appearance_texture": true,
+  "exposure_and_absorption_unchanged": true,
+  "domains": [
+    {
+      "name": "Ruby heart left optical lobe",
+      "approximate_planes": 236
+    },
+    {
+      "name": "Ruby heart right optical lobe",
+      "approximate_planes": 236
+    }
+  ],
+  "native_review_pending": true
+}

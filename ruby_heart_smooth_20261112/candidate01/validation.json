@@ -1,0 +1,30 @@
+{
+  "changed_attributes": [
+    "/Badge/Frame.normals",
+    "/Badge/Frame.points"
+  ],
+  "gem_exact": true,
+  "gold_graph_and_texture_exact": true,
+  "uv_topology_exact": true,
+  "frame_closed": true,
+  "edge_counts": {
+    "2": 38532
+  },
+  "bounds": [
+    [
+      -2.7461956614427607,
+      -2.455,
+      -0.36
+    ],
+    [
+      2.7461956614427607,
+      2.9949150249173924,
+      0.36
+    ]
+  ],
+  "max_displacement": 0.04013027894363343,
+  "triangles": 26680,
+  "meshes": 2,
+  "bytes": 1523329,
+  "sha256": "507511ba5318e204fee3f2025d76cfddefa884e1f9c0dd1e4a6602caa178c606"
+}

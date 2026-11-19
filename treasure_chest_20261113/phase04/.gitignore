@@ -1,0 +1,5 @@
+wood_lab/resources/*
+!wood_lab/resources/SOURCES.json
+wood_lab/*.blend1
+wood_lab/*.log
+**/__pycache__/

@@ -1,0 +1,1 @@
+shader ray_probe(output closure color BSDF=0){vector d=normalize(I);BSDF=emission()*color(.5+.5*d[0],.5+.5*d[1],.5+.5*d[2]);}

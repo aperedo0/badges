@@ -1,0 +1,24 @@
+{
+  "status": "validated_candidate",
+  "before": {
+    "meshes": 6,
+    "sections": 16,
+    "triangles": 43924,
+    "vertices": 42756
+  },
+  "after": {
+    "meshes": 6,
+    "sections": 6,
+    "triangles": 43924,
+    "vertices": 28079
+  },
+  "source_sha256": "bddcce62bad9d3ad013b79514d3708f07f6c2c6a8949492b16e1e4a9de50acbd",
+  "output_sha256": "0934e42a320ca6e3412246509f43fcf44512f398291a1252d71647705f434733",
+  "bytes_before": 3940923,
+  "bytes_after": 1688904,
+  "all_triangle_corner_attributes_and_materials_identical": true,
+  "all_material_graphs_unchanged": true,
+  "protected_meshes_unchanged": [],
+  "all_textures_byte_identical": true,
+  "arkit_valid": true
+}

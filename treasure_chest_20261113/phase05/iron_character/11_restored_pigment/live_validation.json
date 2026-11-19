@@ -1,0 +1,22 @@
+{
+  "file": "/Users/antonioperedo/Desktop/badges/treasure_chest_20261113/phase05/iron_character/11_restored_pigment/master.blend",
+  "dirty": false,
+  "wood_geometry": "6c52635229763ca44c5b7cf1b842746e0c435463f3925b296fb97f50af05ea80",
+  "iron_geometry": "b5f075a6a1cc857869060a54ffc1e21f1cb4fcac82ebc06cfadf9a548115f622",
+  "scope": [
+    "Lab Chest Lower Rim",
+    "Lab Chest Rail Rivet 1 3",
+    "Lab Chest Rail Rivet 1 4"
+  ],
+  "material_applied": true,
+  "review_image_shown": false,
+  "reference_editor_and_current_layout_preserved": true,
+  "production_diagnostic_nodes_absent": true,
+  "production_aov_passes_absent": true,
+  "material": "Forged iron restored pigment variation",
+  "all_target_maps_packed": true,
+  "file_sha256": "65d4df679a4f49845990e7f17cd07a5eecc827665eed17dceb0a6270753f8173",
+  "review_window_available": false,
+  "review_quality": "Final 128 sample Cycles image saved and packed",
+  "material_graph": "73f7c3b26e501fd5a759836ebeb6103f5a4433e1dd7543e6ddba35c440b44858"
+}

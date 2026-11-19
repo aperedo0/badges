@@ -1,0 +1,38 @@
+{
+ "bounds": [
+  [
+   -2.7414000034332275,
+   -2.4549999237060547,
+   -0.6243000030517578
+  ],
+  [
+   2.7414000034332275,
+   2.994999885559082,
+   0.6243000030517578
+  ]
+ ],
+ "triangles": 58144,
+ "max_front_z": {
+  "blue_enamel_backplate": 0.1,
+  "upper_star_arc": 0.124,
+  "head_amber_disc": 0.162,
+  "left_amber_wing": 0.215,
+  "right_amber_wing": 0.219,
+  "outer_left_feather": 0.271,
+  "outer_right_feather": 0.274,
+  "inner_left_feather": 0.327,
+  "inner_right_feather": 0.329,
+  "central_cream_breast": 0.384,
+  "cream_face_mask": 0.44,
+  "left_amber_iris": 0.493,
+  "left_dark_pupil": 0.547,
+  "right_amber_iris": 0.493,
+  "right_dark_pupil": 0.546,
+  "left_cream_brow_blade": 0.614,
+  "right_cream_brow_blade": 0.624,
+  "central_gold_beak": 0.493,
+  "top_four_point_star": 0.181,
+  "outer_gold_setting": 0.381
+ },
+ "failures": []
+}

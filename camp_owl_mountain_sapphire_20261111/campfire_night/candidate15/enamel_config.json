@@ -1,0 +1,10 @@
+{
+ "texture_px": 1024,
+ "materials": {
+  "Enamel": {
+   "roughness": 0.18,
+   "max_display": 0.93,
+   "gold_exclusion_border_px": 6
+  }
+ }
+}

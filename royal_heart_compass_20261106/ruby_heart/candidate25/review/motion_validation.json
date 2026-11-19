@@ -1,0 +1,57 @@
+{
+  "distinct_review_frames": 9,
+  "maximum_actual_scroll": 223.0,
+  "full_turn_reached": true,
+  "poses": [
+    {
+      "requested_scroll": 0,
+      "actual_scroll": -0.16666666666666666,
+      "video_frame": "frame0001.png"
+    },
+    {
+      "requested_scroll": 60,
+      "actual_scroll": 59.833333333333336,
+      "video_frame": "frame0029.png"
+    },
+    {
+      "requested_scroll": 68,
+      "actual_scroll": 69.0,
+      "video_frame": "frame0031.png"
+    },
+    {
+      "requested_scroll": 80,
+      "actual_scroll": 89.83333333333333,
+      "video_frame": "frame0032.png"
+    },
+    {
+      "requested_scroll": 94.2528,
+      "actual_scroll": 95.0,
+      "video_frame": "frame0033.png"
+    },
+    {
+      "requested_scroll": 113,
+      "actual_scroll": 115.0,
+      "video_frame": "frame0038.png"
+    },
+    {
+      "requested_scroll": 132.5056,
+      "actual_scroll": 133.0,
+      "video_frame": "frame0043.png"
+    },
+    {
+      "requested_scroll": 151,
+      "actual_scroll": 149.83333333333334,
+      "video_frame": "frame0047.png"
+    },
+    {
+      "requested_scroll": 170.7583,
+      "actual_scroll": 171.83333333333334,
+      "video_frame": "frame0052.png"
+    }
+  ],
+  "manual_identity_reviewed": true,
+  "actual_badge_visible_in_all_nine_frames": "Ruby Heart",
+  "color_retained_through_turn": true,
+  "reflective_refractive_crystal_visible": true,
+  "front_cut_reference_match_complete": false
+}

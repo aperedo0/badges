@@ -1,0 +1,13 @@
+{
+  "meshes": 197,
+  "triangles": 448088,
+  "all_asset_textures_packed_byte_identically": true,
+  "packed_textures": {
+    "velvet_fold_color.png": "df34eab2d3ae032a2eb3403e3d86b6d372de3b945163389e39576b862064bacb",
+    "gold_roughness.png": "d8d40a86eaa6541366024bd130d763ea56ae92a25ed729f9010d566b470aae73",
+    "velvet_normal.png": "d39f9b83d9b484b2d42ee26ced8792a45da141837e115d351aea03cbd8b1017e",
+    "velvet_occlusion.png": "3891950716ee27d42d66f3e6781796f30ebfbf416833f47d5ad95633960c0b9d"
+  },
+  "complete_editable_checkpoint": "/Users/antonioperedo/Desktop/badges/royal_heart_compass_20261106/ruby_crown/candidate14/source/ruby_crown_compact.blend",
+  "native_gem_profiles_preserved": true
+}

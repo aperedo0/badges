@@ -1,0 +1,150 @@
+{
+  "geometry_sha256": "ca6d3ea7137cb7325b2ce2929c0257c60ae19bb34cfd40276a79dc25543619a4",
+  "certified": false,
+  "method": "Adaptive nearest surface distance minus triangle radius and angular displacement bound",
+  "tolerance": 1e-05,
+  "parts": {
+    "Chest Front Hasp Barrel": {
+      "pending": [],
+      "certified_intervals": [
+        {
+          "start": 0.0,
+          "end": 60.0,
+          "clearance_lower_bound": 0.00018203177044134877
+        }
+      ],
+      "unresolved": [],
+      "axis_radius_bound": 0.16800016664713519,
+      "rotation_envelope_certified": true,
+      "envelope": {
+        "inner_radius": 0.0858941995860909,
+        "outer_radius": 0.16800223209916165,
+        "x_min": -0.2400020655386414,
+        "x_max": 0.2400020353814633,
+        "maximum_measured_sector": 0.09818000000000016
+      }
+    },
+    "Chest Curved Hasp Tongue": {
+      "pending": [
+        [
+          2.5,
+          3.75
+        ],
+        [
+          3.75,
+          5.0
+        ],
+        [
+          5.0,
+          7.5
+        ],
+        [
+          7.5,
+          10.0
+        ],
+        [
+          10.0,
+          12.5
+        ],
+        [
+          12.5,
+          15.0
+        ],
+        [
+          15.0,
+          17.5
+        ],
+        [
+          17.5,
+          20.0
+        ],
+        [
+          20.0,
+          22.5
+        ],
+        [
+          22.5,
+          25.0
+        ],
+        [
+          25.0,
+          27.5
+        ],
+        [
+          27.5,
+          30.0
+        ],
+        [
+          30.0,
+          32.5
+        ],
+        [
+          32.5,
+          35.0
+        ],
+        [
+          35.0,
+          37.5
+        ],
+        [
+          37.5,
+          40.0
+        ],
+        [
+          40.0,
+          42.5
+        ],
+        [
+          42.5,
+          45.0
+        ],
+        [
+          45.0,
+          47.5
+        ],
+        [
+          47.5,
+          50.0
+        ],
+        [
+          50.0,
+          52.5
+        ],
+        [
+          52.5,
+          55.0
+        ],
+        [
+          55.0,
+          57.5
+        ],
+        [
+          57.5,
+          60.0
+        ]
+      ],
+      "certified_intervals": [
+        {
+          "start": 0.0,
+          "end": 1.25,
+          "endpoint_lower_bound": 0.007550563914826099,
+          "nearest_endpoint_displacement_bound": 0.007540562879513496,
+          "clearance_lower_bound": 1.000103531260347e-05
+        },
+        {
+          "start": 1.25,
+          "end": 2.5,
+          "endpoint_lower_bound": 0.007550562988466385,
+          "nearest_endpoint_displacement_bound": 0.007540562879513496,
+          "clearance_lower_bound": 1.0000108952889705e-05
+        }
+      ],
+      "unresolved": [],
+      "axis_radius_bound": 0.6912713123330605
+    }
+  },
+  "initial_containment_checked": true,
+  "slice_end": "Finite certification slice ended",
+  "nearest_queries": 13128000,
+  "updated_epoch": 1794676420.857132
+}

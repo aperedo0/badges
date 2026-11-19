@@ -1,0 +1,24 @@
+{
+  "source_geometry": "candidate24",
+  "model_and_texture_bytes_unchanged": true,
+  "genuine_clear_optical_transport_preserved": true,
+  "shared_studio_and_other_profiles_unchanged": true,
+  "old_uniform_absorption": [
+    0.16,
+    9,
+    0.65
+  ],
+  "new_uniform_absorption": [
+    0.042528659474709254,
+    9,
+    0.721236936688394
+  ],
+  "old_exposure": 0.434211563,
+  "new_exposure": 0.6813570599651013,
+  "actual_native_profile_log_required": true,
+  "reference_color_measurement": "/Users/antonioperedo/Desktop/badges/royal_heart_compass_20261106/optics_fit/heart24_color_fit.json",
+  "no_color_or_reflection_image_created": true,
+  "not_a_diffuse_body_material": true,
+  "shader_sha256": "03de776f19ea72cd81549d62460fa277c838ab4e459a6fc57571511287044845",
+  "native_review_pending": true
+}

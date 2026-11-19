@@ -1,0 +1,33 @@
+{
+  "removed_only_saved_task_scenes": [
+    "Amethyst Crown complete working scene",
+    "Amethyst Crown complete working scene.001",
+    "Amethyst Crown complete working scene.002",
+    "Amethyst Crown complete working scene.003",
+    "Amethyst Crown complete working scene.004",
+    "Amethyst Crown complete working scene.010",
+    "Current third review amethyst_crown",
+    "Current third review emerald_crown",
+    "Current third review ocean_navigator",
+    "Current third review ruby_crown",
+    "Current third review ruby_heart",
+    "Emerald Crown complete working scene",
+    "Emerald Crown complete working scene.001",
+    "Emerald Crown complete working scene.002",
+    "Emerald Crown complete working scene.009",
+    "Ocean Navigator complete working scene",
+    "Ocean Navigator complete working scene.001",
+    "Ocean Navigator complete working scene.003",
+    "Ruby Crown complete working scene",
+    "Ruby Crown complete working scene.001",
+    "Ruby Crown complete working scene.002",
+    "Ruby Crown complete working scene.009",
+    "Ruby Heart complete working scene",
+    "Ruby Heart complete working scene.001",
+    "Ruby Heart complete working scene.005"
+  ],
+  "kept_active_scene": "Amethyst Crown complete working scene.005",
+  "all_unrelated_scenes_preserved": true,
+  "unrelated_count": 29,
+  "no_files_deleted": true
+}

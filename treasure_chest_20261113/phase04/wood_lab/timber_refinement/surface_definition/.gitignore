@@ -1,0 +1,3 @@
+# Deterministic diagnostic fields and the render mutex stay local.
+*.npz
+render.lock

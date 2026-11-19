@@ -1,0 +1,5 @@
+{
+  "status": "rejected_before_export",
+  "reason": "Reference color segmentation creates hard truncated gold contours and flat areas. Visually worse in complete Blender viewport. Do not install or repack this candidate.",
+  "retained_candidate": "candidate11"
+}

@@ -1,0 +1,4 @@
+__pycache__/
+*.log
+blender_next.txt
+badges/*/candidate01/source/import/

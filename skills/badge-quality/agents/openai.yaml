@@ -1,4 +1,4 @@
 interface:
   display_name: "Badge Quality"
-  short_description: "Check badge detail and believable moving materials"
-  default_prompt: "Use $badge-quality to build or review this badge with reference details and realistic materials through a full turn."
+  short_description: "Match badge detail then reduce pieces without visual loss"
+  default_prompt: "Apply $badge-quality alongside badge-build and badge-fresh-review: judge in Blender first, keep reference details and real metal and gems through a full turn, then reduce rendering pieces without changing the finished look."

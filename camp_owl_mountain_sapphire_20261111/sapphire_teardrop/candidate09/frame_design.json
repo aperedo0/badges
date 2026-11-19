@@ -1,0 +1,8 @@
+{
+  "source": "candidate08",
+  "gem_and_optics_unchanged": true,
+  "frame": "One broad flat metal face with real 8pixel bevels, replacing the multi ridge profile",
+  "thin_lips": "Removed in favor of continuous finished Side metal walls",
+  "native_acceptance_pending": true,
+  "normals": "Planar broad faces have exactly planar normals; real bevel triangles use a smooth contour normal at their physical slope, with a true normal break at the bevel boundary. This avoids finite difference ripples and interpolation across long broad face triangles."
+}

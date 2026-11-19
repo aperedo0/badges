@@ -1,0 +1,17 @@
+{
+  "file": "/Users/antonioperedo/Desktop/badges/treasure_chest_20261113/phase05/iron_character/10_defined_scale/master.blend",
+  "dirty": false,
+  "wood_geometry": "6c52635229763ca44c5b7cf1b842746e0c435463f3925b296fb97f50af05ea80",
+  "iron_geometry": "b5f075a6a1cc857869060a54ffc1e21f1cb4fcac82ebc06cfadf9a548115f622",
+  "scope": [
+    "Lab Chest Lower Rim",
+    "Lab Chest Rail Rivet 1 3",
+    "Lab Chest Rail Rivet 1 4"
+  ],
+  "review_image_shown": true,
+  "original_reference_and_main_framing_preserved": true,
+  "review_world_only_updated": true,
+  "material": "Forged iron defined fractured scale",
+  "all_target_maps_packed": true,
+  "file_sha256": "878f16324a361a81bae4c3be0bcad71a6c08401b21aba34a4833a9d7ad1e9508"
+}

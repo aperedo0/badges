@@ -1,0 +1,7 @@
+{
+  "saved_finish_retained": true,
+  "hard_tint_probe_rejected": true,
+  "imported_pigment_probe_rejected": true,
+  "reason": "Neither actual native probe produced a meaningful improvement in velvet depth. Default remains NO. Exact preceding private Swift source restored before the next build.",
+  "production_touched": false
+}

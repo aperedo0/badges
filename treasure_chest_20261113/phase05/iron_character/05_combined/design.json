@@ -1,0 +1,12 @@
+{
+  "target": "Lab Chest Lower Rim",
+  "mesh": "Locally forged lower rim.001",
+  "material": "Forged iron 05_combined",
+  "weathering": true,
+  "edge": true,
+  "hammer_fields_and_strength_unchanged": true,
+  "knob_geometry_unchanged": true,
+  "source": "Packed live baseline",
+  "reference_RGB_not_copied": true,
+  "mark_height_distance": 0.00028
+}

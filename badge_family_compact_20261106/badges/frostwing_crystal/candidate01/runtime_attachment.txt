@@ -1,0 +1,6 @@
+Badge gem attached: CrestGem_Ice mesh=Relief_5 mirror=false
+Badge gem attached: CrestGem_Ice mesh=Relief_6 mirror=false
+Badge gem attached: CrestGem_Ice mesh=Relief_7 mirror=false
+Badge gem attached: CrestGem_Ice mesh=Relief_5 mirror=true
+Badge gem attached: CrestGem_Ice mesh=Relief_6 mirror=true
+Badge gem attached: CrestGem_Ice mesh=Relief_7 mirror=true

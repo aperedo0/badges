@@ -1,0 +1,29 @@
+{
+ "gold": {
+  "color": [
+   0.92,
+   0.67,
+   0.25
+  ],
+  "metallic": 1.0,
+  "roughness": 0.26
+ },
+ "gold_side": {
+  "color": [
+   0.3,
+   0.14,
+   0.035
+  ],
+  "metallic": 1.0,
+  "roughness": 0.5
+ },
+ "art": {
+  "color": [
+   0.004,
+   0.004,
+   0.006
+  ],
+  "metallic": 1.0,
+  "roughness": 0.7
+ }
+}

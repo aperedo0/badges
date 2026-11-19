@@ -1,0 +1,35 @@
+{
+  "source_size": [
+    2172,
+    724
+  ],
+  "source_crop": [
+    121.42236763211736,
+    181.83801351922875,
+    2077.952239950513,
+    710.2928956993444
+  ],
+  "physical_aspect": 3.7023593466424685,
+  "canvas": [
+    2048,
+    768
+  ],
+  "mapped_core_radii": [
+    0.20071249897895452,
+    0.1798592523317904
+  ],
+  "mapped_center": [
+    -1.18,
+    -1.38
+  ],
+  "height_min": -0.04,
+  "height_max": -0.0,
+  "roughness_min": 0.6199999999999999,
+  "roughness_max": 0.82,
+  "normal_tilt_max": 50.00000000000001,
+  "scalar_color_roughness_alignment": true,
+  "ramp_and_inverted_green_negative_control": true,
+  "wrong_bitmap_aspect_rejected": true,
+  "no_displacement_geometry": true,
+  "provenance": "Built in scalar height artwork for stylized sculpted fantasy wood; base color roughness and tangent normal derived from the same physical height field. No photographic pigment or painted directional light."
+}

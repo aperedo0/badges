@@ -1,0 +1,70 @@
+{
+ "name": "Ruby Crown",
+ "mockup": "/Users/antonioperedo/Desktop/badges/ruby_crown_claude_20261108/reference/crown.png",
+ "mockup_box": [
+  627,
+  55,
+  1000
+ ],
+ "build_front": "/Users/antonioperedo/Desktop/badges/ruby_crown_claude_20261108/candidate12/app/front.png",
+ "build_box": [
+  603.0,
+  417,
+  819
+ ],
+ "poses": {
+  "early turn": "/Users/antonioperedo/Desktop/badges/ruby_crown_claude_20261108/candidate12/app/early_turn.png",
+  "left side": "/Users/antonioperedo/Desktop/badges/ruby_crown_claude_20261108/candidate12/app/side_left.png",
+  "back": "/Users/antonioperedo/Desktop/badges/ruby_crown_claude_20261108/candidate12/app/back.png",
+  "right side": "/Users/antonioperedo/Desktop/badges/ruby_crown_claude_20261108/candidate12/app/side_right.png"
+ },
+ "regions": [
+  [
+   "top ornament",
+   -0.22,
+   -0.01,
+   0.22,
+   0.37
+  ],
+  [
+   "velvet and upper arches",
+   -0.4,
+   0.16,
+   0.4,
+   0.5
+  ],
+  [
+   "left arches",
+   -0.66,
+   0.14,
+   -0.12,
+   0.64
+  ],
+  [
+   "center ruby and strap",
+   -0.24,
+   0.3,
+   0.24,
+   0.99
+  ],
+  [
+   "right leaves and arch feet",
+   0.08,
+   0.48,
+   0.66,
+   0.88
+  ],
+  [
+   "circlet band",
+   -0.66,
+   0.78,
+   0.02,
+   1.02
+  ]
+ ],
+ "intended": [
+  "Every arch reaches the top middle of the crown and meets the others under the fleur de lis (in the mockup the outermost arches curl outward instead).",
+  "The stones that are blue in the mockup are ruby red in the build."
+ ],
+ "checklist": "/Users/antonioperedo/Desktop/badges/ruby_crown_claude_20261108/review/checklist.md"
+}

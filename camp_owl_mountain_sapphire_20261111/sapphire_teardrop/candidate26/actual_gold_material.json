@@ -1,0 +1,24 @@
+{
+  "gold_color": [
+    1.0,
+    0.4399999976158142,
+    0.07000000029802322
+  ],
+  "metallic": 1.0,
+  "roughness_scale": [
+    0.20000000298023224,
+    0.20000000298023224,
+    0.20000000298023224,
+    1.0
+  ],
+  "roughness_bias": [
+    0.23846031725406647,
+    0.23846031725406647,
+    0.23846031725406647,
+    0.0
+  ],
+  "source_roughness_bytes_preserved": true,
+  "source_roughness_sha256": "b4ec354ad6d22cf9d5ca36634966ffd024e7bf03c64b0521552b6abc970d6d3b",
+  "existing_gem_profile": "CrestGem_SapphireClear",
+  "no_app_code_edits": true
+}

@@ -1,0 +1,16 @@
+{
+  "source": "candidate21",
+  "owner_confirmed_issue": "Large pink heart shape inside the red edge",
+  "geometry_unchanged": true,
+  "uniform_true_volume_scattering": true,
+  "normalized_scattering": 0.65,
+  "illumination_from_actual_studio_environment": true,
+  "no_reference_or_position_color_map": true,
+  "no_painted_reflections": true,
+  "attenuation_approximation": "Distances to the actual entry and exit facets, with isotropic mean incident light",
+  "only_continuous_rose_volume_changed": true,
+  "other_optical_profiles_preserved": true,
+  "source_shader_sha256": "5f8a7c42248e1996608b59a78d980d0554550eb47a799311dfb318e60848c26d",
+  "trial_shader_sha256": "256b9fdc7283a7253580ae72933394edef583907c8122d8c1ce9c27c60908928",
+  "native_review_pending": true
+}

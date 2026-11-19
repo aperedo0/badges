@@ -1,0 +1,27 @@
+{
+  "contract_passed": true,
+  "model_sha256": "5123a4b4efa626d7941456ced7421b64e3188de23386c5893f2bea8b1c494a1d",
+  "meshes": 53,
+  "triangles": 106660,
+  "bytes": 7820871,
+  "bounds": [
+    [
+      -2.613981008529663,
+      -2.4549999237060547,
+      -0.44239598512649536
+    ],
+    [
+      2.613981008529663,
+      2.994999885559082,
+      0.44239598512649536
+    ]
+  ],
+  "all_textures_present_and_byte_identical": true,
+  "texture_files": [
+    "0/enamel_color.png",
+    "0/enamel_emission.png"
+  ],
+  "native_gems": {},
+  "no_gem_appearance_texture": true,
+  "production_app_untouched": true
+}

@@ -1,0 +1,33 @@
+{
+  "key": "AS_wood_planes",
+  "mesh": "Editable watertight wood master.001",
+  "material": "Wood Lab AS_wood_planes",
+  "vertices": 641121,
+  "polygons": 643262,
+  "images": [
+    {
+      "node": "Single plank albedo",
+      "size": [
+        4096,
+        1536
+      ],
+      "packed": true
+    },
+    {
+      "node": "Single plank roughness",
+      "size": [
+        4096,
+        1536
+      ],
+      "packed": true
+    },
+    {
+      "node": "Single plank normal",
+      "size": [
+        4096,
+        1536
+      ],
+      "packed": true
+    }
+  ]
+}

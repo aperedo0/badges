@@ -1,0 +1,9 @@
+{
+  "cause": "A real Blender render at constant roughness removes the ripple, isolating the source brush roughness contrast rather than geometry.",
+  "same_ruby_gold_color_and_real_profile": true,
+  "original_roughness_texture_bytes_preserved": true,
+  "grain_contrast": 0.2,
+  "mean_roughness_preserved": true,
+  "all_geometry_normals_and_uvs_byte_identical_to25": true,
+  "no_app_code_edits": true
+}

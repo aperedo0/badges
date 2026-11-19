@@ -1,0 +1,13 @@
+{
+  "meshes": 14,
+  "triangles": 271092,
+  "all_asset_textures_packed_byte_identically": true,
+  "packed_textures": {
+    "velvet_fold_color.png": "7be45e4f6d452c0002296e28e4552d46e9a94486eaf87ca0abbfc39cb79ca4f7",
+    "gold_roughness.png": "d8d40a86eaa6541366024bd130d763ea56ae92a25ed729f9010d566b470aae73",
+    "velvet_occlusion.png": "051af76fec3c3a77e7f5d700add1e7e64a5ab7b0a9a2f73f689b301d5a6722a8",
+    "quilted_band_color.png": "fb04594b37d21d7a9bfd206343897270bfbaa97700dce05c8a0387d9f1166e90"
+  },
+  "complete_editable_checkpoint": "/Users/antonioperedo/Desktop/badges/royal_heart_compass_20261106/amethyst_crown/candidate21/source/amethyst_crown_compact.blend",
+  "native_gem_profiles_preserved": true
+}

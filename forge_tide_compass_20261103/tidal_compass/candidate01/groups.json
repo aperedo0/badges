@@ -1,0 +1,104 @@
+[
+  {
+    "name": "Thin continuous brushed silver perimeter",
+    "role": "metal",
+    "smooth": true,
+    "plain_vertical_walls": true
+  },
+  {
+    "name": "Deep teal recessed field",
+    "role": "field",
+    "smooth": true
+  },
+  {
+    "name": "Deep teal recessed field finished side walls",
+    "role": "side",
+    "smooth": true
+  },
+  {
+    "name": "Sweeping lower teal wave",
+    "role": "wave",
+    "smooth": true
+  },
+  {
+    "name": "Sweeping lower teal wave finished side walls",
+    "role": "side",
+    "smooth": true
+  },
+  {
+    "name": "Continuous smooth pearl crescent and curling wave",
+    "role": "pearl",
+    "smooth": true
+  },
+  {
+    "name": "Continuous smooth pearl crescent and curling wave finished side walls",
+    "role": "side",
+    "smooth": true
+  },
+  {
+    "name": "Fine silver pearl outline 1",
+    "role": "metal",
+    "smooth": true
+  },
+  {
+    "name": "Fine silver pearl outline 2",
+    "role": "metal",
+    "smooth": true
+  },
+  {
+    "name": "Fine silver pearl outline 16",
+    "role": "metal",
+    "smooth": true
+  },
+  {
+    "name": "Thin compass guide circle",
+    "role": "metal",
+    "smooth": true,
+    "plain_vertical_walls": true
+  },
+  {
+    "name": "North silver perimeter marker",
+    "role": "metal",
+    "smooth": false
+  },
+  {
+    "name": "North silver perimeter marker side walls",
+    "role": "side",
+    "smooth": true
+  },
+  {
+    "name": "West silver perimeter marker",
+    "role": "metal",
+    "smooth": false
+  },
+  {
+    "name": "West silver perimeter marker side walls",
+    "role": "side",
+    "smooth": true
+  },
+  {
+    "name": "East silver perimeter marker",
+    "role": "metal",
+    "smooth": false
+  },
+  {
+    "name": "East silver perimeter marker side walls",
+    "role": "side",
+    "smooth": true
+  },
+  {
+    "name": "South silver perimeter marker",
+    "role": "metal",
+    "smooth": false
+  },
+  {
+    "name": "South silver perimeter marker side walls",
+    "role": "side",
+    "smooth": true
+  },
+  {
+    "name": "Eight pointed silver compass with sixteen flat facets",
+    "role": "metal",
+    "smooth": false
+  }
+]

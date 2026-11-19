@@ -1,0 +1,73 @@
+{
+  "status": "diagnostic_only_not_native",
+  "candidate": "candidate16",
+  "no_appearance_images_used_in_optics": true,
+  "omissions": [
+    "Sparse cleavage",
+    "Density noise",
+    "Native bloom and antialiasing"
+  ],
+  "seconds": 1.8052780628204346,
+  "paths": [
+    {
+      "hits": 3,
+      "mean_escaped": [
+        1.118860044478768,
+        0.08810867606648075,
+        0.19795095980630242
+      ],
+      "mean_unfinished": [
+        0.3298434624454929,
+        1.2344089051914338e-05,
+        0.0057124359306236815
+      ],
+      "unfinished_red_share": 0.2276818278336215,
+      "outside_paths": 0
+    },
+    {
+      "hits": 6,
+      "mean_escaped": [
+        1.2428481148323545,
+        0.08810867613096034,
+        0.197981075691968
+      ],
+      "mean_unfinished": [
+        0.06409107692437538,
+        8.642793637250857e-12,
+        2.2991105800228337e-05
+      ],
+      "unfinished_red_share": 0.04903906572594786,
+      "outside_paths": 0
+    },
+    {
+      "hits": 12,
+      "mean_escaped": [
+        1.2678580492539897,
+        0.08810867613096034,
+        0.19798111185940295
+      ],
+      "mean_unfinished": [
+        0.007544591155623693,
+        2.644581342126917e-20,
+        4.8547732503980145e-09
+      ],
+      "unfinished_red_share": 0.005915458316128808,
+      "outside_paths": 0
+    },
+    {
+      "hits": 24,
+      "mean_escaped": [
+        1.2718605048890506,
+        0.08810867613096034,
+        0.19798111186382908
+      ],
+      "mean_unfinished": [
+        0.00012178389669359127,
+        3.1462584653901573e-62,
+        4.821674588750348e-24
+      ],
+      "unfinished_red_share": 9.574339027145453e-05,
+      "outside_paths": 0
+    }
+  ]
+}

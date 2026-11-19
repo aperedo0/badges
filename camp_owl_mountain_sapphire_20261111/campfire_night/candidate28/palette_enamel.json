@@ -1,0 +1,100 @@
+{
+ "EnamelAmberFire": {
+  "color_texture": "textures/enamelamberfire_color.png",
+  "emission_texture": "textures/enamelamberfire_emission.png",
+  "emission_scale": 8.0,
+  "roughness": 0.18,
+  "metallic": 1.0
+ },
+ "EnamelGround": {
+  "color_texture": "textures/enamelground_color.png",
+  "emission_texture": "textures/enamelground_emission.png",
+  "emission_scale": 8.0,
+  "roughness": 0.18,
+  "metallic": 1.0
+ },
+ "EnamelMoonlight": {
+  "color_texture": "textures/enamelmoonlight_color.png",
+  "emission_texture": "textures/enamelmoonlight_emission.png",
+  "emission_scale": 8.0,
+  "roughness": 0.18,
+  "metallic": 1.0
+ },
+ "EnamelMountain": {
+  "color_texture": "textures/enamelmountain_color.png",
+  "emission_texture": "textures/enamelmountain_emission.png",
+  "emission_scale": 8.0,
+  "roughness": 0.18,
+  "metallic": 1.0
+ },
+ "EnamelPineLower": {
+  "color_texture": "textures/enamelpinelower_color.png",
+  "emission_texture": "textures/enamelpinelower_emission.png",
+  "emission_scale": 8.0,
+  "roughness": 0.18,
+  "metallic": 1.0
+ },
+ "EnamelPineMiddle": {
+  "color_texture": "textures/enamelpinemiddle_color.png",
+  "emission_texture": "textures/enamelpinemiddle_emission.png",
+  "emission_scale": 8.0,
+  "roughness": 0.18,
+  "metallic": 1.0
+ },
+ "EnamelPineTop": {
+  "color_texture": "textures/enamelpinetop_color.png",
+  "emission_texture": "textures/enamelpinetop_emission.png",
+  "emission_scale": 8.0,
+  "roughness": 0.18,
+  "metallic": 1.0
+ },
+ "EnamelRedFire": {
+  "color_texture": "textures/enamelredfire_color.png",
+  "emission_texture": "textures/enamelredfire_emission.png",
+  "emission_scale": 8.0,
+  "roughness": 0.18,
+  "metallic": 1.0
+ },
+ "EnamelSmallPines": {
+  "color_texture": "textures/enamelsmallpines_color.png",
+  "emission_texture": "textures/enamelsmallpines_emission.png",
+  "emission_scale": 8.0,
+  "roughness": 0.18,
+  "metallic": 1.0
+ },
+ "EnamelStone": {
+  "color_texture": "textures/enamelstone_color.png",
+  "emission_texture": "textures/enamelstone_emission.png",
+  "emission_scale": 8.0,
+  "roughness": 0.18,
+  "metallic": 1.0
+ },
+ "EnamelWoodBody": {
+  "color_texture": "textures/enamelwoodbody_color.png",
+  "emission_texture": "textures/enamelwoodbody_emission.png",
+  "emission_scale": 8.0,
+  "roughness": 0.18,
+  "metallic": 1.0
+ },
+ "EnamelWoodEnd": {
+  "color_texture": "textures/enamelwoodend_color.png",
+  "emission_texture": "textures/enamelwoodend_emission.png",
+  "emission_scale": 8.0,
+  "roughness": 0.18,
+  "metallic": 1.0
+ },
+ "EnamelYellowFire": {
+  "color_texture": "textures/enamelyellowfire_color.png",
+  "emission_texture": "textures/enamelyellowfire_emission.png",
+  "emission_scale": 8.0,
+  "roughness": 0.18,
+  "metallic": 1.0
+ },
+ "NightField": {
+  "color_texture": "textures/nightfield_color.png",
+  "emission_texture": "textures/nightfield_emission.png",
+  "emission_scale": 8.0,
+  "roughness": 0.18,
+  "metallic": 1.0
+ }
+}

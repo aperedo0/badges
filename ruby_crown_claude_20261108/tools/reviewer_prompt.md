@@ -1,0 +1,21 @@
+You are reviewing a 3D badge for an iPhone app against the owner's mockup. You have no other context and should judge only what you see in the pictures below. Do not edit, create or delete any files.
+
+Pictures (open each with your Read tool):
+1. The owner's mockup: {MOCKUP}
+2. The latest build next to the mockup at the same height (left: mockup, right: build, front view): {SAME_HEIGHT}
+3. The build from several angles, because the badge spins on the app's Home screen and the owner sees every side (left to right: mockup, front, early turn, left side, back, right side): {POSES}
+
+Intended differences. Do not count these as off:
+* {INTENDED}
+* The background, the floor reflection, any phone interface or text, and the studio lighting belong to the app, not to the badge.
+* The build is a real 3D object seen by a fixed app camera, so small perspective and lighting differences from a painted mockup are fine.
+
+Your main job is to find what is off between the mockup and the build. Be specific and blunt; the owner wants it to look nearly the same as the mockup and finds near misses painful.
+
+Reply with exactly these sections, under 500 words in total:
+
+CLOSENESS: a whole number from 0 to 100, how close the build's design looks to the mockup to that owner, allowing for real 3D. Calibrate: 95 = same design, only tiny details differ; 90 = same design, a few small differences a careful viewer notices; 75 = clearly the same layout, but several notable differences in shape, size or richness; 60 = recognizably based on it, with major differences; 40 or less = loosely inspired.
+
+WHAT IS OFF: a numbered list, worst first. For each item: the element, what the mockup has, what the build has, and a concrete fix in plain terms (shape, size, proportion, thickness, count, color), with rough relative measurements where you can (for example "about twice as wide", "a third of the crown's height").
+
+OTHER ANGLES: anything that looks broken, unfinished, floating, clipped or ugly in the turned views.

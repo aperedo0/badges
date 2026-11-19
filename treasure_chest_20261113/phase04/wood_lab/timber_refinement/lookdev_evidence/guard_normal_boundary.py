@@ -1,0 +1,5 @@
+from pathlib import Path
+import numpy as np,json
+from PIL import Image
+D=Path(__file__).resolve().parent;W=D.parent;C=W/'V_lookdev_refinement';old=np.asarray(Image.open(W/'U_scan_fibers/normal.png').convert('RGB'));a=old[16:-16,16:-16].astype(float)/127.5-1;fixed=np.load(D/'normal_sampling.npz')['corrected'];h,w=a.shape[:2];X,Y=np.meshgrid(np.linspace(-2.55,2.55,w),np.linspace(-.84,-2.2175,h));yb,yt=-2.1605000495910645,-.862500011920929;half=2.49114990234375+(2.3499999046325684-2.49114990234375)*(Y-yb)/(yt-yb);edge=np.minimum.reduce([half-abs(X),Y-yb,yt-Y]);t=np.clip((edge-.012)/.033,0,1);fade=t*t*(3-2*t);v=a*(1-fade[:,:,None])+fixed*fade[:,:,None];v/=np.maximum(np.linalg.norm(v,axis=2,keepdims=True),1e-9);rgb=np.uint8(np.clip(v*.5+.5,0,1)*255+.5);rgb[fade==0]=old[16:-16,16:-16][fade==0];out=old.copy();out[16:-16,16:-16]=rgb;Image.fromarray(out).save(C/'normal.png')
+d=json.loads((C/'design.json').read_text());d['original_bevel_and_boundary_normal_pixels_preserved']=True;(C/'design.json').write_text(json.dumps(d,indent=2))

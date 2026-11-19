@@ -1,0 +1,71 @@
+{
+  "status": "diagnostic_only_not_native",
+  "broad_physical_facets": true,
+  "no_appearance_textures": true,
+  "variants": [
+    {
+      "depth": 1.0,
+      "outline_step": 4,
+      "planes": [
+        177,
+        177
+      ]
+    },
+    {
+      "depth": 1.0,
+      "outline_step": 8,
+      "planes": [
+        165,
+        165
+      ]
+    },
+    {
+      "depth": 1.5,
+      "outline_step": 4,
+      "planes": [
+        177,
+        177
+      ]
+    },
+    {
+      "depth": 1.5,
+      "outline_step": 8,
+      "planes": [
+        165,
+        165
+      ]
+    },
+    {
+      "depth": 2.0,
+      "outline_step": 4,
+      "planes": [
+        177,
+        177
+      ]
+    },
+    {
+      "depth": 2.0,
+      "outline_step": 8,
+      "planes": [
+        165,
+        165
+      ]
+    },
+    {
+      "depth": 2.5,
+      "outline_step": 4,
+      "planes": [
+        177,
+        177
+      ]
+    },
+    {
+      "depth": 2.5,
+      "outline_step": 8,
+      "planes": [
+        165,
+        165
+      ]
+    }
+  ]
+}

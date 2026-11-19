@@ -1,0 +1,15 @@
+{
+  "source": "Preserved sample4 material, local authored height refinement only",
+  "height_min": -0.056271994731419875,
+  "height_max": -2.2164684362065836e-73,
+  "normal_tilt_max": 55.000000000000014,
+  "roughness_min": 0.62,
+  "roughness_max": 0.85,
+  "new_cut_area_fraction": 0.010340509618702554,
+  "rest_mask_fraction": 0.10424888932022085,
+  "authored_fractures": 4,
+  "authored_chips": 3,
+  "no_new_image_generation": true,
+  "no_geometry_change": true,
+  "no_orange_increase": true
+}

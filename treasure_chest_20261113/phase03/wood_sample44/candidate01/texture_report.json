@@ -1,0 +1,21 @@
+{
+  "canvas": [
+    1024,
+    384
+  ],
+  "padding": 12,
+  "seed": 4417,
+  "physical_height_min": -0.015381739355511702,
+  "physical_height_max": 0.003807365658485156,
+  "normal_tilt_max": 34.999999999979885,
+  "roughness_min": 0.5499999999999999,
+  "roughness_max": 0.8199237555323734,
+  "linear_light_baked": false,
+  "emission": false,
+  "reference_pixels_used": false,
+  "palette_srgb_mean": [
+    0.5115151862086641,
+    0.22736876606438147,
+    0.0746885550627458
+  ]
+}

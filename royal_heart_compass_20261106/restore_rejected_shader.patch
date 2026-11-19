@@ -1,0 +1,51 @@
+--- private_preview_rejected_test
++++ private_preview_before_this_work_block
+@@ -269,18 +269,16 @@
+         for (int step = 0; step < 4; step++) {
+             float3 samplePosition = position + direction * facet.distance * (float(step) + 0.5) / 4.0;
+             if (studio.isMirrorImage) samplePosition.y = -samplePosition.y;
+-            density += rose ? 0.78 + 0.44 * crestNoise(samplePosition * float3(42.0, 28.0, 37.0))
+-                            : clearStone ? 0.96 + 0.06 * crestNoise(samplePosition * 3.0) : crestOpticalDensity(samplePosition);
++            density += clearStone ? 0.96 + 0.06 * crestNoise(samplePosition * 3.0) : crestOpticalDensity(samplePosition);
+         }
+         // Thin internal cleavage surfaces reflect actual studio light. Their
+         // bounded planes stay inside the crystal and never alter its silhouette.
+         if (ice || (rose && hit == 0)) {
+             float3 lastCell = float3(INFINITY);
+-            int inclusionSamples = rose ? 8 : 6;
+-            for (int sample = 0; sample < inclusionSamples; sample++) {
+-                float3 probe = position + direction * facet.distance * (float(sample) + 0.5) / float(inclusionSamples);
++            for (int sample = 0; sample < 6; sample++) {
++                float3 probe = position + direction * facet.distance * (float(sample) + 0.5) / 6.0;
+                 if (studio.isMirrorImage) probe.y = -probe.y;
+-                float cellSize = rose ? 0.075 : 0.28;
++                float cellSize = rose ? 0.16 : 0.28;
+                 float3 cell = floor(probe / cellSize);
+                 if (all(cell == lastCell)) continue;
+                 lastCell = cell;
+@@ -293,11 +291,11 @@
+                 float3 hitPoint = position + direction * distance;
+                 if (distance <= 0.001 || distance >= facet.distance || any(abs(hitPoint - center) > cellSize * 0.5)) continue;
+                 if (approach > 0.0) normal = -normal;
+-                float share = (rose ? 0.18 : 0.10) * crestFresnelReflectance(abs(approach), indices.y, 1.0);
++                float share = (rose ? 0.065 : 0.10) * crestFresnelReflectance(abs(approach), indices.y, 1.0);
+                 float3 secondaryPosition = hitPoint;
+                 float3 secondaryDirection = reflect(direction, normal);
+                 float3 secondaryWeight = weight * share * exp(-absorption * distance);
+-                for (int bounce = 0; bounce < 2; bounce++) {
++                for (int bounce = 0; bounce < (rose ? 1 : 2); bounce++) {
+                     crestGemExit exit = crestFindExit(planes, secondaryPosition, secondaryDirection);
+                     if (!exit.found) break;
+                     secondaryPosition += secondaryDirection * exit.distance;
+@@ -309,11 +307,6 @@
+                     }
+                     secondaryWeight *= reflection;
+                     secondaryDirection = reflect(secondaryDirection, exit.normal);
+-                }
+-                // Retain the unresolved secondary path after the bounded trace.
+-                // It still samples studio light through the moving crystal.
+-                if (rose) {
+-                    collected += secondaryWeight * studio.along(crestModelToWorldDirection(secondaryDirection, modelToWorld));
+                 }
+                 weight *= 1.0 - share;
+                 break;

@@ -1,0 +1,24 @@
+{
+  "complete_mesh_count": 11,
+  "triangles": 51076,
+  "all_used_images_packed_and_match_usdz": true,
+  "images": [
+    {
+      "name": "sky_emission.png",
+      "sha256": "2fb92e06c4d33ccb5606a6cb1157cef2180bf64cee9b5b317ea23efa975dcae5"
+    },
+    {
+      "name": "rock_emission.png",
+      "sha256": "e54f96ffa7b23277936ae3ea76d4a2ac4f0fe2934524efd68d083fc5614532b8"
+    },
+    {
+      "name": "rock_color.png",
+      "sha256": "e41b53717d23d6d0f44dd2cc33ffee365a3969170bc9297af48e0b877dfca6d0"
+    },
+    {
+      "name": "sky_color.png",
+      "sha256": "40b738293b75ffbb7a7013b940fa3e4a73cfc4b7372ff875e21561c0402424e1"
+    }
+  ],
+  "usdz_unchanged_sha256": "8492201b63a4191fb5d86aa34c6218a765b37bc34b630081e38bb5d235d847e0"
+}

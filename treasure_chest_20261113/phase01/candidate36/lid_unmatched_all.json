@@ -1,0 +1,2000 @@
+[
+  {
+    "face": 161,
+    "position": [
+      -1.7719297409057617,
+      0.8558189272880554,
+      0.7693219184875488
+    ],
+    "area": 0.000595486315432936,
+    "closest_compatible": 0.0008181614684872329,
+    "near": [
+      {
+        "distance": 0.0015490892110392451,
+        "dot": -4.5856270249347807e-07,
+        "smooth": false,
+        "source": "Chest Lid Hoop 2"
+      },
+      {
+        "distance": 0.0,
+        "dot": 1.3883669743453243e-07,
+        "smooth": false,
+        "source": "Chest Lid Hoop 2"
+      },
+      {
+        "distance": 0.0189370010048151,
+        "dot": 6.317157698683053e-07,
+        "smooth": false,
+        "source": "Chest Lid Hoop 2"
+      },
+      {
+        "distance": 0.010871265083551407,
+        "dot": 0.8864344479343329,
+        "smooth": true,
+        "source": "Chest Upper Lid Rim"
+      },
+      {
+        "distance": 0.0008181614684872329,
+        "dot": 0.9999999711579852,
+        "smooth": true,
+        "source": "Chest Upper Lid Rim"
+      },
+      {
+        "distance": 0.011755380779504776,
+        "dot": 0.9999999711311397,
+        "smooth": true,
+        "source": "Chest Upper Lid Rim"
+      },
+      {
+        "distance": 0.0033749728463590145,
+        "dot": 0.9614534974098206,
+        "smooth": false,
+        "source": "Chest Upper Lid Rim"
+      }
+    ]
+  },
+  {
+    "face": 1188,
+    "position": [
+      2.7227344512939453,
+      -0.4683351218700409,
+      0.38074997067451477
+    ],
+    "area": 0.04595707729458809,
+    "closest_compatible": 0.000849606585688889,
+    "near": [
+      {
+        "distance": 2.9802322387695312e-08,
+        "dot": 0.0,
+        "smooth": false,
+        "source": "Chest Lid Corner Armor 1 1"
+      },
+      {
+        "distance": 2.9802322387695312e-08,
+        "dot": 7.53939378816959e-07,
+        "smooth": false,
+        "source": "Chest Lid Corner Armor 1 1"
+      },
+      {
+        "distance": 0.005690963473170996,
+        "dot": 0.9999999328592621,
+        "smooth": false,
+        "source": "Chest Upper Lid Rim"
+      },
+      {
+        "distance": 0.000849606585688889,
+        "dot": 0.9999999337078008,
+        "smooth": false,
+        "source": "Chest Upper Lid Rim"
+      },
+      {
+        "distance": 0.004864336457103491,
+        "dot": 0.9999999336119716,
+        "smooth": false,
+        "source": "Chest Upper Lid Rim"
+      },
+      {
+        "distance": 0.007130617741495371,
+        "dot": 0.999999933700904,
+        "smooth": false,
+        "source": "Chest Upper Lid Rim"
+      },
+      {
+        "distance": 0.006082230247557163,
+        "dot": 0.9999999335898693,
+        "smooth": false,
+        "source": "Chest Upper Lid Rim"
+      },
+      {
+        "distance": 5.470978976518381e-07,
+        "dot": 0.0,
+        "smooth": false,
+        "source": "Chest Upper Lid Rim"
+      },
+      {
+        "distance": 0.011387385427951813,
+        "dot": 0.9999999337080727,
+        "smooth": false,
+        "source": "Chest Upper Lid Rim"
+      }
+    ]
+  },
+  {
+    "face": 2960,
+    "position": [
+      2.7227344512939453,
+      -0.4683351218700409,
+      0.38074997067451477
+    ],
+    "area": 0.005415358580648899,
+    "closest_compatible": 0.000849606585688889,
+    "near": [
+      {
+        "distance": 2.9802322387695312e-08,
+        "dot": 9.950876119546592e-06,
+        "smooth": false,
+        "source": "Chest Lid Corner Armor 1 1"
+      },
+      {
+        "distance": 2.9802322387695312e-08,
+        "dot": 7.707717626480051e-07,
+        "smooth": false,
+        "source": "Chest Lid Corner Armor 1 1"
+      },
+      {
+        "distance": 0.005690963473170996,
+        "dot": 1.0000000343644835,
+        "smooth": false,
+        "source": "Chest Upper Lid Rim"
+      },
+      {
+        "distance": 0.000849606585688889,
+        "dot": 1.0000000347956777,
+        "smooth": false,
+        "source": "Chest Upper Lid Rim"
+      },
+      {
+        "distance": 0.004864336457103491,
+        "dot": 1.00000003456923,
+        "smooth": false,
+        "source": "Chest Upper Lid Rim"
+      },
+      {
+        "distance": 0.007130617741495371,
+        "dot": 1.0000000348337992,
+        "smooth": false,
+        "source": "Chest Upper Lid Rim"
+      },
+      {
+        "distance": 0.006082230247557163,
+        "dot": 1.0000000345320845,
+        "smooth": false,
+        "source": "Chest Upper Lid Rim"
+      },
+      {
+        "distance": 5.470978976518381e-07,
+        "dot": 9.950876119546592e-06,
+        "smooth": false,
+        "source": "Chest Upper Lid Rim"
+      },
+      {
+        "distance": 0.011387385427951813,
+        "dot": 1.0000000348032891,
+        "smooth": false,
+        "source": "Chest Upper Lid Rim"
+      }
+    ]
+  },
+  {
+    "face": 7613,
+    "position": [
+      -1.7719297409057617,
+      0.8558189272880554,
+      0.7693219184875488
+    ],
+    "area": 0.0018745074048638344,
+    "closest_compatible": 0.0008181614684872329,
+    "near": [
+      {
+        "distance": 0.0015490892110392451,
+        "dot": -4.0291017893156896e-07,
+        "smooth": false,
+        "source": "Chest Lid Hoop 2"
+      },
+      {
+        "distance": 0.0,
+        "dot": 1.94486878327982e-07,
+        "smooth": false,
+        "source": "Chest Lid Hoop 2"
+      },
+      {
+        "distance": 0.0189370010048151,
+        "dot": 6.873743717210634e-07,
+        "smooth": false,
+        "source": "Chest Lid Hoop 2"
+      },
+      {
+        "distance": 0.010871265083551407,
+        "dot": 0.8864488251124322,
+        "smooth": true,
+        "source": "Chest Upper Lid Rim"
+      },
+      {
+        "distance": 0.0008181614684872329,
+        "dot": 1.000000023776688,
+        "smooth": true,
+        "source": "Chest Upper Lid Rim"
+      },
+      {
+        "distance": 0.011755380779504776,
+        "dot": 1.0000000237833846,
+        "smooth": true,
+        "source": "Chest Upper Lid Rim"
+      },
+      {
+        "distance": 0.0033749728463590145,
+        "dot": 0.9614450335502625,
+        "smooth": false,
+        "source": "Chest Upper Lid Rim"
+      }
+    ]
+  },
+  {
+    "face": 7614,
+    "position": [
+      -0.39978912472724915,
+      1.7138595581054688,
+      0.7694752812385559
+    ],
+    "area": 0.003115830011665821,
+    "closest_compatible": 0.0022670491598546505,
+    "near": [
+      {
+        "distance": 0.0016200575046241283,
+        "dot": 3.106170896752004e-08,
+        "smooth": false,
+        "source": "Chest Lid Hoop 3"
+      },
+      {
+        "distance": 0.01920587196946144,
+        "dot": -4.465265907604959e-07,
+        "smooth": false,
+        "source": "Chest Lid Hoop 3"
+      },
+      {
+        "distance": 0.0,
+        "dot": 8.421105484548685e-07,
+        "smooth": false,
+        "source": "Chest Lid Hoop 3"
+      },
+      {
+        "distance": 0.011428849771618843,
+        "dot": 0.8864485753772482,
+        "smooth": true,
+        "source": "Chest Upper Lid Rim"
+      },
+      {
+        "distance": 0.0059225535951554775,
+        "dot": 1.0000000041747101,
+        "smooth": true,
+        "source": "Chest Upper Lid Rim"
+      },
+      {
+        "distance": 0.01645994372665882,
+        "dot": 0.8864509514807469,
+        "smooth": true,
+        "source": "Chest Upper Lid Rim"
+      },
+      {
+        "distance": 0.0022670491598546505,
+        "dot": 1.0000000041808628,
+        "smooth": true,
+        "source": "Chest Upper Lid Rim"
+      },
+      {
+        "distance": 0.0028173874597996473,
+        "dot": 0.961445152759552,
+        "smooth": false,
+        "source": "Chest Upper Lid Rim"
+      }
+    ]
+  },
+  {
+    "face": 7787,
+    "position": [
+      0.013418687507510185,
+      1.9583873748779297,
+      0.7657555937767029
+    ],
+    "area": 0.0004096906341146678,
+    "closest_compatible": 0.0008375087636522949,
+    "near": [
+      {
+        "distance": 0.012991555035114288,
+        "dot": -6.689715581625876e-07,
+        "smooth": false,
+        "source": "Chest Lid Hoop 3"
+      },
+      {
+        "distance": 9.313225746154785e-10,
+        "dot": 8.415862828669898e-08,
+        "smooth": false,
+        "source": "Chest Lid Hoop 3"
+      },
+      {
+        "distance": 0.00031387407216243446,
+        "dot": -1.044033315504951e-08,
+        "smooth": false,
+        "source": "Chest Lid Hoop 3"
+      },
+      {
+        "distance": 0.013203021138906479,
+        "dot": 0.875625696335101,
+        "smooth": true,
+        "source": "Chest Upper Lid Rim"
+      },
+      {
+        "distance": 0.016805080696940422,
+        "dot": 0.8756246652654008,
+        "smooth": true,
+        "source": "Chest Upper Lid Rim"
+      },
+      {
+        "distance": 0.003304617013782263,
+        "dot": 0.9999999861878226,
+        "smooth": true,
+        "source": "Chest Upper Lid Rim"
+      },
+      {
+        "distance": 0.0008375087636522949,
+        "dot": 0.8864227059564744,
+        "smooth": true,
+        "source": "Chest Upper Lid Rim"
+      },
+      {
+        "distance": 0.0032820669002830982,
+        "dot": 0.9999999859198068,
+        "smooth": true,
+        "source": "Chest Upper Lid Rim"
+      },
+      {
+        "distance": 0.004915395751595497,
+        "dot": 0.8864232073919038,
+        "smooth": true,
+        "source": "Chest Upper Lid Rim"
+      },
+      {
+        "distance": 0.014993632212281227,
+        "dot": 0.724961519241333,
+        "smooth": false,
+        "source": "Chest Upper Lid Rim"
+      }
+    ]
+  },
+  {
+    "face": 7806,
+    "position": [
+      1.3581684827804565,
+      -1.0994611978530884,
+      0.7642542719841003
+    ],
+    "area": 0.0030168674420565367,
+    "closest_compatible": 0.0030172758270055056,
+    "near": [
+      {
+        "distance": 0.0,
+        "dot": 2.543201457143515e-07,
+        "smooth": false,
+        "source": "Chest Lid Hoop 3"
+      },
+      {
+        "distance": 0.01093729492276907,
+        "dot": -6.595754916371579e-08,
+        "smooth": false,
+        "source": "Chest Lid Hoop 3"
+      },
+      {
+        "distance": 0.0015605436637997627,
+        "dot": -7.221140965831543e-07,
+        "smooth": false,
+        "source": "Chest Lid Hoop 3"
+      },
+      {
+        "distance": 0.01881190575659275,
+        "dot": 0.8755992297014582,
+        "smooth": true,
+        "source": "Chest Upper Lid Rim"
+      },
+      {
+        "distance": 0.011023272760212421,
+        "dot": 0.8756002608696559,
+        "smooth": true,
+        "source": "Chest Upper Lid Rim"
+      },
+      {
+        "distance": 0.005607441067695618,
+        "dot": 1.0000000019151636,
+        "smooth": true,
+        "source": "Chest Upper Lid Rim"
+      },
+      {
+        "distance": 0.003893402637913823,
+        "dot": 1.0000000019126922,
+        "smooth": true,
+        "source": "Chest Upper Lid Rim"
+      },
+      {
+        "distance": 0.011464530602097511,
+        "dot": 0.8864476061928801,
+        "smooth": true,
+        "source": "Chest Upper Lid Rim"
+      },
+      {
+        "distance": 0.0030172758270055056,
+        "dot": 0.8864471048080367,
+        "smooth": true,
+        "source": "Chest Upper Lid Rim"
+      },
+      {
+        "distance": 0.01697845570743084,
+        "dot": 0.7249978184700012,
+        "smooth": false,
+        "source": "Chest Upper Lid Rim"
+      }
+    ]
+  },
+  {
+    "face": 7811,
+    "position": [
+      -0.01862296648323536,
+      -1.950058937072754,
+      0.7558777928352356
+    ],
+    "area": 0.0013495038729161024,
+    "closest_compatible": 0.000822694506496191,
+    "near": [
+      {
+        "distance": 5.587935447692871e-09,
+        "dot": -1.2230071235691728e-06,
+        "smooth": false,
+        "source": "Chest Lid Hoop 2"
+      },
+      {
+        "distance": 0.0002627098001539707,
+        "dot": -1.3399638723861275e-06,
+        "smooth": false,
+        "source": "Chest Lid Hoop 2"
+      },
+      {
+        "distance": 0.011618597432971,
+        "dot": 0.2329583430076831,
+        "smooth": true,
+        "source": "Chest Lid Hoop 2"
+      },
+      {
+        "distance": 0.014422676526010036,
+        "dot": 0.22813238903957686,
+        "smooth": true,
+        "source": "Chest Lid Hoop 2"
+      },
+      {
+        "distance": 0.008602786809206009,
+        "dot": -8.301528060797446e-07,
+        "smooth": false,
+        "source": "Chest Lid Hoop 2"
+      },
+      {
+        "distance": 0.014422676526010036,
+        "dot": 0.22814035086526038,
+        "smooth": true,
+        "source": "Chest Lid Hoop 2"
+      },
+      {
+        "distance": 0.01282714307308197,
+        "dot": 0.9532712580172484,
+        "smooth": false,
+        "source": "Chest Upper Lid Rim"
+      },
+      {
+        "distance": 0.0031646504066884518,
+        "dot": 1.0000000233792774,
+        "smooth": true,
+        "source": "Chest Upper Lid Rim"
+      },
+      {
+        "distance": 0.0013598102377727628,
+        "dot": 1.0000000233802413,
+        "smooth": true,
+        "source": "Chest Upper Lid Rim"
+      },
+      {
+        "distance": 0.000822694506496191,
+        "dot": 0.8755989746954057,
+        "smooth": true,
+        "source": "Chest Upper Lid Rim"
+      },
+      {
+        "distance": 0.010648638941347599,
+        "dot": 0.8756014545641638,
+        "smooth": true,
+        "source": "Chest Upper Lid Rim"
+      },
+      {
+        "distance": 0.01850944757461548,
+        "dot": 0.5526100073615228,
+        "smooth": true,
+        "source": "Chest Upper Lid Rim"
+      },
+      {
+        "distance": 0.014766253530979156,
+        "dot": 0.5526091044925683,
+        "smooth": true,
+        "source": "Chest Upper Lid Rim"
+      }
+    ]
+  },
+  {
+    "face": 7812,
+    "position": [
+      1.3532851934432983,
+      -1.0916461944580078,
+      0.7528018355369568
+    ],
+    "area": 0.00224324781447649,
+    "closest_compatible": 0.0013898479519411922,
+    "near": [
+      {
+        "distance": 0.010206771083176136,
+        "dot": 0.23295183161771887,
+        "smooth": true,
+        "source": "Chest Lid Hoop 3"
+      },
+      {
+        "distance": 0.0034466537181288004,
+        "dot": -2.204877349073358e-08,
+        "smooth": false,
+        "source": "Chest Lid Hoop 3"
+      },
+      {
+        "distance": 0.0,
+        "dot": 1.3338273298807778e-07,
+        "smooth": false,
+        "source": "Chest Lid Hoop 3"
+      },
+      {
+        "distance": 0.015336410142481327,
+        "dot": 0.22812523739117757,
+        "smooth": true,
+        "source": "Chest Lid Hoop 3"
+      },
+      {
+        "distance": 0.01149718277156353,
+        "dot": -5.4817656479858e-07,
+        "smooth": false,
+        "source": "Chest Lid Hoop 3"
+      },
+      {
+        "distance": 0.015336410142481327,
+        "dot": 0.22813580373435896,
+        "smooth": true,
+        "source": "Chest Lid Hoop 3"
+      },
+      {
+        "distance": 0.009600409306585789,
+        "dot": 0.9532727617160534,
+        "smooth": false,
+        "source": "Chest Upper Lid Rim"
+      },
+      {
+        "distance": 0.004341274034231901,
+        "dot": 0.9999999982119191,
+        "smooth": true,
+        "source": "Chest Upper Lid Rim"
+      },
+      {
+        "distance": 0.0013898479519411922,
+        "dot": 0.9999999982020882,
+        "smooth": true,
+        "source": "Chest Upper Lid Rim"
+      },
+      {
+        "distance": 0.004049439448863268,
+        "dot": 0.8755965100882724,
+        "smooth": true,
+        "source": "Chest Upper Lid Rim"
+      },
+      {
+        "distance": 0.009172446094453335,
+        "dot": 0.8755989899796998,
+        "smooth": true,
+        "source": "Chest Upper Lid Rim"
+      },
+      {
+        "distance": 0.017694633454084396,
+        "dot": 0.5526048761533142,
+        "smooth": true,
+        "source": "Chest Upper Lid Rim"
+      }
+    ]
+  },
+  {
+    "face": 14441,
+    "position": [
+      0.013418687507510185,
+      1.9583873748779297,
+      0.7657555937767029
+    ],
+    "area": 0.001822931575588882,
+    "closest_compatible": 0.0008375087636522949,
+    "near": [
+      {
+        "distance": 0.012991555035114288,
+        "dot": -6.612216651269544e-07,
+        "smooth": false,
+        "source": "Chest Lid Hoop 3"
+      },
+      {
+        "distance": 9.313225746154785e-10,
+        "dot": 9.205784284454405e-08,
+        "smooth": false,
+        "source": "Chest Lid Hoop 3"
+      },
+      {
+        "distance": 0.00031387407216243446,
+        "dot": -2.5457588061396763e-09,
+        "smooth": false,
+        "source": "Chest Lid Hoop 3"
+      },
+      {
+        "distance": 0.013203021138906479,
+        "dot": 0.8755916989992896,
+        "smooth": true,
+        "source": "Chest Upper Lid Rim"
+      },
+      {
+        "distance": 0.016805080696940422,
+        "dot": 0.8755906677980698,
+        "smooth": true,
+        "source": "Chest Upper Lid Rim"
+      },
+      {
+        "distance": 0.003304617013782263,
+        "dot": 0.9999999771119701,
+        "smooth": true,
+        "source": "Chest Upper Lid Rim"
+      },
+      {
+        "distance": 0.0008375087636522949,
+        "dot": 0.8864552658173753,
+        "smooth": true,
+        "source": "Chest Upper Lid Rim"
+      },
+      {
+        "distance": 0.0032820669002830982,
+        "dot": 0.9999999772052096,
+        "smooth": true,
+        "source": "Chest Upper Lid Rim"
+      },
+      {
+        "distance": 0.004915395751595497,
+        "dot": 0.886455767185228,
+        "smooth": true,
+        "source": "Chest Upper Lid Rim"
+      },
+      {
+        "distance": 0.014993632212281227,
+        "dot": 0.7250099778175354,
+        "smooth": false,
+        "source": "Chest Upper Lid Rim"
+      }
+    ]
+  },
+  {
+    "face": 14452,
+    "position": [
+      -0.01862296648323536,
+      -1.950058937072754,
+      0.7558777928352356
+    ],
+    "area": 0.00014786934480071068,
+    "closest_compatible": 0.000822694506496191,
+    "near": [
+      {
+        "distance": 5.587935447692871e-09,
+        "dot": -1.1324124200489747e-06,
+        "smooth": false,
+        "source": "Chest Lid Hoop 2"
+      },
+      {
+        "distance": 0.0002627098001539707,
+        "dot": -1.2494211480007004e-06,
+        "smooth": false,
+        "source": "Chest Lid Hoop 2"
+      },
+      {
+        "distance": 0.011618597432971,
+        "dot": 0.23296672741317842,
+        "smooth": true,
+        "source": "Chest Lid Hoop 2"
+      },
+      {
+        "distance": 0.014422676526010036,
+        "dot": 0.22814148722217284,
+        "smooth": true,
+        "source": "Chest Lid Hoop 2"
+      },
+      {
+        "distance": 0.008602786809206009,
+        "dot": -7.396856968869135e-07,
+        "smooth": false,
+        "source": "Chest Lid Hoop 2"
+      },
+      {
+        "distance": 0.014422676526010036,
+        "dot": 0.22814944947609977,
+        "smooth": true,
+        "source": "Chest Lid Hoop 2"
+      },
+      {
+        "distance": 0.01282714307308197,
+        "dot": 0.9532933839239763,
+        "smooth": false,
+        "source": "Chest Upper Lid Rim"
+      },
+      {
+        "distance": 0.0031646504066884518,
+        "dot": 1.0000000647081186,
+        "smooth": true,
+        "source": "Chest Upper Lid Rim"
+      },
+      {
+        "distance": 0.0013598102377727628,
+        "dot": 1.0000000645530176,
+        "smooth": true,
+        "source": "Chest Upper Lid Rim"
+      },
+      {
+        "distance": 0.000822694506496191,
+        "dot": 0.875563697531397,
+        "smooth": true,
+        "source": "Chest Upper Lid Rim"
+      },
+      {
+        "distance": 0.010648638941347599,
+        "dot": 0.8755661777288908,
+        "smooth": true,
+        "source": "Chest Upper Lid Rim"
+      },
+      {
+        "distance": 0.01850944757461548,
+        "dot": 0.5525491002953795,
+        "smooth": true,
+        "source": "Chest Upper Lid Rim"
+      },
+      {
+        "distance": 0.014766253530979156,
+        "dot": 0.5525481973826232,
+        "smooth": true,
+        "source": "Chest Upper Lid Rim"
+      }
+    ]
+  },
+  {
+    "face": 14453,
+    "position": [
+      1.3536099195480347,
+      -1.0921659469604492,
+      0.7547353506088257
+    ],
+    "area": 0.0007965283002704382,
+    "closest_compatible": 0.0020211301743984222,
+    "near": [
+      {
+        "distance": 0.011094310320913792,
+        "dot": 0.23295187659884553,
+        "smooth": true,
+        "source": "Chest Lid Hoop 3"
+      },
+      {
+        "distance": 0.0014452134491875768,
+        "dot": -3.0869192196099713e-09,
+        "smooth": false,
+        "source": "Chest Lid Hoop 3"
+      },
+      {
+        "distance": 0.0,
+        "dot": 1.5234474999545326e-07,
+        "smooth": false,
+        "source": "Chest Lid Hoop 3"
+      },
+      {
+        "distance": 0.014686200767755508,
+        "dot": 0.22812528384072572,
+        "smooth": true,
+        "source": "Chest Lid Hoop 3"
+      },
+      {
+        "distance": 0.009677826426923275,
+        "dot": -5.292145499384303e-07,
+        "smooth": false,
+        "source": "Chest Lid Hoop 3"
+      },
+      {
+        "distance": 0.014686200767755508,
+        "dot": 0.22813585018548949,
+        "smooth": true,
+        "source": "Chest Lid Hoop 3"
+      },
+      {
+        "distance": 0.011628726497292519,
+        "dot": 0.9532728438493067,
+        "smooth": false,
+        "source": "Chest Upper Lid Rim"
+      },
+      {
+        "distance": 0.006369598675519228,
+        "dot": 1.0000000314886794,
+        "smooth": true,
+        "source": "Chest Upper Lid Rim"
+      },
+      {
+        "distance": 0.004506722092628479,
+        "dot": 1.000000031478492,
+        "smooth": true,
+        "source": "Chest Upper Lid Rim"
+      },
+      {
+        "distance": 0.0020211301743984222,
+        "dot": 0.8755964586242144,
+        "smooth": true,
+        "source": "Chest Upper Lid Rim"
+      },
+      {
+        "distance": 0.00725146196782589,
+        "dot": 0.8755989385164747,
+        "smooth": true,
+        "source": "Chest Upper Lid Rim"
+      },
+      {
+        "distance": 0.01584029570221901,
+        "dot": 0.5526047554724565,
+        "smooth": true,
+        "source": "Chest Upper Lid Rim"
+      }
+    ]
+  },
+  {
+    "face": 14454,
+    "position": [
+      1.7606160640716553,
+      -0.8377136588096619,
+      0.7543964982032776
+    ],
+    "area": 0.001776919816620648,
+    "closest_compatible": 0.0023765938822180033,
+    "near": [
+      {
+        "distance": 0.01093890331685543,
+        "dot": 0.23294364000347453,
+        "smooth": true,
+        "source": "Chest Lid Hoop 3"
+      },
+      {
+        "distance": 0.012141795828938484,
+        "dot": 0.23294260491720262,
+        "smooth": true,
+        "source": "Chest Lid Hoop 3"
+      },
+      {
+        "distance": 0.014782228507101536,
+        "dot": 0.22811432611738713,
+        "smooth": true,
+        "source": "Chest Lid Hoop 3"
+      },
+      {
+        "distance": 0.014494737610220909,
+        "dot": -7.066013544072196e-07,
+        "smooth": false,
+        "source": "Chest Lid Hoop 3"
+      },
+      {
+        "distance": 0.0,
+        "dot": 1.7400853160028822e-06,
+        "smooth": false,
+        "source": "Chest Lid Hoop 3"
+      },
+      {
+        "distance": 0.009996681474149227,
+        "dot": 1.059020521385847e-06,
+        "smooth": false,
+        "source": "Chest Lid Hoop 3"
+      },
+      {
+        "distance": 0.011273255571722984,
+        "dot": 0.9532630066093432,
+        "smooth": false,
+        "source": "Chest Upper Lid Rim"
+      },
+      {
+        "distance": 0.007320159114897251,
+        "dot": 0.9999999817688452,
+        "smooth": true,
+        "source": "Chest Upper Lid Rim"
+      },
+      {
+        "distance": 0.004189221654087305,
+        "dot": 0.9999999818278342,
+        "smooth": true,
+        "source": "Chest Upper Lid Rim"
+      },
+      {
+        "distance": 0.0023765938822180033,
+        "dot": 0.8756120677299187,
+        "smooth": true,
+        "source": "Chest Upper Lid Rim"
+      },
+      {
+        "distance": 0.0062665557488799095,
+        "dot": 0.875614547476388,
+        "smooth": true,
+        "source": "Chest Upper Lid Rim"
+      },
+      {
+        "distance": 0.016162265092134476,
+        "dot": 0.5526317351918764,
+        "smooth": true,
+        "source": "Chest Upper Lid Rim"
+      }
+    ]
+  },
+  {
+    "face": 16835,
+    "position": [
+      -1.7719297409057617,
+      0.8558189272880554,
+      0.7693219184875488
+    ],
+    "area": 0.00044233386870473623,
+    "closest_compatible": 0.0008181614684872329,
+    "near": [
+      {
+        "distance": 0.0015490892110392451,
+        "dot": -4.952838706032448e-07,
+        "smooth": false,
+        "source": "Chest Lid Hoop 2"
+      },
+      {
+        "distance": 0.0,
+        "dot": 1.0211519870200488e-07,
+        "smooth": false,
+        "source": "Chest Lid Hoop 2"
+      },
+      {
+        "distance": 0.0189370010048151,
+        "dot": 5.949954541799866e-07,
+        "smooth": false,
+        "source": "Chest Lid Hoop 2"
+      },
+      {
+        "distance": 0.010871265083551407,
+        "dot": 0.8864364676917709,
+        "smooth": true,
+        "source": "Chest Upper Lid Rim"
+      },
+      {
+        "distance": 0.0008181614684872329,
+        "dot": 0.9999999764940332,
+        "smooth": true,
+        "source": "Chest Upper Lid Rim"
+      },
+      {
+        "distance": 0.011755380779504776,
+        "dot": 0.9999999764719039,
+        "smooth": true,
+        "source": "Chest Upper Lid Rim"
+      },
+      {
+        "distance": 0.0033749728463590145,
+        "dot": 0.961452305316925,
+        "smooth": false,
+        "source": "Chest Upper Lid Rim"
+      }
+    ]
+  },
+  {
+    "face": 16939,
+    "position": [
+      0.006840981543064117,
+      1.9689139127731323,
+      0.769709050655365
+    ],
+    "area": 0.0010926269460469484,
+    "closest_compatible": 0.0008638554136268795,
+    "near": [
+      {
+        "distance": 0.0017283399356529117,
+        "dot": 4.6153376987686623e-07,
+        "smooth": false,
+        "source": "Chest Lid Hoop 3"
+      },
+      {
+        "distance": 1.4901161193847656e-08,
+        "dot": 3.471473694926847e-07,
+        "smooth": false,
+        "source": "Chest Lid Hoop 3"
+      },
+      {
+        "distance": 0.012278825044631958,
+        "dot": 0.8864467422553809,
+        "smooth": true,
+        "source": "Chest Upper Lid Rim"
+      },
+      {
+        "distance": 0.008121275343000889,
+        "dot": 0.999999993247569,
+        "smooth": true,
+        "source": "Chest Upper Lid Rim"
+      },
+      {
+        "distance": 0.016044288873672485,
+        "dot": 0.8864491183767833,
+        "smooth": true,
+        "source": "Chest Upper Lid Rim"
+      },
+      {
+        "distance": 0.0008638554136268795,
+        "dot": 0.9999999932494539,
+        "smooth": true,
+        "source": "Chest Upper Lid Rim"
+      },
+      {
+        "distance": 0.0019673400092869997,
+        "dot": 0.961446225643158,
+        "smooth": false,
+        "source": "Chest Upper Lid Rim"
+      }
+    ]
+  },
+  {
+    "face": 16940,
+    "position": [
+      -0.39978912472724915,
+      1.7138595581054688,
+      0.7694752812385559
+    ],
+    "area": 0.0016034869477152824,
+    "closest_compatible": 0.0022670491598546505,
+    "near": [
+      {
+        "distance": 0.0016200575046241283,
+        "dot": 4.825535750429052e-08,
+        "smooth": false,
+        "source": "Chest Lid Hoop 3"
+      },
+      {
+        "distance": 0.01920587196946144,
+        "dot": -4.2933458665104356e-07,
+        "smooth": false,
+        "source": "Chest Lid Hoop 3"
+      },
+      {
+        "distance": 0.0,
+        "dot": 8.593040018041115e-07,
+        "smooth": false,
+        "source": "Chest Lid Hoop 3"
+      },
+      {
+        "distance": 0.011428849771618843,
+        "dot": 0.8864495224011629,
+        "smooth": true,
+        "source": "Chest Upper Lid Rim"
+      },
+      {
+        "distance": 0.0059225535951554775,
+        "dot": 1.0000000218008915,
+        "smooth": true,
+        "source": "Chest Upper Lid Rim"
+      },
+      {
+        "distance": 0.01645994372665882,
+        "dot": 0.8864518984955455,
+        "smooth": true,
+        "source": "Chest Upper Lid Rim"
+      },
+      {
+        "distance": 0.0022670491598546505,
+        "dot": 1.0000000218092244,
+        "smooth": true,
+        "source": "Chest Upper Lid Rim"
+      },
+      {
+        "distance": 0.0028173874597996473,
+        "dot": 0.961444616317749,
+        "smooth": false,
+        "source": "Chest Upper Lid Rim"
+      }
+    ]
+  },
+  {
+    "face": 16985,
+    "position": [
+      1.3581684827804565,
+      -1.0994611978530884,
+      0.7642542719841003
+    ],
+    "area": 0.0026640030555427074,
+    "closest_compatible": 0.0030172758270055056,
+    "near": [
+      {
+        "distance": 0.0,
+        "dot": 2.479033931646278e-07,
+        "smooth": false,
+        "source": "Chest Lid Hoop 3"
+      },
+      {
+        "distance": 0.01093729492276907,
+        "dot": -7.237562553508702e-08,
+        "smooth": false,
+        "source": "Chest Lid Hoop 3"
+      },
+      {
+        "distance": 0.0015605436637997627,
+        "dot": -7.285318520872665e-07,
+        "smooth": false,
+        "source": "Chest Lid Hoop 3"
+      },
+      {
+        "distance": 0.01881190575659275,
+        "dot": 0.8755985270013394,
+        "smooth": true,
+        "source": "Chest Upper Lid Rim"
+      },
+      {
+        "distance": 0.011023272760212421,
+        "dot": 0.8755995581722817,
+        "smooth": true,
+        "source": "Chest Upper Lid Rim"
+      },
+      {
+        "distance": 0.005607441067695618,
+        "dot": 1.0000000076532212,
+        "smooth": true,
+        "source": "Chest Upper Lid Rim"
+      },
+      {
+        "distance": 0.003893402637913823,
+        "dot": 1.0000000076432278,
+        "smooth": true,
+        "source": "Chest Upper Lid Rim"
+      },
+      {
+        "distance": 0.011464530602097511,
+        "dot": 0.8864482893887126,
+        "smooth": true,
+        "source": "Chest Upper Lid Rim"
+      },
+      {
+        "distance": 0.0030172758270055056,
+        "dot": 0.8864477880052731,
+        "smooth": true,
+        "source": "Chest Upper Lid Rim"
+      },
+      {
+        "distance": 0.01697845570743084,
+        "dot": 0.7249988317489624,
+        "smooth": false,
+        "source": "Chest Upper Lid Rim"
+      }
+    ]
+  },
+  {
+    "face": 16986,
+    "position": [
+      1.765547752380371,
+      -0.8456060290336609,
+      0.7648211121559143
+    ],
+    "area": 0.0010581475216895342,
+    "closest_compatible": 0.001982702175155282,
+    "near": [
+      {
+        "distance": 0.013649667613208294,
+        "dot": -1.2972908688055745e-06,
+        "smooth": false,
+        "source": "Chest Lid Hoop 3"
+      },
+      {
+        "distance": 0.0,
+        "dot": 1.9591777615233888e-06,
+        "smooth": false,
+        "source": "Chest Lid Hoop 3"
+      },
+      {
+        "distance": 0.001089862547814846,
+        "dot": 6.952601470840598e-07,
+        "smooth": false,
+        "source": "Chest Lid Hoop 3"
+      },
+      {
+        "distance": 0.011846266686916351,
+        "dot": 0.8755891717091707,
+        "smooth": true,
+        "source": "Chest Upper Lid Rim"
+      },
+      {
+        "distance": 0.0077666123397648335,
+        "dot": 0.999999993570472,
+        "smooth": true,
+        "source": "Chest Upper Lid Rim"
+      },
+      {
+        "distance": 0.001982702175155282,
+        "dot": 0.999999993450219,
+        "smooth": true,
+        "source": "Chest Upper Lid Rim"
+      },
+      {
+        "distance": 0.012041062116622925,
+        "dot": 0.8864582169660477,
+        "smooth": true,
+        "source": "Chest Upper Lid Rim"
+      },
+      {
+        "distance": 0.002194290980696678,
+        "dot": 0.8864577156032394,
+        "smooth": true,
+        "source": "Chest Upper Lid Rim"
+      },
+      {
+        "distance": 0.01622314751148224,
+        "dot": 0.7250136137008667,
+        "smooth": false,
+        "source": "Chest Upper Lid Rim"
+      }
+    ]
+  },
+  {
+    "face": 16989,
+    "position": [
+      1.3536099195480347,
+      -1.0921659469604492,
+      0.7547353506088257
+    ],
+    "area": 0.001980510773137212,
+    "closest_compatible": 0.0020211301743984222,
+    "near": [
+      {
+        "distance": 0.011094310320913792,
+        "dot": 0.23295025740053557,
+        "smooth": true,
+        "source": "Chest Lid Hoop 3"
+      },
+      {
+        "distance": 0.0014452134491875768,
+        "dot": -6.033408104847275e-08,
+        "smooth": false,
+        "source": "Chest Lid Hoop 3"
+      },
+      {
+        "distance": 0.0,
+        "dot": 9.508463109879757e-08,
+        "smooth": false,
+        "source": "Chest Lid Hoop 3"
+      },
+      {
+        "distance": 0.014686200767755508,
+        "dot": 0.2281235309679479,
+        "smooth": true,
+        "source": "Chest Lid Hoop 3"
+      },
+      {
+        "distance": 0.009677826426923275,
+        "dot": -5.86476324296746e-07,
+        "smooth": false,
+        "source": "Chest Lid Hoop 3"
+      },
+      {
+        "distance": 0.014686200767755508,
+        "dot": 0.22813409720591601,
+        "smooth": true,
+        "source": "Chest Lid Hoop 3"
+      },
+      {
+        "distance": 0.011628726497292519,
+        "dot": 0.9532686612859049,
+        "smooth": false,
+        "source": "Chest Upper Lid Rim"
+      },
+      {
+        "distance": 0.006369598675519228,
+        "dot": 0.9999999879939417,
+        "smooth": true,
+        "source": "Chest Upper Lid Rim"
+      },
+      {
+        "distance": 0.004506722092628479,
+        "dot": 0.999999988013016,
+        "smooth": true,
+        "source": "Chest Upper Lid Rim"
+      },
+      {
+        "distance": 0.0020211301743984222,
+        "dot": 0.8756030416028607,
+        "smooth": true,
+        "source": "Chest Upper Lid Rim"
+      },
+      {
+        "distance": 0.00725146196782589,
+        "dot": 0.8756055214333955,
+        "smooth": true,
+        "source": "Chest Upper Lid Rim"
+      },
+      {
+        "distance": 0.01584029570221901,
+        "dot": 0.5526161554730078,
+        "smooth": true,
+        "source": "Chest Upper Lid Rim"
+      }
+    ]
+  },
+  {
+    "face": 16990,
+    "position": [
+      1.7606160640716553,
+      -0.8377136588096619,
+      0.7543964982032776
+    ],
+    "area": 0.0007866611704230309,
+    "closest_compatible": 0.0023765938822180033,
+    "near": [
+      {
+        "distance": 0.01093890331685543,
+        "dot": 0.23294784153705123,
+        "smooth": true,
+        "source": "Chest Lid Hoop 3"
+      },
+      {
+        "distance": 0.012141795828938484,
+        "dot": 0.23294680643805415,
+        "smooth": true,
+        "source": "Chest Lid Hoop 3"
+      },
+      {
+        "distance": 0.014782228507101536,
+        "dot": 0.22811889625907605,
+        "smooth": true,
+        "source": "Chest Lid Hoop 3"
+      },
+      {
+        "distance": 0.014494737610220909,
+        "dot": -7.960828621883505e-07,
+        "smooth": false,
+        "source": "Chest Lid Hoop 3"
+      },
+      {
+        "distance": 0.0,
+        "dot": 1.6505168367452018e-06,
+        "smooth": false,
+        "source": "Chest Lid Hoop 3"
+      },
+      {
+        "distance": 0.009996681474149227,
+        "dot": 9.695041843657496e-07,
+        "smooth": false,
+        "source": "Chest Lid Hoop 3"
+      },
+      {
+        "distance": 0.011273255571722984,
+        "dot": 0.9532744486433284,
+        "smooth": false,
+        "source": "Chest Upper Lid Rim"
+      },
+      {
+        "distance": 0.007320159114897251,
+        "dot": 1.0000000216591485,
+        "smooth": true,
+        "source": "Chest Upper Lid Rim"
+      },
+      {
+        "distance": 0.004189221654087305,
+        "dot": 1.0000000216375555,
+        "smooth": true,
+        "source": "Chest Upper Lid Rim"
+      },
+      {
+        "distance": 0.0023765938822180033,
+        "dot": 0.8755938691864236,
+        "smooth": true,
+        "source": "Chest Upper Lid Rim"
+      },
+      {
+        "distance": 0.0062665557488799095,
+        "dot": 0.8755963491026768,
+        "smooth": true,
+        "source": "Chest Upper Lid Rim"
+      },
+      {
+        "distance": 0.016162265092134476,
+        "dot": 0.5526002970533128,
+        "smooth": true,
+        "source": "Chest Upper Lid Rim"
+      }
+    ]
+  },
+  {
+    "face": 19682,
+    "position": [
+      0.006840981543064117,
+      1.9689139127731323,
+      0.769709050655365
+    ],
+    "area": 0.00432270672172308,
+    "closest_compatible": 0.0008638554136268795,
+    "near": [
+      {
+        "distance": 0.0017283399356529117,
+        "dot": 4.7105402952612004e-07,
+        "smooth": false,
+        "source": "Chest Lid Hoop 3"
+      },
+      {
+        "distance": 1.4901161193847656e-08,
+        "dot": 3.566676415078305e-07,
+        "smooth": false,
+        "source": "Chest Lid Hoop 3"
+      },
+      {
+        "distance": 0.012278825044631958,
+        "dot": 0.8864469313700349,
+        "smooth": true,
+        "source": "Chest Upper Lid Rim"
+      },
+      {
+        "distance": 0.008121275343000889,
+        "dot": 0.9999999485927851,
+        "smooth": true,
+        "source": "Chest Upper Lid Rim"
+      },
+      {
+        "distance": 0.016044288873672485,
+        "dot": 0.8864493074890825,
+        "smooth": true,
+        "source": "Chest Upper Lid Rim"
+      },
+      {
+        "distance": 0.0008638554136268795,
+        "dot": 0.9999999485952051,
+        "smooth": true,
+        "source": "Chest Upper Lid Rim"
+      },
+      {
+        "distance": 0.0019673400092869997,
+        "dot": 0.9614460468292236,
+        "smooth": false,
+        "source": "Chest Upper Lid Rim"
+      }
+    ]
+  },
+  {
+    "face": 19708,
+    "position": [
+      0.013418687507510185,
+      1.9583873748779297,
+      0.7657555937767029
+    ],
+    "area": 0.0002429334563203156,
+    "closest_compatible": 0.0008375087636522949,
+    "near": [
+      {
+        "distance": 0.012991555035114288,
+        "dot": -7.065616178292246e-07,
+        "smooth": false,
+        "source": "Chest Lid Hoop 3"
+      },
+      {
+        "distance": 9.313225746154785e-10,
+        "dot": 4.6752003814440686e-08,
+        "smooth": false,
+        "source": "Chest Lid Hoop 3"
+      },
+      {
+        "distance": 0.00031387407216243446,
+        "dot": -4.785266028496201e-08,
+        "smooth": false,
+        "source": "Chest Lid Hoop 3"
+      },
+      {
+        "distance": 0.013203021138906479,
+        "dot": 0.875583966375474,
+        "smooth": true,
+        "source": "Chest Upper Lid Rim"
+      },
+      {
+        "distance": 0.016805080696940422,
+        "dot": 0.8755829351441955,
+        "smooth": true,
+        "source": "Chest Upper Lid Rim"
+      },
+      {
+        "distance": 0.003304617013782263,
+        "dot": 1.000000007812107,
+        "smooth": true,
+        "source": "Chest Upper Lid Rim"
+      },
+      {
+        "distance": 0.0008375087636522949,
+        "dot": 0.8864627280231594,
+        "smooth": true,
+        "source": "Chest Upper Lid Rim"
+      },
+      {
+        "distance": 0.0032820669002830982,
+        "dot": 1.0000000079878189,
+        "smooth": true,
+        "source": "Chest Upper Lid Rim"
+      },
+      {
+        "distance": 0.004915395751595497,
+        "dot": 0.8864632293756015,
+        "smooth": true,
+        "source": "Chest Upper Lid Rim"
+      },
+      {
+        "distance": 0.014993632212281227,
+        "dot": 0.7250210642814636,
+        "smooth": false,
+        "source": "Chest Upper Lid Rim"
+      }
+    ]
+  },
+  {
+    "face": 19710,
+    "position": [
+      1.765547752380371,
+      -0.8456060290336609,
+      0.7648211121559143
+    ],
+    "area": 0.004185323137789965,
+    "closest_compatible": 0.001982702175155282,
+    "near": [
+      {
+        "distance": 0.013649667613208294,
+        "dot": -1.2674317296289534e-06,
+        "smooth": false,
+        "source": "Chest Lid Hoop 3"
+      },
+      {
+        "distance": 0.0,
+        "dot": 1.9890153205015287e-06,
+        "smooth": false,
+        "source": "Chest Lid Hoop 3"
+      },
+      {
+        "distance": 0.001089862547814846,
+        "dot": 7.251203608629506e-07,
+        "smooth": false,
+        "source": "Chest Lid Hoop 3"
+      },
+      {
+        "distance": 0.011846266686916351,
+        "dot": 0.8756015607438186,
+        "smooth": true,
+        "source": "Chest Upper Lid Rim"
+      },
+      {
+        "distance": 0.0077666123397648335,
+        "dot": 0.9999999746044967,
+        "smooth": true,
+        "source": "Chest Upper Lid Rim"
+      },
+      {
+        "distance": 0.001982702175155282,
+        "dot": 0.999999974616095,
+        "smooth": true,
+        "source": "Chest Upper Lid Rim"
+      },
+      {
+        "distance": 0.012041062116622925,
+        "dot": 0.8864463135855258,
+        "smooth": true,
+        "source": "Chest Upper Lid Rim"
+      },
+      {
+        "distance": 0.002194290980696678,
+        "dot": 0.8864458121980644,
+        "smooth": true,
+        "source": "Chest Upper Lid Rim"
+      },
+      {
+        "distance": 0.01622314751148224,
+        "dot": 0.7249959111213684,
+        "smooth": false,
+        "source": "Chest Upper Lid Rim"
+      }
+    ]
+  },
+  {
+    "face": 19831,
+    "position": [
+      1.7606160640716553,
+      -0.8377136588096619,
+      0.7543964982032776
+    ],
+    "area": 0.0010536623885855079,
+    "closest_compatible": 0.0023765938822180033,
+    "near": [
+      {
+        "distance": 0.01093890331685543,
+        "dot": 0.23294397421514107,
+        "smooth": true,
+        "source": "Chest Lid Hoop 3"
+      },
+      {
+        "distance": 0.012141795828938484,
+        "dot": 0.23294293912761838,
+        "smooth": true,
+        "source": "Chest Lid Hoop 3"
+      },
+      {
+        "distance": 0.014782228507101536,
+        "dot": 0.22811469574779752,
+        "smooth": true,
+        "source": "Chest Lid Hoop 3"
+      },
+      {
+        "distance": 0.014494737610220909,
+        "dot": -7.888357928872528e-07,
+        "smooth": false,
+        "source": "Chest Lid Hoop 3"
+      },
+      {
+        "distance": 0.0,
+        "dot": 1.657842528915572e-06,
+        "smooth": false,
+        "source": "Chest Lid Hoop 3"
+      },
+      {
+        "distance": 0.009996681474149227,
+        "dot": 9.76782744043179e-07,
+        "smooth": false,
+        "source": "Chest Lid Hoop 3"
+      },
+      {
+        "distance": 0.011273255571722984,
+        "dot": 0.9532641122655627,
+        "smooth": false,
+        "source": "Chest Upper Lid Rim"
+      },
+      {
+        "distance": 0.007320159114897251,
+        "dot": 0.9999999913293737,
+        "smooth": true,
+        "source": "Chest Upper Lid Rim"
+      },
+      {
+        "distance": 0.004189221654087305,
+        "dot": 0.9999999913806138,
+        "smooth": true,
+        "source": "Chest Upper Lid Rim"
+      },
+      {
+        "distance": 0.0023765938822180033,
+        "dot": 0.8756103228775219,
+        "smooth": true,
+        "source": "Chest Upper Lid Rim"
+      },
+      {
+        "distance": 0.0062665557488799095,
+        "dot": 0.8756128026403318,
+        "smooth": true,
+        "source": "Chest Upper Lid Rim"
+      },
+      {
+        "distance": 0.016162265092134476,
+        "dot": 0.5526287154486427,
+        "smooth": true,
+        "source": "Chest Upper Lid Rim"
+      }
+    ]
+  },
+  {
+    "face": 19926,
+    "position": [
+      -0.39978912472724915,
+      1.7138595581054688,
+      0.7694752812385559
+    ],
+    "area": 0.0027509063947945833,
+    "closest_compatible": 0.0022670491598546505,
+    "near": [
+      {
+        "distance": 0.0016200575046241283,
+        "dot": 3.886626998884079e-08,
+        "smooth": false,
+        "source": "Chest Lid Hoop 3"
+      },
+      {
+        "distance": 0.01920587196946144,
+        "dot": -4.387228694461528e-07,
+        "smooth": false,
+        "source": "Chest Lid Hoop 3"
+      },
+      {
+        "distance": 0.0,
+        "dot": 8.499149910929261e-07,
+        "smooth": false,
+        "source": "Chest Lid Hoop 3"
+      },
+      {
+        "distance": 0.011428849771618843,
+        "dot": 0.8864490457768928,
+        "smooth": true,
+        "source": "Chest Upper Lid Rim"
+      },
+      {
+        "distance": 0.0059225535951554775,
+        "dot": 0.9999999917184397,
+        "smooth": true,
+        "source": "Chest Upper Lid Rim"
+      },
+      {
+        "distance": 0.01645994372665882,
+        "dot": 0.8864514218756281,
+        "smooth": true,
+        "source": "Chest Upper Lid Rim"
+      },
+      {
+        "distance": 0.0022670491598546505,
+        "dot": 0.9999999917257192,
+        "smooth": true,
+        "source": "Chest Upper Lid Rim"
+      },
+      {
+        "distance": 0.0028173874597996473,
+        "dot": 0.9614448547363281,
+        "smooth": false,
+        "source": "Chest Upper Lid Rim"
+      }
+    ]
+  },
+  {
+    "face": 19941,
+    "position": [
+      1.3581684827804565,
+      -1.0994611978530884,
+      0.7642542719841003
+    ],
+    "area": 0.0015528334770351648,
+    "closest_compatible": 0.0030172758270055056,
+    "near": [
+      {
+        "distance": 0.0,
+        "dot": 2.860893261758132e-07,
+        "smooth": false,
+        "source": "Chest Lid Hoop 3"
+      },
+      {
+        "distance": 0.01093729492276907,
+        "dot": -3.4185959807692604e-08,
+        "smooth": false,
+        "source": "Chest Lid Hoop 3"
+      },
+      {
+        "distance": 0.0015605436637997627,
+        "dot": -6.903430848342135e-07,
+        "smooth": false,
+        "source": "Chest Lid Hoop 3"
+      },
+      {
+        "distance": 0.01881190575659275,
+        "dot": 0.8756004994025854,
+        "smooth": true,
+        "source": "Chest Upper Lid Rim"
+      },
+      {
+        "distance": 0.011023272760212421,
+        "dot": 0.8756015305657859,
+        "smooth": true,
+        "source": "Chest Upper Lid Rim"
+      },
+      {
+        "distance": 0.005607441067695618,
+        "dot": 0.9999999830031717,
+        "smooth": true,
+        "source": "Chest Upper Lid Rim"
+      },
+      {
+        "distance": 0.003893402637913823,
+        "dot": 0.9999999830143718,
+        "smooth": true,
+        "source": "Chest Upper Lid Rim"
+      },
+      {
+        "distance": 0.011464530602097511,
+        "dot": 0.8864463569920271,
+        "smooth": true,
+        "source": "Chest Upper Lid Rim"
+      },
+      {
+        "distance": 0.0030172758270055056,
+        "dot": 0.8864458556046362,
+        "smooth": true,
+        "source": "Chest Upper Lid Rim"
+      },
+      {
+        "distance": 0.01697845570743084,
+        "dot": 0.7249959707260132,
+        "smooth": false,
+        "source": "Chest Upper Lid Rim"
+      }
+    ]
+  },
+  {
+    "face": 19943,
+    "position": [
+      1.3536099195480347,
+      -1.0921659469604492,
+      0.7547353506088257
+    ],
+    "area": 0.0011544504668563604,
+    "closest_compatible": 0.0020211301743984222,
+    "near": [
+      {
+        "distance": 0.011094310320913792,
+        "dot": 0.23294737122036033,
+        "smooth": true,
+        "source": "Chest Lid Hoop 3"
+      },
+      {
+        "distance": 0.0014452134491875768,
+        "dot": 2.107585047618491e-08,
+        "smooth": false,
+        "source": "Chest Lid Hoop 3"
+      },
+      {
+        "distance": 0.0,
+        "dot": 1.7646979528209182e-07,
+        "smooth": false,
+        "source": "Chest Lid Hoop 3"
+      },
+      {
+        "distance": 0.014686200767755508,
+        "dot": 0.22812038852375788,
+        "smooth": true,
+        "source": "Chest Lid Hoop 3"
+      },
+      {
+        "distance": 0.009677826426923275,
+        "dot": -5.050944050250901e-07,
+        "smooth": false,
+        "source": "Chest Lid Hoop 3"
+      },
+      {
+        "distance": 0.014686200767755508,
+        "dot": 0.22813095455798688,
+        "smooth": true,
+        "source": "Chest Lid Hoop 3"
+      },
+      {
+        "distance": 0.011628726497292519,
+        "dot": 0.9532607699966573,
+        "smooth": false,
+        "source": "Chest Upper Lid Rim"
+      },
+      {
+        "distance": 0.006369598675519228,
+        "dot": 1.0000000195631613,
+        "smooth": true,
+        "source": "Chest Upper Lid Rim"
+      },
+      {
+        "distance": 0.004506722092628479,
+        "dot": 1.000000019638208,
+        "smooth": true,
+        "source": "Chest Upper Lid Rim"
+      },
+      {
+        "distance": 0.0020211301743984222,
+        "dot": 0.8756157344691287,
+        "smooth": true,
+        "source": "Chest Upper Lid Rim"
+      },
+      {
+        "distance": 0.00725146196782589,
+        "dot": 0.8756182141818782,
+        "smooth": true,
+        "source": "Chest Upper Lid Rim"
+      },
+      {
+        "distance": 0.01584029570221901,
+        "dot": 0.5526380256011538,
+        "smooth": true,
+        "source": "Chest Upper Lid Rim"
+      }
+    ]
+  },
+  {
+    "face": 19943,
+    "position": [
+      1.3532851934432983,
+      -1.0916461944580078,
+      0.7528018355369568
+    ],
+    "area": 0.0011544504668563604,
+    "closest_compatible": 0.0013898479519411922,
+    "near": [
+      {
+        "distance": 0.010206771083176136,
+        "dot": 0.23294737122036033,
+        "smooth": true,
+        "source": "Chest Lid Hoop 3"
+      },
+      {
+        "distance": 0.0034466537181288004,
+        "dot": 2.107585047618491e-08,
+        "smooth": false,
+        "source": "Chest Lid Hoop 3"
+      },
+      {
+        "distance": 0.0,
+        "dot": 1.7646979528209182e-07,
+        "smooth": false,
+        "source": "Chest Lid Hoop 3"
+      },
+      {
+        "distance": 0.015336410142481327,
+        "dot": 0.22812038852375788,
+        "smooth": true,
+        "source": "Chest Lid Hoop 3"
+      },
+      {
+        "distance": 0.01149718277156353,
+        "dot": -5.050944050250901e-07,
+        "smooth": false,
+        "source": "Chest Lid Hoop 3"
+      },
+      {
+        "distance": 0.015336410142481327,
+        "dot": 0.22813095455798688,
+        "smooth": true,
+        "source": "Chest Lid Hoop 3"
+      },
+      {
+        "distance": 0.009600409306585789,
+        "dot": 0.9532607699966573,
+        "smooth": false,
+        "source": "Chest Upper Lid Rim"
+      },
+      {
+        "distance": 0.004341274034231901,
+        "dot": 1.0000000195631613,
+        "smooth": true,
+        "source": "Chest Upper Lid Rim"
+      },
+      {
+        "distance": 0.0013898479519411922,
+        "dot": 1.000000019638208,
+        "smooth": true,
+        "source": "Chest Upper Lid Rim"
+      },
+      {
+        "distance": 0.004049439448863268,
+        "dot": 0.8756157344691287,
+        "smooth": true,
+        "source": "Chest Upper Lid Rim"
+      },
+      {
+        "distance": 0.009172446094453335,
+        "dot": 0.8756182141818782,
+        "smooth": true,
+        "source": "Chest Upper Lid Rim"
+      },
+      {
+        "distance": 0.017694633454084396,
+        "dot": 0.5526380256011538,
+        "smooth": true,
+        "source": "Chest Upper Lid Rim"
+      }
+    ]
+  }
+]

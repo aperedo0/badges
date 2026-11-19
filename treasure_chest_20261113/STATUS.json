@@ -1,0 +1,50 @@
+{
+  "phase1": "reviewed_complete_rigged_hollow_construction",
+  "current_candidate": "phase04/wood_lab/timber_refinement/U_scan_fibers",
+  "previous_minimal_candidate": "phase01/candidate02",
+  "next_phase": "Owner review of one wood plank only",
+  "later_phases_started": true,
+  "chest_in_simulator": false,
+  "ruby_versions": "Both separate preview apps preserved on Badge Studio Preview",
+  "save_policy": "Save current Blender file after geometry changes and before renders, retaining numbered source checkpoints",
+  "remaining_geometry": [],
+  "iteration_checkpoint_reason": "Broader plank correction passed fresh construction review and full sampled motion checks.",
+  "current_validation": {
+    "meshes": 155,
+    "total_triangles": 178252,
+    "hardware_intrusions": 0,
+    "drivers": 15,
+    "sampled_opening_angles": 56,
+    "sampled_action_frames": 99,
+    "unclassified_contacts": 0
+  },
+  "current_stage": "awaiting_owner_test_plank_review",
+  "next_action": "Owner reviews the refined wood on the actual chest beside the reference in Blender. No AI reviewer or other plank work.",
+  "owner_checkpoint_request": "Owner requested a commit message after the current cover step to preserve progress",
+  "latest_whole_construction_review": {
+    "construction_ready": true,
+    "report": "phase01/candidate43/construction_review.md",
+    "scope": "Owner requested broader planks in neutral rigged construction. Final finishes and phone acceptance outstanding."
+  },
+  "latest_scoped_review": {
+    "scope": "Candidate30 dark keyhole and closed case",
+    "verdict": "PASS",
+    "report": "phase01/candidate30/review.md"
+  },
+  "owner_fix_checklist": "OWNER_FIXES.md",
+  "latest_owner_request": "Improve the raised wood between grooves, internal knot structure and material richness while preserving layout and existing fractures. Stop and show the owner.",
+  "modeling_paused_after_requested_step": false,
+  "resume_local": "2026-11-14T03:41:00-08:00",
+  "scheduled_timer_verification": "scheduler_verification.json",
+  "scheduled_timer_alive": false,
+  "queue_delivery_accepted": true,
+  "queue_delivery_observed": true,
+  "break_until_epoch": 1794659559.012565,
+  "work_mode": "manual_one_plank_trial",
+  "overnight_enabled": false,
+  "owner_paused_badge_work": true,
+  "finish_authorized": false,
+  "wood_grain_authorized": true,
+  "wood_grain_scope": "Exactly the lower front plank only",
+  "test_plank_validation": "phase04/wood_lab/timber_refinement/U_scan_fibers/saved_validation.json"
+}

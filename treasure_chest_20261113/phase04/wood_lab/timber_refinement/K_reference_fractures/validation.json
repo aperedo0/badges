@@ -1,0 +1,11 @@
+{
+  "key": "K_reference_fractures",
+  "vertices": 641121,
+  "polygons": 643262,
+  "watertight": true,
+  "original_boundary_vertices_exact": true,
+  "max_recession": 0.03293498047072818,
+  "front_datum_preserved": true,
+  "source_scene_untouched": true,
+  "images_packed": true
+}

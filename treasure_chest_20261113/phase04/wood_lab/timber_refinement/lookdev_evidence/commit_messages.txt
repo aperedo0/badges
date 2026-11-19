@@ -1,0 +1,2 @@
+Treasure chest: reveal existing wood fibers with balanced review lighting, refine fine normals and the knot material, preserve the original chest and save controlled comparisons for owner review
+Treasure chest: refine wood lighting, fine normals and knot material with preserved geometry and controlled comparisons

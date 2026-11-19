@@ -1,0 +1,24 @@
+{
+  "mode": "fitted",
+  "gain": 0.05,
+  "roles": [
+    "metal",
+    "copper",
+    "field",
+    "side",
+    "flame",
+    "ember_side"
+  ],
+  "texture_size": 1024,
+  "native_studio_measured": true,
+  "fit": {
+    "metal": {
+      "clean_samples": 181007,
+      "mean_physical_reflectance_factor": 0.23065798869034929
+    },
+    "copper": {
+      "clean_samples": 25596,
+      "mean_physical_reflectance_factor": 0.38242718167416484
+    }
+  }
+}

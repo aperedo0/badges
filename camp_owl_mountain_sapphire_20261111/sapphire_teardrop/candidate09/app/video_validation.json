@@ -1,0 +1,19 @@
+{
+  "native_recording": true,
+  "model_sha256": "b56f22485aa01aaee793b84966754204ed564f92d3923dbb0fb858bd541b811c",
+  "local_watchdog_seconds": 16,
+  "process_pid": 32252,
+  "recording_began_epoch": 1794491321.7546859,
+  "gesture_began_epoch": 1794491322.5561259,
+  "verified_rest_header_y": 1413.5,
+  "video": {
+    "width": 1206,
+    "height": 2622,
+    "duration": "11.090000",
+    "nb_frames": "848"
+  },
+  "recording_stopped": true,
+  "motion_review_pending": false,
+  "reason": "Native local fallback gives a duration limit that separate MCP start and stop calls cannot guarantee during a connection or tool failure",
+  "motion_review": "Reviewed actual native contact frames across the complete recorded turn: front, early rotation, both sides, back and return. This is motion evidence only. Surface finish is still rejected."
+}

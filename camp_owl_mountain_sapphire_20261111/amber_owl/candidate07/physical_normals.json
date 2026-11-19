@@ -1,0 +1,250 @@
+{
+  "method": "Angle weighted actual geometric bevel normals, colored face normals retained, no artificial shallow tilt or side barrel sweep.",
+  "parts": [
+    {
+      "name": "blue_enamel_backplate",
+      "real_metal_triangles": 0,
+      "walls_constant_through_depth": true
+    },
+    {
+      "name": "outer_gold_setting",
+      "real_metal_triangles": 1088,
+      "walls_constant_through_depth": true
+    },
+    {
+      "name": "upper_star_arc",
+      "real_metal_triangles": 264,
+      "walls_constant_through_depth": true
+    },
+    {
+      "name": "head_amber_disc",
+      "real_metal_triangles": 1216,
+      "walls_constant_through_depth": true
+    },
+    {
+      "name": "left_amber_wing",
+      "real_metal_triangles": 517,
+      "walls_constant_through_depth": true
+    },
+    {
+      "name": "right_amber_wing",
+      "real_metal_triangles": 504,
+      "walls_constant_through_depth": true
+    },
+    {
+      "name": "outer_left_feather",
+      "real_metal_triangles": 323,
+      "walls_constant_through_depth": true
+    },
+    {
+      "name": "outer_right_feather",
+      "real_metal_triangles": 323,
+      "walls_constant_through_depth": true
+    },
+    {
+      "name": "inner_left_feather",
+      "real_metal_triangles": 351,
+      "walls_constant_through_depth": true
+    },
+    {
+      "name": "inner_right_feather",
+      "real_metal_triangles": 351,
+      "walls_constant_through_depth": true
+    },
+    {
+      "name": "central_cream_breast",
+      "real_metal_triangles": 584,
+      "walls_constant_through_depth": true
+    },
+    {
+      "name": "cream_face_mask",
+      "real_metal_triangles": 1133,
+      "walls_constant_through_depth": true
+    },
+    {
+      "name": "left_amber_iris",
+      "real_metal_triangles": 480,
+      "walls_constant_through_depth": true
+    },
+    {
+      "name": "left_dark_pupil",
+      "real_metal_triangles": 0,
+      "walls_constant_through_depth": true
+    },
+    {
+      "name": "right_amber_iris",
+      "real_metal_triangles": 480,
+      "walls_constant_through_depth": true
+    },
+    {
+      "name": "right_dark_pupil",
+      "real_metal_triangles": 0,
+      "walls_constant_through_depth": true
+    },
+    {
+      "name": "left_amber_ear_with_cream_edge",
+      "real_metal_triangles": 2502,
+      "walls_constant_through_depth": true
+    },
+    {
+      "name": "left_sweeping_cream_brow",
+      "real_metal_triangles": 376,
+      "walls_constant_through_depth": true
+    },
+    {
+      "name": "right_amber_ear_with_cream_edge",
+      "real_metal_triangles": 2496,
+      "walls_constant_through_depth": true
+    },
+    {
+      "name": "right_sweeping_cream_brow",
+      "real_metal_triangles": 376,
+      "walls_constant_through_depth": true
+    },
+    {
+      "name": "central_gold_beak",
+      "real_metal_triangles": 198,
+      "walls_constant_through_depth": true
+    },
+    {
+      "name": "top_four_point_star",
+      "real_metal_triangles": 274,
+      "walls_constant_through_depth": true
+    }
+  ],
+  "outward_wall_proof": [
+    {
+      "piece": "blue_enamel_backplate",
+      "wall_triangles": 320,
+      "inward_normals": 0,
+      "sharp_corner_normals": 0
+    },
+    {
+      "piece": "outer_gold_setting",
+      "wall_triangles": 640,
+      "inward_normals": 0,
+      "sharp_corner_normals": 0
+    },
+    {
+      "piece": "upper_star_arc",
+      "wall_triangles": 168,
+      "inward_normals": 0,
+      "sharp_corner_normals": 0
+    },
+    {
+      "piece": "head_amber_disc",
+      "wall_triangles": 320,
+      "inward_normals": 0,
+      "sharp_corner_normals": 0
+    },
+    {
+      "piece": "left_amber_wing",
+      "wall_triangles": 274,
+      "inward_normals": 0,
+      "sharp_corner_normals": 0
+    },
+    {
+      "piece": "right_amber_wing",
+      "wall_triangles": 270,
+      "inward_normals": 0,
+      "sharp_corner_normals": 0
+    },
+    {
+      "piece": "outer_left_feather",
+      "wall_triangles": 108,
+      "inward_normals": 0,
+      "sharp_corner_normals": 0
+    },
+    {
+      "piece": "outer_right_feather",
+      "wall_triangles": 108,
+      "inward_normals": 0,
+      "sharp_corner_normals": 0
+    },
+    {
+      "piece": "inner_left_feather",
+      "wall_triangles": 136,
+      "inward_normals": 0,
+      "sharp_corner_normals": 0
+    },
+    {
+      "piece": "inner_right_feather",
+      "wall_triangles": 136,
+      "inward_normals": 0,
+      "sharp_corner_normals": 0
+    },
+    {
+      "piece": "central_cream_breast",
+      "wall_triangles": 212,
+      "inward_normals": 0,
+      "sharp_corner_normals": 0
+    },
+    {
+      "piece": "cream_face_mask",
+      "wall_triangles": 340,
+      "inward_normals": 0,
+      "sharp_corner_normals": 0
+    },
+    {
+      "piece": "left_amber_iris",
+      "wall_triangles": 320,
+      "inward_normals": 0,
+      "sharp_corner_normals": 0
+    },
+    {
+      "piece": "left_dark_pupil",
+      "wall_triangles": 320,
+      "inward_normals": 0,
+      "sharp_corner_normals": 0
+    },
+    {
+      "piece": "right_amber_iris",
+      "wall_triangles": 320,
+      "inward_normals": 0,
+      "sharp_corner_normals": 0
+    },
+    {
+      "piece": "right_dark_pupil",
+      "wall_triangles": 320,
+      "inward_normals": 0,
+      "sharp_corner_normals": 0
+    },
+    {
+      "piece": "left_amber_ear_with_cream_edge",
+      "wall_triangles": 1316,
+      "inward_normals": 0,
+      "sharp_corner_normals": 294
+    },
+    {
+      "piece": "left_sweeping_cream_brow",
+      "wall_triangles": 148,
+      "inward_normals": 0,
+      "sharp_corner_normals": 0
+    },
+    {
+      "piece": "right_amber_ear_with_cream_edge",
+      "wall_triangles": 1316,
+      "inward_normals": 0,
+      "sharp_corner_normals": 294
+    },
+    {
+      "piece": "right_sweeping_cream_brow",
+      "wall_triangles": 148,
+      "inward_normals": 0,
+      "sharp_corner_normals": 0
+    },
+    {
+      "piece": "central_gold_beak",
+      "wall_triangles": 92,
+      "inward_normals": 0,
+      "sharp_corner_normals": 0
+    },
+    {
+      "piece": "top_four_point_star",
+      "wall_triangles": 48,
+      "inward_normals": 0,
+      "sharp_corner_normals": 0
+    }
+  ],
+  "blender_review_pending": true
+}

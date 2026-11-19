@@ -1,0 +1,34 @@
+{
+  "geometry_sha256": "d2a7088ad5af041cdb72ae5b6bdc2517ab1398e3c380274349cc86082a846de4",
+  "key": "AW_depth_hierarchy",
+  "mesh": "Editable watertight wood master.003",
+  "material": "Wood Lab AW_depth_hierarchy",
+  "vertices": 641121,
+  "polygons": 643262,
+  "images": [
+    {
+      "node": "Single plank albedo",
+      "size": [
+        4096,
+        1536
+      ],
+      "packed": true
+    },
+    {
+      "node": "Single plank roughness",
+      "size": [
+        4096,
+        1536
+      ],
+      "packed": true
+    },
+    {
+      "node": "Single plank normal",
+      "size": [
+        4096,
+        1536
+      ],
+      "packed": true
+    }
+  ]
+}

@@ -1,0 +1,98 @@
+[
+  {
+    "a": "Chest Body Upper Rim",
+    "b": "Chest Body Corner Collar -1 -1",
+    "plane_y": 0.36365,
+    "overlap_area": 0.18507493579566048
+  },
+  {
+    "a": "Chest Body Upper Rim",
+    "b": "Chest Body Corner Collar -1 1",
+    "plane_y": 0.36365,
+    "overlap_area": 0.18507479246608294
+  },
+  {
+    "a": "Chest Body Upper Rim",
+    "b": "Chest Body Corner Collar 1 -1",
+    "plane_y": 0.36365,
+    "overlap_area": 0.1850747924660825
+  },
+  {
+    "a": "Chest Body Upper Rim",
+    "b": "Chest Body Corner Collar 1 1",
+    "plane_y": 0.36365,
+    "overlap_area": 0.18507493579566114
+  },
+  {
+    "a": "Chest Upper Lid Rim",
+    "b": "Chest Lid Corner Armor -1 -1",
+    "plane_y": 0.38075,
+    "overlap_area": 0.20341786516684834
+  },
+  {
+    "a": "Chest Upper Lid Rim",
+    "b": "Chest Lid Corner Armor -1 1",
+    "plane_y": 0.38075,
+    "overlap_area": 0.20341787338001827
+  },
+  {
+    "a": "Chest Upper Lid Rim",
+    "b": "Chest Lid Corner Armor 1 -1",
+    "plane_y": 0.38075,
+    "overlap_area": 0.20341787338001827
+  },
+  {
+    "a": "Chest Upper Lid Rim",
+    "b": "Chest Lid Corner Armor 1 1",
+    "plane_y": 0.38075,
+    "overlap_area": 0.20341786516684834
+  },
+  {
+    "a": "Chest Upper Lid Rim",
+    "b": "Chest Broad End Arch -1",
+    "plane_y": 0.38075,
+    "overlap_area": 0.35406089958865805
+  },
+  {
+    "a": "Chest Upper Lid Rim",
+    "b": "Chest Broad End Arch 1",
+    "plane_y": 0.38075,
+    "overlap_area": 0.3540608995886594
+  },
+  {
+    "a": "Chest Upper Lid Rim",
+    "b": "Chest Lid Hoop 2",
+    "plane_y": 0.38075,
+    "overlap_area": 0.12212003327060811
+  },
+  {
+    "a": "Chest Upper Lid Rim",
+    "b": "Chest Lid Hoop 3",
+    "plane_y": 0.38075,
+    "overlap_area": 0.12212004097909801
+  },
+  {
+    "a": "Chest Lid Corner Armor -1 -1",
+    "b": "Chest Broad End Arch -1",
+    "plane_y": 0.38075,
+    "overlap_area": 0.1493333390322824
+  },
+  {
+    "a": "Chest Lid Corner Armor -1 1",
+    "b": "Chest Broad End Arch -1",
+    "plane_y": 0.38075,
+    "overlap_area": 0.14933331934213578
+  },
+  {
+    "a": "Chest Lid Corner Armor 1 -1",
+    "b": "Chest Broad End Arch 1",
+    "plane_y": 0.38075,
+    "overlap_area": 0.14933331934213245
+  },
+  {
+    "a": "Chest Lid Corner Armor 1 1",
+    "b": "Chest Broad End Arch 1",
+    "plane_y": 0.38075,
+    "overlap_area": 0.14933333903228174
+  }
+]

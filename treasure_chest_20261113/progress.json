@@ -1,0 +1,13 @@
+{
+  "status": "working",
+  "schedule_authorization": "fb5fc4f4-3ca7-4c98-9d8c-b1372f187e95",
+  "scheduled_resume_epoch": 1794656460.0,
+  "scheduled_resume_local": "2026-11-14T03:41:00-08:00",
+  "blend": "/Users/antonioperedo/Desktop/badges/treasure_chest_20261113/treasure_chest.blend",
+  "candidate": "/Users/antonioperedo/Desktop/badges/treasure_chest_20261113/phase01/candidate31",
+  "next_action": "Read31/CURRENT_ISSUES.md. Rerun builder from corrected rig31 source (short spring expression, clamped curves), verify nonzero spring lift and closed rest. Diagnose actual key/face hit triangles and minimum beveled bore before adjusting pilot. Recheck whole motion and negative controls before any working lock claim.",
+  "current_step_complete": false,
+  "badge_complete": false,
+  "phase": "spring_and_lock_rig_saved_driver_and_key_contacts_need_fix",
+  "resumed_at_epoch": 1794656460.000492
+}

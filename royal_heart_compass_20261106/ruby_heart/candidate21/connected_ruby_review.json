@@ -1,0 +1,23 @@
+{
+  "source": "candidate20",
+  "owner_issue": "Apparent other shape inside the ruby heart",
+  "actual_geometric_cause": "Twin raised crown lobes and depressed central facets catching a broad neutral reflection",
+  "continuous_raised_central_keel": true,
+  "main_reference_facet_junctions": true,
+  "no_insert_or_separate_interior_object": true,
+  "one_continuous_ruby_optical_volume": true,
+  "gem_appearance_textures": false,
+  "shader_and_optical_constants_unchanged": true,
+  "whole_badge_z_center_shift": -0.05267987251281736,
+  "domains": [
+    {
+      "name": "Ruby heart left optical lobe",
+      "facet_planes": 172
+    },
+    {
+      "name": "Ruby heart right optical lobe",
+      "facet_planes": 172
+    }
+  ],
+  "native_review_pending": true
+}

@@ -1,0 +1,919 @@
+OpenShadingLanguage 1.00
+# Compiled by oslc 1.15.3.0
+# options: -o /var/folders/gl/mpj0czg96klfknfbtdxsw0400000gn/T/tmpg99vg1k3.oso -I/Applications/Blender.app/Contents/Resources/5.2/scripts/addons_core/cycles/shader
+shader ruby_heart_live_optics
+param	string	Mip1	""		%read{102,102} %write{2147483647,-1}
+param	string	Mip2	""		%read{266,266} %write{2147483647,-1}
+param	string	Mip3	""		%read{297,297} %write{2147483647,-1}
+param	string	Mip8	""		%read{330,385} %write{2147483647,-1}
+oparam	closure color	BSDF			%read{2147483647,-1} %write{395,395}
+global	point	P	%read{0,0} %write{2147483647,-1}
+global	vector	I	%read{9,9} %write{2147483647,-1}
+global	normal	N	%read{18,18} %write{2147483647,-1}
+local	float	___240_IdotN	%read{119,343} %write{117,343}
+local	float	___240_k	%read{123,343} %write{122,343}
+local	float	___370_ci	%read{40,343} %write{36,343}
+local	float	___370_ss	%read{43,343} %write{42,343}
+local	float	___370_ct	%read{50,343} %write{48,343}
+local	float	___370_a	%read{63,343} %write{55,343}
+local	float	___370_b	%read{64,343} %write{62,343}
+local	vector	___373_w	%read{82,368} %write{81,364}
+local	vector	___373_e	%read{87,377} %write{86,369}
+local	float	___373_u	%read{102,385} %write{93,376}
+local	float	___373_v	%read{102,385} %write{101,384}
+local	color	___375_b	%read{138,343} %write{138,343}
+local	point	raw	%read{1,1} %write{0,0}
+local	point	entry	%read{109,343} %write{8,8}
+local	vector	incident	%read{27,126} %write{17,17}
+local	vector	n	%read{27,343} %write{26,30}
+local	float	f	%read{67,390} %write{45,66}
+local	color	col	%read{138,394} %write{108,392}
+local	float	side	%read{138,343} %write{112,113}
+local	point	pos	%read{138,343} %write{114,343}
+local	vector	dir	%read{138,361} %write{125,343}
+local	color	weight	%read{138,354} %write{134,343}
+local	float	path	%read{138,350} %write{135,343}
+local	int	___376_bounce	%read{138,343} %write{137,343}
+local	float	___377_tofoil	%read{138,343} %write{138,343}
+local	float	___377_approach	%read{138,343} %write{138,343}
+local	float	___377_back	%read{138,343} %write{138,343}
+local	float	___377_share	%read{138,343} %write{138,343}
+local	color	___377_absorption	%read{138,343} %write{138,343}
+local	vector	___378_leaving	%read{138,343} %write{138,343}
+const	string	$const1	"world"		%read{0,363} %write{2147483647,-1}
+const	string	$const2	"object"		%read{0,363} %write{2147483647,-1}
+temp	vector	$tmp1	%read{8,8} %write{7,7}
+temp	vector	$tmp2	%read{3,5} %write{1,1}
+const	string	$const3	"to_model"		%read{2,20} %write{2147483647,-1}
+const	int	$const4	0		%read{3,370} %write{2147483647,-1}
+temp	float	$tmp3	%read{7,7} %write{3,3}
+const	int	$const5	2		%read{4,371} %write{2147483647,-1}
+temp	float	$tmp4	%read{7,7} %write{4,4}
+const	int	$const6	1		%read{5,377} %write{2147483647,-1}
+temp	float	$tmp5	%read{6,6} %write{5,5}
+temp	float	$tmp6	%read{7,7} %write{6,6}
+temp	vector	$tmp7	%read{17,17} %write{16,16}
+temp	vector	$tmp8	%read{16,16} %write{15,15}
+temp	vector	$tmp9	%read{11,13} %write{9,9}
+temp	float	$tmp10	%read{15,15} %write{11,11}
+temp	float	$tmp11	%read{15,15} %write{12,12}
+temp	float	$tmp12	%read{14,14} %write{13,13}
+temp	float	$tmp13	%read{15,15} %write{14,14}
+temp	vector	$tmp14	%read{26,26} %write{25,25}
+temp	vector	$tmp15	%read{21,23} %write{19,19}
+temp	normal	$tmp16	%read{19,19} %write{18,18}
+temp	float	$tmp17	%read{25,25} %write{21,21}
+temp	float	$tmp18	%read{25,25} %write{22,22}
+temp	float	$tmp19	%read{24,24} %write{23,23}
+temp	float	$tmp20	%read{25,25} %write{24,24}
+temp	float	$tmp21	%read{28,28} %write{27,27}
+temp	int	$tmp22	%read{29,29} %write{28,28}
+temp	float	$tmp23	%read{35,35} %write{32,32}
+temp	vector	$tmp24	%read{32,32} %write{31,31}
+const	float	$const7	1		%read{35,390} %write{2147483647,-1}
+const	float	$const8	1.76999998		%read{37,227} %write{2147483647,-1}
+const	string	$const9	"fresnelshare"		%read{33,169} %write{2147483647,-1}
+const	float	$const10	0		%read{36,385} %write{2147483647,-1}
+const	string	$const11	"clamp"		%read{34,385} %write{2147483647,-1}
+temp	float	$tmp25	%read{36,36} %write{35,35}
+temp	float	$tmp26	%read{39,39} %write{37,37}
+temp	float	$tmp27	%read{39,39} %write{38,38}
+temp	float	$tmp28	%read{42,42} %write{39,39}
+temp	float	$tmp29	%read{41,41} %write{40,40}
+temp	float	$tmp30	%read{42,42} %write{41,41}
+temp	int	$tmp31	%read{44,44} %write{43,43}
+temp	float	$tmp32	%read{48,48} %write{47,47}
+temp	float	$tmp33	%read{51,51} %write{49,49}
+temp	float	$tmp34	%read{51,51} %write{50,50}
+temp	float	$tmp35	%read{55,55} %write{51,51}
+temp	float	$tmp36	%read{54,54} %write{52,52}
+temp	float	$tmp37	%read{54,54} %write{53,53}
+temp	float	$tmp38	%read{55,55} %write{54,54}
+temp	float	$tmp39	%read{58,58} %write{56,56}
+temp	float	$tmp40	%read{58,58} %write{57,57}
+temp	float	$tmp41	%read{62,62} %write{58,58}
+temp	float	$tmp42	%read{61,61} %write{59,59}
+temp	float	$tmp43	%read{61,61} %write{60,60}
+temp	float	$tmp44	%read{62,62} %write{61,61}
+const	float	$const12	0.5		%read{66,383} %write{2147483647,-1}
+temp	float	$tmp45	%read{65,65} %write{63,63}
+temp	float	$tmp46	%read{65,65} %write{64,64}
+temp	float	$tmp47	%read{66,66} %write{65,65}
+const	float	$const13	1.81035399		%read{67,67} %write{2147483647,-1}
+temp	float	$tmp48	%read{108,108} %write{67,67}
+temp	color	$tmp49	%read{108,108} %write{107,107}
+temp	color	$tmp50	%read{104,104} %write{103,103}
+temp	color	$tmp51	%read{103,103} %write{102,102}
+temp	vector	$tmp52	%read{75,78} %write{72,72}
+const	string	$const14	"reflect"		%read{68,337} %write{2147483647,-1}
+temp	float	$tmp53	%read{70,70} %write{69,69}
+temp	float	$tmp54	%read{71,71} %write{70,70}
+const	float	$const15	2		%read{70,374} %write{2147483647,-1}
+temp	vector	$tmp55	%read{72,72} %write{71,71}
+const	string	$const16	"lookup"		%read{73,356} %write{2147483647,-1}
+temp	vector	$tmp56	%read{81,81} %write{80,80}
+temp	vector	$tmp57	%read{80,80} %write{79,79}
+const	string	$const17	"to_blender"		%read{74,357} %write{2147483647,-1}
+temp	float	$tmp58	%read{79,79} %write{75,75}
+temp	float	$tmp59	%read{77,77} %write{76,76}
+temp	float	$tmp60	%read{79,79} %write{77,77}
+temp	float	$tmp61	%read{79,79} %write{78,78}
+temp	float	$tmp62	%read{83,83} %write{82,82}
+temp	float	$tmp63	%read{86,86} %write{83,83}
+temp	float	$tmp64	%read{86,86} %write{84,84}
+temp	float	$tmp65	%read{86,86} %write{85,85}
+temp	float	$tmp66	%read{92,92} %write{90,90}
+temp	float	$tmp67	%read{90,90} %write{87,87}
+temp	float	$tmp68	%read{89,89} %write{88,88}
+temp	float	$tmp69	%read{90,90} %write{89,89}
+const	float	$const18	3.14159274		%read{91,382} %write{2147483647,-1}
+temp	float	$tmp70	%read{92,92} %write{91,91}
+temp	float	$tmp71	%read{93,93} %write{92,92}
+temp	float	$tmp72	%read{99,99} %write{98,98}
+temp	float	$tmp73	%read{98,98} %write{97,97}
+temp	float	$tmp74	%read{96,96} %write{94,94}
+const	int	$const19	-1		%read{113,113} %write{2147483647,-1}
+const	float	$const20	-1		%read{97,380} %write{2147483647,-1}
+temp	float	$tmp75	%read{97,97} %write{96,96}
+temp	float	$tmp76	%read{100,100} %write{99,99}
+temp	float	$tmp77	%read{101,101} %write{100,100}
+const	string	$const21	"swrap"		%read{102,385} %write{2147483647,-1}
+const	string	$const22	"periodic"		%read{102,385} %write{2147483647,-1}
+const	string	$const23	"twrap"		%read{102,385} %write{2147483647,-1}
+const	string	$const24	"interp"		%read{102,385} %write{2147483647,-1}
+const	string	$const25	"bilinear"		%read{102,385} %write{2147483647,-1}
+const	color	$const26	24 24 24		%read{103,103} %write{2147483647,-1}
+const	color	$const27	3 3 3		%read{104,386} %write{2147483647,-1}
+temp	color	$tmp80	%read{106,106} %write{104,104}
+const	color	$const28	0 0 0		%read{107,107} %write{2147483647,-1}
+const	color	$const29	10 10 10		%read{106,106} %write{2147483647,-1}
+temp	color	$tmp83	%read{107,107} %write{106,106}
+temp	float	$tmp84	%read{110,110} %write{109,109}
+temp	int	$tmp85	%read{111,111} %write{110,110}
+temp	float	$tmp86	%read{118,127} %write{115,115}
+const	string	$const30	"refract"		%read{116,216} %write{2147483647,-1}
+temp	float	$tmp87	%read{121,121} %write{118,118}
+temp	float	$tmp88	%read{120,120} %write{119,119}
+temp	float	$tmp89	%read{121,121} %write{120,120}
+temp	float	$tmp90	%read{122,122} %write{121,121}
+temp	int	$tmp91	%read{124,124} %write{123,123}
+const	vector	$const31	0 0 0		%read{125,225} %write{2147483647,-1}
+temp	vector	$tmp92	%read{131,131} %write{126,126}
+temp	float	$tmp93	%read{129,129} %write{127,127}
+temp	float	$tmp94	%read{129,129} %write{128,128}
+temp	float	$tmp95	%read{130,130} %write{129,129}
+temp	vector	$tmp96	%read{131,131} %write{130,130}
+temp	float	$tmp97	%read{134,134} %write{133,133}
+const	int	$const32	4		%read{138,138} %write{2147483647,-1}
+temp	int	$tmp98	%read{138,343} %write{138,343}
+temp	int	$tmp99	%read{136,343} %write{137,343}
+temp	float	$tmp100	%read{138,343} %write{138,343}
+temp	float	$tmp101	%read{138,343} %write{138,343}
+const	float	$const33	-9.99999975e-05		%read{142,142} %write{2147483647,-1}
+temp	int	$tmp102	%read{138,343} %write{138,343}
+temp	float	$tmp103	%read{138,343} %write{138,343}
+temp	float	$tmp104	%read{138,343} %write{138,343}
+temp	float	$tmp105	%read{138,343} %write{138,343}
+temp	float	$tmp106	%read{138,343} %write{138,343}
+temp	vector	$tmp107	%read{138,343} %write{138,343}
+temp	float	$tmp108	%read{138,343} %write{138,343}
+temp	float	$tmp109	%read{138,343} %write{138,343}
+const	float	$const34	0.920000017		%read{156,156} %write{2147483647,-1}
+const	float	$const35	9.99999975e-05		%read{158,158} %write{2147483647,-1}
+temp	int	$tmp110	%read{138,343} %write{138,343}
+temp	float	$tmp111	%read{138,343} %write{138,343}
+temp	vector	$tmp112	%read{138,343} %write{138,343}
+temp	vector	$tmp113	%read{138,343} %write{138,343}
+temp	float	$tmp114	%read{138,343} %write{138,343}
+temp	vector	$tmp115	%read{138,343} %write{138,343}
+temp	float	$tmp116	%read{138,343} %write{138,343}
+temp	float	$tmp117	%read{138,343} %write{138,343}
+temp	float	$tmp118	%read{138,343} %write{138,343}
+temp	float	$tmp119	%read{138,343} %write{138,343}
+temp	float	$tmp120	%read{138,343} %write{138,343}
+temp	float	$tmp121	%read{138,343} %write{138,343}
+temp	int	$tmp122	%read{138,343} %write{138,343}
+temp	float	$tmp123	%read{138,343} %write{138,343}
+temp	float	$tmp124	%read{138,343} %write{138,343}
+temp	float	$tmp125	%read{138,343} %write{138,343}
+temp	float	$tmp126	%read{138,343} %write{138,343}
+temp	float	$tmp127	%read{138,343} %write{138,343}
+temp	float	$tmp128	%read{138,343} %write{138,343}
+temp	float	$tmp129	%read{138,343} %write{138,343}
+temp	float	$tmp130	%read{138,343} %write{138,343}
+temp	float	$tmp131	%read{138,343} %write{138,343}
+temp	float	$tmp132	%read{138,343} %write{138,343}
+temp	float	$tmp133	%read{138,343} %write{138,343}
+temp	float	$tmp134	%read{138,343} %write{138,343}
+temp	float	$tmp135	%read{138,343} %write{138,343}
+temp	float	$tmp136	%read{138,343} %write{138,343}
+temp	float	$tmp137	%read{138,343} %write{138,343}
+temp	float	$tmp138	%read{138,343} %write{138,343}
+temp	float	$tmp139	%read{138,343} %write{138,343}
+const	float	$const36	-0.150000006		%read{204,345} %write{2147483647,-1}
+temp	float	$tmp140	%read{138,343} %write{138,343}
+const	float	$const38	12		%read{203,350} %write{2147483647,-1}
+temp	float	$tmp141	%read{138,343} %write{138,343}
+temp	float	$tmp142	%read{138,343} %write{138,343}
+const	float	$const39	-6.5		%read{207,348} %write{2147483647,-1}
+temp	float	$tmp143	%read{138,343} %write{138,343}
+temp	float	$tmp144	%read{138,343} %write{138,343}
+temp	float	$tmp145	%read{138,343} %write{138,343}
+const	float	$const40	-2.20000005		%read{210,351} %write{2147483647,-1}
+temp	float	$tmp146	%read{138,343} %write{138,343}
+temp	float	$tmp147	%read{138,343} %write{138,343}
+temp	int	$tmp148	%read{138,343} %write{138,343}
+temp	vector	$tmp149	%read{138,343} %write{138,343}
+temp	float	$tmp150	%read{138,343} %write{138,343}
+temp	float	$tmp151	%read{138,343} %write{138,343}
+temp	float	$tmp152	%read{138,343} %write{138,343}
+temp	float	$tmp153	%read{138,343} %write{138,343}
+temp	int	$tmp154	%read{138,343} %write{138,343}
+temp	vector	$tmp155	%read{138,343} %write{138,343}
+temp	float	$tmp156	%read{138,343} %write{138,343}
+temp	float	$tmp157	%read{138,343} %write{138,343}
+temp	float	$tmp158	%read{138,343} %write{138,343}
+temp	vector	$tmp159	%read{138,343} %write{138,343}
+temp	color	$tmp160	%read{138,343} %write{138,343}
+temp	float	$tmp161	%read{138,343} %write{138,343}
+temp	color	$tmp162	%read{138,343} %write{138,343}
+temp	color	$tmp163	%read{138,343} %write{138,343}
+const	string	$const41	"body"		%read{236,236} %write{2147483647,-1}
+temp	color	$tmp164	%read{138,343} %write{138,343}
+temp	color	$tmp165	%read{138,343} %write{138,343}
+temp	vector	$tmp166	%read{138,343} %write{138,343}
+temp	vector	$tmp167	%read{138,343} %write{138,343}
+temp	float	$tmp168	%read{138,343} %write{138,343}
+temp	float	$tmp169	%read{138,343} %write{138,343}
+temp	float	$tmp170	%read{138,343} %write{138,343}
+temp	float	$tmp171	%read{138,343} %write{138,343}
+temp	float	$tmp172	%read{138,343} %write{138,343}
+temp	float	$tmp173	%read{138,343} %write{138,343}
+temp	float	$tmp174	%read{138,343} %write{138,343}
+temp	float	$tmp175	%read{138,343} %write{138,343}
+temp	float	$tmp176	%read{138,343} %write{138,343}
+temp	float	$tmp177	%read{138,343} %write{138,343}
+temp	float	$tmp178	%read{138,343} %write{138,343}
+temp	float	$tmp179	%read{138,343} %write{138,343}
+temp	float	$tmp180	%read{138,343} %write{138,343}
+temp	float	$tmp181	%read{138,343} %write{138,343}
+temp	float	$tmp182	%read{138,343} %write{138,343}
+temp	float	$tmp183	%read{138,343} %write{138,343}
+temp	float	$tmp184	%read{138,343} %write{138,343}
+temp	float	$tmp185	%read{138,343} %write{138,343}
+temp	float	$tmp186	%read{138,343} %write{138,343}
+temp	float	$tmp187	%read{138,343} %write{138,343}
+const	color	$const42	0.699999988 0.699999988 0.699999988		%read{267,298} %write{2147483647,-1}
+temp	color	$tmp189	%read{138,343} %write{138,343}
+temp	color	$tmp190	%read{138,343} %write{138,343}
+temp	vector	$tmp191	%read{138,343} %write{138,343}
+temp	vector	$tmp192	%read{138,343} %write{138,343}
+temp	float	$tmp193	%read{138,343} %write{138,343}
+temp	float	$tmp194	%read{138,343} %write{138,343}
+temp	float	$tmp195	%read{138,343} %write{138,343}
+temp	float	$tmp196	%read{138,343} %write{138,343}
+temp	float	$tmp197	%read{138,343} %write{138,343}
+temp	float	$tmp198	%read{138,343} %write{138,343}
+temp	float	$tmp199	%read{138,343} %write{138,343}
+temp	float	$tmp200	%read{138,343} %write{138,343}
+temp	float	$tmp201	%read{138,343} %write{138,343}
+temp	float	$tmp202	%read{138,343} %write{138,343}
+temp	float	$tmp203	%read{138,343} %write{138,343}
+temp	float	$tmp204	%read{138,343} %write{138,343}
+temp	float	$tmp205	%read{138,343} %write{138,343}
+temp	float	$tmp206	%read{138,343} %write{138,343}
+temp	float	$tmp207	%read{138,343} %write{138,343}
+temp	float	$tmp208	%read{138,343} %write{138,343}
+temp	float	$tmp209	%read{138,343} %write{138,343}
+temp	float	$tmp210	%read{138,343} %write{138,343}
+temp	float	$tmp211	%read{138,343} %write{138,343}
+temp	float	$tmp212	%read{138,343} %write{138,343}
+const	float	$const43	0.146405995		%read{299,299} %write{2147483647,-1}
+temp	color	$tmp214	%read{138,343} %write{138,343}
+const	string	$const44	"tent"		%read{300,355} %write{2147483647,-1}
+temp	color	$tmp215	%read{138,343} %write{138,343}
+temp	vector	$tmp216	%read{138,343} %write{138,343}
+temp	vector	$tmp217	%read{138,343} %write{138,343}
+temp	float	$tmp218	%read{138,343} %write{138,343}
+temp	float	$tmp219	%read{138,343} %write{138,343}
+temp	float	$tmp220	%read{138,343} %write{138,343}
+temp	float	$tmp221	%read{138,343} %write{138,343}
+temp	float	$tmp222	%read{138,343} %write{138,343}
+temp	float	$tmp223	%read{138,343} %write{138,343}
+temp	float	$tmp224	%read{138,343} %write{138,343}
+temp	float	$tmp225	%read{138,343} %write{138,343}
+temp	float	$tmp226	%read{138,343} %write{138,343}
+temp	float	$tmp227	%read{138,343} %write{138,343}
+temp	float	$tmp228	%read{138,343} %write{138,343}
+temp	float	$tmp229	%read{138,343} %write{138,343}
+temp	float	$tmp230	%read{138,343} %write{138,343}
+temp	float	$tmp231	%read{138,343} %write{138,343}
+temp	float	$tmp232	%read{138,343} %write{138,343}
+temp	float	$tmp233	%read{138,343} %write{138,343}
+temp	float	$tmp234	%read{138,343} %write{138,343}
+temp	float	$tmp235	%read{138,343} %write{138,343}
+temp	float	$tmp236	%read{138,343} %write{138,343}
+temp	float	$tmp237	%read{138,343} %write{138,343}
+const	float	$const45	0.260399997		%read{332,388} %write{2147483647,-1}
+temp	color	$tmp239	%read{138,343} %write{138,343}
+temp	color	$tmp240	%read{138,343} %write{138,343}
+temp	float	$tmp241	%read{138,343} %write{138,343}
+temp	float	$tmp242	%read{138,343} %write{138,343}
+temp	vector	$tmp243	%read{138,343} %write{138,343}
+temp	int	$tmp244	%read{2147483647,-1} %write{138,343}
+temp	color	$tmp245	%read{354,354} %write{353,353}
+temp	float	$tmp246	%read{353,353} %write{346,346}
+temp	float	$tmp247	%read{345,345} %write{344,344}
+temp	float	$tmp248	%read{346,346} %write{345,345}
+temp	float	$tmp249	%read{353,353} %write{349,349}
+temp	float	$tmp250	%read{348,348} %write{347,347}
+temp	float	$tmp251	%read{349,349} %write{348,348}
+temp	float	$tmp252	%read{353,353} %write{352,352}
+temp	float	$tmp253	%read{351,351} %write{350,350}
+temp	float	$tmp254	%read{352,352} %write{351,351}
+temp	color	$tmp255	%read{387,387} %write{354,354}
+temp	color	$tmp256	%read{387,387} %write{386,386}
+temp	color	$tmp257	%read{386,386} %write{385,385}
+temp	vector	$tmp258	%read{364,364} %write{363,363}
+temp	vector	$tmp259	%read{363,363} %write{362,362}
+temp	float	$tmp260	%read{362,362} %write{358,358}
+temp	float	$tmp261	%read{360,360} %write{359,359}
+temp	float	$tmp262	%read{362,362} %write{360,360}
+temp	float	$tmp263	%read{362,362} %write{361,361}
+temp	float	$tmp264	%read{366,366} %write{365,365}
+temp	float	$tmp265	%read{369,369} %write{366,366}
+temp	float	$tmp266	%read{369,369} %write{367,367}
+temp	float	$tmp267	%read{369,369} %write{368,368}
+temp	float	$tmp268	%read{375,375} %write{373,373}
+temp	float	$tmp269	%read{373,373} %write{370,370}
+temp	float	$tmp270	%read{372,372} %write{371,371}
+temp	float	$tmp271	%read{373,373} %write{372,372}
+temp	float	$tmp272	%read{375,375} %write{374,374}
+temp	float	$tmp273	%read{376,376} %write{375,375}
+temp	float	$tmp274	%read{382,382} %write{381,381}
+temp	float	$tmp275	%read{381,381} %write{380,380}
+temp	float	$tmp276	%read{379,379} %write{377,377}
+temp	float	$tmp277	%read{380,380} %write{379,379}
+temp	float	$tmp278	%read{383,383} %write{382,382}
+temp	float	$tmp279	%read{384,384} %write{383,383}
+temp	color	$tmp281	%read{388,388} %write{387,387}
+temp	color	$tmp282	%read{389,389} %write{388,388}
+temp	float	$tmp283	%read{391,391} %write{390,390}
+const	color	$const46	0.159999996 0.00319999992 0.0240000002		%read{391,391} %write{2147483647,-1}
+temp	color	$tmp285	%read{392,392} %write{391,391}
+temp	closure color	$tmp286	%read{394,394} %write{393,393}
+const	string	$const47	"emission"		%read{393,393} %write{2147483647,-1}
+temp	closure color	$tmp287	%read{395,395} %write{394,394}
+const	float	$const48	1.70000005		%read{395,395} %write{2147483647,-1}
+code ___main___
+# ruby_heart_gem_20261113/source/ruby_foil.osl:9
+#  vector incident=-normalize(to_model(transform("world","object",I)));
+	transform	raw $const1 $const2 P 	%filename{"ruby_heart_gem_20261113/source/ruby_foil.osl"} %line{9} %argrw{"wrrr"}
+	assign		$tmp2 raw 	%argrw{"wr"}
+	functioncall	$const3 8 	%argrw{"r"}
+# ruby_heart_gem_20261113/source/ruby_foil.osl:3
+# vector to_blender(vector p){return vector(p[0],-p[2],p[1]);}
+	compref		$tmp3 $tmp2 $const4 	%line{3} %argrw{"wrr"}
+	compref		$tmp4 $tmp2 $const5 	%argrw{"wrr"}
+	compref		$tmp5 $tmp2 $const6 	%argrw{"wrr"}
+	neg		$tmp6 $tmp5 	%argrw{"wr"}
+	vector		$tmp1 $tmp3 $tmp4 $tmp6 	%argrw{"wrrr"}
+# ruby_heart_gem_20261113/source/ruby_foil.osl:9
+#  vector incident=-normalize(to_model(transform("world","object",I)));
+	assign		entry $tmp1 	%line{9} %argrw{"wr"}
+# ruby_heart_gem_20261113/source/ruby_foil.osl:10
+#  vector n=normalize(to_model(vector(transform("world","object",N))));if(dot(n,incident)>0)n=-n;
+	transformv	$tmp9 $const1 $const2 I 	%line{10} %argrw{"wrrr"}
+	functioncall	$const3 16 	%argrw{"r"}
+# ruby_heart_gem_20261113/source/ruby_foil.osl:3
+# vector to_blender(vector p){return vector(p[0],-p[2],p[1]);}
+	compref		$tmp10 $tmp9 $const4 	%line{3} %argrw{"wrr"}
+	compref		$tmp11 $tmp9 $const5 	%argrw{"wrr"}
+	compref		$tmp12 $tmp9 $const6 	%argrw{"wrr"}
+	neg		$tmp13 $tmp12 	%argrw{"wr"}
+	vector		$tmp8 $tmp10 $tmp11 $tmp13 	%argrw{"wrrr"}
+# ruby_heart_gem_20261113/source/ruby_foil.osl:10
+#  vector n=normalize(to_model(vector(transform("world","object",N))));if(dot(n,incident)>0)n=-n;
+	normalize	$tmp7 $tmp8 	%line{10} %argrw{"wr"}
+	neg		incident $tmp7 	%argrw{"wr"}
+# ruby_heart_gem_20261113/source/ruby_foil.osl:11
+#  float f=fresnelshare(dot(n,-incident),1,1.77);
+	transformn	$tmp16 $const1 $const2 N 	%line{11} %argrw{"wrrr"}
+	assign		$tmp15 $tmp16 	%argrw{"wr"}
+	functioncall	$const3 26 	%argrw{"r"}
+# ruby_heart_gem_20261113/source/ruby_foil.osl:3
+# vector to_blender(vector p){return vector(p[0],-p[2],p[1]);}
+	compref		$tmp17 $tmp15 $const4 	%line{3} %argrw{"wrr"}
+	compref		$tmp18 $tmp15 $const5 	%argrw{"wrr"}
+	compref		$tmp19 $tmp15 $const6 	%argrw{"wrr"}
+	neg		$tmp20 $tmp19 	%argrw{"wr"}
+	vector		$tmp14 $tmp17 $tmp18 $tmp20 	%argrw{"wrrr"}
+# ruby_heart_gem_20261113/source/ruby_foil.osl:11
+#  float f=fresnelshare(dot(n,-incident),1,1.77);
+	normalize	n $tmp14 	%line{11} %argrw{"wr"}
+	dot		$tmp21 n incident 	%argrw{"wrr"}
+	gt		$tmp22 $tmp21 $const4 	%argrw{"wrr"}
+	if		$tmp22 31 31 	%argrw{"r"}
+	neg		n n 	%argrw{"wr"}
+# ruby_heart_gem_20261113/source/ruby_foil.osl:12
+#  color col=1.810354*f*clamp(min(lookup(reflect(incident,n),Mip1),color(24))-color(3),color(0),color(10));
+	neg		$tmp24 incident 	%line{12} %argrw{"wr"}
+	dot		$tmp23 n $tmp24 	%argrw{"wrr"}
+	functioncall	$const9 67 	%argrw{"r"}
+# ruby_heart_gem_20261113/source/ruby_foil.osl:2
+# vector to_model(vector b){return vector(b[0],b[2],-b[1]);}
+	functioncall	$const11 37 	%line{2} %argrw{"r"}
+# /Applications/Blender.app/Contents/Resources/5.2/scripts/addons_core/cycles/shader/stdosl.h:141
+# float  clamp (float x, float minval, float maxval) { return max(min(x,maxval),minval); }
+	min		$tmp25 $tmp23 $const7 	%filename{"/Applications/Blender.app/Contents/Resources/5.2/scripts/addons_core/cycles/shader/stdosl.h"} %line{141} %argrw{"wrr"}
+	max		___370_ci $tmp25 $const10 	%argrw{"wrr"}
+# ruby_heart_gem_20261113/source/ruby_foil.osl:2
+# vector to_model(vector b){return vector(b[0],b[2],-b[1]);}
+	div		$tmp26 $const7 $const8 	%filename{"ruby_heart_gem_20261113/source/ruby_foil.osl"} %line{2} %argrw{"wrr"}
+	div		$tmp27 $const7 $const8 	%argrw{"wrr"}
+	mul		$tmp28 $tmp26 $tmp27 	%argrw{"wrr"}
+	mul		$tmp29 ___370_ci ___370_ci 	%argrw{"wrr"}
+	sub		$tmp30 $const7 $tmp29 	%argrw{"wrr"}
+	mul		___370_ss $tmp28 $tmp30 	%argrw{"wrr"}
+	ge		$tmp31 ___370_ss $const6 	%argrw{"wrr"}
+	if		$tmp31 47 47 	%argrw{"r"}
+	assign		f $const6 	%argrw{"wr"}
+	return
+	sub		$tmp32 $const7 ___370_ss 	%argrw{"wrr"}
+	sqrt		___370_ct $tmp32 	%argrw{"wr"}
+	mul		$tmp33 $const7 ___370_ci 	%argrw{"wrr"}
+	mul		$tmp34 $const8 ___370_ct 	%argrw{"wrr"}
+	sub		$tmp35 $tmp33 $tmp34 	%argrw{"wrr"}
+	mul		$tmp36 $const7 ___370_ci 	%argrw{"wrr"}
+	mul		$tmp37 $const8 ___370_ct 	%argrw{"wrr"}
+	add		$tmp38 $tmp36 $tmp37 	%argrw{"wrr"}
+	div		___370_a $tmp35 $tmp38 	%argrw{"wrr"}
+	mul		$tmp39 $const7 ___370_ct 	%argrw{"wrr"}
+	mul		$tmp40 $const8 ___370_ci 	%argrw{"wrr"}
+	sub		$tmp41 $tmp39 $tmp40 	%argrw{"wrr"}
+	mul		$tmp42 $const7 ___370_ct 	%argrw{"wrr"}
+	mul		$tmp43 $const8 ___370_ci 	%argrw{"wrr"}
+	add		$tmp44 $tmp42 $tmp43 	%argrw{"wrr"}
+	div		___370_b $tmp41 $tmp44 	%argrw{"wrr"}
+	mul		$tmp45 ___370_a ___370_a 	%argrw{"wrr"}
+	mul		$tmp46 ___370_b ___370_b 	%argrw{"wrr"}
+	add		$tmp47 $tmp45 $tmp46 	%argrw{"wrr"}
+	mul		f $const12 $tmp47 	%argrw{"wrr"}
+# ruby_heart_gem_20261113/source/ruby_foil.osl:13
+#  float side=entry[2]>=0?1:-1;point pos=entry;vector dir=refract(incident,n,1/1.77);color weight=color(1-f);float path=0;
+	mul		$tmp48 $const13 f 	%line{13} %argrw{"wrr"}
+	functioncall	$const14 73 	%argrw{"r"}
+# /Applications/Blender.app/Contents/Resources/5.2/scripts/addons_core/cycles/shader/stdosl.h:212
+# vector reflect (vector I, vector N) { return I - 2*dot(N,I)*N; }
+	dot		$tmp53 n incident 	%filename{"/Applications/Blender.app/Contents/Resources/5.2/scripts/addons_core/cycles/shader/stdosl.h"} %line{212} %argrw{"wrr"}
+	mul		$tmp54 $const15 $tmp53 	%argrw{"wrr"}
+	mul		$tmp55 $tmp54 n 	%argrw{"wrr"}
+	sub		$tmp52 incident $tmp55 	%argrw{"wrr"}
+# ruby_heart_gem_20261113/source/ruby_foil.osl:13
+#  float side=entry[2]>=0?1:-1;point pos=entry;vector dir=refract(incident,n,1/1.77);color weight=color(1-f);float path=0;
+	functioncall	$const16 103 	%filename{"ruby_heart_gem_20261113/source/ruby_foil.osl"} %line{13} %argrw{"r"}
+# ruby_heart_gem_20261113/source/ruby_foil.osl:5
+# color tent(vector d,string file){return min(lookup(d,file),color(3));}
+	functioncall	$const17 80 	%line{5} %argrw{"r"}
+# ruby_heart_gem_20261113/source/ruby_foil.osl:4
+# color lookup(vector d,string file){vector w=normalize(transform("object","world",to_blender(d)));vector e=vector(-w[0],w[2],w[1]);float u=.5+atan2(e[0],-e[2])/(2*M_PI);float v=1-(.5-asin(clamp(e[1],-1,1))/M_PI);return texture(file,u,v,0.0,0.0,0.0,0.0,"swrap","periodic","twrap","clamp","interp","bilinear");}
+	compref		$tmp58 $tmp52 $const4 	%line{4} %argrw{"wrr"}
+	compref		$tmp59 $tmp52 $const5 	%argrw{"wrr"}
+	neg		$tmp60 $tmp59 	%argrw{"wr"}
+	compref		$tmp61 $tmp52 $const6 	%argrw{"wrr"}
+	vector		$tmp57 $tmp58 $tmp60 $tmp61 	%argrw{"wrrr"}
+# ruby_heart_gem_20261113/source/ruby_foil.osl:5
+# color tent(vector d,string file){return min(lookup(d,file),color(3));}
+	transformv	$tmp56 $const2 $const1 $tmp57 	%line{5} %argrw{"wrrr"}
+	normalize	___373_w $tmp56 	%argrw{"wr"}
+	compref		$tmp62 ___373_w $const4 	%argrw{"wrr"}
+	neg		$tmp63 $tmp62 	%argrw{"wr"}
+	compref		$tmp64 ___373_w $const5 	%argrw{"wrr"}
+	compref		$tmp65 ___373_w $const6 	%argrw{"wrr"}
+	vector		___373_e $tmp63 $tmp64 $tmp65 	%argrw{"wrrr"}
+	compref		$tmp67 ___373_e $const4 	%argrw{"wrr"}
+	compref		$tmp68 ___373_e $const5 	%argrw{"wrr"}
+	neg		$tmp69 $tmp68 	%argrw{"wr"}
+	atan2		$tmp66 $tmp67 $tmp69 	%argrw{"wrr"}
+	mul		$tmp70 $const15 $const18 	%argrw{"wrr"}
+	div		$tmp71 $tmp66 $tmp70 	%argrw{"wrr"}
+	add		___373_u $const12 $tmp71 	%argrw{"wrr"}
+	compref		$tmp74 ___373_e $const6 	%argrw{"wrr"}
+	functioncall	$const11 98 	%argrw{"r"}
+# /Applications/Blender.app/Contents/Resources/5.2/scripts/addons_core/cycles/shader/stdosl.h:141
+# float  clamp (float x, float minval, float maxval) { return max(min(x,maxval),minval); }
+	min		$tmp75 $tmp74 $const7 	%filename{"/Applications/Blender.app/Contents/Resources/5.2/scripts/addons_core/cycles/shader/stdosl.h"} %line{141} %argrw{"wrr"}
+	max		$tmp73 $tmp75 $const20 	%argrw{"wrr"}
+# ruby_heart_gem_20261113/source/ruby_foil.osl:5
+# color tent(vector d,string file){return min(lookup(d,file),color(3));}
+	asin		$tmp72 $tmp73 	%filename{"ruby_heart_gem_20261113/source/ruby_foil.osl"} %line{5} %argrw{"wr"}
+	div		$tmp76 $tmp72 $const18 	%argrw{"wrr"}
+	sub		$tmp77 $const12 $tmp76 	%argrw{"wrr"}
+	sub		___373_v $const7 $tmp77 	%argrw{"wrr"}
+	texture		$tmp51 Mip1 ___373_u ___373_v $const10 $const10 $const10 $const10 $const21 $const22 $const23 $const11 $const24 $const25 	%argrw{"wrrrrrrrrrrrrr"}
+# ruby_heart_gem_20261113/source/ruby_foil.osl:13
+#  float side=entry[2]>=0?1:-1;point pos=entry;vector dir=refract(incident,n,1/1.77);color weight=color(1-f);float path=0;
+	min		$tmp50 $tmp51 $const26 	%line{13} %argrw{"wrr"}
+	sub		$tmp80 $tmp50 $const27 	%argrw{"wrr"}
+	functioncall	$const11 108 	%argrw{"r"}
+# /Applications/Blender.app/Contents/Resources/5.2/scripts/addons_core/cycles/shader/stdosl.h:140
+# color  clamp (color x, color minval, color maxval) { return max(min(x,maxval),minval); }
+	min		$tmp83 $tmp80 $const29 	%filename{"/Applications/Blender.app/Contents/Resources/5.2/scripts/addons_core/cycles/shader/stdosl.h"} %line{140} %argrw{"wrr"}
+	max		$tmp49 $tmp83 $const28 	%argrw{"wrr"}
+# ruby_heart_gem_20261113/source/ruby_foil.osl:13
+#  float side=entry[2]>=0?1:-1;point pos=entry;vector dir=refract(incident,n,1/1.77);color weight=color(1-f);float path=0;
+	mul		col $tmp48 $tmp49 	%filename{"ruby_heart_gem_20261113/source/ruby_foil.osl"} %line{13} %argrw{"wrr"}
+# ruby_heart_gem_20261113/source/ruby_foil.osl:14
+#  for(int bounce=0;bounce<4;bounce++){
+	compref		$tmp84 entry $const5 	%line{14} %argrw{"wrr"}
+	ge		$tmp85 $tmp84 $const4 	%argrw{"wrr"}
+	if		$tmp85 113 114 	%argrw{"r"}
+	assign		side $const6 	%argrw{"wr"}
+	assign		side $const19 	%argrw{"wr"}
+	assign		pos entry 	%argrw{"wr"}
+	div		$tmp86 $const7 $const8 	%argrw{"wrr"}
+	functioncall	$const30 133 	%argrw{"r"}
+# /Applications/Blender.app/Contents/Resources/5.2/scripts/addons_core/cycles/shader/stdosl.h:214
+#     float IdotN = dot (I, N);
+	dot		___240_IdotN incident n 	%filename{"/Applications/Blender.app/Contents/Resources/5.2/scripts/addons_core/cycles/shader/stdosl.h"} %line{214} %argrw{"wrr"}
+# /Applications/Blender.app/Contents/Resources/5.2/scripts/addons_core/cycles/shader/stdosl.h:215
+#     float k = 1 - eta*eta * (1 - IdotN*IdotN);
+	mul		$tmp87 $tmp86 $tmp86 	%line{215} %argrw{"wrr"}
+	mul		$tmp88 ___240_IdotN ___240_IdotN 	%argrw{"wrr"}
+	sub		$tmp89 $const7 $tmp88 	%argrw{"wrr"}
+	mul		$tmp90 $tmp87 $tmp89 	%argrw{"wrr"}
+	sub		___240_k $const7 $tmp90 	%argrw{"wrr"}
+# /Applications/Blender.app/Contents/Resources/5.2/scripts/addons_core/cycles/shader/stdosl.h:216
+#     return (k < 0) ? vector(0,0,0) : (eta*I - N * (eta*IdotN + sqrt(k)));
+	lt		$tmp91 ___240_k $const4 	%line{216} %argrw{"wrr"}
+	if		$tmp91 126 132 	%argrw{"r"}
+	assign		dir $const31 	%argrw{"wr"}
+	mul		$tmp92 $tmp86 incident 	%argrw{"wrr"}
+	mul		$tmp93 $tmp86 ___240_IdotN 	%argrw{"wrr"}
+	sqrt		$tmp94 ___240_k 	%argrw{"wr"}
+	add		$tmp95 $tmp93 $tmp94 	%argrw{"wrr"}
+	mul		$tmp96 n $tmp95 	%argrw{"wrr"}
+	sub		dir $tmp92 $tmp96 	%argrw{"wrr"}
+	return
+# ruby_heart_gem_20261113/source/ruby_foil.osl:14
+#  for(int bounce=0;bounce<4;bounce++){
+	sub		$tmp97 $const7 f 	%filename{"ruby_heart_gem_20261113/source/ruby_foil.osl"} %line{14} %argrw{"wrr"}
+	assign		weight $tmp97 	%argrw{"wr"}
+	assign		path $const4 	%argrw{"wr"}
+# ruby_heart_gem_20261113/source/ruby_foil.osl:15
+#   float tofoil=dir[2]*side<-.0001?max(-pos[2]/dir[2],0):0;pos+=dir*tofoil;path+=tofoil;dir[2]=-dir[2];weight*=.92;
+	for		$tmp99 138 140 342 344 	%line{15} %argrw{"r"}
+	assign		___376_bounce $const4 	%argrw{"wr"}
+	lt		$tmp98 ___376_bounce $const32 	%argrw{"wrr"}
+	neq		$tmp99 $tmp98 $const4 	%argrw{"wrr"}
+# ruby_heart_gem_20261113/source/ruby_foil.osl:16
+#   float approach=dot(n,dir);float back=approach>.0001?max(dot(n,vector(entry-pos))/approach,0):0;pos+=dir*back;path+=back;
+	compref		$tmp100 dir $const5 	%line{16} %argrw{"wrr"}
+	mul		$tmp101 $tmp100 side 	%argrw{"wrr"}
+	lt		$tmp102 $tmp101 $const33 	%argrw{"wrr"}
+	if		$tmp102 149 150 	%argrw{"r"}
+	compref		$tmp103 pos $const5 	%argrw{"wrr"}
+	neg		$tmp104 $tmp103 	%argrw{"wr"}
+	compref		$tmp105 dir $const5 	%argrw{"wrr"}
+	div		$tmp106 $tmp104 $tmp105 	%argrw{"wrr"}
+	max		___377_tofoil $tmp106 $const10 	%argrw{"wrr"}
+	assign		___377_tofoil $const4 	%argrw{"wr"}
+	mul		$tmp107 dir ___377_tofoil 	%argrw{"wrr"}
+	add		pos pos $tmp107 	%argrw{"wrr"}
+	add		path path ___377_tofoil 	%argrw{"wrr"}
+	compref		$tmp108 dir $const5 	%argrw{"wrr"}
+	neg		$tmp109 $tmp108 	%argrw{"wr"}
+	compassign	dir $const5 $tmp109 	%argrw{"wrr"}
+	mul		weight weight $const34 	%argrw{"wrr"}
+# ruby_heart_gem_20261113/source/ruby_foil.osl:17
+#   float share=fresnelshare(approach,1.77,1);color absorption=color(exp(-.15*min(path,12)),exp(-6.5*min(path,12)),exp(-2.2*min(path,12)));
+	dot		___377_approach n dir 	%line{17} %argrw{"wrr"}
+	gt		$tmp110 ___377_approach $const35 	%argrw{"wrr"}
+	if		$tmp110 165 166 	%argrw{"r"}
+	sub		$tmp113 entry pos 	%argrw{"wrr"}
+	assign		$tmp112 $tmp113 	%argrw{"wr"}
+	dot		$tmp111 n $tmp112 	%argrw{"wrr"}
+	div		$tmp114 $tmp111 ___377_approach 	%argrw{"wrr"}
+	max		___377_back $tmp114 $const10 	%argrw{"wrr"}
+	assign		___377_back $const4 	%argrw{"wr"}
+	mul		$tmp115 dir ___377_back 	%argrw{"wrr"}
+	add		pos pos $tmp115 	%argrw{"wrr"}
+	add		path path ___377_back 	%argrw{"wrr"}
+# ruby_heart_gem_20261113/source/ruby_foil.osl:18
+#   if(share<1){vector leaving=refract(dir,-n,1.77);col+=weight*absorption*(1-share)*body(leaving,Mip2,Mip3,Mip8);}
+	functioncall	$const9 203 	%line{18} %argrw{"r"}
+# ruby_heart_gem_20261113/source/ruby_foil.osl:2
+# vector to_model(vector b){return vector(b[0],b[2],-b[1]);}
+	functioncall	$const11 173 	%line{2} %argrw{"r"}
+# /Applications/Blender.app/Contents/Resources/5.2/scripts/addons_core/cycles/shader/stdosl.h:141
+# float  clamp (float x, float minval, float maxval) { return max(min(x,maxval),minval); }
+	min		$tmp116 ___377_approach $const7 	%filename{"/Applications/Blender.app/Contents/Resources/5.2/scripts/addons_core/cycles/shader/stdosl.h"} %line{141} %argrw{"wrr"}
+	max		___370_ci $tmp116 $const10 	%argrw{"wrr"}
+# ruby_heart_gem_20261113/source/ruby_foil.osl:2
+# vector to_model(vector b){return vector(b[0],b[2],-b[1]);}
+	div		$tmp117 $const8 $const7 	%filename{"ruby_heart_gem_20261113/source/ruby_foil.osl"} %line{2} %argrw{"wrr"}
+	div		$tmp118 $const8 $const7 	%argrw{"wrr"}
+	mul		$tmp119 $tmp117 $tmp118 	%argrw{"wrr"}
+	mul		$tmp120 ___370_ci ___370_ci 	%argrw{"wrr"}
+	sub		$tmp121 $const7 $tmp120 	%argrw{"wrr"}
+	mul		___370_ss $tmp119 $tmp121 	%argrw{"wrr"}
+	ge		$tmp122 ___370_ss $const6 	%argrw{"wrr"}
+	if		$tmp122 183 183 	%argrw{"r"}
+	assign		___377_share $const6 	%argrw{"wr"}
+	return
+	sub		$tmp123 $const7 ___370_ss 	%argrw{"wrr"}
+	sqrt		___370_ct $tmp123 	%argrw{"wr"}
+	mul		$tmp124 $const8 ___370_ci 	%argrw{"wrr"}
+	mul		$tmp125 $const7 ___370_ct 	%argrw{"wrr"}
+	sub		$tmp126 $tmp124 $tmp125 	%argrw{"wrr"}
+	mul		$tmp127 $const8 ___370_ci 	%argrw{"wrr"}
+	mul		$tmp128 $const7 ___370_ct 	%argrw{"wrr"}
+	add		$tmp129 $tmp127 $tmp128 	%argrw{"wrr"}
+	div		___370_a $tmp126 $tmp129 	%argrw{"wrr"}
+	mul		$tmp130 $const8 ___370_ct 	%argrw{"wrr"}
+	mul		$tmp131 $const7 ___370_ci 	%argrw{"wrr"}
+	sub		$tmp132 $tmp130 $tmp131 	%argrw{"wrr"}
+	mul		$tmp133 $const8 ___370_ct 	%argrw{"wrr"}
+	mul		$tmp134 $const7 ___370_ci 	%argrw{"wrr"}
+	add		$tmp135 $tmp133 $tmp134 	%argrw{"wrr"}
+	div		___370_b $tmp132 $tmp135 	%argrw{"wrr"}
+	mul		$tmp136 ___370_a ___370_a 	%argrw{"wrr"}
+	mul		$tmp137 ___370_b ___370_b 	%argrw{"wrr"}
+	add		$tmp138 $tmp136 $tmp137 	%argrw{"wrr"}
+	mul		___377_share $const12 $tmp138 	%argrw{"wrr"}
+# ruby_heart_gem_20261113/source/ruby_foil.osl:18
+#   if(share<1){vector leaving=refract(dir,-n,1.77);col+=weight*absorption*(1-share)*body(leaving,Mip2,Mip3,Mip8);}
+	min		$tmp140 path $const38 	%line{18} %argrw{"wrr"}
+	mul		$tmp141 $const36 $tmp140 	%argrw{"wrr"}
+	exp		$tmp139 $tmp141 	%argrw{"wr"}
+	min		$tmp143 path $const38 	%argrw{"wrr"}
+	mul		$tmp144 $const39 $tmp143 	%argrw{"wrr"}
+	exp		$tmp142 $tmp144 	%argrw{"wr"}
+	min		$tmp146 path $const38 	%argrw{"wrr"}
+	mul		$tmp147 $const40 $tmp146 	%argrw{"wrr"}
+	exp		$tmp145 $tmp147 	%argrw{"wr"}
+	color		___377_absorption $tmp139 $tmp142 $tmp145 	%argrw{"wrrr"}
+# ruby_heart_gem_20261113/source/ruby_foil.osl:19
+#   weight*=share;dir=reflect(dir,n);
+	lt		$tmp148 ___377_share $const6 	%line{19} %argrw{"wrr"}
+	if		$tmp148 336 336 	%argrw{"r"}
+	neg		$tmp149 n 	%argrw{"wr"}
+	functioncall	$const30 233 	%argrw{"r"}
+# /Applications/Blender.app/Contents/Resources/5.2/scripts/addons_core/cycles/shader/stdosl.h:214
+#     float IdotN = dot (I, N);
+	dot		___240_IdotN dir $tmp149 	%filename{"/Applications/Blender.app/Contents/Resources/5.2/scripts/addons_core/cycles/shader/stdosl.h"} %line{214} %argrw{"wrr"}
+# /Applications/Blender.app/Contents/Resources/5.2/scripts/addons_core/cycles/shader/stdosl.h:215
+#     float k = 1 - eta*eta * (1 - IdotN*IdotN);
+	mul		$tmp150 $const8 $const8 	%line{215} %argrw{"wrr"}
+	mul		$tmp151 ___240_IdotN ___240_IdotN 	%argrw{"wrr"}
+	sub		$tmp152 $const7 $tmp151 	%argrw{"wrr"}
+	mul		$tmp153 $tmp150 $tmp152 	%argrw{"wrr"}
+	sub		___240_k $const7 $tmp153 	%argrw{"wrr"}
+# /Applications/Blender.app/Contents/Resources/5.2/scripts/addons_core/cycles/shader/stdosl.h:216
+#     return (k < 0) ? vector(0,0,0) : (eta*I - N * (eta*IdotN + sqrt(k)));
+	lt		$tmp154 ___240_k $const4 	%line{216} %argrw{"wrr"}
+	if		$tmp154 226 232 	%argrw{"r"}
+	assign		___378_leaving $const31 	%argrw{"wr"}
+	mul		$tmp155 $const8 dir 	%argrw{"wrr"}
+	mul		$tmp156 $const8 ___240_IdotN 	%argrw{"wrr"}
+	sqrt		$tmp157 ___240_k 	%argrw{"wr"}
+	add		$tmp158 $tmp156 $tmp157 	%argrw{"wrr"}
+	mul		$tmp159 $tmp149 $tmp158 	%argrw{"wrr"}
+	sub		___378_leaving $tmp155 $tmp159 	%argrw{"wrr"}
+	return
+# ruby_heart_gem_20261113/source/ruby_foil.osl:19
+#   weight*=share;dir=reflect(dir,n);
+	mul		$tmp160 weight ___377_absorption 	%filename{"ruby_heart_gem_20261113/source/ruby_foil.osl"} %line{19} %argrw{"wrr"}
+	sub		$tmp161 $const7 ___377_share 	%argrw{"wrr"}
+	mul		$tmp162 $tmp160 $tmp161 	%argrw{"wrr"}
+	functioncall	$const41 334 	%argrw{"r"}
+# ruby_heart_gem_20261113/source/ruby_foil.osl:7
+# shader ruby_heart_live_optics(string Mip1="",string Mip2="",string Mip3="",string Mip8="",output closure color BSDF=0){
+	functioncall	$const16 267 	%line{7} %argrw{"r"}
+# ruby_heart_gem_20261113/source/ruby_foil.osl:5
+# color tent(vector d,string file){return min(lookup(d,file),color(3));}
+	functioncall	$const17 244 	%line{5} %argrw{"r"}
+# ruby_heart_gem_20261113/source/ruby_foil.osl:4
+# color lookup(vector d,string file){vector w=normalize(transform("object","world",to_blender(d)));vector e=vector(-w[0],w[2],w[1]);float u=.5+atan2(e[0],-e[2])/(2*M_PI);float v=1-(.5-asin(clamp(e[1],-1,1))/M_PI);return texture(file,u,v,0.0,0.0,0.0,0.0,"swrap","periodic","twrap","clamp","interp","bilinear");}
+	compref		$tmp168 ___378_leaving $const4 	%line{4} %argrw{"wrr"}
+	compref		$tmp169 ___378_leaving $const5 	%argrw{"wrr"}
+	neg		$tmp170 $tmp169 	%argrw{"wr"}
+	compref		$tmp171 ___378_leaving $const6 	%argrw{"wrr"}
+	vector		$tmp167 $tmp168 $tmp170 $tmp171 	%argrw{"wrrr"}
+# ruby_heart_gem_20261113/source/ruby_foil.osl:5
+# color tent(vector d,string file){return min(lookup(d,file),color(3));}
+	transformv	$tmp166 $const2 $const1 $tmp167 	%line{5} %argrw{"wrrr"}
+	normalize	___373_w $tmp166 	%argrw{"wr"}
+	compref		$tmp172 ___373_w $const4 	%argrw{"wrr"}
+	neg		$tmp173 $tmp172 	%argrw{"wr"}
+	compref		$tmp174 ___373_w $const5 	%argrw{"wrr"}
+	compref		$tmp175 ___373_w $const6 	%argrw{"wrr"}
+	vector		___373_e $tmp173 $tmp174 $tmp175 	%argrw{"wrrr"}
+	compref		$tmp177 ___373_e $const4 	%argrw{"wrr"}
+	compref		$tmp178 ___373_e $const5 	%argrw{"wrr"}
+	neg		$tmp179 $tmp178 	%argrw{"wr"}
+	atan2		$tmp176 $tmp177 $tmp179 	%argrw{"wrr"}
+	mul		$tmp180 $const15 $const18 	%argrw{"wrr"}
+	div		$tmp181 $tmp176 $tmp180 	%argrw{"wrr"}
+	add		___373_u $const12 $tmp181 	%argrw{"wrr"}
+	compref		$tmp184 ___373_e $const6 	%argrw{"wrr"}
+	functioncall	$const11 262 	%argrw{"r"}
+# /Applications/Blender.app/Contents/Resources/5.2/scripts/addons_core/cycles/shader/stdosl.h:141
+# float  clamp (float x, float minval, float maxval) { return max(min(x,maxval),minval); }
+	min		$tmp185 $tmp184 $const7 	%filename{"/Applications/Blender.app/Contents/Resources/5.2/scripts/addons_core/cycles/shader/stdosl.h"} %line{141} %argrw{"wrr"}
+	max		$tmp183 $tmp185 $const20 	%argrw{"wrr"}
+# ruby_heart_gem_20261113/source/ruby_foil.osl:5
+# color tent(vector d,string file){return min(lookup(d,file),color(3));}
+	asin		$tmp182 $tmp183 	%filename{"ruby_heart_gem_20261113/source/ruby_foil.osl"} %line{5} %argrw{"wr"}
+	div		$tmp186 $tmp182 $const18 	%argrw{"wrr"}
+	sub		$tmp187 $const12 $tmp186 	%argrw{"wrr"}
+	sub		___373_v $const7 $tmp187 	%argrw{"wrr"}
+	texture		$tmp165 Mip2 ___373_u ___373_v $const10 $const10 $const10 $const10 $const21 $const22 $const23 $const11 $const24 $const25 	%argrw{"wrrrrrrrrrrrrr"}
+# ruby_heart_gem_20261113/source/ruby_foil.osl:7
+# shader ruby_heart_live_optics(string Mip1="",string Mip2="",string Mip3="",string Mip8="",output closure color BSDF=0){
+	min		$tmp164 $tmp165 $const42 	%line{7} %argrw{"wrr"}
+	functioncall	$const16 298 	%argrw{"r"}
+# ruby_heart_gem_20261113/source/ruby_foil.osl:5
+# color tent(vector d,string file){return min(lookup(d,file),color(3));}
+	functioncall	$const17 275 	%line{5} %argrw{"r"}
+# ruby_heart_gem_20261113/source/ruby_foil.osl:4
+# color lookup(vector d,string file){vector w=normalize(transform("object","world",to_blender(d)));vector e=vector(-w[0],w[2],w[1]);float u=.5+atan2(e[0],-e[2])/(2*M_PI);float v=1-(.5-asin(clamp(e[1],-1,1))/M_PI);return texture(file,u,v,0.0,0.0,0.0,0.0,"swrap","periodic","twrap","clamp","interp","bilinear");}
+	compref		$tmp193 ___378_leaving $const4 	%line{4} %argrw{"wrr"}
+	compref		$tmp194 ___378_leaving $const5 	%argrw{"wrr"}
+	neg		$tmp195 $tmp194 	%argrw{"wr"}
+	compref		$tmp196 ___378_leaving $const6 	%argrw{"wrr"}
+	vector		$tmp192 $tmp193 $tmp195 $tmp196 	%argrw{"wrrr"}
+# ruby_heart_gem_20261113/source/ruby_foil.osl:5
+# color tent(vector d,string file){return min(lookup(d,file),color(3));}
+	transformv	$tmp191 $const2 $const1 $tmp192 	%line{5} %argrw{"wrrr"}
+	normalize	___373_w $tmp191 	%argrw{"wr"}
+	compref		$tmp197 ___373_w $const4 	%argrw{"wrr"}
+	neg		$tmp198 $tmp197 	%argrw{"wr"}
+	compref		$tmp199 ___373_w $const5 	%argrw{"wrr"}
+	compref		$tmp200 ___373_w $const6 	%argrw{"wrr"}
+	vector		___373_e $tmp198 $tmp199 $tmp200 	%argrw{"wrrr"}
+	compref		$tmp202 ___373_e $const4 	%argrw{"wrr"}
+	compref		$tmp203 ___373_e $const5 	%argrw{"wrr"}
+	neg		$tmp204 $tmp203 	%argrw{"wr"}
+	atan2		$tmp201 $tmp202 $tmp204 	%argrw{"wrr"}
+	mul		$tmp205 $const15 $const18 	%argrw{"wrr"}
+	div		$tmp206 $tmp201 $tmp205 	%argrw{"wrr"}
+	add		___373_u $const12 $tmp206 	%argrw{"wrr"}
+	compref		$tmp209 ___373_e $const6 	%argrw{"wrr"}
+	functioncall	$const11 293 	%argrw{"r"}
+# /Applications/Blender.app/Contents/Resources/5.2/scripts/addons_core/cycles/shader/stdosl.h:141
+# float  clamp (float x, float minval, float maxval) { return max(min(x,maxval),minval); }
+	min		$tmp210 $tmp209 $const7 	%filename{"/Applications/Blender.app/Contents/Resources/5.2/scripts/addons_core/cycles/shader/stdosl.h"} %line{141} %argrw{"wrr"}
+	max		$tmp208 $tmp210 $const20 	%argrw{"wrr"}
+# ruby_heart_gem_20261113/source/ruby_foil.osl:5
+# color tent(vector d,string file){return min(lookup(d,file),color(3));}
+	asin		$tmp207 $tmp208 	%filename{"ruby_heart_gem_20261113/source/ruby_foil.osl"} %line{5} %argrw{"wr"}
+	div		$tmp211 $tmp207 $const18 	%argrw{"wrr"}
+	sub		$tmp212 $const12 $tmp211 	%argrw{"wrr"}
+	sub		___373_v $const7 $tmp212 	%argrw{"wrr"}
+	texture		$tmp190 Mip3 ___373_u ___373_v $const10 $const10 $const10 $const10 $const21 $const22 $const23 $const11 $const24 $const25 	%argrw{"wrrrrrrrrrrrrr"}
+# ruby_heart_gem_20261113/source/ruby_foil.osl:7
+# shader ruby_heart_live_optics(string Mip1="",string Mip2="",string Mip3="",string Mip8="",output closure color BSDF=0){
+	min		$tmp189 $tmp190 $const42 	%line{7} %argrw{"wrr"}
+	mix		___375_b $tmp164 $tmp189 $const43 	%argrw{"wrrr"}
+	functioncall	$const44 332 	%argrw{"r"}
+# ruby_heart_gem_20261113/source/ruby_foil.osl:6
+# color body(vector d,string two,string three,string eight){color b=mix(min(lookup(d,two),color(.7)),min(lookup(d,three),color(.7)),.146406);return b+tent(d,eight)*.260400;}
+	functioncall	$const16 331 	%line{6} %argrw{"r"}
+# ruby_heart_gem_20261113/source/ruby_foil.osl:5
+# color tent(vector d,string file){return min(lookup(d,file),color(3));}
+	functioncall	$const17 308 	%line{5} %argrw{"r"}
+# ruby_heart_gem_20261113/source/ruby_foil.osl:4
+# color lookup(vector d,string file){vector w=normalize(transform("object","world",to_blender(d)));vector e=vector(-w[0],w[2],w[1]);float u=.5+atan2(e[0],-e[2])/(2*M_PI);float v=1-(.5-asin(clamp(e[1],-1,1))/M_PI);return texture(file,u,v,0.0,0.0,0.0,0.0,"swrap","periodic","twrap","clamp","interp","bilinear");}
+	compref		$tmp218 ___378_leaving $const4 	%line{4} %argrw{"wrr"}
+	compref		$tmp219 ___378_leaving $const5 	%argrw{"wrr"}
+	neg		$tmp220 $tmp219 	%argrw{"wr"}
+	compref		$tmp221 ___378_leaving $const6 	%argrw{"wrr"}
+	vector		$tmp217 $tmp218 $tmp220 $tmp221 	%argrw{"wrrr"}
+# ruby_heart_gem_20261113/source/ruby_foil.osl:5
+# color tent(vector d,string file){return min(lookup(d,file),color(3));}
+	transformv	$tmp216 $const2 $const1 $tmp217 	%line{5} %argrw{"wrrr"}
+	normalize	___373_w $tmp216 	%argrw{"wr"}
+	compref		$tmp222 ___373_w $const4 	%argrw{"wrr"}
+	neg		$tmp223 $tmp222 	%argrw{"wr"}
+	compref		$tmp224 ___373_w $const5 	%argrw{"wrr"}
+	compref		$tmp225 ___373_w $const6 	%argrw{"wrr"}
+	vector		___373_e $tmp223 $tmp224 $tmp225 	%argrw{"wrrr"}
+	compref		$tmp227 ___373_e $const4 	%argrw{"wrr"}
+	compref		$tmp228 ___373_e $const5 	%argrw{"wrr"}
+	neg		$tmp229 $tmp228 	%argrw{"wr"}
+	atan2		$tmp226 $tmp227 $tmp229 	%argrw{"wrr"}
+	mul		$tmp230 $const15 $const18 	%argrw{"wrr"}
+	div		$tmp231 $tmp226 $tmp230 	%argrw{"wrr"}
+	add		___373_u $const12 $tmp231 	%argrw{"wrr"}
+	compref		$tmp234 ___373_e $const6 	%argrw{"wrr"}
+	functioncall	$const11 326 	%argrw{"r"}
+# /Applications/Blender.app/Contents/Resources/5.2/scripts/addons_core/cycles/shader/stdosl.h:141
+# float  clamp (float x, float minval, float maxval) { return max(min(x,maxval),minval); }
+	min		$tmp235 $tmp234 $const7 	%filename{"/Applications/Blender.app/Contents/Resources/5.2/scripts/addons_core/cycles/shader/stdosl.h"} %line{141} %argrw{"wrr"}
+	max		$tmp233 $tmp235 $const20 	%argrw{"wrr"}
+# ruby_heart_gem_20261113/source/ruby_foil.osl:5
+# color tent(vector d,string file){return min(lookup(d,file),color(3));}
+	asin		$tmp232 $tmp233 	%filename{"ruby_heart_gem_20261113/source/ruby_foil.osl"} %line{5} %argrw{"wr"}
+	div		$tmp236 $tmp232 $const18 	%argrw{"wrr"}
+	sub		$tmp237 $const12 $tmp236 	%argrw{"wrr"}
+	sub		___373_v $const7 $tmp237 	%argrw{"wrr"}
+	texture		$tmp215 Mip8 ___373_u ___373_v $const10 $const10 $const10 $const10 $const21 $const22 $const23 $const11 $const24 $const25 	%argrw{"wrrrrrrrrrrrrr"}
+# ruby_heart_gem_20261113/source/ruby_foil.osl:6
+# color body(vector d,string two,string three,string eight){color b=mix(min(lookup(d,two),color(.7)),min(lookup(d,three),color(.7)),.146406);return b+tent(d,eight)*.260400;}
+	min		$tmp214 $tmp215 $const27 	%line{6} %argrw{"wrr"}
+# ruby_heart_gem_20261113/source/ruby_foil.osl:7
+# shader ruby_heart_live_optics(string Mip1="",string Mip2="",string Mip3="",string Mip8="",output closure color BSDF=0){
+	mul		$tmp239 $tmp214 $const45 	%line{7} %argrw{"wrr"}
+	add		$tmp163 ___375_b $tmp239 	%argrw{"wrr"}
+# ruby_heart_gem_20261113/source/ruby_foil.osl:19
+#   weight*=share;dir=reflect(dir,n);
+	mul		$tmp240 $tmp162 $tmp163 	%line{19} %argrw{"wrr"}
+	add		col col $tmp240 	%argrw{"wrr"}
+# ruby_heart_gem_20261113/source/ruby_foil.osl:20
+#  }
+	mul		weight weight ___377_share 	%line{20} %argrw{"wrr"}
+	functioncall	$const14 342 	%argrw{"r"}
+# /Applications/Blender.app/Contents/Resources/5.2/scripts/addons_core/cycles/shader/stdosl.h:212
+# vector reflect (vector I, vector N) { return I - 2*dot(N,I)*N; }
+	dot		$tmp241 n dir 	%filename{"/Applications/Blender.app/Contents/Resources/5.2/scripts/addons_core/cycles/shader/stdosl.h"} %line{212} %argrw{"wrr"}
+	mul		$tmp242 $const15 $tmp241 	%argrw{"wrr"}
+	mul		$tmp243 $tmp242 n 	%argrw{"wrr"}
+	sub		dir dir $tmp243 	%argrw{"wrr"}
+# ruby_heart_gem_20261113/source/ruby_foil.osl:15
+#   float tofoil=dir[2]*side<-.0001?max(-pos[2]/dir[2],0):0;pos+=dir*tofoil;path+=tofoil;dir[2]=-dir[2];weight*=.92;
+	assign		$tmp244 ___376_bounce 	%filename{"ruby_heart_gem_20261113/source/ruby_foil.osl"} %line{15} %argrw{"wr"}
+	add		___376_bounce ___376_bounce $const6 	%argrw{"wrr"}
+# ruby_heart_gem_20261113/source/ruby_foil.osl:22
+#  col+=(1-f)*color(.16,.0032,.024);BSDF=emission()*col*1.7;
+	min		$tmp247 path $const38 	%line{22} %argrw{"wrr"}
+	mul		$tmp248 $const36 $tmp247 	%argrw{"wrr"}
+	exp		$tmp246 $tmp248 	%argrw{"wr"}
+	min		$tmp250 path $const38 	%argrw{"wrr"}
+	mul		$tmp251 $const39 $tmp250 	%argrw{"wrr"}
+	exp		$tmp249 $tmp251 	%argrw{"wr"}
+	min		$tmp253 path $const38 	%argrw{"wrr"}
+	mul		$tmp254 $const40 $tmp253 	%argrw{"wrr"}
+	exp		$tmp252 $tmp254 	%argrw{"wr"}
+	color		$tmp245 $tmp246 $tmp249 $tmp252 	%argrw{"wrrr"}
+	mul		$tmp255 weight $tmp245 	%argrw{"wrr"}
+	functioncall	$const44 387 	%argrw{"r"}
+# ruby_heart_gem_20261113/source/ruby_foil.osl:6
+# color body(vector d,string two,string three,string eight){color b=mix(min(lookup(d,two),color(.7)),min(lookup(d,three),color(.7)),.146406);return b+tent(d,eight)*.260400;}
+	functioncall	$const16 386 	%line{6} %argrw{"r"}
+# ruby_heart_gem_20261113/source/ruby_foil.osl:5
+# color tent(vector d,string file){return min(lookup(d,file),color(3));}
+	functioncall	$const17 363 	%line{5} %argrw{"r"}
+# ruby_heart_gem_20261113/source/ruby_foil.osl:4
+# color lookup(vector d,string file){vector w=normalize(transform("object","world",to_blender(d)));vector e=vector(-w[0],w[2],w[1]);float u=.5+atan2(e[0],-e[2])/(2*M_PI);float v=1-(.5-asin(clamp(e[1],-1,1))/M_PI);return texture(file,u,v,0.0,0.0,0.0,0.0,"swrap","periodic","twrap","clamp","interp","bilinear");}
+	compref		$tmp260 dir $const4 	%line{4} %argrw{"wrr"}
+	compref		$tmp261 dir $const5 	%argrw{"wrr"}
+	neg		$tmp262 $tmp261 	%argrw{"wr"}
+	compref		$tmp263 dir $const6 	%argrw{"wrr"}
+	vector		$tmp259 $tmp260 $tmp262 $tmp263 	%argrw{"wrrr"}
+# ruby_heart_gem_20261113/source/ruby_foil.osl:5
+# color tent(vector d,string file){return min(lookup(d,file),color(3));}
+	transformv	$tmp258 $const2 $const1 $tmp259 	%line{5} %argrw{"wrrr"}
+	normalize	___373_w $tmp258 	%argrw{"wr"}
+	compref		$tmp264 ___373_w $const4 	%argrw{"wrr"}
+	neg		$tmp265 $tmp264 	%argrw{"wr"}
+	compref		$tmp266 ___373_w $const5 	%argrw{"wrr"}
+	compref		$tmp267 ___373_w $const6 	%argrw{"wrr"}
+	vector		___373_e $tmp265 $tmp266 $tmp267 	%argrw{"wrrr"}
+	compref		$tmp269 ___373_e $const4 	%argrw{"wrr"}
+	compref		$tmp270 ___373_e $const5 	%argrw{"wrr"}
+	neg		$tmp271 $tmp270 	%argrw{"wr"}
+	atan2		$tmp268 $tmp269 $tmp271 	%argrw{"wrr"}
+	mul		$tmp272 $const15 $const18 	%argrw{"wrr"}
+	div		$tmp273 $tmp268 $tmp272 	%argrw{"wrr"}
+	add		___373_u $const12 $tmp273 	%argrw{"wrr"}
+	compref		$tmp276 ___373_e $const6 	%argrw{"wrr"}
+	functioncall	$const11 381 	%argrw{"r"}
+# /Applications/Blender.app/Contents/Resources/5.2/scripts/addons_core/cycles/shader/stdosl.h:141
+# float  clamp (float x, float minval, float maxval) { return max(min(x,maxval),minval); }
+	min		$tmp277 $tmp276 $const7 	%filename{"/Applications/Blender.app/Contents/Resources/5.2/scripts/addons_core/cycles/shader/stdosl.h"} %line{141} %argrw{"wrr"}
+	max		$tmp275 $tmp277 $const20 	%argrw{"wrr"}
+# ruby_heart_gem_20261113/source/ruby_foil.osl:5
+# color tent(vector d,string file){return min(lookup(d,file),color(3));}
+	asin		$tmp274 $tmp275 	%filename{"ruby_heart_gem_20261113/source/ruby_foil.osl"} %line{5} %argrw{"wr"}
+	div		$tmp278 $tmp274 $const18 	%argrw{"wrr"}
+	sub		$tmp279 $const12 $tmp278 	%argrw{"wrr"}
+	sub		___373_v $const7 $tmp279 	%argrw{"wrr"}
+	texture		$tmp257 Mip8 ___373_u ___373_v $const10 $const10 $const10 $const10 $const21 $const22 $const23 $const11 $const24 $const25 	%argrw{"wrrrrrrrrrrrrr"}
+# ruby_heart_gem_20261113/source/ruby_foil.osl:6
+# color body(vector d,string two,string three,string eight){color b=mix(min(lookup(d,two),color(.7)),min(lookup(d,three),color(.7)),.146406);return b+tent(d,eight)*.260400;}
+	min		$tmp256 $tmp257 $const27 	%line{6} %argrw{"wrr"}
+# ruby_heart_gem_20261113/source/ruby_foil.osl:22
+#  col+=(1-f)*color(.16,.0032,.024);BSDF=emission()*col*1.7;
+	mul		$tmp281 $tmp255 $tmp256 	%line{22} %argrw{"wrr"}
+	mul		$tmp282 $tmp281 $const45 	%argrw{"wrr"}
+	add		col col $tmp282 	%argrw{"wrr"}
+# ruby_heart_gem_20261113/source/ruby_foil.osl:23
+# }
+	sub		$tmp283 $const7 f 	%line{23} %argrw{"wrr"}
+	mul		$tmp285 $tmp283 $const46 	%argrw{"wrr"}
+	add		col col $tmp285 	%argrw{"wrr"}
+	closure		$tmp286 $const47 	%argrw{"wr"}
+	mul		$tmp287 $tmp286 col 	%argrw{"wrr"}
+	mul		BSDF $tmp287 $const48 	%argrw{"wrr"}
+	end

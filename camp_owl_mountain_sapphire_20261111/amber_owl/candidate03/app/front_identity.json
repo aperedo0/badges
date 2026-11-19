@@ -1,0 +1,16 @@
+{
+  "expected": "Amber Owl",
+  "observed": [
+    {
+      "name": "Amber Owl",
+      "frame": {
+        "width": 154.3333333333333,
+        "height": 36,
+        "y": 335.55,
+        "x": 123.83333333333334
+      }
+    }
+  ],
+  "epoch": 1794471246.286515,
+  "visible_gallery_heading_verified": true
+}

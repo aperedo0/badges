@@ -1,0 +1,109 @@
+{
+  "image_size": [
+    1536,
+    1024
+  ],
+  "overall_bounds": [
+    174,
+    30,
+    1363,
+    895
+  ],
+  "central_frame_outer": [
+    [
+      768,
+      390
+    ],
+    [
+      800,
+      437
+    ],
+    [
+      856,
+      491
+    ],
+    [
+      851,
+      572
+    ],
+    [
+      815,
+      641
+    ],
+    [
+      768,
+      710
+    ],
+    [
+      721,
+      641
+    ],
+    [
+      685,
+      572
+    ],
+    [
+      680,
+      491
+    ],
+    [
+      735,
+      437
+    ]
+  ],
+  "central_gem_outline": [
+    [
+      768,
+      468
+    ],
+    [
+      816,
+      506
+    ],
+    [
+      812,
+      581
+    ],
+    [
+      768,
+      674
+    ],
+    [
+      722,
+      581
+    ],
+    [
+      721,
+      506
+    ]
+  ],
+  "central_frame_center": [
+    768,
+    550
+  ],
+  "left_gold_leaf_bounds": [
+    540,
+    510,
+    735,
+    714
+  ],
+  "right_gold_leaf_bounds": [
+    801,
+    510,
+    996,
+    714
+  ],
+  "outer_left_crest_bounds": [
+    174,
+    400,
+    322,
+    714
+  ],
+  "outer_right_crest_bounds": [
+    1214,
+    400,
+    1362,
+    714
+  ],
+  "note": "Use as actual geometry outlines and hole, never as a painted highlight or gem appearance texture. Frame and leaf outlines should be checked on reference_grid.png."
+}

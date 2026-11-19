@@ -154,3 +154,7 @@ Prove the 3D badge is showing by looking (beveled edges catching light, a matchi
 3. Each tier's Badges screen picture (`stills/`), rendered at the coin stills' scale (6.03 units = 108 of 120 width units) with the badge where it sits on Home.
 4. A tilt of the spin axis toward the viewer, for a badge that should lean the same way all the way around (Gold's full crown may ask for it). A tilt built into the model turns with the badge, so it leans toward the viewer at the front and away at the back.
 5. The Diamond's look: its blue, brightness, sparkle and rainbow are named constants in the app's gem shader (`BadgeGemSurface.metal`), not in the model.
+
+## 8. Repository cleanup
+
+When the owner asks to make space or clean this badge repository, use `skills/badge-make-space/SKILL.md`. This is the repository cleanup workflow, separate from the Mac cleanup skill. Keep Git history, current usable models, required resources and explicitly preserved versions. Remove inspected obsolete attempts and captures across dated folders instead of keeping every iteration. Report working files and Git history separately. Cleanup never resumes paused badge work or authorizes changes outside this repository.

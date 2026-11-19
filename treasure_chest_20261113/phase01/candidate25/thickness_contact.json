@@ -1,0 +1,351 @@
+{
+  "checks": [
+    {
+      "part": "Chest Body Envelope",
+      "point": [
+        -3,
+        -1,
+        0
+      ],
+      "axis": 0,
+      "actual": -2.549999952316284,
+      "expected": -2.55
+    },
+    {
+      "part": "Chest Handle Mount -1",
+      "point": [
+        -2.5,
+        -0.3,
+        0.8
+      ],
+      "axis": 0,
+      "actual": -2.5450000762939453,
+      "expected": -2.545
+    },
+    {
+      "part": "Chest Body Envelope",
+      "point": [
+        3,
+        -1,
+        0
+      ],
+      "axis": 0,
+      "actual": 2.549999952316284,
+      "expected": 2.55
+    },
+    {
+      "part": "Chest Handle Mount 1",
+      "point": [
+        2.5,
+        -0.3,
+        0.8
+      ],
+      "axis": 0,
+      "actual": 2.5450000762939453,
+      "expected": 2.545
+    },
+    {
+      "part": "Chest Body Envelope",
+      "point": [
+        0,
+        -1,
+        -2
+      ],
+      "axis": 2,
+      "actual": -1.6000001430511475,
+      "expected": -1.6
+    },
+    {
+      "part": "Chest Body Upper Rim",
+      "point": [
+        1,
+        0.3,
+        0
+      ],
+      "axis": 2,
+      "actual": -1.5900001525878906,
+      "expected": -1.59
+    },
+    {
+      "part": "Chest Body Upper Rim",
+      "point": [
+        1,
+        0.3,
+        -2.1
+      ],
+      "axis": 2,
+      "actual": -1.7799999713897705,
+      "expected": -1.78
+    },
+    {
+      "part": "Chest Lower Rim",
+      "point": [
+        1,
+        -1.9,
+        0
+      ],
+      "axis": 2,
+      "actual": -1.5900002717971802,
+      "expected": -1.59
+    },
+    {
+      "part": "Chest Lower Rim",
+      "point": [
+        1,
+        -1.9,
+        -2.1
+      ],
+      "axis": 2,
+      "actual": -1.7799999713897705,
+      "expected": -1.78
+    },
+    {
+      "part": "Chest Corner Upright -1 -1",
+      "point": [
+        -2.4,
+        -0.8,
+        -1.5
+      ],
+      "axis": 2,
+      "actual": -1.5900001525878906,
+      "expected": -1.59
+    },
+    {
+      "part": "Chest Corner Upright -1 -1",
+      "point": [
+        -2.4,
+        -0.8,
+        -1.95
+      ],
+      "axis": 2,
+      "actual": -1.7699999809265137,
+      "expected": -1.77
+    },
+    {
+      "part": "Chest Corner Upright -1 -1",
+      "point": [
+        -2.4,
+        -0.8,
+        -1.45
+      ],
+      "axis": 0,
+      "actual": -2.5399999618530273,
+      "expected": -2.54
+    },
+    {
+      "part": "Chest Corner Upright 1 -1",
+      "point": [
+        2.4,
+        -0.8,
+        -1.5
+      ],
+      "axis": 2,
+      "actual": -1.590000033378601,
+      "expected": -1.59
+    },
+    {
+      "part": "Chest Corner Upright 1 -1",
+      "point": [
+        2.4,
+        -0.8,
+        -1.95
+      ],
+      "axis": 2,
+      "actual": -1.7700001001358032,
+      "expected": -1.77
+    },
+    {
+      "part": "Chest Corner Upright 1 -1",
+      "point": [
+        2.4,
+        -0.8,
+        -1.45
+      ],
+      "axis": 0,
+      "actual": 2.5399999618530273,
+      "expected": 2.54
+    },
+    {
+      "part": "Chest Body Envelope",
+      "point": [
+        0,
+        -1,
+        2
+      ],
+      "axis": 2,
+      "actual": 1.6000001430511475,
+      "expected": 1.6
+    },
+    {
+      "part": "Chest Body Upper Rim",
+      "point": [
+        1,
+        0.3,
+        0
+      ],
+      "axis": 2,
+      "actual": 1.590000033378601,
+      "expected": 1.59
+    },
+    {
+      "part": "Chest Body Upper Rim",
+      "point": [
+        1,
+        0.3,
+        2.1
+      ],
+      "axis": 2,
+      "actual": 1.7799999713897705,
+      "expected": 1.78
+    },
+    {
+      "part": "Chest Lower Rim",
+      "point": [
+        1,
+        -1.9,
+        0
+      ],
+      "axis": 2,
+      "actual": 1.590000033378601,
+      "expected": 1.59
+    },
+    {
+      "part": "Chest Lower Rim",
+      "point": [
+        1,
+        -1.9,
+        2.1
+      ],
+      "axis": 2,
+      "actual": 1.78000009059906,
+      "expected": 1.78
+    },
+    {
+      "part": "Chest Corner Upright -1 1",
+      "point": [
+        -2.4,
+        -0.8,
+        1.5
+      ],
+      "axis": 2,
+      "actual": 1.590000033378601,
+      "expected": 1.59
+    },
+    {
+      "part": "Chest Corner Upright -1 1",
+      "point": [
+        -2.4,
+        -0.8,
+        1.95
+      ],
+      "axis": 2,
+      "actual": 1.7700001001358032,
+      "expected": 1.77
+    },
+    {
+      "part": "Chest Corner Upright -1 1",
+      "point": [
+        -2.4,
+        -0.8,
+        1.45
+      ],
+      "axis": 0,
+      "actual": -2.5399999618530273,
+      "expected": -2.54
+    },
+    {
+      "part": "Chest Corner Upright 1 1",
+      "point": [
+        2.4,
+        -0.8,
+        1.5
+      ],
+      "axis": 2,
+      "actual": 1.5900001525878906,
+      "expected": 1.59
+    },
+    {
+      "part": "Chest Corner Upright 1 1",
+      "point": [
+        2.4,
+        -0.8,
+        1.95
+      ],
+      "axis": 2,
+      "actual": 1.7699999809265137,
+      "expected": 1.77
+    },
+    {
+      "part": "Chest Corner Upright 1 1",
+      "point": [
+        2.4,
+        -0.8,
+        1.45
+      ],
+      "axis": 0,
+      "actual": 2.5399999618530273,
+      "expected": 2.54
+    },
+    {
+      "part": "Chest Body Upper Rim",
+      "point": [
+        0,
+        0.3,
+        0.5
+      ],
+      "axis": 0,
+      "actual": -2.5399999618530273,
+      "expected": -2.54
+    },
+    {
+      "part": "Chest Lower Rim",
+      "point": [
+        0,
+        -1.9,
+        0.5
+      ],
+      "axis": 0,
+      "actual": -2.5399999618530273,
+      "expected": -2.54
+    },
+    {
+      "part": "Chest Body Upper Rim",
+      "point": [
+        0,
+        0.3,
+        0.5
+      ],
+      "axis": 0,
+      "actual": 2.539999485015869,
+      "expected": 2.54
+    },
+    {
+      "part": "Chest Lower Rim",
+      "point": [
+        0,
+        -1.9,
+        0.5
+      ],
+      "axis": 0,
+      "actual": 2.5399999618530273,
+      "expected": 2.54
+    },
+    {
+      "part": "Chest Central Lock Strap",
+      "point": [
+        0,
+        -1.2,
+        1.5
+      ],
+      "axis": 2,
+      "actual": 1.5950000286102295,
+      "expected": 1.595
+    }
+  ],
+  "body_half_width": 2.55,
+  "body_half_depth": 1.6,
+  "rail_front_projection": 0.18,
+  "upright_front_projection": 0.17,
+  "handle_plate_wood_overlap": 0.005,
+  "wood_recess": 0.05
+}

@@ -1,0 +1,1408 @@
+{
+  "complete_badge": false,
+  "stage": "Full lid rig with nominal cylindrical key drive pin, full motion recheck pending",
+  "meshes": 155,
+  "total_triangles": 177892,
+  "unchanged_meshes": 140,
+  "maximum_rotational_width": 6.675822176567607,
+  "hardware_intrusions": 0,
+  "checks": [
+    {
+      "name": "Chest Body Envelope",
+      "changed": false,
+      "closed": true,
+      "connected": true,
+      "euler": 2,
+      "volume": 11.409229457497219,
+      "triangles": 316
+    },
+    {
+      "name": "Chest Barrel Lid Envelope",
+      "changed": false,
+      "closed": true,
+      "connected": true,
+      "euler": 2,
+      "volume": 6.811621867533371,
+      "triangles": 2436
+    },
+    {
+      "name": "Chest Upper Lid Rim",
+      "changed": true,
+      "closed": true,
+      "connected": true,
+      "euler": -8,
+      "volume": 4.129224459311022,
+      "triangles": 21260
+    },
+    {
+      "name": "Chest Body Upper Rim",
+      "changed": false,
+      "closed": true,
+      "connected": true,
+      "euler": 0,
+      "volume": 1.4870871308265234,
+      "triangles": 2528
+    },
+    {
+      "name": "Chest Lower Rim",
+      "changed": false,
+      "closed": true,
+      "connected": true,
+      "euler": 0,
+      "volume": 1.6394672230318799,
+      "triangles": 768
+    },
+    {
+      "name": "Chest Corner Upright -1 -1",
+      "changed": false,
+      "closed": true,
+      "connected": true,
+      "euler": 2,
+      "volume": 0.3504409152985171,
+      "triangles": 284
+    },
+    {
+      "name": "Chest Angular Boot -1 -1",
+      "changed": false,
+      "closed": true,
+      "connected": true,
+      "euler": 2,
+      "volume": 0.5664584494174542,
+      "triangles": 196
+    },
+    {
+      "name": "Chest Corner Upright -1 1",
+      "changed": false,
+      "closed": true,
+      "connected": true,
+      "euler": 2,
+      "volume": 0.35044109529206663,
+      "triangles": 284
+    },
+    {
+      "name": "Chest Angular Boot -1 1",
+      "changed": false,
+      "closed": true,
+      "connected": true,
+      "euler": 2,
+      "volume": 0.566458425034885,
+      "triangles": 198
+    },
+    {
+      "name": "Chest Corner Upright 1 -1",
+      "changed": false,
+      "closed": true,
+      "connected": true,
+      "euler": 2,
+      "volume": 0.35044109529206663,
+      "triangles": 284
+    },
+    {
+      "name": "Chest Angular Boot 1 -1",
+      "changed": false,
+      "closed": true,
+      "connected": true,
+      "euler": 2,
+      "volume": 0.5664584277938288,
+      "triangles": 198
+    },
+    {
+      "name": "Chest Corner Upright 1 1",
+      "changed": false,
+      "closed": true,
+      "connected": true,
+      "euler": 2,
+      "volume": 0.3504409152985171,
+      "triangles": 284
+    },
+    {
+      "name": "Chest Angular Boot 1 1",
+      "changed": false,
+      "closed": true,
+      "connected": true,
+      "euler": 2,
+      "volume": 0.5664584535188455,
+      "triangles": 196
+    },
+    {
+      "name": "Chest Central Lock Strap",
+      "changed": false,
+      "closed": true,
+      "connected": true,
+      "euler": 2,
+      "volume": 0.25618386531035003,
+      "triangles": 188
+    },
+    {
+      "name": "Chest Central Lower Cuff",
+      "changed": false,
+      "closed": true,
+      "connected": true,
+      "euler": 2,
+      "volume": 0.0808954149311929,
+      "triangles": 188
+    },
+    {
+      "name": "Chest Crown Fastener Mass 1",
+      "changed": false,
+      "closed": true,
+      "connected": true,
+      "euler": 2,
+      "volume": 0.0026728997503494417,
+      "triangles": 360
+    },
+    {
+      "name": "Chest Crown Fastener Mass 2",
+      "changed": false,
+      "closed": true,
+      "connected": true,
+      "euler": 2,
+      "volume": 0.0026729012476391736,
+      "triangles": 360
+    },
+    {
+      "name": "Chest Crown Fastener Mass 3",
+      "changed": false,
+      "closed": true,
+      "connected": true,
+      "euler": 2,
+      "volume": 0.002672900514333999,
+      "triangles": 360
+    },
+    {
+      "name": "Chest Crown Fastener Mass 4",
+      "changed": false,
+      "closed": true,
+      "connected": true,
+      "euler": 2,
+      "volume": 0.0026729004203908274,
+      "triangles": 360
+    },
+    {
+      "name": "Chest Hasp Mount",
+      "changed": false,
+      "closed": true,
+      "connected": true,
+      "euler": 2,
+      "volume": 0.1036789366628731,
+      "triangles": 444
+    },
+    {
+      "name": "Chest Front Hasp Barrel",
+      "changed": false,
+      "closed": true,
+      "connected": true,
+      "euler": 0,
+      "volume": 0.03130008972970343,
+      "triangles": 1024
+    },
+    {
+      "name": "Chest Shield Lock Plate With Bore",
+      "changed": false,
+      "closed": true,
+      "connected": true,
+      "euler": 0,
+      "volume": 0.02323889065425681,
+      "triangles": 1680
+    },
+    {
+      "name": "Chest Curved Hasp Tongue",
+      "changed": false,
+      "closed": true,
+      "connected": true,
+      "euler": 0,
+      "volume": 0.0404340916188892,
+      "triangles": 3592
+    },
+    {
+      "name": "Chest Handle Mount -1",
+      "changed": false,
+      "closed": true,
+      "connected": true,
+      "euler": 2,
+      "volume": 0.26683809327995445,
+      "triangles": 188
+    },
+    {
+      "name": "Chest Solid Ring Handle -1",
+      "changed": false,
+      "closed": true,
+      "connected": true,
+      "euler": 0,
+      "volume": 0.1485191465460257,
+      "triangles": 16384
+    },
+    {
+      "name": "Chest Handle Mount 1",
+      "changed": false,
+      "closed": true,
+      "connected": true,
+      "euler": 2,
+      "volume": 0.2668380956591889,
+      "triangles": 188
+    },
+    {
+      "name": "Chest Solid Ring Handle 1",
+      "changed": false,
+      "closed": true,
+      "connected": true,
+      "euler": 0,
+      "volume": 0.1485191705492375,
+      "triangles": 16384
+    },
+    {
+      "name": "Chest Rear Hinge Lower -1",
+      "changed": true,
+      "closed": true,
+      "connected": true,
+      "euler": -4,
+      "volume": 0.03781184125694775,
+      "triangles": 4136
+    },
+    {
+      "name": "Chest Rear Hinge Upper -1",
+      "changed": true,
+      "closed": true,
+      "connected": true,
+      "euler": -2,
+      "volume": 0.03554907509546974,
+      "triangles": 2936
+    },
+    {
+      "name": "Chest Rear Hinge Barrel -1",
+      "changed": true,
+      "closed": true,
+      "connected": true,
+      "euler": 2,
+      "volume": 0.006521408076419428,
+      "triangles": 1276
+    },
+    {
+      "name": "Chest Rear Hinge Lower 1",
+      "changed": true,
+      "closed": true,
+      "connected": true,
+      "euler": -4,
+      "volume": 0.03781183379767678,
+      "triangles": 4134
+    },
+    {
+      "name": "Chest Rear Hinge Upper 1",
+      "changed": true,
+      "closed": true,
+      "connected": true,
+      "euler": -2,
+      "volume": 0.035549067321686646,
+      "triangles": 2922
+    },
+    {
+      "name": "Chest Rear Hinge Barrel 1",
+      "changed": true,
+      "closed": true,
+      "connected": true,
+      "euler": 2,
+      "volume": 0.00652140753028331,
+      "triangles": 1276
+    },
+    {
+      "name": "Chest Lock Backing With Bore",
+      "changed": false,
+      "closed": true,
+      "connected": true,
+      "euler": 0,
+      "volume": 0.08153286375265918,
+      "triangles": 2116
+    },
+    {
+      "name": "Chest Lock Border With Bore",
+      "changed": false,
+      "closed": true,
+      "connected": true,
+      "euler": 0,
+      "volume": 0.01802130028169065,
+      "triangles": 472
+    },
+    {
+      "name": "Chest Hoop Rivet 0 0",
+      "changed": false,
+      "closed": true,
+      "connected": true,
+      "euler": 2,
+      "volume": 0.0019202287907063378,
+      "triangles": 574
+    },
+    {
+      "name": "Chest Hoop Rivet 0 1",
+      "changed": false,
+      "closed": true,
+      "connected": true,
+      "euler": 2,
+      "volume": 0.0019202301303700164,
+      "triangles": 574
+    },
+    {
+      "name": "Chest Hoop Rivet 1 0",
+      "changed": false,
+      "closed": true,
+      "connected": true,
+      "euler": 2,
+      "volume": 0.0019202293840919725,
+      "triangles": 574
+    },
+    {
+      "name": "Chest Hoop Rivet 1 1",
+      "changed": false,
+      "closed": true,
+      "connected": true,
+      "euler": 2,
+      "volume": 0.001920230929453205,
+      "triangles": 574
+    },
+    {
+      "name": "Chest Hoop Rivet 1 2",
+      "changed": false,
+      "closed": true,
+      "connected": true,
+      "euler": 2,
+      "volume": 0.0019202305205398191,
+      "triangles": 574
+    },
+    {
+      "name": "Chest Hoop Rivet 1 3",
+      "changed": false,
+      "closed": true,
+      "connected": true,
+      "euler": 2,
+      "volume": 0.00192023102399068,
+      "triangles": 574
+    },
+    {
+      "name": "Chest Hoop Rivet 1 4",
+      "changed": false,
+      "closed": true,
+      "connected": true,
+      "euler": 2,
+      "volume": 0.001920231483791772,
+      "triangles": 574
+    },
+    {
+      "name": "Chest Hoop Rivet 1 5",
+      "changed": false,
+      "closed": true,
+      "connected": true,
+      "euler": 2,
+      "volume": 0.0019202307549937593,
+      "triangles": 574
+    },
+    {
+      "name": "Chest Hoop Rivet 2 0",
+      "changed": false,
+      "closed": true,
+      "connected": true,
+      "euler": 2,
+      "volume": 0.001920232028384046,
+      "triangles": 574
+    },
+    {
+      "name": "Chest Hoop Rivet 2 1",
+      "changed": false,
+      "closed": true,
+      "connected": true,
+      "euler": 2,
+      "volume": 0.0019202322256682315,
+      "triangles": 574
+    },
+    {
+      "name": "Chest Hoop Rivet 2 2",
+      "changed": false,
+      "closed": true,
+      "connected": true,
+      "euler": 2,
+      "volume": 0.0019202306701928938,
+      "triangles": 574
+    },
+    {
+      "name": "Chest Hoop Rivet 2 3",
+      "changed": false,
+      "closed": true,
+      "connected": true,
+      "euler": 2,
+      "volume": 0.001920231099153134,
+      "triangles": 574
+    },
+    {
+      "name": "Chest Hoop Rivet 2 4",
+      "changed": false,
+      "closed": true,
+      "connected": true,
+      "euler": 2,
+      "volume": 0.0019202311810330903,
+      "triangles": 574
+    },
+    {
+      "name": "Chest Hoop Rivet 2 5",
+      "changed": false,
+      "closed": true,
+      "connected": true,
+      "euler": 2,
+      "volume": 0.0019202302277990374,
+      "triangles": 574
+    },
+    {
+      "name": "Chest Hoop Rivet 3 0",
+      "changed": false,
+      "closed": true,
+      "connected": true,
+      "euler": 2,
+      "volume": 0.001920229544808157,
+      "triangles": 574
+    },
+    {
+      "name": "Chest Hoop Rivet 3 1",
+      "changed": false,
+      "closed": true,
+      "connected": true,
+      "euler": 2,
+      "volume": 0.0019202295351939992,
+      "triangles": 574
+    },
+    {
+      "name": "Chest Upper Corner Front Rivet -1 -1",
+      "changed": false,
+      "closed": true,
+      "connected": true,
+      "euler": 2,
+      "volume": 0.0026953307684120693,
+      "triangles": 574
+    },
+    {
+      "name": "Chest Upper Corner End Rivet -1 -1",
+      "changed": false,
+      "closed": true,
+      "connected": true,
+      "euler": 2,
+      "volume": 0.0020379920822052263,
+      "triangles": 574
+    },
+    {
+      "name": "Chest Boot Front Rivet -1 -1",
+      "changed": false,
+      "closed": true,
+      "connected": true,
+      "euler": 2,
+      "volume": 0.0034799260656331807,
+      "triangles": 574
+    },
+    {
+      "name": "Chest Boot End Rivet -1 -1",
+      "changed": false,
+      "closed": true,
+      "connected": true,
+      "euler": 2,
+      "volume": 0.002695335002927348,
+      "triangles": 574
+    },
+    {
+      "name": "Chest Upper Corner Front Rivet -1 1",
+      "changed": false,
+      "closed": true,
+      "connected": true,
+      "euler": 2,
+      "volume": 0.0026953324783950358,
+      "triangles": 574
+    },
+    {
+      "name": "Chest Upper Corner End Rivet -1 1",
+      "changed": false,
+      "closed": true,
+      "connected": true,
+      "euler": 2,
+      "volume": 0.002037991091250672,
+      "triangles": 574
+    },
+    {
+      "name": "Chest Boot Front Rivet -1 1",
+      "changed": false,
+      "closed": true,
+      "connected": true,
+      "euler": 2,
+      "volume": 0.0034799281136851886,
+      "triangles": 574
+    },
+    {
+      "name": "Chest Boot End Rivet -1 1",
+      "changed": false,
+      "closed": true,
+      "connected": true,
+      "euler": 2,
+      "volume": 0.0026953346491083463,
+      "triangles": 574
+    },
+    {
+      "name": "Chest Upper Corner Front Rivet 1 -1",
+      "changed": false,
+      "closed": true,
+      "connected": true,
+      "euler": 2,
+      "volume": 0.002695331294135378,
+      "triangles": 574
+    },
+    {
+      "name": "Chest Upper Corner End Rivet 1 -1",
+      "changed": false,
+      "closed": true,
+      "connected": true,
+      "euler": 2,
+      "volume": 0.0020379911358986147,
+      "triangles": 574
+    },
+    {
+      "name": "Chest Boot Front Rivet 1 -1",
+      "changed": false,
+      "closed": true,
+      "connected": true,
+      "euler": 2,
+      "volume": 0.003479927127067415,
+      "triangles": 574
+    },
+    {
+      "name": "Chest Boot End Rivet 1 -1",
+      "changed": false,
+      "closed": true,
+      "connected": true,
+      "euler": 2,
+      "volume": 0.002695334479702304,
+      "triangles": 574
+    },
+    {
+      "name": "Chest Upper Corner Front Rivet 1 1",
+      "changed": false,
+      "closed": true,
+      "connected": true,
+      "euler": 2,
+      "volume": 0.0026953296509652017,
+      "triangles": 574
+    },
+    {
+      "name": "Chest Upper Corner End Rivet 1 1",
+      "changed": false,
+      "closed": true,
+      "connected": true,
+      "euler": 2,
+      "volume": 0.0020379921834285477,
+      "triangles": 574
+    },
+    {
+      "name": "Chest Boot Front Rivet 1 1",
+      "changed": false,
+      "closed": true,
+      "connected": true,
+      "euler": 2,
+      "volume": 0.003479926737879571,
+      "triangles": 574
+    },
+    {
+      "name": "Chest Boot End Rivet 1 1",
+      "changed": false,
+      "closed": true,
+      "connected": true,
+      "euler": 2,
+      "volume": 0.0026953350008584592,
+      "triangles": 574
+    },
+    {
+      "name": "Chest Body Lip Rivet -1 0",
+      "changed": false,
+      "closed": true,
+      "connected": true,
+      "euler": 2,
+      "volume": 6.969617838288372e-05,
+      "triangles": 574
+    },
+    {
+      "name": "Chest Body Lip Rivet -1 1",
+      "changed": false,
+      "closed": true,
+      "connected": true,
+      "euler": 2,
+      "volume": 6.969647565176092e-05,
+      "triangles": 574
+    },
+    {
+      "name": "Chest Body Lip Rivet 1 0",
+      "changed": false,
+      "closed": true,
+      "connected": true,
+      "euler": 2,
+      "volume": 6.969635683347931e-05,
+      "triangles": 574
+    },
+    {
+      "name": "Chest Body Lip Rivet 1 1",
+      "changed": false,
+      "closed": true,
+      "connected": true,
+      "euler": 2,
+      "volume": 6.969611108206082e-05,
+      "triangles": 574
+    },
+    {
+      "name": "Chest Handle Mount Rivet -1 -1",
+      "changed": false,
+      "closed": true,
+      "connected": true,
+      "euler": 2,
+      "volume": 0.0006074188721641947,
+      "triangles": 574
+    },
+    {
+      "name": "Chest Handle Mount Rivet -1 1",
+      "changed": false,
+      "closed": true,
+      "connected": true,
+      "euler": 2,
+      "volume": 0.0006074187415821124,
+      "triangles": 574
+    },
+    {
+      "name": "Chest Handle Mount Rivet 1 -1",
+      "changed": false,
+      "closed": true,
+      "connected": true,
+      "euler": 2,
+      "volume": 0.0006074189383947163,
+      "triangles": 574
+    },
+    {
+      "name": "Chest Handle Mount Rivet 1 1",
+      "changed": false,
+      "closed": true,
+      "connected": true,
+      "euler": 2,
+      "volume": 0.0006074188767478972,
+      "triangles": 574
+    },
+    {
+      "name": "Chest Lock Rivet 0",
+      "changed": false,
+      "closed": true,
+      "connected": true,
+      "euler": 2,
+      "volume": 0.001699118180107698,
+      "triangles": 574
+    },
+    {
+      "name": "Chest Lock Rivet 1",
+      "changed": false,
+      "closed": true,
+      "connected": true,
+      "euler": 2,
+      "volume": 0.001699118051008389,
+      "triangles": 574
+    },
+    {
+      "name": "Chest Lock Rivet 2",
+      "changed": false,
+      "closed": true,
+      "connected": true,
+      "euler": 2,
+      "volume": 0.00036563836484673995,
+      "triangles": 574
+    },
+    {
+      "name": "Chest Lock Rivet 3",
+      "changed": false,
+      "closed": true,
+      "connected": true,
+      "euler": 2,
+      "volume": 0.0003656385305691884,
+      "triangles": 574
+    },
+    {
+      "name": "Chest Lock Rivet 4",
+      "changed": false,
+      "closed": true,
+      "connected": true,
+      "euler": 2,
+      "volume": 0.0003656383467268174,
+      "triangles": 574
+    },
+    {
+      "name": "Chest Lock Rivet 5",
+      "changed": false,
+      "closed": true,
+      "connected": true,
+      "euler": 2,
+      "volume": 0.0003656385124491338,
+      "triangles": 574
+    },
+    {
+      "name": "Chest Lock Rivet 6",
+      "changed": false,
+      "closed": true,
+      "connected": true,
+      "euler": 2,
+      "volume": 0.00036563870063616454,
+      "triangles": 574
+    },
+    {
+      "name": "Chest Lower Strap Rivet",
+      "changed": false,
+      "closed": true,
+      "connected": true,
+      "euler": 2,
+      "volume": 0.0016991166446194948,
+      "triangles": 574
+    },
+    {
+      "name": "Chest Upright Diamond -1 -1",
+      "changed": false,
+      "closed": true,
+      "connected": true,
+      "euler": 2,
+      "volume": 0.0016449392357314229,
+      "triangles": 148
+    },
+    {
+      "name": "Chest Upright Diamond -1 1",
+      "changed": false,
+      "closed": true,
+      "connected": true,
+      "euler": 2,
+      "volume": 0.0016449376456389303,
+      "triangles": 148
+    },
+    {
+      "name": "Chest Upright Diamond 1 -1",
+      "changed": false,
+      "closed": true,
+      "connected": true,
+      "euler": 2,
+      "volume": 0.0016449377197692552,
+      "triangles": 148
+    },
+    {
+      "name": "Chest Upright Diamond 1 1",
+      "changed": false,
+      "closed": true,
+      "connected": true,
+      "euler": 2,
+      "volume": 0.0016449391342384112,
+      "triangles": 148
+    },
+    {
+      "name": "Chest End Arch Rivet -1 0",
+      "changed": false,
+      "closed": true,
+      "connected": true,
+      "euler": 2,
+      "volume": 0.0013261346501552244,
+      "triangles": 574
+    },
+    {
+      "name": "Chest End Arch Rivet -1 1",
+      "changed": false,
+      "closed": true,
+      "connected": true,
+      "euler": 2,
+      "volume": 0.0013261350236894222,
+      "triangles": 574
+    },
+    {
+      "name": "Chest Corner Body Cuff Front Rivet -1 -1",
+      "changed": false,
+      "closed": true,
+      "connected": true,
+      "euler": 2,
+      "volume": 9.305741589040282e-05,
+      "triangles": 574
+    },
+    {
+      "name": "Chest Corner Body Cuff End Rivet -1 -1",
+      "changed": false,
+      "closed": true,
+      "connected": true,
+      "euler": 2,
+      "volume": 9.305852800227561e-05,
+      "triangles": 574
+    },
+    {
+      "name": "Chest Corner Body Cuff Front Rivet -1 1",
+      "changed": false,
+      "closed": true,
+      "connected": true,
+      "euler": 2,
+      "volume": 9.30571214393016e-05,
+      "triangles": 574
+    },
+    {
+      "name": "Chest Corner Body Cuff End Rivet -1 1",
+      "changed": false,
+      "closed": true,
+      "connected": true,
+      "euler": 2,
+      "volume": 9.305877772556627e-05,
+      "triangles": 574
+    },
+    {
+      "name": "Chest End Arch Rivet 1 0",
+      "changed": false,
+      "closed": true,
+      "connected": true,
+      "euler": 2,
+      "volume": 0.001326135024420481,
+      "triangles": 574
+    },
+    {
+      "name": "Chest End Arch Rivet 1 1",
+      "changed": false,
+      "closed": true,
+      "connected": true,
+      "euler": 2,
+      "volume": 0.0013261346464696333,
+      "triangles": 574
+    },
+    {
+      "name": "Chest Corner Body Cuff Front Rivet 1 -1",
+      "changed": false,
+      "closed": true,
+      "connected": true,
+      "euler": 2,
+      "volume": 9.305711850580338e-05,
+      "triangles": 574
+    },
+    {
+      "name": "Chest Corner Body Cuff End Rivet 1 -1",
+      "changed": false,
+      "closed": true,
+      "connected": true,
+      "euler": 2,
+      "volume": 9.305879803220053e-05,
+      "triangles": 574
+    },
+    {
+      "name": "Chest Corner Body Cuff Front Rivet 1 1",
+      "changed": false,
+      "closed": true,
+      "connected": true,
+      "euler": 2,
+      "volume": 9.305736328939608e-05,
+      "triangles": 574
+    },
+    {
+      "name": "Chest Corner Body Cuff End Rivet 1 1",
+      "changed": false,
+      "closed": true,
+      "connected": true,
+      "euler": 2,
+      "volume": 9.305851901864146e-05,
+      "triangles": 574
+    },
+    {
+      "name": "Chest Hasp Pivot Dome -1",
+      "changed": false,
+      "closed": true,
+      "connected": true,
+      "euler": 2,
+      "volume": 0.0002116794349091088,
+      "triangles": 574
+    },
+    {
+      "name": "Chest Hasp Mount Fastener -1",
+      "changed": false,
+      "closed": true,
+      "connected": true,
+      "euler": 2,
+      "volume": 0.0007330847677810565,
+      "triangles": 574
+    },
+    {
+      "name": "Chest End Arch Crown Tab -1",
+      "changed": false,
+      "closed": true,
+      "connected": true,
+      "euler": 2,
+      "volume": 0.012146539743565296,
+      "triangles": 2210
+    },
+    {
+      "name": "Chest End Crown Fastener -1",
+      "changed": false,
+      "closed": true,
+      "connected": true,
+      "euler": 2,
+      "volume": 0.0009679591198088743,
+      "triangles": 574
+    },
+    {
+      "name": "Chest Hasp Pivot Dome 1",
+      "changed": false,
+      "closed": true,
+      "connected": true,
+      "euler": 2,
+      "volume": 0.00021167970248203152,
+      "triangles": 574
+    },
+    {
+      "name": "Chest Hasp Mount Fastener 1",
+      "changed": false,
+      "closed": true,
+      "connected": true,
+      "euler": 2,
+      "volume": 0.0007330842800930849,
+      "triangles": 574
+    },
+    {
+      "name": "Chest End Arch Crown Tab 1",
+      "changed": false,
+      "closed": true,
+      "connected": true,
+      "euler": 2,
+      "volume": 0.012146489063972865,
+      "triangles": 2210
+    },
+    {
+      "name": "Chest End Crown Fastener 1",
+      "changed": false,
+      "closed": true,
+      "connected": true,
+      "euler": 2,
+      "volume": 0.0009679593953252387,
+      "triangles": 574
+    },
+    {
+      "name": "Chest Upper Corner Front Rivet -1 -1 Seat",
+      "changed": false,
+      "closed": true,
+      "connected": true,
+      "euler": 2,
+      "volume": 0.0006902704907398917,
+      "triangles": 636
+    },
+    {
+      "name": "Chest Upper Corner End Rivet -1 -1 Seat",
+      "changed": false,
+      "closed": true,
+      "connected": true,
+      "euler": 2,
+      "volume": 0.0005649148219865475,
+      "triangles": 636
+    },
+    {
+      "name": "Chest Boot Front Rivet -1 -1 Seat",
+      "changed": false,
+      "closed": true,
+      "connected": true,
+      "euler": 2,
+      "volume": 0.0007267099015790912,
+      "triangles": 636
+    },
+    {
+      "name": "Chest Boot End Rivet -1 -1 Seat",
+      "changed": false,
+      "closed": true,
+      "connected": true,
+      "euler": 2,
+      "volume": 0.0006056881206661606,
+      "triangles": 636
+    },
+    {
+      "name": "Chest Upper Corner Front Rivet -1 1 Seat",
+      "changed": false,
+      "closed": true,
+      "connected": true,
+      "euler": 2,
+      "volume": 0.0006902681350320665,
+      "triangles": 636
+    },
+    {
+      "name": "Chest Upper Corner End Rivet -1 1 Seat",
+      "changed": false,
+      "closed": true,
+      "connected": true,
+      "euler": 2,
+      "volume": 0.0005649188008082242,
+      "triangles": 636
+    },
+    {
+      "name": "Chest Boot Front Rivet -1 1 Seat",
+      "changed": false,
+      "closed": true,
+      "connected": true,
+      "euler": 2,
+      "volume": 0.0007267179291191765,
+      "triangles": 636
+    },
+    {
+      "name": "Chest Boot End Rivet -1 1 Seat",
+      "changed": false,
+      "closed": true,
+      "connected": true,
+      "euler": 2,
+      "volume": 0.0006056898531302724,
+      "triangles": 636
+    },
+    {
+      "name": "Chest Upper Corner Front Rivet 1 -1 Seat",
+      "changed": false,
+      "closed": true,
+      "connected": true,
+      "euler": 2,
+      "volume": 0.0006902711696293839,
+      "triangles": 636
+    },
+    {
+      "name": "Chest Upper Corner End Rivet 1 -1 Seat",
+      "changed": false,
+      "closed": true,
+      "connected": true,
+      "euler": 2,
+      "volume": 0.0005649188008082242,
+      "triangles": 636
+    },
+    {
+      "name": "Chest Boot Front Rivet 1 -1 Seat",
+      "changed": false,
+      "closed": true,
+      "connected": true,
+      "euler": 2,
+      "volume": 0.0007267127928818703,
+      "triangles": 636
+    },
+    {
+      "name": "Chest Boot End Rivet 1 -1 Seat",
+      "changed": false,
+      "closed": true,
+      "connected": true,
+      "euler": 2,
+      "volume": 0.0006056898531302724,
+      "triangles": 636
+    },
+    {
+      "name": "Chest Upper Corner Front Rivet 1 1 Seat",
+      "changed": false,
+      "closed": true,
+      "connected": true,
+      "euler": 2,
+      "volume": 0.0006902684277125754,
+      "triangles": 636
+    },
+    {
+      "name": "Chest Upper Corner End Rivet 1 1 Seat",
+      "changed": false,
+      "closed": true,
+      "connected": true,
+      "euler": 2,
+      "volume": 0.0005649148219865475,
+      "triangles": 636
+    },
+    {
+      "name": "Chest Boot Front Rivet 1 1 Seat",
+      "changed": false,
+      "closed": true,
+      "connected": true,
+      "euler": 2,
+      "volume": 0.0007267129406104516,
+      "triangles": 636
+    },
+    {
+      "name": "Chest Boot End Rivet 1 1 Seat",
+      "changed": false,
+      "closed": true,
+      "connected": true,
+      "euler": 2,
+      "volume": 0.0006056881206661606,
+      "triangles": 636
+    },
+    {
+      "name": "Chest Rail Rivet -1 0",
+      "changed": false,
+      "closed": true,
+      "connected": true,
+      "euler": 2,
+      "volume": 0.0007066960603210355,
+      "triangles": 574
+    },
+    {
+      "name": "Chest Rail Rivet -1 1",
+      "changed": false,
+      "closed": true,
+      "connected": true,
+      "euler": 2,
+      "volume": 0.0007066947530489273,
+      "triangles": 574
+    },
+    {
+      "name": "Chest Rail Rivet -1 3",
+      "changed": false,
+      "closed": true,
+      "connected": true,
+      "euler": 2,
+      "volume": 0.0007066964964398681,
+      "triangles": 574
+    },
+    {
+      "name": "Chest Rail Rivet -1 4",
+      "changed": false,
+      "closed": true,
+      "connected": true,
+      "euler": 2,
+      "volume": 0.000706695153846256,
+      "triangles": 574
+    },
+    {
+      "name": "Chest Rail Rivet 1 0",
+      "changed": false,
+      "closed": true,
+      "connected": true,
+      "euler": 2,
+      "volume": 0.000706695284723543,
+      "triangles": 574
+    },
+    {
+      "name": "Chest Rail Rivet 1 1",
+      "changed": false,
+      "closed": true,
+      "connected": true,
+      "euler": 2,
+      "volume": 0.000706696150935253,
+      "triangles": 574
+    },
+    {
+      "name": "Chest Rail Rivet 1 2",
+      "changed": false,
+      "closed": true,
+      "connected": true,
+      "euler": 2,
+      "volume": 0.0001656726260663632,
+      "triangles": 574
+    },
+    {
+      "name": "Chest Rail Rivet 1 3",
+      "changed": false,
+      "closed": true,
+      "connected": true,
+      "euler": 2,
+      "volume": 0.000706697236172687,
+      "triangles": 574
+    },
+    {
+      "name": "Chest Rail Rivet 1 4",
+      "changed": false,
+      "closed": true,
+      "connected": true,
+      "euler": 2,
+      "volume": 0.0007066962259966945,
+      "triangles": 574
+    },
+    {
+      "name": "Chest End Rail Rivet -1 0",
+      "changed": false,
+      "closed": true,
+      "connected": true,
+      "euler": 2,
+      "volume": 0.0007066988252476548,
+      "triangles": 574
+    },
+    {
+      "name": "Chest End Rail Rivet -1 1",
+      "changed": false,
+      "closed": true,
+      "connected": true,
+      "euler": 2,
+      "volume": 0.0007066995579394752,
+      "triangles": 574
+    },
+    {
+      "name": "Chest End Rail Rivet 1 0",
+      "changed": false,
+      "closed": true,
+      "connected": true,
+      "euler": 2,
+      "volume": 0.0007067010884079598,
+      "triangles": 574
+    },
+    {
+      "name": "Chest End Rail Rivet 1 1",
+      "changed": false,
+      "closed": true,
+      "connected": true,
+      "euler": 2,
+      "volume": 0.0007067018197217263,
+      "triangles": 574
+    },
+    {
+      "name": "Chest Measured Rolled Handle Cover -1",
+      "changed": false,
+      "closed": true,
+      "connected": true,
+      "euler": 0,
+      "volume": 0.04900433424605174,
+      "triangles": 3860
+    },
+    {
+      "name": "Chest Measured Rolled Handle Cover 1",
+      "changed": false,
+      "closed": true,
+      "connected": true,
+      "euler": 0,
+      "volume": 0.04900435676915721,
+      "triangles": 3860
+    },
+    {
+      "name": "Chest Fixed Front Hinge Knuckle -1",
+      "changed": false,
+      "closed": true,
+      "connected": true,
+      "euler": 0,
+      "volume": 0.00883082449960413,
+      "triangles": 2048
+    },
+    {
+      "name": "Chest Fixed Front Hinge Knuckle 1",
+      "changed": false,
+      "closed": true,
+      "connected": true,
+      "euler": 0,
+      "volume": 0.008830824699057141,
+      "triangles": 2048
+    },
+    {
+      "name": "Chest Front Hinge Pin",
+      "changed": false,
+      "closed": true,
+      "connected": true,
+      "euler": 2,
+      "volume": 0.015250923111333017,
+      "triangles": 1020
+    },
+    {
+      "name": "Chest Case Back With Key Bore",
+      "changed": false,
+      "closed": true,
+      "connected": true,
+      "euler": 0,
+      "volume": 0.07503111244484752,
+      "triangles": 2420
+    },
+    {
+      "name": "Chest Hollow Lock Case Walls",
+      "changed": false,
+      "closed": true,
+      "connected": true,
+      "euler": -4,
+      "volume": 0.10109581716861675,
+      "triangles": 2376
+    },
+    {
+      "name": "Chest Key Driven Slider",
+      "changed": false,
+      "closed": true,
+      "connected": true,
+      "euler": 0,
+      "volume": 0.0030154765315190545,
+      "triangles": 2224
+    },
+    {
+      "name": "Chest Compliant Catch Leaf",
+      "changed": false,
+      "closed": true,
+      "connected": true,
+      "euler": 2,
+      "volume": 1.4801191411437659e-05,
+      "triangles": 1436
+    },
+    {
+      "name": "Chest Fixed Leaf Clamp",
+      "changed": false,
+      "closed": true,
+      "connected": true,
+      "euler": 2,
+      "volume": 1.791677340917154e-05,
+      "triangles": 188
+    },
+    {
+      "name": "Chest Small Front Rail Rivet -1",
+      "changed": false,
+      "closed": true,
+      "connected": true,
+      "euler": 2,
+      "volume": 0.00016567269988006835,
+      "triangles": 574
+    },
+    {
+      "name": "Chest Rear Hinge Lower Rivet -1 0",
+      "changed": true,
+      "closed": true,
+      "connected": true,
+      "euler": 2,
+      "volume": 6.465271400713478e-05,
+      "triangles": 638
+    },
+    {
+      "name": "Chest Rear Hinge Lower Rivet -1 1",
+      "changed": true,
+      "closed": true,
+      "connected": true,
+      "euler": 2,
+      "volume": 6.465265628081193e-05,
+      "triangles": 638
+    },
+    {
+      "name": "Chest Rear Hinge Upper Rivet -1 0",
+      "changed": true,
+      "closed": true,
+      "connected": true,
+      "euler": 2,
+      "volume": 6.465271810116053e-05,
+      "triangles": 638
+    },
+    {
+      "name": "Chest Rear Hinge Upper Rivet -1 1",
+      "changed": true,
+      "closed": true,
+      "connected": true,
+      "euler": 2,
+      "volume": 6.465266037489203e-05,
+      "triangles": 638
+    },
+    {
+      "name": "Chest Rear Hinge Lower Rivet 1 0",
+      "changed": true,
+      "closed": true,
+      "connected": true,
+      "euler": 2,
+      "volume": 6.465268418680079e-05,
+      "triangles": 638
+    },
+    {
+      "name": "Chest Rear Hinge Lower Rivet 1 1",
+      "changed": true,
+      "closed": true,
+      "connected": true,
+      "euler": 2,
+      "volume": 6.465270152459519e-05,
+      "triangles": 638
+    },
+    {
+      "name": "Chest Rear Hinge Upper Rivet 1 0",
+      "changed": true,
+      "closed": true,
+      "connected": true,
+      "euler": 2,
+      "volume": 6.465268828083406e-05,
+      "triangles": 638
+    },
+    {
+      "name": "Chest Rear Hinge Upper Rivet 1 1",
+      "changed": true,
+      "closed": true,
+      "connected": true,
+      "euler": 2,
+      "volume": 6.465270561859954e-05,
+      "triangles": 638
+    }
+  ],
+  "rigged": true,
+  "head_rows_centered": true
+}

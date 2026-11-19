@@ -1,0 +1,13 @@
+{
+  "profile": 18,
+  "material": "CrestGem_SapphireClear",
+  "geometry": "Candidate07 real rear pavilion and front six point table, replacing candidate06 mirrored rear table",
+  "uniform_optics_only": true,
+  "absorption": [
+    8,
+    4.350359687795594,
+    0.2
+  ],
+  "soft_tent_gain": 1.45768306077441,
+  "native_acceptance_pending": true
+}

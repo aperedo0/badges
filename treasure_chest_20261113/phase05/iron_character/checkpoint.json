@@ -1,0 +1,808 @@
+{
+  "file": "/Users/antonioperedo/Desktop/badges/treasure_chest_20261113/phase05/iron_fidelity/P_iron_knobs/master.blend",
+  "baseline": "/Users/antonioperedo/Desktop/badges/treasure_chest_20261113/phase05/iron_character/baseline.blend",
+  "sha256": "7b2ea6b68854d7eedb3e40f7c6b66340177d5776ccf506e89828f0039f4d5292",
+  "iron_geometry": "4cd5156201724d2da3020f6c70faf82ed545813aa9163a11382a46ca6a0fadfc",
+  "iron_mesh": "Locally forged lower rim.002",
+  "wood_geometry": "6c52635229763ca44c5b7cf1b842746e0c435463f3925b296fb97f50af05ea80",
+  "material": "Forged iron with dark surface scale",
+  "vertices": 394816,
+  "polygons": 394816,
+  "nodes": [
+    {
+      "name": "Material Output",
+      "type": "ShaderNodeOutputMaterial",
+      "image": null,
+      "inputs": {
+        "Displacement": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "Thickness": 0.0
+      }
+    },
+    {
+      "name": "Blackened conductive iron",
+      "type": "ShaderNodeBsdfPrincipled",
+      "image": null,
+      "inputs": {
+        "Base Color": [
+          0.18000000715255737,
+          0.16500000655651093,
+          0.15000000596046448,
+          1.0
+        ],
+        "Metallic": 1.0,
+        "Roughness": 0.46000000834465027,
+        "IOR": 1.5,
+        "Alpha": 1.0,
+        "Thin Wall": false,
+        "Normal": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "Weight": 0.0,
+        "Diffuse Roughness": 0.0,
+        "Subsurface Weight": 0.0,
+        "Subsurface Radius": [
+          1.0,
+          0.20000000298023224,
+          0.10000000149011612
+        ],
+        "Subsurface Scale": 0.004999999888241291,
+        "Subsurface IOR": 1.399999976158142,
+        "Subsurface Anisotropy": 0.0,
+        "Specular IOR Level": 0.5,
+        "Specular Tint": [
+          1.0,
+          1.0,
+          1.0,
+          1.0
+        ],
+        "Anisotropic": 0.0,
+        "Anisotropic Rotation": 0.0,
+        "Tangent": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "Transmission Weight": 0.0,
+        "Coat Weight": 0.0,
+        "Coat Roughness": 0.029999999329447746,
+        "Coat IOR": 1.5,
+        "Coat Tint": [
+          1.0,
+          1.0,
+          1.0,
+          1.0
+        ],
+        "Coat Normal": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "Sheen Weight": 0.0,
+        "Sheen Roughness": 0.5,
+        "Sheen Tint": [
+          1.0,
+          1.0,
+          1.0,
+          1.0
+        ],
+        "Emission Color": [
+          1.0,
+          1.0,
+          1.0,
+          1.0
+        ],
+        "Emission Strength": 0.0,
+        "Thin Film Thickness": 0.0,
+        "Thin Film IOR": 1.3300000429153442
+      }
+    },
+    {
+      "name": "UV Map",
+      "type": "ShaderNodeUVMap",
+      "image": null,
+      "inputs": {}
+    },
+    {
+      "name": "UV Map.001",
+      "type": "ShaderNodeUVMap",
+      "image": null,
+      "inputs": {}
+    },
+    {
+      "name": "Image Texture",
+      "type": "ShaderNodeTexImage",
+      "image": "albedo.png.007",
+      "inputs": {
+        "Vector": [
+          0.0,
+          0.0,
+          0.0
+        ]
+      }
+    },
+    {
+      "name": "Image Texture.001",
+      "type": "ShaderNodeTexImage",
+      "image": "roughness.png.007",
+      "inputs": {
+        "Vector": [
+          0.0,
+          0.0,
+          0.0
+        ]
+      }
+    },
+    {
+      "name": "Image Texture.002",
+      "type": "ShaderNodeTexImage",
+      "image": "metallic.png.001",
+      "inputs": {
+        "Vector": [
+          0.0,
+          0.0,
+          0.0
+        ]
+      }
+    },
+    {
+      "name": "Image Texture.003",
+      "type": "ShaderNodeTexImage",
+      "image": "height16.png.001",
+      "inputs": {
+        "Vector": [
+          0.0,
+          0.0,
+          0.0
+        ]
+      }
+    },
+    {
+      "name": "Calibrated forging height",
+      "type": "ShaderNodeBump",
+      "image": null,
+      "inputs": {
+        "Strength": 1.0,
+        "Distance": 0.01600000075995922,
+        "Filter Width": 0.10000000149011612,
+        "Height": 1.0,
+        "Normal": [
+          0.0,
+          0.0,
+          0.0
+        ]
+      }
+    },
+    {
+      "name": "Exposed iron Filament diagnostic reflectance",
+      "type": "ShaderNodeBsdfPrincipled",
+      "image": null,
+      "inputs": {
+        "Base Color": [
+          0.5520114302635193,
+          0.5647115111351013,
+          0.5647115111351013,
+          1.0
+        ],
+        "Metallic": 1.0,
+        "Roughness": 0.3199999928474426,
+        "IOR": 1.5,
+        "Alpha": 1.0,
+        "Thin Wall": false,
+        "Normal": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "Weight": 0.0,
+        "Diffuse Roughness": 0.0,
+        "Subsurface Weight": 0.0,
+        "Subsurface Radius": [
+          1.0,
+          0.20000000298023224,
+          0.10000000149011612
+        ],
+        "Subsurface Scale": 0.004999999888241291,
+        "Subsurface IOR": 1.399999976158142,
+        "Subsurface Anisotropy": 0.0,
+        "Specular IOR Level": 0.5,
+        "Specular Tint": [
+          1.0,
+          1.0,
+          1.0,
+          1.0
+        ],
+        "Anisotropic": 0.0,
+        "Anisotropic Rotation": 0.0,
+        "Tangent": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "Transmission Weight": 0.0,
+        "Coat Weight": 0.0,
+        "Coat Roughness": 0.029999999329447746,
+        "Coat IOR": 1.5,
+        "Coat Tint": [
+          1.0,
+          1.0,
+          1.0,
+          1.0
+        ],
+        "Coat Normal": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "Sheen Weight": 0.0,
+        "Sheen Roughness": 0.5,
+        "Sheen Tint": [
+          1.0,
+          1.0,
+          1.0,
+          1.0
+        ],
+        "Emission Color": [
+          1.0,
+          1.0,
+          1.0,
+          1.0
+        ],
+        "Emission Strength": 0.0,
+        "Thin Film Thickness": 0.0,
+        "Thin Film IOR": 1.3300000429153442
+      }
+    },
+    {
+      "name": "Opaque dark oxide and forge scale",
+      "type": "ShaderNodeBsdfPrincipled",
+      "image": null,
+      "inputs": {
+        "Base Color": [
+          0.012000000104308128,
+          0.008999999612569809,
+          0.006000000052154064,
+          1.0
+        ],
+        "Metallic": 0.0,
+        "Roughness": 0.6800000071525574,
+        "IOR": 1.5,
+        "Alpha": 1.0,
+        "Thin Wall": false,
+        "Normal": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "Weight": 0.0,
+        "Diffuse Roughness": 0.0,
+        "Subsurface Weight": 0.0,
+        "Subsurface Radius": [
+          1.0,
+          0.20000000298023224,
+          0.10000000149011612
+        ],
+        "Subsurface Scale": 0.004999999888241291,
+        "Subsurface IOR": 1.399999976158142,
+        "Subsurface Anisotropy": 0.0,
+        "Specular IOR Level": 0.5,
+        "Specular Tint": [
+          1.0,
+          1.0,
+          1.0,
+          1.0
+        ],
+        "Anisotropic": 0.0,
+        "Anisotropic Rotation": 0.0,
+        "Tangent": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "Transmission Weight": 0.0,
+        "Coat Weight": 0.0,
+        "Coat Roughness": 0.029999999329447746,
+        "Coat IOR": 1.5,
+        "Coat Tint": [
+          1.0,
+          1.0,
+          1.0,
+          1.0
+        ],
+        "Coat Normal": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "Sheen Weight": 0.0,
+        "Sheen Roughness": 0.5,
+        "Sheen Tint": [
+          1.0,
+          1.0,
+          1.0,
+          1.0
+        ],
+        "Emission Color": [
+          1.0,
+          1.0,
+          1.0,
+          1.0
+        ],
+        "Emission Strength": 0.0,
+        "Thin Film Thickness": 0.0,
+        "Thin Film IOR": 1.3300000429153442
+      }
+    },
+    {
+      "name": "wear.png",
+      "type": "ShaderNodeTexImage",
+      "image": "wear.png",
+      "inputs": {
+        "Vector": [
+          0.0,
+          0.0,
+          0.0
+        ]
+      }
+    },
+    {
+      "name": "oxide.png",
+      "type": "ShaderNodeTexImage",
+      "image": "oxide.png",
+      "inputs": {
+        "Vector": [
+          0.0,
+          0.0,
+          0.0
+        ]
+      }
+    },
+    {
+      "name": "roughness.png",
+      "type": "ShaderNodeTexImage",
+      "image": "roughness.png.008",
+      "inputs": {
+        "Vector": [
+          0.0,
+          0.0,
+          0.0
+        ]
+      }
+    },
+    {
+      "name": "Map Range",
+      "type": "ShaderNodeMapRange",
+      "image": null,
+      "inputs": {
+        "Value": 1.0,
+        "From Min": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "From Max": [
+          1.0,
+          1.0,
+          1.0
+        ],
+        "To Min": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "To Max": [
+          1.0,
+          1.0,
+          1.0
+        ],
+        "Steps": [
+          4.0,
+          4.0,
+          4.0
+        ],
+        "Vector": [
+          0.0,
+          0.0,
+          0.0
+        ]
+      }
+    },
+    {
+      "name": "Map Range.001",
+      "type": "ShaderNodeMapRange",
+      "image": null,
+      "inputs": {
+        "Value": 1.0,
+        "From Min": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "From Max": [
+          1.0,
+          1.0,
+          1.0
+        ],
+        "To Min": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "To Max": [
+          1.0,
+          1.0,
+          1.0
+        ],
+        "Steps": [
+          4.0,
+          4.0,
+          4.0
+        ],
+        "Vector": [
+          0.0,
+          0.0,
+          0.0
+        ]
+      }
+    },
+    {
+      "name": "Map Range.002",
+      "type": "ShaderNodeMapRange",
+      "image": null,
+      "inputs": {
+        "Value": 1.0,
+        "From Min": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "From Max": [
+          1.0,
+          1.0,
+          1.0
+        ],
+        "To Min": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "To Max": [
+          1.0,
+          1.0,
+          1.0
+        ],
+        "Steps": [
+          4.0,
+          4.0,
+          4.0
+        ],
+        "Vector": [
+          0.0,
+          0.0,
+          0.0
+        ]
+      }
+    },
+    {
+      "name": "Localized exposed iron",
+      "type": "ShaderNodeMixShader",
+      "image": null,
+      "inputs": {
+        "Factor": 0.5
+      }
+    },
+    {
+      "name": "Opaque scale coverage",
+      "type": "ShaderNodeMixShader",
+      "image": null,
+      "inputs": {
+        "Factor": 0.5
+      }
+    },
+    {
+      "name": "Image Texture.004",
+      "type": "ShaderNodeTexImage",
+      "image": "coarse16.png",
+      "inputs": {
+        "Vector": [
+          0.0,
+          0.0,
+          0.0
+        ]
+      }
+    },
+    {
+      "name": "coarse16.png independent strength",
+      "type": "ShaderNodeBump",
+      "image": null,
+      "inputs": {
+        "Strength": 0.0,
+        "Distance": 0.009999999776482582,
+        "Filter Width": 0.10000000149011612,
+        "Height": 1.0,
+        "Normal": [
+          0.0,
+          0.0,
+          0.0
+        ]
+      }
+    },
+    {
+      "name": "Image Texture.005",
+      "type": "ShaderNodeTexImage",
+      "image": "fine16.png",
+      "inputs": {
+        "Vector": [
+          0.0,
+          0.0,
+          0.0
+        ]
+      }
+    },
+    {
+      "name": "fine16.png independent strength",
+      "type": "ShaderNodeBump",
+      "image": null,
+      "inputs": {
+        "Strength": 1.0,
+        "Distance": 0.004000000189989805,
+        "Filter Width": 0.10000000149011612,
+        "Height": 1.0,
+        "Normal": [
+          0.0,
+          0.0,
+          0.0
+        ]
+      }
+    },
+    {
+      "name": "Independent shallow forge scale",
+      "type": "ShaderNodeBump",
+      "image": null,
+      "inputs": {
+        "Strength": 1.0,
+        "Distance": 0.0003499999875202775,
+        "Filter Width": 0.10000000149011612,
+        "Height": 1.0,
+        "Normal": [
+          0.0,
+          0.0,
+          0.0
+        ]
+      }
+    },
+    {
+      "name": "Restrained opaque scale coverage",
+      "type": "ShaderNodeMapRange",
+      "image": null,
+      "inputs": {
+        "Value": 1.0,
+        "From Min": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "From Max": [
+          1.0,
+          1.0,
+          1.0
+        ],
+        "To Min": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "To Max": [
+          1.0,
+          1.0,
+          1.0
+        ],
+        "Steps": [
+          4.0,
+          4.0,
+          4.0
+        ],
+        "Vector": [
+          0.0,
+          0.0,
+          0.0
+        ]
+      }
+    },
+    {
+      "name": "Separate XYZ",
+      "type": "ShaderNodeSeparateXYZ",
+      "image": null,
+      "inputs": {
+        "Vector": [
+          0.0,
+          0.0,
+          0.0
+        ]
+      }
+    },
+    {
+      "name": "Math",
+      "type": "ShaderNodeMath",
+      "image": null,
+      "inputs": {
+        "Value": 0.5
+      }
+    },
+    {
+      "name": "Math.001",
+      "type": "ShaderNodeMath",
+      "image": null,
+      "inputs": {
+        "Value": 0.5
+      }
+    },
+    {
+      "name": "Map Range.003",
+      "type": "ShaderNodeMapRange",
+      "image": null,
+      "inputs": {
+        "Value": 1.0,
+        "From Min": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "From Max": [
+          1.0,
+          1.0,
+          1.0
+        ],
+        "To Min": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "To Max": [
+          1.0,
+          1.0,
+          1.0
+        ],
+        "Steps": [
+          4.0,
+          4.0,
+          4.0
+        ],
+        "Vector": [
+          0.0,
+          0.0,
+          0.0
+        ]
+      }
+    },
+    {
+      "name": "Math.002",
+      "type": "ShaderNodeMath",
+      "image": null,
+      "inputs": {
+        "Value": 0.5
+      }
+    },
+    {
+      "name": "Image Texture.006",
+      "type": "ShaderNodeTexImage",
+      "image": "height16.png.002",
+      "inputs": {
+        "Vector": [
+          0.0,
+          0.0,
+          0.0
+        ]
+      }
+    },
+    {
+      "name": "Reference guided shallow forge laps",
+      "type": "ShaderNodeBump",
+      "image": null,
+      "inputs": {
+        "Strength": 1.0,
+        "Distance": 0.003000000026077032,
+        "Filter Width": 0.10000000149011612,
+        "Height": 1.0,
+        "Normal": [
+          0.0,
+          0.0,
+          0.0
+        ]
+      }
+    },
+    {
+      "name": "Image Texture.007",
+      "type": "ShaderNodeTexImage",
+      "image": "exposed_lips.png",
+      "inputs": {
+        "Vector": [
+          0.0,
+          0.0,
+          0.0
+        ]
+      }
+    },
+    {
+      "name": "Math.003",
+      "type": "ShaderNodeMath",
+      "image": null,
+      "inputs": {
+        "Value": 0.5
+      }
+    },
+    {
+      "name": "Map Range.004",
+      "type": "ShaderNodeMapRange",
+      "image": null,
+      "inputs": {
+        "Value": 1.0,
+        "From Min": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "From Max": [
+          1.0,
+          1.0,
+          1.0
+        ],
+        "To Min": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "To Max": [
+          1.0,
+          1.0,
+          1.0
+        ],
+        "Steps": [
+          4.0,
+          4.0,
+          4.0
+        ],
+        "Vector": [
+          0.0,
+          0.0,
+          0.0
+        ]
+      }
+    },
+    {
+      "name": "Math.004",
+      "type": "ShaderNodeMath",
+      "image": null,
+      "inputs": {
+        "Value": 0.5
+      }
+    }
+  ],
+  "world": [
+    {
+      "name": "Background",
+      "type": "ShaderNodeBackground",
+      "inputs": {
+        "Color": [
+          0.14000000059604645,
+          0.14000000059604645,
+          0.14000000059604645,
+          1.0
+        ],
+        "Strength": 0.44999998807907104,
+        "Weight": 0.0
+      }
+    },
+    {
+      "name": "World Output",
+      "type": "ShaderNodeOutputWorld",
+      "inputs": {}
+    }
+  ],
+  "render_running": false
+}

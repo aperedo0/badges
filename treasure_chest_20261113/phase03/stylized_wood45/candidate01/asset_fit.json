@@ -1,0 +1,10 @@
+{
+  "core_bbox": [
+    500,
+    255,
+    740,
+    467
+  ],
+  "physical_core_mean_diameter": 0.55,
+  "source": "Built in scalar artwork, not measured scan or shaded color image"
+}

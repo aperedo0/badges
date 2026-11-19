@@ -1,0 +1,30 @@
+{
+  "source": "Preserved V anatomy with flow guided broken fiber layers, real weathered fiber microstructure and a natural knot core",
+  "geometry_shared_between_Z_and_AA": true,
+  "body_source": "Poly Haven medieval_wood CC0",
+  "body_crop_4k": [
+    1760,
+    860,
+    1900,
+    1580
+  ],
+  "knot_source": "Poly Haven raw_plank_wall CC0",
+  "core_center": [
+    -1.31,
+    -1.35
+  ],
+  "core_size_preserved": true,
+  "knot_source_center": [
+    1864,
+    2596
+  ],
+  "knot_source_radii": [
+    38,
+    29
+  ],
+  "fiber_rms": 0.0017,
+  "core_rms": 0.0023,
+  "material": "V unchanged",
+  "normal_split": 0.0038,
+  "height_min": -0.050897762179374695
+}

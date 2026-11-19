@@ -1,0 +1,23 @@
+float fresnelshare(float c,float ni,float nt){float ci=clamp(c,0,1);float ss=(ni/nt)*(ni/nt)*(1-ci*ci);if(ss>=1)return 1;float ct=sqrt(1-ss);float a=(ni*ci-nt*ct)/(ni*ci+nt*ct);float b=(ni*ct-nt*ci)/(ni*ct+nt*ci);return .5*(a*a+b*b);}
+vector to_model(vector b){return vector(b[0],b[2],-b[1]);}
+vector to_blender(vector p){return vector(p[0],-p[2],p[1]);}
+color lookup(vector d,string file){vector w=normalize(transform("object","world",to_blender(d)));vector e=vector(-w[0],w[2],w[1]);float u=.5+atan2(e[0],-e[2])/(2*M_PI);float v=.5-asin(clamp(e[1],-1,1))/M_PI;return texture(file,u,v,"swrap","periodic","twrap","clamp","interp","bilinear");}
+color tent(vector d,string file){return min(lookup(d,file),color(3));}
+color body(vector d,string two,string three,string eight){color b=mix(min(lookup(d,two),color(.7)),min(lookup(d,three),color(.7)),.146406);return b+tent(d,eight)*.260400;}
+shader ruby_heart_live_optics(string Mip1="",string Mip2="",string Mip3="",string Mip8="",int Probe=0,output closure color BSDF=0){
+ point raw=transform("world","object",P);point entry=point(to_model(vector(raw)));
+ vector incident=-normalize(to_model(transform("world","object",I)));
+ vector n=normalize(to_model(vector(transform("world","object",N))));if(dot(n,incident)>0)n=-n;
+ if(Probe<5){color val=color(0);if(Probe==0)val=color(incident)*.5+.5;if(Probe==1)val=color(n)*.5+.5;if(Probe==2)val=color(reflect(incident,n))*.5+.5;if(Probe==3)val=lookup(reflect(incident,n),Mip1)/24;if(Probe==4)val=lookup(normalize(vector(-.773,.497,.393)),Mip1)/24;BSDF=emission()*val;return;} float f=fresnelshare(dot(n,-incident),1,1.77);
+ color col=1.810354*f*clamp(min(lookup(reflect(incident,n),Mip1),color(24))-color(3),color(0),color(10));
+ float side=entry[2]>=0?1:-1;point pos=entry;vector dir=refract(incident,n,1/1.77);color weight=color(1-f);float path=0;
+ for(int bounce=0;bounce<4;bounce++){
+  float tofoil=dir[2]*side<-.0001?max(-pos[2]/dir[2],0):0;pos+=dir*tofoil;path+=tofoil;dir[2]=-dir[2];weight*=.92;
+  float approach=dot(n,dir);float back=approach>.0001?max(dot(n,vector(entry-pos))/approach,0):0;pos+=dir*back;path+=back;
+  float share=fresnelshare(approach,1.77,1);color absorption=color(exp(-.15*min(path,12)),exp(-6.5*min(path,12)),exp(-2.2*min(path,12)));
+  if(share<1){vector leaving=refract(dir,-n,1.77);col+=weight*absorption*(1-share)*body(leaving,Mip2,Mip3,Mip8);}
+  weight*=share;dir=reflect(dir,n);
+ }
+ col+=weight*color(exp(-.15*min(path,12)),exp(-6.5*min(path,12)),exp(-2.2*min(path,12)))*tent(dir,Mip8)*.260400;
+ col+=(1-f)*color(.16,.0032,.024);BSDF=emission()*col*1.7;
+}

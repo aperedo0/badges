@@ -1,0 +1,45 @@
+{
+  "Chest Body Upper Rim": {
+    "stages": [
+      {
+        "operand": "Chest Body Corner Collar -1 -1",
+        "repairs": [],
+        "closed": true,
+        "connected": true,
+        "euler": 0,
+        "volume": 1.1216909543033664,
+        "triangles": 866
+      },
+      {
+        "operand": "Chest Body Corner Collar -1 1",
+        "repairs": [],
+        "closed": true,
+        "connected": true,
+        "euler": 0,
+        "volume": 1.2434897049237053,
+        "triangles": 1198
+      },
+      {
+        "operand": "Chest Body Corner Collar 1 -1",
+        "repairs": [],
+        "closed": true,
+        "connected": true,
+        "euler": 0,
+        "volume": 1.3652884448291378,
+        "triangles": 1538
+      },
+      {
+        "operand": "Chest Body Corner Collar 1 1",
+        "repairs": [],
+        "closed": true,
+        "connected": true,
+        "euler": 0,
+        "volume": 1.4870871273061217,
+        "triangles": 1864
+      }
+    ],
+    "minimum_triangle_area": 5.044853423896711e-12,
+    "maximum_surface_error": 0.004265414085239172,
+    "over_original_gate": 32
+  }
+}

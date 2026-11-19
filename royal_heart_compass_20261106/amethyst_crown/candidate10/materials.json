@@ -1,0 +1,148 @@
+{
+  "gold": {
+    "color": [
+      0.57,
+      0.285,
+      0.067
+    ],
+    "metallic": 1.0,
+    "roughness": 0.245
+  },
+  "gold_satin": {
+    "color": [
+      0.43,
+      0.205,
+      0.043
+    ],
+    "metallic": 1.0,
+    "roughness": 0.34
+  },
+  "gold_recess": {
+    "color": [
+      0.18,
+      0.072,
+      0.013
+    ],
+    "metallic": 1.0,
+    "roughness": 0.43
+  },
+  "navy": {
+    "color": [
+      0.006,
+      0.019,
+      0.042
+    ],
+    "metallic": 0.4,
+    "roughness": 0.46
+  },
+  "purple_velvet": {
+    "color": [
+      0.02873512799482579,
+      0.0005114929827005476,
+      0.02443710255225893
+    ],
+    "metallic": 0.0,
+    "roughness": 0.88,
+    "sheen": 0.65
+  },
+  "red_velvet": {
+    "color": [
+      0.052,
+      0.0004,
+      0.003
+    ],
+    "metallic": 0.0,
+    "roughness": 0.86,
+    "sheen": 0.65
+  },
+  "green_velvet": {
+    "color": [
+      0.0006,
+      0.024,
+      0.009
+    ],
+    "metallic": 0.0,
+    "roughness": 0.86,
+    "sheen": 0.65
+  },
+  "CrestGem_Rose": {
+    "color": [
+      0.75,
+      0.008,
+      0.15
+    ],
+    "metallic": 0.0,
+    "roughness": 0.03,
+    "ior": 1.77
+  },
+  "CrestGem_Amethyst": {
+    "color": [
+      0.15,
+      0.006,
+      0.32
+    ],
+    "metallic": 0.0,
+    "roughness": 0.03,
+    "ior": 1.55
+  },
+  "CrestGem_Ruby": {
+    "color": [
+      0.4,
+      0.002,
+      0.013
+    ],
+    "metallic": 0.0,
+    "roughness": 0.03,
+    "ior": 1.77
+  },
+  "CrestGem_Emerald": {
+    "color": [
+      0.001,
+      0.19,
+      0.048
+    ],
+    "metallic": 0.0,
+    "roughness": 0.03,
+    "ior": 1.58
+  },
+  "CrestGem_SapphireAstral": {
+    "color": [
+      0.002,
+      0.01,
+      0.1
+    ],
+    "metallic": 0.0,
+    "roughness": 0.03,
+    "ior": 1.77
+  },
+  "CrestGem_Sapphire": {
+    "color": [
+      0.003,
+      0.02,
+      0.18
+    ],
+    "metallic": 0.0,
+    "roughness": 0.03,
+    "ior": 1.77
+  },
+  "CrestGem_Ice": {
+    "color": [
+      0.44,
+      0.7,
+      0.79
+    ],
+    "metallic": 0.0,
+    "roughness": 0.025,
+    "ior": 1.46
+  },
+  "purple_fold_velvet": {
+    "color": [
+      0.02873512799482579,
+      0.0005114929827005476,
+      0.02443710255225893
+    ],
+    "metallic": 0.0,
+    "roughness": 0.88,
+    "sheen": 0.65
+  }
+}

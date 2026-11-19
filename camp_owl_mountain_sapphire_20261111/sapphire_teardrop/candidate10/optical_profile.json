@@ -1,0 +1,11 @@
+{
+  "profile": 17,
+  "material": "CrestGem_FoilSapphire",
+  "uses_existing_runtime_without_changes": true,
+  "front_and_back_real_facets": true,
+  "no_appearance_texture": true,
+  "uv_contains_only_backing_direction": true,
+  "reference": "Existing reflective backing treatment used by other colored stones. Source06 broad cut on both sides, source09 frame with moderated intrinsic finish.",
+  "native_acceptance_pending": true,
+  "optical_approximation": "Existing profile17 traces refraction and absorption to a reflective backing and returns through each facet plane. It includes the preexisting small blue body term. No photograph or fixed emission image is used; highlights respond to the studio and orientation."
+}

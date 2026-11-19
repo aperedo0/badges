@@ -1,0 +1,8 @@
+{
+  "foundation": "Preserved H master with local ring removal, channel bridges and shear chips",
+  "normal_split": 0.0045,
+  "ring_repair_area": 0.05932768827639751,
+  "bridge_area": 0.033405985809178744,
+  "depth_min": -0.049142436408527515,
+  "all_other_source_work_preserved": true
+}

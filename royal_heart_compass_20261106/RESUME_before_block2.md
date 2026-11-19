@@ -1,0 +1,41 @@
+Latest native third Amethyst comparison is saved. The new fuller finial and central bezel show correctly, confirming the new model loaded. The velvet remains too flat under native lighting, even though the geometric folds were deepened. Next work should diagnose the actual diffuse normal and light response, and whether a physically appropriate velvet fiber material is needed, before generating another geometry candidate. Shared stage and lights must stay fixed. Third ruby, emerald and ocean fronts still need current captures. No final motion or compact appearance acceptance exists for candidate03.
+
+# Current overnight checkpoint
+
+The scheduled restart succeeded at 9:40 PM Pacific. Block one started at 9:41:19 PM and ends at 10:11:19 PM. The following break ends at 10:31:19 PM. Use schedule.json for exact epochs and current status. Do not infer a new work window. All current models and source files are candidate03. None is complete. Existing baseline now holds the third detailed geometry; baseline02 and baseline01 retain older candidates.
+
+All five third candidates were rebuilt with live Blender MCP, packaged, compacted preserving every triangle and gemstone, and saved as matching compact Blender checkpoints. All actual renderer convexity checks passed for all 270 optical domains. All 24 crown arches still enter their joining hub. Ruby upper stones remain red. Structural app contract and texture preservation passed. Third counts remain 3,36,132,102,13. Native final motion and detailed versus compact reviews are still pending for all third candidates.
+
+Current runtime build succeeded at 10:06 PM and includes all third assets and corrected clear heart optics. A cloudy heart experiment was rejected and saved under ruby_heart/candidate03/review/cloud_experiment. The active shader retains nearly uniform optical density, longer paths and sparse actual internal plane reflections for the heart. Its color is redder and bezel broader than the second candidate, but its reference comparison is not yet close enough to claim a match. Do not mark it done. Consider geometric facet angles and the actual studio response before another shader guess. Internal tracer tests pass 2000 random rays, 325 crossings of the common face and reflected symmetry. One tiny real external notch interval required probing the actual air gap rather than skipping across it with a fixed test step.
+
+Latest native third heart front is saved. The active capture may be checking Amethyst Crown. Wait for active tools, then look at its reference comparison. Capture remaining Ruby Crown, Emerald Crown and Ocean Navigator fully loaded third fronts before further changes. Front title alone is not proof that the asset loaded. check_native_gems.py now waits up to 60 seconds for all stones and the floor reflection, because the larger crowns take longer to attach their materials. Preserve shared lights and original Diamond. Production untouched.
+
+Blender inspect_live.py now loads each exact saved third detailed file as a new scene before the four side captures; it no longer selects the highest numeric scene suffix, which could be an older candidate after prior cleanup. All saved third sides were captured. Do not remove unrelated scenes. Current disk was about 6GB free.
+
+The next native build should only follow another actual model or shader change. Continue the existing 30 minute work and 20 minute rest schedule with no overall deadline. At the break save exact pending work and verify watcher PID and lock, then release the turn for the existing timer. Do not create another timer or initialize another run.
+
+# Saved at the owner requested stop
+
+The owner stopped badge work until November 6 at 9:40 PM America/Los_Angeles. At that time the owner authorized continuing with the overnight skill, 30 minutes working followed by 20 minutes resting, without an overall deadline. No model work is allowed before the scheduled time. Later owner pauses or cancellation override this authorization.
+
+All five second candidates are built through live Blender MCP, structurally validated, compacted without removing triangles, and installed in the private preview. Candidate folders are candidate02. No badge is finished or owner approved. Candidate01 and baseline01 preserve earlier work. Current baseline is the second detailed geometry before batching. Production is untouched.
+
+The latest reference comparisons found important differences. The second candidates repair crossed heart halves, flare crown arches, flatten the display lean, distinguish crown proportions, add broad central gem mounts, repair reversed compass mounts and reshape waves inside its rim. Do not restart them. Current native captures for most second candidates are still missing. The second heart front capture is current and shows real changing optics, but is darker and less bright red than the reference, with a thinner looking gold bezel. Inspect and diagnose before further changes. The optical shader uses one continuous volume across two convex domains, not an internal air interface.
+
+## Exact next action
+
+Read schedule.json and run the skill helper status. If scheduled and before the owner authorized time, do nothing. If active and ready, use begin for the first 30 minute block. First inspect the saved second heart reference comparison. Then capture fully loaded second fronts for the three crowns and ocean compass. Wait for every actual gem shader attachment with check_native_gems.py before capturing. A visible title is insufficient: the model takes time to load and initially shows the silver fallback art.
+
+Use the existing app, not another build, unless geometry or shader changes. Last build succeeded at 8:35 PM and contains all current second candidates. Private project emerald_trophy_20261025/preview/ScreenTime.xcodeproj, scheme ScreenTime-UIOnly, simulator C18E609E-6C2F-49C4-BCFE-E5D365F4E4E8, bundle com.antonioperedo.badgestudio.preview, derived data /tmp/forge_tide_derived_20261103. Check XcodeBuildMCP defaults before first use in a new session.
+
+Launch args select keys rubyHeart, amethystCrown, rubyCrown, emeraldCrown, oceanNavigator with BadgePreviewBaseline NO for compact. YES selects hidden detailed assets for optimization comparison. Follow capture.py for six measured poses, actual header position, native raw screenshots. Record full turns with MCP record_sim_video and review_motion.py. Compare detailed and compact with compare.py. Earlier candidate01 reviews do not approve second candidates.
+
+Live Blender port9876 uses water_match_20261014/blender_live.py. Latest working scenes are saved to candidate02/source. Matching compact editable checkpoints are also saved there. Use MCP for working model edits and visual inspection. Do not delete unrelated Blender scenes. No broad disk cleanup. Disk was about 9GB free at the last check.
+
+## Remaining delivery
+
+Review reference fidelity and final native motion for every second candidate. Preserve all requested crown arches into the central hub, and red upper stones on the red crown. Apply the quality skill optimization review with real baseline and compact native captures. All 270 independent optical domains passed actual renderer checks, including reflections. Heart has two domains in one physical stone. Final counts are 3,36,132,102,13. Independent small stones make the red and green crowns exceed 50 pieces. Triangles and size exceed ordinary tier guidance and must be disclosed.
+
+After visual acceptance, publish each reviewed model to its own mobile folder and editable checkpoint to source. Write REPORT.md, reference comparisons, runtime integration patch and RUNTIME.md from runtime_original to the current private Swift and Metal. Current source includes the five gallery entries, emerald and rose gem profiles and continuous heart tracing. Preserve existing Diamond and studio. Do not edit production. Mark done only with complete artifact paths, then complete to stop timer. Leave all badges in the private simulator gallery with the final selected and baseline flag NO.
+
+Do not commit. At final delivery follow the commit message skill with commands scoped to royal_heart_compass_20261106 only. Existing repository status contains only this new folder.

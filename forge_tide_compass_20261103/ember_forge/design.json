@@ -1,0 +1,53 @@
+{
+  "name": "Ember Forge",
+  "selection": "emberForge",
+  "bounds": [
+    125,
+    32,
+    1119,
+    1203
+  ],
+  "textured_roles": [
+    "metal",
+    "copper",
+    "field",
+    "flame"
+  ],
+  "metal_roles": [
+    "metal",
+    "copper"
+  ],
+  "desired_colors": {
+    "metal": [
+      0.21,
+      0.17,
+      0.14
+    ],
+    "copper": [
+      0.36,
+      0.16,
+      0.045
+    ]
+  },
+  "roughness": {
+    "metal": 0.39,
+    "copper": 0.32,
+    "field": 0.65,
+    "flame": 0.6
+  },
+  "side_color": [
+    0.065,
+    0.041,
+    0.027
+  ],
+  "side_roughness": 0.55,
+  "method": "Physical beveled hexagon, cut hammer and anvil, curled flame relief, wrapped handle and matching sculpted rear",
+  "reference_size": [
+    1254,
+    1254
+  ],
+  "scale": 0.004671221178479931,
+  "reference_center_x": 622.0000055311367,
+  "reference_top": 32,
+  "triangle_count": 12340
+}

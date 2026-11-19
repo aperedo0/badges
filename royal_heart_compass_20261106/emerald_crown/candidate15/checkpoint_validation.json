@@ -1,0 +1,13 @@
+{
+  "meshes": 154,
+  "triangles": 298524,
+  "all_asset_textures_packed_byte_identically": true,
+  "packed_textures": {
+    "velvet_fold_color.png": "f946fde9c348e2d14fd2bd8e26d21c0e8e9e7839a782a6ac119eb5235cfdbc39",
+    "gold_roughness.png": "d8d40a86eaa6541366024bd130d763ea56ae92a25ed729f9010d566b470aae73",
+    "velvet_normal.png": "543e9315970860cb30c23ab8c3aafa9290cebb7a85cc424fb02286263d8af6e7",
+    "velvet_occlusion.png": "69f66b8e382a332bb58b51e48d2df845a39220293b0932252514b7f78a8f7e3c"
+  },
+  "complete_editable_checkpoint": "/Users/antonioperedo/Desktop/badges/royal_heart_compass_20261106/emerald_crown/candidate15/source/emerald_crown_compact.blend",
+  "native_gem_profiles_preserved": true
+}

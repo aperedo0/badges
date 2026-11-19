@@ -1,0 +1,27 @@
+[
+  {
+    "name": "Wide sculpted heart gold bezel",
+    "mat": "gold",
+    "smooth": true
+  },
+  {
+    "name": "Inner polished heart gold seat",
+    "mat": "gold",
+    "smooth": true
+  },
+  {
+    "name": "Rear matching gold heart bead",
+    "mat": "gold",
+    "smooth": true
+  },
+  {
+    "name": "Ruby heart left optical lobe",
+    "mat": "CrestGem_Rose",
+    "smooth": false
+  },
+  {
+    "name": "Ruby heart right optical lobe",
+    "mat": "CrestGem_Rose",
+    "smooth": false
+  }
+]

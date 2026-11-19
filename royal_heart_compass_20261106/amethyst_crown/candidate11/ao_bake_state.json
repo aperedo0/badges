@@ -1,0 +1,9 @@
+{
+  "status": "complete",
+  "completed": 1794061801.615746,
+  "minimum": 0.0,
+  "maximum": 1.0,
+  "standard_deviation": 0.29597702137873916,
+  "only_geometry_visibility": true,
+  "lights_baked": false
+}

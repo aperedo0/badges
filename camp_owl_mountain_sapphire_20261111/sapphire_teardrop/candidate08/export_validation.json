@@ -1,0 +1,29 @@
+{
+  "contract_passed": true,
+  "model_sha256": "c86795faf96436c3a3531f46bf366fb7572c586595dbf538ed7fa5a33ddf3103",
+  "meshes": 3,
+  "triangles": 6622,
+  "bytes": 457826,
+  "bounds": [
+    [
+      -2.0642905235290527,
+      -2.4549999237060547,
+      -1.0699999332427979
+    ],
+    [
+      2.0642905235290527,
+      2.994999885559082,
+      1.0699999332427979
+    ]
+  ],
+  "all_textures_present_and_byte_identical": true,
+  "texture_files": [],
+  "native_gems": {
+    "/Badge/Gem": {
+      "planes": 54,
+      "reflectionPlanes": 54
+    }
+  },
+  "no_gem_appearance_texture": true,
+  "production_app_untouched": true
+}

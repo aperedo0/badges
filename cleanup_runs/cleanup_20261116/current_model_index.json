@@ -1,0 +1,220 @@
+{
+ "created": "2026-11-16",
+ "note": "Model index after the Nov 16 cleanup. Paths are relative to the badges folder. See manifest.json keep list for sha256 of every retained file.",
+ "models": [
+  {
+   "badge": "treasure chest test plank (live checkpoint)",
+   "blender": "treasure_chest_20261113/phase04/wood_lab/timber_refinement/AW_depth_hierarchy/master.blend",
+   "evidence": "PROJECT_STATE.md, README.md, STATE.json (current and live_file), surface_definition/selection.json and saved_validation.json (maps packed, source AE byte identical) all name AW_depth_hierarchy; owner review pending"
+  },
+  {
+   "badge": "treasure chest complete rigged construction",
+   "blender": "treasure_chest_20261113/phase01/candidate43/chest.blend",
+   "evidence": "STATUS.json latest_whole_construction_review points at phase01/candidate43; later candidates 30 to 41 are older"
+  },
+  {
+   "badge": "bronze",
+   "blender": "badge_family_compact_20261106/badges/bronze/candidate01/source/model.blend",
+   "export": "badge_family_compact_20261106/badges/bronze/candidate01/model.usdz",
+   "evidence": "Saved Nov 14 compact index; export sha256 re-verified today; packed textures verified then"
+  },
+  {
+   "badge": "copper",
+   "blender": "badge_family_compact_20261106/badges/copper/candidate01/source/model.blend",
+   "export": "badge_family_compact_20261106/badges/copper/candidate01/model.usdz",
+   "evidence": "Saved Nov 14 compact index; export sha256 re-verified today; packed textures verified then"
+  },
+  {
+   "badge": "gold",
+   "blender": "badge_family_compact_20261106/badges/gold/candidate01/source/model.blend",
+   "export": "badge_family_compact_20261106/badges/gold/candidate01/model.usdz",
+   "evidence": "Saved Nov 14 compact index; export sha256 re-verified today; packed textures verified then"
+  },
+  {
+   "badge": "iron",
+   "blender": "badge_family_compact_20261106/badges/iron/candidate01/source/model.blend",
+   "export": "badge_family_compact_20261106/badges/iron/candidate01/model.usdz",
+   "evidence": "Saved Nov 14 compact index; export sha256 re-verified today; packed textures verified then"
+  },
+  {
+   "badge": "silver",
+   "blender": "badge_family_compact_20261106/badges/silver/candidate01/source/model.blend",
+   "export": "badge_family_compact_20261106/badges/silver/candidate01/model.usdz",
+   "evidence": "Saved Nov 14 compact index; export sha256 re-verified today; packed textures verified then"
+  },
+  {
+   "badge": "aurora_mountain",
+   "blender": "badge_family_compact_20261106/badges/aurora_mountain/candidate01/source/model.blend",
+   "export": "badge_family_compact_20261106/badges/aurora_mountain/candidate01/model.usdz",
+   "evidence": "Saved Nov 14 compact index; export sha256 re-verified today; packed textures verified then"
+  },
+  {
+   "badge": "battle_steel",
+   "blender": "badge_family_compact_20261106/badges/battle_steel/candidate01/source/model.blend",
+   "export": "badge_family_compact_20261106/badges/battle_steel/candidate01/model.usdz",
+   "evidence": "Saved Nov 14 compact index; export sha256 re-verified today; packed textures verified then"
+  },
+  {
+   "badge": "bronze_phoenix",
+   "blender": "badge_family_compact_20261106/badges/bronze_phoenix/candidate01/source/model.blend",
+   "export": "badge_family_compact_20261106/badges/bronze_phoenix/candidate01/model.usdz",
+   "evidence": "Saved Nov 14 compact index; export sha256 re-verified today; packed textures verified then"
+  },
+  {
+   "badge": "celestial_orbit",
+   "blender": "badge_family_compact_20261106/badges/celestial_orbit/candidate01/source/model.blend",
+   "export": "badge_family_compact_20261106/badges/celestial_orbit/candidate01/model.usdz",
+   "evidence": "Saved Nov 14 compact index; export sha256 re-verified today; packed textures verified then"
+  },
+  {
+   "badge": "crescent_ocean",
+   "blender": "badge_family_compact_20261106/badges/crescent_ocean/candidate01/source/model.blend",
+   "export": "badge_family_compact_20261106/badges/crescent_ocean/candidate01/model.usdz",
+   "evidence": "Saved Nov 14 compact index; export sha256 re-verified today; packed textures verified then"
+  },
+  {
+   "badge": "ember_forge",
+   "blender": "badge_family_compact_20261106/badges/ember_forge/candidate01/source/model.blend",
+   "export": "badge_family_compact_20261106/badges/ember_forge/candidate01/model.usdz",
+   "evidence": "Saved Nov 14 compact index; export sha256 re-verified today; packed textures verified then"
+  },
+  {
+   "badge": "emerald_archer",
+   "blender": "badge_family_compact_20261106/badges/emerald_archer/candidate01/source/model.blend",
+   "export": "badge_family_compact_20261106/badges/emerald_archer/candidate01/model.usdz",
+   "evidence": "Saved Nov 14 compact index; export sha256 re-verified today; packed textures verified then"
+  },
+  {
+   "badge": "emerald_sprout",
+   "blender": "badge_family_compact_20261106/badges/emerald_sprout/candidate01/source/model.blend",
+   "export": "badge_family_compact_20261106/badges/emerald_sprout/candidate01/model.usdz",
+   "evidence": "Saved Nov 14 compact index; export sha256 re-verified today; packed textures verified then"
+  },
+  {
+   "badge": "emerald_trophy",
+   "blender": "badge_family_compact_20261106/badges/emerald_trophy/candidate01/source/model.blend",
+   "export": "badge_family_compact_20261106/badges/emerald_trophy/candidate01/model.usdz",
+   "evidence": "Saved Nov 14 compact index; export sha256 re-verified today; packed textures verified then"
+  },
+  {
+   "badge": "frostwing_crystal",
+   "blender": "badge_family_compact_20261106/badges/frostwing_crystal/candidate01/source/model.blend",
+   "export": "badge_family_compact_20261106/badges/frostwing_crystal/candidate01/model.usdz",
+   "evidence": "Saved Nov 14 compact index; export sha256 re-verified today; packed textures verified then"
+  },
+  {
+   "badge": "golden_sands",
+   "blender": "badge_family_compact_20261106/badges/golden_sands/candidate01/source/model.blend",
+   "export": "badge_family_compact_20261106/badges/golden_sands/candidate01/model.usdz",
+   "evidence": "Saved Nov 14 compact index; export sha256 re-verified today; packed textures verified then"
+  },
+  {
+   "badge": "island_sunset",
+   "blender": "badge_family_compact_20261106/badges/island_sunset/candidate01/source/model.blend",
+   "export": "badge_family_compact_20261106/badges/island_sunset/candidate01/model.usdz",
+   "evidence": "Saved Nov 14 compact index; export sha256 re-verified today; packed textures verified then"
+  },
+  {
+   "badge": "lightning_compass",
+   "blender": "badge_family_compact_20261106/badges/lightning_compass/candidate01/source/model.blend",
+   "export": "badge_family_compact_20261106/badges/lightning_compass/candidate01/model.usdz",
+   "evidence": "Saved Nov 14 compact index; export sha256 re-verified today; packed textures verified then"
+  },
+  {
+   "badge": "lunar_compass",
+   "blender": "badge_family_compact_20261106/badges/lunar_compass/candidate01/source/model.blend",
+   "export": "badge_family_compact_20261106/badges/lunar_compass/candidate01/model.usdz",
+   "evidence": "Saved Nov 14 compact index; export sha256 re-verified today; packed textures verified then"
+  },
+  {
+   "badge": "ruby_winged_crest",
+   "blender": "badge_family_compact_20261106/badges/ruby_winged_crest/candidate01/source/model.blend",
+   "export": "badge_family_compact_20261106/badges/ruby_winged_crest/candidate01/model.usdz",
+   "evidence": "Saved Nov 14 compact index; export sha256 re-verified today; packed textures verified then"
+  },
+  {
+   "badge": "sapphire_stairway",
+   "blender": "badge_family_compact_20261106/badges/sapphire_stairway/candidate01/source/model.blend",
+   "export": "badge_family_compact_20261106/badges/sapphire_stairway/candidate01/model.usdz",
+   "evidence": "Saved Nov 14 compact index; export sha256 re-verified today; packed textures verified then"
+  },
+  {
+   "badge": "star_ascent",
+   "blender": "badge_family_compact_20261106/badges/star_ascent/candidate01/source/model.blend",
+   "export": "badge_family_compact_20261106/badges/star_ascent/candidate01/model.usdz",
+   "evidence": "Saved Nov 14 compact index; export sha256 re-verified today; packed textures verified then"
+  },
+  {
+   "badge": "sunrise_path",
+   "blender": "badge_family_compact_20261106/badges/sunrise_path/candidate01/source/model.blend",
+   "export": "badge_family_compact_20261106/badges/sunrise_path/candidate01/model.usdz",
+   "evidence": "Saved Nov 14 compact index; export sha256 re-verified today; packed textures verified then"
+  },
+  {
+   "badge": "teal_sands",
+   "blender": "badge_family_compact_20261106/badges/teal_sands/candidate01/source/model.blend",
+   "export": "badge_family_compact_20261106/badges/teal_sands/candidate01/model.usdz",
+   "evidence": "Saved Nov 14 compact index; export sha256 re-verified today; packed textures verified then"
+  },
+  {
+   "badge": "tidal_compass",
+   "blender": "badge_family_compact_20261106/badges/tidal_compass/candidate01/source/model.blend",
+   "export": "badge_family_compact_20261106/badges/tidal_compass/candidate01/model.usdz",
+   "evidence": "Saved Nov 14 compact index; export sha256 re-verified today; packed textures verified then"
+  },
+  {
+   "badge": "torch_sunburst",
+   "blender": "badge_family_compact_20261106/badges/torch_sunburst/candidate01/source/model.blend",
+   "export": "badge_family_compact_20261106/badges/torch_sunburst/candidate01/model.usdz",
+   "evidence": "Saved Nov 14 compact index; export sha256 re-verified today; packed textures verified then"
+  },
+  {
+   "badge": "water_drop",
+   "blender": "badge_family_compact_20261106/badges/water_drop/candidate01/source/model.blend",
+   "export": "badge_family_compact_20261106/badges/water_drop/candidate01/model.usdz",
+   "evidence": "Saved Nov 14 compact index; export sha256 re-verified today; packed textures verified then"
+  },
+  {
+   "badge": "zen_balance",
+   "blender": "badge_family_compact_20261106/badges/zen_balance/candidate01/source/model.blend",
+   "export": "badge_family_compact_20261106/badges/zen_balance/candidate01/model.usdz",
+   "evidence": "Saved Nov 14 compact index; export sha256 re-verified today; packed textures verified then"
+  },
+  {
+   "badge": "ruby heart version 1",
+   "export": "ruby_heart_gem_20261113/mobile/ruby_heart_v1.usdz",
+   "evidence": "latest candidate or installed preview asset hash match; see report",
+   "blender": "ruby_heart_gem_20261113/source/ruby_heart.blend"
+  },
+  {
+   "badge": "ruby heart version 2",
+   "export": "ruby_heart_gem_20261113/mobile/ruby_heart_v2.usdz",
+   "evidence": "latest candidate or installed preview asset hash match; see report",
+   "blender": "ruby_heart_gem_20261113/source/ruby_heart.blend"
+  },
+  {
+   "badge": "mountain sunburst",
+   "export": "mountain_sunburst_claude_20261108/rebuild2/cand06/model.usdz",
+   "evidence": "latest candidate or installed preview asset hash match; see report",
+   "blender": "mountain_sunburst_claude_20261108/rebuild2/mountain_sunburst_stacked.blend"
+  },
+  {
+   "badge": "emerald stag",
+   "export": "emerald_stag_claude_20261108/candidate08/model.usdz",
+   "evidence": "latest candidate or installed preview asset hash match; see report",
+   "blender": "emerald_stag_claude_20261108/candidate08/source/emerald_stag_v8.blend"
+  },
+  {
+   "badge": "ruby crown (claude run)",
+   "export": "ruby_crown_claude_20261108/candidate12/model.usdz",
+   "evidence": "latest candidate or installed preview asset hash match; see report",
+   "blender": "ruby_crown_claude_20261108/candidate12/geometry.npz"
+  },
+  {
+   "badge": "ruby heart claude run",
+   "export": "ruby_heart_claude_20261107/candidate06/model.usdz",
+   "evidence": "latest candidate or installed preview asset hash match; see report",
+   "blender": "ruby_heart_claude_20261107/candidate06/source/ruby_heart_v6.blend"
+  }
+ ]
+}

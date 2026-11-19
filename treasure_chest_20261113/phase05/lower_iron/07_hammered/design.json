@@ -1,0 +1,8 @@
+{
+  "target": "Lab Chest Lower Rim",
+  "material": "Lower iron 07_hammered",
+  "vertices": 98672,
+  "polygons": 98736,
+  "scope": "Existing bottom rim only",
+  "geometry_unchanged": false
+}

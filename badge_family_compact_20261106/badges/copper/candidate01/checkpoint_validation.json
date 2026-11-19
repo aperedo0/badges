@@ -1,0 +1,16 @@
+{
+  "complete_mesh_count": 3,
+  "triangles": 40812,
+  "all_used_images_packed_and_match_usdz": true,
+  "images": [
+    {
+      "name": "copper_color.png.008",
+      "sha256": "c377b1d6eaa61f4ed1cda0e2c9965fc7d78dac374ed9340f509812db8493efd0"
+    },
+    {
+      "name": "copper_emissive.png",
+      "sha256": "2de807f391691063aba4615a9b0d8a685d92e6d4c33591131ca9d88b4d74f51f"
+    }
+  ],
+  "usdz_unchanged_sha256": "cdf815ae8f55d4824a62673bfc8b5214d9c835e88cf90c7508ff25f4c7631058"
+}

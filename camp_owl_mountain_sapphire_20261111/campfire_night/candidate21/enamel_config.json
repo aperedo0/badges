@@ -1,0 +1,75 @@
+{
+  "texture_px": 1024,
+  "materials": {
+    "EnamelAmberFire": {
+      "roughness": 0.18,
+      "max_display": 0.93,
+      "gold_exclusion_border_px": 6
+    },
+    "EnamelGround": {
+      "roughness": 0.18,
+      "max_display": 0.93,
+      "gold_exclusion_border_px": 6
+    },
+    "EnamelMoonlight": {
+      "roughness": 0.18,
+      "max_display": 0.93,
+      "gold_exclusion_border_px": 6
+    },
+    "EnamelMountain": {
+      "roughness": 0.18,
+      "max_display": 0.93,
+      "gold_exclusion_border_px": 6
+    },
+    "EnamelPineLower": {
+      "roughness": 0.18,
+      "max_display": 0.93,
+      "gold_exclusion_border_px": 6
+    },
+    "EnamelPineMiddle": {
+      "roughness": 0.18,
+      "max_display": 0.93,
+      "gold_exclusion_border_px": 6
+    },
+    "EnamelPineTop": {
+      "roughness": 0.18,
+      "max_display": 0.93,
+      "gold_exclusion_border_px": 6
+    },
+    "EnamelRedFire": {
+      "roughness": 0.18,
+      "max_display": 0.93,
+      "gold_exclusion_border_px": 6
+    },
+    "EnamelSmallPines": {
+      "roughness": 0.18,
+      "max_display": 0.93,
+      "gold_exclusion_border_px": 6
+    },
+    "EnamelStone": {
+      "roughness": 0.18,
+      "max_display": 0.93,
+      "gold_exclusion_border_px": 6
+    },
+    "EnamelWoodBody": {
+      "roughness": 0.18,
+      "max_display": 0.93,
+      "gold_exclusion_border_px": 6
+    },
+    "EnamelWoodEnd": {
+      "roughness": 0.18,
+      "max_display": 0.93,
+      "gold_exclusion_border_px": 6
+    },
+    "EnamelYellowFire": {
+      "roughness": 0.18,
+      "max_display": 0.93,
+      "gold_exclusion_border_px": 6
+    },
+    "NightField": {
+      "roughness": 0.18,
+      "max_display": 0.93,
+      "gold_exclusion_border_px": 6
+    }
+  }
+}

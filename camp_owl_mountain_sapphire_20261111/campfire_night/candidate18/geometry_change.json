@@ -1,0 +1,17 @@
+{
+  "cause": "New outlines retained old interior color polygons, leaving unwanted metal wedges and tiny metal holes. The enamel region now follows each real solid boundary; the rim classification owns its uniform band.",
+  "changed": [
+    "pine_left_trunk",
+    "pine_left_lower",
+    "pine_left_middle",
+    "pine_left_top",
+    "pine_right_trunk",
+    "pine_right_lower",
+    "pine_right_middle",
+    "pine_right_top",
+    "outer_red_flame",
+    "middle_amber_flame",
+    "inner_yellow_flame"
+  ],
+  "native_review_pending": true
+}

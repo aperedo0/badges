@@ -1,0 +1,71 @@
+{
+  "checkpoint": "/Users/antonioperedo/Desktop/badges/treasure_chest_20261113/phase04/wood_lab/timber_refinement/grain_hierarchy/owner_start.blend",
+  "render_size": [
+    1200,
+    888
+  ],
+  "model_quad": [
+    [
+      200,
+      130
+    ],
+    [
+      200,
+      555
+    ],
+    [
+      990,
+      535
+    ],
+    [
+      990,
+      90
+    ]
+  ],
+  "reference_quad": [
+    [
+      476,
+      788
+    ],
+    [
+      476,
+      932
+    ],
+    [
+      716,
+      917
+    ],
+    [
+      716,
+      776
+    ]
+  ],
+  "inspection_bounds": [
+    -2.15,
+    -0.35,
+    -2.1,
+    -0.9
+  ],
+  "notes": "Approximate plane rectification; relief parallax and mockup inconsistencies remain. Reference board edges are partly occluded.",
+  "canonical_camera_and_lights": "Preserved H baseline",
+  "projected_grid_quad": [
+    [
+      151.30539536476135,
+      126.20055198669434
+    ],
+    [
+      151.30539536476135,
+      779.1514086127281
+    ],
+    [
+      983.934473991394,
+      742.8582633733749
+    ],
+    [
+      983.934473991394,
+      89.90740013122559
+    ]
+  ],
+  "normalization_method": "Manually aligned visible wood region. Projected full grid extends behind lower hardware and is not a valid visible crop. The same image region is used for both unchanged-camera baselines.",
+  "measurement_limits": "Ratios refer to the visible corresponding wood region. Reference board edges are occluded, so full plank dimensions and physical depth are not recoverable."
+}

@@ -1,0 +1,7 @@
+Final focused construction pass after candidate14 review
+
+Narrow the upper armor crown and give its shoulders a more direct descent while preserving the two flat mounting faces. Give the feet a continuous flare and smaller lower cutbacks. The hard turn width prevents expanding their outside corners, so lower spread is added along the rails on their inner boundaries and the upper wall is tapered inward.
+
+Use a modest 6 percent further handle height reduction based on the paired crop proportions, and a 10 percent thicker round tube. Blend the cheek and collar projection into the rolled cover. Widen the crown tab and shorten its descending leg. Tighten the bottom latch return to an 0.085 centerline radius and tuck its last bend 0.03 toward the chest, retaining positive inner bend radius and a buried rounded termination. Reduce the visible shield backing border. Increase the end arch and small body fixing heads without adding rivets.
+
+Reference counts and corrected attachment margins are preserved. Keep closed solids, identity transforms and the fixed turn envelope. Save the live source and numbered copy before renders. Wood and final materials remain later phases.

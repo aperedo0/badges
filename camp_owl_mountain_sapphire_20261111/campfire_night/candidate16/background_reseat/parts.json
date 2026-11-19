@@ -1,0 +1,28 @@
+{
+ "units": {
+  "S": 0.005046296296296296,
+  "axis": 615,
+  "top": 85,
+  "width_px": 1254,
+  "height_px": 1254
+ },
+ "box": null,
+ "parts": [
+  {
+   "name": "night_backplate",
+   "base": 0.075,
+   "materials": [
+    "NightField",
+    "Side"
+   ],
+   "triangles": 5884,
+   "front": 1022
+  }
+ ],
+ "order": [
+  "night_backplate"
+ ],
+ "validate_order": [
+  "night_backplate"
+ ]
+}

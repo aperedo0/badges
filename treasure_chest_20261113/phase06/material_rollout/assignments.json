@@ -1,0 +1,2259 @@
+{
+  "wood_objects": [
+    "Master Chest Body Envelope",
+    "Lab Chest Barrel Lid Envelope"
+  ],
+  "iron_objects": [
+    "Lab Chest Upper Lid Rim",
+    "Lab Chest Body Upper Rim",
+    "Lab Chest Corner Upright -1 -1",
+    "Lab Chest Angular Boot -1 -1",
+    "Lab Chest Corner Upright -1 1",
+    "Lab Chest Angular Boot -1 1",
+    "Lab Chest Corner Upright 1 -1",
+    "Lab Chest Angular Boot 1 -1",
+    "Lab Chest Corner Upright 1 1",
+    "Lab Chest Angular Boot 1 1",
+    "Lab Chest Central Lock Strap",
+    "Lab Chest Central Lower Cuff",
+    "Lab Chest End Arch Crown Tab -1",
+    "Lab Chest End Arch Crown Tab 1",
+    "Lab Chest Upper Corner Front Rivet -1 -1 Seat",
+    "Lab Chest Upper Corner End Rivet -1 -1 Seat",
+    "Lab Chest Boot Front Rivet -1 -1 Seat",
+    "Lab Chest Boot End Rivet -1 -1 Seat",
+    "Lab Chest Upper Corner Front Rivet -1 1 Seat",
+    "Lab Chest Upper Corner End Rivet -1 1 Seat",
+    "Lab Chest Boot Front Rivet -1 1 Seat",
+    "Lab Chest Boot End Rivet -1 1 Seat",
+    "Lab Chest Upper Corner Front Rivet 1 -1 Seat",
+    "Lab Chest Upper Corner End Rivet 1 -1 Seat",
+    "Lab Chest Boot Front Rivet 1 -1 Seat",
+    "Lab Chest Boot End Rivet 1 -1 Seat",
+    "Lab Chest Upper Corner Front Rivet 1 1 Seat",
+    "Lab Chest Upper Corner End Rivet 1 1 Seat",
+    "Lab Chest Boot Front Rivet 1 1 Seat",
+    "Lab Chest Boot End Rivet 1 1 Seat"
+  ],
+  "preserved_iron_benchmark": [
+    "Lab Chest Lower Rim",
+    "Lab Chest Rail Rivet 1 3",
+    "Lab Chest Rail Rivet 1 4"
+  ],
+  "wood_material": "Chest wood shared varied atlas",
+  "iron_material": "Chest forged iron shared varied surface",
+  "charts": [
+    {
+      "kind": "wood",
+      "object": "Master Chest Body Envelope",
+      "chart": "body outer face -1 row 0",
+      "tile": 3,
+      "physical_scale": 0.9214199219560321,
+      "grain_length": 5.1000001430511475,
+      "cross_width": 2.507999986410141,
+      "rare_knot": true
+    },
+    {
+      "kind": "wood",
+      "object": "Master Chest Body Envelope",
+      "chart": "body outer face 1 row 0",
+      "tile": 1,
+      "physical_scale": 0.9446555878115334,
+      "grain_length": 5.1000001430511475,
+      "cross_width": 2.507999986410141,
+      "rare_knot": false
+    },
+    {
+      "kind": "wood",
+      "object": "Master Chest Body Envelope",
+      "chart": "body outer face -1 row 1",
+      "tile": 2,
+      "physical_scale": 0.979999972511741,
+      "grain_length": 5.1000001430511475,
+      "cross_width": 2.5080000460147858,
+      "rare_knot": false
+    },
+    {
+      "kind": "wood",
+      "object": "Master Chest Body Envelope",
+      "chart": "body outer face 1 row 1",
+      "tile": 2,
+      "physical_scale": 0.9738953202317353,
+      "grain_length": 5.1000001430511475,
+      "cross_width": 2.5080000460147858,
+      "rare_knot": false
+    },
+    {
+      "kind": "wood",
+      "object": "Master Chest Body Envelope",
+      "chart": "body outer end -1 row 0",
+      "tile": 2,
+      "physical_scale": 0.932228126679626,
+      "grain_length": 3.0836368799209595,
+      "cross_width": 1.3774999976158142,
+      "rare_knot": false
+    },
+    {
+      "kind": "wood",
+      "object": "Master Chest Body Envelope",
+      "chart": "body outer end -1 row 1",
+      "tile": 2,
+      "physical_scale": 0.9175737533007274,
+      "grain_length": 3.0836368799209595,
+      "cross_width": 1.2100000083446503,
+      "rare_knot": false
+    },
+    {
+      "kind": "wood",
+      "object": "Master Chest Body Envelope",
+      "chart": "body outer end 1 row 1",
+      "tile": 2,
+      "physical_scale": 0.9147253879932182,
+      "grain_length": 3.0836368799209595,
+      "cross_width": 1.2100000083446503,
+      "rare_knot": false
+    },
+    {
+      "kind": "wood",
+      "object": "Master Chest Body Envelope",
+      "chart": "body outer end 1 row 0",
+      "tile": 2,
+      "physical_scale": 0.920498184529877,
+      "grain_length": 3.0836368799209595,
+      "cross_width": 1.3774999976158142,
+      "rare_knot": false
+    },
+    {
+      "kind": "wood",
+      "object": "Master Chest Body Envelope",
+      "chart": "body outer face 1 row 0 cap 0",
+      "tile": 2,
+      "physical_scale": 0.9816452274972326,
+      "grain_length": 2.451000064611435,
+      "cross_width": 0.20000016689300537,
+      "rare_knot": false
+    },
+    {
+      "kind": "wood",
+      "object": "Master Chest Body Envelope",
+      "chart": "body floor 1",
+      "tile": 0,
+      "physical_scale": 0.8666227577220489,
+      "grain_length": 4.9823079109191895,
+      "cross_width": 3.083636999130249,
+      "rare_knot": false
+    },
+    {
+      "kind": "wood",
+      "object": "Master Chest Body Envelope",
+      "chart": "body outer face -1 row 0 cap 0",
+      "tile": 3,
+      "physical_scale": 0.9503804671276691,
+      "grain_length": 2.451000064611435,
+      "cross_width": 0.20000016689300537,
+      "rare_knot": true
+    },
+    {
+      "kind": "wood",
+      "object": "Master Chest Body Envelope",
+      "chart": "body outer end -1 row 1 cap 1",
+      "tile": 1,
+      "physical_scale": 0.9538575000157214,
+      "grain_length": 3.0836368799209595,
+      "cross_width": 0.16115403175354004,
+      "rare_knot": false
+    },
+    {
+      "kind": "wood",
+      "object": "Master Chest Body Envelope",
+      "chart": "body floor 0",
+      "tile": 1,
+      "physical_scale": 0.8666227577220489,
+      "grain_length": 4.9823079109191895,
+      "cross_width": 3.083636999130249,
+      "rare_knot": false
+    },
+    {
+      "kind": "wood",
+      "object": "Master Chest Body Envelope",
+      "chart": "body inside end -1 row 0",
+      "tile": 1,
+      "physical_scale": 0.9322755456399182,
+      "grain_length": 2.7599998712539673,
+      "cross_width": 2.364999920129776,
+      "rare_knot": false
+    },
+    {
+      "kind": "wood",
+      "object": "Master Chest Body Envelope",
+      "chart": "body outer face 1 row 1 cap 1",
+      "tile": 0,
+      "physical_scale": 0.5363679193779601,
+      "grain_length": 0.1618185043334961,
+      "cross_width": 4.98230767250061,
+      "rare_knot": false
+    },
+    {
+      "kind": "wood",
+      "object": "Master Chest Body Envelope",
+      "chart": "body inside face 1 row 0",
+      "tile": 1,
+      "physical_scale": 0.9390493218453252,
+      "grain_length": 5.1000001430511475,
+      "cross_width": 2.364999920129776,
+      "rare_knot": false
+    },
+    {
+      "kind": "wood",
+      "object": "Master Chest Body Envelope",
+      "chart": "body outer end 1 row 1 cap 1",
+      "tile": 2,
+      "physical_scale": 0.9195136796563776,
+      "grain_length": 3.0836368799209595,
+      "cross_width": 0.16115403175354004,
+      "rare_knot": false
+    },
+    {
+      "kind": "wood",
+      "object": "Master Chest Body Envelope",
+      "chart": "body inside end 1 row 0",
+      "tile": 2,
+      "physical_scale": 0.9206436222542771,
+      "grain_length": 2.7599998712539673,
+      "cross_width": 2.364999920129776,
+      "rare_knot": false
+    },
+    {
+      "kind": "wood",
+      "object": "Master Chest Body Envelope",
+      "chart": "body outer face -1 row 1 cap 1",
+      "tile": 2,
+      "physical_scale": 0.5363679193779601,
+      "grain_length": 0.1618185043334961,
+      "cross_width": 4.98230767250061,
+      "rare_knot": false
+    },
+    {
+      "kind": "wood",
+      "object": "Master Chest Body Envelope",
+      "chart": "body inside face -1 row 0",
+      "tile": 0,
+      "physical_scale": 0.9102790254483193,
+      "grain_length": 5.1000001430511475,
+      "cross_width": 2.364999920129776,
+      "rare_knot": false
+    },
+    {
+      "kind": "wood",
+      "object": "Lab Chest Barrel Lid Envelope",
+      "chart": "lid outer stave 0",
+      "tile": 2,
+      "physical_scale": 0.9665982921431538,
+      "grain_length": 5.170710563659668,
+      "cross_width": 0.8861806927657722,
+      "rare_knot": false
+    },
+    {
+      "kind": "wood",
+      "object": "Lab Chest Barrel Lid Envelope",
+      "chart": "lid inner stave 0",
+      "tile": 0,
+      "physical_scale": 0.47240739223057315,
+      "grain_length": 5.170711040496826,
+      "cross_width": 5.656875916741955,
+      "rare_knot": false
+    },
+    {
+      "kind": "wood",
+      "object": "Lab Chest Barrel Lid Envelope",
+      "chart": "lid outer end -1 row 0",
+      "tile": 0,
+      "physical_scale": 0.9717804716103166,
+      "grain_length": 3.2693891525268555,
+      "cross_width": 0.9053367376327515,
+      "rare_knot": false
+    },
+    {
+      "kind": "wood",
+      "object": "Lab Chest Barrel Lid Envelope",
+      "chart": "lid inner stave 6",
+      "tile": 2,
+      "physical_scale": 0.4724035922624721,
+      "grain_length": 5.170711040496826,
+      "cross_width": 5.656921420096263,
+      "rare_knot": false
+    },
+    {
+      "kind": "wood",
+      "object": "Lab Chest Barrel Lid Envelope",
+      "chart": "lid outer stave 6",
+      "tile": 1,
+      "physical_scale": 0.4724035922624721,
+      "grain_length": 5.170710563659668,
+      "cross_width": 5.656921420096263,
+      "rare_knot": false
+    },
+    {
+      "kind": "wood",
+      "object": "Lab Chest Barrel Lid Envelope",
+      "chart": "lid outer end 1 row 0",
+      "tile": 1,
+      "physical_scale": 0.9366819619183429,
+      "grain_length": 3.2693891525268555,
+      "cross_width": 0.9053367376327515,
+      "rare_knot": false
+    },
+    {
+      "kind": "wood",
+      "object": "Lab Chest Barrel Lid Envelope",
+      "chart": "lid outer stave 1",
+      "tile": 0,
+      "physical_scale": 0.9538650551561735,
+      "grain_length": 5.170708179473877,
+      "cross_width": 0.8822965968654122,
+      "rare_knot": false
+    },
+    {
+      "kind": "wood",
+      "object": "Lab Chest Barrel Lid Envelope",
+      "chart": "lid outer end -1 row 1",
+      "tile": 2,
+      "physical_scale": 0.9637598082749229,
+      "grain_length": 2.8849570751190186,
+      "cross_width": 1.0143344402313232,
+      "rare_knot": false
+    },
+    {
+      "kind": "wood",
+      "object": "Lab Chest Barrel Lid Envelope",
+      "chart": "lid outer end 1 row 1",
+      "tile": 0,
+      "physical_scale": 0.973752950126379,
+      "grain_length": 2.8849570751190186,
+      "cross_width": 1.0143344402313232,
+      "rare_knot": false
+    },
+    {
+      "kind": "wood",
+      "object": "Lab Chest Barrel Lid Envelope",
+      "chart": "lid outer end 1 row 0 cap 0",
+      "tile": 0,
+      "physical_scale": 0.9268804334188878,
+      "grain_length": 0.001658797264099121,
+      "cross_width": 2.8831658363342285,
+      "rare_knot": false
+    },
+    {
+      "kind": "wood",
+      "object": "Lab Chest Barrel Lid Envelope",
+      "chart": "lid outer stave 2",
+      "tile": 2,
+      "physical_scale": 0.9559222371249474,
+      "grain_length": 5.170710563659668,
+      "cross_width": 0.7950936362644185,
+      "rare_knot": false
+    },
+    {
+      "kind": "wood",
+      "object": "Lab Chest Barrel Lid Envelope",
+      "chart": "lid outer stave 3",
+      "tile": 0,
+      "physical_scale": 0.9427261860935349,
+      "grain_length": 5.170710563659668,
+      "cross_width": 0.75851009809345,
+      "rare_knot": false
+    },
+    {
+      "kind": "wood",
+      "object": "Lab Chest Barrel Lid Envelope",
+      "chart": "lid outer stave 4",
+      "tile": 0,
+      "physical_scale": 0.9589837928360317,
+      "grain_length": 5.170710563659668,
+      "cross_width": 0.7950935269275323,
+      "rare_knot": false
+    },
+    {
+      "kind": "wood",
+      "object": "Lab Chest Barrel Lid Envelope",
+      "chart": "lid outer stave 5",
+      "tile": 2,
+      "physical_scale": 0.9665987378364387,
+      "grain_length": 5.170708179473877,
+      "cross_width": 0.8822969241352889,
+      "rare_knot": false
+    },
+    {
+      "kind": "wood",
+      "object": "Lab Chest Barrel Lid Envelope",
+      "chart": "lid inner stave 0 cap 1",
+      "tile": 1,
+      "physical_scale": 0.5220316126816537,
+      "grain_length": 3.200000286102295,
+      "cross_width": 5.119134426116943,
+      "rare_knot": false
+    },
+    {
+      "kind": "wood",
+      "object": "Lab Chest Barrel Lid Envelope",
+      "chart": "lid inner stave 1",
+      "tile": 1,
+      "physical_scale": 0.9527963621263438,
+      "grain_length": 4.760000467300415,
+      "cross_width": 0.8509353385184658,
+      "rare_knot": false
+    },
+    {
+      "kind": "wood",
+      "object": "Lab Chest Barrel Lid Envelope",
+      "chart": "lid inner stave 2",
+      "tile": 0,
+      "physical_scale": 0.9460717882532015,
+      "grain_length": 4.760000467300415,
+      "cross_width": 0.7678669979432788,
+      "rare_knot": false
+    },
+    {
+      "kind": "wood",
+      "object": "Lab Chest Barrel Lid Envelope",
+      "chart": "lid inner stave 3",
+      "tile": 0,
+      "physical_scale": 0.9298005432888707,
+      "grain_length": 4.760000228881836,
+      "cross_width": 0.7292753676611916,
+      "rare_knot": false
+    },
+    {
+      "kind": "wood",
+      "object": "Lab Chest Barrel Lid Envelope",
+      "chart": "lid inner stave 4",
+      "tile": 1,
+      "physical_scale": 0.9175795601032111,
+      "grain_length": 4.760000467300415,
+      "cross_width": 0.7678671001316641,
+      "rare_knot": false
+    },
+    {
+      "kind": "wood",
+      "object": "Lab Chest Barrel Lid Envelope",
+      "chart": "lid inner stave 5",
+      "tile": 0,
+      "physical_scale": 0.9353049930890294,
+      "grain_length": 4.760000467300415,
+      "cross_width": 0.8509352289584196,
+      "rare_knot": false
+    },
+    {
+      "kind": "wood",
+      "object": "Lab Chest Barrel Lid Envelope",
+      "chart": "lid inside end -1 row 0",
+      "tile": 1,
+      "physical_scale": 0.9717210094084237,
+      "grain_length": 2.9893221855163574,
+      "cross_width": 1.5653060376644135,
+      "rare_knot": false
+    },
+    {
+      "kind": "wood",
+      "object": "Lab Chest Barrel Lid Envelope",
+      "chart": "lid inside end -1 row 1",
+      "tile": 2,
+      "physical_scale": 0.982998655919786,
+      "grain_length": 2.7603858709335327,
+      "cross_width": 1.8452605605125427,
+      "rare_knot": false
+    },
+    {
+      "kind": "wood",
+      "object": "Lab Chest Barrel Lid Envelope",
+      "chart": "lid inside end 1 row 0",
+      "tile": 2,
+      "physical_scale": 0.9549351793956863,
+      "grain_length": 2.9893221855163574,
+      "cross_width": 1.5653060376644135,
+      "rare_knot": false
+    },
+    {
+      "kind": "wood",
+      "object": "Lab Chest Barrel Lid Envelope",
+      "chart": "lid inside end 1 row 1",
+      "tile": 0,
+      "physical_scale": 0.9128252553093864,
+      "grain_length": 2.7603858709335327,
+      "cross_width": 1.8452605605125427,
+      "rare_knot": false
+    },
+    {
+      "kind": "wood",
+      "object": "Lab Chest Barrel Lid Envelope",
+      "chart": "lid outer end -1 row 1 cap 0",
+      "tile": 0,
+      "physical_scale": 0.9431313190660648,
+      "grain_length": 0.0011931657791137695,
+      "cross_width": 0.006618499755859375,
+      "rare_knot": false
+    },
+    {
+      "kind": "wood",
+      "object": "Lab Chest Barrel Lid Envelope",
+      "chart": "lid outer end 1 row 1 cap 0",
+      "tile": 1,
+      "physical_scale": 0.9436108366279704,
+      "grain_length": 0.0011931657791137695,
+      "cross_width": 0.006618499755859375,
+      "rare_knot": false
+    },
+    {
+      "kind": "iron",
+      "object": "Lab Chest Upper Lid Rim",
+      "chart": "215 perimeter True cap 1",
+      "mapping": "perimeter True cap 1",
+      "physical_scale": 0.06978837276003803,
+      "phase": 0.8118784142124058,
+      "cross_width": 5.4831483364105225
+    },
+    {
+      "kind": "iron",
+      "object": "Lab Chest Upper Lid Rim",
+      "chart": "215 perimeter True",
+      "mapping": "perimeter True",
+      "physical_scale": 1.0,
+      "phase": 0.015654697074409942,
+      "cross_width": 0.23885226249694824
+    },
+    {
+      "kind": "iron",
+      "object": "Lab Chest Upper Lid Rim",
+      "chart": "215 perimeter False",
+      "mapping": "perimeter False",
+      "physical_scale": 0.7066665860813428,
+      "phase": 0.03165995529458297,
+      "cross_width": 0.541500061750412
+    },
+    {
+      "kind": "iron",
+      "object": "Lab Chest Upper Lid Rim",
+      "chart": "215 perimeter False cap 2",
+      "mapping": "perimeter False cap 2",
+      "physical_scale": 0.9010716803207043,
+      "phase": 0.46196470829344843,
+      "cross_width": 0.42467209696769714
+    },
+    {
+      "kind": "iron",
+      "object": "Lab Chest Upper Lid Rim",
+      "chart": "215 perimeter False cap 0",
+      "mapping": "perimeter False cap 0",
+      "physical_scale": 0.10204266017896904,
+      "phase": 0.32741805732899687,
+      "cross_width": 3.750000238418579
+    },
+    {
+      "kind": "iron",
+      "object": "Lab Chest Upper Lid Rim",
+      "chart": "215 curved hoop 0 face",
+      "mapping": "curved hoop 0 face",
+      "physical_scale": 0.6304117447405538,
+      "phase": 0.6455178460055824,
+      "cross_width": 0.6070001125335693
+    },
+    {
+      "kind": "iron",
+      "object": "Lab Chest Upper Lid Rim",
+      "chart": "215 curved hoop 0 side",
+      "mapping": "curved hoop 0 side",
+      "physical_scale": 0.5167698218640877,
+      "phase": 0.12331870872506837,
+      "cross_width": 0.7404844164848328
+    },
+    {
+      "kind": "iron",
+      "object": "Lab Chest Upper Lid Rim",
+      "chart": "215 curved hoop 3 face",
+      "mapping": "curved hoop 3 face",
+      "physical_scale": 0.6304117447405538,
+      "phase": 0.6974109391576282,
+      "cross_width": 0.6070001125335693
+    },
+    {
+      "kind": "iron",
+      "object": "Lab Chest Upper Lid Rim",
+      "chart": "215 curved hoop 3 side",
+      "mapping": "curved hoop 3 side",
+      "physical_scale": 0.5167698218640877,
+      "phase": 0.20070685886306378,
+      "cross_width": 0.7404844164848328
+    },
+    {
+      "kind": "iron",
+      "object": "Lab Chest Upper Lid Rim",
+      "chart": "215 curved hoop 1 face",
+      "mapping": "curved hoop 1 face",
+      "physical_scale": 0.8410106893438459,
+      "phase": 0.2702019329933726,
+      "cross_width": 0.4550001621246338
+    },
+    {
+      "kind": "iron",
+      "object": "Lab Chest Upper Lid Rim",
+      "chart": "215 curved hoop 1 side",
+      "mapping": "curved hoop 1 side",
+      "physical_scale": 1.0,
+      "phase": 0.546356301223811,
+      "cross_width": 0.20082931499928236
+    },
+    {
+      "kind": "iron",
+      "object": "Lab Chest Upper Lid Rim",
+      "chart": "215 curved hoop 2 face",
+      "mapping": "curved hoop 2 face",
+      "physical_scale": 0.841010248657259,
+      "phase": 0.2824054390770979,
+      "cross_width": 0.4550004005432129
+    },
+    {
+      "kind": "iron",
+      "object": "Lab Chest Upper Lid Rim",
+      "chart": "215 curved hoop 2 side",
+      "mapping": "curved hoop 2 side",
+      "physical_scale": 1.0,
+      "phase": 0.580068062920882,
+      "cross_width": 0.20082910638302565
+    },
+    {
+      "kind": "iron uv repair",
+      "object": "Lab Chest Upper Lid Rim",
+      "faces": 200,
+      "method": "Actual face plane projection for degenerate corner triangles"
+    },
+    {
+      "kind": "iron",
+      "object": "Lab Chest Body Upper Rim",
+      "chart": "23 perimeter True",
+      "mapping": "perimeter True",
+      "physical_scale": 0.8796777944920398,
+      "phase": 0.09274009020817167,
+      "cross_width": 0.4350001811981201
+    },
+    {
+      "kind": "iron",
+      "object": "Lab Chest Body Upper Rim",
+      "chart": "23 perimeter True cap 1",
+      "mapping": "perimeter True cap 1",
+      "physical_scale": 0.07193128663454317,
+      "phase": 0.315333492182442,
+      "cross_width": 5.319799184799194
+    },
+    {
+      "kind": "iron",
+      "object": "Lab Chest Body Upper Rim",
+      "chart": "23 perimeter False",
+      "mapping": "perimeter False",
+      "physical_scale": 0.8186991487174871,
+      "phase": 0.1211421603577119,
+      "cross_width": 0.4674000218510628
+    },
+    {
+      "kind": "iron",
+      "object": "Lab Chest Body Upper Rim",
+      "chart": "23 perimeter False cap 0",
+      "mapping": "perimeter False cap 0",
+      "physical_scale": 0.10555860224750786,
+      "phase": 0.4634185777942326,
+      "cross_width": 3.6250953674316406
+    },
+    {
+      "kind": "iron",
+      "object": "Lab Chest Body Upper Rim",
+      "chart": "23 perimeter False cap 2",
+      "mapping": "perimeter False cap 2",
+      "physical_scale": 0.8186991487174871,
+      "phase": 0.4302691032310171,
+      "cross_width": 0.4674000218510628
+    },
+    {
+      "kind": "iron uv repair",
+      "object": "Lab Chest Body Upper Rim",
+      "faces": 88,
+      "method": "Actual face plane projection for degenerate corner triangles"
+    },
+    {
+      "kind": "iron",
+      "object": "Lab Chest Corner Upright -1 -1",
+      "chart": "136 plane 0 1",
+      "mapping": "plane 0 1",
+      "physical_scale": 0.850429810138655,
+      "phase": 0.6490350160088807,
+      "cross_width": 0.44996070861816406
+    },
+    {
+      "kind": "iron",
+      "object": "Lab Chest Corner Upright -1 -1",
+      "chart": "136 plane 2 1",
+      "mapping": "plane 2 1",
+      "physical_scale": 0.8107467486072011,
+      "phase": 0.23245588213607657,
+      "cross_width": 0.4719846248626709
+    },
+    {
+      "kind": "iron",
+      "object": "Lab Chest Corner Upright -1 -1",
+      "chart": "136 plane 1 0",
+      "mapping": "plane 1 0",
+      "physical_scale": 0.810747158148477,
+      "phase": 0.4509727622412398,
+      "cross_width": 0.4719843864440918
+    },
+    {
+      "kind": "iron",
+      "object": "Lab Chest Corner Upright -1 -1",
+      "chart": "136 plane 0 0",
+      "mapping": "plane 0 0",
+      "physical_scale": 0.850429584832079,
+      "phase": 0.7151990186995396,
+      "cross_width": 0.4499608278274536
+    },
+    {
+      "kind": "iron",
+      "object": "Lab Chest Corner Upright -1 -1",
+      "chart": "136 plane 2 0",
+      "mapping": "plane 2 0",
+      "physical_scale": 0.8107467486072011,
+      "phase": 0.8425857372264366,
+      "cross_width": 0.4719846248626709
+    },
+    {
+      "kind": "iron",
+      "object": "Lab Chest Corner Upright -1 -1",
+      "chart": "136 plane 1 1",
+      "mapping": "plane 1 1",
+      "physical_scale": 0.810747158148477,
+      "phase": 0.4197802886556553,
+      "cross_width": 0.4719843864440918
+    },
+    {
+      "kind": "iron",
+      "object": "Lab Chest Angular Boot -1 -1",
+      "chart": "0 plane 1 0",
+      "mapping": "plane 1 0",
+      "physical_scale": 0.37698671177531806,
+      "phase": 0.01917579316348325,
+      "cross_width": 1.0150490403175354
+    },
+    {
+      "kind": "iron",
+      "object": "Lab Chest Angular Boot -1 -1",
+      "chart": "0 plane 1 1",
+      "mapping": "plane 1 1",
+      "physical_scale": 0.4591528314316066,
+      "phase": 0.5926702791242828,
+      "cross_width": 0.8334044218063354
+    },
+    {
+      "kind": "iron",
+      "object": "Lab Chest Angular Boot -1 -1",
+      "chart": "0 plane 0 0",
+      "mapping": "plane 0 0",
+      "physical_scale": 0.390449883394203,
+      "phase": 0.33558496013420985,
+      "cross_width": 0.9800489544868469
+    },
+    {
+      "kind": "iron",
+      "object": "Lab Chest Angular Boot -1 -1",
+      "chart": "0 plane 2 0",
+      "mapping": "plane 2 0",
+      "physical_scale": 0.44996123268096583,
+      "phase": 0.34722262040360374,
+      "cross_width": 0.8504288196563721
+    },
+    {
+      "kind": "iron",
+      "object": "Lab Chest Angular Boot -1 -1",
+      "chart": "0 plane 2 1",
+      "mapping": "plane 2 1",
+      "physical_scale": 0.44837937842868675,
+      "phase": 0.9112701454414767,
+      "cross_width": 0.8534290790557861
+    },
+    {
+      "kind": "iron",
+      "object": "Lab Chest Angular Boot -1 -1",
+      "chart": "0 plane 0 1",
+      "mapping": "plane 0 1",
+      "physical_scale": 0.37698673391233756,
+      "phase": 0.7090962040726765,
+      "cross_width": 1.0150489807128906
+    },
+    {
+      "kind": "iron",
+      "object": "Lab Chest Corner Upright -1 1",
+      "chart": "136 plane 0 1",
+      "mapping": "plane 0 1",
+      "physical_scale": 0.850429584832079,
+      "phase": 0.05173093323828589,
+      "cross_width": 0.4499608278274536
+    },
+    {
+      "kind": "iron",
+      "object": "Lab Chest Corner Upright -1 1",
+      "chart": "136 plane 1 0",
+      "mapping": "plane 1 0",
+      "physical_scale": 0.8107475676901665,
+      "phase": 0.263191780296124,
+      "cross_width": 0.4719841480255127
+    },
+    {
+      "kind": "iron",
+      "object": "Lab Chest Corner Upright -1 1",
+      "chart": "136 plane 2 0",
+      "mapping": "plane 2 0",
+      "physical_scale": 0.8107467486072011,
+      "phase": 0.7822551650215791,
+      "cross_width": 0.4719846248626709
+    },
+    {
+      "kind": "iron",
+      "object": "Lab Chest Corner Upright -1 1",
+      "chart": "136 plane 0 0",
+      "mapping": "plane 0 0",
+      "physical_scale": 0.8301145090948397,
+      "phase": 0.4134311967783684,
+      "cross_width": 0.46097254753112793
+    },
+    {
+      "kind": "iron",
+      "object": "Lab Chest Corner Upright -1 1",
+      "chart": "136 plane 2 1",
+      "mapping": "plane 2 1",
+      "physical_scale": 0.810747158148477,
+      "phase": 0.3968911211070641,
+      "cross_width": 0.4719843864440918
+    },
+    {
+      "kind": "iron",
+      "object": "Lab Chest Corner Upright -1 1",
+      "chart": "136 plane 1 1",
+      "mapping": "plane 1 1",
+      "physical_scale": 0.8107475676901665,
+      "phase": 0.4017093626165681,
+      "cross_width": 0.4719841480255127
+    },
+    {
+      "kind": "iron",
+      "object": "Lab Chest Angular Boot -1 1",
+      "chart": "1 plane 1 0",
+      "mapping": "plane 1 0",
+      "physical_scale": 0.37698668963830123,
+      "phase": 0.0782139628200033,
+      "cross_width": 1.0150490999221802
+    },
+    {
+      "kind": "iron",
+      "object": "Lab Chest Angular Boot -1 1",
+      "chart": "1 plane 1 1",
+      "mapping": "plane 1 1",
+      "physical_scale": 0.4591528314316066,
+      "phase": 0.2702334919035362,
+      "cross_width": 0.8334044218063354
+    },
+    {
+      "kind": "iron",
+      "object": "Lab Chest Angular Boot -1 1",
+      "chart": "1 plane 2 1",
+      "mapping": "plane 2 1",
+      "physical_scale": 0.43071537699850865,
+      "phase": 0.4442294931550592,
+      "cross_width": 0.8884289264678955
+    },
+    {
+      "kind": "iron",
+      "object": "Lab Chest Angular Boot -1 1",
+      "chart": "1 plane 0 0",
+      "mapping": "plane 0 0",
+      "physical_scale": 0.390449883394203,
+      "phase": 0.43119089598467875,
+      "cross_width": 0.9800489544868469
+    },
+    {
+      "kind": "iron",
+      "object": "Lab Chest Angular Boot -1 1",
+      "chart": "1 plane 2 0",
+      "mapping": "plane 2 0",
+      "physical_scale": 0.43071531920517747,
+      "phase": 0.23784810188875682,
+      "cross_width": 0.8884290456771851
+    },
+    {
+      "kind": "iron",
+      "object": "Lab Chest Angular Boot -1 1",
+      "chart": "1 plane 0 1",
+      "mapping": "plane 0 1",
+      "physical_scale": 0.3948820019653161,
+      "phase": 0.3136753928370651,
+      "cross_width": 0.9690489768981934
+    },
+    {
+      "kind": "iron",
+      "object": "Lab Chest Corner Upright 1 -1",
+      "chart": "136 plane 0 0",
+      "mapping": "plane 0 0",
+      "physical_scale": 0.850429584832079,
+      "phase": 0.5513961906026018,
+      "cross_width": 0.4499608278274536
+    },
+    {
+      "kind": "iron",
+      "object": "Lab Chest Corner Upright 1 -1",
+      "chart": "136 plane 1 0",
+      "mapping": "plane 1 0",
+      "physical_scale": 0.8107475676901665,
+      "phase": 0.3702007208572847,
+      "cross_width": 0.4719841480255127
+    },
+    {
+      "kind": "iron",
+      "object": "Lab Chest Corner Upright 1 -1",
+      "chart": "136 plane 2 1",
+      "mapping": "plane 2 1",
+      "physical_scale": 0.8107467486072011,
+      "phase": 0.45820609470180246,
+      "cross_width": 0.4719846248626709
+    },
+    {
+      "kind": "iron",
+      "object": "Lab Chest Corner Upright 1 -1",
+      "chart": "136 plane 0 1",
+      "mapping": "plane 0 1",
+      "physical_scale": 0.8301145090948397,
+      "phase": 0.5446978964926137,
+      "cross_width": 0.46097254753112793
+    },
+    {
+      "kind": "iron",
+      "object": "Lab Chest Corner Upright 1 -1",
+      "chart": "136 plane 2 0",
+      "mapping": "plane 2 0",
+      "physical_scale": 0.810747158148477,
+      "phase": 0.0567809759641468,
+      "cross_width": 0.4719843864440918
+    },
+    {
+      "kind": "iron",
+      "object": "Lab Chest Corner Upright 1 -1",
+      "chart": "136 plane 1 1",
+      "mapping": "plane 1 1",
+      "physical_scale": 0.8107475676901665,
+      "phase": 0.794160155526483,
+      "cross_width": 0.4719841480255127
+    },
+    {
+      "kind": "iron",
+      "object": "Lab Chest Angular Boot 1 -1",
+      "chart": "4 plane 1 0",
+      "mapping": "plane 1 0",
+      "physical_scale": 0.37698668963830123,
+      "phase": 0.46484664549412896,
+      "cross_width": 1.0150490999221802
+    },
+    {
+      "kind": "iron",
+      "object": "Lab Chest Angular Boot 1 -1",
+      "chart": "4 plane 1 1",
+      "mapping": "plane 1 1",
+      "physical_scale": 0.4591528314316066,
+      "phase": 0.15204450914628756,
+      "cross_width": 0.8334044218063354
+    },
+    {
+      "kind": "iron",
+      "object": "Lab Chest Angular Boot 1 -1",
+      "chart": "4 plane 2 0",
+      "mapping": "plane 2 0",
+      "physical_scale": 0.43071537699850865,
+      "phase": 0.39770141844151125,
+      "cross_width": 0.8884289264678955
+    },
+    {
+      "kind": "iron",
+      "object": "Lab Chest Angular Boot 1 -1",
+      "chart": "4 plane 0 1",
+      "mapping": "plane 0 1",
+      "physical_scale": 0.390449883394203,
+      "phase": 0.7220396160957263,
+      "cross_width": 0.9800489544868469
+    },
+    {
+      "kind": "iron",
+      "object": "Lab Chest Angular Boot 1 -1",
+      "chart": "4 plane 2 1",
+      "mapping": "plane 2 1",
+      "physical_scale": 0.43071531920517747,
+      "phase": 0.15852159840874286,
+      "cross_width": 0.8884290456771851
+    },
+    {
+      "kind": "iron",
+      "object": "Lab Chest Angular Boot 1 -1",
+      "chart": "4 plane 0 0",
+      "mapping": "plane 0 0",
+      "physical_scale": 0.3948820019653161,
+      "phase": 0.4108527614726227,
+      "cross_width": 0.9690489768981934
+    },
+    {
+      "kind": "iron",
+      "object": "Lab Chest Corner Upright 1 1",
+      "chart": "136 plane 0 0",
+      "mapping": "plane 0 0",
+      "physical_scale": 0.850429810138655,
+      "phase": 0.3755496936224185,
+      "cross_width": 0.44996070861816406
+    },
+    {
+      "kind": "iron",
+      "object": "Lab Chest Corner Upright 1 1",
+      "chart": "136 plane 2 0",
+      "mapping": "plane 2 0",
+      "physical_scale": 0.8107467486072011,
+      "phase": 0.8591635748964901,
+      "cross_width": 0.4719846248626709
+    },
+    {
+      "kind": "iron",
+      "object": "Lab Chest Corner Upright 1 1",
+      "chart": "136 plane 1 0",
+      "mapping": "plane 1 0",
+      "physical_scale": 0.810747158148477,
+      "phase": 0.7195546728489207,
+      "cross_width": 0.4719843864440918
+    },
+    {
+      "kind": "iron",
+      "object": "Lab Chest Corner Upright 1 1",
+      "chart": "136 plane 0 1",
+      "mapping": "plane 0 1",
+      "physical_scale": 0.850429584832079,
+      "phase": 0.5677813171548253,
+      "cross_width": 0.4499608278274536
+    },
+    {
+      "kind": "iron",
+      "object": "Lab Chest Corner Upright 1 1",
+      "chart": "136 plane 2 1",
+      "mapping": "plane 2 1",
+      "physical_scale": 0.8107467486072011,
+      "phase": 0.1671545572228108,
+      "cross_width": 0.4719846248626709
+    },
+    {
+      "kind": "iron",
+      "object": "Lab Chest Corner Upright 1 1",
+      "chart": "136 plane 1 1",
+      "mapping": "plane 1 1",
+      "physical_scale": 0.810747158148477,
+      "phase": 0.43072279395678215,
+      "cross_width": 0.4719843864440918
+    },
+    {
+      "kind": "iron",
+      "object": "Lab Chest Angular Boot 1 1",
+      "chart": "5 plane 1 0",
+      "mapping": "plane 1 0",
+      "physical_scale": 0.37698671177531806,
+      "phase": 0.21424422132423918,
+      "cross_width": 1.0150490403175354
+    },
+    {
+      "kind": "iron",
+      "object": "Lab Chest Angular Boot 1 1",
+      "chart": "5 plane 1 1",
+      "mapping": "plane 1 1",
+      "physical_scale": 0.4591528314316066,
+      "phase": 0.3807348258741563,
+      "cross_width": 0.8334044218063354
+    },
+    {
+      "kind": "iron",
+      "object": "Lab Chest Angular Boot 1 1",
+      "chart": "5 plane 0 1",
+      "mapping": "plane 0 1",
+      "physical_scale": 0.390449883394203,
+      "phase": 0.8308637413517592,
+      "cross_width": 0.9800489544868469
+    },
+    {
+      "kind": "iron",
+      "object": "Lab Chest Angular Boot 1 1",
+      "chart": "5 plane 2 1",
+      "mapping": "plane 2 1",
+      "physical_scale": 0.44996123268096583,
+      "phase": 0.9017034076261163,
+      "cross_width": 0.8504288196563721
+    },
+    {
+      "kind": "iron",
+      "object": "Lab Chest Angular Boot 1 1",
+      "chart": "5 plane 2 0",
+      "mapping": "plane 2 0",
+      "physical_scale": 0.44837937842868675,
+      "phase": 0.6480418132843744,
+      "cross_width": 0.8534290790557861
+    },
+    {
+      "kind": "iron",
+      "object": "Lab Chest Angular Boot 1 1",
+      "chart": "5 plane 0 0",
+      "mapping": "plane 0 0",
+      "physical_scale": 0.37698673391233756,
+      "phase": 0.09858666076248222,
+      "cross_width": 1.0150489807128906
+    },
+    {
+      "kind": "iron",
+      "object": "Lab Chest Central Lock Strap",
+      "chart": "52 plane 2 0",
+      "mapping": "plane 2 0",
+      "physical_scale": 0.7777891057287861,
+      "phase": 0.6575450972528313,
+      "cross_width": 0.4919842630624771
+    },
+    {
+      "kind": "iron",
+      "object": "Lab Chest Central Lock Strap",
+      "chart": "52 plane 1 0",
+      "mapping": "plane 1 0",
+      "physical_scale": 1.0,
+      "phase": 0.6702129023679174,
+      "cross_width": 0.1969841718673706
+    },
+    {
+      "kind": "iron",
+      "object": "Lab Chest Central Lock Strap",
+      "chart": "52 plane 0 0",
+      "mapping": "plane 0 0",
+      "physical_scale": 1.0,
+      "phase": 0.07282542192246548,
+      "cross_width": 0.17496073246002197
+    },
+    {
+      "kind": "iron",
+      "object": "Lab Chest Central Lock Strap",
+      "chart": "52 plane 2 1",
+      "mapping": "plane 2 1",
+      "physical_scale": 0.7777891057287861,
+      "phase": 0.021615091942217106,
+      "cross_width": 0.4919842630624771
+    },
+    {
+      "kind": "iron",
+      "object": "Lab Chest Central Lock Strap",
+      "chart": "52 plane 1 1",
+      "mapping": "plane 1 1",
+      "physical_scale": 1.0,
+      "phase": 0.25715536671442424,
+      "cross_width": 0.1969841718673706
+    },
+    {
+      "kind": "iron",
+      "object": "Lab Chest Central Lock Strap",
+      "chart": "52 plane 0 1",
+      "mapping": "plane 0 1",
+      "physical_scale": 1.0,
+      "phase": 0.13258710880892807,
+      "cross_width": 0.17496073246002197
+    },
+    {
+      "kind": "iron",
+      "object": "Lab Chest Central Lower Cuff",
+      "chart": "52 plane 2 0",
+      "mapping": "plane 2 0",
+      "physical_scale": 0.5374714597371475,
+      "phase": 0.2787038883682196,
+      "cross_width": 0.7119633853435516
+    },
+    {
+      "kind": "iron",
+      "object": "Lab Chest Central Lower Cuff",
+      "chart": "52 plane 1 0",
+      "mapping": "plane 1 0",
+      "physical_scale": 1.0,
+      "phase": 0.07578542251876917,
+      "cross_width": 0.21251893043518066
+    },
+    {
+      "kind": "iron",
+      "object": "Lab Chest Central Lower Cuff",
+      "chart": "52 plane 0 0",
+      "mapping": "plane 0 0",
+      "physical_scale": 1.0,
+      "phase": 0.10660743043604315,
+      "cross_width": 0.21251893043518066
+    },
+    {
+      "kind": "iron",
+      "object": "Lab Chest Central Lower Cuff",
+      "chart": "52 plane 2 1",
+      "mapping": "plane 2 1",
+      "physical_scale": 0.5223894135866157,
+      "phase": 0.3574391559454273,
+      "cross_width": 0.7325186729431152
+    },
+    {
+      "kind": "iron",
+      "object": "Lab Chest Central Lower Cuff",
+      "chart": "52 plane 1 1",
+      "mapping": "plane 1 1",
+      "physical_scale": 1.0,
+      "phase": 0.8390017299313409,
+      "cross_width": 0.21251893043518066
+    },
+    {
+      "kind": "iron",
+      "object": "Lab Chest Central Lower Cuff",
+      "chart": "52 plane 0 1",
+      "mapping": "plane 0 1",
+      "physical_scale": 1.0,
+      "phase": 0.6432013312156915,
+      "cross_width": 0.2022411823272705
+    },
+    {
+      "kind": "iron",
+      "object": "Lab Chest End Arch Crown Tab -1",
+      "chart": "704 plane 0 1",
+      "mapping": "plane 0 1",
+      "physical_scale": 0.8246979023201706,
+      "phase": 0.8109672469502309,
+      "cross_width": 0.4640002101659775
+    },
+    {
+      "kind": "iron",
+      "object": "Lab Chest End Arch Crown Tab -1",
+      "chart": "704 plane 1 0",
+      "mapping": "plane 1 0",
+      "physical_scale": 0.8246980347442309,
+      "phase": 0.4873170354306906,
+      "cross_width": 0.4640001356601715
+    },
+    {
+      "kind": "iron",
+      "object": "Lab Chest End Arch Crown Tab -1",
+      "chart": "704 plane 1 1",
+      "mapping": "plane 1 1",
+      "physical_scale": 0.8259939837322798,
+      "phase": 0.5822143307939491,
+      "cross_width": 0.4632721394300461
+    },
+    {
+      "kind": "iron",
+      "object": "Lab Chest End Arch Crown Tab -1",
+      "chart": "704 plane 0 0",
+      "mapping": "plane 0 0",
+      "physical_scale": 0.8250490814406671,
+      "phase": 0.40580422843052805,
+      "cross_width": 0.4638027101755142
+    },
+    {
+      "kind": "iron",
+      "object": "Lab Chest End Arch Crown Tab -1",
+      "chart": "704 plane 2 0",
+      "mapping": "plane 2 0",
+      "physical_scale": 1.0,
+      "phase": 0.7697923259053366,
+      "cross_width": 0.29290151596069336
+    },
+    {
+      "kind": "iron",
+      "object": "Lab Chest End Arch Crown Tab -1",
+      "chart": "704 plane 2 0 cap 2",
+      "mapping": "plane 2 0 cap 2",
+      "physical_scale": 1.0,
+      "phase": 0.5264078252495016,
+      "cross_width": 0.00036513805389404297
+    },
+    {
+      "kind": "iron",
+      "object": "Lab Chest End Arch Crown Tab -1",
+      "chart": "704 plane 2 1 cap 2",
+      "mapping": "plane 2 1 cap 2",
+      "physical_scale": 0.7246069185797546,
+      "phase": 0.17656328548195035,
+      "cross_width": 0.5280932188034058
+    },
+    {
+      "kind": "iron",
+      "object": "Lab Chest End Arch Crown Tab -1",
+      "chart": "704 plane 2 1",
+      "mapping": "plane 2 1",
+      "physical_scale": 1.0,
+      "phase": 0.16495151152544976,
+      "cross_width": 0.29290151596069336
+    },
+    {
+      "kind": "iron",
+      "object": "Lab Chest End Arch Crown Tab -1",
+      "chart": "704 plane 1 0 cap 1",
+      "mapping": "plane 1 0 cap 1",
+      "physical_scale": 1.0,
+      "phase": 0.6301275806514901,
+      "cross_width": 0.00028634071350097656
+    },
+    {
+      "kind": "iron",
+      "object": "Lab Chest End Arch Crown Tab 1",
+      "chart": "1104 plane 0 0",
+      "mapping": "plane 0 0",
+      "physical_scale": 0.8246978758353637,
+      "phase": 0.6995502765095934,
+      "cross_width": 0.46400022506713867
+    },
+    {
+      "kind": "iron",
+      "object": "Lab Chest End Arch Crown Tab 1",
+      "chart": "1104 plane 1 0",
+      "mapping": "plane 1 0",
+      "physical_scale": 0.8246979817746016,
+      "phase": 0.020353087889971873,
+      "cross_width": 0.4640001654624939
+    },
+    {
+      "kind": "iron",
+      "object": "Lab Chest End Arch Crown Tab 1",
+      "chart": "1104 plane 1 1",
+      "mapping": "plane 1 1",
+      "physical_scale": 0.8259940900047709,
+      "phase": 0.15664294675554247,
+      "cross_width": 0.4632720798254013
+    },
+    {
+      "kind": "iron",
+      "object": "Lab Chest End Arch Crown Tab 1",
+      "chart": "1104 plane 0 1",
+      "mapping": "plane 0 1",
+      "physical_scale": 0.8250559203984318,
+      "phase": 0.17192436809500244,
+      "cross_width": 0.4637988656759262
+    },
+    {
+      "kind": "iron",
+      "object": "Lab Chest End Arch Crown Tab 1",
+      "chart": "1104 plane 2 0 cap 2",
+      "mapping": "plane 2 0 cap 2",
+      "physical_scale": 0.7355586886461507,
+      "phase": 0.514232701291381,
+      "cross_width": 0.5202304124832153
+    },
+    {
+      "kind": "iron",
+      "object": "Lab Chest End Arch Crown Tab 1",
+      "chart": "1104 plane 2 0",
+      "mapping": "plane 2 0",
+      "physical_scale": 1.0,
+      "phase": 0.1745369541591535,
+      "cross_width": 0.29290056228637695
+    },
+    {
+      "kind": "iron",
+      "object": "Lab Chest End Arch Crown Tab 1",
+      "chart": "1104 plane 2 1",
+      "mapping": "plane 2 1",
+      "physical_scale": 1.0,
+      "phase": 0.75434543560373,
+      "cross_width": 0.29290175437927246
+    },
+    {
+      "kind": "iron",
+      "object": "Lab Chest End Arch Crown Tab 1",
+      "chart": "1104 plane 1 0 cap 1",
+      "mapping": "plane 1 0 cap 1",
+      "physical_scale": 1.0,
+      "phase": 0.9606754951502341,
+      "cross_width": 0.0006382465362548828
+    },
+    {
+      "kind": "iron",
+      "object": "Lab Chest End Arch Crown Tab 1",
+      "chart": "1104 plane 2 1 cap 2",
+      "mapping": "plane 2 1 cap 2",
+      "physical_scale": 1.0,
+      "phase": 0.16466404816974556,
+      "cross_width": 0.00229799747467041
+    },
+    {
+      "kind": "iron",
+      "object": "Lab Chest End Arch Crown Tab 1",
+      "chart": "1104 plane 0 0 cap 0",
+      "mapping": "plane 0 0 cap 0",
+      "physical_scale": 1.0,
+      "phase": 0.025645361948628806,
+      "cross_width": 0.0004462897777557373
+    },
+    {
+      "kind": "iron",
+      "object": "Lab Chest Upper Corner Front Rivet -1 -1 Seat",
+      "chart": "0 plane 2 0",
+      "mapping": "plane 2 0",
+      "physical_scale": 1.0,
+      "phase": 0.087707841315394,
+      "cross_width": 0.26708555221557617
+    },
+    {
+      "kind": "iron",
+      "object": "Lab Chest Upper Corner Front Rivet -1 -1 Seat",
+      "chart": "0 plane 2 1",
+      "mapping": "plane 2 1",
+      "physical_scale": 1.0,
+      "phase": 0.7744209483051563,
+      "cross_width": 0.26708531379699707
+    },
+    {
+      "kind": "iron",
+      "object": "Lab Chest Upper Corner Front Rivet -1 -1 Seat",
+      "chart": "0 plane 1 1",
+      "mapping": "plane 1 1",
+      "physical_scale": 1.0,
+      "phase": 0.5566691763731513,
+      "cross_width": 0.012464046478271484
+    },
+    {
+      "kind": "iron",
+      "object": "Lab Chest Upper Corner Front Rivet -1 -1 Seat",
+      "chart": "0 plane 0 1",
+      "mapping": "plane 0 1",
+      "physical_scale": 1.0,
+      "phase": 0.07967065981088375,
+      "cross_width": 0.01100003719329834
+    },
+    {
+      "kind": "iron",
+      "object": "Lab Chest Upper Corner Front Rivet -1 -1 Seat",
+      "chart": "0 plane 0 0",
+      "mapping": "plane 0 0",
+      "physical_scale": 1.0,
+      "phase": 0.20993939010977655,
+      "cross_width": 0.01100003719329834
+    },
+    {
+      "kind": "iron",
+      "object": "Lab Chest Upper Corner Front Rivet -1 -1 Seat",
+      "chart": "0 plane 1 0",
+      "mapping": "plane 1 0",
+      "physical_scale": 1.0,
+      "phase": 0.11482752802139932,
+      "cross_width": 0.012464046478271484
+    },
+    {
+      "kind": "iron",
+      "object": "Lab Chest Upper Corner End Rivet -1 -1 Seat",
+      "chart": "0 plane 0 0",
+      "mapping": "plane 0 0",
+      "physical_scale": 1.0,
+      "phase": 0.6876125691451735,
+      "cross_width": 0.2415987253189087
+    },
+    {
+      "kind": "iron",
+      "object": "Lab Chest Upper Corner End Rivet -1 -1 Seat",
+      "chart": "0 plane 0 1",
+      "mapping": "plane 0 1",
+      "physical_scale": 1.0,
+      "phase": 0.6554142685656149,
+      "cross_width": 0.2415987253189087
+    },
+    {
+      "kind": "iron",
+      "object": "Lab Chest Upper Corner End Rivet -1 -1 Seat",
+      "chart": "0 plane 2 1",
+      "mapping": "plane 2 1",
+      "physical_scale": 1.0,
+      "phase": 0.8078486909793484,
+      "cross_width": 0.010999917984008789
+    },
+    {
+      "kind": "iron",
+      "object": "Lab Chest Upper Corner End Rivet -1 -1 Seat",
+      "chart": "0 plane 1 1",
+      "mapping": "plane 1 1",
+      "physical_scale": 1.0,
+      "phase": 0.5216475062853791,
+      "cross_width": 0.17121601104736328
+    },
+    {
+      "kind": "iron",
+      "object": "Lab Chest Upper Corner End Rivet -1 -1 Seat",
+      "chart": "0 plane 1 0",
+      "mapping": "plane 1 0",
+      "physical_scale": 1.0,
+      "phase": 0.10921775214899034,
+      "cross_width": 0.17121601104736328
+    },
+    {
+      "kind": "iron",
+      "object": "Lab Chest Upper Corner End Rivet -1 -1 Seat",
+      "chart": "0 plane 2 0",
+      "mapping": "plane 2 0",
+      "physical_scale": 1.0,
+      "phase": 0.9259753705281736,
+      "cross_width": 0.010999679565429688
+    },
+    {
+      "kind": "iron",
+      "object": "Lab Chest Boot Front Rivet -1 -1 Seat",
+      "chart": "0 plane 2 0",
+      "mapping": "plane 2 0",
+      "physical_scale": 1.0,
+      "phase": 0.5109810467390066,
+      "cross_width": 0.2980027198791504
+    },
+    {
+      "kind": "iron",
+      "object": "Lab Chest Boot Front Rivet -1 -1 Seat",
+      "chart": "0 plane 2 1",
+      "mapping": "plane 2 1",
+      "physical_scale": 1.0,
+      "phase": 0.3551044716027733,
+      "cross_width": 0.2980027198791504
+    },
+    {
+      "kind": "iron",
+      "object": "Lab Chest Boot Front Rivet -1 -1 Seat",
+      "chart": "0 plane 1 1",
+      "mapping": "plane 1 1",
+      "physical_scale": 1.0,
+      "phase": 0.7249363688904124,
+      "cross_width": 0.010463953018188477
+    },
+    {
+      "kind": "iron",
+      "object": "Lab Chest Boot Front Rivet -1 -1 Seat",
+      "chart": "0 plane 0 1",
+      "mapping": "plane 0 1",
+      "physical_scale": 1.0,
+      "phase": 0.528083364960954,
+      "cross_width": 0.009000062942504883
+    },
+    {
+      "kind": "iron",
+      "object": "Lab Chest Boot Front Rivet -1 -1 Seat",
+      "chart": "0 plane 0 0",
+      "mapping": "plane 0 0",
+      "physical_scale": 1.0,
+      "phase": 0.37937141521756035,
+      "cross_width": 0.009000182151794434
+    },
+    {
+      "kind": "iron",
+      "object": "Lab Chest Boot Front Rivet -1 -1 Seat",
+      "chart": "0 plane 1 0",
+      "mapping": "plane 1 0",
+      "physical_scale": 1.0,
+      "phase": 0.8108022118850319,
+      "cross_width": 0.010463833808898926
+    },
+    {
+      "kind": "iron",
+      "object": "Lab Chest Boot End Rivet -1 -1 Seat",
+      "chart": "0 plane 0 0",
+      "mapping": "plane 0 0",
+      "physical_scale": 1.0,
+      "phase": 0.378030388710148,
+      "cross_width": 0.27204227447509766
+    },
+    {
+      "kind": "iron",
+      "object": "Lab Chest Boot End Rivet -1 -1 Seat",
+      "chart": "0 plane 0 1",
+      "mapping": "plane 0 1",
+      "physical_scale": 1.0,
+      "phase": 0.15336920751609837,
+      "cross_width": 0.27204227447509766
+    },
+    {
+      "kind": "iron",
+      "object": "Lab Chest Boot End Rivet -1 -1 Seat",
+      "chart": "0 plane 2 1",
+      "mapping": "plane 2 1",
+      "physical_scale": 1.0,
+      "phase": 0.42784012866006876,
+      "cross_width": 0.009000062942504883
+    },
+    {
+      "kind": "iron",
+      "object": "Lab Chest Boot End Rivet -1 -1 Seat",
+      "chart": "0 plane 1 1",
+      "mapping": "plane 1 1",
+      "physical_scale": 1.0,
+      "phase": 0.556160459617115,
+      "cross_width": 0.1927429437637329
+    },
+    {
+      "kind": "iron",
+      "object": "Lab Chest Boot End Rivet -1 -1 Seat",
+      "chart": "0 plane 1 0",
+      "mapping": "plane 1 0",
+      "physical_scale": 1.0,
+      "phase": 0.9366306576828822,
+      "cross_width": 0.1927429437637329
+    },
+    {
+      "kind": "iron",
+      "object": "Lab Chest Boot End Rivet -1 -1 Seat",
+      "chart": "0 plane 2 0",
+      "mapping": "plane 2 0",
+      "physical_scale": 1.0,
+      "phase": 0.704126330245552,
+      "cross_width": 0.009000062942504883
+    },
+    {
+      "kind": "iron",
+      "object": "Lab Chest Upper Corner Front Rivet -1 1 Seat",
+      "chart": "0 plane 2 1",
+      "mapping": "plane 2 1",
+      "physical_scale": 1.0,
+      "phase": 0.06089690788710387,
+      "cross_width": 0.26708555221557617
+    },
+    {
+      "kind": "iron",
+      "object": "Lab Chest Upper Corner Front Rivet -1 1 Seat",
+      "chart": "0 plane 2 0",
+      "mapping": "plane 2 0",
+      "physical_scale": 1.0,
+      "phase": 0.6852303220717647,
+      "cross_width": 0.26708555221557617
+    },
+    {
+      "kind": "iron",
+      "object": "Lab Chest Upper Corner Front Rivet -1 1 Seat",
+      "chart": "0 plane 0 1",
+      "mapping": "plane 0 1",
+      "physical_scale": 1.0,
+      "phase": 0.4160032502562118,
+      "cross_width": 0.01100003719329834
+    },
+    {
+      "kind": "iron",
+      "object": "Lab Chest Upper Corner Front Rivet -1 1 Seat",
+      "chart": "0 plane 1 1",
+      "mapping": "plane 1 1",
+      "physical_scale": 1.0,
+      "phase": 0.11409165709584777,
+      "cross_width": 0.012464165687561035
+    },
+    {
+      "kind": "iron",
+      "object": "Lab Chest Upper Corner Front Rivet -1 1 Seat",
+      "chart": "0 plane 1 0",
+      "mapping": "plane 1 0",
+      "physical_scale": 1.0,
+      "phase": 0.9113431410887743,
+      "cross_width": 0.012464165687561035
+    },
+    {
+      "kind": "iron",
+      "object": "Lab Chest Upper Corner Front Rivet -1 1 Seat",
+      "chart": "0 plane 0 0",
+      "mapping": "plane 0 0",
+      "physical_scale": 1.0,
+      "phase": 0.21391157081060228,
+      "cross_width": 0.01100003719329834
+    },
+    {
+      "kind": "iron",
+      "object": "Lab Chest Upper Corner End Rivet -1 1 Seat",
+      "chart": "0 plane 0 0",
+      "mapping": "plane 0 0",
+      "physical_scale": 1.0,
+      "phase": 0.9258334728314243,
+      "cross_width": 0.24159860610961914
+    },
+    {
+      "kind": "iron",
+      "object": "Lab Chest Upper Corner End Rivet -1 1 Seat",
+      "chart": "0 plane 0 1",
+      "mapping": "plane 0 1",
+      "physical_scale": 1.0,
+      "phase": 0.32487364648489625,
+      "cross_width": 0.2415984869003296
+    },
+    {
+      "kind": "iron",
+      "object": "Lab Chest Upper Corner End Rivet -1 1 Seat",
+      "chart": "0 plane 2 1",
+      "mapping": "plane 2 1",
+      "physical_scale": 1.0,
+      "phase": 0.4324806828271525,
+      "cross_width": 0.010999917984008789
+    },
+    {
+      "kind": "iron",
+      "object": "Lab Chest Upper Corner End Rivet -1 1 Seat",
+      "chart": "0 plane 1 1",
+      "mapping": "plane 1 1",
+      "physical_scale": 1.0,
+      "phase": 0.5315633898006762,
+      "cross_width": 0.17121613025665283
+    },
+    {
+      "kind": "iron",
+      "object": "Lab Chest Upper Corner End Rivet -1 1 Seat",
+      "chart": "0 plane 1 0",
+      "mapping": "plane 1 0",
+      "physical_scale": 1.0,
+      "phase": 0.23462354797655144,
+      "cross_width": 0.17121613025665283
+    },
+    {
+      "kind": "iron",
+      "object": "Lab Chest Upper Corner End Rivet -1 1 Seat",
+      "chart": "0 plane 2 0",
+      "mapping": "plane 2 0",
+      "physical_scale": 1.0,
+      "phase": 0.8118168132970203,
+      "cross_width": 0.010999679565429688
+    },
+    {
+      "kind": "iron",
+      "object": "Lab Chest Boot Front Rivet -1 1 Seat",
+      "chart": "0 plane 2 1",
+      "mapping": "plane 2 1",
+      "physical_scale": 1.0,
+      "phase": 0.8285976626839593,
+      "cross_width": 0.2980027198791504
+    },
+    {
+      "kind": "iron",
+      "object": "Lab Chest Boot Front Rivet -1 1 Seat",
+      "chart": "0 plane 2 0",
+      "mapping": "plane 2 0",
+      "physical_scale": 1.0,
+      "phase": 0.788387845074612,
+      "cross_width": 0.2980029582977295
+    },
+    {
+      "kind": "iron",
+      "object": "Lab Chest Boot Front Rivet -1 1 Seat",
+      "chart": "0 plane 0 1",
+      "mapping": "plane 0 1",
+      "physical_scale": 1.0,
+      "phase": 0.7414088582388826,
+      "cross_width": 0.009000062942504883
+    },
+    {
+      "kind": "iron",
+      "object": "Lab Chest Boot Front Rivet -1 1 Seat",
+      "chart": "0 plane 1 1",
+      "mapping": "plane 1 1",
+      "physical_scale": 1.0,
+      "phase": 0.7561522062325665,
+      "cross_width": 0.010463953018188477
+    },
+    {
+      "kind": "iron",
+      "object": "Lab Chest Boot Front Rivet -1 1 Seat",
+      "chart": "0 plane 1 0",
+      "mapping": "plane 1 0",
+      "physical_scale": 1.0,
+      "phase": 0.8479845667213637,
+      "cross_width": 0.010464072227478027
+    },
+    {
+      "kind": "iron",
+      "object": "Lab Chest Boot Front Rivet -1 1 Seat",
+      "chart": "0 plane 0 0",
+      "mapping": "plane 0 0",
+      "physical_scale": 1.0,
+      "phase": 0.19716278483960278,
+      "cross_width": 0.009000182151794434
+    },
+    {
+      "kind": "iron",
+      "object": "Lab Chest Boot End Rivet -1 1 Seat",
+      "chart": "0 plane 0 0",
+      "mapping": "plane 0 0",
+      "physical_scale": 1.0,
+      "phase": 0.11643576164758301,
+      "cross_width": 0.2720423936843872
+    },
+    {
+      "kind": "iron",
+      "object": "Lab Chest Boot End Rivet -1 1 Seat",
+      "chart": "0 plane 0 1",
+      "mapping": "plane 0 1",
+      "physical_scale": 1.0,
+      "phase": 0.7312073441243483,
+      "cross_width": 0.27204227447509766
+    },
+    {
+      "kind": "iron",
+      "object": "Lab Chest Boot End Rivet -1 1 Seat",
+      "chart": "0 plane 2 1",
+      "mapping": "plane 2 1",
+      "physical_scale": 1.0,
+      "phase": 0.6087282650445094,
+      "cross_width": 0.008999824523925781
+    },
+    {
+      "kind": "iron",
+      "object": "Lab Chest Boot End Rivet -1 1 Seat",
+      "chart": "0 plane 1 1",
+      "mapping": "plane 1 1",
+      "physical_scale": 1.0,
+      "phase": 0.153072650304735,
+      "cross_width": 0.192743182182312
+    },
+    {
+      "kind": "iron",
+      "object": "Lab Chest Boot End Rivet -1 1 Seat",
+      "chart": "0 plane 1 0",
+      "mapping": "plane 1 0",
+      "physical_scale": 1.0,
+      "phase": 0.4640899688982818,
+      "cross_width": 0.192743182182312
+    },
+    {
+      "kind": "iron",
+      "object": "Lab Chest Boot End Rivet -1 1 Seat",
+      "chart": "0 plane 2 0",
+      "mapping": "plane 2 0",
+      "physical_scale": 1.0,
+      "phase": 0.9607289893577272,
+      "cross_width": 0.008999824523925781
+    },
+    {
+      "kind": "iron",
+      "object": "Lab Chest Upper Corner Front Rivet 1 -1 Seat",
+      "chart": "0 plane 2 0",
+      "mapping": "plane 2 0",
+      "physical_scale": 1.0,
+      "phase": 0.5859512571295846,
+      "cross_width": 0.26708555221557617
+    },
+    {
+      "kind": "iron",
+      "object": "Lab Chest Upper Corner Front Rivet 1 -1 Seat",
+      "chart": "0 plane 2 1",
+      "mapping": "plane 2 1",
+      "physical_scale": 1.0,
+      "phase": 0.499507729968474,
+      "cross_width": 0.26708555221557617
+    },
+    {
+      "kind": "iron",
+      "object": "Lab Chest Upper Corner Front Rivet 1 -1 Seat",
+      "chart": "0 plane 1 1",
+      "mapping": "plane 1 1",
+      "physical_scale": 1.0,
+      "phase": 0.4640408245797161,
+      "cross_width": 0.012464165687561035
+    },
+    {
+      "kind": "iron",
+      "object": "Lab Chest Upper Corner Front Rivet 1 -1 Seat",
+      "chart": "0 plane 0 1",
+      "mapping": "plane 0 1",
+      "physical_scale": 1.0,
+      "phase": 0.3428435003338122,
+      "cross_width": 0.01100003719329834
+    },
+    {
+      "kind": "iron",
+      "object": "Lab Chest Upper Corner Front Rivet 1 -1 Seat",
+      "chart": "0 plane 0 0",
+      "mapping": "plane 0 0",
+      "physical_scale": 1.0,
+      "phase": 0.24161260983881055,
+      "cross_width": 0.01100003719329834
+    },
+    {
+      "kind": "iron",
+      "object": "Lab Chest Upper Corner Front Rivet 1 -1 Seat",
+      "chart": "0 plane 1 0",
+      "mapping": "plane 1 0",
+      "physical_scale": 1.0,
+      "phase": 0.9682177683934426,
+      "cross_width": 0.012464165687561035
+    },
+    {
+      "kind": "iron",
+      "object": "Lab Chest Upper Corner End Rivet 1 -1 Seat",
+      "chart": "0 plane 0 1",
+      "mapping": "plane 0 1",
+      "physical_scale": 1.0,
+      "phase": 0.45415490404566844,
+      "cross_width": 0.24159860610961914
+    },
+    {
+      "kind": "iron",
+      "object": "Lab Chest Upper Corner End Rivet 1 -1 Seat",
+      "chart": "0 plane 0 0",
+      "mapping": "plane 0 0",
+      "physical_scale": 1.0,
+      "phase": 0.38987355254898004,
+      "cross_width": 0.2415984869003296
+    },
+    {
+      "kind": "iron",
+      "object": "Lab Chest Upper Corner End Rivet 1 -1 Seat",
+      "chart": "0 plane 2 0",
+      "mapping": "plane 2 0",
+      "physical_scale": 1.0,
+      "phase": 0.8731641847195973,
+      "cross_width": 0.010999917984008789
+    },
+    {
+      "kind": "iron",
+      "object": "Lab Chest Upper Corner End Rivet 1 -1 Seat",
+      "chart": "0 plane 1 1",
+      "mapping": "plane 1 1",
+      "physical_scale": 1.0,
+      "phase": 0.7999396191416364,
+      "cross_width": 0.17121613025665283
+    },
+    {
+      "kind": "iron",
+      "object": "Lab Chest Upper Corner End Rivet 1 -1 Seat",
+      "chart": "0 plane 1 0",
+      "mapping": "plane 1 0",
+      "physical_scale": 1.0,
+      "phase": 0.06966953570431454,
+      "cross_width": 0.17121613025665283
+    },
+    {
+      "kind": "iron",
+      "object": "Lab Chest Upper Corner End Rivet 1 -1 Seat",
+      "chart": "0 plane 2 1",
+      "mapping": "plane 2 1",
+      "physical_scale": 1.0,
+      "phase": 0.28945395589868206,
+      "cross_width": 0.010999679565429688
+    },
+    {
+      "kind": "iron",
+      "object": "Lab Chest Boot Front Rivet 1 -1 Seat",
+      "chart": "0 plane 2 0",
+      "mapping": "plane 2 0",
+      "physical_scale": 1.0,
+      "phase": 0.8163414447698955,
+      "cross_width": 0.2980027198791504
+    },
+    {
+      "kind": "iron",
+      "object": "Lab Chest Boot Front Rivet 1 -1 Seat",
+      "chart": "0 plane 2 1",
+      "mapping": "plane 2 1",
+      "physical_scale": 1.0,
+      "phase": 0.638454528478757,
+      "cross_width": 0.2980029582977295
+    },
+    {
+      "kind": "iron",
+      "object": "Lab Chest Boot Front Rivet 1 -1 Seat",
+      "chart": "0 plane 1 1",
+      "mapping": "plane 1 1",
+      "physical_scale": 1.0,
+      "phase": 0.38479400670694425,
+      "cross_width": 0.010463953018188477
+    },
+    {
+      "kind": "iron",
+      "object": "Lab Chest Boot Front Rivet 1 -1 Seat",
+      "chart": "0 plane 0 1",
+      "mapping": "plane 0 1",
+      "physical_scale": 1.0,
+      "phase": 0.11409338707073452,
+      "cross_width": 0.009000182151794434
+    },
+    {
+      "kind": "iron",
+      "object": "Lab Chest Boot Front Rivet 1 -1 Seat",
+      "chart": "0 plane 0 0",
+      "mapping": "plane 0 0",
+      "physical_scale": 1.0,
+      "phase": 0.31183508705147667,
+      "cross_width": 0.009000062942504883
+    },
+    {
+      "kind": "iron",
+      "object": "Lab Chest Boot Front Rivet 1 -1 Seat",
+      "chart": "0 plane 1 0",
+      "mapping": "plane 1 0",
+      "physical_scale": 1.0,
+      "phase": 0.5922025005454801,
+      "cross_width": 0.010464072227478027
+    },
+    {
+      "kind": "iron",
+      "object": "Lab Chest Boot End Rivet 1 -1 Seat",
+      "chart": "0 plane 0 1",
+      "mapping": "plane 0 1",
+      "physical_scale": 1.0,
+      "phase": 0.8950549461226299,
+      "cross_width": 0.2720423936843872
+    },
+    {
+      "kind": "iron",
+      "object": "Lab Chest Boot End Rivet 1 -1 Seat",
+      "chart": "0 plane 0 0",
+      "mapping": "plane 0 0",
+      "physical_scale": 1.0,
+      "phase": 0.8375796875846566,
+      "cross_width": 0.27204227447509766
+    },
+    {
+      "kind": "iron",
+      "object": "Lab Chest Boot End Rivet 1 -1 Seat",
+      "chart": "0 plane 2 0",
+      "mapping": "plane 2 0",
+      "physical_scale": 1.0,
+      "phase": 0.5846361575809768,
+      "cross_width": 0.008999824523925781
+    },
+    {
+      "kind": "iron",
+      "object": "Lab Chest Boot End Rivet 1 -1 Seat",
+      "chart": "0 plane 1 1",
+      "mapping": "plane 1 1",
+      "physical_scale": 1.0,
+      "phase": 0.13179568757590304,
+      "cross_width": 0.192743182182312
+    },
+    {
+      "kind": "iron",
+      "object": "Lab Chest Boot End Rivet 1 -1 Seat",
+      "chart": "0 plane 1 0",
+      "mapping": "plane 1 0",
+      "physical_scale": 1.0,
+      "phase": 0.7088660506222488,
+      "cross_width": 0.192743182182312
+    },
+    {
+      "kind": "iron",
+      "object": "Lab Chest Boot End Rivet 1 -1 Seat",
+      "chart": "0 plane 2 1",
+      "mapping": "plane 2 1",
+      "physical_scale": 1.0,
+      "phase": 0.27812586075150536,
+      "cross_width": 0.008999824523925781
+    },
+    {
+      "kind": "iron",
+      "object": "Lab Chest Upper Corner Front Rivet 1 1 Seat",
+      "chart": "0 plane 2 1",
+      "mapping": "plane 2 1",
+      "physical_scale": 1.0,
+      "phase": 0.5317228347943896,
+      "cross_width": 0.26708555221557617
+    },
+    {
+      "kind": "iron",
+      "object": "Lab Chest Upper Corner Front Rivet 1 1 Seat",
+      "chart": "0 plane 2 0",
+      "mapping": "plane 2 0",
+      "physical_scale": 1.0,
+      "phase": 0.22530153666096453,
+      "cross_width": 0.26708531379699707
+    },
+    {
+      "kind": "iron",
+      "object": "Lab Chest Upper Corner Front Rivet 1 1 Seat",
+      "chart": "0 plane 0 1",
+      "mapping": "plane 0 1",
+      "physical_scale": 1.0,
+      "phase": 0.1277073628227278,
+      "cross_width": 0.01100003719329834
+    },
+    {
+      "kind": "iron",
+      "object": "Lab Chest Upper Corner Front Rivet 1 1 Seat",
+      "chart": "0 plane 1 1",
+      "mapping": "plane 1 1",
+      "physical_scale": 1.0,
+      "phase": 0.5211713775649357,
+      "cross_width": 0.012464046478271484
+    },
+    {
+      "kind": "iron",
+      "object": "Lab Chest Upper Corner Front Rivet 1 1 Seat",
+      "chart": "0 plane 1 0",
+      "mapping": "plane 1 0",
+      "physical_scale": 1.0,
+      "phase": 0.9263981669061495,
+      "cross_width": 0.012464046478271484
+    },
+    {
+      "kind": "iron",
+      "object": "Lab Chest Upper Corner Front Rivet 1 1 Seat",
+      "chart": "0 plane 0 0",
+      "mapping": "plane 0 0",
+      "physical_scale": 1.0,
+      "phase": 0.6975245053037259,
+      "cross_width": 0.01100003719329834
+    },
+    {
+      "kind": "iron",
+      "object": "Lab Chest Upper Corner End Rivet 1 1 Seat",
+      "chart": "0 plane 0 1",
+      "mapping": "plane 0 1",
+      "physical_scale": 1.0,
+      "phase": 0.8854010299264635,
+      "cross_width": 0.2415987253189087
+    },
+    {
+      "kind": "iron",
+      "object": "Lab Chest Upper Corner End Rivet 1 1 Seat",
+      "chart": "0 plane 0 0",
+      "mapping": "plane 0 0",
+      "physical_scale": 1.0,
+      "phase": 0.23050706257135706,
+      "cross_width": 0.2415987253189087
+    },
+    {
+      "kind": "iron",
+      "object": "Lab Chest Upper Corner End Rivet 1 1 Seat",
+      "chart": "0 plane 2 0",
+      "mapping": "plane 2 0",
+      "physical_scale": 1.0,
+      "phase": 0.46747950884674144,
+      "cross_width": 0.010999917984008789
+    },
+    {
+      "kind": "iron",
+      "object": "Lab Chest Upper Corner End Rivet 1 1 Seat",
+      "chart": "0 plane 1 1",
+      "mapping": "plane 1 1",
+      "physical_scale": 1.0,
+      "phase": 0.8308096019782024,
+      "cross_width": 0.17121601104736328
+    },
+    {
+      "kind": "iron",
+      "object": "Lab Chest Upper Corner End Rivet 1 1 Seat",
+      "chart": "0 plane 1 0",
+      "mapping": "plane 1 0",
+      "physical_scale": 1.0,
+      "phase": 0.8513589267542927,
+      "cross_width": 0.17121601104736328
+    },
+    {
+      "kind": "iron",
+      "object": "Lab Chest Upper Corner End Rivet 1 1 Seat",
+      "chart": "0 plane 2 1",
+      "mapping": "plane 2 1",
+      "physical_scale": 1.0,
+      "phase": 0.17744232696220572,
+      "cross_width": 0.010999679565429688
+    },
+    {
+      "kind": "iron",
+      "object": "Lab Chest Boot Front Rivet 1 1 Seat",
+      "chart": "0 plane 2 1",
+      "mapping": "plane 2 1",
+      "physical_scale": 1.0,
+      "phase": 0.056498494622354456,
+      "cross_width": 0.2980027198791504
+    },
+    {
+      "kind": "iron",
+      "object": "Lab Chest Boot Front Rivet 1 1 Seat",
+      "chart": "0 plane 2 0",
+      "mapping": "plane 2 0",
+      "physical_scale": 1.0,
+      "phase": 0.17843521379455096,
+      "cross_width": 0.2980027198791504
+    },
+    {
+      "kind": "iron",
+      "object": "Lab Chest Boot Front Rivet 1 1 Seat",
+      "chart": "0 plane 0 1",
+      "mapping": "plane 0 1",
+      "physical_scale": 1.0,
+      "phase": 0.5255571718509041,
+      "cross_width": 0.009000182151794434
+    },
+    {
+      "kind": "iron",
+      "object": "Lab Chest Boot Front Rivet 1 1 Seat",
+      "chart": "0 plane 1 1",
+      "mapping": "plane 1 1",
+      "physical_scale": 1.0,
+      "phase": 0.24064600929540692,
+      "cross_width": 0.010463953018188477
+    },
+    {
+      "kind": "iron",
+      "object": "Lab Chest Boot Front Rivet 1 1 Seat",
+      "chart": "0 plane 1 0",
+      "mapping": "plane 1 0",
+      "physical_scale": 1.0,
+      "phase": 0.3888885564862725,
+      "cross_width": 0.010463833808898926
+    },
+    {
+      "kind": "iron",
+      "object": "Lab Chest Boot Front Rivet 1 1 Seat",
+      "chart": "0 plane 0 0",
+      "mapping": "plane 0 0",
+      "physical_scale": 1.0,
+      "phase": 0.035390479042044676,
+      "cross_width": 0.009000062942504883
+    },
+    {
+      "kind": "iron",
+      "object": "Lab Chest Boot End Rivet 1 1 Seat",
+      "chart": "0 plane 0 1",
+      "mapping": "plane 0 1",
+      "physical_scale": 1.0,
+      "phase": 0.46585239854889915,
+      "cross_width": 0.27204227447509766
+    },
+    {
+      "kind": "iron",
+      "object": "Lab Chest Boot End Rivet 1 1 Seat",
+      "chart": "0 plane 0 0",
+      "mapping": "plane 0 0",
+      "physical_scale": 1.0,
+      "phase": 0.8452521783287866,
+      "cross_width": 0.27204227447509766
+    },
+    {
+      "kind": "iron",
+      "object": "Lab Chest Boot End Rivet 1 1 Seat",
+      "chart": "0 plane 2 0",
+      "mapping": "plane 2 0",
+      "physical_scale": 1.0,
+      "phase": 0.17792391422514023,
+      "cross_width": 0.009000062942504883
+    },
+    {
+      "kind": "iron",
+      "object": "Lab Chest Boot End Rivet 1 1 Seat",
+      "chart": "0 plane 1 1",
+      "mapping": "plane 1 1",
+      "physical_scale": 1.0,
+      "phase": 0.6715018250128154,
+      "cross_width": 0.1927429437637329
+    },
+    {
+      "kind": "iron",
+      "object": "Lab Chest Boot End Rivet 1 1 Seat",
+      "chart": "0 plane 1 0",
+      "mapping": "plane 1 0",
+      "physical_scale": 1.0,
+      "phase": 0.6707429807891219,
+      "cross_width": 0.1927429437637329
+    },
+    {
+      "kind": "iron",
+      "object": "Lab Chest Boot End Rivet 1 1 Seat",
+      "chart": "0 plane 2 1",
+      "mapping": "plane 2 1",
+      "physical_scale": 1.0,
+      "phase": 0.7380076626851317,
+      "cross_width": 0.009000062942504883
+    }
+  ],
+  "decorative_hardware": "All preexisting materials unchanged",
+  "geometry": "All vertex coordinates and topology unchanged; new panels use coordinated full tangent surface relief",
+  "review_scene": "Full chest material evaluation"
+}

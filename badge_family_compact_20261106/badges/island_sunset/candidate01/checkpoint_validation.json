@@ -1,0 +1,56 @@
+{
+  "complete_mesh_count": 6,
+  "triangles": 39882,
+  "all_used_images_packed_and_match_usdz": true,
+  "images": [
+    {
+      "name": "leaf_color.png",
+      "sha256": "c3fcb9cc5e579a8c733b0a7eb82f02d2407edf0286d29a6129919ba66cda75b7"
+    },
+    {
+      "name": "Rim_brushed_reference_color.png.003",
+      "sha256": "1eacca256806c88507e22b25a355edf75a20257deed73d85d391a18fc93b79c4"
+    },
+    {
+      "name": "Rim_brushed_reference_roughness.png.003",
+      "sha256": "2dd0421486bac68bd1dc669b879074954dd7fa21e377f19c6012d1bd510c0a54"
+    },
+    {
+      "name": "sea_color.png",
+      "sha256": "9737ef1c8d50af02104a815eb282dd6a9055c93f5b88e792dffcfd76cc978825"
+    },
+    {
+      "name": "sky_color.png",
+      "sha256": "c9007823e63e473b5c064f8374e9e90269785f29fca7736866043e430a40d094"
+    },
+    {
+      "name": "sun_color.png",
+      "sha256": "20d61e3ed9c370b0940072b7334415650b5868b861a3344cbaf57dec30eba314"
+    },
+    {
+      "name": "gold_color.png",
+      "sha256": "4c18d344ed7b5f0b1c35e51c01b07ba449f44a26d15e772b0728c412ddf5bb28"
+    },
+    {
+      "name": "Rim_glint_reference_roughness.png.003",
+      "sha256": "a060290fd7cfd42597e0be088a7577b29ea5147a3e9ef9b81b67e652f3a7ece1"
+    },
+    {
+      "name": "leaf_emission.png",
+      "sha256": "e9c4a470ad900801f7de4f9402eb27af8a1cc00eac80d618ef16bac39fb27d33"
+    },
+    {
+      "name": "sea_emission.png",
+      "sha256": "67c454da1621851e40db38e625b6f902131c0a39c55903e63081f084e16c13d6"
+    },
+    {
+      "name": "sky_emission.png",
+      "sha256": "e4c238bfc1919c973e742617e2db1a6624839b24dfad22db1dabf4bd017541d3"
+    },
+    {
+      "name": "sun_emission.png",
+      "sha256": "dfec43a5e3d6e465068b96eb415210f7c5be444f4b7a05e60ad20ad8763188ef"
+    }
+  ],
+  "usdz_unchanged_sha256": "1e79512cb2956fc90d76e6c96e3fc0fe9c611f92b9dc8e85c329cee657dcf795"
+}

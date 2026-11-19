@@ -1,11 +1,16 @@
 #!/usr/bin/env python3
-"""Saved badge pacing and bounded recovery into one existing Codex thread."""
+"""Run state, checkpoints, optional pacing and bounded recovery into one existing Codex thread.
+
+Pacing is continuous by default (the owner removed scheduled breaks on November 12, 2026); pass
+`init --pacing breaks` only when the owner asks for 30 minute work blocks with 20 minute breaks.
+"""
 import argparse
 from contextlib import contextmanager
 import datetime
 import fcntl
 import json
 import os
+import re
 from pathlib import Path
 import shutil
 import sqlite3
@@ -18,7 +23,27 @@ import urllib.request
 import uuid
 
 WORK, BREAK, RETRY, STALE = 1800, 1200, 600, 900
-ARTIFACTS = ('blend', 'usdz', 'report', 'comparison', 'front', 'back', 'left', 'right', 'turn')
+CONTINUOUS_BUSY = 3600          # longest finite busy period in continuous pacing
+WORKSPACE = '/Users/antonioperedo/Desktop/badges'
+# What the badge tools actually write: app_try.py (front, side_left, back, side_right),
+# review_pack.py (review/turns.png) and badge-fresh-review (review.md next to the pictures).
+ARTIFACTS = ('blend', 'usdz', 'report', 'comparison', 'front', 'back', 'side_left', 'side_right', 'turns', 'review')
+FINISHED = ('done', 'blocked')
+PASS_SCORE = 90
+
+
+def review_verdict(text):
+    """Read a badge-fresh-review report: (shippable, closeness or None).
+
+    Shippable needs an explicit 'SHIPPABLE: yes' and no 'SHIPPABLE: no' or 'not (yet) shippable'.
+    Closeness is the first number after the word closeness ('CLOSENESS: 66', 'closeness80/100');
+    scoped scores such as 'gem improvement: 92/100' never count as closeness.
+    """
+    low = text.lower()
+    yes = re.search(r'shippable\s*:\s*yes\b', low) is not None
+    no = re.search(r'shippable\s*:\s*no\b', low) or re.search(r'not\s+(yet\s+)?shippable', low)
+    score = re.search(r'closeness\s*:?\s*(\d{1,3})(?:\s*/\s*100)?', low)
+    return bool(yes and not no), (int(score.group(1)) if score else None)
 
 
 def advance(state, now):
@@ -26,6 +51,15 @@ def advance(state, now):
         return
     if state['deadline_epoch'] is not None and now >= state['deadline_epoch']:
         state.update(status='window_expired', busy_until_epoch=0)
+        return
+    if state.get('pacing', 'breaks') == 'continuous':
+        if state['phase'] != 'work':
+            state['phase'] = 'work'
+        if now >= state['work_until_epoch']:
+            # roll into the next block with no break; the block number keeps recovery dedupe per block
+            state.update(block=state['block'] + 1, work_until_epoch=now + WORK)
+            if state['deadline_epoch'] is not None:
+                state['work_until_epoch'] = min(state['work_until_epoch'], state['deadline_epoch'])
         return
     if state['phase'] == 'work' and now >= state['work_until_epoch']:
         state.update(phase='break', break_until_epoch=state['work_until_epoch'] + BREAK,
@@ -71,15 +105,17 @@ class Run:
                 self.save(state)
             return state
 
-    def init(self, thread, badges, hours=None, now=None):
+    def init(self, thread, badges, hours=None, now=None, pacing='continuous', workspace=WORKSPACE):
         now = time.time() if now is None else now
         thread = str(uuid.UUID(thread))
         if not badges or len(set(badges)) != len(badges) or (hours is not None and hours <= 0):
             raise ValueError('Supply unique badge names and a positive duration')
+        if pacing not in ('continuous', 'breaks'):
+            raise ValueError('Pacing is continuous or breaks')
         with self.locked():
             if self.path.exists():
                 raise ValueError('Run exists. Read its state and resume; do not initialize again')
-            state = dict(version=1, thread_id=thread, workspace=str(Path.cwd()),
+            state = dict(version=2, thread_id=thread, workspace=str(Path(workspace).resolve()), pacing=pacing,
                          status='active', phase='work', block=1, started_epoch=now,
                          deadline_epoch=now + hours * 3600 if hours is not None else None,
                          work_until_epoch=min(now + WORK, now + hours * 3600) if hours is not None else now + WORK,
@@ -121,6 +157,7 @@ def checkpoint(state, now, badge=None, next_action=None, blend=None,
             raise ValueError('Completed badges must not be restarted')
         state['active_badge'] = badge
         item['status'] = 'working'
+        item.pop('blocked_reason', None)
         for name, value in [('blend', blend), ('candidate', candidate), ('reference', reference)]:
             if value:
                 item[name] = str(Path(value).expanduser().resolve())
@@ -131,28 +168,75 @@ def checkpoint(state, now, badge=None, next_action=None, blend=None,
     if busy_minutes is not None:
         if state['phase'] != 'work' or busy_minutes < 0:
             raise ValueError('Busy periods are only allowed during a work block')
-        state['busy_until_epoch'] = min(now + busy_minutes * 60, state['work_until_epoch'])
+        limit = now + CONTINUOUS_BUSY if state.get('pacing') == 'continuous' else state['work_until_epoch']
+        state['busy_until_epoch'] = min(now + busy_minutes * 60, limit)
     state.update(heartbeat_epoch=now, checkpoint_seq=state['checkpoint_seq'] + 1)
 
 
-def done(state, now, badge, files, reviewed):
+def done(state, now, badge, files, reduction):
+    """Mark a badge done: every artifact exists, its fresh review says shippable with closeness of
+    90 or more, and the final piece reduction pass is recorded (what was reduced, or why not)."""
     active(state)
     if state['badges'][badge]['status'] == 'done':
         raise ValueError('Badge is already reviewed and complete')
-    if not reviewed:
-        raise ValueError('Visually review the native front and complete turn first')
     paths = {key: str(Path(files[key]).expanduser().resolve()) for key in ARTIFACTS}
     if not all(Path(value).is_file() and Path(value).stat().st_size for value in paths.values()):
         raise ValueError('Every final artifact must exist and be nonempty')
-    state['badges'][badge].update(status='done', artifacts=paths, reviewed=True)
+    shippable, score = review_verdict(Path(paths['review']).read_text(errors='replace'))
+    if not shippable or score is None or score < PASS_SCORE:
+        raise ValueError('The fresh review must say SHIPPABLE: yes with CLOSENESS of at least %d (found shippable=%s, closeness=%s)'
+                         % (PASS_SCORE, shippable, score))
+    if not (reduction or '').strip():
+        raise ValueError('Record the piece reduction pass: what was reduced with the same look, or why the version was kept')
+    state['badges'][badge].update(status='done', artifacts=paths, reviewed=True, closeness=score,
+                                  reduction=reduction.strip())
     state.update(heartbeat_epoch=now, checkpoint_seq=state['checkpoint_seq'] + 1)
+
+
+def block(state, now, badge, reason, evidence=None):
+    """Stop working on a badge that is stuck, with the reason and its pictures, so the run can end."""
+    active(state)
+    item = state['badges'][badge]
+    if item['status'] == 'done':
+        raise ValueError('Completed badges stay completed')
+    if not (reason or '').strip():
+        raise ValueError('Give the reason the badge is blocked')
+    item.update(status='blocked', blocked_reason=reason.strip())
+    if evidence:
+        item['blocked_evidence'] = str(Path(evidence).expanduser().resolve())
+    state.update(heartbeat_epoch=now, checkpoint_seq=state['checkpoint_seq'] + 1)
+
+
+def pause(state, now):
+    if state['status'] == 'complete':
+        raise ValueError('Completed run stays complete')
+    state.update(status='paused', busy_until_epoch=0)
+
+
+def cancel(state, now):
+    if state['status'] == 'complete':
+        raise ValueError('Completed run stays complete')
+    state.update(status='cancelled', busy_until_epoch=0)
+
+
+def resume(state, now, hours=None):
+    if state['status'] in ['complete', 'cancelled']:
+        raise ValueError('Do not resume completed or cancelled runs')
+    if hours is not None:
+        if hours <= 0:
+            raise ValueError('Duration must be positive')
+        state['deadline_epoch'] = now + hours * 3600
+    if state['deadline_epoch'] is not None and now >= state['deadline_epoch']:
+        raise ValueError('Window expired; an owner authorized extension is needed')
+    state['status'] = 'active'
+    advance(state, now)
 
 
 def complete(state, now):
     if state['status'] not in ['active', 'window_expired']:
         raise ValueError('Run is ' + state['status'])
-    if not all(item['status'] == 'done' for item in state['badges'].values()):
-        raise ValueError('Unfinished badges remain')
+    if not all(item['status'] in FINISHED for item in state['badges'].values()):
+        raise ValueError('Unfinished badges remain (each must be done or blocked)')
     state.update(status='complete', completed_epoch=now, busy_until_epoch=0,
                  next_action='Owner review in the separate badge preview')
 
@@ -187,7 +271,7 @@ def queue_cli(supplied=None):
         raise ValueError('No installed Codex CLI found')
     result = subprocess.run([candidate, 'queue', '--help'], capture_output=True, text=True, timeout=15)
     help_text = result.stdout + result.stderr
-    if result.returncode or '--thread' not in help_text or '--message' not in help_text:
+    if result.returncode or any(flag not in help_text for flag in ('--thread', '--message', '--resume')):
         raise ValueError('This CLI does not provide the required queue transport')
     return str(Path(candidate).resolve())
 
@@ -244,10 +328,16 @@ def decide(state, now, activity, network):
         return 'break'
     if not network:
         return 'offline'
+    if state['phase'] == 'ready':
+        # The woken thread writes to its rollout, so activity changes after every queue. Dedupe the
+        # ready wake on the block alone and queue again only after the rollout has been idle for STALE.
+        if state.get('last_queue_ready') == state['block']:
+            recent = max(state.get('last_queue_epoch', 0), activity['modified_epoch'])
+            if now - recent < STALE:
+                return 'already_queued'
+        return 'queue'
     if state.get('last_queue_basis') == basis(state, activity):
         return 'already_queued'
-    if state['phase'] == 'ready':
-        return 'queue'
     if now < state.get('busy_until_epoch', 0):
         return 'busy'
     recent = max(state['heartbeat_epoch'], activity['modified_epoch'])
@@ -260,11 +350,12 @@ def decide(state, now, activity, network):
 
 def recovery_message(run):
     return ('Owner authorized overnight badge continuation. Read ' + str(run.path) +
-            ' and its saved Blender checkpoints before acting. Honor the 30 minute work and '
-            '20 minute break schedule. There is no overall time limit unless the owner explicitly set one. Resume the saved next action '
+            ' and its saved Blender checkpoints before acting. Follow its pacing (continuous, or '
+            'the 30 minute work and 20 minute break schedule when pacing is breaks). There is no '
+            'overall time limit unless the owner explicitly set one. Resume the saved next action '
             'only if interrupted or the scheduled break has ended. Do no duplicate work if the '
-            'run is healthy. Never restart completed badges. Stop this run timer when all badges '
-            'are reviewed and complete. A paused, cancelled, expired or completed run must not '
+            'run is healthy. Never restart completed badges. Stop this run timer when every badge '
+            'is done or blocked. A paused, cancelled, expired or completed run must not '
             'do badge work. This message does not authorize resuming a paused run or extending '
             'a deadline. Do not bypass approvals, account limits or permissions.')
 
@@ -301,11 +392,13 @@ def check(run, rollout, cli, dry_run=False, now=None):
                 run.save(current)
                 return dict(action='changed_before_queue')
             result = subprocess.run([cli, 'queue', '--thread', current['thread_id'],
-                                     '--message', recovery_message(run)], cwd=current['workspace'],
+                                     '--resume', '--message', recovery_message(run)], cwd=current['workspace'],
                                     capture_output=True, text=True, timeout=15)
             if result.returncode == 0:
                 after = rollout_activity(rollout)
                 current.update(last_queue_basis=basis(current, after), last_queue_epoch=queue_time, had_outage=False)
+                if current['phase'] == 'ready':
+                    current['last_queue_ready'] = current['block']
                 run.save(current)
                 run.log('recovery_queued', block=current['block'], phase=current['phase'])
             else:
@@ -372,13 +465,15 @@ def start(run, rollout, cli):
 def main():
     parser = argparse.ArgumentParser(description=__doc__)
     commands = parser.add_subparsers(dest='command', required=True)
-    for name in ['init', 'status', 'checkpoint', 'begin', 'done', 'complete', 'pause', 'cancel', 'resume', 'watch']:
+    for name in ['init', 'status', 'checkpoint', 'begin', 'done', 'block', 'complete', 'pause', 'cancel', 'resume', 'watch']:
         sub = commands.add_parser(name)
         sub.add_argument('--run-dir', required=True)
         if name == 'init':
             sub.add_argument('--thread', default=os.environ.get('CODEX_THREAD_ID'), required=not os.environ.get('CODEX_THREAD_ID'))
             sub.add_argument('--badge', action='append', required=True)
             sub.add_argument('--hours', type=float)
+            sub.add_argument('--pacing', choices=['continuous', 'breaks'], default='continuous')
+            sub.add_argument('--workspace', default=WORKSPACE)
         if name == 'resume':
             sub.add_argument('--hours', type=float)
         if name == 'checkpoint':
@@ -389,9 +484,14 @@ def main():
             sub.add_argument('--busy-minutes', type=float)
         if name == 'done':
             sub.add_argument('--badge', required=True)
-            sub.add_argument('--reviewed', action='store_true')
+            sub.add_argument('--reduction', required=True,
+                             help='the piece reduction pass: what was reduced with the same look, or why the version was kept')
             for field in ARTIFACTS:
-                sub.add_argument('--' + field, required=True)
+                sub.add_argument('--' + field.replace('_', '-'), dest=field, required=True)
+        if name == 'block':
+            sub.add_argument('--badge', required=True)
+            sub.add_argument('--reason', required=True)
+            sub.add_argument('--evidence', help='comparison picture or review folder that shows why')
         if name == 'watch':
             sub.add_argument('--rollout', type=Path)
             sub.add_argument('--codex')
@@ -403,7 +503,7 @@ def main():
     run = Run(args.run_dir)
     try:
         if args.command == 'init':
-            result = run.init(args.thread, args.badge, args.hours)
+            result = run.init(args.thread, args.badge, args.hours, pacing=args.pacing, workspace=args.workspace)
         elif args.command == 'watch':
             if args.dry_run and not args.once:
                 raise ValueError('Dry run requires --once')
@@ -427,27 +527,22 @@ def main():
                 elif args.command == 'checkpoint':
                     checkpoint(state, now, **{name: getattr(args, name) for name in ['badge', 'next_action', 'blend', 'candidate', 'reference', 'busy_minutes']})
                 elif args.command == 'done':
-                    done(state, now, args.badge, {name: getattr(args, name) for name in ARTIFACTS}, args.reviewed)
+                    done(state, now, args.badge, {name: getattr(args, name) for name in ARTIFACTS}, args.reduction)
+                elif args.command == 'block':
+                    block(state, now, args.badge, args.reason, args.evidence)
                 elif args.command == 'complete':
                     complete(state, now)
-                elif args.command in ['pause', 'cancel']:
-                    if state['status'] == 'complete':
-                        raise ValueError('Completed run stays complete')
-                    state.update(status='paused' if args.command == 'pause' else 'cancelled', busy_until_epoch=0)
+                elif args.command == 'pause':
+                    pause(state, now)
+                elif args.command == 'cancel':
+                    cancel(state, now)
                 elif args.command == 'resume':
-                    if state['status'] in ['complete', 'cancelled']:
-                        raise ValueError('Do not resume completed or cancelled runs')
-                    if args.hours is not None:
-                        if args.hours <= 0:
-                            raise ValueError('Duration must be positive')
-                        state['deadline_epoch'] = now + args.hours * 3600
-                    if state['deadline_epoch'] is not None and now >= state['deadline_epoch']:
-                        raise ValueError('Window expired; an owner authorized extension is needed')
-                    state['status'] = 'active'
-                    advance(state, now)
+                    resume(state, now, args.hours)
             result = run.update(change)
             if args.command == 'complete':
-                (run.root / 'COMPLETE').write_text('All badges reviewed and complete\n')
+                blocked = [n for n, item in result['badges'].items() if item['status'] == 'blocked']
+                (run.root / 'COMPLETE').write_text('Every badge done or blocked' +
+                                                   (' (blocked: ' + ', '.join(blocked) + ')' if blocked else '') + '\n')
             if args.command == 'status':
                 result['watcher_alive'] = watcher_alive(run.root)
         print(json.dumps(result, indent=2))

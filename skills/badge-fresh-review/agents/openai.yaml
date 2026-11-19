@@ -1,0 +1,4 @@
+interface:
+  display_name: "Badge fresh review"
+  short_description: "Fresh agent checks the badge far and close against the mockup"
+  default_prompt: "Use $badge-fresh-review to have a new agent with no context compare this badge with the mockup from far views and close ups, list everything that is off and rate closeness; keep improving until it reaches 90."

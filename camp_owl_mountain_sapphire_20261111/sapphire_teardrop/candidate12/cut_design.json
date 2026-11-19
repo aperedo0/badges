@@ -1,0 +1,10 @@
+{
+  "source": "candidate10 frame",
+  "method": "Six real crown planes on each side, broad table planes and128 smooth outline support planes",
+  "construction_planes": 142,
+  "closed_convex": true,
+  "real_refraction_profile": 18,
+  "no_appearance_texture": true,
+  "frame_bevel_normals": "Blend toward the actual broad face to suppress subpixel edge flashes",
+  "native_acceptance_pending": true
+}

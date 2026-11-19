@@ -1,0 +1,25 @@
+{
+  "source": "candidate14",
+  "trial_not_accepted": true,
+  "cloth_reference_appearance_fit": true,
+  "pure_physical_albedo_not_proven": true,
+  "gemstones_and_metal_untouched": true,
+  "all_geometry_and_corner_attributes_preserved": false,
+  "emission_used": false,
+  "cloth_uses_original_uvs_and_physical_normal_map": true,
+  "unobserved_cloth_completed_smoothly": true,
+  "back_has_corresponding_cloth_tones": true,
+  "reference_illumination_removed_exactly": false,
+  "required": "Actual native front, both sides, back and full turn review. Reject if this cloth appearance fit looks painted during rotation.",
+  "all_retained_geometry_and_corner_attributes_preserved": true,
+  "rejected_cast_supports_removed": [
+    "Ruby continuous cast acanthus foundation 1 -1",
+    "Ruby continuous cast acanthus foundation 1 1",
+    "Ruby continuous cast acanthus foundation -1 -1",
+    "Ruby continuous cast acanthus foundation -1 1"
+  ],
+  "reason": "Native14turn showed flat gold panels from the cast support. Retain individual sculpted leaves.",
+  "native_full_turn_reviewed": true,
+  "distinct_native_review_frames": 9,
+  "cloth_only_review": "Red cloth is coherent around the crown. No flat support panels remain. Whole crown is still unfinished; no overall appearance acceptance."
+}

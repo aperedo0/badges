@@ -1,0 +1,13 @@
+{
+  "allowed_badges": [
+    "ruby_heart",
+    "ocean_navigator"
+  ],
+  "paused_badges": [
+    "amethyst_crown",
+    "ruby_crown",
+    "emerald_crown"
+  ],
+  "owner_instruction": "work on everything except the crowns at the moment",
+  "epoch": 1794097061.664495
+}

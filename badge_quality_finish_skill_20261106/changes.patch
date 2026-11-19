@@ -1,0 +1,86 @@
+--- badge-quality/SKILL.md
++++ badge-quality/SKILL.md
+@@ -1,6 +1,6 @@
+ ---
+ name: badge-quality
+-description: Build, refine or review 3D badges against owner references, with particular attention to small sculpted details, genuine metal and gem behavior during rotation, clean outlines and finished backs. Applies to badge work in Blender and the simulator preview, including daytime and overnight builds.
++description: Build, refine or review 3D badges against owner references, with particular attention to small sculpted details, genuine metal and gem behavior during rotation, clean outlines, finished backs and a final reduction of rendering pieces without changing the finished appearance. Applies to badge work in Blender and the simulator preview, including daytime and overnight builds.
+ ---
+ 
+ # Badge quality
+@@ -33,10 +33,24 @@
+ 
+ Check for paper creases, mottled normals, harsh internal glint lines, seams and texture filtering at narrow tips. Keep real folds or weathering only where the owner or reference calls for them. Inspect every long edge, tip and cutout at four times size, together with the previous version. Finish the back and side walls in the same material language as the front.
+ 
++## Build for appearance, then reduce pieces
++
++Use as many separate modeling pieces as needed to make the badge match the reference, including its smallest details. Do not simplify the design early to meet a piece count. Real app and shader limits still apply.
++
++Once the complete badge looks right in the native preview, save that detailed version as an immutable comparison baseline. Before delivery, perform a final optimization pass that seeks the same exact appearance with fewer meshes and material sections. Start by combining compatible surfaces that already share a material and rendering behavior. There is no default piece cap. If the owner supplies a target, seek it without altering the appearance; report a conflict rather than silently sacrificing detail or claiming the target was met.
++
++Preserve the geometry, silhouette, relief, bevels, explicit normals, UV sets, textures, material graphs, finish, placement and animated material behavior. Keep independent optical stones and runtime recognized geometry separate wherever their renderer requires it. Do not flatten the badge into a picture, remove small features, reduce texture quality or bake moving reflections to obtain a smaller piece count.
++
++Compare the optimized copy against the detailed baseline in the actual app, with the same lighting, size and poses. Check rest, early turning, both sides, back, reflection, outlines and a slow complete turn. Confirm the intended badge is visibly selected and the intended model loaded. File checks alone cannot prove the same appearance: changing batches can change native highlights or shadows even when triangle attributes match.
++
++Accept only reductions that preserve the finished appearance. Reject or undo a batch that changes it, while keeping any independent reductions that pass. If a badge is already compact or no further reduction preserves its look, retain its detailed version and state the count and reason. Do not force a number or promise that every badge can be reduced. Report meshes, material sections and file size before and after; claim a measured speed improvement only after measuring it.
++
++The finish pass is part of completion for new badges and visual revisions. On an overnight run, it remains inside the existing work blocks and breaks. Deliver the reviewed compact asset and an editable checkpoint of that same asset, and preserve the detailed baseline. Read [the final optimization procedure](references/finish-optimization.md) when performing this pass.
++
+ ## Acceptance in the preview
+ 
+ Verify the actual 3D model loaded by observing a turn and its reflection. Compare the resting front with the reference at equal size. Review an early small turn, a quarter turn, both sides, the back and a slow complete rotation. Inspect gemstone highlights relative to their facets over several nearby angles with the studio held fixed. They must respond to angle, not remain glued to a reference image.
+ 
+ Capture enough real frames to judge the transition. If a recorder repeats frames or a gesture skips the early turn, fix the capture before declaring success. Use native simulator captures when tool resizing hides detail. Record uncertainties plainly; image measurements and mesh validators cannot replace looking at the result.
+ 
+-Deliver the reviewed model, editable Blender checkpoint, a short comparison and any required private preview integration patch. Preserve production code and approved sources unless the owner authorized changing them. Do not declare a badge complete while its motion or required sides remain unchecked.
++Deliver the reviewed model, editable Blender checkpoint, a short comparison and any required private preview integration patch. Preserve production code and approved sources unless the owner authorized changing them. Do not declare a badge complete while its motion, required sides or final optimization review remain unchecked.
+--- badge-quality/references/finish-optimization.md
++++ badge-quality/references/finish-optimization.md
+@@ -0,0 +1,27 @@
++# Final badge optimization
++
++Use this after the badge already matches the owner's intended appearance. The objective is the same exact look with fewer rendering pieces, not a simpler design. Keep the detailed original and work on a copy.
++
++## Combine compatible surfaces
++
++Inventory the exact current asset: mesh count, effective material sections, geometry attributes, texture assets and runtime lookups. Meshes and material sections are different costs. Joining different materials into one object with many subsets may reduce objects without reducing drawing sections. Do not claim a frame rate improvement from counts alone.
++
++Batch surfaces that share the same effective material and compatible rendering properties. Preserve each oriented triangle corner's position, normal, every relevant named UV set and other attributes, and its effective material. Preserve winding, transforms, visibility, culling, subdivision behavior and any relevant hierarchy. Welding is appropriate only where all required render attributes agree; preserve normal and texture seams. Keep the original material graphs and texture bytes when possible.
++
++Identify geometry that must remain separate before merging. In BestSpent, preserve the recognized coin casing and inset, their names, topology, UVs and material bindings. Preserve the brushed field material used by Crimson Shield. Each optical stone remains its own closed convex mesh with the names and facet limits required by its shader. Do not combine disconnected stones into one optical mesh. Read the workspace app contract and the gem reference for the actual current rules rather than guessing from object color.
++
++For USDZ, verify relative asset references and named primvar readers survive packaging. Export a fresh USD crate after deleting old mesh payloads, rather than retaining dead arrays through incremental saves. Repack without changing image data. Preserve source metadata and runtime names. Use the available USD and ARKit validation tools, plus a comparison of material assignments and rendered triangle attributes before and after packaging.
++
++The local examples `astral_compact_20261104/` and `badge_family_compact_20261106/` in the badge workspace demonstrate this method. Their compactors have asset assumptions and review exclusions. Inspect and adapt them to a new badge; never blindly rerun an old installer or modify its approved finals.
++
++## Prove the appearance survived
++
++Use the complete optimized model in Blender for working inspection. The final native preview remains authoritative. Hold the studio, camera, size, placement and actual turn angle fixed when comparing original and optimized versions. Do not compensate for a changed finish by altering lights or repainting highlights.
++
++Verify the displayed badge title and silhouette before capturing. A matching cached file hash alone does not prove that file is the badge on screen. Confirm actual 3D rotation and reflection rather than accepting fallback art. Measure or visually match the actual scroll pose; a requested gesture can be partly dropped or leave a menu row outside the visible area.
++
++Review front, early turn, both sides, back and a slow full turn. Inspect fine edges and local differences at four times size. Check metal contrast, highlight width, glints, gem optics, depth, outlines, back details and reflection. For optical gems, confirm shader attachment to every intended stone and its reflection where used. A lower count and equal attribute hashes never override a visible mismatch.
++
++If a reduction changes appearance, reject that batch or keep the approved original. The Steel trial in the local family pass preserved triangle attributes but changed native highlights; keeping its already compact two mesh original was the correct result. This is an example of the acceptance rule, not a blanket exclusion of future Steel designs.
++
++Finish with the reviewed final model, a complete editable checkpoint of that model, the preserved detailed original and a short comparison. Check that packed checkpoint images match the intended asset and required names survive. Report before and after mesh counts, material sections and bytes, accepted reductions and any retained parts. Keep runtime, production integration and permission boundaries unchanged.
+--- badge-quality/agents/openai.yaml
++++ badge-quality/agents/openai.yaml
+@@ -1,4 +1,4 @@
+ interface:
+   display_name: "Badge Quality"
+-  short_description: "Check badge detail and believable moving materials"
+-  default_prompt: "Use $badge-quality to build or review this badge with reference details and realistic materials through a full turn."
++  short_description: "Match badge detail then reduce pieces without visual loss"
++  default_prompt: "Use $badge-quality to build or review this badge with reference details and realistic materials through a full turn, then reduce rendering pieces while preserving the exact finished appearance."
+--- overnight-badges/SKILL.md
++++ overnight-badges/SKILL.md
+@@ -51,6 +51,8 @@
+ 
+ ## Finish
+ 
++Apply [the badge quality skill](/Users/antonioperedo/.codex/skills/badge-quality/SKILL.md), including its final optimization pass. Build with as many modeling pieces as the reference needs first. Once the finished appearance is established, preserve that baseline and seek fewer rendering pieces with the same exact look. Perform and review this pass inside the existing work blocks. Keep any version that cannot be reduced without changing its appearance, and report why. Do not mark a badge done before this review; do not extend a work block or skip a break to finish it.
++
+ Only mark a badge done after saving and visually reviewing its final USDZ, editable Blender scene, report, same size comparison, native front, back, both sides and full turn evidence. Runtime `done` requires these artifact paths and a review assertion. Preserve the previous approved final.
+ 
+ When every badge is done, run `complete`. This creates this run's own completion marker and stops its timer. A connection failure, missing reference or long elapsed time is not completion. Preserve an honest next action for unfinished work and continue on the next work block until it is finished. Honor a deadline only if the owner explicitly adds one. Pause or cancel promptly when the owner asks.

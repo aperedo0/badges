@@ -1,0 +1,18 @@
+{
+  "version1": {
+    "model": "mobile/ruby_heart_v1.usdz",
+    "sha256": "507511ba5318e204fee3f2025d76cfddefa884e1f9c0dd1e4a6602caa178c606",
+    "description": "Ruby before the latest gemstone cut changes, retaining the approved smooth gold rim.",
+    "blender_source": "../ruby_heart_smooth_20261112/ruby_heart.blend",
+    "geometry": "source/geometry_v1.npz"
+  },
+  "version2": {
+    "model": "mobile/ruby_heart_v2.usdz",
+    "sha256": "5ffd357b1b66751fe61d240b923498fbe5d0eab35dcb7b110f6d26b715625cf3",
+    "description": "New continuous faceted ruby cut with more varied red facets and moving reflections. Gold is identical to Version 1.",
+    "blender_source": "source/ruby_heart.blend",
+    "geometry": "source/geometry.npz"
+  },
+  "current_preview": "version2",
+  "current_model_alias": "mobile/ruby_heart.usdz"
+}

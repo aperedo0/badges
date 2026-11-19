@@ -1,0 +1,52 @@
+{
+  "complete_mesh_count": 7,
+  "triangles": 37652,
+  "all_used_images_packed_and_match_usdz": true,
+  "images": [
+    {
+      "name": "Rim_brushed_reference_roughness.png.003",
+      "sha256": "2dd0421486bac68bd1dc669b879074954dd7fa21e377f19c6012d1bd510c0a54"
+    },
+    {
+      "name": "background_emission.png",
+      "sha256": "59aae7952a778fcee283e9802d675c348a3326a8335f8edd6fc5fe0a70a978f1"
+    },
+    {
+      "name": "background_color.png",
+      "sha256": "26994733b825ff0b2a567e248927f87c184fc20de7a5aad948abb67acabb969d"
+    },
+    {
+      "name": "silver_color.png",
+      "sha256": "eb7654fe8a9c27355e89951a933373cfef25d7966c77c65ecda6095e5b6ef945"
+    },
+    {
+      "name": "silver_emission.png",
+      "sha256": "bc757f993d38d8373595d140afe8446a9c2999292baf8f0107a39f1cc783614c"
+    },
+    {
+      "name": "water_emission.png",
+      "sha256": "909413c4003a51a964d91d0c1d06df11e23530d32b17e28079dd15546b55c951"
+    },
+    {
+      "name": "USDZ_Inset_normal.png.003",
+      "sha256": "9f5707f3a260602318afc7bd4190435bedb8ff03ccc6a453fcdb8b4eb0d59d1e"
+    },
+    {
+      "name": "Rim_brushed_reference_color.png.003",
+      "sha256": "788c4605c5bac295de2273884a024a3df7ce40ea2d80685e99527d86aca3f127"
+    },
+    {
+      "name": "Rim_glint_reference_roughness.png.003",
+      "sha256": "a060290fd7cfd42597e0be088a7577b29ea5147a3e9ef9b81b67e652f3a7ece1"
+    },
+    {
+      "name": "water_color.png",
+      "sha256": "a712d79fb3bb82306f678b8cdb1730757e2865fee421cc072112236d80477fe2"
+    },
+    {
+      "name": "USDZ_Inset_base_color.png.003",
+      "sha256": "b7e5fc22746a7c0833dadd0995553cc5acb292d85627e218feaafa66019afcf4"
+    }
+  ],
+  "usdz_unchanged_sha256": "e47137ce82a5c55fde0b12fbf08e262c684a62574cd5b3dd2958e0d981b5a7ab"
+}

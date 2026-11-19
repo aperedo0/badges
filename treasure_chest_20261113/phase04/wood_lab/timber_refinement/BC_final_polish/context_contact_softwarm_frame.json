@@ -1,0 +1,17 @@
+{
+  "projected_knot_center": [
+    637.2661292552948,
+    977.4967133998871
+  ],
+  "projected_chest_bounds": [
+    123.96318018436432,
+    260.8171343803406,
+    1274.0671277046204,
+    1174.476146697998
+  ],
+  "render_size": [
+    1400,
+    1400
+  ],
+  "scope": "Chest geometry bounds only, stage excluded"
+}

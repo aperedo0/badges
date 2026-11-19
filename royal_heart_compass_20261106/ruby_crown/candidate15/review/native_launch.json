@@ -1,0 +1,10 @@
+{
+  "log": "/Users/antonioperedo/Desktop/badges/royal_heart_compass_20261106/ruby_crown/candidate15/review/native_runtime_1794092054.log",
+  "console_helper_pid": 21796,
+  "bundle": "com.antonioperedo.badgestudio.preview",
+  "simulator": "C18E609E-6C2F-49C4-BCFE-E5D365F4E4E8",
+  "selected_badge": "rubyCrown",
+  "candidate": "candidate15",
+  "cloth_finish_helper": false,
+  "method": "native fallback while tool transport is closed"
+}

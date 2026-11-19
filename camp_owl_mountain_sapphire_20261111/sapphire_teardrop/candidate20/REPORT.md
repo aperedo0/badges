@@ -1,0 +1,1 @@
+Development cause test. A physical flat back removed the nested facet reflection pattern but weakened gemstone readability, including on the back and early turn. Actual Blender poses were rendered; no native deployment. Retain candidate18.

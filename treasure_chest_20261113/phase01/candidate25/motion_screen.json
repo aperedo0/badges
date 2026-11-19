@@ -1,0 +1,180 @@
+{
+  "certified": false,
+  "screen_only": true,
+  "collision_pairs": [
+    {
+      "angle": 0,
+      "moving": "Chest Front Hasp Barrel",
+      "fixed": "Chest Upper Lid Rim",
+      "triangle_intersections": 38
+    },
+    {
+      "angle": 2.5,
+      "moving": "Chest Front Hasp Barrel",
+      "fixed": "Chest Upper Lid Rim",
+      "triangle_intersections": 34
+    },
+    {
+      "angle": 5,
+      "moving": "Chest Front Hasp Barrel",
+      "fixed": "Chest Upper Lid Rim",
+      "triangle_intersections": 38
+    },
+    {
+      "angle": 10,
+      "moving": "Chest Hasp Edge Rail -1",
+      "fixed": "Chest Lock Backing With Bore",
+      "triangle_intersections": 25
+    },
+    {
+      "angle": 10,
+      "moving": "Chest Hasp Edge Rail 1",
+      "fixed": "Chest Lock Backing With Bore",
+      "triangle_intersections": 25
+    },
+    {
+      "angle": 10,
+      "moving": "Chest Front Hasp Barrel",
+      "fixed": "Chest Upper Lid Rim",
+      "triangle_intersections": 34
+    },
+    {
+      "angle": 20,
+      "moving": "Chest Front Hasp Barrel",
+      "fixed": "Chest Upper Lid Rim",
+      "triangle_intersections": 34
+    },
+    {
+      "angle": 40,
+      "moving": "Chest Front Hasp Barrel",
+      "fixed": "Chest Upper Lid Rim",
+      "triangle_intersections": 38
+    },
+    {
+      "angle": 60,
+      "moving": "Chest Front Hasp Barrel",
+      "fixed": "Chest Upper Lid Rim",
+      "triangle_intersections": 34
+    },
+    {
+      "angle": 90,
+      "moving": "Chest Curved Hasp Tongue",
+      "fixed": "Chest Hasp Mount",
+      "triangle_intersections": 44
+    },
+    {
+      "angle": 90,
+      "moving": "Chest Hasp Edge Rail -1",
+      "fixed": "Chest Hasp Mount",
+      "triangle_intersections": 38
+    },
+    {
+      "angle": 90,
+      "moving": "Chest Hasp Edge Rail 1",
+      "fixed": "Chest Hasp Mount",
+      "triangle_intersections": 42
+    },
+    {
+      "angle": 90,
+      "moving": "Chest Front Hasp Barrel",
+      "fixed": "Chest Upper Lid Rim",
+      "triangle_intersections": 38
+    },
+    {
+      "angle": 120,
+      "moving": "Chest Curved Hasp Tongue",
+      "fixed": "Chest Upper Lid Rim",
+      "triangle_intersections": 16
+    },
+    {
+      "angle": 120,
+      "moving": "Chest Curved Hasp Tongue",
+      "fixed": "Chest Hasp Mount",
+      "triangle_intersections": 96
+    },
+    {
+      "angle": 120,
+      "moving": "Chest Hasp Edge Rail -1",
+      "fixed": "Chest Upper Lid Rim",
+      "triangle_intersections": 20
+    },
+    {
+      "angle": 120,
+      "moving": "Chest Hasp Edge Rail -1",
+      "fixed": "Chest Hasp Mount",
+      "triangle_intersections": 40
+    },
+    {
+      "angle": 120,
+      "moving": "Chest Hasp Edge Rail 1",
+      "fixed": "Chest Upper Lid Rim",
+      "triangle_intersections": 20
+    },
+    {
+      "angle": 120,
+      "moving": "Chest Hasp Edge Rail 1",
+      "fixed": "Chest Hasp Mount",
+      "triangle_intersections": 44
+    },
+    {
+      "angle": 120,
+      "moving": "Chest Front Hasp Barrel",
+      "fixed": "Chest Upper Lid Rim",
+      "triangle_intersections": 34
+    },
+    {
+      "angle": 150,
+      "moving": "Chest Curved Hasp Tongue",
+      "fixed": "Chest Upper Lid Rim",
+      "triangle_intersections": 63
+    },
+    {
+      "angle": 150,
+      "moving": "Chest Curved Hasp Tongue",
+      "fixed": "Chest Hasp Mount",
+      "triangle_intersections": 166
+    },
+    {
+      "angle": 150,
+      "moving": "Chest Hasp Edge Rail -1",
+      "fixed": "Chest Upper Lid Rim",
+      "triangle_intersections": 20
+    },
+    {
+      "angle": 150,
+      "moving": "Chest Hasp Edge Rail -1",
+      "fixed": "Chest Hasp Mount",
+      "triangle_intersections": 46
+    },
+    {
+      "angle": 150,
+      "moving": "Chest Hasp Edge Rail 1",
+      "fixed": "Chest Upper Lid Rim",
+      "triangle_intersections": 20
+    },
+    {
+      "angle": 150,
+      "moving": "Chest Hasp Edge Rail 1",
+      "fixed": "Chest Hasp Mount",
+      "triangle_intersections": 48
+    },
+    {
+      "angle": 150,
+      "moving": "Chest Front Hasp Barrel",
+      "fixed": "Chest Upper Lid Rim",
+      "triangle_intersections": 34
+    }
+  ],
+  "pose_angles": [
+    0,
+    2.5,
+    5,
+    10,
+    20,
+    40,
+    60,
+    90,
+    120,
+    150
+  ]
+}

@@ -1,0 +1,9 @@
+{
+  "actual_good_screen_accepted": true,
+  "failure_controls": {
+    "prior_actual_bad_contact": "rejected",
+    "incomplete_screen": "rejected",
+    "missing_last_pose": "rejected"
+  },
+  "conflict_report_truncation_removed": true
+}

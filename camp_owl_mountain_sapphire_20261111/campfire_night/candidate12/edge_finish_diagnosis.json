@@ -1,0 +1,17 @@
+{
+  "source": "candidate09",
+  "all_geometry_normals_uvs_and_textures_unchanged": true,
+  "only_thin_gold_lip_faces_changed": true,
+  "changed_faces": 21632,
+  "actual_gold_faces_keep_original_finish": true,
+  "new_lip_finish": {
+    "albedo": [
+      0.415,
+      0.215,
+      0.0225
+    ],
+    "metallic": 1,
+    "roughness": 0.5
+  },
+  "native_review_pending": true
+}

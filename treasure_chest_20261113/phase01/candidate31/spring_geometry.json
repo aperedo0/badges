@@ -1,0 +1,20 @@
+{
+  "nose_radius": 0.008,
+  "nose_free_center": [
+    0.1,
+    -0.1785,
+    1.8425
+  ],
+  "pocket_center": [
+    0.1,
+    -0.177,
+    1.845
+  ],
+  "pocket_radius": 0.01,
+  "segments": 192,
+  "max_shape_lift": 0.002,
+  "fixed_root_vertices": 28,
+  "rigid_tip_vertices": 488,
+  "connected_spring": true,
+  "actual_motion_proof_complete": false
+}

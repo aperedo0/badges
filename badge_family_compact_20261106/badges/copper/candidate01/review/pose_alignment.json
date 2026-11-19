@@ -1,0 +1,47 @@
+{
+  "front": {
+    "target_header_y": 1413.5,
+    "actual_header_y": 1413.5,
+    "history": [
+      1413.5
+    ]
+  },
+  "early_turn": {
+    "target_header_y": 1233.5,
+    "actual_header_y": 1233.5,
+    "history": [
+      1233.5
+    ]
+  },
+  "side_left": {
+    "target_header_y": 1161.5,
+    "actual_header_y": 1161.5,
+    "history": [
+      1161.5
+    ]
+  },
+  "back": {
+    "target_header_y": 1044.5,
+    "actual_header_y": 1044.5,
+    "history": [
+      1050.5,
+      1044.5
+    ]
+  },
+  "side_right": {
+    "target_header_y": 942.5,
+    "actual_header_y": 942.5,
+    "history": [
+      936.5,
+      942.5
+    ]
+  },
+  "full_turn": {
+    "target_header_y": 822.5,
+    "actual_header_y": 822.5,
+    "history": [
+      828.5,
+      822.5
+    ]
+  }
+}

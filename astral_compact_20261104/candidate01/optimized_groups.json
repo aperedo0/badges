@@ -1,0 +1,117 @@
+[
+  {
+    "name": "Central round faceted sapphire front brilliant",
+    "material": "/Badge/Materials/CrestGem_SapphireAstral",
+    "gem": true
+  },
+  {
+    "name": "Central round faceted sapphire reverse brilliant",
+    "material": "/Badge/Materials/CrestGem_SapphireAstral",
+    "gem": true
+  },
+  {
+    "name": "Outer round sapphire 1 front brilliant",
+    "material": "/Badge/Materials/CrestGem_SapphireAstral",
+    "gem": true
+  },
+  {
+    "name": "Outer round sapphire 1 reverse brilliant",
+    "material": "/Badge/Materials/CrestGem_SapphireAstral",
+    "gem": true
+  },
+  {
+    "name": "Outer round sapphire 2 front brilliant",
+    "material": "/Badge/Materials/CrestGem_SapphireAstral",
+    "gem": true
+  },
+  {
+    "name": "Outer round sapphire 2 reverse brilliant",
+    "material": "/Badge/Materials/CrestGem_SapphireAstral",
+    "gem": true
+  },
+  {
+    "name": "Outer round sapphire 3 front brilliant",
+    "material": "/Badge/Materials/CrestGem_SapphireAstral",
+    "gem": true
+  },
+  {
+    "name": "Outer round sapphire 3 reverse brilliant",
+    "material": "/Badge/Materials/CrestGem_SapphireAstral",
+    "gem": true
+  },
+  {
+    "name": "Outer round sapphire 4 front brilliant",
+    "material": "/Badge/Materials/CrestGem_SapphireAstral",
+    "gem": true
+  },
+  {
+    "name": "Outer round sapphire 4 reverse brilliant",
+    "material": "/Badge/Materials/CrestGem_SapphireAstral",
+    "gem": true
+  },
+  {
+    "name": "Cardinal marquise sapphire 1 front cut",
+    "material": "/Badge/Materials/CrestGem_SapphireAstral",
+    "gem": true
+  },
+  {
+    "name": "Cardinal marquise sapphire 1 reverse cut",
+    "material": "/Badge/Materials/CrestGem_SapphireAstral",
+    "gem": true
+  },
+  {
+    "name": "Cardinal marquise sapphire 2 front cut",
+    "material": "/Badge/Materials/CrestGem_SapphireAstral",
+    "gem": true
+  },
+  {
+    "name": "Cardinal marquise sapphire 2 reverse cut",
+    "material": "/Badge/Materials/CrestGem_SapphireAstral",
+    "gem": true
+  },
+  {
+    "name": "Cardinal marquise sapphire 3 front cut",
+    "material": "/Badge/Materials/CrestGem_SapphireAstral",
+    "gem": true
+  },
+  {
+    "name": "Cardinal marquise sapphire 3 reverse cut",
+    "material": "/Badge/Materials/CrestGem_SapphireAstral",
+    "gem": true
+  },
+  {
+    "name": "Cardinal marquise sapphire 4 front cut",
+    "material": "/Badge/Materials/CrestGem_SapphireAstral",
+    "gem": true
+  },
+  {
+    "name": "Cardinal marquise sapphire 4 reverse cut",
+    "material": "/Badge/Materials/CrestGem_SapphireAstral",
+    "gem": true
+  },
+  {
+    "name": "Astral Navigator field batch",
+    "material": "/Badge/Materials/astral_navigator_field",
+    "gem": false
+  },
+  {
+    "name": "Astral Navigator metal batch",
+    "material": "/Badge/Materials/astral_navigator_metal",
+    "gem": false
+  },
+  {
+    "name": "Astral Navigator metal batch",
+    "material": "/Badge/Materials/astral_navigator_metal",
+    "gem": false
+  },
+  {
+    "name": "Astral Navigator side batch",
+    "material": "/Badge/Materials/astral_navigator_side",
+    "gem": false
+  },
+  {
+    "name": "Astral Navigator side batch",
+    "material": "/Badge/Materials/astral_navigator_side",
+    "gem": false
+  }
+]

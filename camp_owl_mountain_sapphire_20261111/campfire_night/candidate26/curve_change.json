@@ -1,0 +1,37 @@
+{
+  "source": "candidate24",
+  "method": "Remove small traced kinks, then connect lines with tangent continuous quadratic curves bounded within3 source pixels. Colors and layout remain tied to the actual reference.",
+  "parts": [
+    {
+      "name": "pine_left_lower",
+      "maximum_reference_outline_change_px": 1.1788067870631878,
+      "smoothing_scale_px": 1.25
+    },
+    {
+      "name": "pine_left_middle",
+      "maximum_reference_outline_change_px": 1.186542628130215,
+      "smoothing_scale_px": 1.25
+    },
+    {
+      "name": "pine_left_top",
+      "maximum_reference_outline_change_px": 1.135031665616079,
+      "smoothing_scale_px": 1.25
+    },
+    {
+      "name": "pine_right_lower",
+      "maximum_reference_outline_change_px": 1.2144788131391582,
+      "smoothing_scale_px": 1.25
+    },
+    {
+      "name": "pine_right_middle",
+      "maximum_reference_outline_change_px": 1.1961505287208114,
+      "smoothing_scale_px": 1.25
+    },
+    {
+      "name": "pine_right_top",
+      "maximum_reference_outline_change_px": 1.2286902460015083,
+      "smoothing_scale_px": 1.25
+    }
+  ],
+  "native_review_pending": true
+}

@@ -1,0 +1,6 @@
+{
+  "accepted": false,
+  "source": "candidate19",
+  "only_change": "Red enamel face normals are exactly planar, with unchanged real dome geometry and constant emission, original metallic1.",
+  "previous_test": "Candidate20 dielectric branch retained the spots with lower contrast. Actual exported geometry shows no intersecting visible faces or malformed normals."
+}

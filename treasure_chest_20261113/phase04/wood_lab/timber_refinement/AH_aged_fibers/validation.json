@@ -1,0 +1,10 @@
+{
+  "vertices": 641121,
+  "polygons": 643262,
+  "watertight": true,
+  "original_boundary_vertices_exact": true,
+  "base_geometry_retained_plus_local_depth_delta": true,
+  "normal_relief_complementary_to_actual_new_mesh": true,
+  "max_depth": 0.04413866996765137,
+  "source_scene_untouched": true
+}

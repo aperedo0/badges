@@ -1,0 +1,62 @@
+[
+  {
+    "name": "Thin continuous brushed silver perimeter",
+    "closed": true,
+    "consistent_winding": true,
+    "no_degenerate_triangles": true
+  },
+  {
+    "name": "Deep teal recessed field",
+    "closed": true,
+    "consistent_winding": true,
+    "no_degenerate_triangles": true
+  },
+  {
+    "name": "Sweeping lower teal wave",
+    "closed": true,
+    "consistent_winding": true,
+    "no_degenerate_triangles": true
+  },
+  {
+    "name": "Continuous smooth pearl crescent and curling wave",
+    "closed": true,
+    "consistent_winding": true,
+    "no_degenerate_triangles": true
+  },
+  {
+    "name": "Thin compass guide circle",
+    "closed": true,
+    "consistent_winding": true,
+    "no_degenerate_triangles": true
+  },
+  {
+    "name": "North silver perimeter marker",
+    "closed": true,
+    "consistent_winding": true,
+    "no_degenerate_triangles": true
+  },
+  {
+    "name": "West silver perimeter marker",
+    "closed": true,
+    "consistent_winding": true,
+    "no_degenerate_triangles": true
+  },
+  {
+    "name": "East silver perimeter marker",
+    "closed": true,
+    "consistent_winding": true,
+    "no_degenerate_triangles": true
+  },
+  {
+    "name": "South silver perimeter marker",
+    "closed": true,
+    "consistent_winding": true,
+    "no_degenerate_triangles": true
+  },
+  {
+    "name": "Eight pointed silver compass with sixteen flat facets",
+    "closed": true,
+    "consistent_winding": true,
+    "no_degenerate_triangles": true
+  }
+]

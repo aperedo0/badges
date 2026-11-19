@@ -1,0 +1,2 @@
+Broadened the visible gold cardinal mount faces and retained all chart and wave geometry.
+The center now uses the existing deep sapphire profile from Astral Navigator.

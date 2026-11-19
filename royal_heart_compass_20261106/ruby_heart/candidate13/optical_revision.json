@@ -1,0 +1,7 @@
+{
+  "source_geometry": "candidate05",
+  "geometry_unchanged": true,
+  "reason": "Finer real internal fracture planes with conserved remaining secondary radiance and model space density variation. Shared studio and other gem profiles unchanged.",
+  "shader_sha256": "b450a214d6d81d9f3f1d69cb33b560fddfb1198eb0ad4d70389c1f9e8cb7838f",
+  "review_status": "pending"
+}

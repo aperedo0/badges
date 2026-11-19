@@ -1,0 +1,14 @@
+{
+  "source": "07_hammered",
+  "target": "Lab Chest Lower Rim",
+  "changes": [
+    "Native artist normal strength restored from .65 to 1 under controlled comparison",
+    "Zero displacement contact points retain exact source coordinates"
+  ],
+  "normal_strength": 1,
+  "material": "Forged lower iron test",
+  "mesh": "Locally forged lower rim",
+  "vertices": 98672,
+  "polygons": 98736,
+  "lighting_original": true
+}

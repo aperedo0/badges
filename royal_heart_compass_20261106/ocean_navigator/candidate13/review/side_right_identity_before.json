@@ -1,0 +1,16 @@
+{
+  "expected": "Ocean Navigator",
+  "observed": [
+    {
+      "name": "Ocean Navigator",
+      "frame": {
+        "y": 202.88333333333335,
+        "height": 36,
+        "x": 85,
+        "width": 232
+      }
+    }
+  ],
+  "epoch": 1794105187.7287848,
+  "visible_gallery_heading_verified": true
+}

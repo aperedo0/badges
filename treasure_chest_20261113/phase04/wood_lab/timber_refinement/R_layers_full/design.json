@@ -1,0 +1,15 @@
+{
+  "source": "Recovered H medium anatomy and readable knot, independent preserved P fractures, restrained fine detail",
+  "medium_gain": 1.0,
+  "knot_center": [
+    -1.31,
+    -1.35
+  ],
+  "knot_warp": "Contract outer deformation, preserve inner core, interrupt two partial arcs",
+  "normal_split": 0.0045,
+  "height_min": -0.0520680881258496,
+  "palette_and_roughness": "Shared unchanged H values remapped to anatomy",
+  "independent_layers": "/Users/antonioperedo/Desktop/badges/treasure_chest_20261113/phase04/wood_lab/timber_refinement/grain_hierarchy/detail_layers.npz",
+  "warp_min_dx": 0.3133878016142066,
+  "warp_min_dy": 0.6203834698873282
+}

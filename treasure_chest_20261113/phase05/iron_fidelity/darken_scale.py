@@ -1,0 +1,4 @@
+import bpy,json,shutil
+from pathlib import Path
+D=Path(__file__).resolve().parent;A=D/'K_reference_laps';C=D/'N_charcoal_scale';C.mkdir(exist_ok=True);bpy.ops.wm.open_mainfile(filepath=str(A/'master.blend'));o=bpy.data.scenes['Test plank master'].objects['Lab Chest Lower Rim'];o.data=o.data.copy();m=o.data.materials[0].copy();o.data.materials[0]=m;m.name='Forged iron with dark surface scale';n=m.node_tree.nodes['Opaque dark oxide and forge scale'];n.inputs['Base Color'].default_value=(.012,.009,.006,1)
+bpy.context.preferences.filepaths.save_version=0;bpy.ops.wm.save_as_mainfile(filepath=str(C/'master.blend'),compress=True);shutil.copy2(A/'displacement.npz',C/'displacement.npz');a=json.loads((A/'design.json').read_text());a.update(mesh=o.data.name,material=m.name,oxide_color_linear=[.012,.009,.006],source='K_reference_laps');(C/'design.json').write_text(json.dumps(a,indent=2))

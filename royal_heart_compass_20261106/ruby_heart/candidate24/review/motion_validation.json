@@ -1,0 +1,58 @@
+{
+  "distinct_review_frames": 9,
+  "maximum_actual_scroll": 223.0,
+  "full_turn_reached": true,
+  "poses": [
+    {
+      "requested_scroll": 0,
+      "actual_scroll": -0.16666666666666666,
+      "video_frame": "frame0001.png"
+    },
+    {
+      "requested_scroll": 60,
+      "actual_scroll": 59.833333333333336,
+      "video_frame": "frame0026.png"
+    },
+    {
+      "requested_scroll": 68,
+      "actual_scroll": 69.0,
+      "video_frame": "frame0028.png"
+    },
+    {
+      "requested_scroll": 80,
+      "actual_scroll": 81.0,
+      "video_frame": "frame0031.png"
+    },
+    {
+      "requested_scroll": 94.2528,
+      "actual_scroll": 93.83333333333333,
+      "video_frame": "frame0034.png"
+    },
+    {
+      "requested_scroll": 113,
+      "actual_scroll": 113.83333333333333,
+      "video_frame": "frame0036.png"
+    },
+    {
+      "requested_scroll": 132.5056,
+      "actual_scroll": 131.83333333333334,
+      "video_frame": "frame0040.png"
+    },
+    {
+      "requested_scroll": 151,
+      "actual_scroll": 149.0,
+      "video_frame": "frame0044.png"
+    },
+    {
+      "requested_scroll": 170.7583,
+      "actual_scroll": 169.83333333333334,
+      "video_frame": "frame0050.png"
+    }
+  ],
+  "actual_visible_badge_manually_reviewed": "Ruby Heart in all nine actual extracted frames",
+  "no_large_pink_inner_heart_boundary_observed": true,
+  "color_retained_from_all_reviewed_angles": true,
+  "appearance_accepted": false,
+  "reason": "Inner shape issue appears resolved, but exact reference facet pattern and final edge and compaction comparison remain outstanding",
+  "manual_review_epoch": 1794110913.059955
+}

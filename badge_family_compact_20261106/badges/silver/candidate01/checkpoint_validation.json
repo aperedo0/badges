@@ -1,0 +1,56 @@
+{
+  "complete_mesh_count": 6,
+  "triangles": 43924,
+  "all_used_images_packed_and_match_usdz": true,
+  "images": [
+    {
+      "name": "Silver2_LeafLit_Satin_roughness.png",
+      "sha256": "4f75fbbbf9babf11e12502cbe490179548798184d3a961114419b57d00feee1f"
+    },
+    {
+      "name": "Silver2_LeafLit_Satin_color.png",
+      "sha256": "352dbda4c17225b561bde54fe64c8c33388fe165a7cba6f06f52b63436be6014"
+    },
+    {
+      "name": "Silver2_LeafShaded_Satin_emissive.png",
+      "sha256": "259ddac2e5cdc32daf490e360c51b6821e097cd65383a123ded8b11339076883"
+    },
+    {
+      "name": "Silver2_LeafShaded_Satin_roughness.png",
+      "sha256": "4f75fbbbf9babf11e12502cbe490179548798184d3a961114419b57d00feee1f"
+    },
+    {
+      "name": "Silver2_StarLit_Satin_emissive.png",
+      "sha256": "360a6219ff789e00099394ab70b75079798557109a2406ebf8a5e05295d27104"
+    },
+    {
+      "name": "Silver2_StarShaded_Satin_color.png",
+      "sha256": "81fbec3138cf1fb9974019d26fcd3a8c12c724c8f11019ec89680788c49b09a4"
+    },
+    {
+      "name": "Silver2_StarShaded_Satin_roughness.png",
+      "sha256": "927381afdd93b8a14b87e69ae96d9a14b324aa0d8667fb10ce11dd980c8fbfed"
+    },
+    {
+      "name": "Silver2_LeafShaded_Satin_color.png",
+      "sha256": "8f437c779266fbf8e322287d2cb563cbb4e82de5fc59249cdd5b054187b7eacc"
+    },
+    {
+      "name": "Silver2_LeafLit_Satin_emissive.png",
+      "sha256": "3417174fb569dd3d06d83802baf824535a448dce5ba6f4bf853f83c96b89819f"
+    },
+    {
+      "name": "Silver2_StarLit_Satin_color.png",
+      "sha256": "757e6e9001795e959dd03aed4273ddb78a99bb0bacf8060d23cfe21009fe4350"
+    },
+    {
+      "name": "Silver2_StarLit_Satin_roughness.png",
+      "sha256": "d6858f790e978eec914b54f94762e5e2921232c0ac28187f3109e42aa60a0bc7"
+    },
+    {
+      "name": "Silver2_StarShaded_Satin_emissive.png",
+      "sha256": "72f9e35af23bcb9524a9d764263f930759517b29be8c14efa888dc975eaf9b67"
+    }
+  ],
+  "usdz_unchanged_sha256": "0934e42a320ca6e3412246509f43fcf44512f398291a1252d71647705f434733"
+}

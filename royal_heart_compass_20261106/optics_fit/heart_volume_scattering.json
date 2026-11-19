@@ -1,0 +1,12 @@
+{
+  "status": "diagnostic_only_not_native",
+  "actual_studio_spherical_mean": [
+    1.5582059818773029,
+    1.6189675379659831,
+    1.745066860132832
+  ],
+  "added_soft_light_tent": false,
+  "physical_single_scattering": true,
+  "incoming_attenuation_approximation": "Nearest outer surface distance. No fake internal lobe interface.",
+  "no_appearance_images_in_optics": true
+}

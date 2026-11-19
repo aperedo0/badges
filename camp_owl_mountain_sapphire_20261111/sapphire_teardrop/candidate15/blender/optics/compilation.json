@@ -1,0 +1,9 @@
+{
+  "compiled": true,
+  "messages": [
+    "{'INFO'} OSL shader compilation succeeded"
+  ],
+  "outputs": [
+    "BSDF"
+  ]
+}

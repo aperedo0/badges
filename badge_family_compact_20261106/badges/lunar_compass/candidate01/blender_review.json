@@ -1,0 +1,11 @@
+{
+  "complete_scene": true,
+  "poses": [
+    "front",
+    "side_left",
+    "back",
+    "side_right",
+    "angle"
+  ],
+  "source": "/Users/antonioperedo/Desktop/badges/badge_family_compact_20261106/badges/lunar_compass/candidate01/source/model.blend"
+}

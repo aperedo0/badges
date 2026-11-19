@@ -1,0 +1,548 @@
+[
+  {
+    "part": "Chest Lid Corner Armor -1 -1",
+    "closed": true,
+    "euler_characteristic": 2,
+    "positive_volume": 0.06476121017768671,
+    "triangles": 44
+  },
+  {
+    "part": "Measured upper end operand -1 -1",
+    "closed": true,
+    "euler_characteristic": 2,
+    "positive_volume": 0.07015022680407929,
+    "triangles": 40
+  },
+  {
+    "part": "Chest Lid Corner Armor -1 -1 input A",
+    "closed": true,
+    "euler_characteristic": 2,
+    "positive_volume": 0.06476121574679794,
+    "triangles": 44
+  },
+  {
+    "part": "Chest Lid Corner Armor -1 -1 input B",
+    "closed": true,
+    "euler_characteristic": 2,
+    "positive_volume": 0.07015021742286072,
+    "triangles": 40
+  },
+  {
+    "part": "Chest Lid Corner Armor -1 -1 result",
+    "closed": true,
+    "euler_characteristic": 2,
+    "positive_volume": 0.11677004787671207,
+    "triangles": 178
+  },
+  {
+    "part": "Chest Lid Corner Armor -1 -1 folded edge",
+    "closed": true,
+    "euler_characteristic": 2,
+    "positive_volume": 0.11677004787671207,
+    "triangles": 178
+  },
+  {
+    "part": "Chest Lid Corner Armor -1 -1",
+    "shared_fold_chamfer": 0.02,
+    "perimeter_bevel": 0.05
+  },
+  {
+    "part": "Chest Upper Corner Front Rivet -1 -1",
+    "head_overlap": 0.002000153064727783,
+    "seat_overlap": 0.004000216722488403,
+    "actual_mounting_face_found": true
+  },
+  {
+    "part": "Chest Upper Corner End Rivet -1 -1",
+    "head_overlap": 0.0020002275705337524,
+    "seat_overlap": 0.004000112414360046,
+    "actual_mounting_face_found": true
+  },
+  {
+    "part": "Chest Angular Boot -1 -1 one continuous solid",
+    "closed": true,
+    "euler_characteristic": 2,
+    "positive_volume": 0.6530217292028485,
+    "triangles": 156
+  },
+  {
+    "part": "Chest Angular Boot -1 -1",
+    "continuous_foot_and_shoulder": true,
+    "separate_cap_removed": true,
+    "bottom_bevel_band_removed": true,
+    "all_ring_vertices_share_height": true,
+    "top_footprint_covers_upright": true
+  },
+  {
+    "part": "Chest Lid Corner Armor -1 1",
+    "closed": true,
+    "euler_characteristic": 2,
+    "positive_volume": 0.06476123187362703,
+    "triangles": 44
+  },
+  {
+    "part": "Measured upper end operand -1 1",
+    "closed": true,
+    "euler_characteristic": 2,
+    "positive_volume": 0.07015020650711569,
+    "triangles": 40
+  },
+  {
+    "part": "Chest Lid Corner Armor -1 1 input A",
+    "closed": true,
+    "euler_characteristic": 2,
+    "positive_volume": 0.0647612437744805,
+    "triangles": 44
+  },
+  {
+    "part": "Chest Lid Corner Armor -1 1 input B",
+    "closed": true,
+    "euler_characteristic": 2,
+    "positive_volume": 0.07015021681257494,
+    "triangles": 40
+  },
+  {
+    "part": "Chest Lid Corner Armor -1 1 result",
+    "closed": true,
+    "euler_characteristic": 2,
+    "positive_volume": 0.11677006319987238,
+    "triangles": 174
+  },
+  {
+    "part": "Chest Lid Corner Armor -1 1 folded edge",
+    "closed": true,
+    "euler_characteristic": 2,
+    "positive_volume": 0.11677006319987238,
+    "triangles": 174
+  },
+  {
+    "part": "Chest Lid Corner Armor -1 1",
+    "shared_fold_chamfer": 0.02,
+    "perimeter_bevel": 0.05
+  },
+  {
+    "part": "Chest Upper Corner Front Rivet -1 1",
+    "head_overlap": 0.002000272274017334,
+    "seat_overlap": 0.004000306129455566,
+    "actual_mounting_face_found": true
+  },
+  {
+    "part": "Chest Upper Corner End Rivet -1 1",
+    "head_overlap": 0.002000093460083008,
+    "seat_overlap": 0.004000067710876465,
+    "actual_mounting_face_found": true
+  },
+  {
+    "part": "Chest Angular Boot -1 1 one continuous solid",
+    "closed": true,
+    "euler_characteristic": 2,
+    "positive_volume": 0.653021699862887,
+    "triangles": 156
+  },
+  {
+    "part": "Chest Angular Boot -1 1",
+    "continuous_foot_and_shoulder": true,
+    "separate_cap_removed": true,
+    "bottom_bevel_band_removed": true,
+    "all_ring_vertices_share_height": true,
+    "top_footprint_covers_upright": true
+  },
+  {
+    "part": "Chest Lid Corner Armor 1 -1",
+    "closed": true,
+    "euler_characteristic": 2,
+    "positive_volume": 0.06476123187362703,
+    "triangles": 44
+  },
+  {
+    "part": "Measured upper end operand 1 -1",
+    "closed": true,
+    "euler_characteristic": 2,
+    "positive_volume": 0.07015020650711569,
+    "triangles": 40
+  },
+  {
+    "part": "Chest Lid Corner Armor 1 -1 input A",
+    "closed": true,
+    "euler_characteristic": 2,
+    "positive_volume": 0.0647612437744805,
+    "triangles": 44
+  },
+  {
+    "part": "Chest Lid Corner Armor 1 -1 input B",
+    "closed": true,
+    "euler_characteristic": 2,
+    "positive_volume": 0.07015021681257494,
+    "triangles": 40
+  },
+  {
+    "part": "Chest Lid Corner Armor 1 -1 result",
+    "closed": true,
+    "euler_characteristic": 2,
+    "positive_volume": 0.1167700631998723,
+    "triangles": 174
+  },
+  {
+    "part": "Chest Lid Corner Armor 1 -1 folded edge",
+    "closed": true,
+    "euler_characteristic": 2,
+    "positive_volume": 0.1167700631998723,
+    "triangles": 174
+  },
+  {
+    "part": "Chest Lid Corner Armor 1 -1",
+    "shared_fold_chamfer": 0.02,
+    "perimeter_bevel": 0.05
+  },
+  {
+    "part": "Chest Upper Corner Front Rivet 1 -1",
+    "head_overlap": 0.002000272274017334,
+    "seat_overlap": 0.004000306129455566,
+    "actual_mounting_face_found": true
+  },
+  {
+    "part": "Chest Upper Corner End Rivet 1 -1",
+    "head_overlap": 0.002000093460083008,
+    "seat_overlap": 0.004000067710876465,
+    "actual_mounting_face_found": true
+  },
+  {
+    "part": "Chest Angular Boot 1 -1 one continuous solid",
+    "closed": true,
+    "euler_characteristic": 2,
+    "positive_volume": 0.653021699862887,
+    "triangles": 156
+  },
+  {
+    "part": "Chest Angular Boot 1 -1",
+    "continuous_foot_and_shoulder": true,
+    "separate_cap_removed": true,
+    "bottom_bevel_band_removed": true,
+    "all_ring_vertices_share_height": true,
+    "top_footprint_covers_upright": true
+  },
+  {
+    "part": "Chest Lid Corner Armor 1 1",
+    "closed": true,
+    "euler_characteristic": 2,
+    "positive_volume": 0.06476121017768671,
+    "triangles": 44
+  },
+  {
+    "part": "Measured upper end operand 1 1",
+    "closed": true,
+    "euler_characteristic": 2,
+    "positive_volume": 0.07015022680407929,
+    "triangles": 40
+  },
+  {
+    "part": "Chest Lid Corner Armor 1 1 input A",
+    "closed": true,
+    "euler_characteristic": 2,
+    "positive_volume": 0.06476121574679794,
+    "triangles": 44
+  },
+  {
+    "part": "Chest Lid Corner Armor 1 1 input B",
+    "closed": true,
+    "euler_characteristic": 2,
+    "positive_volume": 0.07015021742286072,
+    "triangles": 40
+  },
+  {
+    "part": "Chest Lid Corner Armor 1 1 result",
+    "closed": true,
+    "euler_characteristic": 2,
+    "positive_volume": 0.11677004787671212,
+    "triangles": 178
+  },
+  {
+    "part": "Chest Lid Corner Armor 1 1 folded edge",
+    "closed": true,
+    "euler_characteristic": 2,
+    "positive_volume": 0.11677004787671212,
+    "triangles": 178
+  },
+  {
+    "part": "Chest Lid Corner Armor 1 1",
+    "shared_fold_chamfer": 0.02,
+    "perimeter_bevel": 0.05
+  },
+  {
+    "part": "Chest Upper Corner Front Rivet 1 1",
+    "head_overlap": 0.002000153064727783,
+    "seat_overlap": 0.004000216722488403,
+    "actual_mounting_face_found": true
+  },
+  {
+    "part": "Chest Upper Corner End Rivet 1 1",
+    "head_overlap": 0.0020002275705337524,
+    "seat_overlap": 0.004000112414360046,
+    "actual_mounting_face_found": true
+  },
+  {
+    "part": "Chest Angular Boot 1 1 one continuous solid",
+    "closed": true,
+    "euler_characteristic": 2,
+    "positive_volume": 0.6530217292028485,
+    "triangles": 156
+  },
+  {
+    "part": "Chest Angular Boot 1 1",
+    "continuous_foot_and_shoulder": true,
+    "separate_cap_removed": true,
+    "bottom_bevel_band_removed": true,
+    "all_ring_vertices_share_height": true,
+    "top_footprint_covers_upright": true
+  },
+  {
+    "part": "Chest End Arch Crown Tab -1",
+    "closed": true,
+    "euler_characteristic": 2,
+    "positive_volume": 0.017408184450579706,
+    "triangles": 476
+  },
+  {
+    "part": "Chest End Arch Crown Tab 1",
+    "closed": true,
+    "euler_characteristic": 2,
+    "positive_volume": 0.017408182145014117,
+    "triangles": 476
+  },
+  {
+    "part": "Chest Measured Rolled Handle Cover -1",
+    "closed": true,
+    "euler_characteristic": 2,
+    "positive_volume": 0.036628238629945645,
+    "triangles": 636
+  },
+  {
+    "part": "Chest Measured Rolled Handle Cover -1 receiving clearance input A",
+    "closed": true,
+    "euler_characteristic": 2,
+    "positive_volume": 0.036628238629945645,
+    "triangles": 636
+  },
+  {
+    "part": "Chest Measured Rolled Handle Cover -1 receiving clearance input B",
+    "closed": true,
+    "euler_characteristic": 0,
+    "positive_volume": 0.18896551695215066,
+    "triangles": 14976
+  },
+  {
+    "part": "Chest Measured Rolled Handle Cover -1 receiving clearance result",
+    "closed": true,
+    "euler_characteristic": 2,
+    "positive_volume": 0.028382050405210284,
+    "triangles": 1840
+  },
+  {
+    "part": "Chest Measured Rolled Handle Cover -1",
+    "actual_ring_root_clearance": 0.012,
+    "wood_clearance_at_lower_sleeve": 0.012,
+    "measured_curved_cap": true
+  },
+  {
+    "part": "Chest Measured Rolled Handle Cover 1",
+    "closed": true,
+    "euler_characteristic": 2,
+    "positive_volume": 0.03662824093976234,
+    "triangles": 636
+  },
+  {
+    "part": "Chest Measured Rolled Handle Cover 1 receiving clearance input A",
+    "closed": true,
+    "euler_characteristic": 2,
+    "positive_volume": 0.03662824093976234,
+    "triangles": 636
+  },
+  {
+    "part": "Chest Measured Rolled Handle Cover 1 receiving clearance input B",
+    "closed": true,
+    "euler_characteristic": 0,
+    "positive_volume": 0.18896551294332217,
+    "triangles": 14976
+  },
+  {
+    "part": "Chest Measured Rolled Handle Cover 1 receiving clearance result",
+    "closed": true,
+    "euler_characteristic": 2,
+    "positive_volume": 0.028382061609446414,
+    "triangles": 1836
+  },
+  {
+    "part": "Chest Measured Rolled Handle Cover 1",
+    "actual_ring_root_clearance": 0.012,
+    "wood_clearance_at_lower_sleeve": 0.012,
+    "measured_curved_cap": true
+  },
+  {
+    "part": "Chest Front Hasp Barrel",
+    "closed": true,
+    "euler_characteristic": 2,
+    "positive_volume": 0.06790292189106466,
+    "triangles": 2428
+  },
+  {
+    "part": "Chest Hasp Pivot Dome -1",
+    "closed": true,
+    "euler_characteristic": 2,
+    "positive_volume": 0.0002228213566960375,
+    "triangles": 574
+  },
+  {
+    "part": "Chest Hasp Pivot Dome 1",
+    "closed": true,
+    "euler_characteristic": 2,
+    "positive_volume": 0.00022282079183563036,
+    "triangles": 574
+  },
+  {
+    "part": "Chest Curved Hasp Tongue",
+    "closed": true,
+    "euler_characteristic": 2,
+    "positive_volume": 0.055158227311633716,
+    "triangles": 1132
+  },
+  {
+    "part": "Chest Hasp Edge Rail -1",
+    "closed": true,
+    "euler_characteristic": 2,
+    "positive_volume": 0.00047807310703539777,
+    "triangles": 1132
+  },
+  {
+    "part": "Chest Hasp Edge Rail 1",
+    "closed": true,
+    "euler_characteristic": 2,
+    "positive_volume": 0.000478073688184915,
+    "triangles": 1132
+  },
+  {
+    "part": "quarter folded latch",
+    "centerline_radius": 0.085,
+    "positive_inner_radius": 0.03,
+    "border_clearance_above_receiver": 0.01,
+    "buried_termination_z": 1.9
+  },
+  {
+    "part": "Chest Broad End Arch -1 continuous arch and wrapping band",
+    "closed": true,
+    "euler_characteristic": 2,
+    "positive_volume": 1.094743046930268,
+    "triangles": 5156
+  },
+  {
+    "part": "Chest End Arch Crown Tab -1 fitted crown strap",
+    "closed": true,
+    "euler_characteristic": 2,
+    "positive_volume": 0.024680041906411765,
+    "triangles": 1654
+  },
+  {
+    "part": "Chest Broad End Arch 1 continuous arch and wrapping band",
+    "closed": true,
+    "euler_characteristic": 2,
+    "positive_volume": 1.0947430474413438,
+    "triangles": 5156
+  },
+  {
+    "part": "Chest End Arch Crown Tab 1 fitted crown strap",
+    "closed": true,
+    "euler_characteristic": 2,
+    "positive_volume": 0.02468004867006233,
+    "triangles": 1654
+  },
+  {
+    "part": "Chest End Arch Crown Tab -1 fitted crown strap",
+    "closed": true,
+    "euler_characteristic": 2,
+    "positive_volume": 0.01278582828852252,
+    "triangles": 2210
+  },
+  {
+    "part": "Chest End Arch Crown Tab 1 fitted crown strap",
+    "closed": true,
+    "euler_characteristic": 2,
+    "positive_volume": 0.012785774748211132,
+    "triangles": 2210
+  },
+  {
+    "part": "Chest Measured Rolled Handle Cover -1 grooved curved shell",
+    "closed": true,
+    "euler_characteristic": 2,
+    "positive_volume": 0.03630531043420495,
+    "triangles": 2556
+  },
+  {
+    "part": "Chest Measured Rolled Handle Cover -1 top attachment input A",
+    "closed": true,
+    "euler_characteristic": 2,
+    "positive_volume": 0.036305566260334966,
+    "triangles": 2556
+  },
+  {
+    "part": "Chest Measured Rolled Handle Cover -1 top attachment input B",
+    "closed": true,
+    "euler_characteristic": 2,
+    "positive_volume": 0.003875579983906386,
+    "triangles": 188
+  },
+  {
+    "part": "Chest Measured Rolled Handle Cover -1 top attachment result",
+    "closed": true,
+    "euler_characteristic": 2,
+    "positive_volume": 0.03938563162126915,
+    "triangles": 2944
+  },
+  {
+    "part": "Chest Measured Rolled Handle Cover -1 bottom attachment input A",
+    "closed": true,
+    "euler_characteristic": 2,
+    "positive_volume": 0.03938563162126915,
+    "triangles": 2944
+  },
+  {
+    "part": "Chest Measured Rolled Handle Cover -1 bottom attachment input B",
+    "closed": true,
+    "euler_characteristic": 2,
+    "positive_volume": 0.005728944176671411,
+    "triangles": 188
+  },
+  {
+    "part": "Chest Measured Rolled Handle Cover -1 bottom attachment result",
+    "closed": true,
+    "euler_characteristic": 2,
+    "positive_volume": 0.04369401770223028,
+    "triangles": 3250
+  },
+  {
+    "part": "Chest Measured Rolled Handle Cover -1 actual root clearance input A",
+    "closed": true,
+    "euler_characteristic": 2,
+    "positive_volume": 0.04369401770223028,
+    "triangles": 3250
+  },
+  {
+    "part": "Chest Measured Rolled Handle Cover -1 actual root clearance input B",
+    "closed": true,
+    "euler_characteristic": 0,
+    "positive_volume": 0.1918071863145323,
+    "triangles": 14976
+  },
+  {
+    "part": "Chest Measured Rolled Handle Cover -1 actual root clearance result",
+    "closed": true,
+    "euler_characteristic": 2,
+    "positive_volume": 0.03544712103898603,
+    "triangles": 4180
+  },
+  {
+    "part": "Mirrored completed right handle cover",
+    "closed": true,
+    "euler_characteristic": 2,
+    "positive_volume": 0.035447131495064954,
+    "triangles": 4180
+  }
+]

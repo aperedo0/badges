@@ -1,0 +1,46 @@
+{
+  "source": "/Users/antonioperedo/Desktop/badges/astral_compact_20261104/baseline/astral_navigator_badge_mobile.usdz",
+  "source_sha256": "9fd722ba1fff2e504753459a159deea86fb1321732bf630a78b20dcc3fb139ed",
+  "output_sha256": "7722cd04d3b97da56fdb78d6c2801eeee7b64d0712845d836c5aee88c917dba8",
+  "meshes_before": 352,
+  "meshes_after": 23,
+  "material_sections_before": 564,
+  "material_sections_after": 23,
+  "gem_meshes": 18,
+  "triangles": 88556,
+  "bytes_before": 4821061,
+  "bytes_after": 5091458,
+  "all_triangle_corner_attributes_and_materials_identical": true,
+  "all_gem_prims_unchanged": true,
+  "all_material_graphs_unchanged": true,
+  "all_textures_byte_identical": true,
+  "arkit_valid": true,
+  "bounds_min": [
+    -2.7350001335144043,
+    -2.4549999237060547,
+    -0.6100000143051147
+  ],
+  "bounds_max": [
+    2.7350001335144043,
+    3.015000104904175,
+    0.6100000143051147
+  ],
+  "material_triangle_signatures": {
+    "/Badge/Materials/astral_navigator_metal": {
+      "triangles": 45690,
+      "sha256": "027adcff3a1f2e891831bca796adf940f29245e1a50e08f47ea6c7e7132d669a"
+    },
+    "/Badge/Materials/astral_navigator_side": {
+      "triangles": 31862,
+      "sha256": "e50621036f1b057022fb4e37ceab1016f458526a1a2f5762bfd139eac5d33ffd"
+    },
+    "/Badge/Materials/astral_navigator_field": {
+      "triangles": 8832,
+      "sha256": "5cc68eeea9f5271cd4b6466e4204ab9c6379b0126440a58d4f2018211ba02c19"
+    },
+    "/Badge/Materials/CrestGem_SapphireAstral": {
+      "triangles": 2172,
+      "sha256": "fe00eaed9941fd1a1a2f6d4641a36ed8c415d963926ea42b94ddd2cd1a84db91"
+    }
+  }
+}

@@ -1,0 +1,25 @@
+{
+  "source": "phase01/candidate40/chest.blend",
+  "body_levels": [
+    -0.35,
+    -0.95,
+    -1.55
+  ],
+  "end_levels": [
+    0.9,
+    1.4,
+    1.9
+  ],
+  "roof_joint_count": 11,
+  "roof_staves": 12,
+  "groove_depth": 0.02,
+  "groove_face_width": 0.045,
+  "cutter_outward": 0.035,
+  "roof_x_extent": 2.36,
+  "body_outer_half_x": 2.55,
+  "body_outer_half_z": 1.6,
+  "end_outer_half_x": 2.6,
+  "ellipse_center_y": 0.38075,
+  "ellipse_rise": 1.9475,
+  "ellipse_half_depth": 1.65
+}

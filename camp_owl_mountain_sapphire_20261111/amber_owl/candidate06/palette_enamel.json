@@ -1,0 +1,30 @@
+{
+ "EnamelOwlAmber": {
+  "color_texture": "textures/enamelowlamber_color.png",
+  "emission_texture": "textures/enamelowlamber_emission.png",
+  "emission_scale": 8.0,
+  "roughness": 0.18,
+  "metallic": 1.0
+ },
+ "EnamelOwlBlue": {
+  "color_texture": "textures/enamelowlblue_color.png",
+  "emission_texture": "textures/enamelowlblue_emission.png",
+  "emission_scale": 8.0,
+  "roughness": 0.18,
+  "metallic": 1.0
+ },
+ "EnamelOwlCream": {
+  "color_texture": "textures/enamelowlcream_color.png",
+  "emission_texture": "textures/enamelowlcream_emission.png",
+  "emission_scale": 8.0,
+  "roughness": 0.18,
+  "metallic": 1.0
+ },
+ "EnamelOwlLemon": {
+  "color_texture": "textures/enamelowllemon_color.png",
+  "emission_texture": "textures/enamelowllemon_emission.png",
+  "emission_scale": 8.0,
+  "roughness": 0.18,
+  "metallic": 1.0
+ }
+}

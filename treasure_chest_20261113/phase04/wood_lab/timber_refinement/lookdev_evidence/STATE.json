@@ -1,0 +1,12 @@
+{
+  "scope": "Only the existing test plank; owner review, no AI reviewer",
+  "baseline": "baseline_live.blend",
+  "source_candidate": "U_scan_fibers",
+  "stage": "Saved and rendered candidate awaiting owner review",
+  "material_changed": true,
+  "geometry_changed": false,
+  "observed": "Lighting is the largest gain. Fine normal and local knot material refinements are smaller. Raw, pixel and texture sampling controls do not explain the remaining rounded ridge structure. Right bay key shadows are hardware occlusion.",
+  "next": "Owner review only. No new candidate or transfer.",
+  "current_candidate": "V_lookdev_refinement",
+  "owner_review_pending": true
+}

@@ -1,0 +1,31 @@
+{
+  "appearance_fit_only": true,
+  "physical_albedo_not_proven": true,
+  "gemstones_and_metal_excluded": true,
+  "no_emission_created": true,
+  "native_stage_pixel_center": [
+    603.0,
+    633.5534964948893
+  ],
+  "focal_pixels": 1762.5,
+  "fitted_native_pixels": 23027,
+  "appearance_ratio_percentiles": [
+    [
+      0.10229682861178337,
+      0.16629388712788995,
+      0.12630107599916474
+    ],
+    [
+      0.477117972102213,
+      0.526673925236391,
+      0.4973932322073398
+    ],
+    [
+      2.4181994930982316,
+      1.625276958052835,
+      2.183073545679648
+    ]
+  ],
+  "texels_at_reflectance_ceiling": 0.0,
+  "next": "Inspect prediction. No model or installed texture has been modified. Actual native full turn review is required before adopting this cloth appearance fit."
+}

@@ -1,0 +1,52 @@
+{
+  "distinct_review_frames": 9,
+  "maximum_actual_scroll": 223.16666666666666,
+  "full_turn_reached": true,
+  "poses": [
+    {
+      "requested_scroll": 0,
+      "actual_scroll": 0.0,
+      "video_frame": "frame0001.png"
+    },
+    {
+      "requested_scroll": 60,
+      "actual_scroll": 55.166666666666664,
+      "video_frame": "frame0036.png"
+    },
+    {
+      "requested_scroll": 68,
+      "actual_scroll": 66.0,
+      "video_frame": "frame0040.png"
+    },
+    {
+      "requested_scroll": 80,
+      "actual_scroll": 75.16666666666667,
+      "video_frame": "frame0042.png"
+    },
+    {
+      "requested_scroll": 94.2528,
+      "actual_scroll": 94.0,
+      "video_frame": "frame0047.png"
+    },
+    {
+      "requested_scroll": 113,
+      "actual_scroll": 112.0,
+      "video_frame": "frame0051.png"
+    },
+    {
+      "requested_scroll": 132.5056,
+      "actual_scroll": 130.0,
+      "video_frame": "frame0056.png"
+    },
+    {
+      "requested_scroll": 151,
+      "actual_scroll": 147.16666666666666,
+      "video_frame": "frame0060.png"
+    },
+    {
+      "requested_scroll": 170.7583,
+      "actual_scroll": 171.16666666666666,
+      "video_frame": "frame0066.png"
+    }
+  ]
+}

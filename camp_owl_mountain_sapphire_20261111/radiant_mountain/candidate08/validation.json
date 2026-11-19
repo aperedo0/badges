@@ -1,0 +1,52 @@
+{
+ "bounds": [
+  [
+   -2.551300048828125,
+   -2.4549999237060547,
+   -0.6772000193595886
+  ],
+  [
+   2.551300048828125,
+   2.994999885559082,
+   0.6772000193595886
+  ]
+ ],
+ "triangles": 57880,
+ "max_front_z": {
+  "blue_glass_sky": 0.124,
+  "sun_ray_0": 0.183,
+  "sun_ray_1": 0.183,
+  "sun_ray_2": 0.183,
+  "sun_ray_3": 0.183,
+  "sun_ray_4": 0.183,
+  "round_amber_sun": 0.24,
+  "highest_snow_peak": 0.319,
+  "left_foreground_peak": 0.386,
+  "right_foreground_peak": 0.388,
+  "central_foreground_peak": 0.447,
+  "left_cloud": 0.239,
+  "right_cloud": 0.424,
+  "far_left_hills": 0.482,
+  "far_right_hills": 0.487,
+  "lime_rear_meadow": 0.546,
+  "left_emerald_meadow": 0.54,
+  "right_emerald_meadow": 0.545,
+  "left_lime_meadow": 0.599,
+  "right_lime_meadow": 0.606,
+  "left_laurel_branch": 0.572,
+  "right_laurel_branch": 0.574,
+  "left_laurel_leaf_0": 0.63,
+  "right_laurel_leaf_0": 0.632,
+  "left_laurel_leaf_1": 0.63,
+  "right_laurel_leaf_1": 0.633,
+  "left_laurel_leaf_2": 0.653,
+  "right_laurel_leaf_2": 0.661,
+  "left_laurel_leaf_3": 0.63,
+  "right_laurel_leaf_3": 0.633,
+  "left_laurel_leaf_4": 0.63,
+  "right_laurel_leaf_4": 0.633,
+  "bottom_four_point_star": 0.159,
+  "outer_gold_setting": 0.677
+ },
+ "failures": []
+}

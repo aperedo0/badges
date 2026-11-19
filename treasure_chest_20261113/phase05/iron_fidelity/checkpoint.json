@@ -1,0 +1,204 @@
+{
+  "file": "/Users/antonioperedo/Desktop/badges/treasure_chest_20261113/phase05/lower_iron/09_pitted_iron/master.blend",
+  "baseline": "/Users/antonioperedo/Desktop/badges/treasure_chest_20261113/phase05/iron_fidelity/baseline.blend",
+  "sha256": "4f120322d5ab2d2c607a126e52b8c8d125b1e6681f999908b38571a28e536e1a",
+  "iron_geometry": "2e8a67feb03e0f0f600f32f6f5f16061af6dc862ee2cd4e3d43dbbc50c934002",
+  "iron_mesh": "Locally forged lower rim",
+  "wood_geometry": "6c52635229763ca44c5b7cf1b842746e0c435463f3925b296fb97f50af05ea80",
+  "material": "Lower iron 09_pitted_iron",
+  "vertices": 98672,
+  "polygons": 98736,
+  "nodes": [
+    {
+      "name": "Material Output",
+      "type": "ShaderNodeOutputMaterial",
+      "image": null,
+      "inputs": {
+        "Displacement": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "Thickness": 0.0
+      }
+    },
+    {
+      "name": "Principled BSDF",
+      "type": "ShaderNodeBsdfPrincipled",
+      "image": null,
+      "inputs": {
+        "Base Color": [
+          0.057999998331069946,
+          0.052000001072883606,
+          0.04699999839067459,
+          1.0
+        ],
+        "Metallic": 0.949999988079071,
+        "Roughness": 0.5,
+        "IOR": 1.5,
+        "Alpha": 1.0,
+        "Thin Wall": false,
+        "Normal": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "Weight": 0.0,
+        "Diffuse Roughness": 0.0,
+        "Subsurface Weight": 0.0,
+        "Subsurface Radius": [
+          1.0,
+          0.20000000298023224,
+          0.10000000149011612
+        ],
+        "Subsurface Scale": 0.004999999888241291,
+        "Subsurface IOR": 1.399999976158142,
+        "Subsurface Anisotropy": 0.0,
+        "Specular IOR Level": 0.5,
+        "Specular Tint": [
+          1.0,
+          1.0,
+          1.0,
+          1.0
+        ],
+        "Anisotropic": 0.0,
+        "Anisotropic Rotation": 0.0,
+        "Tangent": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "Transmission Weight": 0.0,
+        "Coat Weight": 0.0,
+        "Coat Roughness": 0.029999999329447746,
+        "Coat IOR": 1.5,
+        "Coat Tint": [
+          1.0,
+          1.0,
+          1.0,
+          1.0
+        ],
+        "Coat Normal": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "Sheen Weight": 0.0,
+        "Sheen Roughness": 0.5,
+        "Sheen Tint": [
+          1.0,
+          1.0,
+          1.0,
+          1.0
+        ],
+        "Emission Color": [
+          1.0,
+          1.0,
+          1.0,
+          1.0
+        ],
+        "Emission Strength": 0.0,
+        "Thin Film Thickness": 0.0,
+        "Thin Film IOR": 1.3300000429153442
+      }
+    },
+    {
+      "name": "UV Map",
+      "type": "ShaderNodeUVMap",
+      "image": null,
+      "inputs": {}
+    },
+    {
+      "name": "UV Map.001",
+      "type": "ShaderNodeUVMap",
+      "image": null,
+      "inputs": {}
+    },
+    {
+      "name": "Image Texture",
+      "type": "ShaderNodeTexImage",
+      "image": "albedo.png.006",
+      "inputs": {
+        "Vector": [
+          0.0,
+          0.0,
+          0.0
+        ]
+      }
+    },
+    {
+      "name": "Image Texture.001",
+      "type": "ShaderNodeTexImage",
+      "image": "roughness.png.006",
+      "inputs": {
+        "Vector": [
+          0.0,
+          0.0,
+          0.0
+        ]
+      }
+    },
+    {
+      "name": "Image Texture.002",
+      "type": "ShaderNodeTexImage",
+      "image": "metallic.png",
+      "inputs": {
+        "Vector": [
+          0.0,
+          0.0,
+          0.0
+        ]
+      }
+    },
+    {
+      "name": "Image Texture.003",
+      "type": "ShaderNodeTexImage",
+      "image": "height16.png",
+      "inputs": {
+        "Vector": [
+          0.0,
+          0.0,
+          0.0
+        ]
+      }
+    },
+    {
+      "name": "Calibrated forging height",
+      "type": "ShaderNodeBump",
+      "image": null,
+      "inputs": {
+        "Strength": 1.0,
+        "Distance": 0.01600000075995922,
+        "Filter Width": 0.10000000149011612,
+        "Height": 1.0,
+        "Normal": [
+          0.0,
+          0.0,
+          0.0
+        ]
+      }
+    }
+  ],
+  "world": [
+    {
+      "name": "Background",
+      "type": "ShaderNodeBackground",
+      "inputs": {
+        "Color": [
+          0.14000000059604645,
+          0.14000000059604645,
+          0.14000000059604645,
+          1.0
+        ],
+        "Strength": 0.44999998807907104,
+        "Weight": 0.0
+      }
+    },
+    {
+      "name": "World Output",
+      "type": "ShaderNodeOutputWorld",
+      "inputs": {}
+    }
+  ],
+  "render_running": false
+}

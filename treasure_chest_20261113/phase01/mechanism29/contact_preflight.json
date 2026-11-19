@@ -1,0 +1,15 @@
+{
+  "contact_motion_pass": true,
+  "centered_cosine_fake_drive_rejected": true,
+  "stroke": 0.26,
+  "tongue_release_gap": 0.0325,
+  "receiver_release_gap": 0.015,
+  "minimum_cheek_guide_engagement": 0.1,
+  "guide_support_minimum_lengths": {
+    "upper": 0.305,
+    "lower": 0.28500000000000003
+  },
+  "upper_rail_bridge_clearance": 0.01,
+  "lower_rail_stem_clearance": 0.01,
+  "actual_mesh_checks_still_required": true
+}

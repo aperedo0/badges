@@ -1,0 +1,29 @@
+{
+  "status": "diagnostic_only_not_installed",
+  "geometry_source": "candidate20",
+  "no_appearance_image": true,
+  "bounded_internal_planes": true,
+  "energy_taken_from_transmission": true,
+  "variants": [
+    [
+      0.16,
+      0.065,
+      6
+    ],
+    [
+      0.12,
+      0.2,
+      8
+    ],
+    [
+      0.09,
+      0.3,
+      12
+    ],
+    [
+      0.075,
+      0.45,
+      16
+    ]
+  ]
+}

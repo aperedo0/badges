@@ -1,0 +1,56 @@
+{
+  "complete_mesh_count": 7,
+  "triangles": 12340,
+  "all_used_images_packed_and_match_usdz": true,
+  "images": [
+    {
+      "name": "copper_emission.png.008",
+      "sha256": "7f21391d4ba91bb3d6036b078929f217c3064f9019e26f2c53dedb45ccb5050f"
+    },
+    {
+      "name": "field_emission.png.026",
+      "sha256": "3606243b7f82d1446983dc56ec1ecacd8e7a4c98afef87bfddcba814adce9e04"
+    },
+    {
+      "name": "field_color.png.026",
+      "sha256": "839f04daf2ddc094a55bebd783ec889938fbf14f3e1a4f7b3de4fc30d4f7fd86"
+    },
+    {
+      "name": "flame_emission.png.008",
+      "sha256": "747f001dc03e671f8b7e874180d5ce6024776c2e6017158c304aa775c9576acf"
+    },
+    {
+      "name": "flame_roughness.png.008",
+      "sha256": "bef86ba4c83f1cef28a3a37db20aede8f8dfd9b09f9fe5717907275c7dd78a57"
+    },
+    {
+      "name": "metal_color.png.026",
+      "sha256": "3138e28ca238442ed173669657de7669d33d7d07f982317591a3621fe1dff0ec"
+    },
+    {
+      "name": "metal_roughness.png.026",
+      "sha256": "cd267b9b9202f639dbc31282adc0f19cb88d2e847140ca7116458cf2bb197dd1"
+    },
+    {
+      "name": "copper_color.png.008",
+      "sha256": "cac65be28f43833b42b72e43be8d8abeea53528d4750fc14960f45fd8c86f733"
+    },
+    {
+      "name": "copper_roughness.png.008",
+      "sha256": "648cfff5bb56f327d53df6f9419479267ca8918a73f7ae97bb3b95730ea6e07c"
+    },
+    {
+      "name": "field_roughness.png.026",
+      "sha256": "a388d18647cdfc479ab800bb2ed5e58cd4712d4dffcf83c162a98eae03e83996"
+    },
+    {
+      "name": "flame_color.png.008",
+      "sha256": "6a6954ff712937678ca6fe524bfdf23a276d290fdbfde93650080ef3e2469632"
+    },
+    {
+      "name": "metal_emission.png.026",
+      "sha256": "291cd8ab2b2f63fe755d69febcbec04af2990e249ca35b41300369c19ca878bd"
+    }
+  ],
+  "usdz_unchanged_sha256": "b9b642895a8fc0a0fc83d2281af6377dbd1f02c84a70dab0808c25f3640a111c"
+}

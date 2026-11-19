@@ -1,0 +1,7 @@
+{
+  "status": "diagnostic_only",
+  "geometry_and_material_unchanged": true,
+  "environment_reprojected_at_actual_optical_exit_positions": true,
+  "no_added_light_energy": true,
+  "seconds": 4.2811830043792725
+}

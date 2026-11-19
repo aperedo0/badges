@@ -1,0 +1,18 @@
+{
+  "local_top": -1.6749999859458522,
+  "center_plate_top": -1.6749999859458522,
+  "front_surface_top_rail": -1.7029999893590024,
+  "front_surface_top_plate": -1.7029999893590024,
+  "local_bottom": -2.204999969883969,
+  "lower_rivet_centers": {
+    "Chest Lower Strap Rivet": -1.9400000406566418,
+    "Chest Rail Rivet -1 3": -1.9399999151731793,
+    "Chest Rail Rivet -1 4": -1.9399999151731793,
+    "Chest Rail Rivet 1 3": -1.9399999151731793,
+    "Chest Rail Rivet 1 4": -1.9399999151731793,
+    "Chest End Rail Rivet -1 1": -1.9399999151731793,
+    "Chest End Rail Rivet 1 1": -1.9399999151731793
+  },
+  "all_aligned": true,
+  "other_active_part_positions_preserved_exactly": true
+}

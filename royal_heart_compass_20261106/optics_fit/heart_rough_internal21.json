@@ -1,0 +1,8 @@
+{
+  "status": "diagnostic_only_not_native",
+  "actual_geometry_and_environment_unchanged": true,
+  "four_internal_microfacet_escape_samples": true,
+  "energy_normalized": true,
+  "reflected_path_approximation": "One macrofacet continuation with mean Fresnel weight",
+  "no_appearance_maps": true
+}

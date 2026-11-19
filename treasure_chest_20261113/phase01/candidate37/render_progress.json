@@ -1,0 +1,18 @@
+{
+  "completed": [
+    "reference",
+    "left_end",
+    "right_end",
+    "back",
+    "body_interior_assembled",
+    "lid_interior_assembled"
+  ],
+  "seconds": [
+    35.20126509666443,
+    29.618054151535034,
+    37.07495713233948,
+    68.4250419139862,
+    20.68766713142395,
+    28.22744607925415
+  ]
+}

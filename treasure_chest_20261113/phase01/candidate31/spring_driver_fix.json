@@ -1,0 +1,33 @@
+{
+  "expression": "0 if abs(d)<=b else (t+sqrt(max(0,r*r-(a-abs(d))*(a-abs(d))))-f if abs(d)<a else h)+2e-6*min(1,max(0,(abs(d)-b)/.0001))*min(1,max(0,(abs(d)-b)/.0001))*(3-2*min(1,max(0,(abs(d)-b)/.0001)))",
+  "length": 187,
+  "simple_expression": true,
+  "actual_driver_checks": [
+    {
+      "frame": 90,
+      "lift": 0.0015020000282675028,
+      "expected": 0.001502
+    },
+    {
+      "frame": 340,
+      "lift": 0.0015020000282675028,
+      "expected": 0.001502
+    },
+    {
+      "frame": 0,
+      "lift": 0.0,
+      "expected": 0
+    },
+    {
+      "frame": 490,
+      "lift": 0.0,
+      "expected": 0
+    },
+    {
+      "frame": 0,
+      "lift": 0.0,
+      "expected": 0
+    }
+  ],
+  "cause": "Exponent operator required unsafe Python execution; replaced with multiplication without changing safety settings."
+}

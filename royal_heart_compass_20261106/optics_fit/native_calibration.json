@@ -1,0 +1,14 @@
+{
+  "native_projection_estimate": true,
+  "body_sample_count": 21130,
+  "mean_abs_error": 0.032725511195370226,
+  "median_abs_error": 0.02102740709773257,
+  "p90_abs_error": 0.06929154288101778,
+  "density_scale": 0.5,
+  "omissions": [
+    "Native bloom",
+    "Sparse cleavage",
+    "Density noise",
+    "Antialiasing"
+  ]
+}

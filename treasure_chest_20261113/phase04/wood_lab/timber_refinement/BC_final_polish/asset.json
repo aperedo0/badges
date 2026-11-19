@@ -1,0 +1,34 @@
+{
+  "geometry_sha256": "6c52635229763ca44c5b7cf1b842746e0c435463f3925b296fb97f50af05ea80",
+  "key": "BC_final_polish",
+  "mesh": "Editable watertight wood master.004",
+  "material": "Wood Lab BC_final_polish",
+  "vertices": 641121,
+  "polygons": 643262,
+  "images": [
+    {
+      "node": "Single plank albedo",
+      "size": [
+        4096,
+        1536
+      ],
+      "packed": true
+    },
+    {
+      "node": "Single plank roughness",
+      "size": [
+        4096,
+        1536
+      ],
+      "packed": true
+    },
+    {
+      "node": "Single plank normal",
+      "size": [
+        4096,
+        1536
+      ],
+      "packed": true
+    }
+  ]
+}

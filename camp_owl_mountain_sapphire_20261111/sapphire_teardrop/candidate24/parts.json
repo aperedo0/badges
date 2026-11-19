@@ -1,0 +1,57 @@
+{
+ "units": {
+  "S": 0.00615819209039548,
+  "axis": 625.0294947536713,
+  "top": 140,
+  "width_px": 1254,
+  "height_px": 1254
+ },
+ "box": [
+  0,
+  0,
+  1254,
+  1254
+ ],
+ "parts": [
+  {
+   "name": "recessed_blue_gem_seat",
+   "base": 0.09,
+   "materials": [
+    "Sapphire",
+    "Gold"
+   ],
+   "triangles": 1772,
+   "front": 443
+  },
+  {
+   "name": "solid_gold_teardrop_setting",
+   "base": 0.24,
+   "materials": [
+    "Gold"
+   ],
+   "triangles": 24868,
+   "front": 12434
+  },
+  {
+   "name": "gem",
+   "base": 0.16,
+   "materials": [
+    "Gem"
+   ],
+   "triangles": 140,
+   "front": 0,
+   "physical_pavilion": false,
+   "broad_convex_crown": true
+  }
+ ],
+ "order": [
+  "recessed_blue_gem_seat",
+  "solid_gold_teardrop_setting",
+  "gem"
+ ],
+ "validate_order": [
+  "recessed_blue_gem_seat",
+  "gem",
+  "solid_gold_teardrop_setting"
+ ]
+}

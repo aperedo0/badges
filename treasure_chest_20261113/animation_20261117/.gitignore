@@ -1,0 +1,5 @@
+render/*_frames/
+previews/*/
+cache_smoke*/
+cache_dust*/
+waveletNoiseTile.bin

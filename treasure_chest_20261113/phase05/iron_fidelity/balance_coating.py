@@ -1,0 +1,4 @@
+import bpy,json,shutil
+from pathlib import Path
+D=Path(__file__).resolve().parent;A=D/'K_reference_laps';C=D/'L_balanced_iron';C.mkdir(exist_ok=True);bpy.ops.wm.open_mainfile(filepath=str(A/'master.blend'));o=bpy.data.scenes['Test plank master'].objects['Lab Chest Lower Rim'];o.data=o.data.copy();m=o.data.materials[0].copy();o.data.materials[0]=m;m.name='Layered forged iron balanced coating';n=m.node_tree.nodes['Restrained opaque scale coverage'];n.inputs['To Min'].default_value=.40;n.inputs['To Max'].default_value=.76
+bpy.context.preferences.filepaths.save_version=0;bpy.ops.wm.save_as_mainfile(filepath=str(C/'master.blend'),compress=True);shutil.copy2(A/'displacement.npz',C/'displacement.npz');a=json.loads((A/'design.json').read_text());a.update(mesh=o.data.name,material=m.name,scale_coverage=[.40,.76],source='K_reference_laps');(C/'design.json').write_text(json.dumps(a,indent=2))

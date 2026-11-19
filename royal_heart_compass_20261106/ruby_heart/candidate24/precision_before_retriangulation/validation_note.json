@@ -1,0 +1,8 @@
+{
+  "status": "rejected_geometry",
+  "native_optical_attachment_failed": true,
+  "prior_offline_convexity_report_used_default_tolerance": true,
+  "actual_heart_union_tolerance": 1e-05,
+  "offline_validator_corrected": true,
+  "do_not_use_as_finished_asset": true
+}

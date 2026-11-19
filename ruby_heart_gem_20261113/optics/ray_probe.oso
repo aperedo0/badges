@@ -1,0 +1,40 @@
+OpenShadingLanguage 1.00
+# Compiled by oslc 1.15.3.0
+# options: -o /var/folders/gl/mpj0czg96klfknfbtdxsw0400000gn/T/tmpz48a0v_m.oso -I/Applications/Blender.app/Contents/Resources/5.2/scripts/addons_core/cycles/shader
+shader ray_probe
+oparam	closure color	BSDF			%read{2147483647,-1} %write{12,12}
+global	vector	I	%read{0,0} %write{2147483647,-1}
+local	vector	d	%read{2,8} %write{0,0}
+temp	closure color	$tmp1	%read{12,12} %write{1,1}
+const	string	$const1	"emission"		%read{1,1} %write{2147483647,-1}
+temp	color	$tmp2	%read{12,12} %write{11,11}
+const	float	$const2	0.5		%read{3,10} %write{2147483647,-1}
+const	int	$const3	0		%read{2,2} %write{2147483647,-1}
+temp	float	$tmp3	%read{3,3} %write{2,2}
+temp	float	$tmp4	%read{4,4} %write{3,3}
+temp	float	$tmp5	%read{11,11} %write{4,4}
+const	int	$const4	1		%read{5,5} %write{2147483647,-1}
+temp	float	$tmp6	%read{6,6} %write{5,5}
+temp	float	$tmp7	%read{7,7} %write{6,6}
+temp	float	$tmp8	%read{11,11} %write{7,7}
+const	int	$const5	2		%read{8,8} %write{2147483647,-1}
+temp	float	$tmp9	%read{9,9} %write{8,8}
+temp	float	$tmp10	%read{10,10} %write{9,9}
+temp	float	$tmp11	%read{11,11} %write{10,10}
+code ___main___
+# ruby_heart_gem_20261113/optics/ray_probe.osl:2
+# <line not found>
+	normalize	d I 	%filename{"ruby_heart_gem_20261113/optics/ray_probe.osl"} %line{2} %argrw{"wr"}
+	closure		$tmp1 $const1 	%argrw{"wr"}
+	compref		$tmp3 d $const3 	%argrw{"wrr"}
+	mul		$tmp4 $const2 $tmp3 	%argrw{"wrr"}
+	add		$tmp5 $const2 $tmp4 	%argrw{"wrr"}
+	compref		$tmp6 d $const4 	%argrw{"wrr"}
+	mul		$tmp7 $const2 $tmp6 	%argrw{"wrr"}
+	add		$tmp8 $const2 $tmp7 	%argrw{"wrr"}
+	compref		$tmp9 d $const5 	%argrw{"wrr"}
+	mul		$tmp10 $const2 $tmp9 	%argrw{"wrr"}
+	add		$tmp11 $const2 $tmp10 	%argrw{"wrr"}
+	color		$tmp2 $tmp5 $tmp8 $tmp11 	%argrw{"wrrr"}
+	mul		BSDF $tmp1 $tmp2 	%argrw{"wrr"}
+	end

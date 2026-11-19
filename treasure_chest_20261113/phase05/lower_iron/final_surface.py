@@ -1,0 +1,7 @@
+from pathlib import Path
+import numpy as np,json,shutil
+from PIL import Image
+from scipy.ndimage import gaussian_filter,map_coordinates
+D=Path(__file__).resolve().parent;F=D/'surface09';F.mkdir(exist_ok=True);old=np.load(D/'surface/fields.npz');h,w=old['fine'].shape;X,Y=np.meshgrid(np.linspace(0,18.04,w,dtype=np.float32),np.linspace(.5035,0,h,dtype=np.float32));raw=np.asarray(Image.open(next((D/'resources/Metal003').glob('*Displacement.png'))),dtype=np.float32);high=float(np.percentile(raw,85));low=float(np.percentile(raw,.5));pits=np.clip((high-raw)/max(high-low,1e-8),0,1);pits=gaussian_filter(pits,.7);u=(X/1.3%1)*(raw.shape[1]-1);v=(Y/1.3%1)*(raw.shape[0]-1);pits=map_coordinates(pits,[v,u],order=1,mode='wrap');coarse=old['hammer']*.62;fine=old['fine']*.45;full=coarse+fine-.0009*pits
+for file in ['albedo.png','roughness.png','metallic.png','wear.png']:shutil.copy2(D/'surface06'/file,F/file)
+Image.fromarray(np.uint16(np.clip((full+.012)/.016,0,1)*65535+.5)).save(F/'height16.png');np.savez_compressed(F/'fields.npz',coarse=coarse,fine=fine,pits=pits,height=full);(F/'design.json').write_text(json.dumps(dict(source='Controlled return to pitted forged iron, excluding cloudy coarse color and closed stamps',coarse_fraction=.62,fine_fraction=.45,fine_rms=float(fine.std()),pit_source='CC0 ambientCG Metal003',pit_depth=.0009,geometry='Protected physical dents and edge chips'),indent=2));print('Prepared restrained pitted iron')

@@ -1,0 +1,32 @@
+{
+ "material": "CrestGem_Sapphire",
+ "no_appearance_texture": true,
+ "shared_studio_unchanged": true,
+ "front_table_points_px": [
+  [
+   626.0,
+   432.0
+  ],
+  [
+   772.0,
+   624.0
+  ],
+  [
+   722.0,
+   782.0
+  ],
+  [
+   626.0,
+   818.0
+  ],
+  [
+   531.0,
+   778.0
+  ],
+  [
+   482.0,
+   624.0
+  ]
+ ],
+ "approximate_facet_planes": 158
+}

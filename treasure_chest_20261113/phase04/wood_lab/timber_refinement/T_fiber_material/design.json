@@ -1,0 +1,16 @@
+{
+  "source_baseline": "R_layers_full",
+  "source": "Existing medium anatomy and fractures plus asymmetrical longitudinal fiber terraces and cached CC0 scan detail",
+  "seed": 151147,
+  "normal_split": 0.0045,
+  "height_min": -0.050897524989429246,
+  "primary_groove_and_fracture_positions_preserved": true,
+  "knot_center": [
+    -1.31,
+    -1.35
+  ],
+  "new_growth_rings": false,
+  "material_variant": "Independent scanned broad pigment, dense knot core, subtle fiber pigment and roughness",
+  "layer_file": "/Users/antonioperedo/Desktop/badges/treasure_chest_20261113/phase04/wood_lab/timber_refinement/surface_fibers/surface_layers.npz",
+  "construction": "Only test plank grid changes; original boundary and source chest preserved"
+}

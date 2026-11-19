@@ -1,0 +1,29 @@
+{
+  "selection": [
+    "e40|text|text|Sapphire Stairway||",
+    "e41|text|text|Protect 28 more hours to earn Silver||",
+    "e42|text|text|BADGE PREVIEW||",
+    "e45|text|text|CHOOSE BADGE||",
+    "e48|text|text|127h||",
+    "e49|text|text|20m||",
+    "e51|text|text|This week||",
+    "e54|text|text|Today||",
+    "e52|text|text|15h 44m||",
+    "e55|text|text|2h 14m||",
+    "e99|text|text|Start 1 hour||",
+    "e57|text|text|S||",
+    "e58|text|text|M||",
+    "e59|text|text|T||",
+    "e60|text|text|W||",
+    "e61|text|text|T||",
+    "e62|text|text|Today||",
+    "e63|text|text|S||"
+  ],
+  "logs": {
+    "simulatorId": "C18E609E-6C2F-49C4-BCFE-E5D365F4E4E8",
+    "bundleId": "com.antonioperedo.badgestudio.preview",
+    "processId": 11924,
+    "runtimeLogPath": "/Users/antonioperedo/Library/Developer/XcodeBuildMCP/workspaces/badges-aa906adb7ece/logs/com.antonioperedo.badgestudio.preview_2026-11-06T19-24-28-790Z_helperpid11891_ownerpid53974_69bc6b33.log",
+    "osLogPath": "/Users/antonioperedo/Library/Developer/XcodeBuildMCP/workspaces/badges-aa906adb7ece/logs/com.antonioperedo.badgestudio.preview_oslog_2026-11-06T19-24-32-680Z_helperpid11952_ownerpid53974_25901591.log"
+  }
+}

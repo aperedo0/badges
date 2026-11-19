@@ -1,0 +1,12 @@
+{
+  "prototype_only": true,
+  "actual_mesh_collision_proof": false,
+  "upright_key_shaft_radius": 0.045,
+  "key_bit_half_width": 0.035,
+  "bit_y_relative": [
+    -0.25,
+    -0.03
+  ],
+  "sample_points_inside_current_keyhole": 625,
+  "current_source_sha256": "f6c579d2931b2cb9c7ffe9f736a4ba268d690ecad07dc1e4ddab7968e8e7298c"
+}

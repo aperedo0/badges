@@ -1,0 +1,13 @@
+{
+  "completed": [
+    "Chest Rear Hinge Lower -1",
+    "Chest Rear Hinge Upper -1",
+    "Chest Rear Hinge Barrel -1",
+    "Chest Rear Hinge Lower 1",
+    "Chest Rear Hinge Upper 1"
+  ],
+  "current": "Chest Rear Hinge Upper 1",
+  "geometry_saved": true,
+  "full_lid_rig": false,
+  "next": "Inspect real hinges and bores, then bind main lid control"
+}

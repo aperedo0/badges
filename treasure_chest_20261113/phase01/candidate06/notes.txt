@@ -1,0 +1,2 @@
+Refined the construction details against the actual reference while keeping the chest fully volumetric.
+Corrected lock and hasp profiles, handle openings and grips, rivet curvature, fastening details, corner feet and overall proportions; wood and final material phases remain deferred.

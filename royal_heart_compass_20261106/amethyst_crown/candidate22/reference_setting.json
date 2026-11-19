@@ -1,0 +1,32 @@
+{
+  "source": "candidate21",
+  "measured_actual_reference": true,
+  "old_generic_parts_removed": [
+    "Large central amethyst jewel clean faceted gold shield setting",
+    "Large central amethyst jewel separately sculpted gold leaf -1 0",
+    "Large central amethyst jewel separately sculpted gold leaf -1 1",
+    "Large central amethyst jewel separately sculpted gold leaf -1 2",
+    "Large central amethyst jewel separately sculpted gold leaf -1 3",
+    "Large central amethyst jewel separately sculpted gold leaf 1 0",
+    "Large central amethyst jewel separately sculpted gold leaf 1 1",
+    "Large central amethyst jewel separately sculpted gold leaf 1 2",
+    "Large central amethyst jewel separately sculpted gold leaf 1 3",
+    "Large central amethyst jewel clean faceted gold shield setting",
+    "Large central amethyst jewel separately sculpted gold leaf -1 0",
+    "Large central amethyst jewel separately sculpted gold leaf -1 1",
+    "Large central amethyst jewel separately sculpted gold leaf -1 2",
+    "Large central amethyst jewel separately sculpted gold leaf -1 3",
+    "Large central amethyst jewel separately sculpted gold leaf 1 0",
+    "Large central amethyst jewel separately sculpted gold leaf 1 1",
+    "Large central amethyst jewel separately sculpted gold leaf 1 2",
+    "Large central amethyst jewel separately sculpted gold leaf 1 3"
+  ],
+  "gem_y_scale": 0.8462175634338853,
+  "gem_x_scale": 0.9294783348933924,
+  "gem_y_shift": 0.07728199874674724,
+  "front_jewel_reference_bounds": [
+    468,
+    674
+  ],
+  "arch_and_hub_geometry_unchanged": true
+}

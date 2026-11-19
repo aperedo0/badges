@@ -1,0 +1,24 @@
+{
+  "loaded": true,
+  "model_sha256": "380ae46744cba3c591b1cc1fa3f15adb863d4d611b287c3975db6d22535fa1e3",
+  "actual_cached_model": "/Users/antonioperedo/Library/Developer/CoreSimulator/Devices/C18E609E-6C2F-49C4-BCFE-E5D365F4E4E8/data/Containers/Data/Application/F3D8CACB-0FBE-4586-AE4F-D985C892CC29/tmp/Badge3DPreviewCampfireNight.usdz",
+  "front_header_y": 1413.5,
+  "native_image_size": [
+    1206,
+    2622
+  ],
+  "capture_method": "Native PNG because MCP screenshot is compressed to 368 by 800 JPEG",
+  "gesture_method": "Precise local coordinates because MCP root swipe starts on the badge picker",
+  "poses": {
+    "front": {
+      "target_scroll_points": 0,
+      "actual_scroll_points": 0.0,
+      "header_y": 1413.5
+    },
+    "early_turn": {
+      "target_scroll_points": 68,
+      "actual_scroll_points": 68.0,
+      "header_y": 1209.5
+    }
+  }
+}

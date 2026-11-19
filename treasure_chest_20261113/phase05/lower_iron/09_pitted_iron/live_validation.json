@@ -1,0 +1,17 @@
+{
+  "file": "/Users/antonioperedo/Desktop/badges/treasure_chest_20261113/phase05/lower_iron/09_pitted_iron/master.blend",
+  "target": "Lab Chest Lower Rim",
+  "wood_geometry_hash": "6c52635229763ca44c5b7cf1b842746e0c435463f3925b296fb97f50af05ea80",
+  "only_target_data_swapped": true,
+  "reference_preserved": true,
+  "owner_main_framing_preserved": true,
+  "final_closeup_shown_in_existing_window": true,
+  "material": "Lower iron 09_pitted_iron",
+  "maps_packed": true,
+  "dirty": false,
+  "saved_file_sha256": "c54630e86db207c408cf1d2da64adf3973ff0556e0c6c602d2f74f0a2343f897",
+  "image_editors": [
+    "reference.png",
+    "Bottom iron test review"
+  ]
+}

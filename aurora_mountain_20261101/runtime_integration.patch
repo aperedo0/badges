@@ -1,0 +1,52 @@
+--- a/ScreenTime/Sources/App/Features/Badges/Badge3DLiveBadge.swift
++++ b/ScreenTime/Sources/App/Features/Badges/Badge3DLiveBadge.swift
+@@ -37,7 +37,7 @@
+ 
+ enum PrivateBadgePreview {
+     nonisolated(unsafe) static var selection = UserDefaults.standard.string(forKey: "CoinBadgePreview") ?? "emeraldTrophy"
+-    static let items: [String: String] = ["waterDrop":"Water Drop","tealSands":"Teal Sands","goldenSands":"Golden Sands","sunrisePath":"Sunrise Path","emeraldSprout":"Emerald Sprout","starAscent":"Star Ascent","islandSunset":"Island Sunset","lightningCompass":"Lightning Compass","zenBalance":"Zen Balance","torchSunburst":"Torch Sunburst","crimsonShield":"Crimson Shield","emeraldArcher":"Emerald Archer","emeraldTrophy":"Emerald Trophy","crescentOcean":"Crescent Ocean","mountainCrest":"Mountain Crest","wingedSword":"Winged Sword","bronzePhoenix":"Bronze Phoenix","frostwingCrystal":"Frostwing Crystal","battleSteel":"Battle Steel","lunarCompass":"Lunar Compass","celestialOrbit":"Celestial Orbit","rubyWingedCrest":"Ruby Winged Crest","sapphireStairway":"Sapphire Stairway"]
++    static let items: [String: String] = ["waterDrop":"Water Drop","tealSands":"Teal Sands","goldenSands":"Golden Sands","sunrisePath":"Sunrise Path","emeraldSprout":"Emerald Sprout","starAscent":"Star Ascent","islandSunset":"Island Sunset","lightningCompass":"Lightning Compass","zenBalance":"Zen Balance","torchSunburst":"Torch Sunburst","crimsonShield":"Crimson Shield","emeraldArcher":"Emerald Archer","emeraldTrophy":"Emerald Trophy","crescentOcean":"Crescent Ocean","mountainCrest":"Mountain Crest","wingedSword":"Winged Sword","bronzePhoenix":"Bronze Phoenix","frostwingCrystal":"Frostwing Crystal","battleSteel":"Battle Steel","lunarCompass":"Lunar Compass","celestialOrbit":"Celestial Orbit","rubyWingedCrest":"Ruby Winged Crest","sapphireStairway":"Sapphire Stairway","auroraMountain":"Aurora Mountain"]
+     static var datasetName: String? {
+         guard items[selection] != nil else { return nil }
+         return "Badge3DPreview" + selection.prefix(1).uppercased() + selection.dropFirst()
+@@ -98,6 +98,7 @@
+     static func look(forDatasetName datasetName: String) -> Badge3DTierLook {
+         if ["Badge3DPreviewEmeraldArcher", "Badge3DPreviewEmeraldSprout", "Badge3DPreviewEmeraldTrophy", "Badge3DPreviewGoldenSands", "Badge3DPreviewIslandSunset", "Badge3DPreviewLightningCompass", "Badge3DPreviewStarAscent", "Badge3DPreviewSunrisePath", "Badge3DPreviewTealSands", "Badge3DPreviewTorchSunburst", "Badge3DPreviewWaterDrop", "Badge3DPreviewZenBalance"].contains(datasetName) { return Badge3DTierLook(size: 0.96, lift: 0.441) }
+         if datasetName == "Badge3DPreviewCrimsonShield" { return .neutral }
++        if datasetName == "Badge3DPreviewAuroraMountain" { return .neutral }
+         if datasetName == "Badge3DPreviewSapphireStairway" { return .neutral }
+         if datasetName == "Badge3DPreviewRubyWingedCrest" { return .neutral }
+         if datasetName == "Badge3DPreviewCelestialOrbit" { return .neutral }
+@@ -1315,6 +1316,7 @@
+         case "CrestGem_Ice": return 0
+         case "CrestGem_Sapphire": return 1
+         case "CrestGem_Ruby": return 2
++        case "CrestGem_Amethyst": return 3
+         default: return nil
+         }
+     }
+@@ -1379,7 +1381,7 @@
+         if let crestStyle {
+             let points = Self.triangleCorners(of: contents)
+             let thickness = (points.map(\.z).max() ?? 0.5) - (points.map(\.z).min() ?? -0.5)
+-            material.custom.value = SIMD4(isMirrorImage ? 1 : 0, crestStyle, min(8, max(0.5, 1 / thickness)), crestStyle == 0 ? 0.12 : 0.28)
++            material.custom.value = SIMD4(isMirrorImage ? 1 : 0, crestStyle, min(8, max(0.5, 1 / thickness)), crestStyle == 0 ? 0.12 : crestStyle == 3 ? 0.18 : 0.28)
+         }
+         return material
+     }
+--- a/ScreenTime/Sources/App/Features/Badges/BadgeCrestGemSurface.metal
++++ b/ScreenTime/Sources/App/Features/Badges/BadgeCrestGemSurface.metal
+@@ -278,9 +278,11 @@
+ void badgeCrestGemSurface(realitykit::surface_parameters params)
+ {
+     float4 profile = params.uniforms().custom_parameter();
+-    float3 indices = profile.y < 0.5 ? float3(1.45, 1.46, 1.475) : float3(1.76, 1.77, 1.79);
++    float3 indices = profile.y < 0.5 ? float3(1.45, 1.46, 1.475)
++                   : profile.y > 2.5 ? float3(1.54, 1.55, 1.56) : float3(1.76, 1.77, 1.79);
+     float3 absorption = profile.y < 0.5 ? float3(0.50, 0.20, 0.04)
+-                        : profile.y < 1.5 ? float3(8.0, 4.0, 0.25) : float3(1.25, 16.0, 12.0);
++                        : profile.y < 1.5 ? float3(8.0, 4.0, 0.25)
++                        : profile.y > 2.5 ? float3(0.90, 12.0, 0.50) : float3(1.25, 16.0, 12.0);
+     absorption *= profile.z;
+ 
+     realitykit::surface::surface_properties surface = params.surface();

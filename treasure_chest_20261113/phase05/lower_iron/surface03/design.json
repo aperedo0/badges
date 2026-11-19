@@ -1,0 +1,13 @@
+{
+  "source": "02 forged",
+  "correction": "Broad polygonal planishing, quiet faces and localized fine pitting",
+  "fine_rms": 4.127343709114939e-05,
+  "hammer_min": -0.003786630230024457,
+  "seed": 261117,
+  "exposed_color_linear": [
+    0.3,
+    0.28,
+    0.25
+  ],
+  "edge_color": "Neutral warm iron, no gold or emission"
+}

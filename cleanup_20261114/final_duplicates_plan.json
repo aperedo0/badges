@@ -1,0 +1,3494 @@
+{
+  "delete": [
+    {
+      "path": "badge_family_compact_20261106/badges/bronze/mobile/bronze_badge_mobile.usdz",
+      "bytes": 1271381,
+      "reason": "Redundant current export; identical canonical export retained in current model index"
+    },
+    {
+      "path": "badge_family_compact_20261106/mobile/bronze_badge_mobile.usdz",
+      "bytes": 1271381,
+      "reason": "Redundant current export; identical canonical export retained in current model index"
+    },
+    {
+      "path": "badge_family_compact_20261106/badges/bronze/candidate01/source/import/0/emissive.png",
+      "bytes": 89973,
+      "reason": "Import extraction already embedded in the verified packed current Blender model and USDZ"
+    },
+    {
+      "path": "badge_family_compact_20261106/badges/bronze/candidate01/source/import/0/color.png",
+      "bytes": 360948,
+      "reason": "Import extraction already embedded in the verified packed current Blender model and USDZ"
+    },
+    {
+      "path": "badge_family_compact_20261106/badges/copper/mobile/copper_badge_mobile.usdz",
+      "bytes": 1215667,
+      "reason": "Redundant current export; identical canonical export retained in current model index"
+    },
+    {
+      "path": "badge_family_compact_20261106/mobile/copper_badge_mobile.usdz",
+      "bytes": 1215667,
+      "reason": "Redundant current export; identical canonical export retained in current model index"
+    },
+    {
+      "path": "badge_family_compact_20261106/badges/copper/candidate01/source/import/0/copper_color.png",
+      "bytes": 311573,
+      "reason": "Import extraction already embedded in the verified packed current Blender model and USDZ"
+    },
+    {
+      "path": "badge_family_compact_20261106/badges/copper/candidate01/source/import/0/copper_emissive.png",
+      "bytes": 177251,
+      "reason": "Import extraction already embedded in the verified packed current Blender model and USDZ"
+    },
+    {
+      "path": "badge_family_compact_20261106/badges/gold/mobile/gold_badge_mobile.usdz",
+      "bytes": 1667136,
+      "reason": "Redundant current export; identical canonical export retained in current model index"
+    },
+    {
+      "path": "badge_family_compact_20261106/mobile/gold_badge_mobile.usdz",
+      "bytes": 1667136,
+      "reason": "Redundant current export; identical canonical export retained in current model index"
+    },
+    {
+      "path": "badge_family_compact_20261106/badges/gold/candidate01/source/import/0/emissive.png",
+      "bytes": 262754,
+      "reason": "Import extraction already embedded in the verified packed current Blender model and USDZ"
+    },
+    {
+      "path": "badge_family_compact_20261106/badges/gold/candidate01/source/import/0/color.png",
+      "bytes": 396186,
+      "reason": "Import extraction already embedded in the verified packed current Blender model and USDZ"
+    },
+    {
+      "path": "badge_family_compact_20261106/badges/iron/mobile/original_iron_badge_mobile.usdz",
+      "bytes": 2223573,
+      "reason": "Redundant current export; identical canonical export retained in current model index"
+    },
+    {
+      "path": "badge_family_compact_20261106/badges/iron/candidate01/source/import/0/Iron2_PlateLeft_Satin_color.png",
+      "bytes": 583880,
+      "reason": "Import extraction already embedded in the verified packed current Blender model and USDZ"
+    },
+    {
+      "path": "badge_family_compact_20261106/badges/iron/candidate01/source/import/0/Iron2_Border_Satin_roughness.png",
+      "bytes": 71,
+      "reason": "Import extraction already embedded in the verified packed current Blender model and USDZ"
+    },
+    {
+      "path": "badge_family_compact_20261106/badges/iron/candidate01/source/import/0/Iron2_PlateLeft_Satin_roughness.png",
+      "bytes": 71,
+      "reason": "Import extraction already embedded in the verified packed current Blender model and USDZ"
+    },
+    {
+      "path": "badge_family_compact_20261106/badges/iron/candidate01/source/import/0/Iron2_Border_Satin_color.png",
+      "bytes": 636210,
+      "reason": "Import extraction already embedded in the verified packed current Blender model and USDZ"
+    },
+    {
+      "path": "badge_family_compact_20261106/badges/silver/mobile/silver_badge_mobile.usdz",
+      "bytes": 1688904,
+      "reason": "Redundant current export; identical canonical export retained in current model index"
+    },
+    {
+      "path": "badge_family_compact_20261106/mobile/silver_badge_mobile.usdz",
+      "bytes": 1688904,
+      "reason": "Redundant current export; identical canonical export retained in current model index"
+    },
+    {
+      "path": "badge_family_compact_20261106/badges/silver/candidate01/source/import/0/Silver2_StarShaded_Satin_roughness.png",
+      "bytes": 2082,
+      "reason": "Import extraction already embedded in the verified packed current Blender model and USDZ"
+    },
+    {
+      "path": "badge_family_compact_20261106/badges/silver/candidate01/source/import/0/Silver2_LeafLit_Satin_color.png",
+      "bytes": 104772,
+      "reason": "Import extraction already embedded in the verified packed current Blender model and USDZ"
+    },
+    {
+      "path": "badge_family_compact_20261106/badges/silver/candidate01/source/import/0/Silver2_StarLit_Satin_roughness.png",
+      "bytes": 2078,
+      "reason": "Import extraction already embedded in the verified packed current Blender model and USDZ"
+    },
+    {
+      "path": "badge_family_compact_20261106/badges/silver/candidate01/source/import/0/Silver2_LeafLit_Satin_roughness.png",
+      "bytes": 11959,
+      "reason": "Import extraction already embedded in the verified packed current Blender model and USDZ"
+    },
+    {
+      "path": "badge_family_compact_20261106/badges/silver/candidate01/source/import/0/Silver2_StarLit_Satin_color.png",
+      "bytes": 119197,
+      "reason": "Import extraction already embedded in the verified packed current Blender model and USDZ"
+    },
+    {
+      "path": "badge_family_compact_20261106/badges/silver/candidate01/source/import/0/Silver2_StarShaded_Satin_emissive.png",
+      "bytes": 82771,
+      "reason": "Import extraction already embedded in the verified packed current Blender model and USDZ"
+    },
+    {
+      "path": "badge_family_compact_20261106/badges/silver/candidate01/source/import/0/Silver2_LeafShaded_Satin_emissive.png",
+      "bytes": 86285,
+      "reason": "Import extraction already embedded in the verified packed current Blender model and USDZ"
+    },
+    {
+      "path": "badge_family_compact_20261106/badges/silver/candidate01/source/import/0/Silver2_LeafLit_Satin_emissive.png",
+      "bytes": 76247,
+      "reason": "Import extraction already embedded in the verified packed current Blender model and USDZ"
+    },
+    {
+      "path": "badge_family_compact_20261106/badges/silver/candidate01/source/import/0/Silver2_LeafShaded_Satin_color.png",
+      "bytes": 91739,
+      "reason": "Import extraction already embedded in the verified packed current Blender model and USDZ"
+    },
+    {
+      "path": "badge_family_compact_20261106/badges/silver/candidate01/source/import/0/Silver2_StarShaded_Satin_color.png",
+      "bytes": 109736,
+      "reason": "Import extraction already embedded in the verified packed current Blender model and USDZ"
+    },
+    {
+      "path": "badge_family_compact_20261106/badges/silver/candidate01/source/import/0/Silver2_LeafShaded_Satin_roughness.png",
+      "bytes": 11959,
+      "reason": "Import extraction already embedded in the verified packed current Blender model and USDZ"
+    },
+    {
+      "path": "badge_family_compact_20261106/badges/silver/candidate01/source/import/0/Silver2_StarLit_Satin_emissive.png",
+      "bytes": 83558,
+      "reason": "Import extraction already embedded in the verified packed current Blender model and USDZ"
+    },
+    {
+      "path": "badge_family_compact_20261106/badges/aurora_mountain/mobile/aurora_mountain_badge_mobile.usdz",
+      "bytes": 4534895,
+      "reason": "Redundant current export; identical canonical export retained in current model index"
+    },
+    {
+      "path": "badge_family_compact_20261106/mobile/aurora_mountain_badge_mobile.usdz",
+      "bytes": 4534895,
+      "reason": "Redundant current export; identical canonical export retained in current model index"
+    },
+    {
+      "path": "badge_family_compact_20261106/badges/aurora_mountain/candidate01/source/import/textures/sky_color.png",
+      "bytes": 459835,
+      "reason": "Import extraction already embedded in the verified packed current Blender model and USDZ"
+    },
+    {
+      "path": "badge_family_compact_20261106/badges/aurora_mountain/candidate01/source/import/textures/rock_emission.png",
+      "bytes": 1087287,
+      "reason": "Import extraction already embedded in the verified packed current Blender model and USDZ"
+    },
+    {
+      "path": "badge_family_compact_20261106/badges/aurora_mountain/candidate01/source/import/textures/rock_color.png",
+      "bytes": 640182,
+      "reason": "Import extraction already embedded in the verified packed current Blender model and USDZ"
+    },
+    {
+      "path": "badge_family_compact_20261106/badges/aurora_mountain/candidate01/source/import/textures/sky_emission.png",
+      "bytes": 738643,
+      "reason": "Import extraction already embedded in the verified packed current Blender model and USDZ"
+    },
+    {
+      "path": "badge_family_compact_20261106/badges/battle_steel/mobile/battle_steel_badge_mobile.usdz",
+      "bytes": 4343909,
+      "reason": "Redundant current export; identical canonical export retained in current model index"
+    },
+    {
+      "path": "badge_family_compact_20261106/mobile/battle_steel_badge_mobile.usdz",
+      "bytes": 4343909,
+      "reason": "Redundant current export; identical canonical export retained in current model index"
+    },
+    {
+      "path": "badge_family_compact_20261106/badges/battle_steel/candidate01/source/import/textures/surface_roughness.png",
+      "bytes": 37851,
+      "reason": "Import extraction already embedded in the verified packed current Blender model and USDZ"
+    },
+    {
+      "path": "badge_family_compact_20261106/badges/battle_steel/candidate01/source/import/textures/star_color.png",
+      "bytes": 18671,
+      "reason": "Import extraction already embedded in the verified packed current Blender model and USDZ"
+    },
+    {
+      "path": "badge_family_compact_20261106/badges/battle_steel/candidate01/source/import/textures/star_roughness.png",
+      "bytes": 1302,
+      "reason": "Import extraction already embedded in the verified packed current Blender model and USDZ"
+    },
+    {
+      "path": "badge_family_compact_20261106/badges/battle_steel/candidate01/source/import/textures/surface_emission.png",
+      "bytes": 755766,
+      "reason": "Import extraction already embedded in the verified packed current Blender model and USDZ"
+    },
+    {
+      "path": "badge_family_compact_20261106/badges/battle_steel/candidate01/source/import/textures/surface_color.png",
+      "bytes": 704125,
+      "reason": "Import extraction already embedded in the verified packed current Blender model and USDZ"
+    },
+    {
+      "path": "badge_family_compact_20261106/badges/battle_steel/candidate01/source/import/textures/star_emission.png",
+      "bytes": 21464,
+      "reason": "Import extraction already embedded in the verified packed current Blender model and USDZ"
+    },
+    {
+      "path": "badge_family_compact_20261106/badges/bronze_phoenix/mobile/bronze_phoenix_badge_mobile.usdz",
+      "bytes": 3725665,
+      "reason": "Redundant current export; identical canonical export retained in current model index"
+    },
+    {
+      "path": "badge_family_compact_20261106/mobile/bronze_phoenix_badge_mobile.usdz",
+      "bytes": 3725665,
+      "reason": "Redundant current export; identical canonical export retained in current model index"
+    },
+    {
+      "path": "badge_family_compact_20261106/badges/bronze_phoenix/candidate01/source/import/textures/surface_roughness.png",
+      "bytes": 28289,
+      "reason": "Import extraction already embedded in the verified packed current Blender model and USDZ"
+    },
+    {
+      "path": "badge_family_compact_20261106/badges/bronze_phoenix/candidate01/source/import/textures/star_color.png",
+      "bytes": 16716,
+      "reason": "Import extraction already embedded in the verified packed current Blender model and USDZ"
+    },
+    {
+      "path": "badge_family_compact_20261106/badges/bronze_phoenix/candidate01/source/import/textures/star_roughness.png",
+      "bytes": 1302,
+      "reason": "Import extraction already embedded in the verified packed current Blender model and USDZ"
+    },
+    {
+      "path": "badge_family_compact_20261106/badges/bronze_phoenix/candidate01/source/import/textures/surface_emission.png",
+      "bytes": 856912,
+      "reason": "Import extraction already embedded in the verified packed current Blender model and USDZ"
+    },
+    {
+      "path": "badge_family_compact_20261106/badges/bronze_phoenix/candidate01/source/import/textures/surface_color.png",
+      "bytes": 688854,
+      "reason": "Import extraction already embedded in the verified packed current Blender model and USDZ"
+    },
+    {
+      "path": "badge_family_compact_20261106/badges/bronze_phoenix/candidate01/source/import/textures/star_emission.png",
+      "bytes": 18770,
+      "reason": "Import extraction already embedded in the verified packed current Blender model and USDZ"
+    },
+    {
+      "path": "badge_family_compact_20261106/badges/celestial_orbit/mobile/celestial_orbit_badge_mobile.usdz",
+      "bytes": 4189727,
+      "reason": "Redundant current export; identical canonical export retained in current model index"
+    },
+    {
+      "path": "badge_family_compact_20261106/mobile/celestial_orbit_badge_mobile.usdz",
+      "bytes": 4189727,
+      "reason": "Redundant current export; identical canonical export retained in current model index"
+    },
+    {
+      "path": "badge_family_compact_20261106/badges/celestial_orbit/candidate01/source/import/textures/surface_roughness.png",
+      "bytes": 33306,
+      "reason": "Import extraction already embedded in the verified packed current Blender model and USDZ"
+    },
+    {
+      "path": "badge_family_compact_20261106/badges/celestial_orbit/candidate01/source/import/textures/star_color.png",
+      "bytes": 62909,
+      "reason": "Import extraction already embedded in the verified packed current Blender model and USDZ"
+    },
+    {
+      "path": "badge_family_compact_20261106/badges/celestial_orbit/candidate01/source/import/textures/star_roughness.png",
+      "bytes": 3158,
+      "reason": "Import extraction already embedded in the verified packed current Blender model and USDZ"
+    },
+    {
+      "path": "badge_family_compact_20261106/badges/celestial_orbit/candidate01/source/import/textures/surface_emission.png",
+      "bytes": 1071794,
+      "reason": "Import extraction already embedded in the verified packed current Blender model and USDZ"
+    },
+    {
+      "path": "badge_family_compact_20261106/badges/celestial_orbit/candidate01/source/import/textures/surface_color.png",
+      "bytes": 790652,
+      "reason": "Import extraction already embedded in the verified packed current Blender model and USDZ"
+    },
+    {
+      "path": "badge_family_compact_20261106/badges/celestial_orbit/candidate01/source/import/textures/star_emission.png",
+      "bytes": 108505,
+      "reason": "Import extraction already embedded in the verified packed current Blender model and USDZ"
+    },
+    {
+      "path": "badge_family_compact_20261106/badges/crescent_ocean/mobile/crescent_ocean_badge_mobile.usdz",
+      "bytes": 4111192,
+      "reason": "Redundant current export; identical canonical export retained in current model index"
+    },
+    {
+      "path": "badge_family_compact_20261106/mobile/crescent_ocean_badge_mobile.usdz",
+      "bytes": 4111192,
+      "reason": "Redundant current export; identical canonical export retained in current model index"
+    },
+    {
+      "path": "badge_family_compact_20261106/badges/crescent_ocean/candidate01/source/import/textures/surface_roughness.png",
+      "bytes": 23477,
+      "reason": "Import extraction already embedded in the verified packed current Blender model and USDZ"
+    },
+    {
+      "path": "badge_family_compact_20261106/badges/crescent_ocean/candidate01/source/import/textures/star_color.png",
+      "bytes": 45147,
+      "reason": "Import extraction already embedded in the verified packed current Blender model and USDZ"
+    },
+    {
+      "path": "badge_family_compact_20261106/badges/crescent_ocean/candidate01/source/import/textures/star_roughness.png",
+      "bytes": 1302,
+      "reason": "Import extraction already embedded in the verified packed current Blender model and USDZ"
+    },
+    {
+      "path": "badge_family_compact_20261106/badges/crescent_ocean/candidate01/source/import/textures/surface_emission.png",
+      "bytes": 897244,
+      "reason": "Import extraction already embedded in the verified packed current Blender model and USDZ"
+    },
+    {
+      "path": "badge_family_compact_20261106/badges/crescent_ocean/candidate01/source/import/textures/surface_color.png",
+      "bytes": 507402,
+      "reason": "Import extraction already embedded in the verified packed current Blender model and USDZ"
+    },
+    {
+      "path": "badge_family_compact_20261106/badges/crescent_ocean/candidate01/source/import/textures/star_emission.png",
+      "bytes": 109326,
+      "reason": "Import extraction already embedded in the verified packed current Blender model and USDZ"
+    },
+    {
+      "path": "badge_family_compact_20261106/badges/ember_forge/mobile/ember_forge_badge_mobile.usdz",
+      "bytes": 2855492,
+      "reason": "Redundant current export; identical canonical export retained in current model index"
+    },
+    {
+      "path": "badge_family_compact_20261106/mobile/ember_forge_badge_mobile.usdz",
+      "bytes": 2855492,
+      "reason": "Redundant current export; identical canonical export retained in current model index"
+    },
+    {
+      "path": "badge_family_compact_20261106/badges/ember_forge/candidate01/source/import/textures/metal_color.png",
+      "bytes": 519141,
+      "reason": "Import extraction already embedded in the verified packed current Blender model and USDZ"
+    },
+    {
+      "path": "badge_family_compact_20261106/badges/ember_forge/candidate01/source/import/textures/metal_emission.png",
+      "bytes": 461892,
+      "reason": "Import extraction already embedded in the verified packed current Blender model and USDZ"
+    },
+    {
+      "path": "badge_family_compact_20261106/badges/ember_forge/candidate01/source/import/textures/flame_color.png",
+      "bytes": 143323,
+      "reason": "Import extraction already embedded in the verified packed current Blender model and USDZ"
+    },
+    {
+      "path": "badge_family_compact_20261106/badges/ember_forge/candidate01/source/import/textures/flame_roughness.png",
+      "bytes": 51441,
+      "reason": "Import extraction already embedded in the verified packed current Blender model and USDZ"
+    },
+    {
+      "path": "badge_family_compact_20261106/badges/ember_forge/candidate01/source/import/textures/field_roughness.png",
+      "bytes": 51472,
+      "reason": "Import extraction already embedded in the verified packed current Blender model and USDZ"
+    },
+    {
+      "path": "badge_family_compact_20261106/badges/ember_forge/candidate01/source/import/textures/metal_roughness.png",
+      "bytes": 97988,
+      "reason": "Import extraction already embedded in the verified packed current Blender model and USDZ"
+    },
+    {
+      "path": "badge_family_compact_20261106/badges/ember_forge/candidate01/source/import/textures/copper_emission.png",
+      "bytes": 229988,
+      "reason": "Import extraction already embedded in the verified packed current Blender model and USDZ"
+    },
+    {
+      "path": "badge_family_compact_20261106/badges/ember_forge/candidate01/source/import/textures/copper_roughness.png",
+      "bytes": 60252,
+      "reason": "Import extraction already embedded in the verified packed current Blender model and USDZ"
+    },
+    {
+      "path": "badge_family_compact_20261106/badges/ember_forge/candidate01/source/import/textures/copper_color.png",
+      "bytes": 252693,
+      "reason": "Import extraction already embedded in the verified packed current Blender model and USDZ"
+    },
+    {
+      "path": "badge_family_compact_20261106/badges/ember_forge/candidate01/source/import/textures/flame_emission.png",
+      "bytes": 250186,
+      "reason": "Import extraction already embedded in the verified packed current Blender model and USDZ"
+    },
+    {
+      "path": "badge_family_compact_20261106/badges/ember_forge/candidate01/source/import/textures/field_color.png",
+      "bytes": 121622,
+      "reason": "Import extraction already embedded in the verified packed current Blender model and USDZ"
+    },
+    {
+      "path": "badge_family_compact_20261106/badges/ember_forge/candidate01/source/import/textures/field_emission.png",
+      "bytes": 287057,
+      "reason": "Import extraction already embedded in the verified packed current Blender model and USDZ"
+    },
+    {
+      "path": "badge_family_compact_20261106/badges/emerald_archer/mobile/emerald_archer_badge_mobile.usdz",
+      "bytes": 3231844,
+      "reason": "Redundant current export; identical canonical export retained in current model index"
+    },
+    {
+      "path": "badge_family_compact_20261106/mobile/emerald_archer_badge_mobile.usdz",
+      "bytes": 3231844,
+      "reason": "Redundant current export; identical canonical export retained in current model index"
+    },
+    {
+      "path": "badge_family_compact_20261106/badges/emerald_archer/candidate01/source/import/textures/Rim_brushed_reference_roughness.png",
+      "bytes": 64848,
+      "reason": "Import extraction already embedded in the verified packed current Blender model and USDZ"
+    },
+    {
+      "path": "badge_family_compact_20261106/badges/emerald_archer/candidate01/source/import/textures/emerald_color.png",
+      "bytes": 1880,
+      "reason": "Import extraction already embedded in the verified packed current Blender model and USDZ"
+    },
+    {
+      "path": "badge_family_compact_20261106/badges/emerald_archer/candidate01/source/import/textures/Rim_brushed_reference_color.png",
+      "bytes": 211693,
+      "reason": "Import extraction already embedded in the verified packed current Blender model and USDZ"
+    },
+    {
+      "path": "badge_family_compact_20261106/badges/emerald_archer/candidate01/source/import/textures/gold_color.png",
+      "bytes": 1881,
+      "reason": "Import extraction already embedded in the verified packed current Blender model and USDZ"
+    },
+    {
+      "path": "badge_family_compact_20261106/badges/emerald_archer/candidate01/source/import/textures/Rim_glint_reference_roughness.png",
+      "bytes": 504403,
+      "reason": "Import extraction already embedded in the verified packed current Blender model and USDZ"
+    },
+    {
+      "path": "badge_family_compact_20261106/badges/emerald_archer/candidate01/source/import/textures/emerald_light_emission.png",
+      "bytes": 1882,
+      "reason": "Import extraction already embedded in the verified packed current Blender model and USDZ"
+    },
+    {
+      "path": "badge_family_compact_20261106/badges/emerald_archer/candidate01/source/import/textures/field_roughness.png",
+      "bytes": 172358,
+      "reason": "Import extraction already embedded in the verified packed current Blender model and USDZ"
+    },
+    {
+      "path": "badge_family_compact_20261106/badges/emerald_archer/candidate01/source/import/textures/emerald_dark_color.png",
+      "bytes": 1881,
+      "reason": "Import extraction already embedded in the verified packed current Blender model and USDZ"
+    },
+    {
+      "path": "badge_family_compact_20261106/badges/emerald_archer/candidate01/source/import/textures/emerald_dark_emission.png",
+      "bytes": 843,
+      "reason": "Import extraction already embedded in the verified packed current Blender model and USDZ"
+    },
+    {
+      "path": "badge_family_compact_20261106/badges/emerald_archer/candidate01/source/import/textures/field_color.png",
+      "bytes": 215344,
+      "reason": "Import extraction already embedded in the verified packed current Blender model and USDZ"
+    },
+    {
+      "path": "badge_family_compact_20261106/badges/emerald_archer/candidate01/source/import/textures/emerald_light_color.png",
+      "bytes": 1881,
+      "reason": "Import extraction already embedded in the verified packed current Blender model and USDZ"
+    },
+    {
+      "path": "badge_family_compact_20261106/badges/emerald_archer/candidate01/source/import/textures/emerald_emission.png",
+      "bytes": 1880,
+      "reason": "Import extraction already embedded in the verified packed current Blender model and USDZ"
+    },
+    {
+      "path": "badge_family_compact_20261106/badges/emerald_sprout/mobile/emerald_sprout_badge_mobile.usdz",
+      "bytes": 3452598,
+      "reason": "Redundant current export; identical canonical export retained in current model index"
+    },
+    {
+      "path": "badge_family_compact_20261106/mobile/emerald_sprout_badge_mobile.usdz",
+      "bytes": 3452598,
+      "reason": "Redundant current export; identical canonical export retained in current model index"
+    },
+    {
+      "path": "badge_family_compact_20261106/badges/emerald_sprout/candidate01/source/import/textures/Rim_brushed_reference_roughness.png",
+      "bytes": 64848,
+      "reason": "Import extraction already embedded in the verified packed current Blender model and USDZ"
+    },
+    {
+      "path": "badge_family_compact_20261106/badges/emerald_sprout/candidate01/source/import/textures/emerald_color.png",
+      "bytes": 82119,
+      "reason": "Import extraction already embedded in the verified packed current Blender model and USDZ"
+    },
+    {
+      "path": "badge_family_compact_20261106/badges/emerald_sprout/candidate01/source/import/textures/Rim_brushed_reference_color.png",
+      "bytes": 211693,
+      "reason": "Import extraction already embedded in the verified packed current Blender model and USDZ"
+    },
+    {
+      "path": "badge_family_compact_20261106/badges/emerald_sprout/candidate01/source/import/textures/USDZ_Inset_base_color.png",
+      "bytes": 115896,
+      "reason": "Import extraction already embedded in the verified packed current Blender model and USDZ"
+    },
+    {
+      "path": "badge_family_compact_20261106/badges/emerald_sprout/candidate01/source/import/textures/gold_color.png",
+      "bytes": 121972,
+      "reason": "Import extraction already embedded in the verified packed current Blender model and USDZ"
+    },
+    {
+      "path": "badge_family_compact_20261106/badges/emerald_sprout/candidate01/source/import/textures/emerald_background_color.png",
+      "bytes": 109519,
+      "reason": "Import extraction already embedded in the verified packed current Blender model and USDZ"
+    },
+    {
+      "path": "badge_family_compact_20261106/badges/emerald_sprout/candidate01/source/import/textures/Rim_glint_reference_roughness.png",
+      "bytes": 504403,
+      "reason": "Import extraction already embedded in the verified packed current Blender model and USDZ"
+    },
+    {
+      "path": "badge_family_compact_20261106/badges/emerald_sprout/candidate01/source/import/textures/gold_emission.png",
+      "bytes": 29349,
+      "reason": "Import extraction already embedded in the verified packed current Blender model and USDZ"
+    },
+    {
+      "path": "badge_family_compact_20261106/badges/emerald_sprout/candidate01/source/import/textures/USDZ_Inset_normal.png",
+      "bytes": 828687,
+      "reason": "Import extraction already embedded in the verified packed current Blender model and USDZ"
+    },
+    {
+      "path": "badge_family_compact_20261106/badges/emerald_sprout/candidate01/source/import/textures/soil_emission.png",
+      "bytes": 934,
+      "reason": "Import extraction already embedded in the verified packed current Blender model and USDZ"
+    },
+    {
+      "path": "badge_family_compact_20261106/badges/emerald_sprout/candidate01/source/import/textures/soil_color.png",
+      "bytes": 72355,
+      "reason": "Import extraction already embedded in the verified packed current Blender model and USDZ"
+    },
+    {
+      "path": "badge_family_compact_20261106/badges/emerald_sprout/candidate01/source/import/textures/emerald_emission.png",
+      "bytes": 16516,
+      "reason": "Import extraction already embedded in the verified packed current Blender model and USDZ"
+    },
+    {
+      "path": "badge_family_compact_20261106/badges/emerald_sprout/candidate01/source/import/textures/emerald_background_emission.png",
+      "bytes": 5127,
+      "reason": "Import extraction already embedded in the verified packed current Blender model and USDZ"
+    },
+    {
+      "path": "badge_family_compact_20261106/badges/emerald_trophy/mobile/emerald_trophy_badge_mobile.usdz",
+      "bytes": 7812788,
+      "reason": "Redundant current export; identical canonical export retained in current model index"
+    },
+    {
+      "path": "badge_family_compact_20261106/mobile/emerald_trophy_badge_mobile.usdz",
+      "bytes": 7812788,
+      "reason": "Redundant current export; identical canonical export retained in current model index"
+    },
+    {
+      "path": "badge_family_compact_20261106/badges/emerald_trophy/candidate01/source/import/textures/Rim_brushed_reference_roughness.png",
+      "bytes": 14675,
+      "reason": "Import extraction already embedded in the verified packed current Blender model and USDZ"
+    },
+    {
+      "path": "badge_family_compact_20261106/badges/emerald_trophy/candidate01/source/import/textures/Rim_brushed_reference_color.png",
+      "bytes": 155092,
+      "reason": "Import extraction already embedded in the verified packed current Blender model and USDZ"
+    },
+    {
+      "path": "badge_family_compact_20261106/badges/emerald_trophy/candidate01/source/import/textures/relief_emission.png",
+      "bytes": 627399,
+      "reason": "Import extraction already embedded in the verified packed current Blender model and USDZ"
+    },
+    {
+      "path": "badge_family_compact_20261106/badges/emerald_trophy/candidate01/source/import/textures/Rim_glint_reference_roughness.png",
+      "bytes": 504403,
+      "reason": "Import extraction already embedded in the verified packed current Blender model and USDZ"
+    },
+    {
+      "path": "badge_family_compact_20261106/badges/emerald_trophy/candidate01/source/import/textures/field_roughness.png",
+      "bytes": 172358,
+      "reason": "Import extraction already embedded in the verified packed current Blender model and USDZ"
+    },
+    {
+      "path": "badge_family_compact_20261106/badges/emerald_trophy/candidate01/source/import/textures/relief_color.png",
+      "bytes": 385713,
+      "reason": "Import extraction already embedded in the verified packed current Blender model and USDZ"
+    },
+    {
+      "path": "badge_family_compact_20261106/badges/emerald_trophy/candidate01/source/import/textures/field_color.png",
+      "bytes": 215344,
+      "reason": "Import extraction already embedded in the verified packed current Blender model and USDZ"
+    },
+    {
+      "path": "badge_family_compact_20261106/badges/frostwing_crystal/mobile/frostwing_crystal_badge_mobile.usdz",
+      "bytes": 3963945,
+      "reason": "Redundant current export; identical canonical export retained in current model index"
+    },
+    {
+      "path": "badge_family_compact_20261106/mobile/frostwing_crystal_badge_mobile.usdz",
+      "bytes": 3963945,
+      "reason": "Redundant current export; identical canonical export retained in current model index"
+    },
+    {
+      "path": "badge_family_compact_20261106/badges/frostwing_crystal/candidate01/source/import/textures/surface_roughness.png",
+      "bytes": 21834,
+      "reason": "Import extraction already embedded in the verified packed current Blender model and USDZ"
+    },
+    {
+      "path": "badge_family_compact_20261106/badges/frostwing_crystal/candidate01/source/import/textures/surface_emission.png",
+      "bytes": 680205,
+      "reason": "Import extraction already embedded in the verified packed current Blender model and USDZ"
+    },
+    {
+      "path": "badge_family_compact_20261106/badges/frostwing_crystal/candidate01/source/import/textures/surface_color.png",
+      "bytes": 508117,
+      "reason": "Import extraction already embedded in the verified packed current Blender model and USDZ"
+    },
+    {
+      "path": "badge_family_compact_20261106/badges/golden_sands/mobile/golden_sands_badge_mobile.usdz",
+      "bytes": 4002419,
+      "reason": "Redundant current export; identical canonical export retained in current model index"
+    },
+    {
+      "path": "badge_family_compact_20261106/mobile/golden_sands_badge_mobile.usdz",
+      "bytes": 4002419,
+      "reason": "Redundant current export; identical canonical export retained in current model index"
+    },
+    {
+      "path": "badge_family_compact_20261106/badges/golden_sands/candidate01/source/import/textures/Rim_brushed_reference_roughness.png",
+      "bytes": 64848,
+      "reason": "Import extraction already embedded in the verified packed current Blender model and USDZ"
+    },
+    {
+      "path": "badge_family_compact_20261106/badges/golden_sands/candidate01/source/import/textures/sand_emission.png",
+      "bytes": 33780,
+      "reason": "Import extraction already embedded in the verified packed current Blender model and USDZ"
+    },
+    {
+      "path": "badge_family_compact_20261106/badges/golden_sands/candidate01/source/import/textures/silver_emission.png",
+      "bytes": 43042,
+      "reason": "Import extraction already embedded in the verified packed current Blender model and USDZ"
+    },
+    {
+      "path": "badge_family_compact_20261106/badges/golden_sands/candidate01/source/import/textures/background_emission.png",
+      "bytes": 33419,
+      "reason": "Import extraction already embedded in the verified packed current Blender model and USDZ"
+    },
+    {
+      "path": "badge_family_compact_20261106/badges/golden_sands/candidate01/source/import/textures/background_color.png",
+      "bytes": 122073,
+      "reason": "Import extraction already embedded in the verified packed current Blender model and USDZ"
+    },
+    {
+      "path": "badge_family_compact_20261106/badges/golden_sands/candidate01/source/import/textures/Rim_brushed_reference_color.png",
+      "bytes": 213208,
+      "reason": "Import extraction already embedded in the verified packed current Blender model and USDZ"
+    },
+    {
+      "path": "badge_family_compact_20261106/badges/golden_sands/candidate01/source/import/textures/USDZ_Inset_base_color.png",
+      "bytes": 115896,
+      "reason": "Import extraction already embedded in the verified packed current Blender model and USDZ"
+    },
+    {
+      "path": "badge_family_compact_20261106/badges/golden_sands/candidate01/source/import/textures/Rim_glint_reference_roughness.png",
+      "bytes": 504403,
+      "reason": "Import extraction already embedded in the verified packed current Blender model and USDZ"
+    },
+    {
+      "path": "badge_family_compact_20261106/badges/golden_sands/candidate01/source/import/textures/glass_color.png",
+      "bytes": 63954,
+      "reason": "Import extraction already embedded in the verified packed current Blender model and USDZ"
+    },
+    {
+      "path": "badge_family_compact_20261106/badges/golden_sands/candidate01/source/import/textures/silver_color.png",
+      "bytes": 112167,
+      "reason": "Import extraction already embedded in the verified packed current Blender model and USDZ"
+    },
+    {
+      "path": "badge_family_compact_20261106/badges/golden_sands/candidate01/source/import/textures/USDZ_Inset_normal.png",
+      "bytes": 828687,
+      "reason": "Import extraction already embedded in the verified packed current Blender model and USDZ"
+    },
+    {
+      "path": "badge_family_compact_20261106/badges/golden_sands/candidate01/source/import/textures/sand_color.png",
+      "bytes": 48273,
+      "reason": "Import extraction already embedded in the verified packed current Blender model and USDZ"
+    },
+    {
+      "path": "badge_family_compact_20261106/badges/golden_sands/candidate01/source/import/textures/glass_emission.png",
+      "bytes": 13566,
+      "reason": "Import extraction already embedded in the verified packed current Blender model and USDZ"
+    },
+    {
+      "path": "badge_family_compact_20261106/badges/island_sunset/mobile/island_sunset_badge_mobile.usdz",
+      "bytes": 2792762,
+      "reason": "Redundant current export; identical canonical export retained in current model index"
+    },
+    {
+      "path": "badge_family_compact_20261106/mobile/island_sunset_badge_mobile.usdz",
+      "bytes": 2792762,
+      "reason": "Redundant current export; identical canonical export retained in current model index"
+    },
+    {
+      "path": "badge_family_compact_20261106/badges/island_sunset/candidate01/source/import/textures/Rim_brushed_reference_roughness.png",
+      "bytes": 64848,
+      "reason": "Import extraction already embedded in the verified packed current Blender model and USDZ"
+    },
+    {
+      "path": "badge_family_compact_20261106/badges/island_sunset/candidate01/source/import/textures/Rim_brushed_reference_color.png",
+      "bytes": 211693,
+      "reason": "Import extraction already embedded in the verified packed current Blender model and USDZ"
+    },
+    {
+      "path": "badge_family_compact_20261106/badges/island_sunset/candidate01/source/import/textures/gold_color.png",
+      "bytes": 179190,
+      "reason": "Import extraction already embedded in the verified packed current Blender model and USDZ"
+    },
+    {
+      "path": "badge_family_compact_20261106/badges/island_sunset/candidate01/source/import/textures/Rim_glint_reference_roughness.png",
+      "bytes": 504403,
+      "reason": "Import extraction already embedded in the verified packed current Blender model and USDZ"
+    },
+    {
+      "path": "badge_family_compact_20261106/badges/island_sunset/candidate01/source/import/textures/sky_color.png",
+      "bytes": 60367,
+      "reason": "Import extraction already embedded in the verified packed current Blender model and USDZ"
+    },
+    {
+      "path": "badge_family_compact_20261106/badges/island_sunset/candidate01/source/import/textures/sea_emission.png",
+      "bytes": 941,
+      "reason": "Import extraction already embedded in the verified packed current Blender model and USDZ"
+    },
+    {
+      "path": "badge_family_compact_20261106/badges/island_sunset/candidate01/source/import/textures/sea_color.png",
+      "bytes": 70263,
+      "reason": "Import extraction already embedded in the verified packed current Blender model and USDZ"
+    },
+    {
+      "path": "badge_family_compact_20261106/badges/island_sunset/candidate01/source/import/textures/leaf_emission.png",
+      "bytes": 842,
+      "reason": "Import extraction already embedded in the verified packed current Blender model and USDZ"
+    },
+    {
+      "path": "badge_family_compact_20261106/badges/island_sunset/candidate01/source/import/textures/sun_color.png",
+      "bytes": 40006,
+      "reason": "Import extraction already embedded in the verified packed current Blender model and USDZ"
+    },
+    {
+      "path": "badge_family_compact_20261106/badges/island_sunset/candidate01/source/import/textures/sky_emission.png",
+      "bytes": 11641,
+      "reason": "Import extraction already embedded in the verified packed current Blender model and USDZ"
+    },
+    {
+      "path": "badge_family_compact_20261106/badges/island_sunset/candidate01/source/import/textures/leaf_color.png",
+      "bytes": 71594,
+      "reason": "Import extraction already embedded in the verified packed current Blender model and USDZ"
+    },
+    {
+      "path": "badge_family_compact_20261106/badges/island_sunset/candidate01/source/import/textures/sun_emission.png",
+      "bytes": 3982,
+      "reason": "Import extraction already embedded in the verified packed current Blender model and USDZ"
+    },
+    {
+      "path": "badge_family_compact_20261106/badges/lightning_compass/mobile/lightning_compass_badge_mobile.usdz",
+      "bytes": 1704663,
+      "reason": "Redundant current export; identical canonical export retained in current model index"
+    },
+    {
+      "path": "badge_family_compact_20261106/mobile/lightning_compass_badge_mobile.usdz",
+      "bytes": 1704663,
+      "reason": "Redundant current export; identical canonical export retained in current model index"
+    },
+    {
+      "path": "badge_family_compact_20261106/badges/lightning_compass/candidate01/source/import/textures/Rim_brushed_reference_roughness.png",
+      "bytes": 64848,
+      "reason": "Import extraction already embedded in the verified packed current Blender model and USDZ"
+    },
+    {
+      "path": "badge_family_compact_20261106/badges/lightning_compass/candidate01/source/import/textures/Rim_brushed_reference_color.png",
+      "bytes": 191890,
+      "reason": "Import extraction already embedded in the verified packed current Blender model and USDZ"
+    },
+    {
+      "path": "badge_family_compact_20261106/badges/lightning_compass/candidate01/source/import/textures/Rim_glint_reference_roughness.png",
+      "bytes": 504403,
+      "reason": "Import extraction already embedded in the verified packed current Blender model and USDZ"
+    },
+    {
+      "path": "badge_family_compact_20261106/badges/lightning_compass/candidate01/source/import/textures/bronze_color.png",
+      "bytes": 124313,
+      "reason": "Import extraction already embedded in the verified packed current Blender model and USDZ"
+    },
+    {
+      "path": "badge_family_compact_20261106/badges/lightning_compass/candidate01/source/import/textures/backdrop_color.png",
+      "bytes": 111507,
+      "reason": "Import extraction already embedded in the verified packed current Blender model and USDZ"
+    },
+    {
+      "path": "badge_family_compact_20261106/badges/lunar_compass/mobile/lunar_compass_badge_mobile.usdz",
+      "bytes": 4345459,
+      "reason": "Redundant current export; identical canonical export retained in current model index"
+    },
+    {
+      "path": "badge_family_compact_20261106/mobile/lunar_compass_badge_mobile.usdz",
+      "bytes": 4345459,
+      "reason": "Redundant current export; identical canonical export retained in current model index"
+    },
+    {
+      "path": "badge_family_compact_20261106/badges/lunar_compass/candidate01/source/import/textures/surface_roughness.png",
+      "bytes": 30870,
+      "reason": "Import extraction already embedded in the verified packed current Blender model and USDZ"
+    },
+    {
+      "path": "badge_family_compact_20261106/badges/lunar_compass/candidate01/source/import/textures/star_color.png",
+      "bytes": 70593,
+      "reason": "Import extraction already embedded in the verified packed current Blender model and USDZ"
+    },
+    {
+      "path": "badge_family_compact_20261106/badges/lunar_compass/candidate01/source/import/textures/star_roughness.png",
+      "bytes": 3158,
+      "reason": "Import extraction already embedded in the verified packed current Blender model and USDZ"
+    },
+    {
+      "path": "badge_family_compact_20261106/badges/lunar_compass/candidate01/source/import/textures/surface_emission.png",
+      "bytes": 1138952,
+      "reason": "Import extraction already embedded in the verified packed current Blender model and USDZ"
+    },
+    {
+      "path": "badge_family_compact_20261106/badges/lunar_compass/candidate01/source/import/textures/surface_color.png",
+      "bytes": 773851,
+      "reason": "Import extraction already embedded in the verified packed current Blender model and USDZ"
+    },
+    {
+      "path": "badge_family_compact_20261106/badges/lunar_compass/candidate01/source/import/textures/star_emission.png",
+      "bytes": 90084,
+      "reason": "Import extraction already embedded in the verified packed current Blender model and USDZ"
+    },
+    {
+      "path": "badge_family_compact_20261106/badges/ruby_winged_crest/mobile/ruby_winged_crest_badge_mobile.usdz",
+      "bytes": 4278593,
+      "reason": "Redundant current export; identical canonical export retained in current model index"
+    },
+    {
+      "path": "badge_family_compact_20261106/mobile/ruby_winged_crest_badge_mobile.usdz",
+      "bytes": 4278593,
+      "reason": "Redundant current export; identical canonical export retained in current model index"
+    },
+    {
+      "path": "badge_family_compact_20261106/badges/ruby_winged_crest/candidate01/source/import/textures/surface_roughness.png",
+      "bytes": 5504,
+      "reason": "Import extraction already embedded in the verified packed current Blender model and USDZ"
+    },
+    {
+      "path": "badge_family_compact_20261106/badges/ruby_winged_crest/candidate01/source/import/textures/surface_emission.png",
+      "bytes": 710147,
+      "reason": "Import extraction already embedded in the verified packed current Blender model and USDZ"
+    },
+    {
+      "path": "badge_family_compact_20261106/badges/ruby_winged_crest/candidate01/source/import/textures/surface_color.png",
+      "bytes": 624061,
+      "reason": "Import extraction already embedded in the verified packed current Blender model and USDZ"
+    },
+    {
+      "path": "badge_family_compact_20261106/badges/sapphire_stairway/mobile/sapphire_stairway_badge_mobile.usdz",
+      "bytes": 5485883,
+      "reason": "Redundant current export; identical canonical export retained in current model index"
+    },
+    {
+      "path": "badge_family_compact_20261106/mobile/sapphire_stairway_badge_mobile.usdz",
+      "bytes": 5485883,
+      "reason": "Redundant current export; identical canonical export retained in current model index"
+    },
+    {
+      "path": "badge_family_compact_20261106/badges/sapphire_stairway/candidate01/source/import/textures/surface_roughness.png",
+      "bytes": 35578,
+      "reason": "Import extraction already embedded in the verified packed current Blender model and USDZ"
+    },
+    {
+      "path": "badge_family_compact_20261106/badges/sapphire_stairway/candidate01/source/import/textures/surface_emission.png",
+      "bytes": 940765,
+      "reason": "Import extraction already embedded in the verified packed current Blender model and USDZ"
+    },
+    {
+      "path": "badge_family_compact_20261106/badges/sapphire_stairway/candidate01/source/import/textures/surface_color.png",
+      "bytes": 674666,
+      "reason": "Import extraction already embedded in the verified packed current Blender model and USDZ"
+    },
+    {
+      "path": "badge_family_compact_20261106/badges/star_ascent/mobile/star_ascent_badge_mobile.usdz",
+      "bytes": 2086817,
+      "reason": "Redundant current export; identical canonical export retained in current model index"
+    },
+    {
+      "path": "badge_family_compact_20261106/mobile/star_ascent_badge_mobile.usdz",
+      "bytes": 2086817,
+      "reason": "Redundant current export; identical canonical export retained in current model index"
+    },
+    {
+      "path": "badge_family_compact_20261106/badges/star_ascent/candidate01/source/import/textures/Rim_brushed_reference_roughness.png",
+      "bytes": 64848,
+      "reason": "Import extraction already embedded in the verified packed current Blender model and USDZ"
+    },
+    {
+      "path": "badge_family_compact_20261106/badges/star_ascent/candidate01/source/import/textures/Rim_brushed_reference_color.png",
+      "bytes": 215461,
+      "reason": "Import extraction already embedded in the verified packed current Blender model and USDZ"
+    },
+    {
+      "path": "badge_family_compact_20261106/badges/star_ascent/candidate01/source/import/textures/Rim_glint_reference_roughness.png",
+      "bytes": 504403,
+      "reason": "Import extraction already embedded in the verified packed current Blender model and USDZ"
+    },
+    {
+      "path": "badge_family_compact_20261106/badges/star_ascent/candidate01/source/import/textures/silver_color.png",
+      "bytes": 116410,
+      "reason": "Import extraction already embedded in the verified packed current Blender model and USDZ"
+    },
+    {
+      "path": "badge_family_compact_20261106/badges/star_ascent/candidate01/source/import/textures/charcoal_color.png",
+      "bytes": 103776,
+      "reason": "Import extraction already embedded in the verified packed current Blender model and USDZ"
+    },
+    {
+      "path": "badge_family_compact_20261106/badges/star_ascent/candidate01/source/import/textures/cloud_color.png",
+      "bytes": 119175,
+      "reason": "Import extraction already embedded in the verified packed current Blender model and USDZ"
+    },
+    {
+      "path": "badge_family_compact_20261106/badges/sunrise_path/mobile/sunrise_path_badge_mobile.usdz",
+      "bytes": 3475474,
+      "reason": "Redundant current export; identical canonical export retained in current model index"
+    },
+    {
+      "path": "badge_family_compact_20261106/mobile/sunrise_path_badge_mobile.usdz",
+      "bytes": 3475474,
+      "reason": "Redundant current export; identical canonical export retained in current model index"
+    },
+    {
+      "path": "badge_family_compact_20261106/badges/sunrise_path/candidate01/source/import/textures/Rim_brushed_reference_roughness.png",
+      "bytes": 64848,
+      "reason": "Import extraction already embedded in the verified packed current Blender model and USDZ"
+    },
+    {
+      "path": "badge_family_compact_20261106/badges/sunrise_path/candidate01/source/import/textures/background_emission.png",
+      "bytes": 34215,
+      "reason": "Import extraction already embedded in the verified packed current Blender model and USDZ"
+    },
+    {
+      "path": "badge_family_compact_20261106/badges/sunrise_path/candidate01/source/import/textures/background_color.png",
+      "bytes": 154035,
+      "reason": "Import extraction already embedded in the verified packed current Blender model and USDZ"
+    },
+    {
+      "path": "badge_family_compact_20261106/badges/sunrise_path/candidate01/source/import/textures/Rim_brushed_reference_color.png",
+      "bytes": 191890,
+      "reason": "Import extraction already embedded in the verified packed current Blender model and USDZ"
+    },
+    {
+      "path": "badge_family_compact_20261106/badges/sunrise_path/candidate01/source/import/textures/USDZ_Inset_base_color.png",
+      "bytes": 115896,
+      "reason": "Import extraction already embedded in the verified packed current Blender model and USDZ"
+    },
+    {
+      "path": "badge_family_compact_20261106/badges/sunrise_path/candidate01/source/import/textures/Rim_glint_reference_roughness.png",
+      "bytes": 504403,
+      "reason": "Import extraction already embedded in the verified packed current Blender model and USDZ"
+    },
+    {
+      "path": "badge_family_compact_20261106/badges/sunrise_path/candidate01/source/import/textures/bronze_emission.png",
+      "bytes": 24449,
+      "reason": "Import extraction already embedded in the verified packed current Blender model and USDZ"
+    },
+    {
+      "path": "badge_family_compact_20261106/badges/sunrise_path/candidate01/source/import/textures/bronze_color.png",
+      "bytes": 141546,
+      "reason": "Import extraction already embedded in the verified packed current Blender model and USDZ"
+    },
+    {
+      "path": "badge_family_compact_20261106/badges/sunrise_path/candidate01/source/import/textures/USDZ_Inset_normal.png",
+      "bytes": 828687,
+      "reason": "Import extraction already embedded in the verified packed current Blender model and USDZ"
+    },
+    {
+      "path": "badge_family_compact_20261106/badges/teal_sands/mobile/teal_sands_badge_mobile.usdz",
+      "bytes": 3996202,
+      "reason": "Redundant current export; identical canonical export retained in current model index"
+    },
+    {
+      "path": "badge_family_compact_20261106/mobile/teal_sands_badge_mobile.usdz",
+      "bytes": 3996202,
+      "reason": "Redundant current export; identical canonical export retained in current model index"
+    },
+    {
+      "path": "badge_family_compact_20261106/badges/teal_sands/candidate01/source/import/textures/Rim_brushed_reference_roughness.png",
+      "bytes": 64848,
+      "reason": "Import extraction already embedded in the verified packed current Blender model and USDZ"
+    },
+    {
+      "path": "badge_family_compact_20261106/badges/teal_sands/candidate01/source/import/textures/sand_emission.png",
+      "bytes": 12896,
+      "reason": "Import extraction already embedded in the verified packed current Blender model and USDZ"
+    },
+    {
+      "path": "badge_family_compact_20261106/badges/teal_sands/candidate01/source/import/textures/silver_emission.png",
+      "bytes": 26852,
+      "reason": "Import extraction already embedded in the verified packed current Blender model and USDZ"
+    },
+    {
+      "path": "badge_family_compact_20261106/badges/teal_sands/candidate01/source/import/textures/background_emission.png",
+      "bytes": 23585,
+      "reason": "Import extraction already embedded in the verified packed current Blender model and USDZ"
+    },
+    {
+      "path": "badge_family_compact_20261106/badges/teal_sands/candidate01/source/import/textures/background_color.png",
+      "bytes": 170328,
+      "reason": "Import extraction already embedded in the verified packed current Blender model and USDZ"
+    },
+    {
+      "path": "badge_family_compact_20261106/badges/teal_sands/candidate01/source/import/textures/Rim_brushed_reference_color.png",
+      "bytes": 205392,
+      "reason": "Import extraction already embedded in the verified packed current Blender model and USDZ"
+    },
+    {
+      "path": "badge_family_compact_20261106/badges/teal_sands/candidate01/source/import/textures/USDZ_Inset_base_color.png",
+      "bytes": 115896,
+      "reason": "Import extraction already embedded in the verified packed current Blender model and USDZ"
+    },
+    {
+      "path": "badge_family_compact_20261106/badges/teal_sands/candidate01/source/import/textures/Rim_glint_reference_roughness.png",
+      "bytes": 504403,
+      "reason": "Import extraction already embedded in the verified packed current Blender model and USDZ"
+    },
+    {
+      "path": "badge_family_compact_20261106/badges/teal_sands/candidate01/source/import/textures/glass_color.png",
+      "bytes": 65830,
+      "reason": "Import extraction already embedded in the verified packed current Blender model and USDZ"
+    },
+    {
+      "path": "badge_family_compact_20261106/badges/teal_sands/candidate01/source/import/textures/silver_color.png",
+      "bytes": 112486,
+      "reason": "Import extraction already embedded in the verified packed current Blender model and USDZ"
+    },
+    {
+      "path": "badge_family_compact_20261106/badges/teal_sands/candidate01/source/import/textures/USDZ_Inset_normal.png",
+      "bytes": 828687,
+      "reason": "Import extraction already embedded in the verified packed current Blender model and USDZ"
+    },
+    {
+      "path": "badge_family_compact_20261106/badges/teal_sands/candidate01/source/import/textures/sand_color.png",
+      "bytes": 54782,
+      "reason": "Import extraction already embedded in the verified packed current Blender model and USDZ"
+    },
+    {
+      "path": "badge_family_compact_20261106/badges/teal_sands/candidate01/source/import/textures/glass_emission.png",
+      "bytes": 5136,
+      "reason": "Import extraction already embedded in the verified packed current Blender model and USDZ"
+    },
+    {
+      "path": "badge_family_compact_20261106/badges/tidal_compass/mobile/tidal_compass_badge_mobile.usdz",
+      "bytes": 2648000,
+      "reason": "Redundant current export; identical canonical export retained in current model index"
+    },
+    {
+      "path": "badge_family_compact_20261106/mobile/tidal_compass_badge_mobile.usdz",
+      "bytes": 2648000,
+      "reason": "Redundant current export; identical canonical export retained in current model index"
+    },
+    {
+      "path": "badge_family_compact_20261106/badges/tidal_compass/candidate01/source/import/textures/metal_color.png",
+      "bytes": 205133,
+      "reason": "Import extraction already embedded in the verified packed current Blender model and USDZ"
+    },
+    {
+      "path": "badge_family_compact_20261106/badges/tidal_compass/candidate01/source/import/textures/wave_roughness.png",
+      "bytes": 36173,
+      "reason": "Import extraction already embedded in the verified packed current Blender model and USDZ"
+    },
+    {
+      "path": "badge_family_compact_20261106/badges/tidal_compass/candidate01/source/import/textures/metal_emission.png",
+      "bytes": 263229,
+      "reason": "Import extraction already embedded in the verified packed current Blender model and USDZ"
+    },
+    {
+      "path": "badge_family_compact_20261106/badges/tidal_compass/candidate01/source/import/textures/field_roughness.png",
+      "bytes": 54122,
+      "reason": "Import extraction already embedded in the verified packed current Blender model and USDZ"
+    },
+    {
+      "path": "badge_family_compact_20261106/badges/tidal_compass/candidate01/source/import/textures/metal_roughness.png",
+      "bytes": 47352,
+      "reason": "Import extraction already embedded in the verified packed current Blender model and USDZ"
+    },
+    {
+      "path": "badge_family_compact_20261106/badges/tidal_compass/candidate01/source/import/textures/pearl_emission.png",
+      "bytes": 253657,
+      "reason": "Import extraction already embedded in the verified packed current Blender model and USDZ"
+    },
+    {
+      "path": "badge_family_compact_20261106/badges/tidal_compass/candidate01/source/import/textures/pearl_color.png",
+      "bytes": 191474,
+      "reason": "Import extraction already embedded in the verified packed current Blender model and USDZ"
+    },
+    {
+      "path": "badge_family_compact_20261106/badges/tidal_compass/candidate01/source/import/textures/field_color.png",
+      "bytes": 175148,
+      "reason": "Import extraction already embedded in the verified packed current Blender model and USDZ"
+    },
+    {
+      "path": "badge_family_compact_20261106/badges/tidal_compass/candidate01/source/import/textures/field_emission.png",
+      "bytes": 373205,
+      "reason": "Import extraction already embedded in the verified packed current Blender model and USDZ"
+    },
+    {
+      "path": "badge_family_compact_20261106/badges/tidal_compass/candidate01/source/import/textures/pearl_roughness.png",
+      "bytes": 48929,
+      "reason": "Import extraction already embedded in the verified packed current Blender model and USDZ"
+    },
+    {
+      "path": "badge_family_compact_20261106/badges/tidal_compass/candidate01/source/import/textures/wave_emission.png",
+      "bytes": 147560,
+      "reason": "Import extraction already embedded in the verified packed current Blender model and USDZ"
+    },
+    {
+      "path": "badge_family_compact_20261106/badges/tidal_compass/candidate01/source/import/textures/wave_color.png",
+      "bytes": 138323,
+      "reason": "Import extraction already embedded in the verified packed current Blender model and USDZ"
+    },
+    {
+      "path": "badge_family_compact_20261106/badges/torch_sunburst/mobile/torch_sunburst_badge_mobile.usdz",
+      "bytes": 2345940,
+      "reason": "Redundant current export; identical canonical export retained in current model index"
+    },
+    {
+      "path": "badge_family_compact_20261106/mobile/torch_sunburst_badge_mobile.usdz",
+      "bytes": 2345940,
+      "reason": "Redundant current export; identical canonical export retained in current model index"
+    },
+    {
+      "path": "badge_family_compact_20261106/badges/torch_sunburst/candidate01/source/import/textures/Rim_brushed_reference_roughness.png",
+      "bytes": 64848,
+      "reason": "Import extraction already embedded in the verified packed current Blender model and USDZ"
+    },
+    {
+      "path": "badge_family_compact_20261106/badges/torch_sunburst/candidate01/source/import/textures/Rim_brushed_reference_color.png",
+      "bytes": 191890,
+      "reason": "Import extraction already embedded in the verified packed current Blender model and USDZ"
+    },
+    {
+      "path": "badge_family_compact_20261106/badges/torch_sunburst/candidate01/source/import/textures/Rim_glint_reference_roughness.png",
+      "bytes": 504403,
+      "reason": "Import extraction already embedded in the verified packed current Blender model and USDZ"
+    },
+    {
+      "path": "badge_family_compact_20261106/badges/torch_sunburst/candidate01/source/import/textures/bronze_color.png",
+      "bytes": 117598,
+      "reason": "Import extraction already embedded in the verified packed current Blender model and USDZ"
+    },
+    {
+      "path": "badge_family_compact_20261106/badges/torch_sunburst/candidate01/source/import/textures/backdrop_color.png",
+      "bytes": 36293,
+      "reason": "Import extraction already embedded in the verified packed current Blender model and USDZ"
+    },
+    {
+      "path": "badge_family_compact_20261106/badges/torch_sunburst/candidate01/source/import/textures/bronze_roughness.png",
+      "bytes": 42203,
+      "reason": "Import extraction already embedded in the verified packed current Blender model and USDZ"
+    },
+    {
+      "path": "badge_family_compact_20261106/badges/water_drop/mobile/water_drop_badge_mobile.usdz",
+      "bytes": 3491843,
+      "reason": "Redundant current export; identical canonical export retained in current model index"
+    },
+    {
+      "path": "badge_family_compact_20261106/mobile/water_drop_badge_mobile.usdz",
+      "bytes": 3491843,
+      "reason": "Redundant current export; identical canonical export retained in current model index"
+    },
+    {
+      "path": "badge_family_compact_20261106/badges/water_drop/candidate01/source/import/textures/Rim_brushed_reference_roughness.png",
+      "bytes": 64848,
+      "reason": "Import extraction already embedded in the verified packed current Blender model and USDZ"
+    },
+    {
+      "path": "badge_family_compact_20261106/badges/water_drop/candidate01/source/import/textures/silver_emission.png",
+      "bytes": 9806,
+      "reason": "Import extraction already embedded in the verified packed current Blender model and USDZ"
+    },
+    {
+      "path": "badge_family_compact_20261106/badges/water_drop/candidate01/source/import/textures/background_emission.png",
+      "bytes": 29332,
+      "reason": "Import extraction already embedded in the verified packed current Blender model and USDZ"
+    },
+    {
+      "path": "badge_family_compact_20261106/badges/water_drop/candidate01/source/import/textures/background_color.png",
+      "bytes": 99937,
+      "reason": "Import extraction already embedded in the verified packed current Blender model and USDZ"
+    },
+    {
+      "path": "badge_family_compact_20261106/badges/water_drop/candidate01/source/import/textures/Rim_brushed_reference_color.png",
+      "bytes": 215461,
+      "reason": "Import extraction already embedded in the verified packed current Blender model and USDZ"
+    },
+    {
+      "path": "badge_family_compact_20261106/badges/water_drop/candidate01/source/import/textures/USDZ_Inset_base_color.png",
+      "bytes": 115896,
+      "reason": "Import extraction already embedded in the verified packed current Blender model and USDZ"
+    },
+    {
+      "path": "badge_family_compact_20261106/badges/water_drop/candidate01/source/import/textures/Rim_glint_reference_roughness.png",
+      "bytes": 504403,
+      "reason": "Import extraction already embedded in the verified packed current Blender model and USDZ"
+    },
+    {
+      "path": "badge_family_compact_20261106/badges/water_drop/candidate01/source/import/textures/silver_color.png",
+      "bytes": 28081,
+      "reason": "Import extraction already embedded in the verified packed current Blender model and USDZ"
+    },
+    {
+      "path": "badge_family_compact_20261106/badges/water_drop/candidate01/source/import/textures/USDZ_Inset_normal.png",
+      "bytes": 828687,
+      "reason": "Import extraction already embedded in the verified packed current Blender model and USDZ"
+    },
+    {
+      "path": "badge_family_compact_20261106/badges/water_drop/candidate01/source/import/textures/water_emission.png",
+      "bytes": 80495,
+      "reason": "Import extraction already embedded in the verified packed current Blender model and USDZ"
+    },
+    {
+      "path": "badge_family_compact_20261106/badges/water_drop/candidate01/source/import/textures/water_color.png",
+      "bytes": 97794,
+      "reason": "Import extraction already embedded in the verified packed current Blender model and USDZ"
+    },
+    {
+      "path": "badge_family_compact_20261106/badges/zen_balance/mobile/zen_balance_badge_mobile.usdz",
+      "bytes": 2271060,
+      "reason": "Redundant current export; identical canonical export retained in current model index"
+    },
+    {
+      "path": "badge_family_compact_20261106/mobile/zen_balance_badge_mobile.usdz",
+      "bytes": 2271060,
+      "reason": "Redundant current export; identical canonical export retained in current model index"
+    },
+    {
+      "path": "badge_family_compact_20261106/badges/zen_balance/candidate01/source/import/textures/Rim_brushed_reference_roughness.png",
+      "bytes": 64848,
+      "reason": "Import extraction already embedded in the verified packed current Blender model and USDZ"
+    },
+    {
+      "path": "badge_family_compact_20261106/badges/zen_balance/candidate01/source/import/textures/Rim_brushed_reference_color.png",
+      "bytes": 191890,
+      "reason": "Import extraction already embedded in the verified packed current Blender model and USDZ"
+    },
+    {
+      "path": "badge_family_compact_20261106/badges/zen_balance/candidate01/source/import/textures/Rim_glint_reference_roughness.png",
+      "bytes": 504403,
+      "reason": "Import extraction already embedded in the verified packed current Blender model and USDZ"
+    },
+    {
+      "path": "badge_family_compact_20261106/badges/zen_balance/candidate01/source/import/textures/bronze_color.png",
+      "bytes": 181059,
+      "reason": "Import extraction already embedded in the verified packed current Blender model and USDZ"
+    },
+    {
+      "path": "badge_family_compact_20261106/badges/zen_balance/candidate01/source/import/textures/backdrop_color.png",
+      "bytes": 82461,
+      "reason": "Import extraction already embedded in the verified packed current Blender model and USDZ"
+    },
+    {
+      "path": "badge_family_compact_20261106/badges/zen_balance/candidate01/source/import/textures/bronze_roughness.png",
+      "bytes": 76358,
+      "reason": "Import extraction already embedded in the verified packed current Blender model and USDZ"
+    },
+    {
+      "path": "camp_owl_mountain_sapphire_20261111/amber_owl/candidate06/source/amber_owl.blend",
+      "bytes": 22599683,
+      "reason": "Snapshot superseded by current complete canonical Blender file"
+    },
+    {
+      "path": "camp_owl_mountain_sapphire_20261111/sapphire_teardrop/candidate27/source/sapphire_teardrop.blend",
+      "bytes": 21649071,
+      "reason": "Snapshot superseded by current complete canonical Blender file"
+    },
+    {
+      "path": "camp_owl_mountain_sapphire_20261111/campfire_night/candidate27/source/campfire_night.blend",
+      "bytes": 19482842,
+      "reason": "Snapshot superseded by current complete canonical Blender file"
+    },
+    {
+      "path": "ruby_heart_gem_20261113/ruby_heart.blend",
+      "bytes": 22288059,
+      "reason": "Older unselected alias; explicit Version 1 and Version 2 Blender sources both retained"
+    },
+    {
+      "path": "medallion/silver_medallion_stage.blend",
+      "bytes": 5706052,
+      "reason": "Superseded prototype; newest editable Blender file retained"
+    },
+    {
+      "path": "medallion/silver_medallion.blend",
+      "bytes": 5786852,
+      "reason": "Superseded prototype; newest editable Blender file retained"
+    },
+    {
+      "path": "medallion/silver_medallion_spin.blend",
+      "bytes": 5787864,
+      "reason": "Superseded prototype; newest editable Blender file retained"
+    },
+    {
+      "path": "medallion/silver_medallion_smooth_edge.blend",
+      "bytes": 5456750,
+      "reason": "Superseded prototype; newest editable Blender file retained"
+    },
+    {
+      "path": "mountain_sunburst_claude_20261108/live/mountain_sunburst_live.blend",
+      "bytes": 10764193,
+      "reason": "Superseded prototype; newest editable Blender file retained"
+    },
+    {
+      "path": "mountain_sunburst_claude_20261108/rebuild/mountain_sunburst_rebuild.blend",
+      "bytes": 12780385,
+      "reason": "Superseded prototype; newest editable Blender file retained"
+    },
+    {
+      "path": "rim_fix_20261012/before_after.png",
+      "bytes": 707942,
+      "reason": "Unused capture; not a retained model image dependency, material map or owner reference"
+    },
+    {
+      "path": "ruby_heart_claude_20261107/candidate06/compare_all.png",
+      "bytes": 1551709,
+      "reason": "Unused capture; not a retained model image dependency, material map or owner reference"
+    },
+    {
+      "path": "camp_owl_mountain_sapphire_20261111/radiant_mountain/outlines/pieces_overlay.png",
+      "bytes": 2334350,
+      "reason": "Unused capture; not a retained model image dependency, material map or owner reference"
+    },
+    {
+      "path": "camp_owl_mountain_sapphire_20261111/optics_fit/pavilion_depth_diagnosis.png",
+      "bytes": 18525,
+      "reason": "Unused capture; not a retained model image dependency, material map or owner reference"
+    },
+    {
+      "path": "camp_owl_mountain_sapphire_20261111/optics_fit/native_sapphire_predicted.png",
+      "bytes": 23440,
+      "reason": "Unused capture; not a retained model image dependency, material map or owner reference"
+    },
+    {
+      "path": "camp_owl_mountain_sapphire_20261111/amber_owl/candidate06/blender/rendered/front.png",
+      "bytes": 1570402,
+      "reason": "Unused capture; not a retained model image dependency, material map or owner reference"
+    },
+    {
+      "path": "camp_owl_mountain_sapphire_20261111/amber_owl/outlines/pieces_overlay.png",
+      "bytes": 2201164,
+      "reason": "Unused capture; not a retained model image dependency, material map or owner reference"
+    },
+    {
+      "path": "camp_owl_mountain_sapphire_20261111/sapphire_teardrop/candidate15/blender/rendered/side_right.png",
+      "bytes": 208942,
+      "reason": "Unused capture; not a retained model image dependency, material map or owner reference"
+    },
+    {
+      "path": "camp_owl_mountain_sapphire_20261111/sapphire_teardrop/outlines/pieces_overlay.png",
+      "bytes": 1412585,
+      "reason": "Unused capture; not a retained model image dependency, material map or owner reference"
+    },
+    {
+      "path": "camp_owl_mountain_sapphire_20261111/campfire_night/pine_segment_diagnosis.png",
+      "bytes": 9539,
+      "reason": "Unused capture; not a retained model image dependency, material map or owner reference"
+    },
+    {
+      "path": "camp_owl_mountain_sapphire_20261111/campfire_night/pine_barrier_diagnosis.png",
+      "bytes": 398596,
+      "reason": "Unused capture; not a retained model image dependency, material map or owner reference"
+    },
+    {
+      "path": "camp_owl_mountain_sapphire_20261111/campfire_night/pine_watershed_diagnosis.png",
+      "bytes": 397795,
+      "reason": "Unused capture; not a retained model image dependency, material map or owner reference"
+    },
+    {
+      "path": "camp_owl_mountain_sapphire_20261111/campfire_night/right_pine_split.png",
+      "bytes": 32763,
+      "reason": "Unused capture; not a retained model image dependency, material map or owner reference"
+    },
+    {
+      "path": "camp_owl_mountain_sapphire_20261111/campfire_night/outlines/pieces_overlay.png",
+      "bytes": 1970148,
+      "reason": "Unused capture; not a retained model image dependency, material map or owner reference"
+    },
+    {
+      "path": "bronze_phoenix_20261028/studio_open.png",
+      "bytes": 1557467,
+      "reason": "Unused capture; not a retained model image dependency, material map or owner reference"
+    },
+    {
+      "path": "blue_hourglass_claude_20261108/candidate14/quick.png",
+      "bytes": 784795,
+      "reason": "Unused capture; not a retained model image dependency, material map or owner reference"
+    },
+    {
+      "path": "forge_tide_compass_20261103/blender_connection.png",
+      "bytes": 413811,
+      "reason": "Unused capture; not a retained model image dependency, material map or owner reference"
+    },
+    {
+      "path": "forge_tide_compass_20261103/gallery_reopened.png",
+      "bytes": 1609806,
+      "reason": "Unused capture; not a retained model image dependency, material map or owner reference"
+    },
+    {
+      "path": "four_crests_20261029/all_four_native.jpg",
+      "bytes": 374887,
+      "reason": "Unused capture; not a retained model image dependency, material map or owner reference"
+    },
+    {
+      "path": "stair_ruby_20261029/preview_open.png",
+      "bytes": 1543454,
+      "reason": "Unused capture; not a retained model image dependency, material map or owner reference"
+    },
+    {
+      "path": "royal_heart_compass_20261106/ruby_setting_grid.png",
+      "bytes": 384536,
+      "reason": "Unused capture; not a retained model image dependency, material map or owner reference"
+    },
+    {
+      "path": "royal_heart_compass_20261106/amethyst_circlet_detail.png",
+      "bytes": 365996,
+      "reason": "Unused capture; not a retained model image dependency, material map or owner reference"
+    },
+    {
+      "path": "royal_heart_compass_20261106/emerald_setting_grid.png",
+      "bytes": 537498,
+      "reason": "Unused capture; not a retained model image dependency, material map or owner reference"
+    },
+    {
+      "path": "royal_heart_compass_20261106/circlet_trace_diagnosis.png",
+      "bytes": 168120,
+      "reason": "Unused capture; not a retained model image dependency, material map or owner reference"
+    },
+    {
+      "path": "royal_heart_compass_20261106/circlet_measurement_grid.png",
+      "bytes": 627238,
+      "reason": "Unused capture; not a retained model image dependency, material map or owner reference"
+    },
+    {
+      "path": "royal_heart_compass_20261106/emerald_foliage_crop.png",
+      "bytes": 1191003,
+      "reason": "Unused capture; not a retained model image dependency, material map or owner reference"
+    },
+    {
+      "path": "royal_heart_compass_20261106/amethyst_arch_detail.png",
+      "bytes": 278581,
+      "reason": "Unused capture; not a retained model image dependency, material map or owner reference"
+    },
+    {
+      "path": "royal_heart_compass_20261106/emerald_foliage_grid.png",
+      "bytes": 836638,
+      "reason": "Unused capture; not a retained model image dependency, material map or owner reference"
+    },
+    {
+      "path": "royal_heart_compass_20261106/ocean_waves_grid.png",
+      "bytes": 516801,
+      "reason": "Unused capture; not a retained model image dependency, material map or owner reference"
+    },
+    {
+      "path": "royal_heart_compass_20261106/ruby_flourish_grid.png",
+      "bytes": 761321,
+      "reason": "Unused capture; not a retained model image dependency, material map or owner reference"
+    },
+    {
+      "path": "royal_heart_compass_20261106/arch_measurement_grid.png",
+      "bytes": 552075,
+      "reason": "Unused capture; not a retained model image dependency, material map or owner reference"
+    },
+    {
+      "path": "royal_heart_compass_20261106/ocean_waves_measurement.png",
+      "bytes": 524358,
+      "reason": "Unused capture; not a retained model image dependency, material map or owner reference"
+    },
+    {
+      "path": "royal_heart_compass_20261106/optics_fit/heart20_pavilion_fit.png",
+      "bytes": 674233,
+      "reason": "Unused capture; not a retained model image dependency, material map or owner reference"
+    },
+    {
+      "path": "royal_heart_compass_20261106/optics_fit/heart_volume_scattering.png",
+      "bytes": 404478,
+      "reason": "Unused capture; not a retained model image dependency, material map or owner reference"
+    },
+    {
+      "path": "royal_heart_compass_20261106/optics_fit/heart_brilliant_pavilion_0.png",
+      "bytes": 434755,
+      "reason": "Unused capture; not a retained model image dependency, material map or owner reference"
+    },
+    {
+      "path": "royal_heart_compass_20261106/optics_fit/heart_literal_facets.png",
+      "bytes": 337521,
+      "reason": "Unused capture; not a retained model image dependency, material map or owner reference"
+    },
+    {
+      "path": "royal_heart_compass_20261106/optics_fit/heart_brilliant_pavilion_1.png",
+      "bytes": 502000,
+      "reason": "Unused capture; not a retained model image dependency, material map or owner reference"
+    },
+    {
+      "path": "royal_heart_compass_20261106/optics_fit/heart_balanced_volume21_1.png",
+      "bytes": 162428,
+      "reason": "Unused capture; not a retained model image dependency, material map or owner reference"
+    },
+    {
+      "path": "royal_heart_compass_20261106/optics_fit/heart_balanced_volume21_0.png",
+      "bytes": 173589,
+      "reason": "Unused capture; not a retained model image dependency, material map or owner reference"
+    },
+    {
+      "path": "royal_heart_compass_20261106/optics_fit/heart_balanced_volume21_2.png",
+      "bytes": 162860,
+      "reason": "Unused capture; not a retained model image dependency, material map or owner reference"
+    },
+    {
+      "path": "royal_heart_compass_20261106/optics_fit/finite_studio_diagnostic.png",
+      "bytes": 353107,
+      "reason": "Unused capture; not a retained model image dependency, material map or owner reference"
+    },
+    {
+      "path": "royal_heart_compass_20261106/optics_fit/pavilion_diagnostic.png",
+      "bytes": 369845,
+      "reason": "Unused capture; not a retained model image dependency, material map or owner reference"
+    },
+    {
+      "path": "royal_heart_compass_20261106/optics_fit/heart_surface_separation20.png",
+      "bytes": 184916,
+      "reason": "Unused capture; not a retained model image dependency, material map or owner reference"
+    },
+    {
+      "path": "royal_heart_compass_20261106/optics_fit/heart_connected_crown_1.png",
+      "bytes": 404744,
+      "reason": "Unused capture; not a retained model image dependency, material map or owner reference"
+    },
+    {
+      "path": "royal_heart_compass_20261106/optics_fit/heart_connected_crown_0.png",
+      "bytes": 392722,
+      "reason": "Unused capture; not a retained model image dependency, material map or owner reference"
+    },
+    {
+      "path": "royal_heart_compass_20261106/optics_fit/actual_cut_graph.png",
+      "bytes": 33374,
+      "reason": "Unused capture; not a retained model image dependency, material map or owner reference"
+    },
+    {
+      "path": "royal_heart_compass_20261106/optics_fit/pavilion_offset_diagnostic.png",
+      "bytes": 354871,
+      "reason": "Unused capture; not a retained model image dependency, material map or owner reference"
+    },
+    {
+      "path": "royal_heart_compass_20261106/optics_fit/heart_coherent_cut_2.png",
+      "bytes": 205803,
+      "reason": "Unused capture; not a retained model image dependency, material map or owner reference"
+    },
+    {
+      "path": "royal_heart_compass_20261106/optics_fit/heart_coherent_cut_1.png",
+      "bytes": 192574,
+      "reason": "Unused capture; not a retained model image dependency, material map or owner reference"
+    },
+    {
+      "path": "royal_heart_compass_20261106/optics_fit/heart_internal_reflection_1.png",
+      "bytes": 297725,
+      "reason": "Unused capture; not a retained model image dependency, material map or owner reference"
+    },
+    {
+      "path": "royal_heart_compass_20261106/optics_fit/heart_volume21.png",
+      "bytes": 474094,
+      "reason": "Unused capture; not a retained model image dependency, material map or owner reference"
+    },
+    {
+      "path": "royal_heart_compass_20261106/optics_fit/heart_internal_reflection_0.png",
+      "bytes": 240715,
+      "reason": "Unused capture; not a retained model image dependency, material map or owner reference"
+    },
+    {
+      "path": "royal_heart_compass_20261106/optics_fit/heart_coherent_cut_0.png",
+      "bytes": 188954,
+      "reason": "Unused capture; not a retained model image dependency, material map or owner reference"
+    },
+    {
+      "path": "royal_heart_compass_20261106/optics_fit/heart_rose_cut_material.png",
+      "bytes": 764383,
+      "reason": "Unused capture; not a retained model image dependency, material map or owner reference"
+    },
+    {
+      "path": "royal_heart_compass_20261106/optics_fit/heart_crown_bias.png",
+      "bytes": 510965,
+      "reason": "Unused capture; not a retained model image dependency, material map or owner reference"
+    },
+    {
+      "path": "royal_heart_compass_20261106/optics_fit/heart_rough_internal21.png",
+      "bytes": 605374,
+      "reason": "Unused capture; not a retained model image dependency, material map or owner reference"
+    },
+    {
+      "path": "royal_heart_compass_20261106/optics_fit/heart16_path_diagnosis.png",
+      "bytes": 307507,
+      "reason": "Unused capture; not a retained model image dependency, material map or owner reference"
+    },
+    {
+      "path": "royal_heart_compass_20261106/optics_fit/heart_pavilion_depth.png",
+      "bytes": 581430,
+      "reason": "Unused capture; not a retained model image dependency, material map or owner reference"
+    },
+    {
+      "path": "royal_heart_compass_20261106/optics_fit/heart_flat_pavilion.png",
+      "bytes": 604958,
+      "reason": "Unused capture; not a retained model image dependency, material map or owner reference"
+    },
+    {
+      "path": "royal_heart_compass_20261106/optics_fit/heart_plane_cut_2.png",
+      "bytes": 210517,
+      "reason": "Unused capture; not a retained model image dependency, material map or owner reference"
+    },
+    {
+      "path": "royal_heart_compass_20261106/optics_fit/heart_plane_cut_0.png",
+      "bytes": 201398,
+      "reason": "Unused capture; not a retained model image dependency, material map or owner reference"
+    },
+    {
+      "path": "royal_heart_compass_20261106/optics_fit/heart_key_facets.png",
+      "bytes": 519585,
+      "reason": "Unused capture; not a retained model image dependency, material map or owner reference"
+    },
+    {
+      "path": "royal_heart_compass_20261106/optics_fit/heart_forward_diagnostic.png",
+      "bytes": 17730,
+      "reason": "Unused capture; not a retained model image dependency, material map or owner reference"
+    },
+    {
+      "path": "royal_heart_compass_20261106/optics_fit/heart_plane_cut_1.png",
+      "bytes": 205378,
+      "reason": "Unused capture; not a retained model image dependency, material map or owner reference"
+    },
+    {
+      "path": "royal_heart_compass_20261106/optics_fit/heart_single_pavilion.png",
+      "bytes": 1145001,
+      "reason": "Unused capture; not a retained model image dependency, material map or owner reference"
+    },
+    {
+      "path": "royal_heart_compass_20261106/optics_fit/native_calibration.png",
+      "bytes": 160744,
+      "reason": "Unused capture; not a retained model image dependency, material map or owner reference"
+    },
+    {
+      "path": "royal_heart_compass_20261106/optics_fit/heart16_fitted_surfaces.png",
+      "bytes": 461718,
+      "reason": "Unused capture; not a retained model image dependency, material map or owner reference"
+    },
+    {
+      "path": "royal_heart_compass_20261106/amethyst_crown/review_c6_raised_cap/full_turn.png",
+      "bytes": 823649,
+      "reason": "Unused capture; not a retained model image dependency, material map or owner reference"
+    },
+    {
+      "path": "royal_heart_compass_20261106/amethyst_crown/review_c6_raised_cap/side_left.png",
+      "bytes": 1238718,
+      "reason": "Unused capture; not a retained model image dependency, material map or owner reference"
+    },
+    {
+      "path": "royal_heart_compass_20261106/amethyst_crown/review_c6_raised_cap/side_right.png",
+      "bytes": 904783,
+      "reason": "Unused capture; not a retained model image dependency, material map or owner reference"
+    },
+    {
+      "path": "royal_heart_compass_20261106/amethyst_crown/review_c6_raised_cap/early_turn.png",
+      "bytes": 1372502,
+      "reason": "Unused capture; not a retained model image dependency, material map or owner reference"
+    },
+    {
+      "path": "royal_heart_compass_20261106/amethyst_crown/review_c6_raised_cap/back.png",
+      "bytes": 1068238,
+      "reason": "Unused capture; not a retained model image dependency, material map or owner reference"
+    },
+    {
+      "path": "royal_heart_compass_20261106/amethyst_crown/review_c6_raised_cap/front.png",
+      "bytes": 1508190,
+      "reason": "Unused capture; not a retained model image dependency, material map or owner reference"
+    },
+    {
+      "path": "royal_heart_compass_20261106/cloth_diagnosis/sheen_crop.png",
+      "bytes": 632975,
+      "reason": "Unused capture; not a retained model image dependency, material map or owner reference"
+    },
+    {
+      "path": "royal_heart_compass_20261106/cloth_diagnosis/visibility_without_sheen.png",
+      "bytes": 1506821,
+      "reason": "Unused capture; not a retained model image dependency, material map or owner reference"
+    },
+    {
+      "path": "royal_heart_compass_20261106/cloth_diagnosis/rough_reflection.png",
+      "bytes": 1514203,
+      "reason": "Unused capture; not a retained model image dependency, material map or owner reference"
+    },
+    {
+      "path": "royal_heart_compass_20261106/cloth_diagnosis/visibility_without_sheen_crop.png",
+      "bytes": 632722,
+      "reason": "Unused capture; not a retained model image dependency, material map or owner reference"
+    },
+    {
+      "path": "royal_heart_compass_20261106/cloth_diagnosis/sheen.png",
+      "bytes": 1502970,
+      "reason": "Unused capture; not a retained model image dependency, material map or owner reference"
+    },
+    {
+      "path": "royal_heart_compass_20261106/cloth_diagnosis/rough_reflection_crop.png",
+      "bytes": 643469,
+      "reason": "Unused capture; not a retained model image dependency, material map or owner reference"
+    },
+    {
+      "path": "enamel_badges_tools/tex_all.png",
+      "bytes": 492251,
+      "reason": "Unused capture; not a retained model image dependency, material map or owner reference"
+    },
+    {
+      "path": "enamel_badges_tools/v2_all.png",
+      "bytes": 1928795,
+      "reason": "Unused capture; not a retained model image dependency, material map or owner reference"
+    },
+    {
+      "path": "enamel_badges_tools/seg_all.png",
+      "bytes": 369867,
+      "reason": "Unused capture; not a retained model image dependency, material map or owner reference"
+    },
+    {
+      "path": "enamel_badges_tools/v3_all.png",
+      "bytes": 1858879,
+      "reason": "Unused capture; not a retained model image dependency, material map or owner reference"
+    },
+    {
+      "path": "enamel_badges_tools/v1_all.png",
+      "bytes": 1861475,
+      "reason": "Unused capture; not a retained model image dependency, material map or owner reference"
+    },
+    {
+      "path": "enamel_badges_tools/cells_to_gold.png",
+      "bytes": 614037,
+      "reason": "Unused capture; not a retained model image dependency, material map or owner reference"
+    },
+    {
+      "path": "enamel_badges_tools/v5_all.png",
+      "bytes": 1869825,
+      "reason": "Unused capture; not a retained model image dependency, material map or owner reference"
+    },
+    {
+      "path": "enamel_badges_tools/v4_all.png",
+      "bytes": 1869825,
+      "reason": "Unused capture; not a retained model image dependency, material map or owner reference"
+    },
+    {
+      "path": "enamel_badges_tools/predicted_v4.png",
+      "bytes": 904308,
+      "reason": "Unused capture; not a retained model image dependency, material map or owner reference"
+    },
+    {
+      "path": "enamel_badges_tools/predicted_v5.png",
+      "bytes": 913651,
+      "reason": "Unused capture; not a retained model image dependency, material map or owner reference"
+    },
+    {
+      "path": "enamel_badges_tools/v6_all.png",
+      "bytes": 1892960,
+      "reason": "Unused capture; not a retained model image dependency, material map or owner reference"
+    },
+    {
+      "path": "three_crests_20261027/moon_surface_detail.jpg",
+      "bytes": 233875,
+      "reason": "Unused capture; not a retained model image dependency, material map or owner reference"
+    },
+    {
+      "path": "three_crests_20261027/sword_moon_fixes.jpg",
+      "bytes": 402837,
+      "reason": "Unused capture; not a retained model image dependency, material map or owner reference"
+    },
+    {
+      "path": "three_crests_20261027/metal_glints.jpg",
+      "bytes": 393716,
+      "reason": "Unused capture; not a retained model image dependency, material map or owner reference"
+    },
+    {
+      "path": "three_crests_20261027/three_badges.jpg",
+      "bytes": 284315,
+      "reason": "Unused capture; not a retained model image dependency, material map or owner reference"
+    },
+    {
+      "path": "three_crests_20261027/studio_open.png",
+      "bytes": 1477478,
+      "reason": "Unused capture; not a retained model image dependency, material map or owner reference"
+    },
+    {
+      "path": "three_crests_20261027/winged_sword/every_side.jpg",
+      "bytes": 97386,
+      "reason": "Unused capture; not a retained model image dependency, material map or owner reference"
+    },
+    {
+      "path": "three_crests_20261027/winged_sword/candidate06/every_side.jpg",
+      "bytes": 97386,
+      "reason": "Unused capture; not a retained model image dependency, material map or owner reference"
+    },
+    {
+      "path": "three_crests_20261027/winged_sword/candidate06/app_front.png",
+      "bytes": 1477478,
+      "reason": "Unused capture; not a retained model image dependency, material map or owner reference"
+    },
+    {
+      "path": "three_crests_20261027/winged_sword/candidate06/blender_angle.png",
+      "bytes": 901868,
+      "reason": "Unused capture; not a retained model image dependency, material map or owner reference"
+    },
+    {
+      "path": "three_crests_20261027/winged_sword/candidate06/blender_side_right.png",
+      "bytes": 681911,
+      "reason": "Unused capture; not a retained model image dependency, material map or owner reference"
+    },
+    {
+      "path": "three_crests_20261027/winged_sword/candidate06/spin_80.png",
+      "bytes": 1333027,
+      "reason": "Unused capture; not a retained model image dependency, material map or owner reference"
+    },
+    {
+      "path": "three_crests_20261027/winged_sword/candidate06/blender_back.png",
+      "bytes": 917720,
+      "reason": "Unused capture; not a retained model image dependency, material map or owner reference"
+    },
+    {
+      "path": "three_crests_20261027/winged_sword/candidate06/spin_104.png",
+      "bytes": 1154139,
+      "reason": "Unused capture; not a retained model image dependency, material map or owner reference"
+    },
+    {
+      "path": "three_crests_20261027/winged_sword/candidate06/spin_88.png",
+      "bytes": 1268373,
+      "reason": "Unused capture; not a retained model image dependency, material map or owner reference"
+    },
+    {
+      "path": "three_crests_20261027/winged_sword/candidate06/spin_120.png",
+      "bytes": 1140790,
+      "reason": "Unused capture; not a retained model image dependency, material map or owner reference"
+    },
+    {
+      "path": "three_crests_20261027/winged_sword/candidate06/app_side_right.png",
+      "bytes": 911948,
+      "reason": "Unused capture; not a retained model image dependency, material map or owner reference"
+    },
+    {
+      "path": "three_crests_20261027/winged_sword/candidate06/spin_64.png",
+      "bytes": 1399124,
+      "reason": "Unused capture; not a retained model image dependency, material map or owner reference"
+    },
+    {
+      "path": "three_crests_20261027/winged_sword/candidate06/spin_72.png",
+      "bytes": 1381847,
+      "reason": "Unused capture; not a retained model image dependency, material map or owner reference"
+    },
+    {
+      "path": "three_crests_20261027/winged_sword/candidate06/app_back.png",
+      "bytes": 1100660,
+      "reason": "Unused capture; not a retained model image dependency, material map or owner reference"
+    },
+    {
+      "path": "three_crests_20261027/winged_sword/candidate06/spin_0.png",
+      "bytes": 1498897,
+      "reason": "Unused capture; not a retained model image dependency, material map or owner reference"
+    },
+    {
+      "path": "three_crests_20261027/winged_sword/candidate06/app_side_left.png",
+      "bytes": 1225149,
+      "reason": "Unused capture; not a retained model image dependency, material map or owner reference"
+    },
+    {
+      "path": "three_crests_20261027/winged_sword/candidate06/app_calibration.png",
+      "bytes": 1380609,
+      "reason": "Unused capture; not a retained model image dependency, material map or owner reference"
+    },
+    {
+      "path": "three_crests_20261027/winged_sword/candidate06/blender_side_left.png",
+      "bytes": 675156,
+      "reason": "Unused capture; not a retained model image dependency, material map or owner reference"
+    },
+    {
+      "path": "three_crests_20261027/winged_sword/candidate06/blender_front.png",
+      "bytes": 912111,
+      "reason": "Unused capture; not a retained model image dependency, material map or owner reference"
+    },
+    {
+      "path": "three_crests_20261027/mountain_crest/every_side.jpg",
+      "bytes": 108007,
+      "reason": "Unused capture; not a retained model image dependency, material map or owner reference"
+    },
+    {
+      "path": "three_crests_20261027/mountain_crest/candidate04/every_side.jpg",
+      "bytes": 108007,
+      "reason": "Unused capture; not a retained model image dependency, material map or owner reference"
+    },
+    {
+      "path": "three_crests_20261027/mountain_crest/candidate04/app_front.png",
+      "bytes": 1568837,
+      "reason": "Unused capture; not a retained model image dependency, material map or owner reference"
+    },
+    {
+      "path": "three_crests_20261027/mountain_crest/candidate04/blender_angle.png",
+      "bytes": 1011983,
+      "reason": "Unused capture; not a retained model image dependency, material map or owner reference"
+    },
+    {
+      "path": "three_crests_20261027/mountain_crest/candidate04/silhouette.png",
+      "bytes": 12293,
+      "reason": "Unused capture; not a retained model image dependency, material map or owner reference"
+    },
+    {
+      "path": "three_crests_20261027/mountain_crest/candidate04/blender_side_right.png",
+      "bytes": 727579,
+      "reason": "Unused capture; not a retained model image dependency, material map or owner reference"
+    },
+    {
+      "path": "three_crests_20261027/mountain_crest/candidate04/spin_80.png",
+      "bytes": 1380354,
+      "reason": "Unused capture; not a retained model image dependency, material map or owner reference"
+    },
+    {
+      "path": "three_crests_20261027/mountain_crest/candidate04/blender_back.png",
+      "bytes": 1020068,
+      "reason": "Unused capture; not a retained model image dependency, material map or owner reference"
+    },
+    {
+      "path": "three_crests_20261027/mountain_crest/candidate04/spin_104.png",
+      "bytes": 1165438,
+      "reason": "Unused capture; not a retained model image dependency, material map or owner reference"
+    },
+    {
+      "path": "three_crests_20261027/mountain_crest/candidate04/traced_shapes.png",
+      "bytes": 1691875,
+      "reason": "Unused capture; not a retained model image dependency, material map or owner reference"
+    },
+    {
+      "path": "three_crests_20261027/mountain_crest/candidate04/spin_88.png",
+      "bytes": 1298797,
+      "reason": "Unused capture; not a retained model image dependency, material map or owner reference"
+    },
+    {
+      "path": "three_crests_20261027/mountain_crest/candidate04/spin_120.png",
+      "bytes": 1154876,
+      "reason": "Unused capture; not a retained model image dependency, material map or owner reference"
+    },
+    {
+      "path": "three_crests_20261027/mountain_crest/candidate04/app_side_right.png",
+      "bytes": 911085,
+      "reason": "Unused capture; not a retained model image dependency, material map or owner reference"
+    },
+    {
+      "path": "three_crests_20261027/mountain_crest/candidate04/spin_64.png",
+      "bytes": 1464971,
+      "reason": "Unused capture; not a retained model image dependency, material map or owner reference"
+    },
+    {
+      "path": "three_crests_20261027/mountain_crest/candidate04/spin_72.png",
+      "bytes": 1436863,
+      "reason": "Unused capture; not a retained model image dependency, material map or owner reference"
+    },
+    {
+      "path": "three_crests_20261027/mountain_crest/candidate04/app_back.png",
+      "bytes": 1112240,
+      "reason": "Unused capture; not a retained model image dependency, material map or owner reference"
+    },
+    {
+      "path": "three_crests_20261027/mountain_crest/candidate04/spin_0.png",
+      "bytes": 1539722,
+      "reason": "Unused capture; not a retained model image dependency, material map or owner reference"
+    },
+    {
+      "path": "three_crests_20261027/mountain_crest/candidate04/app_side_left.png",
+      "bytes": 1244608,
+      "reason": "Unused capture; not a retained model image dependency, material map or owner reference"
+    },
+    {
+      "path": "three_crests_20261027/mountain_crest/candidate04/app_calibration.png",
+      "bytes": 1333134,
+      "reason": "Unused capture; not a retained model image dependency, material map or owner reference"
+    },
+    {
+      "path": "three_crests_20261027/mountain_crest/candidate04/blender_side_left.png",
+      "bytes": 731314,
+      "reason": "Unused capture; not a retained model image dependency, material map or owner reference"
+    },
+    {
+      "path": "three_crests_20261027/mountain_crest/candidate04/blender_front.png",
+      "bytes": 1044795,
+      "reason": "Unused capture; not a retained model image dependency, material map or owner reference"
+    },
+    {
+      "path": "ruby_heart_smooth_20261112/candidate01/turn_strip.png",
+      "bytes": 489333,
+      "reason": "Unused capture; not a retained model image dependency, material map or owner reference"
+    },
+    {
+      "path": "ruby_heart_smooth_20261112/candidate01/blender_back.png",
+      "bytes": 1198370,
+      "reason": "Unused capture; not a retained model image dependency, material map or owner reference"
+    },
+    {
+      "path": "ruby_heart_smooth_20261112/candidate01/poses.png",
+      "bytes": 926328,
+      "reason": "Unused capture; not a retained model image dependency, material map or owner reference"
+    },
+    {
+      "path": "ruby_heart_smooth_20261112/candidate01/upper_before_4x.png",
+      "bytes": 108841,
+      "reason": "Unused capture; not a retained model image dependency, material map or owner reference"
+    },
+    {
+      "path": "ruby_heart_smooth_20261112/candidate01/upper_after_4x.png",
+      "bytes": 109073,
+      "reason": "Unused capture; not a retained model image dependency, material map or owner reference"
+    },
+    {
+      "path": "ruby_heart_smooth_20261112/candidate01/blender_side_left.png",
+      "bytes": 1028369,
+      "reason": "Unused capture; not a retained model image dependency, material map or owner reference"
+    },
+    {
+      "path": "ruby_heart_smooth_20261112/candidate01/blender_front.png",
+      "bytes": 1198258,
+      "reason": "Unused capture; not a retained model image dependency, material map or owner reference"
+    },
+    {
+      "path": "treasure_chest_20261113/overnight_handle_start.png",
+      "bytes": 647713,
+      "reason": "Unused capture; not a retained model image dependency, material map or owner reference"
+    },
+    {
+      "path": "treasure_chest_20261113/overnight_resume_view.png",
+      "bytes": 647291,
+      "reason": "Unused capture; not a retained model image dependency, material map or owner reference"
+    },
+    {
+      "path": "treasure_chest_20261113/phase01/top.png",
+      "bytes": 1289912,
+      "reason": "Unused capture; not a retained model image dependency, material map or owner reference"
+    },
+    {
+      "path": "treasure_chest_20261113/phase01/straight_front.png",
+      "bytes": 1293642,
+      "reason": "Unused capture; not a retained model image dependency, material map or owner reference"
+    },
+    {
+      "path": "treasure_chest_20261113/phase01/right_end.png",
+      "bytes": 1284386,
+      "reason": "Unused capture; not a retained model image dependency, material map or owner reference"
+    },
+    {
+      "path": "treasure_chest_20261113/phase01/left_end.png",
+      "bytes": 1284636,
+      "reason": "Unused capture; not a retained model image dependency, material map or owner reference"
+    },
+    {
+      "path": "treasure_chest_20261113/phase01/changes.png",
+      "bytes": 1307888,
+      "reason": "Unused capture; not a retained model image dependency, material map or owner reference"
+    },
+    {
+      "path": "treasure_chest_20261113/phase01/joint_oblique.png",
+      "bytes": 1341211,
+      "reason": "Unused capture; not a retained model image dependency, material map or owner reference"
+    },
+    {
+      "path": "treasure_chest_20261113/phase01/back.png",
+      "bytes": 1307826,
+      "reason": "Unused capture; not a retained model image dependency, material map or owner reference"
+    },
+    {
+      "path": "treasure_chest_20261113/phase01/measured_hardware/latch_grid.png",
+      "bytes": 1358798,
+      "reason": "Unused capture; not a retained model image dependency, material map or owner reference"
+    },
+    {
+      "path": "treasure_chest_20261113/phase01/measured_hardware/handle_grid.png",
+      "bytes": 479821,
+      "reason": "Unused capture; not a retained model image dependency, material map or owner reference"
+    },
+    {
+      "path": "treasure_chest_20261113/phase01/measured_hardware/tab_grid.png",
+      "bytes": 110095,
+      "reason": "Unused capture; not a retained model image dependency, material map or owner reference"
+    },
+    {
+      "path": "treasure_chest_20261113/phase01/measured_hardware/upper_grid.png",
+      "bytes": 449663,
+      "reason": "Unused capture; not a retained model image dependency, material map or owner reference"
+    },
+    {
+      "path": "treasure_chest_20261113/phase01/measured_hardware/foot_grid.png",
+      "bytes": 540944,
+      "reason": "Unused capture; not a retained model image dependency, material map or owner reference"
+    },
+    {
+      "path": "golden_storm_claude_20261108/rebuild/planchk/material_map_misses.png",
+      "bytes": 1452174,
+      "reason": "Unused capture; not a retained model image dependency, material map or owner reference"
+    },
+    {
+      "path": "golden_storm_claude_20261108/rebuild/planchk/material_map.png",
+      "bytes": 245462,
+      "reason": "Unused capture; not a retained model image dependency, material map or owner reference"
+    },
+    {
+      "path": "ruby_heart_gem_20261113/candidate03/blender_early08.png",
+      "bytes": 361041,
+      "reason": "Unused capture; not a retained model image dependency, material map or owner reference"
+    },
+    {
+      "path": "ruby_heart_gem_20261113/candidate03/blender_early20.png",
+      "bytes": 362701,
+      "reason": "Unused capture; not a retained model image dependency, material map or owner reference"
+    },
+    {
+      "path": "ruby_heart_gem_20261113/candidate03/turn_strip.png",
+      "bytes": 594944,
+      "reason": "Unused capture; not a retained model image dependency, material map or owner reference"
+    },
+    {
+      "path": "ruby_heart_gem_20261113/candidate03/blender_side_right.png",
+      "bytes": 314718,
+      "reason": "Unused capture; not a retained model image dependency, material map or owner reference"
+    },
+    {
+      "path": "ruby_heart_gem_20261113/candidate03/blender_back.png",
+      "bytes": 364677,
+      "reason": "Unused capture; not a retained model image dependency, material map or owner reference"
+    },
+    {
+      "path": "ruby_heart_gem_20261113/candidate03/early_turn_close.png",
+      "bytes": 992980,
+      "reason": "Unused capture; not a retained model image dependency, material map or owner reference"
+    },
+    {
+      "path": "ruby_heart_gem_20261113/candidate03/poses.png",
+      "bytes": 1074557,
+      "reason": "Unused capture; not a retained model image dependency, material map or owner reference"
+    },
+    {
+      "path": "ruby_heart_gem_20261113/candidate03/blender_front_calibrated.png",
+      "bytes": 366112,
+      "reason": "Unused capture; not a retained model image dependency, material map or owner reference"
+    },
+    {
+      "path": "ruby_heart_gem_20261113/candidate03/blender_side_left.png",
+      "bytes": 314873,
+      "reason": "Unused capture; not a retained model image dependency, material map or owner reference"
+    },
+    {
+      "path": "emerald_stag_claude_20261108/candidate08/turns_small.png",
+      "bytes": 613043,
+      "reason": "Unused capture; not a retained model image dependency, material map or owner reference"
+    },
+    {
+      "path": "emerald_stag_claude_20261108/gen/stag_input.png",
+      "bytes": 436583,
+      "reason": "Unused capture; not a retained model image dependency, material map or owner reference"
+    },
+    {
+      "path": "golden_storm_fable_20261109/candidate25/topview.png",
+      "bytes": 2225680,
+      "reason": "Unused capture; not a retained model image dependency, material map or owner reference"
+    },
+    {
+      "path": "golden_storm_fable_20261109/candidate25/finish_real_front.png",
+      "bytes": 238004,
+      "reason": "Unused capture; not a retained model image dependency, material map or owner reference"
+    },
+    {
+      "path": "golden_storm_fable_20261109/work/top10.png",
+      "bytes": 765605,
+      "reason": "Unused capture; not a retained model image dependency, material map or owner reference"
+    },
+    {
+      "path": "golden_storm_fable_20261109/work/vs_055.png",
+      "bytes": 959728,
+      "reason": "Unused capture; not a retained model image dependency, material map or owner reference"
+    },
+    {
+      "path": "golden_storm_fable_20261109/work/blender_angle3.png",
+      "bytes": 1421591,
+      "reason": "Unused capture; not a retained model image dependency, material map or owner reference"
+    },
+    {
+      "path": "golden_storm_fable_20261109/work/lowright24.png",
+      "bytes": 36613,
+      "reason": "Unused capture; not a retained model image dependency, material map or owner reference"
+    },
+    {
+      "path": "golden_storm_fable_20261109/work/pearlcover_903.png",
+      "bytes": 1935,
+      "reason": "Unused capture; not a retained model image dependency, material map or owner reference"
+    },
+    {
+      "path": "golden_storm_fable_20261109/work/sp_sheet.png",
+      "bytes": 1030187,
+      "reason": "Unused capture; not a retained model image dependency, material map or owner reference"
+    },
+    {
+      "path": "golden_storm_fable_20261109/work/b13_sheet.png",
+      "bytes": 1356116,
+      "reason": "Unused capture; not a retained model image dependency, material map or owner reference"
+    },
+    {
+      "path": "golden_storm_fable_20261109/work/edge_fork12.png",
+      "bytes": 290019,
+      "reason": "Unused capture; not a retained model image dependency, material map or owner reference"
+    },
+    {
+      "path": "golden_storm_fable_20261109/work/b13_wall.png",
+      "bytes": 364823,
+      "reason": "Unused capture; not a retained model image dependency, material map or owner reference"
+    },
+    {
+      "path": "golden_storm_fable_20261109/work/mock_903.png",
+      "bytes": 17992,
+      "reason": "Unused capture; not a retained model image dependency, material map or owner reference"
+    },
+    {
+      "path": "golden_storm_fable_20261109/work/rim24.png",
+      "bytes": 111085,
+      "reason": "Unused capture; not a retained model image dependency, material map or owner reference"
+    },
+    {
+      "path": "golden_storm_fable_20261109/work/sil_lower_right.png",
+      "bytes": 287583,
+      "reason": "Unused capture; not a retained model image dependency, material map or owner reference"
+    },
+    {
+      "path": "golden_storm_fable_20261109/work/blender_angle.png",
+      "bytes": 1459619,
+      "reason": "Unused capture; not a retained model image dependency, material map or owner reference"
+    },
+    {
+      "path": "golden_storm_fable_20261109/work/blender_angle4.png",
+      "bytes": 1331565,
+      "reason": "Unused capture; not a retained model image dependency, material map or owner reference"
+    },
+    {
+      "path": "golden_storm_fable_20261109/work/bump13.png",
+      "bytes": 80523,
+      "reason": "Unused capture; not a retained model image dependency, material map or owner reference"
+    },
+    {
+      "path": "golden_storm_fable_20261109/work/bolt_fit.png",
+      "bytes": 2315634,
+      "reason": "Unused capture; not a retained model image dependency, material map or owner reference"
+    },
+    {
+      "path": "golden_storm_fable_20261109/work/seg_raw.png",
+      "bytes": 2040230,
+      "reason": "Unused capture; not a retained model image dependency, material map or owner reference"
+    },
+    {
+      "path": "golden_storm_fable_20261109/work/rim23.png",
+      "bytes": 115145,
+      "reason": "Unused capture; not a retained model image dependency, material map or owner reference"
+    },
+    {
+      "path": "golden_storm_fable_20261109/work/blender_r3b.png",
+      "bytes": 923397,
+      "reason": "Unused capture; not a retained model image dependency, material map or owner reference"
+    },
+    {
+      "path": "golden_storm_fable_20261109/work/edge_ribbons12.png",
+      "bytes": 902602,
+      "reason": "Unused capture; not a retained model image dependency, material map or owner reference"
+    },
+    {
+      "path": "golden_storm_fable_20261109/work/vs_022.png",
+      "bytes": 965135,
+      "reason": "Unused capture; not a retained model image dependency, material map or owner reference"
+    },
+    {
+      "path": "golden_storm_fable_20261109/work/b13_bottom.png",
+      "bytes": 467838,
+      "reason": "Unused capture; not a retained model image dependency, material map or owner reference"
+    },
+    {
+      "path": "golden_storm_fable_20261109/work/edge_top.png",
+      "bytes": 1580403,
+      "reason": "Unused capture; not a retained model image dependency, material map or owner reference"
+    },
+    {
+      "path": "golden_storm_fable_20261109/work/v7_vs_v8.png",
+      "bytes": 1243681,
+      "reason": "Unused capture; not a retained model image dependency, material map or owner reference"
+    },
+    {
+      "path": "golden_storm_fable_20261109/work/wall135.png",
+      "bytes": 9792,
+      "reason": "Unused capture; not a retained model image dependency, material map or owner reference"
+    },
+    {
+      "path": "golden_storm_fable_20261109/work/ribbons16.png",
+      "bytes": 829347,
+      "reason": "Unused capture; not a retained model image dependency, material map or owner reference"
+    },
+    {
+      "path": "golden_storm_fable_20261109/work/nick15.png",
+      "bytes": 58493,
+      "reason": "Unused capture; not a retained model image dependency, material map or owner reference"
+    },
+    {
+      "path": "golden_storm_fable_20261109/work/grid_bolt.png",
+      "bytes": 2291732,
+      "reason": "Unused capture; not a retained model image dependency, material map or owner reference"
+    },
+    {
+      "path": "golden_storm_fable_20261109/work/blender_spike.png",
+      "bytes": 1124750,
+      "reason": "Unused capture; not a retained model image dependency, material map or owner reference"
+    },
+    {
+      "path": "golden_storm_fable_20261109/work/sil_upper_left.png",
+      "bytes": 196966,
+      "reason": "Unused capture; not a retained model image dependency, material map or owner reference"
+    },
+    {
+      "path": "golden_storm_fable_20261109/work/sp_b2.png",
+      "bytes": 265959,
+      "reason": "Unused capture; not a retained model image dependency, material map or owner reference"
+    },
+    {
+      "path": "golden_storm_fable_20261109/work/blender_rim10b.png",
+      "bytes": 1789649,
+      "reason": "Unused capture; not a retained model image dependency, material map or owner reference"
+    },
+    {
+      "path": "golden_storm_fable_20261109/work/yellow_options.png",
+      "bytes": 837441,
+      "reason": "Unused capture; not a retained model image dependency, material map or owner reference"
+    },
+    {
+      "path": "golden_storm_fable_20261109/work/sp_b1.png",
+      "bytes": 320794,
+      "reason": "Unused capture; not a retained model image dependency, material map or owner reference"
+    },
+    {
+      "path": "golden_storm_fable_20261109/work/tip16.png",
+      "bytes": 19460,
+      "reason": "Unused capture; not a retained model image dependency, material map or owner reference"
+    },
+    {
+      "path": "golden_storm_fable_20261109/work/b13_top.png",
+      "bytes": 507434,
+      "reason": "Unused capture; not a retained model image dependency, material map or owner reference"
+    },
+    {
+      "path": "golden_storm_fable_20261109/work/sil_check.png",
+      "bytes": 1944292,
+      "reason": "Unused capture; not a retained model image dependency, material map or owner reference"
+    },
+    {
+      "path": "golden_storm_fable_20261109/work/blender_r3.png",
+      "bytes": 923305,
+      "reason": "Unused capture; not a retained model image dependency, material map or owner reference"
+    },
+    {
+      "path": "golden_storm_fable_20261109/work/wobble19.png",
+      "bytes": 287807,
+      "reason": "Unused capture; not a retained model image dependency, material map or owner reference"
+    },
+    {
+      "path": "golden_storm_fable_20261109/work/blender_r2.png",
+      "bytes": 1152266,
+      "reason": "Unused capture; not a retained model image dependency, material map or owner reference"
+    },
+    {
+      "path": "golden_storm_fable_20261109/work/sp_a1.png",
+      "bytes": 328590,
+      "reason": "Unused capture; not a retained model image dependency, material map or owner reference"
+    },
+    {
+      "path": "golden_storm_fable_20261109/work/smooth_check.png",
+      "bytes": 1567092,
+      "reason": "Unused capture; not a retained model image dependency, material map or owner reference"
+    },
+    {
+      "path": "golden_storm_fable_20261109/work/b13_right.png",
+      "bytes": 559551,
+      "reason": "Unused capture; not a retained model image dependency, material map or owner reference"
+    },
+    {
+      "path": "golden_storm_fable_20261109/work/spots12.png",
+      "bytes": 120170,
+      "reason": "Unused capture; not a retained model image dependency, material map or owner reference"
+    },
+    {
+      "path": "golden_storm_fable_20261109/work/blender_front6_crop.png",
+      "bytes": 739923,
+      "reason": "Unused capture; not a retained model image dependency, material map or owner reference"
+    },
+    {
+      "path": "golden_storm_fable_20261109/work/sp_a2.png",
+      "bytes": 273621,
+      "reason": "Unused capture; not a retained model image dependency, material map or owner reference"
+    },
+    {
+      "path": "golden_storm_fable_20261109/work/top5.png",
+      "bytes": 643103,
+      "reason": "Unused capture; not a retained model image dependency, material map or owner reference"
+    },
+    {
+      "path": "golden_storm_fable_20261109/work/blender_front6.png",
+      "bytes": 1249732,
+      "reason": "Unused capture; not a retained model image dependency, material map or owner reference"
+    },
+    {
+      "path": "golden_storm_fable_20261109/work/mock_401.png",
+      "bytes": 18504,
+      "reason": "Unused capture; not a retained model image dependency, material map or owner reference"
+    },
+    {
+      "path": "golden_storm_fable_20261109/work/spikes.png",
+      "bytes": 6621,
+      "reason": "Unused capture; not a retained model image dependency, material map or owner reference"
+    },
+    {
+      "path": "golden_storm_fable_20261109/work/spots15.png",
+      "bytes": 107410,
+      "reason": "Unused capture; not a retained model image dependency, material map or owner reference"
+    },
+    {
+      "path": "golden_storm_fable_20261109/work/barb.png",
+      "bytes": 67700,
+      "reason": "Unused capture; not a retained model image dependency, material map or owner reference"
+    },
+    {
+      "path": "golden_storm_fable_20261109/work/pearlcover_401.png",
+      "bytes": 1935,
+      "reason": "Unused capture; not a retained model image dependency, material map or owner reference"
+    },
+    {
+      "path": "golden_storm_fable_20261109/work/edge_bottom.png",
+      "bytes": 1637703,
+      "reason": "Unused capture; not a retained model image dependency, material map or owner reference"
+    },
+    {
+      "path": "golden_storm_fable_20261109/work/blender_angle10.png",
+      "bytes": 1352844,
+      "reason": "Unused capture; not a retained model image dependency, material map or owner reference"
+    },
+    {
+      "path": "golden_storm_fable_20261109/work/blade16.png",
+      "bytes": 31510,
+      "reason": "Unused capture; not a retained model image dependency, material map or owner reference"
+    },
+    {
+      "path": "golden_storm_fable_20261109/work/blender_rim10.png",
+      "bytes": 1797857,
+      "reason": "Unused capture; not a retained model image dependency, material map or owner reference"
+    },
+    {
+      "path": "golden_storm_fable_20261109/work/blender_angle8.png",
+      "bytes": 1343580,
+      "reason": "Unused capture; not a retained model image dependency, material map or owner reference"
+    },
+    {
+      "path": "golden_storm_fable_20261109/work/v8_vs_v9.png",
+      "bytes": 982962,
+      "reason": "Unused capture; not a retained model image dependency, material map or owner reference"
+    },
+    {
+      "path": "golden_storm_fable_20261109/work/rough_q4.png",
+      "bytes": 538948,
+      "reason": "Unused capture; not a retained model image dependency, material map or owner reference"
+    },
+    {
+      "path": "golden_storm_fable_20261109/work/spike_look.png",
+      "bytes": 86342,
+      "reason": "Unused capture; not a retained model image dependency, material map or owner reference"
+    },
+    {
+      "path": "golden_storm_fable_20261109/work/ribbonsUL16.png",
+      "bytes": 389139,
+      "reason": "Unused capture; not a retained model image dependency, material map or owner reference"
+    },
+    {
+      "path": "golden_storm_fable_20261109/work/art17.png",
+      "bytes": 153823,
+      "reason": "Unused capture; not a retained model image dependency, material map or owner reference"
+    },
+    {
+      "path": "golden_storm_fable_20261109/work/rough_q1.png",
+      "bytes": 519601,
+      "reason": "Unused capture; not a retained model image dependency, material map or owner reference"
+    },
+    {
+      "path": "golden_storm_fable_20261109/work/rough_q3.png",
+      "bytes": 538382,
+      "reason": "Unused capture; not a retained model image dependency, material map or owner reference"
+    },
+    {
+      "path": "golden_storm_fable_20261109/work/blender_front.png",
+      "bytes": 880623,
+      "reason": "Unused capture; not a retained model image dependency, material map or owner reference"
+    },
+    {
+      "path": "golden_storm_fable_20261109/work/ribbonsUL15.png",
+      "bytes": 150826,
+      "reason": "Unused capture; not a retained model image dependency, material map or owner reference"
+    },
+    {
+      "path": "golden_storm_fable_20261109/work/rough_q2.png",
+      "bytes": 526329,
+      "reason": "Unused capture; not a retained model image dependency, material map or owner reference"
+    },
+    {
+      "path": "badge_family_compact_20261106/blender_overview_1.jpg",
+      "bytes": 109472,
+      "reason": "Unused capture; not a retained model image dependency, material map or owner reference"
+    },
+    {
+      "path": "badge_family_compact_20261106/blender_overview_3.jpg",
+      "bytes": 137594,
+      "reason": "Unused capture; not a retained model image dependency, material map or owner reference"
+    },
+    {
+      "path": "badge_family_compact_20261106/blender_overview_2.jpg",
+      "bytes": 147258,
+      "reason": "Unused capture; not a retained model image dependency, material map or owner reference"
+    },
+    {
+      "path": "badge_family_compact_20261106/blender_overview_6.jpg",
+      "bytes": 82174,
+      "reason": "Unused capture; not a retained model image dependency, material map or owner reference"
+    },
+    {
+      "path": "badge_family_compact_20261106/blender_overview_5.jpg",
+      "bytes": 129273,
+      "reason": "Unused capture; not a retained model image dependency, material map or owner reference"
+    },
+    {
+      "path": "badge_family_compact_20261106/blender_overview_4.jpg",
+      "bytes": 135692,
+      "reason": "Unused capture; not a retained model image dependency, material map or owner reference"
+    },
+    {
+      "path": "badge_family_compact_20261106/badges/ember_forge/candidate01/blender_angle.png",
+      "bytes": 487899,
+      "reason": "Unused capture; not a retained model image dependency, material map or owner reference"
+    },
+    {
+      "path": "badge_family_compact_20261106/badges/ember_forge/candidate01/blender_side_right.png",
+      "bytes": 335058,
+      "reason": "Unused capture; not a retained model image dependency, material map or owner reference"
+    },
+    {
+      "path": "badge_family_compact_20261106/badges/ember_forge/candidate01/blender_back.png",
+      "bytes": 509218,
+      "reason": "Unused capture; not a retained model image dependency, material map or owner reference"
+    },
+    {
+      "path": "badge_family_compact_20261106/badges/ember_forge/candidate01/blender_side_left.png",
+      "bytes": 339520,
+      "reason": "Unused capture; not a retained model image dependency, material map or owner reference"
+    },
+    {
+      "path": "badge_family_compact_20261106/badges/ember_forge/candidate01/blender_front.png",
+      "bytes": 506701,
+      "reason": "Unused capture; not a retained model image dependency, material map or owner reference"
+    },
+    {
+      "path": "badge_family_compact_20261106/badges/water_drop/candidate01/blender_angle.png",
+      "bytes": 466066,
+      "reason": "Unused capture; not a retained model image dependency, material map or owner reference"
+    },
+    {
+      "path": "badge_family_compact_20261106/badges/water_drop/candidate01/blender_side_right.png",
+      "bytes": 328157,
+      "reason": "Unused capture; not a retained model image dependency, material map or owner reference"
+    },
+    {
+      "path": "badge_family_compact_20261106/badges/water_drop/candidate01/blender_back.png",
+      "bytes": 473969,
+      "reason": "Unused capture; not a retained model image dependency, material map or owner reference"
+    },
+    {
+      "path": "badge_family_compact_20261106/badges/water_drop/candidate01/blender_side_left.png",
+      "bytes": 330451,
+      "reason": "Unused capture; not a retained model image dependency, material map or owner reference"
+    },
+    {
+      "path": "badge_family_compact_20261106/badges/water_drop/candidate01/blender_front.png",
+      "bytes": 474917,
+      "reason": "Unused capture; not a retained model image dependency, material map or owner reference"
+    },
+    {
+      "path": "badge_family_compact_20261106/badges/ruby_winged_crest/candidate01/blender_angle.png",
+      "bytes": 507741,
+      "reason": "Unused capture; not a retained model image dependency, material map or owner reference"
+    },
+    {
+      "path": "badge_family_compact_20261106/badges/ruby_winged_crest/candidate01/blender_side_right.png",
+      "bytes": 349335,
+      "reason": "Unused capture; not a retained model image dependency, material map or owner reference"
+    },
+    {
+      "path": "badge_family_compact_20261106/badges/ruby_winged_crest/candidate01/blender_back.png",
+      "bytes": 498321,
+      "reason": "Unused capture; not a retained model image dependency, material map or owner reference"
+    },
+    {
+      "path": "badge_family_compact_20261106/badges/ruby_winged_crest/candidate01/blender_side_left.png",
+      "bytes": 350358,
+      "reason": "Unused capture; not a retained model image dependency, material map or owner reference"
+    },
+    {
+      "path": "badge_family_compact_20261106/badges/ruby_winged_crest/candidate01/blender_front.png",
+      "bytes": 497680,
+      "reason": "Unused capture; not a retained model image dependency, material map or owner reference"
+    },
+    {
+      "path": "badge_family_compact_20261106/badges/emerald_archer/candidate01/blender_angle.png",
+      "bytes": 494630,
+      "reason": "Unused capture; not a retained model image dependency, material map or owner reference"
+    },
+    {
+      "path": "badge_family_compact_20261106/badges/emerald_archer/candidate01/blender_side_right.png",
+      "bytes": 320725,
+      "reason": "Unused capture; not a retained model image dependency, material map or owner reference"
+    },
+    {
+      "path": "badge_family_compact_20261106/badges/emerald_archer/candidate01/blender_back.png",
+      "bytes": 478942,
+      "reason": "Unused capture; not a retained model image dependency, material map or owner reference"
+    },
+    {
+      "path": "badge_family_compact_20261106/badges/emerald_archer/candidate01/blender_side_left.png",
+      "bytes": 321584,
+      "reason": "Unused capture; not a retained model image dependency, material map or owner reference"
+    },
+    {
+      "path": "badge_family_compact_20261106/badges/emerald_archer/candidate01/blender_front.png",
+      "bytes": 505741,
+      "reason": "Unused capture; not a retained model image dependency, material map or owner reference"
+    },
+    {
+      "path": "badge_family_compact_20261106/badges/bronze/candidate01/blender_angle.png",
+      "bytes": 388402,
+      "reason": "Unused capture; not a retained model image dependency, material map or owner reference"
+    },
+    {
+      "path": "badge_family_compact_20261106/badges/bronze/candidate01/blender_side_right.png",
+      "bytes": 312983,
+      "reason": "Unused capture; not a retained model image dependency, material map or owner reference"
+    },
+    {
+      "path": "badge_family_compact_20261106/badges/bronze/candidate01/blender_back.png",
+      "bytes": 385410,
+      "reason": "Unused capture; not a retained model image dependency, material map or owner reference"
+    },
+    {
+      "path": "badge_family_compact_20261106/badges/bronze/candidate01/blender_side_left.png",
+      "bytes": 312865,
+      "reason": "Unused capture; not a retained model image dependency, material map or owner reference"
+    },
+    {
+      "path": "badge_family_compact_20261106/badges/bronze/candidate01/blender_front.png",
+      "bytes": 394996,
+      "reason": "Unused capture; not a retained model image dependency, material map or owner reference"
+    },
+    {
+      "path": "badge_family_compact_20261106/badges/steel/candidate01/blender_angle.png",
+      "bytes": 425509,
+      "reason": "Unused capture; not a retained model image dependency, material map or owner reference"
+    },
+    {
+      "path": "badge_family_compact_20261106/badges/steel/candidate01/blender_side_right.png",
+      "bytes": 322500,
+      "reason": "Unused capture; not a retained model image dependency, material map or owner reference"
+    },
+    {
+      "path": "badge_family_compact_20261106/badges/steel/candidate01/blender_back.png",
+      "bytes": 440000,
+      "reason": "Unused capture; not a retained model image dependency, material map or owner reference"
+    },
+    {
+      "path": "badge_family_compact_20261106/badges/steel/candidate01/blender_side_left.png",
+      "bytes": 322500,
+      "reason": "Unused capture; not a retained model image dependency, material map or owner reference"
+    },
+    {
+      "path": "badge_family_compact_20261106/badges/steel/candidate01/blender_front.png",
+      "bytes": 442484,
+      "reason": "Unused capture; not a retained model image dependency, material map or owner reference"
+    },
+    {
+      "path": "badge_family_compact_20261106/badges/crescent_ocean/candidate01/blender_angle.png",
+      "bytes": 543558,
+      "reason": "Unused capture; not a retained model image dependency, material map or owner reference"
+    },
+    {
+      "path": "badge_family_compact_20261106/badges/crescent_ocean/candidate01/blender_side_right.png",
+      "bytes": 352638,
+      "reason": "Unused capture; not a retained model image dependency, material map or owner reference"
+    },
+    {
+      "path": "badge_family_compact_20261106/badges/crescent_ocean/candidate01/blender_back.png",
+      "bytes": 544874,
+      "reason": "Unused capture; not a retained model image dependency, material map or owner reference"
+    },
+    {
+      "path": "badge_family_compact_20261106/badges/crescent_ocean/candidate01/blender_side_left.png",
+      "bytes": 350964,
+      "reason": "Unused capture; not a retained model image dependency, material map or owner reference"
+    },
+    {
+      "path": "badge_family_compact_20261106/badges/crescent_ocean/candidate01/blender_front.png",
+      "bytes": 550677,
+      "reason": "Unused capture; not a retained model image dependency, material map or owner reference"
+    },
+    {
+      "path": "badge_family_compact_20261106/badges/silver/candidate01/blender_angle.png",
+      "bytes": 477876,
+      "reason": "Unused capture; not a retained model image dependency, material map or owner reference"
+    },
+    {
+      "path": "badge_family_compact_20261106/badges/silver/candidate01/blender_side_right.png",
+      "bytes": 321448,
+      "reason": "Unused capture; not a retained model image dependency, material map or owner reference"
+    },
+    {
+      "path": "badge_family_compact_20261106/badges/silver/candidate01/blender_back.png",
+      "bytes": 505278,
+      "reason": "Unused capture; not a retained model image dependency, material map or owner reference"
+    },
+    {
+      "path": "badge_family_compact_20261106/badges/silver/candidate01/blender_side_left.png",
+      "bytes": 318976,
+      "reason": "Unused capture; not a retained model image dependency, material map or owner reference"
+    },
+    {
+      "path": "badge_family_compact_20261106/badges/silver/candidate01/blender_front.png",
+      "bytes": 496764,
+      "reason": "Unused capture; not a retained model image dependency, material map or owner reference"
+    },
+    {
+      "path": "badge_family_compact_20261106/badges/copper/candidate01/blender_angle.png",
+      "bytes": 386647,
+      "reason": "Unused capture; not a retained model image dependency, material map or owner reference"
+    },
+    {
+      "path": "badge_family_compact_20261106/badges/copper/candidate01/blender_side_right.png",
+      "bytes": 325354,
+      "reason": "Unused capture; not a retained model image dependency, material map or owner reference"
+    },
+    {
+      "path": "badge_family_compact_20261106/badges/copper/candidate01/blender_back.png",
+      "bytes": 359444,
+      "reason": "Unused capture; not a retained model image dependency, material map or owner reference"
+    },
+    {
+      "path": "badge_family_compact_20261106/badges/copper/candidate01/blender_side_left.png",
+      "bytes": 324216,
+      "reason": "Unused capture; not a retained model image dependency, material map or owner reference"
+    },
+    {
+      "path": "badge_family_compact_20261106/badges/copper/candidate01/blender_front.png",
+      "bytes": 394355,
+      "reason": "Unused capture; not a retained model image dependency, material map or owner reference"
+    },
+    {
+      "path": "badge_family_compact_20261106/badges/lunar_compass/candidate01/blender_angle.png",
+      "bytes": 573429,
+      "reason": "Unused capture; not a retained model image dependency, material map or owner reference"
+    },
+    {
+      "path": "badge_family_compact_20261106/badges/lunar_compass/candidate01/blender_side_right.png",
+      "bytes": 357161,
+      "reason": "Unused capture; not a retained model image dependency, material map or owner reference"
+    },
+    {
+      "path": "badge_family_compact_20261106/badges/lunar_compass/candidate01/blender_back.png",
+      "bytes": 597243,
+      "reason": "Unused capture; not a retained model image dependency, material map or owner reference"
+    },
+    {
+      "path": "badge_family_compact_20261106/badges/lunar_compass/candidate01/blender_side_left.png",
+      "bytes": 353989,
+      "reason": "Unused capture; not a retained model image dependency, material map or owner reference"
+    },
+    {
+      "path": "badge_family_compact_20261106/badges/lunar_compass/candidate01/blender_front.png",
+      "bytes": 596109,
+      "reason": "Unused capture; not a retained model image dependency, material map or owner reference"
+    },
+    {
+      "path": "badge_family_compact_20261106/badges/bronze_phoenix/candidate01/blender_angle.png",
+      "bytes": 543530,
+      "reason": "Unused capture; not a retained model image dependency, material map or owner reference"
+    },
+    {
+      "path": "badge_family_compact_20261106/badges/bronze_phoenix/candidate01/blender_side_right.png",
+      "bytes": 375561,
+      "reason": "Unused capture; not a retained model image dependency, material map or owner reference"
+    },
+    {
+      "path": "badge_family_compact_20261106/badges/bronze_phoenix/candidate01/blender_back.png",
+      "bytes": 552749,
+      "reason": "Unused capture; not a retained model image dependency, material map or owner reference"
+    },
+    {
+      "path": "badge_family_compact_20261106/badges/bronze_phoenix/candidate01/blender_side_left.png",
+      "bytes": 370898,
+      "reason": "Unused capture; not a retained model image dependency, material map or owner reference"
+    },
+    {
+      "path": "badge_family_compact_20261106/badges/bronze_phoenix/candidate01/blender_front.png",
+      "bytes": 560509,
+      "reason": "Unused capture; not a retained model image dependency, material map or owner reference"
+    },
+    {
+      "path": "badge_family_compact_20261106/badges/island_sunset/candidate01/blender_angle.png",
+      "bytes": 503597,
+      "reason": "Unused capture; not a retained model image dependency, material map or owner reference"
+    },
+    {
+      "path": "badge_family_compact_20261106/badges/island_sunset/candidate01/blender_side_right.png",
+      "bytes": 316214,
+      "reason": "Unused capture; not a retained model image dependency, material map or owner reference"
+    },
+    {
+      "path": "badge_family_compact_20261106/badges/island_sunset/candidate01/blender_back.png",
+      "bytes": 490005,
+      "reason": "Unused capture; not a retained model image dependency, material map or owner reference"
+    },
+    {
+      "path": "badge_family_compact_20261106/badges/island_sunset/candidate01/blender_side_left.png",
+      "bytes": 317095,
+      "reason": "Unused capture; not a retained model image dependency, material map or owner reference"
+    },
+    {
+      "path": "badge_family_compact_20261106/badges/island_sunset/candidate01/blender_front.png",
+      "bytes": 519295,
+      "reason": "Unused capture; not a retained model image dependency, material map or owner reference"
+    },
+    {
+      "path": "badge_family_compact_20261106/badges/emerald_sprout/candidate01/blender_angle.png",
+      "bytes": 469543,
+      "reason": "Unused capture; not a retained model image dependency, material map or owner reference"
+    },
+    {
+      "path": "badge_family_compact_20261106/badges/emerald_sprout/candidate01/blender_side_right.png",
+      "bytes": 318153,
+      "reason": "Unused capture; not a retained model image dependency, material map or owner reference"
+    },
+    {
+      "path": "badge_family_compact_20261106/badges/emerald_sprout/candidate01/blender_back.png",
+      "bytes": 445214,
+      "reason": "Unused capture; not a retained model image dependency, material map or owner reference"
+    },
+    {
+      "path": "badge_family_compact_20261106/badges/emerald_sprout/candidate01/blender_side_left.png",
+      "bytes": 319436,
+      "reason": "Unused capture; not a retained model image dependency, material map or owner reference"
+    },
+    {
+      "path": "badge_family_compact_20261106/badges/emerald_sprout/candidate01/blender_front.png",
+      "bytes": 490861,
+      "reason": "Unused capture; not a retained model image dependency, material map or owner reference"
+    },
+    {
+      "path": "badge_family_compact_20261106/badges/emerald_trophy/candidate01/blender_angle.png",
+      "bytes": 537813,
+      "reason": "Unused capture; not a retained model image dependency, material map or owner reference"
+    },
+    {
+      "path": "badge_family_compact_20261106/badges/emerald_trophy/candidate01/blender_side_right.png",
+      "bytes": 316434,
+      "reason": "Unused capture; not a retained model image dependency, material map or owner reference"
+    },
+    {
+      "path": "badge_family_compact_20261106/badges/emerald_trophy/candidate01/blender_back.png",
+      "bytes": 538307,
+      "reason": "Unused capture; not a retained model image dependency, material map or owner reference"
+    },
+    {
+      "path": "badge_family_compact_20261106/badges/emerald_trophy/candidate01/blender_side_left.png",
+      "bytes": 315703,
+      "reason": "Unused capture; not a retained model image dependency, material map or owner reference"
+    },
+    {
+      "path": "badge_family_compact_20261106/badges/emerald_trophy/candidate01/blender_front.png",
+      "bytes": 554278,
+      "reason": "Unused capture; not a retained model image dependency, material map or owner reference"
+    },
+    {
+      "path": "badge_family_compact_20261106/badges/teal_sands/candidate01/blender_angle.png",
+      "bytes": 471825,
+      "reason": "Unused capture; not a retained model image dependency, material map or owner reference"
+    },
+    {
+      "path": "badge_family_compact_20261106/badges/teal_sands/candidate01/blender_side_right.png",
+      "bytes": 320138,
+      "reason": "Unused capture; not a retained model image dependency, material map or owner reference"
+    },
+    {
+      "path": "badge_family_compact_20261106/badges/teal_sands/candidate01/blender_back.png",
+      "bytes": 452007,
+      "reason": "Unused capture; not a retained model image dependency, material map or owner reference"
+    },
+    {
+      "path": "badge_family_compact_20261106/badges/teal_sands/candidate01/blender_side_left.png",
+      "bytes": 321508,
+      "reason": "Unused capture; not a retained model image dependency, material map or owner reference"
+    },
+    {
+      "path": "badge_family_compact_20261106/badges/teal_sands/candidate01/blender_front.png",
+      "bytes": 477110,
+      "reason": "Unused capture; not a retained model image dependency, material map or owner reference"
+    },
+    {
+      "path": "badge_family_compact_20261106/badges/lightning_compass/candidate01/blender_angle.png",
+      "bytes": 439861,
+      "reason": "Unused capture; not a retained model image dependency, material map or owner reference"
+    },
+    {
+      "path": "badge_family_compact_20261106/badges/lightning_compass/candidate01/blender_side_right.png",
+      "bytes": 313823,
+      "reason": "Unused capture; not a retained model image dependency, material map or owner reference"
+    },
+    {
+      "path": "badge_family_compact_20261106/badges/lightning_compass/candidate01/blender_back.png",
+      "bytes": 384902,
+      "reason": "Unused capture; not a retained model image dependency, material map or owner reference"
+    },
+    {
+      "path": "badge_family_compact_20261106/badges/lightning_compass/candidate01/blender_side_left.png",
+      "bytes": 314800,
+      "reason": "Unused capture; not a retained model image dependency, material map or owner reference"
+    },
+    {
+      "path": "badge_family_compact_20261106/badges/lightning_compass/candidate01/blender_front.png",
+      "bytes": 445051,
+      "reason": "Unused capture; not a retained model image dependency, material map or owner reference"
+    },
+    {
+      "path": "badge_family_compact_20261106/badges/gold/candidate01/blender_angle.png",
+      "bytes": 476786,
+      "reason": "Unused capture; not a retained model image dependency, material map or owner reference"
+    },
+    {
+      "path": "badge_family_compact_20261106/badges/gold/candidate01/blender_side_right.png",
+      "bytes": 425952,
+      "reason": "Unused capture; not a retained model image dependency, material map or owner reference"
+    },
+    {
+      "path": "badge_family_compact_20261106/badges/gold/candidate01/blender_back.png",
+      "bytes": 469042,
+      "reason": "Unused capture; not a retained model image dependency, material map or owner reference"
+    },
+    {
+      "path": "badge_family_compact_20261106/badges/gold/candidate01/blender_side_left.png",
+      "bytes": 422555,
+      "reason": "Unused capture; not a retained model image dependency, material map or owner reference"
+    },
+    {
+      "path": "badge_family_compact_20261106/badges/gold/candidate01/blender_front.png",
+      "bytes": 464684,
+      "reason": "Unused capture; not a retained model image dependency, material map or owner reference"
+    },
+    {
+      "path": "badge_family_compact_20261106/badges/torch_sunburst/candidate01/blender_angle.png",
+      "bytes": 463210,
+      "reason": "Unused capture; not a retained model image dependency, material map or owner reference"
+    },
+    {
+      "path": "badge_family_compact_20261106/badges/torch_sunburst/candidate01/blender_side_right.png",
+      "bytes": 314308,
+      "reason": "Unused capture; not a retained model image dependency, material map or owner reference"
+    },
+    {
+      "path": "badge_family_compact_20261106/badges/torch_sunburst/candidate01/blender_back.png",
+      "bytes": 414850,
+      "reason": "Unused capture; not a retained model image dependency, material map or owner reference"
+    },
+    {
+      "path": "badge_family_compact_20261106/badges/torch_sunburst/candidate01/blender_side_left.png",
+      "bytes": 315265,
+      "reason": "Unused capture; not a retained model image dependency, material map or owner reference"
+    },
+    {
+      "path": "badge_family_compact_20261106/badges/torch_sunburst/candidate01/blender_front.png",
+      "bytes": 467043,
+      "reason": "Unused capture; not a retained model image dependency, material map or owner reference"
+    },
+    {
+      "path": "badge_family_compact_20261106/badges/sapphire_stairway/candidate01/blender_angle.png",
+      "bytes": 524560,
+      "reason": "Unused capture; not a retained model image dependency, material map or owner reference"
+    },
+    {
+      "path": "badge_family_compact_20261106/badges/sapphire_stairway/candidate01/blender_side_right.png",
+      "bytes": 361133,
+      "reason": "Unused capture; not a retained model image dependency, material map or owner reference"
+    },
+    {
+      "path": "badge_family_compact_20261106/badges/sapphire_stairway/candidate01/blender_back.png",
+      "bytes": 546898,
+      "reason": "Unused capture; not a retained model image dependency, material map or owner reference"
+    },
+    {
+      "path": "badge_family_compact_20261106/badges/sapphire_stairway/candidate01/blender_side_left.png",
+      "bytes": 357332,
+      "reason": "Unused capture; not a retained model image dependency, material map or owner reference"
+    },
+    {
+      "path": "badge_family_compact_20261106/badges/sapphire_stairway/candidate01/blender_front.png",
+      "bytes": 546500,
+      "reason": "Unused capture; not a retained model image dependency, material map or owner reference"
+    },
+    {
+      "path": "badge_family_compact_20261106/badges/zen_balance/candidate01/blender_angle.png",
+      "bytes": 441139,
+      "reason": "Unused capture; not a retained model image dependency, material map or owner reference"
+    },
+    {
+      "path": "badge_family_compact_20261106/badges/zen_balance/candidate01/blender_side_right.png",
+      "bytes": 314012,
+      "reason": "Unused capture; not a retained model image dependency, material map or owner reference"
+    },
+    {
+      "path": "badge_family_compact_20261106/badges/zen_balance/candidate01/blender_back.png",
+      "bytes": 403607,
+      "reason": "Unused capture; not a retained model image dependency, material map or owner reference"
+    },
+    {
+      "path": "badge_family_compact_20261106/badges/zen_balance/candidate01/blender_side_left.png",
+      "bytes": 315007,
+      "reason": "Unused capture; not a retained model image dependency, material map or owner reference"
+    },
+    {
+      "path": "badge_family_compact_20261106/badges/zen_balance/candidate01/blender_front.png",
+      "bytes": 445038,
+      "reason": "Unused capture; not a retained model image dependency, material map or owner reference"
+    },
+    {
+      "path": "badge_family_compact_20261106/badges/iron/candidate01/blender_angle.png",
+      "bytes": 394324,
+      "reason": "Unused capture; not a retained model image dependency, material map or owner reference"
+    },
+    {
+      "path": "badge_family_compact_20261106/badges/iron/candidate01/blender_side_right.png",
+      "bytes": 306832,
+      "reason": "Unused capture; not a retained model image dependency, material map or owner reference"
+    },
+    {
+      "path": "badge_family_compact_20261106/badges/iron/candidate01/blender_back.png",
+      "bytes": 386449,
+      "reason": "Unused capture; not a retained model image dependency, material map or owner reference"
+    },
+    {
+      "path": "badge_family_compact_20261106/badges/iron/candidate01/blender_side_left.png",
+      "bytes": 306170,
+      "reason": "Unused capture; not a retained model image dependency, material map or owner reference"
+    },
+    {
+      "path": "badge_family_compact_20261106/badges/iron/candidate01/blender_front.png",
+      "bytes": 404476,
+      "reason": "Unused capture; not a retained model image dependency, material map or owner reference"
+    },
+    {
+      "path": "badge_family_compact_20261106/badges/star_ascent/candidate01/blender_angle.png",
+      "bytes": 465256,
+      "reason": "Unused capture; not a retained model image dependency, material map or owner reference"
+    },
+    {
+      "path": "badge_family_compact_20261106/badges/star_ascent/candidate01/blender_side_right.png",
+      "bytes": 316435,
+      "reason": "Unused capture; not a retained model image dependency, material map or owner reference"
+    },
+    {
+      "path": "badge_family_compact_20261106/badges/star_ascent/candidate01/blender_back.png",
+      "bytes": 439428,
+      "reason": "Unused capture; not a retained model image dependency, material map or owner reference"
+    },
+    {
+      "path": "badge_family_compact_20261106/badges/star_ascent/candidate01/blender_side_left.png",
+      "bytes": 317838,
+      "reason": "Unused capture; not a retained model image dependency, material map or owner reference"
+    },
+    {
+      "path": "badge_family_compact_20261106/badges/star_ascent/candidate01/blender_front.png",
+      "bytes": 472444,
+      "reason": "Unused capture; not a retained model image dependency, material map or owner reference"
+    },
+    {
+      "path": "badge_family_compact_20261106/badges/frostwing_crystal/candidate01/blender_angle.png",
+      "bytes": 506244,
+      "reason": "Unused capture; not a retained model image dependency, material map or owner reference"
+    },
+    {
+      "path": "badge_family_compact_20261106/badges/frostwing_crystal/candidate01/blender_side_right.png",
+      "bytes": 347799,
+      "reason": "Unused capture; not a retained model image dependency, material map or owner reference"
+    },
+    {
+      "path": "badge_family_compact_20261106/badges/frostwing_crystal/candidate01/blender_back.png",
+      "bytes": 498313,
+      "reason": "Unused capture; not a retained model image dependency, material map or owner reference"
+    },
+    {
+      "path": "badge_family_compact_20261106/badges/frostwing_crystal/candidate01/blender_side_left.png",
+      "bytes": 346882,
+      "reason": "Unused capture; not a retained model image dependency, material map or owner reference"
+    },
+    {
+      "path": "badge_family_compact_20261106/badges/frostwing_crystal/candidate01/blender_front.png",
+      "bytes": 495821,
+      "reason": "Unused capture; not a retained model image dependency, material map or owner reference"
+    },
+    {
+      "path": "badge_family_compact_20261106/badges/aurora_mountain/candidate01/blender_angle.png",
+      "bytes": 534096,
+      "reason": "Unused capture; not a retained model image dependency, material map or owner reference"
+    },
+    {
+      "path": "badge_family_compact_20261106/badges/aurora_mountain/candidate01/blender_side_right.png",
+      "bytes": 321712,
+      "reason": "Unused capture; not a retained model image dependency, material map or owner reference"
+    },
+    {
+      "path": "badge_family_compact_20261106/badges/aurora_mountain/candidate01/blender_back.png",
+      "bytes": 559294,
+      "reason": "Unused capture; not a retained model image dependency, material map or owner reference"
+    },
+    {
+      "path": "badge_family_compact_20261106/badges/aurora_mountain/candidate01/blender_side_left.png",
+      "bytes": 320039,
+      "reason": "Unused capture; not a retained model image dependency, material map or owner reference"
+    },
+    {
+      "path": "badge_family_compact_20261106/badges/aurora_mountain/candidate01/blender_front.png",
+      "bytes": 561891,
+      "reason": "Unused capture; not a retained model image dependency, material map or owner reference"
+    },
+    {
+      "path": "badge_family_compact_20261106/badges/battle_steel/candidate01/blender_angle.png",
+      "bytes": 513513,
+      "reason": "Unused capture; not a retained model image dependency, material map or owner reference"
+    },
+    {
+      "path": "badge_family_compact_20261106/badges/battle_steel/candidate01/blender_side_right.png",
+      "bytes": 347409,
+      "reason": "Unused capture; not a retained model image dependency, material map or owner reference"
+    },
+    {
+      "path": "badge_family_compact_20261106/badges/battle_steel/candidate01/blender_back.png",
+      "bytes": 509948,
+      "reason": "Unused capture; not a retained model image dependency, material map or owner reference"
+    },
+    {
+      "path": "badge_family_compact_20261106/badges/battle_steel/candidate01/blender_side_left.png",
+      "bytes": 346741,
+      "reason": "Unused capture; not a retained model image dependency, material map or owner reference"
+    },
+    {
+      "path": "badge_family_compact_20261106/badges/battle_steel/candidate01/blender_front.png",
+      "bytes": 512804,
+      "reason": "Unused capture; not a retained model image dependency, material map or owner reference"
+    },
+    {
+      "path": "badge_family_compact_20261106/badges/sunrise_path/candidate01/blender_angle.png",
+      "bytes": 474036,
+      "reason": "Unused capture; not a retained model image dependency, material map or owner reference"
+    },
+    {
+      "path": "badge_family_compact_20261106/badges/sunrise_path/candidate01/blender_side_right.png",
+      "bytes": 314956,
+      "reason": "Unused capture; not a retained model image dependency, material map or owner reference"
+    },
+    {
+      "path": "badge_family_compact_20261106/badges/sunrise_path/candidate01/blender_back.png",
+      "bytes": 457877,
+      "reason": "Unused capture; not a retained model image dependency, material map or owner reference"
+    },
+    {
+      "path": "badge_family_compact_20261106/badges/sunrise_path/candidate01/blender_side_left.png",
+      "bytes": 316016,
+      "reason": "Unused capture; not a retained model image dependency, material map or owner reference"
+    },
+    {
+      "path": "badge_family_compact_20261106/badges/sunrise_path/candidate01/blender_front.png",
+      "bytes": 483390,
+      "reason": "Unused capture; not a retained model image dependency, material map or owner reference"
+    },
+    {
+      "path": "badge_family_compact_20261106/badges/tidal_compass/candidate01/blender_angle.png",
+      "bytes": 520169,
+      "reason": "Unused capture; not a retained model image dependency, material map or owner reference"
+    },
+    {
+      "path": "badge_family_compact_20261106/badges/tidal_compass/candidate01/blender_side_right.png",
+      "bytes": 326176,
+      "reason": "Unused capture; not a retained model image dependency, material map or owner reference"
+    },
+    {
+      "path": "badge_family_compact_20261106/badges/tidal_compass/candidate01/blender_back.png",
+      "bytes": 531778,
+      "reason": "Unused capture; not a retained model image dependency, material map or owner reference"
+    },
+    {
+      "path": "badge_family_compact_20261106/badges/tidal_compass/candidate01/blender_side_left.png",
+      "bytes": 324918,
+      "reason": "Unused capture; not a retained model image dependency, material map or owner reference"
+    },
+    {
+      "path": "badge_family_compact_20261106/badges/tidal_compass/candidate01/blender_front.png",
+      "bytes": 536105,
+      "reason": "Unused capture; not a retained model image dependency, material map or owner reference"
+    },
+    {
+      "path": "badge_family_compact_20261106/badges/golden_sands/candidate01/blender_angle.png",
+      "bytes": 472723,
+      "reason": "Unused capture; not a retained model image dependency, material map or owner reference"
+    },
+    {
+      "path": "badge_family_compact_20261106/badges/golden_sands/candidate01/blender_side_right.png",
+      "bytes": 321691,
+      "reason": "Unused capture; not a retained model image dependency, material map or owner reference"
+    },
+    {
+      "path": "badge_family_compact_20261106/badges/golden_sands/candidate01/blender_back.png",
+      "bytes": 467464,
+      "reason": "Unused capture; not a retained model image dependency, material map or owner reference"
+    },
+    {
+      "path": "badge_family_compact_20261106/badges/golden_sands/candidate01/blender_side_left.png",
+      "bytes": 322779,
+      "reason": "Unused capture; not a retained model image dependency, material map or owner reference"
+    },
+    {
+      "path": "badge_family_compact_20261106/badges/golden_sands/candidate01/blender_front.png",
+      "bytes": 479938,
+      "reason": "Unused capture; not a retained model image dependency, material map or owner reference"
+    },
+    {
+      "path": "badge_family_compact_20261106/badges/celestial_orbit/candidate01/blender_angle.png",
+      "bytes": 575514,
+      "reason": "Unused capture; not a retained model image dependency, material map or owner reference"
+    },
+    {
+      "path": "badge_family_compact_20261106/badges/celestial_orbit/candidate01/blender_side_right.png",
+      "bytes": 365551,
+      "reason": "Unused capture; not a retained model image dependency, material map or owner reference"
+    },
+    {
+      "path": "badge_family_compact_20261106/badges/celestial_orbit/candidate01/blender_back.png",
+      "bytes": 601595,
+      "reason": "Unused capture; not a retained model image dependency, material map or owner reference"
+    },
+    {
+      "path": "badge_family_compact_20261106/badges/celestial_orbit/candidate01/blender_side_left.png",
+      "bytes": 363419,
+      "reason": "Unused capture; not a retained model image dependency, material map or owner reference"
+    },
+    {
+      "path": "badge_family_compact_20261106/badges/celestial_orbit/candidate01/blender_front.png",
+      "bytes": 606096,
+      "reason": "Unused capture; not a retained model image dependency, material map or owner reference"
+    },
+    {
+      "path": "mountain_sunburst_claude_20261108/rebuild2/cand05/material_map_misses.png",
+      "bytes": 1146773,
+      "reason": "Unused capture; not a retained model image dependency, material map or owner reference"
+    },
+    {
+      "path": "mountain_sunburst_claude_20261108/rebuild2/cand05/material_map.png",
+      "bytes": 667804,
+      "reason": "Unused capture; not a retained model image dependency, material map or owner reference"
+    },
+    {
+      "path": "mountain_sunburst_claude_20261108/rebuild2/cand04/material_map_misses.png",
+      "bytes": 1146773,
+      "reason": "Unused capture; not a retained model image dependency, material map or owner reference"
+    },
+    {
+      "path": "mountain_sunburst_claude_20261108/rebuild2/cand04/material_map.png",
+      "bytes": 667855,
+      "reason": "Unused capture; not a retained model image dependency, material map or owner reference"
+    },
+    {
+      "path": "mountain_sunburst_claude_20261108/rebuild2/cand03/material_map_misses.png",
+      "bytes": 1153913,
+      "reason": "Unused capture; not a retained model image dependency, material map or owner reference"
+    },
+    {
+      "path": "mountain_sunburst_claude_20261108/rebuild2/cand03/material_map.png",
+      "bytes": 665594,
+      "reason": "Unused capture; not a retained model image dependency, material map or owner reference"
+    }
+  ],
+  "external_dependencies": [
+    "badge_family_compact_20261106/badges/steel/candidate01/source/import/0/color.png",
+    "badge_family_compact_20261106/badges/steel/candidate01/source/import/0/emissive.png",
+    "camp_owl_mountain_sapphire_20261111/amber_owl/candidate03/textures/enamel_color.png",
+    "camp_owl_mountain_sapphire_20261111/amber_owl/candidate03/textures/enamel_emission.png",
+    "camp_owl_mountain_sapphire_20261111/amber_owl/candidate04/textures/enamel_color.png",
+    "camp_owl_mountain_sapphire_20261111/amber_owl/candidate04/textures/enamel_emission.png",
+    "camp_owl_mountain_sapphire_20261111/amber_owl/candidate07/blender/rendered/front.png",
+    "camp_owl_mountain_sapphire_20261111/amber_owl/candidate07/textures/enamelowlamber_color.png",
+    "camp_owl_mountain_sapphire_20261111/amber_owl/candidate07/textures/enamelowlamber_emission.png",
+    "camp_owl_mountain_sapphire_20261111/amber_owl/candidate07/textures/enamelowlblue_color.png",
+    "camp_owl_mountain_sapphire_20261111/amber_owl/candidate07/textures/enamelowlblue_emission.png",
+    "camp_owl_mountain_sapphire_20261111/amber_owl/candidate07/textures/enamelowlcream_color.png",
+    "camp_owl_mountain_sapphire_20261111/amber_owl/candidate07/textures/enamelowlcream_emission.png",
+    "camp_owl_mountain_sapphire_20261111/amber_owl/candidate07/textures/enamelowllemon_color.png",
+    "camp_owl_mountain_sapphire_20261111/amber_owl/candidate07/textures/enamelowllemon_emission.png",
+    "camp_owl_mountain_sapphire_20261111/amber_owl/reference.png",
+    "camp_owl_mountain_sapphire_20261111/campfire_night/candidate07/textures/enamel_color.png",
+    "camp_owl_mountain_sapphire_20261111/campfire_night/candidate07/textures/enamel_emission.png",
+    "camp_owl_mountain_sapphire_20261111/campfire_night/candidate15/textures/enamel_color.png",
+    "camp_owl_mountain_sapphire_20261111/campfire_night/candidate15/textures/enamel_emission.png",
+    "camp_owl_mountain_sapphire_20261111/campfire_night/candidate27/blender/rendered/front.png",
+    "camp_owl_mountain_sapphire_20261111/campfire_night/candidate27/textures/enamelamberfire_color.png",
+    "camp_owl_mountain_sapphire_20261111/campfire_night/candidate27/textures/enamelamberfire_emission.png",
+    "camp_owl_mountain_sapphire_20261111/campfire_night/candidate27/textures/enamelground_color.png",
+    "camp_owl_mountain_sapphire_20261111/campfire_night/candidate27/textures/enamelground_emission.png",
+    "camp_owl_mountain_sapphire_20261111/campfire_night/candidate27/textures/enamelmoonlight_color.png",
+    "camp_owl_mountain_sapphire_20261111/campfire_night/candidate27/textures/enamelmoonlight_emission.png",
+    "camp_owl_mountain_sapphire_20261111/campfire_night/candidate27/textures/enamelmountain_color.png",
+    "camp_owl_mountain_sapphire_20261111/campfire_night/candidate27/textures/enamelmountain_emission.png",
+    "camp_owl_mountain_sapphire_20261111/campfire_night/candidate27/textures/enamelpinelower_color.png",
+    "camp_owl_mountain_sapphire_20261111/campfire_night/candidate27/textures/enamelpinelower_emission.png",
+    "camp_owl_mountain_sapphire_20261111/campfire_night/candidate27/textures/enamelpinemiddle_color.png",
+    "camp_owl_mountain_sapphire_20261111/campfire_night/candidate27/textures/enamelpinemiddle_emission.png",
+    "camp_owl_mountain_sapphire_20261111/campfire_night/candidate27/textures/enamelpinetop_color.png",
+    "camp_owl_mountain_sapphire_20261111/campfire_night/candidate27/textures/enamelpinetop_emission.png",
+    "camp_owl_mountain_sapphire_20261111/campfire_night/candidate27/textures/enamelredfire_color.png",
+    "camp_owl_mountain_sapphire_20261111/campfire_night/candidate27/textures/enamelredfire_emission.png",
+    "camp_owl_mountain_sapphire_20261111/campfire_night/candidate27/textures/enamelsmallpines_color.png",
+    "camp_owl_mountain_sapphire_20261111/campfire_night/candidate27/textures/enamelsmallpines_emission.png",
+    "camp_owl_mountain_sapphire_20261111/campfire_night/candidate27/textures/enamelstone_color.png",
+    "camp_owl_mountain_sapphire_20261111/campfire_night/candidate27/textures/enamelstone_emission.png",
+    "camp_owl_mountain_sapphire_20261111/campfire_night/candidate27/textures/enamelwoodbody_color.png",
+    "camp_owl_mountain_sapphire_20261111/campfire_night/candidate27/textures/enamelwoodbody_emission.png",
+    "camp_owl_mountain_sapphire_20261111/campfire_night/candidate27/textures/enamelwoodend_color.png",
+    "camp_owl_mountain_sapphire_20261111/campfire_night/candidate27/textures/enamelwoodend_emission.png",
+    "camp_owl_mountain_sapphire_20261111/campfire_night/candidate27/textures/enamelyellowfire_color.png",
+    "camp_owl_mountain_sapphire_20261111/campfire_night/candidate27/textures/enamelyellowfire_emission.png",
+    "camp_owl_mountain_sapphire_20261111/campfire_night/candidate27/textures/nightfield_color.png",
+    "camp_owl_mountain_sapphire_20261111/campfire_night/candidate27/textures/nightfield_emission.png",
+    "camp_owl_mountain_sapphire_20261111/campfire_night/candidate28/blender/rendered/front.png",
+    "camp_owl_mountain_sapphire_20261111/campfire_night/candidate28/textures/enamelamberfire_color.png",
+    "camp_owl_mountain_sapphire_20261111/campfire_night/candidate28/textures/enamelamberfire_emission.png",
+    "camp_owl_mountain_sapphire_20261111/campfire_night/candidate28/textures/enamelground_color.png",
+    "camp_owl_mountain_sapphire_20261111/campfire_night/candidate28/textures/enamelground_emission.png",
+    "camp_owl_mountain_sapphire_20261111/campfire_night/candidate28/textures/enamelmoonlight_color.png",
+    "camp_owl_mountain_sapphire_20261111/campfire_night/candidate28/textures/enamelmoonlight_emission.png",
+    "camp_owl_mountain_sapphire_20261111/campfire_night/candidate28/textures/enamelmountain_color.png",
+    "camp_owl_mountain_sapphire_20261111/campfire_night/candidate28/textures/enamelmountain_emission.png",
+    "camp_owl_mountain_sapphire_20261111/campfire_night/candidate28/textures/enamelpinelower_color.png",
+    "camp_owl_mountain_sapphire_20261111/campfire_night/candidate28/textures/enamelpinelower_emission.png",
+    "camp_owl_mountain_sapphire_20261111/campfire_night/candidate28/textures/enamelpinemiddle_color.png",
+    "camp_owl_mountain_sapphire_20261111/campfire_night/candidate28/textures/enamelpinemiddle_emission.png",
+    "camp_owl_mountain_sapphire_20261111/campfire_night/candidate28/textures/enamelpinetop_color.png",
+    "camp_owl_mountain_sapphire_20261111/campfire_night/candidate28/textures/enamelpinetop_emission.png",
+    "camp_owl_mountain_sapphire_20261111/campfire_night/candidate28/textures/enamelredfire_color.png",
+    "camp_owl_mountain_sapphire_20261111/campfire_night/candidate28/textures/enamelredfire_emission.png",
+    "camp_owl_mountain_sapphire_20261111/campfire_night/candidate28/textures/enamelsmallpines_color.png",
+    "camp_owl_mountain_sapphire_20261111/campfire_night/candidate28/textures/enamelsmallpines_emission.png",
+    "camp_owl_mountain_sapphire_20261111/campfire_night/candidate28/textures/enamelstone_color.png",
+    "camp_owl_mountain_sapphire_20261111/campfire_night/candidate28/textures/enamelstone_emission.png",
+    "camp_owl_mountain_sapphire_20261111/campfire_night/candidate28/textures/enamelwoodbody_color.png",
+    "camp_owl_mountain_sapphire_20261111/campfire_night/candidate28/textures/enamelwoodbody_emission.png",
+    "camp_owl_mountain_sapphire_20261111/campfire_night/candidate28/textures/enamelwoodend_color.png",
+    "camp_owl_mountain_sapphire_20261111/campfire_night/candidate28/textures/enamelwoodend_emission.png",
+    "camp_owl_mountain_sapphire_20261111/campfire_night/candidate28/textures/enamelyellowfire_color.png",
+    "camp_owl_mountain_sapphire_20261111/campfire_night/candidate28/textures/enamelyellowfire_emission.png",
+    "camp_owl_mountain_sapphire_20261111/campfire_night/candidate28/textures/nightfield_color.png",
+    "camp_owl_mountain_sapphire_20261111/campfire_night/candidate28/textures/nightfield_emission.png",
+    "camp_owl_mountain_sapphire_20261111/campfire_night/reference.png",
+    "camp_owl_mountain_sapphire_20261111/optics_fit/studio_mip1.exr",
+    "camp_owl_mountain_sapphire_20261111/optics_fit/studio_mip8.exr",
+    "camp_owl_mountain_sapphire_20261111/radiant_mountain/candidate08/textures/enamel_color.png",
+    "camp_owl_mountain_sapphire_20261111/radiant_mountain/candidate08/textures/enamel_emission.png",
+    "camp_owl_mountain_sapphire_20261111/radiant_mountain/reference.png",
+    "camp_owl_mountain_sapphire_20261111/sapphire_teardrop/candidate16/blender/optics/front.png",
+    "camp_owl_mountain_sapphire_20261111/sapphire_teardrop/candidate27/blender/optics/side_right.png",
+    "camp_owl_mountain_sapphire_20261111/sapphire_teardrop/candidate27/textures/gold_brush_roughness.png",
+    "camp_owl_mountain_sapphire_20261111/sapphire_teardrop/reference.png",
+    "coin_standard_20261101/work/original/textures/Rim_brushed_reference_color.png",
+    "coin_standard_20261101/work/original/textures/Rim_brushed_reference_roughness.png",
+    "coin_standard_20261101/work/original/textures/Rim_glint_reference_roughness.png",
+    "coin_standard_20261101/work/original/textures/USDZ_Inset_base_color.png",
+    "coin_standard_20261101/work/original/textures/USDZ_Inset_normal.png",
+    "coin_standard_20261101/work/original/textures/emerald_background_color.png",
+    "coin_standard_20261101/work/original/textures/emerald_background_emission.png",
+    "coin_standard_20261101/work/original/textures/emerald_color.png",
+    "coin_standard_20261101/work/original/textures/emerald_emission.png",
+    "coin_standard_20261101/work/original/textures/gold_color.png",
+    "coin_standard_20261101/work/original/textures/gold_emission.png",
+    "coin_standard_20261101/work/original/textures/soil_color.png",
+    "coin_standard_20261101/work/original/textures/soil_emission.png",
+    "crimson_shield_20261019/textures/channel_color.png",
+    "crimson_shield_20261019/textures/channel_roughness.png",
+    "crimson_shield_20261019/textures/edge_color.png",
+    "crimson_shield_20261019/textures/edge_roughness.png",
+    "crimson_shield_20261019/textures/field_color.png",
+    "crimson_shield_20261019/textures/field_roughness.png",
+    "crimson_shield_20261019/textures/gem_color.png",
+    "crimson_shield_20261019/textures/gem_roughness.png",
+    "crimson_shield_20261019/textures/red_color.png",
+    "crimson_shield_20261019/textures/red_roughness.png",
+    "crimson_shield_20261019/textures/steel_color.png",
+    "crimson_shield_20261019/textures/steel_roughness.png",
+    "emerald_trophy_20261025/preview/ScreenTime/SupportingFiles/Assets.xcassets/Badge3DEnvironment.dataset/badge_studio_1024_rebalanced.exr",
+    "forge_tide_compass_20261103/astral_navigator/candidate03/textures/field_color.png",
+    "forge_tide_compass_20261103/astral_navigator/candidate03/textures/field_emission.png",
+    "forge_tide_compass_20261103/astral_navigator/candidate03/textures/field_roughness.png",
+    "forge_tide_compass_20261103/astral_navigator/candidate03/textures/metal_color.png",
+    "forge_tide_compass_20261103/astral_navigator/candidate03/textures/metal_emission.png",
+    "forge_tide_compass_20261103/astral_navigator/candidate03/textures/metal_roughness.png",
+    "forge_tide_compass_20261103/astral_navigator/reference.png",
+    "golden_storm_fable_20261109/candidate25/textures/art_emission.png",
+    "golden_storm_fable_20261109/candidate25/textures/bolt_emission.png",
+    "golden_storm_fable_20261109/reference/mockup.png",
+    "medallion/silver_medallion_stage_refined.blend",
+    "mountain_sunburst_claude_20261108/clean02/textures/enamel_color.png",
+    "mountain_sunburst_claude_20261108/clean02/textures/enamel_glow.png",
+    "mountain_sunburst_claude_20261108/clean02/textures/enamel_rough.png",
+    "mountain_sunburst_claude_20261108/rebuild/textures/sun_gradient.png",
+    "mountain_sunburst_claude_20261108/rebuild2/textures/sundisc_gradient.png",
+    "mountain_sunburst_claude_20261108/reference/mockup.png",
+    "royal_heart_compass_20261106/amethyst_crown/candidate22/textures/gold_roughness.png",
+    "royal_heart_compass_20261106/amethyst_crown/candidate22/textures/quilted_band_color.png",
+    "royal_heart_compass_20261106/amethyst_crown/candidate22/textures/velvet_fold_color.png",
+    "royal_heart_compass_20261106/amethyst_crown/candidate22/textures/velvet_occlusion.png",
+    "royal_heart_compass_20261106/amethyst_crown/reference.png",
+    "royal_heart_compass_20261106/emerald_crown/candidate15/textures/gold_roughness.png",
+    "royal_heart_compass_20261106/emerald_crown/candidate15/textures/velvet_fold_color.png",
+    "royal_heart_compass_20261106/emerald_crown/candidate15/textures/velvet_normal.png",
+    "royal_heart_compass_20261106/emerald_crown/candidate15/textures/velvet_occlusion.png",
+    "royal_heart_compass_20261106/emerald_crown/reference.png",
+    "royal_heart_compass_20261106/ocean_navigator/candidate14/textures/chart_color.png",
+    "royal_heart_compass_20261106/ocean_navigator/candidate14/textures/chart_metallic.png",
+    "royal_heart_compass_20261106/ocean_navigator/candidate14/textures/chart_roughness.png",
+    "royal_heart_compass_20261106/ocean_navigator/candidate14/textures/gold_color.png",
+    "royal_heart_compass_20261106/ocean_navigator/candidate14/textures/gold_roughness.png",
+    "royal_heart_compass_20261106/ocean_navigator/reference.png",
+    "royal_heart_compass_20261106/ruby_crown/candidate14/textures/gold_roughness.png",
+    "royal_heart_compass_20261106/ruby_crown/candidate14/textures/velvet_normal.png",
+    "royal_heart_compass_20261106/ruby_crown/candidate14/textures/velvet_occlusion.png",
+    "royal_heart_compass_20261106/ruby_crown/candidate15/textures/velvet_fold_color.png",
+    "royal_heart_compass_20261106/ruby_crown/candidate15/textures/velvet_occlusion.png",
+    "royal_heart_compass_20261106/ruby_crown/reference.png",
+    "royal_heart_compass_20261106/ruby_heart/candidate24/review/blender_front.png",
+    "royal_heart_compass_20261106/ruby_heart/candidate24/textures/gold_roughness.png",
+    "royal_heart_compass_20261106/ruby_heart/reference.png",
+    "ruby_heart_claude_20261107/trace/gold_brush_roughness.png",
+    "ruby_heart_gem_20261113/candidate03/blender_front.png",
+    "ruby_heart_gem_20261113/source/studio_linear_mip1.exr",
+    "ruby_heart_gem_20261113/source/studio_linear_mip2.exr",
+    "ruby_heart_gem_20261113/source/studio_linear_mip3.exr",
+    "ruby_heart_gem_20261113/source/studio_linear_mip8.exr",
+    "ruby_heart_smooth_20261112/candidate01/blender_side_right.png",
+    "three_crests_20261027/mountain_crest/candidate04/textures/surface_color.png",
+    "three_crests_20261027/mountain_crest/candidate04/textures/surface_emission.png",
+    "three_crests_20261027/mountain_crest/candidate04/textures/surface_roughness.png",
+    "three_crests_20261027/mountain_crest/reference.png",
+    "three_crests_20261027/winged_sword/candidate06/textures/surface_color.png",
+    "three_crests_20261027/winged_sword/candidate06/textures/surface_emission.png",
+    "three_crests_20261027/winged_sword/candidate06/textures/surface_roughness.png",
+    "three_crests_20261027/winged_sword/reference.png",
+    "treasure_chest_20261113/phase01/candidate30/back.png",
+    "treasure_chest_20261113/reference.png"
+  ]
+}

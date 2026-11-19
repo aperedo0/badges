@@ -1,0 +1,12 @@
+{
+  "continuous_range": [
+    0,
+    60
+  ],
+  "no_partition_gaps": true,
+  "positive_conservative_clearance": {
+    "Chest Front Hasp Barrel": 0.00018203177044134877,
+    "Chest Curved Hasp Tongue": 1.0003068931003882e-05
+  },
+  "all_parts_complete": true
+}

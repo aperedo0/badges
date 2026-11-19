@@ -1,0 +1,542 @@
+[
+  {
+    "name": "Custom gold ocean navigator frame",
+    "mat": "gold",
+    "smooth": true
+  },
+  {
+    "name": "Concentric engraved gold frame",
+    "mat": "gold",
+    "smooth": true
+  },
+  {
+    "name": "Concentric engraved gold frame",
+    "mat": "gold",
+    "smooth": true
+  },
+  {
+    "name": "Concentric engraved gold frame",
+    "mat": "gold",
+    "smooth": true
+  },
+  {
+    "name": "Concentric engraved gold frame",
+    "mat": "gold",
+    "smooth": true
+  },
+  {
+    "name": "Concentric engraved gold frame",
+    "mat": "gold",
+    "smooth": true
+  },
+  {
+    "name": "Concentric engraved gold frame",
+    "mat": "gold",
+    "smooth": true
+  },
+  {
+    "name": "Double sided navy nautical chart body",
+    "mat": "navy",
+    "smooth": false
+  },
+  {
+    "name": "Continuous twisted gold rope",
+    "mat": "gold",
+    "smooth": true
+  },
+  {
+    "name": "Continuous twisted gold rope",
+    "mat": "gold",
+    "smooth": true
+  },
+  {
+    "name": "Fine gold globe latitude",
+    "mat": "gold",
+    "smooth": true
+  },
+  {
+    "name": "Fine gold globe latitude",
+    "mat": "gold",
+    "smooth": true
+  },
+  {
+    "name": "Fine gold globe latitude",
+    "mat": "gold",
+    "smooth": true
+  },
+  {
+    "name": "Fine gold globe latitude",
+    "mat": "gold",
+    "smooth": true
+  },
+  {
+    "name": "Fine gold globe meridian",
+    "mat": "gold_satin",
+    "smooth": true
+  },
+  {
+    "name": "Fine gold globe meridian",
+    "mat": "gold_satin",
+    "smooth": true
+  },
+  {
+    "name": "Fine gold globe meridian",
+    "mat": "gold_satin",
+    "smooth": true
+  },
+  {
+    "name": "Fine gold globe meridian",
+    "mat": "gold_satin",
+    "smooth": true
+  },
+  {
+    "name": "Fine gold globe meridian",
+    "mat": "gold_satin",
+    "smooth": true
+  },
+  {
+    "name": "Fine gold globe meridian",
+    "mat": "gold_satin",
+    "smooth": true
+  },
+  {
+    "name": "Fine gold globe meridian",
+    "mat": "gold_satin",
+    "smooth": true
+  },
+  {
+    "name": "Fine gold globe meridian",
+    "mat": "gold_satin",
+    "smooth": true
+  },
+  {
+    "name": "Fine gold globe meridian",
+    "mat": "gold_satin",
+    "smooth": true
+  },
+  {
+    "name": "Fine gold globe meridian",
+    "mat": "gold_satin",
+    "smooth": true
+  },
+  {
+    "name": "Fine gold globe meridian",
+    "mat": "gold_satin",
+    "smooth": true
+  },
+  {
+    "name": "Fine gold globe meridian",
+    "mat": "gold_satin",
+    "smooth": true
+  },
+  {
+    "name": "Real raised compass 1 blade",
+    "mat": "gold",
+    "smooth": false
+  },
+  {
+    "name": "Real raised compass 2 blade",
+    "mat": "gold",
+    "smooth": false
+  },
+  {
+    "name": "Real raised compass 3 blade",
+    "mat": "gold",
+    "smooth": false
+  },
+  {
+    "name": "Real raised compass 4 blade",
+    "mat": "gold",
+    "smooth": false
+  },
+  {
+    "name": "Real raised compass 5 blade",
+    "mat": "gold",
+    "smooth": false
+  },
+  {
+    "name": "Real raised compass 6 blade",
+    "mat": "gold",
+    "smooth": false
+  },
+  {
+    "name": "Real raised compass 7 blade",
+    "mat": "gold",
+    "smooth": false
+  },
+  {
+    "name": "Real raised compass 8 blade",
+    "mat": "gold",
+    "smooth": false
+  },
+  {
+    "name": "Central deep gold sapphire bezel",
+    "mat": "gold",
+    "smooth": true
+  },
+  {
+    "name": "Central round ocean sapphire",
+    "mat": "CrestGem_Sapphire",
+    "smooth": false
+  },
+  {
+    "name": "Sculpted cardinal gold crest",
+    "mat": "gold",
+    "smooth": false
+  },
+  {
+    "name": "Four cardinal gold ornamental mounts",
+    "mat": "gold",
+    "smooth": true
+  },
+  {
+    "name": "Cardinal pale blue brilliant",
+    "mat": "CrestGem_Ice",
+    "smooth": false
+  },
+  {
+    "name": "Sculpted cardinal gold crest",
+    "mat": "gold",
+    "smooth": false
+  },
+  {
+    "name": "Four cardinal gold ornamental mounts",
+    "mat": "gold",
+    "smooth": true
+  },
+  {
+    "name": "Cardinal pale blue brilliant",
+    "mat": "CrestGem_Ice",
+    "smooth": false
+  },
+  {
+    "name": "Sculpted cardinal gold crest",
+    "mat": "gold",
+    "smooth": false
+  },
+  {
+    "name": "Four cardinal gold ornamental mounts",
+    "mat": "gold",
+    "smooth": true
+  },
+  {
+    "name": "Cardinal pale blue brilliant",
+    "mat": "CrestGem_Ice",
+    "smooth": false
+  },
+  {
+    "name": "Sculpted cardinal gold crest",
+    "mat": "gold",
+    "smooth": false
+  },
+  {
+    "name": "Four cardinal gold ornamental mounts",
+    "mat": "gold",
+    "smooth": true
+  },
+  {
+    "name": "Cardinal pale blue brilliant",
+    "mat": "CrestGem_Ice",
+    "smooth": false
+  },
+  {
+    "name": "Sculpted flowing gold ocean wave",
+    "mat": "gold",
+    "smooth": true
+  },
+  {
+    "name": "Sculpted flowing gold ocean wave",
+    "mat": "gold",
+    "smooth": true
+  },
+  {
+    "name": "Sculpted flowing gold ocean wave",
+    "mat": "gold",
+    "smooth": true
+  },
+  {
+    "name": "Ocean wave curled crest",
+    "mat": "gold",
+    "smooth": true
+  },
+  {
+    "name": "Ocean wave curled crest",
+    "mat": "gold",
+    "smooth": true
+  },
+  {
+    "name": "Sculpted flowing gold ocean wave",
+    "mat": "gold",
+    "smooth": true
+  },
+  {
+    "name": "Sculpted flowing gold ocean wave",
+    "mat": "gold",
+    "smooth": true
+  },
+  {
+    "name": "Sculpted flowing gold ocean wave",
+    "mat": "gold",
+    "smooth": true
+  },
+  {
+    "name": "Ocean wave curled crest",
+    "mat": "gold",
+    "smooth": true
+  },
+  {
+    "name": "Ocean wave curled crest",
+    "mat": "gold",
+    "smooth": true
+  },
+  {
+    "name": "Continuous twisted gold rope",
+    "mat": "gold",
+    "smooth": true
+  },
+  {
+    "name": "Continuous twisted gold rope",
+    "mat": "gold",
+    "smooth": true
+  },
+  {
+    "name": "Fine gold globe latitude",
+    "mat": "gold",
+    "smooth": true
+  },
+  {
+    "name": "Fine gold globe latitude",
+    "mat": "gold",
+    "smooth": true
+  },
+  {
+    "name": "Fine gold globe latitude",
+    "mat": "gold",
+    "smooth": true
+  },
+  {
+    "name": "Fine gold globe latitude",
+    "mat": "gold",
+    "smooth": true
+  },
+  {
+    "name": "Fine gold globe meridian",
+    "mat": "gold_satin",
+    "smooth": true
+  },
+  {
+    "name": "Fine gold globe meridian",
+    "mat": "gold_satin",
+    "smooth": true
+  },
+  {
+    "name": "Fine gold globe meridian",
+    "mat": "gold_satin",
+    "smooth": true
+  },
+  {
+    "name": "Fine gold globe meridian",
+    "mat": "gold_satin",
+    "smooth": true
+  },
+  {
+    "name": "Fine gold globe meridian",
+    "mat": "gold_satin",
+    "smooth": true
+  },
+  {
+    "name": "Fine gold globe meridian",
+    "mat": "gold_satin",
+    "smooth": true
+  },
+  {
+    "name": "Fine gold globe meridian",
+    "mat": "gold_satin",
+    "smooth": true
+  },
+  {
+    "name": "Fine gold globe meridian",
+    "mat": "gold_satin",
+    "smooth": true
+  },
+  {
+    "name": "Fine gold globe meridian",
+    "mat": "gold_satin",
+    "smooth": true
+  },
+  {
+    "name": "Fine gold globe meridian",
+    "mat": "gold_satin",
+    "smooth": true
+  },
+  {
+    "name": "Fine gold globe meridian",
+    "mat": "gold_satin",
+    "smooth": true
+  },
+  {
+    "name": "Fine gold globe meridian",
+    "mat": "gold_satin",
+    "smooth": true
+  },
+  {
+    "name": "Real raised compass 1 blade",
+    "mat": "gold",
+    "smooth": false
+  },
+  {
+    "name": "Real raised compass 2 blade",
+    "mat": "gold",
+    "smooth": false
+  },
+  {
+    "name": "Real raised compass 3 blade",
+    "mat": "gold",
+    "smooth": false
+  },
+  {
+    "name": "Real raised compass 4 blade",
+    "mat": "gold",
+    "smooth": false
+  },
+  {
+    "name": "Real raised compass 5 blade",
+    "mat": "gold",
+    "smooth": false
+  },
+  {
+    "name": "Real raised compass 6 blade",
+    "mat": "gold",
+    "smooth": false
+  },
+  {
+    "name": "Real raised compass 7 blade",
+    "mat": "gold",
+    "smooth": false
+  },
+  {
+    "name": "Real raised compass 8 blade",
+    "mat": "gold",
+    "smooth": false
+  },
+  {
+    "name": "Central deep gold sapphire bezel",
+    "mat": "gold",
+    "smooth": true
+  },
+  {
+    "name": "Central round ocean sapphire",
+    "mat": "CrestGem_Sapphire",
+    "smooth": false
+  },
+  {
+    "name": "Sculpted cardinal gold crest",
+    "mat": "gold",
+    "smooth": false
+  },
+  {
+    "name": "Four cardinal gold ornamental mounts",
+    "mat": "gold",
+    "smooth": true
+  },
+  {
+    "name": "Cardinal pale blue brilliant",
+    "mat": "CrestGem_Ice",
+    "smooth": false
+  },
+  {
+    "name": "Sculpted cardinal gold crest",
+    "mat": "gold",
+    "smooth": false
+  },
+  {
+    "name": "Four cardinal gold ornamental mounts",
+    "mat": "gold",
+    "smooth": true
+  },
+  {
+    "name": "Cardinal pale blue brilliant",
+    "mat": "CrestGem_Ice",
+    "smooth": false
+  },
+  {
+    "name": "Sculpted cardinal gold crest",
+    "mat": "gold",
+    "smooth": false
+  },
+  {
+    "name": "Four cardinal gold ornamental mounts",
+    "mat": "gold",
+    "smooth": true
+  },
+  {
+    "name": "Cardinal pale blue brilliant",
+    "mat": "CrestGem_Ice",
+    "smooth": false
+  },
+  {
+    "name": "Sculpted cardinal gold crest",
+    "mat": "gold",
+    "smooth": false
+  },
+  {
+    "name": "Four cardinal gold ornamental mounts",
+    "mat": "gold",
+    "smooth": true
+  },
+  {
+    "name": "Cardinal pale blue brilliant",
+    "mat": "CrestGem_Ice",
+    "smooth": false
+  },
+  {
+    "name": "Sculpted flowing gold ocean wave",
+    "mat": "gold",
+    "smooth": true
+  },
+  {
+    "name": "Sculpted flowing gold ocean wave",
+    "mat": "gold",
+    "smooth": true
+  },
+  {
+    "name": "Sculpted flowing gold ocean wave",
+    "mat": "gold",
+    "smooth": true
+  },
+  {
+    "name": "Ocean wave curled crest",
+    "mat": "gold",
+    "smooth": true
+  },
+  {
+    "name": "Ocean wave curled crest",
+    "mat": "gold",
+    "smooth": true
+  },
+  {
+    "name": "Sculpted flowing gold ocean wave",
+    "mat": "gold",
+    "smooth": true
+  },
+  {
+    "name": "Sculpted flowing gold ocean wave",
+    "mat": "gold",
+    "smooth": true
+  },
+  {
+    "name": "Sculpted flowing gold ocean wave",
+    "mat": "gold",
+    "smooth": true
+  },
+  {
+    "name": "Ocean wave curled crest",
+    "mat": "gold",
+    "smooth": true
+  },
+  {
+    "name": "Ocean wave curled crest",
+    "mat": "gold",
+    "smooth": true
+  }
+]

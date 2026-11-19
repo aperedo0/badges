@@ -1,0 +1,14 @@
+{
+  "planes": 89,
+  "density": 0.703579962676396,
+  "internal_hits": 3,
+  "exposure": 0.28,
+  "absorption": [
+    8,
+    4.3503597,
+    0.2
+  ],
+  "lighting_only_maps": true,
+  "no_reference_or_appearance_image": true,
+  "native_parity_review_pending": true
+}

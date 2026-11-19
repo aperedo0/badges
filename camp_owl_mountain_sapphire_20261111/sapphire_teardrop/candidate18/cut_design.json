@@ -1,0 +1,8 @@
+{
+  "change": "Measured crown and table planes retained. Twenty four real perimeter facets under the metal setting replace the dense perimeter facets. Metal side walls use angle weighted true geometry normals.",
+  "gem_planes": 38,
+  "gem_triangles": 140,
+  "no_app_changes": true,
+  "no_appearance_texture": true,
+  "blender_review_pending": true
+}

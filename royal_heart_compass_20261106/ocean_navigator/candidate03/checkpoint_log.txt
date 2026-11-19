@@ -1,0 +1,8 @@
+/Users/antonioperedo/Desktop/badges/royal_heart_compass_20261106/save_compact_blend.py:35: DeprecationWarning: 'World.use_nodes' is expected to be removed in Blender 6.0
+  scene.world=bpy.data.worlds.new('Working studio');scene.world.use_nodes=True;scene.world.node_tree.nodes['Background'].inputs[0].default_value=(.1,.12,.15,1);scene.world.node_tree.nodes['Background'].inputs[1].default_value=.5
+Info: Saved as "ocean_navigator_compact.blend"
+{"meshes": 13, "triangles": 283708, "all_asset_textures_packed_byte_identically": true, "packed_textures": {"gold_roughness.png": "d8d40a86eaa6541366024bd130d763ea56ae92a25ed729f9010d566b470aae73", "chart_color.png": "e8b9a888d6fca7a4c7438204d656208d64b8f63b763d6a2fdbdf76e589fb31f1"}, "complete_editable_checkpoint": "/Users/antonioperedo/Desktop/badges/royal_heart_compass_20261106/ocean_navigator/candidate03/source/ocean_navigator_compact.blend", "native_gem_profiles_preserved": true}
+Blender 5.2.2 LTS (hash d13f752e3b9c built 2026-09-15 01:49:19)
+USD import of '/tmp/ocean_navigator_usd_import_xxhc4q_3/badge.usdc' took 457.74 ms
+
+Blender quit

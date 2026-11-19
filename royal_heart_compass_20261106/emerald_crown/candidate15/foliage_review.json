@@ -1,0 +1,9 @@
+{
+  "source": "candidate14",
+  "closed_separately_sculpted_leaves": 28,
+  "actual_reference_silhouette_fit": true,
+  "no_appearance_photo_as_gold_material": true,
+  "casting_not_reintroduced": true,
+  "native_review_pending": true,
+  "cloth_ao_needs_refresh": true
+}

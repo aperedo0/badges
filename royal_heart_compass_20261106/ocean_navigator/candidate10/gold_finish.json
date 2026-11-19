@@ -1,0 +1,16 @@
+{
+  "intrinsic_hue_preserved": true,
+  "baked_lighting": false,
+  "normal_maps_used": false,
+  "metallic_value": 1,
+  "texture_size": 1024,
+  "neutral_color_factor_range": [
+    0.86,
+    1.1
+  ],
+  "roughness_range": [
+    0.21,
+    0.31
+  ],
+  "purpose": "Fine worn gold surface seen in the reference. Actual glints remain light reflections."
+}

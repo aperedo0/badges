@@ -1,0 +1,13 @@
+{
+  "target": "Lab Chest Lower Rim",
+  "mesh": "Locally forged lower rim.002",
+  "material": "Forged iron balanced surface character",
+  "weathering": true,
+  "edge": true,
+  "hammer_fields_and_strength_unchanged": true,
+  "knob_geometry_unchanged": true,
+  "source": "05_combined",
+  "reference_RGB_not_copied": true,
+  "mark_height_distance": 0.00028,
+  "large_lap_normal_strength": 0.25
+}

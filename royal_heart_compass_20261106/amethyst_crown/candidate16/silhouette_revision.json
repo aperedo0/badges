@@ -1,0 +1,11 @@
+{
+  "source": "candidate11",
+  "base_radius_before": 2.48,
+  "base_radius_after": 2.05,
+  "cushion_top_gap": 0.6,
+  "cushion_shoulder_radial_factor": "1+0.46*sin(pi*s)^1.2",
+  "fold_amplitude": 0.12,
+  "measured_arches": true,
+  "reference_arch_peak_near_hub_height": true,
+  "notes": "Upper gold leaves are not arch peaks. Earlier claimed arch peak at imageY180was a mistaken reading of the finial leaves. Actual arch shoulders are imageY280to300and connect into imageY286hub."
+}

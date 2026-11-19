@@ -1,0 +1,19 @@
+{
+  "source": "V medium anatomy; flow guided flat broken fiber plates replace the weak internal band",
+  "seed": 161123,
+  "medium_fibers": 300,
+  "fine_fibers": 620,
+  "core_fibers": 115,
+  "knot_center": [
+    -1.31,
+    -1.35
+  ],
+  "knot_size_preserved": true,
+  "existing_fracture_centers_preserved": true,
+  "horizontal_core_opening_y": -1.2935442176870748,
+  "material": "V unchanged for structural comparison",
+  "normal_split": 0.0038,
+  "height_min": -0.05089776335902929,
+  "delta_min": -0.010512738953226193,
+  "delta_max": 0.01078374706766265
+}

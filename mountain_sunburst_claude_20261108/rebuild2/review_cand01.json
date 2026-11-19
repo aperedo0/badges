@@ -1,0 +1,77 @@
+{
+ "name": "Radiant Mountain Sunburst",
+ "mockup": "/Users/antonioperedo/Desktop/badges/mountain_sunburst_claude_20261108/reference/mockup.png",
+ "mockup_box": [
+  653.5,
+  15,
+  1176
+ ],
+ "build_front": "/Users/antonioperedo/Desktop/badges/mountain_sunburst_claude_20261108/rebuild2/cand01/app/front.png",
+ "build_box": [
+  603.0,
+  360.2,
+  776.6
+ ],
+ "poses": {
+  "early turn": "/Users/antonioperedo/Desktop/badges/mountain_sunburst_claude_20261108/rebuild2/cand01/app/early_turn.png",
+  "45 degrees": "/Users/antonioperedo/Desktop/badges/mountain_sunburst_claude_20261108/rebuild2/cand01/app/turn45.png",
+  "left side": "/Users/antonioperedo/Desktop/badges/mountain_sunburst_claude_20261108/rebuild2/cand01/app/side_left.png",
+  "135 degrees": "/Users/antonioperedo/Desktop/badges/mountain_sunburst_claude_20261108/rebuild2/cand01/app/turn135.png",
+  "back": "/Users/antonioperedo/Desktop/badges/mountain_sunburst_claude_20261108/rebuild2/cand01/app/back.png",
+  "225 degrees": "/Users/antonioperedo/Desktop/badges/mountain_sunburst_claude_20261108/rebuild2/cand01/app/turn225.png",
+  "right side": "/Users/antonioperedo/Desktop/badges/mountain_sunburst_claude_20261108/rebuild2/cand01/app/side_right.png",
+  "315 degrees": "/Users/antonioperedo/Desktop/badges/mountain_sunburst_claude_20261108/rebuild2/cand01/app/turn315.png"
+ },
+ "regions": [
+  [
+   "upper left",
+   -0.56,
+   -0.01,
+   0.02,
+   0.37
+  ],
+  [
+   "upper right",
+   -0.02,
+   -0.01,
+   0.56,
+   0.37
+  ],
+  [
+   "middle left",
+   -0.56,
+   0.31,
+   0.02,
+   0.69
+  ],
+  [
+   "middle right",
+   -0.02,
+   0.31,
+   0.56,
+   0.69
+  ],
+  [
+   "lower left",
+   -0.56,
+   0.63,
+   0.02,
+   1.01
+  ],
+  [
+   "lower right",
+   -0.02,
+   0.63,
+   0.56,
+   1.01
+  ]
+ ],
+ "intended": [
+  "The badge is a 3D object that turns on the app's Home screen, so its back and sides must look finished too.",
+  "The yellows (sun, rays, flanks, the top spike's inner yellow) are pale lemon by the owner's choice, because the app cannot show the mockup's bright lemon.",
+  "Whites (snow, clouds) show as a light grey of about 0.85: anything brighter glows in the app.",
+  "The flank gradient, the red wedges' salmon edges and the lighter band inside each gold line are painted shading and are not reproduced.",
+  "The sun carries its look by its gradient and a soft sheen rather than the mockup's painted glare."
+ ],
+ "checklist": "/Users/antonioperedo/Desktop/badges/mountain_sunburst_claude_20261108/review/checklist.md"
+}

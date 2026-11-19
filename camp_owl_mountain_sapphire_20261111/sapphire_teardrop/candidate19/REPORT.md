@@ -1,0 +1,1 @@
+Rear table slope test rejected. The actual Blender front render introduced dark lower facets without restoring the desired cyan color. Preserve the model and render for diagnosis. The simpler symmetric candidate18 remains the working choice. No simulator or app changes were made.

@@ -1,0 +1,7 @@
+{
+  "source": "AW_depth_hierarchy",
+  "change": "Roughness floor on smoother existing raised wood only",
+  "floor": 0.69,
+  "max_added_roughness": 0.07986664772033691,
+  "geometry_pigment_normal_light_unchanged": true
+}

@@ -1,0 +1,4 @@
+{"texture_px": 1024, "materials": {
+ "Enamel": {"roughness": 0.4, "max_display": 0.92},
+ "Pearl": {"roughness": 0.3, "max_display": 0.88},
+ "Bolt": {"roughness": 0.3, "max_display": 0.95, "exclude_gold": false}}}

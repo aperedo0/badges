@@ -1,0 +1,18 @@
+{
+  "target": "Lab Chest Lower Rim",
+  "mesh": "Locally forged lower rim.001",
+  "material": "Forged iron E layered",
+  "geometry_and_existing_height_unchanged": true,
+  "clean_srgb": "#C4C6C6",
+  "clean_linear": [
+    0.5520114015120001,
+    0.5647115057049292,
+    0.5647115057049292
+  ],
+  "layers": [
+    "Clean conductor",
+    "Blackened conductor",
+    "Opaque dielectric oxide"
+  ],
+  "masks": "Independent oxide, intermittent wear with actual chip boost, roughness"
+}

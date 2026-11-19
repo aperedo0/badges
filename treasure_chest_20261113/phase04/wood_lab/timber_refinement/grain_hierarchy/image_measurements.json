@@ -1,0 +1,149 @@
+{
+  "reference": {
+    "profiles": [
+      {
+        "column_fraction": 0.08,
+        "visible_dark_channel_count": 11,
+        "spacing_fraction_of_region_height": [
+          0.05364583333333334,
+          0.08020833333333333,
+          0.0953125
+        ],
+        "dark_channel_width_fraction_of_region_height": [
+          0.011811807388754994,
+          0.018142527335091044,
+          0.02274446665192471
+        ]
+      },
+      {
+        "column_fraction": 0.2,
+        "visible_dark_channel_count": 14,
+        "spacing_fraction_of_region_height": [
+          0.05625,
+          0.0625,
+          0.07708333333333334
+        ],
+        "dark_channel_width_fraction_of_region_height": [
+          0.014107583688888307,
+          0.021529853289791408,
+          0.04124739753233263
+        ]
+      },
+      {
+        "column_fraction": 0.3,
+        "visible_dark_channel_count": 11,
+        "spacing_fraction_of_region_height": [
+          0.04895833333333334,
+          0.084375,
+          0.109375
+        ],
+        "dark_channel_width_fraction_of_region_height": [
+          0.016288845832113933,
+          0.017157494774009054,
+          0.026469825868980893
+        ]
+      }
+    ],
+    "weighted_grain_within_25_degrees_horizontal": 0.7647719913337189,
+    "visible_dark_fraction": 0.3703318091582591,
+    "limits": "These are lit image proxies in the common lower wood region, not physical raised area, depth, roughness or intrinsic color."
+  },
+  "layered_H": {
+    "profiles": [
+      {
+        "column_fraction": 0.08,
+        "visible_dark_channel_count": 12,
+        "spacing_fraction_of_region_height": [
+          0.042708333333333334,
+          0.05,
+          0.08958333333333333
+        ],
+        "dark_channel_width_fraction_of_region_height": [
+          0.011300485875332004,
+          0.015071489916205306,
+          0.018643291600708496
+        ]
+      },
+      {
+        "column_fraction": 0.2,
+        "visible_dark_channel_count": 12,
+        "spacing_fraction_of_region_height": [
+          0.051041666666666666,
+          0.075,
+          0.09375
+        ],
+        "dark_channel_width_fraction_of_region_height": [
+          0.01731558977160988,
+          0.0230374787648081,
+          0.03955186771969307
+        ]
+      },
+      {
+        "column_fraction": 0.3,
+        "visible_dark_channel_count": 13,
+        "spacing_fraction_of_region_height": [
+          0.046875,
+          0.06875,
+          0.08125
+        ],
+        "dark_channel_width_fraction_of_region_height": [
+          0.013948010261966045,
+          0.021204057157700025,
+          0.032975169402599216
+        ]
+      }
+    ],
+    "weighted_grain_within_25_degrees_horizontal": 0.4419714671813885,
+    "visible_dark_fraction": 0.3895775950148986,
+    "limits": "These are lit image proxies in the common lower wood region, not physical raised area, depth, roughness or intrinsic color."
+  },
+  "current_P": {
+    "profiles": [
+      {
+        "column_fraction": 0.08,
+        "visible_dark_channel_count": 7,
+        "spacing_fraction_of_region_height": [
+          0.05520833333333333,
+          0.08125,
+          0.21354166666666669
+        ],
+        "dark_channel_width_fraction_of_region_height": [
+          0.009836058310527147,
+          0.010011415003495354,
+          0.01512711668820721
+        ]
+      },
+      {
+        "column_fraction": 0.2,
+        "visible_dark_channel_count": 3,
+        "spacing_fraction_of_region_height": [
+          0.09479166666666666,
+          0.1,
+          0.10520833333333333
+        ],
+        "dark_channel_width_fraction_of_region_height": [
+          0.009406586017867487,
+          0.009695894718733437,
+          0.013732925892854258
+        ]
+      },
+      {
+        "column_fraction": 0.3,
+        "visible_dark_channel_count": 2,
+        "spacing_fraction_of_region_height": [
+          0.03125,
+          0.03125,
+          0.03125
+        ],
+        "dark_channel_width_fraction_of_region_height": [
+          0.011404446289600682,
+          0.01252244346401487,
+          0.013640440638429056
+        ]
+      }
+    ],
+    "weighted_grain_within_25_degrees_horizontal": 0.645110191908862,
+    "visible_dark_fraction": 0.16425738227787123,
+    "limits": "These are lit image proxies in the common lower wood region, not physical raised area, depth, roughness or intrinsic color."
+  }
+}

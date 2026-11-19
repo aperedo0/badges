@@ -1,0 +1,50 @@
+{
+  "status": "diagnostic_only_not_native",
+  "actual_geometry_and_light_unchanged": true,
+  "homogeneous_medium_and_microfacet_exit_integral": true,
+  "no_reference_color_map": true,
+  "variants": [
+    [
+      "Current native22 approximation",
+      0.3621895702650112,
+      0.9,
+      0,
+      0.434211563
+    ],
+    [
+      "Actual volume only",
+      0.12,
+      0,
+      0.16,
+      1.2
+    ],
+    [
+      "Subtle soft transmission",
+      0.25,
+      0.15,
+      0.16,
+      0.8
+    ],
+    [
+      "Rough internal exits",
+      0.2,
+      0.35,
+      0.24,
+      0.8
+    ],
+    [
+      "Clearer body",
+      0.15,
+      0.25,
+      0.32,
+      0.9
+    ],
+    [
+      "Stronger volume only",
+      0.4,
+      0,
+      0.1,
+      1.2
+    ]
+  ]
+}

@@ -1,0 +1,5 @@
+{
+  "wall_normals": "True outward curve normals constant through depth. Removes the artificial front to back barrel normal sweep that produced vertical stripes.",
+  "grass": "Planar face normals on the seven narrow gold strokes, with real geometry retained and the moderated FineGold finish.",
+  "native_review_pending": true
+}

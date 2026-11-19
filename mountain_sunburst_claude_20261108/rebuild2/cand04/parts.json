@@ -1,0 +1,279 @@
+{
+ "units": {
+  "S": 0.004694229112833764,
+  "axis": 653.5,
+  "top": 15.0,
+  "width_px": 1312,
+  "height_px": 1199
+ },
+ "box": [
+  81,
+  15,
+  1227,
+  1177
+ ],
+ "parts": [
+  {
+   "name": "core",
+   "base": 0.03,
+   "materials": [
+    "Side"
+   ],
+   "triangles": 828,
+   "front": 102
+  },
+  {
+   "name": "background",
+   "base": 0.06,
+   "materials": [
+    "Red",
+    "Side"
+   ],
+   "triangles": 10320,
+   "front": 1281
+  },
+  {
+   "name": "star",
+   "base": 0.10359756197405859,
+   "materials": [
+    "Gold",
+    "Lemon",
+    "Side"
+   ],
+   "triangles": 30072,
+   "front": 4221
+  },
+  {
+   "name": "ring",
+   "base": 0.1006570419812273,
+   "materials": [
+    "GoldRing",
+    "Side"
+   ],
+   "triangles": 5856,
+   "front": 1326
+  },
+  {
+   "name": "blade_top",
+   "base": 0.16287976050805678,
+   "materials": [
+    "Gold",
+    "Lemon",
+    "Side"
+   ],
+   "triangles": 2844,
+   "front": 756
+  },
+  {
+   "name": "blade_diag_left",
+   "base": 0.1710794664748889,
+   "materials": [
+    "Gold",
+    "Lemon",
+    "Side"
+   ],
+   "triangles": 2940,
+   "front": 777
+  },
+  {
+   "name": "blade_diag_right",
+   "base": 0.1710794664748889,
+   "materials": [
+    "Gold",
+    "Lemon",
+    "Side"
+   ],
+   "triangles": 2932,
+   "front": 776
+  },
+  {
+   "name": "blade_side_left",
+   "base": 0.1792052030832181,
+   "materials": [
+    "Gold",
+    "Lemon",
+    "Side"
+   ],
+   "triangles": 2496,
+   "front": 627
+  },
+  {
+   "name": "blade_side_right",
+   "base": 0.1792052030832181,
+   "materials": [
+    "Gold",
+    "Lemon",
+    "Side"
+   ],
+   "triangles": 2484,
+   "front": 624
+  },
+  {
+   "name": "sun",
+   "base": 0.2261606008437502,
+   "materials": [
+    "Gold",
+    "Side",
+    "SunDisc"
+   ],
+   "triangles": 5648,
+   "front": 1768
+  },
+  {
+   "name": "mountain_side_left",
+   "base": 0.2781169464164355,
+   "materials": [
+    "Gold",
+    "Royal",
+    "Side"
+   ],
+   "triangles": 2276,
+   "front": 502
+  },
+  {
+   "name": "mountain_side_left_snow",
+   "base": 0.31466436501563866,
+   "materials": [
+    "Gold",
+    "Side",
+    "Snow",
+    "SnowLavender"
+   ],
+   "triangles": 1292,
+   "front": 466
+  },
+  {
+   "name": "mountain_side_right",
+   "base": 0.2781169464164355,
+   "materials": [
+    "Gold",
+    "Royal",
+    "Side"
+   ],
+   "triangles": 2292,
+   "front": 504
+  },
+  {
+   "name": "mountain_side_right_snow",
+   "base": 0.31466436501563866,
+   "materials": [
+    "Gold",
+    "Side",
+    "Snow",
+    "SnowLavender"
+   ],
+   "triangles": 1032,
+   "front": 366
+  },
+  {
+   "name": "mountain_central",
+   "base": 0.3201330481296736,
+   "materials": [
+    "Gold",
+    "Navy",
+    "Side",
+    "Steel",
+    "Teal"
+   ],
+   "triangles": 4496,
+   "front": 1042
+  },
+  {
+   "name": "mountain_central_snow",
+   "base": 0.35667422607338356,
+   "materials": [
+    "Gold",
+    "Side",
+    "Snow",
+    "SnowLavender"
+   ],
+   "triangles": 1224,
+   "front": 465
+  },
+  {
+   "name": "mountain_central_chevron",
+   "base": 0.3566998574923381,
+   "materials": [
+    "Gold",
+    "Navy",
+    "Side"
+   ],
+   "triangles": 780,
+   "front": 267
+  },
+  {
+   "name": "lower_plate",
+   "base": 0.37320914663710214,
+   "materials": [
+    "Cloud",
+    "GoldLower",
+    "Side"
+   ],
+   "triangles": 14660,
+   "front": 4453
+  },
+  {
+   "name": "gem",
+   "base": 0.42391714164400685,
+   "materials": [
+    "Gem"
+   ],
+   "triangles": 80,
+   "front": 8
+  },
+  {
+   "name": "frame",
+   "base": 0.43991714164400686,
+   "materials": [
+    "Gold",
+    "Side"
+   ],
+   "triangles": 728,
+   "front": 307
+  }
+ ],
+ "order": [
+  "core",
+  "background",
+  "star",
+  "ring",
+  "blade_top",
+  "blade_diag_left",
+  "blade_diag_right",
+  "blade_side_left",
+  "blade_side_right",
+  "sun",
+  "mountain_side_left",
+  "mountain_side_left_snow",
+  "mountain_side_right",
+  "mountain_side_right_snow",
+  "mountain_central",
+  "mountain_central_snow",
+  "mountain_central_chevron",
+  "lower_plate",
+  "gem",
+  "frame"
+ ],
+ "validate_order": [
+  "core",
+  "background",
+  "star",
+  "ring",
+  "blade_top",
+  "blade_diag_left",
+  "blade_diag_right",
+  "blade_side_left",
+  "blade_side_right",
+  "sun",
+  "mountain_side_left",
+  "mountain_side_left_snow",
+  "mountain_side_right",
+  "mountain_side_right_snow",
+  "mountain_central",
+  "mountain_central_snow",
+  "mountain_central_chevron",
+  "lower_plate",
+  "gem",
+  "frame"
+ ]
+}

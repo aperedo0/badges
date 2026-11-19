@@ -1,0 +1,16 @@
+{
+  "passes_verified": [
+    "Iron_ExposedBlend",
+    "Iron_OxideCoverage",
+    "Iron_RoughBare",
+    "Iron_GeometryNormal",
+    "Iron_FinalNormal",
+    "Iron_SurfaceAlpha"
+  ],
+  "surface_alpha_valid_constant_one": true,
+  "raw_normals_finite_and_normalized": true,
+  "wear_oxide_and_roughness_nonempty_variable_signals": true,
+  "production_shader_unchanged": true,
+  "scope_pixels": 229375,
+  "finding": "No matching abrupt wear, oxide, roughness or normal boundary in the enlarged crop at the highlight termination; compare source shape while preserving the material."
+}

@@ -1,0 +1,16 @@
+{
+  "actual_model_verified": true,
+  "visible_gallery_heading_verified": true,
+  "expected_badge": "Emerald Crown",
+  "capture_version": 5,
+  "sha256": "70746919b8001d737798457b2169efb3b8754769dd0e91dcbc2c15cd4e62986d",
+  "completed_poses": [
+    "front",
+    "early_turn",
+    "side_left",
+    "back",
+    "side_right",
+    "full_turn"
+  ],
+  "all_six_measured_poses_complete": true
+}

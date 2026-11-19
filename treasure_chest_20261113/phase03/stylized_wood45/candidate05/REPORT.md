@@ -1,0 +1,13 @@
+Same test plank, localized carved timber and aging refinement
+
+The owner says the wood direction is closer and requests more solid carved timber depth while preserving the current reddish brown color and existing geometry. Sample5starts from sample4actual packed albedo, roughness and saved physical height. No shader restart, new image generation, photograph overlay or global noise layer. Sample4is preserved as backup.
+
+Main virtual relief is strengthened25percent, tangent normal cap55degrees. Five authored soft resting patches quiet about10percent of the height field, with matching intrinsic pigment restoration so filled grooves do not leave drawn dark lines. The knot relief is reduced12percent relative to its surroundings without moving it. Four tapered fractures and three shallow asymmetric chips are authored at specific plank coordinates. New damage covers about1percent of the board, with shallow compressed areas and mixed depths rather than uniform carving. All changes affect the same height field before normal derivation.
+
+The prior reddish brown pigment stays mostly exact. Only actual new cuts and the deepest existing grooves are darkened in their own hue. There is no orange or saturation increase. Roughness stays0.62through0.85, with slightly rougher cuts and restrained smoother resting areas. Metallic0, specular level0.25, coat0, emission0. Maximum virtual height recession is about0.0563units including the new cuts. This is material bump relief, not real displacement, silhouette change, occlusion or groove shadow geometry. Actual render depth and style still require visual judgment.
+
+Exactly28lower front body polygons receive the independent material. All155model vertex, triangle and original corner normal hashes and other154material sets stay exact. Other planks, gray metal, rig controls and parents are unchanged. Named UV and three packed2048by768development images remain. Source4and construction43are preserved. No app code, simulator or timer change.
+
+Actual Blender neutral, warm reference style, normal control and turning renders are underway. Warm colors and powers are temporary and must restore to the neutral studio with render_state_proof.json before saving. This is an approximate reference lighting comparison, not a measured replica. Independent scoped material review and owner approval are pending. No transfer to other wood or final chest completion is claimed.
+
+All9actual Blender renders completed. The temporary lighting and camera restore proof passes. The owner explicitly requested owner review instead of an agent after a material switch, so no fresh agent visual review was run on this sample. Current sample is saved, with the previous material preserved, and work stops awaiting owner opinion.

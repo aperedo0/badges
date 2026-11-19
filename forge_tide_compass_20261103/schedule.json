@@ -1,0 +1,82 @@
+{
+  "version": 1,
+  "thread_id": "01a16b8e-9f81-76d1-8bd7-d0a939464547",
+  "workspace": "/Users/antonioperedo/Desktop/badges",
+  "status": "complete",
+  "phase": "work",
+  "block": 6,
+  "started_epoch": 1793694704.068939,
+  "deadline_epoch": null,
+  "work_until_epoch": 1793712210.36004,
+  "break_until_epoch": 1793710313.3775392,
+  "busy_until_epoch": 0,
+  "heartbeat_epoch": 1793710410.5283148,
+  "checkpoint_seq": 24,
+  "active_badge": "astral_navigator",
+  "next_action": "Owner review in the separate badge preview",
+  "badges": {
+    "ember_forge": {
+      "status": "done",
+      "candidate": "/Users/antonioperedo/Desktop/badges/forge_tide_compass_20261103/ember_forge/candidate02",
+      "reference": "/Users/antonioperedo/Desktop/badges/forge_tide_compass_20261103/ember_forge/reference.png",
+      "blend": "/Users/antonioperedo/Desktop/badges/forge_tide_compass_20261103/ember_forge/candidate02/source/ember_forge.blend",
+      "artifacts": {
+        "blend": "/Users/antonioperedo/Desktop/badges/forge_tide_compass_20261103/ember_forge/source/ember_forge.blend",
+        "usdz": "/Users/antonioperedo/Desktop/badges/forge_tide_compass_20261103/ember_forge/mobile/ember_forge_badge_mobile.usdz",
+        "report": "/Users/antonioperedo/Desktop/badges/forge_tide_compass_20261103/ember_forge/REPORT.md",
+        "comparison": "/Users/antonioperedo/Desktop/badges/forge_tide_compass_20261103/ember_forge/candidate02/review/comparison.png",
+        "front": "/Users/antonioperedo/Desktop/badges/forge_tide_compass_20261103/ember_forge/candidate02/review/front.png",
+        "back": "/Users/antonioperedo/Desktop/badges/forge_tide_compass_20261103/ember_forge/candidate02/review/back.png",
+        "left": "/Users/antonioperedo/Desktop/badges/forge_tide_compass_20261103/ember_forge/candidate02/review/side_left.png",
+        "right": "/Users/antonioperedo/Desktop/badges/forge_tide_compass_20261103/ember_forge/candidate02/review/side_right.png",
+        "turn": "/Users/antonioperedo/Desktop/badges/forge_tide_compass_20261103/ember_forge/candidate02/review/full_turn.mp4"
+      },
+      "reviewed": true
+    },
+    "tidal_compass": {
+      "status": "done",
+      "candidate": "/Users/antonioperedo/Desktop/badges/forge_tide_compass_20261103/tidal_compass/candidate03",
+      "reference": "/Users/antonioperedo/Desktop/badges/forge_tide_compass_20261103/tidal_compass/reference.png",
+      "blend": "/Users/antonioperedo/Desktop/badges/forge_tide_compass_20261103/tidal_compass/candidate03/source/tidal_compass.blend",
+      "artifacts": {
+        "blend": "/Users/antonioperedo/Desktop/badges/forge_tide_compass_20261103/tidal_compass/source/tidal_compass.blend",
+        "usdz": "/Users/antonioperedo/Desktop/badges/forge_tide_compass_20261103/tidal_compass/mobile/tidal_compass_badge_mobile.usdz",
+        "report": "/Users/antonioperedo/Desktop/badges/forge_tide_compass_20261103/tidal_compass/REPORT.md",
+        "comparison": "/Users/antonioperedo/Desktop/badges/forge_tide_compass_20261103/tidal_compass/candidate03/review/comparison.png",
+        "front": "/Users/antonioperedo/Desktop/badges/forge_tide_compass_20261103/tidal_compass/candidate03/review/front.png",
+        "back": "/Users/antonioperedo/Desktop/badges/forge_tide_compass_20261103/tidal_compass/candidate03/review/back.png",
+        "left": "/Users/antonioperedo/Desktop/badges/forge_tide_compass_20261103/tidal_compass/candidate03/review/side_left.png",
+        "right": "/Users/antonioperedo/Desktop/badges/forge_tide_compass_20261103/tidal_compass/candidate03/review/side_right.png",
+        "turn": "/Users/antonioperedo/Desktop/badges/forge_tide_compass_20261103/tidal_compass/candidate03/review/full_turn.mp4"
+      },
+      "reviewed": true
+    },
+    "astral_navigator": {
+      "status": "done",
+      "candidate": "/Users/antonioperedo/Desktop/badges/forge_tide_compass_20261103/astral_navigator/candidate03",
+      "reference": "/Users/antonioperedo/Desktop/badges/forge_tide_compass_20261103/astral_navigator/reference.png",
+      "blend": "/Users/antonioperedo/Desktop/badges/forge_tide_compass_20261103/astral_navigator/candidate03/source/astral_navigator.blend",
+      "artifacts": {
+        "blend": "/Users/antonioperedo/Desktop/badges/forge_tide_compass_20261103/astral_navigator/source/astral_navigator.blend",
+        "usdz": "/Users/antonioperedo/Desktop/badges/forge_tide_compass_20261103/astral_navigator/mobile/astral_navigator_badge_mobile.usdz",
+        "report": "/Users/antonioperedo/Desktop/badges/forge_tide_compass_20261103/astral_navigator/REPORT.md",
+        "comparison": "/Users/antonioperedo/Desktop/badges/forge_tide_compass_20261103/astral_navigator/candidate03/review/comparison.png",
+        "front": "/Users/antonioperedo/Desktop/badges/forge_tide_compass_20261103/astral_navigator/candidate03/review/front.png",
+        "back": "/Users/antonioperedo/Desktop/badges/forge_tide_compass_20261103/astral_navigator/candidate03/review/back.png",
+        "left": "/Users/antonioperedo/Desktop/badges/forge_tide_compass_20261103/astral_navigator/candidate03/review/side_left.png",
+        "right": "/Users/antonioperedo/Desktop/badges/forge_tide_compass_20261103/astral_navigator/candidate03/review/side_right.png",
+        "turn": "/Users/antonioperedo/Desktop/badges/forge_tide_compass_20261103/astral_navigator/candidate03/review/full_turn.mp4"
+      },
+      "reviewed": true
+    }
+  },
+  "last_queue_basis": [
+    "ready",
+    5,
+    22,
+    1793710314262841591
+  ],
+  "last_queue_epoch": 1793710313.527102,
+  "had_outage": false,
+  "completed_epoch": 1793710694.2725089
+}

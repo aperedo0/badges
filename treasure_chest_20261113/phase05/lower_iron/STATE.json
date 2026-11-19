@@ -1,0 +1,11 @@
+{
+  "selected": "09_pitted_iron",
+  "live_file": "/Users/antonioperedo/Desktop/badges/treasure_chest_20261113/phase05/lower_iron/09_pitted_iron/master.blend",
+  "scope": "Only existing bottom iron rim beneath the approved plank",
+  "owner_review_pending": true,
+  "wood_benchmark": "BC_final_polish, provisionally approved",
+  "baseline_git": "2ae680c",
+  "work_active": false,
+  "background_jobs_running": false,
+  "next": "Owner review before further iron refinement or transfer"
+}

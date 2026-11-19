@@ -1,0 +1,16 @@
+{
+  "expected": "Ocean Navigator",
+  "observed": [
+    {
+      "name": "Ruby Heart",
+      "frame": {
+        "height": 36,
+        "width": 155.66666666666663,
+        "y": 335.55,
+        "x": 123.16666666666667
+      }
+    }
+  ],
+  "epoch": 1794105815.667375,
+  "visible_gallery_heading_verified": false
+}

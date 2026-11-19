@@ -1,0 +1,9 @@
+Owner detail corrections, November 13
+
+The owner identified the upper corner armor, feet, hanging latch, end crown tab and ring handle hood as incorrect, and requested all rivet placements corrected.
+
+Reference diagnostic and measured landmarks are saved in this candidate. Front and end fasteners use four corner dome centers as independent plane landmarks. The known visible counts are one upper end rail dome, one lower end rail dome, three upper front rail domes with the outer one smaller, and two lower front rail domes separated by the center strap. The outside hoops have sparse studding and the end arch has two slope domes plus its separate crown tab. The two middle hoops retain their denser four visible studs including the crown. Hidden sides use coherent matching construction rather than claiming the reference shows them.
+
+The five hardware shapes are rebuilt with curved shoulders, flared tall feet with real inward lower side notches, a flat middle latch with a concentrated bottom curl, a true folded crown tab and deeper rolled handle hood cheeks. Both handle plate fasteners are exposed. The ring assembly is shifted toward the front on the end face from measured reference plate landmarks. The lower grip sleeve is broader with wrapped divisions. Lock backing and upper points address the previous independent findings.
+
+Retain the detailed, neutral construction stage. Do not add wood, grain or final material finish in this pass. Save the canonical Blender file and numbered checkpoint after meaningful changes and before rendering. Inspect six rendered directions and the marked hardware, then obtain a fresh scoped review.

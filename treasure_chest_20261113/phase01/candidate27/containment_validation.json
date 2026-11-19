@@ -1,0 +1,10 @@
+{
+  "actual_source_function_tested": true,
+  "tests": {
+    "roof_inside": true,
+    "roof_outside_front": false,
+    "tongue_vertex_outside_roof": false,
+    "pin_center_inside_pin": true,
+    "sleeve_bore_is_empty": false
+  }
+}

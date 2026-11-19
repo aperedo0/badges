@@ -1,0 +1,26 @@
+{
+  "B": {
+    "source": "/Users/antonioperedo/Desktop/badges/treasure_chest_20261113/phase03/stylized_wood45/candidate05",
+    "height_depth": -0.056271994731419875,
+    "normal": "high frequency residual only"
+  },
+  "C": {
+    "source": "Poly Haven rough_wood, CC0",
+    "crop": [
+      500,
+      0,
+      1000,
+      2048
+    ],
+    "grain_rotation": 90,
+    "relief_range": 0.045,
+    "pigment": "chestnut with scanned variation"
+  },
+  "bounds": {
+    "xmin": -2.55,
+    "xmax": 2.55,
+    "ymin": -2.2175,
+    "ymax": -0.84
+  },
+  "padding": 16
+}

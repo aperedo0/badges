@@ -1,0 +1,19 @@
+{
+  "part": "Chest Removable Crank Key",
+  "drive_pin_nominal_radius": 0.025,
+  "selected_vertex_count": 1076,
+  "corrected_vertices": 203,
+  "old_maximum_radius": 0.025033136222626533,
+  "new_maximum_radius": 0.025000044179886934,
+  "maximum_vertex_movement": 3.319095762970955e-05,
+  "other_key_vertices_unchanged": true,
+  "all155_static_export_meshes_unchanged": true,
+  "closed_key_proof": {
+    "closed": true,
+    "connected": true,
+    "euler": 0,
+    "volume": 0.011627582322081859,
+    "triangles": 9684
+  },
+  "full_motion_screen_pending": true
+}

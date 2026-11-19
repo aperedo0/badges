@@ -1,0 +1,9 @@
+{
+  "core_normal_angle_difference_degrees_percentiles_10_50_90": [
+    1.1688336036717049,
+    5.617665568804498,
+    16.566204518740324
+  ],
+  "meaning": "Difference between inherited effective shading normals and reconstructed source height gradients, not reference measurements",
+  "clay_observation": "Core has no comparably dark transverse channel in geometry-only render"
+}

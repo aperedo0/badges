@@ -1,0 +1,10 @@
+{
+  "changed_parts": [
+    "Chest Curved Hasp Tongue"
+  ],
+  "removed_active_parts": [
+    "Chest Hasp Edge Rail -1",
+    "Chest Hasp Edge Rail 1"
+  ],
+  "all_fixed_and_sleeve_geometry_identical": true
+}

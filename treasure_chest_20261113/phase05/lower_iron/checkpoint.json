@@ -1,0 +1,230 @@
+{
+  "source_file": "/Users/antonioperedo/Desktop/badges/treasure_chest_20261113/phase04/wood_lab/timber_refinement/BC_final_polish/master.blend",
+  "baseline": "/Users/antonioperedo/Desktop/badges/treasure_chest_20261113/phase05/lower_iron/baseline.blend",
+  "baseline_sha256": "71ae0464620c1c7557accd8aacb4126e5ad6cdf3be9e747ec1f1e81d97804945",
+  "wood_geometry_sha256": "6c52635229763ca44c5b7cf1b842746e0c435463f3925b296fb97f50af05ea80",
+  "wood_material": "Wood Lab BC_final_polish",
+  "images": [
+    {
+      "name": "albedo.png",
+      "packed": true,
+      "size": [
+        2048,
+        768
+      ],
+      "filepath": "/Users/antonioperedo/Desktop/badges/treasure_chest_20261113/phase04/wood_lab/timber_refinement/V_lookdev_refinement/albedo.png"
+    },
+    {
+      "name": "albedo.png.001",
+      "packed": true,
+      "size": [
+        2048,
+        768
+      ],
+      "filepath": "/Users/antonioperedo/Desktop/badges/treasure_chest_20261113/phase04/wood_lab/timber_refinement/AE_controlled_fibers/albedo.png"
+    },
+    {
+      "name": "albedo.png.002",
+      "packed": true,
+      "size": [
+        2048,
+        768
+      ],
+      "filepath": "/Users/antonioperedo/Desktop/badges/treasure_chest_20261113/phase04/wood_lab/timber_refinement/U_scan_fibers/albedo.png"
+    },
+    {
+      "name": "albedo.png.003",
+      "packed": true,
+      "size": [
+        4096,
+        1536
+      ],
+      "filepath": "/Users/antonioperedo/Desktop/badges/treasure_chest_20261113/phase04/wood_lab/timber_refinement/AT_hardwood_faces/albedo.png"
+    },
+    {
+      "name": "albedo.png.004",
+      "packed": true,
+      "size": [
+        4096,
+        1536
+      ],
+      "filepath": "/Users/antonioperedo/Desktop/badges/treasure_chest_20261113/phase04/wood_lab/timber_refinement/AW_depth_hierarchy/albedo.png"
+    },
+    {
+      "name": "albedo.png.005",
+      "packed": true,
+      "size": [
+        4096,
+        1536
+      ],
+      "filepath": "/Users/antonioperedo/Desktop/badges/treasure_chest_20261113/phase04/wood_lab/timber_refinement/BC_final_polish/albedo.png"
+    },
+    {
+      "name": "Final wood polish context review",
+      "packed": true,
+      "size": [
+        1400,
+        1400
+      ],
+      "filepath": "/Users/antonioperedo/Desktop/badges/treasure_chest_20261113/phase04/wood_lab/timber_refinement/BC_final_polish/context_contact_softwarm_final.png"
+    },
+    {
+      "name": "normal.png",
+      "packed": true,
+      "size": [
+        2048,
+        768
+      ],
+      "filepath": "/Users/antonioperedo/Desktop/badges/treasure_chest_20261113/phase04/wood_lab/timber_refinement/V_lookdev_refinement/normal.png"
+    },
+    {
+      "name": "normal.png.001",
+      "packed": true,
+      "size": [
+        2048,
+        768
+      ],
+      "filepath": "/Users/antonioperedo/Desktop/badges/treasure_chest_20261113/phase04/wood_lab/timber_refinement/AE_controlled_fibers/normal.png"
+    },
+    {
+      "name": "normal.png.002",
+      "packed": true,
+      "size": [
+        2048,
+        768
+      ],
+      "filepath": "/Users/antonioperedo/Desktop/badges/treasure_chest_20261113/phase04/wood_lab/timber_refinement/U_scan_fibers/normal.png"
+    },
+    {
+      "name": "normal.png.003",
+      "packed": true,
+      "size": [
+        4096,
+        1536
+      ],
+      "filepath": "/Users/antonioperedo/Desktop/badges/treasure_chest_20261113/phase04/wood_lab/timber_refinement/AT_hardwood_faces/normal.png"
+    },
+    {
+      "name": "normal.png.004",
+      "packed": true,
+      "size": [
+        4096,
+        1536
+      ],
+      "filepath": "/Users/antonioperedo/Desktop/badges/treasure_chest_20261113/phase04/wood_lab/timber_refinement/AW_depth_hierarchy/normal.png"
+    },
+    {
+      "name": "normal.png.005",
+      "packed": true,
+      "size": [
+        4096,
+        1536
+      ],
+      "filepath": "/Users/antonioperedo/Desktop/badges/treasure_chest_20261113/phase04/wood_lab/timber_refinement/BC_final_polish/normal.png"
+    },
+    {
+      "name": "owner_comparison.jpg",
+      "packed": false,
+      "size": [
+        0,
+        0
+      ],
+      "filepath": "/Users/antonioperedo/Desktop/badges/treasure_chest_20261113/phase04/wood_lab/timber_refinement/grain_hierarchy/owner_comparison.jpg"
+    },
+    {
+      "name": "reference.png",
+      "packed": true,
+      "size": [
+        1254,
+        1254
+      ],
+      "filepath": "//../../../phase01/candidate31/reference.png"
+    },
+    {
+      "name": "roughness.png",
+      "packed": true,
+      "size": [
+        2048,
+        768
+      ],
+      "filepath": "/Users/antonioperedo/Desktop/badges/treasure_chest_20261113/phase04/wood_lab/timber_refinement/V_lookdev_refinement/roughness.png"
+    },
+    {
+      "name": "roughness.png.001",
+      "packed": true,
+      "size": [
+        2048,
+        768
+      ],
+      "filepath": "/Users/antonioperedo/Desktop/badges/treasure_chest_20261113/phase04/wood_lab/timber_refinement/AE_controlled_fibers/roughness.png"
+    },
+    {
+      "name": "roughness.png.002",
+      "packed": true,
+      "size": [
+        2048,
+        768
+      ],
+      "filepath": "/Users/antonioperedo/Desktop/badges/treasure_chest_20261113/phase04/wood_lab/timber_refinement/U_scan_fibers/roughness.png"
+    },
+    {
+      "name": "roughness.png.003",
+      "packed": true,
+      "size": [
+        4096,
+        1536
+      ],
+      "filepath": "/Users/antonioperedo/Desktop/badges/treasure_chest_20261113/phase04/wood_lab/timber_refinement/AT_hardwood_faces/roughness.png"
+    },
+    {
+      "name": "roughness.png.004",
+      "packed": true,
+      "size": [
+        4096,
+        1536
+      ],
+      "filepath": "/Users/antonioperedo/Desktop/badges/treasure_chest_20261113/phase04/wood_lab/timber_refinement/AW_depth_hierarchy/roughness.png"
+    },
+    {
+      "name": "roughness.png.005",
+      "packed": true,
+      "size": [
+        4096,
+        1536
+      ],
+      "filepath": "/Users/antonioperedo/Desktop/badges/treasure_chest_20261113/phase04/wood_lab/timber_refinement/BC_final_polish/roughness.png"
+    },
+    {
+      "name": "wood_albedo.png.007",
+      "packed": true,
+      "size": [
+        2048,
+        768
+      ],
+      "filepath": "/Users/antonioperedo/Desktop/badges/treasure_chest_20261113/phase03/stylized_wood45/candidate05/textures/wood_albedo.png"
+    },
+    {
+      "name": "wood_normal.png.007",
+      "packed": true,
+      "size": [
+        2048,
+        768
+      ],
+      "filepath": "/Users/antonioperedo/Desktop/badges/treasure_chest_20261113/phase03/stylized_wood45/candidate05/textures/wood_normal.png"
+    },
+    {
+      "name": "wood_roughness.png.007",
+      "packed": true,
+      "size": [
+        2048,
+        768
+      ],
+      "filepath": "/Users/antonioperedo/Desktop/badges/treasure_chest_20261113/phase03/stylized_wood45/candidate05/textures/wood_roughness.png"
+    }
+  ],
+  "render_finished": true,
+  "reference_camera": "Owner reference comparison camera",
+  "exposure": 0.0,
+  "view_transform": "AgX",
+  "look": "AgX - Medium High Contrast"
+}

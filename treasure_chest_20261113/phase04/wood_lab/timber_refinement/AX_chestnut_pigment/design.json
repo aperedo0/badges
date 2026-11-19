@@ -1,0 +1,10 @@
+{
+  "source": "AW_depth_hierarchy",
+  "change": "Luminance preserving warm chestnut pigment balance only",
+  "linear_rgb_balance": [
+    0.94,
+    1.075,
+    0.87
+  ],
+  "geometry_normals_roughness_lighting_unchanged": true
+}

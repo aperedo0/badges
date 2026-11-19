@@ -1,0 +1,8 @@
+import bpy,sys,json
+from pathlib import Path
+D=Path(__file__).resolve().parent;key=sys.argv[sys.argv.index('--')+1];C=D/key;C.mkdir(exist_ok=True);A=D/'G_planished_displaced';bpy.ops.wm.open_mainfile(filepath=str(A/'master.blend'));o=bpy.data.scenes['Test plank master'].objects['Lab Chest Lower Rim'];o.data=o.data.copy();mat=o.data.materials[0].copy();mat.name='Forged iron '+key;o.data.materials[0]=mat;nt=mat.node_tree;fine=nt.nodes['fine16.png independent strength'];oxide=nt.nodes['oxide.png'];scale_relief=nt.nodes.new('ShaderNodeBump');scale_relief.name='Independent thin forge scale relief';scale_relief.inputs['Strength'].default_value=1;scale_relief.inputs['Distance'].default_value=.00035;nt.links.new(oxide.outputs['Color'],scale_relief.inputs['Height']);nt.links.new(fine.outputs['Normal'],scale_relief.inputs['Normal'])
+for n in nt.nodes:
+ if n.type=='BSDF_PRINCIPLED':nt.links.new(scale_relief.outputs['Normal'],n.inputs['Normal'])
+if 'balanced' in key:
+ mapping=nt.nodes.new('ShaderNodeMapRange');mapping.name='Scale coverage floor and ceiling';mapping.inputs['To Min'].default_value=.18;mapping.inputs['To Max'].default_value=.86;nt.links.new(oxide.outputs['Color'],mapping.inputs['Value']);nt.links.new(mapping.outputs['Result'],nt.nodes['Opaque scale coverage'].inputs[0])
+bpy.context.preferences.filepaths.save_version=0;bpy.ops.wm.save_as_mainfile(filepath=str(C/'master.blend'),compress=True);(C/'design.json').write_text(json.dumps(dict(target=o.name,mesh=o.data.name,material=mat.name,source='G_planished_displaced',scale_thickness_bump=.00035,coverage_balanced='balanced' in key,geometry_unchanged_from_source=True),indent=2));print('Saved localized scale finish',key,flush=True)

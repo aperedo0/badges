@@ -1,0 +1,20 @@
+{
+  "seed": 261116,
+  "atlas": [
+    8192,
+    256
+  ],
+  "physical_perimeter": 18.04,
+  "physical_height": 0.5035,
+  "height_encoding": {
+    "midlevel": 0.75,
+    "scale": 0.016
+  },
+  "hammer_depth_range": [
+    -0.007568884640932083,
+    0.0005946654127910733
+  ],
+  "fine_source": "ambientCG Metal055A",
+  "fine_rms": 0.00019140579388476908,
+  "wear": "Sparse variable width exposed neutral iron at existing upper and lower edges; no golden pigment or emission"
+}

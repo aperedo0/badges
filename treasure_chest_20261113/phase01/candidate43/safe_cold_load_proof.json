@@ -1,0 +1,102 @@
+{
+  "use_scripts": false,
+  "autoexec_fail": false,
+  "autoexec_message": "",
+  "security_preference_unchanged": true,
+  "drivers": [
+    {
+      "owner": "Chest Removable Crank Key",
+      "path": "hide_render",
+      "simple": true,
+      "valid": true
+    },
+    {
+      "owner": "Chest Removable Crank Key",
+      "path": "hide_viewport",
+      "simple": true,
+      "valid": true
+    },
+    {
+      "owner": "Chest Rig BoltShift",
+      "path": "[\"phase\"]",
+      "simple": true,
+      "valid": true
+    },
+    {
+      "owner": "Chest Rig BoltShift",
+      "path": "[\"shift\"]",
+      "simple": true,
+      "valid": true
+    },
+    {
+      "owner": "Chest Rig BoltShift",
+      "path": "location",
+      "simple": true,
+      "valid": true
+    },
+    {
+      "owner": "Chest Rig BoltShift",
+      "path": "location",
+      "simple": true,
+      "valid": true
+    },
+    {
+      "owner": "Chest Rig BoltShift",
+      "path": "location",
+      "simple": true,
+      "valid": true
+    },
+    {
+      "owner": "Chest Rig HaspRelease",
+      "path": "rotation_axis_angle",
+      "simple": true,
+      "valid": true
+    },
+    {
+      "owner": "Chest Rig KeyInsertTurn",
+      "path": "location",
+      "simple": true,
+      "valid": true
+    },
+    {
+      "owner": "Chest Rig KeyInsertTurn",
+      "path": "location",
+      "simple": true,
+      "valid": true
+    },
+    {
+      "owner": "Chest Rig KeyInsertTurn",
+      "path": "location",
+      "simple": true,
+      "valid": true
+    },
+    {
+      "owner": "Chest Rig KeyInsertTurn",
+      "path": "rotation_axis_angle",
+      "simple": true,
+      "valid": true
+    },
+    {
+      "owner": "Chest Rig LidOpen",
+      "path": "rotation_axis_angle",
+      "simple": true,
+      "valid": true
+    },
+    {
+      "owner": "Chest Rig SpringLift",
+      "path": "[\"lift\"]",
+      "simple": true,
+      "valid": true
+    },
+    {
+      "owner": "Key",
+      "path": "key_blocks[\"Actual spring lift\"].value",
+      "simple": true,
+      "valid": true
+    }
+  ],
+  "observed_lid_degrees": 95.0,
+  "observed_lid_rotation_radians": -1.6580628156661987,
+  "complete_badge": false,
+  "restored_frame": 0
+}

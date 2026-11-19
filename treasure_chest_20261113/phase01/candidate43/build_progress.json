@@ -1,0 +1,17 @@
+{
+  "completed": [
+    "body front 0 -1",
+    "body end 0 -1",
+    "body front 0 1",
+    "body end 0 1",
+    "roof 1",
+    "roof 2",
+    "roof 3",
+    "roof 4",
+    "roof 5",
+    "roof 6",
+    "lid end 0 -1",
+    "lid end 0 1"
+  ],
+  "seconds": 2.7991721630096436
+}

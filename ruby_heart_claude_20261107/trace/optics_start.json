@@ -1,0 +1,1 @@
+{"prm": {"ior": 1.77, "absorption": [0.15, 8.0, 2.2], "foil": 0.92, "tent_gain": 0.6, "exposure": 0.6, "bounces": 4, "body_level": 4.0, "body_clamp": 24.0, "spec_clamp": 6.0, "glow": 0.08, "glow_color": [1.0, 0.02, 0.16]}}

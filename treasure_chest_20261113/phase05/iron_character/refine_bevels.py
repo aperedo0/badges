@@ -1,0 +1,17 @@
+import bpy,numpy as np,json,math
+from pathlib import Path
+from mathutils import Matrix
+D=Path(__file__).resolve().parent;A=D/'07_integrated';C=D/'08_bevel_facets';C.mkdir(exist_ok=True);bpy.ops.wm.open_mainfile(filepath=str(A/'master.blend'));sc=bpy.data.scenes['Test plank master'];o=sc.objects['Lab Chest Lower Rim'];o.data=o.data.copy();m=o.data.materials[0].copy();o.data.materials[0]=m;m.name='Forged iron with localized damaged bevel facets'
+for name in ['Lab Chest Rail Rivet 1 3','Lab Chest Rail Rivet 1 4']:sc.objects[name].data.materials[0]=m
+me=o.data;co=np.empty((len(me.vertices),3),np.float32);me.vertices.foreach_get('co',co.ravel());R=np.array(Matrix.Rotation(math.radians(32),3,'Y'));q=np.c_[co[:,0],co[:,2],-co[:,1]]@R;x=q[:,0].copy();y=q[:,1].copy();z=q[:,2].copy();front=np.clip((z-1.70)/.05,0,1);weight=np.zeros(len(q))
+def ss(a,b,v):t=np.clip((v-a)/(b-a),0,1);return t*t*(3-2*t)
+guard=np.ones(len(q))
+for xc in [-1.1255,1.1255]:guard*=ss(.105,.17,np.hypot(x-xc,y+1.96575))
+for side,centers in [('top',[(-1.97,.10),(-.68,.12),(.55,.10),(1.42,.12),(1.88,.085)]),('bottom',[(-1.65,.10),(-.95,.09),(.8,.12),(1.9,.09)])]:
+ radius=np.zeros(len(q))
+ for xc,w in centers:
+  taper=ss(1,0,np.clip(abs((x-xc)/w),0,1));radius=np.maximum(radius,.052*taper)
+ depth=(-1.714-q[:,1]) if side=='top' else (q[:,1]+2.2175);distance=depth+(1.78-q[:,2]);cut=np.maximum(radius-distance,0)*.5*front*guard;cut=np.minimum(cut,.021);q[:,1]+=cut*(-1 if side=='top' else 1);q[:,2]-=cut;weight=np.maximum(weight,np.clip(cut/.012,0,1)*.95)
+rot=q@R.T;after=np.c_[rot[:,0],-rot[:,2],rot[:,1]];me.vertices.foreach_set('co',after.astype(np.float32).ravel());me.update();attribute=me.attributes.new('Damaged bevel facet wear','FLOAT','POINT');attribute.data.foreach_set('value',weight.astype(np.float32));nt=m.node_tree;attr=nt.nodes.new('ShaderNodeAttribute');attr.attribute_name=attribute.name
+mix=nt.nodes['Localized exposed iron'];old=mix.inputs[0].links[0].from_socket;mx=nt.nodes.new('ShaderNodeMath');mx.operation='MAXIMUM';nt.links.new(old,mx.inputs[0]);nt.links.new(attr.outputs['Fac'],mx.inputs[1]);nt.links.new(mx.outputs[0],mix.inputs[0]);coat=nt.nodes['Opaque scale coverage'];old=coat.inputs[0].links[0].from_socket;inv=nt.nodes.new('ShaderNodeMapRange');inv.inputs['To Min'].default_value=1;inv.inputs['To Max'].default_value=.06;nt.links.new(attr.outputs['Fac'],inv.inputs['Value']);mul=nt.nodes.new('ShaderNodeMath');mul.operation='MULTIPLY';nt.links.new(old,mul.inputs[0]);nt.links.new(inv.outputs['Result'],mul.inputs[1]);nt.links.new(mul.outputs[0],coat.inputs[0]);bare=nt.nodes['Exposed iron Filament diagnostic reflectance'];old=bare.inputs['Roughness'].links[0].from_socket;r=nt.nodes.new('ShaderNodeMixRGB');nt.links.new(attr.outputs['Fac'],r.inputs[0]);nt.links.new(old,r.inputs[1]);r.inputs[2].default_value=(.18,.18,.18,1);nt.links.new(r.outputs[0],bare.inputs['Roughness'])
+bpy.context.preferences.filepaths.save_version=0;bpy.ops.wm.save_as_mainfile(filepath=str(C/'master.blend'),compress=True);a=json.loads((A/'design.json').read_text());a.update(mesh=me.name,material=m.name,source='07_integrated',localized_bevel_planes=True,geometry_aware_facet_wear=True);(C/'design.json').write_text(json.dumps(a,indent=2));original=np.load(A/'edge_geometry.npz');np.savez_compressed(C/'edge_geometry.npz',before=original['before'],after=after,local_before=original['local_before'],local_after=q)

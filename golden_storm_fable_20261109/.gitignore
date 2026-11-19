@@ -1,0 +1,9 @@
+# debug pictures and viewer scripts from the build sessions; the traced inputs (npz, npy) stay
+work/*.png
+work/*.py
+work/*.json
+# single tiles of the Blender sweep: the sheets hold the same pictures
+candidate*/blender_zoom/*_[0-9]*_[0-9]*.png
+candidate*/blender_zoom/_probe.png
+candidate*/blender_zoom/phone_front.png
+candidate*/blender_zoom/phone_turned.png

@@ -1,0 +1,25 @@
+{
+  "baseline": "baseline.blend, complete V live checkpoint",
+  "selected": "AE_controlled_fibers",
+  "live_file": "/Users/antonioperedo/Desktop/badges/treasure_chest_20261113/phase04/wood_lab/timber_refinement/AE_controlled_fibers/master.blend",
+  "working": false,
+  "owner_review_pending": true,
+  "scope": "Existing test plank only. Owner requested this stopping point loaded into Blender.",
+  "rejected": {
+    "W_scan_lamina": "Quiet broad faces",
+    "X_reference_lamina": "Scalloped interpreted surface detail",
+    "Y_broken_lamina": "Useful plate structure but quiet body and streaky core",
+    "Z_scan_structure": "Real scan height insufficient alone",
+    "AA_rich_fibers": "Richer pigment but broad forms still smooth",
+    "AB_carved_profiles": "Useful local shoulder correction, insufficient alone",
+    "AC_fiber_surface": "Scan normal reconstruction introduces broad vertical streaks and highlights",
+    "AD_layered_fibers": "Too busy; smaller fiber amplitude used in AE",
+    "AF_true_normal": "Reconstructed absolute gradient did not clearly improve AE; retained inherited fine shading"
+  },
+  "remaining": "Main shoulders remain more rounded than reference; knot interior less dense and less dark; artistic match unapproved.",
+  "next": "Owner reviews. No automatic continuation.",
+  "background_jobs_running": false,
+  "view_restored_for_owner": true,
+  "completed_final_close": "AE_controlled_fibers/close_balanced_final.png",
+  "deferred": "Final whole plank and temporary context rerenders stopped at owner request to save current checkpoint."
+}

@@ -1,0 +1,32 @@
+{
+  "front": {
+    "mean_absolute_channel_difference": 0.020261341222879686,
+    "maximum_channel_difference": 30,
+    "fraction_pixels_with_channel_difference_over_3": 0.002707100591715976
+  },
+  "early_turn": {
+    "mean_absolute_channel_difference": 0.018920558608058607,
+    "maximum_channel_difference": 32,
+    "fraction_pixels_with_channel_difference_over_3": 0.002345467032967033
+  },
+  "side_left": {
+    "mean_absolute_channel_difference": 0.00016369047619047618,
+    "maximum_channel_difference": 2,
+    "fraction_pixels_with_channel_difference_over_3": 0.0
+  },
+  "back": {
+    "mean_absolute_channel_difference": 0.0012156593406593406,
+    "maximum_channel_difference": 6,
+    "fraction_pixels_with_channel_difference_over_3": 2.403846153846154e-05
+  },
+  "side_right": {
+    "mean_absolute_channel_difference": 1.717032967032967e-05,
+    "maximum_channel_difference": 1,
+    "fraction_pixels_with_channel_difference_over_3": 0.0
+  },
+  "full_turn": {
+    "mean_absolute_channel_difference": 9.157509157509158e-06,
+    "maximum_channel_difference": 1,
+    "fraction_pixels_with_channel_difference_over_3": 0.0
+  }
+}

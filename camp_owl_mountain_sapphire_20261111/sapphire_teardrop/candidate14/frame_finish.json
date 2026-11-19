@@ -1,0 +1,6 @@
+{
+  "flat_front_triangles": 133,
+  "method": "Preserve true flat normals on coplanar broad gold face. Smooth actual bevel normals retained on beveled geometry. Removes the false rounded tube effect caused by smoothing across the flat face and bevel.",
+  "geometry_unchanged": true,
+  "blender_review_pending": true
+}

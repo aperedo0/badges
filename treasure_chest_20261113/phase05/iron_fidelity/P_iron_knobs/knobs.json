@@ -1,0 +1,18 @@
+[
+  {
+    "object": "Lab Chest Rail Rivet 1 3",
+    "vertices": 289,
+    "geometry_sha256": "5dd830e45ab7e58a59436df4533e7c79e3ac7d22d49bb4c9f001951473e563d6",
+    "material": "Forged iron with dark surface scale",
+    "uv_scale": "Existing rim physical atlas scale, front projection",
+    "geometry_unchanged": true
+  },
+  {
+    "object": "Lab Chest Rail Rivet 1 4",
+    "vertices": 289,
+    "geometry_sha256": "de0e32e40178b11b63162dc7bcaf46ca7870686cca04bbaf31a20c9e065382d5",
+    "material": "Forged iron with dark surface scale",
+    "uv_scale": "Existing rim physical atlas scale, front projection",
+    "geometry_unchanged": true
+  }
+]

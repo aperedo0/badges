@@ -1,0 +1,338 @@
+[
+  {
+    "pixel": [
+      593,
+      531
+    ],
+    "hits": [
+      {
+        "mesh": "/Badge/OuterRedFlame",
+        "face": 2178,
+        "distance": 22.676147203972825,
+        "material": "/Badge/Materials/CampfireNight_EnamelRedFire",
+        "position": [
+          -0.12202090542290489,
+          0.7997357712445037,
+          0.3462534138929527
+        ],
+        "normal": [
+          -0.003859443477777601,
+          0.016847582548543853,
+          0.9998487532921841
+        ],
+        "normal_length": 0.9999981328990686,
+        "area": 0.003705805267268627,
+        "front_facing": true
+      },
+      {
+        "mesh": "/Badge/NightBackplate",
+        "face": 1012,
+        "distance": 22.922644118198566,
+        "material": "/Badge/Materials/CampfireNight_NightField",
+        "position": [
+          -0.12334731137658063,
+          0.788862581739215,
+          0.10000000149011967
+        ],
+        "normal": [
+          -0.020861082331273397,
+          0.08970516048326715,
+          0.8989581359861728
+        ],
+        "normal_length": 0.9036636159706195,
+        "area": 0.25811763019264333,
+        "front_facing": true
+      },
+      {
+        "mesh": "/Badge/NightBackplate",
+        "face": 2034,
+        "distance": 23.12284188641922,
+        "material": "/Badge/Materials/CampfireNight_NightField",
+        "position": [
+          -0.1244245804876953,
+          0.7800316871244226,
+          -0.10000000149011967
+        ],
+        "normal": [
+          -0.021053739112100955,
+          0.08831944299816742,
+          -0.8989637787068309
+        ],
+        "normal_length": 0.9035371931298517,
+        "area": 0.25811763019264333,
+        "front_facing": false
+      },
+      {
+        "mesh": "/Badge/OuterRedFlame",
+        "face": 5059,
+        "distance": 23.36981874170713,
+        "material": "/Badge/Materials/CampfireNight_EnamelRedFire",
+        "position": [
+          -0.12575356901602222,
+          0.7691373270087967,
+          -0.34673288084564646
+        ],
+        "normal": [
+          -0.002560461379360372,
+          0.016272189976168697,
+          -0.9998614112964767
+        ],
+        "normal_length": 0.9999970909602076,
+        "area": 0.0018528824033450116,
+        "front_facing": false
+      }
+    ]
+  },
+  {
+    "pixel": [
+      597,
+      531
+    ],
+    "hits": [
+      {
+        "mesh": "/Badge/OuterRedFlame",
+        "face": 2328,
+        "distance": 22.675572006789746,
+        "material": "/Badge/Materials/CampfireNight_EnamelRedFire",
+        "position": [
+          -0.07064257010100305,
+          0.7997515161735289,
+          0.34661000130445885
+        ],
+        "normal": [
+          -0.009372542423633112,
+          0.013852542039723288,
+          0.9998581983725452
+        ],
+        "normal_length": 0.9999980771607698,
+        "area": 0.0037057992711296327,
+        "front_facing": true
+      },
+      {
+        "mesh": "/Badge/NightBackplate",
+        "face": 1012,
+        "distance": 22.92242348503236,
+        "material": "/Badge/Materials/CampfireNight_NightField",
+        "position": [
+          -0.07141160132328352,
+          0.788862581739215,
+          0.10000000149011967
+        ],
+        "normal": [
+          -0.011969865833366376,
+          0.08969811217137491,
+          0.898956294111207
+        ],
+        "normal_length": 0.903499556024978,
+        "area": 0.25811763019264333,
+        "front_facing": true
+      },
+      {
+        "mesh": "/Badge/NightBackplate",
+        "face": 2034,
+        "distance": 23.122619326325776,
+        "material": "/Badge/Materials/CampfireNight_NightField",
+        "position": [
+          -0.07203528344024465,
+          0.7800316871244224,
+          -0.10000000149012322
+        ],
+        "normal": [
+          -0.012084870067198666,
+          0.08831233312896522,
+          -0.8989619207456206
+        ],
+        "normal_length": 0.9033701606860157,
+        "area": 0.25811763019264333,
+        "front_facing": false
+      },
+      {
+        "mesh": "/Badge/OuterRedFlame",
+        "face": 4913,
+        "distance": 23.369904967300325,
+        "material": "/Badge/Materials/CampfireNight_EnamelRedFire",
+        "position": [
+          -0.07280566723573548,
+          0.769123601216698,
+          -0.3470437393237944
+        ],
+        "normal": [
+          -0.00660146149774236,
+          0.014393904556047186,
+          -0.9998696185604895
+        ],
+        "normal_length": 0.9999950089388314,
+        "area": 0.003705805267268627,
+        "front_facing": false
+      }
+    ]
+  },
+  {
+    "pixel": [
+      595,
+      541
+    ],
+    "hits": [
+      {
+        "mesh": "/Badge/OuterRedFlame",
+        "face": 2516,
+        "distance": 22.680049911056372,
+        "material": "/Badge/Materials/CampfireNight_EnamelRedFire",
+        "position": [
+          -0.09637933606735162,
+          0.6714070890209483,
+          0.348252759822806
+        ],
+        "normal": [
+          -0.0031389928629447484,
+          0.013480441960812307,
+          0.9999015227699257
+        ],
+        "normal_length": 0.9999973154110308,
+        "area": 0.0055580541172226905,
+        "front_facing": true
+      },
+      {
+        "mesh": "/Badge/NightBackplate",
+        "face": 1001,
+        "distance": 22.928613098270464,
+        "material": "/Badge/Materials/CampfireNight_NightField",
+        "position": [
+          -0.09743561041632474,
+          0.6590382162838813,
+          0.09999975720301535
+        ],
+        "normal": [
+          -0.016686804530450603,
+          0.06823400627259868,
+          0.8989872727211982
+        ],
+        "normal_length": 0.9017274785500021,
+        "area": 0.5232298778397886,
+        "front_facing": true
+      },
+      {
+        "mesh": "/Badge/NightBackplate",
+        "face": 2023,
+        "distance": 23.128862476316204,
+        "material": "/Badge/Materials/CampfireNight_NightField",
+        "position": [
+          -0.0982865742448717,
+          0.6490735103252665,
+          -0.09999972755488784
+        ],
+        "normal": [
+          -0.01685885140486045,
+          0.06653757031571599,
+          -0.8989872750375271
+        ],
+        "normal_length": 0.9016038985128716,
+        "area": 0.5232298778397886,
+        "front_facing": false
+      },
+      {
+        "mesh": "/Badge/OuterRedFlame",
+        "face": 5249,
+        "distance": 23.37786726364228,
+        "material": "/Badge/Materials/CampfireNight_EnamelRedFire",
+        "position": [
+          -0.09934472518255459,
+          0.6366826629118725,
+          -0.3486937792092739
+        ],
+        "normal": [
+          -0.0022385458815708604,
+          0.012772423133615454,
+          -0.9999131565274013
+        ],
+        "normal_length": 0.9999972332346522,
+        "area": 0.005558449028106791,
+        "front_facing": false
+      }
+    ]
+  },
+  {
+    "pixel": [
+      594,
+      531
+    ],
+    "hits": [
+      {
+        "mesh": "/Badge/OuterRedFlame",
+        "face": 2326,
+        "distance": 22.67600006231924,
+        "material": "/Badge/Materials/CampfireNight_EnamelRedFire",
+        "position": [
+          -0.10917620640968713,
+          0.799739373510177,
+          0.34633499715000937
+        ],
+        "normal": [
+          -0.004744597488826397,
+          0.016348942849409857,
+          0.9998509075251409
+        ],
+        "normal_length": 0.9999958181994925,
+        "area": 0.0018528812638818535,
+        "front_facing": true
+      },
+      {
+        "mesh": "/Badge/NightBackplate",
+        "face": 1012,
+        "distance": 22.922577928471686,
+        "material": "/Badge/Materials/CampfireNight_NightField",
+        "position": [
+          -0.11036338386325635,
+          0.7888625817392148,
+          0.10000000149011967
+        ],
+        "normal": [
+          -0.018638278206796623,
+          0.08970339840529404,
+          0.8989576755174312
+        ],
+        "normal_length": 0.9036144019833217,
+        "area": 0.25811763019264333,
+        "front_facing": true
+      },
+      {
+        "mesh": "/Badge/NightBackplate",
+        "face": 2034,
+        "distance": 23.12277511861611,
+        "material": "/Badge/Materials/CampfireNight_NightField",
+        "position": [
+          -0.11132725622583262,
+          0.7800316871244224,
+          -0.10000000149011612
+        ],
+        "normal": [
+          -0.018811521850875302,
+          0.08831766553086684,
+          -0.8989633142165283
+        ],
+        "normal_length": 0.90348709105683,
+        "area": 0.25811763019264333,
+        "front_facing": false
+      },
+      {
+        "mesh": "/Badge/OuterRedFlame",
+        "face": 4913,
+        "distance": 23.369809604203596,
+        "material": "/Badge/Materials/CampfireNight_EnamelRedFire",
+        "position": [
+          -0.11251663212610996,
+          0.7691347534218629,
+          -0.3467911668310215
+        ],
+        "normal": [
+          -0.003916895256115759,
+          0.01591490222673183,
+          -0.9998629501576286
+        ],
+        "normal_length": 0.9999972726359059,
+        "area": 0.003705805267268627,
+        "front_facing": false
+      }
+    ]
+  }
+]

@@ -1,0 +1,16 @@
+*.log
+render.lock
+__pycache__/
+.DS_Store
+live_before_promotion.blend
+*/*.blend
+*/edge_geometry.npz
+!10_defined_scale/edge_geometry.npz
+!11_restored_pigment/edge_geometry.npz
+
+live_before_pigment_fix.blend
+aov/*/passes.npz
+aov/**/*.exr
+
+live_before_edge_review.blend
+!14_edge_review/edge_geometry.npz

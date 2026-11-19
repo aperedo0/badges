@@ -1,0 +1,4 @@
+interface:
+  display_name: "Badge Folder Cleanup"
+  short_description: "Remove obsolete badge files only in this repository"
+  default_prompt: "Use $badge-make-space to clean this badge repository while preserving Git history, current editable models, required resources and explicitly kept versions."

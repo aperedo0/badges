@@ -1,0 +1,22 @@
+{
+  "source": "/Users/antonioperedo/Desktop/badges/treasure_chest_20261113/phase04/wood_lab/timber_refinement/BC_final_polish",
+  "tile_size": [
+    2048,
+    1152
+  ],
+  "tiles": 4,
+  "physical_tile_size": [
+    5.1,
+    2.755
+  ],
+  "seed_start": 17110,
+  "knot_free_tiles": [
+    0,
+    1,
+    2
+  ],
+  "rare_knot_tile": 3,
+  "source_material_unchanged": true,
+  "normal": "Full authored height derivatives plus restrained high frequency residual from the existing complementary normal",
+  "geometry": "New mapped panels use full tangent relief; approved sculpted test plank is retained exactly"
+}

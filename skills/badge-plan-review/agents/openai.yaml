@@ -1,0 +1,4 @@
+interface:
+  display_name: "Badge plan review"
+  short_description: "Fresh agents approve or turn down a badge plan before building"
+  default_prompt: "Use $badge-plan-review to have a fresh agent with no context approve or turn down this badge's PLAN.md, fix its blockers and repeat until it is approved."

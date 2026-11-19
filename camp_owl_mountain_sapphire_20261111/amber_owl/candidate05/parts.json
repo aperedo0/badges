@@ -1,0 +1,278 @@
+{
+ "units": {
+  "S": 0.004678111587982833,
+  "axis": 626.0,
+  "top": 22,
+  "width_px": 1254,
+  "height_px": 1254
+ },
+ "box": [
+  0,
+  0,
+  1254,
+  1254
+ ],
+ "parts": [
+  {
+   "name": "blue_enamel_backplate",
+   "base": 0.075,
+   "materials": [
+    "EnamelOwlBlue",
+    "Side"
+   ],
+   "triangles": 3904,
+   "front": 1135
+  },
+  {
+   "name": "upper_star_arc",
+   "base": 0.07892909543502503,
+   "materials": [
+    "Gold",
+    "Side"
+   ],
+   "triangles": 696,
+   "front": 266
+  },
+  {
+   "name": "head_amber_disc",
+   "base": 0.08982660240863845,
+   "materials": [
+    "EnamelOwlAmber",
+    "Gold",
+    "Side"
+   ],
+   "triangles": 6732,
+   "front": 2028
+  },
+  {
+   "name": "left_amber_wing",
+   "base": 0.14791956922635233,
+   "materials": [
+    "EnamelOwlAmber",
+    "Gold",
+    "Side"
+   ],
+   "triangles": 1284,
+   "front": 531
+  },
+  {
+   "name": "right_amber_wing",
+   "base": 0.15187122942219547,
+   "materials": [
+    "EnamelOwlAmber",
+    "Gold",
+    "Side"
+   ],
+   "triangles": 1280,
+   "front": 529
+  },
+  {
+   "name": "outer_left_feather",
+   "base": 0.2036187657327777,
+   "materials": [
+    "EnamelOwlCream",
+    "Gold",
+    "Side"
+   ],
+   "triangles": 920,
+   "front": 377
+  },
+  {
+   "name": "outer_right_feather",
+   "base": 0.20677271553858326,
+   "materials": [
+    "EnamelOwlCream",
+    "Gold",
+    "Side"
+   ],
+   "triangles": 920,
+   "front": 377
+  },
+  {
+   "name": "inner_left_feather",
+   "base": 0.2601022037442583,
+   "materials": [
+    "EnamelOwlCream",
+    "Gold",
+    "Side"
+   ],
+   "triangles": 832,
+   "front": 338
+  },
+  {
+   "name": "inner_right_feather",
+   "base": 0.26196337711137163,
+   "materials": [
+    "EnamelOwlCream",
+    "Gold",
+    "Side"
+   ],
+   "triangles": 864,
+   "front": 354
+  },
+  {
+   "name": "central_cream_breast",
+   "base": 0.3169114734712538,
+   "materials": [
+    "EnamelOwlCream",
+    "Gold",
+    "Side"
+   ],
+   "triangles": 1256,
+   "front": 525
+  },
+  {
+   "name": "cream_face_mask",
+   "base": 0.36821607803464074,
+   "materials": [
+    "EnamelOwlCream",
+    "Gold",
+    "Side"
+   ],
+   "triangles": 3644,
+   "front": 1324
+  },
+  {
+   "name": "left_amber_iris",
+   "base": 0.42424594148779937,
+   "materials": [
+    "EnamelOwlAmber",
+    "Gold",
+    "Side"
+   ],
+   "triangles": 1812,
+   "front": 624
+  },
+  {
+   "name": "left_dark_pupil",
+   "base": 0.4917732594922711,
+   "materials": [
+    "Pupil",
+    "Side"
+   ],
+   "triangles": 888,
+   "front": 309
+  },
+  {
+   "name": "right_amber_iris",
+   "base": 0.4235769628391971,
+   "materials": [
+    "EnamelOwlAmber",
+    "Gold",
+    "Side"
+   ],
+   "triangles": 1812,
+   "front": 624
+  },
+  {
+   "name": "right_dark_pupil",
+   "base": 0.49112930626858686,
+   "materials": [
+    "Pupil",
+    "Side"
+   ],
+   "triangles": 888,
+   "front": 309
+  },
+  {
+   "name": "left_cream_brow_blade",
+   "base": 0.5177955078139806,
+   "materials": [
+    "EnamelOwlAmber",
+    "EnamelOwlCream",
+    "Gold",
+    "Side"
+   ],
+   "triangles": 3596,
+   "front": 1691
+  },
+  {
+   "name": "right_cream_brow_blade",
+   "base": 0.5279744659300147,
+   "materials": [
+    "EnamelOwlAmber",
+    "EnamelOwlCream",
+    "Gold",
+    "Side"
+   ],
+   "triangles": 3584,
+   "front": 1688
+  },
+  {
+   "name": "central_gold_beak",
+   "base": 0.4160035865335327,
+   "materials": [
+    "EnamelOwlAmber",
+    "Gold",
+    "Side"
+   ],
+   "triangles": 516,
+   "front": 212
+  },
+  {
+   "name": "top_four_point_star",
+   "base": 0.10948993967305935,
+   "materials": [
+    "EnamelOwlLemon",
+    "Gold",
+    "Side"
+   ],
+   "triangles": 632,
+   "front": 292
+  },
+  {
+   "name": "outer_gold_setting",
+   "base": 0.31617338386483856,
+   "materials": [
+    "Gold",
+    "Side"
+   ],
+   "triangles": 2816,
+   "front": 1088
+  }
+ ],
+ "order": [
+  "blue_enamel_backplate",
+  "upper_star_arc",
+  "head_amber_disc",
+  "left_amber_wing",
+  "right_amber_wing",
+  "outer_left_feather",
+  "outer_right_feather",
+  "inner_left_feather",
+  "inner_right_feather",
+  "central_cream_breast",
+  "cream_face_mask",
+  "left_amber_iris",
+  "left_dark_pupil",
+  "right_amber_iris",
+  "right_dark_pupil",
+  "left_cream_brow_blade",
+  "right_cream_brow_blade",
+  "central_gold_beak",
+  "top_four_point_star",
+  "outer_gold_setting"
+ ],
+ "validate_order": [
+  "blue_enamel_backplate",
+  "upper_star_arc",
+  "head_amber_disc",
+  "left_amber_wing",
+  "right_amber_wing",
+  "outer_left_feather",
+  "outer_right_feather",
+  "inner_left_feather",
+  "inner_right_feather",
+  "central_cream_breast",
+  "cream_face_mask",
+  "left_amber_iris",
+  "left_dark_pupil",
+  "right_amber_iris",
+  "right_dark_pupil",
+  "left_cream_brow_blade",
+  "right_cream_brow_blade",
+  "central_gold_beak",
+  "top_four_point_star",
+  "outer_gold_setting"
+ ]
+}

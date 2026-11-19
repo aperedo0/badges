@@ -1,0 +1,996 @@
+{
+  "bronze": {
+    "status": "validated_candidate",
+    "before": {
+      "meshes": 14,
+      "sections": 28,
+      "triangles": 46176,
+      "vertices": 39476
+    },
+    "after": {
+      "meshes": 4,
+      "sections": 4,
+      "triangles": 46176,
+      "vertices": 25442
+    },
+    "source_sha256": "2e48a10355d7e09ddf1a078adcdb27332c5e74ec58d10e4ad1f3f9a84fea5ba9",
+    "output_sha256": "1d3893de626e7520281a82871c316a2d7dc00c4dabc9cc097d69c34b6660fb10",
+    "bytes_before": 3552159,
+    "bytes_after": 1271381,
+    "all_triangle_corner_attributes_and_materials_identical": true,
+    "all_material_graphs_unchanged": true,
+    "protected_meshes_unchanged": [],
+    "all_textures_byte_identical": true,
+    "arkit_valid": true,
+    "native_review_complete": true,
+    "editable_checkpoint_verified": true,
+    "final": "/Users/antonioperedo/Desktop/badges/badge_family_compact_20261106/badges/bronze/mobile/bronze_badge_mobile.usdz",
+    "flat_export": "/Users/antonioperedo/Desktop/badges/badge_family_compact_20261106/mobile/bronze_badge_mobile.usdz",
+    "optical_gem_attachment_count": 0
+  },
+  "copper": {
+    "status": "validated_candidate",
+    "before": {
+      "meshes": 3,
+      "sections": 9,
+      "triangles": 40812,
+      "vertices": 20412
+    },
+    "after": {
+      "meshes": 3,
+      "sections": 3,
+      "triangles": 40812,
+      "vertices": 22572
+    },
+    "source_sha256": "19c483cdc0064185f47320c90a6bb681c3c3641dbc4911b1b775ef7e1475ae6f",
+    "output_sha256": "cdf815ae8f55d4824a62673bfc8b5214d9c835e88cf90c7508ff25f4c7631058",
+    "bytes_before": 1147277,
+    "bytes_after": 1215667,
+    "all_triangle_corner_attributes_and_materials_identical": true,
+    "all_material_graphs_unchanged": true,
+    "protected_meshes_unchanged": [],
+    "all_textures_byte_identical": true,
+    "arkit_valid": true,
+    "native_review_complete": true,
+    "editable_checkpoint_verified": true,
+    "final": "/Users/antonioperedo/Desktop/badges/badge_family_compact_20261106/badges/copper/mobile/copper_badge_mobile.usdz",
+    "flat_export": "/Users/antonioperedo/Desktop/badges/badge_family_compact_20261106/mobile/copper_badge_mobile.usdz",
+    "optical_gem_attachment_count": 0
+  },
+  "diamond": {
+    "status": "already_minimal",
+    "before": {
+      "meshes": 1,
+      "sections": 1,
+      "triangles": 206,
+      "vertices": 618
+    },
+    "after": {
+      "meshes": 1,
+      "sections": 1,
+      "triangles": 206,
+      "vertices": 618
+    }
+  },
+  "gold": {
+    "status": "validated_candidate",
+    "before": {
+      "meshes": 21,
+      "sections": 24,
+      "triangles": 59680,
+      "vertices": 29860
+    },
+    "after": {
+      "meshes": 4,
+      "sections": 4,
+      "triangles": 59680,
+      "vertices": 32676
+    },
+    "source_sha256": "260cff06cdff8193727c49cae8525cc2a3e911f7d0b7e8a117866b0c7062e5bb",
+    "output_sha256": "0210e9abed7763898911e0e8727e5e8d3593a921953bc68ce8dc645908f9e6cb",
+    "bytes_before": 4014554,
+    "bytes_after": 1667136,
+    "all_triangle_corner_attributes_and_materials_identical": true,
+    "all_material_graphs_unchanged": true,
+    "protected_meshes_unchanged": [],
+    "all_textures_byte_identical": true,
+    "arkit_valid": true,
+    "native_review_complete": true,
+    "editable_checkpoint_verified": true,
+    "final": "/Users/antonioperedo/Desktop/badges/badge_family_compact_20261106/badges/gold/mobile/gold_badge_mobile.usdz",
+    "flat_export": "/Users/antonioperedo/Desktop/badges/badge_family_compact_20261106/mobile/gold_badge_mobile.usdz",
+    "optical_gem_attachment_count": 0
+  },
+  "iron": {
+    "status": "validated_candidate",
+    "before": {
+      "meshes": 17,
+      "sections": 19,
+      "triangles": 59392,
+      "vertices": 32022
+    },
+    "after": {
+      "meshes": 11,
+      "sections": 11,
+      "triangles": 59392,
+      "vertices": 32917
+    },
+    "source_sha256": "0400817c22a28c8402679e639bb6ddc3a3081134a80d99128c3efb907b8c34d3",
+    "output_sha256": "597b02e21fdf8e4f9933d4d97ba1374aae78ba4b4d6fdd6a041a477e2310daf4",
+    "bytes_before": 4670316,
+    "bytes_after": 2223573,
+    "all_triangle_corner_attributes_and_materials_identical": true,
+    "all_material_graphs_unchanged": true,
+    "protected_meshes_unchanged": [],
+    "all_textures_byte_identical": true,
+    "arkit_valid": true,
+    "native_review_complete": true,
+    "editable_checkpoint_verified": true,
+    "final": "/Users/antonioperedo/Desktop/badges/badge_family_compact_20261106/badges/iron/mobile/original_iron_badge_mobile.usdz",
+    "flat_export": "/Users/antonioperedo/Desktop/badges/badge_family_compact_20261106/mobile/original_iron_badge_mobile.usdz",
+    "optical_gem_attachment_count": 0
+  },
+  "platinum": {
+    "status": "already_minimal",
+    "before": {
+      "meshes": 1,
+      "sections": 5,
+      "triangles": 43008,
+      "vertices": 21504
+    },
+    "after": {
+      "meshes": 1,
+      "sections": 5,
+      "triangles": 43008,
+      "vertices": 21504
+    }
+  },
+  "silver": {
+    "status": "validated_candidate",
+    "before": {
+      "meshes": 6,
+      "sections": 16,
+      "triangles": 43924,
+      "vertices": 42756
+    },
+    "after": {
+      "meshes": 6,
+      "sections": 6,
+      "triangles": 43924,
+      "vertices": 28079
+    },
+    "source_sha256": "bddcce62bad9d3ad013b79514d3708f07f6c2c6a8949492b16e1e4a9de50acbd",
+    "output_sha256": "0934e42a320ca6e3412246509f43fcf44512f398291a1252d71647705f434733",
+    "bytes_before": 3940923,
+    "bytes_after": 1688904,
+    "all_triangle_corner_attributes_and_materials_identical": true,
+    "all_material_graphs_unchanged": true,
+    "protected_meshes_unchanged": [],
+    "all_textures_byte_identical": true,
+    "arkit_valid": true,
+    "native_review_complete": true,
+    "editable_checkpoint_verified": true,
+    "final": "/Users/antonioperedo/Desktop/badges/badge_family_compact_20261106/badges/silver/mobile/silver_badge_mobile.usdz",
+    "flat_export": "/Users/antonioperedo/Desktop/badges/badge_family_compact_20261106/mobile/silver_badge_mobile.usdz",
+    "optical_gem_attachment_count": 0
+  },
+  "steel": {
+    "status": "retained_rendering_baseline",
+    "before": {
+      "meshes": 2,
+      "sections": 4,
+      "triangles": 600,
+      "vertices": 448
+    },
+    "after": {
+      "meshes": 2,
+      "sections": 4,
+      "triangles": 600,
+      "vertices": 448
+    },
+    "reason": "Native rendering changed the highlight pattern despite identical triangle attributes. The approved original already has two meshes and is retained byte identical.",
+    "attempted_compaction": {
+      "status": "validated_candidate",
+      "before": {
+        "meshes": 2,
+        "sections": 4,
+        "triangles": 600,
+        "vertices": 448
+      },
+      "after": {
+        "meshes": 2,
+        "sections": 2,
+        "triangles": 600,
+        "vertices": 448
+      },
+      "source_sha256": "65b2047e8503ddddcfe6330164e694856d2bce4dea9bad60fedaa177b40acfb1",
+      "output_sha256": "6bae0dfeaeb620920553e8d34449a28364871dcdb2b4e51ee5f2b187f72fb304",
+      "bytes_before": 744538,
+      "bytes_after": 718795,
+      "all_triangle_corner_attributes_and_materials_identical": true,
+      "all_material_graphs_unchanged": true,
+      "protected_meshes_unchanged": [],
+      "all_textures_byte_identical": true,
+      "arkit_valid": true
+    }
+  },
+  "astralNavigator": {
+    "status": "already_optimized",
+    "before": {
+      "meshes": 23,
+      "sections": 23,
+      "triangles": 88556,
+      "vertices": 73850
+    },
+    "after": {
+      "meshes": 23,
+      "sections": 23,
+      "triangles": 88556,
+      "vertices": 73850
+    }
+  },
+  "auroraMountain": {
+    "status": "validated_candidate",
+    "before": {
+      "meshes": 27,
+      "sections": 27,
+      "triangles": 51076,
+      "vertices": 38476
+    },
+    "after": {
+      "meshes": 11,
+      "sections": 11,
+      "triangles": 51076,
+      "vertices": 59235
+    },
+    "source_sha256": "13ba8517f5f94b2695b64eb5035c011d41ed01ce3e0fa807911b521745ca33e9",
+    "output_sha256": "8492201b63a4191fb5d86aa34c6218a765b37bc34b630081e38bb5d235d847e0",
+    "bytes_before": 3926900,
+    "bytes_after": 4534895,
+    "all_triangle_corner_attributes_and_materials_identical": true,
+    "all_material_graphs_unchanged": true,
+    "protected_meshes_unchanged": [
+      "/AuroraMountain/Part_26"
+    ],
+    "all_textures_byte_identical": true,
+    "arkit_valid": true,
+    "native_review_complete": true,
+    "editable_checkpoint_verified": true,
+    "final": "/Users/antonioperedo/Desktop/badges/badge_family_compact_20261106/badges/aurora_mountain/mobile/aurora_mountain_badge_mobile.usdz",
+    "flat_export": "/Users/antonioperedo/Desktop/badges/badge_family_compact_20261106/mobile/aurora_mountain_badge_mobile.usdz",
+    "optical_gem_attachment_count": 1
+  },
+  "battleSteel": {
+    "status": "validated_candidate",
+    "before": {
+      "meshes": 8,
+      "sections": 8,
+      "triangles": 111268,
+      "vertices": 97332
+    },
+    "after": {
+      "meshes": 5,
+      "sections": 5,
+      "triangles": 111268,
+      "vertices": 70366
+    },
+    "source_sha256": "3729b12e8fba92035042f6e01ef3fc449d7ec673a816a36775456a90c306a037",
+    "output_sha256": "60fdfe092ee4582fd4c58b37c43fa84935cef6842d3b67108fda24e658873c08",
+    "bytes_before": 9541569,
+    "bytes_after": 4343909,
+    "all_triangle_corner_attributes_and_materials_identical": true,
+    "all_material_graphs_unchanged": true,
+    "protected_meshes_unchanged": [],
+    "all_textures_byte_identical": true,
+    "arkit_valid": true,
+    "native_review_complete": true,
+    "editable_checkpoint_verified": true,
+    "final": "/Users/antonioperedo/Desktop/badges/badge_family_compact_20261106/badges/battle_steel/mobile/battle_steel_badge_mobile.usdz",
+    "flat_export": "/Users/antonioperedo/Desktop/badges/badge_family_compact_20261106/mobile/battle_steel_badge_mobile.usdz",
+    "optical_gem_attachment_count": 0
+  },
+  "bronzePhoenix": {
+    "status": "validated_candidate",
+    "before": {
+      "meshes": 7,
+      "sections": 7,
+      "triangles": 87168,
+      "vertices": 57560
+    },
+    "after": {
+      "meshes": 4,
+      "sections": 4,
+      "triangles": 87168,
+      "vertices": 52238
+    },
+    "source_sha256": "bbcc490975f53353fadcc3dc457e953fb966b259a1007b4c9d18d47f55f9369d",
+    "output_sha256": "0af5996d869e8ca7b96845ba9d5e799a641ebf648558965f01d9427f03b288ae",
+    "bytes_before": 7793876,
+    "bytes_after": 3725665,
+    "all_triangle_corner_attributes_and_materials_identical": true,
+    "all_material_graphs_unchanged": true,
+    "protected_meshes_unchanged": [],
+    "all_textures_byte_identical": true,
+    "arkit_valid": true,
+    "native_review_complete": true,
+    "editable_checkpoint_verified": true,
+    "final": "/Users/antonioperedo/Desktop/badges/badge_family_compact_20261106/badges/bronze_phoenix/mobile/bronze_phoenix_badge_mobile.usdz",
+    "flat_export": "/Users/antonioperedo/Desktop/badges/badge_family_compact_20261106/mobile/bronze_phoenix_badge_mobile.usdz",
+    "optical_gem_attachment_count": 0
+  },
+  "celestialOrbit": {
+    "status": "validated_candidate",
+    "before": {
+      "meshes": 6,
+      "sections": 6,
+      "triangles": 84372,
+      "vertices": 47158
+    },
+    "after": {
+      "meshes": 3,
+      "sections": 3,
+      "triangles": 84372,
+      "vertices": 52801
+    },
+    "source_sha256": "c048534dd688eb84d53724ba6178532530978a38fdeb8f8dc67b46254e654c82",
+    "output_sha256": "8065590e44eb5b122ea023a5c8b90e657826913536fec971b61317af7cfceef9",
+    "bytes_before": 7977219,
+    "bytes_after": 4189727,
+    "all_triangle_corner_attributes_and_materials_identical": true,
+    "all_material_graphs_unchanged": true,
+    "protected_meshes_unchanged": [],
+    "all_textures_byte_identical": true,
+    "arkit_valid": true,
+    "native_review_complete": true,
+    "editable_checkpoint_verified": true,
+    "final": "/Users/antonioperedo/Desktop/badges/badge_family_compact_20261106/badges/celestial_orbit/mobile/celestial_orbit_badge_mobile.usdz",
+    "flat_export": "/Users/antonioperedo/Desktop/badges/badge_family_compact_20261106/mobile/celestial_orbit_badge_mobile.usdz",
+    "optical_gem_attachment_count": 0
+  },
+  "crescentOcean": {
+    "status": "validated_candidate",
+    "before": {
+      "meshes": 5,
+      "sections": 5,
+      "triangles": 95784,
+      "vertices": 69204
+    },
+    "after": {
+      "meshes": 4,
+      "sections": 4,
+      "triangles": 95784,
+      "vertices": 64311
+    },
+    "source_sha256": "9f8b386b77f815eb75527da162412580ff345e9ab5ff7ffacbfaa3b68450e071",
+    "output_sha256": "f3ee72f97431a0d20f4e84ddb1e83ac7eeab46b3cc57f92d9a8da2fdf9e5beff",
+    "bytes_before": 8416202,
+    "bytes_after": 4111192,
+    "all_triangle_corner_attributes_and_materials_identical": true,
+    "all_material_graphs_unchanged": true,
+    "protected_meshes_unchanged": [],
+    "all_textures_byte_identical": true,
+    "arkit_valid": true,
+    "native_review_complete": true,
+    "editable_checkpoint_verified": true,
+    "final": "/Users/antonioperedo/Desktop/badges/badge_family_compact_20261106/badges/crescent_ocean/mobile/crescent_ocean_badge_mobile.usdz",
+    "flat_export": "/Users/antonioperedo/Desktop/badges/badge_family_compact_20261106/mobile/crescent_ocean_badge_mobile.usdz",
+    "optical_gem_attachment_count": 0
+  },
+  "crimsonShield": {
+    "status": "already_minimal",
+    "before": {
+      "meshes": 6,
+      "sections": 6,
+      "triangles": 47376,
+      "vertices": 33552
+    },
+    "after": {
+      "meshes": 6,
+      "sections": 6,
+      "triangles": 47376,
+      "vertices": 33552
+    }
+  },
+  "emberForge": {
+    "status": "validated_candidate",
+    "before": {
+      "meshes": 33,
+      "sections": 36,
+      "triangles": 12340,
+      "vertices": 10832
+    },
+    "after": {
+      "meshes": 7,
+      "sections": 7,
+      "triangles": 12340,
+      "vertices": 9399
+    },
+    "source_sha256": "9026afdfb81d71490084a7ecba84d6e6fc2e9a8577a9b326e9b0798e0d038921",
+    "output_sha256": "b9b642895a8fc0a0fc83d2281af6377dbd1f02c84a70dab0808c25f3640a111c",
+    "bytes_before": 2827811,
+    "bytes_after": 2855492,
+    "all_triangle_corner_attributes_and_materials_identical": true,
+    "all_material_graphs_unchanged": true,
+    "protected_meshes_unchanged": [],
+    "all_textures_byte_identical": true,
+    "arkit_valid": true,
+    "native_review_complete": true,
+    "editable_checkpoint_verified": true,
+    "final": "/Users/antonioperedo/Desktop/badges/badge_family_compact_20261106/badges/ember_forge/mobile/ember_forge_badge_mobile.usdz",
+    "flat_export": "/Users/antonioperedo/Desktop/badges/badge_family_compact_20261106/mobile/ember_forge_badge_mobile.usdz",
+    "optical_gem_attachment_count": 0
+  },
+  "emeraldArcher": {
+    "status": "validated_candidate",
+    "before": {
+      "meshes": 17,
+      "sections": 19,
+      "triangles": 62784,
+      "vertices": 44352
+    },
+    "after": {
+      "meshes": 9,
+      "sections": 11,
+      "triangles": 62784,
+      "vertices": 57144
+    },
+    "source_sha256": "b80d96f546d76237ed3eeedc41614f8ffe21b86f1e55eb721b8e6afae0c353c2",
+    "output_sha256": "6941651371b922b416d27929fdc6857744b8bf39d9ea7268e73eb3a2194c4017",
+    "bytes_before": 4413347,
+    "bytes_after": 3231844,
+    "all_triangle_corner_attributes_and_materials_identical": true,
+    "all_material_graphs_unchanged": true,
+    "protected_meshes_unchanged": [
+      "/Badge/Casing___smooth_rounded_outer_edge/Casing___smooth_rounded_outer_edge_mobile_geometry"
+    ],
+    "all_textures_byte_identical": true,
+    "arkit_valid": true,
+    "native_review_complete": true,
+    "editable_checkpoint_verified": true,
+    "final": "/Users/antonioperedo/Desktop/badges/badge_family_compact_20261106/badges/emerald_archer/mobile/emerald_archer_badge_mobile.usdz",
+    "flat_export": "/Users/antonioperedo/Desktop/badges/badge_family_compact_20261106/mobile/emerald_archer_badge_mobile.usdz",
+    "optical_gem_attachment_count": 0
+  },
+  "emeraldSprout": {
+    "status": "validated_candidate",
+    "before": {
+      "meshes": 22,
+      "sections": 42,
+      "triangles": 28104,
+      "vertices": 25201
+    },
+    "after": {
+      "meshes": 9,
+      "sections": 11,
+      "triangles": 28104,
+      "vertices": 28221
+    },
+    "source_sha256": "97129c73a399f82212b3a6064110019eac5529c0db6ac532599113ba3b00248e",
+    "output_sha256": "90462a9ebb1c0c60d1ca33a1d8cf23b8e2bd709ac5ddc2aa72fe95f6f0c02feb",
+    "bytes_before": 3335464,
+    "bytes_after": 3452598,
+    "all_triangle_corner_attributes_and_materials_identical": true,
+    "all_material_graphs_unchanged": true,
+    "protected_meshes_unchanged": [
+      "/Badge/Inset___charcoal_textured_disk/Inset___charcoal_textured_disk_mobile_geometry",
+      "/Badge/Casing___smooth_rounded_outer_edge/Casing___smooth_rounded_outer_edge_mobile_geometry"
+    ],
+    "all_textures_byte_identical": true,
+    "arkit_valid": true,
+    "native_review_complete": true,
+    "editable_checkpoint_verified": true,
+    "final": "/Users/antonioperedo/Desktop/badges/badge_family_compact_20261106/badges/emerald_sprout/mobile/emerald_sprout_badge_mobile.usdz",
+    "flat_export": "/Users/antonioperedo/Desktop/badges/badge_family_compact_20261106/mobile/emerald_sprout_badge_mobile.usdz",
+    "optical_gem_attachment_count": 0
+  },
+  "emeraldTrophy": {
+    "status": "validated_candidate",
+    "before": {
+      "meshes": 7,
+      "sections": 9,
+      "triangles": 154724,
+      "vertices": 156916
+    },
+    "after": {
+      "meshes": 4,
+      "sections": 6,
+      "triangles": 154724,
+      "vertices": 154582
+    },
+    "source_sha256": "40da381680ec0b2e427b4dadb05e1fb8b0525aa800959cb0cba119e6c2027c0f",
+    "output_sha256": "625b6de8a5d212d1202660523bfcb99fada062352a0b6856e41a576c64670b87",
+    "bytes_before": 10665594,
+    "bytes_after": 7812788,
+    "all_triangle_corner_attributes_and_materials_identical": true,
+    "all_material_graphs_unchanged": true,
+    "protected_meshes_unchanged": [
+      "/Badge/Casing___smooth_rounded_outer_edge/Casing___smooth_rounded_outer_edge_mobile_geometry"
+    ],
+    "all_textures_byte_identical": true,
+    "arkit_valid": true,
+    "native_review_complete": true,
+    "editable_checkpoint_verified": true,
+    "final": "/Users/antonioperedo/Desktop/badges/badge_family_compact_20261106/badges/emerald_trophy/mobile/emerald_trophy_badge_mobile.usdz",
+    "flat_export": "/Users/antonioperedo/Desktop/badges/badge_family_compact_20261106/mobile/emerald_trophy_badge_mobile.usdz",
+    "optical_gem_attachment_count": 0
+  },
+  "frostwingCrystal": {
+    "status": "validated_candidate",
+    "before": {
+      "meshes": 8,
+      "sections": 8,
+      "triangles": 106512,
+      "vertices": 84566
+    },
+    "after": {
+      "meshes": 6,
+      "sections": 6,
+      "triangles": 106512,
+      "vertices": 69698
+    },
+    "source_sha256": "691a57794db470e168d2bf86173af381f23af1783b3f27cff1ff2defc9209d3c",
+    "output_sha256": "bd0ae00b65e0ee00806f9fea93902b951f53c065f84dd142e512ffb512cb3a10",
+    "bytes_before": 8899215,
+    "bytes_after": 3963945,
+    "all_triangle_corner_attributes_and_materials_identical": true,
+    "all_material_graphs_unchanged": true,
+    "protected_meshes_unchanged": [
+      "/Crest/Relief_5",
+      "/Crest/Relief_6",
+      "/Crest/Relief_7"
+    ],
+    "all_textures_byte_identical": true,
+    "arkit_valid": true,
+    "native_review_complete": true,
+    "editable_checkpoint_verified": true,
+    "final": "/Users/antonioperedo/Desktop/badges/badge_family_compact_20261106/badges/frostwing_crystal/mobile/frostwing_crystal_badge_mobile.usdz",
+    "flat_export": "/Users/antonioperedo/Desktop/badges/badge_family_compact_20261106/mobile/frostwing_crystal_badge_mobile.usdz",
+    "optical_gem_attachment_count": 3
+  },
+  "goldenSands": {
+    "status": "validated_candidate",
+    "before": {
+      "meshes": 22,
+      "sections": 42,
+      "triangles": 59262,
+      "vertices": 41569
+    },
+    "after": {
+      "meshes": 9,
+      "sections": 11,
+      "triangles": 59262,
+      "vertices": 44125
+    },
+    "source_sha256": "a2bfc47deae88172c05b257638d778dc393ed3f5ee54958f05f5b37fe1d53603",
+    "output_sha256": "a747ac40b1c7dc64468a5ae913fd07743315d08e4df6889ee4af0bc71522b895",
+    "bytes_before": 3744312,
+    "bytes_after": 4002419,
+    "all_triangle_corner_attributes_and_materials_identical": true,
+    "all_material_graphs_unchanged": true,
+    "protected_meshes_unchanged": [
+      "/Badge/Inset___charcoal_textured_disk/Inset___charcoal_textured_disk_mobile_geometry",
+      "/Badge/Casing___smooth_rounded_outer_edge/Casing___smooth_rounded_outer_edge_mobile_geometry"
+    ],
+    "all_textures_byte_identical": true,
+    "arkit_valid": true,
+    "native_review_complete": true,
+    "editable_checkpoint_verified": true,
+    "final": "/Users/antonioperedo/Desktop/badges/badge_family_compact_20261106/badges/golden_sands/mobile/golden_sands_badge_mobile.usdz",
+    "flat_export": "/Users/antonioperedo/Desktop/badges/badge_family_compact_20261106/mobile/golden_sands_badge_mobile.usdz",
+    "optical_gem_attachment_count": 0
+  },
+  "islandSunset": {
+    "status": "validated_candidate",
+    "before": {
+      "meshes": 11,
+      "sections": 13,
+      "triangles": 39882,
+      "vertices": 35096
+    },
+    "after": {
+      "meshes": 6,
+      "sections": 8,
+      "triangles": 39882,
+      "vertices": 42058
+    },
+    "source_sha256": "5875dc664b2794f53052bc8157a3fcb1e9a59d9d83a919f3aefebb2033e8a053",
+    "output_sha256": "1e79512cb2956fc90d76e6c96e3fc0fe9c611f92b9dc8e85c329cee657dcf795",
+    "bytes_before": 3488961,
+    "bytes_after": 2792762,
+    "all_triangle_corner_attributes_and_materials_identical": true,
+    "all_material_graphs_unchanged": true,
+    "protected_meshes_unchanged": [
+      "/Badge/Casing___smooth_rounded_outer_edge/Casing___smooth_rounded_outer_edge_mobile_geometry"
+    ],
+    "all_textures_byte_identical": true,
+    "arkit_valid": true,
+    "native_review_complete": true,
+    "editable_checkpoint_verified": true,
+    "final": "/Users/antonioperedo/Desktop/badges/badge_family_compact_20261106/badges/island_sunset/mobile/island_sunset_badge_mobile.usdz",
+    "flat_export": "/Users/antonioperedo/Desktop/badges/badge_family_compact_20261106/mobile/island_sunset_badge_mobile.usdz",
+    "optical_gem_attachment_count": 0
+  },
+  "lightningCompass": {
+    "status": "validated_candidate",
+    "before": {
+      "meshes": 5,
+      "sections": 7,
+      "triangles": 8696,
+      "vertices": 14828
+    },
+    "after": {
+      "meshes": 3,
+      "sections": 5,
+      "triangles": 8696,
+      "vertices": 15748
+    },
+    "source_sha256": "1b7577bd34c0655c5babe98c6af29bb59e7d70e41e36a0358b1bc95fd66d0116",
+    "output_sha256": "8b3c0bb1e007d604276f12275f7db52e36b430b802cc59e7a5baf891a5a0ff92",
+    "bytes_before": 1800423,
+    "bytes_after": 1704663,
+    "all_triangle_corner_attributes_and_materials_identical": true,
+    "all_material_graphs_unchanged": true,
+    "protected_meshes_unchanged": [
+      "/Badge/Casing___smooth_rounded_outer_edge/Casing___smooth_rounded_outer_edge_mobile_geometry"
+    ],
+    "all_textures_byte_identical": true,
+    "arkit_valid": true,
+    "native_review_complete": true,
+    "editable_checkpoint_verified": true,
+    "final": "/Users/antonioperedo/Desktop/badges/badge_family_compact_20261106/badges/lightning_compass/mobile/lightning_compass_badge_mobile.usdz",
+    "flat_export": "/Users/antonioperedo/Desktop/badges/badge_family_compact_20261106/mobile/lightning_compass_badge_mobile.usdz",
+    "optical_gem_attachment_count": 0
+  },
+  "lunarCompass": {
+    "status": "validated_candidate",
+    "before": {
+      "meshes": 7,
+      "sections": 7,
+      "triangles": 88876,
+      "vertices": 51890
+    },
+    "after": {
+      "meshes": 4,
+      "sections": 4,
+      "triangles": 88876,
+      "vertices": 55824
+    },
+    "source_sha256": "03364708446b021e43585bbe862d440a44c82b85932d0296388865881b213e19",
+    "output_sha256": "deb3e74f607ba8c4b1613269958e13d0eb29fe3f92c42dc21f8f0693b6dbbd58",
+    "bytes_before": 8332822,
+    "bytes_after": 4345459,
+    "all_triangle_corner_attributes_and_materials_identical": true,
+    "all_material_graphs_unchanged": true,
+    "protected_meshes_unchanged": [],
+    "all_textures_byte_identical": true,
+    "arkit_valid": true,
+    "native_review_complete": true,
+    "editable_checkpoint_verified": true,
+    "final": "/Users/antonioperedo/Desktop/badges/badge_family_compact_20261106/badges/lunar_compass/mobile/lunar_compass_badge_mobile.usdz",
+    "flat_export": "/Users/antonioperedo/Desktop/badges/badge_family_compact_20261106/mobile/lunar_compass_badge_mobile.usdz",
+    "optical_gem_attachment_count": 0
+  },
+  "mountainCrest": {
+    "status": "already_minimal",
+    "before": {
+      "meshes": 3,
+      "sections": 3,
+      "triangles": 85740,
+      "vertices": 62570
+    },
+    "after": {
+      "meshes": 3,
+      "sections": 3,
+      "triangles": 85740,
+      "vertices": 62570
+    }
+  },
+  "rubyWingedCrest": {
+    "status": "validated_candidate",
+    "before": {
+      "meshes": 11,
+      "sections": 11,
+      "triangles": 107132,
+      "vertices": 72862
+    },
+    "after": {
+      "meshes": 9,
+      "sections": 9,
+      "triangles": 107132,
+      "vertices": 75730
+    },
+    "source_sha256": "a956f46e998fc46b6b54213ebf6336660499904f09a27c8a88758b8ec575409a",
+    "output_sha256": "3de32bfd5c13c349504717af058a8d302ea3679ae08215e3cafaaac07d43f15f",
+    "bytes_before": 9122356,
+    "bytes_after": 4278593,
+    "all_triangle_corner_attributes_and_materials_identical": true,
+    "all_material_graphs_unchanged": true,
+    "protected_meshes_unchanged": [
+      "/Crest/Relief_4",
+      "/Crest/Relief_5",
+      "/Crest/Relief_6",
+      "/Crest/Relief_7",
+      "/Crest/Relief_8",
+      "/Crest/Relief_9",
+      "/Crest/Relief_10"
+    ],
+    "all_textures_byte_identical": true,
+    "arkit_valid": true,
+    "native_review_complete": true,
+    "editable_checkpoint_verified": true,
+    "final": "/Users/antonioperedo/Desktop/badges/badge_family_compact_20261106/badges/ruby_winged_crest/mobile/ruby_winged_crest_badge_mobile.usdz",
+    "flat_export": "/Users/antonioperedo/Desktop/badges/badge_family_compact_20261106/mobile/ruby_winged_crest_badge_mobile.usdz",
+    "optical_gem_attachment_count": 7
+  },
+  "sapphireStairway": {
+    "status": "validated_candidate",
+    "before": {
+      "meshes": 14,
+      "sections": 14,
+      "triangles": 88472,
+      "vertices": 53170
+    },
+    "after": {
+      "meshes": 12,
+      "sections": 12,
+      "triangles": 88472,
+      "vertices": 107939
+    },
+    "source_sha256": "fcb626fd2da38a1326a9d3dd136415159745d9baf24852bab2c91a212fcdfe9f",
+    "output_sha256": "04c61061e4ddf489903706af547f188036b4e98184902a659d6cf1bc047f5a6e",
+    "bytes_before": 7903811,
+    "bytes_after": 5485883,
+    "all_triangle_corner_attributes_and_materials_identical": true,
+    "all_material_graphs_unchanged": true,
+    "protected_meshes_unchanged": [
+      "/Crest/Relief_6",
+      "/Crest/Relief_7",
+      "/Crest/Relief_8",
+      "/Crest/Relief_9",
+      "/Crest/Relief_10",
+      "/Crest/Relief_11",
+      "/Crest/Relief_12",
+      "/Crest/Relief_13"
+    ],
+    "all_textures_byte_identical": true,
+    "arkit_valid": true,
+    "native_review_complete": true,
+    "editable_checkpoint_verified": true,
+    "final": "/Users/antonioperedo/Desktop/badges/badge_family_compact_20261106/badges/sapphire_stairway/mobile/sapphire_stairway_badge_mobile.usdz",
+    "flat_export": "/Users/antonioperedo/Desktop/badges/badge_family_compact_20261106/mobile/sapphire_stairway_badge_mobile.usdz",
+    "optical_gem_attachment_count": 8
+  },
+  "starAscent": {
+    "status": "validated_candidate",
+    "before": {
+      "meshes": 7,
+      "sections": 9,
+      "triangles": 22604,
+      "vertices": 21934
+    },
+    "after": {
+      "meshes": 4,
+      "sections": 6,
+      "triangles": 22604,
+      "vertices": 23632
+    },
+    "source_sha256": "bcd70449eb26d061a6fb1af9997a14a87c9eaa571b1fda9e8880bd8da4bc5d8c",
+    "output_sha256": "144a908dbf2cc68e6ff939ba553f940bd1953840ccc90f2020f196c6c8c22ee2",
+    "bytes_before": 2544168,
+    "bytes_after": 2086817,
+    "all_triangle_corner_attributes_and_materials_identical": true,
+    "all_material_graphs_unchanged": true,
+    "protected_meshes_unchanged": [
+      "/Badge/Casing___smooth_rounded_outer_edge/Casing___smooth_rounded_outer_edge_mobile_geometry"
+    ],
+    "all_textures_byte_identical": true,
+    "arkit_valid": true,
+    "native_review_complete": true,
+    "editable_checkpoint_verified": true,
+    "final": "/Users/antonioperedo/Desktop/badges/badge_family_compact_20261106/badges/star_ascent/mobile/star_ascent_badge_mobile.usdz",
+    "flat_export": "/Users/antonioperedo/Desktop/badges/badge_family_compact_20261106/mobile/star_ascent_badge_mobile.usdz",
+    "optical_gem_attachment_count": 0
+  },
+  "sunrisePath": {
+    "status": "validated_candidate",
+    "before": {
+      "meshes": 24,
+      "sections": 46,
+      "triangles": 36314,
+      "vertices": 30029
+    },
+    "after": {
+      "meshes": 5,
+      "sections": 7,
+      "triangles": 36314,
+      "vertices": 32245
+    },
+    "source_sha256": "66cc669091b7627244beec99c9241931ff46c106566bcd4224ae7ac49e911687",
+    "output_sha256": "5dc5f2d7bbc5c130262308879b7f579edd4578b5abfc55093e4a596327292947",
+    "bytes_before": 3346749,
+    "bytes_after": 3475474,
+    "all_triangle_corner_attributes_and_materials_identical": true,
+    "all_material_graphs_unchanged": true,
+    "protected_meshes_unchanged": [
+      "/Badge/Inset___charcoal_textured_disk/Inset___charcoal_textured_disk_mobile_geometry",
+      "/Badge/Casing___smooth_rounded_outer_edge/Casing___smooth_rounded_outer_edge_mobile_geometry"
+    ],
+    "all_textures_byte_identical": true,
+    "arkit_valid": true,
+    "native_review_complete": true,
+    "editable_checkpoint_verified": true,
+    "final": "/Users/antonioperedo/Desktop/badges/badge_family_compact_20261106/badges/sunrise_path/mobile/sunrise_path_badge_mobile.usdz",
+    "flat_export": "/Users/antonioperedo/Desktop/badges/badge_family_compact_20261106/mobile/sunrise_path_badge_mobile.usdz",
+    "optical_gem_attachment_count": 0
+  },
+  "tealSands": {
+    "status": "validated_candidate",
+    "before": {
+      "meshes": 22,
+      "sections": 42,
+      "triangles": 59262,
+      "vertices": 41569
+    },
+    "after": {
+      "meshes": 9,
+      "sections": 11,
+      "triangles": 59262,
+      "vertices": 44125
+    },
+    "source_sha256": "b053a3cebd721a4efd928ce332404e879d6fd52d3931706d9631f9c9046caada",
+    "output_sha256": "32f76af777b67b17b9ed8ef5eb764ab1da0dc1bfc84110fc0c59239e8fd550d9",
+    "bytes_before": 3738095,
+    "bytes_after": 3996202,
+    "all_triangle_corner_attributes_and_materials_identical": true,
+    "all_material_graphs_unchanged": true,
+    "protected_meshes_unchanged": [
+      "/Badge/Inset___charcoal_textured_disk/Inset___charcoal_textured_disk_mobile_geometry",
+      "/Badge/Casing___smooth_rounded_outer_edge/Casing___smooth_rounded_outer_edge_mobile_geometry"
+    ],
+    "all_textures_byte_identical": true,
+    "arkit_valid": true,
+    "native_review_complete": true,
+    "editable_checkpoint_verified": true,
+    "final": "/Users/antonioperedo/Desktop/badges/badge_family_compact_20261106/badges/teal_sands/mobile/teal_sands_badge_mobile.usdz",
+    "flat_export": "/Users/antonioperedo/Desktop/badges/badge_family_compact_20261106/mobile/teal_sands_badge_mobile.usdz",
+    "optical_gem_attachment_count": 0
+  },
+  "tidalCompass": {
+    "status": "validated_candidate",
+    "before": {
+      "meshes": 17,
+      "sections": 20,
+      "triangles": 32844,
+      "vertices": 27722
+    },
+    "after": {
+      "meshes": 6,
+      "sections": 6,
+      "triangles": 32844,
+      "vertices": 22022
+    },
+    "source_sha256": "eb6b400a35a783ec3ba7f7fcc9e3d8a09cadb1befc0008df3c2eaf9ce42a46ab",
+    "output_sha256": "c45df0f16a674751062e29d8914e66c26cc74f5e918e1b99dd814654c309c97c",
+    "bytes_before": 2633693,
+    "bytes_after": 2648000,
+    "all_triangle_corner_attributes_and_materials_identical": true,
+    "all_material_graphs_unchanged": true,
+    "protected_meshes_unchanged": [],
+    "all_textures_byte_identical": true,
+    "arkit_valid": true,
+    "native_review_complete": true,
+    "editable_checkpoint_verified": true,
+    "final": "/Users/antonioperedo/Desktop/badges/badge_family_compact_20261106/badges/tidal_compass/mobile/tidal_compass_badge_mobile.usdz",
+    "flat_export": "/Users/antonioperedo/Desktop/badges/badge_family_compact_20261106/mobile/tidal_compass_badge_mobile.usdz",
+    "optical_gem_attachment_count": 0
+  },
+  "torchSunburst": {
+    "status": "validated_candidate",
+    "before": {
+      "meshes": 5,
+      "sections": 7,
+      "triangles": 41888,
+      "vertices": 31400
+    },
+    "after": {
+      "meshes": 3,
+      "sections": 5,
+      "triangles": 41888,
+      "vertices": 36256
+    },
+    "source_sha256": "8d848920a55b35d0a12a448bf379bf49dffdeef1d4752ebbd40f3caee1184d12",
+    "output_sha256": "945c271fef1266645f85ed4dc56332495a6b6424df7485d8e9744400ef90cf06",
+    "bytes_before": 3242196,
+    "bytes_after": 2345940,
+    "all_triangle_corner_attributes_and_materials_identical": true,
+    "all_material_graphs_unchanged": true,
+    "protected_meshes_unchanged": [
+      "/Badge/Casing___smooth_rounded_outer_edge/Casing___smooth_rounded_outer_edge_mobile_geometry"
+    ],
+    "all_textures_byte_identical": true,
+    "arkit_valid": true,
+    "native_review_complete": true,
+    "editable_checkpoint_verified": true,
+    "final": "/Users/antonioperedo/Desktop/badges/badge_family_compact_20261106/badges/torch_sunburst/mobile/torch_sunburst_badge_mobile.usdz",
+    "flat_export": "/Users/antonioperedo/Desktop/badges/badge_family_compact_20261106/mobile/torch_sunburst_badge_mobile.usdz",
+    "optical_gem_attachment_count": 0
+  },
+  "waterDrop": {
+    "status": "validated_candidate",
+    "before": {
+      "meshes": 12,
+      "sections": 22,
+      "triangles": 37652,
+      "vertices": 30149
+    },
+    "after": {
+      "meshes": 7,
+      "sections": 9,
+      "triangles": 37652,
+      "vertices": 31617
+    },
+    "source_sha256": "dac3cea5d0ecf94cddfd8ee907fcbc5f9ebffda42b5d4f45dce3c7ad1ffbca29",
+    "output_sha256": "e47137ce82a5c55fde0b12fbf08e262c684a62574cd5b3dd2958e0d981b5a7ab",
+    "bytes_before": 4154764,
+    "bytes_after": 3491843,
+    "all_triangle_corner_attributes_and_materials_identical": true,
+    "all_material_graphs_unchanged": true,
+    "protected_meshes_unchanged": [
+      "/Badge/Inset___charcoal_textured_disk/Inset___charcoal_textured_disk_mobile_geometry",
+      "/Badge/Casing___smooth_rounded_outer_edge/Casing___smooth_rounded_outer_edge_mobile_geometry"
+    ],
+    "all_textures_byte_identical": true,
+    "arkit_valid": true,
+    "native_review_complete": true,
+    "editable_checkpoint_verified": true,
+    "final": "/Users/antonioperedo/Desktop/badges/badge_family_compact_20261106/badges/water_drop/mobile/water_drop_badge_mobile.usdz",
+    "flat_export": "/Users/antonioperedo/Desktop/badges/badge_family_compact_20261106/mobile/water_drop_badge_mobile.usdz",
+    "optical_gem_attachment_count": 0
+  },
+  "wingedSword": {
+    "status": "already_minimal",
+    "before": {
+      "meshes": 3,
+      "sections": 3,
+      "triangles": 115460,
+      "vertices": 99004
+    },
+    "after": {
+      "meshes": 3,
+      "sections": 3,
+      "triangles": 115460,
+      "vertices": 99004
+    }
+  },
+  "zenBalance": {
+    "status": "validated_candidate",
+    "before": {
+      "meshes": 5,
+      "sections": 7,
+      "triangles": 39616,
+      "vertices": 30164
+    },
+    "after": {
+      "meshes": 3,
+      "sections": 5,
+      "triangles": 39616,
+      "vertices": 30164
+    },
+    "source_sha256": "22a5dcfdfa42ec19fbbcae1da415b471781eb945e87e2b5780029a303a3d14cb",
+    "output_sha256": "8208ca05752c292a17176b3b4c89fb25e95759be1c8fab30d6bbf2d1aea36f50",
+    "bytes_before": 3263631,
+    "bytes_after": 2271060,
+    "all_triangle_corner_attributes_and_materials_identical": true,
+    "all_material_graphs_unchanged": true,
+    "protected_meshes_unchanged": [
+      "/Badge/Casing___smooth_rounded_outer_edge/Casing___smooth_rounded_outer_edge_mobile_geometry"
+    ],
+    "all_textures_byte_identical": true,
+    "arkit_valid": true,
+    "native_review_complete": true,
+    "editable_checkpoint_verified": true,
+    "final": "/Users/antonioperedo/Desktop/badges/badge_family_compact_20261106/badges/zen_balance/mobile/zen_balance_badge_mobile.usdz",
+    "flat_export": "/Users/antonioperedo/Desktop/badges/badge_family_compact_20261106/mobile/zen_balance_badge_mobile.usdz",
+    "optical_gem_attachment_count": 0
+  }
+}

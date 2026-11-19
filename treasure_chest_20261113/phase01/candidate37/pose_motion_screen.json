@@ -1,0 +1,263 @@
+{
+  "certified": false,
+  "screen_only": true,
+  "frames": [
+    {
+      "frame": 0,
+      "shift": 0.0,
+      "spring_lift": 0.0
+    },
+    {
+      "frame": 10,
+      "shift": 0.0,
+      "spring_lift": 0.0
+    },
+    {
+      "frame": 20,
+      "shift": 0.0,
+      "spring_lift": 0.0
+    },
+    {
+      "frame": 30,
+      "shift": 0.0,
+      "spring_lift": 0.0
+    },
+    {
+      "frame": 40,
+      "shift": 0.0,
+      "spring_lift": 0.0
+    },
+    {
+      "frame": 50,
+      "shift": 0.0,
+      "spring_lift": 0.0
+    },
+    {
+      "frame": 60,
+      "shift": -0.03357567638158798,
+      "spring_lift": 0.0015020000282675028
+    },
+    {
+      "frame": 70,
+      "shift": -0.07899493724107742,
+      "spring_lift": 0.0015020000282675028
+    },
+    {
+      "frame": 80,
+      "shift": -0.10934313386678696,
+      "spring_lift": 0.0015020000282675028
+    },
+    {
+      "frame": 90,
+      "shift": -0.11999999731779099,
+      "spring_lift": 0.0015020000282675028
+    },
+    {
+      "frame": 100,
+      "shift": -0.11999999731779099,
+      "spring_lift": 0.0015020000282675028
+    },
+    {
+      "frame": 110,
+      "shift": -0.11999999731779099,
+      "spring_lift": 0.0015020000282675028
+    },
+    {
+      "frame": 120,
+      "shift": -0.11999999731779099,
+      "spring_lift": 0.0015020000282675028
+    },
+    {
+      "frame": 130,
+      "shift": -0.11999999731779099,
+      "spring_lift": 0.0015020000282675028
+    },
+    {
+      "frame": 140,
+      "shift": -0.11999999731779099,
+      "spring_lift": 0.0015020000282675028
+    },
+    {
+      "frame": 150,
+      "shift": -0.11999999731779099,
+      "spring_lift": 0.0015020000282675028
+    },
+    {
+      "frame": 160,
+      "shift": -0.09899494796991348,
+      "spring_lift": 0.0015020000282675028
+    },
+    {
+      "frame": 170,
+      "shift": -0.053575679659843445,
+      "spring_lift": 0.0015020000282675028
+    },
+    {
+      "frame": 180,
+      "shift": 0.0,
+      "spring_lift": 0.0
+    },
+    {
+      "frame": 190,
+      "shift": 0.0,
+      "spring_lift": 0.0
+    },
+    {
+      "frame": 200,
+      "shift": 0.0,
+      "spring_lift": 0.0
+    },
+    {
+      "frame": 210,
+      "shift": 0.0,
+      "spring_lift": 0.0
+    },
+    {
+      "frame": 220,
+      "shift": 0.0,
+      "spring_lift": 0.0
+    },
+    {
+      "frame": 230,
+      "shift": 0.0,
+      "spring_lift": 0.0
+    },
+    {
+      "frame": 240,
+      "shift": 0.0,
+      "spring_lift": 0.0
+    },
+    {
+      "frame": 250,
+      "shift": 0.0,
+      "spring_lift": 0.0
+    },
+    {
+      "frame": 260,
+      "shift": 0.0,
+      "spring_lift": 0.0
+    },
+    {
+      "frame": 270,
+      "shift": 0.0,
+      "spring_lift": 0.0
+    },
+    {
+      "frame": 280,
+      "shift": 0.0,
+      "spring_lift": 0.0
+    },
+    {
+      "frame": 290,
+      "shift": 0.0,
+      "spring_lift": 0.0
+    },
+    {
+      "frame": 300,
+      "shift": 0.0,
+      "spring_lift": 0.0
+    },
+    {
+      "frame": 310,
+      "shift": -0.03357567638158798,
+      "spring_lift": 0.0015020000282675028
+    },
+    {
+      "frame": 320,
+      "shift": -0.07899493724107742,
+      "spring_lift": 0.0015020000282675028
+    },
+    {
+      "frame": 330,
+      "shift": -0.10934313386678696,
+      "spring_lift": 0.0015020000282675028
+    },
+    {
+      "frame": 340,
+      "shift": -0.11999999731779099,
+      "spring_lift": 0.0015020000282675028
+    },
+    {
+      "frame": 350,
+      "shift": -0.11999999731779099,
+      "spring_lift": 0.0015020000282675028
+    },
+    {
+      "frame": 360,
+      "shift": -0.11999999731779099,
+      "spring_lift": 0.0015020000282675028
+    },
+    {
+      "frame": 370,
+      "shift": -0.11999999731779099,
+      "spring_lift": 0.0015020000282675028
+    },
+    {
+      "frame": 380,
+      "shift": -0.11999999731779099,
+      "spring_lift": 0.0015020000282675028
+    },
+    {
+      "frame": 390,
+      "shift": -0.11999999731779099,
+      "spring_lift": 0.0015020000282675028
+    },
+    {
+      "frame": 400,
+      "shift": -0.11999999731779099,
+      "spring_lift": 0.0015020000282675028
+    },
+    {
+      "frame": 410,
+      "shift": -0.09899494796991348,
+      "spring_lift": 0.0015020000282675028
+    },
+    {
+      "frame": 420,
+      "shift": -0.053575679659843445,
+      "spring_lift": 0.0015020000282675028
+    },
+    {
+      "frame": 430,
+      "shift": 0.0,
+      "spring_lift": 0.0
+    },
+    {
+      "frame": 440,
+      "shift": 0.0,
+      "spring_lift": 0.0
+    },
+    {
+      "frame": 450,
+      "shift": 0.0,
+      "spring_lift": 0.0
+    },
+    {
+      "frame": 460,
+      "shift": 0.0,
+      "spring_lift": 0.0
+    },
+    {
+      "frame": 470,
+      "shift": 0.0,
+      "spring_lift": 0.0
+    },
+    {
+      "frame": 480,
+      "shift": 0.0,
+      "spring_lift": 0.0
+    },
+    {
+      "frame": 490,
+      "shift": 0.0,
+      "spring_lift": 0.0
+    }
+  ],
+  "unclassified": [],
+  "intended_contacts": {
+    "fixed_leaf_root_clamp": 700,
+    "actual_stop_supporting_plane_contact": 11021,
+    "crank_driving_support_plane_contact": 54
+  },
+  "full_frame_screen_complete": true
+}

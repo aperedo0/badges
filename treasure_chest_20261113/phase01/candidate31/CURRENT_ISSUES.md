@@ -1,0 +1,7 @@
+Current checkpoint candidate31
+
+Rig update complete for this block: all14 drivers are simple and valid, actual float controls and movement ranges are corrected, and a fresh load with use_scripts=False has no warning. Global security preferences were not changed. All50 sampled test poses have zero unclassified intersections under actual opposing support plane checks. Negative controls detect no spring lift (31 intersections), an engaged pin during release (293 intersections), wrong driving side gaps of about0.020, and actual obstructed key withdrawal at45 degrees. None of this is a full continuous motion certificate.
+
+Four current Blender renders and a fresh neutral construction review are saved. Read construction_review.md and actual_fastener_seat_exposure.json. Next fix eight buried foot seats using actual mounting face positions, then upper corner steps. Confirm the crown visible shelf issue without breaking proven full width underside contact and lower taper. Keep all existing stud centers and unrelated geometry. Recheck the earlier foot slit, shield seams, keyhole smoothing and lower hasp return. Hollow body/lid, actual rear hinge and lid opening rig still follow. Later wood and final materials are not begun.
+
+Source rig31_live.py now includes safe phase logic, floats and restored hard ranges. Full rebuild from this exact source still deserves its repeatability check; the last direct live correction, saved model and fresh untrusted load all pass. Keep temporary keyframes as tests only. Honor the 30 minute work and20 minute break schedule.

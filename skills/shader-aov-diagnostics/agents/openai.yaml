@@ -1,0 +1,4 @@
+interface:
+  display_name: "Shader AOV diagnostics"
+  short_description: "Export and verify the real values a material feeds its shader"
+  default_prompt: "Use $shader-aov-diagnostics to list this material's signals, export the ones in question as temporary AOV passes, and report which are flat, empty or working."

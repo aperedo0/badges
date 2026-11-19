@@ -1,0 +1,23 @@
+{
+  "source_fields.npz": "62c8237d78aaf2d7a85053c091c526c6d1feec111e6798702519c734a2756925",
+  "render_progress.json": "164eb9c845d3fd22d3b4e5170568e2a34df60aec517b12674a8a35aa09b9f1f5",
+  "failed_coincident_bore_attempt.txt": "eb0bd11989aa95be35fb5c051758e12737db3314a718edeff6f0e736cfa7e238",
+  "build_progress.json": "32ac6ad58a51ce125502f41e7257e6f6da0f03d703b59d2a27d52a2dc96fe775",
+  "before_geometry.npz": "38211e044c16b7646da988bbce8c7bdbf6215074ebe8d648f1cebaf338fd281d",
+  "baseline37_hashes.json": "35300130050c2ce70765212305695813b3d133b60c07ac5aea45aee53f0a9ac5",
+  "before_manifest.json": "0fc5a371ad2c4b6f5607da728d5138682cb7d5984930f30065875df354f2eaac",
+  "normal_targets.npz": "b5523de234e2993c135a63571bcd820b5f9d5ef429f7a779a0f1171661d0e2ba",
+  "validation.json": "faa4043dfe2e70a90cb97f87a0ae914c39ee57c4a3635c60e14396c1f2a68500",
+  "inspection_ownership.json": "9e95ff44aca76d5b47d136bfb73a8dc0aa2a619e8632c6485a4e58d95c2711ce",
+  "hinge_close.png": "a3fdd35332517aded0fb7c501c7bfafb7ea1bcfb5527697a346e11d142f41752",
+  "geometry.npz": "5758c1989d8e9bac6ab469022b09e5b453337ec12b9244202aa8efd773db8adc",
+  "back.png": "bd2e2ff79425ede0fecbcf1df58d710ac58ebde51c7d08ce1c90a6fae6f538b9",
+  "bore_pin_removed.png": "271ac31f62e4f04f5b8a3a115171cd550fc9f4c3072d39bb05888d4c93fb419a",
+  "hinge_stage.json": "e7f55a3ddbdfa614301de37649f84e546a407c428d963862839052c9d9975209",
+  "intrusion_inventory_before.json": "37517e5f3dc66819f61f5a7bb8ace1921282415f10551d2defa5c3eb0985b570",
+  "chest.blend": "a808b75aaef9d2b7204a49181aee679abcf324ec826259464843c78987356620",
+  "source/hinge38_geometry.py": "9a4471395902498c0637603579c2caf1696d4d4148ddc74ccb2c74886d679389",
+  "source/frame36_geometry.py": "e65475d0f6a517fa62eedfeb21362541bd3e11878e18ee27437f5e2ddc29184f",
+  "source/validate_hinge38_inputs.py": "6a38df8f22264086eb97a2a7f3e46c97b3f0cf6add6bf727bc440aa54a99180a",
+  "source/hinge38_live.py": "9326b7cb38cbe6063207cbf7e2db5bb224d8716f4ca64c97c36add81c4828afb"
+}

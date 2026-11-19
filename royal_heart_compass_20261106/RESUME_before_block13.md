@@ -1,0 +1,35 @@
+# Checkpoint after block twelve
+
+Work ends 2026-11-07T15:39:55.892557+00:00. Break ends 2026-11-07T15:59:55.892557+00:00. Read schedule first. No badge complete. Existing watcher PID8587 targets thread 01a16b8e-9f81-76d1-8bd7-d0a939464547. No overall deadline. Production untouched. No commits.
+
+## Exact next action
+
+First rebuild and run the separate preview using guarded_build or a fresh240second guard. The private shader SOURCE was restored byte for byte to its pre block twelve state, but the installed simulator binary STILL contains rejected Heart13 optics until this rebuild. Do not claim source restoration already restored the binary. The simulator was reopened on Amethyst Crown11 because the rejected Heart test only affects the heart. Other profiles and original Diamond were unchanged.
+
+Then work on Ruby Heart's rounded gold bezel using the preserved Heart05 source. A planned candidate14 source and export was DENIED by the240second pacing guard with235seconds remaining. The command had set e and made NO geometry, source or app changes. There is NO candidate14 to resume. Do not assume a file exists because the earlier transcript proposed it. Operational Python helpers remain candidate11; front_runner/native_turn_runner function stores were restored to11. Candidate13 helpers accept explicit candidate mode. reference_comparison.py accepts BADGE_CANDIDATE environment override. capture.py and review_motion.py now honor their explicit candidate argument. Never call a helper with a candidate folder that does not exist.
+
+## Heart physical diagnosis this block
+
+Actual saved Heart05 bounds are Xplus/minus2.80622,Ynegative2.455to2.975,Zplus/minus0.84464, width to height1.0336. Reference gold bounds are(118,111)to(1124,1113), ratio1.004. Do not assume modelwidth6.35; height limited its normalization. All13front landmarks are retained on each actual convex hull. The primary facet graph is already close to the reference; optics and secondary cut detail dominate the visible gap. optics_fit/actual_cut_graph.png and reference_gold_silhouette.png show this. The silhouette mask itself has light dependent ragged patches and must not be used raw as geometry.
+
+The existing forward optical model matches native broad facets. A new constant physical material fit (fit_material.py/material_fit.json/material_fit_comparison.png) only slightly changed the poor result, so its parameters were NOT installed. A pavilion depth grid(1through3times) preserved the front cut, but the broad white patches barely moved, indicating those patches are dominated by first surface reflection. Those variants were NOT installed.
+
+fit_cut_constrained.py preserves the actual roof topology with1472linear constraints and restricts each landmark change to0.20. It converged with no constraint violation, yet the visual prediction still looked flat and unlike the reference. This fit also was NOT installed. Data and comparison remain in optics_fit/constrained_fit*. Do not repeat another unconstrained or constrained scalar brightness fit on the same13landmarks and declare numeric loss an acceptance result.
+
+## Rejected Heart13 optics and restored source
+
+Heart13 is a REAL REJECTED runtime experiment, not progress. Geometry and editable checkpoints are exact copies of Heart05. Its saved native front and reference comparison show bright square inclusion speckles. It used smaller model space fracture cells0.075, share0.18,8probes, two secondary bounces and retained residual secondary radiance. The source before testing is runtime_before_block12/BadgeCrestGemSurface.metal. Tested source is ruby_heart/candidate13/tested_shader.metal. Rejection is candidate13/review/rejected.json. It must never become a final or be marked done.
+
+The combined rollback and model command initially received automatic review rejection because the reviewer read app code restrictions as including the private preview. No command ran. Read only checks established the path is inside this badge workspace and distinct from protected Desktop/screen_time, and its README explicitly describes the separate private test project. A narrowly scoped retry verified exact current and backup SHA256 values and was APPROVED. It restored only the rejected private shader test, byte for byte. Current saved source SHA256 is5f8a7c42248e1996608b59a78d980d0554550eb47a799311dfb318e60848c26d. The rejected tested hash isb450a214d6d81d9f3f1d69cb33b560fddfb1198eb0ad4d70389c1f9e8cb7838f. No production source or other developer's changes were touched. Rebuild next block is still required to remove the rejected behavior from the installed preview.
+
+## Planned bezel change, not yet executed
+
+The broad gold bezel face is planar with an explicit normal override toZplus1in build_live.py, while the reference has a rounded band with wide changing reflections. Proposed meaningful geometry correction: start from preserved Heart05 geometry. For group0 reshape points into(pathCount,8,3), recover XY center as profile average, across vector as vertex6minusvertex0, depth as(z3minusz0)/1.05, and Zcenter as z0plus0.5depth. Replace its flat cross section with17points:15front points wfromnegative0.5topositive0.5, h=0.12+0.45sqrt(1minus(w/0.5)squared), followed by backpoints(0.5,negative0.5),(negative0.5,negative0.5). Close and triangulate in the existing path order. Keep all other geometry including both optical domains identical. Remove ONLY the Wide sculpted heart gold bezel normal override, leaving the compass override unchanged, so Blender exports actual smooth curved normals. Test roughness0.215versus old0.245in this badge's copied gold material, preserving all other badges. Inspect the complete live Blender source before packaging and native testing. Save candidate14 only when actually generated. This is a plan, not an accepted look.
+
+## Retained states and required finish
+
+Installed model assets remain Heart05, Amethyst11, Ruby10, Emerald04, Ocean09. Schedule entries remain correct. Candidate12 amethyst is rejected before export; candidate13heart runtime is rejected. No completed badge was restarted. All models remain unaccepted against the owner's near exact reference standard. Source and detail counts remain as recorded in RESUME_before_block12.md.
+
+Amethyst11 has six actual measured native poses, exact cached model proof, full turn8distinctframes and exported optical checks. It is still unlike its reference in cap volume, top arches and generic ornament. Do not repeat reference color segmentation after candidate12failed with jagged gold. Ruby10 and Ocean09 actual comparisons are also saved. Heart13 optical experiment does not change these other profiles.
+
+All final reference and every angle acceptance, detailed versus compact native comparisons, final REPORT/model/source handoff and runtime integration patch remain required. Do not mark done or complete the run merely because many blocks elapsed. Use fresh real work guards before long actions, and keep all video lifecycle steps inside one awaited orchestration. Verify existing watcher before releasing the break. Stop timer only after all five are reviewed and complete.

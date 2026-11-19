@@ -1,0 +1,16 @@
+{
+  "source": "candidate09",
+  "gem_scale_xy": [
+    1.2,
+    0.82
+  ],
+  "mount_half_extent_xy": [
+    0.82611,
+    1.04
+  ],
+  "gem_center_y_shift": 0.278,
+  "pave_center_y_scale": 0.695,
+  "pave_stone_shapes_preserved": true,
+  "whole_model_lift": -0.015271024703979563,
+  "upper_stones_remain_red": true
+}

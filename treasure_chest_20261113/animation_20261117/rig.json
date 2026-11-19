@@ -1,0 +1,1138 @@
+{
+ "Chest Removable Crank Key": {
+  "props": {
+   "phase": 1,
+   "full_form": false,
+   "shape_only": true,
+   "allowed_euler": "<bpy id property array [1]>",
+   "dynamic_mechanism_only": true,
+   "chest_mechanism_rig_part": true
+  },
+  "rotmode": "XYZ",
+  "mw": [
+   [
+    1.0,
+    0.0,
+    0.0,
+    0.0
+   ],
+   [
+    0.0,
+    1.0,
+    0.0,
+    0.0
+   ],
+   [
+    0.0,
+    0.0,
+    1.0,
+    0.0
+   ],
+   [
+    0.0,
+    0.0,
+    0.0,
+    1.0
+   ]
+  ],
+  "drivers": [
+   {
+    "path": "hide_render",
+    "idx": 0,
+    "expr": "1-v",
+    "vars": [
+     [
+      "v",
+      "SINGLE_PROP",
+      [
+       [
+        "Chest Rig Master",
+        "[\"show_key\"]",
+        "LOC_X"
+       ]
+      ]
+     ]
+    ]
+   },
+   {
+    "path": "hide_viewport",
+    "idx": 0,
+    "expr": "1-v",
+    "vars": [
+     [
+      "v",
+      "SINGLE_PROP",
+      [
+       [
+        "Chest Rig Master",
+        "[\"show_key\"]",
+        "LOC_X"
+       ]
+      ]
+     ]
+    ]
+   }
+  ],
+  "children": []
+ },
+ "Chest Rig BoltShift": {
+  "props": {
+   "chest_mechanism_controller": true,
+   "shift": 0.0,
+   "phase": 0.0
+  },
+  "rotmode": "AXIS_ANGLE",
+  "mw": [
+   [
+    1.0,
+    0.0,
+    0.0,
+    0.0
+   ],
+   [
+    0.0,
+    1.0,
+    0.0,
+    0.0
+   ],
+   [
+    0.0,
+    0.0,
+    1.0,
+    0.0
+   ],
+   [
+    0.0,
+    0.0,
+    0.0,
+    1.0
+   ]
+  ],
+  "drivers": [
+   {
+    "path": "[\"phase\"]",
+    "idx": 0,
+    "expr": "c if c<2 else c-2",
+    "vars": [
+     [
+      "c",
+      "SINGLE_PROP",
+      [
+       [
+        "Chest Rig Master",
+        "[\"cycle\"]",
+        "LOC_X"
+       ]
+      ]
+     ]
+    ]
+   },
+   {
+    "path": "[\"shift\"]",
+    "idx": 0,
+    "expr": "min(0,-0.14*sin(1.5707963267948966*min(p,2-p))+0.02) if p<=1 else max(-0.12,-0.14*sin(1.5707963267948966*min(p,2-p)))",
+    "vars": [
+     [
+      "p",
+      "SINGLE_PROP",
+      [
+       [
+        "Chest Rig BoltShift",
+        "[\"phase\"]",
+        "LOC_X"
+       ]
+      ]
+     ]
+    ]
+   },
+   {
+    "path": "location",
+    "idx": 0,
+    "expr": "0.8480481505393982*d",
+    "vars": [
+     [
+      "d",
+      "SINGLE_PROP",
+      [
+       [
+        "Chest Rig BoltShift",
+        "[\"shift\"]",
+        "LOC_X"
+       ]
+      ]
+     ]
+    ]
+   },
+   {
+    "path": "location",
+    "idx": 1,
+    "expr": "0.5299192070960999*d",
+    "vars": [
+     [
+      "d",
+      "SINGLE_PROP",
+      [
+       [
+        "Chest Rig BoltShift",
+        "[\"shift\"]",
+        "LOC_X"
+       ]
+      ]
+     ]
+    ]
+   },
+   {
+    "path": "location",
+    "idx": 2,
+    "expr": "0.0*d",
+    "vars": [
+     [
+      "d",
+      "SINGLE_PROP",
+      [
+       [
+        "Chest Rig BoltShift",
+        "[\"shift\"]",
+        "LOC_X"
+       ]
+      ]
+     ]
+    ]
+   }
+  ],
+  "children": [
+   "Chest Key Driven Slider"
+  ]
+ },
+ "Chest Rig HaspRelease": {
+  "props": {
+   "chest_mechanism_controller": true
+  },
+  "rotmode": "AXIS_ANGLE",
+  "mw": [
+   [
+    1.0,
+    0.0,
+    0.0,
+    0.0
+   ],
+   [
+    0.0,
+    1.0,
+    0.0,
+    0.0
+   ],
+   [
+    0.0,
+    0.0,
+    1.0,
+    0.0
+   ],
+   [
+    0.0,
+    0.0,
+    0.0,
+    1.0
+   ]
+  ],
+  "drivers": [
+   {
+    "path": "rotation_axis_angle",
+    "idx": 0,
+    "expr": "-h",
+    "vars": [
+     [
+      "h",
+      "SINGLE_PROP",
+      [
+       [
+        "Chest Rig Master",
+        "[\"hasp\"]",
+        "LOC_X"
+       ]
+      ]
+     ]
+    ]
+   }
+  ],
+  "children": [
+   "Chest Curved Hasp Tongue",
+   "Chest Front Hasp Barrel"
+  ]
+ },
+ "Chest Rig KeyInsertTurn": {
+  "props": {
+   "chest_mechanism_controller": true
+  },
+  "rotmode": "AXIS_ANGLE",
+  "mw": [
+   [
+    1.0,
+    0.0,
+    0.0,
+    0.0
+   ],
+   [
+    0.0,
+    1.0,
+    0.0,
+    0.0
+   ],
+   [
+    0.0,
+    0.0,
+    1.0,
+    0.0
+   ],
+   [
+    0.0,
+    0.0,
+    0.0,
+    1.0
+   ]
+  ],
+  "drivers": [
+   {
+    "path": "location",
+    "idx": 0,
+    "expr": "0.0+0.5299192070960999*0.8*(1-i)",
+    "vars": [
+     [
+      "i",
+      "SINGLE_PROP",
+      [
+       [
+        "Chest Rig Master",
+        "[\"insert\"]",
+        "LOC_X"
+       ]
+      ]
+     ]
+    ]
+   },
+   {
+    "path": "location",
+    "idx": 1,
+    "expr": "-0.0+-0.8480481505393982*0.8*(1-i)",
+    "vars": [
+     [
+      "i",
+      "SINGLE_PROP",
+      [
+       [
+        "Chest Rig Master",
+        "[\"insert\"]",
+        "LOC_X"
+       ]
+      ]
+     ]
+    ]
+   },
+   {
+    "path": "location",
+    "idx": 2,
+    "expr": "-0.5360000133514404+0.0*0.8*(1-i)",
+    "vars": [
+     [
+      "i",
+      "SINGLE_PROP",
+      [
+       [
+        "Chest Rig Master",
+        "[\"insert\"]",
+        "LOC_X"
+       ]
+      ]
+     ]
+    ]
+   },
+   {
+    "path": "rotation_axis_angle",
+    "idx": 0,
+    "expr": "-(1.5707963267948966*min(p,2-p))",
+    "vars": [
+     [
+      "p",
+      "SINGLE_PROP",
+      [
+       [
+        "Chest Rig BoltShift",
+        "[\"phase\"]",
+        "LOC_X"
+       ]
+      ]
+     ]
+    ]
+   }
+  ],
+  "children": [
+   "Chest Removable Crank Key"
+  ]
+ },
+ "Chest Rig LidOpen": {
+  "props": {
+   "chest_mechanism_controller": true
+  },
+  "rotmode": "AXIS_ANGLE",
+  "mw": [
+   [
+    1.0,
+    0.0,
+    0.0,
+    0.0
+   ],
+   [
+    0.0,
+    1.0,
+    0.0,
+    0.0
+   ],
+   [
+    0.0,
+    0.0,
+    1.0,
+    0.0
+   ],
+   [
+    0.0,
+    0.0,
+    0.0,
+    1.0
+   ]
+  ],
+  "drivers": [
+   {
+    "path": "rotation_axis_angle",
+    "idx": 0,
+    "expr": "-a*0.017453292519943295",
+    "vars": [
+     [
+      "a",
+      "SINGLE_PROP",
+      [
+       [
+        "Chest Rig Master",
+        "[\"lid_degrees\"]",
+        "LOC_X"
+       ]
+      ]
+     ]
+    ]
+   }
+  ],
+  "children": [
+   "Chest Barrel Lid Envelope",
+   "Chest Crown Fastener Mass 1",
+   "Chest Crown Fastener Mass 2",
+   "Chest Crown Fastener Mass 3",
+   "Chest Crown Fastener Mass 4",
+   "Chest End Arch Crown Tab -1",
+   "Chest End Arch Crown Tab 1",
+   "Chest End Arch Rivet -1 0",
+   "Chest End Arch Rivet -1 1",
+   "Chest End Arch Rivet 1 0",
+   "Chest End Arch Rivet 1 1",
+   "Chest End Crown Fastener -1",
+   "Chest End Crown Fastener 1",
+   "Chest End Rail Rivet -1 0",
+   "Chest End Rail Rivet 1 0",
+   "Chest Fixed Front Hinge Knuckle -1",
+   "Chest Fixed Front Hinge Knuckle 1",
+   "Chest Front Hinge Pin",
+   "Chest Hasp Mount",
+   "Chest Hasp Mount Fastener -1",
+   "Chest Hasp Mount Fastener 1",
+   "Chest Hasp Pivot Dome -1",
+   "Chest Hasp Pivot Dome 1",
+   "Chest Hoop Rivet 0 0",
+   "Chest Hoop Rivet 0 1",
+   "Chest Hoop Rivet 1 0",
+   "Chest Hoop Rivet 1 1",
+   "Chest Hoop Rivet 1 2",
+   "Chest Hoop Rivet 1 3",
+   "Chest Hoop Rivet 1 4",
+   "Chest Hoop Rivet 1 5",
+   "Chest Hoop Rivet 2 0",
+   "Chest Hoop Rivet 2 1",
+   "Chest Hoop Rivet 2 2",
+   "Chest Hoop Rivet 2 3",
+   "Chest Hoop Rivet 2 4",
+   "Chest Hoop Rivet 2 5",
+   "Chest Hoop Rivet 3 0",
+   "Chest Hoop Rivet 3 1",
+   "Chest Rail Rivet -1 0",
+   "Chest Rail Rivet -1 1",
+   "Chest Rail Rivet 1 0",
+   "Chest Rail Rivet 1 1",
+   "Chest Rail Rivet 1 2",
+   "Chest Rear Hinge Upper -1",
+   "Chest Rear Hinge Upper 1",
+   "Chest Rear Hinge Upper Rivet -1 0",
+   "Chest Rear Hinge Upper Rivet -1 1",
+   "Chest Rear Hinge Upper Rivet 1 0",
+   "Chest Rear Hinge Upper Rivet 1 1",
+   "Chest Rig HaspRelease",
+   "Chest Small Front Rail Rivet -1",
+   "Chest Upper Corner End Rivet -1 -1",
+   "Chest Upper Corner End Rivet -1 -1 Seat",
+   "Chest Upper Corner End Rivet -1 1",
+   "Chest Upper Corner End Rivet -1 1 Seat",
+   "Chest Upper Corner End Rivet 1 -1",
+   "Chest Upper Corner End Rivet 1 -1 Seat",
+   "Chest Upper Corner End Rivet 1 1",
+   "Chest Upper Corner End Rivet 1 1 Seat",
+   "Chest Upper Corner Front Rivet -1 -1",
+   "Chest Upper Corner Front Rivet -1 -1 Seat",
+   "Chest Upper Corner Front Rivet -1 1",
+   "Chest Upper Corner Front Rivet -1 1 Seat",
+   "Chest Upper Corner Front Rivet 1 -1",
+   "Chest Upper Corner Front Rivet 1 -1 Seat",
+   "Chest Upper Corner Front Rivet 1 1",
+   "Chest Upper Corner Front Rivet 1 1 Seat",
+   "Chest Upper Lid Rim"
+  ]
+ },
+ "Chest Rig Master": {
+  "props": {
+   "chest_mechanism_controller": true,
+   "cycle": 0.0,
+   "insert": 0.0,
+   "hasp": 0.0,
+   "show_key": 0.0,
+   "detentA": 0.005989429669010843,
+   "detentStart": 0.001325740142466436,
+   "detentTop": -0.185,
+   "detentRadius": 0.008,
+   "detentFree": -0.1785,
+   "detentFlatLift": 0.0015,
+   "lid_degrees": 0.0
+  },
+  "rotmode": "AXIS_ANGLE",
+  "mw": [
+   [
+    1.0,
+    0.0,
+    0.0,
+    0.0
+   ],
+   [
+    0.0,
+    1.0,
+    0.0,
+    0.0
+   ],
+   [
+    0.0,
+    0.0,
+    1.0,
+    0.0
+   ],
+   [
+    0.0,
+    0.0,
+    0.0,
+    1.0
+   ]
+  ],
+  "drivers": [],
+  "fcurves": [
+   {
+    "path": "[\"cycle\"]",
+    "idx": 0,
+    "keys": [
+     [
+      0.0,
+      0.0
+     ],
+     [
+      10.0,
+      0.0
+     ],
+     [
+      40.0,
+      0.0
+     ],
+     [
+      50.0,
+      0.0
+     ],
+     [
+      90.0,
+      1.0
+     ],
+     [
+      100.0,
+      1.0
+     ],
+     [
+      130.0,
+      1.0
+     ],
+     [
+      140.0,
+      1.0
+     ],
+     [
+      180.0,
+      2.0
+     ],
+     [
+      190.0,
+      2.0
+     ],
+     [
+      230.0,
+      2.0
+     ],
+     [
+      240.0,
+      2.0
+     ],
+     [
+      260.0,
+      2.0
+     ],
+     [
+      290.0,
+      2.0
+     ],
+     [
+      300.0,
+      2.0
+     ],
+     [
+      340.0,
+      3.0
+     ],
+     [
+      350.0,
+      3.0
+     ],
+     [
+      380.0,
+      3.0
+     ],
+     [
+      390.0,
+      3.0
+     ],
+     [
+      430.0,
+      4.0
+     ],
+     [
+      440.0,
+      4.0
+     ],
+     [
+      480.0,
+      4.0
+     ],
+     [
+      490.0,
+      4.0
+     ]
+    ]
+   },
+   {
+    "path": "[\"insert\"]",
+    "idx": 0,
+    "keys": [
+     [
+      0.0,
+      0.0
+     ],
+     [
+      10.0,
+      0.0
+     ],
+     [
+      40.0,
+      1.0
+     ],
+     [
+      50.0,
+      1.0
+     ],
+     [
+      90.0,
+      1.0
+     ],
+     [
+      100.0,
+      1.0
+     ],
+     [
+      130.0,
+      1.0
+     ],
+     [
+      140.0,
+      1.0
+     ],
+     [
+      180.0,
+      1.0
+     ],
+     [
+      190.0,
+      1.0
+     ],
+     [
+      230.0,
+      0.0
+     ],
+     [
+      240.0,
+      0.0
+     ],
+     [
+      260.0,
+      0.0
+     ],
+     [
+      290.0,
+      1.0
+     ],
+     [
+      300.0,
+      1.0
+     ],
+     [
+      340.0,
+      1.0
+     ],
+     [
+      350.0,
+      1.0
+     ],
+     [
+      380.0,
+      1.0
+     ],
+     [
+      390.0,
+      1.0
+     ],
+     [
+      430.0,
+      1.0
+     ],
+     [
+      440.0,
+      1.0
+     ],
+     [
+      480.0,
+      0.0
+     ],
+     [
+      490.0,
+      0.0
+     ]
+    ]
+   },
+   {
+    "path": "[\"hasp\"]",
+    "idx": 0,
+    "keys": [
+     [
+      0.0,
+      0.0
+     ],
+     [
+      10.0,
+      0.0
+     ],
+     [
+      40.0,
+      0.0
+     ],
+     [
+      50.0,
+      0.0
+     ],
+     [
+      90.0,
+      0.0
+     ],
+     [
+      100.0,
+      0.0
+     ],
+     [
+      130.0,
+      1.0472
+     ],
+     [
+      140.0,
+      1.0472
+     ],
+     [
+      180.0,
+      1.0472
+     ],
+     [
+      190.0,
+      1.0472
+     ],
+     [
+      230.0,
+      1.0472
+     ],
+     [
+      240.0,
+      1.0472
+     ],
+     [
+      260.0,
+      1.0472
+     ],
+     [
+      290.0,
+      1.0472
+     ],
+     [
+      300.0,
+      1.0472
+     ],
+     [
+      340.0,
+      1.0472
+     ],
+     [
+      350.0,
+      1.0472
+     ],
+     [
+      380.0,
+      0.0
+     ],
+     [
+      390.0,
+      0.0
+     ],
+     [
+      430.0,
+      0.0
+     ],
+     [
+      440.0,
+      0.0
+     ],
+     [
+      480.0,
+      0.0
+     ],
+     [
+      490.0,
+      0.0
+     ]
+    ]
+   },
+   {
+    "path": "[\"show_key\"]",
+    "idx": 0,
+    "keys": [
+     [
+      0.0,
+      0.0
+     ],
+     [
+      10.0,
+      1.0
+     ],
+     [
+      40.0,
+      1.0
+     ],
+     [
+      50.0,
+      1.0
+     ],
+     [
+      90.0,
+      1.0
+     ],
+     [
+      100.0,
+      1.0
+     ],
+     [
+      130.0,
+      1.0
+     ],
+     [
+      140.0,
+      1.0
+     ],
+     [
+      180.0,
+      1.0
+     ],
+     [
+      190.0,
+      1.0
+     ],
+     [
+      230.0,
+      1.0
+     ],
+     [
+      240.0,
+      0.0
+     ],
+     [
+      260.0,
+      1.0
+     ],
+     [
+      290.0,
+      1.0
+     ],
+     [
+      300.0,
+      1.0
+     ],
+     [
+      340.0,
+      1.0
+     ],
+     [
+      350.0,
+      1.0
+     ],
+     [
+      380.0,
+      1.0
+     ],
+     [
+      390.0,
+      1.0
+     ],
+     [
+      430.0,
+      1.0
+     ],
+     [
+      440.0,
+      1.0
+     ],
+     [
+      480.0,
+      1.0
+     ],
+     [
+      490.0,
+      0.0
+     ]
+    ]
+   },
+   {
+    "path": "[\"lid_degrees\"]",
+    "idx": 0,
+    "keys": [
+     [
+      0.0,
+      0.0
+     ],
+     [
+      230.0,
+      0.0
+     ],
+     [
+      250.0,
+      95.0
+     ],
+     [
+      270.0,
+      95.0
+     ],
+     [
+      290.0,
+      0.0
+     ],
+     [
+      490.0,
+      0.0
+     ]
+    ]
+   }
+  ],
+  "children": []
+ },
+ "Chest Rig SpringLift": {
+  "props": {
+   "chest_mechanism_controller": true,
+   "lift": 0.0
+  },
+  "rotmode": "AXIS_ANGLE",
+  "mw": [
+   [
+    1.0,
+    0.0,
+    0.0,
+    0.0
+   ],
+   [
+    0.0,
+    1.0,
+    0.0,
+    0.0
+   ],
+   [
+    0.0,
+    0.0,
+    1.0,
+    0.0
+   ],
+   [
+    0.0,
+    0.0,
+    0.0,
+    1.0
+   ]
+  ],
+  "drivers": [
+   {
+    "path": "[\"lift\"]",
+    "idx": 0,
+    "expr": "0 if abs(d)<=b else (t+sqrt(max(0,r*r-(a-abs(d))*(a-abs(d))))-f if abs(d)<a else h)+2e-6*min(1,max(0,(abs(d)-b)/.0001))*min(1,max(0,(abs(d)-b)/.0001))*(3-2*min(1,max(0,(abs(d)-b)/.0001)))",
+    "vars": [
+     [
+      "d",
+      "SINGLE_PROP",
+      [
+       [
+        "Chest Rig BoltShift",
+        "[\"shift\"]",
+        "LOC_X"
+       ]
+      ]
+     ],
+     [
+      "a",
+      "SINGLE_PROP",
+      [
+       [
+        "Chest Rig Master",
+        "[\"detentA\"]",
+        "LOC_X"
+       ]
+      ]
+     ],
+     [
+      "b",
+      "SINGLE_PROP",
+      [
+       [
+        "Chest Rig Master",
+        "[\"detentStart\"]",
+        "LOC_X"
+       ]
+      ]
+     ],
+     [
+      "t",
+      "SINGLE_PROP",
+      [
+       [
+        "Chest Rig Master",
+        "[\"detentTop\"]",
+        "LOC_X"
+       ]
+      ]
+     ],
+     [
+      "r",
+      "SINGLE_PROP",
+      [
+       [
+        "Chest Rig Master",
+        "[\"detentRadius\"]",
+        "LOC_X"
+       ]
+      ]
+     ],
+     [
+      "f",
+      "SINGLE_PROP",
+      [
+       [
+        "Chest Rig Master",
+        "[\"detentFree\"]",
+        "LOC_X"
+       ]
+      ]
+     ],
+     [
+      "h",
+      "SINGLE_PROP",
+      [
+       [
+        "Chest Rig Master",
+        "[\"detentFlatLift\"]",
+        "LOC_X"
+       ]
+      ]
+     ]
+    ]
+   }
+  ],
+  "children": []
+ },
+ "_markers": [
+  [
+   "Catch Locked",
+   0
+  ],
+  [
+   "Catch Key inserted",
+   40
+  ],
+  [
+   "Catch Pin retracted",
+   90
+  ],
+  [
+   "Catch Hasp released",
+   130
+  ],
+  [
+   "Catch Key upright",
+   180
+  ],
+  [
+   "Catch Key withdrawn",
+   230
+  ],
+  [
+   "Catch Closing pin retracted",
+   340
+  ],
+  [
+   "Catch Hasp closed",
+   380
+  ],
+  [
+   "Catch Catch extended",
+   430
+  ],
+  [
+   "Catch Relocked",
+   490
+  ],
+  [
+   "Lid test ready",
+   230
+  ],
+  [
+   "Lid test95degrees",
+   250
+  ],
+  [
+   "Lid test closed",
+   290
+  ]
+ ]
+}

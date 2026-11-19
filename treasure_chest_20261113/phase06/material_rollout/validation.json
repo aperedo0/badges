@@ -1,0 +1,23 @@
+{
+  "all_vertex_coordinates_topology_and_normals_exact": true,
+  "object_hierarchies_transforms_constraints_exact": true,
+  "approved_wood_benchmark_material_geometry_and_uv_exact": true,
+  "original_iron_and_two_knobs_exact": true,
+  "decorative_hardware_and_original_complete_scene_exact": true,
+  "original_lighting_exposure_and_camera_exact": true,
+  "all_original_uv_layers_preserved": true,
+  "one_reference_setup_exact": true,
+  "required_resources_packed": true,
+  "linked_libraries": 0,
+  "wood_objects": [
+    "Master Chest Body Envelope",
+    "Lab Chest Barrel Lid Envelope"
+  ],
+  "new_iron_objects": 30,
+  "uv_issues": [],
+  "source_maps_shared": true,
+  "new_wood_images": 3,
+  "new_surface_materials": 2,
+  "geometry_relief_note": "All vertex coordinates and topology unchanged; new panels use coordinated full tangent surface relief",
+  "file_sha256": "87d2aaef335e0d9619c18bb42e3c017d903cf1ec9d29cc97ab7512c4461f09d8"
+}

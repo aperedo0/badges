@@ -1,0 +1,3637 @@
+[
+  {
+    "name": "Continuous solid crown base",
+    "mat": "gold_recess",
+    "smooth": true
+  },
+  {
+    "name": "Embossed velvet base band",
+    "mat": "purple_velvet",
+    "smooth": true
+  },
+  {
+    "name": "Rolled polished gold crown rim",
+    "mat": "gold",
+    "smooth": true
+  },
+  {
+    "name": "Rolled polished gold crown rim",
+    "mat": "gold",
+    "smooth": true
+  },
+  {
+    "name": "Rolled polished gold crown rim",
+    "mat": "gold",
+    "smooth": true
+  },
+  {
+    "name": "Rolled polished gold crown rim",
+    "mat": "gold",
+    "smooth": true
+  },
+  {
+    "name": "Complete deeply folded amethyst velvet cushion",
+    "mat": "purple_velvet",
+    "smooth": true
+  },
+  {
+    "name": "Continuous 1 crown arch to central hub",
+    "mat": "gold_satin",
+    "smooth": true
+  },
+  {
+    "name": "Polished arch raised edge",
+    "mat": "gold",
+    "smooth": true
+  },
+  {
+    "name": "Polished arch raised edge",
+    "mat": "gold",
+    "smooth": true
+  },
+  {
+    "name": "Arch curled floral engraving",
+    "mat": "gold",
+    "smooth": true
+  },
+  {
+    "name": "Arch engraved floral tip",
+    "mat": "gold",
+    "smooth": true
+  },
+  {
+    "name": "Arch curled floral engraving",
+    "mat": "gold",
+    "smooth": true
+  },
+  {
+    "name": "Arch engraved floral tip",
+    "mat": "gold",
+    "smooth": true
+  },
+  {
+    "name": "Arch curled floral engraving",
+    "mat": "gold",
+    "smooth": true
+  },
+  {
+    "name": "Arch engraved floral tip",
+    "mat": "gold",
+    "smooth": true
+  },
+  {
+    "name": "Arch curled floral engraving",
+    "mat": "gold",
+    "smooth": true
+  },
+  {
+    "name": "Arch engraved floral tip",
+    "mat": "gold",
+    "smooth": true
+  },
+  {
+    "name": "Arch curled floral engraving",
+    "mat": "gold",
+    "smooth": true
+  },
+  {
+    "name": "Arch engraved floral tip",
+    "mat": "gold",
+    "smooth": true
+  },
+  {
+    "name": "Arch curled floral engraving",
+    "mat": "gold",
+    "smooth": true
+  },
+  {
+    "name": "Arch engraved floral tip",
+    "mat": "gold",
+    "smooth": true
+  },
+  {
+    "name": "Arch curled floral engraving",
+    "mat": "gold",
+    "smooth": true
+  },
+  {
+    "name": "Arch engraved floral tip",
+    "mat": "gold",
+    "smooth": true
+  },
+  {
+    "name": "Arch curled floral engraving",
+    "mat": "gold",
+    "smooth": true
+  },
+  {
+    "name": "Arch engraved floral tip",
+    "mat": "gold",
+    "smooth": true
+  },
+  {
+    "name": "Arch curled floral engraving",
+    "mat": "gold",
+    "smooth": true
+  },
+  {
+    "name": "Arch engraved floral tip",
+    "mat": "gold",
+    "smooth": true
+  },
+  {
+    "name": "Arch curled floral engraving",
+    "mat": "gold",
+    "smooth": true
+  },
+  {
+    "name": "Arch engraved floral tip",
+    "mat": "gold",
+    "smooth": true
+  },
+  {
+    "name": "Arch curled floral engraving",
+    "mat": "gold",
+    "smooth": true
+  },
+  {
+    "name": "Arch engraved floral tip",
+    "mat": "gold",
+    "smooth": true
+  },
+  {
+    "name": "Arch curled floral engraving",
+    "mat": "gold",
+    "smooth": true
+  },
+  {
+    "name": "Arch engraved floral tip",
+    "mat": "gold",
+    "smooth": true
+  },
+  {
+    "name": "Arch curled floral engraving",
+    "mat": "gold",
+    "smooth": true
+  },
+  {
+    "name": "Arch engraved floral tip",
+    "mat": "gold",
+    "smooth": true
+  },
+  {
+    "name": "Arch curled floral engraving",
+    "mat": "gold",
+    "smooth": true
+  },
+  {
+    "name": "Arch engraved floral tip",
+    "mat": "gold",
+    "smooth": true
+  },
+  {
+    "name": "Arch curled floral engraving",
+    "mat": "gold",
+    "smooth": true
+  },
+  {
+    "name": "Arch engraved floral tip",
+    "mat": "gold",
+    "smooth": true
+  },
+  {
+    "name": "Arch curled floral engraving",
+    "mat": "gold",
+    "smooth": true
+  },
+  {
+    "name": "Arch engraved floral tip",
+    "mat": "gold",
+    "smooth": true
+  },
+  {
+    "name": "Arch 1 amethyst stone closed gold prong frame",
+    "mat": "gold",
+    "smooth": true
+  },
+  {
+    "name": "Arch 1 amethyst stone independent gemstone",
+    "mat": "CrestGem_Amethyst",
+    "smooth": false
+  },
+  {
+    "name": "Arch 1 amethyst stone closed gold prong frame",
+    "mat": "gold",
+    "smooth": true
+  },
+  {
+    "name": "Arch 1 amethyst stone independent gemstone",
+    "mat": "CrestGem_Amethyst",
+    "smooth": false
+  },
+  {
+    "name": "Continuous 2 crown arch to central hub",
+    "mat": "gold_satin",
+    "smooth": true
+  },
+  {
+    "name": "Polished arch raised edge",
+    "mat": "gold",
+    "smooth": true
+  },
+  {
+    "name": "Polished arch raised edge",
+    "mat": "gold",
+    "smooth": true
+  },
+  {
+    "name": "Arch curled floral engraving",
+    "mat": "gold",
+    "smooth": true
+  },
+  {
+    "name": "Arch engraved floral tip",
+    "mat": "gold",
+    "smooth": true
+  },
+  {
+    "name": "Arch curled floral engraving",
+    "mat": "gold",
+    "smooth": true
+  },
+  {
+    "name": "Arch engraved floral tip",
+    "mat": "gold",
+    "smooth": true
+  },
+  {
+    "name": "Arch curled floral engraving",
+    "mat": "gold",
+    "smooth": true
+  },
+  {
+    "name": "Arch engraved floral tip",
+    "mat": "gold",
+    "smooth": true
+  },
+  {
+    "name": "Arch curled floral engraving",
+    "mat": "gold",
+    "smooth": true
+  },
+  {
+    "name": "Arch engraved floral tip",
+    "mat": "gold",
+    "smooth": true
+  },
+  {
+    "name": "Arch curled floral engraving",
+    "mat": "gold",
+    "smooth": true
+  },
+  {
+    "name": "Arch engraved floral tip",
+    "mat": "gold",
+    "smooth": true
+  },
+  {
+    "name": "Arch curled floral engraving",
+    "mat": "gold",
+    "smooth": true
+  },
+  {
+    "name": "Arch engraved floral tip",
+    "mat": "gold",
+    "smooth": true
+  },
+  {
+    "name": "Arch curled floral engraving",
+    "mat": "gold",
+    "smooth": true
+  },
+  {
+    "name": "Arch engraved floral tip",
+    "mat": "gold",
+    "smooth": true
+  },
+  {
+    "name": "Arch curled floral engraving",
+    "mat": "gold",
+    "smooth": true
+  },
+  {
+    "name": "Arch engraved floral tip",
+    "mat": "gold",
+    "smooth": true
+  },
+  {
+    "name": "Arch curled floral engraving",
+    "mat": "gold",
+    "smooth": true
+  },
+  {
+    "name": "Arch engraved floral tip",
+    "mat": "gold",
+    "smooth": true
+  },
+  {
+    "name": "Arch curled floral engraving",
+    "mat": "gold",
+    "smooth": true
+  },
+  {
+    "name": "Arch engraved floral tip",
+    "mat": "gold",
+    "smooth": true
+  },
+  {
+    "name": "Arch curled floral engraving",
+    "mat": "gold",
+    "smooth": true
+  },
+  {
+    "name": "Arch engraved floral tip",
+    "mat": "gold",
+    "smooth": true
+  },
+  {
+    "name": "Arch curled floral engraving",
+    "mat": "gold",
+    "smooth": true
+  },
+  {
+    "name": "Arch engraved floral tip",
+    "mat": "gold",
+    "smooth": true
+  },
+  {
+    "name": "Arch curled floral engraving",
+    "mat": "gold",
+    "smooth": true
+  },
+  {
+    "name": "Arch engraved floral tip",
+    "mat": "gold",
+    "smooth": true
+  },
+  {
+    "name": "Arch curled floral engraving",
+    "mat": "gold",
+    "smooth": true
+  },
+  {
+    "name": "Arch engraved floral tip",
+    "mat": "gold",
+    "smooth": true
+  },
+  {
+    "name": "Arch curled floral engraving",
+    "mat": "gold",
+    "smooth": true
+  },
+  {
+    "name": "Arch engraved floral tip",
+    "mat": "gold",
+    "smooth": true
+  },
+  {
+    "name": "Arch curled floral engraving",
+    "mat": "gold",
+    "smooth": true
+  },
+  {
+    "name": "Arch engraved floral tip",
+    "mat": "gold",
+    "smooth": true
+  },
+  {
+    "name": "Arch 2 amethyst stone closed gold prong frame",
+    "mat": "gold",
+    "smooth": true
+  },
+  {
+    "name": "Arch 2 amethyst stone independent gemstone",
+    "mat": "CrestGem_Amethyst",
+    "smooth": false
+  },
+  {
+    "name": "Arch 2 amethyst stone closed gold prong frame",
+    "mat": "gold",
+    "smooth": true
+  },
+  {
+    "name": "Arch 2 amethyst stone independent gemstone",
+    "mat": "CrestGem_Amethyst",
+    "smooth": false
+  },
+  {
+    "name": "Continuous 3 crown arch to central hub",
+    "mat": "gold_satin",
+    "smooth": true
+  },
+  {
+    "name": "Polished arch raised edge",
+    "mat": "gold",
+    "smooth": true
+  },
+  {
+    "name": "Polished arch raised edge",
+    "mat": "gold",
+    "smooth": true
+  },
+  {
+    "name": "Arch curled floral engraving",
+    "mat": "gold",
+    "smooth": true
+  },
+  {
+    "name": "Arch engraved floral tip",
+    "mat": "gold",
+    "smooth": true
+  },
+  {
+    "name": "Arch curled floral engraving",
+    "mat": "gold",
+    "smooth": true
+  },
+  {
+    "name": "Arch engraved floral tip",
+    "mat": "gold",
+    "smooth": true
+  },
+  {
+    "name": "Arch curled floral engraving",
+    "mat": "gold",
+    "smooth": true
+  },
+  {
+    "name": "Arch engraved floral tip",
+    "mat": "gold",
+    "smooth": true
+  },
+  {
+    "name": "Arch curled floral engraving",
+    "mat": "gold",
+    "smooth": true
+  },
+  {
+    "name": "Arch engraved floral tip",
+    "mat": "gold",
+    "smooth": true
+  },
+  {
+    "name": "Arch curled floral engraving",
+    "mat": "gold",
+    "smooth": true
+  },
+  {
+    "name": "Arch engraved floral tip",
+    "mat": "gold",
+    "smooth": true
+  },
+  {
+    "name": "Arch curled floral engraving",
+    "mat": "gold",
+    "smooth": true
+  },
+  {
+    "name": "Arch engraved floral tip",
+    "mat": "gold",
+    "smooth": true
+  },
+  {
+    "name": "Arch curled floral engraving",
+    "mat": "gold",
+    "smooth": true
+  },
+  {
+    "name": "Arch engraved floral tip",
+    "mat": "gold",
+    "smooth": true
+  },
+  {
+    "name": "Arch curled floral engraving",
+    "mat": "gold",
+    "smooth": true
+  },
+  {
+    "name": "Arch engraved floral tip",
+    "mat": "gold",
+    "smooth": true
+  },
+  {
+    "name": "Arch curled floral engraving",
+    "mat": "gold",
+    "smooth": true
+  },
+  {
+    "name": "Arch engraved floral tip",
+    "mat": "gold",
+    "smooth": true
+  },
+  {
+    "name": "Arch curled floral engraving",
+    "mat": "gold",
+    "smooth": true
+  },
+  {
+    "name": "Arch engraved floral tip",
+    "mat": "gold",
+    "smooth": true
+  },
+  {
+    "name": "Arch curled floral engraving",
+    "mat": "gold",
+    "smooth": true
+  },
+  {
+    "name": "Arch engraved floral tip",
+    "mat": "gold",
+    "smooth": true
+  },
+  {
+    "name": "Arch curled floral engraving",
+    "mat": "gold",
+    "smooth": true
+  },
+  {
+    "name": "Arch engraved floral tip",
+    "mat": "gold",
+    "smooth": true
+  },
+  {
+    "name": "Arch curled floral engraving",
+    "mat": "gold",
+    "smooth": true
+  },
+  {
+    "name": "Arch engraved floral tip",
+    "mat": "gold",
+    "smooth": true
+  },
+  {
+    "name": "Arch curled floral engraving",
+    "mat": "gold",
+    "smooth": true
+  },
+  {
+    "name": "Arch engraved floral tip",
+    "mat": "gold",
+    "smooth": true
+  },
+  {
+    "name": "Arch curled floral engraving",
+    "mat": "gold",
+    "smooth": true
+  },
+  {
+    "name": "Arch engraved floral tip",
+    "mat": "gold",
+    "smooth": true
+  },
+  {
+    "name": "Arch curled floral engraving",
+    "mat": "gold",
+    "smooth": true
+  },
+  {
+    "name": "Arch engraved floral tip",
+    "mat": "gold",
+    "smooth": true
+  },
+  {
+    "name": "Arch 3 amethyst stone closed gold prong frame",
+    "mat": "gold",
+    "smooth": true
+  },
+  {
+    "name": "Arch 3 amethyst stone independent gemstone",
+    "mat": "CrestGem_Amethyst",
+    "smooth": false
+  },
+  {
+    "name": "Arch 3 amethyst stone closed gold prong frame",
+    "mat": "gold",
+    "smooth": true
+  },
+  {
+    "name": "Arch 3 amethyst stone independent gemstone",
+    "mat": "CrestGem_Amethyst",
+    "smooth": false
+  },
+  {
+    "name": "Continuous 4 crown arch to central hub",
+    "mat": "gold_satin",
+    "smooth": true
+  },
+  {
+    "name": "Polished arch raised edge",
+    "mat": "gold",
+    "smooth": true
+  },
+  {
+    "name": "Polished arch raised edge",
+    "mat": "gold",
+    "smooth": true
+  },
+  {
+    "name": "Arch curled floral engraving",
+    "mat": "gold",
+    "smooth": true
+  },
+  {
+    "name": "Arch engraved floral tip",
+    "mat": "gold",
+    "smooth": true
+  },
+  {
+    "name": "Arch curled floral engraving",
+    "mat": "gold",
+    "smooth": true
+  },
+  {
+    "name": "Arch engraved floral tip",
+    "mat": "gold",
+    "smooth": true
+  },
+  {
+    "name": "Arch curled floral engraving",
+    "mat": "gold",
+    "smooth": true
+  },
+  {
+    "name": "Arch engraved floral tip",
+    "mat": "gold",
+    "smooth": true
+  },
+  {
+    "name": "Arch curled floral engraving",
+    "mat": "gold",
+    "smooth": true
+  },
+  {
+    "name": "Arch engraved floral tip",
+    "mat": "gold",
+    "smooth": true
+  },
+  {
+    "name": "Arch curled floral engraving",
+    "mat": "gold",
+    "smooth": true
+  },
+  {
+    "name": "Arch engraved floral tip",
+    "mat": "gold",
+    "smooth": true
+  },
+  {
+    "name": "Arch curled floral engraving",
+    "mat": "gold",
+    "smooth": true
+  },
+  {
+    "name": "Arch engraved floral tip",
+    "mat": "gold",
+    "smooth": true
+  },
+  {
+    "name": "Arch curled floral engraving",
+    "mat": "gold",
+    "smooth": true
+  },
+  {
+    "name": "Arch engraved floral tip",
+    "mat": "gold",
+    "smooth": true
+  },
+  {
+    "name": "Arch curled floral engraving",
+    "mat": "gold",
+    "smooth": true
+  },
+  {
+    "name": "Arch engraved floral tip",
+    "mat": "gold",
+    "smooth": true
+  },
+  {
+    "name": "Arch curled floral engraving",
+    "mat": "gold",
+    "smooth": true
+  },
+  {
+    "name": "Arch engraved floral tip",
+    "mat": "gold",
+    "smooth": true
+  },
+  {
+    "name": "Arch curled floral engraving",
+    "mat": "gold",
+    "smooth": true
+  },
+  {
+    "name": "Arch engraved floral tip",
+    "mat": "gold",
+    "smooth": true
+  },
+  {
+    "name": "Arch curled floral engraving",
+    "mat": "gold",
+    "smooth": true
+  },
+  {
+    "name": "Arch engraved floral tip",
+    "mat": "gold",
+    "smooth": true
+  },
+  {
+    "name": "Arch curled floral engraving",
+    "mat": "gold",
+    "smooth": true
+  },
+  {
+    "name": "Arch engraved floral tip",
+    "mat": "gold",
+    "smooth": true
+  },
+  {
+    "name": "Arch curled floral engraving",
+    "mat": "gold",
+    "smooth": true
+  },
+  {
+    "name": "Arch engraved floral tip",
+    "mat": "gold",
+    "smooth": true
+  },
+  {
+    "name": "Arch curled floral engraving",
+    "mat": "gold",
+    "smooth": true
+  },
+  {
+    "name": "Arch engraved floral tip",
+    "mat": "gold",
+    "smooth": true
+  },
+  {
+    "name": "Arch curled floral engraving",
+    "mat": "gold",
+    "smooth": true
+  },
+  {
+    "name": "Arch engraved floral tip",
+    "mat": "gold",
+    "smooth": true
+  },
+  {
+    "name": "Arch curled floral engraving",
+    "mat": "gold",
+    "smooth": true
+  },
+  {
+    "name": "Arch engraved floral tip",
+    "mat": "gold",
+    "smooth": true
+  },
+  {
+    "name": "Arch 4 amethyst stone closed gold prong frame",
+    "mat": "gold",
+    "smooth": true
+  },
+  {
+    "name": "Arch 4 amethyst stone independent gemstone",
+    "mat": "CrestGem_Amethyst",
+    "smooth": false
+  },
+  {
+    "name": "Arch 4 amethyst stone closed gold prong frame",
+    "mat": "gold",
+    "smooth": true
+  },
+  {
+    "name": "Arch 4 amethyst stone independent gemstone",
+    "mat": "CrestGem_Amethyst",
+    "smooth": false
+  },
+  {
+    "name": "Continuous 5 crown arch to central hub",
+    "mat": "gold_satin",
+    "smooth": true
+  },
+  {
+    "name": "Polished arch raised edge",
+    "mat": "gold",
+    "smooth": true
+  },
+  {
+    "name": "Polished arch raised edge",
+    "mat": "gold",
+    "smooth": true
+  },
+  {
+    "name": "Arch curled floral engraving",
+    "mat": "gold",
+    "smooth": true
+  },
+  {
+    "name": "Arch engraved floral tip",
+    "mat": "gold",
+    "smooth": true
+  },
+  {
+    "name": "Arch curled floral engraving",
+    "mat": "gold",
+    "smooth": true
+  },
+  {
+    "name": "Arch engraved floral tip",
+    "mat": "gold",
+    "smooth": true
+  },
+  {
+    "name": "Arch curled floral engraving",
+    "mat": "gold",
+    "smooth": true
+  },
+  {
+    "name": "Arch engraved floral tip",
+    "mat": "gold",
+    "smooth": true
+  },
+  {
+    "name": "Arch curled floral engraving",
+    "mat": "gold",
+    "smooth": true
+  },
+  {
+    "name": "Arch engraved floral tip",
+    "mat": "gold",
+    "smooth": true
+  },
+  {
+    "name": "Arch curled floral engraving",
+    "mat": "gold",
+    "smooth": true
+  },
+  {
+    "name": "Arch engraved floral tip",
+    "mat": "gold",
+    "smooth": true
+  },
+  {
+    "name": "Arch curled floral engraving",
+    "mat": "gold",
+    "smooth": true
+  },
+  {
+    "name": "Arch engraved floral tip",
+    "mat": "gold",
+    "smooth": true
+  },
+  {
+    "name": "Arch curled floral engraving",
+    "mat": "gold",
+    "smooth": true
+  },
+  {
+    "name": "Arch engraved floral tip",
+    "mat": "gold",
+    "smooth": true
+  },
+  {
+    "name": "Arch curled floral engraving",
+    "mat": "gold",
+    "smooth": true
+  },
+  {
+    "name": "Arch engraved floral tip",
+    "mat": "gold",
+    "smooth": true
+  },
+  {
+    "name": "Arch curled floral engraving",
+    "mat": "gold",
+    "smooth": true
+  },
+  {
+    "name": "Arch engraved floral tip",
+    "mat": "gold",
+    "smooth": true
+  },
+  {
+    "name": "Arch curled floral engraving",
+    "mat": "gold",
+    "smooth": true
+  },
+  {
+    "name": "Arch engraved floral tip",
+    "mat": "gold",
+    "smooth": true
+  },
+  {
+    "name": "Arch curled floral engraving",
+    "mat": "gold",
+    "smooth": true
+  },
+  {
+    "name": "Arch engraved floral tip",
+    "mat": "gold",
+    "smooth": true
+  },
+  {
+    "name": "Arch curled floral engraving",
+    "mat": "gold",
+    "smooth": true
+  },
+  {
+    "name": "Arch engraved floral tip",
+    "mat": "gold",
+    "smooth": true
+  },
+  {
+    "name": "Arch curled floral engraving",
+    "mat": "gold",
+    "smooth": true
+  },
+  {
+    "name": "Arch engraved floral tip",
+    "mat": "gold",
+    "smooth": true
+  },
+  {
+    "name": "Arch curled floral engraving",
+    "mat": "gold",
+    "smooth": true
+  },
+  {
+    "name": "Arch engraved floral tip",
+    "mat": "gold",
+    "smooth": true
+  },
+  {
+    "name": "Arch curled floral engraving",
+    "mat": "gold",
+    "smooth": true
+  },
+  {
+    "name": "Arch engraved floral tip",
+    "mat": "gold",
+    "smooth": true
+  },
+  {
+    "name": "Arch curled floral engraving",
+    "mat": "gold",
+    "smooth": true
+  },
+  {
+    "name": "Arch engraved floral tip",
+    "mat": "gold",
+    "smooth": true
+  },
+  {
+    "name": "Arch 5 amethyst stone closed gold prong frame",
+    "mat": "gold",
+    "smooth": true
+  },
+  {
+    "name": "Arch 5 amethyst stone independent gemstone",
+    "mat": "CrestGem_Amethyst",
+    "smooth": false
+  },
+  {
+    "name": "Arch 5 amethyst stone closed gold prong frame",
+    "mat": "gold",
+    "smooth": true
+  },
+  {
+    "name": "Arch 5 amethyst stone independent gemstone",
+    "mat": "CrestGem_Amethyst",
+    "smooth": false
+  },
+  {
+    "name": "Continuous 6 crown arch to central hub",
+    "mat": "gold_satin",
+    "smooth": true
+  },
+  {
+    "name": "Polished arch raised edge",
+    "mat": "gold",
+    "smooth": true
+  },
+  {
+    "name": "Polished arch raised edge",
+    "mat": "gold",
+    "smooth": true
+  },
+  {
+    "name": "Arch curled floral engraving",
+    "mat": "gold",
+    "smooth": true
+  },
+  {
+    "name": "Arch engraved floral tip",
+    "mat": "gold",
+    "smooth": true
+  },
+  {
+    "name": "Arch curled floral engraving",
+    "mat": "gold",
+    "smooth": true
+  },
+  {
+    "name": "Arch engraved floral tip",
+    "mat": "gold",
+    "smooth": true
+  },
+  {
+    "name": "Arch curled floral engraving",
+    "mat": "gold",
+    "smooth": true
+  },
+  {
+    "name": "Arch engraved floral tip",
+    "mat": "gold",
+    "smooth": true
+  },
+  {
+    "name": "Arch curled floral engraving",
+    "mat": "gold",
+    "smooth": true
+  },
+  {
+    "name": "Arch engraved floral tip",
+    "mat": "gold",
+    "smooth": true
+  },
+  {
+    "name": "Arch curled floral engraving",
+    "mat": "gold",
+    "smooth": true
+  },
+  {
+    "name": "Arch engraved floral tip",
+    "mat": "gold",
+    "smooth": true
+  },
+  {
+    "name": "Arch curled floral engraving",
+    "mat": "gold",
+    "smooth": true
+  },
+  {
+    "name": "Arch engraved floral tip",
+    "mat": "gold",
+    "smooth": true
+  },
+  {
+    "name": "Arch curled floral engraving",
+    "mat": "gold",
+    "smooth": true
+  },
+  {
+    "name": "Arch engraved floral tip",
+    "mat": "gold",
+    "smooth": true
+  },
+  {
+    "name": "Arch curled floral engraving",
+    "mat": "gold",
+    "smooth": true
+  },
+  {
+    "name": "Arch engraved floral tip",
+    "mat": "gold",
+    "smooth": true
+  },
+  {
+    "name": "Arch curled floral engraving",
+    "mat": "gold",
+    "smooth": true
+  },
+  {
+    "name": "Arch engraved floral tip",
+    "mat": "gold",
+    "smooth": true
+  },
+  {
+    "name": "Arch curled floral engraving",
+    "mat": "gold",
+    "smooth": true
+  },
+  {
+    "name": "Arch engraved floral tip",
+    "mat": "gold",
+    "smooth": true
+  },
+  {
+    "name": "Arch curled floral engraving",
+    "mat": "gold",
+    "smooth": true
+  },
+  {
+    "name": "Arch engraved floral tip",
+    "mat": "gold",
+    "smooth": true
+  },
+  {
+    "name": "Arch curled floral engraving",
+    "mat": "gold",
+    "smooth": true
+  },
+  {
+    "name": "Arch engraved floral tip",
+    "mat": "gold",
+    "smooth": true
+  },
+  {
+    "name": "Arch curled floral engraving",
+    "mat": "gold",
+    "smooth": true
+  },
+  {
+    "name": "Arch engraved floral tip",
+    "mat": "gold",
+    "smooth": true
+  },
+  {
+    "name": "Arch curled floral engraving",
+    "mat": "gold",
+    "smooth": true
+  },
+  {
+    "name": "Arch engraved floral tip",
+    "mat": "gold",
+    "smooth": true
+  },
+  {
+    "name": "Arch curled floral engraving",
+    "mat": "gold",
+    "smooth": true
+  },
+  {
+    "name": "Arch engraved floral tip",
+    "mat": "gold",
+    "smooth": true
+  },
+  {
+    "name": "Arch curled floral engraving",
+    "mat": "gold",
+    "smooth": true
+  },
+  {
+    "name": "Arch engraved floral tip",
+    "mat": "gold",
+    "smooth": true
+  },
+  {
+    "name": "Arch 6 amethyst stone closed gold prong frame",
+    "mat": "gold",
+    "smooth": true
+  },
+  {
+    "name": "Arch 6 amethyst stone independent gemstone",
+    "mat": "CrestGem_Amethyst",
+    "smooth": false
+  },
+  {
+    "name": "Arch 6 amethyst stone closed gold prong frame",
+    "mat": "gold",
+    "smooth": true
+  },
+  {
+    "name": "Arch 6 amethyst stone independent gemstone",
+    "mat": "CrestGem_Amethyst",
+    "smooth": false
+  },
+  {
+    "name": "Continuous 7 crown arch to central hub",
+    "mat": "gold_satin",
+    "smooth": true
+  },
+  {
+    "name": "Polished arch raised edge",
+    "mat": "gold",
+    "smooth": true
+  },
+  {
+    "name": "Polished arch raised edge",
+    "mat": "gold",
+    "smooth": true
+  },
+  {
+    "name": "Arch curled floral engraving",
+    "mat": "gold",
+    "smooth": true
+  },
+  {
+    "name": "Arch engraved floral tip",
+    "mat": "gold",
+    "smooth": true
+  },
+  {
+    "name": "Arch curled floral engraving",
+    "mat": "gold",
+    "smooth": true
+  },
+  {
+    "name": "Arch engraved floral tip",
+    "mat": "gold",
+    "smooth": true
+  },
+  {
+    "name": "Arch curled floral engraving",
+    "mat": "gold",
+    "smooth": true
+  },
+  {
+    "name": "Arch engraved floral tip",
+    "mat": "gold",
+    "smooth": true
+  },
+  {
+    "name": "Arch curled floral engraving",
+    "mat": "gold",
+    "smooth": true
+  },
+  {
+    "name": "Arch engraved floral tip",
+    "mat": "gold",
+    "smooth": true
+  },
+  {
+    "name": "Arch curled floral engraving",
+    "mat": "gold",
+    "smooth": true
+  },
+  {
+    "name": "Arch engraved floral tip",
+    "mat": "gold",
+    "smooth": true
+  },
+  {
+    "name": "Arch curled floral engraving",
+    "mat": "gold",
+    "smooth": true
+  },
+  {
+    "name": "Arch engraved floral tip",
+    "mat": "gold",
+    "smooth": true
+  },
+  {
+    "name": "Arch curled floral engraving",
+    "mat": "gold",
+    "smooth": true
+  },
+  {
+    "name": "Arch engraved floral tip",
+    "mat": "gold",
+    "smooth": true
+  },
+  {
+    "name": "Arch curled floral engraving",
+    "mat": "gold",
+    "smooth": true
+  },
+  {
+    "name": "Arch engraved floral tip",
+    "mat": "gold",
+    "smooth": true
+  },
+  {
+    "name": "Arch curled floral engraving",
+    "mat": "gold",
+    "smooth": true
+  },
+  {
+    "name": "Arch engraved floral tip",
+    "mat": "gold",
+    "smooth": true
+  },
+  {
+    "name": "Arch curled floral engraving",
+    "mat": "gold",
+    "smooth": true
+  },
+  {
+    "name": "Arch engraved floral tip",
+    "mat": "gold",
+    "smooth": true
+  },
+  {
+    "name": "Arch curled floral engraving",
+    "mat": "gold",
+    "smooth": true
+  },
+  {
+    "name": "Arch engraved floral tip",
+    "mat": "gold",
+    "smooth": true
+  },
+  {
+    "name": "Arch curled floral engraving",
+    "mat": "gold",
+    "smooth": true
+  },
+  {
+    "name": "Arch engraved floral tip",
+    "mat": "gold",
+    "smooth": true
+  },
+  {
+    "name": "Arch curled floral engraving",
+    "mat": "gold",
+    "smooth": true
+  },
+  {
+    "name": "Arch engraved floral tip",
+    "mat": "gold",
+    "smooth": true
+  },
+  {
+    "name": "Arch curled floral engraving",
+    "mat": "gold",
+    "smooth": true
+  },
+  {
+    "name": "Arch engraved floral tip",
+    "mat": "gold",
+    "smooth": true
+  },
+  {
+    "name": "Arch curled floral engraving",
+    "mat": "gold",
+    "smooth": true
+  },
+  {
+    "name": "Arch engraved floral tip",
+    "mat": "gold",
+    "smooth": true
+  },
+  {
+    "name": "Arch curled floral engraving",
+    "mat": "gold",
+    "smooth": true
+  },
+  {
+    "name": "Arch engraved floral tip",
+    "mat": "gold",
+    "smooth": true
+  },
+  {
+    "name": "Arch 7 amethyst stone closed gold prong frame",
+    "mat": "gold",
+    "smooth": true
+  },
+  {
+    "name": "Arch 7 amethyst stone independent gemstone",
+    "mat": "CrestGem_Amethyst",
+    "smooth": false
+  },
+  {
+    "name": "Arch 7 amethyst stone closed gold prong frame",
+    "mat": "gold",
+    "smooth": true
+  },
+  {
+    "name": "Arch 7 amethyst stone independent gemstone",
+    "mat": "CrestGem_Amethyst",
+    "smooth": false
+  },
+  {
+    "name": "Continuous 8 crown arch to central hub",
+    "mat": "gold_satin",
+    "smooth": true
+  },
+  {
+    "name": "Polished arch raised edge",
+    "mat": "gold",
+    "smooth": true
+  },
+  {
+    "name": "Polished arch raised edge",
+    "mat": "gold",
+    "smooth": true
+  },
+  {
+    "name": "Arch curled floral engraving",
+    "mat": "gold",
+    "smooth": true
+  },
+  {
+    "name": "Arch engraved floral tip",
+    "mat": "gold",
+    "smooth": true
+  },
+  {
+    "name": "Arch curled floral engraving",
+    "mat": "gold",
+    "smooth": true
+  },
+  {
+    "name": "Arch engraved floral tip",
+    "mat": "gold",
+    "smooth": true
+  },
+  {
+    "name": "Arch curled floral engraving",
+    "mat": "gold",
+    "smooth": true
+  },
+  {
+    "name": "Arch engraved floral tip",
+    "mat": "gold",
+    "smooth": true
+  },
+  {
+    "name": "Arch curled floral engraving",
+    "mat": "gold",
+    "smooth": true
+  },
+  {
+    "name": "Arch engraved floral tip",
+    "mat": "gold",
+    "smooth": true
+  },
+  {
+    "name": "Arch curled floral engraving",
+    "mat": "gold",
+    "smooth": true
+  },
+  {
+    "name": "Arch engraved floral tip",
+    "mat": "gold",
+    "smooth": true
+  },
+  {
+    "name": "Arch curled floral engraving",
+    "mat": "gold",
+    "smooth": true
+  },
+  {
+    "name": "Arch engraved floral tip",
+    "mat": "gold",
+    "smooth": true
+  },
+  {
+    "name": "Arch curled floral engraving",
+    "mat": "gold",
+    "smooth": true
+  },
+  {
+    "name": "Arch engraved floral tip",
+    "mat": "gold",
+    "smooth": true
+  },
+  {
+    "name": "Arch curled floral engraving",
+    "mat": "gold",
+    "smooth": true
+  },
+  {
+    "name": "Arch engraved floral tip",
+    "mat": "gold",
+    "smooth": true
+  },
+  {
+    "name": "Arch curled floral engraving",
+    "mat": "gold",
+    "smooth": true
+  },
+  {
+    "name": "Arch engraved floral tip",
+    "mat": "gold",
+    "smooth": true
+  },
+  {
+    "name": "Arch curled floral engraving",
+    "mat": "gold",
+    "smooth": true
+  },
+  {
+    "name": "Arch engraved floral tip",
+    "mat": "gold",
+    "smooth": true
+  },
+  {
+    "name": "Arch curled floral engraving",
+    "mat": "gold",
+    "smooth": true
+  },
+  {
+    "name": "Arch engraved floral tip",
+    "mat": "gold",
+    "smooth": true
+  },
+  {
+    "name": "Arch curled floral engraving",
+    "mat": "gold",
+    "smooth": true
+  },
+  {
+    "name": "Arch engraved floral tip",
+    "mat": "gold",
+    "smooth": true
+  },
+  {
+    "name": "Arch curled floral engraving",
+    "mat": "gold",
+    "smooth": true
+  },
+  {
+    "name": "Arch engraved floral tip",
+    "mat": "gold",
+    "smooth": true
+  },
+  {
+    "name": "Arch curled floral engraving",
+    "mat": "gold",
+    "smooth": true
+  },
+  {
+    "name": "Arch engraved floral tip",
+    "mat": "gold",
+    "smooth": true
+  },
+  {
+    "name": "Arch curled floral engraving",
+    "mat": "gold",
+    "smooth": true
+  },
+  {
+    "name": "Arch engraved floral tip",
+    "mat": "gold",
+    "smooth": true
+  },
+  {
+    "name": "Arch curled floral engraving",
+    "mat": "gold",
+    "smooth": true
+  },
+  {
+    "name": "Arch engraved floral tip",
+    "mat": "gold",
+    "smooth": true
+  },
+  {
+    "name": "Arch 8 amethyst stone closed gold prong frame",
+    "mat": "gold",
+    "smooth": true
+  },
+  {
+    "name": "Arch 8 amethyst stone independent gemstone",
+    "mat": "CrestGem_Amethyst",
+    "smooth": false
+  },
+  {
+    "name": "Arch 8 amethyst stone closed gold prong frame",
+    "mat": "gold",
+    "smooth": true
+  },
+  {
+    "name": "Arch 8 amethyst stone independent gemstone",
+    "mat": "CrestGem_Amethyst",
+    "smooth": false
+  },
+  {
+    "name": "Gold central joining hub",
+    "mat": "gold",
+    "smooth": true
+  },
+  {
+    "name": "Central arch joining collar",
+    "mat": "gold",
+    "smooth": true
+  },
+  {
+    "name": "Base circlet amethyst diamond 0 closed gold prong frame",
+    "mat": "gold",
+    "smooth": true
+  },
+  {
+    "name": "Base circlet amethyst diamond 0 independent gemstone",
+    "mat": "CrestGem_Amethyst",
+    "smooth": false
+  },
+  {
+    "name": "Base laurel relief",
+    "mat": "gold",
+    "smooth": true
+  },
+  {
+    "name": "Base laurel relief",
+    "mat": "gold",
+    "smooth": true
+  },
+  {
+    "name": "Base laurel relief",
+    "mat": "gold",
+    "smooth": true
+  },
+  {
+    "name": "Base laurel relief",
+    "mat": "gold",
+    "smooth": true
+  },
+  {
+    "name": "Round circlet gold bezel",
+    "mat": "gold",
+    "smooth": true
+  },
+  {
+    "name": "Round circlet amethyst stone",
+    "mat": "CrestGem_Amethyst",
+    "smooth": false
+  },
+  {
+    "name": "Base laurel relief",
+    "mat": "gold",
+    "smooth": true
+  },
+  {
+    "name": "Base laurel relief",
+    "mat": "gold",
+    "smooth": true
+  },
+  {
+    "name": "Base laurel relief",
+    "mat": "gold",
+    "smooth": true
+  },
+  {
+    "name": "Base laurel relief",
+    "mat": "gold",
+    "smooth": true
+  },
+  {
+    "name": "Base circlet amethyst diamond 2 closed gold prong frame",
+    "mat": "gold",
+    "smooth": true
+  },
+  {
+    "name": "Base circlet amethyst diamond 2 independent gemstone",
+    "mat": "CrestGem_Amethyst",
+    "smooth": false
+  },
+  {
+    "name": "Base laurel relief",
+    "mat": "gold",
+    "smooth": true
+  },
+  {
+    "name": "Base laurel relief",
+    "mat": "gold",
+    "smooth": true
+  },
+  {
+    "name": "Base laurel relief",
+    "mat": "gold",
+    "smooth": true
+  },
+  {
+    "name": "Base laurel relief",
+    "mat": "gold",
+    "smooth": true
+  },
+  {
+    "name": "Round circlet gold bezel",
+    "mat": "gold",
+    "smooth": true
+  },
+  {
+    "name": "Round circlet amethyst stone",
+    "mat": "CrestGem_Amethyst",
+    "smooth": false
+  },
+  {
+    "name": "Base laurel relief",
+    "mat": "gold",
+    "smooth": true
+  },
+  {
+    "name": "Base laurel relief",
+    "mat": "gold",
+    "smooth": true
+  },
+  {
+    "name": "Base laurel relief",
+    "mat": "gold",
+    "smooth": true
+  },
+  {
+    "name": "Base laurel relief",
+    "mat": "gold",
+    "smooth": true
+  },
+  {
+    "name": "Base circlet amethyst diamond 4 closed gold prong frame",
+    "mat": "gold",
+    "smooth": true
+  },
+  {
+    "name": "Base circlet amethyst diamond 4 independent gemstone",
+    "mat": "CrestGem_Amethyst",
+    "smooth": false
+  },
+  {
+    "name": "Base laurel relief",
+    "mat": "gold",
+    "smooth": true
+  },
+  {
+    "name": "Base laurel relief",
+    "mat": "gold",
+    "smooth": true
+  },
+  {
+    "name": "Base laurel relief",
+    "mat": "gold",
+    "smooth": true
+  },
+  {
+    "name": "Base laurel relief",
+    "mat": "gold",
+    "smooth": true
+  },
+  {
+    "name": "Round circlet gold bezel",
+    "mat": "gold",
+    "smooth": true
+  },
+  {
+    "name": "Round circlet amethyst stone",
+    "mat": "CrestGem_Amethyst",
+    "smooth": false
+  },
+  {
+    "name": "Base laurel relief",
+    "mat": "gold",
+    "smooth": true
+  },
+  {
+    "name": "Base laurel relief",
+    "mat": "gold",
+    "smooth": true
+  },
+  {
+    "name": "Base laurel relief",
+    "mat": "gold",
+    "smooth": true
+  },
+  {
+    "name": "Base laurel relief",
+    "mat": "gold",
+    "smooth": true
+  },
+  {
+    "name": "Base circlet amethyst diamond 6 closed gold prong frame",
+    "mat": "gold",
+    "smooth": true
+  },
+  {
+    "name": "Base circlet amethyst diamond 6 independent gemstone",
+    "mat": "CrestGem_Amethyst",
+    "smooth": false
+  },
+  {
+    "name": "Base laurel relief",
+    "mat": "gold",
+    "smooth": true
+  },
+  {
+    "name": "Base laurel relief",
+    "mat": "gold",
+    "smooth": true
+  },
+  {
+    "name": "Base laurel relief",
+    "mat": "gold",
+    "smooth": true
+  },
+  {
+    "name": "Base laurel relief",
+    "mat": "gold",
+    "smooth": true
+  },
+  {
+    "name": "Round circlet gold bezel",
+    "mat": "gold",
+    "smooth": true
+  },
+  {
+    "name": "Round circlet amethyst stone",
+    "mat": "CrestGem_Amethyst",
+    "smooth": false
+  },
+  {
+    "name": "Base laurel relief",
+    "mat": "gold",
+    "smooth": true
+  },
+  {
+    "name": "Base laurel relief",
+    "mat": "gold",
+    "smooth": true
+  },
+  {
+    "name": "Base laurel relief",
+    "mat": "gold",
+    "smooth": true
+  },
+  {
+    "name": "Base laurel relief",
+    "mat": "gold",
+    "smooth": true
+  },
+  {
+    "name": "Base circlet amethyst diamond 8 closed gold prong frame",
+    "mat": "gold",
+    "smooth": true
+  },
+  {
+    "name": "Base circlet amethyst diamond 8 independent gemstone",
+    "mat": "CrestGem_Amethyst",
+    "smooth": false
+  },
+  {
+    "name": "Base laurel relief",
+    "mat": "gold",
+    "smooth": true
+  },
+  {
+    "name": "Base laurel relief",
+    "mat": "gold",
+    "smooth": true
+  },
+  {
+    "name": "Base laurel relief",
+    "mat": "gold",
+    "smooth": true
+  },
+  {
+    "name": "Base laurel relief",
+    "mat": "gold",
+    "smooth": true
+  },
+  {
+    "name": "Round circlet gold bezel",
+    "mat": "gold",
+    "smooth": true
+  },
+  {
+    "name": "Round circlet amethyst stone",
+    "mat": "CrestGem_Amethyst",
+    "smooth": false
+  },
+  {
+    "name": "Base laurel relief",
+    "mat": "gold",
+    "smooth": true
+  },
+  {
+    "name": "Base laurel relief",
+    "mat": "gold",
+    "smooth": true
+  },
+  {
+    "name": "Base laurel relief",
+    "mat": "gold",
+    "smooth": true
+  },
+  {
+    "name": "Base laurel relief",
+    "mat": "gold",
+    "smooth": true
+  },
+  {
+    "name": "Base circlet amethyst diamond 10 closed gold prong frame",
+    "mat": "gold",
+    "smooth": true
+  },
+  {
+    "name": "Base circlet amethyst diamond 10 independent gemstone",
+    "mat": "CrestGem_Amethyst",
+    "smooth": false
+  },
+  {
+    "name": "Base laurel relief",
+    "mat": "gold",
+    "smooth": true
+  },
+  {
+    "name": "Base laurel relief",
+    "mat": "gold",
+    "smooth": true
+  },
+  {
+    "name": "Base laurel relief",
+    "mat": "gold",
+    "smooth": true
+  },
+  {
+    "name": "Base laurel relief",
+    "mat": "gold",
+    "smooth": true
+  },
+  {
+    "name": "Round circlet gold bezel",
+    "mat": "gold",
+    "smooth": true
+  },
+  {
+    "name": "Round circlet amethyst stone",
+    "mat": "CrestGem_Amethyst",
+    "smooth": false
+  },
+  {
+    "name": "Base laurel relief",
+    "mat": "gold",
+    "smooth": true
+  },
+  {
+    "name": "Base laurel relief",
+    "mat": "gold",
+    "smooth": true
+  },
+  {
+    "name": "Base laurel relief",
+    "mat": "gold",
+    "smooth": true
+  },
+  {
+    "name": "Base laurel relief",
+    "mat": "gold",
+    "smooth": true
+  },
+  {
+    "name": "Circlet milgrain bead",
+    "mat": "gold",
+    "smooth": true
+  },
+  {
+    "name": "Circlet milgrain bead",
+    "mat": "gold",
+    "smooth": true
+  },
+  {
+    "name": "Circlet milgrain bead",
+    "mat": "gold",
+    "smooth": true
+  },
+  {
+    "name": "Circlet milgrain bead",
+    "mat": "gold",
+    "smooth": true
+  },
+  {
+    "name": "Circlet milgrain bead",
+    "mat": "gold",
+    "smooth": true
+  },
+  {
+    "name": "Circlet milgrain bead",
+    "mat": "gold",
+    "smooth": true
+  },
+  {
+    "name": "Circlet milgrain bead",
+    "mat": "gold",
+    "smooth": true
+  },
+  {
+    "name": "Circlet milgrain bead",
+    "mat": "gold",
+    "smooth": true
+  },
+  {
+    "name": "Circlet milgrain bead",
+    "mat": "gold",
+    "smooth": true
+  },
+  {
+    "name": "Circlet milgrain bead",
+    "mat": "gold",
+    "smooth": true
+  },
+  {
+    "name": "Circlet milgrain bead",
+    "mat": "gold",
+    "smooth": true
+  },
+  {
+    "name": "Circlet milgrain bead",
+    "mat": "gold",
+    "smooth": true
+  },
+  {
+    "name": "Circlet milgrain bead",
+    "mat": "gold",
+    "smooth": true
+  },
+  {
+    "name": "Circlet milgrain bead",
+    "mat": "gold",
+    "smooth": true
+  },
+  {
+    "name": "Circlet milgrain bead",
+    "mat": "gold",
+    "smooth": true
+  },
+  {
+    "name": "Circlet milgrain bead",
+    "mat": "gold",
+    "smooth": true
+  },
+  {
+    "name": "Circlet milgrain bead",
+    "mat": "gold",
+    "smooth": true
+  },
+  {
+    "name": "Circlet milgrain bead",
+    "mat": "gold",
+    "smooth": true
+  },
+  {
+    "name": "Circlet milgrain bead",
+    "mat": "gold",
+    "smooth": true
+  },
+  {
+    "name": "Circlet milgrain bead",
+    "mat": "gold",
+    "smooth": true
+  },
+  {
+    "name": "Circlet milgrain bead",
+    "mat": "gold",
+    "smooth": true
+  },
+  {
+    "name": "Circlet milgrain bead",
+    "mat": "gold",
+    "smooth": true
+  },
+  {
+    "name": "Circlet milgrain bead",
+    "mat": "gold",
+    "smooth": true
+  },
+  {
+    "name": "Circlet milgrain bead",
+    "mat": "gold",
+    "smooth": true
+  },
+  {
+    "name": "Circlet milgrain bead",
+    "mat": "gold",
+    "smooth": true
+  },
+  {
+    "name": "Circlet milgrain bead",
+    "mat": "gold",
+    "smooth": true
+  },
+  {
+    "name": "Circlet milgrain bead",
+    "mat": "gold",
+    "smooth": true
+  },
+  {
+    "name": "Circlet milgrain bead",
+    "mat": "gold",
+    "smooth": true
+  },
+  {
+    "name": "Circlet milgrain bead",
+    "mat": "gold",
+    "smooth": true
+  },
+  {
+    "name": "Circlet milgrain bead",
+    "mat": "gold",
+    "smooth": true
+  },
+  {
+    "name": "Circlet milgrain bead",
+    "mat": "gold",
+    "smooth": true
+  },
+  {
+    "name": "Circlet milgrain bead",
+    "mat": "gold",
+    "smooth": true
+  },
+  {
+    "name": "Circlet milgrain bead",
+    "mat": "gold",
+    "smooth": true
+  },
+  {
+    "name": "Circlet milgrain bead",
+    "mat": "gold",
+    "smooth": true
+  },
+  {
+    "name": "Circlet milgrain bead",
+    "mat": "gold",
+    "smooth": true
+  },
+  {
+    "name": "Circlet milgrain bead",
+    "mat": "gold",
+    "smooth": true
+  },
+  {
+    "name": "Circlet milgrain bead",
+    "mat": "gold",
+    "smooth": true
+  },
+  {
+    "name": "Circlet milgrain bead",
+    "mat": "gold",
+    "smooth": true
+  },
+  {
+    "name": "Circlet milgrain bead",
+    "mat": "gold",
+    "smooth": true
+  },
+  {
+    "name": "Circlet milgrain bead",
+    "mat": "gold",
+    "smooth": true
+  },
+  {
+    "name": "Circlet milgrain bead",
+    "mat": "gold",
+    "smooth": true
+  },
+  {
+    "name": "Circlet milgrain bead",
+    "mat": "gold",
+    "smooth": true
+  },
+  {
+    "name": "Circlet milgrain bead",
+    "mat": "gold",
+    "smooth": true
+  },
+  {
+    "name": "Circlet milgrain bead",
+    "mat": "gold",
+    "smooth": true
+  },
+  {
+    "name": "Circlet milgrain bead",
+    "mat": "gold",
+    "smooth": true
+  },
+  {
+    "name": "Circlet milgrain bead",
+    "mat": "gold",
+    "smooth": true
+  },
+  {
+    "name": "Circlet milgrain bead",
+    "mat": "gold",
+    "smooth": true
+  },
+  {
+    "name": "Circlet milgrain bead",
+    "mat": "gold",
+    "smooth": true
+  },
+  {
+    "name": "Circlet milgrain bead",
+    "mat": "gold",
+    "smooth": true
+  },
+  {
+    "name": "Circlet milgrain bead",
+    "mat": "gold",
+    "smooth": true
+  },
+  {
+    "name": "Circlet milgrain bead",
+    "mat": "gold",
+    "smooth": true
+  },
+  {
+    "name": "Circlet milgrain bead",
+    "mat": "gold",
+    "smooth": true
+  },
+  {
+    "name": "Circlet milgrain bead",
+    "mat": "gold",
+    "smooth": true
+  },
+  {
+    "name": "Circlet milgrain bead",
+    "mat": "gold",
+    "smooth": true
+  },
+  {
+    "name": "Circlet milgrain bead",
+    "mat": "gold",
+    "smooth": true
+  },
+  {
+    "name": "Circlet milgrain bead",
+    "mat": "gold",
+    "smooth": true
+  },
+  {
+    "name": "Circlet milgrain bead",
+    "mat": "gold",
+    "smooth": true
+  },
+  {
+    "name": "Circlet milgrain bead",
+    "mat": "gold",
+    "smooth": true
+  },
+  {
+    "name": "Circlet milgrain bead",
+    "mat": "gold",
+    "smooth": true
+  },
+  {
+    "name": "Circlet milgrain bead",
+    "mat": "gold",
+    "smooth": true
+  },
+  {
+    "name": "Circlet milgrain bead",
+    "mat": "gold",
+    "smooth": true
+  },
+  {
+    "name": "Circlet milgrain bead",
+    "mat": "gold",
+    "smooth": true
+  },
+  {
+    "name": "Circlet milgrain bead",
+    "mat": "gold",
+    "smooth": true
+  },
+  {
+    "name": "Circlet milgrain bead",
+    "mat": "gold",
+    "smooth": true
+  },
+  {
+    "name": "Circlet milgrain bead",
+    "mat": "gold",
+    "smooth": true
+  },
+  {
+    "name": "Circlet milgrain bead",
+    "mat": "gold",
+    "smooth": true
+  },
+  {
+    "name": "Circlet milgrain bead",
+    "mat": "gold",
+    "smooth": true
+  },
+  {
+    "name": "Circlet milgrain bead",
+    "mat": "gold",
+    "smooth": true
+  },
+  {
+    "name": "Circlet milgrain bead",
+    "mat": "gold",
+    "smooth": true
+  },
+  {
+    "name": "Circlet milgrain bead",
+    "mat": "gold",
+    "smooth": true
+  },
+  {
+    "name": "Circlet milgrain bead",
+    "mat": "gold",
+    "smooth": true
+  },
+  {
+    "name": "Circlet milgrain bead",
+    "mat": "gold",
+    "smooth": true
+  },
+  {
+    "name": "Circlet milgrain bead",
+    "mat": "gold",
+    "smooth": true
+  },
+  {
+    "name": "Circlet milgrain bead",
+    "mat": "gold",
+    "smooth": true
+  },
+  {
+    "name": "Circlet milgrain bead",
+    "mat": "gold",
+    "smooth": true
+  },
+  {
+    "name": "Circlet milgrain bead",
+    "mat": "gold",
+    "smooth": true
+  },
+  {
+    "name": "Circlet milgrain bead",
+    "mat": "gold",
+    "smooth": true
+  },
+  {
+    "name": "Circlet milgrain bead",
+    "mat": "gold",
+    "smooth": true
+  },
+  {
+    "name": "Circlet milgrain bead",
+    "mat": "gold",
+    "smooth": true
+  },
+  {
+    "name": "Circlet milgrain bead",
+    "mat": "gold",
+    "smooth": true
+  },
+  {
+    "name": "Circlet milgrain bead",
+    "mat": "gold",
+    "smooth": true
+  },
+  {
+    "name": "Circlet milgrain bead",
+    "mat": "gold",
+    "smooth": true
+  },
+  {
+    "name": "Circlet milgrain bead",
+    "mat": "gold",
+    "smooth": true
+  },
+  {
+    "name": "Circlet milgrain bead",
+    "mat": "gold",
+    "smooth": true
+  },
+  {
+    "name": "Circlet milgrain bead",
+    "mat": "gold",
+    "smooth": true
+  },
+  {
+    "name": "Circlet milgrain bead",
+    "mat": "gold",
+    "smooth": true
+  },
+  {
+    "name": "Circlet milgrain bead",
+    "mat": "gold",
+    "smooth": true
+  },
+  {
+    "name": "Circlet milgrain bead",
+    "mat": "gold",
+    "smooth": true
+  },
+  {
+    "name": "Circlet milgrain bead",
+    "mat": "gold",
+    "smooth": true
+  },
+  {
+    "name": "Circlet milgrain bead",
+    "mat": "gold",
+    "smooth": true
+  },
+  {
+    "name": "Circlet milgrain bead",
+    "mat": "gold",
+    "smooth": true
+  },
+  {
+    "name": "Circlet milgrain bead",
+    "mat": "gold",
+    "smooth": true
+  },
+  {
+    "name": "Circlet milgrain bead",
+    "mat": "gold",
+    "smooth": true
+  },
+  {
+    "name": "Circlet milgrain bead",
+    "mat": "gold",
+    "smooth": true
+  },
+  {
+    "name": "Circlet milgrain bead",
+    "mat": "gold",
+    "smooth": true
+  },
+  {
+    "name": "Circlet milgrain bead",
+    "mat": "gold",
+    "smooth": true
+  },
+  {
+    "name": "Circlet milgrain bead",
+    "mat": "gold",
+    "smooth": true
+  },
+  {
+    "name": "Circlet milgrain bead",
+    "mat": "gold",
+    "smooth": true
+  },
+  {
+    "name": "Circlet milgrain bead",
+    "mat": "gold",
+    "smooth": true
+  },
+  {
+    "name": "Circlet milgrain bead",
+    "mat": "gold",
+    "smooth": true
+  },
+  {
+    "name": "Circlet milgrain bead",
+    "mat": "gold",
+    "smooth": true
+  },
+  {
+    "name": "Circlet milgrain bead",
+    "mat": "gold",
+    "smooth": true
+  },
+  {
+    "name": "Circlet milgrain bead",
+    "mat": "gold",
+    "smooth": true
+  },
+  {
+    "name": "Circlet milgrain bead",
+    "mat": "gold",
+    "smooth": true
+  },
+  {
+    "name": "Circlet milgrain bead",
+    "mat": "gold",
+    "smooth": true
+  },
+  {
+    "name": "Circlet milgrain bead",
+    "mat": "gold",
+    "smooth": true
+  },
+  {
+    "name": "Circlet milgrain bead",
+    "mat": "gold",
+    "smooth": true
+  },
+  {
+    "name": "Circlet milgrain bead",
+    "mat": "gold",
+    "smooth": true
+  },
+  {
+    "name": "Circlet milgrain bead",
+    "mat": "gold",
+    "smooth": true
+  },
+  {
+    "name": "Circlet milgrain bead",
+    "mat": "gold",
+    "smooth": true
+  },
+  {
+    "name": "Circlet milgrain bead",
+    "mat": "gold",
+    "smooth": true
+  },
+  {
+    "name": "Circlet milgrain bead",
+    "mat": "gold",
+    "smooth": true
+  },
+  {
+    "name": "Circlet milgrain bead",
+    "mat": "gold",
+    "smooth": true
+  },
+  {
+    "name": "Circlet milgrain bead",
+    "mat": "gold",
+    "smooth": true
+  },
+  {
+    "name": "Circlet milgrain bead",
+    "mat": "gold",
+    "smooth": true
+  },
+  {
+    "name": "Circlet milgrain bead",
+    "mat": "gold",
+    "smooth": true
+  },
+  {
+    "name": "Circlet milgrain bead",
+    "mat": "gold",
+    "smooth": true
+  },
+  {
+    "name": "Circlet milgrain bead",
+    "mat": "gold",
+    "smooth": true
+  },
+  {
+    "name": "Circlet milgrain bead",
+    "mat": "gold",
+    "smooth": true
+  },
+  {
+    "name": "Circlet milgrain bead",
+    "mat": "gold",
+    "smooth": true
+  },
+  {
+    "name": "Circlet milgrain bead",
+    "mat": "gold",
+    "smooth": true
+  },
+  {
+    "name": "Circlet milgrain bead",
+    "mat": "gold",
+    "smooth": true
+  },
+  {
+    "name": "Circlet milgrain bead",
+    "mat": "gold",
+    "smooth": true
+  },
+  {
+    "name": "Circlet milgrain bead",
+    "mat": "gold",
+    "smooth": true
+  },
+  {
+    "name": "Circlet milgrain bead",
+    "mat": "gold",
+    "smooth": true
+  },
+  {
+    "name": "Circlet milgrain bead",
+    "mat": "gold",
+    "smooth": true
+  },
+  {
+    "name": "Circlet milgrain bead",
+    "mat": "gold",
+    "smooth": true
+  },
+  {
+    "name": "Circlet milgrain bead",
+    "mat": "gold",
+    "smooth": true
+  },
+  {
+    "name": "Circlet milgrain bead",
+    "mat": "gold",
+    "smooth": true
+  },
+  {
+    "name": "Circlet milgrain bead",
+    "mat": "gold",
+    "smooth": true
+  },
+  {
+    "name": "Circlet milgrain bead",
+    "mat": "gold",
+    "smooth": true
+  },
+  {
+    "name": "Circlet milgrain bead",
+    "mat": "gold",
+    "smooth": true
+  },
+  {
+    "name": "Circlet milgrain bead",
+    "mat": "gold",
+    "smooth": true
+  },
+  {
+    "name": "Circlet milgrain bead",
+    "mat": "gold",
+    "smooth": true
+  },
+  {
+    "name": "Circlet milgrain bead",
+    "mat": "gold",
+    "smooth": true
+  },
+  {
+    "name": "Circlet milgrain bead",
+    "mat": "gold",
+    "smooth": true
+  },
+  {
+    "name": "Circlet milgrain bead",
+    "mat": "gold",
+    "smooth": true
+  },
+  {
+    "name": "Circlet milgrain bead",
+    "mat": "gold",
+    "smooth": true
+  },
+  {
+    "name": "Circlet milgrain bead",
+    "mat": "gold",
+    "smooth": true
+  },
+  {
+    "name": "Circlet milgrain bead",
+    "mat": "gold",
+    "smooth": true
+  },
+  {
+    "name": "Circlet milgrain bead",
+    "mat": "gold",
+    "smooth": true
+  },
+  {
+    "name": "Circlet milgrain bead",
+    "mat": "gold",
+    "smooth": true
+  },
+  {
+    "name": "Circlet milgrain bead",
+    "mat": "gold",
+    "smooth": true
+  },
+  {
+    "name": "Circlet milgrain bead",
+    "mat": "gold",
+    "smooth": true
+  },
+  {
+    "name": "Circlet milgrain bead",
+    "mat": "gold",
+    "smooth": true
+  },
+  {
+    "name": "Circlet milgrain bead",
+    "mat": "gold",
+    "smooth": true
+  },
+  {
+    "name": "Circlet milgrain bead",
+    "mat": "gold",
+    "smooth": true
+  },
+  {
+    "name": "Circlet milgrain bead",
+    "mat": "gold",
+    "smooth": true
+  },
+  {
+    "name": "Circlet milgrain bead",
+    "mat": "gold",
+    "smooth": true
+  },
+  {
+    "name": "Circlet milgrain bead",
+    "mat": "gold",
+    "smooth": true
+  },
+  {
+    "name": "Circlet milgrain bead",
+    "mat": "gold",
+    "smooth": true
+  },
+  {
+    "name": "Circlet milgrain bead",
+    "mat": "gold",
+    "smooth": true
+  },
+  {
+    "name": "Circlet milgrain bead",
+    "mat": "gold",
+    "smooth": true
+  },
+  {
+    "name": "Circlet milgrain bead",
+    "mat": "gold",
+    "smooth": true
+  },
+  {
+    "name": "Circlet milgrain bead",
+    "mat": "gold",
+    "smooth": true
+  },
+  {
+    "name": "Circlet milgrain bead",
+    "mat": "gold",
+    "smooth": true
+  },
+  {
+    "name": "Circlet milgrain bead",
+    "mat": "gold",
+    "smooth": true
+  },
+  {
+    "name": "Circlet milgrain bead",
+    "mat": "gold",
+    "smooth": true
+  },
+  {
+    "name": "Circlet milgrain bead",
+    "mat": "gold",
+    "smooth": true
+  },
+  {
+    "name": "Circlet milgrain bead",
+    "mat": "gold",
+    "smooth": true
+  },
+  {
+    "name": "Circlet milgrain bead",
+    "mat": "gold",
+    "smooth": true
+  },
+  {
+    "name": "Circlet milgrain bead",
+    "mat": "gold",
+    "smooth": true
+  },
+  {
+    "name": "Circlet milgrain bead",
+    "mat": "gold",
+    "smooth": true
+  },
+  {
+    "name": "Circlet milgrain bead",
+    "mat": "gold",
+    "smooth": true
+  },
+  {
+    "name": "Circlet milgrain bead",
+    "mat": "gold",
+    "smooth": true
+  },
+  {
+    "name": "Circlet milgrain bead",
+    "mat": "gold",
+    "smooth": true
+  },
+  {
+    "name": "Circlet milgrain bead",
+    "mat": "gold",
+    "smooth": true
+  },
+  {
+    "name": "Circlet milgrain bead",
+    "mat": "gold",
+    "smooth": true
+  },
+  {
+    "name": "Circlet milgrain bead",
+    "mat": "gold",
+    "smooth": true
+  },
+  {
+    "name": "Circlet milgrain bead",
+    "mat": "gold",
+    "smooth": true
+  },
+  {
+    "name": "Circlet milgrain bead",
+    "mat": "gold",
+    "smooth": true
+  },
+  {
+    "name": "Circlet milgrain bead",
+    "mat": "gold",
+    "smooth": true
+  },
+  {
+    "name": "Circlet milgrain bead",
+    "mat": "gold",
+    "smooth": true
+  },
+  {
+    "name": "Circlet milgrain bead",
+    "mat": "gold",
+    "smooth": true
+  },
+  {
+    "name": "Circlet milgrain bead",
+    "mat": "gold",
+    "smooth": true
+  },
+  {
+    "name": "Circlet milgrain bead",
+    "mat": "gold",
+    "smooth": true
+  },
+  {
+    "name": "Circlet milgrain bead",
+    "mat": "gold",
+    "smooth": true
+  },
+  {
+    "name": "Circlet milgrain bead",
+    "mat": "gold",
+    "smooth": true
+  },
+  {
+    "name": "Circlet milgrain bead",
+    "mat": "gold",
+    "smooth": true
+  },
+  {
+    "name": "Circlet milgrain bead",
+    "mat": "gold",
+    "smooth": true
+  },
+  {
+    "name": "Circlet milgrain bead",
+    "mat": "gold",
+    "smooth": true
+  },
+  {
+    "name": "Circlet milgrain bead",
+    "mat": "gold",
+    "smooth": true
+  },
+  {
+    "name": "Circlet milgrain bead",
+    "mat": "gold",
+    "smooth": true
+  },
+  {
+    "name": "Circlet milgrain bead",
+    "mat": "gold",
+    "smooth": true
+  },
+  {
+    "name": "Circlet milgrain bead",
+    "mat": "gold",
+    "smooth": true
+  },
+  {
+    "name": "Circlet milgrain bead",
+    "mat": "gold",
+    "smooth": true
+  },
+  {
+    "name": "Circlet milgrain bead",
+    "mat": "gold",
+    "smooth": true
+  },
+  {
+    "name": "Circlet milgrain bead",
+    "mat": "gold",
+    "smooth": true
+  },
+  {
+    "name": "Circlet milgrain bead",
+    "mat": "gold",
+    "smooth": true
+  },
+  {
+    "name": "Circlet milgrain bead",
+    "mat": "gold",
+    "smooth": true
+  },
+  {
+    "name": "Circlet milgrain bead",
+    "mat": "gold",
+    "smooth": true
+  },
+  {
+    "name": "Circlet milgrain bead",
+    "mat": "gold",
+    "smooth": true
+  },
+  {
+    "name": "Circlet milgrain bead",
+    "mat": "gold",
+    "smooth": true
+  },
+  {
+    "name": "Circlet milgrain bead",
+    "mat": "gold",
+    "smooth": true
+  },
+  {
+    "name": "Circlet milgrain bead",
+    "mat": "gold",
+    "smooth": true
+  },
+  {
+    "name": "Circlet milgrain bead",
+    "mat": "gold",
+    "smooth": true
+  },
+  {
+    "name": "Circlet milgrain bead",
+    "mat": "gold",
+    "smooth": true
+  },
+  {
+    "name": "Circlet milgrain bead",
+    "mat": "gold",
+    "smooth": true
+  },
+  {
+    "name": "Circlet milgrain bead",
+    "mat": "gold",
+    "smooth": true
+  },
+  {
+    "name": "Circlet milgrain bead",
+    "mat": "gold",
+    "smooth": true
+  },
+  {
+    "name": "Circlet milgrain bead",
+    "mat": "gold",
+    "smooth": true
+  },
+  {
+    "name": "Circlet milgrain bead",
+    "mat": "gold",
+    "smooth": true
+  },
+  {
+    "name": "Circlet milgrain bead",
+    "mat": "gold",
+    "smooth": true
+  },
+  {
+    "name": "Circlet milgrain bead",
+    "mat": "gold",
+    "smooth": true
+  },
+  {
+    "name": "Circlet milgrain bead",
+    "mat": "gold",
+    "smooth": true
+  },
+  {
+    "name": "Circlet milgrain bead",
+    "mat": "gold",
+    "smooth": true
+  },
+  {
+    "name": "Circlet milgrain bead",
+    "mat": "gold",
+    "smooth": true
+  },
+  {
+    "name": "Circlet milgrain bead",
+    "mat": "gold",
+    "smooth": true
+  },
+  {
+    "name": "Circlet milgrain bead",
+    "mat": "gold",
+    "smooth": true
+  },
+  {
+    "name": "Circlet milgrain bead",
+    "mat": "gold",
+    "smooth": true
+  },
+  {
+    "name": "Circlet milgrain bead",
+    "mat": "gold",
+    "smooth": true
+  },
+  {
+    "name": "Circlet milgrain bead",
+    "mat": "gold",
+    "smooth": true
+  },
+  {
+    "name": "Circlet milgrain bead",
+    "mat": "gold",
+    "smooth": true
+  },
+  {
+    "name": "Circlet milgrain bead",
+    "mat": "gold",
+    "smooth": true
+  },
+  {
+    "name": "Circlet milgrain bead",
+    "mat": "gold",
+    "smooth": true
+  },
+  {
+    "name": "Circlet milgrain bead",
+    "mat": "gold",
+    "smooth": true
+  },
+  {
+    "name": "Circlet milgrain bead",
+    "mat": "gold",
+    "smooth": true
+  },
+  {
+    "name": "Circlet milgrain bead",
+    "mat": "gold",
+    "smooth": true
+  },
+  {
+    "name": "Circlet milgrain bead",
+    "mat": "gold",
+    "smooth": true
+  },
+  {
+    "name": "Circlet milgrain bead",
+    "mat": "gold",
+    "smooth": true
+  },
+  {
+    "name": "Circlet milgrain bead",
+    "mat": "gold",
+    "smooth": true
+  },
+  {
+    "name": "Circlet milgrain bead",
+    "mat": "gold",
+    "smooth": true
+  },
+  {
+    "name": "Circlet milgrain bead",
+    "mat": "gold",
+    "smooth": true
+  },
+  {
+    "name": "Circlet milgrain bead",
+    "mat": "gold",
+    "smooth": true
+  },
+  {
+    "name": "Circlet milgrain bead",
+    "mat": "gold",
+    "smooth": true
+  },
+  {
+    "name": "Circlet milgrain bead",
+    "mat": "gold",
+    "smooth": true
+  },
+  {
+    "name": "Circlet milgrain bead",
+    "mat": "gold",
+    "smooth": true
+  },
+  {
+    "name": "Circlet milgrain bead",
+    "mat": "gold",
+    "smooth": true
+  },
+  {
+    "name": "Circlet milgrain bead",
+    "mat": "gold",
+    "smooth": true
+  },
+  {
+    "name": "Circlet milgrain bead",
+    "mat": "gold",
+    "smooth": true
+  },
+  {
+    "name": "Circlet milgrain bead",
+    "mat": "gold",
+    "smooth": true
+  },
+  {
+    "name": "Circlet milgrain bead",
+    "mat": "gold",
+    "smooth": true
+  },
+  {
+    "name": "Circlet milgrain bead",
+    "mat": "gold",
+    "smooth": true
+  },
+  {
+    "name": "Circlet milgrain bead",
+    "mat": "gold",
+    "smooth": true
+  },
+  {
+    "name": "Circlet milgrain bead",
+    "mat": "gold",
+    "smooth": true
+  },
+  {
+    "name": "Circlet milgrain bead",
+    "mat": "gold",
+    "smooth": true
+  },
+  {
+    "name": "Circlet milgrain bead",
+    "mat": "gold",
+    "smooth": true
+  },
+  {
+    "name": "Circlet milgrain bead",
+    "mat": "gold",
+    "smooth": true
+  },
+  {
+    "name": "Circlet milgrain bead",
+    "mat": "gold",
+    "smooth": true
+  },
+  {
+    "name": "Circlet milgrain bead",
+    "mat": "gold",
+    "smooth": true
+  },
+  {
+    "name": "Circlet milgrain bead",
+    "mat": "gold",
+    "smooth": true
+  },
+  {
+    "name": "Circlet milgrain bead",
+    "mat": "gold",
+    "smooth": true
+  },
+  {
+    "name": "Circlet milgrain bead",
+    "mat": "gold",
+    "smooth": true
+  },
+  {
+    "name": "Circlet milgrain bead",
+    "mat": "gold",
+    "smooth": true
+  },
+  {
+    "name": "Circlet milgrain bead",
+    "mat": "gold",
+    "smooth": true
+  },
+  {
+    "name": "Circlet milgrain bead",
+    "mat": "gold",
+    "smooth": true
+  },
+  {
+    "name": "Circlet milgrain bead",
+    "mat": "gold",
+    "smooth": true
+  },
+  {
+    "name": "Circlet milgrain bead",
+    "mat": "gold",
+    "smooth": true
+  },
+  {
+    "name": "Circlet milgrain bead",
+    "mat": "gold",
+    "smooth": true
+  },
+  {
+    "name": "Circlet milgrain bead",
+    "mat": "gold",
+    "smooth": true
+  },
+  {
+    "name": "Circlet milgrain bead",
+    "mat": "gold",
+    "smooth": true
+  },
+  {
+    "name": "Circlet milgrain bead",
+    "mat": "gold",
+    "smooth": true
+  },
+  {
+    "name": "Circlet milgrain bead",
+    "mat": "gold",
+    "smooth": true
+  },
+  {
+    "name": "Circlet milgrain bead",
+    "mat": "gold",
+    "smooth": true
+  },
+  {
+    "name": "Circlet milgrain bead",
+    "mat": "gold",
+    "smooth": true
+  },
+  {
+    "name": "Circlet milgrain bead",
+    "mat": "gold",
+    "smooth": true
+  },
+  {
+    "name": "Circlet milgrain bead",
+    "mat": "gold",
+    "smooth": true
+  },
+  {
+    "name": "Circlet milgrain bead",
+    "mat": "gold",
+    "smooth": true
+  },
+  {
+    "name": "Circlet milgrain bead",
+    "mat": "gold",
+    "smooth": true
+  },
+  {
+    "name": "Circlet milgrain bead",
+    "mat": "gold",
+    "smooth": true
+  },
+  {
+    "name": "Circlet milgrain bead",
+    "mat": "gold",
+    "smooth": true
+  },
+  {
+    "name": "Circlet milgrain bead",
+    "mat": "gold",
+    "smooth": true
+  },
+  {
+    "name": "Circlet milgrain bead",
+    "mat": "gold",
+    "smooth": true
+  },
+  {
+    "name": "Circlet milgrain bead",
+    "mat": "gold",
+    "smooth": true
+  },
+  {
+    "name": "Circlet milgrain bead",
+    "mat": "gold",
+    "smooth": true
+  },
+  {
+    "name": "Circlet milgrain bead",
+    "mat": "gold",
+    "smooth": true
+  },
+  {
+    "name": "Circlet milgrain bead",
+    "mat": "gold",
+    "smooth": true
+  },
+  {
+    "name": "Circlet milgrain bead",
+    "mat": "gold",
+    "smooth": true
+  },
+  {
+    "name": "Circlet milgrain bead",
+    "mat": "gold",
+    "smooth": true
+  },
+  {
+    "name": "Circlet milgrain bead",
+    "mat": "gold",
+    "smooth": true
+  },
+  {
+    "name": "Circlet milgrain bead",
+    "mat": "gold",
+    "smooth": true
+  },
+  {
+    "name": "Circlet milgrain bead",
+    "mat": "gold",
+    "smooth": true
+  },
+  {
+    "name": "Circlet milgrain bead",
+    "mat": "gold",
+    "smooth": true
+  },
+  {
+    "name": "Circlet milgrain bead",
+    "mat": "gold",
+    "smooth": true
+  },
+  {
+    "name": "Circlet milgrain bead",
+    "mat": "gold",
+    "smooth": true
+  },
+  {
+    "name": "Circlet milgrain bead",
+    "mat": "gold",
+    "smooth": true
+  },
+  {
+    "name": "Circlet milgrain bead",
+    "mat": "gold",
+    "smooth": true
+  },
+  {
+    "name": "Circlet milgrain bead",
+    "mat": "gold",
+    "smooth": true
+  },
+  {
+    "name": "Circlet milgrain bead",
+    "mat": "gold",
+    "smooth": true
+  },
+  {
+    "name": "Circlet milgrain bead",
+    "mat": "gold",
+    "smooth": true
+  },
+  {
+    "name": "Circlet milgrain bead",
+    "mat": "gold",
+    "smooth": true
+  },
+  {
+    "name": "Circlet milgrain bead",
+    "mat": "gold",
+    "smooth": true
+  },
+  {
+    "name": "Circlet milgrain bead",
+    "mat": "gold",
+    "smooth": true
+  },
+  {
+    "name": "Circlet milgrain bead",
+    "mat": "gold",
+    "smooth": true
+  },
+  {
+    "name": "Circlet milgrain bead",
+    "mat": "gold",
+    "smooth": true
+  },
+  {
+    "name": "Circlet milgrain bead",
+    "mat": "gold",
+    "smooth": true
+  },
+  {
+    "name": "Circlet milgrain bead",
+    "mat": "gold",
+    "smooth": true
+  },
+  {
+    "name": "Circlet milgrain bead",
+    "mat": "gold",
+    "smooth": true
+  },
+  {
+    "name": "Large central amethyst jewel closed gold prong frame",
+    "mat": "gold",
+    "smooth": true
+  },
+  {
+    "name": "Large central amethyst jewel independent gemstone",
+    "mat": "CrestGem_Amethyst",
+    "smooth": false
+  },
+  {
+    "name": "Side fleur scroll",
+    "mat": "gold",
+    "smooth": true
+  },
+  {
+    "name": "Side fleur scroll",
+    "mat": "gold",
+    "smooth": true
+  },
+  {
+    "name": "Large central amethyst jewel closed gold prong frame",
+    "mat": "gold",
+    "smooth": true
+  },
+  {
+    "name": "Large central amethyst jewel independent gemstone",
+    "mat": "CrestGem_Amethyst",
+    "smooth": false
+  },
+  {
+    "name": "Side fleur scroll",
+    "mat": "gold",
+    "smooth": true
+  },
+  {
+    "name": "Side fleur scroll",
+    "mat": "gold",
+    "smooth": true
+  },
+  {
+    "name": "Top fleur central gold spear",
+    "mat": "gold",
+    "smooth": true
+  },
+  {
+    "name": "Top fleur curved petal",
+    "mat": "gold",
+    "smooth": true
+  },
+  {
+    "name": "Top fleur lower curl",
+    "mat": "gold",
+    "smooth": true
+  },
+  {
+    "name": "Top fleur curved petal",
+    "mat": "gold",
+    "smooth": true
+  },
+  {
+    "name": "Top fleur lower curl",
+    "mat": "gold",
+    "smooth": true
+  },
+  {
+    "name": "Amethyst pointed finial closed gold prong frame",
+    "mat": "gold",
+    "smooth": true
+  },
+  {
+    "name": "Amethyst pointed finial independent gemstone",
+    "mat": "CrestGem_Amethyst",
+    "smooth": false
+  },
+  {
+    "name": "Top fleur central gold spear",
+    "mat": "gold",
+    "smooth": true
+  },
+  {
+    "name": "Top fleur curved petal",
+    "mat": "gold",
+    "smooth": true
+  },
+  {
+    "name": "Top fleur lower curl",
+    "mat": "gold",
+    "smooth": true
+  },
+  {
+    "name": "Top fleur curved petal",
+    "mat": "gold",
+    "smooth": true
+  },
+  {
+    "name": "Top fleur lower curl",
+    "mat": "gold",
+    "smooth": true
+  },
+  {
+    "name": "Amethyst pointed finial closed gold prong frame",
+    "mat": "gold",
+    "smooth": true
+  },
+  {
+    "name": "Amethyst pointed finial independent gemstone",
+    "mat": "CrestGem_Amethyst",
+    "smooth": false
+  },
+  {
+    "name": "Reference flowing amethyst acanthus lobe 1",
+    "mat": "gold",
+    "smooth": true
+  },
+  {
+    "name": "Acanthus raised sculpted vein",
+    "mat": "gold",
+    "smooth": true
+  },
+  {
+    "name": "Reference flowing amethyst acanthus lobe 2",
+    "mat": "gold",
+    "smooth": true
+  },
+  {
+    "name": "Acanthus raised sculpted vein",
+    "mat": "gold",
+    "smooth": true
+  },
+  {
+    "name": "Reference flowing amethyst acanthus lobe 3",
+    "mat": "gold",
+    "smooth": true
+  },
+  {
+    "name": "Acanthus raised sculpted vein",
+    "mat": "gold",
+    "smooth": true
+  },
+  {
+    "name": "Reference flowing amethyst acanthus lobe 1",
+    "mat": "gold",
+    "smooth": true
+  },
+  {
+    "name": "Acanthus raised sculpted vein",
+    "mat": "gold",
+    "smooth": true
+  },
+  {
+    "name": "Reference flowing amethyst acanthus lobe 2",
+    "mat": "gold",
+    "smooth": true
+  },
+  {
+    "name": "Acanthus raised sculpted vein",
+    "mat": "gold",
+    "smooth": true
+  },
+  {
+    "name": "Reference flowing amethyst acanthus lobe 3",
+    "mat": "gold",
+    "smooth": true
+  },
+  {
+    "name": "Acanthus raised sculpted vein",
+    "mat": "gold",
+    "smooth": true
+  },
+  {
+    "name": "Reference flowing amethyst acanthus lobe 1",
+    "mat": "gold",
+    "smooth": true
+  },
+  {
+    "name": "Acanthus raised sculpted vein",
+    "mat": "gold",
+    "smooth": true
+  },
+  {
+    "name": "Reference flowing amethyst acanthus lobe 2",
+    "mat": "gold",
+    "smooth": true
+  },
+  {
+    "name": "Acanthus raised sculpted vein",
+    "mat": "gold",
+    "smooth": true
+  },
+  {
+    "name": "Reference flowing amethyst acanthus lobe 3",
+    "mat": "gold",
+    "smooth": true
+  },
+  {
+    "name": "Acanthus raised sculpted vein",
+    "mat": "gold",
+    "smooth": true
+  },
+  {
+    "name": "Reference flowing amethyst acanthus lobe 1",
+    "mat": "gold",
+    "smooth": true
+  },
+  {
+    "name": "Acanthus raised sculpted vein",
+    "mat": "gold",
+    "smooth": true
+  },
+  {
+    "name": "Reference flowing amethyst acanthus lobe 2",
+    "mat": "gold",
+    "smooth": true
+  },
+  {
+    "name": "Acanthus raised sculpted vein",
+    "mat": "gold",
+    "smooth": true
+  },
+  {
+    "name": "Reference flowing amethyst acanthus lobe 3",
+    "mat": "gold",
+    "smooth": true
+  },
+  {
+    "name": "Acanthus raised sculpted vein",
+    "mat": "gold",
+    "smooth": true
+  }
+]

@@ -1,0 +1,4087 @@
+[
+  {
+    "name": "Continuous solid crown base",
+    "mat": "gold_recess",
+    "smooth": true
+  },
+  {
+    "name": "Embossed velvet base band",
+    "mat": "gold_recess",
+    "smooth": true
+  },
+  {
+    "name": "Rolled polished gold crown rim",
+    "mat": "gold",
+    "smooth": true
+  },
+  {
+    "name": "Rolled polished gold crown rim",
+    "mat": "gold",
+    "smooth": true
+  },
+  {
+    "name": "Rolled polished gold crown rim",
+    "mat": "gold",
+    "smooth": true
+  },
+  {
+    "name": "Rolled polished gold crown rim",
+    "mat": "gold",
+    "smooth": true
+  },
+  {
+    "name": "Complete deeply folded emerald velvet cushion",
+    "mat": "green_velvet",
+    "smooth": true
+  },
+  {
+    "name": "Continuous 1 crown arch to central hub",
+    "mat": "gold_satin",
+    "smooth": true
+  },
+  {
+    "name": "Polished arch raised edge",
+    "mat": "gold",
+    "smooth": true
+  },
+  {
+    "name": "Polished arch raised edge",
+    "mat": "gold",
+    "smooth": true
+  },
+  {
+    "name": "Arch relief emerald leaf",
+    "mat": "gold",
+    "smooth": true
+  },
+  {
+    "name": "Arch relief emerald leaf",
+    "mat": "gold",
+    "smooth": true
+  },
+  {
+    "name": "Arch relief emerald leaf",
+    "mat": "gold",
+    "smooth": true
+  },
+  {
+    "name": "Arch relief emerald leaf",
+    "mat": "gold",
+    "smooth": true
+  },
+  {
+    "name": "Arch relief emerald leaf",
+    "mat": "gold",
+    "smooth": true
+  },
+  {
+    "name": "Arch relief emerald leaf",
+    "mat": "gold",
+    "smooth": true
+  },
+  {
+    "name": "Arch relief emerald leaf",
+    "mat": "gold",
+    "smooth": true
+  },
+  {
+    "name": "Arch relief emerald leaf",
+    "mat": "gold",
+    "smooth": true
+  },
+  {
+    "name": "Arch relief emerald leaf",
+    "mat": "gold",
+    "smooth": true
+  },
+  {
+    "name": "Arch relief emerald leaf",
+    "mat": "gold",
+    "smooth": true
+  },
+  {
+    "name": "Arch relief emerald leaf",
+    "mat": "gold",
+    "smooth": true
+  },
+  {
+    "name": "Arch relief emerald leaf",
+    "mat": "gold",
+    "smooth": true
+  },
+  {
+    "name": "Arch relief emerald leaf",
+    "mat": "gold",
+    "smooth": true
+  },
+  {
+    "name": "Arch relief emerald leaf",
+    "mat": "gold",
+    "smooth": true
+  },
+  {
+    "name": "Arch relief emerald leaf",
+    "mat": "gold",
+    "smooth": true
+  },
+  {
+    "name": "Arch relief emerald leaf",
+    "mat": "gold",
+    "smooth": true
+  },
+  {
+    "name": "Arch 1 emerald stone closed gold prong frame",
+    "mat": "gold",
+    "smooth": true
+  },
+  {
+    "name": "Arch 1 emerald stone independent gemstone",
+    "mat": "CrestGem_Emerald",
+    "smooth": false
+  },
+  {
+    "name": "Arch 1 emerald stone closed gold prong frame",
+    "mat": "gold",
+    "smooth": true
+  },
+  {
+    "name": "Arch 1 emerald stone independent gemstone",
+    "mat": "CrestGem_Emerald",
+    "smooth": false
+  },
+  {
+    "name": "Continuous 2 crown arch to central hub",
+    "mat": "gold_satin",
+    "smooth": true
+  },
+  {
+    "name": "Polished arch raised edge",
+    "mat": "gold",
+    "smooth": true
+  },
+  {
+    "name": "Polished arch raised edge",
+    "mat": "gold",
+    "smooth": true
+  },
+  {
+    "name": "Arch relief emerald leaf",
+    "mat": "gold",
+    "smooth": true
+  },
+  {
+    "name": "Arch relief emerald leaf",
+    "mat": "gold",
+    "smooth": true
+  },
+  {
+    "name": "Arch relief emerald leaf",
+    "mat": "gold",
+    "smooth": true
+  },
+  {
+    "name": "Arch relief emerald leaf",
+    "mat": "gold",
+    "smooth": true
+  },
+  {
+    "name": "Arch relief emerald leaf",
+    "mat": "gold",
+    "smooth": true
+  },
+  {
+    "name": "Arch relief emerald leaf",
+    "mat": "gold",
+    "smooth": true
+  },
+  {
+    "name": "Arch relief emerald leaf",
+    "mat": "gold",
+    "smooth": true
+  },
+  {
+    "name": "Arch relief emerald leaf",
+    "mat": "gold",
+    "smooth": true
+  },
+  {
+    "name": "Arch relief emerald leaf",
+    "mat": "gold",
+    "smooth": true
+  },
+  {
+    "name": "Arch relief emerald leaf",
+    "mat": "gold",
+    "smooth": true
+  },
+  {
+    "name": "Arch relief emerald leaf",
+    "mat": "gold",
+    "smooth": true
+  },
+  {
+    "name": "Arch relief emerald leaf",
+    "mat": "gold",
+    "smooth": true
+  },
+  {
+    "name": "Arch relief emerald leaf",
+    "mat": "gold",
+    "smooth": true
+  },
+  {
+    "name": "Arch relief emerald leaf",
+    "mat": "gold",
+    "smooth": true
+  },
+  {
+    "name": "Arch relief emerald leaf",
+    "mat": "gold",
+    "smooth": true
+  },
+  {
+    "name": "Arch relief emerald leaf",
+    "mat": "gold",
+    "smooth": true
+  },
+  {
+    "name": "Arch 2 emerald stone closed gold prong frame",
+    "mat": "gold",
+    "smooth": true
+  },
+  {
+    "name": "Arch 2 emerald stone independent gemstone",
+    "mat": "CrestGem_Emerald",
+    "smooth": false
+  },
+  {
+    "name": "Arch 2 emerald stone closed gold prong frame",
+    "mat": "gold",
+    "smooth": true
+  },
+  {
+    "name": "Arch 2 emerald stone independent gemstone",
+    "mat": "CrestGem_Emerald",
+    "smooth": false
+  },
+  {
+    "name": "Continuous 3 crown arch to central hub",
+    "mat": "gold_satin",
+    "smooth": true
+  },
+  {
+    "name": "Polished arch raised edge",
+    "mat": "gold",
+    "smooth": true
+  },
+  {
+    "name": "Polished arch raised edge",
+    "mat": "gold",
+    "smooth": true
+  },
+  {
+    "name": "Arch relief emerald leaf",
+    "mat": "gold",
+    "smooth": true
+  },
+  {
+    "name": "Arch relief emerald leaf",
+    "mat": "gold",
+    "smooth": true
+  },
+  {
+    "name": "Arch relief emerald leaf",
+    "mat": "gold",
+    "smooth": true
+  },
+  {
+    "name": "Arch relief emerald leaf",
+    "mat": "gold",
+    "smooth": true
+  },
+  {
+    "name": "Arch relief emerald leaf",
+    "mat": "gold",
+    "smooth": true
+  },
+  {
+    "name": "Arch relief emerald leaf",
+    "mat": "gold",
+    "smooth": true
+  },
+  {
+    "name": "Arch relief emerald leaf",
+    "mat": "gold",
+    "smooth": true
+  },
+  {
+    "name": "Arch relief emerald leaf",
+    "mat": "gold",
+    "smooth": true
+  },
+  {
+    "name": "Arch relief emerald leaf",
+    "mat": "gold",
+    "smooth": true
+  },
+  {
+    "name": "Arch relief emerald leaf",
+    "mat": "gold",
+    "smooth": true
+  },
+  {
+    "name": "Arch relief emerald leaf",
+    "mat": "gold",
+    "smooth": true
+  },
+  {
+    "name": "Arch relief emerald leaf",
+    "mat": "gold",
+    "smooth": true
+  },
+  {
+    "name": "Arch relief emerald leaf",
+    "mat": "gold",
+    "smooth": true
+  },
+  {
+    "name": "Arch relief emerald leaf",
+    "mat": "gold",
+    "smooth": true
+  },
+  {
+    "name": "Arch relief emerald leaf",
+    "mat": "gold",
+    "smooth": true
+  },
+  {
+    "name": "Arch relief emerald leaf",
+    "mat": "gold",
+    "smooth": true
+  },
+  {
+    "name": "Arch 3 emerald stone closed gold prong frame",
+    "mat": "gold",
+    "smooth": true
+  },
+  {
+    "name": "Arch 3 emerald stone independent gemstone",
+    "mat": "CrestGem_Emerald",
+    "smooth": false
+  },
+  {
+    "name": "Arch 3 emerald stone closed gold prong frame",
+    "mat": "gold",
+    "smooth": true
+  },
+  {
+    "name": "Arch 3 emerald stone independent gemstone",
+    "mat": "CrestGem_Emerald",
+    "smooth": false
+  },
+  {
+    "name": "Continuous 4 crown arch to central hub",
+    "mat": "gold_satin",
+    "smooth": true
+  },
+  {
+    "name": "Polished arch raised edge",
+    "mat": "gold",
+    "smooth": true
+  },
+  {
+    "name": "Polished arch raised edge",
+    "mat": "gold",
+    "smooth": true
+  },
+  {
+    "name": "Arch relief emerald leaf",
+    "mat": "gold",
+    "smooth": true
+  },
+  {
+    "name": "Arch relief emerald leaf",
+    "mat": "gold",
+    "smooth": true
+  },
+  {
+    "name": "Arch relief emerald leaf",
+    "mat": "gold",
+    "smooth": true
+  },
+  {
+    "name": "Arch relief emerald leaf",
+    "mat": "gold",
+    "smooth": true
+  },
+  {
+    "name": "Arch relief emerald leaf",
+    "mat": "gold",
+    "smooth": true
+  },
+  {
+    "name": "Arch relief emerald leaf",
+    "mat": "gold",
+    "smooth": true
+  },
+  {
+    "name": "Arch relief emerald leaf",
+    "mat": "gold",
+    "smooth": true
+  },
+  {
+    "name": "Arch relief emerald leaf",
+    "mat": "gold",
+    "smooth": true
+  },
+  {
+    "name": "Arch relief emerald leaf",
+    "mat": "gold",
+    "smooth": true
+  },
+  {
+    "name": "Arch relief emerald leaf",
+    "mat": "gold",
+    "smooth": true
+  },
+  {
+    "name": "Arch relief emerald leaf",
+    "mat": "gold",
+    "smooth": true
+  },
+  {
+    "name": "Arch relief emerald leaf",
+    "mat": "gold",
+    "smooth": true
+  },
+  {
+    "name": "Arch relief emerald leaf",
+    "mat": "gold",
+    "smooth": true
+  },
+  {
+    "name": "Arch relief emerald leaf",
+    "mat": "gold",
+    "smooth": true
+  },
+  {
+    "name": "Arch relief emerald leaf",
+    "mat": "gold",
+    "smooth": true
+  },
+  {
+    "name": "Arch relief emerald leaf",
+    "mat": "gold",
+    "smooth": true
+  },
+  {
+    "name": "Arch 4 emerald stone closed gold prong frame",
+    "mat": "gold",
+    "smooth": true
+  },
+  {
+    "name": "Arch 4 emerald stone independent gemstone",
+    "mat": "CrestGem_Emerald",
+    "smooth": false
+  },
+  {
+    "name": "Arch 4 emerald stone closed gold prong frame",
+    "mat": "gold",
+    "smooth": true
+  },
+  {
+    "name": "Arch 4 emerald stone independent gemstone",
+    "mat": "CrestGem_Emerald",
+    "smooth": false
+  },
+  {
+    "name": "Continuous 5 crown arch to central hub",
+    "mat": "gold_satin",
+    "smooth": true
+  },
+  {
+    "name": "Polished arch raised edge",
+    "mat": "gold",
+    "smooth": true
+  },
+  {
+    "name": "Polished arch raised edge",
+    "mat": "gold",
+    "smooth": true
+  },
+  {
+    "name": "Arch relief emerald leaf",
+    "mat": "gold",
+    "smooth": true
+  },
+  {
+    "name": "Arch relief emerald leaf",
+    "mat": "gold",
+    "smooth": true
+  },
+  {
+    "name": "Arch relief emerald leaf",
+    "mat": "gold",
+    "smooth": true
+  },
+  {
+    "name": "Arch relief emerald leaf",
+    "mat": "gold",
+    "smooth": true
+  },
+  {
+    "name": "Arch relief emerald leaf",
+    "mat": "gold",
+    "smooth": true
+  },
+  {
+    "name": "Arch relief emerald leaf",
+    "mat": "gold",
+    "smooth": true
+  },
+  {
+    "name": "Arch relief emerald leaf",
+    "mat": "gold",
+    "smooth": true
+  },
+  {
+    "name": "Arch relief emerald leaf",
+    "mat": "gold",
+    "smooth": true
+  },
+  {
+    "name": "Arch relief emerald leaf",
+    "mat": "gold",
+    "smooth": true
+  },
+  {
+    "name": "Arch relief emerald leaf",
+    "mat": "gold",
+    "smooth": true
+  },
+  {
+    "name": "Arch relief emerald leaf",
+    "mat": "gold",
+    "smooth": true
+  },
+  {
+    "name": "Arch relief emerald leaf",
+    "mat": "gold",
+    "smooth": true
+  },
+  {
+    "name": "Arch relief emerald leaf",
+    "mat": "gold",
+    "smooth": true
+  },
+  {
+    "name": "Arch relief emerald leaf",
+    "mat": "gold",
+    "smooth": true
+  },
+  {
+    "name": "Arch relief emerald leaf",
+    "mat": "gold",
+    "smooth": true
+  },
+  {
+    "name": "Arch relief emerald leaf",
+    "mat": "gold",
+    "smooth": true
+  },
+  {
+    "name": "Arch 5 emerald stone closed gold prong frame",
+    "mat": "gold",
+    "smooth": true
+  },
+  {
+    "name": "Arch 5 emerald stone independent gemstone",
+    "mat": "CrestGem_Emerald",
+    "smooth": false
+  },
+  {
+    "name": "Arch 5 emerald stone closed gold prong frame",
+    "mat": "gold",
+    "smooth": true
+  },
+  {
+    "name": "Arch 5 emerald stone independent gemstone",
+    "mat": "CrestGem_Emerald",
+    "smooth": false
+  },
+  {
+    "name": "Continuous 6 crown arch to central hub",
+    "mat": "gold_satin",
+    "smooth": true
+  },
+  {
+    "name": "Polished arch raised edge",
+    "mat": "gold",
+    "smooth": true
+  },
+  {
+    "name": "Polished arch raised edge",
+    "mat": "gold",
+    "smooth": true
+  },
+  {
+    "name": "Arch relief emerald leaf",
+    "mat": "gold",
+    "smooth": true
+  },
+  {
+    "name": "Arch relief emerald leaf",
+    "mat": "gold",
+    "smooth": true
+  },
+  {
+    "name": "Arch relief emerald leaf",
+    "mat": "gold",
+    "smooth": true
+  },
+  {
+    "name": "Arch relief emerald leaf",
+    "mat": "gold",
+    "smooth": true
+  },
+  {
+    "name": "Arch relief emerald leaf",
+    "mat": "gold",
+    "smooth": true
+  },
+  {
+    "name": "Arch relief emerald leaf",
+    "mat": "gold",
+    "smooth": true
+  },
+  {
+    "name": "Arch relief emerald leaf",
+    "mat": "gold",
+    "smooth": true
+  },
+  {
+    "name": "Arch relief emerald leaf",
+    "mat": "gold",
+    "smooth": true
+  },
+  {
+    "name": "Arch relief emerald leaf",
+    "mat": "gold",
+    "smooth": true
+  },
+  {
+    "name": "Arch relief emerald leaf",
+    "mat": "gold",
+    "smooth": true
+  },
+  {
+    "name": "Arch relief emerald leaf",
+    "mat": "gold",
+    "smooth": true
+  },
+  {
+    "name": "Arch relief emerald leaf",
+    "mat": "gold",
+    "smooth": true
+  },
+  {
+    "name": "Arch relief emerald leaf",
+    "mat": "gold",
+    "smooth": true
+  },
+  {
+    "name": "Arch relief emerald leaf",
+    "mat": "gold",
+    "smooth": true
+  },
+  {
+    "name": "Arch relief emerald leaf",
+    "mat": "gold",
+    "smooth": true
+  },
+  {
+    "name": "Arch relief emerald leaf",
+    "mat": "gold",
+    "smooth": true
+  },
+  {
+    "name": "Arch 6 emerald stone closed gold prong frame",
+    "mat": "gold",
+    "smooth": true
+  },
+  {
+    "name": "Arch 6 emerald stone independent gemstone",
+    "mat": "CrestGem_Emerald",
+    "smooth": false
+  },
+  {
+    "name": "Arch 6 emerald stone closed gold prong frame",
+    "mat": "gold",
+    "smooth": true
+  },
+  {
+    "name": "Arch 6 emerald stone independent gemstone",
+    "mat": "CrestGem_Emerald",
+    "smooth": false
+  },
+  {
+    "name": "Continuous 7 crown arch to central hub",
+    "mat": "gold_satin",
+    "smooth": true
+  },
+  {
+    "name": "Polished arch raised edge",
+    "mat": "gold",
+    "smooth": true
+  },
+  {
+    "name": "Polished arch raised edge",
+    "mat": "gold",
+    "smooth": true
+  },
+  {
+    "name": "Arch relief emerald leaf",
+    "mat": "gold",
+    "smooth": true
+  },
+  {
+    "name": "Arch relief emerald leaf",
+    "mat": "gold",
+    "smooth": true
+  },
+  {
+    "name": "Arch relief emerald leaf",
+    "mat": "gold",
+    "smooth": true
+  },
+  {
+    "name": "Arch relief emerald leaf",
+    "mat": "gold",
+    "smooth": true
+  },
+  {
+    "name": "Arch relief emerald leaf",
+    "mat": "gold",
+    "smooth": true
+  },
+  {
+    "name": "Arch relief emerald leaf",
+    "mat": "gold",
+    "smooth": true
+  },
+  {
+    "name": "Arch relief emerald leaf",
+    "mat": "gold",
+    "smooth": true
+  },
+  {
+    "name": "Arch relief emerald leaf",
+    "mat": "gold",
+    "smooth": true
+  },
+  {
+    "name": "Arch relief emerald leaf",
+    "mat": "gold",
+    "smooth": true
+  },
+  {
+    "name": "Arch relief emerald leaf",
+    "mat": "gold",
+    "smooth": true
+  },
+  {
+    "name": "Arch relief emerald leaf",
+    "mat": "gold",
+    "smooth": true
+  },
+  {
+    "name": "Arch relief emerald leaf",
+    "mat": "gold",
+    "smooth": true
+  },
+  {
+    "name": "Arch relief emerald leaf",
+    "mat": "gold",
+    "smooth": true
+  },
+  {
+    "name": "Arch relief emerald leaf",
+    "mat": "gold",
+    "smooth": true
+  },
+  {
+    "name": "Arch relief emerald leaf",
+    "mat": "gold",
+    "smooth": true
+  },
+  {
+    "name": "Arch relief emerald leaf",
+    "mat": "gold",
+    "smooth": true
+  },
+  {
+    "name": "Arch 7 emerald stone closed gold prong frame",
+    "mat": "gold",
+    "smooth": true
+  },
+  {
+    "name": "Arch 7 emerald stone independent gemstone",
+    "mat": "CrestGem_Emerald",
+    "smooth": false
+  },
+  {
+    "name": "Arch 7 emerald stone closed gold prong frame",
+    "mat": "gold",
+    "smooth": true
+  },
+  {
+    "name": "Arch 7 emerald stone independent gemstone",
+    "mat": "CrestGem_Emerald",
+    "smooth": false
+  },
+  {
+    "name": "Continuous 8 crown arch to central hub",
+    "mat": "gold_satin",
+    "smooth": true
+  },
+  {
+    "name": "Polished arch raised edge",
+    "mat": "gold",
+    "smooth": true
+  },
+  {
+    "name": "Polished arch raised edge",
+    "mat": "gold",
+    "smooth": true
+  },
+  {
+    "name": "Arch relief emerald leaf",
+    "mat": "gold",
+    "smooth": true
+  },
+  {
+    "name": "Arch relief emerald leaf",
+    "mat": "gold",
+    "smooth": true
+  },
+  {
+    "name": "Arch relief emerald leaf",
+    "mat": "gold",
+    "smooth": true
+  },
+  {
+    "name": "Arch relief emerald leaf",
+    "mat": "gold",
+    "smooth": true
+  },
+  {
+    "name": "Arch relief emerald leaf",
+    "mat": "gold",
+    "smooth": true
+  },
+  {
+    "name": "Arch relief emerald leaf",
+    "mat": "gold",
+    "smooth": true
+  },
+  {
+    "name": "Arch relief emerald leaf",
+    "mat": "gold",
+    "smooth": true
+  },
+  {
+    "name": "Arch relief emerald leaf",
+    "mat": "gold",
+    "smooth": true
+  },
+  {
+    "name": "Arch relief emerald leaf",
+    "mat": "gold",
+    "smooth": true
+  },
+  {
+    "name": "Arch relief emerald leaf",
+    "mat": "gold",
+    "smooth": true
+  },
+  {
+    "name": "Arch relief emerald leaf",
+    "mat": "gold",
+    "smooth": true
+  },
+  {
+    "name": "Arch relief emerald leaf",
+    "mat": "gold",
+    "smooth": true
+  },
+  {
+    "name": "Arch relief emerald leaf",
+    "mat": "gold",
+    "smooth": true
+  },
+  {
+    "name": "Arch relief emerald leaf",
+    "mat": "gold",
+    "smooth": true
+  },
+  {
+    "name": "Arch relief emerald leaf",
+    "mat": "gold",
+    "smooth": true
+  },
+  {
+    "name": "Arch relief emerald leaf",
+    "mat": "gold",
+    "smooth": true
+  },
+  {
+    "name": "Arch 8 emerald stone closed gold prong frame",
+    "mat": "gold",
+    "smooth": true
+  },
+  {
+    "name": "Arch 8 emerald stone independent gemstone",
+    "mat": "CrestGem_Emerald",
+    "smooth": false
+  },
+  {
+    "name": "Arch 8 emerald stone closed gold prong frame",
+    "mat": "gold",
+    "smooth": true
+  },
+  {
+    "name": "Arch 8 emerald stone independent gemstone",
+    "mat": "CrestGem_Emerald",
+    "smooth": false
+  },
+  {
+    "name": "Gold central joining hub",
+    "mat": "gold",
+    "smooth": true
+  },
+  {
+    "name": "Central arch joining collar",
+    "mat": "gold",
+    "smooth": true
+  },
+  {
+    "name": "Base circlet emerald diamond 0 closed gold prong frame",
+    "mat": "gold",
+    "smooth": true
+  },
+  {
+    "name": "Base circlet emerald diamond 0 independent gemstone",
+    "mat": "CrestGem_Emerald",
+    "smooth": false
+  },
+  {
+    "name": "Base laurel relief",
+    "mat": "gold",
+    "smooth": true
+  },
+  {
+    "name": "Base laurel relief",
+    "mat": "gold",
+    "smooth": true
+  },
+  {
+    "name": "Base laurel relief",
+    "mat": "gold",
+    "smooth": true
+  },
+  {
+    "name": "Base laurel relief",
+    "mat": "gold",
+    "smooth": true
+  },
+  {
+    "name": "Round circlet gold bezel",
+    "mat": "gold",
+    "smooth": true
+  },
+  {
+    "name": "Round circlet emerald stone",
+    "mat": "CrestGem_Emerald",
+    "smooth": false
+  },
+  {
+    "name": "Base laurel relief",
+    "mat": "gold",
+    "smooth": true
+  },
+  {
+    "name": "Base laurel relief",
+    "mat": "gold",
+    "smooth": true
+  },
+  {
+    "name": "Base laurel relief",
+    "mat": "gold",
+    "smooth": true
+  },
+  {
+    "name": "Base laurel relief",
+    "mat": "gold",
+    "smooth": true
+  },
+  {
+    "name": "Base circlet emerald diamond 2 closed gold prong frame",
+    "mat": "gold",
+    "smooth": true
+  },
+  {
+    "name": "Base circlet emerald diamond 2 independent gemstone",
+    "mat": "CrestGem_Emerald",
+    "smooth": false
+  },
+  {
+    "name": "Base laurel relief",
+    "mat": "gold",
+    "smooth": true
+  },
+  {
+    "name": "Base laurel relief",
+    "mat": "gold",
+    "smooth": true
+  },
+  {
+    "name": "Base laurel relief",
+    "mat": "gold",
+    "smooth": true
+  },
+  {
+    "name": "Base laurel relief",
+    "mat": "gold",
+    "smooth": true
+  },
+  {
+    "name": "Round circlet gold bezel",
+    "mat": "gold",
+    "smooth": true
+  },
+  {
+    "name": "Round circlet emerald stone",
+    "mat": "CrestGem_Emerald",
+    "smooth": false
+  },
+  {
+    "name": "Base laurel relief",
+    "mat": "gold",
+    "smooth": true
+  },
+  {
+    "name": "Base laurel relief",
+    "mat": "gold",
+    "smooth": true
+  },
+  {
+    "name": "Base laurel relief",
+    "mat": "gold",
+    "smooth": true
+  },
+  {
+    "name": "Base laurel relief",
+    "mat": "gold",
+    "smooth": true
+  },
+  {
+    "name": "Base circlet emerald diamond 4 closed gold prong frame",
+    "mat": "gold",
+    "smooth": true
+  },
+  {
+    "name": "Base circlet emerald diamond 4 independent gemstone",
+    "mat": "CrestGem_Emerald",
+    "smooth": false
+  },
+  {
+    "name": "Base laurel relief",
+    "mat": "gold",
+    "smooth": true
+  },
+  {
+    "name": "Base laurel relief",
+    "mat": "gold",
+    "smooth": true
+  },
+  {
+    "name": "Base laurel relief",
+    "mat": "gold",
+    "smooth": true
+  },
+  {
+    "name": "Base laurel relief",
+    "mat": "gold",
+    "smooth": true
+  },
+  {
+    "name": "Round circlet gold bezel",
+    "mat": "gold",
+    "smooth": true
+  },
+  {
+    "name": "Round circlet emerald stone",
+    "mat": "CrestGem_Emerald",
+    "smooth": false
+  },
+  {
+    "name": "Base laurel relief",
+    "mat": "gold",
+    "smooth": true
+  },
+  {
+    "name": "Base laurel relief",
+    "mat": "gold",
+    "smooth": true
+  },
+  {
+    "name": "Base laurel relief",
+    "mat": "gold",
+    "smooth": true
+  },
+  {
+    "name": "Base laurel relief",
+    "mat": "gold",
+    "smooth": true
+  },
+  {
+    "name": "Base circlet emerald diamond 6 closed gold prong frame",
+    "mat": "gold",
+    "smooth": true
+  },
+  {
+    "name": "Base circlet emerald diamond 6 independent gemstone",
+    "mat": "CrestGem_Emerald",
+    "smooth": false
+  },
+  {
+    "name": "Base laurel relief",
+    "mat": "gold",
+    "smooth": true
+  },
+  {
+    "name": "Base laurel relief",
+    "mat": "gold",
+    "smooth": true
+  },
+  {
+    "name": "Base laurel relief",
+    "mat": "gold",
+    "smooth": true
+  },
+  {
+    "name": "Base laurel relief",
+    "mat": "gold",
+    "smooth": true
+  },
+  {
+    "name": "Round circlet gold bezel",
+    "mat": "gold",
+    "smooth": true
+  },
+  {
+    "name": "Round circlet emerald stone",
+    "mat": "CrestGem_Emerald",
+    "smooth": false
+  },
+  {
+    "name": "Base laurel relief",
+    "mat": "gold",
+    "smooth": true
+  },
+  {
+    "name": "Base laurel relief",
+    "mat": "gold",
+    "smooth": true
+  },
+  {
+    "name": "Base laurel relief",
+    "mat": "gold",
+    "smooth": true
+  },
+  {
+    "name": "Base laurel relief",
+    "mat": "gold",
+    "smooth": true
+  },
+  {
+    "name": "Base circlet emerald diamond 8 closed gold prong frame",
+    "mat": "gold",
+    "smooth": true
+  },
+  {
+    "name": "Base circlet emerald diamond 8 independent gemstone",
+    "mat": "CrestGem_Emerald",
+    "smooth": false
+  },
+  {
+    "name": "Base laurel relief",
+    "mat": "gold",
+    "smooth": true
+  },
+  {
+    "name": "Base laurel relief",
+    "mat": "gold",
+    "smooth": true
+  },
+  {
+    "name": "Base laurel relief",
+    "mat": "gold",
+    "smooth": true
+  },
+  {
+    "name": "Base laurel relief",
+    "mat": "gold",
+    "smooth": true
+  },
+  {
+    "name": "Round circlet gold bezel",
+    "mat": "gold",
+    "smooth": true
+  },
+  {
+    "name": "Round circlet emerald stone",
+    "mat": "CrestGem_Emerald",
+    "smooth": false
+  },
+  {
+    "name": "Base laurel relief",
+    "mat": "gold",
+    "smooth": true
+  },
+  {
+    "name": "Base laurel relief",
+    "mat": "gold",
+    "smooth": true
+  },
+  {
+    "name": "Base laurel relief",
+    "mat": "gold",
+    "smooth": true
+  },
+  {
+    "name": "Base laurel relief",
+    "mat": "gold",
+    "smooth": true
+  },
+  {
+    "name": "Base circlet emerald diamond 10 closed gold prong frame",
+    "mat": "gold",
+    "smooth": true
+  },
+  {
+    "name": "Base circlet emerald diamond 10 independent gemstone",
+    "mat": "CrestGem_Emerald",
+    "smooth": false
+  },
+  {
+    "name": "Base laurel relief",
+    "mat": "gold",
+    "smooth": true
+  },
+  {
+    "name": "Base laurel relief",
+    "mat": "gold",
+    "smooth": true
+  },
+  {
+    "name": "Base laurel relief",
+    "mat": "gold",
+    "smooth": true
+  },
+  {
+    "name": "Base laurel relief",
+    "mat": "gold",
+    "smooth": true
+  },
+  {
+    "name": "Round circlet gold bezel",
+    "mat": "gold",
+    "smooth": true
+  },
+  {
+    "name": "Round circlet emerald stone",
+    "mat": "CrestGem_Emerald",
+    "smooth": false
+  },
+  {
+    "name": "Base laurel relief",
+    "mat": "gold",
+    "smooth": true
+  },
+  {
+    "name": "Base laurel relief",
+    "mat": "gold",
+    "smooth": true
+  },
+  {
+    "name": "Base laurel relief",
+    "mat": "gold",
+    "smooth": true
+  },
+  {
+    "name": "Base laurel relief",
+    "mat": "gold",
+    "smooth": true
+  },
+  {
+    "name": "Circlet milgrain bead",
+    "mat": "gold",
+    "smooth": true
+  },
+  {
+    "name": "Circlet milgrain bead",
+    "mat": "gold",
+    "smooth": true
+  },
+  {
+    "name": "Circlet milgrain bead",
+    "mat": "gold",
+    "smooth": true
+  },
+  {
+    "name": "Circlet milgrain bead",
+    "mat": "gold",
+    "smooth": true
+  },
+  {
+    "name": "Circlet milgrain bead",
+    "mat": "gold",
+    "smooth": true
+  },
+  {
+    "name": "Circlet milgrain bead",
+    "mat": "gold",
+    "smooth": true
+  },
+  {
+    "name": "Circlet milgrain bead",
+    "mat": "gold",
+    "smooth": true
+  },
+  {
+    "name": "Circlet milgrain bead",
+    "mat": "gold",
+    "smooth": true
+  },
+  {
+    "name": "Circlet milgrain bead",
+    "mat": "gold",
+    "smooth": true
+  },
+  {
+    "name": "Circlet milgrain bead",
+    "mat": "gold",
+    "smooth": true
+  },
+  {
+    "name": "Circlet milgrain bead",
+    "mat": "gold",
+    "smooth": true
+  },
+  {
+    "name": "Circlet milgrain bead",
+    "mat": "gold",
+    "smooth": true
+  },
+  {
+    "name": "Circlet milgrain bead",
+    "mat": "gold",
+    "smooth": true
+  },
+  {
+    "name": "Circlet milgrain bead",
+    "mat": "gold",
+    "smooth": true
+  },
+  {
+    "name": "Circlet milgrain bead",
+    "mat": "gold",
+    "smooth": true
+  },
+  {
+    "name": "Circlet milgrain bead",
+    "mat": "gold",
+    "smooth": true
+  },
+  {
+    "name": "Circlet milgrain bead",
+    "mat": "gold",
+    "smooth": true
+  },
+  {
+    "name": "Circlet milgrain bead",
+    "mat": "gold",
+    "smooth": true
+  },
+  {
+    "name": "Circlet milgrain bead",
+    "mat": "gold",
+    "smooth": true
+  },
+  {
+    "name": "Circlet milgrain bead",
+    "mat": "gold",
+    "smooth": true
+  },
+  {
+    "name": "Circlet milgrain bead",
+    "mat": "gold",
+    "smooth": true
+  },
+  {
+    "name": "Circlet milgrain bead",
+    "mat": "gold",
+    "smooth": true
+  },
+  {
+    "name": "Circlet milgrain bead",
+    "mat": "gold",
+    "smooth": true
+  },
+  {
+    "name": "Circlet milgrain bead",
+    "mat": "gold",
+    "smooth": true
+  },
+  {
+    "name": "Circlet milgrain bead",
+    "mat": "gold",
+    "smooth": true
+  },
+  {
+    "name": "Circlet milgrain bead",
+    "mat": "gold",
+    "smooth": true
+  },
+  {
+    "name": "Circlet milgrain bead",
+    "mat": "gold",
+    "smooth": true
+  },
+  {
+    "name": "Circlet milgrain bead",
+    "mat": "gold",
+    "smooth": true
+  },
+  {
+    "name": "Circlet milgrain bead",
+    "mat": "gold",
+    "smooth": true
+  },
+  {
+    "name": "Circlet milgrain bead",
+    "mat": "gold",
+    "smooth": true
+  },
+  {
+    "name": "Circlet milgrain bead",
+    "mat": "gold",
+    "smooth": true
+  },
+  {
+    "name": "Circlet milgrain bead",
+    "mat": "gold",
+    "smooth": true
+  },
+  {
+    "name": "Circlet milgrain bead",
+    "mat": "gold",
+    "smooth": true
+  },
+  {
+    "name": "Circlet milgrain bead",
+    "mat": "gold",
+    "smooth": true
+  },
+  {
+    "name": "Circlet milgrain bead",
+    "mat": "gold",
+    "smooth": true
+  },
+  {
+    "name": "Circlet milgrain bead",
+    "mat": "gold",
+    "smooth": true
+  },
+  {
+    "name": "Circlet milgrain bead",
+    "mat": "gold",
+    "smooth": true
+  },
+  {
+    "name": "Circlet milgrain bead",
+    "mat": "gold",
+    "smooth": true
+  },
+  {
+    "name": "Circlet milgrain bead",
+    "mat": "gold",
+    "smooth": true
+  },
+  {
+    "name": "Circlet milgrain bead",
+    "mat": "gold",
+    "smooth": true
+  },
+  {
+    "name": "Circlet milgrain bead",
+    "mat": "gold",
+    "smooth": true
+  },
+  {
+    "name": "Circlet milgrain bead",
+    "mat": "gold",
+    "smooth": true
+  },
+  {
+    "name": "Circlet milgrain bead",
+    "mat": "gold",
+    "smooth": true
+  },
+  {
+    "name": "Circlet milgrain bead",
+    "mat": "gold",
+    "smooth": true
+  },
+  {
+    "name": "Circlet milgrain bead",
+    "mat": "gold",
+    "smooth": true
+  },
+  {
+    "name": "Circlet milgrain bead",
+    "mat": "gold",
+    "smooth": true
+  },
+  {
+    "name": "Circlet milgrain bead",
+    "mat": "gold",
+    "smooth": true
+  },
+  {
+    "name": "Circlet milgrain bead",
+    "mat": "gold",
+    "smooth": true
+  },
+  {
+    "name": "Circlet milgrain bead",
+    "mat": "gold",
+    "smooth": true
+  },
+  {
+    "name": "Circlet milgrain bead",
+    "mat": "gold",
+    "smooth": true
+  },
+  {
+    "name": "Circlet milgrain bead",
+    "mat": "gold",
+    "smooth": true
+  },
+  {
+    "name": "Circlet milgrain bead",
+    "mat": "gold",
+    "smooth": true
+  },
+  {
+    "name": "Circlet milgrain bead",
+    "mat": "gold",
+    "smooth": true
+  },
+  {
+    "name": "Circlet milgrain bead",
+    "mat": "gold",
+    "smooth": true
+  },
+  {
+    "name": "Circlet milgrain bead",
+    "mat": "gold",
+    "smooth": true
+  },
+  {
+    "name": "Circlet milgrain bead",
+    "mat": "gold",
+    "smooth": true
+  },
+  {
+    "name": "Circlet milgrain bead",
+    "mat": "gold",
+    "smooth": true
+  },
+  {
+    "name": "Circlet milgrain bead",
+    "mat": "gold",
+    "smooth": true
+  },
+  {
+    "name": "Circlet milgrain bead",
+    "mat": "gold",
+    "smooth": true
+  },
+  {
+    "name": "Circlet milgrain bead",
+    "mat": "gold",
+    "smooth": true
+  },
+  {
+    "name": "Circlet milgrain bead",
+    "mat": "gold",
+    "smooth": true
+  },
+  {
+    "name": "Circlet milgrain bead",
+    "mat": "gold",
+    "smooth": true
+  },
+  {
+    "name": "Circlet milgrain bead",
+    "mat": "gold",
+    "smooth": true
+  },
+  {
+    "name": "Circlet milgrain bead",
+    "mat": "gold",
+    "smooth": true
+  },
+  {
+    "name": "Circlet milgrain bead",
+    "mat": "gold",
+    "smooth": true
+  },
+  {
+    "name": "Circlet milgrain bead",
+    "mat": "gold",
+    "smooth": true
+  },
+  {
+    "name": "Circlet milgrain bead",
+    "mat": "gold",
+    "smooth": true
+  },
+  {
+    "name": "Circlet milgrain bead",
+    "mat": "gold",
+    "smooth": true
+  },
+  {
+    "name": "Circlet milgrain bead",
+    "mat": "gold",
+    "smooth": true
+  },
+  {
+    "name": "Circlet milgrain bead",
+    "mat": "gold",
+    "smooth": true
+  },
+  {
+    "name": "Circlet milgrain bead",
+    "mat": "gold",
+    "smooth": true
+  },
+  {
+    "name": "Circlet milgrain bead",
+    "mat": "gold",
+    "smooth": true
+  },
+  {
+    "name": "Circlet milgrain bead",
+    "mat": "gold",
+    "smooth": true
+  },
+  {
+    "name": "Circlet milgrain bead",
+    "mat": "gold",
+    "smooth": true
+  },
+  {
+    "name": "Circlet milgrain bead",
+    "mat": "gold",
+    "smooth": true
+  },
+  {
+    "name": "Circlet milgrain bead",
+    "mat": "gold",
+    "smooth": true
+  },
+  {
+    "name": "Circlet milgrain bead",
+    "mat": "gold",
+    "smooth": true
+  },
+  {
+    "name": "Circlet milgrain bead",
+    "mat": "gold",
+    "smooth": true
+  },
+  {
+    "name": "Circlet milgrain bead",
+    "mat": "gold",
+    "smooth": true
+  },
+  {
+    "name": "Circlet milgrain bead",
+    "mat": "gold",
+    "smooth": true
+  },
+  {
+    "name": "Circlet milgrain bead",
+    "mat": "gold",
+    "smooth": true
+  },
+  {
+    "name": "Circlet milgrain bead",
+    "mat": "gold",
+    "smooth": true
+  },
+  {
+    "name": "Circlet milgrain bead",
+    "mat": "gold",
+    "smooth": true
+  },
+  {
+    "name": "Circlet milgrain bead",
+    "mat": "gold",
+    "smooth": true
+  },
+  {
+    "name": "Circlet milgrain bead",
+    "mat": "gold",
+    "smooth": true
+  },
+  {
+    "name": "Circlet milgrain bead",
+    "mat": "gold",
+    "smooth": true
+  },
+  {
+    "name": "Circlet milgrain bead",
+    "mat": "gold",
+    "smooth": true
+  },
+  {
+    "name": "Circlet milgrain bead",
+    "mat": "gold",
+    "smooth": true
+  },
+  {
+    "name": "Circlet milgrain bead",
+    "mat": "gold",
+    "smooth": true
+  },
+  {
+    "name": "Circlet milgrain bead",
+    "mat": "gold",
+    "smooth": true
+  },
+  {
+    "name": "Circlet milgrain bead",
+    "mat": "gold",
+    "smooth": true
+  },
+  {
+    "name": "Circlet milgrain bead",
+    "mat": "gold",
+    "smooth": true
+  },
+  {
+    "name": "Circlet milgrain bead",
+    "mat": "gold",
+    "smooth": true
+  },
+  {
+    "name": "Circlet milgrain bead",
+    "mat": "gold",
+    "smooth": true
+  },
+  {
+    "name": "Circlet milgrain bead",
+    "mat": "gold",
+    "smooth": true
+  },
+  {
+    "name": "Circlet milgrain bead",
+    "mat": "gold",
+    "smooth": true
+  },
+  {
+    "name": "Circlet milgrain bead",
+    "mat": "gold",
+    "smooth": true
+  },
+  {
+    "name": "Circlet milgrain bead",
+    "mat": "gold",
+    "smooth": true
+  },
+  {
+    "name": "Circlet milgrain bead",
+    "mat": "gold",
+    "smooth": true
+  },
+  {
+    "name": "Circlet milgrain bead",
+    "mat": "gold",
+    "smooth": true
+  },
+  {
+    "name": "Circlet milgrain bead",
+    "mat": "gold",
+    "smooth": true
+  },
+  {
+    "name": "Circlet milgrain bead",
+    "mat": "gold",
+    "smooth": true
+  },
+  {
+    "name": "Circlet milgrain bead",
+    "mat": "gold",
+    "smooth": true
+  },
+  {
+    "name": "Circlet milgrain bead",
+    "mat": "gold",
+    "smooth": true
+  },
+  {
+    "name": "Circlet milgrain bead",
+    "mat": "gold",
+    "smooth": true
+  },
+  {
+    "name": "Circlet milgrain bead",
+    "mat": "gold",
+    "smooth": true
+  },
+  {
+    "name": "Circlet milgrain bead",
+    "mat": "gold",
+    "smooth": true
+  },
+  {
+    "name": "Circlet milgrain bead",
+    "mat": "gold",
+    "smooth": true
+  },
+  {
+    "name": "Circlet milgrain bead",
+    "mat": "gold",
+    "smooth": true
+  },
+  {
+    "name": "Circlet milgrain bead",
+    "mat": "gold",
+    "smooth": true
+  },
+  {
+    "name": "Circlet milgrain bead",
+    "mat": "gold",
+    "smooth": true
+  },
+  {
+    "name": "Circlet milgrain bead",
+    "mat": "gold",
+    "smooth": true
+  },
+  {
+    "name": "Circlet milgrain bead",
+    "mat": "gold",
+    "smooth": true
+  },
+  {
+    "name": "Circlet milgrain bead",
+    "mat": "gold",
+    "smooth": true
+  },
+  {
+    "name": "Circlet milgrain bead",
+    "mat": "gold",
+    "smooth": true
+  },
+  {
+    "name": "Circlet milgrain bead",
+    "mat": "gold",
+    "smooth": true
+  },
+  {
+    "name": "Circlet milgrain bead",
+    "mat": "gold",
+    "smooth": true
+  },
+  {
+    "name": "Circlet milgrain bead",
+    "mat": "gold",
+    "smooth": true
+  },
+  {
+    "name": "Circlet milgrain bead",
+    "mat": "gold",
+    "smooth": true
+  },
+  {
+    "name": "Circlet milgrain bead",
+    "mat": "gold",
+    "smooth": true
+  },
+  {
+    "name": "Circlet milgrain bead",
+    "mat": "gold",
+    "smooth": true
+  },
+  {
+    "name": "Circlet milgrain bead",
+    "mat": "gold",
+    "smooth": true
+  },
+  {
+    "name": "Circlet milgrain bead",
+    "mat": "gold",
+    "smooth": true
+  },
+  {
+    "name": "Circlet milgrain bead",
+    "mat": "gold",
+    "smooth": true
+  },
+  {
+    "name": "Circlet milgrain bead",
+    "mat": "gold",
+    "smooth": true
+  },
+  {
+    "name": "Circlet milgrain bead",
+    "mat": "gold",
+    "smooth": true
+  },
+  {
+    "name": "Circlet milgrain bead",
+    "mat": "gold",
+    "smooth": true
+  },
+  {
+    "name": "Circlet milgrain bead",
+    "mat": "gold",
+    "smooth": true
+  },
+  {
+    "name": "Circlet milgrain bead",
+    "mat": "gold",
+    "smooth": true
+  },
+  {
+    "name": "Circlet milgrain bead",
+    "mat": "gold",
+    "smooth": true
+  },
+  {
+    "name": "Circlet milgrain bead",
+    "mat": "gold",
+    "smooth": true
+  },
+  {
+    "name": "Circlet milgrain bead",
+    "mat": "gold",
+    "smooth": true
+  },
+  {
+    "name": "Circlet milgrain bead",
+    "mat": "gold",
+    "smooth": true
+  },
+  {
+    "name": "Circlet milgrain bead",
+    "mat": "gold",
+    "smooth": true
+  },
+  {
+    "name": "Circlet milgrain bead",
+    "mat": "gold",
+    "smooth": true
+  },
+  {
+    "name": "Circlet milgrain bead",
+    "mat": "gold",
+    "smooth": true
+  },
+  {
+    "name": "Circlet milgrain bead",
+    "mat": "gold",
+    "smooth": true
+  },
+  {
+    "name": "Circlet milgrain bead",
+    "mat": "gold",
+    "smooth": true
+  },
+  {
+    "name": "Circlet milgrain bead",
+    "mat": "gold",
+    "smooth": true
+  },
+  {
+    "name": "Circlet milgrain bead",
+    "mat": "gold",
+    "smooth": true
+  },
+  {
+    "name": "Circlet milgrain bead",
+    "mat": "gold",
+    "smooth": true
+  },
+  {
+    "name": "Circlet milgrain bead",
+    "mat": "gold",
+    "smooth": true
+  },
+  {
+    "name": "Circlet milgrain bead",
+    "mat": "gold",
+    "smooth": true
+  },
+  {
+    "name": "Circlet milgrain bead",
+    "mat": "gold",
+    "smooth": true
+  },
+  {
+    "name": "Circlet milgrain bead",
+    "mat": "gold",
+    "smooth": true
+  },
+  {
+    "name": "Circlet milgrain bead",
+    "mat": "gold",
+    "smooth": true
+  },
+  {
+    "name": "Circlet milgrain bead",
+    "mat": "gold",
+    "smooth": true
+  },
+  {
+    "name": "Circlet milgrain bead",
+    "mat": "gold",
+    "smooth": true
+  },
+  {
+    "name": "Circlet milgrain bead",
+    "mat": "gold",
+    "smooth": true
+  },
+  {
+    "name": "Circlet milgrain bead",
+    "mat": "gold",
+    "smooth": true
+  },
+  {
+    "name": "Circlet milgrain bead",
+    "mat": "gold",
+    "smooth": true
+  },
+  {
+    "name": "Circlet milgrain bead",
+    "mat": "gold",
+    "smooth": true
+  },
+  {
+    "name": "Circlet milgrain bead",
+    "mat": "gold",
+    "smooth": true
+  },
+  {
+    "name": "Circlet milgrain bead",
+    "mat": "gold",
+    "smooth": true
+  },
+  {
+    "name": "Circlet milgrain bead",
+    "mat": "gold",
+    "smooth": true
+  },
+  {
+    "name": "Circlet milgrain bead",
+    "mat": "gold",
+    "smooth": true
+  },
+  {
+    "name": "Circlet milgrain bead",
+    "mat": "gold",
+    "smooth": true
+  },
+  {
+    "name": "Circlet milgrain bead",
+    "mat": "gold",
+    "smooth": true
+  },
+  {
+    "name": "Circlet milgrain bead",
+    "mat": "gold",
+    "smooth": true
+  },
+  {
+    "name": "Circlet milgrain bead",
+    "mat": "gold",
+    "smooth": true
+  },
+  {
+    "name": "Circlet milgrain bead",
+    "mat": "gold",
+    "smooth": true
+  },
+  {
+    "name": "Circlet milgrain bead",
+    "mat": "gold",
+    "smooth": true
+  },
+  {
+    "name": "Circlet milgrain bead",
+    "mat": "gold",
+    "smooth": true
+  },
+  {
+    "name": "Circlet milgrain bead",
+    "mat": "gold",
+    "smooth": true
+  },
+  {
+    "name": "Circlet milgrain bead",
+    "mat": "gold",
+    "smooth": true
+  },
+  {
+    "name": "Circlet milgrain bead",
+    "mat": "gold",
+    "smooth": true
+  },
+  {
+    "name": "Circlet milgrain bead",
+    "mat": "gold",
+    "smooth": true
+  },
+  {
+    "name": "Circlet milgrain bead",
+    "mat": "gold",
+    "smooth": true
+  },
+  {
+    "name": "Circlet milgrain bead",
+    "mat": "gold",
+    "smooth": true
+  },
+  {
+    "name": "Circlet milgrain bead",
+    "mat": "gold",
+    "smooth": true
+  },
+  {
+    "name": "Circlet milgrain bead",
+    "mat": "gold",
+    "smooth": true
+  },
+  {
+    "name": "Circlet milgrain bead",
+    "mat": "gold",
+    "smooth": true
+  },
+  {
+    "name": "Circlet milgrain bead",
+    "mat": "gold",
+    "smooth": true
+  },
+  {
+    "name": "Circlet milgrain bead",
+    "mat": "gold",
+    "smooth": true
+  },
+  {
+    "name": "Circlet milgrain bead",
+    "mat": "gold",
+    "smooth": true
+  },
+  {
+    "name": "Circlet milgrain bead",
+    "mat": "gold",
+    "smooth": true
+  },
+  {
+    "name": "Circlet milgrain bead",
+    "mat": "gold",
+    "smooth": true
+  },
+  {
+    "name": "Circlet milgrain bead",
+    "mat": "gold",
+    "smooth": true
+  },
+  {
+    "name": "Circlet milgrain bead",
+    "mat": "gold",
+    "smooth": true
+  },
+  {
+    "name": "Circlet milgrain bead",
+    "mat": "gold",
+    "smooth": true
+  },
+  {
+    "name": "Circlet milgrain bead",
+    "mat": "gold",
+    "smooth": true
+  },
+  {
+    "name": "Circlet milgrain bead",
+    "mat": "gold",
+    "smooth": true
+  },
+  {
+    "name": "Circlet milgrain bead",
+    "mat": "gold",
+    "smooth": true
+  },
+  {
+    "name": "Circlet milgrain bead",
+    "mat": "gold",
+    "smooth": true
+  },
+  {
+    "name": "Circlet milgrain bead",
+    "mat": "gold",
+    "smooth": true
+  },
+  {
+    "name": "Circlet milgrain bead",
+    "mat": "gold",
+    "smooth": true
+  },
+  {
+    "name": "Circlet milgrain bead",
+    "mat": "gold",
+    "smooth": true
+  },
+  {
+    "name": "Circlet milgrain bead",
+    "mat": "gold",
+    "smooth": true
+  },
+  {
+    "name": "Circlet milgrain bead",
+    "mat": "gold",
+    "smooth": true
+  },
+  {
+    "name": "Circlet milgrain bead",
+    "mat": "gold",
+    "smooth": true
+  },
+  {
+    "name": "Circlet milgrain bead",
+    "mat": "gold",
+    "smooth": true
+  },
+  {
+    "name": "Circlet milgrain bead",
+    "mat": "gold",
+    "smooth": true
+  },
+  {
+    "name": "Circlet milgrain bead",
+    "mat": "gold",
+    "smooth": true
+  },
+  {
+    "name": "Circlet milgrain bead",
+    "mat": "gold",
+    "smooth": true
+  },
+  {
+    "name": "Circlet milgrain bead",
+    "mat": "gold",
+    "smooth": true
+  },
+  {
+    "name": "Circlet milgrain bead",
+    "mat": "gold",
+    "smooth": true
+  },
+  {
+    "name": "Circlet milgrain bead",
+    "mat": "gold",
+    "smooth": true
+  },
+  {
+    "name": "Circlet milgrain bead",
+    "mat": "gold",
+    "smooth": true
+  },
+  {
+    "name": "Circlet milgrain bead",
+    "mat": "gold",
+    "smooth": true
+  },
+  {
+    "name": "Circlet milgrain bead",
+    "mat": "gold",
+    "smooth": true
+  },
+  {
+    "name": "Circlet milgrain bead",
+    "mat": "gold",
+    "smooth": true
+  },
+  {
+    "name": "Circlet milgrain bead",
+    "mat": "gold",
+    "smooth": true
+  },
+  {
+    "name": "Circlet milgrain bead",
+    "mat": "gold",
+    "smooth": true
+  },
+  {
+    "name": "Circlet milgrain bead",
+    "mat": "gold",
+    "smooth": true
+  },
+  {
+    "name": "Circlet milgrain bead",
+    "mat": "gold",
+    "smooth": true
+  },
+  {
+    "name": "Circlet milgrain bead",
+    "mat": "gold",
+    "smooth": true
+  },
+  {
+    "name": "Circlet milgrain bead",
+    "mat": "gold",
+    "smooth": true
+  },
+  {
+    "name": "Circlet milgrain bead",
+    "mat": "gold",
+    "smooth": true
+  },
+  {
+    "name": "Circlet milgrain bead",
+    "mat": "gold",
+    "smooth": true
+  },
+  {
+    "name": "Circlet milgrain bead",
+    "mat": "gold",
+    "smooth": true
+  },
+  {
+    "name": "Circlet milgrain bead",
+    "mat": "gold",
+    "smooth": true
+  },
+  {
+    "name": "Circlet milgrain bead",
+    "mat": "gold",
+    "smooth": true
+  },
+  {
+    "name": "Circlet milgrain bead",
+    "mat": "gold",
+    "smooth": true
+  },
+  {
+    "name": "Circlet milgrain bead",
+    "mat": "gold",
+    "smooth": true
+  },
+  {
+    "name": "Circlet milgrain bead",
+    "mat": "gold",
+    "smooth": true
+  },
+  {
+    "name": "Circlet milgrain bead",
+    "mat": "gold",
+    "smooth": true
+  },
+  {
+    "name": "Circlet milgrain bead",
+    "mat": "gold",
+    "smooth": true
+  },
+  {
+    "name": "Circlet milgrain bead",
+    "mat": "gold",
+    "smooth": true
+  },
+  {
+    "name": "Circlet milgrain bead",
+    "mat": "gold",
+    "smooth": true
+  },
+  {
+    "name": "Circlet milgrain bead",
+    "mat": "gold",
+    "smooth": true
+  },
+  {
+    "name": "Circlet milgrain bead",
+    "mat": "gold",
+    "smooth": true
+  },
+  {
+    "name": "Circlet milgrain bead",
+    "mat": "gold",
+    "smooth": true
+  },
+  {
+    "name": "Circlet milgrain bead",
+    "mat": "gold",
+    "smooth": true
+  },
+  {
+    "name": "Circlet milgrain bead",
+    "mat": "gold",
+    "smooth": true
+  },
+  {
+    "name": "Circlet milgrain bead",
+    "mat": "gold",
+    "smooth": true
+  },
+  {
+    "name": "Circlet milgrain bead",
+    "mat": "gold",
+    "smooth": true
+  },
+  {
+    "name": "Circlet milgrain bead",
+    "mat": "gold",
+    "smooth": true
+  },
+  {
+    "name": "Circlet milgrain bead",
+    "mat": "gold",
+    "smooth": true
+  },
+  {
+    "name": "Circlet milgrain bead",
+    "mat": "gold",
+    "smooth": true
+  },
+  {
+    "name": "Circlet milgrain bead",
+    "mat": "gold",
+    "smooth": true
+  },
+  {
+    "name": "Circlet milgrain bead",
+    "mat": "gold",
+    "smooth": true
+  },
+  {
+    "name": "Circlet milgrain bead",
+    "mat": "gold",
+    "smooth": true
+  },
+  {
+    "name": "Circlet milgrain bead",
+    "mat": "gold",
+    "smooth": true
+  },
+  {
+    "name": "Circlet milgrain bead",
+    "mat": "gold",
+    "smooth": true
+  },
+  {
+    "name": "Circlet milgrain bead",
+    "mat": "gold",
+    "smooth": true
+  },
+  {
+    "name": "Circlet milgrain bead",
+    "mat": "gold",
+    "smooth": true
+  },
+  {
+    "name": "Circlet milgrain bead",
+    "mat": "gold",
+    "smooth": true
+  },
+  {
+    "name": "Circlet milgrain bead",
+    "mat": "gold",
+    "smooth": true
+  },
+  {
+    "name": "Circlet milgrain bead",
+    "mat": "gold",
+    "smooth": true
+  },
+  {
+    "name": "Circlet milgrain bead",
+    "mat": "gold",
+    "smooth": true
+  },
+  {
+    "name": "Circlet milgrain bead",
+    "mat": "gold",
+    "smooth": true
+  },
+  {
+    "name": "Circlet milgrain bead",
+    "mat": "gold",
+    "smooth": true
+  },
+  {
+    "name": "Circlet milgrain bead",
+    "mat": "gold",
+    "smooth": true
+  },
+  {
+    "name": "Circlet milgrain bead",
+    "mat": "gold",
+    "smooth": true
+  },
+  {
+    "name": "Circlet milgrain bead",
+    "mat": "gold",
+    "smooth": true
+  },
+  {
+    "name": "Circlet milgrain bead",
+    "mat": "gold",
+    "smooth": true
+  },
+  {
+    "name": "Circlet milgrain bead",
+    "mat": "gold",
+    "smooth": true
+  },
+  {
+    "name": "Circlet milgrain bead",
+    "mat": "gold",
+    "smooth": true
+  },
+  {
+    "name": "Circlet milgrain bead",
+    "mat": "gold",
+    "smooth": true
+  },
+  {
+    "name": "Circlet milgrain bead",
+    "mat": "gold",
+    "smooth": true
+  },
+  {
+    "name": "Circlet milgrain bead",
+    "mat": "gold",
+    "smooth": true
+  },
+  {
+    "name": "Circlet milgrain bead",
+    "mat": "gold",
+    "smooth": true
+  },
+  {
+    "name": "Circlet milgrain bead",
+    "mat": "gold",
+    "smooth": true
+  },
+  {
+    "name": "Circlet milgrain bead",
+    "mat": "gold",
+    "smooth": true
+  },
+  {
+    "name": "Circlet milgrain bead",
+    "mat": "gold",
+    "smooth": true
+  },
+  {
+    "name": "Circlet milgrain bead",
+    "mat": "gold",
+    "smooth": true
+  },
+  {
+    "name": "Circlet milgrain bead",
+    "mat": "gold",
+    "smooth": true
+  },
+  {
+    "name": "Circlet milgrain bead",
+    "mat": "gold",
+    "smooth": true
+  },
+  {
+    "name": "Circlet milgrain bead",
+    "mat": "gold",
+    "smooth": true
+  },
+  {
+    "name": "Circlet milgrain bead",
+    "mat": "gold",
+    "smooth": true
+  },
+  {
+    "name": "Circlet milgrain bead",
+    "mat": "gold",
+    "smooth": true
+  },
+  {
+    "name": "Circlet milgrain bead",
+    "mat": "gold",
+    "smooth": true
+  },
+  {
+    "name": "Circlet milgrain bead",
+    "mat": "gold",
+    "smooth": true
+  },
+  {
+    "name": "Circlet milgrain bead",
+    "mat": "gold",
+    "smooth": true
+  },
+  {
+    "name": "Circlet milgrain bead",
+    "mat": "gold",
+    "smooth": true
+  },
+  {
+    "name": "Circlet milgrain bead",
+    "mat": "gold",
+    "smooth": true
+  },
+  {
+    "name": "Circlet milgrain bead",
+    "mat": "gold",
+    "smooth": true
+  },
+  {
+    "name": "Circlet milgrain bead",
+    "mat": "gold",
+    "smooth": true
+  },
+  {
+    "name": "Circlet milgrain bead",
+    "mat": "gold",
+    "smooth": true
+  },
+  {
+    "name": "Circlet milgrain bead",
+    "mat": "gold",
+    "smooth": true
+  },
+  {
+    "name": "Circlet milgrain bead",
+    "mat": "gold",
+    "smooth": true
+  },
+  {
+    "name": "Circlet milgrain bead",
+    "mat": "gold",
+    "smooth": true
+  },
+  {
+    "name": "Circlet milgrain bead",
+    "mat": "gold",
+    "smooth": true
+  },
+  {
+    "name": "Circlet milgrain bead",
+    "mat": "gold",
+    "smooth": true
+  },
+  {
+    "name": "Circlet milgrain bead",
+    "mat": "gold",
+    "smooth": true
+  },
+  {
+    "name": "Circlet milgrain bead",
+    "mat": "gold",
+    "smooth": true
+  },
+  {
+    "name": "Circlet milgrain bead",
+    "mat": "gold",
+    "smooth": true
+  },
+  {
+    "name": "Circlet milgrain bead",
+    "mat": "gold",
+    "smooth": true
+  },
+  {
+    "name": "Circlet milgrain bead",
+    "mat": "gold",
+    "smooth": true
+  },
+  {
+    "name": "Circlet milgrain bead",
+    "mat": "gold",
+    "smooth": true
+  },
+  {
+    "name": "Circlet milgrain bead",
+    "mat": "gold",
+    "smooth": true
+  },
+  {
+    "name": "Circlet milgrain bead",
+    "mat": "gold",
+    "smooth": true
+  },
+  {
+    "name": "Circlet milgrain bead",
+    "mat": "gold",
+    "smooth": true
+  },
+  {
+    "name": "Circlet milgrain bead",
+    "mat": "gold",
+    "smooth": true
+  },
+  {
+    "name": "Circlet milgrain bead",
+    "mat": "gold",
+    "smooth": true
+  },
+  {
+    "name": "Circlet milgrain bead",
+    "mat": "gold",
+    "smooth": true
+  },
+  {
+    "name": "Circlet milgrain bead",
+    "mat": "gold",
+    "smooth": true
+  },
+  {
+    "name": "Circlet milgrain bead",
+    "mat": "gold",
+    "smooth": true
+  },
+  {
+    "name": "Large central emerald jewel closed gold prong frame",
+    "mat": "gold",
+    "smooth": true
+  },
+  {
+    "name": "Large central emerald jewel independent gemstone",
+    "mat": "CrestGem_Emerald",
+    "smooth": false
+  },
+  {
+    "name": "Broad beveled central emerald jewel gold mount",
+    "mat": "gold",
+    "smooth": false
+  },
+  {
+    "name": "Large central solid gold pave surround",
+    "mat": "gold",
+    "smooth": true
+  },
+  {
+    "name": "Pave gold bead seat",
+    "mat": "gold",
+    "smooth": true
+  },
+  {
+    "name": "Central border brilliant",
+    "mat": "CrestGem_Emerald",
+    "smooth": false
+  },
+  {
+    "name": "Pave gold bead seat",
+    "mat": "gold",
+    "smooth": true
+  },
+  {
+    "name": "Central border brilliant",
+    "mat": "CrestGem_Emerald",
+    "smooth": false
+  },
+  {
+    "name": "Pave gold bead seat",
+    "mat": "gold",
+    "smooth": true
+  },
+  {
+    "name": "Central border brilliant",
+    "mat": "CrestGem_Emerald",
+    "smooth": false
+  },
+  {
+    "name": "Pave gold bead seat",
+    "mat": "gold",
+    "smooth": true
+  },
+  {
+    "name": "Central border brilliant",
+    "mat": "CrestGem_Emerald",
+    "smooth": false
+  },
+  {
+    "name": "Pave gold bead seat",
+    "mat": "gold",
+    "smooth": true
+  },
+  {
+    "name": "Central border brilliant",
+    "mat": "CrestGem_Emerald",
+    "smooth": false
+  },
+  {
+    "name": "Pave gold bead seat",
+    "mat": "gold",
+    "smooth": true
+  },
+  {
+    "name": "Central border brilliant",
+    "mat": "CrestGem_Emerald",
+    "smooth": false
+  },
+  {
+    "name": "Pave gold bead seat",
+    "mat": "gold",
+    "smooth": true
+  },
+  {
+    "name": "Central border brilliant",
+    "mat": "CrestGem_Emerald",
+    "smooth": false
+  },
+  {
+    "name": "Pave gold bead seat",
+    "mat": "gold",
+    "smooth": true
+  },
+  {
+    "name": "Central border brilliant",
+    "mat": "CrestGem_Emerald",
+    "smooth": false
+  },
+  {
+    "name": "Pave gold bead seat",
+    "mat": "gold",
+    "smooth": true
+  },
+  {
+    "name": "Central border brilliant",
+    "mat": "CrestGem_Emerald",
+    "smooth": false
+  },
+  {
+    "name": "Pave gold bead seat",
+    "mat": "gold",
+    "smooth": true
+  },
+  {
+    "name": "Central border brilliant",
+    "mat": "CrestGem_Emerald",
+    "smooth": false
+  },
+  {
+    "name": "Pave gold bead seat",
+    "mat": "gold",
+    "smooth": true
+  },
+  {
+    "name": "Central border brilliant",
+    "mat": "CrestGem_Emerald",
+    "smooth": false
+  },
+  {
+    "name": "Pave gold bead seat",
+    "mat": "gold",
+    "smooth": true
+  },
+  {
+    "name": "Central border brilliant",
+    "mat": "CrestGem_Emerald",
+    "smooth": false
+  },
+  {
+    "name": "Pave gold bead seat",
+    "mat": "gold",
+    "smooth": true
+  },
+  {
+    "name": "Central border brilliant",
+    "mat": "CrestGem_Emerald",
+    "smooth": false
+  },
+  {
+    "name": "Pave gold bead seat",
+    "mat": "gold",
+    "smooth": true
+  },
+  {
+    "name": "Central border brilliant",
+    "mat": "CrestGem_Emerald",
+    "smooth": false
+  },
+  {
+    "name": "Pave gold bead seat",
+    "mat": "gold",
+    "smooth": true
+  },
+  {
+    "name": "Central border brilliant",
+    "mat": "CrestGem_Emerald",
+    "smooth": false
+  },
+  {
+    "name": "Pave gold bead seat",
+    "mat": "gold",
+    "smooth": true
+  },
+  {
+    "name": "Central border brilliant",
+    "mat": "CrestGem_Emerald",
+    "smooth": false
+  },
+  {
+    "name": "Pave gold bead seat",
+    "mat": "gold",
+    "smooth": true
+  },
+  {
+    "name": "Central border brilliant",
+    "mat": "CrestGem_Emerald",
+    "smooth": false
+  },
+  {
+    "name": "Pave gold bead seat",
+    "mat": "gold",
+    "smooth": true
+  },
+  {
+    "name": "Central border brilliant",
+    "mat": "CrestGem_Emerald",
+    "smooth": false
+  },
+  {
+    "name": "Pave gold bead seat",
+    "mat": "gold",
+    "smooth": true
+  },
+  {
+    "name": "Central border brilliant",
+    "mat": "CrestGem_Emerald",
+    "smooth": false
+  },
+  {
+    "name": "Pave gold bead seat",
+    "mat": "gold",
+    "smooth": true
+  },
+  {
+    "name": "Central border brilliant",
+    "mat": "CrestGem_Emerald",
+    "smooth": false
+  },
+  {
+    "name": "Pave gold bead seat",
+    "mat": "gold",
+    "smooth": true
+  },
+  {
+    "name": "Central border brilliant",
+    "mat": "CrestGem_Emerald",
+    "smooth": false
+  },
+  {
+    "name": "Pave gold bead seat",
+    "mat": "gold",
+    "smooth": true
+  },
+  {
+    "name": "Central border brilliant",
+    "mat": "CrestGem_Emerald",
+    "smooth": false
+  },
+  {
+    "name": "Pave gold bead seat",
+    "mat": "gold",
+    "smooth": true
+  },
+  {
+    "name": "Central border brilliant",
+    "mat": "CrestGem_Emerald",
+    "smooth": false
+  },
+  {
+    "name": "Pave gold bead seat",
+    "mat": "gold",
+    "smooth": true
+  },
+  {
+    "name": "Central border brilliant",
+    "mat": "CrestGem_Emerald",
+    "smooth": false
+  },
+  {
+    "name": "Pave gold bead seat",
+    "mat": "gold",
+    "smooth": true
+  },
+  {
+    "name": "Central border brilliant",
+    "mat": "CrestGem_Emerald",
+    "smooth": false
+  },
+  {
+    "name": "Pave gold bead seat",
+    "mat": "gold",
+    "smooth": true
+  },
+  {
+    "name": "Central border brilliant",
+    "mat": "CrestGem_Emerald",
+    "smooth": false
+  },
+  {
+    "name": "Pave gold bead seat",
+    "mat": "gold",
+    "smooth": true
+  },
+  {
+    "name": "Central border brilliant",
+    "mat": "CrestGem_Emerald",
+    "smooth": false
+  },
+  {
+    "name": "Pave gold bead seat",
+    "mat": "gold",
+    "smooth": true
+  },
+  {
+    "name": "Central border brilliant",
+    "mat": "CrestGem_Emerald",
+    "smooth": false
+  },
+  {
+    "name": "Pave gold bead seat",
+    "mat": "gold",
+    "smooth": true
+  },
+  {
+    "name": "Central border brilliant",
+    "mat": "CrestGem_Emerald",
+    "smooth": false
+  },
+  {
+    "name": "Pave gold bead seat",
+    "mat": "gold",
+    "smooth": true
+  },
+  {
+    "name": "Central border brilliant",
+    "mat": "CrestGem_Emerald",
+    "smooth": false
+  },
+  {
+    "name": "Pave gold bead seat",
+    "mat": "gold",
+    "smooth": true
+  },
+  {
+    "name": "Central border brilliant",
+    "mat": "CrestGem_Emerald",
+    "smooth": false
+  },
+  {
+    "name": "Pave gold bead seat",
+    "mat": "gold",
+    "smooth": true
+  },
+  {
+    "name": "Central border brilliant",
+    "mat": "CrestGem_Emerald",
+    "smooth": false
+  },
+  {
+    "name": "Central laurel stem",
+    "mat": "gold",
+    "smooth": true
+  },
+  {
+    "name": "Emerald laurel detailed leaf",
+    "mat": "gold",
+    "smooth": true
+  },
+  {
+    "name": "Emerald laurel detailed leaf",
+    "mat": "gold",
+    "smooth": true
+  },
+  {
+    "name": "Emerald laurel detailed leaf",
+    "mat": "gold",
+    "smooth": true
+  },
+  {
+    "name": "Emerald laurel detailed leaf",
+    "mat": "gold",
+    "smooth": true
+  },
+  {
+    "name": "Emerald laurel detailed leaf",
+    "mat": "gold",
+    "smooth": true
+  },
+  {
+    "name": "Emerald laurel detailed leaf",
+    "mat": "gold",
+    "smooth": true
+  },
+  {
+    "name": "Emerald laurel detailed leaf",
+    "mat": "gold",
+    "smooth": true
+  },
+  {
+    "name": "Emerald laurel detailed leaf",
+    "mat": "gold",
+    "smooth": true
+  },
+  {
+    "name": "Emerald laurel detailed leaf",
+    "mat": "gold",
+    "smooth": true
+  },
+  {
+    "name": "Emerald laurel detailed leaf",
+    "mat": "gold",
+    "smooth": true
+  },
+  {
+    "name": "Emerald laurel detailed leaf",
+    "mat": "gold",
+    "smooth": true
+  },
+  {
+    "name": "Emerald laurel detailed leaf",
+    "mat": "gold",
+    "smooth": true
+  },
+  {
+    "name": "Emerald laurel detailed leaf",
+    "mat": "gold",
+    "smooth": true
+  },
+  {
+    "name": "Emerald laurel detailed leaf",
+    "mat": "gold",
+    "smooth": true
+  },
+  {
+    "name": "Central laurel stem",
+    "mat": "gold",
+    "smooth": true
+  },
+  {
+    "name": "Emerald laurel detailed leaf",
+    "mat": "gold",
+    "smooth": true
+  },
+  {
+    "name": "Emerald laurel detailed leaf",
+    "mat": "gold",
+    "smooth": true
+  },
+  {
+    "name": "Emerald laurel detailed leaf",
+    "mat": "gold",
+    "smooth": true
+  },
+  {
+    "name": "Emerald laurel detailed leaf",
+    "mat": "gold",
+    "smooth": true
+  },
+  {
+    "name": "Emerald laurel detailed leaf",
+    "mat": "gold",
+    "smooth": true
+  },
+  {
+    "name": "Emerald laurel detailed leaf",
+    "mat": "gold",
+    "smooth": true
+  },
+  {
+    "name": "Emerald laurel detailed leaf",
+    "mat": "gold",
+    "smooth": true
+  },
+  {
+    "name": "Emerald laurel detailed leaf",
+    "mat": "gold",
+    "smooth": true
+  },
+  {
+    "name": "Emerald laurel detailed leaf",
+    "mat": "gold",
+    "smooth": true
+  },
+  {
+    "name": "Emerald laurel detailed leaf",
+    "mat": "gold",
+    "smooth": true
+  },
+  {
+    "name": "Emerald laurel detailed leaf",
+    "mat": "gold",
+    "smooth": true
+  },
+  {
+    "name": "Emerald laurel detailed leaf",
+    "mat": "gold",
+    "smooth": true
+  },
+  {
+    "name": "Emerald laurel detailed leaf",
+    "mat": "gold",
+    "smooth": true
+  },
+  {
+    "name": "Emerald laurel detailed leaf",
+    "mat": "gold",
+    "smooth": true
+  },
+  {
+    "name": "Side fleur scroll",
+    "mat": "gold",
+    "smooth": true
+  },
+  {
+    "name": "Side fleur scroll",
+    "mat": "gold",
+    "smooth": true
+  },
+  {
+    "name": "Large central emerald jewel closed gold prong frame",
+    "mat": "gold",
+    "smooth": true
+  },
+  {
+    "name": "Large central emerald jewel independent gemstone",
+    "mat": "CrestGem_Emerald",
+    "smooth": false
+  },
+  {
+    "name": "Broad beveled central emerald jewel gold mount",
+    "mat": "gold",
+    "smooth": false
+  },
+  {
+    "name": "Large central solid gold pave surround",
+    "mat": "gold",
+    "smooth": true
+  },
+  {
+    "name": "Pave gold bead seat",
+    "mat": "gold",
+    "smooth": true
+  },
+  {
+    "name": "Central border brilliant",
+    "mat": "CrestGem_Emerald",
+    "smooth": false
+  },
+  {
+    "name": "Pave gold bead seat",
+    "mat": "gold",
+    "smooth": true
+  },
+  {
+    "name": "Central border brilliant",
+    "mat": "CrestGem_Emerald",
+    "smooth": false
+  },
+  {
+    "name": "Pave gold bead seat",
+    "mat": "gold",
+    "smooth": true
+  },
+  {
+    "name": "Central border brilliant",
+    "mat": "CrestGem_Emerald",
+    "smooth": false
+  },
+  {
+    "name": "Pave gold bead seat",
+    "mat": "gold",
+    "smooth": true
+  },
+  {
+    "name": "Central border brilliant",
+    "mat": "CrestGem_Emerald",
+    "smooth": false
+  },
+  {
+    "name": "Pave gold bead seat",
+    "mat": "gold",
+    "smooth": true
+  },
+  {
+    "name": "Central border brilliant",
+    "mat": "CrestGem_Emerald",
+    "smooth": false
+  },
+  {
+    "name": "Pave gold bead seat",
+    "mat": "gold",
+    "smooth": true
+  },
+  {
+    "name": "Central border brilliant",
+    "mat": "CrestGem_Emerald",
+    "smooth": false
+  },
+  {
+    "name": "Pave gold bead seat",
+    "mat": "gold",
+    "smooth": true
+  },
+  {
+    "name": "Central border brilliant",
+    "mat": "CrestGem_Emerald",
+    "smooth": false
+  },
+  {
+    "name": "Pave gold bead seat",
+    "mat": "gold",
+    "smooth": true
+  },
+  {
+    "name": "Central border brilliant",
+    "mat": "CrestGem_Emerald",
+    "smooth": false
+  },
+  {
+    "name": "Pave gold bead seat",
+    "mat": "gold",
+    "smooth": true
+  },
+  {
+    "name": "Central border brilliant",
+    "mat": "CrestGem_Emerald",
+    "smooth": false
+  },
+  {
+    "name": "Pave gold bead seat",
+    "mat": "gold",
+    "smooth": true
+  },
+  {
+    "name": "Central border brilliant",
+    "mat": "CrestGem_Emerald",
+    "smooth": false
+  },
+  {
+    "name": "Pave gold bead seat",
+    "mat": "gold",
+    "smooth": true
+  },
+  {
+    "name": "Central border brilliant",
+    "mat": "CrestGem_Emerald",
+    "smooth": false
+  },
+  {
+    "name": "Pave gold bead seat",
+    "mat": "gold",
+    "smooth": true
+  },
+  {
+    "name": "Central border brilliant",
+    "mat": "CrestGem_Emerald",
+    "smooth": false
+  },
+  {
+    "name": "Pave gold bead seat",
+    "mat": "gold",
+    "smooth": true
+  },
+  {
+    "name": "Central border brilliant",
+    "mat": "CrestGem_Emerald",
+    "smooth": false
+  },
+  {
+    "name": "Pave gold bead seat",
+    "mat": "gold",
+    "smooth": true
+  },
+  {
+    "name": "Central border brilliant",
+    "mat": "CrestGem_Emerald",
+    "smooth": false
+  },
+  {
+    "name": "Pave gold bead seat",
+    "mat": "gold",
+    "smooth": true
+  },
+  {
+    "name": "Central border brilliant",
+    "mat": "CrestGem_Emerald",
+    "smooth": false
+  },
+  {
+    "name": "Pave gold bead seat",
+    "mat": "gold",
+    "smooth": true
+  },
+  {
+    "name": "Central border brilliant",
+    "mat": "CrestGem_Emerald",
+    "smooth": false
+  },
+  {
+    "name": "Pave gold bead seat",
+    "mat": "gold",
+    "smooth": true
+  },
+  {
+    "name": "Central border brilliant",
+    "mat": "CrestGem_Emerald",
+    "smooth": false
+  },
+  {
+    "name": "Pave gold bead seat",
+    "mat": "gold",
+    "smooth": true
+  },
+  {
+    "name": "Central border brilliant",
+    "mat": "CrestGem_Emerald",
+    "smooth": false
+  },
+  {
+    "name": "Pave gold bead seat",
+    "mat": "gold",
+    "smooth": true
+  },
+  {
+    "name": "Central border brilliant",
+    "mat": "CrestGem_Emerald",
+    "smooth": false
+  },
+  {
+    "name": "Pave gold bead seat",
+    "mat": "gold",
+    "smooth": true
+  },
+  {
+    "name": "Central border brilliant",
+    "mat": "CrestGem_Emerald",
+    "smooth": false
+  },
+  {
+    "name": "Pave gold bead seat",
+    "mat": "gold",
+    "smooth": true
+  },
+  {
+    "name": "Central border brilliant",
+    "mat": "CrestGem_Emerald",
+    "smooth": false
+  },
+  {
+    "name": "Pave gold bead seat",
+    "mat": "gold",
+    "smooth": true
+  },
+  {
+    "name": "Central border brilliant",
+    "mat": "CrestGem_Emerald",
+    "smooth": false
+  },
+  {
+    "name": "Pave gold bead seat",
+    "mat": "gold",
+    "smooth": true
+  },
+  {
+    "name": "Central border brilliant",
+    "mat": "CrestGem_Emerald",
+    "smooth": false
+  },
+  {
+    "name": "Pave gold bead seat",
+    "mat": "gold",
+    "smooth": true
+  },
+  {
+    "name": "Central border brilliant",
+    "mat": "CrestGem_Emerald",
+    "smooth": false
+  },
+  {
+    "name": "Pave gold bead seat",
+    "mat": "gold",
+    "smooth": true
+  },
+  {
+    "name": "Central border brilliant",
+    "mat": "CrestGem_Emerald",
+    "smooth": false
+  },
+  {
+    "name": "Pave gold bead seat",
+    "mat": "gold",
+    "smooth": true
+  },
+  {
+    "name": "Central border brilliant",
+    "mat": "CrestGem_Emerald",
+    "smooth": false
+  },
+  {
+    "name": "Pave gold bead seat",
+    "mat": "gold",
+    "smooth": true
+  },
+  {
+    "name": "Central border brilliant",
+    "mat": "CrestGem_Emerald",
+    "smooth": false
+  },
+  {
+    "name": "Pave gold bead seat",
+    "mat": "gold",
+    "smooth": true
+  },
+  {
+    "name": "Central border brilliant",
+    "mat": "CrestGem_Emerald",
+    "smooth": false
+  },
+  {
+    "name": "Pave gold bead seat",
+    "mat": "gold",
+    "smooth": true
+  },
+  {
+    "name": "Central border brilliant",
+    "mat": "CrestGem_Emerald",
+    "smooth": false
+  },
+  {
+    "name": "Pave gold bead seat",
+    "mat": "gold",
+    "smooth": true
+  },
+  {
+    "name": "Central border brilliant",
+    "mat": "CrestGem_Emerald",
+    "smooth": false
+  },
+  {
+    "name": "Pave gold bead seat",
+    "mat": "gold",
+    "smooth": true
+  },
+  {
+    "name": "Central border brilliant",
+    "mat": "CrestGem_Emerald",
+    "smooth": false
+  },
+  {
+    "name": "Pave gold bead seat",
+    "mat": "gold",
+    "smooth": true
+  },
+  {
+    "name": "Central border brilliant",
+    "mat": "CrestGem_Emerald",
+    "smooth": false
+  },
+  {
+    "name": "Central laurel stem",
+    "mat": "gold",
+    "smooth": true
+  },
+  {
+    "name": "Emerald laurel detailed leaf",
+    "mat": "gold",
+    "smooth": true
+  },
+  {
+    "name": "Emerald laurel detailed leaf",
+    "mat": "gold",
+    "smooth": true
+  },
+  {
+    "name": "Emerald laurel detailed leaf",
+    "mat": "gold",
+    "smooth": true
+  },
+  {
+    "name": "Emerald laurel detailed leaf",
+    "mat": "gold",
+    "smooth": true
+  },
+  {
+    "name": "Emerald laurel detailed leaf",
+    "mat": "gold",
+    "smooth": true
+  },
+  {
+    "name": "Emerald laurel detailed leaf",
+    "mat": "gold",
+    "smooth": true
+  },
+  {
+    "name": "Emerald laurel detailed leaf",
+    "mat": "gold",
+    "smooth": true
+  },
+  {
+    "name": "Emerald laurel detailed leaf",
+    "mat": "gold",
+    "smooth": true
+  },
+  {
+    "name": "Emerald laurel detailed leaf",
+    "mat": "gold",
+    "smooth": true
+  },
+  {
+    "name": "Emerald laurel detailed leaf",
+    "mat": "gold",
+    "smooth": true
+  },
+  {
+    "name": "Emerald laurel detailed leaf",
+    "mat": "gold",
+    "smooth": true
+  },
+  {
+    "name": "Emerald laurel detailed leaf",
+    "mat": "gold",
+    "smooth": true
+  },
+  {
+    "name": "Emerald laurel detailed leaf",
+    "mat": "gold",
+    "smooth": true
+  },
+  {
+    "name": "Emerald laurel detailed leaf",
+    "mat": "gold",
+    "smooth": true
+  },
+  {
+    "name": "Central laurel stem",
+    "mat": "gold",
+    "smooth": true
+  },
+  {
+    "name": "Emerald laurel detailed leaf",
+    "mat": "gold",
+    "smooth": true
+  },
+  {
+    "name": "Emerald laurel detailed leaf",
+    "mat": "gold",
+    "smooth": true
+  },
+  {
+    "name": "Emerald laurel detailed leaf",
+    "mat": "gold",
+    "smooth": true
+  },
+  {
+    "name": "Emerald laurel detailed leaf",
+    "mat": "gold",
+    "smooth": true
+  },
+  {
+    "name": "Emerald laurel detailed leaf",
+    "mat": "gold",
+    "smooth": true
+  },
+  {
+    "name": "Emerald laurel detailed leaf",
+    "mat": "gold",
+    "smooth": true
+  },
+  {
+    "name": "Emerald laurel detailed leaf",
+    "mat": "gold",
+    "smooth": true
+  },
+  {
+    "name": "Emerald laurel detailed leaf",
+    "mat": "gold",
+    "smooth": true
+  },
+  {
+    "name": "Emerald laurel detailed leaf",
+    "mat": "gold",
+    "smooth": true
+  },
+  {
+    "name": "Emerald laurel detailed leaf",
+    "mat": "gold",
+    "smooth": true
+  },
+  {
+    "name": "Emerald laurel detailed leaf",
+    "mat": "gold",
+    "smooth": true
+  },
+  {
+    "name": "Emerald laurel detailed leaf",
+    "mat": "gold",
+    "smooth": true
+  },
+  {
+    "name": "Emerald laurel detailed leaf",
+    "mat": "gold",
+    "smooth": true
+  },
+  {
+    "name": "Emerald laurel detailed leaf",
+    "mat": "gold",
+    "smooth": true
+  },
+  {
+    "name": "Side fleur scroll",
+    "mat": "gold",
+    "smooth": true
+  },
+  {
+    "name": "Side fleur scroll",
+    "mat": "gold",
+    "smooth": true
+  },
+  {
+    "name": "Top fleur central gold spear",
+    "mat": "gold",
+    "smooth": true
+  },
+  {
+    "name": "Top fleur curved petal",
+    "mat": "gold",
+    "smooth": true
+  },
+  {
+    "name": "Top fleur lower curl",
+    "mat": "gold",
+    "smooth": true
+  },
+  {
+    "name": "Top fleur curved petal",
+    "mat": "gold",
+    "smooth": true
+  },
+  {
+    "name": "Top fleur lower curl",
+    "mat": "gold",
+    "smooth": true
+  },
+  {
+    "name": "Top fleur emerald round stone",
+    "mat": "CrestGem_Emerald",
+    "smooth": false
+  },
+  {
+    "name": "Upper arch emerald diamond closed gold prong frame",
+    "mat": "gold",
+    "smooth": true
+  },
+  {
+    "name": "Upper arch emerald diamond independent gemstone",
+    "mat": "CrestGem_Emerald",
+    "smooth": false
+  },
+  {
+    "name": "Top fleur central gold spear",
+    "mat": "gold",
+    "smooth": true
+  },
+  {
+    "name": "Top fleur curved petal",
+    "mat": "gold",
+    "smooth": true
+  },
+  {
+    "name": "Top fleur lower curl",
+    "mat": "gold",
+    "smooth": true
+  },
+  {
+    "name": "Top fleur curved petal",
+    "mat": "gold",
+    "smooth": true
+  },
+  {
+    "name": "Top fleur lower curl",
+    "mat": "gold",
+    "smooth": true
+  },
+  {
+    "name": "Top fleur emerald round stone",
+    "mat": "CrestGem_Emerald",
+    "smooth": false
+  },
+  {
+    "name": "Upper arch emerald diamond closed gold prong frame",
+    "mat": "gold",
+    "smooth": true
+  },
+  {
+    "name": "Upper arch emerald diamond independent gemstone",
+    "mat": "CrestGem_Emerald",
+    "smooth": false
+  },
+  {
+    "name": "Reference flowing emerald acanthus lobe 1",
+    "mat": "gold",
+    "smooth": true
+  },
+  {
+    "name": "Acanthus raised sculpted vein",
+    "mat": "gold",
+    "smooth": true
+  },
+  {
+    "name": "Reference flowing emerald acanthus lobe 2",
+    "mat": "gold",
+    "smooth": true
+  },
+  {
+    "name": "Acanthus raised sculpted vein",
+    "mat": "gold",
+    "smooth": true
+  },
+  {
+    "name": "Reference flowing emerald acanthus lobe 3",
+    "mat": "gold",
+    "smooth": true
+  },
+  {
+    "name": "Acanthus raised sculpted vein",
+    "mat": "gold",
+    "smooth": true
+  },
+  {
+    "name": "Reference flowing emerald acanthus lobe 4",
+    "mat": "gold",
+    "smooth": true
+  },
+  {
+    "name": "Acanthus raised sculpted vein",
+    "mat": "gold",
+    "smooth": true
+  },
+  {
+    "name": "Reference flowing emerald acanthus lobe 5",
+    "mat": "gold",
+    "smooth": true
+  },
+  {
+    "name": "Acanthus raised sculpted vein",
+    "mat": "gold",
+    "smooth": true
+  },
+  {
+    "name": "Reference flowing emerald acanthus lobe 6",
+    "mat": "gold",
+    "smooth": true
+  },
+  {
+    "name": "Acanthus raised sculpted vein",
+    "mat": "gold",
+    "smooth": true
+  },
+  {
+    "name": "Reference flowing emerald acanthus lobe 1",
+    "mat": "gold",
+    "smooth": true
+  },
+  {
+    "name": "Acanthus raised sculpted vein",
+    "mat": "gold",
+    "smooth": true
+  },
+  {
+    "name": "Reference flowing emerald acanthus lobe 2",
+    "mat": "gold",
+    "smooth": true
+  },
+  {
+    "name": "Acanthus raised sculpted vein",
+    "mat": "gold",
+    "smooth": true
+  },
+  {
+    "name": "Reference flowing emerald acanthus lobe 3",
+    "mat": "gold",
+    "smooth": true
+  },
+  {
+    "name": "Acanthus raised sculpted vein",
+    "mat": "gold",
+    "smooth": true
+  },
+  {
+    "name": "Reference flowing emerald acanthus lobe 4",
+    "mat": "gold",
+    "smooth": true
+  },
+  {
+    "name": "Acanthus raised sculpted vein",
+    "mat": "gold",
+    "smooth": true
+  },
+  {
+    "name": "Reference flowing emerald acanthus lobe 5",
+    "mat": "gold",
+    "smooth": true
+  },
+  {
+    "name": "Acanthus raised sculpted vein",
+    "mat": "gold",
+    "smooth": true
+  },
+  {
+    "name": "Reference flowing emerald acanthus lobe 6",
+    "mat": "gold",
+    "smooth": true
+  },
+  {
+    "name": "Acanthus raised sculpted vein",
+    "mat": "gold",
+    "smooth": true
+  },
+  {
+    "name": "Reference flowing emerald acanthus lobe 1",
+    "mat": "gold",
+    "smooth": true
+  },
+  {
+    "name": "Acanthus raised sculpted vein",
+    "mat": "gold",
+    "smooth": true
+  },
+  {
+    "name": "Reference flowing emerald acanthus lobe 2",
+    "mat": "gold",
+    "smooth": true
+  },
+  {
+    "name": "Acanthus raised sculpted vein",
+    "mat": "gold",
+    "smooth": true
+  },
+  {
+    "name": "Reference flowing emerald acanthus lobe 3",
+    "mat": "gold",
+    "smooth": true
+  },
+  {
+    "name": "Acanthus raised sculpted vein",
+    "mat": "gold",
+    "smooth": true
+  },
+  {
+    "name": "Reference flowing emerald acanthus lobe 4",
+    "mat": "gold",
+    "smooth": true
+  },
+  {
+    "name": "Acanthus raised sculpted vein",
+    "mat": "gold",
+    "smooth": true
+  },
+  {
+    "name": "Reference flowing emerald acanthus lobe 5",
+    "mat": "gold",
+    "smooth": true
+  },
+  {
+    "name": "Acanthus raised sculpted vein",
+    "mat": "gold",
+    "smooth": true
+  },
+  {
+    "name": "Reference flowing emerald acanthus lobe 6",
+    "mat": "gold",
+    "smooth": true
+  },
+  {
+    "name": "Acanthus raised sculpted vein",
+    "mat": "gold",
+    "smooth": true
+  },
+  {
+    "name": "Reference flowing emerald acanthus lobe 1",
+    "mat": "gold",
+    "smooth": true
+  },
+  {
+    "name": "Acanthus raised sculpted vein",
+    "mat": "gold",
+    "smooth": true
+  },
+  {
+    "name": "Reference flowing emerald acanthus lobe 2",
+    "mat": "gold",
+    "smooth": true
+  },
+  {
+    "name": "Acanthus raised sculpted vein",
+    "mat": "gold",
+    "smooth": true
+  },
+  {
+    "name": "Reference flowing emerald acanthus lobe 3",
+    "mat": "gold",
+    "smooth": true
+  },
+  {
+    "name": "Acanthus raised sculpted vein",
+    "mat": "gold",
+    "smooth": true
+  },
+  {
+    "name": "Reference flowing emerald acanthus lobe 4",
+    "mat": "gold",
+    "smooth": true
+  },
+  {
+    "name": "Acanthus raised sculpted vein",
+    "mat": "gold",
+    "smooth": true
+  },
+  {
+    "name": "Reference flowing emerald acanthus lobe 5",
+    "mat": "gold",
+    "smooth": true
+  },
+  {
+    "name": "Acanthus raised sculpted vein",
+    "mat": "gold",
+    "smooth": true
+  },
+  {
+    "name": "Reference flowing emerald acanthus lobe 6",
+    "mat": "gold",
+    "smooth": true
+  },
+  {
+    "name": "Acanthus raised sculpted vein",
+    "mat": "gold",
+    "smooth": true
+  }
+]

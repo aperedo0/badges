@@ -1,0 +1,18 @@
+{
+  "fresh_Blender_restore": true,
+  "existing_iron_and_wood_exact": true,
+  "required_images_packed": [
+    "albedo.png.005",
+    "albedo.png.006",
+    "height16.png",
+    "metallic.png",
+    "normal.png.005",
+    "reference.png",
+    "roughness.png.005",
+    "roughness.png.006",
+    "wood_albedo.png.007",
+    "wood_normal.png.007",
+    "wood_roughness.png.007"
+  ],
+  "reference_single": true
+}

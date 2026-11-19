@@ -1,0 +1,10 @@
+{
+  "source": "candidate12",
+  "cloth_reference_appearance_fit": true,
+  "physical_albedo_not_proven": true,
+  "reference_illumination_not_removed_exactly": true,
+  "gemstones_and_metal_excluded": true,
+  "no_emission_used": true,
+  "actual_native_motion_review_required": true,
+  "unaccepted_trial": true
+}

@@ -1,0 +1,26 @@
+{
+  "status": "validated_candidate",
+  "before": {
+    "meshes": 27,
+    "sections": 27,
+    "triangles": 51076,
+    "vertices": 38476
+  },
+  "after": {
+    "meshes": 11,
+    "sections": 11,
+    "triangles": 51076,
+    "vertices": 59235
+  },
+  "source_sha256": "13ba8517f5f94b2695b64eb5035c011d41ed01ce3e0fa807911b521745ca33e9",
+  "output_sha256": "8492201b63a4191fb5d86aa34c6218a765b37bc34b630081e38bb5d235d847e0",
+  "bytes_before": 3926900,
+  "bytes_after": 4534895,
+  "all_triangle_corner_attributes_and_materials_identical": true,
+  "all_material_graphs_unchanged": true,
+  "protected_meshes_unchanged": [
+    "/AuroraMountain/Part_26"
+  ],
+  "all_textures_byte_identical": true,
+  "arkit_valid": true
+}

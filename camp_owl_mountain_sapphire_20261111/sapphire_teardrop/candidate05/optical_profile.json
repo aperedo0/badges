@@ -1,0 +1,15 @@
+{
+  "material": "CrestGem_SapphireClear",
+  "profile": 18,
+  "closed_convex_geometry_unchanged": true,
+  "absorption": [
+    8,
+    2,
+    0.2
+  ],
+  "procedural_density_noise": false,
+  "real_reflection_refraction_internal_reflection": true,
+  "no_appearance_texture": true,
+  "existing_profiles_and_studio_preserved": true,
+  "native_review_pending": true
+}

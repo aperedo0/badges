@@ -1,0 +1,5 @@
+{
+  "actual_model_verified": true,
+  "sha256": "d3d3ec0389cd096afd58f474be443c5095d334719e53d94182a867fa73c10888",
+  "verification": "Exact private simulator cache equals current compact model before full turn; six pose set still pending"
+}

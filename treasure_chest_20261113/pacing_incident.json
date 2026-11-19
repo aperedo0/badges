@@ -1,0 +1,9 @@
+{
+  "block": 3,
+  "work_deadline_epoch": 1794664619.1748302,
+  "break_end_epoch_unchanged": 1794665819.1748302,
+  "cause": "Orchestration continued to render despite prior time guard command failure",
+  "correction": "Enforce schedule and estimated duration within the render loop and exit orchestration immediately on guard failure",
+  "badge_work_started_during_break": false,
+  "render_overran_break_start": true
+}

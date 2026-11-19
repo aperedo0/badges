@@ -1,0 +1,8 @@
+{
+  "source": "candidate17 after smooth finial",
+  "mask_silhouette_preserved": true,
+  "reference_mask_diagnosis": "New color threshold changed fewer than0.4percent of pixels and was not used. Actual defect is shallow relief and local surface ripples.",
+  "curved_gold_depth_increased": true,
+  "distance_field_smoothing_pixels": 2.2,
+  "no_appearance_texture": true
+}

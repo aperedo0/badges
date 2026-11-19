@@ -1,0 +1,11 @@
+{
+  "front_facet_planes": 92,
+  "gem_triangles": 1836,
+  "girdle_height_min": 0.20709870039772602,
+  "girdle_height_max": 0.22063551893102878,
+  "max_crown_height": 0.9825000001769513,
+  "shared_actual_vertices": true,
+  "gold_unchanged": true,
+  "app_optics_unchanged": true,
+  "appearance_texture": false
+}

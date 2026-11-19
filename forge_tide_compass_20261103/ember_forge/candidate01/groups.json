@@ -1,0 +1,167 @@
+[
+  {
+    "name": "Hammered hexagonal steel case",
+    "role": "metal",
+    "smooth": false
+  },
+  {
+    "name": "Continuous inset copper hexagon",
+    "role": "copper",
+    "smooth": false
+  },
+  {
+    "name": "Dark forged recessed hexagonal field",
+    "role": "field",
+    "smooth": false
+  },
+  {
+    "name": "Dark forged recessed hexagonal field side walls",
+    "role": "side",
+    "smooth": true
+  },
+  {
+    "name": "Left ember channel",
+    "role": "flame",
+    "smooth": false
+  },
+  {
+    "name": "Left ember channel side walls",
+    "role": "side",
+    "smooth": true
+  },
+  {
+    "name": "Right ember channel",
+    "role": "flame",
+    "smooth": false
+  },
+  {
+    "name": "Right ember channel side walls",
+    "role": "side",
+    "smooth": true
+  },
+  {
+    "name": "Five carved ember flame tongues",
+    "role": "flame",
+    "smooth": true
+  },
+  {
+    "name": "Five carved ember flame tongues finished side walls",
+    "role": "ember_side",
+    "smooth": true
+  },
+  {
+    "name": "Continuous cylindrical hammer grip",
+    "role": "metal",
+    "smooth": true
+  },
+  {
+    "name": "Continuous raised copper spiral wrapping the handle",
+    "role": "copper",
+    "smooth": true
+  },
+  {
+    "name": "Hexagonal hammer pommel",
+    "role": "metal",
+    "smooth": false
+  },
+  {
+    "name": "Hexagonal hammer pommel side walls",
+    "role": "side",
+    "smooth": true
+  },
+  {
+    "name": "Hammer neck collar",
+    "role": "metal",
+    "smooth": false
+  },
+  {
+    "name": "Hammer neck collar side walls",
+    "role": "side",
+    "smooth": true
+  },
+  {
+    "name": "Broad forged hammer head",
+    "role": "metal",
+    "smooth": false
+  },
+  {
+    "name": "Broad forged hammer head side walls",
+    "role": "side",
+    "smooth": true
+  },
+  {
+    "name": "Single anvil with twin curved waists and feet",
+    "role": "metal",
+    "smooth": false
+  },
+  {
+    "name": "Single anvil with twin curved waists and feet side walls",
+    "role": "side",
+    "smooth": true
+  },
+  {
+    "name": "Tapered flying copper spark 1",
+    "role": "copper",
+    "smooth": false
+  },
+  {
+    "name": "Tapered flying copper spark 1 side walls",
+    "role": "side",
+    "smooth": true
+  },
+  {
+    "name": "Tapered flying copper spark 2",
+    "role": "copper",
+    "smooth": false
+  },
+  {
+    "name": "Tapered flying copper spark 2 side walls",
+    "role": "side",
+    "smooth": true
+  },
+  {
+    "name": "Tapered flying copper spark 3",
+    "role": "copper",
+    "smooth": false
+  },
+  {
+    "name": "Tapered flying copper spark 3 side walls",
+    "role": "side",
+    "smooth": true
+  },
+  {
+    "name": "Tapered flying copper spark 4",
+    "role": "copper",
+    "smooth": false
+  },
+  {
+    "name": "Tapered flying copper spark 4 side walls",
+    "role": "side",
+    "smooth": true
+  },
+  {
+    "name": "Lower raised copper diamond surround",
+    "role": "copper",
+    "smooth": false
+  },
+  {
+    "name": "Faceted glowing forged ember inset",
+    "role": "flame",
+    "smooth": false
+  },
+  {
+    "name": "Faceted glowing forged ember inset side walls",
+    "role": "side",
+    "smooth": true
+  },
+  {
+    "name": "Copper ridge on lower inset",
+    "role": "copper",
+    "smooth": false
+  },
+  {
+    "name": "Copper ridge on lower inset side walls",
+    "role": "side",
+    "smooth": true
+  }
+]

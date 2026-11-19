@@ -1,0 +1,8 @@
+/Users/antonioperedo/Desktop/badges/royal_heart_compass_20261106/save_compact_blend.py:43: DeprecationWarning: 'World.use_nodes' is expected to be removed in Blender 6.0
+  scene.world=bpy.data.worlds.new('Working studio');scene.world.use_nodes=True;scene.world.node_tree.nodes['Background'].inputs[0].default_value=(.1,.12,.15,1);scene.world.node_tree.nodes['Background'].inputs[1].default_value=.5
+Info: Saved as "amethyst_crown_compact.blend"
+{"meshes": 17, "triangles": 223856, "all_asset_textures_packed_byte_identically": true, "packed_textures": {"velvet_fold_color.png": "efd1c14fe1be1147ae567bfa40192a4cf258ec9cecec1f1637c167463d28a8f9", "gold_roughness.png": "d8d40a86eaa6541366024bd130d763ea56ae92a25ed729f9010d566b470aae73", "velvet_occlusion.png": "af859f00066d85f5dd420d86a015eddf45d2b46d8014b6c2f31d4bee4468b9a2", "velvet_color.png": "e581c71a79b089a283a87a13fb7765282ddc43d6eb5a0fe71c986fcaacb4b5e9"}, "complete_editable_checkpoint": "/Users/antonioperedo/Desktop/badges/royal_heart_compass_20261106/amethyst_crown/candidate05/source/amethyst_crown_compact.blend", "native_gem_profiles_preserved": true}
+Blender 5.2.2 LTS (hash d13f752e3b9c built 2026-09-15 01:49:19)
+USD import of '/tmp/amethyst_crown_usd_import_oei7jszd/badge.usdc' took 153.11 ms
+
+Blender quit

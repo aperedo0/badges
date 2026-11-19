@@ -1,0 +1,18 @@
+{
+  "native_recording": true,
+  "model_sha256": "03fc7cb5bd9fba7e264758c613d21898702d95bc5aeb04d7e52a222ea3603e85",
+  "local_watchdog_seconds": 16,
+  "process_pid": 36873,
+  "recording_began_epoch": 1794493545.184109,
+  "gesture_began_epoch": 1794493545.994175,
+  "verified_rest_header_y": 1413.5,
+  "video": {
+    "width": 1206,
+    "height": 2622,
+    "duration": "11.261667",
+    "nb_frames": "818"
+  },
+  "recording_stopped": true,
+  "motion_review_pending": true,
+  "reason": "Native local fallback gives a duration limit that separate MCP start and stop calls cannot guarantee during a connection or tool failure"
+}

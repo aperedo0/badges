@@ -1,0 +1,14 @@
+{
+  "profile": 18,
+  "material": "CrestGem_SapphireClear",
+  "existing_runtime_unchanged": true,
+  "no_appearance_texture": true,
+  "absorption": [
+    8,
+    4.3503596878,
+    0.2
+  ],
+  "soft_tent_gain": 1.4576830608,
+  "geometry": "Actual six crown planes on each side and128 girdle support planes, closed convex, broad table and rounded pear outline",
+  "native_review_pending": true
+}

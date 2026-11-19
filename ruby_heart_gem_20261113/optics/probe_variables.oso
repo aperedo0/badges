@@ -1,0 +1,1109 @@
+OpenShadingLanguage 1.00
+# Compiled by oslc 1.15.3.0
+# options: -o /var/folders/gl/mpj0czg96klfknfbtdxsw0400000gn/T/tmp4x2sawwv.oso -I/Applications/Blender.app/Contents/Resources/5.2/scripts/addons_core/cycles/shader
+shader ruby_heart_live_optics
+param	string	Mip1	""		%read{89,197} %write{2147483647,-1}
+param	string	Mip2	""		%read{360,360} %write{2147483647,-1}
+param	string	Mip3	""		%read{390,390} %write{2147483647,-1}
+param	string	Mip8	""		%read{422,476} %write{2147483647,-1}
+param	int	Probe	0		%read{31,91} %write{2147483647,-1}
+oparam	closure color	BSDF			%read{2147483647,-1} %write{125,486}
+global	point	P	%read{0,0} %write{2147483647,-1}
+global	vector	I	%read{9,9} %write{2147483647,-1} %derivs
+global	normal	N	%read{18,18} %write{2147483647,-1} %derivs
+local	float	___240_IdotN	%read{214,435} %write{212,435} %derivs
+local	float	___240_k	%read{218,435} %write{217,435} %derivs
+local	float	___370_ci	%read{136,435} %write{132,435}
+local	float	___370_ss	%read{139,435} %write{138,435}
+local	float	___370_ct	%read{146,435} %write{144,435}
+local	float	___370_a	%read{159,435} %write{151,435}
+local	float	___370_b	%read{160,435} %write{158,435}
+local	vector	___373_w	%read{70,460} %write{69,456} %derivs
+local	vector	___373_e	%read{75,469} %write{74,461} %derivs
+local	float	___373_u	%read{89,476} %write{81,468} %derivs
+local	float	___373_v	%read{89,476} %write{88,475} %derivs
+local	color	___375_b	%read{233,435} %write{233,435}
+local	point	raw	%read{1,1} %write{0,0}
+local	point	entry	%read{204,435} %write{8,8}
+local	vector	incident	%read{27,221} %write{17,17} %derivs
+local	vector	n	%read{27,435} %write{26,30} %derivs
+local	color	___376_val	%read{125,125} %write{33,123}
+local	float	f	%read{163,481} %write{141,162}
+local	color	col	%read{233,485} %write{203,483}
+local	float	side	%read{233,435} %write{207,208}
+local	point	pos	%read{233,435} %write{209,435}
+local	vector	dir	%read{233,453} %write{220,435} %derivs
+local	color	weight	%read{233,446} %write{229,435}
+local	float	path	%read{233,442} %write{230,435}
+local	int	___377_bounce	%read{233,435} %write{232,435}
+local	float	___378_tofoil	%read{233,435} %write{233,435}
+local	float	___378_approach	%read{233,435} %write{233,435}
+local	float	___378_back	%read{233,435} %write{233,435}
+local	float	___378_share	%read{233,435} %write{233,435}
+local	color	___378_absorption	%read{233,435} %write{233,435}
+local	vector	___379_leaving	%read{233,435} %write{233,435} %derivs
+const	string	$const1	"world"		%read{0,455} %write{2147483647,-1}
+const	string	$const2	"object"		%read{0,455} %write{2147483647,-1}
+temp	vector	$tmp1	%read{8,8} %write{7,7}
+temp	vector	$tmp2	%read{3,5} %write{1,1}
+const	string	$const3	"to_model"		%read{2,20} %write{2147483647,-1}
+const	int	$const4	0		%read{3,462} %write{2147483647,-1}
+temp	float	$tmp3	%read{7,7} %write{3,3}
+const	int	$const5	2		%read{4,463} %write{2147483647,-1}
+temp	float	$tmp4	%read{7,7} %write{4,4}
+const	int	$const6	1		%read{5,469} %write{2147483647,-1}
+temp	float	$tmp5	%read{6,6} %write{5,5}
+temp	float	$tmp6	%read{7,7} %write{6,6}
+temp	vector	$tmp7	%read{17,17} %write{16,16} %derivs
+temp	vector	$tmp8	%read{16,16} %write{15,15} %derivs
+temp	vector	$tmp9	%read{11,13} %write{9,9} %derivs
+temp	float	$tmp10	%read{15,15} %write{11,11} %derivs
+temp	float	$tmp11	%read{15,15} %write{12,12} %derivs
+temp	float	$tmp12	%read{14,14} %write{13,13} %derivs
+temp	float	$tmp13	%read{15,15} %write{14,14} %derivs
+temp	vector	$tmp14	%read{26,26} %write{25,25} %derivs
+temp	vector	$tmp15	%read{21,23} %write{19,19} %derivs
+temp	normal	$tmp16	%read{19,19} %write{18,18} %derivs
+temp	float	$tmp17	%read{25,25} %write{21,21} %derivs
+temp	float	$tmp18	%read{25,25} %write{22,22} %derivs
+temp	float	$tmp19	%read{24,24} %write{23,23} %derivs
+temp	float	$tmp20	%read{25,25} %write{24,24} %derivs
+temp	float	$tmp21	%read{28,28} %write{27,27}
+temp	int	$tmp22	%read{29,29} %write{28,28}
+const	int	$const7	5		%read{31,31} %write{2147483647,-1}
+temp	int	$tmp23	%read{32,32} %write{31,31}
+const	color	$const8	0 0 0		%read{33,202} %write{2147483647,-1}
+temp	int	$tmp24	%read{35,35} %write{34,34}
+temp	color	$tmp25	%read{37,37} %write{36,36}
+const	float	$const9	0.5		%read{37,475} %write{2147483647,-1}
+temp	color	$tmp26	%read{38,38} %write{37,37}
+temp	int	$tmp27	%read{40,40} %write{39,39}
+temp	color	$tmp28	%read{42,42} %write{41,41}
+temp	color	$tmp29	%read{43,43} %write{42,42}
+temp	int	$tmp30	%read{45,45} %write{44,44}
+temp	color	$tmp31	%read{52,52} %write{51,51}
+temp	vector	$tmp32	%read{51,51} %write{50,50}
+const	string	$const10	"reflect"		%read{46,429} %write{2147483647,-1}
+temp	float	$tmp33	%read{48,48} %write{47,47}
+temp	float	$tmp34	%read{49,49} %write{48,48}
+const	float	$const11	2		%read{48,466} %write{2147483647,-1}
+temp	vector	$tmp35	%read{50,50} %write{49,49}
+temp	color	$tmp36	%read{53,53} %write{52,52}
+const	int	$const12	3		%read{54,54} %write{2147483647,-1}
+temp	int	$tmp37	%read{55,55} %write{54,54}
+temp	color	$tmp38	%read{90,90} %write{89,89}
+temp	vector	$tmp39	%read{63,66} %write{60,60} %derivs
+temp	float	$tmp40	%read{58,58} %write{57,57} %derivs
+temp	float	$tmp41	%read{59,59} %write{58,58} %derivs
+temp	vector	$tmp42	%read{60,60} %write{59,59} %derivs
+const	string	$const13	"lookup"		%read{61,448} %write{2147483647,-1}
+temp	vector	$tmp43	%read{69,69} %write{68,68} %derivs
+temp	vector	$tmp44	%read{68,68} %write{67,67} %derivs
+const	string	$const14	"to_blender"		%read{62,449} %write{2147483647,-1}
+temp	float	$tmp45	%read{67,67} %write{63,63} %derivs
+temp	float	$tmp46	%read{65,65} %write{64,64} %derivs
+temp	float	$tmp47	%read{67,67} %write{65,65} %derivs
+temp	float	$tmp48	%read{67,67} %write{66,66} %derivs
+temp	float	$tmp49	%read{71,71} %write{70,70} %derivs
+temp	float	$tmp50	%read{74,74} %write{71,71} %derivs
+temp	float	$tmp51	%read{74,74} %write{72,72} %derivs
+temp	float	$tmp52	%read{74,74} %write{73,73} %derivs
+temp	float	$tmp53	%read{80,80} %write{78,78} %derivs
+temp	float	$tmp54	%read{78,78} %write{75,75} %derivs
+temp	float	$tmp55	%read{77,77} %write{76,76} %derivs
+temp	float	$tmp56	%read{78,78} %write{77,77} %derivs
+const	float	$const15	3.14159274		%read{79,474} %write{2147483647,-1}
+temp	float	$tmp57	%read{80,80} %write{79,79} %derivs
+temp	float	$tmp58	%read{81,81} %write{80,80} %derivs
+temp	float	$tmp59	%read{87,87} %write{86,86} %derivs
+temp	float	$tmp60	%read{86,86} %write{85,85} %derivs
+temp	float	$tmp61	%read{84,84} %write{82,82} %derivs
+const	int	$const16	-1		%read{208,208} %write{2147483647,-1}
+const	float	$const17	-1		%read{85,472} %write{2147483647,-1}
+const	float	$const18	1		%read{84,481} %write{2147483647,-1}
+const	string	$const19	"clamp"		%read{83,476} %write{2147483647,-1}
+temp	float	$tmp62	%read{85,85} %write{84,84} %derivs
+temp	float	$tmp63	%read{88,88} %write{87,87} %derivs
+const	string	$const20	"swrap"		%read{89,476} %write{2147483647,-1}
+const	string	$const21	"periodic"		%read{89,476} %write{2147483647,-1}
+const	string	$const22	"twrap"		%read{89,476} %write{2147483647,-1}
+const	string	$const23	"interp"		%read{89,476} %write{2147483647,-1}
+const	string	$const24	"bilinear"		%read{89,476} %write{2147483647,-1}
+const	float	$const26	24		%read{90,123} %write{2147483647,-1}
+const	int	$const27	4		%read{91,233} %write{2147483647,-1}
+temp	int	$tmp64	%read{92,92} %write{91,91}
+temp	color	$tmp65	%read{123,123} %write{122,122}
+temp	vector	$tmp66	%read{96,99} %write{93,93} %derivs
+const	vector	$const28	-0.773000002 0.497000009 0.393000007		%read{93,93} %write{2147483647,-1}
+temp	vector	$tmp68	%read{102,102} %write{101,101} %derivs
+temp	vector	$tmp69	%read{101,101} %write{100,100} %derivs
+temp	float	$tmp70	%read{100,100} %write{96,96} %derivs
+temp	float	$tmp71	%read{98,98} %write{97,97} %derivs
+temp	float	$tmp72	%read{100,100} %write{98,98} %derivs
+temp	float	$tmp73	%read{100,100} %write{99,99} %derivs
+temp	float	$tmp74	%read{104,104} %write{103,103} %derivs
+temp	float	$tmp75	%read{107,107} %write{104,104} %derivs
+temp	float	$tmp76	%read{107,107} %write{105,105} %derivs
+temp	float	$tmp77	%read{107,107} %write{106,106} %derivs
+temp	float	$tmp78	%read{113,113} %write{111,111} %derivs
+temp	float	$tmp79	%read{111,111} %write{108,108} %derivs
+temp	float	$tmp80	%read{110,110} %write{109,109} %derivs
+temp	float	$tmp81	%read{111,111} %write{110,110} %derivs
+temp	float	$tmp82	%read{113,113} %write{112,112} %derivs
+temp	float	$tmp83	%read{114,114} %write{113,113} %derivs
+temp	float	$tmp84	%read{120,120} %write{119,119} %derivs
+temp	float	$tmp85	%read{119,119} %write{118,118} %derivs
+temp	float	$tmp86	%read{117,117} %write{115,115} %derivs
+temp	float	$tmp87	%read{118,118} %write{117,117} %derivs
+temp	float	$tmp88	%read{121,121} %write{120,120} %derivs
+temp	closure color	$tmp89	%read{125,125} %write{124,124}
+const	string	$const29	"emission"		%read{124,484} %write{2147483647,-1}
+temp	float	$tmp90	%read{131,131} %write{128,128}
+temp	vector	$tmp91	%read{128,128} %write{127,127}
+const	float	$const30	1.76999998		%read{133,322} %write{2147483647,-1}
+const	string	$const31	"fresnelshare"		%read{129,264} %write{2147483647,-1}
+const	float	$const32	0		%read{132,267} %write{2147483647,-1}
+temp	float	$tmp92	%read{132,132} %write{131,131}
+temp	float	$tmp93	%read{135,135} %write{133,133}
+temp	float	$tmp94	%read{135,135} %write{134,134}
+temp	float	$tmp95	%read{138,138} %write{135,135}
+temp	float	$tmp96	%read{137,137} %write{136,136}
+temp	float	$tmp97	%read{138,138} %write{137,137}
+temp	int	$tmp98	%read{140,140} %write{139,139}
+temp	float	$tmp99	%read{144,144} %write{143,143}
+temp	float	$tmp100	%read{147,147} %write{145,145}
+temp	float	$tmp101	%read{147,147} %write{146,146}
+temp	float	$tmp102	%read{151,151} %write{147,147}
+temp	float	$tmp103	%read{150,150} %write{148,148}
+temp	float	$tmp104	%read{150,150} %write{149,149}
+temp	float	$tmp105	%read{151,151} %write{150,150}
+temp	float	$tmp106	%read{154,154} %write{152,152}
+temp	float	$tmp107	%read{154,154} %write{153,153}
+temp	float	$tmp108	%read{158,158} %write{154,154}
+temp	float	$tmp109	%read{157,157} %write{155,155}
+temp	float	$tmp110	%read{157,157} %write{156,156}
+temp	float	$tmp111	%read{158,158} %write{157,157}
+temp	float	$tmp112	%read{161,161} %write{159,159}
+temp	float	$tmp113	%read{161,161} %write{160,160}
+temp	float	$tmp114	%read{162,162} %write{161,161}
+const	float	$const33	1.81035399		%read{163,163} %write{2147483647,-1}
+temp	float	$tmp115	%read{203,203} %write{163,163}
+temp	color	$tmp116	%read{203,203} %write{202,202}
+temp	color	$tmp117	%read{199,199} %write{198,198}
+temp	color	$tmp118	%read{198,198} %write{197,197}
+temp	vector	$tmp119	%read{171,174} %write{168,168} %derivs
+temp	float	$tmp120	%read{166,166} %write{165,165} %derivs
+temp	float	$tmp121	%read{167,167} %write{166,166} %derivs
+temp	vector	$tmp122	%read{168,168} %write{167,167} %derivs
+temp	vector	$tmp123	%read{177,177} %write{176,176} %derivs
+temp	vector	$tmp124	%read{176,176} %write{175,175} %derivs
+temp	float	$tmp125	%read{175,175} %write{171,171} %derivs
+temp	float	$tmp126	%read{173,173} %write{172,172} %derivs
+temp	float	$tmp127	%read{175,175} %write{173,173} %derivs
+temp	float	$tmp128	%read{175,175} %write{174,174} %derivs
+temp	float	$tmp129	%read{179,179} %write{178,178} %derivs
+temp	float	$tmp130	%read{182,182} %write{179,179} %derivs
+temp	float	$tmp131	%read{182,182} %write{180,180} %derivs
+temp	float	$tmp132	%read{182,182} %write{181,181} %derivs
+temp	float	$tmp133	%read{188,188} %write{186,186} %derivs
+temp	float	$tmp134	%read{186,186} %write{183,183} %derivs
+temp	float	$tmp135	%read{185,185} %write{184,184} %derivs
+temp	float	$tmp136	%read{186,186} %write{185,185} %derivs
+temp	float	$tmp137	%read{188,188} %write{187,187} %derivs
+temp	float	$tmp138	%read{189,189} %write{188,188} %derivs
+temp	float	$tmp139	%read{195,195} %write{194,194} %derivs
+temp	float	$tmp140	%read{194,194} %write{193,193} %derivs
+temp	float	$tmp141	%read{192,192} %write{190,190} %derivs
+temp	float	$tmp142	%read{193,193} %write{192,192} %derivs
+temp	float	$tmp143	%read{196,196} %write{195,195} %derivs
+const	color	$const34	24 24 24		%read{198,198} %write{2147483647,-1}
+const	color	$const35	3 3 3		%read{199,477} %write{2147483647,-1}
+temp	color	$tmp146	%read{201,201} %write{199,199}
+const	color	$const36	10 10 10		%read{201,201} %write{2147483647,-1}
+temp	color	$tmp149	%read{202,202} %write{201,201}
+temp	float	$tmp150	%read{205,205} %write{204,204}
+temp	int	$tmp151	%read{206,206} %write{205,205}
+temp	float	$tmp152	%read{213,222} %write{210,210} %derivs
+const	string	$const37	"refract"		%read{211,311} %write{2147483647,-1}
+temp	float	$tmp153	%read{216,216} %write{213,213} %derivs
+temp	float	$tmp154	%read{215,215} %write{214,214} %derivs
+temp	float	$tmp155	%read{216,216} %write{215,215} %derivs
+temp	float	$tmp156	%read{217,217} %write{216,216} %derivs
+temp	int	$tmp157	%read{219,219} %write{218,218}
+const	vector	$const38	0 0 0		%read{220,320} %write{2147483647,-1}
+temp	vector	$tmp158	%read{226,226} %write{221,221} %derivs
+temp	float	$tmp159	%read{224,224} %write{222,222} %derivs
+temp	float	$tmp160	%read{224,224} %write{223,223} %derivs
+temp	float	$tmp161	%read{225,225} %write{224,224} %derivs
+temp	vector	$tmp162	%read{226,226} %write{225,225} %derivs
+temp	float	$tmp163	%read{229,229} %write{228,228}
+temp	int	$tmp164	%read{233,435} %write{233,435}
+temp	int	$tmp165	%read{231,435} %write{232,435}
+temp	float	$tmp166	%read{233,435} %write{233,435}
+temp	float	$tmp167	%read{233,435} %write{233,435}
+const	float	$const39	-9.99999975e-05		%read{237,237} %write{2147483647,-1}
+temp	int	$tmp168	%read{233,435} %write{233,435}
+temp	float	$tmp169	%read{233,435} %write{233,435}
+temp	float	$tmp170	%read{233,435} %write{233,435}
+temp	float	$tmp171	%read{233,435} %write{233,435}
+temp	float	$tmp172	%read{233,435} %write{233,435}
+temp	vector	$tmp173	%read{233,435} %write{233,435}
+temp	float	$tmp174	%read{233,435} %write{233,435} %derivs
+temp	float	$tmp175	%read{233,435} %write{233,435} %derivs
+const	float	$const40	0.920000017		%read{251,251} %write{2147483647,-1}
+const	float	$const41	9.99999975e-05		%read{253,253} %write{2147483647,-1}
+temp	int	$tmp176	%read{233,435} %write{233,435}
+temp	float	$tmp177	%read{233,435} %write{233,435}
+temp	vector	$tmp178	%read{233,435} %write{233,435}
+temp	vector	$tmp179	%read{233,435} %write{233,435}
+temp	float	$tmp180	%read{233,435} %write{233,435}
+temp	vector	$tmp181	%read{233,435} %write{233,435}
+temp	float	$tmp182	%read{233,435} %write{233,435}
+temp	float	$tmp183	%read{233,435} %write{233,435}
+temp	float	$tmp184	%read{233,435} %write{233,435}
+temp	float	$tmp185	%read{233,435} %write{233,435}
+temp	float	$tmp186	%read{233,435} %write{233,435}
+temp	float	$tmp187	%read{233,435} %write{233,435}
+temp	int	$tmp188	%read{233,435} %write{233,435}
+temp	float	$tmp189	%read{233,435} %write{233,435}
+temp	float	$tmp190	%read{233,435} %write{233,435}
+temp	float	$tmp191	%read{233,435} %write{233,435}
+temp	float	$tmp192	%read{233,435} %write{233,435}
+temp	float	$tmp193	%read{233,435} %write{233,435}
+temp	float	$tmp194	%read{233,435} %write{233,435}
+temp	float	$tmp195	%read{233,435} %write{233,435}
+temp	float	$tmp196	%read{233,435} %write{233,435}
+temp	float	$tmp197	%read{233,435} %write{233,435}
+temp	float	$tmp198	%read{233,435} %write{233,435}
+temp	float	$tmp199	%read{233,435} %write{233,435}
+temp	float	$tmp200	%read{233,435} %write{233,435}
+temp	float	$tmp201	%read{233,435} %write{233,435}
+temp	float	$tmp202	%read{233,435} %write{233,435}
+temp	float	$tmp203	%read{233,435} %write{233,435}
+temp	float	$tmp204	%read{233,435} %write{233,435}
+temp	float	$tmp205	%read{233,435} %write{233,435}
+const	float	$const42	-0.150000006		%read{299,437} %write{2147483647,-1}
+temp	float	$tmp206	%read{233,435} %write{233,435}
+const	float	$const44	12		%read{298,442} %write{2147483647,-1}
+temp	float	$tmp207	%read{233,435} %write{233,435}
+temp	float	$tmp208	%read{233,435} %write{233,435}
+const	float	$const45	-6.5		%read{302,440} %write{2147483647,-1}
+temp	float	$tmp209	%read{233,435} %write{233,435}
+temp	float	$tmp210	%read{233,435} %write{233,435}
+temp	float	$tmp211	%read{233,435} %write{233,435}
+const	float	$const46	-2.20000005		%read{305,443} %write{2147483647,-1}
+temp	float	$tmp212	%read{233,435} %write{233,435}
+temp	float	$tmp213	%read{233,435} %write{233,435}
+temp	int	$tmp214	%read{233,435} %write{233,435}
+temp	vector	$tmp215	%read{233,435} %write{233,435} %derivs
+temp	float	$tmp216	%read{233,435} %write{233,435} %derivs
+temp	float	$tmp217	%read{233,435} %write{233,435} %derivs
+temp	float	$tmp218	%read{233,435} %write{233,435} %derivs
+temp	float	$tmp219	%read{233,435} %write{233,435} %derivs
+temp	int	$tmp220	%read{233,435} %write{233,435}
+temp	vector	$tmp221	%read{233,435} %write{233,435} %derivs
+temp	float	$tmp222	%read{233,435} %write{233,435} %derivs
+temp	float	$tmp223	%read{233,435} %write{233,435} %derivs
+temp	float	$tmp224	%read{233,435} %write{233,435} %derivs
+temp	vector	$tmp225	%read{233,435} %write{233,435} %derivs
+temp	color	$tmp226	%read{233,435} %write{233,435}
+temp	float	$tmp227	%read{233,435} %write{233,435}
+temp	color	$tmp228	%read{233,435} %write{233,435}
+temp	color	$tmp229	%read{233,435} %write{233,435}
+const	string	$const47	"body"		%read{331,331} %write{2147483647,-1}
+temp	color	$tmp230	%read{233,435} %write{233,435}
+temp	color	$tmp231	%read{233,435} %write{233,435}
+temp	vector	$tmp232	%read{233,435} %write{233,435} %derivs
+temp	vector	$tmp233	%read{233,435} %write{233,435} %derivs
+temp	float	$tmp234	%read{233,435} %write{233,435} %derivs
+temp	float	$tmp235	%read{233,435} %write{233,435} %derivs
+temp	float	$tmp236	%read{233,435} %write{233,435} %derivs
+temp	float	$tmp237	%read{233,435} %write{233,435} %derivs
+temp	float	$tmp238	%read{233,435} %write{233,435} %derivs
+temp	float	$tmp239	%read{233,435} %write{233,435} %derivs
+temp	float	$tmp240	%read{233,435} %write{233,435} %derivs
+temp	float	$tmp241	%read{233,435} %write{233,435} %derivs
+temp	float	$tmp242	%read{233,435} %write{233,435} %derivs
+temp	float	$tmp243	%read{233,435} %write{233,435} %derivs
+temp	float	$tmp244	%read{233,435} %write{233,435} %derivs
+temp	float	$tmp245	%read{233,435} %write{233,435} %derivs
+temp	float	$tmp246	%read{233,435} %write{233,435} %derivs
+temp	float	$tmp247	%read{233,435} %write{233,435} %derivs
+temp	float	$tmp248	%read{233,435} %write{233,435} %derivs
+temp	float	$tmp249	%read{233,435} %write{233,435} %derivs
+temp	float	$tmp250	%read{233,435} %write{233,435} %derivs
+temp	float	$tmp251	%read{233,435} %write{233,435} %derivs
+temp	float	$tmp252	%read{233,435} %write{233,435} %derivs
+const	color	$const48	0.699999988 0.699999988 0.699999988		%read{361,391} %write{2147483647,-1}
+temp	color	$tmp254	%read{233,435} %write{233,435}
+temp	color	$tmp255	%read{233,435} %write{233,435}
+temp	vector	$tmp256	%read{233,435} %write{233,435} %derivs
+temp	vector	$tmp257	%read{233,435} %write{233,435} %derivs
+temp	float	$tmp258	%read{233,435} %write{233,435} %derivs
+temp	float	$tmp259	%read{233,435} %write{233,435} %derivs
+temp	float	$tmp260	%read{233,435} %write{233,435} %derivs
+temp	float	$tmp261	%read{233,435} %write{233,435} %derivs
+temp	float	$tmp262	%read{233,435} %write{233,435} %derivs
+temp	float	$tmp263	%read{233,435} %write{233,435} %derivs
+temp	float	$tmp264	%read{233,435} %write{233,435} %derivs
+temp	float	$tmp265	%read{233,435} %write{233,435} %derivs
+temp	float	$tmp266	%read{233,435} %write{233,435} %derivs
+temp	float	$tmp267	%read{233,435} %write{233,435} %derivs
+temp	float	$tmp268	%read{233,435} %write{233,435} %derivs
+temp	float	$tmp269	%read{233,435} %write{233,435} %derivs
+temp	float	$tmp270	%read{233,435} %write{233,435} %derivs
+temp	float	$tmp271	%read{233,435} %write{233,435} %derivs
+temp	float	$tmp272	%read{233,435} %write{233,435} %derivs
+temp	float	$tmp273	%read{233,435} %write{233,435} %derivs
+temp	float	$tmp274	%read{233,435} %write{233,435} %derivs
+temp	float	$tmp275	%read{233,435} %write{233,435} %derivs
+temp	float	$tmp276	%read{233,435} %write{233,435} %derivs
+const	float	$const49	0.146405995		%read{392,392} %write{2147483647,-1}
+temp	color	$tmp278	%read{233,435} %write{233,435}
+const	string	$const50	"tent"		%read{393,447} %write{2147483647,-1}
+temp	color	$tmp279	%read{233,435} %write{233,435}
+temp	vector	$tmp280	%read{233,435} %write{233,435} %derivs
+temp	vector	$tmp281	%read{233,435} %write{233,435} %derivs
+temp	float	$tmp282	%read{233,435} %write{233,435} %derivs
+temp	float	$tmp283	%read{233,435} %write{233,435} %derivs
+temp	float	$tmp284	%read{233,435} %write{233,435} %derivs
+temp	float	$tmp285	%read{233,435} %write{233,435} %derivs
+temp	float	$tmp286	%read{233,435} %write{233,435} %derivs
+temp	float	$tmp287	%read{233,435} %write{233,435} %derivs
+temp	float	$tmp288	%read{233,435} %write{233,435} %derivs
+temp	float	$tmp289	%read{233,435} %write{233,435} %derivs
+temp	float	$tmp290	%read{233,435} %write{233,435} %derivs
+temp	float	$tmp291	%read{233,435} %write{233,435} %derivs
+temp	float	$tmp292	%read{233,435} %write{233,435} %derivs
+temp	float	$tmp293	%read{233,435} %write{233,435} %derivs
+temp	float	$tmp294	%read{233,435} %write{233,435} %derivs
+temp	float	$tmp295	%read{233,435} %write{233,435} %derivs
+temp	float	$tmp296	%read{233,435} %write{233,435} %derivs
+temp	float	$tmp297	%read{233,435} %write{233,435} %derivs
+temp	float	$tmp298	%read{233,435} %write{233,435} %derivs
+temp	float	$tmp299	%read{233,435} %write{233,435} %derivs
+temp	float	$tmp300	%read{233,435} %write{233,435} %derivs
+const	float	$const51	0.260399997		%read{424,479} %write{2147483647,-1}
+temp	color	$tmp302	%read{233,435} %write{233,435}
+temp	color	$tmp303	%read{233,435} %write{233,435}
+temp	float	$tmp304	%read{233,435} %write{233,435} %derivs
+temp	float	$tmp305	%read{233,435} %write{233,435} %derivs
+temp	vector	$tmp306	%read{233,435} %write{233,435} %derivs
+temp	int	$tmp307	%read{2147483647,-1} %write{233,435}
+temp	color	$tmp308	%read{446,446} %write{445,445}
+temp	float	$tmp309	%read{445,445} %write{438,438}
+temp	float	$tmp310	%read{437,437} %write{436,436}
+temp	float	$tmp311	%read{438,438} %write{437,437}
+temp	float	$tmp312	%read{445,445} %write{441,441}
+temp	float	$tmp313	%read{440,440} %write{439,439}
+temp	float	$tmp314	%read{441,441} %write{440,440}
+temp	float	$tmp315	%read{445,445} %write{444,444}
+temp	float	$tmp316	%read{443,443} %write{442,442}
+temp	float	$tmp317	%read{444,444} %write{443,443}
+temp	color	$tmp318	%read{478,478} %write{446,446}
+temp	color	$tmp319	%read{478,478} %write{477,477}
+temp	color	$tmp320	%read{477,477} %write{476,476}
+temp	vector	$tmp321	%read{456,456} %write{455,455} %derivs
+temp	vector	$tmp322	%read{455,455} %write{454,454} %derivs
+temp	float	$tmp323	%read{454,454} %write{450,450} %derivs
+temp	float	$tmp324	%read{452,452} %write{451,451} %derivs
+temp	float	$tmp325	%read{454,454} %write{452,452} %derivs
+temp	float	$tmp326	%read{454,454} %write{453,453} %derivs
+temp	float	$tmp327	%read{458,458} %write{457,457} %derivs
+temp	float	$tmp328	%read{461,461} %write{458,458} %derivs
+temp	float	$tmp329	%read{461,461} %write{459,459} %derivs
+temp	float	$tmp330	%read{461,461} %write{460,460} %derivs
+temp	float	$tmp331	%read{467,467} %write{465,465} %derivs
+temp	float	$tmp332	%read{465,465} %write{462,462} %derivs
+temp	float	$tmp333	%read{464,464} %write{463,463} %derivs
+temp	float	$tmp334	%read{465,465} %write{464,464} %derivs
+temp	float	$tmp335	%read{467,467} %write{466,466} %derivs
+temp	float	$tmp336	%read{468,468} %write{467,467} %derivs
+temp	float	$tmp337	%read{474,474} %write{473,473} %derivs
+temp	float	$tmp338	%read{473,473} %write{472,472} %derivs
+temp	float	$tmp339	%read{471,471} %write{469,469} %derivs
+temp	float	$tmp340	%read{472,472} %write{471,471} %derivs
+temp	float	$tmp341	%read{475,475} %write{474,474} %derivs
+temp	color	$tmp343	%read{479,479} %write{478,478}
+temp	color	$tmp344	%read{480,480} %write{479,479}
+temp	float	$tmp345	%read{482,482} %write{481,481}
+const	color	$const52	0.159999996 0.00319999992 0.0240000002		%read{482,482} %write{2147483647,-1}
+temp	color	$tmp347	%read{483,483} %write{482,482}
+temp	closure color	$tmp348	%read{485,485} %write{484,484}
+temp	closure color	$tmp349	%read{486,486} %write{485,485}
+const	float	$const53	1.70000005		%read{486,486} %write{2147483647,-1}
+code ___main___
+# ruby_heart_gem_20261113/optics/probe_variables.osl:9
+#  vector incident=-normalize(to_model(transform("world","object",I)));
+	transform	raw $const1 $const2 P 	%filename{"ruby_heart_gem_20261113/optics/probe_variables.osl"} %line{9} %argrw{"wrrr"}
+	assign		$tmp2 raw 	%argrw{"wr"}
+	functioncall	$const3 8 	%argrw{"r"}
+# ruby_heart_gem_20261113/optics/probe_variables.osl:3
+# vector to_blender(vector p){return vector(p[0],-p[2],p[1]);}
+	compref		$tmp3 $tmp2 $const4 	%line{3} %argrw{"wrr"}
+	compref		$tmp4 $tmp2 $const5 	%argrw{"wrr"}
+	compref		$tmp5 $tmp2 $const6 	%argrw{"wrr"}
+	neg		$tmp6 $tmp5 	%argrw{"wr"}
+	vector		$tmp1 $tmp3 $tmp4 $tmp6 	%argrw{"wrrr"}
+# ruby_heart_gem_20261113/optics/probe_variables.osl:9
+#  vector incident=-normalize(to_model(transform("world","object",I)));
+	assign		entry $tmp1 	%line{9} %argrw{"wr"}
+# ruby_heart_gem_20261113/optics/probe_variables.osl:10
+#  vector n=normalize(to_model(vector(transform("world","object",N))));if(dot(n,incident)>0)n=-n;
+	transformv	$tmp9 $const1 $const2 I 	%line{10} %argrw{"wrrr"}
+	functioncall	$const3 16 	%argrw{"r"}
+# ruby_heart_gem_20261113/optics/probe_variables.osl:3
+# vector to_blender(vector p){return vector(p[0],-p[2],p[1]);}
+	compref		$tmp10 $tmp9 $const4 	%line{3} %argrw{"wrr"}
+	compref		$tmp11 $tmp9 $const5 	%argrw{"wrr"}
+	compref		$tmp12 $tmp9 $const6 	%argrw{"wrr"}
+	neg		$tmp13 $tmp12 	%argrw{"wr"}
+	vector		$tmp8 $tmp10 $tmp11 $tmp13 	%argrw{"wrrr"}
+# ruby_heart_gem_20261113/optics/probe_variables.osl:10
+#  vector n=normalize(to_model(vector(transform("world","object",N))));if(dot(n,incident)>0)n=-n;
+	normalize	$tmp7 $tmp8 	%line{10} %argrw{"wr"}
+	neg		incident $tmp7 	%argrw{"wr"}
+# ruby_heart_gem_20261113/optics/probe_variables.osl:11
+#  if(Probe<5){color val=color(0);if(Probe==0)val=color(incident)*.5+.5;if(Probe==1)val=color(n)*.5+.5;if(Probe==2)val=color(reflect(incident,n))*.5+.5;if(Probe==3)val=lookup(reflect(incident,n),Mip1)/24;if(Probe==4)val=lookup(normalize(vector(-.773,.497,.393)),Mip1)/24;BSDF=emission()*val;return;} float f=fresnelshare(dot(n,-incident),1,1.77);
+	transformn	$tmp16 $const1 $const2 N 	%line{11} %argrw{"wrrr"}
+	assign		$tmp15 $tmp16 	%argrw{"wr"}
+	functioncall	$const3 26 	%argrw{"r"}
+# ruby_heart_gem_20261113/optics/probe_variables.osl:3
+# vector to_blender(vector p){return vector(p[0],-p[2],p[1]);}
+	compref		$tmp17 $tmp15 $const4 	%line{3} %argrw{"wrr"}
+	compref		$tmp18 $tmp15 $const5 	%argrw{"wrr"}
+	compref		$tmp19 $tmp15 $const6 	%argrw{"wrr"}
+	neg		$tmp20 $tmp19 	%argrw{"wr"}
+	vector		$tmp14 $tmp17 $tmp18 $tmp20 	%argrw{"wrrr"}
+# ruby_heart_gem_20261113/optics/probe_variables.osl:11
+#  if(Probe<5){color val=color(0);if(Probe==0)val=color(incident)*.5+.5;if(Probe==1)val=color(n)*.5+.5;if(Probe==2)val=color(reflect(incident,n))*.5+.5;if(Probe==3)val=lookup(reflect(incident,n),Mip1)/24;if(Probe==4)val=lookup(normalize(vector(-.773,.497,.393)),Mip1)/24;BSDF=emission()*val;return;} float f=fresnelshare(dot(n,-incident),1,1.77);
+	normalize	n $tmp14 	%line{11} %argrw{"wr"}
+	dot		$tmp21 n incident 	%argrw{"wrr"}
+	gt		$tmp22 $tmp21 $const4 	%argrw{"wrr"}
+	if		$tmp22 31 31 	%argrw{"r"}
+	neg		n n 	%argrw{"wr"}
+# ruby_heart_gem_20261113/optics/probe_variables.osl:12
+#  color col=1.810354*f*clamp(min(lookup(reflect(incident,n),Mip1),color(24))-color(3),color(0),color(10));
+	lt		$tmp23 Probe $const7 	%line{12} %argrw{"wrr"}
+	if		$tmp23 127 127 	%argrw{"r"}
+	assign		___376_val $const8 	%argrw{"wr"}
+	eq		$tmp24 Probe $const4 	%argrw{"wrr"}
+	if		$tmp24 39 39 	%argrw{"r"}
+	assign		$tmp25 incident 	%argrw{"wr"}
+	mul		$tmp26 $tmp25 $const9 	%argrw{"wrr"}
+	add		___376_val $tmp26 $const9 	%argrw{"wrr"}
+	eq		$tmp27 Probe $const6 	%argrw{"wrr"}
+	if		$tmp27 44 44 	%argrw{"r"}
+	assign		$tmp28 n 	%argrw{"wr"}
+	mul		$tmp29 $tmp28 $const9 	%argrw{"wrr"}
+	add		___376_val $tmp29 $const9 	%argrw{"wrr"}
+	eq		$tmp30 Probe $const5 	%argrw{"wrr"}
+	if		$tmp30 54 54 	%argrw{"r"}
+	functioncall	$const10 51 	%argrw{"r"}
+# /Applications/Blender.app/Contents/Resources/5.2/scripts/addons_core/cycles/shader/stdosl.h:212
+# vector reflect (vector I, vector N) { return I - 2*dot(N,I)*N; }
+	dot		$tmp33 n incident 	%filename{"/Applications/Blender.app/Contents/Resources/5.2/scripts/addons_core/cycles/shader/stdosl.h"} %line{212} %argrw{"wrr"}
+	mul		$tmp34 $const11 $tmp33 	%argrw{"wrr"}
+	mul		$tmp35 $tmp34 n 	%argrw{"wrr"}
+	sub		$tmp32 incident $tmp35 	%argrw{"wrr"}
+# ruby_heart_gem_20261113/optics/probe_variables.osl:12
+#  color col=1.810354*f*clamp(min(lookup(reflect(incident,n),Mip1),color(24))-color(3),color(0),color(10));
+	assign		$tmp31 $tmp32 	%filename{"ruby_heart_gem_20261113/optics/probe_variables.osl"} %line{12} %argrw{"wr"}
+	mul		$tmp36 $tmp31 $const9 	%argrw{"wrr"}
+	add		___376_val $tmp36 $const9 	%argrw{"wrr"}
+	eq		$tmp37 Probe $const12 	%argrw{"wrr"}
+	if		$tmp37 91 91 	%argrw{"r"}
+	functioncall	$const10 61 	%argrw{"r"}
+# /Applications/Blender.app/Contents/Resources/5.2/scripts/addons_core/cycles/shader/stdosl.h:212
+# vector reflect (vector I, vector N) { return I - 2*dot(N,I)*N; }
+	dot		$tmp40 n incident 	%filename{"/Applications/Blender.app/Contents/Resources/5.2/scripts/addons_core/cycles/shader/stdosl.h"} %line{212} %argrw{"wrr"}
+	mul		$tmp41 $const11 $tmp40 	%argrw{"wrr"}
+	mul		$tmp42 $tmp41 n 	%argrw{"wrr"}
+	sub		$tmp39 incident $tmp42 	%argrw{"wrr"}
+# ruby_heart_gem_20261113/optics/probe_variables.osl:12
+#  color col=1.810354*f*clamp(min(lookup(reflect(incident,n),Mip1),color(24))-color(3),color(0),color(10));
+	functioncall	$const13 90 	%filename{"ruby_heart_gem_20261113/optics/probe_variables.osl"} %line{12} %argrw{"r"}
+# ruby_heart_gem_20261113/optics/probe_variables.osl:5
+# color tent(vector d,string file){return min(lookup(d,file),color(3));}
+	functioncall	$const14 68 	%line{5} %argrw{"r"}
+# ruby_heart_gem_20261113/optics/probe_variables.osl:4
+# color lookup(vector d,string file){vector w=normalize(transform("object","world",to_blender(d)));vector e=vector(-w[0],w[2],w[1]);float u=.5+atan2(e[0],-e[2])/(2*M_PI);float v=.5-asin(clamp(e[1],-1,1))/M_PI;return texture(file,u,v,"swrap","periodic","twrap","clamp","interp","bilinear");}
+	compref		$tmp45 $tmp39 $const4 	%line{4} %argrw{"wrr"}
+	compref		$tmp46 $tmp39 $const5 	%argrw{"wrr"}
+	neg		$tmp47 $tmp46 	%argrw{"wr"}
+	compref		$tmp48 $tmp39 $const6 	%argrw{"wrr"}
+	vector		$tmp44 $tmp45 $tmp47 $tmp48 	%argrw{"wrrr"}
+# ruby_heart_gem_20261113/optics/probe_variables.osl:5
+# color tent(vector d,string file){return min(lookup(d,file),color(3));}
+	transformv	$tmp43 $const2 $const1 $tmp44 	%line{5} %argrw{"wrrr"}
+	normalize	___373_w $tmp43 	%argrw{"wr"}
+	compref		$tmp49 ___373_w $const4 	%argrw{"wrr"}
+	neg		$tmp50 $tmp49 	%argrw{"wr"}
+	compref		$tmp51 ___373_w $const5 	%argrw{"wrr"}
+	compref		$tmp52 ___373_w $const6 	%argrw{"wrr"}
+	vector		___373_e $tmp50 $tmp51 $tmp52 	%argrw{"wrrr"}
+	compref		$tmp54 ___373_e $const4 	%argrw{"wrr"}
+	compref		$tmp55 ___373_e $const5 	%argrw{"wrr"}
+	neg		$tmp56 $tmp55 	%argrw{"wr"}
+	atan2		$tmp53 $tmp54 $tmp56 	%argrw{"wrr"}
+	mul		$tmp57 $const11 $const15 	%argrw{"wrr"}
+	div		$tmp58 $tmp53 $tmp57 	%argrw{"wrr"}
+	add		___373_u $const9 $tmp58 	%argrw{"wrr"}
+	compref		$tmp61 ___373_e $const6 	%argrw{"wrr"}
+	functioncall	$const19 86 	%argrw{"r"}
+# /Applications/Blender.app/Contents/Resources/5.2/scripts/addons_core/cycles/shader/stdosl.h:141
+# float  clamp (float x, float minval, float maxval) { return max(min(x,maxval),minval); }
+	min		$tmp62 $tmp61 $const18 	%filename{"/Applications/Blender.app/Contents/Resources/5.2/scripts/addons_core/cycles/shader/stdosl.h"} %line{141} %argrw{"wrr"}
+	max		$tmp60 $tmp62 $const17 	%argrw{"wrr"}
+# ruby_heart_gem_20261113/optics/probe_variables.osl:5
+# color tent(vector d,string file){return min(lookup(d,file),color(3));}
+	asin		$tmp59 $tmp60 	%filename{"ruby_heart_gem_20261113/optics/probe_variables.osl"} %line{5} %argrw{"wr"}
+	div		$tmp63 $tmp59 $const15 	%argrw{"wrr"}
+	sub		___373_v $const9 $tmp63 	%argrw{"wrr"}
+	texture		$tmp38 Mip1 ___373_u ___373_v $const20 $const21 $const22 $const19 $const23 $const24 	%argrw{"wrrrrrrrrr"} %argderivs{2,3}
+# ruby_heart_gem_20261113/optics/probe_variables.osl:12
+#  color col=1.810354*f*clamp(min(lookup(reflect(incident,n),Mip1),color(24))-color(3),color(0),color(10));
+	div		___376_val $tmp38 $const26 	%line{12} %argrw{"wrr"}
+	eq		$tmp64 Probe $const27 	%argrw{"wrr"}
+	if		$tmp64 124 124 	%argrw{"r"}
+	normalize	$tmp66 $const28 	%argrw{"wr"}
+	functioncall	$const13 123 	%argrw{"r"}
+# ruby_heart_gem_20261113/optics/probe_variables.osl:5
+# color tent(vector d,string file){return min(lookup(d,file),color(3));}
+	functioncall	$const14 101 	%line{5} %argrw{"r"}
+# ruby_heart_gem_20261113/optics/probe_variables.osl:4
+# color lookup(vector d,string file){vector w=normalize(transform("object","world",to_blender(d)));vector e=vector(-w[0],w[2],w[1]);float u=.5+atan2(e[0],-e[2])/(2*M_PI);float v=.5-asin(clamp(e[1],-1,1))/M_PI;return texture(file,u,v,"swrap","periodic","twrap","clamp","interp","bilinear");}
+	compref		$tmp70 $tmp66 $const4 	%line{4} %argrw{"wrr"}
+	compref		$tmp71 $tmp66 $const5 	%argrw{"wrr"}
+	neg		$tmp72 $tmp71 	%argrw{"wr"}
+	compref		$tmp73 $tmp66 $const6 	%argrw{"wrr"}
+	vector		$tmp69 $tmp70 $tmp72 $tmp73 	%argrw{"wrrr"}
+# ruby_heart_gem_20261113/optics/probe_variables.osl:5
+# color tent(vector d,string file){return min(lookup(d,file),color(3));}
+	transformv	$tmp68 $const2 $const1 $tmp69 	%line{5} %argrw{"wrrr"}
+	normalize	___373_w $tmp68 	%argrw{"wr"}
+	compref		$tmp74 ___373_w $const4 	%argrw{"wrr"}
+	neg		$tmp75 $tmp74 	%argrw{"wr"}
+	compref		$tmp76 ___373_w $const5 	%argrw{"wrr"}
+	compref		$tmp77 ___373_w $const6 	%argrw{"wrr"}
+	vector		___373_e $tmp75 $tmp76 $tmp77 	%argrw{"wrrr"}
+	compref		$tmp79 ___373_e $const4 	%argrw{"wrr"}
+	compref		$tmp80 ___373_e $const5 	%argrw{"wrr"}
+	neg		$tmp81 $tmp80 	%argrw{"wr"}
+	atan2		$tmp78 $tmp79 $tmp81 	%argrw{"wrr"}
+	mul		$tmp82 $const11 $const15 	%argrw{"wrr"}
+	div		$tmp83 $tmp78 $tmp82 	%argrw{"wrr"}
+	add		___373_u $const9 $tmp83 	%argrw{"wrr"}
+	compref		$tmp86 ___373_e $const6 	%argrw{"wrr"}
+	functioncall	$const19 119 	%argrw{"r"}
+# /Applications/Blender.app/Contents/Resources/5.2/scripts/addons_core/cycles/shader/stdosl.h:141
+# float  clamp (float x, float minval, float maxval) { return max(min(x,maxval),minval); }
+	min		$tmp87 $tmp86 $const18 	%filename{"/Applications/Blender.app/Contents/Resources/5.2/scripts/addons_core/cycles/shader/stdosl.h"} %line{141} %argrw{"wrr"}
+	max		$tmp85 $tmp87 $const17 	%argrw{"wrr"}
+# ruby_heart_gem_20261113/optics/probe_variables.osl:5
+# color tent(vector d,string file){return min(lookup(d,file),color(3));}
+	asin		$tmp84 $tmp85 	%filename{"ruby_heart_gem_20261113/optics/probe_variables.osl"} %line{5} %argrw{"wr"}
+	div		$tmp88 $tmp84 $const15 	%argrw{"wrr"}
+	sub		___373_v $const9 $tmp88 	%argrw{"wrr"}
+	texture		$tmp65 Mip1 ___373_u ___373_v $const20 $const21 $const22 $const19 $const23 $const24 	%argrw{"wrrrrrrrrr"} %argderivs{2,3}
+# ruby_heart_gem_20261113/optics/probe_variables.osl:12
+#  color col=1.810354*f*clamp(min(lookup(reflect(incident,n),Mip1),color(24))-color(3),color(0),color(10));
+	div		___376_val $tmp65 $const26 	%line{12} %argrw{"wrr"}
+	closure		$tmp89 $const29 	%argrw{"wr"}
+	mul		BSDF $tmp89 ___376_val 	%argrw{"wrr"}
+	exit
+	neg		$tmp91 incident 	%argrw{"wr"}
+	dot		$tmp90 n $tmp91 	%argrw{"wrr"}
+	functioncall	$const31 163 	%argrw{"r"}
+# ruby_heart_gem_20261113/optics/probe_variables.osl:2
+# vector to_model(vector b){return vector(b[0],b[2],-b[1]);}
+	functioncall	$const19 133 	%line{2} %argrw{"r"}
+# /Applications/Blender.app/Contents/Resources/5.2/scripts/addons_core/cycles/shader/stdosl.h:141
+# float  clamp (float x, float minval, float maxval) { return max(min(x,maxval),minval); }
+	min		$tmp92 $tmp90 $const18 	%filename{"/Applications/Blender.app/Contents/Resources/5.2/scripts/addons_core/cycles/shader/stdosl.h"} %line{141} %argrw{"wrr"}
+	max		___370_ci $tmp92 $const32 	%argrw{"wrr"}
+# ruby_heart_gem_20261113/optics/probe_variables.osl:2
+# vector to_model(vector b){return vector(b[0],b[2],-b[1]);}
+	div		$tmp93 $const18 $const30 	%filename{"ruby_heart_gem_20261113/optics/probe_variables.osl"} %line{2} %argrw{"wrr"}
+	div		$tmp94 $const18 $const30 	%argrw{"wrr"}
+	mul		$tmp95 $tmp93 $tmp94 	%argrw{"wrr"}
+	mul		$tmp96 ___370_ci ___370_ci 	%argrw{"wrr"}
+	sub		$tmp97 $const18 $tmp96 	%argrw{"wrr"}
+	mul		___370_ss $tmp95 $tmp97 	%argrw{"wrr"}
+	ge		$tmp98 ___370_ss $const6 	%argrw{"wrr"}
+	if		$tmp98 143 143 	%argrw{"r"}
+	assign		f $const6 	%argrw{"wr"}
+	return
+	sub		$tmp99 $const18 ___370_ss 	%argrw{"wrr"}
+	sqrt		___370_ct $tmp99 	%argrw{"wr"}
+	mul		$tmp100 $const18 ___370_ci 	%argrw{"wrr"}
+	mul		$tmp101 $const30 ___370_ct 	%argrw{"wrr"}
+	sub		$tmp102 $tmp100 $tmp101 	%argrw{"wrr"}
+	mul		$tmp103 $const18 ___370_ci 	%argrw{"wrr"}
+	mul		$tmp104 $const30 ___370_ct 	%argrw{"wrr"}
+	add		$tmp105 $tmp103 $tmp104 	%argrw{"wrr"}
+	div		___370_a $tmp102 $tmp105 	%argrw{"wrr"}
+	mul		$tmp106 $const18 ___370_ct 	%argrw{"wrr"}
+	mul		$tmp107 $const30 ___370_ci 	%argrw{"wrr"}
+	sub		$tmp108 $tmp106 $tmp107 	%argrw{"wrr"}
+	mul		$tmp109 $const18 ___370_ct 	%argrw{"wrr"}
+	mul		$tmp110 $const30 ___370_ci 	%argrw{"wrr"}
+	add		$tmp111 $tmp109 $tmp110 	%argrw{"wrr"}
+	div		___370_b $tmp108 $tmp111 	%argrw{"wrr"}
+	mul		$tmp112 ___370_a ___370_a 	%argrw{"wrr"}
+	mul		$tmp113 ___370_b ___370_b 	%argrw{"wrr"}
+	add		$tmp114 $tmp112 $tmp113 	%argrw{"wrr"}
+	mul		f $const9 $tmp114 	%argrw{"wrr"}
+# ruby_heart_gem_20261113/optics/probe_variables.osl:13
+#  float side=entry[2]>=0?1:-1;point pos=entry;vector dir=refract(incident,n,1/1.77);color weight=color(1-f);float path=0;
+	mul		$tmp115 $const33 f 	%line{13} %argrw{"wrr"}
+	functioncall	$const10 169 	%argrw{"r"}
+# /Applications/Blender.app/Contents/Resources/5.2/scripts/addons_core/cycles/shader/stdosl.h:212
+# vector reflect (vector I, vector N) { return I - 2*dot(N,I)*N; }
+	dot		$tmp120 n incident 	%filename{"/Applications/Blender.app/Contents/Resources/5.2/scripts/addons_core/cycles/shader/stdosl.h"} %line{212} %argrw{"wrr"}
+	mul		$tmp121 $const11 $tmp120 	%argrw{"wrr"}
+	mul		$tmp122 $tmp121 n 	%argrw{"wrr"}
+	sub		$tmp119 incident $tmp122 	%argrw{"wrr"}
+# ruby_heart_gem_20261113/optics/probe_variables.osl:13
+#  float side=entry[2]>=0?1:-1;point pos=entry;vector dir=refract(incident,n,1/1.77);color weight=color(1-f);float path=0;
+	functioncall	$const13 198 	%filename{"ruby_heart_gem_20261113/optics/probe_variables.osl"} %line{13} %argrw{"r"}
+# ruby_heart_gem_20261113/optics/probe_variables.osl:5
+# color tent(vector d,string file){return min(lookup(d,file),color(3));}
+	functioncall	$const14 176 	%line{5} %argrw{"r"}
+# ruby_heart_gem_20261113/optics/probe_variables.osl:4
+# color lookup(vector d,string file){vector w=normalize(transform("object","world",to_blender(d)));vector e=vector(-w[0],w[2],w[1]);float u=.5+atan2(e[0],-e[2])/(2*M_PI);float v=.5-asin(clamp(e[1],-1,1))/M_PI;return texture(file,u,v,"swrap","periodic","twrap","clamp","interp","bilinear");}
+	compref		$tmp125 $tmp119 $const4 	%line{4} %argrw{"wrr"}
+	compref		$tmp126 $tmp119 $const5 	%argrw{"wrr"}
+	neg		$tmp127 $tmp126 	%argrw{"wr"}
+	compref		$tmp128 $tmp119 $const6 	%argrw{"wrr"}
+	vector		$tmp124 $tmp125 $tmp127 $tmp128 	%argrw{"wrrr"}
+# ruby_heart_gem_20261113/optics/probe_variables.osl:5
+# color tent(vector d,string file){return min(lookup(d,file),color(3));}
+	transformv	$tmp123 $const2 $const1 $tmp124 	%line{5} %argrw{"wrrr"}
+	normalize	___373_w $tmp123 	%argrw{"wr"}
+	compref		$tmp129 ___373_w $const4 	%argrw{"wrr"}
+	neg		$tmp130 $tmp129 	%argrw{"wr"}
+	compref		$tmp131 ___373_w $const5 	%argrw{"wrr"}
+	compref		$tmp132 ___373_w $const6 	%argrw{"wrr"}
+	vector		___373_e $tmp130 $tmp131 $tmp132 	%argrw{"wrrr"}
+	compref		$tmp134 ___373_e $const4 	%argrw{"wrr"}
+	compref		$tmp135 ___373_e $const5 	%argrw{"wrr"}
+	neg		$tmp136 $tmp135 	%argrw{"wr"}
+	atan2		$tmp133 $tmp134 $tmp136 	%argrw{"wrr"}
+	mul		$tmp137 $const11 $const15 	%argrw{"wrr"}
+	div		$tmp138 $tmp133 $tmp137 	%argrw{"wrr"}
+	add		___373_u $const9 $tmp138 	%argrw{"wrr"}
+	compref		$tmp141 ___373_e $const6 	%argrw{"wrr"}
+	functioncall	$const19 194 	%argrw{"r"}
+# /Applications/Blender.app/Contents/Resources/5.2/scripts/addons_core/cycles/shader/stdosl.h:141
+# float  clamp (float x, float minval, float maxval) { return max(min(x,maxval),minval); }
+	min		$tmp142 $tmp141 $const18 	%filename{"/Applications/Blender.app/Contents/Resources/5.2/scripts/addons_core/cycles/shader/stdosl.h"} %line{141} %argrw{"wrr"}
+	max		$tmp140 $tmp142 $const17 	%argrw{"wrr"}
+# ruby_heart_gem_20261113/optics/probe_variables.osl:5
+# color tent(vector d,string file){return min(lookup(d,file),color(3));}
+	asin		$tmp139 $tmp140 	%filename{"ruby_heart_gem_20261113/optics/probe_variables.osl"} %line{5} %argrw{"wr"}
+	div		$tmp143 $tmp139 $const15 	%argrw{"wrr"}
+	sub		___373_v $const9 $tmp143 	%argrw{"wrr"}
+	texture		$tmp118 Mip1 ___373_u ___373_v $const20 $const21 $const22 $const19 $const23 $const24 	%argrw{"wrrrrrrrrr"} %argderivs{2,3}
+# ruby_heart_gem_20261113/optics/probe_variables.osl:13
+#  float side=entry[2]>=0?1:-1;point pos=entry;vector dir=refract(incident,n,1/1.77);color weight=color(1-f);float path=0;
+	min		$tmp117 $tmp118 $const34 	%line{13} %argrw{"wrr"}
+	sub		$tmp146 $tmp117 $const35 	%argrw{"wrr"}
+	functioncall	$const19 203 	%argrw{"r"}
+# /Applications/Blender.app/Contents/Resources/5.2/scripts/addons_core/cycles/shader/stdosl.h:140
+# color  clamp (color x, color minval, color maxval) { return max(min(x,maxval),minval); }
+	min		$tmp149 $tmp146 $const36 	%filename{"/Applications/Blender.app/Contents/Resources/5.2/scripts/addons_core/cycles/shader/stdosl.h"} %line{140} %argrw{"wrr"}
+	max		$tmp116 $tmp149 $const8 	%argrw{"wrr"}
+# ruby_heart_gem_20261113/optics/probe_variables.osl:13
+#  float side=entry[2]>=0?1:-1;point pos=entry;vector dir=refract(incident,n,1/1.77);color weight=color(1-f);float path=0;
+	mul		col $tmp115 $tmp116 	%filename{"ruby_heart_gem_20261113/optics/probe_variables.osl"} %line{13} %argrw{"wrr"}
+# ruby_heart_gem_20261113/optics/probe_variables.osl:14
+#  for(int bounce=0;bounce<4;bounce++){
+	compref		$tmp150 entry $const5 	%line{14} %argrw{"wrr"}
+	ge		$tmp151 $tmp150 $const4 	%argrw{"wrr"}
+	if		$tmp151 208 209 	%argrw{"r"}
+	assign		side $const6 	%argrw{"wr"}
+	assign		side $const16 	%argrw{"wr"}
+	assign		pos entry 	%argrw{"wr"}
+	div		$tmp152 $const18 $const30 	%argrw{"wrr"}
+	functioncall	$const37 228 	%argrw{"r"}
+# /Applications/Blender.app/Contents/Resources/5.2/scripts/addons_core/cycles/shader/stdosl.h:214
+#     float IdotN = dot (I, N);
+	dot		___240_IdotN incident n 	%filename{"/Applications/Blender.app/Contents/Resources/5.2/scripts/addons_core/cycles/shader/stdosl.h"} %line{214} %argrw{"wrr"}
+# /Applications/Blender.app/Contents/Resources/5.2/scripts/addons_core/cycles/shader/stdosl.h:215
+#     float k = 1 - eta*eta * (1 - IdotN*IdotN);
+	mul		$tmp153 $tmp152 $tmp152 	%line{215} %argrw{"wrr"}
+	mul		$tmp154 ___240_IdotN ___240_IdotN 	%argrw{"wrr"}
+	sub		$tmp155 $const18 $tmp154 	%argrw{"wrr"}
+	mul		$tmp156 $tmp153 $tmp155 	%argrw{"wrr"}
+	sub		___240_k $const18 $tmp156 	%argrw{"wrr"}
+# /Applications/Blender.app/Contents/Resources/5.2/scripts/addons_core/cycles/shader/stdosl.h:216
+#     return (k < 0) ? vector(0,0,0) : (eta*I - N * (eta*IdotN + sqrt(k)));
+	lt		$tmp157 ___240_k $const4 	%line{216} %argrw{"wrr"}
+	if		$tmp157 221 227 	%argrw{"r"}
+	assign		dir $const38 	%argrw{"wr"}
+	mul		$tmp158 $tmp152 incident 	%argrw{"wrr"}
+	mul		$tmp159 $tmp152 ___240_IdotN 	%argrw{"wrr"}
+	sqrt		$tmp160 ___240_k 	%argrw{"wr"}
+	add		$tmp161 $tmp159 $tmp160 	%argrw{"wrr"}
+	mul		$tmp162 n $tmp161 	%argrw{"wrr"}
+	sub		dir $tmp158 $tmp162 	%argrw{"wrr"}
+	return
+# ruby_heart_gem_20261113/optics/probe_variables.osl:14
+#  for(int bounce=0;bounce<4;bounce++){
+	sub		$tmp163 $const18 f 	%filename{"ruby_heart_gem_20261113/optics/probe_variables.osl"} %line{14} %argrw{"wrr"}
+	assign		weight $tmp163 	%argrw{"wr"}
+	assign		path $const4 	%argrw{"wr"}
+# ruby_heart_gem_20261113/optics/probe_variables.osl:15
+#   float tofoil=dir[2]*side<-.0001?max(-pos[2]/dir[2],0):0;pos+=dir*tofoil;path+=tofoil;dir[2]=-dir[2];weight*=.92;
+	for		$tmp165 233 235 434 436 	%line{15} %argrw{"r"}
+	assign		___377_bounce $const4 	%argrw{"wr"}
+	lt		$tmp164 ___377_bounce $const27 	%argrw{"wrr"}
+	neq		$tmp165 $tmp164 $const4 	%argrw{"wrr"}
+# ruby_heart_gem_20261113/optics/probe_variables.osl:16
+#   float approach=dot(n,dir);float back=approach>.0001?max(dot(n,vector(entry-pos))/approach,0):0;pos+=dir*back;path+=back;
+	compref		$tmp166 dir $const5 	%line{16} %argrw{"wrr"}
+	mul		$tmp167 $tmp166 side 	%argrw{"wrr"}
+	lt		$tmp168 $tmp167 $const39 	%argrw{"wrr"}
+	if		$tmp168 244 245 	%argrw{"r"}
+	compref		$tmp169 pos $const5 	%argrw{"wrr"}
+	neg		$tmp170 $tmp169 	%argrw{"wr"}
+	compref		$tmp171 dir $const5 	%argrw{"wrr"}
+	div		$tmp172 $tmp170 $tmp171 	%argrw{"wrr"}
+	max		___378_tofoil $tmp172 $const32 	%argrw{"wrr"}
+	assign		___378_tofoil $const4 	%argrw{"wr"}
+	mul		$tmp173 dir ___378_tofoil 	%argrw{"wrr"}
+	add		pos pos $tmp173 	%argrw{"wrr"}
+	add		path path ___378_tofoil 	%argrw{"wrr"}
+	compref		$tmp174 dir $const5 	%argrw{"wrr"}
+	neg		$tmp175 $tmp174 	%argrw{"wr"}
+	compassign	dir $const5 $tmp175 	%argrw{"wrr"}
+	mul		weight weight $const40 	%argrw{"wrr"}
+# ruby_heart_gem_20261113/optics/probe_variables.osl:17
+#   float share=fresnelshare(approach,1.77,1);color absorption=color(exp(-.15*min(path,12)),exp(-6.5*min(path,12)),exp(-2.2*min(path,12)));
+	dot		___378_approach n dir 	%line{17} %argrw{"wrr"}
+	gt		$tmp176 ___378_approach $const41 	%argrw{"wrr"}
+	if		$tmp176 260 261 	%argrw{"r"}
+	sub		$tmp179 entry pos 	%argrw{"wrr"}
+	assign		$tmp178 $tmp179 	%argrw{"wr"}
+	dot		$tmp177 n $tmp178 	%argrw{"wrr"}
+	div		$tmp180 $tmp177 ___378_approach 	%argrw{"wrr"}
+	max		___378_back $tmp180 $const32 	%argrw{"wrr"}
+	assign		___378_back $const4 	%argrw{"wr"}
+	mul		$tmp181 dir ___378_back 	%argrw{"wrr"}
+	add		pos pos $tmp181 	%argrw{"wrr"}
+	add		path path ___378_back 	%argrw{"wrr"}
+# ruby_heart_gem_20261113/optics/probe_variables.osl:18
+#   if(share<1){vector leaving=refract(dir,-n,1.77);col+=weight*absorption*(1-share)*body(leaving,Mip2,Mip3,Mip8);}
+	functioncall	$const31 298 	%line{18} %argrw{"r"}
+# ruby_heart_gem_20261113/optics/probe_variables.osl:2
+# vector to_model(vector b){return vector(b[0],b[2],-b[1]);}
+	functioncall	$const19 268 	%line{2} %argrw{"r"}
+# /Applications/Blender.app/Contents/Resources/5.2/scripts/addons_core/cycles/shader/stdosl.h:141
+# float  clamp (float x, float minval, float maxval) { return max(min(x,maxval),minval); }
+	min		$tmp182 ___378_approach $const18 	%filename{"/Applications/Blender.app/Contents/Resources/5.2/scripts/addons_core/cycles/shader/stdosl.h"} %line{141} %argrw{"wrr"}
+	max		___370_ci $tmp182 $const32 	%argrw{"wrr"}
+# ruby_heart_gem_20261113/optics/probe_variables.osl:2
+# vector to_model(vector b){return vector(b[0],b[2],-b[1]);}
+	div		$tmp183 $const30 $const18 	%filename{"ruby_heart_gem_20261113/optics/probe_variables.osl"} %line{2} %argrw{"wrr"}
+	div		$tmp184 $const30 $const18 	%argrw{"wrr"}
+	mul		$tmp185 $tmp183 $tmp184 	%argrw{"wrr"}
+	mul		$tmp186 ___370_ci ___370_ci 	%argrw{"wrr"}
+	sub		$tmp187 $const18 $tmp186 	%argrw{"wrr"}
+	mul		___370_ss $tmp185 $tmp187 	%argrw{"wrr"}
+	ge		$tmp188 ___370_ss $const6 	%argrw{"wrr"}
+	if		$tmp188 278 278 	%argrw{"r"}
+	assign		___378_share $const6 	%argrw{"wr"}
+	return
+	sub		$tmp189 $const18 ___370_ss 	%argrw{"wrr"}
+	sqrt		___370_ct $tmp189 	%argrw{"wr"}
+	mul		$tmp190 $const30 ___370_ci 	%argrw{"wrr"}
+	mul		$tmp191 $const18 ___370_ct 	%argrw{"wrr"}
+	sub		$tmp192 $tmp190 $tmp191 	%argrw{"wrr"}
+	mul		$tmp193 $const30 ___370_ci 	%argrw{"wrr"}
+	mul		$tmp194 $const18 ___370_ct 	%argrw{"wrr"}
+	add		$tmp195 $tmp193 $tmp194 	%argrw{"wrr"}
+	div		___370_a $tmp192 $tmp195 	%argrw{"wrr"}
+	mul		$tmp196 $const30 ___370_ct 	%argrw{"wrr"}
+	mul		$tmp197 $const18 ___370_ci 	%argrw{"wrr"}
+	sub		$tmp198 $tmp196 $tmp197 	%argrw{"wrr"}
+	mul		$tmp199 $const30 ___370_ct 	%argrw{"wrr"}
+	mul		$tmp200 $const18 ___370_ci 	%argrw{"wrr"}
+	add		$tmp201 $tmp199 $tmp200 	%argrw{"wrr"}
+	div		___370_b $tmp198 $tmp201 	%argrw{"wrr"}
+	mul		$tmp202 ___370_a ___370_a 	%argrw{"wrr"}
+	mul		$tmp203 ___370_b ___370_b 	%argrw{"wrr"}
+	add		$tmp204 $tmp202 $tmp203 	%argrw{"wrr"}
+	mul		___378_share $const9 $tmp204 	%argrw{"wrr"}
+# ruby_heart_gem_20261113/optics/probe_variables.osl:18
+#   if(share<1){vector leaving=refract(dir,-n,1.77);col+=weight*absorption*(1-share)*body(leaving,Mip2,Mip3,Mip8);}
+	min		$tmp206 path $const44 	%line{18} %argrw{"wrr"}
+	mul		$tmp207 $const42 $tmp206 	%argrw{"wrr"}
+	exp		$tmp205 $tmp207 	%argrw{"wr"}
+	min		$tmp209 path $const44 	%argrw{"wrr"}
+	mul		$tmp210 $const45 $tmp209 	%argrw{"wrr"}
+	exp		$tmp208 $tmp210 	%argrw{"wr"}
+	min		$tmp212 path $const44 	%argrw{"wrr"}
+	mul		$tmp213 $const46 $tmp212 	%argrw{"wrr"}
+	exp		$tmp211 $tmp213 	%argrw{"wr"}
+	color		___378_absorption $tmp205 $tmp208 $tmp211 	%argrw{"wrrr"}
+# ruby_heart_gem_20261113/optics/probe_variables.osl:19
+#   weight*=share;dir=reflect(dir,n);
+	lt		$tmp214 ___378_share $const6 	%line{19} %argrw{"wrr"}
+	if		$tmp214 428 428 	%argrw{"r"}
+	neg		$tmp215 n 	%argrw{"wr"}
+	functioncall	$const37 328 	%argrw{"r"}
+# /Applications/Blender.app/Contents/Resources/5.2/scripts/addons_core/cycles/shader/stdosl.h:214
+#     float IdotN = dot (I, N);
+	dot		___240_IdotN dir $tmp215 	%filename{"/Applications/Blender.app/Contents/Resources/5.2/scripts/addons_core/cycles/shader/stdosl.h"} %line{214} %argrw{"wrr"}
+# /Applications/Blender.app/Contents/Resources/5.2/scripts/addons_core/cycles/shader/stdosl.h:215
+#     float k = 1 - eta*eta * (1 - IdotN*IdotN);
+	mul		$tmp216 $const30 $const30 	%line{215} %argrw{"wrr"}
+	mul		$tmp217 ___240_IdotN ___240_IdotN 	%argrw{"wrr"}
+	sub		$tmp218 $const18 $tmp217 	%argrw{"wrr"}
+	mul		$tmp219 $tmp216 $tmp218 	%argrw{"wrr"}
+	sub		___240_k $const18 $tmp219 	%argrw{"wrr"}
+# /Applications/Blender.app/Contents/Resources/5.2/scripts/addons_core/cycles/shader/stdosl.h:216
+#     return (k < 0) ? vector(0,0,0) : (eta*I - N * (eta*IdotN + sqrt(k)));
+	lt		$tmp220 ___240_k $const4 	%line{216} %argrw{"wrr"}
+	if		$tmp220 321 327 	%argrw{"r"}
+	assign		___379_leaving $const38 	%argrw{"wr"}
+	mul		$tmp221 $const30 dir 	%argrw{"wrr"}
+	mul		$tmp222 $const30 ___240_IdotN 	%argrw{"wrr"}
+	sqrt		$tmp223 ___240_k 	%argrw{"wr"}
+	add		$tmp224 $tmp222 $tmp223 	%argrw{"wrr"}
+	mul		$tmp225 $tmp215 $tmp224 	%argrw{"wrr"}
+	sub		___379_leaving $tmp221 $tmp225 	%argrw{"wrr"}
+	return
+# ruby_heart_gem_20261113/optics/probe_variables.osl:19
+#   weight*=share;dir=reflect(dir,n);
+	mul		$tmp226 weight ___378_absorption 	%filename{"ruby_heart_gem_20261113/optics/probe_variables.osl"} %line{19} %argrw{"wrr"}
+	sub		$tmp227 $const18 ___378_share 	%argrw{"wrr"}
+	mul		$tmp228 $tmp226 $tmp227 	%argrw{"wrr"}
+	functioncall	$const47 426 	%argrw{"r"}
+# ruby_heart_gem_20261113/optics/probe_variables.osl:7
+# shader ruby_heart_live_optics(string Mip1="",string Mip2="",string Mip3="",string Mip8="",int Probe=0,output closure color BSDF=0){
+	functioncall	$const13 361 	%line{7} %argrw{"r"}
+# ruby_heart_gem_20261113/optics/probe_variables.osl:5
+# color tent(vector d,string file){return min(lookup(d,file),color(3));}
+	functioncall	$const14 339 	%line{5} %argrw{"r"}
+# ruby_heart_gem_20261113/optics/probe_variables.osl:4
+# color lookup(vector d,string file){vector w=normalize(transform("object","world",to_blender(d)));vector e=vector(-w[0],w[2],w[1]);float u=.5+atan2(e[0],-e[2])/(2*M_PI);float v=.5-asin(clamp(e[1],-1,1))/M_PI;return texture(file,u,v,"swrap","periodic","twrap","clamp","interp","bilinear");}
+	compref		$tmp234 ___379_leaving $const4 	%line{4} %argrw{"wrr"}
+	compref		$tmp235 ___379_leaving $const5 	%argrw{"wrr"}
+	neg		$tmp236 $tmp235 	%argrw{"wr"}
+	compref		$tmp237 ___379_leaving $const6 	%argrw{"wrr"}
+	vector		$tmp233 $tmp234 $tmp236 $tmp237 	%argrw{"wrrr"}
+# ruby_heart_gem_20261113/optics/probe_variables.osl:5
+# color tent(vector d,string file){return min(lookup(d,file),color(3));}
+	transformv	$tmp232 $const2 $const1 $tmp233 	%line{5} %argrw{"wrrr"}
+	normalize	___373_w $tmp232 	%argrw{"wr"}
+	compref		$tmp238 ___373_w $const4 	%argrw{"wrr"}
+	neg		$tmp239 $tmp238 	%argrw{"wr"}
+	compref		$tmp240 ___373_w $const5 	%argrw{"wrr"}
+	compref		$tmp241 ___373_w $const6 	%argrw{"wrr"}
+	vector		___373_e $tmp239 $tmp240 $tmp241 	%argrw{"wrrr"}
+	compref		$tmp243 ___373_e $const4 	%argrw{"wrr"}
+	compref		$tmp244 ___373_e $const5 	%argrw{"wrr"}
+	neg		$tmp245 $tmp244 	%argrw{"wr"}
+	atan2		$tmp242 $tmp243 $tmp245 	%argrw{"wrr"}
+	mul		$tmp246 $const11 $const15 	%argrw{"wrr"}
+	div		$tmp247 $tmp242 $tmp246 	%argrw{"wrr"}
+	add		___373_u $const9 $tmp247 	%argrw{"wrr"}
+	compref		$tmp250 ___373_e $const6 	%argrw{"wrr"}
+	functioncall	$const19 357 	%argrw{"r"}
+# /Applications/Blender.app/Contents/Resources/5.2/scripts/addons_core/cycles/shader/stdosl.h:141
+# float  clamp (float x, float minval, float maxval) { return max(min(x,maxval),minval); }
+	min		$tmp251 $tmp250 $const18 	%filename{"/Applications/Blender.app/Contents/Resources/5.2/scripts/addons_core/cycles/shader/stdosl.h"} %line{141} %argrw{"wrr"}
+	max		$tmp249 $tmp251 $const17 	%argrw{"wrr"}
+# ruby_heart_gem_20261113/optics/probe_variables.osl:5
+# color tent(vector d,string file){return min(lookup(d,file),color(3));}
+	asin		$tmp248 $tmp249 	%filename{"ruby_heart_gem_20261113/optics/probe_variables.osl"} %line{5} %argrw{"wr"}
+	div		$tmp252 $tmp248 $const15 	%argrw{"wrr"}
+	sub		___373_v $const9 $tmp252 	%argrw{"wrr"}
+	texture		$tmp231 Mip2 ___373_u ___373_v $const20 $const21 $const22 $const19 $const23 $const24 	%argrw{"wrrrrrrrrr"} %argderivs{2,3}
+# ruby_heart_gem_20261113/optics/probe_variables.osl:7
+# shader ruby_heart_live_optics(string Mip1="",string Mip2="",string Mip3="",string Mip8="",int Probe=0,output closure color BSDF=0){
+	min		$tmp230 $tmp231 $const48 	%line{7} %argrw{"wrr"}
+	functioncall	$const13 391 	%argrw{"r"}
+# ruby_heart_gem_20261113/optics/probe_variables.osl:5
+# color tent(vector d,string file){return min(lookup(d,file),color(3));}
+	functioncall	$const14 369 	%line{5} %argrw{"r"}
+# ruby_heart_gem_20261113/optics/probe_variables.osl:4
+# color lookup(vector d,string file){vector w=normalize(transform("object","world",to_blender(d)));vector e=vector(-w[0],w[2],w[1]);float u=.5+atan2(e[0],-e[2])/(2*M_PI);float v=.5-asin(clamp(e[1],-1,1))/M_PI;return texture(file,u,v,"swrap","periodic","twrap","clamp","interp","bilinear");}
+	compref		$tmp258 ___379_leaving $const4 	%line{4} %argrw{"wrr"}
+	compref		$tmp259 ___379_leaving $const5 	%argrw{"wrr"}
+	neg		$tmp260 $tmp259 	%argrw{"wr"}
+	compref		$tmp261 ___379_leaving $const6 	%argrw{"wrr"}
+	vector		$tmp257 $tmp258 $tmp260 $tmp261 	%argrw{"wrrr"}
+# ruby_heart_gem_20261113/optics/probe_variables.osl:5
+# color tent(vector d,string file){return min(lookup(d,file),color(3));}
+	transformv	$tmp256 $const2 $const1 $tmp257 	%line{5} %argrw{"wrrr"}
+	normalize	___373_w $tmp256 	%argrw{"wr"}
+	compref		$tmp262 ___373_w $const4 	%argrw{"wrr"}
+	neg		$tmp263 $tmp262 	%argrw{"wr"}
+	compref		$tmp264 ___373_w $const5 	%argrw{"wrr"}
+	compref		$tmp265 ___373_w $const6 	%argrw{"wrr"}
+	vector		___373_e $tmp263 $tmp264 $tmp265 	%argrw{"wrrr"}
+	compref		$tmp267 ___373_e $const4 	%argrw{"wrr"}
+	compref		$tmp268 ___373_e $const5 	%argrw{"wrr"}
+	neg		$tmp269 $tmp268 	%argrw{"wr"}
+	atan2		$tmp266 $tmp267 $tmp269 	%argrw{"wrr"}
+	mul		$tmp270 $const11 $const15 	%argrw{"wrr"}
+	div		$tmp271 $tmp266 $tmp270 	%argrw{"wrr"}
+	add		___373_u $const9 $tmp271 	%argrw{"wrr"}
+	compref		$tmp274 ___373_e $const6 	%argrw{"wrr"}
+	functioncall	$const19 387 	%argrw{"r"}
+# /Applications/Blender.app/Contents/Resources/5.2/scripts/addons_core/cycles/shader/stdosl.h:141
+# float  clamp (float x, float minval, float maxval) { return max(min(x,maxval),minval); }
+	min		$tmp275 $tmp274 $const18 	%filename{"/Applications/Blender.app/Contents/Resources/5.2/scripts/addons_core/cycles/shader/stdosl.h"} %line{141} %argrw{"wrr"}
+	max		$tmp273 $tmp275 $const17 	%argrw{"wrr"}
+# ruby_heart_gem_20261113/optics/probe_variables.osl:5
+# color tent(vector d,string file){return min(lookup(d,file),color(3));}
+	asin		$tmp272 $tmp273 	%filename{"ruby_heart_gem_20261113/optics/probe_variables.osl"} %line{5} %argrw{"wr"}
+	div		$tmp276 $tmp272 $const15 	%argrw{"wrr"}
+	sub		___373_v $const9 $tmp276 	%argrw{"wrr"}
+	texture		$tmp255 Mip3 ___373_u ___373_v $const20 $const21 $const22 $const19 $const23 $const24 	%argrw{"wrrrrrrrrr"} %argderivs{2,3}
+# ruby_heart_gem_20261113/optics/probe_variables.osl:7
+# shader ruby_heart_live_optics(string Mip1="",string Mip2="",string Mip3="",string Mip8="",int Probe=0,output closure color BSDF=0){
+	min		$tmp254 $tmp255 $const48 	%line{7} %argrw{"wrr"}
+	mix		___375_b $tmp230 $tmp254 $const49 	%argrw{"wrrr"}
+	functioncall	$const50 424 	%argrw{"r"}
+# ruby_heart_gem_20261113/optics/probe_variables.osl:6
+# color body(vector d,string two,string three,string eight){color b=mix(min(lookup(d,two),color(.7)),min(lookup(d,three),color(.7)),.146406);return b+tent(d,eight)*.260400;}
+	functioncall	$const13 423 	%line{6} %argrw{"r"}
+# ruby_heart_gem_20261113/optics/probe_variables.osl:5
+# color tent(vector d,string file){return min(lookup(d,file),color(3));}
+	functioncall	$const14 401 	%line{5} %argrw{"r"}
+# ruby_heart_gem_20261113/optics/probe_variables.osl:4
+# color lookup(vector d,string file){vector w=normalize(transform("object","world",to_blender(d)));vector e=vector(-w[0],w[2],w[1]);float u=.5+atan2(e[0],-e[2])/(2*M_PI);float v=.5-asin(clamp(e[1],-1,1))/M_PI;return texture(file,u,v,"swrap","periodic","twrap","clamp","interp","bilinear");}
+	compref		$tmp282 ___379_leaving $const4 	%line{4} %argrw{"wrr"}
+	compref		$tmp283 ___379_leaving $const5 	%argrw{"wrr"}
+	neg		$tmp284 $tmp283 	%argrw{"wr"}
+	compref		$tmp285 ___379_leaving $const6 	%argrw{"wrr"}
+	vector		$tmp281 $tmp282 $tmp284 $tmp285 	%argrw{"wrrr"}
+# ruby_heart_gem_20261113/optics/probe_variables.osl:5
+# color tent(vector d,string file){return min(lookup(d,file),color(3));}
+	transformv	$tmp280 $const2 $const1 $tmp281 	%line{5} %argrw{"wrrr"}
+	normalize	___373_w $tmp280 	%argrw{"wr"}
+	compref		$tmp286 ___373_w $const4 	%argrw{"wrr"}
+	neg		$tmp287 $tmp286 	%argrw{"wr"}
+	compref		$tmp288 ___373_w $const5 	%argrw{"wrr"}
+	compref		$tmp289 ___373_w $const6 	%argrw{"wrr"}
+	vector		___373_e $tmp287 $tmp288 $tmp289 	%argrw{"wrrr"}
+	compref		$tmp291 ___373_e $const4 	%argrw{"wrr"}
+	compref		$tmp292 ___373_e $const5 	%argrw{"wrr"}
+	neg		$tmp293 $tmp292 	%argrw{"wr"}
+	atan2		$tmp290 $tmp291 $tmp293 	%argrw{"wrr"}
+	mul		$tmp294 $const11 $const15 	%argrw{"wrr"}
+	div		$tmp295 $tmp290 $tmp294 	%argrw{"wrr"}
+	add		___373_u $const9 $tmp295 	%argrw{"wrr"}
+	compref		$tmp298 ___373_e $const6 	%argrw{"wrr"}
+	functioncall	$const19 419 	%argrw{"r"}
+# /Applications/Blender.app/Contents/Resources/5.2/scripts/addons_core/cycles/shader/stdosl.h:141
+# float  clamp (float x, float minval, float maxval) { return max(min(x,maxval),minval); }
+	min		$tmp299 $tmp298 $const18 	%filename{"/Applications/Blender.app/Contents/Resources/5.2/scripts/addons_core/cycles/shader/stdosl.h"} %line{141} %argrw{"wrr"}
+	max		$tmp297 $tmp299 $const17 	%argrw{"wrr"}
+# ruby_heart_gem_20261113/optics/probe_variables.osl:5
+# color tent(vector d,string file){return min(lookup(d,file),color(3));}
+	asin		$tmp296 $tmp297 	%filename{"ruby_heart_gem_20261113/optics/probe_variables.osl"} %line{5} %argrw{"wr"}
+	div		$tmp300 $tmp296 $const15 	%argrw{"wrr"}
+	sub		___373_v $const9 $tmp300 	%argrw{"wrr"}
+	texture		$tmp279 Mip8 ___373_u ___373_v $const20 $const21 $const22 $const19 $const23 $const24 	%argrw{"wrrrrrrrrr"} %argderivs{2,3}
+# ruby_heart_gem_20261113/optics/probe_variables.osl:6
+# color body(vector d,string two,string three,string eight){color b=mix(min(lookup(d,two),color(.7)),min(lookup(d,three),color(.7)),.146406);return b+tent(d,eight)*.260400;}
+	min		$tmp278 $tmp279 $const35 	%line{6} %argrw{"wrr"}
+# ruby_heart_gem_20261113/optics/probe_variables.osl:7
+# shader ruby_heart_live_optics(string Mip1="",string Mip2="",string Mip3="",string Mip8="",int Probe=0,output closure color BSDF=0){
+	mul		$tmp302 $tmp278 $const51 	%line{7} %argrw{"wrr"}
+	add		$tmp229 ___375_b $tmp302 	%argrw{"wrr"}
+# ruby_heart_gem_20261113/optics/probe_variables.osl:19
+#   weight*=share;dir=reflect(dir,n);
+	mul		$tmp303 $tmp228 $tmp229 	%line{19} %argrw{"wrr"}
+	add		col col $tmp303 	%argrw{"wrr"}
+# ruby_heart_gem_20261113/optics/probe_variables.osl:20
+#  }
+	mul		weight weight ___378_share 	%line{20} %argrw{"wrr"}
+	functioncall	$const10 434 	%argrw{"r"}
+# /Applications/Blender.app/Contents/Resources/5.2/scripts/addons_core/cycles/shader/stdosl.h:212
+# vector reflect (vector I, vector N) { return I - 2*dot(N,I)*N; }
+	dot		$tmp304 n dir 	%filename{"/Applications/Blender.app/Contents/Resources/5.2/scripts/addons_core/cycles/shader/stdosl.h"} %line{212} %argrw{"wrr"}
+	mul		$tmp305 $const11 $tmp304 	%argrw{"wrr"}
+	mul		$tmp306 $tmp305 n 	%argrw{"wrr"}
+	sub		dir dir $tmp306 	%argrw{"wrr"}
+# ruby_heart_gem_20261113/optics/probe_variables.osl:15
+#   float tofoil=dir[2]*side<-.0001?max(-pos[2]/dir[2],0):0;pos+=dir*tofoil;path+=tofoil;dir[2]=-dir[2];weight*=.92;
+	assign		$tmp307 ___377_bounce 	%filename{"ruby_heart_gem_20261113/optics/probe_variables.osl"} %line{15} %argrw{"wr"}
+	add		___377_bounce ___377_bounce $const6 	%argrw{"wrr"}
+# ruby_heart_gem_20261113/optics/probe_variables.osl:22
+#  col+=(1-f)*color(.16,.0032,.024);BSDF=emission()*col*1.7;
+	min		$tmp310 path $const44 	%line{22} %argrw{"wrr"}
+	mul		$tmp311 $const42 $tmp310 	%argrw{"wrr"}
+	exp		$tmp309 $tmp311 	%argrw{"wr"}
+	min		$tmp313 path $const44 	%argrw{"wrr"}
+	mul		$tmp314 $const45 $tmp313 	%argrw{"wrr"}
+	exp		$tmp312 $tmp314 	%argrw{"wr"}
+	min		$tmp316 path $const44 	%argrw{"wrr"}
+	mul		$tmp317 $const46 $tmp316 	%argrw{"wrr"}
+	exp		$tmp315 $tmp317 	%argrw{"wr"}
+	color		$tmp308 $tmp309 $tmp312 $tmp315 	%argrw{"wrrr"}
+	mul		$tmp318 weight $tmp308 	%argrw{"wrr"}
+	functioncall	$const50 478 	%argrw{"r"}
+# ruby_heart_gem_20261113/optics/probe_variables.osl:6
+# color body(vector d,string two,string three,string eight){color b=mix(min(lookup(d,two),color(.7)),min(lookup(d,three),color(.7)),.146406);return b+tent(d,eight)*.260400;}
+	functioncall	$const13 477 	%line{6} %argrw{"r"}
+# ruby_heart_gem_20261113/optics/probe_variables.osl:5
+# color tent(vector d,string file){return min(lookup(d,file),color(3));}
+	functioncall	$const14 455 	%line{5} %argrw{"r"}
+# ruby_heart_gem_20261113/optics/probe_variables.osl:4
+# color lookup(vector d,string file){vector w=normalize(transform("object","world",to_blender(d)));vector e=vector(-w[0],w[2],w[1]);float u=.5+atan2(e[0],-e[2])/(2*M_PI);float v=.5-asin(clamp(e[1],-1,1))/M_PI;return texture(file,u,v,"swrap","periodic","twrap","clamp","interp","bilinear");}
+	compref		$tmp323 dir $const4 	%line{4} %argrw{"wrr"}
+	compref		$tmp324 dir $const5 	%argrw{"wrr"}
+	neg		$tmp325 $tmp324 	%argrw{"wr"}
+	compref		$tmp326 dir $const6 	%argrw{"wrr"}
+	vector		$tmp322 $tmp323 $tmp325 $tmp326 	%argrw{"wrrr"}
+# ruby_heart_gem_20261113/optics/probe_variables.osl:5
+# color tent(vector d,string file){return min(lookup(d,file),color(3));}
+	transformv	$tmp321 $const2 $const1 $tmp322 	%line{5} %argrw{"wrrr"}
+	normalize	___373_w $tmp321 	%argrw{"wr"}
+	compref		$tmp327 ___373_w $const4 	%argrw{"wrr"}
+	neg		$tmp328 $tmp327 	%argrw{"wr"}
+	compref		$tmp329 ___373_w $const5 	%argrw{"wrr"}
+	compref		$tmp330 ___373_w $const6 	%argrw{"wrr"}
+	vector		___373_e $tmp328 $tmp329 $tmp330 	%argrw{"wrrr"}
+	compref		$tmp332 ___373_e $const4 	%argrw{"wrr"}
+	compref		$tmp333 ___373_e $const5 	%argrw{"wrr"}
+	neg		$tmp334 $tmp333 	%argrw{"wr"}
+	atan2		$tmp331 $tmp332 $tmp334 	%argrw{"wrr"}
+	mul		$tmp335 $const11 $const15 	%argrw{"wrr"}
+	div		$tmp336 $tmp331 $tmp335 	%argrw{"wrr"}
+	add		___373_u $const9 $tmp336 	%argrw{"wrr"}
+	compref		$tmp339 ___373_e $const6 	%argrw{"wrr"}
+	functioncall	$const19 473 	%argrw{"r"}
+# /Applications/Blender.app/Contents/Resources/5.2/scripts/addons_core/cycles/shader/stdosl.h:141
+# float  clamp (float x, float minval, float maxval) { return max(min(x,maxval),minval); }
+	min		$tmp340 $tmp339 $const18 	%filename{"/Applications/Blender.app/Contents/Resources/5.2/scripts/addons_core/cycles/shader/stdosl.h"} %line{141} %argrw{"wrr"}
+	max		$tmp338 $tmp340 $const17 	%argrw{"wrr"}
+# ruby_heart_gem_20261113/optics/probe_variables.osl:5
+# color tent(vector d,string file){return min(lookup(d,file),color(3));}
+	asin		$tmp337 $tmp338 	%filename{"ruby_heart_gem_20261113/optics/probe_variables.osl"} %line{5} %argrw{"wr"}
+	div		$tmp341 $tmp337 $const15 	%argrw{"wrr"}
+	sub		___373_v $const9 $tmp341 	%argrw{"wrr"}
+	texture		$tmp320 Mip8 ___373_u ___373_v $const20 $const21 $const22 $const19 $const23 $const24 	%argrw{"wrrrrrrrrr"} %argderivs{2,3}
+# ruby_heart_gem_20261113/optics/probe_variables.osl:6
+# color body(vector d,string two,string three,string eight){color b=mix(min(lookup(d,two),color(.7)),min(lookup(d,three),color(.7)),.146406);return b+tent(d,eight)*.260400;}
+	min		$tmp319 $tmp320 $const35 	%line{6} %argrw{"wrr"}
+# ruby_heart_gem_20261113/optics/probe_variables.osl:22
+#  col+=(1-f)*color(.16,.0032,.024);BSDF=emission()*col*1.7;
+	mul		$tmp343 $tmp318 $tmp319 	%line{22} %argrw{"wrr"}
+	mul		$tmp344 $tmp343 $const51 	%argrw{"wrr"}
+	add		col col $tmp344 	%argrw{"wrr"}
+# ruby_heart_gem_20261113/optics/probe_variables.osl:23
+# }
+	sub		$tmp345 $const18 f 	%line{23} %argrw{"wrr"}
+	mul		$tmp347 $tmp345 $const52 	%argrw{"wrr"}
+	add		col col $tmp347 	%argrw{"wrr"}
+	closure		$tmp348 $const29 	%argrw{"wr"}
+	mul		$tmp349 $tmp348 col 	%argrw{"wrr"}
+	mul		BSDF $tmp349 $const53 	%argrw{"wrr"}
+	end

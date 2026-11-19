@@ -1,0 +1,638 @@
+[
+  {
+    "name": "Chest Measured Rolled Handle Cover 1",
+    "max_degrees": 0.6321348035717633
+  },
+  {
+    "name": "Chest Measured Rolled Handle Cover -1",
+    "max_degrees": 0.40827442847010204
+  },
+  {
+    "name": "Chest Solid Ring Handle 1",
+    "max_degrees": 0.11480294582862989
+  },
+  {
+    "name": "Chest Solid Ring Handle -1",
+    "max_degrees": 0.10849715844428329
+  },
+  {
+    "name": "Chest Body Lip Rivet -1 0",
+    "max_degrees": 0.01019031604052607
+  },
+  {
+    "name": "Chest Body Lip Rivet 1 1",
+    "max_degrees": 0.00766578806044738
+  },
+  {
+    "name": "Chest Handle Mount Rivet -1 -1",
+    "max_degrees": 0.006358866228740738
+  },
+  {
+    "name": "Chest End Rail Rivet -1 0",
+    "max_degrees": 0.005801023644726614
+  },
+  {
+    "name": "Chest End Rail Rivet 1 1",
+    "max_degrees": 0.0054020426406938575
+  },
+  {
+    "name": "Chest End Rail Rivet -1 1",
+    "max_degrees": 0.005343932053526186
+  },
+  {
+    "name": "Chest End Rail Rivet 1 0",
+    "max_degrees": 0.00506802675849979
+  },
+  {
+    "name": "Chest Handle Mount Rivet 1 1",
+    "max_degrees": 0.004960821265341507
+  },
+  {
+    "name": "Chest Body Lip Rivet -1 1",
+    "max_degrees": 0.004109028603695037
+  },
+  {
+    "name": "Chest Body Lip Rivet 1 0",
+    "max_degrees": 0.004046739202012308
+  },
+  {
+    "name": "Chest Handle Mount Rivet 1 -1",
+    "max_degrees": 0.00402292724538511
+  },
+  {
+    "name": "Chest Rail Rivet 1 2",
+    "max_degrees": 0.004010528435188314
+  },
+  {
+    "name": "Chest Handle Mount Rivet -1 1",
+    "max_degrees": 0.0037917275711365933
+  },
+  {
+    "name": "Chest Rail Rivet 1 3",
+    "max_degrees": 0.0028165902013331887
+  },
+  {
+    "name": "Chest Rail Rivet 1 1",
+    "max_degrees": 0.0026173677084385103
+  },
+  {
+    "name": "Chest Rail Rivet 1 4",
+    "max_degrees": 0.002537642068311274
+  },
+  {
+    "name": "Chest Rail Rivet -1 0",
+    "max_degrees": 0.0024416379890400924
+  },
+  {
+    "name": "Chest Rail Rivet -1 4",
+    "max_degrees": 0.002370054113191252
+  },
+  {
+    "name": "Chest Hoop Rivet 1 0",
+    "max_degrees": 0.002319455053185354
+  },
+  {
+    "name": "Chest Hoop Rivet 2 3",
+    "max_degrees": 0.002262077424720713
+  },
+  {
+    "name": "Chest Rail Rivet 1 0",
+    "max_degrees": 0.002225280060447101
+  },
+  {
+    "name": "Chest Rail Rivet -1 1",
+    "max_degrees": 0.002217673389591809
+  },
+  {
+    "name": "Chest Hoop Rivet 1 1",
+    "max_degrees": 0.001400330113940337
+  },
+  {
+    "name": "Chest Hoop Rivet 1 3",
+    "max_degrees": 0.0013873241173700118
+  },
+  {
+    "name": "Chest Handle Mount 1",
+    "max_degrees": 0.0013414520221148492
+  },
+  {
+    "name": "Chest Lid Hoop 2",
+    "max_degrees": 0.0013063690970687297
+  },
+  {
+    "name": "Chest Rail Rivet -1 3",
+    "max_degrees": 0.0011967945481893786
+  },
+  {
+    "name": "Chest Hoop Rivet 1 4",
+    "max_degrees": 0.0011859834839484528
+  },
+  {
+    "name": "Chest Handle Mount -1",
+    "max_degrees": 0.0011798731692697169
+  },
+  {
+    "name": "Chest Hoop Rivet 2 0",
+    "max_degrees": 0.0010696373230648765
+  },
+  {
+    "name": "Chest Hoop Rivet 2 4",
+    "max_degrees": 0.0009269851050267349
+  },
+  {
+    "name": "Chest Hoop Rivet 2 1",
+    "max_degrees": 0.0008779192955680351
+  },
+  {
+    "name": "Chest Hoop Rivet 1 2",
+    "max_degrees": 0.000841024246787906
+  },
+  {
+    "name": "Chest Lid Hoop 3",
+    "max_degrees": 0.0006492778777079156
+  },
+  {
+    "name": "Chest Hoop Rivet 2 5",
+    "max_degrees": 0.0005839337402429792
+  },
+  {
+    "name": "Chest Hoop Rivet 2 2",
+    "max_degrees": 0.0004879366807785623
+  },
+  {
+    "name": "Chest Hoop Rivet 1 5",
+    "max_degrees": 0.00040109282731662355
+  },
+  {
+    "name": "Chest Crown Fastener Mass 2",
+    "max_degrees": 0.0003913711804459212
+  },
+  {
+    "name": "Chest Crown Fastener Mass 3",
+    "max_degrees": 0.0002812429399799899
+  },
+  {
+    "name": "Chest Barrel Lid Envelope",
+    "max_degrees": 1.7075472925031877e-06
+  },
+  {
+    "name": "Chest Broad End Arch -1",
+    "max_degrees": 1.7075472925031877e-06
+  },
+  {
+    "name": "Chest Broad End Arch 1",
+    "max_degrees": 1.7075472925031877e-06
+  },
+  {
+    "name": "Chest Upper Lid Rim",
+    "max_degrees": 1.7075472925031877e-06
+  },
+  {
+    "name": "Chest Lid Corner Armor -1 -1",
+    "max_degrees": 1.7075472925031877e-06
+  },
+  {
+    "name": "Chest Angular Boot -1 1",
+    "max_degrees": 1.7075472925031877e-06
+  },
+  {
+    "name": "Chest Angular Boot 1 -1",
+    "max_degrees": 1.7075472925031877e-06
+  },
+  {
+    "name": "Chest Lid Corner Armor 1 1",
+    "max_degrees": 1.7075472925031877e-06
+  },
+  {
+    "name": "Chest Central Lower Cuff",
+    "max_degrees": 1.7075472925031877e-06
+  },
+  {
+    "name": "Chest Hasp Mount",
+    "max_degrees": 1.7075472925031877e-06
+  },
+  {
+    "name": "Chest Front Hasp Barrel",
+    "max_degrees": 1.7075472925031877e-06
+  },
+  {
+    "name": "Chest Shield Lock Plate With Bore",
+    "max_degrees": 1.7075472925031877e-06
+  },
+  {
+    "name": "Chest Curved Hasp Tongue",
+    "max_degrees": 1.7075472925031877e-06
+  },
+  {
+    "name": "Chest Rear Hinge Barrel -1",
+    "max_degrees": 1.7075472925031877e-06
+  },
+  {
+    "name": "Chest Rear Hinge Barrel 1",
+    "max_degrees": 1.7075472925031877e-06
+  },
+  {
+    "name": "Chest Body Corner Collar -1 -1",
+    "max_degrees": 1.7075472925031877e-06
+  },
+  {
+    "name": "Chest Body Corner Collar 1 1",
+    "max_degrees": 1.7075472925031877e-06
+  },
+  {
+    "name": "Chest Lock Backing With Bore",
+    "max_degrees": 1.7075472925031877e-06
+  },
+  {
+    "name": "Chest Hoop Rivet 3 0",
+    "max_degrees": 1.7075472925031877e-06
+  },
+  {
+    "name": "Chest Hoop Rivet 3 1",
+    "max_degrees": 1.7075472925031877e-06
+  },
+  {
+    "name": "Chest Boot End Rivet 1 -1",
+    "max_degrees": 1.7075472925031877e-06
+  },
+  {
+    "name": "Chest Lock Rivet 1",
+    "max_degrees": 1.7075472925031877e-06
+  },
+  {
+    "name": "Chest Corner Body Cuff End Rivet -1 -1",
+    "max_degrees": 1.7075472925031877e-06
+  },
+  {
+    "name": "Chest Corner Body Cuff Front Rivet -1 1",
+    "max_degrees": 1.7075472925031877e-06
+  },
+  {
+    "name": "Chest Corner Body Cuff End Rivet -1 1",
+    "max_degrees": 1.7075472925031877e-06
+  },
+  {
+    "name": "Chest End Arch Rivet 1 0",
+    "max_degrees": 1.7075472925031877e-06
+  },
+  {
+    "name": "Chest Corner Body Cuff Front Rivet 1 -1",
+    "max_degrees": 1.7075472925031877e-06
+  },
+  {
+    "name": "Chest Corner Body Cuff End Rivet 1 -1",
+    "max_degrees": 1.7075472925031877e-06
+  },
+  {
+    "name": "Chest Corner Body Cuff End Rivet 1 1",
+    "max_degrees": 1.7075472925031877e-06
+  },
+  {
+    "name": "Chest Hasp Pivot Dome -1",
+    "max_degrees": 1.7075472925031877e-06
+  },
+  {
+    "name": "Chest End Arch Crown Tab -1",
+    "max_degrees": 1.7075472925031877e-06
+  },
+  {
+    "name": "Chest End Crown Fastener -1",
+    "max_degrees": 1.7075472925031877e-06
+  },
+  {
+    "name": "Chest Hasp Pivot Dome 1",
+    "max_degrees": 1.7075472925031877e-06
+  },
+  {
+    "name": "Chest Hasp Mount Fastener 1",
+    "max_degrees": 1.7075472925031877e-06
+  },
+  {
+    "name": "Chest End Arch Crown Tab 1",
+    "max_degrees": 1.7075472925031877e-06
+  },
+  {
+    "name": "Chest End Crown Fastener 1",
+    "max_degrees": 1.7075472925031877e-06
+  },
+  {
+    "name": "Chest Boot End Rivet -1 -1 Seat",
+    "max_degrees": 1.7075472925031877e-06
+  },
+  {
+    "name": "Chest Boot End Rivet -1 1 Seat",
+    "max_degrees": 1.7075472925031877e-06
+  },
+  {
+    "name": "Chest Upper Corner Front Rivet 1 -1 Seat",
+    "max_degrees": 1.7075472925031877e-06
+  },
+  {
+    "name": "Chest Boot End Rivet 1 -1 Seat",
+    "max_degrees": 1.7075472925031877e-06
+  },
+  {
+    "name": "Chest Boot Front Rivet 1 1 Seat",
+    "max_degrees": 1.7075472925031877e-06
+  },
+  {
+    "name": "Chest Boot End Rivet 1 1 Seat",
+    "max_degrees": 1.7075472925031877e-06
+  },
+  {
+    "name": "Chest Fixed Front Hinge Knuckle -1",
+    "max_degrees": 1.7075472925031877e-06
+  },
+  {
+    "name": "Chest Fixed Front Hinge Knuckle 1",
+    "max_degrees": 1.7075472925031877e-06
+  },
+  {
+    "name": "Chest Case Back With Key Bore",
+    "max_degrees": 1.7075472925031877e-06
+  },
+  {
+    "name": "Chest Hollow Lock Case Walls",
+    "max_degrees": 1.7075472925031877e-06
+  },
+  {
+    "name": "Chest Key Driven Slider",
+    "max_degrees": 1.7075472925031877e-06
+  },
+  {
+    "name": "Chest Compliant Catch Leaf",
+    "max_degrees": 1.7075472925031877e-06
+  },
+  {
+    "name": "Chest Body Envelope",
+    "max_degrees": 1.2074182697257333e-06
+  },
+  {
+    "name": "Chest Body Upper Rim",
+    "max_degrees": 1.2074182697257333e-06
+  },
+  {
+    "name": "Chest Lower Rim",
+    "max_degrees": 1.2074182697257333e-06
+  },
+  {
+    "name": "Chest Corner Upright -1 -1",
+    "max_degrees": 1.2074182697257333e-06
+  },
+  {
+    "name": "Chest Angular Boot -1 -1",
+    "max_degrees": 1.2074182697257333e-06
+  },
+  {
+    "name": "Chest Corner Upright -1 1",
+    "max_degrees": 1.2074182697257333e-06
+  },
+  {
+    "name": "Chest Lid Corner Armor -1 1",
+    "max_degrees": 1.2074182697257333e-06
+  },
+  {
+    "name": "Chest Corner Upright 1 -1",
+    "max_degrees": 1.2074182697257333e-06
+  },
+  {
+    "name": "Chest Lid Corner Armor 1 -1",
+    "max_degrees": 1.2074182697257333e-06
+  },
+  {
+    "name": "Chest Corner Upright 1 1",
+    "max_degrees": 1.2074182697257333e-06
+  },
+  {
+    "name": "Chest Angular Boot 1 1",
+    "max_degrees": 1.2074182697257333e-06
+  },
+  {
+    "name": "Chest Central Lock Strap",
+    "max_degrees": 1.2074182697257333e-06
+  },
+  {
+    "name": "Chest Crown Fastener Mass 1",
+    "max_degrees": 1.2074182697257333e-06
+  },
+  {
+    "name": "Chest Crown Fastener Mass 4",
+    "max_degrees": 1.2074182697257333e-06
+  },
+  {
+    "name": "Chest Rear Hinge Lower -1",
+    "max_degrees": 1.2074182697257333e-06
+  },
+  {
+    "name": "Chest Rear Hinge Upper -1",
+    "max_degrees": 1.2074182697257333e-06
+  },
+  {
+    "name": "Chest Rear Hinge Lower 1",
+    "max_degrees": 1.2074182697257333e-06
+  },
+  {
+    "name": "Chest Rear Hinge Upper 1",
+    "max_degrees": 1.2074182697257333e-06
+  },
+  {
+    "name": "Chest Body Corner Collar -1 1",
+    "max_degrees": 1.2074182697257333e-06
+  },
+  {
+    "name": "Chest Body Corner Collar 1 -1",
+    "max_degrees": 1.2074182697257333e-06
+  },
+  {
+    "name": "Chest Lock Border With Bore",
+    "max_degrees": 1.2074182697257333e-06
+  },
+  {
+    "name": "Chest Hoop Rivet 0 0",
+    "max_degrees": 1.2074182697257333e-06
+  },
+  {
+    "name": "Chest Hoop Rivet 0 1",
+    "max_degrees": 1.2074182697257333e-06
+  },
+  {
+    "name": "Chest Upper Corner Front Rivet -1 -1",
+    "max_degrees": 1.2074182697257333e-06
+  },
+  {
+    "name": "Chest Upper Corner End Rivet -1 -1",
+    "max_degrees": 1.2074182697257333e-06
+  },
+  {
+    "name": "Chest Boot Front Rivet -1 -1",
+    "max_degrees": 1.2074182697257333e-06
+  },
+  {
+    "name": "Chest Boot End Rivet -1 -1",
+    "max_degrees": 1.2074182697257333e-06
+  },
+  {
+    "name": "Chest Upper Corner Front Rivet -1 1",
+    "max_degrees": 1.2074182697257333e-06
+  },
+  {
+    "name": "Chest Upper Corner End Rivet -1 1",
+    "max_degrees": 1.2074182697257333e-06
+  },
+  {
+    "name": "Chest Boot Front Rivet -1 1",
+    "max_degrees": 1.2074182697257333e-06
+  },
+  {
+    "name": "Chest Boot End Rivet -1 1",
+    "max_degrees": 1.2074182697257333e-06
+  },
+  {
+    "name": "Chest Upper Corner Front Rivet 1 -1",
+    "max_degrees": 1.2074182697257333e-06
+  },
+  {
+    "name": "Chest Upper Corner End Rivet 1 -1",
+    "max_degrees": 1.2074182697257333e-06
+  },
+  {
+    "name": "Chest Boot Front Rivet 1 -1",
+    "max_degrees": 1.2074182697257333e-06
+  },
+  {
+    "name": "Chest Upper Corner Front Rivet 1 1",
+    "max_degrees": 1.2074182697257333e-06
+  },
+  {
+    "name": "Chest Upper Corner End Rivet 1 1",
+    "max_degrees": 1.2074182697257333e-06
+  },
+  {
+    "name": "Chest Boot Front Rivet 1 1",
+    "max_degrees": 1.2074182697257333e-06
+  },
+  {
+    "name": "Chest Boot End Rivet 1 1",
+    "max_degrees": 1.2074182697257333e-06
+  },
+  {
+    "name": "Chest Lock Rivet 0",
+    "max_degrees": 1.2074182697257333e-06
+  },
+  {
+    "name": "Chest Lock Rivet 2",
+    "max_degrees": 1.2074182697257333e-06
+  },
+  {
+    "name": "Chest Lock Rivet 3",
+    "max_degrees": 1.2074182697257333e-06
+  },
+  {
+    "name": "Chest Lock Rivet 4",
+    "max_degrees": 1.2074182697257333e-06
+  },
+  {
+    "name": "Chest Lock Rivet 5",
+    "max_degrees": 1.2074182697257333e-06
+  },
+  {
+    "name": "Chest Lock Rivet 6",
+    "max_degrees": 1.2074182697257333e-06
+  },
+  {
+    "name": "Chest Lower Strap Rivet",
+    "max_degrees": 1.2074182697257333e-06
+  },
+  {
+    "name": "Chest Upright Diamond -1 -1",
+    "max_degrees": 1.2074182697257333e-06
+  },
+  {
+    "name": "Chest Upright Diamond -1 1",
+    "max_degrees": 1.2074182697257333e-06
+  },
+  {
+    "name": "Chest Upright Diamond 1 -1",
+    "max_degrees": 1.2074182697257333e-06
+  },
+  {
+    "name": "Chest Upright Diamond 1 1",
+    "max_degrees": 1.2074182697257333e-06
+  },
+  {
+    "name": "Chest End Arch Rivet -1 0",
+    "max_degrees": 1.2074182697257333e-06
+  },
+  {
+    "name": "Chest End Arch Rivet -1 1",
+    "max_degrees": 1.2074182697257333e-06
+  },
+  {
+    "name": "Chest Corner Body Cuff Front Rivet -1 -1",
+    "max_degrees": 1.2074182697257333e-06
+  },
+  {
+    "name": "Chest End Arch Rivet 1 1",
+    "max_degrees": 1.2074182697257333e-06
+  },
+  {
+    "name": "Chest Corner Body Cuff Front Rivet 1 1",
+    "max_degrees": 1.2074182697257333e-06
+  },
+  {
+    "name": "Chest Hasp Mount Fastener -1",
+    "max_degrees": 1.2074182697257333e-06
+  },
+  {
+    "name": "Chest Upper Corner Front Rivet -1 -1 Seat",
+    "max_degrees": 1.2074182697257333e-06
+  },
+  {
+    "name": "Chest Upper Corner End Rivet -1 -1 Seat",
+    "max_degrees": 1.2074182697257333e-06
+  },
+  {
+    "name": "Chest Boot Front Rivet -1 -1 Seat",
+    "max_degrees": 1.2074182697257333e-06
+  },
+  {
+    "name": "Chest Upper Corner Front Rivet -1 1 Seat",
+    "max_degrees": 1.2074182697257333e-06
+  },
+  {
+    "name": "Chest Upper Corner End Rivet -1 1 Seat",
+    "max_degrees": 1.2074182697257333e-06
+  },
+  {
+    "name": "Chest Boot Front Rivet -1 1 Seat",
+    "max_degrees": 1.2074182697257333e-06
+  },
+  {
+    "name": "Chest Upper Corner End Rivet 1 -1 Seat",
+    "max_degrees": 1.2074182697257333e-06
+  },
+  {
+    "name": "Chest Boot Front Rivet 1 -1 Seat",
+    "max_degrees": 1.2074182697257333e-06
+  },
+  {
+    "name": "Chest Upper Corner Front Rivet 1 1 Seat",
+    "max_degrees": 1.2074182697257333e-06
+  },
+  {
+    "name": "Chest Upper Corner End Rivet 1 1 Seat",
+    "max_degrees": 1.2074182697257333e-06
+  },
+  {
+    "name": "Chest Rail Rivet -1 2",
+    "max_degrees": 1.2074182697257333e-06
+  },
+  {
+    "name": "Chest Front Hinge Pin",
+    "max_degrees": 1.2074182697257333e-06
+  },
+  {
+    "name": "Chest Fixed Leaf Clamp",
+    "max_degrees": 1.2074182697257333e-06
+  }
+]

@@ -1,0 +1,15 @@
+{
+  "candidate": "14_edge_review",
+  "environment": "edge_floor",
+  "samples": 128,
+  "exposure_unchanged": true,
+  "baseline": "11_restored_pigment/master.blend",
+  "earlier_complete_baseline": "baseline.blend",
+  "accepted": "Shallow marking relief direction correction; narrow warm upper and lower bevel reflections in isolated review scene; environmental strength 0.35; level lower emitter prevents floor and prop height intrusion",
+  "rejected": "Weak facet exposure remap, broad strong reflection sources that washed out the face",
+  "owner_approval": "Pending",
+  "aov_verified": true,
+  "pigment_read_corrected": true,
+  "shader_change_since_resumption": "Only Independent shallow fractured scale markings invert property",
+  "geometry_unchanged_since_resumption": true
+}

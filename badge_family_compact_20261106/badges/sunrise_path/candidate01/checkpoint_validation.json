@@ -1,0 +1,44 @@
+{
+  "complete_mesh_count": 5,
+  "triangles": 36314,
+  "all_used_images_packed_and_match_usdz": true,
+  "images": [
+    {
+      "name": "Rim_glint_reference_roughness.png.003",
+      "sha256": "a060290fd7cfd42597e0be088a7577b29ea5147a3e9ef9b81b67e652f3a7ece1"
+    },
+    {
+      "name": "Rim_brushed_reference_color.png.003",
+      "sha256": "785b8c8c0442241d3cda6b2a30190d1d258abccba33412d76613fa7391bff0f9"
+    },
+    {
+      "name": "background_color.png",
+      "sha256": "45096ba1f0651193d1d6525a2bdf069597754792dfebabdd7bab8c297ef878f8"
+    },
+    {
+      "name": "bronze_color.png",
+      "sha256": "b21242f87b5aa9a047aac95db1a9b89b92cf8f57cc3a9f1a026be45b89ae77ed"
+    },
+    {
+      "name": "USDZ_Inset_normal.png.003",
+      "sha256": "9f5707f3a260602318afc7bd4190435bedb8ff03ccc6a453fcdb8b4eb0d59d1e"
+    },
+    {
+      "name": "background_emission.png",
+      "sha256": "c794a31995aa25614f4e330361da4a7508ed08676f17de3c82b89376ee5aef23"
+    },
+    {
+      "name": "Rim_brushed_reference_roughness.png.003",
+      "sha256": "2dd0421486bac68bd1dc669b879074954dd7fa21e377f19c6012d1bd510c0a54"
+    },
+    {
+      "name": "bronze_emission.png",
+      "sha256": "dccf80c20877cf4f32a7173c5fbbd2563d4db3de896888204922dd3751b6b5b9"
+    },
+    {
+      "name": "USDZ_Inset_base_color.png.003",
+      "sha256": "b7e5fc22746a7c0833dadd0995553cc5acb292d85627e218feaafa66019afcf4"
+    }
+  ],
+  "usdz_unchanged_sha256": "5dc5f2d7bbc5c130262308879b7f579edd4578b5abfc55093e4a596327292947"
+}

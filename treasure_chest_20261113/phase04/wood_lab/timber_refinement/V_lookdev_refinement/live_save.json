@@ -1,0 +1,16 @@
+{
+  "geometry_sha256": "10c4200651f28b39f08d9dcecdad279bdcf666912af33ebfff8d62242992f5b4",
+  "geometry_and_topology_not_edited": true,
+  "original_reference_object_retained": true,
+  "original_scene_light_data_independent": true,
+  "material": "Wood Lab V_lookdev_refinement",
+  "all_final_images_packed": true,
+  "previous_material_retained_in_file": true,
+  "layout_preserved": [
+    "PROPERTIES",
+    "OUTLINER",
+    "DOPESHEET_EDITOR",
+    "VIEW_3D",
+    "IMAGE_EDITOR"
+  ]
+}

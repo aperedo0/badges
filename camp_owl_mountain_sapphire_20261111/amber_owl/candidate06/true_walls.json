@@ -1,0 +1,125 @@
+{
+  "method": "Actual directed boundary edges, averaged along each real wall curve. No front face influence. Sharp corners retain outward normals.",
+  "parts": [
+    {
+      "piece": "blue_enamel_backplate",
+      "wall_triangles": 1634,
+      "inward_normals": 0,
+      "sharp_corner_normals": 0
+    },
+    {
+      "piece": "upper_star_arc",
+      "wall_triangles": 164,
+      "inward_normals": 0,
+      "sharp_corner_normals": 0
+    },
+    {
+      "piece": "head_amber_disc",
+      "wall_triangles": 2676,
+      "inward_normals": 0,
+      "sharp_corner_normals": 0
+    },
+    {
+      "piece": "left_amber_wing",
+      "wall_triangles": 222,
+      "inward_normals": 0,
+      "sharp_corner_normals": 0
+    },
+    {
+      "piece": "right_amber_wing",
+      "wall_triangles": 222,
+      "inward_normals": 0,
+      "sharp_corner_normals": 0
+    },
+    {
+      "piece": "outer_left_feather",
+      "wall_triangles": 166,
+      "inward_normals": 0,
+      "sharp_corner_normals": 0
+    },
+    {
+      "piece": "outer_right_feather",
+      "wall_triangles": 166,
+      "inward_normals": 0,
+      "sharp_corner_normals": 0
+    },
+    {
+      "piece": "inner_left_feather",
+      "wall_triangles": 156,
+      "inward_normals": 0,
+      "sharp_corner_normals": 0
+    },
+    {
+      "piece": "inner_right_feather",
+      "wall_triangles": 156,
+      "inward_normals": 0,
+      "sharp_corner_normals": 0
+    },
+    {
+      "piece": "central_cream_breast",
+      "wall_triangles": 206,
+      "inward_normals": 0,
+      "sharp_corner_normals": 0
+    },
+    {
+      "piece": "cream_face_mask",
+      "wall_triangles": 996,
+      "inward_normals": 0,
+      "sharp_corner_normals": 0
+    },
+    {
+      "piece": "left_amber_iris",
+      "wall_triangles": 564,
+      "inward_normals": 0,
+      "sharp_corner_normals": 0
+    },
+    {
+      "piece": "left_dark_pupil",
+      "wall_triangles": 270,
+      "inward_normals": 0,
+      "sharp_corner_normals": 0
+    },
+    {
+      "piece": "right_amber_iris",
+      "wall_triangles": 564,
+      "inward_normals": 0,
+      "sharp_corner_normals": 0
+    },
+    {
+      "piece": "right_dark_pupil",
+      "wall_triangles": 270,
+      "inward_normals": 0,
+      "sharp_corner_normals": 0
+    },
+    {
+      "piece": "left_cream_brow_blade",
+      "wall_triangles": 214,
+      "inward_normals": 0,
+      "sharp_corner_normals": 0
+    },
+    {
+      "piece": "right_cream_brow_blade",
+      "wall_triangles": 208,
+      "inward_normals": 0,
+      "sharp_corner_normals": 0
+    },
+    {
+      "piece": "central_gold_beak",
+      "wall_triangles": 92,
+      "inward_normals": 0,
+      "sharp_corner_normals": 0
+    },
+    {
+      "piece": "top_four_point_star",
+      "wall_triangles": 48,
+      "inward_normals": 0,
+      "sharp_corner_normals": 0
+    },
+    {
+      "piece": "outer_gold_setting",
+      "wall_triangles": 640,
+      "inward_normals": 0,
+      "sharp_corner_normals": 0
+    }
+  ]
+}

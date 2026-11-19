@@ -1,0 +1,13 @@
+{
+  "source": "candidate18",
+  "geometry_and_material_textures_byte_identical": true,
+  "old_exposure": 0.32,
+  "new_exposure": 0.43421156281827067,
+  "actual_native_measurement": "/Users/antonioperedo/Desktop/badges/royal_heart_compass_20261106/ruby_heart/candidate18/review/exposure_diagnostic/measurement.json",
+  "no_appearance_map_created": true,
+  "only_rose_profile_changed": true,
+  "studio_and_other_profiles_unchanged": true,
+  "custom_metal_shader_unchanged": true,
+  "private_swift_sha256": "16cb44bfa3784ca49b51684ef537de859c6f6344c58c18ffe0112eebeee4ee2c",
+  "actual_native_review_required": true
+}

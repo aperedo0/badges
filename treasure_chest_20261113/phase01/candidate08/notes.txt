@@ -1,0 +1,2 @@
+Changed the failing grip and lock construction after independent method review.
+Handle face cuts preserve its contours, lock projection is halved with aligned bores and unchanged domes, hinge collars are distinct, lower foot corners are locally clipped and seats are fine.

@@ -1,0 +1,107 @@
+{
+  "ruby_heart": {
+    "meshes": 3,
+    "optical_meshes": 2,
+    "triangles": 12328,
+    "bytes": 361979,
+    "sha256": "ea35fa9e9c8afd968fbdf040690b822a28f934b2bf6c06a0ad76a24e6227cd4c",
+    "bounds": [
+      [
+        -2.8062212467193604,
+        -2.4549999237060547,
+        -0.7584571838378906
+      ],
+      [
+        2.8062212467193604,
+        2.9749999046325684,
+        0.7584571838378906
+      ]
+    ],
+    "all_runtime_gem_meshes_preserved": true,
+    "app_contract_passed": true
+  },
+  "amethyst_crown": {
+    "meshes": 37,
+    "optical_meshes": 32,
+    "triangles": 225992,
+    "bytes": 6667511,
+    "sha256": "99f05d512ff48427f9b61e6f817490d0cde6454ad917cff0f3b4c872fd4e02be",
+    "bounds": [
+      [
+        -3.174999952316284,
+        -2.4549999237060547,
+        -2.9087891578674316
+      ],
+      [
+        3.174999952316284,
+        1.8913092613220215,
+        2.9087891578674316
+      ]
+    ],
+    "all_runtime_gem_meshes_preserved": true,
+    "app_contract_passed": true
+  },
+  "ruby_crown": {
+    "meshes": 132,
+    "optical_meshes": 128,
+    "triangles": 277688,
+    "bytes": 6435781,
+    "sha256": "3cab34422062debdee0c1be7864b1021abbbffe30c43d5f933bccb0d73824aed",
+    "bounds": [
+      [
+        -3.174999952316284,
+        -2.4549999237060547,
+        -2.9118967056274414
+      ],
+      [
+        3.174999952316284,
+        2.3840227127075195,
+        2.9118967056274414
+      ]
+    ],
+    "all_runtime_gem_meshes_preserved": true,
+    "app_contract_passed": true
+  },
+  "emerald_crown": {
+    "meshes": 102,
+    "optical_meshes": 98,
+    "triangles": 185460,
+    "bytes": 4780423,
+    "sha256": "fa0c08b21cb2cbaf22a86369103f9186add154e7b078c26d1504b9f3d459912f",
+    "bounds": [
+      [
+        -3.174999952316284,
+        -2.4549999237060547,
+        -2.9112212657928467
+      ],
+      [
+        3.174999952316284,
+        2.072174549102783,
+        2.9112212657928467
+      ]
+    ],
+    "all_runtime_gem_meshes_preserved": true,
+    "app_contract_passed": true
+  },
+  "ocean_navigator": {
+    "meshes": 13,
+    "optical_meshes": 10,
+    "triangles": 283708,
+    "bytes": 4983133,
+    "sha256": "0584c9c5c60ebee4e59cff7cc6c614722e56a4b625b9a3532e84c5f019418324",
+    "bounds": [
+      [
+        -2.60461688041687,
+        -2.4549999237060547,
+        -0.5176118612289429
+      ],
+      [
+        2.60461688041687,
+        2.9749999046325684,
+        0.5176118612289429
+      ]
+    ],
+    "all_runtime_gem_meshes_preserved": true,
+    "app_contract_passed": true
+  }
+}

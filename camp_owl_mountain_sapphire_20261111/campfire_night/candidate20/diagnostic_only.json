@@ -1,0 +1,7 @@
+{
+  "accepted": false,
+  "source": "candidate19",
+  "purpose": "Direct material branch test after actual USDZ ray intersections proved a valid unobstructed red enamel front at each dark pixel",
+  "only_change": "Red enamel metallic0 instead of1. Same geometry, normals, constant image, UV and roughness. No shared stage or pipeline changes.",
+  "app_known_behavior": "Existing image pipeline documents stray black RealityKit point light pixels. This tests whether the exact metallic branch is responsible, without changing that pipeline."
+}

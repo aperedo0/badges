@@ -1,0 +1,45 @@
+[
+  {
+    "status": "active",
+    "phase": "work",
+    "work_end": 1200,
+    "overall": null,
+    "expected": true,
+    "actual": true
+  },
+  {
+    "status": "active",
+    "phase": "work",
+    "work_end": 1100,
+    "overall": null,
+    "expected": false,
+    "actual": false
+  },
+  {
+    "status": "paused",
+    "phase": "work",
+    "work_end": 1300,
+    "overall": null,
+    "expected": false,
+    "actual": false
+  },
+  {
+    "status": "active",
+    "phase": "break",
+    "work_end": 1300,
+    "overall": null,
+    "expected": false,
+    "actual": false
+  },
+  {
+    "status": "active",
+    "phase": "work",
+    "work_end": 1300,
+    "overall": 1090,
+    "expected": false,
+    "actual": false
+  },
+  {
+    "slower_previous_frame_budget_rejected": true
+  }
+]

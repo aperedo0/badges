@@ -1,0 +1,79 @@
+{
+  "version": 1,
+  "thread_id": "01a16b8e-9f81-76d1-8bd7-d0a939464547",
+  "workspace": "/Users/antonioperedo/Desktop/badges",
+  "status": "paused",
+  "phase": "work",
+  "block": 15,
+  "started_epoch": 1794026623.244332,
+  "deadline_epoch": null,
+  "work_until_epoch": null,
+  "break_until_epoch": null,
+  "busy_until_epoch": 0,
+  "heartbeat_epoch": 1794115499.767081,
+  "checkpoint_seq": 136,
+  "active_badge": "ruby_heart",
+  "next_action": "Resumed from saved135 after verifying no other worker. Heart25 geometry and clear runtime preserved. Diagnose failed reference crown facet reconstruction numerically before any new asset. Work only Ruby Heart; crowns held, Ocean14 preserved.",
+  "badges": {
+    "ruby_heart": {
+      "status": "working",
+      "blend": "/Users/antonioperedo/Desktop/badges/royal_heart_compass_20261106/ruby_heart/candidate25/source/ruby_heart_compact.blend",
+      "candidate": "/Users/antonioperedo/Desktop/badges/royal_heart_compass_20261106/ruby_heart/candidate25",
+      "reference": "/Users/antonioperedo/Desktop/badges/royal_heart_compass_20261106/ruby_heart/reference.png"
+    },
+    "amethyst_crown": {
+      "status": "paused",
+      "blend": "/Users/antonioperedo/Desktop/badges/royal_heart_compass_20261106/amethyst_crown/candidate22/source/amethyst_crown_compact.blend",
+      "candidate": "/Users/antonioperedo/Desktop/badges/royal_heart_compass_20261106/amethyst_crown/candidate22",
+      "reference": "/Users/antonioperedo/Desktop/badges/royal_heart_compass_20261106/amethyst_crown/reference.png",
+      "owner_hold_reason": "Owner requested work on everything except crowns at the moment",
+      "owner_hold_epoch": 1794097061.663987
+    },
+    "ruby_crown": {
+      "status": "paused",
+      "blend": "/Users/antonioperedo/Desktop/badges/royal_heart_compass_20261106/ruby_crown/candidate15/source/ruby_crown.blend",
+      "candidate": "/Users/antonioperedo/Desktop/badges/royal_heart_compass_20261106/ruby_crown/candidate15",
+      "reference": "/Users/antonioperedo/Desktop/badges/royal_heart_compass_20261106/ruby_crown/reference.png",
+      "owner_hold_reason": "Owner requested work on everything except crowns at the moment",
+      "owner_hold_epoch": 1794097061.663989
+    },
+    "emerald_crown": {
+      "status": "paused",
+      "blend": "/Users/antonioperedo/Desktop/badges/royal_heart_compass_20261106/emerald_crown/candidate15/source/emerald_crown_compact.blend",
+      "candidate": "/Users/antonioperedo/Desktop/badges/royal_heart_compass_20261106/emerald_crown/candidate15",
+      "reference": "/Users/antonioperedo/Desktop/badges/royal_heart_compass_20261106/emerald_crown/reference.png",
+      "owner_hold_reason": "Owner requested work on everything except crowns at the moment",
+      "owner_hold_epoch": 1794097061.663989
+    },
+    "ocean_navigator": {
+      "status": "working",
+      "blend": "/Users/antonioperedo/Desktop/badges/royal_heart_compass_20261106/ocean_navigator/candidate14/source/ocean_navigator.blend",
+      "candidate": "/Users/antonioperedo/Desktop/badges/royal_heart_compass_20261106/ocean_navigator/candidate14",
+      "reference": "/Users/antonioperedo/Desktop/badges/royal_heart_compass_20261106/ocean_navigator/reference.png"
+    }
+  },
+  "owner_authorized_resume_epoch": 1794030000.0,
+  "owner_authorized_resume_local": "2026-11-06 21:40 America/Los_Angeles",
+  "resumed_at_epoch": 1794030000.008405,
+  "owner_scheduled_authorization_consumed": true,
+  "last_queue_basis": [
+    "work",
+    15,
+    135,
+    1794115386851460531
+  ],
+  "last_queue_epoch": 1794115385.7137952,
+  "had_outage": false,
+  "pacing_mode": "continuous",
+  "owner_pacing_instruction": "No need to pause anymore, just keep going",
+  "owner_pacing_changed_epoch": 1794075765.8960588,
+  "excluded_badges": [
+    "amethyst_crown",
+    "ruby_crown",
+    "emerald_crown"
+  ],
+  "owner_current_scope": [
+    "ruby_heart",
+    "ocean_navigator"
+  ]
+}

@@ -1,0 +1,490 @@
+{
+ "units": {
+  "S": 0.004831560283687943,
+  "axis": 628,
+  "top": 70,
+  "width_px": 1254,
+  "height_px": 1254
+ },
+ "box": [
+  0,
+  0,
+  1254,
+  1254
+ ],
+ "parts": [
+  {
+   "name": "blue_glass_sky",
+   "base": 0.07,
+   "materials": [
+    "Enamel",
+    "Gold",
+    "Side"
+   ],
+   "triangles": 16756,
+   "front": 3038
+  },
+  {
+   "name": "sun_ray_0",
+   "base": 0.11904033217808768,
+   "materials": [
+    "DarkMetal",
+    "Enamel",
+    "Gold",
+    "Side"
+   ],
+   "triangles": 288,
+   "front": 66
+  },
+  {
+   "name": "sun_ray_1",
+   "base": 0.11905066064993923,
+   "materials": [
+    "DarkMetal",
+    "Enamel",
+    "Gold",
+    "Side"
+   ],
+   "triangles": 272,
+   "front": 82
+  },
+  {
+   "name": "sun_ray_2",
+   "base": 0.11905416046288064,
+   "materials": [
+    "DarkMetal",
+    "Enamel",
+    "Gold",
+    "Side"
+   ],
+   "triangles": 264,
+   "front": 81
+  },
+  {
+   "name": "sun_ray_3",
+   "base": 0.11930503903899732,
+   "materials": [
+    "DarkMetal",
+    "Enamel",
+    "Gold",
+    "Side"
+   ],
+   "triangles": 836,
+   "front": 133
+  },
+  {
+   "name": "sun_ray_4",
+   "base": 0.1192863006790413,
+   "materials": [
+    "DarkMetal",
+    "Enamel",
+    "Gold",
+    "Side"
+   ],
+   "triangles": 288,
+   "front": 81
+  },
+  {
+   "name": "round_amber_sun",
+   "base": 0.17624654926838357,
+   "materials": [
+    "DarkMetal",
+    "Enamel",
+    "Gold",
+    "Side"
+   ],
+   "triangles": 3032,
+   "front": 1078
+  },
+  {
+   "name": "highest_snow_peak",
+   "base": 0.23404930858139428,
+   "materials": [
+    "DarkMetal",
+    "Enamel",
+    "Gold",
+    "Side"
+   ],
+   "triangles": 3036,
+   "front": 1257
+  },
+  {
+   "name": "left_foreground_peak",
+   "base": 0.3016404902526046,
+   "materials": [
+    "DarkMetal",
+    "Enamel",
+    "Gold",
+    "Side"
+   ],
+   "triangles": 1748,
+   "front": 604
+  },
+  {
+   "name": "right_foreground_peak",
+   "base": 0.30345910934175235,
+   "materials": [
+    "DarkMetal",
+    "Enamel",
+    "Gold",
+    "Side"
+   ],
+   "triangles": 1576,
+   "front": 545
+  },
+  {
+   "name": "central_foreground_peak",
+   "base": 0.36230127242404164,
+   "materials": [
+    "DarkMetal",
+    "Enamel",
+    "Gold",
+    "Side"
+   ],
+   "triangles": 2536,
+   "front": 911
+  },
+  {
+   "name": "left_cloud",
+   "base": 0.17520759082116966,
+   "materials": [
+    "DarkMetal",
+    "Enamel",
+    "Gold",
+    "Side"
+   ],
+   "triangles": 2620,
+   "front": 752
+  },
+  {
+   "name": "right_cloud",
+   "base": 0.3626286117508592,
+   "materials": [
+    "DarkMetal",
+    "Enamel",
+    "Gold",
+    "Side"
+   ],
+   "triangles": 2632,
+   "front": 758
+  },
+  {
+   "name": "far_left_hills",
+   "base": 0.4206758414121789,
+   "materials": [
+    "DarkMetal",
+    "Enamel",
+    "Gold",
+    "Side"
+   ],
+   "triangles": 904,
+   "front": 251
+  },
+  {
+   "name": "far_right_hills",
+   "base": 0.42562120532126313,
+   "materials": [
+    "DarkMetal",
+    "Enamel",
+    "Gold",
+    "Side"
+   ],
+   "triangles": 1016,
+   "front": 283
+  },
+  {
+   "name": "lime_rear_meadow",
+   "base": 0.48387535816316735,
+   "materials": [
+    "DarkMetal",
+    "Enamel",
+    "Gold",
+    "Side"
+   ],
+   "triangles": 844,
+   "front": 320
+  },
+  {
+   "name": "left_emerald_meadow",
+   "base": 0.5058004399345635,
+   "materials": [
+    "DarkMetal",
+    "Enamel",
+    "Gold",
+    "Side"
+   ],
+   "triangles": 1192,
+   "front": 446
+  },
+  {
+   "name": "right_emerald_meadow",
+   "base": 0.5423451427827738,
+   "materials": [
+    "DarkMetal",
+    "Enamel",
+    "Gold",
+    "Side"
+   ],
+   "triangles": 1236,
+   "front": 459
+  },
+  {
+   "name": "left_lime_meadow",
+   "base": 0.5641354477686372,
+   "materials": [
+    "DarkMetal",
+    "Enamel",
+    "Gold",
+    "Side"
+   ],
+   "triangles": 928,
+   "front": 320
+  },
+  {
+   "name": "right_lime_meadow",
+   "base": 0.5998338861471123,
+   "materials": [
+    "DarkMetal",
+    "Enamel",
+    "Gold",
+    "Side"
+   ],
+   "triangles": 936,
+   "front": 321
+  },
+  {
+   "name": "left_laurel_branch",
+   "base": 0.5560445370864238,
+   "materials": [
+    "Gold",
+    "Side"
+   ],
+   "triangles": 812,
+   "front": 202
+  },
+  {
+   "name": "right_laurel_branch",
+   "base": 0.5903293024446418,
+   "materials": [
+    "Gold",
+    "Side"
+   ],
+   "triangles": 812,
+   "front": 202
+  },
+  {
+   "name": "left_laurel_leaf_0",
+   "base": 0.5952761389578717,
+   "materials": [
+    "DarkMetal",
+    "Enamel",
+    "Gold",
+    "Side"
+   ],
+   "triangles": 972,
+   "front": 294
+  },
+  {
+   "name": "right_laurel_leaf_0",
+   "base": 0.6294884944539217,
+   "materials": [
+    "DarkMetal",
+    "Enamel",
+    "Gold",
+    "Side"
+   ],
+   "triangles": 972,
+   "front": 294
+  },
+  {
+   "name": "left_laurel_leaf_1",
+   "base": 0.5955903317192194,
+   "materials": [
+    "DarkMetal",
+    "Enamel",
+    "Gold",
+    "Side"
+   ],
+   "triangles": 972,
+   "front": 291
+  },
+  {
+   "name": "right_laurel_leaf_1",
+   "base": 0.6298289190956956,
+   "materials": [
+    "DarkMetal",
+    "Enamel",
+    "Gold",
+    "Side"
+   ],
+   "triangles": 972,
+   "front": 291
+  },
+  {
+   "name": "left_laurel_leaf_2",
+   "base": 0.6183869021940248,
+   "materials": [
+    "DarkMetal",
+    "Enamel",
+    "Gold",
+    "Side"
+   ],
+   "triangles": 976,
+   "front": 296
+  },
+  {
+   "name": "right_laurel_leaf_2",
+   "base": 0.655451854422317,
+   "materials": [
+    "DarkMetal",
+    "Enamel",
+    "Gold",
+    "Side"
+   ],
+   "triangles": 976,
+   "front": 296
+  },
+  {
+   "name": "left_laurel_leaf_3",
+   "base": 0.5955253606787163,
+   "materials": [
+    "DarkMetal",
+    "Enamel",
+    "Gold",
+    "Side"
+   ],
+   "triangles": 956,
+   "front": 289
+  },
+  {
+   "name": "right_laurel_leaf_3",
+   "base": 0.6296839332729802,
+   "materials": [
+    "DarkMetal",
+    "Enamel",
+    "Gold",
+    "Side"
+   ],
+   "triangles": 956,
+   "front": 289
+  },
+  {
+   "name": "left_laurel_leaf_4",
+   "base": 0.5955574497061051,
+   "materials": [
+    "DarkMetal",
+    "Enamel",
+    "Gold",
+    "Side"
+   ],
+   "triangles": 960,
+   "front": 288
+  },
+  {
+   "name": "right_laurel_leaf_4",
+   "base": 0.6298409298704936,
+   "materials": [
+    "DarkMetal",
+    "Enamel",
+    "Gold",
+    "Side"
+   ],
+   "triangles": 960,
+   "front": 288
+  },
+  {
+   "name": "bottom_four_point_star",
+   "base": 0.09464089883030725,
+   "materials": [
+    "DarkMetal",
+    "Enamel",
+    "Gold",
+    "Side"
+   ],
+   "triangles": 760,
+   "front": 308
+  },
+  {
+   "name": "outer_gold_setting",
+   "base": 0.6702928875985931,
+   "materials": [
+    "Gold",
+    "Side"
+   ],
+   "triangles": 3588,
+   "front": 1089
+  }
+ ],
+ "order": [
+  "blue_glass_sky",
+  "sun_ray_0",
+  "sun_ray_1",
+  "sun_ray_2",
+  "sun_ray_3",
+  "sun_ray_4",
+  "round_amber_sun",
+  "highest_snow_peak",
+  "left_foreground_peak",
+  "right_foreground_peak",
+  "central_foreground_peak",
+  "left_cloud",
+  "right_cloud",
+  "far_left_hills",
+  "far_right_hills",
+  "lime_rear_meadow",
+  "left_emerald_meadow",
+  "right_emerald_meadow",
+  "left_lime_meadow",
+  "right_lime_meadow",
+  "left_laurel_branch",
+  "right_laurel_branch",
+  "left_laurel_leaf_0",
+  "right_laurel_leaf_0",
+  "left_laurel_leaf_1",
+  "right_laurel_leaf_1",
+  "left_laurel_leaf_2",
+  "right_laurel_leaf_2",
+  "left_laurel_leaf_3",
+  "right_laurel_leaf_3",
+  "left_laurel_leaf_4",
+  "right_laurel_leaf_4",
+  "bottom_four_point_star",
+  "outer_gold_setting"
+ ],
+ "validate_order": [
+  "blue_glass_sky",
+  "sun_ray_0",
+  "sun_ray_1",
+  "sun_ray_2",
+  "sun_ray_3",
+  "sun_ray_4",
+  "round_amber_sun",
+  "highest_snow_peak",
+  "left_foreground_peak",
+  "right_foreground_peak",
+  "central_foreground_peak",
+  "left_cloud",
+  "right_cloud",
+  "far_left_hills",
+  "far_right_hills",
+  "lime_rear_meadow",
+  "left_emerald_meadow",
+  "right_emerald_meadow",
+  "left_lime_meadow",
+  "right_lime_meadow",
+  "left_laurel_branch",
+  "right_laurel_branch",
+  "left_laurel_leaf_0",
+  "right_laurel_leaf_0",
+  "left_laurel_leaf_1",
+  "right_laurel_leaf_1",
+  "left_laurel_leaf_2",
+  "right_laurel_leaf_2",
+  "left_laurel_leaf_3",
+  "right_laurel_leaf_3",
+  "left_laurel_leaf_4",
+  "right_laurel_leaf_4",
+  "bottom_four_point_star",
+  "outer_gold_setting"
+ ]
+}

@@ -1,0 +1,209 @@
+{
+  "method": "Actual directed boundary edges, averaged along each real wall curve. No front face influence. Sharp corners retain outward normals.",
+  "parts": [
+    {
+      "piece": "blue_glass_sky",
+      "wall_triangles": 3560,
+      "inward_normals": 0,
+      "sharp_corner_normals": 12
+    },
+    {
+      "piece": "sun_ray_0",
+      "wall_triangles": 52,
+      "inward_normals": 0,
+      "sharp_corner_normals": 0
+    },
+    {
+      "piece": "sun_ray_1",
+      "wall_triangles": 36,
+      "inward_normals": 0,
+      "sharp_corner_normals": 0
+    },
+    {
+      "piece": "sun_ray_2",
+      "wall_triangles": 34,
+      "inward_normals": 0,
+      "sharp_corner_normals": 0
+    },
+    {
+      "piece": "sun_ray_3",
+      "wall_triangles": 190,
+      "inward_normals": 0,
+      "sharp_corner_normals": 0
+    },
+    {
+      "piece": "sun_ray_4",
+      "wall_triangles": 42,
+      "inward_normals": 0,
+      "sharp_corner_normals": 0
+    },
+    {
+      "piece": "round_amber_sun",
+      "wall_triangles": 258,
+      "inward_normals": 0,
+      "sharp_corner_normals": 0
+    },
+    {
+      "piece": "highest_snow_peak",
+      "wall_triangles": 174,
+      "inward_normals": 0,
+      "sharp_corner_normals": 0
+    },
+    {
+      "piece": "left_foreground_peak",
+      "wall_triangles": 180,
+      "inward_normals": 0,
+      "sharp_corner_normals": 0
+    },
+    {
+      "piece": "right_foreground_peak",
+      "wall_triangles": 162,
+      "inward_normals": 0,
+      "sharp_corner_normals": 0
+    },
+    {
+      "piece": "central_foreground_peak",
+      "wall_triangles": 200,
+      "inward_normals": 0,
+      "sharp_corner_normals": 0
+    },
+    {
+      "piece": "left_cloud",
+      "wall_triangles": 372,
+      "inward_normals": 0,
+      "sharp_corner_normals": 0
+    },
+    {
+      "piece": "right_cloud",
+      "wall_triangles": 372,
+      "inward_normals": 0,
+      "sharp_corner_normals": 0
+    },
+    {
+      "piece": "far_left_hills",
+      "wall_triangles": 134,
+      "inward_normals": 0,
+      "sharp_corner_normals": 0
+    },
+    {
+      "piece": "far_right_hills",
+      "wall_triangles": 138,
+      "inward_normals": 0,
+      "sharp_corner_normals": 0
+    },
+    {
+      "piece": "lime_rear_meadow",
+      "wall_triangles": 110,
+      "inward_normals": 0,
+      "sharp_corner_normals": 0
+    },
+    {
+      "piece": "left_emerald_meadow",
+      "wall_triangles": 100,
+      "inward_normals": 0,
+      "sharp_corner_normals": 0
+    },
+    {
+      "piece": "right_emerald_meadow",
+      "wall_triangles": 106,
+      "inward_normals": 0,
+      "sharp_corner_normals": 0
+    },
+    {
+      "piece": "left_lime_meadow",
+      "wall_triangles": 96,
+      "inward_normals": 0,
+      "sharp_corner_normals": 0
+    },
+    {
+      "piece": "right_lime_meadow",
+      "wall_triangles": 98,
+      "inward_normals": 0,
+      "sharp_corner_normals": 0
+    },
+    {
+      "piece": "left_laurel_branch",
+      "wall_triangles": 136,
+      "inward_normals": 0,
+      "sharp_corner_normals": 0
+    },
+    {
+      "piece": "right_laurel_branch",
+      "wall_triangles": 136,
+      "inward_normals": 0,
+      "sharp_corner_normals": 0
+    },
+    {
+      "piece": "left_laurel_leaf_0",
+      "wall_triangles": 128,
+      "inward_normals": 0,
+      "sharp_corner_normals": 0
+    },
+    {
+      "piece": "right_laurel_leaf_0",
+      "wall_triangles": 128,
+      "inward_normals": 0,
+      "sharp_corner_normals": 0
+    },
+    {
+      "piece": "left_laurel_leaf_1",
+      "wall_triangles": 130,
+      "inward_normals": 0,
+      "sharp_corner_normals": 0
+    },
+    {
+      "piece": "right_laurel_leaf_1",
+      "wall_triangles": 130,
+      "inward_normals": 0,
+      "sharp_corner_normals": 0
+    },
+    {
+      "piece": "left_laurel_leaf_2",
+      "wall_triangles": 128,
+      "inward_normals": 0,
+      "sharp_corner_normals": 0
+    },
+    {
+      "piece": "right_laurel_leaf_2",
+      "wall_triangles": 128,
+      "inward_normals": 0,
+      "sharp_corner_normals": 0
+    },
+    {
+      "piece": "left_laurel_leaf_3",
+      "wall_triangles": 126,
+      "inward_normals": 0,
+      "sharp_corner_normals": 0
+    },
+    {
+      "piece": "right_laurel_leaf_3",
+      "wall_triangles": 126,
+      "inward_normals": 0,
+      "sharp_corner_normals": 0
+    },
+    {
+      "piece": "left_laurel_leaf_4",
+      "wall_triangles": 128,
+      "inward_normals": 0,
+      "sharp_corner_normals": 0
+    },
+    {
+      "piece": "right_laurel_leaf_4",
+      "wall_triangles": 128,
+      "inward_normals": 0,
+      "sharp_corner_normals": 0
+    },
+    {
+      "piece": "bottom_four_point_star",
+      "wall_triangles": 48,
+      "inward_normals": 0,
+      "sharp_corner_normals": 0
+    },
+    {
+      "piece": "outer_gold_setting",
+      "wall_triangles": 470,
+      "inward_normals": 0,
+      "sharp_corner_normals": 0
+    }
+  ]
+}

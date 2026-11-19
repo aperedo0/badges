@@ -1,0 +1,9 @@
+{
+  "optical_meshes": 10,
+  "physical_stones": 10,
+  "model_and_reflection_attachments": 20,
+  "all_intended_profiles_attached": true,
+  "no_fallback_gems": true,
+  "log": "/Users/antonioperedo/Desktop/badges/royal_heart_compass_20261106/ocean_navigator/candidate14/review/native_runtime_1794105665.log",
+  "runtime_shader_sha256": "5f8a7c42248e1996608b59a78d980d0554550eb47a799311dfb318e60848c26d"
+}

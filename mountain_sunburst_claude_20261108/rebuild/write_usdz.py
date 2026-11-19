@@ -1,0 +1,81 @@
+"""Write the rebuilt badge as a USDZ (plan section 5). Run with Blender's bundled Python (it has pxr).
+
+Usage: write_usdz.py CAND_DIR
+One mesh per part, material subsets, per corner (face varying) normals and UVs, no rescaling, the gem's foil
+axis in its first UV set, output CAND_DIR/model.usdz.
+"""
+import sys, os, json, shutil, tempfile
+import numpy as np
+from pxr import Usd, UsdGeom, UsdShade, Sdf, Gf, Vt, UsdUtils
+CAND = os.path.abspath(sys.argv[1]); ROOT = os.path.dirname(CAND)
+D = np.load(os.path.join(CAND, 'parts.npz')); META = json.load(open(os.path.join(CAND, 'parts.json'))); PAL = json.load(open(os.path.join(ROOT, 'palette.json')))
+tmp = tempfile.mkdtemp(); path = os.path.join(tmp, 'badge.usdc')
+stage = Usd.Stage.CreateNew(path)
+UsdGeom.SetStageUpAxis(stage, UsdGeom.Tokens.y); UsdGeom.SetStageMetersPerUnit(stage, 1.0)
+root = UsdGeom.Xform.Define(stage, '/Badge'); stage.SetDefaultPrim(root.GetPrim())
+UsdGeom.Scope.Define(stage, '/Badge/Materials')
+mats = {}
+
+
+def material(name):
+    if name in mats:
+        return mats[name]
+    full = 'CrestGem_FoilSapphire' if name == 'Gem' else 'MountainSunburst_' + name
+    m = UsdShade.Material.Define(stage, f'/Badge/Materials/{full}')
+    sh = UsdShade.Shader.Define(stage, f'/Badge/Materials/{full}/Surface'); sh.CreateIdAttr('UsdPreviewSurface')
+    p = PAL.get(name, {})
+    dif = sh.CreateInput('diffuseColor', Sdf.ValueTypeNames.Color3f)
+    if name == 'Gem':
+        dif.Set(Gf.Vec3f(0.1, 0.55, 0.9)); sh.CreateInput('roughness', Sdf.ValueTypeNames.Float).Set(0.05)
+        sh.CreateInput('metallic', Sdf.ValueTypeNames.Float).Set(0.0)
+    elif 'texture' in p:
+        st = UsdShade.Shader.Define(stage, f'/Badge/Materials/{full}/UV'); st.CreateIdAttr('UsdPrimvarReader_float2')
+        st.CreateInput('varname', Sdf.ValueTypeNames.String).Set('st')
+        t = UsdShade.Shader.Define(stage, f'/Badge/Materials/{full}/ColorMap'); t.CreateIdAttr('UsdUVTexture')
+        t.CreateInput('file', Sdf.ValueTypeNames.Asset).Set(p['texture'])
+        t.CreateInput('st', Sdf.ValueTypeNames.Float2).ConnectToSource(st.ConnectableAPI(), 'result')
+        t.CreateInput('sourceColorSpace', Sdf.ValueTypeNames.Token).Set('sRGB')
+        t.CreateInput('wrapS', Sdf.ValueTypeNames.Token).Set('clamp'); t.CreateInput('wrapT', Sdf.ValueTypeNames.Token).Set('clamp')
+        t.CreateOutput('rgb', Sdf.ValueTypeNames.Float3)
+        dif.ConnectToSource(t.ConnectableAPI(), 'rgb')
+        sh.CreateInput('roughness', Sdf.ValueTypeNames.Float).Set(p['roughness']); sh.CreateInput('metallic', Sdf.ValueTypeNames.Float).Set(0.0)
+    else:
+        dif.Set(Gf.Vec3f(*p['albedo'])); sh.CreateInput('roughness', Sdf.ValueTypeNames.Float).Set(p['roughness'])
+        sh.CreateInput('metallic', Sdf.ValueTypeNames.Float).Set(p.get('metallic', 0.0))
+    sh.CreateInput('opacity', Sdf.ValueTypeNames.Float).Set(1.0)
+    m.CreateSurfaceOutput().ConnectToSource(sh.ConnectableAPI(), 'surface')
+    mats[name] = m; return m
+
+
+total = 0
+for part in META['parts']:
+    name = part['name']; V = D[name + '_v'].reshape(-1, 3).astype(np.float64); N = D[name + '_n'].reshape(-1, 3); UV = D[name + '_uv'].reshape(-1, 2); M = D[name + '_m']
+    key = np.round(V, 6); uniq, inv = np.unique(key, axis=0, return_inverse=True)
+    prim = 'Gem' if name == 'gem' else ''.join(w.capitalize() for w in name.split('_'))
+    mesh = UsdGeom.Mesh.Define(stage, f'/Badge/{prim}')
+    mesh.CreatePointsAttr(Vt.Vec3fArray.FromNumpy(uniq.astype(np.float32)))
+    mesh.CreateFaceVertexCountsAttr(Vt.IntArray([3] * (len(inv) // 3)))
+    mesh.CreateFaceVertexIndicesAttr(Vt.IntArray(inv.astype(np.int32).tolist()))
+    mesh.CreateNormalsAttr(Vt.Vec3fArray.FromNumpy(N.astype(np.float32))); mesh.SetNormalsInterpolation(UsdGeom.Tokens.faceVarying)
+    mesh.CreateSubdivisionSchemeAttr('none'); mesh.CreateDoubleSidedAttr(False)
+    mesh.CreateExtentAttr(Vt.Vec3fArray([Gf.Vec3f(*uniq.min(0).tolist()), Gf.Vec3f(*uniq.max(0).tolist())]))
+    pv = UsdGeom.PrimvarsAPI(mesh).CreatePrimvar('st', Sdf.ValueTypeNames.TexCoord2fArray, UsdGeom.Tokens.faceVarying)
+    pv.Set(Vt.Vec2fArray.FromNumpy(UV.astype(np.float32)))
+    names = part['materials']
+    if len(names) == 1:
+        UsdShade.MaterialBindingAPI.Apply(mesh.GetPrim()).Bind(material(names[0]))
+    else:
+        api = UsdShade.MaterialBindingAPI.Apply(mesh.GetPrim())
+        for k, mn in enumerate(names):
+            faces = np.nonzero(M == k)[0]
+            if len(faces) == 0:
+                continue
+            sub = UsdGeom.Subset.CreateGeomSubset(mesh, mn, UsdGeom.Tokens.face, Vt.IntArray(faces.astype(np.int32).tolist()), 'materialBind', UsdGeom.Tokens.nonOverlapping)
+            UsdShade.MaterialBindingAPI.Apply(sub.GetPrim()).Bind(material(mn))
+    total += len(inv) // 3
+stage.GetRootLayer().Save()
+os.makedirs(os.path.join(tmp, 'textures'), exist_ok=True)
+shutil.copy(os.path.join(ROOT, 'textures/sun_gradient.png'), os.path.join(tmp, 'textures/sun_gradient.png'))
+out = os.path.join(CAND, 'model.usdz'); cwd = os.getcwd(); os.chdir(tmp)
+ok = UsdUtils.CreateNewARKitUsdzPackage(Sdf.AssetPath('badge.usdc'), out); os.chdir(cwd)
+print('usdz', ok, round(os.path.getsize(out) / 1e6, 2), 'MB', total, 'triangles')

@@ -1,0 +1,16 @@
+{
+  "ruby_heart": {
+    "accepted": true,
+    "native_six_pose_comparison": true,
+    "complete_turns_reviewed": true,
+    "outlines_and_reflection_reviewed": true,
+    "continuous_ruby_volume_verified": true
+  },
+  "amethyst_crown": {
+    "accepted": true,
+    "native_six_pose_comparison": true,
+    "complete_turns_reviewed": true,
+    "outlines_and_reflection_reviewed": true,
+    "all_32_optical_meshes_and_reflections_attached": true
+  }
+}

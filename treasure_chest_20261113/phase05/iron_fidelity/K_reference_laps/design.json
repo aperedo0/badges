@@ -1,0 +1,13 @@
+{
+  "source": "G_planished_hires_displaced",
+  "target": "Lab Chest Lower Rim",
+  "mesh": "Locally forged lower rim.001",
+  "material": "Forged iron K_reference_laps",
+  "geometry_unchanged_from_source": true,
+  "scale_coverage": [
+    0.6,
+    0.92
+  ],
+  "reference_laps": true,
+  "original_geometry_functionality_and_wood_preserved": true
+}

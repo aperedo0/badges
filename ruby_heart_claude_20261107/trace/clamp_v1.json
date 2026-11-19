@@ -1,0 +1,1 @@
+{"ior": 1.77, "absorption": [0.15, 6.5, 2.2], "foil": 0.92, "tent_gain": 0.26040033241673566, "exposure": 2.6, "bounces": 4, "body_level": 2.146406045362399, "body_clamp": 8, "spec_clamp": 10.0, "glow": 0.08765548766357832, "glow_color": [1.0, 0.02, 0.15], "spec_gain": 1.8103541976581035, "spec_floor": 3.0, "path_base": 0.0}

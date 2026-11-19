@@ -1,0 +1,6 @@
+{
+  "steel": {
+    "source_sha256": "65b2047e8503ddddcfe6330164e694856d2bce4dea9bad60fedaa177b40acfb1",
+    "reason": "Retain the approved two mesh original. Grouping its faces by material changed native highlights."
+  }
+}

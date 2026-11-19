@@ -1,0 +1,67 @@
+{
+ "name": "Emerald Stag",
+ "mockup": "/Users/antonioperedo/Desktop/badges/emerald_stag_claude_20261108/reference/stag.png",
+ "mockup_box": [
+  625,
+  42,
+  1195
+ ],
+ "build_front": "/Users/antonioperedo/Desktop/badges/emerald_stag_claude_20261108/candidate07/app/front.png",
+ "build_box": [
+  603.0,
+  362.2,
+  783.9
+ ],
+ "poses": {
+  "early turn": "/Users/antonioperedo/Desktop/badges/emerald_stag_claude_20261108/candidate07/app/early_turn.png",
+  "left side": "/Users/antonioperedo/Desktop/badges/emerald_stag_claude_20261108/candidate07/app/side_left.png",
+  "back": "/Users/antonioperedo/Desktop/badges/emerald_stag_claude_20261108/candidate07/app/back.png",
+  "right side": "/Users/antonioperedo/Desktop/badges/emerald_stag_claude_20261108/candidate07/app/side_right.png"
+ },
+ "regions": [
+  [
+   "stag head and antlers",
+   -0.18,
+   0.04,
+   0.25,
+   0.3
+  ],
+  [
+   "left branch, flower and leaves",
+   -0.42,
+   -0.01,
+   -0.05,
+   0.43
+  ],
+  [
+   "stag body and legs",
+   -0.18,
+   0.28,
+   0.25,
+   0.68
+  ],
+  [
+   "right crescent, emerald and flower",
+   0.15,
+   0.3,
+   0.39,
+   0.74
+  ],
+  [
+   "rock and moss",
+   -0.3,
+   0.52,
+   0.26,
+   0.77
+  ],
+  [
+   "base with center emerald",
+   -0.3,
+   0.66,
+   0.3,
+   1.01
+  ]
+ ],
+ "intended": [],
+ "checklist": "/Users/antonioperedo/Desktop/badges/emerald_stag_claude_20261108/review/checklist.md"
+}

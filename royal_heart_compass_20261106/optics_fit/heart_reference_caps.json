@@ -1,0 +1,90 @@
+{
+  "status": "diagnostic_only_not_native",
+  "actual_facet_planes_only": true,
+  "shared_keel_and_original_silhouette_preserved": true,
+  "current_native24_unmodified": true,
+  "no_appearance_images": true,
+  "variants": [
+    {
+      "margin": 0.015,
+      "planes": [
+        69,
+        69
+      ],
+      "cuts": [
+        {
+          "side": "right",
+          "actual_facet_gradient": [
+            -0.122,
+            -0.5455
+          ],
+          "offset": 1.6392046494483947,
+          "common_keel_unchanged": true
+        },
+        {
+          "side": "left",
+          "actual_facet_gradient": [
+            0.35,
+            -0.35
+          ],
+          "offset": 1.566270215511322,
+          "common_keel_unchanged": true
+        }
+      ]
+    },
+    {
+      "margin": 0.07,
+      "planes": [
+        68,
+        69
+      ],
+      "cuts": [
+        {
+          "side": "right",
+          "actual_facet_gradient": [
+            -0.122,
+            -0.5455
+          ],
+          "offset": 1.6942046494483949,
+          "common_keel_unchanged": true
+        },
+        {
+          "side": "left",
+          "actual_facet_gradient": [
+            0.35,
+            -0.35
+          ],
+          "offset": 1.621270215511322,
+          "common_keel_unchanged": true
+        }
+      ]
+    },
+    {
+      "margin": 0.15,
+      "planes": [
+        68,
+        68
+      ],
+      "cuts": [
+        {
+          "side": "right",
+          "actual_facet_gradient": [
+            -0.122,
+            -0.5455
+          ],
+          "offset": 1.7742046494483947,
+          "common_keel_unchanged": true
+        },
+        {
+          "side": "left",
+          "actual_facet_gradient": [
+            0.35,
+            -0.35
+          ],
+          "offset": 1.701270215511322,
+          "common_keel_unchanged": true
+        }
+      ]
+    }
+  ]
+}

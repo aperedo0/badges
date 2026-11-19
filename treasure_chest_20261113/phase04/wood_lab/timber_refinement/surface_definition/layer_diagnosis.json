@@ -1,0 +1,17 @@
+{
+  "values": {
+    "Existing structural layers": {
+      "mid_gradient_rms_on_broad_faces": 0.30921533703804016,
+      "height_rms_on_broad_faces": 0.0013618720695376396
+    },
+    "Added secondary layers": {
+      "mid_gradient_rms_on_broad_faces": 0.1453075408935547,
+      "height_rms_on_broad_faces": 0.00240674358792603
+    },
+    "Current combined surface": {
+      "mid_gradient_rms_on_broad_faces": 0.3223242163658142,
+      "height_rms_on_broad_faces": 0.0027805399149656296
+    }
+  },
+  "limits": "Numerical normal response only; not a Cycles render or reference measurement"
+}

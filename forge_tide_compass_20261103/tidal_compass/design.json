@@ -1,0 +1,59 @@
+{
+  "name": "Tidal Compass",
+  "selection": "tidalCompass",
+  "bounds": [
+    142,
+    136,
+    1098,
+    1098
+  ],
+  "textured_roles": [
+    "metal",
+    "field",
+    "pearl",
+    "wave"
+  ],
+  "metal_roles": [
+    "metal",
+    "pearl",
+    "wave"
+  ],
+  "desired_colors": {
+    "metal": [
+      0.43,
+      0.44,
+      0.42
+    ],
+    "pearl": [
+      0.18,
+      0.29,
+      0.27
+    ],
+    "wave": [
+      0.035,
+      0.2,
+      0.2
+    ]
+  },
+  "roughness": {
+    "metal": 0.29,
+    "field": 0.4,
+    "pearl": 0.25,
+    "wave": 0.3
+  },
+  "side_color": [
+    0.13,
+    0.18,
+    0.18
+  ],
+  "side_roughness": 0.48,
+  "method": "Reference traced smooth continuous pearl crescent and wave, separate silver edging and sixteen physical compass facets, matching sculpted rear. Distinctive thin frame preserves this reference instead of changing the approved shared twelve coin template.",
+  "reference_size": [
+    1254,
+    1254
+  ],
+  "scale": 0.005686070686070686,
+  "reference_center_x": 620.0,
+  "reference_top": 136,
+  "triangle_count": 32844
+}

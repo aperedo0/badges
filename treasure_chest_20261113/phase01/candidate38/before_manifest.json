@@ -1,0 +1,1179 @@
+{
+  "Chest Body Envelope": {
+    "vertex_hash": "8c88aaef836c6f73d3fd2acbf3e9ba21db3b47eaeaba2e280dc2cf9b2faffc35",
+    "triangle_hash": "4d3b65101fa9dc0b3d80686498c946b525a7dfde13cb209f7a09468a5087ca63",
+    "normal_hash": "cd898ed4dcaa426079a0d232c62fe93f7383ce70584964a2236901f725b91a4f",
+    "materials": [
+      "Chest Phase 1 neutral clay"
+    ]
+  },
+  "Chest Barrel Lid Envelope": {
+    "vertex_hash": "cafe643a4b191f9ad90c68cafb0cc77ca298515e08ffb4735128a22df2677ecc",
+    "triangle_hash": "bc2e79b910b0e367856a6123da603ff416b3206d55d1b06d639afb2680f7bad4",
+    "normal_hash": "563662fddaef58cbd1b3cd46a46f7dad1bfbfafdf9138bc34688aee5ca398cd9",
+    "materials": [
+      "Chest Phase 1 neutral clay"
+    ]
+  },
+  "Chest Upper Lid Rim": {
+    "vertex_hash": "f23a64955a53a0864494dd301848b178520051eb62d7321ebd85473190db107d",
+    "triangle_hash": "4b413f5a55f88b99e211eefe16651d32db1fa48c827e59171033a6be2ebe629e",
+    "normal_hash": "9ddb8702b6361d611860e62c6c9448739a22d64df12a07a2c7d81e298d652779",
+    "materials": [
+      "Chest rough structural forms"
+    ]
+  },
+  "Chest Body Upper Rim": {
+    "vertex_hash": "6422ced29c9e607944bc7c31f44c63afce0d5ec53753e310df86dcb45487a78c",
+    "triangle_hash": "303d80fd9b5587a6eaf62097f1cfdcf7f01c9c9c9b55b652ee5f6fecc4e3d1e6",
+    "normal_hash": "2fb90b998b99ccdebe84a2f4a0573e19b99a303640f24baef0e94906df6b78d5",
+    "materials": [
+      "Chest rough structural forms"
+    ]
+  },
+  "Chest Lower Rim": {
+    "vertex_hash": "5eef2fc8fa54b104593d5b673fc5f985a25791db7f86eb0a3ee52a6806fc8bf2",
+    "triangle_hash": "3189bc39ba8499c31227a134ca19eaf2f7920920f7e68d388d9780743c244378",
+    "normal_hash": "a46fe51c31c57cd6583deace187888bc8480ad359470a9525c3944d8d442c2b3",
+    "materials": [
+      "Chest rough structural forms"
+    ]
+  },
+  "Chest Corner Upright -1 -1": {
+    "vertex_hash": "b20424e5edf11c89c90f0e817fe466dbc48b6241b727e29caa89dfd209fa0939",
+    "triangle_hash": "f3778255d8eebf34e866d042494840bb9f05490ba03d48076db3aa30931289a6",
+    "normal_hash": "f71aafca4d1242c6705c63acd7f7304df8caf31da81103114ccdf72e59e122a6",
+    "materials": [
+      "Chest rough structural forms"
+    ]
+  },
+  "Chest Angular Boot -1 -1": {
+    "vertex_hash": "8b4cc6fcd8db5e90c63a9daf570e1771c6a795cd41912dfb8420d3b1da54d718",
+    "triangle_hash": "ecc9ba805e8a42f6109d0a9583022b64aebcca9ce33a5976032cbb11216c0512",
+    "normal_hash": "0ad4a93bd198543833f62a323f1ca49ef5bb4f04f7f5e5bb7dbfc4d3adeaea04",
+    "materials": [
+      "Chest rough structural forms"
+    ]
+  },
+  "Chest Corner Upright -1 1": {
+    "vertex_hash": "b05038993a284d0bc936717a9f35c06924800be47c700a131ad4eaa38cdea015",
+    "triangle_hash": "b891f312b4228fd548cd3ee15f4a55b1789a390d9de39edbbcc8390e1ef0d404",
+    "normal_hash": "8e2cfd546b906d93986e13c8b1451f490d8dc0bb81a608880226ee248626b6b4",
+    "materials": [
+      "Chest rough structural forms"
+    ]
+  },
+  "Chest Angular Boot -1 1": {
+    "vertex_hash": "d3190426b9772537df2ced3e70de29000c25e7102b454e3cd3c5093c5037432c",
+    "triangle_hash": "9276b4ca90883b71a208e12b5930b9fd5bd8f8b700ae6c3cd0a04de6af75742e",
+    "normal_hash": "333c8a05cc6db65c62ff5fa70587adf670c11b431f1651114524a4243eb2db4b",
+    "materials": [
+      "Chest rough structural forms"
+    ]
+  },
+  "Chest Corner Upright 1 -1": {
+    "vertex_hash": "f5026009d2d0ed73c2405689be8d8f1fe694c921846e35c6676575d81e19eb39",
+    "triangle_hash": "b891f312b4228fd548cd3ee15f4a55b1789a390d9de39edbbcc8390e1ef0d404",
+    "normal_hash": "1a30277aec9d09083e6d7574b8e8d0e9dcefc5fd4f7c20223455cf90682767f6",
+    "materials": [
+      "Chest rough structural forms"
+    ]
+  },
+  "Chest Angular Boot 1 -1": {
+    "vertex_hash": "5e0d8ee765c0e67b9a6041bc14e80c9ee0d02c9e2583c268cc0a0080d86972f6",
+    "triangle_hash": "295741f1c2c81657f59b7dabca0ba42c479eaf89f724487f73fad3c8137fa9e5",
+    "normal_hash": "17aeccc0a153900ea0f2a8091b209431580a5c2a5ac0ee69b7cf03846f50b5c9",
+    "materials": [
+      "Chest rough structural forms"
+    ]
+  },
+  "Chest Corner Upright 1 1": {
+    "vertex_hash": "8430faa7e3d5abf4e18fa166b1696ef21e0610d5dae021b2f038f75ae6bcad6e",
+    "triangle_hash": "f3778255d8eebf34e866d042494840bb9f05490ba03d48076db3aa30931289a6",
+    "normal_hash": "f069e7db39f7e5b753bfe706c49826cf0e44cad6149a77cbedc6d0848b06f884",
+    "materials": [
+      "Chest rough structural forms"
+    ]
+  },
+  "Chest Angular Boot 1 1": {
+    "vertex_hash": "642c84c04b94ed93a1f341885bcfcaa310a7d321a968eadb89d7ebc9b700eb56",
+    "triangle_hash": "08b8982f1019bb4cfb47ca5514643bcf12d1bf418d864e1ea28b8f080c814734",
+    "normal_hash": "925abf26974a43b1906475ba888508623befe88101d34541565133d8c1c36d58",
+    "materials": [
+      "Chest rough structural forms"
+    ]
+  },
+  "Chest Central Lock Strap": {
+    "vertex_hash": "87fbc5bb819eaa62745a56b27532529e8ff445005a06480fb1e3e5602bbba5a5",
+    "triangle_hash": "76431937d91fb5294527cc4ace613b120de6cddd2a069c0d55360c7eeb0c4dbb",
+    "normal_hash": "b564ba879cbae6595ca49fdc9bcd3b69dcb2ffed70acae764cde8c260a2e3bf8",
+    "materials": [
+      "Chest rough structural forms"
+    ]
+  },
+  "Chest Central Lower Cuff": {
+    "vertex_hash": "cf70762762e3e23448460b354ba9c6e7c4fc3124781a3e1b4c05f644660220ba",
+    "triangle_hash": "76431937d91fb5294527cc4ace613b120de6cddd2a069c0d55360c7eeb0c4dbb",
+    "normal_hash": "33d6b0e5c3c0151528738090699aba82cfde76305b4033688ca41d0d2334e2a0",
+    "materials": [
+      "Chest rough hardware forms"
+    ]
+  },
+  "Chest Crown Fastener Mass 1": {
+    "vertex_hash": "936f363ca351ed6afe8618771f6819b26f6ffbbee48666516492e6e03c4b8d6f",
+    "triangle_hash": "7c7690b62e4b7fa54411e88044aed983851976eb6097c7c5d0d5458d57527fb3",
+    "normal_hash": "e65787c9479b7f0f1bc176a7377dea40780e33fe30d521fb994a20f4bc46c3dc",
+    "materials": [
+      "Chest rough hardware forms"
+    ]
+  },
+  "Chest Crown Fastener Mass 2": {
+    "vertex_hash": "7a47e3931a8c476a23845f34e83b7de6958df84689f213646305361dd8fc4188",
+    "triangle_hash": "7c7690b62e4b7fa54411e88044aed983851976eb6097c7c5d0d5458d57527fb3",
+    "normal_hash": "d7c4c205e946bfc3f2894285d8f1e9b20c9eaa2f92ef58f0aadcbf95bdd59e2c",
+    "materials": [
+      "Chest rough hardware forms"
+    ]
+  },
+  "Chest Crown Fastener Mass 3": {
+    "vertex_hash": "d105dad51821418218f1405c1e73f08e6debc956d6e2c5745091e487f6bab363",
+    "triangle_hash": "7c7690b62e4b7fa54411e88044aed983851976eb6097c7c5d0d5458d57527fb3",
+    "normal_hash": "3d7db549ce2fb2fdc5770053ac0be97a959df9ff50f0a73082f8c4ad6fc906ab",
+    "materials": [
+      "Chest rough hardware forms"
+    ]
+  },
+  "Chest Crown Fastener Mass 4": {
+    "vertex_hash": "cc3ab17e9b5837b3461c613d0f8f0ae299060f02ef549e35de2a92491e998576",
+    "triangle_hash": "7c7690b62e4b7fa54411e88044aed983851976eb6097c7c5d0d5458d57527fb3",
+    "normal_hash": "88dde049e7fe392930cef8d99d9e5ea09b874daa8c69d2a261cee55cebb19678",
+    "materials": [
+      "Chest rough hardware forms"
+    ]
+  },
+  "Chest Hasp Mount": {
+    "vertex_hash": "aaf1b118c58fab73a4f0400e9ba2f6cef8410d85d9b0630e7dbdc15f1f1c7f37",
+    "triangle_hash": "0b8fb4b582fb4edbf3f986d495e1dbdc08dc5675fb7f20b47b34bc95fa2faaf2",
+    "normal_hash": "6f85614fc745f6cdf93a24fa1e46c701944470976df8cbb233d460fe37972ae6",
+    "materials": [
+      "Chest rough structural forms",
+      "Chest rough hardware forms"
+    ]
+  },
+  "Chest Front Hasp Barrel": {
+    "vertex_hash": "e2410f75aec1c7539dffe7a53232e372fdbef2d1fbec740081322dc3f3829200",
+    "triangle_hash": "67d83814428fe505a76078610ce51bb4978bda0e8c6d165f18085a4460815fb7",
+    "normal_hash": "3e88a6bd26ca82bdc422074ddf87cc5061067f403122b2921afc8ee0537a52e9",
+    "materials": [
+      "Chest rough hardware forms"
+    ]
+  },
+  "Chest Shield Lock Plate With Bore": {
+    "vertex_hash": "cddb974cb722bf8a92514fdc016a0a9a7d239c4321740230c92c52ca1ddedef1",
+    "triangle_hash": "9bbffe3f88194fabb5e70902af6ae9027bf695b270b24ef6d9745eb9fa2c67c7",
+    "normal_hash": "240c2d076ca146a5cd33943a0e2b914ea28c53e1be9175cd511248529d239117",
+    "materials": [
+      "Chest rough hardware forms"
+    ]
+  },
+  "Chest Curved Hasp Tongue": {
+    "vertex_hash": "73035d8256f2984f0ee9f589d5ab14aad2fc80fcb5c04e37ff85a65c320a4b14",
+    "triangle_hash": "3c4b8661193db0c1a4908350fc9776bb27158a25139594934ea85ba485885f46",
+    "normal_hash": "a3023b7cf8708720da73faeaffc265a604f82076073d75c8d05b9432ba1f2dd0",
+    "materials": [
+      "Chest rough hardware forms"
+    ]
+  },
+  "Chest Handle Mount -1": {
+    "vertex_hash": "10f0253484bee9a7b2e30681e85fe5072480f3382bef19e2cf08d698e75b5c62",
+    "triangle_hash": "76431937d91fb5294527cc4ace613b120de6cddd2a069c0d55360c7eeb0c4dbb",
+    "normal_hash": "1439f318247724174f0001ba08ec03228e0be72cc29f68c2df9d89bba46c1183",
+    "materials": [
+      "Chest rough structural forms"
+    ]
+  },
+  "Chest Solid Ring Handle -1": {
+    "vertex_hash": "099e62d6b45f099e9d787d8dd9275fbd8898de8f7be603f758bcda4c93229aac",
+    "triangle_hash": "eba4359f4a7fa9d32f0e781ec52d08976527420ec208f3ab64599ceaf1055fb2",
+    "normal_hash": "a7462a9f489243567abfdaede70dcec7ccb4949d83c43a89111f895422890624",
+    "materials": [
+      "Chest rough hardware forms"
+    ]
+  },
+  "Chest Handle Mount 1": {
+    "vertex_hash": "cd938dcef3380efd3c63ce047f272c7ccba9b40624f4e24a399a6e7451f6fd36",
+    "triangle_hash": "76431937d91fb5294527cc4ace613b120de6cddd2a069c0d55360c7eeb0c4dbb",
+    "normal_hash": "23ef4d742ed99cfc0815a781cef3a2bf7fe63eda98985b734a830a01129c04e9",
+    "materials": [
+      "Chest rough structural forms"
+    ]
+  },
+  "Chest Solid Ring Handle 1": {
+    "vertex_hash": "2b899d58197dd3255cd10f7d811d7db11f18fb11da0d5be121d4b49dc9f1cd5b",
+    "triangle_hash": "eba4359f4a7fa9d32f0e781ec52d08976527420ec208f3ab64599ceaf1055fb2",
+    "normal_hash": "da315af4aaa7d2ce94ab0194c3ede92632fbc78488a533f0d0622bf9ae868417",
+    "materials": [
+      "Chest rough hardware forms"
+    ]
+  },
+  "Chest Rear Hinge Lower -1": {
+    "vertex_hash": "9061da59a7a230e3bef74530590c5ccfab87ba3b74a13c2c352cb69208bc952f",
+    "triangle_hash": "76431937d91fb5294527cc4ace613b120de6cddd2a069c0d55360c7eeb0c4dbb",
+    "normal_hash": "588a97fd4b78a1dc642646dbd9acc39857336b228f091e5850549a3fa9b9e20d",
+    "materials": [
+      "Chest rough structural forms"
+    ]
+  },
+  "Chest Rear Hinge Upper -1": {
+    "vertex_hash": "1d45c18059cea75c35e920d1eaf5f61ed9bd81f98d078d484b1508e3bfd549fd",
+    "triangle_hash": "76431937d91fb5294527cc4ace613b120de6cddd2a069c0d55360c7eeb0c4dbb",
+    "normal_hash": "9a0ce2b6fa5d6bcf7874745726b662247ce88d86f5d7723e4e7d36e77f985466",
+    "materials": [
+      "Chest rough structural forms"
+    ]
+  },
+  "Chest Rear Hinge Barrel -1": {
+    "vertex_hash": "e515d5bbb3aef2b09caaf58328c37a3ecea592e00677d94feefa051bd8bc60d2",
+    "triangle_hash": "a4fe7adf6aa6319c162662b56b358256767a1c0c109a34967cc07133a6ae3e02",
+    "normal_hash": "6830afe991264f0f3337e19cacd5b35dfdf9e4947314a028629923d6762be1d6",
+    "materials": [
+      "Chest rough hardware forms"
+    ]
+  },
+  "Chest Rear Hinge Lower 1": {
+    "vertex_hash": "f03e159c95509f4f72fe157f98a21ef5c3e497cf5b536ccca3ca3babccc44820",
+    "triangle_hash": "76431937d91fb5294527cc4ace613b120de6cddd2a069c0d55360c7eeb0c4dbb",
+    "normal_hash": "41e3d07441048214dac5032e3d4fc1f6f1fc5ad338d553fa3227bd12b3882368",
+    "materials": [
+      "Chest rough structural forms"
+    ]
+  },
+  "Chest Rear Hinge Upper 1": {
+    "vertex_hash": "9497242e2b8865baea96e225b8c60b50ea9a3daf83fed6446bd87240a5ce2a42",
+    "triangle_hash": "76431937d91fb5294527cc4ace613b120de6cddd2a069c0d55360c7eeb0c4dbb",
+    "normal_hash": "8ce626bdaa347b4bc688069f1a1da5ff91e0eb4d7f0a3240845194167e19d00a",
+    "materials": [
+      "Chest rough structural forms"
+    ]
+  },
+  "Chest Rear Hinge Barrel 1": {
+    "vertex_hash": "39e3f92f6aa6242f7149bce82070186e394f53d387b61748a39e42ff6d2b07ab",
+    "triangle_hash": "a4fe7adf6aa6319c162662b56b358256767a1c0c109a34967cc07133a6ae3e02",
+    "normal_hash": "6ee262315ad3cdcdaf31684ec655870c847548a771c7ca4efcbaf600ee4f7d1e",
+    "materials": [
+      "Chest rough hardware forms"
+    ]
+  },
+  "Chest Lock Backing With Bore": {
+    "vertex_hash": "787239f315190c8e9f68d5e477cef24094185f71c54b5477f0ba5808cef595b1",
+    "triangle_hash": "d055e0472899c84cd7f661f1cb9eabfa8aff4d98e646df518f7a60017b67b8cb",
+    "normal_hash": "29a50f70fedfcf13ba0e03df4862d263adcb7d2c861f28a9a9369c88fa9c3ebd",
+    "materials": [
+      "Chest rough hardware forms"
+    ]
+  },
+  "Chest Lock Border With Bore": {
+    "vertex_hash": "b240ce242f47beda8e73ec527797ebb35cae6204df8b09ea1480fde1bb2dcb56",
+    "triangle_hash": "a1cd3a560b974ac8dc15bf26cac7df47ddac117d171aa8323a7825b2aec0683e",
+    "normal_hash": "9745d54ef95c6e8b1b4c34f3a311c85db54758f29e2bdccc6299f65beb7d2f43",
+    "materials": [
+      "Chest rough hardware forms"
+    ]
+  },
+  "Chest Hoop Rivet 0 0": {
+    "vertex_hash": "a9fe40c612b0b7b0f480807a32db95ca4c951aa77ff9cc9b73b38775380d2fc0",
+    "triangle_hash": "ff2babf9890fa3fd8c00e9aefd40aaca352e4fe4bca6c42528ec39d994ed7a08",
+    "normal_hash": "df3bbd181cf29edfc6cf1575a67dc384ffe892169385bb5d34f1238393385a54",
+    "materials": [
+      "Chest rough hardware forms"
+    ]
+  },
+  "Chest Hoop Rivet 0 1": {
+    "vertex_hash": "5da9de54fd4975914bc4006085fd504aff4375bef83c90530793b774f2cc55a6",
+    "triangle_hash": "ff2babf9890fa3fd8c00e9aefd40aaca352e4fe4bca6c42528ec39d994ed7a08",
+    "normal_hash": "b1bbd955ea5c2cf786db69a726b9161c85b85263742b3269d61eb100dcd0a555",
+    "materials": [
+      "Chest rough hardware forms"
+    ]
+  },
+  "Chest Hoop Rivet 1 0": {
+    "vertex_hash": "aabfdba115222c67512c94bf22d571971ab281974c39eaee0caeb6e311b7e47c",
+    "triangle_hash": "ff2babf9890fa3fd8c00e9aefd40aaca352e4fe4bca6c42528ec39d994ed7a08",
+    "normal_hash": "9a63960ddc23abc442987a0075c274e71c4dcd2ae929c2f5d4a48431f7d86770",
+    "materials": [
+      "Chest rough hardware forms"
+    ]
+  },
+  "Chest Hoop Rivet 1 1": {
+    "vertex_hash": "7813fff2bd616ec030472288e7b9581560a1fef3ed52a19db5b44b1b35a07dbd",
+    "triangle_hash": "ff2babf9890fa3fd8c00e9aefd40aaca352e4fe4bca6c42528ec39d994ed7a08",
+    "normal_hash": "d7feea0936b8819bf9154ac43cb19ce73a16b80a8ddba5e13d3869ddfe7ff58b",
+    "materials": [
+      "Chest rough hardware forms"
+    ]
+  },
+  "Chest Hoop Rivet 1 2": {
+    "vertex_hash": "b51de9e3653070084c11fb6dd91fae57b488901c21e2d94d878efcd90f3bcf40",
+    "triangle_hash": "ff2babf9890fa3fd8c00e9aefd40aaca352e4fe4bca6c42528ec39d994ed7a08",
+    "normal_hash": "fb17b645c6032022a92a1e6d397b952b97d447a9df6eeeecc307acb33ea323ae",
+    "materials": [
+      "Chest rough hardware forms"
+    ]
+  },
+  "Chest Hoop Rivet 1 3": {
+    "vertex_hash": "34a926e6eb9bc7a5db32aede9d1d1dd92009b00b3a5a8abe30a3182f382cf773",
+    "triangle_hash": "ff2babf9890fa3fd8c00e9aefd40aaca352e4fe4bca6c42528ec39d994ed7a08",
+    "normal_hash": "f5fd5d8d63b3f77fbfa4d49eb211258920d6239dd5147cfbf06a66a13056054c",
+    "materials": [
+      "Chest rough hardware forms"
+    ]
+  },
+  "Chest Hoop Rivet 1 4": {
+    "vertex_hash": "d83b37b0d6c5862bbbc5259d691902d63e1b44ce9f871a5a3901f86a55a62a94",
+    "triangle_hash": "ff2babf9890fa3fd8c00e9aefd40aaca352e4fe4bca6c42528ec39d994ed7a08",
+    "normal_hash": "118817f06207d7f99eaa02f54218247a9043d9339113e6c44aea6b134193163b",
+    "materials": [
+      "Chest rough hardware forms"
+    ]
+  },
+  "Chest Hoop Rivet 1 5": {
+    "vertex_hash": "94e54b06a99d5f0e6686ccb3a131d6744020f1ac0e761b133c737fe1caa5bd7d",
+    "triangle_hash": "ff2babf9890fa3fd8c00e9aefd40aaca352e4fe4bca6c42528ec39d994ed7a08",
+    "normal_hash": "566c28e546a2e206eb6d1641be850e04644be0834584e946235f683fbded1e00",
+    "materials": [
+      "Chest rough hardware forms"
+    ]
+  },
+  "Chest Hoop Rivet 2 0": {
+    "vertex_hash": "48fdc0aadb1d413de4de0e5e0b9e3eb4a37f2f03bce70e6fd090f71ce54ad890",
+    "triangle_hash": "ff2babf9890fa3fd8c00e9aefd40aaca352e4fe4bca6c42528ec39d994ed7a08",
+    "normal_hash": "64b32eb48787eba30ef4bf1f628d4fe5b4fb35b360ab149542cbadee8c290a0f",
+    "materials": [
+      "Chest rough hardware forms"
+    ]
+  },
+  "Chest Hoop Rivet 2 1": {
+    "vertex_hash": "17f7da6247f52f2902e40520c82be27e6f849d001e07a328fe1a563b6faaa6fe",
+    "triangle_hash": "ff2babf9890fa3fd8c00e9aefd40aaca352e4fe4bca6c42528ec39d994ed7a08",
+    "normal_hash": "717f3632d7fc10405be46627fb3db30e4164482493aa342102302bfc90292b7d",
+    "materials": [
+      "Chest rough hardware forms"
+    ]
+  },
+  "Chest Hoop Rivet 2 2": {
+    "vertex_hash": "9e6044ee8a7113ae2eb600757f16ac14323f0eb2ae6a5a043477845c616cb4ee",
+    "triangle_hash": "ff2babf9890fa3fd8c00e9aefd40aaca352e4fe4bca6c42528ec39d994ed7a08",
+    "normal_hash": "b5d96da5aa8aae2f0711c86b543eb8c8839a1a3122037d9ab450ccece1a50b82",
+    "materials": [
+      "Chest rough hardware forms"
+    ]
+  },
+  "Chest Hoop Rivet 2 3": {
+    "vertex_hash": "debf0dfe67172454cb6b2dd05e586f75cab609de93be2586ed4791fb982768e0",
+    "triangle_hash": "ff2babf9890fa3fd8c00e9aefd40aaca352e4fe4bca6c42528ec39d994ed7a08",
+    "normal_hash": "1c630f80de8d38fb59aac699896eb518da794a3190ca7991df4ac045bb37d719",
+    "materials": [
+      "Chest rough hardware forms"
+    ]
+  },
+  "Chest Hoop Rivet 2 4": {
+    "vertex_hash": "35297edddf2048d34e0baa2cd6549b33be71d776b24e637fe5ded27510f95ee8",
+    "triangle_hash": "ff2babf9890fa3fd8c00e9aefd40aaca352e4fe4bca6c42528ec39d994ed7a08",
+    "normal_hash": "6d3a19199f54e4b5c0fb8a33bf95bf82df408223e5d48671b55cb9d641fe084c",
+    "materials": [
+      "Chest rough hardware forms"
+    ]
+  },
+  "Chest Hoop Rivet 2 5": {
+    "vertex_hash": "f960f06ab78459666e99677d1c3ea034e86c0760c940632e5a4effe7f0caa673",
+    "triangle_hash": "ff2babf9890fa3fd8c00e9aefd40aaca352e4fe4bca6c42528ec39d994ed7a08",
+    "normal_hash": "159a23303277518b70430a1009da15f619dce6c4be84c3f2ac97a545602c473a",
+    "materials": [
+      "Chest rough hardware forms"
+    ]
+  },
+  "Chest Hoop Rivet 3 0": {
+    "vertex_hash": "a9d43ae53f27584317ebe54f7570c196f31609a18ccf8ad5457241538cb90871",
+    "triangle_hash": "ff2babf9890fa3fd8c00e9aefd40aaca352e4fe4bca6c42528ec39d994ed7a08",
+    "normal_hash": "f5a92633f0c800f8c27e9401da3baf39d3f2b7c8e017c30679d19811a520264a",
+    "materials": [
+      "Chest rough hardware forms"
+    ]
+  },
+  "Chest Hoop Rivet 3 1": {
+    "vertex_hash": "f016fa0c318383b4649cad32649f3127a489509314b6f2e1290c4e2c80023818",
+    "triangle_hash": "ff2babf9890fa3fd8c00e9aefd40aaca352e4fe4bca6c42528ec39d994ed7a08",
+    "normal_hash": "abc54d65d48298fed73c1a5807fee8264637e9ad433b780c1a86c346d23d85f9",
+    "materials": [
+      "Chest rough hardware forms"
+    ]
+  },
+  "Chest Upper Corner Front Rivet -1 -1": {
+    "vertex_hash": "d170a43af907fc95256bfdcf6f4b12588a7c36ea8c41d321df00ffcf487ee090",
+    "triangle_hash": "ff2babf9890fa3fd8c00e9aefd40aaca352e4fe4bca6c42528ec39d994ed7a08",
+    "normal_hash": "64514fe9345e3bff77ea554ac733b4c58e58e687277c84ffd96374e775113ffa",
+    "materials": [
+      "Chest rough hardware forms"
+    ]
+  },
+  "Chest Upper Corner End Rivet -1 -1": {
+    "vertex_hash": "2afbd36323888db423f063b68a6ad2b3ca18974d9b3ef9b1b27c079232d4ad79",
+    "triangle_hash": "ff2babf9890fa3fd8c00e9aefd40aaca352e4fe4bca6c42528ec39d994ed7a08",
+    "normal_hash": "974d57db75aab31b5c453deef81bb8f86e514e99263650e4ffb09941806e65e7",
+    "materials": [
+      "Chest rough hardware forms"
+    ]
+  },
+  "Chest Boot Front Rivet -1 -1": {
+    "vertex_hash": "817e8ada32c69cc48c7b3f86f87a4b234e6ed76053edcd8ea35e27b009831ed5",
+    "triangle_hash": "ff2babf9890fa3fd8c00e9aefd40aaca352e4fe4bca6c42528ec39d994ed7a08",
+    "normal_hash": "682fbda3c10fb4a088c766752fa85dc32b9c4d0989d0f664288ade4f00203702",
+    "materials": [
+      "Chest rough hardware forms"
+    ]
+  },
+  "Chest Boot End Rivet -1 -1": {
+    "vertex_hash": "b87cb3bd3f748bd94e290777693aca0cd7a1f96cda9c4efab9fede7fae3d27eb",
+    "triangle_hash": "ff2babf9890fa3fd8c00e9aefd40aaca352e4fe4bca6c42528ec39d994ed7a08",
+    "normal_hash": "35a1fc450ffad6664d6542b35cf6d10a985a814b7b36b30c4a9f8e7d7dbc87fa",
+    "materials": [
+      "Chest rough hardware forms"
+    ]
+  },
+  "Chest Upper Corner Front Rivet -1 1": {
+    "vertex_hash": "21da9861bb6f2749483b784871933e3f14ac3fc9be2e5200949b70bfe0257c20",
+    "triangle_hash": "ff2babf9890fa3fd8c00e9aefd40aaca352e4fe4bca6c42528ec39d994ed7a08",
+    "normal_hash": "a6046f660b86b3f9403659b7ccd3ae5a8aa456882b47fc07ae23b47f79615e27",
+    "materials": [
+      "Chest rough hardware forms"
+    ]
+  },
+  "Chest Upper Corner End Rivet -1 1": {
+    "vertex_hash": "dc4f632a9a39d8051ad52320f795105bcb2e0667e1b77323d4bd06bf300e658a",
+    "triangle_hash": "ff2babf9890fa3fd8c00e9aefd40aaca352e4fe4bca6c42528ec39d994ed7a08",
+    "normal_hash": "4069ffb98a6cb72957fd3e0f4e920f5cdce300c134b295f8afa95485c82a5d82",
+    "materials": [
+      "Chest rough hardware forms"
+    ]
+  },
+  "Chest Boot Front Rivet -1 1": {
+    "vertex_hash": "810b63bb3b5f1c5390e7453780bcd165ee9a1cf06667c09e897fb7e53e98be31",
+    "triangle_hash": "ff2babf9890fa3fd8c00e9aefd40aaca352e4fe4bca6c42528ec39d994ed7a08",
+    "normal_hash": "dfc0e4d5f2c13509edba7376d58dd220458e05a0904491a23e04c35a5459e675",
+    "materials": [
+      "Chest rough hardware forms"
+    ]
+  },
+  "Chest Boot End Rivet -1 1": {
+    "vertex_hash": "985266b3e0610256a556134507b203bcfbaccbe2141dd7e2558ec8e1507adbcd",
+    "triangle_hash": "ff2babf9890fa3fd8c00e9aefd40aaca352e4fe4bca6c42528ec39d994ed7a08",
+    "normal_hash": "484b5ca05bf44a3c52a7dfd928b3292635e75d90e644c36d1f7f76a5eff47f04",
+    "materials": [
+      "Chest rough hardware forms"
+    ]
+  },
+  "Chest Upper Corner Front Rivet 1 -1": {
+    "vertex_hash": "740fcebd24341bd6428d91c54fe6808ac9aaf512e534a7be1384486cae63768f",
+    "triangle_hash": "ff2babf9890fa3fd8c00e9aefd40aaca352e4fe4bca6c42528ec39d994ed7a08",
+    "normal_hash": "4debef045793b2698cbf9b3a841470f73777bc980666f92f2b167f309d459aeb",
+    "materials": [
+      "Chest rough hardware forms"
+    ]
+  },
+  "Chest Upper Corner End Rivet 1 -1": {
+    "vertex_hash": "4d633dddde21145d022d37a0e1c612cea993cfbe00a260f0f8335d850809e89b",
+    "triangle_hash": "ff2babf9890fa3fd8c00e9aefd40aaca352e4fe4bca6c42528ec39d994ed7a08",
+    "normal_hash": "645d06f890278fc28a3a7bfda72ee3089db50532788f58853684c6fab3123187",
+    "materials": [
+      "Chest rough hardware forms"
+    ]
+  },
+  "Chest Boot Front Rivet 1 -1": {
+    "vertex_hash": "ade81113def41b343d2db0b914763b95cbbc4c89b4d2723e0872134cad9900bf",
+    "triangle_hash": "ff2babf9890fa3fd8c00e9aefd40aaca352e4fe4bca6c42528ec39d994ed7a08",
+    "normal_hash": "e98f295f3c742dc929bcdf31b50a87e1fc1e40b26cba9d30608764e27e4de447",
+    "materials": [
+      "Chest rough hardware forms"
+    ]
+  },
+  "Chest Boot End Rivet 1 -1": {
+    "vertex_hash": "0646ef467e679353b6dd85dc451028a551065a4a4fce1de2b6e7eb2ea986efd2",
+    "triangle_hash": "ff2babf9890fa3fd8c00e9aefd40aaca352e4fe4bca6c42528ec39d994ed7a08",
+    "normal_hash": "cdddf269d346405a0a6bd547a8552447de7e2c6262b974533793cbdde0502cb7",
+    "materials": [
+      "Chest rough hardware forms"
+    ]
+  },
+  "Chest Upper Corner Front Rivet 1 1": {
+    "vertex_hash": "33666f5e19c141b16842d1f91ef6e58f6b2c03cc1bc5b0ed1020aa0ed8c9e3f3",
+    "triangle_hash": "ff2babf9890fa3fd8c00e9aefd40aaca352e4fe4bca6c42528ec39d994ed7a08",
+    "normal_hash": "70ab168a795de32c6b1db77742f1abb4970d3aa4b580df57bc11113ca3dd7869",
+    "materials": [
+      "Chest rough hardware forms"
+    ]
+  },
+  "Chest Upper Corner End Rivet 1 1": {
+    "vertex_hash": "e92b68e45805b4cff9a698429c46ad83eba16ffc67b1beea87d2b556d0119338",
+    "triangle_hash": "ff2babf9890fa3fd8c00e9aefd40aaca352e4fe4bca6c42528ec39d994ed7a08",
+    "normal_hash": "032a57b4dc73748d499b4d213511ebd3f1621ae0d84d1f327a8e1ab0ab35a772",
+    "materials": [
+      "Chest rough hardware forms"
+    ]
+  },
+  "Chest Boot Front Rivet 1 1": {
+    "vertex_hash": "6c6de27dcc55f2bd61bbc990a067ba4dab459ab035c55a9b2d6280f5181038a1",
+    "triangle_hash": "ff2babf9890fa3fd8c00e9aefd40aaca352e4fe4bca6c42528ec39d994ed7a08",
+    "normal_hash": "03ec4c26ba63a3174a375856a8087f07ff6a6ee3941c8a89f9d5c900114a51a0",
+    "materials": [
+      "Chest rough hardware forms"
+    ]
+  },
+  "Chest Boot End Rivet 1 1": {
+    "vertex_hash": "53b886b853642e1e9d19b3995ee7c7a827ca01ecfbd8bd79a383f3bd5f2e247a",
+    "triangle_hash": "ff2babf9890fa3fd8c00e9aefd40aaca352e4fe4bca6c42528ec39d994ed7a08",
+    "normal_hash": "d94749a0aef1ed333b92070c6f041f9b426cfe18b5d138112ffb857dc477c335",
+    "materials": [
+      "Chest rough hardware forms"
+    ]
+  },
+  "Chest Body Lip Rivet -1 0": {
+    "vertex_hash": "3c9e942fdfba0c1605e67f3ab159f9b870c324c3a3962e21387408ec301383a7",
+    "triangle_hash": "ff2babf9890fa3fd8c00e9aefd40aaca352e4fe4bca6c42528ec39d994ed7a08",
+    "normal_hash": "48c35650645797784786c59b672d7fea8cc040c70f86b5c622d4cbcabd503137",
+    "materials": [
+      "Chest rough hardware forms"
+    ]
+  },
+  "Chest Body Lip Rivet -1 1": {
+    "vertex_hash": "a51b79fc3521eb9a86c509248fbc6a052d6df016ca355507b6091dcf5d37f35e",
+    "triangle_hash": "ff2babf9890fa3fd8c00e9aefd40aaca352e4fe4bca6c42528ec39d994ed7a08",
+    "normal_hash": "c41cf5d2f0b5f152e31059a68d6cad08fad04d6d5c816782dd79dae59de001b9",
+    "materials": [
+      "Chest rough hardware forms"
+    ]
+  },
+  "Chest Body Lip Rivet 1 0": {
+    "vertex_hash": "2ccfa6d027026476d3db5ae6170223963e007bbe2efae62f2963b69e5f8959c5",
+    "triangle_hash": "ff2babf9890fa3fd8c00e9aefd40aaca352e4fe4bca6c42528ec39d994ed7a08",
+    "normal_hash": "ca39739ff775291fef900fcfb2a11828bd70391bd7a891d9e4f42774583dcf14",
+    "materials": [
+      "Chest rough hardware forms"
+    ]
+  },
+  "Chest Body Lip Rivet 1 1": {
+    "vertex_hash": "5ee6dfe8206bae130b132f5d7b5d904aec49c9a11fb4b764eec62c9656edeab2",
+    "triangle_hash": "ff2babf9890fa3fd8c00e9aefd40aaca352e4fe4bca6c42528ec39d994ed7a08",
+    "normal_hash": "778c57b31e2eec205b34678cd4a2562fa7a947d5a9b217c0fb4708644bb49400",
+    "materials": [
+      "Chest rough hardware forms"
+    ]
+  },
+  "Chest Handle Mount Rivet -1 -1": {
+    "vertex_hash": "0519557b690e6df562f552a63ab0af28a391104dbb6e8fdc10799b517bbc5b02",
+    "triangle_hash": "ff2babf9890fa3fd8c00e9aefd40aaca352e4fe4bca6c42528ec39d994ed7a08",
+    "normal_hash": "213f3e2967a3d5d8163e5b8cabaa6013e0106d80890e47049d8c0d833a845b78",
+    "materials": [
+      "Chest rough hardware forms"
+    ]
+  },
+  "Chest Handle Mount Rivet -1 1": {
+    "vertex_hash": "47a098b41c3e60a4fbd36550583e1ebbe7adc07d0ea8da6f6f0e2996c50ef708",
+    "triangle_hash": "ff2babf9890fa3fd8c00e9aefd40aaca352e4fe4bca6c42528ec39d994ed7a08",
+    "normal_hash": "82ac746ec27ffee3fdc513aa8f9222cec1a2f5788071c2080d23832e73beebca",
+    "materials": [
+      "Chest rough hardware forms"
+    ]
+  },
+  "Chest Handle Mount Rivet 1 -1": {
+    "vertex_hash": "cbe9356a413b256ed78f073db868c1f364c7d2b7b113564c93cfc0223275d487",
+    "triangle_hash": "ff2babf9890fa3fd8c00e9aefd40aaca352e4fe4bca6c42528ec39d994ed7a08",
+    "normal_hash": "de1188c97af73300276552cffd38583fd93db9f7f321ed40c66b8ff1d610d813",
+    "materials": [
+      "Chest rough hardware forms"
+    ]
+  },
+  "Chest Handle Mount Rivet 1 1": {
+    "vertex_hash": "4add92124b26aa4cc3d3308947de6aad1443f21f8a422b6e9ca5a182d83ee2dc",
+    "triangle_hash": "ff2babf9890fa3fd8c00e9aefd40aaca352e4fe4bca6c42528ec39d994ed7a08",
+    "normal_hash": "055cac027371b940c83fa8000a14db93f9c14e612770c8fef07310afadb31c9f",
+    "materials": [
+      "Chest rough hardware forms"
+    ]
+  },
+  "Chest Lock Rivet 0": {
+    "vertex_hash": "df36a4a80283f6bbaf93206bee274cd64bf35b0f832a89e0855324e42cf8515a",
+    "triangle_hash": "ff2babf9890fa3fd8c00e9aefd40aaca352e4fe4bca6c42528ec39d994ed7a08",
+    "normal_hash": "e366dae6b626daf122464329105af85f91d5aa2177b74ebc9e474fdd222e0046",
+    "materials": [
+      "Chest rough hardware forms"
+    ]
+  },
+  "Chest Lock Rivet 1": {
+    "vertex_hash": "07af21a318c019c0baf8922f44fefcabf68643c4c29ba2a1be76414a5721ad47",
+    "triangle_hash": "ff2babf9890fa3fd8c00e9aefd40aaca352e4fe4bca6c42528ec39d994ed7a08",
+    "normal_hash": "df6973923823e8825c209c8fb87cfe57b1dbf3f17a7eca4842647617ff960296",
+    "materials": [
+      "Chest rough hardware forms"
+    ]
+  },
+  "Chest Lock Rivet 2": {
+    "vertex_hash": "e9256df02bd091100cc322c552a15e0b12bfc949aa3e65bbeeae088294055772",
+    "triangle_hash": "ff2babf9890fa3fd8c00e9aefd40aaca352e4fe4bca6c42528ec39d994ed7a08",
+    "normal_hash": "eb0841b87811c70d5c3bccc5d003f4fb6f8448f1f33e08b9fb0f2c6d9224e782",
+    "materials": [
+      "Chest rough hardware forms"
+    ]
+  },
+  "Chest Lock Rivet 3": {
+    "vertex_hash": "8440701dbf247f9e798486caad7705000acfa5c3cd02e58998543adc745f6fa7",
+    "triangle_hash": "ff2babf9890fa3fd8c00e9aefd40aaca352e4fe4bca6c42528ec39d994ed7a08",
+    "normal_hash": "dfc15d356ff3157bfd06a40809b149d41e2e4abe8541707b285ba285f9225433",
+    "materials": [
+      "Chest rough hardware forms"
+    ]
+  },
+  "Chest Lock Rivet 4": {
+    "vertex_hash": "40431b60fb9486a98151b680d80ba41cb7899a0f1f099414bcd9583a5519faea",
+    "triangle_hash": "ff2babf9890fa3fd8c00e9aefd40aaca352e4fe4bca6c42528ec39d994ed7a08",
+    "normal_hash": "6d4a3497f85425da7a9c50bc9df12365382d3cc445c7a981c87708fccbb7a31a",
+    "materials": [
+      "Chest rough hardware forms"
+    ]
+  },
+  "Chest Lock Rivet 5": {
+    "vertex_hash": "2badfedf0fa060eb27be0404153f6de90de541478ccb1d3b0ec6f4456c9a5313",
+    "triangle_hash": "ff2babf9890fa3fd8c00e9aefd40aaca352e4fe4bca6c42528ec39d994ed7a08",
+    "normal_hash": "59f643e093ca95e828b2b9ff9859b2f3644841302b4e0e909239c7eaa4987a0d",
+    "materials": [
+      "Chest rough hardware forms"
+    ]
+  },
+  "Chest Lock Rivet 6": {
+    "vertex_hash": "fdd47a7cc2218925d7aeee27107db5737e3eb8f786d8b925d04f2bd6b3e5793c",
+    "triangle_hash": "ff2babf9890fa3fd8c00e9aefd40aaca352e4fe4bca6c42528ec39d994ed7a08",
+    "normal_hash": "5f0324ccf84ae4b046974392cdf746850dd9cc97d1a12b088580583095dc95ac",
+    "materials": [
+      "Chest rough hardware forms"
+    ]
+  },
+  "Chest Lower Strap Rivet": {
+    "vertex_hash": "67590c9776f3da3d95b31aa49d4d0d400fe5fcff781e41b249dddce7482de4fc",
+    "triangle_hash": "ff2babf9890fa3fd8c00e9aefd40aaca352e4fe4bca6c42528ec39d994ed7a08",
+    "normal_hash": "51c9d0a47961cf5847b505826fef4ce1cd96d70101a9271868e4fb73d515351e",
+    "materials": [
+      "Chest rough hardware forms"
+    ]
+  },
+  "Chest Upright Diamond -1 -1": {
+    "vertex_hash": "a1dd2ee4ab03db57ab8fd2076e4d26ea6e6f62f5d7f6317050cee4310fa40efe",
+    "triangle_hash": "9bdf75ef81be1c36d526d6b09e9b9dd9334f8b0d70d76d113ac34806747f570b",
+    "normal_hash": "5b4a94576efa33e4e3716a303491b363f0f23ae933b1c64169d0d23408be4787",
+    "materials": [
+      "Chest rough hardware forms"
+    ]
+  },
+  "Chest Upright Diamond -1 1": {
+    "vertex_hash": "fb03842686e995fe4cc622c50223b10f7a638652462a0dc50e04d9ec0105f063",
+    "triangle_hash": "3dcc571d458677ab53aeab02b4a419e43e10fc3509addac73c0889797fb451de",
+    "normal_hash": "78bd686989835d0c4537f4de03dba7ee09b6fef2e048a218816a1d2e2fd6ac0a",
+    "materials": [
+      "Chest rough hardware forms"
+    ]
+  },
+  "Chest Upright Diamond 1 -1": {
+    "vertex_hash": "59600b99efd8da3725b97d3a4989904679844604679702fef4fb45ec9e017ebf",
+    "triangle_hash": "9bdf75ef81be1c36d526d6b09e9b9dd9334f8b0d70d76d113ac34806747f570b",
+    "normal_hash": "3c52d973ceac1a1af077b1c9054c6d431e55a75febf4b740e7711b921d527184",
+    "materials": [
+      "Chest rough hardware forms"
+    ]
+  },
+  "Chest Upright Diamond 1 1": {
+    "vertex_hash": "baa6f38524455f636705f6b3d91a6558a216333613782495152e7e412b4a0e49",
+    "triangle_hash": "3dcc571d458677ab53aeab02b4a419e43e10fc3509addac73c0889797fb451de",
+    "normal_hash": "24de6b195aef4e1c706f5bf6da2f8514792eb6c4e9c678dc7644d4022172e79e",
+    "materials": [
+      "Chest rough hardware forms"
+    ]
+  },
+  "Chest End Arch Rivet -1 0": {
+    "vertex_hash": "c412a829c6bf361882586c2e707853adb0aad55be8a382393ef1b8cbf01c789d",
+    "triangle_hash": "ff2babf9890fa3fd8c00e9aefd40aaca352e4fe4bca6c42528ec39d994ed7a08",
+    "normal_hash": "198fd5c238b7147abeae4e243689e891a2b8d086a7319781ace57233744bda89",
+    "materials": [
+      "Chest rough hardware forms"
+    ]
+  },
+  "Chest End Arch Rivet -1 1": {
+    "vertex_hash": "83925e357d932c746b943d501b992cc02fe5b1f18936f67486b6ec55b0557c26",
+    "triangle_hash": "ff2babf9890fa3fd8c00e9aefd40aaca352e4fe4bca6c42528ec39d994ed7a08",
+    "normal_hash": "c2b6c162f61c7897009ee816e5463a7bb7c178312642a858edf27542584cc49c",
+    "materials": [
+      "Chest rough hardware forms"
+    ]
+  },
+  "Chest Corner Body Cuff Front Rivet -1 -1": {
+    "vertex_hash": "3fd84f977e8178eaf14c2482f350f06e508d54efd328ef1dd3fce8fee43302f6",
+    "triangle_hash": "ff2babf9890fa3fd8c00e9aefd40aaca352e4fe4bca6c42528ec39d994ed7a08",
+    "normal_hash": "8d26721d743084f3b2a47b7c7eb8a484a8a1d0db03e97e0de7e6f15e7a0b9006",
+    "materials": [
+      "Chest rough hardware forms"
+    ]
+  },
+  "Chest Corner Body Cuff End Rivet -1 -1": {
+    "vertex_hash": "d7efbaad6ba5dc9efeb4426d3d1ab59d3b5fc3870b74d025f5766b613cc3fbc5",
+    "triangle_hash": "ff2babf9890fa3fd8c00e9aefd40aaca352e4fe4bca6c42528ec39d994ed7a08",
+    "normal_hash": "d88d08f286deb2ab0a240722416cae276c24ff13223b523fdd62ae70a7222cb2",
+    "materials": [
+      "Chest rough hardware forms"
+    ]
+  },
+  "Chest Corner Body Cuff Front Rivet -1 1": {
+    "vertex_hash": "8c570a1819efe265f0dac0e0eafbfc281fb4c4574be8da8368bad410d1a38955",
+    "triangle_hash": "ff2babf9890fa3fd8c00e9aefd40aaca352e4fe4bca6c42528ec39d994ed7a08",
+    "normal_hash": "dff2f37100692f79566fe69fcdf1791fa19f982f6ab53b74cb8bd1b7bb3dd986",
+    "materials": [
+      "Chest rough hardware forms"
+    ]
+  },
+  "Chest Corner Body Cuff End Rivet -1 1": {
+    "vertex_hash": "db8595bd316b8f00f13616abba45695a21a10add5a4653f7036bb9353ddfbe26",
+    "triangle_hash": "ff2babf9890fa3fd8c00e9aefd40aaca352e4fe4bca6c42528ec39d994ed7a08",
+    "normal_hash": "b37a0d3760b6ee98c530a77d4c668ebc2da57389fb5c42243cf6d961d1563849",
+    "materials": [
+      "Chest rough hardware forms"
+    ]
+  },
+  "Chest End Arch Rivet 1 0": {
+    "vertex_hash": "759df94d04d30d940a1bfd6cf24689eb175c1068d339cbe34b29c49fb11cca9f",
+    "triangle_hash": "ff2babf9890fa3fd8c00e9aefd40aaca352e4fe4bca6c42528ec39d994ed7a08",
+    "normal_hash": "00b8c217b1fefcd40cd18ee4ce2d33e9fde02f69a3226fb845c6f116cb8cf5dd",
+    "materials": [
+      "Chest rough hardware forms"
+    ]
+  },
+  "Chest End Arch Rivet 1 1": {
+    "vertex_hash": "0d63ff3e5bcb98a38baa2c99cccd9c290fa232186f21069554c31ed6dccc9cec",
+    "triangle_hash": "ff2babf9890fa3fd8c00e9aefd40aaca352e4fe4bca6c42528ec39d994ed7a08",
+    "normal_hash": "9ec367234af0397c830a23f691b57db6764b5bbfc30ec6cb8d2f76e8f42eec3b",
+    "materials": [
+      "Chest rough hardware forms"
+    ]
+  },
+  "Chest Corner Body Cuff Front Rivet 1 -1": {
+    "vertex_hash": "cf2e83bb1abd92d3ec022b3d534dcb468c5a7131a4ccb386e56b395fa64cde46",
+    "triangle_hash": "ff2babf9890fa3fd8c00e9aefd40aaca352e4fe4bca6c42528ec39d994ed7a08",
+    "normal_hash": "4dea232286bac2a19b216fe5010e3957c1814cf617cd7786c95d1cb374090b58",
+    "materials": [
+      "Chest rough hardware forms"
+    ]
+  },
+  "Chest Corner Body Cuff End Rivet 1 -1": {
+    "vertex_hash": "fba9e023074a72d66c55ce1165886b88a014ee570cf81123f31c66de39f2c430",
+    "triangle_hash": "ff2babf9890fa3fd8c00e9aefd40aaca352e4fe4bca6c42528ec39d994ed7a08",
+    "normal_hash": "571b3fc4518f380beffd99f578df8c9891e470181a6ae9f146cf0f37e420528d",
+    "materials": [
+      "Chest rough hardware forms"
+    ]
+  },
+  "Chest Corner Body Cuff Front Rivet 1 1": {
+    "vertex_hash": "23cbac3f247e1034e0bd08968e8a4fbe597b027e569d48cc1434d43bce257f29",
+    "triangle_hash": "ff2babf9890fa3fd8c00e9aefd40aaca352e4fe4bca6c42528ec39d994ed7a08",
+    "normal_hash": "92a86b57fc7244e024a6265dc4fd3bbba14cd8e3f3351458b1ecdf3516bb4dc1",
+    "materials": [
+      "Chest rough hardware forms"
+    ]
+  },
+  "Chest Corner Body Cuff End Rivet 1 1": {
+    "vertex_hash": "cdb173d82a8f24a80d79a1aac6e2ae8f0e7e0198024fa783750ba050b6b64b9b",
+    "triangle_hash": "ff2babf9890fa3fd8c00e9aefd40aaca352e4fe4bca6c42528ec39d994ed7a08",
+    "normal_hash": "5724a18f5809d40cd4e7e03d766ef7fa0649b96e5583fb81dd4ccaf289d7e1a9",
+    "materials": [
+      "Chest rough hardware forms"
+    ]
+  },
+  "Chest Hasp Pivot Dome -1": {
+    "vertex_hash": "6feea8854d9b787cd661ce149a90406d6bbf7dca6610aefc7bd98db88b504431",
+    "triangle_hash": "ff2babf9890fa3fd8c00e9aefd40aaca352e4fe4bca6c42528ec39d994ed7a08",
+    "normal_hash": "d5e0e74e686060f6aee347f98d4708adff3f84e8d343afb1f3e65e2f497f2fd3",
+    "materials": [
+      "Chest rough hardware forms"
+    ]
+  },
+  "Chest Hasp Mount Fastener -1": {
+    "vertex_hash": "f882f7c802046d40d08aec579c33c62d8525f88e55a39d22cdf5c1784291581a",
+    "triangle_hash": "ff2babf9890fa3fd8c00e9aefd40aaca352e4fe4bca6c42528ec39d994ed7a08",
+    "normal_hash": "299202259bf5230f60f676c22a5b87eaf764abde5822aca2c6a9111eab4f0047",
+    "materials": [
+      "Chest rough hardware forms"
+    ]
+  },
+  "Chest End Arch Crown Tab -1": {
+    "vertex_hash": "70005ef7e79194d3b24e6524476142c2881c60f7983c497de20947fae566c65c",
+    "triangle_hash": "36c09c6c83df34118e4e74ecf981aa71a2ff5a2cdae67103fb56eb0937fd5e6a",
+    "normal_hash": "431fc1a858583144e601fae8b2bddfef935cc17b7da6a76404ec715e60355ef8",
+    "materials": [
+      "Chest rough structural forms"
+    ]
+  },
+  "Chest End Crown Fastener -1": {
+    "vertex_hash": "64df14887cec5856425babfb34aaddac934e626e32fcb122db91409710441bfe",
+    "triangle_hash": "ff2babf9890fa3fd8c00e9aefd40aaca352e4fe4bca6c42528ec39d994ed7a08",
+    "normal_hash": "8dff9791a9cd3e565c3464b5f4d13dd8d7ead0c93f9bf4c987af0d6442bbe9d8",
+    "materials": [
+      "Chest rough hardware forms"
+    ]
+  },
+  "Chest Hasp Pivot Dome 1": {
+    "vertex_hash": "c2e2d8a55eeda888b2b2050d4f16c0031300605887916cb934744c9020607ab7",
+    "triangle_hash": "ff2babf9890fa3fd8c00e9aefd40aaca352e4fe4bca6c42528ec39d994ed7a08",
+    "normal_hash": "1eb4ce5279e113a429fc1dedd3bf67b2be0b95a34855c0dbcbe889186eafdefb",
+    "materials": [
+      "Chest rough hardware forms"
+    ]
+  },
+  "Chest Hasp Mount Fastener 1": {
+    "vertex_hash": "fde372339019fb9531b69ca4e63c973d54fda254f20e6a820e8a5f24f9d11e7d",
+    "triangle_hash": "ff2babf9890fa3fd8c00e9aefd40aaca352e4fe4bca6c42528ec39d994ed7a08",
+    "normal_hash": "6d85b930eb5e4d2d2c952181da5abb9c0da2160dbfb053e97091d1bd68bc43b7",
+    "materials": [
+      "Chest rough hardware forms"
+    ]
+  },
+  "Chest End Arch Crown Tab 1": {
+    "vertex_hash": "b8e5e358baf815294f6a213221e48b55da4d5beecde0c185b90aa13cb2e605da",
+    "triangle_hash": "d146de6606b29732eb6c80f5e16af70522b558ed4db9dd58fdfd652a3776eb32",
+    "normal_hash": "66989d5cc72f7622d2b9bc4435795006f1c10b4919210c2f4421850e7765d182",
+    "materials": [
+      "Chest rough structural forms"
+    ]
+  },
+  "Chest End Crown Fastener 1": {
+    "vertex_hash": "f1e4bb817eda08d1cbfb486ff07e152c2c9adf2a66a3f12b0a7ccf31165d753c",
+    "triangle_hash": "ff2babf9890fa3fd8c00e9aefd40aaca352e4fe4bca6c42528ec39d994ed7a08",
+    "normal_hash": "3d84fce3a852103ef522666922923b69f826ad50dacd0a01f1e526c179a489f3",
+    "materials": [
+      "Chest rough hardware forms"
+    ]
+  },
+  "Chest Upper Corner Front Rivet -1 -1 Seat": {
+    "vertex_hash": "ae1bd4891658f7440b8f69da6a43974fec1d7df5d793135202836467f5ee4b9b",
+    "triangle_hash": "a4fe7adf6aa6319c162662b56b358256767a1c0c109a34967cc07133a6ae3e02",
+    "normal_hash": "b1b22d8aa359c5c865679aea5aeee7745e6e971d74994483c41eed9069049e48",
+    "materials": [
+      "Chest rough hardware forms"
+    ]
+  },
+  "Chest Upper Corner End Rivet -1 -1 Seat": {
+    "vertex_hash": "db6c442a24d74b1403bc41c2862f7333dac0994b9e080cbe66ed71fba01d740d",
+    "triangle_hash": "a4fe7adf6aa6319c162662b56b358256767a1c0c109a34967cc07133a6ae3e02",
+    "normal_hash": "1de5d530eb9e07f23a28ae88891d37ee7ad7a7cc863d4f7161621bcb4813124d",
+    "materials": [
+      "Chest rough hardware forms"
+    ]
+  },
+  "Chest Boot Front Rivet -1 -1 Seat": {
+    "vertex_hash": "25405109d295fa8161d0b6b9384617c444608c48d40fcd5649843c9f430f5013",
+    "triangle_hash": "a4fe7adf6aa6319c162662b56b358256767a1c0c109a34967cc07133a6ae3e02",
+    "normal_hash": "b11e179b424b56fb943cf60f730e0c03edf3d8c1ad19a917e3f873a5d7b963da",
+    "materials": [
+      "Chest rough hardware forms"
+    ]
+  },
+  "Chest Boot End Rivet -1 -1 Seat": {
+    "vertex_hash": "145f3ffa431ea987e0b844a7847b13cf5f53b1c3b538b654401063e9b16ddfad",
+    "triangle_hash": "a4fe7adf6aa6319c162662b56b358256767a1c0c109a34967cc07133a6ae3e02",
+    "normal_hash": "57196054bbbc66f54a1d34203dbc2fa21d0134a23d3fd4cc75f91d8d7b984f66",
+    "materials": [
+      "Chest rough hardware forms"
+    ]
+  },
+  "Chest Upper Corner Front Rivet -1 1 Seat": {
+    "vertex_hash": "91e79220a10de535764fe9523a6c6c3c6ceda2a7840bf4046d9a320385045006",
+    "triangle_hash": "a4fe7adf6aa6319c162662b56b358256767a1c0c109a34967cc07133a6ae3e02",
+    "normal_hash": "602a9d3d1fd31f2047ec9cc23d7fcb8081b3f2e84c098a7ef694be4ab7d525d4",
+    "materials": [
+      "Chest rough hardware forms"
+    ]
+  },
+  "Chest Upper Corner End Rivet -1 1 Seat": {
+    "vertex_hash": "eb7bca91470842f94c71cb6291e35972de9665a10ea5f8b9b1348cb5526b14fb",
+    "triangle_hash": "a4fe7adf6aa6319c162662b56b358256767a1c0c109a34967cc07133a6ae3e02",
+    "normal_hash": "cb3d4e4d09a50600c78578439e4a6195b5cf223dfd9a6ddc0ed614d3edc71e5c",
+    "materials": [
+      "Chest rough hardware forms"
+    ]
+  },
+  "Chest Boot Front Rivet -1 1 Seat": {
+    "vertex_hash": "561a3d309268c4d27e5502207e7463b808e336da034c58e4e1dfac3e65b10647",
+    "triangle_hash": "a4fe7adf6aa6319c162662b56b358256767a1c0c109a34967cc07133a6ae3e02",
+    "normal_hash": "37ac687e250f33f52705cdb5376e9a438e81e0358bf9656adc1a73b39cfa145c",
+    "materials": [
+      "Chest rough hardware forms"
+    ]
+  },
+  "Chest Boot End Rivet -1 1 Seat": {
+    "vertex_hash": "75fbc720b2c0b6ad32e5606e39289ef550103964db04e9662834e36a6ed03092",
+    "triangle_hash": "a4fe7adf6aa6319c162662b56b358256767a1c0c109a34967cc07133a6ae3e02",
+    "normal_hash": "520256b2b235b6293dc99489868849c8ac1d1e6ee56478d978e62171491ae8b7",
+    "materials": [
+      "Chest rough hardware forms"
+    ]
+  },
+  "Chest Upper Corner Front Rivet 1 -1 Seat": {
+    "vertex_hash": "4ba31c3f82843ce8f96869d458c0d8cd549870a3643211a263ef3d9a87759be9",
+    "triangle_hash": "a4fe7adf6aa6319c162662b56b358256767a1c0c109a34967cc07133a6ae3e02",
+    "normal_hash": "a9de285ce2b2436d2de221a544a43b0c51c9ef5d31683975052c0e90ecb9492a",
+    "materials": [
+      "Chest rough hardware forms"
+    ]
+  },
+  "Chest Upper Corner End Rivet 1 -1 Seat": {
+    "vertex_hash": "a4f5c89e537888dbe11c44204db25c5ab7b6795073fdc99d0bf071d27fc518d7",
+    "triangle_hash": "a4fe7adf6aa6319c162662b56b358256767a1c0c109a34967cc07133a6ae3e02",
+    "normal_hash": "71a2df4f8814e9177d28bedb8019a3a9b8bb366174cc71e36e88a42aa2d0ffa8",
+    "materials": [
+      "Chest rough hardware forms"
+    ]
+  },
+  "Chest Boot Front Rivet 1 -1 Seat": {
+    "vertex_hash": "734e609b616b6e7ce37759fa414da53093d880988f39abc5cae92334ad41f76a",
+    "triangle_hash": "a4fe7adf6aa6319c162662b56b358256767a1c0c109a34967cc07133a6ae3e02",
+    "normal_hash": "78850e4800b1d1e6d8b7c162800470b0161295808d24396a385c362685c43f5c",
+    "materials": [
+      "Chest rough hardware forms"
+    ]
+  },
+  "Chest Boot End Rivet 1 -1 Seat": {
+    "vertex_hash": "7314f6e4f97391f77bd786383d24a231d0513117ad32bb55e93f1a94e74edd9f",
+    "triangle_hash": "a4fe7adf6aa6319c162662b56b358256767a1c0c109a34967cc07133a6ae3e02",
+    "normal_hash": "721f8ffcacf28007c83dc52bfdca00e94051478d06c46b9761be8a8ca3637f27",
+    "materials": [
+      "Chest rough hardware forms"
+    ]
+  },
+  "Chest Upper Corner Front Rivet 1 1 Seat": {
+    "vertex_hash": "4378ff598a554b949d674c5512b9507b807746df38984bdaabd50fc2ecf65511",
+    "triangle_hash": "a4fe7adf6aa6319c162662b56b358256767a1c0c109a34967cc07133a6ae3e02",
+    "normal_hash": "6930d286ce9d5a09e8273d13d3cd22be6c56878d1f8235d5f3f638951c46db1c",
+    "materials": [
+      "Chest rough hardware forms"
+    ]
+  },
+  "Chest Upper Corner End Rivet 1 1 Seat": {
+    "vertex_hash": "ae958763815f7a559dcfed7a79ece5f185a1a35a6f9abcb0e496d5c9e12275c0",
+    "triangle_hash": "a4fe7adf6aa6319c162662b56b358256767a1c0c109a34967cc07133a6ae3e02",
+    "normal_hash": "7f548969b2b3fe70570328fd3bf2b2c565576b8e4c8353d9cf58149d74cbe61c",
+    "materials": [
+      "Chest rough hardware forms"
+    ]
+  },
+  "Chest Boot Front Rivet 1 1 Seat": {
+    "vertex_hash": "22749295f492369397f3080e44a3e7090aa721adcc52e6ba7728984312dc21ae",
+    "triangle_hash": "a4fe7adf6aa6319c162662b56b358256767a1c0c109a34967cc07133a6ae3e02",
+    "normal_hash": "aa2d005acc378965e4273de257733e7e131139bcbf5118c5dcc010d19c33bb79",
+    "materials": [
+      "Chest rough hardware forms"
+    ]
+  },
+  "Chest Boot End Rivet 1 1 Seat": {
+    "vertex_hash": "80ef6a2d9eaac58a94b8cf63851151c26a946d55839fce1b0debdfc28cf8cc23",
+    "triangle_hash": "a4fe7adf6aa6319c162662b56b358256767a1c0c109a34967cc07133a6ae3e02",
+    "normal_hash": "fbdc1f194e0eec57527058a7d053020c49e321c1de1bd1f6be74634fe55dde9d",
+    "materials": [
+      "Chest rough hardware forms"
+    ]
+  },
+  "Chest Rail Rivet -1 0": {
+    "vertex_hash": "9284952881901c32104882298c4073038629451148d762a375d25210e3a08279",
+    "triangle_hash": "ff2babf9890fa3fd8c00e9aefd40aaca352e4fe4bca6c42528ec39d994ed7a08",
+    "normal_hash": "016c9d4f8ce8dcc74a9e796575eae8114254c852623a628d67f8431be80b7715",
+    "materials": [
+      "Chest rough hardware forms"
+    ]
+  },
+  "Chest Rail Rivet -1 1": {
+    "vertex_hash": "06986f39705f40e5317c7af1b388e5d99c25678c40aa052779c0a42dcd69a9c6",
+    "triangle_hash": "ff2babf9890fa3fd8c00e9aefd40aaca352e4fe4bca6c42528ec39d994ed7a08",
+    "normal_hash": "ead81f35e9e49d1d8d06963d992d0962d013f5aafe4a8668763a582ac466b7f3",
+    "materials": [
+      "Chest rough hardware forms"
+    ]
+  },
+  "Chest Rail Rivet -1 3": {
+    "vertex_hash": "b78306766880de57dc7b86e368320b7dc8d67ac3dc58a9c68cd4b00b873d5ecc",
+    "triangle_hash": "ff2babf9890fa3fd8c00e9aefd40aaca352e4fe4bca6c42528ec39d994ed7a08",
+    "normal_hash": "534acee11b541dcf2d0d857a5bb18deefe24c1e3d6ca1060670b2361bdb85e34",
+    "materials": [
+      "Chest rough hardware forms"
+    ]
+  },
+  "Chest Rail Rivet -1 4": {
+    "vertex_hash": "aa19463a27e42ec684f881d3a5e7d94cd8e45725654e3c819f0876521fb39685",
+    "triangle_hash": "ff2babf9890fa3fd8c00e9aefd40aaca352e4fe4bca6c42528ec39d994ed7a08",
+    "normal_hash": "d94f6690829e7e178ae37e2f45ec55cb95bae61021ead254e56e155e76a18b5e",
+    "materials": [
+      "Chest rough hardware forms"
+    ]
+  },
+  "Chest Rail Rivet 1 0": {
+    "vertex_hash": "eec9490b87830114c76617096fc10a1c9fb6bf6c39d0f10ad8509c2a1abc5df0",
+    "triangle_hash": "ff2babf9890fa3fd8c00e9aefd40aaca352e4fe4bca6c42528ec39d994ed7a08",
+    "normal_hash": "4351ff29aa895ed69ef5dcfc643d66d8a24971d8d5b9d905d833be85bbe3e4f2",
+    "materials": [
+      "Chest rough hardware forms"
+    ]
+  },
+  "Chest Rail Rivet 1 1": {
+    "vertex_hash": "7f929c1ea217eef176ec7a33091b52ef1bff22e360c64b508365edac8d6aaa09",
+    "triangle_hash": "ff2babf9890fa3fd8c00e9aefd40aaca352e4fe4bca6c42528ec39d994ed7a08",
+    "normal_hash": "7b025eefa664776e22d9e98ea6c678bc2364cfd4273025f39ba4058cafa16088",
+    "materials": [
+      "Chest rough hardware forms"
+    ]
+  },
+  "Chest Rail Rivet 1 2": {
+    "vertex_hash": "ac90976ac68f8c4af13563081fa1d1dc1e35efe000f5b0c12ba89488c7c1bc36",
+    "triangle_hash": "ff2babf9890fa3fd8c00e9aefd40aaca352e4fe4bca6c42528ec39d994ed7a08",
+    "normal_hash": "982528629bdd4cda0333b118f6a12fb5141e2200cef3dc444d9fe22b46463958",
+    "materials": [
+      "Chest rough hardware forms"
+    ]
+  },
+  "Chest Rail Rivet 1 3": {
+    "vertex_hash": "31187ae4bcd9eb1c72defebe3501a80f153e04040518aaf695f8f42db0bc773a",
+    "triangle_hash": "ff2babf9890fa3fd8c00e9aefd40aaca352e4fe4bca6c42528ec39d994ed7a08",
+    "normal_hash": "36db9946a8fa191aff97fa3c0f792d939a481b760f0dc81e1aec13f4888ee828",
+    "materials": [
+      "Chest rough hardware forms"
+    ]
+  },
+  "Chest Rail Rivet 1 4": {
+    "vertex_hash": "291caf61d3b68d44a5659d09e65d356b1e5c6dd14ab08accbd103127a1f306ce",
+    "triangle_hash": "ff2babf9890fa3fd8c00e9aefd40aaca352e4fe4bca6c42528ec39d994ed7a08",
+    "normal_hash": "ef6fce83f1f0a347122029b684cfc81f664888e0fe86581aadd9dc2cdede8aa7",
+    "materials": [
+      "Chest rough hardware forms"
+    ]
+  },
+  "Chest End Rail Rivet -1 0": {
+    "vertex_hash": "301064f203103137d879713506ac7ef1265e28d8c1d6fd610cc5498b29f52ada",
+    "triangle_hash": "ff2babf9890fa3fd8c00e9aefd40aaca352e4fe4bca6c42528ec39d994ed7a08",
+    "normal_hash": "c93f0d889884c1b8e35f0c3f2e7109e1ef6c6f59e7db5a774d5a6b2d93d301ee",
+    "materials": [
+      "Chest rough hardware forms"
+    ]
+  },
+  "Chest End Rail Rivet -1 1": {
+    "vertex_hash": "cb4c4d08f790738b63a3105e78cc96a0d5fc7f91b07aa70a2c0ea9b6855a4bac",
+    "triangle_hash": "ff2babf9890fa3fd8c00e9aefd40aaca352e4fe4bca6c42528ec39d994ed7a08",
+    "normal_hash": "e7104d3777cc90b43d78c6b2f1b6b116bd564294d758fb4392d9e38737eebe61",
+    "materials": [
+      "Chest rough hardware forms"
+    ]
+  },
+  "Chest End Rail Rivet 1 0": {
+    "vertex_hash": "a2bcb7d06b4a6cb62da086dd351ee3c6cf11482716471a089af702e3697da7fe",
+    "triangle_hash": "ff2babf9890fa3fd8c00e9aefd40aaca352e4fe4bca6c42528ec39d994ed7a08",
+    "normal_hash": "f627fccdfc396546b08a5814b0cb90019ac34f9d7aafdfecd96f94a6ee60b703",
+    "materials": [
+      "Chest rough hardware forms"
+    ]
+  },
+  "Chest End Rail Rivet 1 1": {
+    "vertex_hash": "699e65b582ffa1d05bb10ab5eefa7b12d8f4402b00274d4df190ac3bd16bb7bd",
+    "triangle_hash": "ff2babf9890fa3fd8c00e9aefd40aaca352e4fe4bca6c42528ec39d994ed7a08",
+    "normal_hash": "c861059118a40c175f3c2105cc2e3f7e73735c5aa2d8857d3d1ef64dbf507433",
+    "materials": [
+      "Chest rough hardware forms"
+    ]
+  },
+  "Chest Measured Rolled Handle Cover -1": {
+    "vertex_hash": "3711b7a64a348669ed82ecc22e2729ab19fb137dfcb5bbc5c1371b3e1e5a7a0f",
+    "triangle_hash": "f8aff5e4712c435485822a423f9803ce07184cdcae58ed1f14402d59ffbf587d",
+    "normal_hash": "5ac84882d551fe8e4cbdb5096be8a536f6f36dec54d00194529c818a193c6a0c",
+    "materials": [
+      "Chest rough hardware forms"
+    ]
+  },
+  "Chest Measured Rolled Handle Cover 1": {
+    "vertex_hash": "203dabb938467350344dae8c3b98d73c8970f7c30d3363d8fe14782e301ff2d5",
+    "triangle_hash": "a20a6fdb653c6c51a4867c695b49aa6d646d500be9eb46d3df601c5095bd3a20",
+    "normal_hash": "a6c913251111b832cf0782e0b9ccde5428f1104066a91897ab712d3b4dde3e33",
+    "materials": [
+      "Chest rough hardware forms"
+    ]
+  },
+  "Chest Fixed Front Hinge Knuckle -1": {
+    "vertex_hash": "d6edbd14fdc34c6ac58ecd437ea057243ae730acfeedda26947faf75f1adde51",
+    "triangle_hash": "9d868e8e388bd8642323cc4d819947d690f23c9c56b3f4790bc440d52899adb9",
+    "normal_hash": "11731fe4cf858166bb516a115df28ff83692d10b00be84613974f8e6c67aa2ac",
+    "materials": [
+      "Chest rough hardware forms"
+    ]
+  },
+  "Chest Fixed Front Hinge Knuckle 1": {
+    "vertex_hash": "dcf6d1f76209c6bfbf6e664f0a1f457717a29956a4f0419ba3572d5eb0d90e63",
+    "triangle_hash": "37cc0f0a930841952e461daa0fef7b9f1bbaf4035a511ffb3f06e947457d39ea",
+    "normal_hash": "f7c1aebce780a6391a13079071de5ff2b1ba151d0db58924c455bbd7b77b9b96",
+    "materials": [
+      "Chest rough hardware forms"
+    ]
+  },
+  "Chest Front Hinge Pin": {
+    "vertex_hash": "b51b5b308d7f2a696f0ce6a567f0b7080b232f1593dc56a1a122f4396438f27c",
+    "triangle_hash": "5736403a826855ed08bff6cc713f567f0b42c9a076b9b4830c7d2b837fee5408",
+    "normal_hash": "5c1b6348bf4279f963b8be91b27e55666e58e8748935d4820df7fa5f497bb369",
+    "materials": [
+      "Chest rough hardware forms"
+    ]
+  },
+  "Chest Case Back With Key Bore": {
+    "vertex_hash": "4fd9b15e76b55d80ed136c0b6a1c4356b3246570336921c5e3cede1f3d5fe3f3",
+    "triangle_hash": "c2806a0b5aba1a74d09ce3bebf7eba589a115f049c6e86f0a9ef6c4f4c95875a",
+    "normal_hash": "ea4c333a2497bf773340d6f1ed88c39ea10175db539838000783584c5e795f1f",
+    "materials": [
+      "Chest rough hardware forms"
+    ]
+  },
+  "Chest Hollow Lock Case Walls": {
+    "vertex_hash": "b6466b789ba448b5016211e7c9252a1aa309adfee8d5c3f1de5163e5fcf1a836",
+    "triangle_hash": "b606647a27c84c40ccf281cd04f900d08fd0dadfae8232282fab36c68f37812d",
+    "normal_hash": "8df355eb7aa7b455b152f841fc20384ac07406d19e7e5a1d499177d85d1b790e",
+    "materials": [
+      "Chest rough hardware forms"
+    ]
+  },
+  "Chest Key Driven Slider": {
+    "vertex_hash": "74118ea3e4a9d05e792b62af03b4835df42684748dc814d201b85b357bde9298",
+    "triangle_hash": "54d9e9dfb67fc46b5ccba8cad9110e0c4215eb479c48c72d7e3818eea07d540a",
+    "normal_hash": "f439bb2fce29849cb09361e04617e295eb4b1e9222aa9b7723bd721a50b9f8a4",
+    "materials": [
+      "Chest rough hardware forms"
+    ]
+  },
+  "Chest Compliant Catch Leaf": {
+    "vertex_hash": "b20a7ee6ab329a2b86ce1cb9fcfdbd8fccec1c0561a9f3c0bf7edc6d881f26d2",
+    "triangle_hash": "386d94ce0680e6b95ba91e8c218ce15b1a313392d7d931031e6817dc2ccdcb86",
+    "normal_hash": "f7e14e49fbf5023877b3f2508f91ba1d5f2f3ff6419909316a8fd8dad5e78d03",
+    "materials": [
+      "Chest rough hardware forms"
+    ]
+  },
+  "Chest Fixed Leaf Clamp": {
+    "vertex_hash": "d41f0452ecdf1ad41695accb7dfc6768b74e7f863bcb0af327992c148dd70469",
+    "triangle_hash": "76431937d91fb5294527cc4ace613b120de6cddd2a069c0d55360c7eeb0c4dbb",
+    "normal_hash": "639c890932bcee3c0ad63eda910c2ec191fa956af0a712fc2d90ec4470558999",
+    "materials": [
+      "Chest rough hardware forms"
+    ]
+  },
+  "Chest Small Front Rail Rivet -1": {
+    "vertex_hash": "57f9503f74727b7d1c18fd29b7a94d0eb81ab9119ba4ec341e06b15fa9631ad1",
+    "triangle_hash": "ff2babf9890fa3fd8c00e9aefd40aaca352e4fe4bca6c42528ec39d994ed7a08",
+    "normal_hash": "84f049ad3510e8af63672c5996372c69f024eb11705f0a0303212c4f182b3113",
+    "materials": [
+      "Chest rough hardware forms"
+    ]
+  }
+}

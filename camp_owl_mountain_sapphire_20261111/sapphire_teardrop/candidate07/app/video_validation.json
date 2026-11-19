@@ -1,0 +1,19 @@
+{
+  "native_recording": true,
+  "model_sha256": "1e0168c3978f3c201e04eb8ac32271752fa0ff8a70529013cad1d4f4283ba8a5",
+  "local_watchdog_seconds": 16,
+  "process_pid": 18123,
+  "recording_began_epoch": 1794487566.0355682,
+  "gesture_began_epoch": 1794487566.8456461,
+  "verified_rest_header_y": 1413.5,
+  "video": {
+    "width": 1206,
+    "height": 2622,
+    "duration": "11.075000",
+    "nb_frames": "835"
+  },
+  "recording_stopped": true,
+  "motion_review_pending": false,
+  "reason": "Native local fallback gives a duration limit that separate MCP start and stop calls cannot guarantee during a connection or tool failure",
+  "motion_review": "Native frames at one second intervals show front, early turn, both sides, back and final return with changing reflections. This is motion evidence, not acceptance; bright frame edges and optical contrast remain unresolved."
+}

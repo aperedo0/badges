@@ -1,0 +1,1 @@
+Fresh review of version 11, Nov 8 2026: CLOSENESS 70. Top fixes: crisp veined acanthus with dark gaps and warmer gold; crimson crested ruby without white shards; dark frieze with continuous scrolls; lower domed arch ring and taller neck and bell; wider velvet pleats and engraving.

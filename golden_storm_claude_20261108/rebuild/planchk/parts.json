@@ -1,0 +1,183 @@
+{
+ "units": {
+  "S": 0.0047125848783792145,
+  "axis": 626.8282808216301,
+  "top": 45.411076080124325,
+  "width_px": 1254,
+  "height_px": 1254
+ },
+ "box": [
+  54.44,
+  45.411076080124325,
+  1199.22,
+  1201.8889201193817
+ ],
+ "parts": [
+  {
+   "name": "core",
+   "base": 0.03,
+   "materials": [
+    "Side"
+   ],
+   "triangles": 1452,
+   "front": 180
+  },
+  {
+   "name": "base",
+   "base": 0.06,
+   "materials": [
+    "Enamel",
+    "GoldFrame",
+    "Side"
+   ],
+   "triangles": 30200,
+   "front": 5257
+  },
+  {
+   "name": "point_top",
+   "base": 0.13621729336571886,
+   "materials": [
+    "GoldPoint",
+    "Side"
+   ],
+   "triangles": 716,
+   "front": 214
+  },
+  {
+   "name": "point_bottom",
+   "base": 0.13713544836301286,
+   "materials": [
+    "GoldPoint",
+    "Side"
+   ],
+   "triangles": 1312,
+   "front": 302
+  },
+  {
+   "name": "point_left",
+   "base": 0.1400072708660408,
+   "materials": [
+    "GoldPoint",
+    "Side"
+   ],
+   "triangles": 536,
+   "front": 160
+  },
+  {
+   "name": "point_right",
+   "base": 0.13885564394281427,
+   "materials": [
+    "GoldPoint",
+    "Side"
+   ],
+   "triangles": 388,
+   "front": 119
+  },
+  {
+   "name": "ribbon_0",
+   "base": 0.11,
+   "materials": [
+    "Enamel",
+    "GoldRibbon",
+    "Side"
+   ],
+   "triangles": 3752,
+   "front": 1204
+  },
+  {
+   "name": "ribbon_1",
+   "base": 0.11,
+   "materials": [
+    "Enamel",
+    "GoldRibbon",
+    "Side"
+   ],
+   "triangles": 5624,
+   "front": 1867
+  },
+  {
+   "name": "ribbon_2",
+   "base": 0.11,
+   "materials": [
+    "Enamel",
+    "GoldRibbon",
+    "Side"
+   ],
+   "triangles": 712,
+   "front": 200
+  },
+  {
+   "name": "line_0",
+   "base": 0.12495808693750954,
+   "materials": [
+    "GoldRibbon",
+    "Side"
+   ],
+   "triangles": 288,
+   "front": 84
+  },
+  {
+   "name": "cloud_lower",
+   "base": 0.21203955703013816,
+   "materials": [
+    "GoldCloud",
+    "Pearl",
+    "Side"
+   ],
+   "triangles": 8964,
+   "front": 3363
+  },
+  {
+   "name": "bolt",
+   "base": 0.2550492716216405,
+   "materials": [
+    "Bolt",
+    "GoldBolt",
+    "Side"
+   ],
+   "triangles": 1748,
+   "front": 430
+  },
+  {
+   "name": "cloud_upper",
+   "base": 0.3007290554678017,
+   "materials": [
+    "GoldCloud",
+    "Pearl",
+    "Side"
+   ],
+   "triangles": 5500,
+   "front": 2042
+  }
+ ],
+ "order": [
+  "core",
+  "base",
+  "point_top",
+  "point_bottom",
+  "point_left",
+  "point_right",
+  "ribbon_0",
+  "ribbon_1",
+  "ribbon_2",
+  "line_0",
+  "cloud_lower",
+  "bolt",
+  "cloud_upper"
+ ],
+ "validate_order": [
+  "core",
+  "base",
+  "point_top",
+  "point_bottom",
+  "point_left",
+  "point_right",
+  "ribbon_0",
+  "ribbon_1",
+  "ribbon_2",
+  "line_0",
+  "cloud_lower",
+  "bolt",
+  "cloud_upper"
+ ]
+}

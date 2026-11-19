@@ -1,0 +1,22 @@
+{
+  "plank_close.png": "2d66c992d9b437f321526d9899a0af3b89b31b1a4a12e180f62e804b2a3be393",
+  "render_progress.json": "39d78f61b284f20894da1352348a4a566a939fcb7ab1ecebe0f12356e6fbcf57",
+  "texture_report.json": "f1043b378e6fc4e0542ce2c2b71b90d2960210be3f3ba81d29560aac0a8014a2",
+  "isolation_proof.json": "d287918df14b2115cc3472d0285bf3f73170e11ce1094937f887dc2623697718",
+  "REPORT.md": "479f7ddc5a5bcf12431e3ec268dd531380a40a6495990934b90cd38cc3dc2459",
+  "grain_close.png": "cca131b149d140564f7af6c36822b058ac9d0a0a22c3b69cbfa7e1d4975f03ca",
+  "physical_height.npz": "59514fac60771ac2ed181723af6cc543d33b240c99d3ec9bea2b232bc9bc01df",
+  "before_geometry_manifest.json": "dd88f31e62f35b2623c1febcd75def4a300f996e6011cfe310a2d86fb198fcf7",
+  "grain_flat_normal_control.png": "5f488583342e50b5be97085376c92aac33942e767cfbbb03ddd9eae40bcd382a",
+  "design.json": "3b79d46e7732f0fb34795a00cbba85c184be8c649548980f86bce87381b745f2",
+  "baseline43_hashes.json": "4b6a7e0875b603fb5560bb2ee785a50892a1fa13710a2aa23bd28d5c8232ebf7",
+  "front.png": "bd8a1697baa148440535351335aba858bfd6e62bf9bc2e7a879261f7b80855ff",
+  "baseline01_hashes.json": "5cc8a04f32a14aa459807d643d8cc9bda8b2bfc5c19f850aebed2d53305309d5",
+  "chest.blend": "7a2489861a54304376acda0bdbc0a93837e373bb2f3dd8dc0a798195547572e3",
+  "textures/wood_height_diagnostic.png": "18d0c73657017c677dbba57feba196d83b49953e3b0a1c0a71c402c1bcf3c81f",
+  "textures/wood_roughness.png": "62afe08b6f910d3dfd72144e9555633b570fe63ec0e0547d352d9c7d7df64212",
+  "textures/wood_normal.png": "ea8b3f2b1795a357adf871eaf0bb0dfb884a16d2b1747c1ca7d7bea4f6d5e3fd",
+  "textures/wood_albedo.png": "0cf6c6f6cee7897f141b967be973f698b39f85391ed562ec394c89b9ea5cb159",
+  "source/generate_wood.py": "9fe5bafd2e2da55751edd346a4f654ea04b84cce3a305b6b52dc9c7123a338de",
+  "source/update_sample_live.py": "501e6c8d4bd87bdd20d84ddef3bd2083c13ffebd13d89b72273baeb9dca8766b"
+}

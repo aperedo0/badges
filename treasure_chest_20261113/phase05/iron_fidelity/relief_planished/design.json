@@ -1,0 +1,11 @@
+{
+  "source": "Existing medium field with local planar fitting only inside resolved depression floors",
+  "regions": 260,
+  "blend": 0.72,
+  "existing_locations_edges_and_fine_data_retained": true,
+  "extra_features": 0,
+  "height_range": [
+    -0.004115718882530928,
+    0.00036869256291538477
+  ]
+}

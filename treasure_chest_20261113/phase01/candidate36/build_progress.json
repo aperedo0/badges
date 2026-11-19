@@ -1,0 +1,407 @@
+{
+  "group": "Chest Upper Lid Rim",
+  "completed_operands": [
+    {
+      "operand": "Chest Lid Corner Armor -1 -1",
+      "sliver_diagonal_repairs": [],
+      "closed": true,
+      "connected": true,
+      "euler": 0,
+      "volume": 1.3484854406066773,
+      "triangles": 986
+    },
+    {
+      "operand": "Chest Lid Corner Armor -1 1",
+      "sliver_diagonal_repairs": [
+        {
+          "area_before": 3.930855735058581e-12,
+          "collapsed_edge_length": 9.596443851478398e-05,
+          "maximum_endpoint_motion": 4.798221925739199e-05
+        }
+      ],
+      "closed": true,
+      "connected": true,
+      "euler": 0,
+      "volume": 1.3820969113399748,
+      "triangles": 1390
+    },
+    {
+      "operand": "Chest Lid Corner Armor 1 -1",
+      "sliver_diagonal_repairs": [],
+      "closed": true,
+      "connected": true,
+      "euler": 0,
+      "volume": 1.415708380086129,
+      "triangles": 1760
+    },
+    {
+      "operand": "Chest Lid Corner Armor 1 1",
+      "sliver_diagonal_repairs": [],
+      "closed": true,
+      "connected": true,
+      "euler": 0,
+      "volume": 1.4493198533849891,
+      "triangles": 2202
+    },
+    {
+      "operand": "Chest Broad End Arch -1",
+      "sliver_diagonal_repairs": [
+        {
+          "area_before": 2.950303582380743e-13,
+          "collapsed_edge_length": 2.6388102014607284e-06,
+          "maximum_endpoint_motion": 1.3194051007303642e-06
+        },
+        {
+          "area_before": 1.2509324320155973e-11,
+          "collapsed_edge_length": 1.3328003944934608e-07,
+          "maximum_endpoint_motion": 6.664001972467304e-08
+        },
+        {
+          "area_before": 2.4925894681615546e-11,
+          "collapsed_edge_length": 0.0010604262351989746,
+          "maximum_endpoint_motion": 0.0005302131175994873
+        },
+        {
+          "area_before": 4.226485827985016e-11,
+          "collapsed_edge_length": 0.0014181733131408691,
+          "maximum_endpoint_motion": 0.0007090866565704346
+        },
+        {
+          "area_before": 9.956165818426028e-11,
+          "collapsed_edge_length": 2.978562770294957e-05,
+          "maximum_endpoint_motion": 1.4892813851474784e-05
+        },
+        {
+          "area_before": 3.0064218905911394e-10,
+          "collapsed_edge_length": 1.7980953998630866e-05,
+          "maximum_endpoint_motion": 8.990476999315433e-06
+        }
+      ],
+      "closed": true,
+      "connected": true,
+      "euler": -2,
+      "volume": 2.326798303367801,
+      "triangles": 8276
+    },
+    {
+      "operand": "Chest Broad End Arch 1",
+      "sliver_diagonal_repairs": [
+        {
+          "area_before": 9.900265048601737e-12,
+          "collapsed_edge_length": 1.708648051135242e-05,
+          "maximum_endpoint_motion": 8.54324025567621e-06
+        },
+        {
+          "area_before": 9.502291376634105e-11,
+          "collapsed_edge_length": 2.973465780087281e-05,
+          "maximum_endpoint_motion": 1.4867328900436405e-05
+        },
+        {
+          "area_before": 2.0535110935276727e-08,
+          "collapsed_edge_length": 8.760057994550152e-07,
+          "maximum_endpoint_motion": 4.380028997275076e-07
+        },
+        {
+          "area_before": 2.3231770046898707e-08,
+          "collapsed_edge_length": 2.8601101803360507e-05,
+          "maximum_endpoint_motion": 1.4300550901680253e-05
+        }
+      ],
+      "closed": true,
+      "connected": true,
+      "euler": -4,
+      "volume": 3.204276781187808,
+      "triangles": 14484
+    },
+    {
+      "operand": "Chest Lid Hoop 2",
+      "sliver_diagonal_repairs": [
+        {
+          "area_before": 6.347636451999361e-13,
+          "collapsed_edge_length": 1.4333073522720952e-05,
+          "maximum_endpoint_motion": 7.166536761360476e-06
+        },
+        {
+          "area_before": 2.0952256932485257e-12,
+          "collapsed_edge_length": 8.307313805744343e-07,
+          "maximum_endpoint_motion": 4.1536569028721715e-07
+        },
+        {
+          "area_before": 5.924950031766024e-12,
+          "collapsed_edge_length": 5.856440566276433e-06,
+          "maximum_endpoint_motion": 2.9282202831382165e-06
+        },
+        {
+          "area_before": 6.5567859952060785e-12,
+          "collapsed_edge_length": 8.443897968390957e-06,
+          "maximum_endpoint_motion": 4.221948984195478e-06
+        },
+        {
+          "area_before": 6.589698751688174e-12,
+          "collapsed_edge_length": 9.156639180218917e-07,
+          "maximum_endpoint_motion": 4.5783195901094587e-07
+        },
+        {
+          "area_before": 7.708025188082952e-12,
+          "collapsed_edge_length": 9.7841169917956e-05,
+          "maximum_endpoint_motion": 4.8920584958978e-05
+        },
+        {
+          "area_before": 9.448856636521518e-12,
+          "collapsed_edge_length": 2.1721374650951475e-05,
+          "maximum_endpoint_motion": 1.0860687325475737e-05
+        },
+        {
+          "area_before": 1.2564882648628745e-11,
+          "collapsed_edge_length": 2.0425530237844214e-05,
+          "maximum_endpoint_motion": 1.0212765118922107e-05
+        },
+        {
+          "area_before": 1.356865261989716e-11,
+          "collapsed_edge_length": 3.112486956524663e-05,
+          "maximum_endpoint_motion": 1.5562434782623313e-05
+        },
+        {
+          "area_before": 1.434199534457243e-11,
+          "collapsed_edge_length": 8.342949149664491e-05,
+          "maximum_endpoint_motion": 4.171474574832246e-05
+        },
+        {
+          "area_before": 1.1838574666971885e-10,
+          "collapsed_edge_length": 6.159758777357638e-05,
+          "maximum_endpoint_motion": 3.079879388678819e-05
+        },
+        {
+          "area_before": 5.687696320183154e-09,
+          "collapsed_edge_length": 9.014360671244503e-07,
+          "maximum_endpoint_motion": 4.5071803356222517e-07
+        },
+        {
+          "area_before": 5.720900546869792e-09,
+          "collapsed_edge_length": 8.780312441558635e-07,
+          "maximum_endpoint_motion": 4.3901562207793177e-07
+        },
+        {
+          "area_before": 9.709114884225973e-09,
+          "collapsed_edge_length": 2.3429251086781733e-05,
+          "maximum_endpoint_motion": 1.1714625543390866e-05
+        }
+      ],
+      "closed": true,
+      "connected": true,
+      "euler": -6,
+      "volume": 3.6673004796228224,
+      "triangles": 17318
+    },
+    {
+      "operand": "Chest Lid Hoop 3",
+      "sliver_diagonal_repairs": [
+        {
+          "area_before": 3.9766671532308996e-13,
+          "collapsed_edge_length": 1.0195923096034676e-05,
+          "maximum_endpoint_motion": 5.097961548017338e-06
+        },
+        {
+          "area_before": 5.451319412558878e-13,
+          "collapsed_edge_length": 3.117935557384044e-05,
+          "maximum_endpoint_motion": 1.558967778692022e-05
+        },
+        {
+          "area_before": 1.1579605922242215e-12,
+          "collapsed_edge_length": 1.3535687685362063e-05,
+          "maximum_endpoint_motion": 6.767843842681032e-06
+        },
+        {
+          "area_before": 1.5110522836989118e-12,
+          "collapsed_edge_length": 1.5140049072215334e-05,
+          "maximum_endpoint_motion": 7.570024536107667e-06
+        },
+        {
+          "area_before": 1.826202667445541e-12,
+          "collapsed_edge_length": 4.8281501221936196e-05,
+          "maximum_endpoint_motion": 2.4140750610968098e-05
+        },
+        {
+          "area_before": 1.877383970076096e-12,
+          "collapsed_edge_length": 2.4563334591221064e-05,
+          "maximum_endpoint_motion": 1.2281667295610532e-05
+        },
+        {
+          "area_before": 2.21493392236805e-12,
+          "collapsed_edge_length": 2.789522841339931e-05,
+          "maximum_endpoint_motion": 1.3947614206699654e-05
+        },
+        {
+          "area_before": 2.251342657411265e-12,
+          "collapsed_edge_length": 1.3548503375204746e-05,
+          "maximum_endpoint_motion": 6.774251687602373e-06
+        },
+        {
+          "area_before": 2.616620203643784e-12,
+          "collapsed_edge_length": 5.1062954298686236e-05,
+          "maximum_endpoint_motion": 2.5531477149343118e-05
+        },
+        {
+          "area_before": 2.7198941106580412e-12,
+          "collapsed_edge_length": 4.8642650654073805e-06,
+          "maximum_endpoint_motion": 2.4321325327036902e-06
+        },
+        {
+          "area_before": 2.887102565744914e-12,
+          "collapsed_edge_length": 6.505939609269262e-07,
+          "maximum_endpoint_motion": 3.252969804634631e-07
+        },
+        {
+          "area_before": 3.5383476569833508e-12,
+          "collapsed_edge_length": 1.9049117327085696e-05,
+          "maximum_endpoint_motion": 9.524558663542848e-06
+        },
+        {
+          "area_before": 4.492414875574778e-12,
+          "collapsed_edge_length": 6.769786295990343e-07,
+          "maximum_endpoint_motion": 3.3848931479951716e-07
+        },
+        {
+          "area_before": 4.7104281025157736e-12,
+          "collapsed_edge_length": 1.7546559320180677e-05,
+          "maximum_endpoint_motion": 8.773279660090338e-06
+        },
+        {
+          "area_before": 4.809767141410232e-12,
+          "collapsed_edge_length": 5.010917811887339e-05,
+          "maximum_endpoint_motion": 2.5054589059436694e-05
+        },
+        {
+          "area_before": 5.538680625249981e-12,
+          "collapsed_edge_length": 4.690889181802049e-05,
+          "maximum_endpoint_motion": 2.3454445909010246e-05
+        },
+        {
+          "area_before": 6.0094705837249785e-12,
+          "collapsed_edge_length": 0.00013024656800553203,
+          "maximum_endpoint_motion": 6.512328400276601e-05
+        },
+        {
+          "area_before": 6.4396806544735146e-12,
+          "collapsed_edge_length": 3.5220695281168446e-05,
+          "maximum_endpoint_motion": 1.7610347640584223e-05
+        },
+        {
+          "area_before": 6.704466793199851e-12,
+          "collapsed_edge_length": 3.2508854928892106e-05,
+          "maximum_endpoint_motion": 1.6254427464446053e-05
+        },
+        {
+          "area_before": 6.939195608004618e-12,
+          "collapsed_edge_length": 6.710871821269393e-05,
+          "maximum_endpoint_motion": 3.3554359106346965e-05
+        },
+        {
+          "area_before": 8.378707282802055e-12,
+          "collapsed_edge_length": 8.686557703185827e-05,
+          "maximum_endpoint_motion": 4.343278851592913e-05
+        },
+        {
+          "area_before": 9.430038414406836e-12,
+          "collapsed_edge_length": 3.592238135752268e-05,
+          "maximum_endpoint_motion": 1.796119067876134e-05
+        },
+        {
+          "area_before": 1.056221776707389e-11,
+          "collapsed_edge_length": 0.00011556332174222916,
+          "maximum_endpoint_motion": 5.778166087111458e-05
+        },
+        {
+          "area_before": 1.2430348494770309e-11,
+          "collapsed_edge_length": 0.00015826025628484786,
+          "maximum_endpoint_motion": 7.913012814242393e-05
+        },
+        {
+          "area_before": 1.334766656712768e-11,
+          "collapsed_edge_length": 0.0001266678882529959,
+          "maximum_endpoint_motion": 6.333394412649795e-05
+        },
+        {
+          "area_before": 1.3959497170849601e-11,
+          "collapsed_edge_length": 0.00016380853776354343,
+          "maximum_endpoint_motion": 8.190426888177171e-05
+        },
+        {
+          "area_before": 1.7158566967282786e-11,
+          "collapsed_edge_length": 2.3256201529875398e-05,
+          "maximum_endpoint_motion": 1.1628100764937699e-05
+        },
+        {
+          "area_before": 1.7609548858443528e-11,
+          "collapsed_edge_length": 5.927015808993019e-05,
+          "maximum_endpoint_motion": 2.9635079044965096e-05
+        },
+        {
+          "area_before": 1.8488583418696206e-11,
+          "collapsed_edge_length": 6.555447907885537e-05,
+          "maximum_endpoint_motion": 3.277723953942768e-05
+        },
+        {
+          "area_before": 1.9474799296484437e-11,
+          "collapsed_edge_length": 0.00022241435362957418,
+          "maximum_endpoint_motion": 0.00011120717681478709
+        },
+        {
+          "area_before": 2.509983388844716e-11,
+          "collapsed_edge_length": 4.798571899300441e-05,
+          "maximum_endpoint_motion": 2.3992859496502206e-05
+        },
+        {
+          "area_before": 2.6242750405810216e-11,
+          "collapsed_edge_length": 0.00011507741146488115,
+          "maximum_endpoint_motion": 5.7538705732440576e-05
+        },
+        {
+          "area_before": 2.841542004273097e-11,
+          "collapsed_edge_length": 0.0001586985308676958,
+          "maximum_endpoint_motion": 7.93492654338479e-05
+        },
+        {
+          "area_before": 4.036248001600604e-11,
+          "collapsed_edge_length": 3.5226748877903447e-05,
+          "maximum_endpoint_motion": 1.7613374438951723e-05
+        },
+        {
+          "area_before": 4.8572444323567596e-11,
+          "collapsed_edge_length": 0.0006551950355060399,
+          "maximum_endpoint_motion": 0.00032759751775301993
+        },
+        {
+          "area_before": 4.8825320431552476e-11,
+          "collapsed_edge_length": 7.838269812054932e-05,
+          "maximum_endpoint_motion": 3.919134906027466e-05
+        },
+        {
+          "area_before": 5.043812971955927e-11,
+          "collapsed_edge_length": 4.28225685027428e-05,
+          "maximum_endpoint_motion": 2.14112842513714e-05
+        },
+        {
+          "area_before": 3.436165243684459e-08,
+          "collapsed_edge_length": 3.4354206945863552e-06,
+          "maximum_endpoint_motion": 1.7177103472931776e-06
+        },
+        {
+          "area_before": 4.003474834786316e-08,
+          "collapsed_edge_length": 5.837909156980459e-06,
+          "maximum_endpoint_motion": 2.9189545784902293e-06
+        },
+        {
+          "area_before": 4.151050591396023e-08,
+          "collapsed_edge_length": 6.052733624528628e-06,
+          "maximum_endpoint_motion": 3.026366812264314e-06
+        }
+      ],
+      "closed": true,
+      "connected": true,
+      "euler": -8,
+      "volume": 4.130324182214985,
+      "triangles": 20672
+    }
+  ]
+}

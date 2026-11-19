@@ -1,0 +1,51 @@
+{
+  "action": "Chest Key Catch Unlock Release And Relock",
+  "master": "Chest Rig Master",
+  "controls": {
+    "cycle": "0..4, two clockwise release and upright return cycles",
+    "insert": "0..1",
+    "hasp": "0..pi/3",
+    "show_key": "0 or1"
+  },
+  "driver_endpoint_checks": [
+    {
+      "frame": 0,
+      "actual_shift": 0.0,
+      "spring_lift": 0.0,
+      "expected_spring_lift": 0.0
+    },
+    {
+      "frame": 90,
+      "actual_shift": -0.11999999731779099,
+      "spring_lift": 0.0015020000282675028,
+      "expected_spring_lift": 0.001502
+    },
+    {
+      "frame": 180,
+      "actual_shift": 0.0,
+      "spring_lift": 0.0,
+      "expected_spring_lift": 0.0
+    },
+    {
+      "frame": 340,
+      "actual_shift": -0.11999999731779099,
+      "spring_lift": 0.0015020000282675028,
+      "expected_spring_lift": 0.001502
+    },
+    {
+      "frame": 430,
+      "actual_shift": 0.0,
+      "spring_lift": 0.0,
+      "expected_spring_lift": 0.0
+    },
+    {
+      "frame": 490,
+      "actual_shift": 0.0,
+      "spring_lift": 0.0,
+      "expected_spring_lift": 0.0
+    }
+  ],
+  "rest_frame": 0,
+  "complete_lock_proof": false,
+  "full_chest_opening": false
+}

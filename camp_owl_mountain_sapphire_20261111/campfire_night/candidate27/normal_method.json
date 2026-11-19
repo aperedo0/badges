@@ -1,0 +1,202 @@
+{
+  "method": "Angle weighted actual geometric bevel normals. No constant shallow contour tilt. Colored faces and true vertical walls retained unchanged.",
+  "changes": {
+    "purple_mountain_range": {
+      "metal_triangles": 417,
+      "median_tilt": 0.000806913957519213
+    },
+    "green_campground": {
+      "metal_triangles": 548,
+      "median_tilt": 5.618664313524113e-05
+    },
+    "crescent_moon": {
+      "metal_triangles": 609,
+      "median_tilt": 0.34251774844333577
+    },
+    "star_left": {
+      "metal_triangles": 209,
+      "median_tilt": 0.00035213289439072675
+    },
+    "star_right": {
+      "metal_triangles": 216,
+      "median_tilt": 0.00022147184857961927
+    },
+    "night_gold_dot_00": {
+      "metal_triangles": 238,
+      "median_tilt": 0.849577347095995
+    },
+    "night_gold_dot_01": {
+      "metal_triangles": 238,
+      "median_tilt": 0.8209933395488472
+    },
+    "night_gold_dot_02": {
+      "metal_triangles": 214,
+      "median_tilt": 0.86042878280942
+    },
+    "night_gold_dot_03": {
+      "metal_triangles": 190,
+      "median_tilt": 0.8501463757259892
+    },
+    "night_gold_dot_04": {
+      "metal_triangles": 238,
+      "median_tilt": 0.8495765638713865
+    },
+    "night_gold_dot_05": {
+      "metal_triangles": 238,
+      "median_tilt": 0.8209931653619621
+    },
+    "night_gold_dot_06": {
+      "metal_triangles": 190,
+      "median_tilt": 0.8501467212982168
+    },
+    "night_gold_dot_07": {
+      "metal_triangles": 190,
+      "median_tilt": 0.8501464862870198
+    },
+    "night_gold_dot_08": {
+      "metal_triangles": 190,
+      "median_tilt": 0.8501465085360599
+    },
+    "night_gold_dot_09": {
+      "metal_triangles": 190,
+      "median_tilt": 0.8501468155667147
+    },
+    "small_pine_left": {
+      "metal_triangles": 719,
+      "median_tilt": 0.00023152884548881234
+    },
+    "small_pine_right": {
+      "metal_triangles": 705,
+      "median_tilt": 0.00020148015747429774
+    },
+    "pine_left_trunk": {
+      "metal_triangles": 48,
+      "median_tilt": 0.00013270524619758272
+    },
+    "pine_left_lower": {
+      "metal_triangles": 723,
+      "median_tilt": 0.4964206346936004
+    },
+    "pine_left_middle": {
+      "metal_triangles": 584,
+      "median_tilt": 0.49079109447404184
+    },
+    "pine_left_top": {
+      "metal_triangles": 494,
+      "median_tilt": 0.5095088962346332
+    },
+    "pine_right_trunk": {
+      "metal_triangles": 48,
+      "median_tilt": 0.0001327055600297069
+    },
+    "pine_right_lower": {
+      "metal_triangles": 655,
+      "median_tilt": 0.49997711728037364
+    },
+    "pine_right_middle": {
+      "metal_triangles": 512,
+      "median_tilt": 0.4889119476556507
+    },
+    "pine_right_top": {
+      "metal_triangles": 443,
+      "median_tilt": 0.5129362859132472
+    },
+    "stone_back_left": {
+      "metal_triangles": 377,
+      "median_tilt": 0.23974042274186913
+    },
+    "stone_back_right": {
+      "metal_triangles": 319,
+      "median_tilt": 0.5012107301460463
+    },
+    "left_crossed_log": {
+      "metal_triangles": 279,
+      "median_tilt": 0.000152657464444448
+    },
+    "right_crossed_log": {
+      "metal_triangles": 296,
+      "median_tilt": 0.0003514026397064457
+    },
+    "log_end_left": {
+      "metal_triangles": 512,
+      "median_tilt": 0.4168315586775243
+    },
+    "log_end_right": {
+      "metal_triangles": 512,
+      "median_tilt": 0.41755966004001144
+    },
+    "upright_front_log": {
+      "metal_triangles": 340,
+      "median_tilt": 0.3753121872601224
+    },
+    "front_log_end": {
+      "metal_triangles": 512,
+      "median_tilt": 0.3811481170645443
+    },
+    "outer_red_flame": {
+      "metal_triangles": 1642,
+      "median_tilt": 0.019646490727183313
+    },
+    "middle_amber_flame": {
+      "metal_triangles": 942,
+      "median_tilt": 0.024296599912619354
+    },
+    "inner_yellow_flame": {
+      "metal_triangles": 852,
+      "median_tilt": 0.047613002637551326
+    },
+    "stone_middle_left": {
+      "metal_triangles": 432,
+      "median_tilt": 0.22272313928857268
+    },
+    "stone_middle_right": {
+      "metal_triangles": 337,
+      "median_tilt": 0.33582672299983496
+    },
+    "stone_front_left": {
+      "metal_triangles": 478,
+      "median_tilt": 0.1686240775253275
+    },
+    "stone_front_right": {
+      "metal_triangles": 444,
+      "median_tilt": 0.15234916980238788
+    },
+    "stone_front_center": {
+      "metal_triangles": 441,
+      "median_tilt": 0.1747949621530348
+    },
+    "grass_blade_0": {
+      "metal_triangles": 67,
+      "median_tilt": 0.5789954716938757
+    },
+    "grass_blade_1": {
+      "metal_triangles": 67,
+      "median_tilt": 0.5790093780574134
+    },
+    "grass_blade_2": {
+      "metal_triangles": 67,
+      "median_tilt": 0.5789904871321281
+    },
+    "grass_blade_3": {
+      "metal_triangles": 67,
+      "median_tilt": 0.5788825926022669
+    },
+    "grass_blade_4": {
+      "metal_triangles": 67,
+      "median_tilt": 0.578922496219363
+    },
+    "grass_blade_5": {
+      "metal_triangles": 67,
+      "median_tilt": 0.5788811011020761
+    },
+    "grass_blade_6": {
+      "metal_triangles": 67,
+      "median_tilt": 0.5790895167019249
+    },
+    "outer_gold_setting": {
+      "metal_triangles": 1088,
+      "median_tilt": 0.6181030774881965
+    }
+  },
+  "blender_render_review_pending": true
+}

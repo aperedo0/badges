@@ -1,0 +1,46 @@
+{
+  "source": "U_scan_fibers",
+  "geometry_changed": false,
+  "source_height_changed": false,
+  "primary_grain_knots_and_fractures_preserved": true,
+  "normal": "Fine tangent correction based on actual mesh normals; broad correction removed",
+  "normal_strength": 1,
+  "core_center": [
+    -1.31,
+    -1.35
+  ],
+  "core_radii": [
+    0.145,
+    0.17
+  ],
+  "pigment_log_variation": 0.115,
+  "roughness_core_offset": -0.025,
+  "roughness_variation": 0.019,
+  "roughness_core_before": 0.6452385010353426,
+  "roughness_core_after": 0.6206763792696584,
+  "body_albedo_and_roughness_outside_core_exact": true,
+  "source_maps": "Existing cached CC0 Rough Wood diffuse and roughness, independently mapped to the core; broad source intensity removed",
+  "visual_status": "Saved candidate for owner review; no AI reviewer",
+  "original_bevel_and_boundary_normal_pixels_preserved": true,
+  "selected_key_light": {
+    "world_position": [
+      -2,
+      -7,
+      4.6
+    ],
+    "size": 1,
+    "power": 2200,
+    "linear_color": [
+      1,
+      0.62,
+      0.28
+    ]
+  },
+  "selected_sampling": {
+    "pixel_filter_width": 1.5,
+    "normal_texture_interpolation": "Linear",
+    "denoise": true,
+    "samples": 128,
+    "seed": 17
+  }
+}

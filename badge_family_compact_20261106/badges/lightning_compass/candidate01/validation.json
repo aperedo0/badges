@@ -1,0 +1,26 @@
+{
+  "status": "validated_candidate",
+  "before": {
+    "meshes": 5,
+    "sections": 7,
+    "triangles": 8696,
+    "vertices": 14828
+  },
+  "after": {
+    "meshes": 3,
+    "sections": 5,
+    "triangles": 8696,
+    "vertices": 15748
+  },
+  "source_sha256": "1b7577bd34c0655c5babe98c6af29bb59e7d70e41e36a0358b1bc95fd66d0116",
+  "output_sha256": "8b3c0bb1e007d604276f12275f7db52e36b430b802cc59e7a5baf891a5a0ff92",
+  "bytes_before": 1800423,
+  "bytes_after": 1704663,
+  "all_triangle_corner_attributes_and_materials_identical": true,
+  "all_material_graphs_unchanged": true,
+  "protected_meshes_unchanged": [
+    "/Badge/Casing___smooth_rounded_outer_edge/Casing___smooth_rounded_outer_edge_mobile_geometry"
+  ],
+  "all_textures_byte_identical": true,
+  "arkit_valid": true
+}

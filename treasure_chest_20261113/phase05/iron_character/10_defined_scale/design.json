@@ -1,0 +1,21 @@
+{
+  "target": "Lab Chest Lower Rim",
+  "mesh": "Locally forged lower rim.001",
+  "material": "Forged iron defined fractured scale",
+  "weathering": true,
+  "edge": true,
+  "hammer_fields_and_strength_unchanged": true,
+  "knob_geometry_unchanged": true,
+  "source": "09_surface_character",
+  "reference_RGB_not_copied": true,
+  "mark_height_distance": 0.00055,
+  "large_lap_normal_strength": 0.25,
+  "legacy_broad_stroke_wear": 0.2,
+  "localized_bevel_planes": true,
+  "geometry_aware_facet_wear": true,
+  "upper_bevel_facets_only": true,
+  "non_edge_vertices_exact": true,
+  "changed_vertices": 2912,
+  "sharper_marking_shapes_only": true,
+  "review_environment": "reference_lift"
+}

@@ -1,0 +1,26 @@
+{
+  "source": "Owner reference guided relief interpretation, not a measured scan",
+  "corners": [
+    [
+      467.0,
+      748.0
+    ],
+    [
+      1070.0,
+      714.0
+    ],
+    [
+      1070.0,
+      908.0
+    ],
+    [
+      473.0,
+      939.0
+    ]
+  ],
+  "occluded_area": "right panel timber fill",
+  "pigment": "broad chroma only, reference intensity discarded",
+  "relief_min": -0.04059609282854943,
+  "relief_max": 0.001824228614892172,
+  "fine_detail": "CC0 Rough Wood residual"
+}

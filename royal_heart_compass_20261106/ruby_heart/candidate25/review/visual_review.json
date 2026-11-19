@@ -1,0 +1,11 @@
+{
+  "native_gem_attachment": true,
+  "native_six_poses_visually_reviewed": true,
+  "native_full_turn_visually_reviewed": true,
+  "distinct_frames": 9,
+  "outline_four_times_visually_reviewed": true,
+  "gem_material_repair_reviewed": true,
+  "whole_badge_reference_match_complete": false,
+  "owner_accepted": false,
+  "failed_reference_geometry_probe_installed": false
+}

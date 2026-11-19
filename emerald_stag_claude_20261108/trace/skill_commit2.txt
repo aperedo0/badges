@@ -1,0 +1,2 @@
+Badge skills: the fresh reviewer now reads its brief from a file to save tokens, the outline finder catches dark marble and separate leaves, and badge work shows each version in one saved Blender scene updated in place so Blender stops closing and reopens with that file if it does
+Badge skills: reviewer reads its brief from a file, outlines catch dark parts, and Blender keeps one saved scene updated in place

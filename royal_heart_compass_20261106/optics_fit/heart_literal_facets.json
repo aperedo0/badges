@@ -1,0 +1,50 @@
+{
+  "status": "physical_diagnostic_only_not_native",
+  "exact_reference_facet_vertices": [
+    [
+      282.0,
+      291.0
+    ],
+    [
+      420.0,
+      232.0
+    ],
+    [
+      369.0,
+      371.0
+    ],
+    [
+      455.0,
+      328.0
+    ]
+  ],
+  "no_appearance_image_on_gem": true,
+  "variants": [
+    {
+      "slope_delta": 0.035,
+      "domains": [
+        {
+          "planes": 236,
+          "forced_upper_reference_vertices": 4
+        },
+        {
+          "planes": 236,
+          "forced_upper_reference_vertices": 4
+        }
+      ]
+    },
+    {
+      "slope_delta": 0.07,
+      "domains": [
+        {
+          "planes": 236,
+          "forced_upper_reference_vertices": 4
+        },
+        {
+          "planes": 236,
+          "forced_upper_reference_vertices": 4
+        }
+      ]
+    }
+  ]
+}

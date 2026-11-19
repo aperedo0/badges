@@ -1,0 +1,63 @@
+{
+  "actual_files_and_visible_identity_verified": true,
+  "same_native_camera_studio_and_measured_poses": true,
+  "phone_clock_and_status_excluded": true,
+  "measurements_only_not_appearance_acceptance": true,
+  "poses": [
+    {
+      "pose": "front",
+      "body_and_reflection_box": [
+        378,
+        354,
+        828,
+        1000
+      ],
+      "mean_absolute_rgb_difference": 0.00013186561174177274,
+      "max_rgb_difference": 2.0
+    },
+    {
+      "pose": "early_turn",
+      "body_and_reflection_box": [
+        407,
+        184,
+        783,
+        796
+      ],
+      "mean_absolute_rgb_difference": 0.00015065127705928707,
+      "max_rgb_difference": 1.0
+    },
+    {
+      "pose": "side_left",
+      "body_and_reflection_box": [
+        554,
+        208,
+        712,
+        717
+      ],
+      "mean_absolute_rgb_difference": 2.486881699037577e-05,
+      "max_rgb_difference": 1.0
+    },
+    {
+      "pose": "back",
+      "body_and_reflection_box": [
+        477,
+        169,
+        730,
+        602
+      ],
+      "mean_absolute_rgb_difference": 3.651334106199053e-05,
+      "max_rgb_difference": 1.0
+    },
+    {
+      "pose": "side_right",
+      "body_and_reflection_box": [
+        544,
+        167,
+        642,
+        488
+      ],
+      "mean_absolute_rgb_difference": 0.0,
+      "max_rgb_difference": 0.0
+    }
+  ]
+}

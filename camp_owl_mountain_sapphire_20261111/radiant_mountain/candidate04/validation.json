@@ -1,0 +1,67 @@
+{
+ "bounds": [
+  [
+   -2.575500011444092,
+   -2.4549999237060547,
+   -0.6919999718666077
+  ],
+  [
+   2.527100086212158,
+   2.994999885559082,
+   0.6919999718666077
+  ]
+ ],
+ "triangles": 71024,
+ "max_front_z": {
+  "blue_glass_sky": 0.124,
+  "sun_ray_0": 0.183,
+  "sun_ray_1": 0.183,
+  "sun_ray_2": 0.183,
+  "sun_ray_3": 0.183,
+  "sun_ray_4": 0.183,
+  "round_amber_sun": 0.216,
+  "rear_mountain_ridge": 0.205,
+  "highest_snow_peak": 0.275,
+  "left_foreground_peak": 0.342,
+  "right_foreground_peak": 0.344,
+  "central_foreground_peak": 0.403,
+  "left_cloud": 0.239,
+  "right_cloud": 0.38,
+  "far_left_hills": 0.438,
+  "far_right_hills": 0.443,
+  "lime_rear_meadow": 0.502,
+  "left_emerald_meadow": 0.523,
+  "right_emerald_meadow": 0.56,
+  "left_lime_meadow": 0.582,
+  "right_lime_meadow": 0.618,
+  "left_laurel_branch": 0.555,
+  "right_laurel_branch": 0.589,
+  "left_laurel_leaf_0": 0.613,
+  "right_laurel_leaf_0": 0.647,
+  "left_laurel_leaf_1": 0.613,
+  "right_laurel_leaf_1": 0.648,
+  "left_laurel_leaf_2": 0.636,
+  "right_laurel_leaf_2": 0.673,
+  "left_laurel_leaf_3": 0.613,
+  "right_laurel_leaf_3": 0.647,
+  "left_laurel_leaf_4": 0.613,
+  "right_laurel_leaf_4": 0.648,
+  "bottom_four_point_star": 0.235,
+  "outer_gold_setting": 0.692
+ },
+ "failures": [
+  "blue_glass_sky and sun_ray_3: outlines run together for 50 px (side walls in the same place): 47 px at (355, 411), 3 px at (409, 442)",
+  "blue_glass_sky and rear_mountain_ridge: outlines run together for 298 px (side walls in the same place): 176 px at (224, 612), 38 px at (873, 565), 13 px at (235, 893)",
+  "blue_glass_sky and left_laurel_branch: outlines run together for 84 px (side walls in the same place): 58 px at (517, 1064), 16 px at (526, 1080), 4 px at (407, 1007)",
+  "blue_glass_sky and right_laurel_branch: outlines run together for 84 px (side walls in the same place): 58 px at (735, 1064), 16 px at (726, 1080), 4 px at (845, 1006)",
+  "sun_ray_0 and round_amber_sun: outlines run together for 42 px (side walls in the same place): 42 px at (626, 252)",
+  "sun_ray_4 and round_amber_sun: outlines run together for 33 px (side walls in the same place): 33 px at (777, 417)",
+  "rear_mountain_ridge and left_foreground_peak: outlines run together for 153 px (side walls in the same place): 108 px at (248, 587), 33 px at (168, 694), 9 px at (151, 662)",
+  "rear_mountain_ridge and right_foreground_peak: outlines run together for 61 px (side walls in the same place): 52 px at (862, 563), 3 px at (894, 538), 3 px at (1096, 661)",
+  "central_foreground_peak and lime_rear_meadow: outlines run together for 147 px (side walls in the same place): 85 px at (569, 769), 55 px at (706, 765), 4 px at (635, 849)",
+  "lime_rear_meadow and left_emerald_meadow: outlines run together for 64 px (side walls in the same place): 38 px at (522, 808), 26 px at (615, 848)",
+  "lime_rear_meadow and right_lime_meadow: outlines run together for 81 px (side walls in the same place): 81 px at (663, 840)",
+  "left_emerald_meadow and left_laurel_branch: outlines run together for 151 px (side walls in the same place): 70 px at (329, 878), 23 px at (382, 962), 16 px at (407, 1002)",
+  "right_emerald_meadow and right_laurel_branch: outlines run together for 151 px (side walls in the same place): 70 px at (923, 878), 23 px at (870, 962), 16 px at (845, 1002)"
+ ]
+}

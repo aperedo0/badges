@@ -1,0 +1,16 @@
+{
+  "expected": "Radiant Mountain",
+  "observed": [
+    {
+      "name": "Radiant Mountain",
+      "frame": {
+        "width": 243.66666666666663,
+        "x": 79.16666666666667,
+        "height": 36,
+        "y": 267.55
+      }
+    }
+  ],
+  "epoch": 1794471509.10892,
+  "visible_gallery_heading_verified": true
+}

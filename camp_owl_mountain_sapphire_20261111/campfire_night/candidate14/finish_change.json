@@ -1,0 +1,8 @@
+{
+  "cause": "Native flat normal test removed fine gold beading; use planar highlight normals on narrow borders and ring faces, with actual beveled geometry preserved",
+  "fine_gold_faces": 34592,
+  "roughness": 0.32,
+  "gold_beads_unchanged": true,
+  "rear_stone_corrected": true,
+  "native_acceptance_pending": true
+}

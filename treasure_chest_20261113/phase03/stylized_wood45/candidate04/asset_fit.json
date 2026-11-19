@@ -1,0 +1,10 @@
+{
+  "core_bbox": [
+    578,
+    324,
+    723,
+    452
+  ],
+  "physical_core_mean_diameter": 0.35,
+  "source": "Targeted edit of sample3 scalar source, preserving the current material anatomy"
+}

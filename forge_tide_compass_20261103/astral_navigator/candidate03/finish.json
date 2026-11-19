@@ -1,0 +1,18 @@
+{
+  "mode": "fitted",
+  "gain": 0.05,
+  "roles": [
+    "metal",
+    "field",
+    "side",
+    "CrestGem_Sapphire"
+  ],
+  "texture_size": 1024,
+  "native_studio_measured": true,
+  "fit": {
+    "metal": {
+      "clean_samples": 108618,
+      "mean_physical_reflectance_factor": 0.41731866509533716
+    }
+  }
+}

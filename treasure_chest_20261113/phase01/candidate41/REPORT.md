@@ -1,0 +1,9 @@
+Plain wood board joint construction41
+
+Adds real shallow V joints on the outside of the two accepted wood solids. The body and lid end faces have horizontal board rows; the barrel roof has12 lengthwise staves. Existing objects are retained as fitted wooden shells with an uncut inside lining, not independently removable planks. Both wood grain and metal finish remain withheld. No material, texture or final lighting changes.
+
+All153 other static hardware meshes retain their exact vertices, triangles, corner normals and materials. The removable key is unchanged from40. Source40 is frozen by baseline40_hashes.json.155 visible static meshes,179482 triangles,1590 triangles added. Actual closed turn width remains6.675822.
+
+Both modified cores remain closed, connected positive volume Euler2 solids. Actual center depth and opening width probes pass all29 joints, with the uncut source rejected by those same tests. Original inner cavity ray hits and retained surface samples pass. The first width check mistakenly measured below the opening with a coarse grid; the recorded diagnosis distinguishes true opening width0.044 from width0.0415 at depth0.001. The original opening tolerance is retained. This was a checker definition correction with no geometry adjustment.
+
+The saved file cold loads with automatic scripts disabled, all15 simple drivers valid and actual95degree lid movement. The complete sampled motion screen passes all56 opening angles and99 full sequence frames with zero unclassified contacts and all three failure controls detected. Nine actual Blender views and416pixel joint crops were inspected. Fresh independent construction review passes with no clear defects or exterior regressions. Canonical treasure_chest.blend now matches this reviewed41 copy exactly. No claim of final shippability, final material quality or complete badge.

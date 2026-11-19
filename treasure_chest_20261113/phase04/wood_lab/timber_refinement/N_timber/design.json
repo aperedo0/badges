@@ -1,0 +1,19 @@
+{
+  "source": "Existing cached Poly Haven Rough Wood, newly selected naturally knotted interior board region",
+  "asset": "https://polyhaven.com/a/rough_wood",
+  "license": "CC0 1.0",
+  "crop": [
+    160,
+    279,
+    500,
+    1538
+  ],
+  "rotation": "90 degrees clockwise",
+  "physical_aspect": 3.702359346642468,
+  "crop_aspect": 3.7029411764705884,
+  "depth_min": -0.042000002250426736,
+  "normal_split": 0.0045,
+  "no_generated_rings_or_authored_parallel_channels": true,
+  "original_chest_preserved": true,
+  "refinement": "Separate broad timber and longitudinal fractures from fine pore chatter, retaining coherent scanned knot"
+}

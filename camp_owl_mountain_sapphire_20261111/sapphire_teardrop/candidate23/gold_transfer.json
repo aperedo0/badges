@@ -1,0 +1,18 @@
+{
+  "source_model": "/Users/antonioperedo/Desktop/badges/emerald_trophy_20261025/preview/ScreenTime/SupportingFiles/Assets.xcassets/Badge3DPreviewRubyHeart.dataset/coin.usdz",
+  "source_model_sha256": "51c276b74ced5f684773d30f03c22fc40a8ea3337ebb9f7a99795c261635b613",
+  "roughness_texture_sha256": "b4ec354ad6d22cf9d5ca36634966ffd024e7bf03c64b0521552b6abc970d6d3b",
+  "gold_color": [
+    1,
+    0.44,
+    0.07
+  ],
+  "metallic": 1,
+  "roughness_default": 0.3,
+  "roughness_texture_is_exact_source_bytes": true,
+  "texture_color_space": "raw",
+  "mapping": "Top to bottom along each half of perimeter, across the real frame profile",
+  "frame_geometry_and20_percent_narrowing_preserved": true,
+  "gem_unchanged": true,
+  "no_app_code_changes": true
+}

@@ -1,0 +1,117 @@
+{
+  "status": "diagnostic_only_not_native",
+  "reference_facet_junctions": [
+    [
+      627.0,
+      389.0
+    ],
+    [
+      627.0,
+      493.0
+    ],
+    [
+      627.0,
+      650.0
+    ],
+    [
+      627.0,
+      784.0
+    ],
+    [
+      627.0,
+      900.0
+    ],
+    [
+      627.0,
+      970.0
+    ],
+    [
+      420.0,
+      232.0
+    ],
+    [
+      282.0,
+      291.0
+    ],
+    [
+      369.0,
+      371.0
+    ],
+    [
+      455.0,
+      328.0
+    ],
+    [
+      209.0,
+      453.0
+    ],
+    [
+      274.0,
+      622.0
+    ],
+    [
+      421.0,
+      656.0
+    ],
+    [
+      453.0,
+      814.0
+    ],
+    [
+      386.0,
+      850.0
+    ]
+  ],
+  "continuous_central_keel": true,
+  "appearance_maps": false,
+  "variants": [
+    {
+      "peak": 0.95,
+      "rear": "existing",
+      "planes": [
+        172,
+        172
+      ]
+    },
+    {
+      "peak": 0.95,
+      "rear": "matching",
+      "planes": [
+        152,
+        152
+      ]
+    },
+    {
+      "peak": 1.1,
+      "rear": "existing",
+      "planes": [
+        172,
+        172
+      ]
+    },
+    {
+      "peak": 1.1,
+      "rear": "matching",
+      "planes": [
+        152,
+        152
+      ]
+    },
+    {
+      "peak": 1.25,
+      "rear": "existing",
+      "planes": [
+        166,
+        166
+      ]
+    },
+    {
+      "peak": 1.25,
+      "rear": "matching",
+      "planes": [
+        140,
+        140
+      ]
+    }
+  ]
+}

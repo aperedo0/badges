@@ -1,0 +1,58 @@
+{
+  "mode": "calibrated",
+  "geometry_unchanged": true,
+  "material_unchanged": false,
+  "camera": [
+    [
+      1.0,
+      0.0,
+      0.0,
+      0.0
+    ],
+    [
+      0.0,
+      0.0697563961148262,
+      -0.9975640773773193,
+      -45.0
+    ],
+    [
+      0.0,
+      0.9975640773773193,
+      0.0697563961148262,
+      3.0351459980010986
+    ],
+    [
+      0.0,
+      0.0,
+      0.0,
+      1.0
+    ]
+  ],
+  "ortho": 2.200000047683716,
+  "resolution": [
+    1600,
+    1184
+  ],
+  "samples": 128,
+  "seed": 17,
+  "denoise": true,
+  "filter_width": 1.5,
+  "view": "AgX",
+  "look": "AgX - Medium High Contrast",
+  "exposure": 0.0,
+  "key": {
+    "location": [
+      -2.0,
+      -7.0,
+      4.599999904632568
+    ],
+    "size": 1.0,
+    "power": 2200.0,
+    "color": [
+      1.0,
+      0.7599999904632568,
+      0.5
+    ],
+    "incidence_degrees_from_board_normal": 65.60085172253602
+  }
+}

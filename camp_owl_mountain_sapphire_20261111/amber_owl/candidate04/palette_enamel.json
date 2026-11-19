@@ -1,0 +1,9 @@
+{
+ "Enamel": {
+  "color_texture": "textures/enamel_color.png",
+  "emission_texture": "textures/enamel_emission.png",
+  "emission_scale": 8.0,
+  "roughness": 0.18,
+  "metallic": 1.0
+ }
+}

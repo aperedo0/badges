@@ -1,0 +1,45 @@
+{
+  "rows": 93,
+  "profile_vertices": 16,
+  "integral_ridges": true,
+  "old_separate_rails_hidden": true,
+  "bore_wall_faces": 11,
+  "normal_reconstruction_after_cuts": true,
+  "actual_euler_proof": [
+    {
+      "part": "New integral tongue actual retaining bore input A",
+      "closed": true,
+      "euler_characteristic": 2,
+      "positive_volume": 0.04189547255681647,
+      "triangles": 2972
+    },
+    {
+      "part": "New integral tongue actual retaining bore input B",
+      "closed": true,
+      "euler_characteristic": 2,
+      "positive_volume": 0.0025694614054897285,
+      "triangles": 252
+    },
+    {
+      "part": "New integral tongue actual retaining bore result",
+      "closed": true,
+      "euler_characteristic": 0,
+      "positive_volume": 0.0404340916188892,
+      "triangles": 3592
+    },
+    {
+      "part": "New integral tongue actual retaining bore",
+      "closed": true,
+      "euler_characteristic": 0,
+      "positive_volume": 0.0404340916188892,
+      "triangles": 3592
+    },
+    {
+      "part": "Integral ridged latch final",
+      "closed": true,
+      "euler_characteristic": 0,
+      "positive_volume": 0.0404340916188892,
+      "triangles": 3592
+    }
+  ]
+}

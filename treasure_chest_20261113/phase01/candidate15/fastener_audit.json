@@ -1,0 +1,116 @@
+{
+  "checks_pass": true,
+  "groups": {
+    "roof_hoop_1": {
+      "studs_around_curve": 2,
+      "crown_head": true,
+      "visible_front_count": 2,
+      "names": [
+        "Chest Hoop Rivet 0 0",
+        "Chest Hoop Rivet 0 1"
+      ]
+    },
+    "roof_hoop_2": {
+      "studs_around_curve": 6,
+      "crown_head": true,
+      "visible_front_count": 4,
+      "names": [
+        "Chest Hoop Rivet 1 0",
+        "Chest Hoop Rivet 1 1",
+        "Chest Hoop Rivet 1 2",
+        "Chest Hoop Rivet 1 3",
+        "Chest Hoop Rivet 1 4",
+        "Chest Hoop Rivet 1 5"
+      ]
+    },
+    "roof_hoop_3": {
+      "studs_around_curve": 6,
+      "crown_head": true,
+      "visible_front_count": 4,
+      "names": [
+        "Chest Hoop Rivet 2 0",
+        "Chest Hoop Rivet 2 1",
+        "Chest Hoop Rivet 2 2",
+        "Chest Hoop Rivet 2 3",
+        "Chest Hoop Rivet 2 4",
+        "Chest Hoop Rivet 2 5"
+      ]
+    },
+    "roof_hoop_4": {
+      "studs_around_curve": 2,
+      "crown_head": true,
+      "visible_front_count": 2,
+      "names": [
+        "Chest Hoop Rivet 3 0",
+        "Chest Hoop Rivet 3 1"
+      ]
+    },
+    "end_arch_-1": {
+      "slope_heads": 2,
+      "separate_tab_head": true
+    },
+    "end_rails_-1": {
+      "upper": 1,
+      "lower": 1,
+      "names": [
+        "Chest End Rail Rivet -1 0",
+        "Chest End Rail Rivet -1 1"
+      ]
+    },
+    "long_rails_-1": {
+      "upper": 3,
+      "lower": 2,
+      "outer_upper_head_is_smaller": true,
+      "names": [
+        "Chest Rail Rivet -1 0",
+        "Chest Rail Rivet -1 1",
+        "Chest Rail Rivet -1 2",
+        "Chest Rail Rivet -1 3",
+        "Chest Rail Rivet -1 4"
+      ]
+    },
+    "handle_mount_-1": {
+      "heads": 2,
+      "names": [
+        "Chest Handle Mount Rivet -1 -1",
+        "Chest Handle Mount Rivet -1 1"
+      ]
+    },
+    "end_arch_1": {
+      "slope_heads": 2,
+      "separate_tab_head": true
+    },
+    "end_rails_1": {
+      "upper": 1,
+      "lower": 1,
+      "names": [
+        "Chest End Rail Rivet 1 0",
+        "Chest End Rail Rivet 1 1"
+      ]
+    },
+    "long_rails_1": {
+      "upper": 3,
+      "lower": 2,
+      "outer_upper_head_is_smaller": true,
+      "names": [
+        "Chest Rail Rivet 1 0",
+        "Chest Rail Rivet 1 1",
+        "Chest Rail Rivet 1 2",
+        "Chest Rail Rivet 1 3",
+        "Chest Rail Rivet 1 4"
+      ]
+    },
+    "handle_mount_1": {
+      "heads": 2,
+      "names": [
+        "Chest Handle Mount Rivet 1 -1",
+        "Chest Handle Mount Rivet 1 1"
+      ]
+    },
+    "lock": {
+      "large_mount_heads": 2,
+      "small_shield_heads": 5
+    }
+  },
+  "limitations": "Counts describe all active source hardware. Front and end reference positions were measured from visible landmarks; unseen sides use matching real construction. Renders remain the appearance check."
+}

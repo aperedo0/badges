@@ -1,0 +1,57 @@
+{
+  "parts": [
+    {
+      "name": "Gold body",
+      "role": "gold_side",
+      "triangles": 2732
+    },
+    {
+      "name": "Blue enamel field and ribbons",
+      "role": "art",
+      "triangles": 4256
+    },
+    {
+      "name": "Pearl clouds",
+      "role": "art",
+      "triangles": 7736
+    },
+    {
+      "name": "Bolt yellow face",
+      "role": "art_bolt",
+      "triangles": 2580
+    },
+    {
+      "name": "Bolt gold rim",
+      "role": "gold",
+      "triangles": 5696
+    },
+    {
+      "name": "Gold frame, points and cloud outlines",
+      "role": "gold",
+      "triangles": 35124
+    },
+    {
+      "name": "Gold frame, points and cloud outlines side walls",
+      "role": "gold_side",
+      "triangles": 5448
+    }
+  ],
+  "triangles": 63572,
+  "units_per_pixel": 0.004727744165946413,
+  "center_x": 627.0,
+  "top": 45,
+  "bounds_min": [
+    -2.7113612791702675,
+    -2.448239458330028,
+    -0.36466125817760575
+  ],
+  "bounds_max": [
+    2.700329876116393,
+    3.0148,
+    0.36466125817760575
+  ],
+  "mockup_size": [
+    1254,
+    1254
+  ]
+}

@@ -1,0 +1,6 @@
+{
+  "status": "diagnostic_rejected_before_Blender_or_native",
+  "reason": "The reference crown and coordinated pavilion intersection did not pass strict triangle stability checks. No candidate26 asset was created or installed.",
+  "current_native_model": "candidate25",
+  "runtime_tolerances_unchanged": true
+}

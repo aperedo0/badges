@@ -1,0 +1,2 @@
+Expanded phase 1 from a body, lid and foot guides to the complete major chest forms in live Blender.
+Added wrapping structure and closed hardware on every side, corrected buried corner armor and removed coplanar frame overlaps; surface detail remains deferred.

@@ -1,0 +1,10 @@
+{
+  "status": "diagnostic_only_not_native",
+  "reference_image_not_used_by_material": true,
+  "studio_radiance_mean": [
+    1.5582059818773029,
+    1.6189675379659831,
+    1.745066860132832
+  ],
+  "single_scatter_with_extinction": true
+}

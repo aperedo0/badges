@@ -1,0 +1,20 @@
+{
+  "baseline_file_sha256": "03360c8cc1db18e335ecb911c0ae2b76cd05f8526c20e7997264508877172417",
+  "shape": [
+    736,
+    2016
+  ],
+  "geometry_height_min_max": [
+    -0.04845640808343887,
+    -0.003688116790726781,
+    -0.0015025530010461807
+  ],
+  "exposed_bay_quiet_plate_fraction": 0.5096703484399909,
+  "quiet_plate_height_range_5_95": [
+    -0.003956046327948571,
+    -0.002025646483525634
+  ],
+  "fine_layer_rms_on_plates": 0.00031407494680024683,
+  "cause": "The recovered medium layer clips all positive band values to zero. Broad base is weak and H fine residual retained at 0.30. Large fractures have real geometry; shader normal strength is already one. Missing structure is source height on plateau regions, not merely normal strength or light.",
+  "limits": "Numerical values describe implementation and this approximate visible mask, not physical measurements inferred from the reference."
+}

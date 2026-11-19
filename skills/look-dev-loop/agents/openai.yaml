@@ -1,0 +1,4 @@
+interface:
+  display_name: "Look development loop"
+  short_description: "One change per round, cached renders, real checkpoints, fewer tokens"
+  default_prompt: "Use $look-dev-loop to continue this look development from PROJECT_STATE.md, one targeted change per round, with cached renders and a proven checkpoint before each round."

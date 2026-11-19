@@ -1,0 +1,16 @@
+{
+  "stage": "Cam and front bearing built; carrier, retaining pin, guides, key and controls pending",
+  "complete_lock": false,
+  "cam": "Chest Rotating Keyed Cam",
+  "fixed_bearing": "Chest Fixed Cam C Bearing",
+  "actual_crank_segments": 192,
+  "cam_bearing_intersections": 0,
+  "remaining": [
+    "Receiver cheek rear depth correction",
+    "Slider frame, bridge and actual retaining pin",
+    "Fixed beam guides",
+    "Actual key and insertion path",
+    "Contact driven cam and slider controls",
+    "Whole relative motion and keyhole appearance proof"
+  ]
+}

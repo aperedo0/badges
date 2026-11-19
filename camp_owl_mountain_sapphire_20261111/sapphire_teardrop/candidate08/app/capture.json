@@ -1,0 +1,64 @@
+{
+  "loaded": true,
+  "model_sha256": "c86795faf96436c3a3531f46bf366fb7572c586595dbf538ed7fa5a33ddf3103",
+  "actual_cached_model": "/Users/antonioperedo/Library/Developer/CoreSimulator/Devices/C18E609E-6C2F-49C4-BCFE-E5D365F4E4E8/data/Containers/Data/Application/FA9AFCDA-6F08-4DDA-8271-9FA9BFADC95F/tmp/Badge3DPreviewSapphireTeardrop.usdz",
+  "front_header_y": 1413.5,
+  "native_image_size": [
+    1206,
+    2622
+  ],
+  "capture_method": "Native PNG because MCP screenshot is compressed to 368 by 800 JPEG",
+  "gesture_method": "Precise local coordinates because MCP root swipe starts on the badge picker",
+  "poses": {
+    "front": {
+      "target_scroll_points": 0,
+      "actual_scroll_points": 0.0,
+      "header_y": 1413.5
+    },
+    "early_turn": {
+      "target_scroll_points": 68,
+      "actual_scroll_points": 68.0,
+      "header_y": 1209.5
+    },
+    "turn45": {
+      "target_scroll_points": 75.1,
+      "actual_scroll_points": 75.0,
+      "header_y": 1188.5
+    },
+    "side_left": {
+      "target_scroll_points": 94.2528,
+      "actual_scroll_points": 94.33333333333333,
+      "header_y": 1130.5
+    },
+    "turn135": {
+      "target_scroll_points": 113.4,
+      "actual_scroll_points": 113.33333333333333,
+      "header_y": 1073.5
+    },
+    "back": {
+      "target_scroll_points": 132.5056,
+      "actual_scroll_points": 132.66666666666666,
+      "header_y": 1015.5
+    },
+    "turn225": {
+      "target_scroll_points": 151.6,
+      "actual_scroll_points": 151.66666666666666,
+      "header_y": 958.5
+    },
+    "side_right": {
+      "target_scroll_points": 170.7583,
+      "actual_scroll_points": 170.66666666666666,
+      "header_y": 901.5
+    },
+    "turn315": {
+      "target_scroll_points": 189.9,
+      "actual_scroll_points": 190.0,
+      "header_y": 843.5
+    },
+    "full_turn": {
+      "target_scroll_points": 210,
+      "actual_scroll_points": 210.0,
+      "header_y": 783.5
+    }
+  }
+}

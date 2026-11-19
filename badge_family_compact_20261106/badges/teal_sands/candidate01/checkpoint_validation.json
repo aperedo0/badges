@@ -1,0 +1,60 @@
+{
+  "complete_mesh_count": 9,
+  "triangles": 59262,
+  "all_used_images_packed_and_match_usdz": true,
+  "images": [
+    {
+      "name": "background_color.png",
+      "sha256": "804d70e0bbba7b7a38d96ce900ee180c4cc378d49f2d55af7f6e75fcbc8110f7"
+    },
+    {
+      "name": "Rim_brushed_reference_color.png.003",
+      "sha256": "6a06bbe1d43f81862246590c625e0b9ab5db174281c432ef2bfeb4dc1533aac1"
+    },
+    {
+      "name": "Rim_glint_reference_roughness.png.003",
+      "sha256": "a060290fd7cfd42597e0be088a7577b29ea5147a3e9ef9b81b67e652f3a7ece1"
+    },
+    {
+      "name": "glass_color.png",
+      "sha256": "31d45b18b110b3a26009ea54f82fc9ea2b96e4611d38efec075bda24a9c46249"
+    },
+    {
+      "name": "sand_emission.png",
+      "sha256": "6d420f0d0077967fe2a37299c86d19b03b714f5b128ca0c405d59f7921daa7a5"
+    },
+    {
+      "name": "silver_emission.png",
+      "sha256": "d3ed856e415f62521d6a989db7ada4feb37c317e51acfae8c111f7d597132d36"
+    },
+    {
+      "name": "USDZ_Inset_normal.png.003",
+      "sha256": "9f5707f3a260602318afc7bd4190435bedb8ff03ccc6a453fcdb8b4eb0d59d1e"
+    },
+    {
+      "name": "background_emission.png",
+      "sha256": "b7c0d295e071de50c6c6fd80a7316b149284965b8e9ba0735fb7ccbb2b4b0c76"
+    },
+    {
+      "name": "Rim_brushed_reference_roughness.png.003",
+      "sha256": "2dd0421486bac68bd1dc669b879074954dd7fa21e377f19c6012d1bd510c0a54"
+    },
+    {
+      "name": "glass_emission.png",
+      "sha256": "dcafb4922a978a7c1d509f292726428536c682e422565754a91834a2e991cbf6"
+    },
+    {
+      "name": "sand_color.png",
+      "sha256": "b91b9681bff8c007662ace15e203ddb9f8faaa2bc877576144f5a4952bad4cd7"
+    },
+    {
+      "name": "silver_color.png",
+      "sha256": "edd6e31f269c6aa1c6a7d3265d683a24fb42efd5dcd3d7cd0a1102cb85192450"
+    },
+    {
+      "name": "USDZ_Inset_base_color.png.003",
+      "sha256": "b7e5fc22746a7c0833dadd0995553cc5acb292d85627e218feaafa66019afcf4"
+    }
+  ],
+  "usdz_unchanged_sha256": "32f76af777b67b17b9ed8ef5eb764ab1da0dc1bfc84110fc0c59239e8fd550d9"
+}

@@ -1,0 +1,52 @@
+{
+  "metal": {
+    "textured": true,
+    "metallic": 1,
+    "roughness": 0.39
+  },
+  "copper": {
+    "textured": true,
+    "metallic": 1,
+    "roughness": 0.32
+  },
+  "field": {
+    "textured": true,
+    "metallic": 1,
+    "roughness": 0.65
+  },
+  "flame": {
+    "textured": true,
+    "metallic": 1,
+    "roughness": 0.6
+  },
+  "side": {
+    "textured": false,
+    "color": [
+      0.065,
+      0.041,
+      0.027
+    ],
+    "metallic": 1,
+    "roughness": 0.55
+  },
+  "ember_side": {
+    "textured": false,
+    "color": [
+      0.1,
+      0.016,
+      0.002
+    ],
+    "metallic": 1,
+    "roughness": 0.6
+  },
+  "CrestGem_Sapphire": {
+    "textured": false,
+    "color": [
+      0.015,
+      0.04,
+      0.24
+    ],
+    "metallic": 0,
+    "roughness": 0.06
+  }
+}

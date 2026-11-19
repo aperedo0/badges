@@ -1,0 +1,14 @@
+{
+  "mode": "manual",
+  "manual_work_authorized": false,
+  "overnight_enabled": false,
+  "owner_instruction": "Stop after the material switch and ask the owner for their opinion. No agent visual review. Keep all other planks and metal unchanged.",
+  "recorded_epoch": 1794811396.542311,
+  "owner_paused_badge_work": true,
+  "paused_epoch": 1794719906.8705769,
+  "resumed_epoch": 1794731704.590039,
+  "material_finish_authorized": false,
+  "wood_grain_authorized": true,
+  "wood_grain_scope": "Exactly one lower front plank only. No other wood until owner acceptance.",
+  "material_review_by": "owner"
+}

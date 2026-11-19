@@ -1,0 +1,66 @@
+{
+  "name": "Campfire Night",
+  "mockup": "/Users/antonioperedo/Desktop/badges/camp_owl_mountain_sapphire_20261111/campfire_night/reference.png",
+  "mockup_box": [
+    621,
+    84,
+    1160
+  ],
+  "build_front": "/Users/antonioperedo/Desktop/badges/camp_owl_mountain_sapphire_20261111/campfire_night/candidate13/app/front.png",
+  "build_box": [
+    603,
+    358.5098360248455,
+    782.289954128999
+  ],
+  "regions": [
+    [
+      "moon and stars",
+      -0.28,
+      0,
+      0.28,
+      0.3
+    ],
+    [
+      "flame",
+      -0.26,
+      0.25,
+      0.26,
+      0.78
+    ],
+    [
+      "left trees",
+      -0.49,
+      0.25,
+      -0.22,
+      0.7
+    ],
+    [
+      "right trees",
+      0.22,
+      0.25,
+      0.49,
+      0.7
+    ],
+    [
+      "logs and stones",
+      -0.4,
+      0.7,
+      0.4,
+      1.01
+    ],
+    [
+      "rim",
+      -0.53,
+      0.15,
+      -0.36,
+      0.8
+    ]
+  ],
+  "poses": {
+    "early_turn": "/Users/antonioperedo/Desktop/badges/camp_owl_mountain_sapphire_20261111/campfire_night/candidate13/app/early_turn.png",
+    "side_left": "/Users/antonioperedo/Desktop/badges/camp_owl_mountain_sapphire_20261111/campfire_night/candidate13/app/side_left.png",
+    "back": "/Users/antonioperedo/Desktop/badges/camp_owl_mountain_sapphire_20261111/campfire_night/candidate13/app/back.png",
+    "side_right": "/Users/antonioperedo/Desktop/badges/camp_owl_mountain_sapphire_20261111/campfire_night/candidate13/app/side_right.png"
+  },
+  "intended": []
+}

@@ -1,0 +1,88 @@
+{
+  "diagnostic_only": true,
+  "appearance_texture_created": false,
+  "geometry_or_runtime_changed": false,
+  "depths": [
+    {
+      "rear_culet_z": -0.64,
+      "first_three_internal_reflection_fractions": [
+        0.0,
+        0.39143730886850153,
+        0.008300567933595456
+      ],
+      "median_color": [
+        0.10601038300837545,
+        0.3300529289322903,
+        0.7839464596372908
+      ],
+      "color_spread": [
+        0.029194380579507084,
+        0.02855078952829771,
+        0.03834502790654864
+      ],
+      "native_calibration_error": 0.0036803764796650945,
+      "facet_planes": 55
+    },
+    {
+      "rear_culet_z": -1.0,
+      "first_three_internal_reflection_fractions": [
+        0.0,
+        0.14984709480122324,
+        0.4648318042813456
+      ],
+      "median_color": [
+        0.08295473150661786,
+        0.2869119650446746,
+        0.7387871850839633
+      ],
+      "color_spread": [
+        0.03730449596286765,
+        0.04720538945490601,
+        0.070301148886666
+      ],
+      "native_calibration_error": null,
+      "facet_planes": 55
+    },
+    {
+      "rear_culet_z": -1.5,
+      "first_three_internal_reflection_fractions": [
+        1.0,
+        0.9991262560069899,
+        0.2651813018785496
+      ],
+      "median_color": [
+        0.06035142328146487,
+        0.21625088178332405,
+        0.6409634508424864
+      ],
+      "color_spread": [
+        0.07205885696962641,
+        0.0707807560537339,
+        0.13448315849736459
+      ],
+      "native_calibration_error": null,
+      "facet_planes": 55
+    },
+    {
+      "rear_culet_z": -2.0,
+      "first_three_internal_reflection_fractions": [
+        1.0,
+        0.7339449541284404,
+        0.31585845347313235
+      ],
+      "median_color": [
+        0.06573903518340765,
+        0.19870113892530372,
+        0.5628601668131566
+      ],
+      "color_spread": [
+        0.13837407188230094,
+        0.12785243641165117,
+        0.17396749777460965
+      ],
+      "native_calibration_error": null,
+      "facet_planes": 55
+    }
+  ],
+  "native_calibration_reliable": true
+}

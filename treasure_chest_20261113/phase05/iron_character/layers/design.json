@@ -1,0 +1,113 @@
+{
+  "reference_surface_corners": [
+    [
+      [
+        -2.08,
+        -0.34
+      ],
+      [
+        [
+          505,
+          951
+        ],
+        [
+          737,
+          932
+        ],
+        [
+          740,
+          1007
+        ],
+        [
+          516,
+          1024
+        ]
+      ]
+    ],
+    [
+      [
+        0.35,
+        2.08
+      ],
+      [
+        [
+          841,
+          925
+        ],
+        [
+          1076,
+          908
+        ],
+        [
+          1066,
+          988
+        ],
+        [
+          842,
+          1008
+        ]
+      ]
+    ]
+  ],
+  "reference_usage": "Interior ridge shapes only, rebuilt shallow relief. No copied base color or baked directional light.",
+  "weathering": "Independent scalar channels from cached CC0 ambientCG Metal025 and Metal003. Rust color is not used.",
+  "extra_edge_damage": [
+    {
+      "side": "top",
+      "x": -1.97,
+      "width": 0.052,
+      "extra_depth": 0.011
+    },
+    {
+      "side": "top",
+      "x": -0.68,
+      "width": 0.067,
+      "extra_depth": 0.017
+    },
+    {
+      "side": "top",
+      "x": 0.55,
+      "width": 0.041,
+      "extra_depth": 0.011
+    },
+    {
+      "side": "top",
+      "x": 1.42,
+      "width": 0.06,
+      "extra_depth": 0.017
+    },
+    {
+      "side": "top",
+      "x": 1.88,
+      "width": 0.04,
+      "extra_depth": 0.01
+    },
+    {
+      "side": "bottom",
+      "x": -1.65,
+      "width": 0.06,
+      "extra_depth": 0.01
+    },
+    {
+      "side": "bottom",
+      "x": -0.95,
+      "width": 0.047,
+      "extra_depth": 0.01
+    },
+    {
+      "side": "bottom",
+      "x": 0.8,
+      "width": 0.072,
+      "extra_depth": 0.014
+    },
+    {
+      "side": "bottom",
+      "x": 1.9,
+      "width": 0.048,
+      "extra_depth": 0.009
+    }
+  ],
+  "existing_hammer_fields_unchanged": true,
+  "contact_regions_protected": true,
+  "ridge_nonmaximum_suppression": true
+}

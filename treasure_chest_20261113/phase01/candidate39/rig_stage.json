@@ -1,0 +1,706 @@
+{
+  "master": "Chest Rig Master",
+  "lid_control": "Chest Rig LidOpen",
+  "local_pivot": [
+    0,
+    0.36175,
+    -1.93
+  ],
+  "world_axis": [
+    0.8480481505393982,
+    0.5299192070960999,
+    0.0
+  ],
+  "head_centering": [
+    {
+      "name": "Chest Rear Hinge Lower Rivet -1 0",
+      "old_center_y": 0.167,
+      "new_center_y": 0.1345,
+      "reason": "Centered between plate flat edge and actual barrel silhouette"
+    },
+    {
+      "name": "Chest Rear Hinge Lower Rivet -1 1",
+      "old_center_y": 0.167,
+      "new_center_y": 0.1345,
+      "reason": "Centered between plate flat edge and actual barrel silhouette"
+    },
+    {
+      "name": "Chest Rear Hinge Upper Rivet -1 0",
+      "old_center_y": 0.57125,
+      "new_center_y": 0.59875,
+      "reason": "Centered between plate flat edge and actual barrel silhouette"
+    },
+    {
+      "name": "Chest Rear Hinge Upper Rivet -1 1",
+      "old_center_y": 0.57125,
+      "new_center_y": 0.59875,
+      "reason": "Centered between plate flat edge and actual barrel silhouette"
+    },
+    {
+      "name": "Chest Rear Hinge Lower Rivet 1 0",
+      "old_center_y": 0.167,
+      "new_center_y": 0.1345,
+      "reason": "Centered between plate flat edge and actual barrel silhouette"
+    },
+    {
+      "name": "Chest Rear Hinge Lower Rivet 1 1",
+      "old_center_y": 0.167,
+      "new_center_y": 0.1345,
+      "reason": "Centered between plate flat edge and actual barrel silhouette"
+    },
+    {
+      "name": "Chest Rear Hinge Upper Rivet 1 0",
+      "old_center_y": 0.57125,
+      "new_center_y": 0.59875,
+      "reason": "Centered between plate flat edge and actual barrel silhouette"
+    },
+    {
+      "name": "Chest Rear Hinge Upper Rivet 1 1",
+      "old_center_y": 0.57125,
+      "new_center_y": 0.59875,
+      "reason": "Centered between plate flat edge and actual barrel silhouette"
+    }
+  ],
+  "original_driver_graphs": [
+    {
+      "owner": "Chest Removable Crank Key",
+      "path": "hide_render",
+      "index": 0,
+      "expression": "1-v",
+      "variables": [
+        {
+          "name": "v",
+          "type": "SINGLE_PROP",
+          "id": "Chest Rig Master",
+          "path": "[\"show_key\"]"
+        }
+      ],
+      "simple": true,
+      "valid": true
+    },
+    {
+      "owner": "Chest Removable Crank Key",
+      "path": "hide_viewport",
+      "index": 0,
+      "expression": "1-v",
+      "variables": [
+        {
+          "name": "v",
+          "type": "SINGLE_PROP",
+          "id": "Chest Rig Master",
+          "path": "[\"show_key\"]"
+        }
+      ],
+      "simple": true,
+      "valid": true
+    },
+    {
+      "owner": "Chest Rig BoltShift",
+      "path": "[\"phase\"]",
+      "index": 0,
+      "expression": "c if c<2 else c-2",
+      "variables": [
+        {
+          "name": "c",
+          "type": "SINGLE_PROP",
+          "id": "Chest Rig Master",
+          "path": "[\"cycle\"]"
+        }
+      ],
+      "simple": true,
+      "valid": true
+    },
+    {
+      "owner": "Chest Rig BoltShift",
+      "path": "[\"shift\"]",
+      "index": 0,
+      "expression": "min(0,-0.14*sin(1.5707963267948966*min(p,2-p))+0.02) if p<=1 else max(-0.12,-0.14*sin(1.5707963267948966*min(p,2-p)))",
+      "variables": [
+        {
+          "name": "p",
+          "type": "SINGLE_PROP",
+          "id": "Chest Rig BoltShift",
+          "path": "[\"phase\"]"
+        }
+      ],
+      "simple": true,
+      "valid": true
+    },
+    {
+      "owner": "Chest Rig BoltShift",
+      "path": "location",
+      "index": 0,
+      "expression": "0.8480481505393982*d",
+      "variables": [
+        {
+          "name": "d",
+          "type": "SINGLE_PROP",
+          "id": "Chest Rig BoltShift",
+          "path": "[\"shift\"]"
+        }
+      ],
+      "simple": true,
+      "valid": true
+    },
+    {
+      "owner": "Chest Rig BoltShift",
+      "path": "location",
+      "index": 1,
+      "expression": "0.5299192070960999*d",
+      "variables": [
+        {
+          "name": "d",
+          "type": "SINGLE_PROP",
+          "id": "Chest Rig BoltShift",
+          "path": "[\"shift\"]"
+        }
+      ],
+      "simple": true,
+      "valid": true
+    },
+    {
+      "owner": "Chest Rig BoltShift",
+      "path": "location",
+      "index": 2,
+      "expression": "0.0*d",
+      "variables": [
+        {
+          "name": "d",
+          "type": "SINGLE_PROP",
+          "id": "Chest Rig BoltShift",
+          "path": "[\"shift\"]"
+        }
+      ],
+      "simple": true,
+      "valid": true
+    },
+    {
+      "owner": "Chest Rig HaspRelease",
+      "path": "rotation_axis_angle",
+      "index": 0,
+      "expression": "-h",
+      "variables": [
+        {
+          "name": "h",
+          "type": "SINGLE_PROP",
+          "id": "Chest Rig Master",
+          "path": "[\"hasp\"]"
+        }
+      ],
+      "simple": true,
+      "valid": true
+    },
+    {
+      "owner": "Chest Rig KeyInsertTurn",
+      "path": "location",
+      "index": 0,
+      "expression": "0.0+0.5299192070960999*0.8*(1-i)",
+      "variables": [
+        {
+          "name": "i",
+          "type": "SINGLE_PROP",
+          "id": "Chest Rig Master",
+          "path": "[\"insert\"]"
+        }
+      ],
+      "simple": true,
+      "valid": true
+    },
+    {
+      "owner": "Chest Rig KeyInsertTurn",
+      "path": "location",
+      "index": 1,
+      "expression": "-0.0+-0.8480481505393982*0.8*(1-i)",
+      "variables": [
+        {
+          "name": "i",
+          "type": "SINGLE_PROP",
+          "id": "Chest Rig Master",
+          "path": "[\"insert\"]"
+        }
+      ],
+      "simple": true,
+      "valid": true
+    },
+    {
+      "owner": "Chest Rig KeyInsertTurn",
+      "path": "location",
+      "index": 2,
+      "expression": "-0.5360000133514404+0.0*0.8*(1-i)",
+      "variables": [
+        {
+          "name": "i",
+          "type": "SINGLE_PROP",
+          "id": "Chest Rig Master",
+          "path": "[\"insert\"]"
+        }
+      ],
+      "simple": true,
+      "valid": true
+    },
+    {
+      "owner": "Chest Rig KeyInsertTurn",
+      "path": "rotation_axis_angle",
+      "index": 0,
+      "expression": "-(1.5707963267948966*min(p,2-p))",
+      "variables": [
+        {
+          "name": "p",
+          "type": "SINGLE_PROP",
+          "id": "Chest Rig BoltShift",
+          "path": "[\"phase\"]"
+        }
+      ],
+      "simple": true,
+      "valid": true
+    },
+    {
+      "owner": "Chest Rig SpringLift",
+      "path": "[\"lift\"]",
+      "index": 0,
+      "expression": "0 if abs(d)<=b else (t+sqrt(max(0,r*r-(a-abs(d))*(a-abs(d))))-f if abs(d)<a else h)+2e-6*min(1,max(0,(abs(d)-b)/.0001))*min(1,max(0,(abs(d)-b)/.0001))*(3-2*min(1,max(0,(abs(d)-b)/.0001)))",
+      "variables": [
+        {
+          "name": "d",
+          "type": "SINGLE_PROP",
+          "id": "Chest Rig BoltShift",
+          "path": "[\"shift\"]"
+        },
+        {
+          "name": "a",
+          "type": "SINGLE_PROP",
+          "id": "Chest Rig Master",
+          "path": "[\"detentA\"]"
+        },
+        {
+          "name": "b",
+          "type": "SINGLE_PROP",
+          "id": "Chest Rig Master",
+          "path": "[\"detentStart\"]"
+        },
+        {
+          "name": "t",
+          "type": "SINGLE_PROP",
+          "id": "Chest Rig Master",
+          "path": "[\"detentTop\"]"
+        },
+        {
+          "name": "r",
+          "type": "SINGLE_PROP",
+          "id": "Chest Rig Master",
+          "path": "[\"detentRadius\"]"
+        },
+        {
+          "name": "f",
+          "type": "SINGLE_PROP",
+          "id": "Chest Rig Master",
+          "path": "[\"detentFree\"]"
+        },
+        {
+          "name": "h",
+          "type": "SINGLE_PROP",
+          "id": "Chest Rig Master",
+          "path": "[\"detentFlatLift\"]"
+        }
+      ],
+      "simple": true,
+      "valid": true
+    },
+    {
+      "owner": "Key",
+      "path": "key_blocks[\"Actual spring lift\"].value",
+      "index": 0,
+      "expression": "l/0.002",
+      "variables": [
+        {
+          "name": "l",
+          "type": "SINGLE_PROP",
+          "id": "Chest Rig SpringLift",
+          "path": "[\"lift\"]"
+        }
+      ],
+      "simple": true,
+      "valid": true
+    }
+  ],
+  "drivers": [
+    {
+      "owner": "Chest Removable Crank Key",
+      "path": "hide_render",
+      "index": 0,
+      "expression": "1-v",
+      "variables": [
+        {
+          "name": "v",
+          "type": "SINGLE_PROP",
+          "id": "Chest Rig Master",
+          "path": "[\"show_key\"]"
+        }
+      ],
+      "simple": true,
+      "valid": true
+    },
+    {
+      "owner": "Chest Removable Crank Key",
+      "path": "hide_viewport",
+      "index": 0,
+      "expression": "1-v",
+      "variables": [
+        {
+          "name": "v",
+          "type": "SINGLE_PROP",
+          "id": "Chest Rig Master",
+          "path": "[\"show_key\"]"
+        }
+      ],
+      "simple": true,
+      "valid": true
+    },
+    {
+      "owner": "Chest Rig BoltShift",
+      "path": "[\"phase\"]",
+      "index": 0,
+      "expression": "c if c<2 else c-2",
+      "variables": [
+        {
+          "name": "c",
+          "type": "SINGLE_PROP",
+          "id": "Chest Rig Master",
+          "path": "[\"cycle\"]"
+        }
+      ],
+      "simple": true,
+      "valid": true
+    },
+    {
+      "owner": "Chest Rig BoltShift",
+      "path": "[\"shift\"]",
+      "index": 0,
+      "expression": "min(0,-0.14*sin(1.5707963267948966*min(p,2-p))+0.02) if p<=1 else max(-0.12,-0.14*sin(1.5707963267948966*min(p,2-p)))",
+      "variables": [
+        {
+          "name": "p",
+          "type": "SINGLE_PROP",
+          "id": "Chest Rig BoltShift",
+          "path": "[\"phase\"]"
+        }
+      ],
+      "simple": true,
+      "valid": true
+    },
+    {
+      "owner": "Chest Rig BoltShift",
+      "path": "location",
+      "index": 0,
+      "expression": "0.8480481505393982*d",
+      "variables": [
+        {
+          "name": "d",
+          "type": "SINGLE_PROP",
+          "id": "Chest Rig BoltShift",
+          "path": "[\"shift\"]"
+        }
+      ],
+      "simple": true,
+      "valid": true
+    },
+    {
+      "owner": "Chest Rig BoltShift",
+      "path": "location",
+      "index": 1,
+      "expression": "0.5299192070960999*d",
+      "variables": [
+        {
+          "name": "d",
+          "type": "SINGLE_PROP",
+          "id": "Chest Rig BoltShift",
+          "path": "[\"shift\"]"
+        }
+      ],
+      "simple": true,
+      "valid": true
+    },
+    {
+      "owner": "Chest Rig BoltShift",
+      "path": "location",
+      "index": 2,
+      "expression": "0.0*d",
+      "variables": [
+        {
+          "name": "d",
+          "type": "SINGLE_PROP",
+          "id": "Chest Rig BoltShift",
+          "path": "[\"shift\"]"
+        }
+      ],
+      "simple": true,
+      "valid": true
+    },
+    {
+      "owner": "Chest Rig HaspRelease",
+      "path": "rotation_axis_angle",
+      "index": 0,
+      "expression": "-h",
+      "variables": [
+        {
+          "name": "h",
+          "type": "SINGLE_PROP",
+          "id": "Chest Rig Master",
+          "path": "[\"hasp\"]"
+        }
+      ],
+      "simple": true,
+      "valid": true
+    },
+    {
+      "owner": "Chest Rig KeyInsertTurn",
+      "path": "location",
+      "index": 0,
+      "expression": "0.0+0.5299192070960999*0.8*(1-i)",
+      "variables": [
+        {
+          "name": "i",
+          "type": "SINGLE_PROP",
+          "id": "Chest Rig Master",
+          "path": "[\"insert\"]"
+        }
+      ],
+      "simple": true,
+      "valid": true
+    },
+    {
+      "owner": "Chest Rig KeyInsertTurn",
+      "path": "location",
+      "index": 1,
+      "expression": "-0.0+-0.8480481505393982*0.8*(1-i)",
+      "variables": [
+        {
+          "name": "i",
+          "type": "SINGLE_PROP",
+          "id": "Chest Rig Master",
+          "path": "[\"insert\"]"
+        }
+      ],
+      "simple": true,
+      "valid": true
+    },
+    {
+      "owner": "Chest Rig KeyInsertTurn",
+      "path": "location",
+      "index": 2,
+      "expression": "-0.5360000133514404+0.0*0.8*(1-i)",
+      "variables": [
+        {
+          "name": "i",
+          "type": "SINGLE_PROP",
+          "id": "Chest Rig Master",
+          "path": "[\"insert\"]"
+        }
+      ],
+      "simple": true,
+      "valid": true
+    },
+    {
+      "owner": "Chest Rig KeyInsertTurn",
+      "path": "rotation_axis_angle",
+      "index": 0,
+      "expression": "-(1.5707963267948966*min(p,2-p))",
+      "variables": [
+        {
+          "name": "p",
+          "type": "SINGLE_PROP",
+          "id": "Chest Rig BoltShift",
+          "path": "[\"phase\"]"
+        }
+      ],
+      "simple": true,
+      "valid": true
+    },
+    {
+      "owner": "Chest Rig LidOpen",
+      "path": "rotation_axis_angle",
+      "index": 0,
+      "expression": "-a*0.017453292519943295",
+      "variables": [
+        {
+          "name": "a",
+          "type": "SINGLE_PROP",
+          "id": "Chest Rig Master",
+          "path": "[\"lid_degrees\"]"
+        }
+      ],
+      "simple": true,
+      "valid": true
+    },
+    {
+      "owner": "Chest Rig SpringLift",
+      "path": "[\"lift\"]",
+      "index": 0,
+      "expression": "0 if abs(d)<=b else (t+sqrt(max(0,r*r-(a-abs(d))*(a-abs(d))))-f if abs(d)<a else h)+2e-6*min(1,max(0,(abs(d)-b)/.0001))*min(1,max(0,(abs(d)-b)/.0001))*(3-2*min(1,max(0,(abs(d)-b)/.0001)))",
+      "variables": [
+        {
+          "name": "d",
+          "type": "SINGLE_PROP",
+          "id": "Chest Rig BoltShift",
+          "path": "[\"shift\"]"
+        },
+        {
+          "name": "a",
+          "type": "SINGLE_PROP",
+          "id": "Chest Rig Master",
+          "path": "[\"detentA\"]"
+        },
+        {
+          "name": "b",
+          "type": "SINGLE_PROP",
+          "id": "Chest Rig Master",
+          "path": "[\"detentStart\"]"
+        },
+        {
+          "name": "t",
+          "type": "SINGLE_PROP",
+          "id": "Chest Rig Master",
+          "path": "[\"detentTop\"]"
+        },
+        {
+          "name": "r",
+          "type": "SINGLE_PROP",
+          "id": "Chest Rig Master",
+          "path": "[\"detentRadius\"]"
+        },
+        {
+          "name": "f",
+          "type": "SINGLE_PROP",
+          "id": "Chest Rig Master",
+          "path": "[\"detentFree\"]"
+        },
+        {
+          "name": "h",
+          "type": "SINGLE_PROP",
+          "id": "Chest Rig Master",
+          "path": "[\"detentFlatLift\"]"
+        }
+      ],
+      "simple": true,
+      "valid": true
+    },
+    {
+      "owner": "Key",
+      "path": "key_blocks[\"Actual spring lift\"].value",
+      "index": 0,
+      "expression": "l/0.002",
+      "variables": [
+        {
+          "name": "l",
+          "type": "SINGLE_PROP",
+          "id": "Chest Rig SpringLift",
+          "path": "[\"lift\"]"
+        }
+      ],
+      "simple": true,
+      "valid": true
+    }
+  ],
+  "endpoint_checks": [
+    {
+      "frame": 0,
+      "lid_degrees": 0.0,
+      "hasp_degrees": 0.0,
+      "lid_world_error": 0.0,
+      "body_world_error": 0.0,
+      "compound_hasp_error": 0.0
+    },
+    {
+      "frame": 115,
+      "lid_degrees": 0.0,
+      "hasp_degrees": 30.000000834826057,
+      "lid_world_error": 0.0,
+      "body_world_error": 0.0,
+      "compound_hasp_error": 2.384185791015625e-07
+    },
+    {
+      "frame": 130,
+      "lid_degrees": 0.0,
+      "hasp_degrees": 60.000001669652114,
+      "lid_world_error": 0.0,
+      "body_world_error": 0.0,
+      "compound_hasp_error": 0.0
+    },
+    {
+      "frame": 230,
+      "lid_degrees": 0.0,
+      "hasp_degrees": 60.000001669652114,
+      "lid_world_error": 0.0,
+      "body_world_error": 0.0,
+      "compound_hasp_error": 0.0
+    },
+    {
+      "frame": 240,
+      "lid_degrees": 47.5,
+      "hasp_degrees": 60.000001669652114,
+      "lid_world_error": 2.384185791015625e-07,
+      "body_world_error": 0.0,
+      "compound_hasp_error": 4.76837158203125e-07
+    },
+    {
+      "frame": 250,
+      "lid_degrees": 95.0,
+      "hasp_degrees": 60.000001669652114,
+      "lid_world_error": 0.0,
+      "body_world_error": 0.0,
+      "compound_hasp_error": 2.384185791015625e-07
+    },
+    {
+      "frame": 270,
+      "lid_degrees": 95.0,
+      "hasp_degrees": 60.000001669652114,
+      "lid_world_error": 0.0,
+      "body_world_error": 0.0,
+      "compound_hasp_error": 2.384185791015625e-07
+    },
+    {
+      "frame": 280,
+      "lid_degrees": 47.5,
+      "hasp_degrees": 60.000001669652114,
+      "lid_world_error": 2.384185791015625e-07,
+      "body_world_error": 0.0,
+      "compound_hasp_error": 4.76837158203125e-07
+    },
+    {
+      "frame": 290,
+      "lid_degrees": 0.0,
+      "hasp_degrees": 60.000001669652114,
+      "lid_world_error": 0.0,
+      "body_world_error": 0.0,
+      "compound_hasp_error": 0.0
+    },
+    {
+      "frame": 340,
+      "lid_degrees": 0.0,
+      "hasp_degrees": 60.000001669652114,
+      "lid_world_error": 0.0,
+      "body_world_error": 0.0,
+      "compound_hasp_error": 0.0
+    },
+    {
+      "frame": 380,
+      "lid_degrees": 0.0,
+      "hasp_degrees": 0.0,
+      "lid_world_error": 0.0,
+      "body_world_error": 0.0,
+      "compound_hasp_error": 0.0
+    },
+    {
+      "frame": 490,
+      "lid_degrees": 0.0,
+      "hasp_degrees": 0.0,
+      "lid_world_error": 0.0,
+      "body_world_error": 0.0,
+      "compound_hasp_error": 0.0
+    }
+  ],
+  "hasp_parent": "Chest Rig LidOpen",
+  "rest_frame": 0,
+  "full_travel_collision_checks_complete": false,
+  "final_animation": false
+}

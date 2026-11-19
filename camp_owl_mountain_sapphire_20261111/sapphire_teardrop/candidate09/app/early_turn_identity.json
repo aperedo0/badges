@@ -1,0 +1,16 @@
+{
+  "expected": "Sapphire Teardrop",
+  "observed": [
+    {
+      "name": "Sapphire Teardrop",
+      "frame": {
+        "y": 267.55,
+        "height": 36,
+        "width": 255,
+        "x": 73.5
+      }
+    }
+  ],
+  "epoch": 1794491255.5789208,
+  "visible_gallery_heading_verified": true
+}

@@ -1,0 +1,3 @@
+Surface finish: PASS for the scoped neutral clay construction change. No visible fuzz, speckle, broken edges or new shading damage in supplied views and enlarged crops.
+Scoped PASS. Body rails and corner uprights show deeper side faces against recessed wood, a modest visible increase roughly one third greater apparent edge depth. Outer silhouette, corner shapes, rail alignment and seated handle plates are preserved, with no visible daylight through body gaps.
+Remaining reference differences: handle ring reads about one fifth wider and less elongated, and wood plank relief is absent in this construction phase. Lock, hollow interior and opening rig remain outside approval. No final mobile or material approval.

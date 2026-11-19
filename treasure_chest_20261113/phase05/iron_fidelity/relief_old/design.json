@@ -1,0 +1,17 @@
+{
+  "source": "Existing medium field",
+  "coarse_encoding": [
+    -0.008,
+    0.01
+  ],
+  "fine_encoding": [
+    -0.002,
+    0.004
+  ],
+  "coarse_std_before_protection": 0.0006050927331671119,
+  "amplitude_matched_to_existing": true,
+  "tertiary_source_retained": true,
+  "tertiary_grain_fraction": 0.6,
+  "original_pits_unchanged": true,
+  "contact_protected": true
+}

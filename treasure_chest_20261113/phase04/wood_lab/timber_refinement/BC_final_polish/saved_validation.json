@@ -1,0 +1,15 @@
+{
+  "original_complete_scene_geometry_materials_transforms_parent_and_action_names_preserved": true,
+  "target_topology_uv_material_assignments_transform_parent_preserved": true,
+  "target_original_boundary_vertices_exact": true,
+  "other_parts_geometry_normals_uv_material_assignments_exact": true,
+  "source_AE_checkpoint_byte_identical": true,
+  "reference_shared_without_reimport": true,
+  "closed_two_faces_per_edge": true,
+  "all_final_maps_packed": true,
+  "normal_strength": 1.0,
+  "vertices": 641121,
+  "polygons": 643262,
+  "file_sha256": "b1225d056f09bb9351cb96715ae9158df5918a1257bf8b9926655773fb8af7ab",
+  "scope": "Existing test plank relief and independent maps plus isolated comparison lighting"
+}

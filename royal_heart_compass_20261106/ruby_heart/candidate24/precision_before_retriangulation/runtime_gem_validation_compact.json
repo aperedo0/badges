@@ -1,0 +1,17 @@
+{
+  "gems": {
+    "/Badge/Part_3": {
+      "maximumCoefficientErrorInNanounits": 238,
+      "planes": 68,
+      "reflectionPlanes": 68
+    },
+    "/Badge/Part_4": {
+      "maximumCoefficientErrorInNanounits": 238,
+      "planes": 68,
+      "reflectionPlanes": 68
+    }
+  },
+  "no_appearance_textures": true,
+  "actual_renderer_convexity_passed": true,
+  "reflection_convexity_passed": true
+}

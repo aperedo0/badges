@@ -1,0 +1,9 @@
+{
+  "native_six_pose_capture_completed": true,
+  "loaded_model": {
+    "actual_model_verified": true,
+    "capture_version": 3,
+    "sha256": "4bd163d246b04b316873cf4d0e6d50e4c85f5781cbf2ca5be13148f1825539e7"
+  },
+  "full_turn_recording_for_current_model": false
+}

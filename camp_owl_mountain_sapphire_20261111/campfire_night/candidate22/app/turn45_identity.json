@@ -1,0 +1,16 @@
+{
+  "expected": "Campfire Night",
+  "observed": [
+    {
+      "name": "Campfire Night",
+      "frame": {
+        "y": 260.55,
+        "width": 210.3333333333333,
+        "height": 36,
+        "x": 95.83333333333334
+      }
+    }
+  ],
+  "epoch": 1794490430.691052,
+  "visible_gallery_heading_verified": true
+}

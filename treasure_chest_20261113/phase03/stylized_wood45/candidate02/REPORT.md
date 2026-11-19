@@ -1,0 +1,13 @@
+One lower front plank, sculpted fantasy wood trial
+
+The owner explicitly replaced photographic timber with the reference chest style: rich burnt orange and reddish brown wood, broad carved horizontal grooves, organic cracks and a large sculpted knot. Only the existing lower front test plank changes. The other planks and metal remain neutral pending owner approval.
+
+A built in generated scalar height source provides intentional large and medium structure. The source is not a photographic scan or a shaded color image. Its saved prompt is imagegen_height_prompt.txt and its source is height_source.png. prepare_maps.py rectifies the art into the physical board chart and derives the orange brown intrinsic color, roughness and tangent normals from one low passed physical height field. Dark pigment follows low height. The virtual relief depth is0.035units, roughness0.62through0.82, metallic0, coat0, emission0 and normal tilt capped50degrees. No added noise layer or unrelated bump source.
+
+The source image contains subtle uneven grayscale shelves. They are treated as scalar elevation rather than copied directional illumination in the color image. The actual rendered diagnostics must judge whether this still reads as drawn or inflated. Normal mapping cannot produce occlusion, cast groove shadows or a changed silhouette. No true displaced or carved geometry is claimed; this preserves the owner geometry.
+
+The one material is assigned to exactly28polygons on the lower front of Chest Body Envelope. All155 vertex, triangle and original corner normal hashes stay exact, and the other154parts keep their material sets. The original shared gray shader remains unchanged. The UV reader is explicit and all three material images are packed. Original geometry43 and the photographic direction sample03 are preserved. No app code, simulator or overnight timer changes.
+
+Current validation: source crop physical aspect3.70235935, rounded core radii0.2926and0.2585units at localXnegative1.18,Ynegative1.38. Physical aspect, inverted tangent green and aligned color controls pass. Actual render and independent material review are pending. This is an owner review sample, not full chest completion or final phone acceptance.
+
+Variant2 uses the allowed targeted source refinement for medium carved fibers, narrower broad grooves and irregular chipped shoulders. Physical smoothing sigma is0.003units rather than0.009, avoiding the first close render overblur. The rest of the field and material method remains the same. This is the second rendered sample under the owner new direction; wait for owner judgment afterward.

@@ -1,0 +1,247 @@
+{
+  "geometry_faces_and_relief_preserved": true,
+  "thin_roll_replaced_with_continuous_wall": true,
+  "wall_finish": "Side, rough metal with normals blended toward the corresponding face",
+  "flat_enamel_proof": "Candidate21 removed the three persistent native flame dark pixels by changing only its colored face normals",
+  "parts": [
+    {
+      "name": "blue_glass_sky",
+      "before": 16756,
+      "after": 9636,
+      "flat_enamel_faces": 2373,
+      "rolled_lips_removed": true
+    },
+    {
+      "name": "sun_ray_0",
+      "before": 288,
+      "after": 184,
+      "flat_enamel_faces": 6,
+      "rolled_lips_removed": true
+    },
+    {
+      "name": "sun_ray_1",
+      "before": 272,
+      "after": 200,
+      "flat_enamel_faces": 3,
+      "rolled_lips_removed": true
+    },
+    {
+      "name": "sun_ray_2",
+      "before": 264,
+      "after": 196,
+      "flat_enamel_faces": 3,
+      "rolled_lips_removed": true
+    },
+    {
+      "name": "sun_ray_3",
+      "before": 836,
+      "after": 456,
+      "flat_enamel_faces": 20,
+      "rolled_lips_removed": true
+    },
+    {
+      "name": "sun_ray_4",
+      "before": 288,
+      "after": 204,
+      "flat_enamel_faces": 3,
+      "rolled_lips_removed": true
+    },
+    {
+      "name": "round_amber_sun",
+      "before": 2288,
+      "after": 1772,
+      "flat_enamel_faces": 46,
+      "rolled_lips_removed": true
+    },
+    {
+      "name": "highest_snow_peak",
+      "before": 3036,
+      "after": 2688,
+      "flat_enamel_faces": 77,
+      "rolled_lips_removed": true
+    },
+    {
+      "name": "left_foreground_peak",
+      "before": 1748,
+      "after": 1388,
+      "flat_enamel_faces": 83,
+      "rolled_lips_removed": true
+    },
+    {
+      "name": "right_foreground_peak",
+      "before": 1576,
+      "after": 1252,
+      "flat_enamel_faces": 77,
+      "rolled_lips_removed": true
+    },
+    {
+      "name": "central_foreground_peak",
+      "before": 2384,
+      "after": 1984,
+      "flat_enamel_faces": 68,
+      "rolled_lips_removed": true
+    },
+    {
+      "name": "left_cloud",
+      "before": 2620,
+      "after": 1876,
+      "flat_enamel_faces": 49,
+      "rolled_lips_removed": true
+    },
+    {
+      "name": "right_cloud",
+      "before": 2632,
+      "after": 1888,
+      "flat_enamel_faces": 51,
+      "rolled_lips_removed": true
+    },
+    {
+      "name": "far_left_hills",
+      "before": 904,
+      "after": 636,
+      "flat_enamel_faces": 35,
+      "rolled_lips_removed": true
+    },
+    {
+      "name": "far_right_hills",
+      "before": 968,
+      "after": 692,
+      "flat_enamel_faces": 32,
+      "rolled_lips_removed": true
+    },
+    {
+      "name": "lime_rear_meadow",
+      "before": 1084,
+      "after": 864,
+      "flat_enamel_faces": 182,
+      "rolled_lips_removed": true
+    },
+    {
+      "name": "left_emerald_meadow",
+      "before": 1192,
+      "after": 992,
+      "flat_enamel_faces": 28,
+      "rolled_lips_removed": true
+    },
+    {
+      "name": "right_emerald_meadow",
+      "before": 1236,
+      "after": 1024,
+      "flat_enamel_faces": 27,
+      "rolled_lips_removed": true
+    },
+    {
+      "name": "left_lime_meadow",
+      "before": 928,
+      "after": 736,
+      "flat_enamel_faces": 18,
+      "rolled_lips_removed": true
+    },
+    {
+      "name": "right_lime_meadow",
+      "before": 936,
+      "after": 740,
+      "flat_enamel_faces": 17,
+      "rolled_lips_removed": true
+    },
+    {
+      "name": "left_laurel_branch",
+      "before": 812,
+      "after": 540,
+      "flat_enamel_faces": 0,
+      "rolled_lips_removed": true
+    },
+    {
+      "name": "right_laurel_branch",
+      "before": 812,
+      "after": 540,
+      "flat_enamel_faces": 0,
+      "rolled_lips_removed": true
+    },
+    {
+      "name": "left_laurel_leaf_0",
+      "before": 972,
+      "after": 716,
+      "flat_enamel_faces": 23,
+      "rolled_lips_removed": true
+    },
+    {
+      "name": "right_laurel_leaf_0",
+      "before": 972,
+      "after": 716,
+      "flat_enamel_faces": 23,
+      "rolled_lips_removed": true
+    },
+    {
+      "name": "left_laurel_leaf_1",
+      "before": 972,
+      "after": 712,
+      "flat_enamel_faces": 22,
+      "rolled_lips_removed": true
+    },
+    {
+      "name": "right_laurel_leaf_1",
+      "before": 972,
+      "after": 712,
+      "flat_enamel_faces": 22,
+      "rolled_lips_removed": true
+    },
+    {
+      "name": "left_laurel_leaf_2",
+      "before": 976,
+      "after": 720,
+      "flat_enamel_faces": 18,
+      "rolled_lips_removed": true
+    },
+    {
+      "name": "right_laurel_leaf_2",
+      "before": 976,
+      "after": 720,
+      "flat_enamel_faces": 18,
+      "rolled_lips_removed": true
+    },
+    {
+      "name": "left_laurel_leaf_3",
+      "before": 956,
+      "after": 704,
+      "flat_enamel_faces": 24,
+      "rolled_lips_removed": true
+    },
+    {
+      "name": "right_laurel_leaf_3",
+      "before": 956,
+      "after": 704,
+      "flat_enamel_faces": 24,
+      "rolled_lips_removed": true
+    },
+    {
+      "name": "left_laurel_leaf_4",
+      "before": 960,
+      "after": 704,
+      "flat_enamel_faces": 18,
+      "rolled_lips_removed": true
+    },
+    {
+      "name": "right_laurel_leaf_4",
+      "before": 960,
+      "after": 704,
+      "flat_enamel_faces": 18,
+      "rolled_lips_removed": true
+    },
+    {
+      "name": "bottom_four_point_star",
+      "before": 760,
+      "after": 664,
+      "flat_enamel_faces": 18,
+      "rolled_lips_removed": true
+    },
+    {
+      "name": "outer_gold_setting",
+      "before": 3588,
+      "after": 2648,
+      "flat_enamel_faces": 0,
+      "rolled_lips_removed": true
+    }
+  ],
+  "native_review_pending": true
+}

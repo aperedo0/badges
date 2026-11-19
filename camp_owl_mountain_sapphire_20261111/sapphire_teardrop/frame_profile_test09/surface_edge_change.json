@@ -1,0 +1,16 @@
+{
+  "geometry_faces_and_relief_preserved": true,
+  "thin_roll_replaced_with_continuous_wall": true,
+  "wall_finish": "Side, rough metal with normals blended toward the corresponding face",
+  "flat_enamel_proof": "Candidate21 removed the three persistent native flame dark pixels by changing only its colored face normals",
+  "parts": [
+    {
+      "name": "solid_gold_teardrop_setting",
+      "before": 1880,
+      "after": 1880,
+      "flat_enamel_faces": 0,
+      "rolled_lips_removed": true
+    }
+  ],
+  "native_review_pending": true
+}

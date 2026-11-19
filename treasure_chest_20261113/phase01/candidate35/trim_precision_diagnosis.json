@@ -1,0 +1,42 @@
+[
+  {
+    "name": "Chest Angular Boot -1 -1",
+    "max_exterior_error": 1.8924100004369393e-05,
+    "max_normal_degrees": 0.023032386108780372
+  },
+  {
+    "name": "Chest Angular Boot -1 1",
+    "max_exterior_error": 2.6078512746607885e-05,
+    "max_normal_degrees": 0.019448906430634946
+  },
+  {
+    "name": "Chest Angular Boot 1 -1",
+    "max_exterior_error": 5.8566711231833324e-05,
+    "max_normal_degrees": 0.019448906430634946
+  },
+  {
+    "name": "Chest Angular Boot 1 1",
+    "max_exterior_error": 1.8924100004369393e-05,
+    "max_normal_degrees": 0.023064316467501043
+  },
+  {
+    "name": "Chest Body Corner Collar -1 -1",
+    "max_exterior_error": 0.0003854534006677568,
+    "max_normal_degrees": 0.08364810617064149
+  },
+  {
+    "name": "Chest Body Corner Collar -1 1",
+    "max_exterior_error": 0.0005139395361766219,
+    "max_normal_degrees": 0.18492413831097654
+  },
+  {
+    "name": "Chest Body Corner Collar 1 -1",
+    "max_exterior_error": 0.0005139395361766219,
+    "max_normal_degrees": 0.1837883136569203
+  },
+  {
+    "name": "Chest Body Corner Collar 1 1",
+    "max_exterior_error": 0.0003854534006677568,
+    "max_normal_degrees": 0.08364810617064149
+  }
+]

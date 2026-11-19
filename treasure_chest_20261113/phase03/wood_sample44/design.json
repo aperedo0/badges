@@ -1,0 +1,30 @@
+{
+  "part": "Chest Body Envelope",
+  "sample": "lower front plank only",
+  "uv": "ChestWoodUV_Sample44",
+  "material": "Chest Wood Sample44",
+  "bounds": {
+    "xmin": -2.55,
+    "xmax": 2.55,
+    "ymin": -2.2175,
+    "ymax": -0.84
+  },
+  "texture_width": 1024,
+  "texture_height": 384,
+  "padding": 12,
+  "metallic": 0.0,
+  "roughness_min": 0.55,
+  "roughness_max": 0.82,
+  "ior": 1.46,
+  "specular_level": 0.35,
+  "coat": 0.0,
+  "emission_strength": 0.0,
+  "maximum_normal_degrees": 35.0,
+  "knot": {
+    "x": -1.18,
+    "y": -1.38,
+    "rx": 0.34,
+    "ry": 0.17
+  },
+  "seed": 4417
+}

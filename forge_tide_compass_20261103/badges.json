@@ -1,0 +1,20 @@
+{
+  "ember_forge": {
+    "name": "Ember Forge",
+    "selection": "emberForge",
+    "reference": "/Users/antonioperedo/Desktop/badges/forge_tide_compass_20261103/ember_forge/reference.png",
+    "original_reference": "/Users/antonioperedo/Downloads/ChatGPT Image Nov 2, 2026, 11_26_55 PM.png"
+  },
+  "tidal_compass": {
+    "name": "Tidal Compass",
+    "selection": "tidalCompass",
+    "reference": "/Users/antonioperedo/Desktop/badges/forge_tide_compass_20261103/tidal_compass/reference.png",
+    "original_reference": "/Users/antonioperedo/Downloads/ChatGPT Image Nov 2, 2026, 11_27_08 PM.png"
+  },
+  "astral_navigator": {
+    "name": "Astral Navigator",
+    "selection": "astralNavigator",
+    "reference": "/Users/antonioperedo/Desktop/badges/forge_tide_compass_20261103/astral_navigator/reference.png",
+    "original_reference": "/Users/antonioperedo/Downloads/ChatGPT Image Nov 3, 2026, 12_14_38 AM.png"
+  }
+}

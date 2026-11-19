@@ -1,0 +1,8 @@
+"""Intrinsic gold map ink and navy field, excluding reference lighting."""
+from pathlib import Path
+import json,numpy as np
+from PIL import Image
+from scipy.ndimage import gaussian_filter,distance_transform_edt,map_coordinates
+R=Path(__file__).resolve().parent;C=R/'ocean_navigator/candidate11';ref=np.asarray(Image.open(C.parent/'reference.png').convert('RGB'),float)/255;h,w=ref.shape[:2];yy,xx=np.mgrid[:h,:w];dx=xx-627;dy=yy-570;r=np.hypot(dx,dy);gold=(ref[...,0]>ref[...,2]*1.45)&(ref[...,1]>ref[...,2]*1.18)&(ref[...,0]>.23);theta=np.arctan2(dy,dx);phase=(theta+np.pi/8)%(np.pi/4)-np.pi/8;arm=(abs(phase)<(.065+.22*np.exp(-r/170)))&(r<np.where(np.cos(4*theta)>0,365,250));mask=gold&(r<345)&(r>80)&~arm&(yy<850);mask&=distance_transform_edt(mask)<1.2;mask=gaussian_filter(mask.astype(float),.35)
+D=np.load(C/'geometry.npz');G=json.loads((C/'groups.json').read_text());i=next(i for i,g in enumerate(G) if g['name']=='Double sided navy nautical chart body');p=D[f'{i}_points'];radius=p[:,0].max();v,u=np.mgrid[:1024,:1024];worldx=u/1023*6.5-3.25;worldy=(1-v/1023)*6.5-2.455;worldcy=(p[:,1].max()+p[:,1].min())/2;sx=627+worldx/radius*440;sy=570-(worldy-worldcy)/radius*440;ink=map_coordinates(mask,[sy,sx],order=1,mode='constant')*.78
+navy=np.array([.0025,.008,.023]);goldink=np.array([.22,.102,.024]);rng=np.random.default_rng(123);grain=gaussian_filter(rng.normal(size=(1024,1024)),.7);grain/=grain.std();base=navy*(1+.06*grain[...,None]);color=base*(1-ink[...,None])+goldink*ink[...,None];rgb=np.where(color<=.0031308,color*12.92,1.055*np.maximum(color,0)**(1/2.4)-.055);Image.fromarray(np.uint8(np.clip(rgb,0,1)*255)).save(C/'textures/chart_color.png');print('Navy color and actual fine chart ink mapped onto current body UV.')

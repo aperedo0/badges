@@ -1,0 +1,12 @@
+{
+  "original_geometry_materials_transforms_parents_and_action_names_preserved": true,
+  "owner_checkpoint_source_matches": true,
+  "reference_shared_without_reimport": true,
+  "watertight": true,
+  "all_material_images_packed": true,
+  "vertices": 641121,
+  "polygons": 643262,
+  "file_sha256": "db859fe3e237e36eff2f75e07d5911dab31b0633f9a7018d32621fd8462a985d",
+  "geometry_validation_file_sha256": "9a43d47222d1ed4fc95e802580a6c868fceb9b4aeb2ff776bb30cea07f76b8b8",
+  "only_review_light_viewport_visibility_changed_since_validation": true
+}

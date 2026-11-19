@@ -1,0 +1,22 @@
+{
+  "source": "Preserved AE medium anatomy and primary fractures, finite angular fibers replacing only soft tertiary band, boundary constrained existing knot core",
+  "seed": 161143,
+  "texture_size": [
+    4096,
+    1536
+  ],
+  "fine_fibers": 2600,
+  "secondary_fibers": 1800,
+  "core_center": [
+    -1.31,
+    -1.35
+  ],
+  "core_radii": [
+    0.145,
+    0.17
+  ],
+  "normal_split": 0.0038,
+  "macro_grain_and_fractures_preserved": true,
+  "material": "Independent aged pigment, exposed broken fibers and roughness",
+  "height_min": -0.05104067549109459
+}

@@ -1,0 +1,6 @@
+{
+  "planes": 54,
+  "maximum_vertex_outside": 1.4198615616578536e-07,
+  "outside_shader_tolerance": 0,
+  "max_planes_normal_error": 7.78624057451438e-08
+}

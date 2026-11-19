@@ -1,0 +1,5 @@
+{
+  "every_edge_has_two_faces": true,
+  "zero_area_triangles": 0,
+  "exceptions": []
+}

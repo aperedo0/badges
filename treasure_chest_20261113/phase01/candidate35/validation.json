@@ -1,0 +1,1027 @@
+{
+  "phase": "hollow construction",
+  "complete_badge": false,
+  "meshes": 159,
+  "total_triangles": 152150,
+  "bounds": [
+    [
+      -3.336333751678467,
+      -2.4549999237060547,
+      -3.0500175952911377
+    ],
+    [
+      3.336333751678467,
+      2.5657498836517334,
+      3.0500175952911377
+    ]
+  ],
+  "maximum_rotational_width": 6.675822176567607,
+  "modified": {
+    "Chest Body Envelope": {
+      "closed": true,
+      "connected": true,
+      "euler_characteristic": 2,
+      "positive_volume": 11.409229457497219,
+      "triangles": 316,
+      "name": "Chest Body Envelope",
+      "old_outer_vertices_unchanged": true,
+      "retained_outer_faces": 149,
+      "exterior_maximum_normal_degrees": 0.003010906210732248,
+      "removed_volume": 30.41768120777555,
+      "expected_cavity_volume": 30.417683954003333
+    },
+    "Chest Barrel Lid Envelope": {
+      "closed": true,
+      "connected": true,
+      "euler_characteristic": 2,
+      "positive_volume": 6.811621867533371,
+      "triangles": 2436,
+      "name": "Chest Barrel Lid Envelope",
+      "old_outer_vertices_unchanged": true,
+      "retained_outer_faces": 930,
+      "exterior_maximum_normal_degrees": 0.029311679255574492,
+      "removed_volume": 19.415155868653862,
+      "expected_cavity_volume": 19.41515521575601
+    },
+    "Chest Angular Boot -1 -1": {
+      "closed": true,
+      "connected": true,
+      "euler_characteristic": 2,
+      "positive_volume": 0.5664584479191842,
+      "triangles": 196,
+      "name": "Chest Angular Boot -1 -1",
+      "concealed_corner_trim": true,
+      "exterior_maximum_surface_error": 1.8924100004369393e-05,
+      "maximum_normal_encoding_degrees": 0.023032386108780372,
+      "removed_volume": 0.05391221000944224
+    },
+    "Chest Angular Boot -1 1": {
+      "closed": true,
+      "connected": true,
+      "euler_characteristic": 2,
+      "positive_volume": 0.566458425034885,
+      "triangles": 198,
+      "name": "Chest Angular Boot -1 1",
+      "concealed_corner_trim": true,
+      "exterior_maximum_surface_error": 2.6078512746607885e-05,
+      "maximum_normal_encoding_degrees": 0.019448906430634946,
+      "removed_volume": 0.05391220502077809
+    },
+    "Chest Angular Boot 1 -1": {
+      "closed": true,
+      "connected": true,
+      "euler_characteristic": 2,
+      "positive_volume": 0.5664584277938288,
+      "triangles": 198,
+      "name": "Chest Angular Boot 1 -1",
+      "concealed_corner_trim": true,
+      "exterior_maximum_surface_error": 5.8566711231833324e-05,
+      "maximum_normal_encoding_degrees": 0.019448906430634946,
+      "removed_volume": 0.05391220226183424
+    },
+    "Chest Angular Boot 1 1": {
+      "closed": true,
+      "connected": true,
+      "euler_characteristic": 2,
+      "positive_volume": 0.5664584535188455,
+      "triangles": 196,
+      "name": "Chest Angular Boot 1 1",
+      "concealed_corner_trim": true,
+      "exterior_maximum_surface_error": 1.8924100004369393e-05,
+      "maximum_normal_encoding_degrees": 0.023064316467501043,
+      "removed_volume": 0.05391220440978095
+    },
+    "Chest Body Corner Collar -1 -1": {
+      "closed": true,
+      "connected": true,
+      "euler_characteristic": 2,
+      "positive_volume": 0.18501295983075675,
+      "triangles": 302,
+      "name": "Chest Body Corner Collar -1 -1",
+      "concealed_corner_trim": true,
+      "exterior_maximum_surface_error": 0.0003854534006677568,
+      "maximum_normal_encoding_degrees": 0.08364810617064149,
+      "removed_volume": 0.03630630863782999
+    },
+    "Chest Body Corner Collar -1 1": {
+      "closed": true,
+      "connected": true,
+      "euler_characteristic": 2,
+      "positive_volume": 0.18501289123577858,
+      "triangles": 302,
+      "name": "Chest Body Corner Collar -1 1",
+      "concealed_corner_trim": true,
+      "exterior_maximum_surface_error": 0.0005139395361766219,
+      "maximum_normal_encoding_degrees": 0.18492413831097654,
+      "removed_volume": 0.0363063149923408
+    },
+    "Chest Body Corner Collar 1 -1": {
+      "closed": true,
+      "connected": true,
+      "euler_characteristic": 2,
+      "positive_volume": 0.18501289145546918,
+      "triangles": 302,
+      "name": "Chest Body Corner Collar 1 -1",
+      "concealed_corner_trim": true,
+      "exterior_maximum_surface_error": 0.0005139395361766219,
+      "maximum_normal_encoding_degrees": 0.1837883136569203,
+      "removed_volume": 0.0363063147726502
+    },
+    "Chest Body Corner Collar 1 1": {
+      "closed": true,
+      "connected": true,
+      "euler_characteristic": 2,
+      "positive_volume": 0.18501295963407174,
+      "triangles": 302,
+      "name": "Chest Body Corner Collar 1 1",
+      "concealed_corner_trim": true,
+      "exterior_maximum_surface_error": 0.0003854534006677568,
+      "maximum_normal_encoding_degrees": 0.08364810617064149,
+      "removed_volume": 0.036306308834514994
+    }
+  },
+  "unchanged_meshes": 149,
+  "trimmed_concealed_corner_parts": 8,
+  "hardware_intrusions_after": 0,
+  "containment_samples_passed": 7,
+  "old_solid_negative_controls": [
+    {
+      "name": "Chest Body Envelope",
+      "old_solid_rejected": true
+    },
+    {
+      "name": "Chest Barrel Lid Envelope",
+      "old_solid_rejected": true
+    }
+  ],
+  "checks": [
+    {
+      "closed": true,
+      "connected": true,
+      "euler_characteristic": 2,
+      "positive_volume": 11.409229457497219,
+      "triangles": 316,
+      "name": "Chest Body Envelope",
+      "old_outer_vertices_unchanged": true,
+      "retained_outer_faces": 149,
+      "exterior_maximum_normal_degrees": 0.003010906210732248,
+      "removed_volume": 30.41768120777555,
+      "expected_cavity_volume": 30.417683954003333
+    },
+    {
+      "closed": true,
+      "connected": true,
+      "euler_characteristic": 2,
+      "positive_volume": 6.811621867533371,
+      "triangles": 2436,
+      "name": "Chest Barrel Lid Envelope",
+      "old_outer_vertices_unchanged": true,
+      "retained_outer_faces": 930,
+      "exterior_maximum_normal_degrees": 0.029311679255574492,
+      "removed_volume": 19.415155868653862,
+      "expected_cavity_volume": 19.41515521575601
+    },
+    {
+      "name": "Chest Lid Hoop 2",
+      "unchanged": true,
+      "triangles": 2204
+    },
+    {
+      "name": "Chest Lid Hoop 3",
+      "unchanged": true,
+      "triangles": 2204
+    },
+    {
+      "name": "Chest Broad End Arch -1",
+      "unchanged": true,
+      "triangles": 5156
+    },
+    {
+      "name": "Chest Broad End Arch 1",
+      "unchanged": true,
+      "triangles": 5156
+    },
+    {
+      "name": "Chest Upper Lid Rim",
+      "unchanged": true,
+      "triangles": 630
+    },
+    {
+      "name": "Chest Body Upper Rim",
+      "unchanged": true,
+      "triangles": 544
+    },
+    {
+      "name": "Chest Lower Rim",
+      "unchanged": true,
+      "triangles": 768
+    },
+    {
+      "name": "Chest Corner Upright -1 -1",
+      "unchanged": true,
+      "triangles": 284
+    },
+    {
+      "closed": true,
+      "connected": true,
+      "euler_characteristic": 2,
+      "positive_volume": 0.5664584479191842,
+      "triangles": 196,
+      "name": "Chest Angular Boot -1 -1",
+      "concealed_corner_trim": true,
+      "exterior_maximum_surface_error": 1.8924100004369393e-05,
+      "maximum_normal_encoding_degrees": 0.023032386108780372,
+      "removed_volume": 0.05391221000944224
+    },
+    {
+      "name": "Chest Lid Corner Armor -1 -1",
+      "unchanged": true,
+      "triangles": 178
+    },
+    {
+      "name": "Chest Corner Upright -1 1",
+      "unchanged": true,
+      "triangles": 284
+    },
+    {
+      "closed": true,
+      "connected": true,
+      "euler_characteristic": 2,
+      "positive_volume": 0.566458425034885,
+      "triangles": 198,
+      "name": "Chest Angular Boot -1 1",
+      "concealed_corner_trim": true,
+      "exterior_maximum_surface_error": 2.6078512746607885e-05,
+      "maximum_normal_encoding_degrees": 0.019448906430634946,
+      "removed_volume": 0.05391220502077809
+    },
+    {
+      "name": "Chest Lid Corner Armor -1 1",
+      "unchanged": true,
+      "triangles": 174
+    },
+    {
+      "name": "Chest Corner Upright 1 -1",
+      "unchanged": true,
+      "triangles": 284
+    },
+    {
+      "closed": true,
+      "connected": true,
+      "euler_characteristic": 2,
+      "positive_volume": 0.5664584277938288,
+      "triangles": 198,
+      "name": "Chest Angular Boot 1 -1",
+      "concealed_corner_trim": true,
+      "exterior_maximum_surface_error": 5.8566711231833324e-05,
+      "maximum_normal_encoding_degrees": 0.019448906430634946,
+      "removed_volume": 0.05391220226183424
+    },
+    {
+      "name": "Chest Lid Corner Armor 1 -1",
+      "unchanged": true,
+      "triangles": 174
+    },
+    {
+      "name": "Chest Corner Upright 1 1",
+      "unchanged": true,
+      "triangles": 284
+    },
+    {
+      "closed": true,
+      "connected": true,
+      "euler_characteristic": 2,
+      "positive_volume": 0.5664584535188455,
+      "triangles": 196,
+      "name": "Chest Angular Boot 1 1",
+      "concealed_corner_trim": true,
+      "exterior_maximum_surface_error": 1.8924100004369393e-05,
+      "maximum_normal_encoding_degrees": 0.023064316467501043,
+      "removed_volume": 0.05391220440978095
+    },
+    {
+      "name": "Chest Lid Corner Armor 1 1",
+      "unchanged": true,
+      "triangles": 178
+    },
+    {
+      "name": "Chest Central Lock Strap",
+      "unchanged": true,
+      "triangles": 188
+    },
+    {
+      "name": "Chest Central Lower Cuff",
+      "unchanged": true,
+      "triangles": 188
+    },
+    {
+      "name": "Chest Crown Fastener Mass 1",
+      "unchanged": true,
+      "triangles": 360
+    },
+    {
+      "name": "Chest Crown Fastener Mass 2",
+      "unchanged": true,
+      "triangles": 360
+    },
+    {
+      "name": "Chest Crown Fastener Mass 3",
+      "unchanged": true,
+      "triangles": 360
+    },
+    {
+      "name": "Chest Crown Fastener Mass 4",
+      "unchanged": true,
+      "triangles": 360
+    },
+    {
+      "name": "Chest Hasp Mount",
+      "unchanged": true,
+      "triangles": 444
+    },
+    {
+      "name": "Chest Front Hasp Barrel",
+      "unchanged": true,
+      "triangles": 1024
+    },
+    {
+      "name": "Chest Shield Lock Plate With Bore",
+      "unchanged": true,
+      "triangles": 1680
+    },
+    {
+      "name": "Chest Curved Hasp Tongue",
+      "unchanged": true,
+      "triangles": 3592
+    },
+    {
+      "name": "Chest Handle Mount -1",
+      "unchanged": true,
+      "triangles": 188
+    },
+    {
+      "name": "Chest Solid Ring Handle -1",
+      "unchanged": true,
+      "triangles": 16384
+    },
+    {
+      "name": "Chest Handle Mount 1",
+      "unchanged": true,
+      "triangles": 188
+    },
+    {
+      "name": "Chest Solid Ring Handle 1",
+      "unchanged": true,
+      "triangles": 16384
+    },
+    {
+      "name": "Chest Rear Hinge Lower -1",
+      "unchanged": true,
+      "triangles": 188
+    },
+    {
+      "name": "Chest Rear Hinge Upper -1",
+      "unchanged": true,
+      "triangles": 188
+    },
+    {
+      "name": "Chest Rear Hinge Barrel -1",
+      "unchanged": true,
+      "triangles": 636
+    },
+    {
+      "name": "Chest Rear Hinge Lower 1",
+      "unchanged": true,
+      "triangles": 188
+    },
+    {
+      "name": "Chest Rear Hinge Upper 1",
+      "unchanged": true,
+      "triangles": 188
+    },
+    {
+      "name": "Chest Rear Hinge Barrel 1",
+      "unchanged": true,
+      "triangles": 636
+    },
+    {
+      "closed": true,
+      "connected": true,
+      "euler_characteristic": 2,
+      "positive_volume": 0.18501295983075675,
+      "triangles": 302,
+      "name": "Chest Body Corner Collar -1 -1",
+      "concealed_corner_trim": true,
+      "exterior_maximum_surface_error": 0.0003854534006677568,
+      "maximum_normal_encoding_degrees": 0.08364810617064149,
+      "removed_volume": 0.03630630863782999
+    },
+    {
+      "closed": true,
+      "connected": true,
+      "euler_characteristic": 2,
+      "positive_volume": 0.18501289123577858,
+      "triangles": 302,
+      "name": "Chest Body Corner Collar -1 1",
+      "concealed_corner_trim": true,
+      "exterior_maximum_surface_error": 0.0005139395361766219,
+      "maximum_normal_encoding_degrees": 0.18492413831097654,
+      "removed_volume": 0.0363063149923408
+    },
+    {
+      "closed": true,
+      "connected": true,
+      "euler_characteristic": 2,
+      "positive_volume": 0.18501289145546918,
+      "triangles": 302,
+      "name": "Chest Body Corner Collar 1 -1",
+      "concealed_corner_trim": true,
+      "exterior_maximum_surface_error": 0.0005139395361766219,
+      "maximum_normal_encoding_degrees": 0.1837883136569203,
+      "removed_volume": 0.0363063147726502
+    },
+    {
+      "closed": true,
+      "connected": true,
+      "euler_characteristic": 2,
+      "positive_volume": 0.18501295963407174,
+      "triangles": 302,
+      "name": "Chest Body Corner Collar 1 1",
+      "concealed_corner_trim": true,
+      "exterior_maximum_surface_error": 0.0003854534006677568,
+      "maximum_normal_encoding_degrees": 0.08364810617064149,
+      "removed_volume": 0.036306308834514994
+    },
+    {
+      "name": "Chest Lock Backing With Bore",
+      "unchanged": true,
+      "triangles": 2116
+    },
+    {
+      "name": "Chest Lock Border With Bore",
+      "unchanged": true,
+      "triangles": 472
+    },
+    {
+      "name": "Chest Hoop Rivet 0 0",
+      "unchanged": true,
+      "triangles": 574
+    },
+    {
+      "name": "Chest Hoop Rivet 0 1",
+      "unchanged": true,
+      "triangles": 574
+    },
+    {
+      "name": "Chest Hoop Rivet 1 0",
+      "unchanged": true,
+      "triangles": 574
+    },
+    {
+      "name": "Chest Hoop Rivet 1 1",
+      "unchanged": true,
+      "triangles": 574
+    },
+    {
+      "name": "Chest Hoop Rivet 1 2",
+      "unchanged": true,
+      "triangles": 574
+    },
+    {
+      "name": "Chest Hoop Rivet 1 3",
+      "unchanged": true,
+      "triangles": 574
+    },
+    {
+      "name": "Chest Hoop Rivet 1 4",
+      "unchanged": true,
+      "triangles": 574
+    },
+    {
+      "name": "Chest Hoop Rivet 1 5",
+      "unchanged": true,
+      "triangles": 574
+    },
+    {
+      "name": "Chest Hoop Rivet 2 0",
+      "unchanged": true,
+      "triangles": 574
+    },
+    {
+      "name": "Chest Hoop Rivet 2 1",
+      "unchanged": true,
+      "triangles": 574
+    },
+    {
+      "name": "Chest Hoop Rivet 2 2",
+      "unchanged": true,
+      "triangles": 574
+    },
+    {
+      "name": "Chest Hoop Rivet 2 3",
+      "unchanged": true,
+      "triangles": 574
+    },
+    {
+      "name": "Chest Hoop Rivet 2 4",
+      "unchanged": true,
+      "triangles": 574
+    },
+    {
+      "name": "Chest Hoop Rivet 2 5",
+      "unchanged": true,
+      "triangles": 574
+    },
+    {
+      "name": "Chest Hoop Rivet 3 0",
+      "unchanged": true,
+      "triangles": 574
+    },
+    {
+      "name": "Chest Hoop Rivet 3 1",
+      "unchanged": true,
+      "triangles": 574
+    },
+    {
+      "name": "Chest Upper Corner Front Rivet -1 -1",
+      "unchanged": true,
+      "triangles": 574
+    },
+    {
+      "name": "Chest Upper Corner End Rivet -1 -1",
+      "unchanged": true,
+      "triangles": 574
+    },
+    {
+      "name": "Chest Boot Front Rivet -1 -1",
+      "unchanged": true,
+      "triangles": 574
+    },
+    {
+      "name": "Chest Boot End Rivet -1 -1",
+      "unchanged": true,
+      "triangles": 574
+    },
+    {
+      "name": "Chest Upper Corner Front Rivet -1 1",
+      "unchanged": true,
+      "triangles": 574
+    },
+    {
+      "name": "Chest Upper Corner End Rivet -1 1",
+      "unchanged": true,
+      "triangles": 574
+    },
+    {
+      "name": "Chest Boot Front Rivet -1 1",
+      "unchanged": true,
+      "triangles": 574
+    },
+    {
+      "name": "Chest Boot End Rivet -1 1",
+      "unchanged": true,
+      "triangles": 574
+    },
+    {
+      "name": "Chest Upper Corner Front Rivet 1 -1",
+      "unchanged": true,
+      "triangles": 574
+    },
+    {
+      "name": "Chest Upper Corner End Rivet 1 -1",
+      "unchanged": true,
+      "triangles": 574
+    },
+    {
+      "name": "Chest Boot Front Rivet 1 -1",
+      "unchanged": true,
+      "triangles": 574
+    },
+    {
+      "name": "Chest Boot End Rivet 1 -1",
+      "unchanged": true,
+      "triangles": 574
+    },
+    {
+      "name": "Chest Upper Corner Front Rivet 1 1",
+      "unchanged": true,
+      "triangles": 574
+    },
+    {
+      "name": "Chest Upper Corner End Rivet 1 1",
+      "unchanged": true,
+      "triangles": 574
+    },
+    {
+      "name": "Chest Boot Front Rivet 1 1",
+      "unchanged": true,
+      "triangles": 574
+    },
+    {
+      "name": "Chest Boot End Rivet 1 1",
+      "unchanged": true,
+      "triangles": 574
+    },
+    {
+      "name": "Chest Body Lip Rivet -1 0",
+      "unchanged": true,
+      "triangles": 574
+    },
+    {
+      "name": "Chest Body Lip Rivet -1 1",
+      "unchanged": true,
+      "triangles": 574
+    },
+    {
+      "name": "Chest Body Lip Rivet 1 0",
+      "unchanged": true,
+      "triangles": 574
+    },
+    {
+      "name": "Chest Body Lip Rivet 1 1",
+      "unchanged": true,
+      "triangles": 574
+    },
+    {
+      "name": "Chest Handle Mount Rivet -1 -1",
+      "unchanged": true,
+      "triangles": 574
+    },
+    {
+      "name": "Chest Handle Mount Rivet -1 1",
+      "unchanged": true,
+      "triangles": 574
+    },
+    {
+      "name": "Chest Handle Mount Rivet 1 -1",
+      "unchanged": true,
+      "triangles": 574
+    },
+    {
+      "name": "Chest Handle Mount Rivet 1 1",
+      "unchanged": true,
+      "triangles": 574
+    },
+    {
+      "name": "Chest Lock Rivet 0",
+      "unchanged": true,
+      "triangles": 574
+    },
+    {
+      "name": "Chest Lock Rivet 1",
+      "unchanged": true,
+      "triangles": 574
+    },
+    {
+      "name": "Chest Lock Rivet 2",
+      "unchanged": true,
+      "triangles": 574
+    },
+    {
+      "name": "Chest Lock Rivet 3",
+      "unchanged": true,
+      "triangles": 574
+    },
+    {
+      "name": "Chest Lock Rivet 4",
+      "unchanged": true,
+      "triangles": 574
+    },
+    {
+      "name": "Chest Lock Rivet 5",
+      "unchanged": true,
+      "triangles": 574
+    },
+    {
+      "name": "Chest Lock Rivet 6",
+      "unchanged": true,
+      "triangles": 574
+    },
+    {
+      "name": "Chest Lower Strap Rivet",
+      "unchanged": true,
+      "triangles": 574
+    },
+    {
+      "name": "Chest Upright Diamond -1 -1",
+      "unchanged": true,
+      "triangles": 148
+    },
+    {
+      "name": "Chest Upright Diamond -1 1",
+      "unchanged": true,
+      "triangles": 148
+    },
+    {
+      "name": "Chest Upright Diamond 1 -1",
+      "unchanged": true,
+      "triangles": 148
+    },
+    {
+      "name": "Chest Upright Diamond 1 1",
+      "unchanged": true,
+      "triangles": 148
+    },
+    {
+      "name": "Chest End Arch Rivet -1 0",
+      "unchanged": true,
+      "triangles": 574
+    },
+    {
+      "name": "Chest End Arch Rivet -1 1",
+      "unchanged": true,
+      "triangles": 574
+    },
+    {
+      "name": "Chest Corner Body Cuff Front Rivet -1 -1",
+      "unchanged": true,
+      "triangles": 574
+    },
+    {
+      "name": "Chest Corner Body Cuff End Rivet -1 -1",
+      "unchanged": true,
+      "triangles": 574
+    },
+    {
+      "name": "Chest Corner Body Cuff Front Rivet -1 1",
+      "unchanged": true,
+      "triangles": 574
+    },
+    {
+      "name": "Chest Corner Body Cuff End Rivet -1 1",
+      "unchanged": true,
+      "triangles": 574
+    },
+    {
+      "name": "Chest End Arch Rivet 1 0",
+      "unchanged": true,
+      "triangles": 574
+    },
+    {
+      "name": "Chest End Arch Rivet 1 1",
+      "unchanged": true,
+      "triangles": 574
+    },
+    {
+      "name": "Chest Corner Body Cuff Front Rivet 1 -1",
+      "unchanged": true,
+      "triangles": 574
+    },
+    {
+      "name": "Chest Corner Body Cuff End Rivet 1 -1",
+      "unchanged": true,
+      "triangles": 574
+    },
+    {
+      "name": "Chest Corner Body Cuff Front Rivet 1 1",
+      "unchanged": true,
+      "triangles": 574
+    },
+    {
+      "name": "Chest Corner Body Cuff End Rivet 1 1",
+      "unchanged": true,
+      "triangles": 574
+    },
+    {
+      "name": "Chest Hasp Pivot Dome -1",
+      "unchanged": true,
+      "triangles": 574
+    },
+    {
+      "name": "Chest Hasp Mount Fastener -1",
+      "unchanged": true,
+      "triangles": 574
+    },
+    {
+      "name": "Chest End Arch Crown Tab -1",
+      "unchanged": true,
+      "triangles": 2210
+    },
+    {
+      "name": "Chest End Crown Fastener -1",
+      "unchanged": true,
+      "triangles": 574
+    },
+    {
+      "name": "Chest Hasp Pivot Dome 1",
+      "unchanged": true,
+      "triangles": 574
+    },
+    {
+      "name": "Chest Hasp Mount Fastener 1",
+      "unchanged": true,
+      "triangles": 574
+    },
+    {
+      "name": "Chest End Arch Crown Tab 1",
+      "unchanged": true,
+      "triangles": 2210
+    },
+    {
+      "name": "Chest End Crown Fastener 1",
+      "unchanged": true,
+      "triangles": 574
+    },
+    {
+      "name": "Chest Upper Corner Front Rivet -1 -1 Seat",
+      "unchanged": true,
+      "triangles": 636
+    },
+    {
+      "name": "Chest Upper Corner End Rivet -1 -1 Seat",
+      "unchanged": true,
+      "triangles": 636
+    },
+    {
+      "name": "Chest Boot Front Rivet -1 -1 Seat",
+      "unchanged": true,
+      "triangles": 636
+    },
+    {
+      "name": "Chest Boot End Rivet -1 -1 Seat",
+      "unchanged": true,
+      "triangles": 636
+    },
+    {
+      "name": "Chest Upper Corner Front Rivet -1 1 Seat",
+      "unchanged": true,
+      "triangles": 636
+    },
+    {
+      "name": "Chest Upper Corner End Rivet -1 1 Seat",
+      "unchanged": true,
+      "triangles": 636
+    },
+    {
+      "name": "Chest Boot Front Rivet -1 1 Seat",
+      "unchanged": true,
+      "triangles": 636
+    },
+    {
+      "name": "Chest Boot End Rivet -1 1 Seat",
+      "unchanged": true,
+      "triangles": 636
+    },
+    {
+      "name": "Chest Upper Corner Front Rivet 1 -1 Seat",
+      "unchanged": true,
+      "triangles": 636
+    },
+    {
+      "name": "Chest Upper Corner End Rivet 1 -1 Seat",
+      "unchanged": true,
+      "triangles": 636
+    },
+    {
+      "name": "Chest Boot Front Rivet 1 -1 Seat",
+      "unchanged": true,
+      "triangles": 636
+    },
+    {
+      "name": "Chest Boot End Rivet 1 -1 Seat",
+      "unchanged": true,
+      "triangles": 636
+    },
+    {
+      "name": "Chest Upper Corner Front Rivet 1 1 Seat",
+      "unchanged": true,
+      "triangles": 636
+    },
+    {
+      "name": "Chest Upper Corner End Rivet 1 1 Seat",
+      "unchanged": true,
+      "triangles": 636
+    },
+    {
+      "name": "Chest Boot Front Rivet 1 1 Seat",
+      "unchanged": true,
+      "triangles": 636
+    },
+    {
+      "name": "Chest Boot End Rivet 1 1 Seat",
+      "unchanged": true,
+      "triangles": 636
+    },
+    {
+      "name": "Chest Rail Rivet -1 0",
+      "unchanged": true,
+      "triangles": 574
+    },
+    {
+      "name": "Chest Rail Rivet -1 1",
+      "unchanged": true,
+      "triangles": 574
+    },
+    {
+      "name": "Chest Rail Rivet -1 3",
+      "unchanged": true,
+      "triangles": 574
+    },
+    {
+      "name": "Chest Rail Rivet -1 4",
+      "unchanged": true,
+      "triangles": 574
+    },
+    {
+      "name": "Chest Rail Rivet 1 0",
+      "unchanged": true,
+      "triangles": 574
+    },
+    {
+      "name": "Chest Rail Rivet 1 1",
+      "unchanged": true,
+      "triangles": 574
+    },
+    {
+      "name": "Chest Rail Rivet 1 2",
+      "unchanged": true,
+      "triangles": 574
+    },
+    {
+      "name": "Chest Rail Rivet 1 3",
+      "unchanged": true,
+      "triangles": 574
+    },
+    {
+      "name": "Chest Rail Rivet 1 4",
+      "unchanged": true,
+      "triangles": 574
+    },
+    {
+      "name": "Chest End Rail Rivet -1 0",
+      "unchanged": true,
+      "triangles": 574
+    },
+    {
+      "name": "Chest End Rail Rivet -1 1",
+      "unchanged": true,
+      "triangles": 574
+    },
+    {
+      "name": "Chest End Rail Rivet 1 0",
+      "unchanged": true,
+      "triangles": 574
+    },
+    {
+      "name": "Chest End Rail Rivet 1 1",
+      "unchanged": true,
+      "triangles": 574
+    },
+    {
+      "name": "Chest Measured Rolled Handle Cover -1",
+      "unchanged": true,
+      "triangles": 3860
+    },
+    {
+      "name": "Chest Measured Rolled Handle Cover 1",
+      "unchanged": true,
+      "triangles": 3860
+    },
+    {
+      "name": "Chest Fixed Front Hinge Knuckle -1",
+      "unchanged": true,
+      "triangles": 2048
+    },
+    {
+      "name": "Chest Fixed Front Hinge Knuckle 1",
+      "unchanged": true,
+      "triangles": 2048
+    },
+    {
+      "name": "Chest Front Hinge Pin",
+      "unchanged": true,
+      "triangles": 1020
+    },
+    {
+      "name": "Chest Case Back With Key Bore",
+      "unchanged": true,
+      "triangles": 2420
+    },
+    {
+      "name": "Chest Hollow Lock Case Walls",
+      "unchanged": true,
+      "triangles": 2376
+    },
+    {
+      "name": "Chest Key Driven Slider",
+      "unchanged": true,
+      "triangles": 2224
+    },
+    {
+      "name": "Chest Compliant Catch Leaf",
+      "unchanged": true,
+      "triangles": 1436
+    },
+    {
+      "name": "Chest Fixed Leaf Clamp",
+      "unchanged": true,
+      "triangles": 188
+    },
+    {
+      "name": "Chest Small Front Rail Rivet -1",
+      "unchanged": true,
+      "triangles": 574
+    }
+  ],
+  "baseline34_files_unchanged": true
+}

@@ -1,0 +1,9 @@
+{
+  "optical_meshes": 12,
+  "physical_stones": 12,
+  "model_and_reflection_attachments": 24,
+  "all_intended_profiles_attached": true,
+  "no_fallback_gems": true,
+  "log": "/Users/antonioperedo/Library/Developer/XcodeBuildMCP/workspaces/badges-aa906adb7ece/logs/com.antonioperedo.badgestudio.preview_2026-11-07T08-28-15-214Z_helperpid65552_ownerpid53974_0e3a3566.log",
+  "runtime_shader_sha256": "003834b6fb75d7e9a3caea9b118bb1ba75d5a614ee8a7eee89fed50767797c98"
+}

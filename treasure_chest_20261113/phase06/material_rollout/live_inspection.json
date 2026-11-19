@@ -1,0 +1,8307 @@
+{
+  "file": "/Users/antonioperedo/Desktop/badges/treasure_chest_20261113/phase05/iron_character/14_edge_review/master.blend",
+  "dirty": false,
+  "rendering": false,
+  "objects": [
+    {
+      "name": "Lab Chest Barrel Lid Envelope",
+      "vertices": 1368,
+      "polygons": 2732,
+      "bounds": [
+        [
+          -3.059356927871704,
+          -2.7569260597229004,
+          0.38074997067451477
+        ],
+        [
+          3.059356927871704,
+          2.7569260597229004,
+          2.328249931335449
+        ]
+      ],
+      "materials": [
+        "Chest Phase 1 neutral clay"
+      ],
+      "uvs": [],
+      "modifiers": [],
+      "props": {
+        "phase": "1",
+        "shape_only": "True",
+        "full_form": "True"
+      },
+      "matrix": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ]
+    },
+    {
+      "name": "Lab Development floor",
+      "vertices": 52,
+      "polygons": 25,
+      "bounds": [
+        [
+          -200.0,
+          -200.0,
+          -2.8949999809265137
+        ],
+        [
+          200.0,
+          20.0,
+          50.0
+        ]
+      ],
+      "materials": [
+        "Chest development floor"
+      ],
+      "uvs": [],
+      "modifiers": [],
+      "props": {
+        "development_only": "True"
+      },
+      "matrix": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ]
+    },
+    {
+      "name": "Lab Chest Upper Lid Rim",
+      "vertices": 10622,
+      "polygons": 21260,
+      "bounds": [
+        [
+          -3.336333751678467,
+          -3.0500175952911377,
+          0.38074997067451477
+        ],
+        [
+          3.336333751678467,
+          3.0500175952911377,
+          2.4992499351501465
+        ]
+      ],
+      "materials": [
+        "Chest rough structural forms"
+      ],
+      "uvs": [],
+      "modifiers": [],
+      "props": {
+        "phase": "1",
+        "full_form": "True",
+        "shape_only": "True",
+        "allowed_euler": "<bpy id property array [1]>"
+      },
+      "matrix": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ]
+    },
+    {
+      "name": "Lab Chest Body Upper Rim",
+      "vertices": 1264,
+      "polygons": 2528,
+      "bounds": [
+        [
+          -3.2727904319763184,
+          -2.986787796020508,
+          -0.10374999791383743
+        ],
+        [
+          3.2727904319763184,
+          2.986787796020508,
+          0.36365002393722534
+        ]
+      ],
+      "materials": [
+        "Chest rough structural forms"
+      ],
+      "uvs": [],
+      "modifiers": [],
+      "props": {
+        "phase": "1",
+        "full_form": "True",
+        "shape_only": "True"
+      },
+      "matrix": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ]
+    },
+    {
+      "name": "Lab Chest Lower Rim",
+      "vertices": 394816,
+      "polygons": 394816,
+      "bounds": [
+        [
+          -3.22123384475708,
+          -2.919011116027832,
+          -2.2175002098083496
+        ],
+        [
+          3.22123384475708,
+          2.919011116027832,
+          -1.7140001058578491
+        ]
+      ],
+      "materials": [
+        "Forged iron shallow recessed scale boundaries"
+      ],
+      "uvs": [
+        "LowerIronAtlas",
+        "LowerIronPhysical"
+      ],
+      "modifiers": [],
+      "props": {
+        "phase": "1",
+        "full_form": "True",
+        "shape_only": "True",
+        "iron_development": "Bottom reinforcement test only, awaiting owner review"
+      },
+      "matrix": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ]
+    },
+    {
+      "name": "Lab Chest Corner Upright -1 -1",
+      "vertices": 144,
+      "polygons": 146,
+      "bounds": [
+        [
+          -3.233290195465088,
+          -0.33604001998901367,
+          -2.1747500896453857
+        ],
+        [
+          -2.7535574436187744,
+          0.30266809463500977,
+          0.34275001287460327
+        ]
+      ],
+      "materials": [
+        "Chest rough structural forms"
+      ],
+      "uvs": [],
+      "modifiers": [],
+      "props": {
+        "phase": "1",
+        "full_form": "True",
+        "shape_only": "True"
+      },
+      "matrix": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ]
+    },
+    {
+      "name": "Lab Chest Angular Boot -1 -1",
+      "vertices": 100,
+      "polygons": 152,
+      "bounds": [
+        [
+          -3.3230857849121094,
+          -0.7311791777610779,
+          -2.4549999237060547
+        ],
+        [
+          -2.0688560009002686,
+          0.5633323192596436,
+          -1.5714999437332153
+        ]
+      ],
+      "materials": [
+        "Chest rough structural forms"
+      ],
+      "uvs": [],
+      "modifiers": [],
+      "props": {
+        "phase": "1",
+        "full_form": "True",
+        "shape_only": "True"
+      },
+      "matrix": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ]
+    },
+    {
+      "name": "Lab Chest Corner Upright -1 1",
+      "vertices": 144,
+      "polygons": 146,
+      "bounds": [
+        [
+          -1.6117372512817383,
+          -2.93106746673584,
+          -2.1747500896453857
+        ],
+        [
+          -0.9730288982391357,
+          -2.4513349533081055,
+          0.34275001287460327
+        ]
+      ],
+      "materials": [
+        "Chest rough structural forms"
+      ],
+      "uvs": [],
+      "modifiers": [],
+      "props": {
+        "phase": "1",
+        "full_form": "True",
+        "shape_only": "True"
+      },
+      "matrix": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ]
+    },
+    {
+      "name": "Lab Chest Angular Boot -1 1",
+      "vertices": 101,
+      "polygons": 152,
+      "bounds": [
+        [
+          -1.8843810558319092,
+          -3.033588409423828,
+          -2.4549999237060547
+        ],
+        [
+          -0.6301511526107788,
+          -1.739077091217041,
+          -1.5714999437332153
+        ]
+      ],
+      "materials": [
+        "Chest rough structural forms"
+      ],
+      "uvs": [],
+      "modifiers": [],
+      "props": {
+        "phase": "1",
+        "full_form": "True",
+        "shape_only": "True"
+      },
+      "matrix": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ]
+    },
+    {
+      "name": "Lab Chest Corner Upright 1 -1",
+      "vertices": 144,
+      "polygons": 146,
+      "bounds": [
+        [
+          0.9730288982391357,
+          2.4513349533081055,
+          -2.1747500896453857
+        ],
+        [
+          1.6117372512817383,
+          2.93106746673584,
+          0.34275001287460327
+        ]
+      ],
+      "materials": [
+        "Chest rough structural forms"
+      ],
+      "uvs": [],
+      "modifiers": [],
+      "props": {
+        "phase": "1",
+        "full_form": "True",
+        "shape_only": "True"
+      },
+      "matrix": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ]
+    },
+    {
+      "name": "Lab Chest Angular Boot 1 -1",
+      "vertices": 101,
+      "polygons": 152,
+      "bounds": [
+        [
+          0.6301511526107788,
+          1.739077091217041,
+          -2.4549999237060547
+        ],
+        [
+          1.8843810558319092,
+          3.033588409423828,
+          -1.5714999437332153
+        ]
+      ],
+      "materials": [
+        "Chest rough structural forms"
+      ],
+      "uvs": [],
+      "modifiers": [],
+      "props": {
+        "phase": "1",
+        "full_form": "True",
+        "shape_only": "True"
+      },
+      "matrix": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ]
+    },
+    {
+      "name": "Lab Chest Corner Upright 1 1",
+      "vertices": 144,
+      "polygons": 146,
+      "bounds": [
+        [
+          2.7535574436187744,
+          -0.30266809463500977,
+          -2.1747500896453857
+        ],
+        [
+          3.233290195465088,
+          0.33604001998901367,
+          0.34275001287460327
+        ]
+      ],
+      "materials": [
+        "Chest rough structural forms"
+      ],
+      "uvs": [],
+      "modifiers": [],
+      "props": {
+        "phase": "1",
+        "full_form": "True",
+        "shape_only": "True"
+      },
+      "matrix": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ]
+    },
+    {
+      "name": "Lab Chest Angular Boot 1 1",
+      "vertices": 100,
+      "polygons": 152,
+      "bounds": [
+        [
+          2.0688560009002686,
+          -0.5633323192596436,
+          -2.4549999237060547
+        ],
+        [
+          3.3230857849121094,
+          0.7311791777610779,
+          -1.5714999437332153
+        ]
+      ],
+      "materials": [
+        "Chest rough structural forms"
+      ],
+      "uvs": [],
+      "modifiers": [],
+      "props": {
+        "phase": "1",
+        "full_form": "True",
+        "shape_only": "True"
+      },
+      "matrix": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ]
+    },
+    {
+      "name": "Lab Chest Central Lock Strap",
+      "vertices": 96,
+      "polygons": 98,
+      "bounds": [
+        [
+          0.6445672512054443,
+          -1.6476083993911743,
+          -2.1842501163482666
+        ],
+        [
+          1.1545085906982422,
+          -1.2315152883529663,
+          0.34275001287460327
+        ]
+      ],
+      "materials": [
+        "Chest rough structural forms"
+      ],
+      "uvs": [],
+      "modifiers": [],
+      "props": {
+        "phase": "1",
+        "full_form": "True",
+        "shape_only": "True"
+      },
+      "matrix": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ]
+    },
+    {
+      "name": "Lab Chest Central Lower Cuff",
+      "vertices": 96,
+      "polygons": 98,
+      "bounds": [
+        [
+          0.6400792598724365,
+          -1.8815656900405884,
+          -2.2174999713897705
+        ],
+        [
+          1.3630154132843018,
+          -1.3240563869476318,
+          -1.7139999866485596
+        ]
+      ],
+      "materials": [
+        "Chest rough hardware forms"
+      ],
+      "uvs": [],
+      "modifiers": [],
+      "props": {
+        "phase": "1",
+        "full_form": "True",
+        "shape_only": "True"
+      },
+      "matrix": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ]
+    },
+    {
+      "name": "Lab Chest Crown Fastener Mass 1",
+      "vertices": 182,
+      "polygons": 200,
+      "bounds": [
+        [
+          -2.1350719928741455,
+          -1.3715624809265137,
+          2.4327499866485596
+        ],
+        [
+          -1.9355591535568237,
+          -1.1720497608184814,
+          2.5657498836517334
+        ]
+      ],
+      "materials": [
+        "Chest rough hardware forms"
+      ],
+      "uvs": [],
+      "modifiers": [],
+      "props": {
+        "phase": "1",
+        "full_form": "True",
+        "shape_only": "True"
+      },
+      "matrix": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ]
+    },
+    {
+      "name": "Lab Chest Crown Fastener Mass 2",
+      "vertices": 182,
+      "polygons": 200,
+      "bounds": [
+        [
+          -0.7859687805175781,
+          -0.5285493731498718,
+          2.4327499866485596
+        ],
+        [
+          -0.5864558219909668,
+          -0.3290365934371948,
+          2.5657498836517334
+        ]
+      ],
+      "materials": [
+        "Chest rough hardware forms"
+      ],
+      "uvs": [],
+      "modifiers": [],
+      "props": {
+        "phase": "1",
+        "full_form": "True",
+        "shape_only": "True"
+      },
+      "matrix": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ]
+    },
+    {
+      "name": "Lab Chest Crown Fastener Mass 3",
+      "vertices": 182,
+      "polygons": 200,
+      "bounds": [
+        [
+          0.5864558219909668,
+          0.32903656363487244,
+          2.4327499866485596
+        ],
+        [
+          0.7859687209129333,
+          0.5285493731498718,
+          2.5657498836517334
+        ]
+      ],
+      "materials": [
+        "Chest rough hardware forms"
+      ],
+      "uvs": [],
+      "modifiers": [],
+      "props": {
+        "phase": "1",
+        "full_form": "True",
+        "shape_only": "True"
+      },
+      "matrix": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ]
+    },
+    {
+      "name": "Lab Chest Crown Fastener Mass 4",
+      "vertices": 182,
+      "polygons": 200,
+      "bounds": [
+        [
+          1.9355591535568237,
+          1.1720497608184814,
+          2.4327499866485596
+        ],
+        [
+          2.1350719928741455,
+          1.3715624809265137,
+          2.5657498836517334
+        ]
+      ],
+      "materials": [
+        "Chest rough hardware forms"
+      ],
+      "uvs": [],
+      "modifiers": [],
+      "props": {
+        "phase": "1",
+        "full_form": "True",
+        "shape_only": "True"
+      },
+      "matrix": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ]
+    },
+    {
+      "name": "Lab Chest Hasp Mount",
+      "vertices": 224,
+      "polygons": 444,
+      "bounds": [
+        [
+          0.39937204122543335,
+          -1.9918575286865234,
+          0.38074997067451477
+        ],
+        [
+          1.5719273090362549,
+          -1.1628814935684204,
+          0.8842499256134033
+        ]
+      ],
+      "materials": [
+        "Chest rough structural forms",
+        "Chest rough hardware forms"
+      ],
+      "uvs": [],
+      "modifiers": [],
+      "props": {
+        "phase": "1",
+        "full_form": "True",
+        "shape_only": "True",
+        "allowed_euler": "<bpy id property array [1]>"
+      },
+      "matrix": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ]
+    },
+    {
+      "name": "Lab Chest Front Hasp Barrel",
+      "vertices": 512,
+      "polygons": 512,
+      "bounds": [
+        [
+          0.7704599499702454,
+          -1.9625694751739502,
+          0.31725001335144043
+        ],
+        [
+          1.3492168188095093,
+          -1.4296231269836426,
+          0.653249979019165
+        ]
+      ],
+      "materials": [
+        "Chest rough hardware forms"
+      ],
+      "uvs": [],
+      "modifiers": [],
+      "props": {
+        "phase": "1",
+        "full_form": "True",
+        "shape_only": "True",
+        "chest_mechanism_rig_part": "True",
+        "allowed_euler": "<bpy id property array [1]>"
+      },
+      "matrix": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ]
+    },
+    {
+      "name": "Lab Chest Shield Lock Plate With Bore",
+      "vertices": 840,
+      "polygons": 1680,
+      "bounds": [
+        [
+          0.5631428360939026,
+          -2.1235909461975098,
+          -1.3207741975784302
+        ],
+        [
+          1.6556289196014404,
+          -1.4271869659423828,
+          -0.07796794921159744
+        ]
+      ],
+      "materials": [
+        "Chest rough hardware forms"
+      ],
+      "uvs": [],
+      "modifiers": [],
+      "props": {
+        "phase": "1",
+        "full_form": "True",
+        "shape_only": "True",
+        "allowed_euler": "<bpy id property array [1]>"
+      },
+      "matrix": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ]
+    },
+    {
+      "name": "Lab Chest Curved Hasp Tongue",
+      "vertices": 1796,
+      "polygons": 3592,
+      "bounds": [
+        [
+          0.813915491104126,
+          -2.0154151916503906,
+          -0.2160283625125885
+        ],
+        [
+          1.3723175525665283,
+          -1.4907348155975342,
+          0.4571026563644409
+        ]
+      ],
+      "materials": [
+        "Chest rough hardware forms"
+      ],
+      "uvs": [],
+      "modifiers": [],
+      "props": {
+        "phase": "1",
+        "full_form": "True",
+        "shape_only": "True",
+        "chest_mechanism_rig_part": "True",
+        "allowed_euler": "<bpy id property array [2]>"
+      },
+      "matrix": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ]
+    },
+    {
+      "name": "Lab Chest Handle Mount -1",
+      "vertices": 96,
+      "polygons": 98,
+      "bounds": [
+        [
+          -2.755091667175293,
+          -2.0902023315429688,
+          -0.7260000109672546
+        ],
+        [
+          -1.7862060070037842,
+          -0.7475149035453796,
+          -0.023000003769993782
+        ]
+      ],
+      "materials": [
+        "Chest rough structural forms"
+      ],
+      "uvs": [],
+      "modifiers": [],
+      "props": {
+        "phase": "1",
+        "full_form": "True",
+        "shape_only": "True"
+      },
+      "matrix": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ]
+    },
+    {
+      "name": "Lab Chest Solid Ring Handle -1",
+      "vertices": 8192,
+      "polygons": 8192,
+      "bounds": [
+        [
+          -2.9347774982452393,
+          -2.2062621116638184,
+          -1.453574299812317
+        ],
+        [
+          -2.0347845554351807,
+          -0.8990641832351685,
+          -0.22843167185783386
+        ]
+      ],
+      "materials": [
+        "Chest rough hardware forms"
+      ],
+      "uvs": [],
+      "modifiers": [],
+      "props": {
+        "phase": "1",
+        "full_form": "True",
+        "shape_only": "True"
+      },
+      "matrix": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ]
+    },
+    {
+      "name": "Lab Chest Handle Mount 1",
+      "vertices": 96,
+      "polygons": 98,
+      "bounds": [
+        [
+          1.7862060070037842,
+          0.7475149035453796,
+          -0.7260000109672546
+        ],
+        [
+          2.755091667175293,
+          2.0902023315429688,
+          -0.023000003769993782
+        ]
+      ],
+      "materials": [
+        "Chest rough structural forms"
+      ],
+      "uvs": [],
+      "modifiers": [],
+      "props": {
+        "phase": "1",
+        "full_form": "True",
+        "shape_only": "True"
+      },
+      "matrix": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ]
+    },
+    {
+      "name": "Lab Chest Solid Ring Handle 1",
+      "vertices": 8192,
+      "polygons": 8192,
+      "bounds": [
+        [
+          2.0347845554351807,
+          0.8990641832351685,
+          -1.453574299812317
+        ],
+        [
+          2.9347774982452393,
+          2.2062623500823975,
+          -0.22843167185783386
+        ]
+      ],
+      "materials": [
+        "Chest rough hardware forms"
+      ],
+      "uvs": [],
+      "modifiers": [],
+      "props": {
+        "phase": "1",
+        "full_form": "True",
+        "shape_only": "True"
+      },
+      "matrix": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ]
+    },
+    {
+      "name": "Lab Chest Rear Hinge Lower -1",
+      "vertices": 2064,
+      "polygons": 4136,
+      "bounds": [
+        [
+          -2.6536335945129395,
+          0.5256901383399963,
+          -0.008750002831220627
+        ],
+        [
+          -2.015737771987915,
+          1.0745099782943726,
+          0.47574999928474426
+        ]
+      ],
+      "materials": [
+        "Chest rough structural forms"
+      ],
+      "uvs": [],
+      "modifiers": [],
+      "props": {
+        "phase": "1",
+        "full_form": "True",
+        "shape_only": "True"
+      },
+      "matrix": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ]
+    },
+    {
+      "name": "Lab Chest Rear Hinge Upper -1",
+      "vertices": 1466,
+      "polygons": 2936,
+      "bounds": [
+        [
+          -2.55271577835083,
+          0.5256901383399963,
+          0.24774999916553497
+        ],
+        [
+          -2.015737771987915,
+          1.0098598003387451,
+          0.7517499923706055
+        ]
+      ],
+      "materials": [
+        "Chest rough structural forms"
+      ],
+      "uvs": [],
+      "modifiers": [],
+      "props": {
+        "phase": "1",
+        "full_form": "True",
+        "shape_only": "True"
+      },
+      "matrix": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ]
+    },
+    {
+      "name": "Lab Chest Rear Hinge Barrel -1",
+      "vertices": 640,
+      "polygons": 578,
+      "bounds": [
+        [
+          -2.6780197620391846,
+          0.5620425939559937,
+          0.28174999356269836
+        ],
+        [
+          -1.9964176416397095,
+          1.0686737298965454,
+          0.4417499899864197
+        ]
+      ],
+      "materials": [
+        "Chest rough hardware forms"
+      ],
+      "uvs": [],
+      "modifiers": [],
+      "props": {
+        "phase": "1",
+        "full_form": "True",
+        "shape_only": "True",
+        "development_only": "False"
+      },
+      "matrix": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ]
+    },
+    {
+      "name": "Lab Chest Rear Hinge Lower 1",
+      "vertices": 2063,
+      "polygons": 4134,
+      "bounds": [
+        [
+          -0.024684429168701172,
+          2.1684398651123047,
+          -0.008750002831220627
+        ],
+        [
+          0.6132115721702576,
+          2.717259407043457,
+          0.47574999928474426
+        ]
+      ],
+      "materials": [
+        "Chest rough structural forms"
+      ],
+      "uvs": [],
+      "modifiers": [],
+      "props": {
+        "phase": "1",
+        "full_form": "True",
+        "shape_only": "True"
+      },
+      "matrix": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ]
+    },
+    {
+      "name": "Lab Chest Rear Hinge Upper 1",
+      "vertices": 1459,
+      "polygons": 2922,
+      "bounds": [
+        [
+          0.07623350620269775,
+          2.1684398651123047,
+          0.24774999916553497
+        ],
+        [
+          0.6132115721702576,
+          2.652609348297119,
+          0.7517499923706055
+        ]
+      ],
+      "materials": [
+        "Chest rough structural forms"
+      ],
+      "uvs": [],
+      "modifiers": [],
+      "props": {
+        "phase": "1",
+        "full_form": "True",
+        "shape_only": "True"
+      },
+      "matrix": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ]
+    },
+    {
+      "name": "Lab Chest Rear Hinge Barrel 1",
+      "vertices": 640,
+      "polygons": 578,
+      "bounds": [
+        [
+          -0.04907047003507614,
+          2.204792022705078,
+          0.28174999356269836
+        ],
+        [
+          0.6325315833091736,
+          2.71142315864563,
+          0.4417499899864197
+        ]
+      ],
+      "materials": [
+        "Chest rough hardware forms"
+      ],
+      "uvs": [],
+      "modifiers": [],
+      "props": {
+        "phase": "1",
+        "full_form": "True",
+        "shape_only": "True",
+        "development_only": "False"
+      },
+      "matrix": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ]
+    },
+    {
+      "name": "Lab Chest Lock Backing With Bore",
+      "vertices": 1058,
+      "polygons": 2116,
+      "bounds": [
+        [
+          0.26354336738586426,
+          -2.274437427520752,
+          -1.5290281772613525
+        ],
+        [
+          1.919723629951477,
+          -1.2195210456848145,
+          0.25725001096725464
+        ]
+      ],
+      "materials": [
+        "Chest rough hardware forms"
+      ],
+      "uvs": [],
+      "modifiers": [],
+      "props": {
+        "phase": "1",
+        "full_form": "True",
+        "shape_only": "True",
+        "allowed_euler": "<bpy id property array [1]>"
+      },
+      "matrix": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ]
+    },
+    {
+      "name": "Lab Chest Lock Border With Bore",
+      "vertices": 236,
+      "polygons": 472,
+      "bounds": [
+        [
+          0.4756229519844055,
+          -2.1380038261413574,
+          -1.402511715888977
+        ],
+        [
+          1.7049946784973145,
+          -1.3517152070999146,
+          0.01576894149184227
+        ]
+      ],
+      "materials": [
+        "Chest rough hardware forms"
+      ],
+      "uvs": [],
+      "modifiers": [],
+      "props": {
+        "phase": "1",
+        "full_form": "True",
+        "shape_only": "True",
+        "allowed_euler": "<bpy id property array [1]>"
+      },
+      "matrix": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ]
+    },
+    {
+      "name": "Lab Chest Hoop Rivet 0 0",
+      "vertices": 289,
+      "polygons": 289,
+      "bounds": [
+        [
+          -1.4311542510986328,
+          -2.4893860816955566,
+          1.7578575611114502
+        ],
+        [
+          -1.2312910556793213,
+          -2.312582015991211,
+          1.9318138360977173
+        ]
+      ],
+      "materials": [
+        "Chest rough hardware forms"
+      ],
+      "uvs": [],
+      "modifiers": [],
+      "props": {
+        "phase": "1",
+        "full_form": "True",
+        "shape_only": "True"
+      },
+      "matrix": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ]
+    },
+    {
+      "name": "Lab Chest Hoop Rivet 0 1",
+      "vertices": 289,
+      "polygons": 289,
+      "bounds": [
+        [
+          -2.8393404483795166,
+          -0.23103022575378418,
+          1.7578575611114502
+        ],
+        [
+          -2.639477014541626,
+          -0.05422627925872803,
+          1.9318138360977173
+        ]
+      ],
+      "materials": [
+        "Chest rough hardware forms"
+      ],
+      "uvs": [],
+      "modifiers": [],
+      "props": {
+        "phase": "1",
+        "full_form": "True",
+        "shape_only": "True"
+      },
+      "matrix": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ]
+    },
+    {
+      "name": "Lab Chest Hoop Rivet 1 0",
+      "vertices": 289,
+      "polygons": 289,
+      "bounds": [
+        [
+          0.16162928938865662,
+          -2.0197901725769043,
+          0.7880148887634277
+        ],
+        [
+          0.35397210717201233,
+          -1.8699768781661987,
+          0.9868161082267761
+        ]
+      ],
+      "materials": [
+        "Chest rough hardware forms"
+      ],
+      "uvs": [],
+      "modifiers": [],
+      "props": {
+        "phase": "1",
+        "full_form": "True",
+        "shape_only": "True"
+      },
+      "matrix": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ]
+    },
+    {
+      "name": "Lab Chest Hoop Rivet 1 1",
+      "vertices": 289,
+      "polygons": 289,
+      "bounds": [
+        [
+          0.04101333022117615,
+          -1.834917664527893,
+          1.4087618589401245
+        ],
+        [
+          0.23691055178642273,
+          -1.670850396156311,
+          1.5965321063995361
+        ]
+      ],
+      "materials": [
+        "Chest rough hardware forms"
+      ],
+      "uvs": [],
+      "modifiers": [],
+      "props": {
+        "phase": "1",
+        "full_form": "True",
+        "shape_only": "True"
+      },
+      "matrix": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ]
+    },
+    {
+      "name": "Lab Chest Hoop Rivet 1 2",
+      "vertices": 289,
+      "polygons": 289,
+      "bounds": [
+        [
+          -0.31048670411109924,
+          -1.2928701639175415,
+          2.1613709926605225
+        ],
+        [
+          -0.10480228066444397,
+          -1.0973354578018188,
+          2.3055155277252197
+        ]
+      ],
+      "materials": [
+        "Chest rough hardware forms"
+      ],
+      "uvs": [],
+      "modifiers": [],
+      "props": {
+        "phase": "1",
+        "full_form": "True",
+        "shape_only": "True"
+      },
+      "matrix": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ]
+    },
+    {
+      "name": "Lab Chest Hoop Rivet 1 3",
+      "vertices": 289,
+      "polygons": 289,
+      "bounds": [
+        [
+          -1.7263967990875244,
+          1.0123907327651978,
+          0.7880148887634277
+        ],
+        [
+          -1.534053921699524,
+          1.1622042655944824,
+          0.9868161082267761
+        ]
+      ],
+      "materials": [
+        "Chest rough hardware forms"
+      ],
+      "uvs": [],
+      "modifiers": [],
+      "props": {
+        "phase": "1",
+        "full_form": "True",
+        "shape_only": "True"
+      },
+      "matrix": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ]
+    },
+    {
+      "name": "Lab Chest Hoop Rivet 1 4",
+      "vertices": 289,
+      "polygons": 289,
+      "bounds": [
+        [
+          -1.60933518409729,
+          0.8132644295692444,
+          1.4087618589401245
+        ],
+        [
+          -1.4134379625320435,
+          0.9773315787315369,
+          1.5965321063995361
+        ]
+      ],
+      "materials": [
+        "Chest rough hardware forms"
+      ],
+      "uvs": [],
+      "modifiers": [],
+      "props": {
+        "phase": "1",
+        "full_form": "True",
+        "shape_only": "True"
+      },
+      "matrix": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ]
+    },
+    {
+      "name": "Lab Chest Hoop Rivet 1 5",
+      "vertices": 289,
+      "polygons": 289,
+      "bounds": [
+        [
+          -1.267622470855713,
+          0.23974941670894623,
+          2.1613709926605225
+        ],
+        [
+          -1.0619380474090576,
+          0.43528425693511963,
+          2.3055155277252197
+        ]
+      ],
+      "materials": [
+        "Chest rough hardware forms"
+      ],
+      "uvs": [],
+      "modifiers": [],
+      "props": {
+        "phase": "1",
+        "full_form": "True",
+        "shape_only": "True"
+      },
+      "matrix": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ]
+    },
+    {
+      "name": "Lab Chest Hoop Rivet 2 0",
+      "vertices": 289,
+      "polygons": 289,
+      "bounds": [
+        [
+          1.5340538024902344,
+          -1.1622042655944824,
+          0.7880148887634277
+        ],
+        [
+          1.7263967990875244,
+          -1.0123907327651978,
+          0.9868161082267761
+        ]
+      ],
+      "materials": [
+        "Chest rough hardware forms"
+      ],
+      "uvs": [],
+      "modifiers": [],
+      "props": {
+        "phase": "1",
+        "full_form": "True",
+        "shape_only": "True"
+      },
+      "matrix": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ]
+    },
+    {
+      "name": "Lab Chest Hoop Rivet 2 1",
+      "vertices": 289,
+      "polygons": 289,
+      "bounds": [
+        [
+          1.413437843322754,
+          -0.9773315787315369,
+          1.4087618589401245
+        ],
+        [
+          1.60933518409729,
+          -0.8132644891738892,
+          1.5965321063995361
+        ]
+      ],
+      "materials": [
+        "Chest rough hardware forms"
+      ],
+      "uvs": [],
+      "modifiers": [],
+      "props": {
+        "phase": "1",
+        "full_form": "True",
+        "shape_only": "True"
+      },
+      "matrix": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ]
+    },
+    {
+      "name": "Lab Chest Hoop Rivet 2 2",
+      "vertices": 289,
+      "polygons": 289,
+      "bounds": [
+        [
+          1.0619378089904785,
+          -0.43528422713279724,
+          2.1613709926605225
+        ],
+        [
+          1.2676223516464233,
+          -0.23974940180778503,
+          2.3055155277252197
+        ]
+      ],
+      "materials": [
+        "Chest rough hardware forms"
+      ],
+      "uvs": [],
+      "modifiers": [],
+      "props": {
+        "phase": "1",
+        "full_form": "True",
+        "shape_only": "True"
+      },
+      "matrix": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ]
+    },
+    {
+      "name": "Lab Chest Hoop Rivet 2 3",
+      "vertices": 289,
+      "polygons": 289,
+      "bounds": [
+        [
+          -0.35397207736968994,
+          1.8699767589569092,
+          0.7880148887634277
+        ],
+        [
+          -0.16162919998168945,
+          2.0197901725769043,
+          0.9868161082267761
+        ]
+      ],
+      "materials": [
+        "Chest rough hardware forms"
+      ],
+      "uvs": [],
+      "modifiers": [],
+      "props": {
+        "phase": "1",
+        "full_form": "True",
+        "shape_only": "True"
+      },
+      "matrix": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ]
+    },
+    {
+      "name": "Lab Chest Hoop Rivet 2 4",
+      "vertices": 289,
+      "polygons": 289,
+      "bounds": [
+        [
+          -0.23691052198410034,
+          1.6708502769470215,
+          1.4087618589401245
+        ],
+        [
+          -0.041013240814208984,
+          1.8349175453186035,
+          1.5965321063995361
+        ]
+      ],
+      "materials": [
+        "Chest rough hardware forms"
+      ],
+      "uvs": [],
+      "modifiers": [],
+      "props": {
+        "phase": "1",
+        "full_form": "True",
+        "shape_only": "True"
+      },
+      "matrix": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ]
+    },
+    {
+      "name": "Lab Chest Hoop Rivet 2 5",
+      "vertices": 289,
+      "polygons": 289,
+      "bounds": [
+        [
+          0.10480231046676636,
+          1.0973353385925293,
+          2.1613709926605225
+        ],
+        [
+          0.31048673391342163,
+          1.2928701639175415,
+          2.3055155277252197
+        ]
+      ],
+      "materials": [
+        "Chest rough hardware forms"
+      ],
+      "uvs": [],
+      "modifiers": [],
+      "props": {
+        "phase": "1",
+        "full_form": "True",
+        "shape_only": "True"
+      },
+      "matrix": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ]
+    },
+    {
+      "name": "Lab Chest Hoop Rivet 3 0",
+      "vertices": 289,
+      "polygons": 289,
+      "bounds": [
+        [
+          2.639477014541626,
+          0.05422627925872803,
+          1.7578575611114502
+        ],
+        [
+          2.8393404483795166,
+          0.23103022575378418,
+          1.9318138360977173
+        ]
+      ],
+      "materials": [
+        "Chest rough hardware forms"
+      ],
+      "uvs": [],
+      "modifiers": [],
+      "props": {
+        "phase": "1",
+        "full_form": "True",
+        "shape_only": "True"
+      },
+      "matrix": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ]
+    },
+    {
+      "name": "Lab Chest Hoop Rivet 3 1",
+      "vertices": 289,
+      "polygons": 289,
+      "bounds": [
+        [
+          1.2312910556793213,
+          2.312582015991211,
+          1.7578575611114502
+        ],
+        [
+          1.4311542510986328,
+          2.4893860816955566,
+          1.9318138360977173
+        ]
+      ],
+      "materials": [
+        "Chest rough hardware forms"
+      ],
+      "uvs": [],
+      "modifiers": [],
+      "props": {
+        "phase": "1",
+        "full_form": "True",
+        "shape_only": "True"
+      },
+      "matrix": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ]
+    },
+    {
+      "name": "Lab Chest Upper Corner Front Rivet -1 -1",
+      "vertices": 289,
+      "polygons": 289,
+      "bounds": [
+        [
+          -3.1289002895355225,
+          0.2628425359725952,
+          0.44354504346847534
+        ],
+        [
+          -2.90792179107666,
+          0.426882266998291,
+          0.6789550185203552
+        ]
+      ],
+      "materials": [
+        "Chest rough hardware forms"
+      ],
+      "uvs": [],
+      "modifiers": [],
+      "props": {
+        "phase": "1",
+        "full_form": "True",
+        "shape_only": "True"
+      },
+      "matrix": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ]
+    },
+    {
+      "name": "Lab Chest Upper Corner End Rivet -1 -1",
+      "vertices": 289,
+      "polygons": 289,
+      "bounds": [
+        [
+          -3.227088212966919,
+          -0.3217284679412842,
+          0.4547550082206726
+        ],
+        [
+          -3.077702045440674,
+          -0.12118983268737793,
+          0.667745053768158
+        ]
+      ],
+      "materials": [
+        "Chest rough hardware forms"
+      ],
+      "uvs": [],
+      "modifiers": [],
+      "props": {
+        "phase": "1",
+        "full_form": "True",
+        "shape_only": "True"
+      },
+      "matrix": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ]
+    },
+    {
+      "name": "Lab Chest Boot Front Rivet -1 -1",
+      "vertices": 289,
+      "polygons": 289,
+      "bounds": [
+        [
+          -3.0595011711120605,
+          0.27960312366485596,
+          -2.2181649208068848
+        ],
+        [
+          -2.818082571029663,
+          0.458296537399292,
+          -1.9603348970413208
+        ]
+      ],
+      "materials": [
+        "Chest rough hardware forms"
+      ],
+      "uvs": [],
+      "modifiers": [],
+      "props": {
+        "phase": "1",
+        "full_form": "True",
+        "shape_only": "True"
+      },
+      "matrix": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ]
+    },
+    {
+      "name": "Lab Chest Boot End Rivet -1 -1",
+      "vertices": 289,
+      "polygons": 289,
+      "bounds": [
+        [
+          -3.1821956634521484,
+          -0.3933166265487671,
+          -2.2069549560546875
+        ],
+        [
+          -3.018155813217163,
+          -0.17233788967132568,
+          -1.971544861793518
+        ]
+      ],
+      "materials": [
+        "Chest rough hardware forms"
+      ],
+      "uvs": [],
+      "modifiers": [],
+      "props": {
+        "phase": "1",
+        "full_form": "True",
+        "shape_only": "True"
+      },
+      "matrix": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ]
+    },
+    {
+      "name": "Lab Chest Upper Corner Front Rivet -1 1",
+      "vertices": 289,
+      "polygons": 289,
+      "bounds": [
+        [
+          -1.1287877559661865,
+          -2.9492979049682617,
+          0.44354504346847534
+        ],
+        [
+          -0.9078091382980347,
+          -2.7852580547332764,
+          0.6789550185203552
+        ]
+      ],
+      "materials": [
+        "Chest rough hardware forms"
+      ],
+      "uvs": [],
+      "modifiers": [],
+      "props": {
+        "phase": "1",
+        "full_form": "True",
+        "shape_only": "True"
+      },
+      "matrix": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ]
+    },
+    {
+      "name": "Lab Chest Upper Corner End Rivet -1 1",
+      "vertices": 289,
+      "polygons": 289,
+      "bounds": [
+        [
+          -1.6585273742675781,
+          -2.831951141357422,
+          0.4547550082206726
+        ],
+        [
+          -1.509141206741333,
+          -2.6314125061035156,
+          0.667745053768158
+        ]
+      ],
+      "materials": [
+        "Chest rough hardware forms"
+      ],
+      "uvs": [],
+      "modifiers": [],
+      "props": {
+        "phase": "1",
+        "full_form": "True",
+        "shape_only": "True"
+      },
+      "matrix": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ]
+    },
+    {
+      "name": "Lab Chest Boot Front Rivet -1 1",
+      "vertices": 289,
+      "polygons": 289,
+      "bounds": [
+        [
+          -1.0829389095306396,
+          -2.8959248065948486,
+          -2.2181649208068848
+        ],
+        [
+          -0.8415199518203735,
+          -2.717231273651123,
+          -1.9603348970413208
+        ]
+      ],
+      "materials": [
+        "Chest rough hardware forms"
+      ],
+      "uvs": [],
+      "modifiers": [],
+      "props": {
+        "phase": "1",
+        "full_form": "True",
+        "shape_only": "True"
+      },
+      "matrix": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ]
+    },
+    {
+      "name": "Lab Chest Boot End Rivet -1 1",
+      "vertices": 289,
+      "polygons": 289,
+      "bounds": [
+        [
+          -1.6984219551086426,
+          -2.7678513526916504,
+          -2.2069549560546875
+        ],
+        [
+          -1.5343821048736572,
+          -2.546872615814209,
+          -1.971544861793518
+        ]
+      ],
+      "materials": [
+        "Chest rough hardware forms"
+      ],
+      "uvs": [],
+      "modifiers": [],
+      "props": {
+        "phase": "1",
+        "full_form": "True",
+        "shape_only": "True"
+      },
+      "matrix": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ]
+    },
+    {
+      "name": "Lab Chest Upper Corner Front Rivet 1 -1",
+      "vertices": 289,
+      "polygons": 289,
+      "bounds": [
+        [
+          0.9078091382980347,
+          2.7852580547332764,
+          0.44354504346847534
+        ],
+        [
+          1.1287877559661865,
+          2.9492979049682617,
+          0.6789550185203552
+        ]
+      ],
+      "materials": [
+        "Chest rough hardware forms"
+      ],
+      "uvs": [],
+      "modifiers": [],
+      "props": {
+        "phase": "1",
+        "full_form": "True",
+        "shape_only": "True"
+      },
+      "matrix": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ]
+    },
+    {
+      "name": "Lab Chest Upper Corner End Rivet 1 -1",
+      "vertices": 289,
+      "polygons": 289,
+      "bounds": [
+        [
+          1.509141206741333,
+          2.6314125061035156,
+          0.4547550082206726
+        ],
+        [
+          1.6585273742675781,
+          2.831951141357422,
+          0.667745053768158
+        ]
+      ],
+      "materials": [
+        "Chest rough hardware forms"
+      ],
+      "uvs": [],
+      "modifiers": [],
+      "props": {
+        "phase": "1",
+        "full_form": "True",
+        "shape_only": "True"
+      },
+      "matrix": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ]
+    },
+    {
+      "name": "Lab Chest Boot Front Rivet 1 -1",
+      "vertices": 289,
+      "polygons": 289,
+      "bounds": [
+        [
+          0.8415200710296631,
+          2.717231273651123,
+          -2.2181649208068848
+        ],
+        [
+          1.0829389095306396,
+          2.8959248065948486,
+          -1.9603348970413208
+        ]
+      ],
+      "materials": [
+        "Chest rough hardware forms"
+      ],
+      "uvs": [],
+      "modifiers": [],
+      "props": {
+        "phase": "1",
+        "full_form": "True",
+        "shape_only": "True"
+      },
+      "matrix": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ]
+    },
+    {
+      "name": "Lab Chest Boot End Rivet 1 -1",
+      "vertices": 289,
+      "polygons": 289,
+      "bounds": [
+        [
+          1.5343821048736572,
+          2.546872615814209,
+          -2.2069549560546875
+        ],
+        [
+          1.6984219551086426,
+          2.7678513526916504,
+          -1.971544861793518
+        ]
+      ],
+      "materials": [
+        "Chest rough hardware forms"
+      ],
+      "uvs": [],
+      "modifiers": [],
+      "props": {
+        "phase": "1",
+        "full_form": "True",
+        "shape_only": "True"
+      },
+      "matrix": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ]
+    },
+    {
+      "name": "Lab Chest Upper Corner Front Rivet 1 1",
+      "vertices": 289,
+      "polygons": 289,
+      "bounds": [
+        [
+          2.90792179107666,
+          -0.426882266998291,
+          0.44354504346847534
+        ],
+        [
+          3.1289002895355225,
+          -0.2628425359725952,
+          0.6789550185203552
+        ]
+      ],
+      "materials": [
+        "Chest rough hardware forms"
+      ],
+      "uvs": [],
+      "modifiers": [],
+      "props": {
+        "phase": "1",
+        "full_form": "True",
+        "shape_only": "True"
+      },
+      "matrix": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ]
+    },
+    {
+      "name": "Lab Chest Upper Corner End Rivet 1 1",
+      "vertices": 289,
+      "polygons": 289,
+      "bounds": [
+        [
+          3.077702045440674,
+          0.12118983268737793,
+          0.4547550082206726
+        ],
+        [
+          3.227088212966919,
+          0.3217284679412842,
+          0.667745053768158
+        ]
+      ],
+      "materials": [
+        "Chest rough hardware forms"
+      ],
+      "uvs": [],
+      "modifiers": [],
+      "props": {
+        "phase": "1",
+        "full_form": "True",
+        "shape_only": "True"
+      },
+      "matrix": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ]
+    },
+    {
+      "name": "Lab Chest Boot Front Rivet 1 1",
+      "vertices": 289,
+      "polygons": 289,
+      "bounds": [
+        [
+          2.818082571029663,
+          -0.458296537399292,
+          -2.2181649208068848
+        ],
+        [
+          3.0595014095306396,
+          -0.27960312366485596,
+          -1.9603348970413208
+        ]
+      ],
+      "materials": [
+        "Chest rough hardware forms"
+      ],
+      "uvs": [],
+      "modifiers": [],
+      "props": {
+        "phase": "1",
+        "full_form": "True",
+        "shape_only": "True"
+      },
+      "matrix": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ]
+    },
+    {
+      "name": "Lab Chest Boot End Rivet 1 1",
+      "vertices": 289,
+      "polygons": 289,
+      "bounds": [
+        [
+          3.018155813217163,
+          0.17233788967132568,
+          -2.2069549560546875
+        ],
+        [
+          3.1821956634521484,
+          0.3933166265487671,
+          -1.971544861793518
+        ]
+      ],
+      "materials": [
+        "Chest rough hardware forms"
+      ],
+      "uvs": [],
+      "modifiers": [],
+      "props": {
+        "phase": "1",
+        "full_form": "True",
+        "shape_only": "True"
+      },
+      "matrix": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ]
+    },
+    {
+      "name": "Lab Chest Body Lip Rivet -1 0",
+      "vertices": 289,
+      "polygons": 289,
+      "bounds": [
+        [
+          -2.3177878856658936,
+          0.6468425393104553,
+          0.15607500076293945
+        ],
+        [
+          -2.2482972145080566,
+          0.69728684425354,
+          0.22732499241828918
+        ]
+      ],
+      "materials": [
+        "Chest rough hardware forms"
+      ],
+      "uvs": [],
+      "modifiers": [],
+      "props": {
+        "phase": "1",
+        "full_form": "True",
+        "shape_only": "True"
+      },
+      "matrix": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ]
+    },
+    {
+      "name": "Lab Chest Body Lip Rivet -1 1",
+      "vertices": 289,
+      "polygons": 289,
+      "bounds": [
+        [
+          0.36204421520233154,
+          2.3213870525360107,
+          0.15607500076293945
+        ],
+        [
+          0.4315350651741028,
+          2.3718314170837402,
+          0.22732499241828918
+        ]
+      ],
+      "materials": [
+        "Chest rough hardware forms"
+      ],
+      "uvs": [],
+      "modifiers": [],
+      "props": {
+        "phase": "1",
+        "full_form": "True",
+        "shape_only": "True"
+      },
+      "matrix": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ]
+    },
+    {
+      "name": "Lab Chest Body Lip Rivet 1 0",
+      "vertices": 289,
+      "polygons": 289,
+      "bounds": [
+        [
+          -0.4315350651741028,
+          -2.3718316555023193,
+          0.15607500076293945
+        ],
+        [
+          -0.36204421520233154,
+          -2.32138729095459,
+          0.22732499241828918
+        ]
+      ],
+      "materials": [
+        "Chest rough hardware forms"
+      ],
+      "uvs": [],
+      "modifiers": [],
+      "props": {
+        "phase": "1",
+        "full_form": "True",
+        "shape_only": "True"
+      },
+      "matrix": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ]
+    },
+    {
+      "name": "Lab Chest Body Lip Rivet 1 1",
+      "vertices": 289,
+      "polygons": 289,
+      "bounds": [
+        [
+          2.2482969760894775,
+          -0.6972869038581848,
+          0.15607500076293945
+        ],
+        [
+          2.3177878856658936,
+          -0.6468425989151001,
+          0.22732499241828918
+        ]
+      ],
+      "materials": [
+        "Chest rough hardware forms"
+      ],
+      "uvs": [],
+      "modifiers": [],
+      "props": {
+        "phase": "1",
+        "full_form": "True",
+        "shape_only": "True"
+      },
+      "matrix": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ]
+    },
+    {
+      "name": "Lab Chest Handle Mount Rivet -1 -1",
+      "vertices": 289,
+      "polygons": 289,
+      "bounds": [
+        [
+          -2.736994743347168,
+          -1.0817352533340454,
+          -0.22725000977516174
+        ],
+        [
+          -2.636951208114624,
+          -0.953128457069397,
+          -0.09424999356269836
+        ]
+      ],
+      "materials": [
+        "Chest rough hardware forms"
+      ],
+      "uvs": [],
+      "modifiers": [],
+      "props": {
+        "phase": "1",
+        "full_form": "True",
+        "shape_only": "True"
+      },
+      "matrix": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ]
+    },
+    {
+      "name": "Lab Chest Handle Mount Rivet -1 1",
+      "vertices": 289,
+      "polygons": 289,
+      "bounds": [
+        [
+          -2.144545078277588,
+          -2.029853105545044,
+          -0.22725000977516174
+        ],
+        [
+          -2.044501781463623,
+          -1.9012463092803955,
+          -0.09424999356269836
+        ]
+      ],
+      "materials": [
+        "Chest rough hardware forms"
+      ],
+      "uvs": [],
+      "modifiers": [],
+      "props": {
+        "phase": "1",
+        "full_form": "True",
+        "shape_only": "True"
+      },
+      "matrix": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ]
+    },
+    {
+      "name": "Lab Chest Handle Mount Rivet 1 -1",
+      "vertices": 289,
+      "polygons": 289,
+      "bounds": [
+        [
+          2.044501781463623,
+          1.9012463092803955,
+          -0.22725000977516174
+        ],
+        [
+          2.144545078277588,
+          2.029853105545044,
+          -0.09424999356269836
+        ]
+      ],
+      "materials": [
+        "Chest rough hardware forms"
+      ],
+      "uvs": [],
+      "modifiers": [],
+      "props": {
+        "phase": "1",
+        "full_form": "True",
+        "shape_only": "True"
+      },
+      "matrix": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ]
+    },
+    {
+      "name": "Lab Chest Handle Mount Rivet 1 1",
+      "vertices": 289,
+      "polygons": 289,
+      "bounds": [
+        [
+          2.636951446533203,
+          0.953128457069397,
+          -0.22725000977516174
+        ],
+        [
+          2.736994981765747,
+          1.0817352533340454,
+          -0.09424999356269836
+        ]
+      ],
+      "materials": [
+        "Chest rough hardware forms"
+      ],
+      "uvs": [],
+      "modifiers": [],
+      "props": {
+        "phase": "1",
+        "full_form": "True",
+        "shape_only": "True"
+      },
+      "matrix": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ]
+    },
+    {
+      "name": "Lab Chest Lock Rivet 0",
+      "vertices": 289,
+      "polygons": 289,
+      "bounds": [
+        [
+          0.39218324422836304,
+          -2.2308852672576904,
+          -0.04674999415874481
+        ],
+        [
+          0.5804232954978943,
+          -2.0903162956237793,
+          0.15274998545646667
+        ]
+      ],
+      "materials": [
+        "Chest rough hardware forms"
+      ],
+      "uvs": [],
+      "modifiers": [],
+      "props": {
+        "phase": "1",
+        "full_form": "True",
+        "shape_only": "True"
+      },
+      "matrix": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ]
+    },
+    {
+      "name": "Lab Chest Lock Rivet 1",
+      "vertices": 289,
+      "polygons": 289,
+      "bounds": [
+        [
+          1.630333662033081,
+          -1.4572031497955322,
+          -0.04674999415874481
+        ],
+        [
+          1.8185737133026123,
+          -1.316633939743042,
+          0.15274998545646667
+        ]
+      ],
+      "materials": [
+        "Chest rough hardware forms"
+      ],
+      "uvs": [],
+      "modifiers": [],
+      "props": {
+        "phase": "1",
+        "full_form": "True",
+        "shape_only": "True"
+      },
+      "matrix": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ]
+    },
+    {
+      "name": "Lab Chest Lock Rivet 2",
+      "vertices": 289,
+      "polygons": 289,
+      "bounds": [
+        [
+          0.699966549873352,
+          -2.0632832050323486,
+          -0.4106000065803528
+        ],
+        [
+          0.8076165914535522,
+          -1.9786456823349,
+          -0.3004000186920166
+        ]
+      ],
+      "materials": [
+        "Chest rough hardware forms"
+      ],
+      "uvs": [],
+      "modifiers": [],
+      "props": {
+        "phase": "1",
+        "full_form": "True",
+        "shape_only": "True"
+      },
+      "matrix": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ]
+    },
+    {
+      "name": "Lab Chest Lock Rivet 3",
+      "vertices": 289,
+      "polygons": 289,
+      "bounds": [
+        [
+          1.4292879104614258,
+          -1.6075530052185059,
+          -0.4106000065803528
+        ],
+        [
+          1.5369383096694946,
+          -1.522915244102478,
+          -0.3004000186920166
+        ]
+      ],
+      "materials": [
+        "Chest rough hardware forms"
+      ],
+      "uvs": [],
+      "modifiers": [],
+      "props": {
+        "phase": "1",
+        "full_form": "True",
+        "shape_only": "True"
+      },
+      "matrix": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ]
+    },
+    {
+      "name": "Lab Chest Lock Rivet 4",
+      "vertices": 289,
+      "polygons": 289,
+      "bounds": [
+        [
+          0.699966549873352,
+          -2.0632832050323486,
+          -0.9521000385284424
+        ],
+        [
+          0.8076165914535522,
+          -1.9786456823349,
+          -0.8418999910354614
+        ]
+      ],
+      "materials": [
+        "Chest rough hardware forms"
+      ],
+      "uvs": [],
+      "modifiers": [],
+      "props": {
+        "phase": "1",
+        "full_form": "True",
+        "shape_only": "True"
+      },
+      "matrix": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ]
+    },
+    {
+      "name": "Lab Chest Lock Rivet 5",
+      "vertices": 289,
+      "polygons": 289,
+      "bounds": [
+        [
+          1.4292879104614258,
+          -1.6075530052185059,
+          -0.9521000385284424
+        ],
+        [
+          1.5369383096694946,
+          -1.522915244102478,
+          -0.8418999910354614
+        ]
+      ],
+      "materials": [
+        "Chest rough hardware forms"
+      ],
+      "uvs": [],
+      "modifiers": [],
+      "props": {
+        "phase": "1",
+        "full_form": "True",
+        "shape_only": "True"
+      },
+      "matrix": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ]
+    },
+    {
+      "name": "Lab Chest Lock Rivet 6",
+      "vertices": 289,
+      "polygons": 289,
+      "bounds": [
+        [
+          1.0646272897720337,
+          -1.8354178667068481,
+          -1.2275999784469604
+        ],
+        [
+          1.1722774505615234,
+          -1.750780463218689,
+          -1.117400050163269
+        ]
+      ],
+      "materials": [
+        "Chest rough hardware forms"
+      ],
+      "uvs": [],
+      "modifiers": [],
+      "props": {
+        "phase": "1",
+        "full_form": "True",
+        "shape_only": "True"
+      },
+      "matrix": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ]
+    },
+    {
+      "name": "Lab Chest Lower Strap Rivet",
+      "vertices": 289,
+      "polygons": 289,
+      "bounds": [
+        [
+          0.968864917755127,
+          -1.7762004137039185,
+          -2.065500020980835
+        ],
+        [
+          1.1571049690246582,
+          -1.6356313228607178,
+          -1.8660000562667847
+        ]
+      ],
+      "materials": [
+        "Chest rough hardware forms"
+      ],
+      "uvs": [],
+      "modifiers": [],
+      "props": {
+        "phase": "1",
+        "full_form": "True",
+        "shape_only": "True"
+      },
+      "matrix": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ]
+    },
+    {
+      "name": "Lab Chest Upright Diamond -1 -1",
+      "vertices": 76,
+      "polygons": 79,
+      "bounds": [
+        [
+          -3.1222102642059326,
+          0.13654744625091553,
+          -1.025498390197754
+        ],
+        [
+          -2.9615445137023926,
+          0.2637518644332886,
+          -0.6497517228126526
+        ]
+      ],
+      "materials": [
+        "Chest rough hardware forms"
+      ],
+      "uvs": [],
+      "modifiers": [],
+      "props": {
+        "phase": "1",
+        "full_form": "True",
+        "shape_only": "True"
+      },
+      "matrix": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ]
+    },
+    {
+      "name": "Lab Chest Upright Diamond -1 1",
+      "vertices": 76,
+      "polygons": 79,
+      "bounds": [
+        [
+          -1.244774341583252,
+          -2.892151117324829,
+          -1.025498390197754
+        ],
+        [
+          -1.084108591079712,
+          -2.764946937561035,
+          -0.6497517228126526
+        ]
+      ],
+      "materials": [
+        "Chest rough hardware forms"
+      ],
+      "uvs": [],
+      "modifiers": [],
+      "props": {
+        "phase": "1",
+        "full_form": "True",
+        "shape_only": "True"
+      },
+      "matrix": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ]
+    },
+    {
+      "name": "Lab Chest Upright Diamond 1 -1",
+      "vertices": 76,
+      "polygons": 79,
+      "bounds": [
+        [
+          1.084108591079712,
+          2.764946937561035,
+          -1.025498390197754
+        ],
+        [
+          1.244774341583252,
+          2.892151117324829,
+          -0.6497517228126526
+        ]
+      ],
+      "materials": [
+        "Chest rough hardware forms"
+      ],
+      "uvs": [],
+      "modifiers": [],
+      "props": {
+        "phase": "1",
+        "full_form": "True",
+        "shape_only": "True"
+      },
+      "matrix": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ]
+    },
+    {
+      "name": "Lab Chest Upright Diamond 1 1",
+      "vertices": 76,
+      "polygons": 79,
+      "bounds": [
+        [
+          2.9615445137023926,
+          -0.2637518644332886,
+          -1.025498390197754
+        ],
+        [
+          3.1222100257873535,
+          -0.13654744625091553,
+          -0.6497517228126526
+        ]
+      ],
+      "materials": [
+        "Chest rough hardware forms"
+      ],
+      "uvs": [],
+      "modifiers": [],
+      "props": {
+        "phase": "1",
+        "full_form": "True",
+        "shape_only": "True"
+      },
+      "matrix": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ]
+    },
+    {
+      "name": "Lab Chest End Arch Rivet -1 0",
+      "vertices": 289,
+      "polygons": 289,
+      "bounds": [
+        [
+          -1.844717025756836,
+          -2.4499101638793945,
+          1.5763413906097412
+        ],
+        [
+          -1.7153244018554688,
+          -2.2772598266601562,
+          1.7587412595748901
+        ]
+      ],
+      "materials": [
+        "Chest rough hardware forms"
+      ],
+      "uvs": [],
+      "modifiers": [],
+      "props": {
+        "phase": "1",
+        "full_form": "True",
+        "shape_only": "True"
+      },
+      "matrix": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ]
+    },
+    {
+      "name": "Lab Chest End Arch Rivet -1 1",
+      "vertices": 289,
+      "polygons": 289,
+      "bounds": [
+        [
+          -2.97183895111084,
+          -0.6461375951766968,
+          1.5763413906097412
+        ],
+        [
+          -2.8424463272094727,
+          -0.47348731756210327,
+          1.7587412595748901
+        ]
+      ],
+      "materials": [
+        "Chest rough hardware forms"
+      ],
+      "uvs": [],
+      "modifiers": [],
+      "props": {
+        "phase": "1",
+        "full_form": "True",
+        "shape_only": "True"
+      },
+      "matrix": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ]
+    },
+    {
+      "name": "Lab Chest Corner Body Cuff Front Rivet -1 -1",
+      "vertices": 289,
+      "polygons": 289,
+      "bounds": [
+        [
+          -3.026984691619873,
+          0.2627129554748535,
+          0.1028749942779541
+        ],
+        [
+          -2.9490761756896973,
+          0.31852638721466064,
+          0.1836249977350235
+        ]
+      ],
+      "materials": [
+        "Chest rough hardware forms"
+      ],
+      "uvs": [],
+      "modifiers": [],
+      "props": {
+        "phase": "1",
+        "full_form": "True",
+        "shape_only": "True"
+      },
+      "matrix": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ]
+    },
+    {
+      "name": "Lab Chest Corner Body Cuff End Rivet -1 -1",
+      "vertices": 289,
+      "polygons": 289,
+      "bounds": [
+        [
+          -3.127257823944092,
+          -0.2304459810256958,
+          0.1028749942779541
+        ],
+        [
+          -3.071444034576416,
+          -0.15253734588623047,
+          0.1836249977350235
+        ]
+      ],
+      "materials": [
+        "Chest rough hardware forms"
+      ],
+      "uvs": [],
+      "modifiers": [],
+      "props": {
+        "phase": "1",
+        "full_form": "True",
+        "shape_only": "True"
+      },
+      "matrix": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ]
+    },
+    {
+      "name": "Lab Chest Corner Body Cuff Front Rivet -1 1",
+      "vertices": 289,
+      "polygons": 289,
+      "bounds": [
+        [
+          -1.0876331329345703,
+          -2.840941905975342,
+          0.1028749942779541
+        ],
+        [
+          -1.0097246170043945,
+          -2.785128593444824,
+          0.1836249977350235
+        ]
+      ],
+      "materials": [
+        "Chest rough hardware forms"
+      ],
+      "uvs": [],
+      "modifiers": [],
+      "props": {
+        "phase": "1",
+        "full_form": "True",
+        "shape_only": "True"
+      },
+      "matrix": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ]
+    },
+    {
+      "name": "Lab Chest Corner Body Cuff End Rivet -1 1",
+      "vertices": 289,
+      "polygons": 289,
+      "bounds": [
+        [
+          -1.5586967468261719,
+          -2.740668535232544,
+          0.1028749942779541
+        ],
+        [
+          -1.5028831958770752,
+          -2.662759780883789,
+          0.1836249977350235
+        ]
+      ],
+      "materials": [
+        "Chest rough hardware forms"
+      ],
+      "uvs": [],
+      "modifiers": [],
+      "props": {
+        "phase": "1",
+        "full_form": "True",
+        "shape_only": "True"
+      },
+      "matrix": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ]
+    },
+    {
+      "name": "Lab Chest End Arch Rivet 1 0",
+      "vertices": 289,
+      "polygons": 289,
+      "bounds": [
+        [
+          2.8424463272094727,
+          0.47348731756210327,
+          1.5763413906097412
+        ],
+        [
+          2.97183895111084,
+          0.6461375951766968,
+          1.7587412595748901
+        ]
+      ],
+      "materials": [
+        "Chest rough hardware forms"
+      ],
+      "uvs": [],
+      "modifiers": [],
+      "props": {
+        "phase": "1",
+        "full_form": "True",
+        "shape_only": "True"
+      },
+      "matrix": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ]
+    },
+    {
+      "name": "Lab Chest End Arch Rivet 1 1",
+      "vertices": 289,
+      "polygons": 289,
+      "bounds": [
+        [
+          1.7153244018554688,
+          2.2772598266601562,
+          1.5763413906097412
+        ],
+        [
+          1.844717025756836,
+          2.4499101638793945,
+          1.7587412595748901
+        ]
+      ],
+      "materials": [
+        "Chest rough hardware forms"
+      ],
+      "uvs": [],
+      "modifiers": [],
+      "props": {
+        "phase": "1",
+        "full_form": "True",
+        "shape_only": "True"
+      },
+      "matrix": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ]
+    },
+    {
+      "name": "Lab Chest Corner Body Cuff Front Rivet 1 -1",
+      "vertices": 289,
+      "polygons": 289,
+      "bounds": [
+        [
+          1.0097246170043945,
+          2.785128593444824,
+          0.1028749942779541
+        ],
+        [
+          1.0876331329345703,
+          2.840941905975342,
+          0.1836249977350235
+        ]
+      ],
+      "materials": [
+        "Chest rough hardware forms"
+      ],
+      "uvs": [],
+      "modifiers": [],
+      "props": {
+        "phase": "1",
+        "full_form": "True",
+        "shape_only": "True"
+      },
+      "matrix": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ]
+    },
+    {
+      "name": "Lab Chest Corner Body Cuff End Rivet 1 -1",
+      "vertices": 289,
+      "polygons": 289,
+      "bounds": [
+        [
+          1.5028831958770752,
+          2.662759780883789,
+          0.1028749942779541
+        ],
+        [
+          1.5586967468261719,
+          2.740668535232544,
+          0.1836249977350235
+        ]
+      ],
+      "materials": [
+        "Chest rough hardware forms"
+      ],
+      "uvs": [],
+      "modifiers": [],
+      "props": {
+        "phase": "1",
+        "full_form": "True",
+        "shape_only": "True"
+      },
+      "matrix": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ]
+    },
+    {
+      "name": "Lab Chest Corner Body Cuff Front Rivet 1 1",
+      "vertices": 289,
+      "polygons": 289,
+      "bounds": [
+        [
+          2.9490761756896973,
+          -0.31852638721466064,
+          0.1028749942779541
+        ],
+        [
+          3.026984691619873,
+          -0.2627129554748535,
+          0.1836249977350235
+        ]
+      ],
+      "materials": [
+        "Chest rough hardware forms"
+      ],
+      "uvs": [],
+      "modifiers": [],
+      "props": {
+        "phase": "1",
+        "full_form": "True",
+        "shape_only": "True"
+      },
+      "matrix": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ]
+    },
+    {
+      "name": "Lab Chest Corner Body Cuff End Rivet 1 1",
+      "vertices": 289,
+      "polygons": 289,
+      "bounds": [
+        [
+          3.071444034576416,
+          0.15253734588623047,
+          0.1028749942779541
+        ],
+        [
+          3.127257823944092,
+          0.2304459810256958,
+          0.1836249977350235
+        ]
+      ],
+      "materials": [
+        "Chest rough hardware forms"
+      ],
+      "uvs": [],
+      "modifiers": [],
+      "props": {
+        "phase": "1",
+        "full_form": "True",
+        "shape_only": "True"
+      },
+      "matrix": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ]
+    },
+    {
+      "name": "Lab Chest Hasp Pivot Dome -1",
+      "vertices": 289,
+      "polygons": 289,
+      "bounds": [
+        [
+          0.6829546689987183,
+          -1.9639887809753418,
+          0.4235000014305115
+        ],
+        [
+          0.7587104439735413,
+          -1.8513343334197998,
+          0.546999990940094
+        ]
+      ],
+      "materials": [
+        "Chest rough hardware forms"
+      ],
+      "uvs": [],
+      "modifiers": [],
+      "props": {
+        "phase": "1",
+        "full_form": "True",
+        "shape_only": "True"
+      },
+      "matrix": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ]
+    },
+    {
+      "name": "Lab Chest Hasp Mount Fastener -1",
+      "vertices": 289,
+      "polygons": 289,
+      "bounds": [
+        [
+          0.5273754596710205,
+          -2.0019588470458984,
+          0.43300002813339233
+        ],
+        [
+          0.6647140979766846,
+          -1.8954966068267822,
+          0.5755000114440918
+        ]
+      ],
+      "materials": [
+        "Chest rough hardware forms"
+      ],
+      "uvs": [],
+      "modifiers": [],
+      "props": {
+        "phase": "1",
+        "full_form": "True",
+        "shape_only": "True"
+      },
+      "matrix": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ]
+    },
+    {
+      "name": "Lab Chest End Arch Crown Tab -1",
+      "vertices": 1107,
+      "polygons": 1156,
+      "bounds": [
+        [
+          -2.443568229675293,
+          -1.7528570890426636,
+          1.9374977350234985
+        ],
+        [
+          -1.949486255645752,
+          -1.204375147819519,
+          2.5353472232818604
+        ]
+      ],
+      "materials": [
+        "Chest rough structural forms"
+      ],
+      "uvs": [],
+      "modifiers": [],
+      "props": {
+        "phase": "1",
+        "full_form": "True",
+        "shape_only": "True"
+      },
+      "matrix": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ]
+    },
+    {
+      "name": "Lab Chest End Crown Fastener -1",
+      "vertices": 289,
+      "polygons": 289,
+      "bounds": [
+        [
+          -2.406721353530884,
+          -1.6003453731536865,
+          2.1153597831726074
+        ],
+        [
+          -2.2899885177612305,
+          -1.449035406112671,
+          2.273059606552124
+        ]
+      ],
+      "materials": [
+        "Chest rough hardware forms"
+      ],
+      "uvs": [],
+      "modifiers": [],
+      "props": {
+        "phase": "1",
+        "full_form": "True",
+        "shape_only": "True"
+      },
+      "matrix": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ]
+    },
+    {
+      "name": "Lab Chest Hasp Pivot Dome 1",
+      "vertices": 289,
+      "polygons": 289,
+      "bounds": [
+        [
+          1.3609665632247925,
+          -1.5408587455749512,
+          0.4235000014305115
+        ],
+        [
+          1.4367220401763916,
+          -1.428203821182251,
+          0.546999990940094
+        ]
+      ],
+      "materials": [
+        "Chest rough hardware forms"
+      ],
+      "uvs": [],
+      "modifiers": [],
+      "props": {
+        "phase": "1",
+        "full_form": "True",
+        "shape_only": "True"
+      },
+      "matrix": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ]
+    },
+    {
+      "name": "Lab Chest Hasp Mount Fastener 1",
+      "vertices": 289,
+      "polygons": 289,
+      "bounds": [
+        [
+          1.4178259372711182,
+          -1.4455437660217285,
+          0.43300002813339233
+        ],
+        [
+          1.5551645755767822,
+          -1.3390815258026123,
+          0.5755000114440918
+        ]
+      ],
+      "materials": [
+        "Chest rough hardware forms"
+      ],
+      "uvs": [],
+      "modifiers": [],
+      "props": {
+        "phase": "1",
+        "full_form": "True",
+        "shape_only": "True"
+      },
+      "matrix": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ]
+    },
+    {
+      "name": "Lab Chest End Arch Crown Tab 1",
+      "vertices": 1107,
+      "polygons": 1156,
+      "bounds": [
+        [
+          2.0448718070983887,
+          1.0517264604568481,
+          1.9374979734420776
+        ],
+        [
+          2.538954257965088,
+          1.6002047061920166,
+          2.5353472232818604
+        ]
+      ],
+      "materials": [
+        "Chest rough structural forms"
+      ],
+      "uvs": [],
+      "modifiers": [],
+      "props": {
+        "phase": "1",
+        "full_form": "True",
+        "shape_only": "True"
+      },
+      "matrix": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ]
+    },
+    {
+      "name": "Lab Chest End Crown Fastener 1",
+      "vertices": 289,
+      "polygons": 289,
+      "bounds": [
+        [
+          2.3440401554107666,
+          1.362534523010254,
+          2.1153597831726074
+        ],
+        [
+          2.46077299118042,
+          1.51384437084198,
+          2.273059606552124
+        ]
+      ],
+      "materials": [
+        "Chest rough hardware forms"
+      ],
+      "uvs": [],
+      "modifiers": [],
+      "props": {
+        "phase": "1",
+        "full_form": "True",
+        "shape_only": "True"
+      },
+      "matrix": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ]
+    },
+    {
+      "name": "Lab Chest Upper Corner Front Rivet -1 -1 Seat",
+      "vertices": 320,
+      "polygons": 282,
+      "bounds": [
+        [
+          -3.1294431686401367,
+          0.2553398609161377,
+          0.43412861227989197
+        ],
+        [
+          -2.8971128463745117,
+          0.4066653251647949,
+          0.6883714199066162
+        ]
+      ],
+      "materials": [
+        "Chest rough hardware forms"
+      ],
+      "uvs": [],
+      "modifiers": [],
+      "props": {
+        "phase": "1",
+        "full_form": "True",
+        "shape_only": "True"
+      },
+      "matrix": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ]
+    },
+    {
+      "name": "Lab Chest Upper Corner End Rivet -1 -1 Seat",
+      "vertices": 320,
+      "polygons": 282,
+      "bounds": [
+        [
+          -3.208643913269043,
+          -0.3220975399017334,
+          0.44623541831970215
+        ],
+        [
+          -3.07082462310791,
+          -0.11138129234313965,
+          0.6762646436691284
+        ]
+      ],
+      "materials": [
+        "Chest rough hardware forms"
+      ],
+      "uvs": [],
+      "modifiers": [],
+      "props": {
+        "phase": "1",
+        "full_form": "True",
+        "shape_only": "True"
+      },
+      "matrix": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ]
+    },
+    {
+      "name": "Lab Chest Boot Front Rivet -1 -1 Seat",
+      "vertices": 320,
+      "polygons": 282,
+      "bounds": [
+        [
+          -3.0694096088409424,
+          0.28275740146636963,
+          -2.2310564517974854
+        ],
+        [
+          -2.811919689178467,
+          0.44877028465270996,
+          -1.9474433660507202
+        ]
+      ],
+      "materials": [
+        "Chest rough hardware forms"
+      ],
+      "uvs": [],
+      "modifiers": [],
+      "props": {
+        "phase": "1",
+        "full_form": "True",
+        "shape_only": "True"
+      },
+      "matrix": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ]
+    },
+    {
+      "name": "Lab Chest Boot End Rivet -1 -1 Seat",
+      "vertices": 320,
+      "polygons": 282,
+      "bounds": [
+        [
+          -3.174316644668579,
+          -0.40285027027130127,
+          -2.2187254428863525
+        ],
+        [
+          -3.0220608711242676,
+          -0.16737616062164307,
+          -1.959774374961853
+        ]
+      ],
+      "materials": [
+        "Chest rough hardware forms"
+      ],
+      "uvs": [],
+      "modifiers": [],
+      "props": {
+        "phase": "1",
+        "full_form": "True",
+        "shape_only": "True"
+      },
+      "matrix": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ]
+    },
+    {
+      "name": "Lab Chest Upper Corner Front Rivet -1 1 Seat",
+      "vertices": 320,
+      "polygons": 282,
+      "bounds": [
+        [
+          -1.139596700668335,
+          -2.9290809631347656,
+          0.43412861227989197
+        ],
+        [
+          -0.9072661995887756,
+          -2.7777552604675293,
+          0.6883714199066162
+        ]
+      ],
+      "materials": [
+        "Chest rough hardware forms"
+      ],
+      "uvs": [],
+      "modifiers": [],
+      "props": {
+        "phase": "1",
+        "full_form": "True",
+        "shape_only": "True"
+      },
+      "matrix": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ]
+    },
+    {
+      "name": "Lab Chest Upper Corner End Rivet -1 1 Seat",
+      "vertices": 320,
+      "polygons": 282,
+      "bounds": [
+        [
+          -1.6400830745697021,
+          -2.832320213317871,
+          0.44623541831970215
+        ],
+        [
+          -1.5022637844085693,
+          -2.6216039657592773,
+          0.6762646436691284
+        ]
+      ],
+      "materials": [
+        "Chest rough hardware forms"
+      ],
+      "uvs": [],
+      "modifiers": [],
+      "props": {
+        "phase": "1",
+        "full_form": "True",
+        "shape_only": "True"
+      },
+      "matrix": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ]
+    },
+    {
+      "name": "Lab Chest Boot Front Rivet -1 1 Seat",
+      "vertices": 320,
+      "polygons": 282,
+      "bounds": [
+        [
+          -1.0891015529632568,
+          -2.8863985538482666,
+          -2.2310564517974854
+        ],
+        [
+          -0.831611692905426,
+          -2.7203855514526367,
+          -1.9474433660507202
+        ]
+      ],
+      "materials": [
+        "Chest rough hardware forms"
+      ],
+      "uvs": [],
+      "modifiers": [],
+      "props": {
+        "phase": "1",
+        "full_form": "True",
+        "shape_only": "True"
+      },
+      "matrix": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ]
+    },
+    {
+      "name": "Lab Chest Boot End Rivet -1 1 Seat",
+      "vertices": 320,
+      "polygons": 282,
+      "bounds": [
+        [
+          -1.6905429363250732,
+          -2.7773849964141846,
+          -2.2187254428863525
+        ],
+        [
+          -1.5382871627807617,
+          -2.5419108867645264,
+          -1.959774374961853
+        ]
+      ],
+      "materials": [
+        "Chest rough hardware forms"
+      ],
+      "uvs": [],
+      "modifiers": [],
+      "props": {
+        "phase": "1",
+        "full_form": "True",
+        "shape_only": "True"
+      },
+      "matrix": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ]
+    },
+    {
+      "name": "Lab Chest Upper Corner Front Rivet 1 -1 Seat",
+      "vertices": 320,
+      "polygons": 282,
+      "bounds": [
+        [
+          0.9072661995887756,
+          2.7777552604675293,
+          0.43412861227989197
+        ],
+        [
+          1.139596700668335,
+          2.9290809631347656,
+          0.6883714199066162
+        ]
+      ],
+      "materials": [
+        "Chest rough hardware forms"
+      ],
+      "uvs": [],
+      "modifiers": [],
+      "props": {
+        "phase": "1",
+        "full_form": "True",
+        "shape_only": "True"
+      },
+      "matrix": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ]
+    },
+    {
+      "name": "Lab Chest Upper Corner End Rivet 1 -1 Seat",
+      "vertices": 320,
+      "polygons": 282,
+      "bounds": [
+        [
+          1.5022637844085693,
+          2.6216039657592773,
+          0.44623541831970215
+        ],
+        [
+          1.6400830745697021,
+          2.832320213317871,
+          0.6762646436691284
+        ]
+      ],
+      "materials": [
+        "Chest rough hardware forms"
+      ],
+      "uvs": [],
+      "modifiers": [],
+      "props": {
+        "phase": "1",
+        "full_form": "True",
+        "shape_only": "True"
+      },
+      "matrix": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ]
+    },
+    {
+      "name": "Lab Chest Boot Front Rivet 1 -1 Seat",
+      "vertices": 320,
+      "polygons": 282,
+      "bounds": [
+        [
+          0.831611692905426,
+          2.7203855514526367,
+          -2.2310564517974854
+        ],
+        [
+          1.0891015529632568,
+          2.8863985538482666,
+          -1.9474433660507202
+        ]
+      ],
+      "materials": [
+        "Chest rough hardware forms"
+      ],
+      "uvs": [],
+      "modifiers": [],
+      "props": {
+        "phase": "1",
+        "full_form": "True",
+        "shape_only": "True"
+      },
+      "matrix": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ]
+    },
+    {
+      "name": "Lab Chest Boot End Rivet 1 -1 Seat",
+      "vertices": 320,
+      "polygons": 282,
+      "bounds": [
+        [
+          1.5382871627807617,
+          2.5419108867645264,
+          -2.2187254428863525
+        ],
+        [
+          1.6905429363250732,
+          2.7773849964141846,
+          -1.959774374961853
+        ]
+      ],
+      "materials": [
+        "Chest rough hardware forms"
+      ],
+      "uvs": [],
+      "modifiers": [],
+      "props": {
+        "phase": "1",
+        "full_form": "True",
+        "shape_only": "True"
+      },
+      "matrix": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ]
+    },
+    {
+      "name": "Lab Chest Upper Corner Front Rivet 1 1 Seat",
+      "vertices": 320,
+      "polygons": 282,
+      "bounds": [
+        [
+          2.8971128463745117,
+          -0.4066653251647949,
+          0.43412861227989197
+        ],
+        [
+          3.1294431686401367,
+          -0.2553398609161377,
+          0.6883714199066162
+        ]
+      ],
+      "materials": [
+        "Chest rough hardware forms"
+      ],
+      "uvs": [],
+      "modifiers": [],
+      "props": {
+        "phase": "1",
+        "full_form": "True",
+        "shape_only": "True"
+      },
+      "matrix": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ]
+    },
+    {
+      "name": "Lab Chest Upper Corner End Rivet 1 1 Seat",
+      "vertices": 320,
+      "polygons": 282,
+      "bounds": [
+        [
+          3.07082462310791,
+          0.11138129234313965,
+          0.44623541831970215
+        ],
+        [
+          3.208643913269043,
+          0.3220975399017334,
+          0.6762646436691284
+        ]
+      ],
+      "materials": [
+        "Chest rough hardware forms"
+      ],
+      "uvs": [],
+      "modifiers": [],
+      "props": {
+        "phase": "1",
+        "full_form": "True",
+        "shape_only": "True"
+      },
+      "matrix": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ]
+    },
+    {
+      "name": "Lab Chest Boot Front Rivet 1 1 Seat",
+      "vertices": 320,
+      "polygons": 282,
+      "bounds": [
+        [
+          2.811919689178467,
+          -0.44877028465270996,
+          -2.2310564517974854
+        ],
+        [
+          3.0694096088409424,
+          -0.28275740146636963,
+          -1.9474433660507202
+        ]
+      ],
+      "materials": [
+        "Chest rough hardware forms"
+      ],
+      "uvs": [],
+      "modifiers": [],
+      "props": {
+        "phase": "1",
+        "full_form": "True",
+        "shape_only": "True"
+      },
+      "matrix": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ]
+    },
+    {
+      "name": "Lab Chest Boot End Rivet 1 1 Seat",
+      "vertices": 320,
+      "polygons": 282,
+      "bounds": [
+        [
+          3.0220608711242676,
+          0.16737616062164307,
+          -2.2187254428863525
+        ],
+        [
+          3.174316644668579,
+          0.40285027027130127,
+          -1.959774374961853
+        ]
+      ],
+      "materials": [
+        "Chest rough hardware forms"
+      ],
+      "uvs": [],
+      "modifiers": [],
+      "props": {
+        "phase": "1",
+        "full_form": "True",
+        "shape_only": "True"
+      },
+      "matrix": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ]
+    },
+    {
+      "name": "Lab Chest Rail Rivet -1 0",
+      "vertices": 289,
+      "polygons": 289,
+      "bounds": [
+        [
+          -1.9850713014602661,
+          0.9288920760154724,
+          0.5052000284194946
+        ],
+        [
+          -1.849478840827942,
+          1.0340704917907715,
+          0.6458000540733337
+        ]
+      ],
+      "materials": [
+        "Chest rough hardware forms"
+      ],
+      "uvs": [],
+      "modifiers": [],
+      "props": {
+        "phase": "1",
+        "full_form": "True",
+        "shape_only": "True"
+      },
+      "matrix": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ]
+    },
+    {
+      "name": "Lab Chest Rail Rivet -1 1",
+      "vertices": 289,
+      "polygons": 289,
+      "bounds": [
+        [
+          -0.10579647123813629,
+          2.1031932830810547,
+          0.5051999688148499
+        ],
+        [
+          0.0297958105802536,
+          2.208371639251709,
+          0.645799994468689
+        ]
+      ],
+      "materials": [
+        "Chest rough hardware forms"
+      ],
+      "uvs": [],
+      "modifiers": [],
+      "props": {
+        "phase": "1",
+        "full_form": "True",
+        "shape_only": "True"
+      },
+      "matrix": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ]
+    },
+    {
+      "name": "Lab Chest Rail Rivet -1 3",
+      "vertices": 289,
+      "polygons": 289,
+      "bounds": [
+        [
+          -1.9681168794631958,
+          0.8687355518341064,
+          -2.0360498428344727
+        ],
+        [
+          -1.8325246572494507,
+          0.9739139676094055,
+          -1.8954499959945679
+        ]
+      ],
+      "materials": [
+        "Chest rough hardware forms"
+      ],
+      "uvs": [],
+      "modifiers": [],
+      "props": {
+        "phase": "1",
+        "full_form": "True",
+        "shape_only": "True"
+      },
+      "matrix": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ]
+    },
+    {
+      "name": "Lab Chest Rail Rivet -1 4",
+      "vertices": 289,
+      "polygons": 289,
+      "bounds": [
+        [
+          -0.05916048586368561,
+          2.0615837574005127,
+          -2.0360498428344727
+        ],
+        [
+          0.07643191516399384,
+          2.166762113571167,
+          -1.8954499959945679
+        ]
+      ],
+      "materials": [
+        "Chest rough hardware forms"
+      ],
+      "uvs": [],
+      "modifiers": [],
+      "props": {
+        "phase": "1",
+        "full_form": "True",
+        "shape_only": "True"
+      },
+      "matrix": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ]
+    },
+    {
+      "name": "Lab Chest Rail Rivet 1 0",
+      "vertices": 289,
+      "polygons": 289,
+      "bounds": [
+        [
+          -0.029795899987220764,
+          -2.20837140083313,
+          0.5052000284194946
+        ],
+        [
+          0.10579650104045868,
+          -2.1031930446624756,
+          0.6458000540733337
+        ]
+      ],
+      "materials": [
+        "Chest rough hardware forms"
+      ],
+      "uvs": [],
+      "modifiers": [],
+      "props": {
+        "phase": "1",
+        "full_form": "True",
+        "shape_only": "True"
+      },
+      "matrix": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ]
+    },
+    {
+      "name": "Lab Chest Rail Rivet 1 1",
+      "vertices": 289,
+      "polygons": 289,
+      "bounds": [
+        [
+          1.849478840827942,
+          -1.034070611000061,
+          0.5051999688148499
+        ],
+        [
+          1.9850711822509766,
+          -0.9288921356201172,
+          0.645799994468689
+        ]
+      ],
+      "materials": [
+        "Chest rough hardware forms"
+      ],
+      "uvs": [],
+      "modifiers": [],
+      "props": {
+        "phase": "1",
+        "full_form": "True",
+        "shape_only": "True"
+      },
+      "matrix": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ]
+    },
+    {
+      "name": "Lab Chest Rail Rivet 1 2",
+      "vertices": 289,
+      "polygons": 289,
+      "bounds": [
+        [
+          2.4637880325317383,
+          -0.6426074504852295,
+          0.5346499681472778
+        ],
+        [
+          2.5452420711517334,
+          -0.5772271156311035,
+          0.6163499355316162
+        ]
+      ],
+      "materials": [
+        "Chest rough hardware forms"
+      ],
+      "uvs": [],
+      "modifiers": [],
+      "props": {
+        "phase": "1",
+        "full_form": "True",
+        "shape_only": "True"
+      },
+      "matrix": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ]
+    },
+    {
+      "name": "Lab Chest Rail Rivet 1 3",
+      "vertices": 289,
+      "polygons": 289,
+      "bounds": [
+        [
+          -0.07643188536167145,
+          -2.166762113571167,
+          -2.0360498428344727
+        ],
+        [
+          0.059160396456718445,
+          -2.0615837574005127,
+          -1.8954499959945679
+        ]
+      ],
+      "materials": [
+        "Forged iron shallow recessed scale boundaries"
+      ],
+      "uvs": [
+        "LowerIronAtlas",
+        "LowerIronPhysical"
+      ],
+      "modifiers": [],
+      "props": {
+        "phase": "1",
+        "full_form": "True",
+        "shape_only": "True",
+        "bottom_iron_finish": "True"
+      },
+      "matrix": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ]
+    },
+    {
+      "name": "Lab Chest Rail Rivet 1 4",
+      "vertices": 289,
+      "polygons": 289,
+      "bounds": [
+        [
+          1.8325244188308716,
+          -0.9739139676094055,
+          -2.0360498428344727
+        ],
+        [
+          1.9681168794631958,
+          -0.8687356114387512,
+          -1.8954499959945679
+        ]
+      ],
+      "materials": [
+        "Forged iron shallow recessed scale boundaries"
+      ],
+      "uvs": [
+        "LowerIronAtlas",
+        "LowerIronPhysical"
+      ],
+      "modifiers": [],
+      "props": {
+        "phase": "1",
+        "full_form": "True",
+        "shape_only": "True",
+        "bottom_iron_finish": "True"
+      },
+      "matrix": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ]
+    },
+    {
+      "name": "Lab Chest End Rail Rivet -1 0",
+      "vertices": 289,
+      "polygons": 289,
+      "bounds": [
+        [
+          -2.4099056720733643,
+          -1.538258671760559,
+          0.5052000284194946
+        ],
+        [
+          -2.30472731590271,
+          -1.4026662111282349,
+          0.645799994468689
+        ]
+      ],
+      "materials": [
+        "Chest rough hardware forms"
+      ],
+      "uvs": [],
+      "modifiers": [],
+      "props": {
+        "phase": "1",
+        "full_form": "True",
+        "shape_only": "True"
+      },
+      "matrix": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ]
+    },
+    {
+      "name": "Lab Chest End Rail Rivet -1 1",
+      "vertices": 289,
+      "polygons": 289,
+      "bounds": [
+        [
+          -2.375983715057373,
+          -1.517061710357666,
+          -2.0360498428344727
+        ],
+        [
+          -2.2708051204681396,
+          -1.3814693689346313,
+          -1.8954499959945679
+        ]
+      ],
+      "materials": [
+        "Chest rough hardware forms"
+      ],
+      "uvs": [],
+      "modifiers": [],
+      "props": {
+        "phase": "1",
+        "full_form": "True",
+        "shape_only": "True"
+      },
+      "matrix": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ]
+    },
+    {
+      "name": "Lab Chest End Rail Rivet 1 0",
+      "vertices": 289,
+      "polygons": 289,
+      "bounds": [
+        [
+          2.30472731590271,
+          1.4026663303375244,
+          0.5052000284194946
+        ],
+        [
+          2.4099059104919434,
+          1.5382587909698486,
+          0.645799994468689
+        ]
+      ],
+      "materials": [
+        "Chest rough hardware forms"
+      ],
+      "uvs": [],
+      "modifiers": [],
+      "props": {
+        "phase": "1",
+        "full_form": "True",
+        "shape_only": "True"
+      },
+      "matrix": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ]
+    },
+    {
+      "name": "Lab Chest End Rail Rivet 1 1",
+      "vertices": 289,
+      "polygons": 289,
+      "bounds": [
+        [
+          2.2708051204681396,
+          1.381469488143921,
+          -2.0360498428344727
+        ],
+        [
+          2.375983953475952,
+          1.5170618295669556,
+          -1.8954499959945679
+        ]
+      ],
+      "materials": [
+        "Chest rough hardware forms"
+      ],
+      "uvs": [],
+      "modifiers": [],
+      "props": {
+        "phase": "1",
+        "full_form": "True",
+        "shape_only": "True"
+      },
+      "matrix": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ]
+    },
+    {
+      "name": "Lab Chest Measured Rolled Handle Cover -1",
+      "vertices": 1930,
+      "polygons": 3860,
+      "bounds": [
+        [
+          -2.801137924194336,
+          -1.9082010984420776,
+          -0.5710859894752502
+        ],
+        [
+          -2.212378740310669,
+          -1.2245882749557495,
+          -0.10532539337873459
+        ]
+      ],
+      "materials": [
+        "Chest rough hardware forms"
+      ],
+      "uvs": [],
+      "modifiers": [],
+      "props": {
+        "phase": "1",
+        "full_form": "True",
+        "shape_only": "True",
+        "allowed_euler": "<bpy id property array [2]>"
+      },
+      "matrix": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ]
+    },
+    {
+      "name": "Lab Chest Measured Rolled Handle Cover 1",
+      "vertices": 1930,
+      "polygons": 3860,
+      "bounds": [
+        [
+          2.212378740310669,
+          1.2245882749557495,
+          -0.5710859894752502
+        ],
+        [
+          2.801138401031494,
+          1.9082012176513672,
+          -0.10532539337873459
+        ]
+      ],
+      "materials": [
+        "Chest rough hardware forms"
+      ],
+      "uvs": [],
+      "modifiers": [],
+      "props": {
+        "phase": "1",
+        "full_form": "True",
+        "shape_only": "True",
+        "allowed_euler": "<bpy id property array [2]>"
+      },
+      "matrix": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ]
+    },
+    {
+      "name": "Lab Chest Fixed Front Hinge Knuckle -1",
+      "vertices": 1024,
+      "polygons": 1024,
+      "bounds": [
+        [
+          0.6665744781494141,
+          -2.0342185497283936,
+          0.2952499985694885
+        ],
+        [
+          0.9347331523895264,
+          -1.6780452728271484,
+          0.6752499938011169
+        ]
+      ],
+      "materials": [
+        "Chest rough hardware forms"
+      ],
+      "uvs": [],
+      "modifiers": [],
+      "props": {
+        "phase": "1",
+        "full_form": "True",
+        "shape_only": "True",
+        "allowed_euler": "<bpy id property array [1]>"
+      },
+      "matrix": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ]
+    },
+    {
+      "name": "Lab Chest Fixed Front Hinge Knuckle 1",
+      "vertices": 1024,
+      "polygons": 1024,
+      "bounds": [
+        [
+          1.184943675994873,
+          -1.7141473293304443,
+          0.2952499985694885
+        ],
+        [
+          1.4531023502349854,
+          -1.3579740524291992,
+          0.6752499938011169
+        ]
+      ],
+      "materials": [
+        "Chest rough hardware forms"
+      ],
+      "uvs": [],
+      "modifiers": [],
+      "props": {
+        "phase": "1",
+        "full_form": "True",
+        "shape_only": "True",
+        "allowed_euler": "<bpy id property array [1]>"
+      },
+      "matrix": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ]
+    },
+    {
+      "name": "Lab Chest Front Hinge Pin",
+      "vertices": 512,
+      "polygons": 450,
+      "bounds": [
+        [
+          0.6823165416717529,
+          -1.971181869506836,
+          0.40724998712539673
+        ],
+        [
+          1.437360167503357,
+          -1.4210104942321777,
+          0.5632500052452087
+        ]
+      ],
+      "materials": [
+        "Chest rough hardware forms"
+      ],
+      "uvs": [],
+      "modifiers": [],
+      "props": {
+        "phase": "1",
+        "full_form": "True",
+        "shape_only": "True"
+      },
+      "matrix": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ]
+    },
+    {
+      "name": "Lab Chest Case Back With Key Bore",
+      "vertices": 1210,
+      "polygons": 2420,
+      "bounds": [
+        [
+          0.12576425075531006,
+          -2.0497047901153564,
+          -1.5290281772613525
+        ],
+        [
+          1.7792952060699463,
+          -0.9990283250808716,
+          0.25725001096725464
+        ]
+      ],
+      "materials": [
+        "Chest rough hardware forms"
+      ],
+      "uvs": [],
+      "modifiers": [],
+      "props": {
+        "phase": "1",
+        "full_form": "True",
+        "shape_only": "True",
+        "allowed_euler": "<bpy id property array [1]>"
+      },
+      "matrix": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ]
+    },
+    {
+      "name": "Lab Chest Hollow Lock Case Walls",
+      "vertices": 1184,
+      "polygons": 2376,
+      "bounds": [
+        [
+          0.1407872438430786,
+          -2.2456305027008057,
+          -1.5290281772613525
+        ],
+        [
+          1.9020512104034424,
+          -1.0235950946807861,
+          0.25725001096725464
+        ]
+      ],
+      "materials": [
+        "Chest rough hardware forms"
+      ],
+      "uvs": [],
+      "modifiers": [],
+      "props": {
+        "phase": "1",
+        "full_form": "True",
+        "shape_only": "True",
+        "allowed_euler": "<bpy id property array [1]>"
+      },
+      "matrix": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ]
+    },
+    {
+      "name": "Lab Chest Key Driven Slider",
+      "vertices": 1112,
+      "polygons": 2224,
+      "bounds": [
+        [
+          0.5888878703117371,
+          -1.9589812755584717,
+          -0.7409999966621399
+        ],
+        [
+          1.194254994392395,
+          -1.4202057123184204,
+          -0.1185000091791153
+        ]
+      ],
+      "materials": [
+        "Chest rough hardware forms"
+      ],
+      "uvs": [],
+      "modifiers": [],
+      "props": {
+        "phase": "1",
+        "full_form": "True",
+        "shape_only": "True",
+        "chest_mechanism_rig_part": "True",
+        "allowed_euler": "<bpy id property array [1]>"
+      },
+      "matrix": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ]
+    },
+    {
+      "name": "Lab Chest Compliant Catch Leaf",
+      "vertices": 720,
+      "polygons": 1436,
+      "bounds": [
+        [
+          1.049362301826477,
+          -1.5218325853347778,
+          -0.18649999797344208
+        ],
+        [
+          1.2345000505447388,
+          -1.3976166248321533,
+          -0.14300000667572021
+        ]
+      ],
+      "materials": [
+        "Chest rough hardware forms"
+      ],
+      "uvs": [],
+      "modifiers": [],
+      "props": {
+        "phase": "1",
+        "full_form": "True",
+        "shape_only": "True",
+        "chest_mechanism_rig_part": "True",
+        "allowed_euler": "<bpy id property array [1]>"
+      },
+      "matrix": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ]
+    },
+    {
+      "name": "Lab Chest Fixed Leaf Clamp",
+      "vertices": 96,
+      "polygons": 98,
+      "bounds": [
+        [
+          1.2054662704467773,
+          -1.414833903312683,
+          -0.15000000596046448
+        ],
+        [
+          1.251347303390503,
+          -1.3657715320587158,
+          -0.13500000536441803
+        ]
+      ],
+      "materials": [
+        "Chest rough hardware forms"
+      ],
+      "uvs": [],
+      "modifiers": [],
+      "props": {
+        "phase": "1",
+        "full_form": "True",
+        "shape_only": "True"
+      },
+      "matrix": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ]
+    },
+    {
+      "name": "Lab Chest Small Front Rail Rivet -1",
+      "vertices": 289,
+      "polygons": 289,
+      "bounds": [
+        [
+          -0.5925776958465576,
+          -2.552436351776123,
+          0.5346499681472778
+        ],
+        [
+          -0.5111236572265625,
+          -2.487056016921997,
+          0.6163499355316162
+        ]
+      ],
+      "materials": [
+        "Chest rough hardware forms"
+      ],
+      "uvs": [],
+      "modifiers": [],
+      "props": {
+        "phase": "1",
+        "full_form": "True",
+        "shape_only": "True"
+      },
+      "matrix": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ]
+    },
+    {
+      "name": "Lab Chest Rear Hinge Lower Rivet -1 0",
+      "vertices": 321,
+      "polygons": 321,
+      "bounds": [
+        [
+          -2.5102171897888184,
+          0.6807524561882019,
+          0.09950000047683716
+        ],
+        [
+          -2.4490573406219482,
+          0.7272717356681824,
+          0.16950000822544098
+        ]
+      ],
+      "materials": [
+        "Chest rough hardware forms"
+      ],
+      "uvs": [],
+      "modifiers": [],
+      "props": {
+        "full_form": "True",
+        "development_only": "False"
+      },
+      "matrix": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ]
+    },
+    {
+      "name": "Lab Chest Rear Hinge Lower Rivet -1 1",
+      "vertices": 321,
+      "polygons": 321,
+      "bounds": [
+        [
+          -2.2049198150634766,
+          0.871523380279541,
+          0.09950000047683716
+        ],
+        [
+          -2.1437599658966064,
+          0.9180426597595215,
+          0.16950000822544098
+        ]
+      ],
+      "materials": [
+        "Chest rough hardware forms"
+      ],
+      "uvs": [],
+      "modifiers": [],
+      "props": {
+        "full_form": "True",
+        "development_only": "False"
+      },
+      "matrix": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ]
+    },
+    {
+      "name": "Lab Chest Rear Hinge Upper Rivet -1 0",
+      "vertices": 321,
+      "polygons": 321,
+      "bounds": [
+        [
+          -2.5102171897888184,
+          0.6807524561882019,
+          0.5637499690055847
+        ],
+        [
+          -2.4490573406219482,
+          0.7272717356681824,
+          0.6337499618530273
+        ]
+      ],
+      "materials": [
+        "Chest rough hardware forms"
+      ],
+      "uvs": [],
+      "modifiers": [],
+      "props": {
+        "full_form": "True",
+        "development_only": "False"
+      },
+      "matrix": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ]
+    },
+    {
+      "name": "Lab Chest Rear Hinge Upper Rivet -1 1",
+      "vertices": 321,
+      "polygons": 321,
+      "bounds": [
+        [
+          -2.2049198150634766,
+          0.871523380279541,
+          0.5637499690055847
+        ],
+        [
+          -2.1437599658966064,
+          0.9180426597595215,
+          0.6337499618530273
+        ]
+      ],
+      "materials": [
+        "Chest rough hardware forms"
+      ],
+      "uvs": [],
+      "modifiers": [],
+      "props": {
+        "full_form": "True",
+        "development_only": "False"
+      },
+      "matrix": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ]
+    },
+    {
+      "name": "Lab Chest Rear Hinge Lower Rivet 1 0",
+      "vertices": 321,
+      "polygons": 321,
+      "bounds": [
+        [
+          0.11873207241296768,
+          2.3235020637512207,
+          0.09950000047683716
+        ],
+        [
+          0.17989188432693481,
+          2.370021343231201,
+          0.16950000822544098
+        ]
+      ],
+      "materials": [
+        "Chest rough hardware forms"
+      ],
+      "uvs": [],
+      "modifiers": [],
+      "props": {
+        "full_form": "True",
+        "development_only": "False"
+      },
+      "matrix": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ]
+    },
+    {
+      "name": "Lab Chest Rear Hinge Lower Rivet 1 1",
+      "vertices": 321,
+      "polygons": 321,
+      "bounds": [
+        [
+          0.4240294098854065,
+          2.514272928237915,
+          0.09950000047683716
+        ],
+        [
+          0.4851892292499542,
+          2.5607922077178955,
+          0.16950000822544098
+        ]
+      ],
+      "materials": [
+        "Chest rough hardware forms"
+      ],
+      "uvs": [],
+      "modifiers": [],
+      "props": {
+        "full_form": "True",
+        "development_only": "False"
+      },
+      "matrix": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ]
+    },
+    {
+      "name": "Lab Chest Rear Hinge Upper Rivet 1 0",
+      "vertices": 321,
+      "polygons": 321,
+      "bounds": [
+        [
+          0.11873207241296768,
+          2.3235020637512207,
+          0.5637499690055847
+        ],
+        [
+          0.17989188432693481,
+          2.370021343231201,
+          0.6337499618530273
+        ]
+      ],
+      "materials": [
+        "Chest rough hardware forms"
+      ],
+      "uvs": [],
+      "modifiers": [],
+      "props": {
+        "full_form": "True",
+        "development_only": "False"
+      },
+      "matrix": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ]
+    },
+    {
+      "name": "Lab Chest Rear Hinge Upper Rivet 1 1",
+      "vertices": 321,
+      "polygons": 321,
+      "bounds": [
+        [
+          0.4240294098854065,
+          2.514272928237915,
+          0.5637499690055847
+        ],
+        [
+          0.4851892292499542,
+          2.5607922077178955,
+          0.6337499618530273
+        ]
+      ],
+      "materials": [
+        "Chest rough hardware forms"
+      ],
+      "uvs": [],
+      "modifiers": [],
+      "props": {
+        "full_form": "True",
+        "development_only": "False"
+      },
+      "matrix": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ]
+    },
+    {
+      "name": "Master Chest Body Envelope",
+      "vertices": 641121,
+      "polygons": 643262,
+      "bounds": [
+        [
+          -2.9875619411468506,
+          -2.6851646900177,
+          -2.2174999713897705
+        ],
+        [
+          2.9875619411468506,
+          2.6851646900177,
+          0.3474999964237213
+        ]
+      ],
+      "materials": [
+        "Chest Phase 1 neutral clay",
+        "Wood Lab BC_final_polish"
+      ],
+      "uvs": [
+        "ChestWoodUV_Sample44"
+      ],
+      "modifiers": [],
+      "props": {
+        "phase": "1",
+        "shape_only": "True",
+        "full_form": "True",
+        "actual_relief": "True",
+        "grid": "<bpy id property array [2]>",
+        "source_part": "Chest Body Envelope",
+        "normal_split_sigma_units": "0.0022",
+        "timber_refinement": "BC_final_polish"
+      },
+      "matrix": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ]
+    }
+  ]
+}

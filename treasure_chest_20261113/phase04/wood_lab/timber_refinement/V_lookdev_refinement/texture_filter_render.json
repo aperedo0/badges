@@ -1,0 +1,40 @@
+{
+  "view": "texture_filter",
+  "camera": [
+    [
+      1.0,
+      0.0,
+      0.0,
+      -0.15282601118087769
+    ],
+    [
+      0.0,
+      0.0697563961148262,
+      -0.9975640773773193,
+      -13.952950477600098
+    ],
+    [
+      0.0,
+      0.9975640773773193,
+      0.0697563961148262,
+      -0.6829222440719604
+    ],
+    [
+      0.0,
+      0.0,
+      0.0,
+      1.0
+    ]
+  ],
+  "ortho": 2.200000047683716,
+  "resolution": [
+    1600,
+    1184
+  ],
+  "samples": 128,
+  "pixel_filter_width": 1.5,
+  "normal_texture_interpolation": "Closest",
+  "view_transform": "AgX",
+  "look": "AgX - Medium High Contrast",
+  "exposure": 0.0
+}

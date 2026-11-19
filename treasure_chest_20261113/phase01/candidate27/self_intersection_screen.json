@@ -1,0 +1,6 @@
+{
+  "nonadjacent_intersection_pairs": [],
+  "triangle_count": 3592,
+  "no_nonadjacent_self_intersections": true,
+  "adjacent_triangles_excluded": true
+}

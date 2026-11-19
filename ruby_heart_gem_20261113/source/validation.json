@@ -1,0 +1,31 @@
+{
+  "changed_attributes": [
+    "/Badge/Gem.extent",
+    "/Badge/Gem.faceVertexCounts",
+    "/Badge/Gem.faceVertexIndices",
+    "/Badge/Gem.normals",
+    "/Badge/Gem.points"
+  ],
+  "gold_geometry_and_finish_exact": true,
+  "app_optics_unchanged": true,
+  "gem_closed": true,
+  "outward_volume": 13.858052902899397,
+  "bounds": [
+    [
+      -2.356267759851343,
+      -1.9239474731671466,
+      -0.9825000001769513
+    ],
+    [
+      2.356267759851343,
+      2.604830048347583,
+      0.9825000001769513
+    ]
+  ],
+  "meshes": 2,
+  "material_sections": 2,
+  "gem_triangles": 1836,
+  "total_triangles": 27524,
+  "bytes": 1589146,
+  "sha256": "5ffd357b1b66751fe61d240b923498fbe5d0eab35dcb7b110f6d26b715625cf3"
+}

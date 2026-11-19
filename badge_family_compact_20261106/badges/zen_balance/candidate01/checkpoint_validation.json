@@ -1,0 +1,32 @@
+{
+  "complete_mesh_count": 3,
+  "triangles": 39616,
+  "all_used_images_packed_and_match_usdz": true,
+  "images": [
+    {
+      "name": "Rim_brushed_reference_roughness.png.003",
+      "sha256": "2dd0421486bac68bd1dc669b879074954dd7fa21e377f19c6012d1bd510c0a54"
+    },
+    {
+      "name": "Rim_brushed_reference_color.png.003",
+      "sha256": "785b8c8c0442241d3cda6b2a30190d1d258abccba33412d76613fa7391bff0f9"
+    },
+    {
+      "name": "backdrop_color.png",
+      "sha256": "0c623c6df6c463750ee5b1667c409ef40338ef527fade20f559416bfeacb4c23"
+    },
+    {
+      "name": "bronze_roughness.png",
+      "sha256": "d0530f93535f050c614e606a2a91a52a7e1c9ebf6974ca2ba273db61cbd07f94"
+    },
+    {
+      "name": "Rim_glint_reference_roughness.png.003",
+      "sha256": "a060290fd7cfd42597e0be088a7577b29ea5147a3e9ef9b81b67e652f3a7ece1"
+    },
+    {
+      "name": "bronze_color.png",
+      "sha256": "8f5926c0b5d355be8a57b7c5b7dd47805ee17205db09c6d84717ecb31ac52206"
+    }
+  ],
+  "usdz_unchanged_sha256": "8208ca05752c292a17176b3b4c89fb25e95759be1c8fab30d6bbf2d1aea36f50"
+}

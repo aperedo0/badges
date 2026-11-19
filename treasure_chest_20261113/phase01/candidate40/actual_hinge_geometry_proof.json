@@ -1,0 +1,257 @@
+{
+  "actual_geometry_checked": true,
+  "regions": [
+    {
+      "name": "Chest Rear Hinge Lower -1",
+      "slot": [
+        -0.3,
+        -0.19
+      ],
+      "bore_minimum_radius": 0.05593231278418549,
+      "axis_empty": true
+    },
+    {
+      "name": "Chest Rear Hinge Lower -1",
+      "slot": [
+        -0.055,
+        0.055
+      ],
+      "bore_minimum_radius": 0.05593234112335415,
+      "axis_empty": true
+    },
+    {
+      "name": "Chest Rear Hinge Lower -1",
+      "slot": [
+        0.19,
+        0.3
+      ],
+      "bore_minimum_radius": 0.05593235127834285,
+      "axis_empty": true
+    },
+    {
+      "name": "Chest Rear Hinge Lower -1",
+      "other_slot": [
+        -0.178,
+        -0.067
+      ],
+      "minimum_running_radius": 0.12584803843123946,
+      "minimum_outer_ellipse_gap": 0.005848038431239461
+    },
+    {
+      "name": "Chest Rear Hinge Lower -1",
+      "other_slot": [
+        0.067,
+        0.178
+      ],
+      "minimum_running_radius": 0.12584804248544168,
+      "minimum_outer_ellipse_gap": 0.005848042485441685
+    },
+    {
+      "name": "Chest Rear Hinge Upper -1",
+      "slot": [
+        -0.178,
+        -0.067
+      ],
+      "bore_minimum_radius": 0.05593231627384945,
+      "axis_empty": true
+    },
+    {
+      "name": "Chest Rear Hinge Upper -1",
+      "slot": [
+        0.067,
+        0.178
+      ],
+      "bore_minimum_radius": 0.05593233682361508,
+      "axis_empty": true
+    },
+    {
+      "name": "Chest Rear Hinge Upper -1",
+      "other_slot": [
+        -0.3,
+        -0.19
+      ],
+      "minimum_running_radius": 0.12584797823516328,
+      "minimum_outer_ellipse_gap": 0.005847978235163281
+    },
+    {
+      "name": "Chest Rear Hinge Upper -1",
+      "other_slot": [
+        -0.055,
+        0.055
+      ],
+      "minimum_running_radius": 0.12584803253658394,
+      "minimum_outer_ellipse_gap": 0.005848032536583947
+    },
+    {
+      "name": "Chest Rear Hinge Upper -1",
+      "other_slot": [
+        0.19,
+        0.3
+      ],
+      "minimum_running_radius": 0.12584803574897388,
+      "minimum_outer_ellipse_gap": 0.005848035748973884
+    },
+    {
+      "name": "Chest Upper Lid Rim",
+      "side": -1,
+      "slot": [
+        -0.3,
+        -0.19
+      ],
+      "minimum_running_radius": 0.1258480366762372
+    },
+    {
+      "name": "Chest Upper Lid Rim",
+      "side": -1,
+      "slot": [
+        -0.055,
+        0.055
+      ],
+      "minimum_running_radius": 0.12584803253658394
+    },
+    {
+      "name": "Chest Upper Lid Rim",
+      "side": -1,
+      "slot": [
+        0.19,
+        0.3
+      ],
+      "minimum_running_radius": 0.12584806200515788
+    },
+    {
+      "name": "Chest Rear Hinge Barrel -1",
+      "actual_shaft_maximum_radius": 0.05000022625749497,
+      "positive_solid_shaft": true
+    },
+    {
+      "name": "Chest Rear Hinge Lower 1",
+      "slot": [
+        -0.3,
+        -0.19
+      ],
+      "bore_minimum_radius": 0.05593236528880588,
+      "axis_empty": true
+    },
+    {
+      "name": "Chest Rear Hinge Lower 1",
+      "slot": [
+        -0.055,
+        0.055
+      ],
+      "bore_minimum_radius": 0.05593237738093765,
+      "axis_empty": true
+    },
+    {
+      "name": "Chest Rear Hinge Lower 1",
+      "slot": [
+        0.19,
+        0.3
+      ],
+      "bore_minimum_radius": 0.055932353185805805,
+      "axis_empty": true
+    },
+    {
+      "name": "Chest Rear Hinge Lower 1",
+      "other_slot": [
+        -0.178,
+        -0.067
+      ],
+      "minimum_running_radius": 0.125848245020794,
+      "minimum_outer_ellipse_gap": 0.005848245020794007
+    },
+    {
+      "name": "Chest Rear Hinge Lower 1",
+      "other_slot": [
+        0.067,
+        0.178
+      ],
+      "minimum_running_radius": 0.12584823903122536,
+      "minimum_outer_ellipse_gap": 0.005848239031225361
+    },
+    {
+      "name": "Chest Rear Hinge Upper 1",
+      "slot": [
+        -0.178,
+        -0.067
+      ],
+      "bore_minimum_radius": 0.055932369054206434,
+      "axis_empty": true
+    },
+    {
+      "name": "Chest Rear Hinge Upper 1",
+      "slot": [
+        0.067,
+        0.178
+      ],
+      "bore_minimum_radius": 0.05593233105697336,
+      "axis_empty": true
+    },
+    {
+      "name": "Chest Rear Hinge Upper 1",
+      "other_slot": [
+        -0.3,
+        -0.19
+      ],
+      "minimum_running_radius": 0.12584824212355972,
+      "minimum_outer_ellipse_gap": 0.0058482421235597215
+    },
+    {
+      "name": "Chest Rear Hinge Upper 1",
+      "other_slot": [
+        -0.055,
+        0.055
+      ],
+      "minimum_running_radius": 0.1258482301598632,
+      "minimum_outer_ellipse_gap": 0.005848230159863216
+    },
+    {
+      "name": "Chest Rear Hinge Upper 1",
+      "other_slot": [
+        0.19,
+        0.3
+      ],
+      "minimum_running_radius": 0.12584824358442495,
+      "minimum_outer_ellipse_gap": 0.005848243584424956
+    },
+    {
+      "name": "Chest Upper Lid Rim",
+      "side": 1,
+      "slot": [
+        -0.3,
+        -0.19
+      ],
+      "minimum_running_radius": 0.1258482192508004
+    },
+    {
+      "name": "Chest Upper Lid Rim",
+      "side": 1,
+      "slot": [
+        -0.055,
+        0.055
+      ],
+      "minimum_running_radius": 0.1258482637599297
+    },
+    {
+      "name": "Chest Upper Lid Rim",
+      "side": 1,
+      "slot": [
+        0.19,
+        0.3
+      ],
+      "minimum_running_radius": 0.12584826020154846
+    },
+    {
+      "name": "Chest Rear Hinge Barrel 1",
+      "actual_shaft_maximum_radius": 0.05000015978129551,
+      "positive_solid_shaft": true
+    }
+  ],
+  "negative_controls": {
+    "missing_lid_frame_relief_rejected": true,
+    "deliberately_intruding_body_rejected": true,
+    "filled_bore_rejected": true,
+    "offset_axis_rejected": true
+  },
+  "minimum_polygonal_pin_gap": 0.005932086526690521,
+  "full_motion_screen_pending": true
+}

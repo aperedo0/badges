@@ -1,0 +1,9 @@
+{
+  "native_recording": true,
+  "raw_duration_seconds": 1486.505,
+  "kept_first_seconds": 18,
+  "removed_static_tail": true,
+  "original_bytes": 146372077,
+  "retained_bytes": 10386479,
+  "reason": "MCP stop call required an explicit outputFile; the invalid stop was corrected and excess static footage removed. Future recordings need a local duration watchdog before gestures."
+}

@@ -1,0 +1,64 @@
+{
+  "status": "diagnostic_only_not_native",
+  "whole_ruby_appearance": true,
+  "internal_lobe_interface_not_air": true,
+  "no_appearance_textures": true,
+  "variants": [
+    {
+      "name": "Connected center 0.9, matching rear False",
+      "planes": [
+        219,
+        219
+      ]
+    },
+    {
+      "name": "Connected center 0.9, matching rear True",
+      "planes": [
+        254,
+        254
+      ]
+    },
+    {
+      "name": "Connected center 1.1, matching rear False",
+      "planes": [
+        214,
+        214
+      ]
+    },
+    {
+      "name": "Connected center 1.1, matching rear True",
+      "planes": [
+        244,
+        244
+      ]
+    },
+    {
+      "name": "Connected center 1.3, matching rear False",
+      "planes": [
+        197,
+        197
+      ]
+    },
+    {
+      "name": "Connected center 1.3, matching rear True",
+      "planes": [
+        210,
+        210
+      ]
+    },
+    {
+      "name": "Connected center 1.5, matching rear False",
+      "planes": [
+        186,
+        186
+      ]
+    },
+    {
+      "name": "Connected center 1.5, matching rear True",
+      "planes": [
+        192,
+        192
+      ]
+    }
+  ]
+}

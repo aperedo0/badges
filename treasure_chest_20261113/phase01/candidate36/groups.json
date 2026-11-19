@@ -1,0 +1,28 @@
+[
+  {
+    "target": "Chest Body Upper Rim",
+    "role": "body",
+    "expected_euler": 0,
+    "operands": [
+      "Chest Body Corner Collar -1 -1",
+      "Chest Body Corner Collar -1 1",
+      "Chest Body Corner Collar 1 -1",
+      "Chest Body Corner Collar 1 1"
+    ]
+  },
+  {
+    "target": "Chest Upper Lid Rim",
+    "role": "lid",
+    "expected_euler": -8,
+    "operands": [
+      "Chest Lid Corner Armor -1 -1",
+      "Chest Lid Corner Armor -1 1",
+      "Chest Lid Corner Armor 1 -1",
+      "Chest Lid Corner Armor 1 1",
+      "Chest Broad End Arch -1",
+      "Chest Broad End Arch 1",
+      "Chest Lid Hoop 2",
+      "Chest Lid Hoop 3"
+    ]
+  }
+]

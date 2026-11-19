@@ -1,0 +1,9 @@
+Correction pass after owner hardware review
+
+Raise the bottom center rivet inside its plate. Lower and inset both handle mount heads on a rounded flat plate. Raise the foot heads. Keep the reference count and measured rail layouts.
+
+Preserve a narrow continuous lid opening by keeping the mating seam edges on one plane rather than rounding them away separately. Add a real perimeter bevel to the folded upper armor. Reduce foot shoulder height and give that height to its main wall.
+
+The lower grip now has a constant sleeve diameter with short shallow end divisions, not a swollen gradual thickening. Its oval centerline is shorter while the tube remains round, with explicit differential normals. Widen the hanging latch. Replace stacked washers with two rounded collar groups. Fit and widen the folded crown tab against the end arch. Round the fitted handle end cheeks. Narrow the shield bevel, retaining the 0.006 face overlap.
+
+Source and numbered Blender copy must be saved before each render. Wood, wear, final materials and mobile optimization remain later phases.

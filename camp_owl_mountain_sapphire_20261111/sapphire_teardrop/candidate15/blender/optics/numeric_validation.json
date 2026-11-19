@@ -1,0 +1,22 @@
+{
+  "development_validation": true,
+  "no_app_build": true,
+  "body_pixels": 8245,
+  "actual_render_size": [
+    200,
+    200
+  ],
+  "native_equations_mae": 0.015794397783589077,
+  "vertical_flip_control_mae": 0.20555135969352237,
+  "expected_native_median": [
+    0.006341614332900783,
+    0.22865360433055,
+    0.6713249328943788
+  ],
+  "actual_blender_median": [
+    0.00784313725490196,
+    0.22745098039215686,
+    0.6666666666666666
+  ],
+  "native_final_validation_pending": true
+}

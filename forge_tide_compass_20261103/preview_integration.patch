@@ -1,0 +1,29 @@
+--- a/ScreenTime/Sources/App/Features/Badges/Badge3DLiveBadge.swift
++++ b/ScreenTime/Sources/App/Features/Badges/Badge3DLiveBadge.swift
+@@ -37,7 +37,7 @@
+ 
+ enum PrivateBadgePreview {
+     nonisolated(unsafe) static var selection = UserDefaults.standard.string(forKey: "CoinBadgePreview") ?? "emeraldTrophy"
+-    static let items: [String: String] = ["waterDrop":"Water Drop","tealSands":"Teal Sands","goldenSands":"Golden Sands","sunrisePath":"Sunrise Path","emeraldSprout":"Emerald Sprout","starAscent":"Star Ascent","islandSunset":"Island Sunset","lightningCompass":"Lightning Compass","zenBalance":"Zen Balance","torchSunburst":"Torch Sunburst","crimsonShield":"Crimson Shield","emeraldArcher":"Emerald Archer","emeraldTrophy":"Emerald Trophy","crescentOcean":"Crescent Ocean","mountainCrest":"Mountain Crest","wingedSword":"Winged Sword","bronzePhoenix":"Bronze Phoenix","frostwingCrystal":"Frostwing Crystal","battleSteel":"Battle Steel","lunarCompass":"Lunar Compass","celestialOrbit":"Celestial Orbit","rubyWingedCrest":"Ruby Winged Crest","sapphireStairway":"Sapphire Stairway","auroraMountain":"Aurora Mountain"]
++    static let items: [String: String] = ["waterDrop":"Water Drop","tealSands":"Teal Sands","goldenSands":"Golden Sands","sunrisePath":"Sunrise Path","emeraldSprout":"Emerald Sprout","starAscent":"Star Ascent","islandSunset":"Island Sunset","lightningCompass":"Lightning Compass","zenBalance":"Zen Balance","torchSunburst":"Torch Sunburst","crimsonShield":"Crimson Shield","emeraldArcher":"Emerald Archer","emeraldTrophy":"Emerald Trophy","crescentOcean":"Crescent Ocean","mountainCrest":"Mountain Crest","wingedSword":"Winged Sword","bronzePhoenix":"Bronze Phoenix","frostwingCrystal":"Frostwing Crystal","battleSteel":"Battle Steel","lunarCompass":"Lunar Compass","celestialOrbit":"Celestial Orbit","rubyWingedCrest":"Ruby Winged Crest","sapphireStairway":"Sapphire Stairway","auroraMountain":"Aurora Mountain","emberForge":"Ember Forge","tidalCompass":"Tidal Compass","astralNavigator":"Astral Navigator"]
+     static var datasetName: String? {
+         guard items[selection] != nil else { return nil }
+         return "Badge3DPreview" + selection.prefix(1).uppercased() + selection.dropFirst()
+@@ -98,6 +98,9 @@
+     static func look(forDatasetName datasetName: String) -> Badge3DTierLook {
+         if ["Badge3DPreviewEmeraldArcher", "Badge3DPreviewEmeraldSprout", "Badge3DPreviewEmeraldTrophy", "Badge3DPreviewGoldenSands", "Badge3DPreviewIslandSunset", "Badge3DPreviewLightningCompass", "Badge3DPreviewStarAscent", "Badge3DPreviewSunrisePath", "Badge3DPreviewTealSands", "Badge3DPreviewTorchSunburst", "Badge3DPreviewWaterDrop", "Badge3DPreviewZenBalance"].contains(datasetName) { return Badge3DTierLook(size: 0.96, lift: 0.441) }
+         if datasetName == "Badge3DPreviewCrimsonShield" { return .neutral }
++        if datasetName == "Badge3DPreviewAstralNavigator" { return .neutral }
++        if datasetName == "Badge3DPreviewTidalCompass" { return .neutral }
++        if datasetName == "Badge3DPreviewEmberForge" { return .neutral }
+         if datasetName == "Badge3DPreviewAuroraMountain" { return .neutral }
+         if datasetName == "Badge3DPreviewSapphireStairway" { return .neutral }
+         if datasetName == "Badge3DPreviewRubyWingedCrest" { return .neutral }
+@@ -1315,6 +1318,7 @@
+         switch name {
+         case "CrestGem_Ice": return 0
+         case "CrestGem_Sapphire": return 1
++        case "CrestGem_SapphireAstral": return 4
+         case "CrestGem_Ruby": return 2
+         case "CrestGem_Amethyst": return 3
+         default: return nil

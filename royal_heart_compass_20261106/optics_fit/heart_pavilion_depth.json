@@ -1,0 +1,49 @@
+{
+  "status": "physical_diagnostic_only_not_native",
+  "no_appearance_maps": true,
+  "reference_education": "https://www.gia.edu/gia-news-research-value-factors-gem-cutting-styles-definitions",
+  "variants": [
+    {
+      "pavilion_depth_multiplier": 1,
+      "total_depth": 1.6318607926368713,
+      "global_z_center_shift": 0.028709858655929565,
+      "first_internal_hit_total_reflection_fraction": 0.3497991967871486,
+      "first_hit_median_path": 1.1801974628445762
+    },
+    {
+      "pavilion_depth_multiplier": 1.5,
+      "total_depth": 1.9591415748000145,
+      "global_z_center_shift": 0.19235024973750114,
+      "first_internal_hit_total_reflection_fraction": 0.5315955766192733,
+      "first_hit_median_path": 1.4686960119477752
+    },
+    {
+      "pavilion_depth_multiplier": 2,
+      "total_depth": 2.2864223569631577,
+      "global_z_center_shift": 0.3559906408190727,
+      "first_internal_hit_total_reflection_fraction": 0.6337368215540804,
+      "first_hit_median_path": 1.7822775657743957
+    },
+    {
+      "pavilion_depth_multiplier": 2.5,
+      "total_depth": 2.613703139126301,
+      "global_z_center_shift": 0.5196310319006443,
+      "first_internal_hit_total_reflection_fraction": 0.5986159169550173,
+      "first_hit_median_path": 2.1076543804891816
+    },
+    {
+      "pavilion_depth_multiplier": 3,
+      "total_depth": 2.940983921289444,
+      "global_z_center_shift": 0.6832714229822159,
+      "first_internal_hit_total_reflection_fraction": 0.6348122866894198,
+      "first_hit_median_path": 2.4280349592542705
+    },
+    {
+      "pavilion_depth_multiplier": 3.5,
+      "total_depth": 3.268264703452587,
+      "global_z_center_shift": 0.8469118140637875,
+      "first_internal_hit_total_reflection_fraction": 0.6783713111692192,
+      "first_hit_median_path": 2.747511945518654
+    }
+  ]
+}

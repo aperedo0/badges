@@ -1,0 +1,11 @@
+{
+  "optical_meshes": 2,
+  "physical_stones": 1,
+  "model_and_reflection_attachments": 4,
+  "all_intended_profiles_attached": true,
+  "no_fallback_gems": true,
+  "log": "/Users/antonioperedo/Desktop/badges/royal_heart_compass_20261106/ruby_heart/candidate23/review/native_runtime_1794108367.log",
+  "one_continuous_ruby_volume": true,
+  "optical_domains": 2,
+  "runtime_shader_sha256": "7f6c7ad8db3d7270a0d1905d39fb859dd854859021423acfab4f5dc29b7c0022"
+}

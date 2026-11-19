@@ -1,0 +1,15 @@
+{
+  "source": "candidate12 open physical setting",
+  "front": "Same measured six broad crown planes and six sided table",
+  "back": "Six pavilion planes meeting at one real point",
+  "reason": "Parallel front and rear tables transmit the dark environment instead of returning light through the crown. Pavilion angles now redirect rays.",
+  "apex_before_centering": [
+    0.012385769078764925,
+    -0.12449714707233855,
+    -1.5
+  ],
+  "whole_model_centering_z": 0.43,
+  "gem_geometry_real_closed_convex": true,
+  "no_appearance_texture": true,
+  "blender_and_native_review_pending": true
+}

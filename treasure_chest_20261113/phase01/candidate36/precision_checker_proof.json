@@ -1,0 +1,14 @@
+{
+  "Chest Body Upper Rim": {
+    "recovered_distance": 3.178549561853569e-09,
+    "old_wrong_bvh_distance": 0.004265414085239172
+  },
+  "Chest Upper Lid Rim": {
+    "recovered_distance": 1.014228712310905e-08,
+    "old_wrong_bvh_distance": 0.003960330504924059
+  },
+  "negative_controls": {
+    "real_normal_displacement_rejected": true,
+    "point_outside_triangle_but_inside_bounds_rejected": true
+  }
+}

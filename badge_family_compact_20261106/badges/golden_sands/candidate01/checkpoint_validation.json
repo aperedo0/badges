@@ -1,0 +1,60 @@
+{
+  "complete_mesh_count": 9,
+  "triangles": 59262,
+  "all_used_images_packed_and_match_usdz": true,
+  "images": [
+    {
+      "name": "Rim_brushed_reference_color.png.003",
+      "sha256": "089d254e5022af7324a9f1c53dc5a504536113f4c3735eb2808b6d703c8527e7"
+    },
+    {
+      "name": "Rim_glint_reference_roughness.png.003",
+      "sha256": "a060290fd7cfd42597e0be088a7577b29ea5147a3e9ef9b81b67e652f3a7ece1"
+    },
+    {
+      "name": "glass_color.png",
+      "sha256": "403dcee931ad366e9b4559a5fb96bddde7c49869a91c4c89a9e23747afb24cc9"
+    },
+    {
+      "name": "glass_emission.png",
+      "sha256": "871f4e434e10887b011a4689f9d23721c59b76a95ef9a3fd1d0b837b04f6beac"
+    },
+    {
+      "name": "sand_emission.png",
+      "sha256": "dcc76b0e73f762f213301289f4cc3293370947f550d2e3c4e37984e8835c0dc6"
+    },
+    {
+      "name": "silver_emission.png",
+      "sha256": "cb49a01a81bdfd21319a9a98083bc731b3da2d4a5f7d6c5a79089cc0a01425ee"
+    },
+    {
+      "name": "USDZ_Inset_normal.png.003",
+      "sha256": "9f5707f3a260602318afc7bd4190435bedb8ff03ccc6a453fcdb8b4eb0d59d1e"
+    },
+    {
+      "name": "background_color.png",
+      "sha256": "0bbd2dfa9cdf4fb3e977e1238c88d5e439079971ae79872ae4b9b6134375b2fc"
+    },
+    {
+      "name": "background_emission.png",
+      "sha256": "adc7891844577dc21422efb85bff09dd292d0021b9955075db581795d6cfcc61"
+    },
+    {
+      "name": "Rim_brushed_reference_roughness.png.003",
+      "sha256": "2dd0421486bac68bd1dc669b879074954dd7fa21e377f19c6012d1bd510c0a54"
+    },
+    {
+      "name": "sand_color.png",
+      "sha256": "c1ef080a773c37cb87103f51c5ceeb39952a8a71cac3345f4b729f08e43f85db"
+    },
+    {
+      "name": "silver_color.png",
+      "sha256": "9e065944e94196cb5a6ef248a8eed0460b370885eb23fb612366628e2e81e6ed"
+    },
+    {
+      "name": "USDZ_Inset_base_color.png.003",
+      "sha256": "b7e5fc22746a7c0833dadd0995553cc5acb292d85627e218feaafa66019afcf4"
+    }
+  ],
+  "usdz_unchanged_sha256": "a747ac40b1c7dc64468a5ae913fd07743315d08e4df6889ee4af0bc71522b895"
+}

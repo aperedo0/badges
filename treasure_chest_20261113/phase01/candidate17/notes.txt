@@ -1,0 +1,1 @@
+Owner correction: raise the lower wraparound rail top to match the existing center square cuff. Shared local top negative 1.675, bottom negative 2.205, center negative 1.940. Preserve center cuff width and overall height. Use matching 0.028 bevels and center all lower rail rivets. All previous correction tasks remain recorded.

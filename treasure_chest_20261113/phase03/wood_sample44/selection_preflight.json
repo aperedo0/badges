@@ -1,0 +1,53 @@
+{
+  "part": "Chest Body Envelope",
+  "polygon_count": 28,
+  "area": 6.651545726990491,
+  "minimum": [
+    -2.545520664519742,
+    -2.2008049488067627,
+    1.5640834184562848
+  ],
+  "maximum": [
+    2.5455207814405085,
+    -0.8399999737739563,
+    1.600000193231537
+  ],
+  "faces": [
+    32,
+    33,
+    34,
+    35,
+    36,
+    37,
+    38,
+    39,
+    44,
+    120,
+    121,
+    122,
+    123,
+    124,
+    125,
+    126,
+    127,
+    139,
+    280,
+    281,
+    282,
+    283,
+    350,
+    354,
+    356,
+    357,
+    360,
+    361
+  ],
+  "material_names": [
+    "Chest Phase 1 neutral clay"
+  ],
+  "uv_layers": 0,
+  "vertex_hash": "de4cb9f69a6e16bdc8aad165a56be203aedfbe7f8f0bd4fe7f0a41f10493ee45",
+  "triangle_hash": "b6f6e805748ce97529e9330c9d68ceb9cb1825dbac46de3fa4837a478d08d7c3",
+  "normal_hash": "a8fb5c691eae4acc0bf5c4b144da969e627544ebb6431f313336476f6f884597",
+  "clean_file": "/Users/antonioperedo/Desktop/badges/treasure_chest_20261113/treasure_chest.blend"
+}

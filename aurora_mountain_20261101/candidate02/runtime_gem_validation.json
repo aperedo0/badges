@@ -1,0 +1,12 @@
+{
+  "gems": {
+    "/AuroraMountain/Part_26": {
+      "maximumCoefficientErrorInNanounits": 59,
+      "planes": 20,
+      "reflectionPlanes": 20
+    }
+  },
+  "no_appearance_textures": true,
+  "actual_renderer_convexity_passed": true,
+  "reflection_convexity_passed": true
+}

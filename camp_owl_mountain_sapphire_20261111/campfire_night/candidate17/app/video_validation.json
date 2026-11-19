@@ -1,0 +1,19 @@
+{
+  "native_recording": true,
+  "model_sha256": "d55bae141a0037380b5d4831d3ccca6eb4341f7f58328939dac43a6a29ec07d3",
+  "local_watchdog_seconds": 16,
+  "process_pid": 16298,
+  "recording_began_epoch": 1794487281.8371599,
+  "gesture_began_epoch": 1794487282.6472309,
+  "verified_rest_header_y": 1413.5,
+  "video": {
+    "width": 1206,
+    "height": 2622,
+    "duration": "10.948333",
+    "nb_frames": "795"
+  },
+  "recording_stopped": true,
+  "motion_review_pending": false,
+  "reason": "Native local fallback gives a duration limit that separate MCP start and stop calls cannot guarantee during a connection or tool failure",
+  "motion_review": "Contact sheet at one second intervals shows front, both sides, back and return, with changing metal reflections. Not a finish acceptance; reviewer rejected current surface defects."
+}

@@ -1,0 +1,21 @@
+{
+  "status": "complete",
+  "distinct_models": 35,
+  "optimized_models": 28,
+  "retained_already_compact": 6,
+  "astral_retained": true,
+  "before": {
+    "meshes": 363,
+    "sections": 510,
+    "triangles": 1706616
+  },
+  "after": {
+    "meshes": 170,
+    "sections": 194,
+    "triangles": 1706616
+  },
+  "bytes_before": 142438407,
+  "bytes_after": 93213831,
+  "all_changed_models_reviewed": true,
+  "production_assets_preserved": true
+}

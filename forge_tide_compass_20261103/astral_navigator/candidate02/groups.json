@@ -1,0 +1,1974 @@
+[
+  {
+    "name": "Engraved gold perimeter case",
+    "role": "metal",
+    "smooth": true,
+    "plain_vertical_walls": true
+  },
+  {
+    "name": "Fine gold perimeter lip",
+    "role": "metal",
+    "smooth": true,
+    "plain_vertical_walls": true
+  },
+  {
+    "name": "Engraved navy celestial chart and ornament field",
+    "role": "field",
+    "smooth": true
+  },
+  {
+    "name": "Engraved navy celestial chart and ornament field finished side walls",
+    "role": "side",
+    "smooth": true
+  },
+  {
+    "name": "Gold outer graduation surround",
+    "role": "metal",
+    "smooth": true,
+    "plain_vertical_walls": true
+  },
+  {
+    "name": "Gold inner graduation surround",
+    "role": "metal",
+    "smooth": true,
+    "plain_vertical_walls": true
+  },
+  {
+    "name": "Inner compass guide circle",
+    "role": "metal",
+    "smooth": true,
+    "plain_vertical_walls": true
+  },
+  {
+    "name": "Inner fine concentric guide",
+    "role": "metal",
+    "smooth": true,
+    "plain_vertical_walls": true
+  },
+  {
+    "name": "Raised scale graduation 1",
+    "role": "metal",
+    "smooth": false,
+    "plain_vertical_walls": true
+  },
+  {
+    "name": "Raised scale graduation 2",
+    "role": "metal",
+    "smooth": false,
+    "plain_vertical_walls": true
+  },
+  {
+    "name": "Raised scale graduation 3",
+    "role": "metal",
+    "smooth": false,
+    "plain_vertical_walls": true
+  },
+  {
+    "name": "Raised scale graduation 4",
+    "role": "metal",
+    "smooth": false,
+    "plain_vertical_walls": true
+  },
+  {
+    "name": "Raised scale graduation 5",
+    "role": "metal",
+    "smooth": false,
+    "plain_vertical_walls": true
+  },
+  {
+    "name": "Raised scale graduation 6",
+    "role": "metal",
+    "smooth": false,
+    "plain_vertical_walls": true
+  },
+  {
+    "name": "Raised scale graduation 7",
+    "role": "metal",
+    "smooth": false,
+    "plain_vertical_walls": true
+  },
+  {
+    "name": "Raised scale graduation 8",
+    "role": "metal",
+    "smooth": false,
+    "plain_vertical_walls": true
+  },
+  {
+    "name": "Raised scale graduation 9",
+    "role": "metal",
+    "smooth": false,
+    "plain_vertical_walls": true
+  },
+  {
+    "name": "Raised scale graduation 10",
+    "role": "metal",
+    "smooth": false,
+    "plain_vertical_walls": true
+  },
+  {
+    "name": "Raised scale graduation 11",
+    "role": "metal",
+    "smooth": false,
+    "plain_vertical_walls": true
+  },
+  {
+    "name": "Raised scale graduation 12",
+    "role": "metal",
+    "smooth": false,
+    "plain_vertical_walls": true
+  },
+  {
+    "name": "Raised scale graduation 13",
+    "role": "metal",
+    "smooth": false,
+    "plain_vertical_walls": true
+  },
+  {
+    "name": "Raised scale graduation 14",
+    "role": "metal",
+    "smooth": false,
+    "plain_vertical_walls": true
+  },
+  {
+    "name": "Raised scale graduation 15",
+    "role": "metal",
+    "smooth": false,
+    "plain_vertical_walls": true
+  },
+  {
+    "name": "Raised scale graduation 16",
+    "role": "metal",
+    "smooth": false,
+    "plain_vertical_walls": true
+  },
+  {
+    "name": "Raised scale graduation 17",
+    "role": "metal",
+    "smooth": false,
+    "plain_vertical_walls": true
+  },
+  {
+    "name": "Raised scale graduation 18",
+    "role": "metal",
+    "smooth": false,
+    "plain_vertical_walls": true
+  },
+  {
+    "name": "Raised scale graduation 19",
+    "role": "metal",
+    "smooth": false,
+    "plain_vertical_walls": true
+  },
+  {
+    "name": "Raised scale graduation 20",
+    "role": "metal",
+    "smooth": false,
+    "plain_vertical_walls": true
+  },
+  {
+    "name": "Raised scale graduation 21",
+    "role": "metal",
+    "smooth": false,
+    "plain_vertical_walls": true
+  },
+  {
+    "name": "Raised scale graduation 22",
+    "role": "metal",
+    "smooth": false,
+    "plain_vertical_walls": true
+  },
+  {
+    "name": "Raised scale graduation 23",
+    "role": "metal",
+    "smooth": false,
+    "plain_vertical_walls": true
+  },
+  {
+    "name": "Raised scale graduation 24",
+    "role": "metal",
+    "smooth": false,
+    "plain_vertical_walls": true
+  },
+  {
+    "name": "Raised scale graduation 25",
+    "role": "metal",
+    "smooth": false,
+    "plain_vertical_walls": true
+  },
+  {
+    "name": "Raised scale graduation 26",
+    "role": "metal",
+    "smooth": false,
+    "plain_vertical_walls": true
+  },
+  {
+    "name": "Raised scale graduation 27",
+    "role": "metal",
+    "smooth": false,
+    "plain_vertical_walls": true
+  },
+  {
+    "name": "Raised scale graduation 28",
+    "role": "metal",
+    "smooth": false,
+    "plain_vertical_walls": true
+  },
+  {
+    "name": "Raised scale graduation 29",
+    "role": "metal",
+    "smooth": false,
+    "plain_vertical_walls": true
+  },
+  {
+    "name": "Raised scale graduation 30",
+    "role": "metal",
+    "smooth": false,
+    "plain_vertical_walls": true
+  },
+  {
+    "name": "Raised scale graduation 31",
+    "role": "metal",
+    "smooth": false,
+    "plain_vertical_walls": true
+  },
+  {
+    "name": "Raised scale graduation 32",
+    "role": "metal",
+    "smooth": false,
+    "plain_vertical_walls": true
+  },
+  {
+    "name": "Raised scale graduation 33",
+    "role": "metal",
+    "smooth": false,
+    "plain_vertical_walls": true
+  },
+  {
+    "name": "Raised scale graduation 34",
+    "role": "metal",
+    "smooth": false,
+    "plain_vertical_walls": true
+  },
+  {
+    "name": "Raised scale graduation 35",
+    "role": "metal",
+    "smooth": false,
+    "plain_vertical_walls": true
+  },
+  {
+    "name": "Raised scale graduation 36",
+    "role": "metal",
+    "smooth": false,
+    "plain_vertical_walls": true
+  },
+  {
+    "name": "Raised scale graduation 37",
+    "role": "metal",
+    "smooth": false,
+    "plain_vertical_walls": true
+  },
+  {
+    "name": "Raised scale graduation 38",
+    "role": "metal",
+    "smooth": false,
+    "plain_vertical_walls": true
+  },
+  {
+    "name": "Raised scale graduation 39",
+    "role": "metal",
+    "smooth": false,
+    "plain_vertical_walls": true
+  },
+  {
+    "name": "Raised scale graduation 40",
+    "role": "metal",
+    "smooth": false,
+    "plain_vertical_walls": true
+  },
+  {
+    "name": "Raised scale graduation 41",
+    "role": "metal",
+    "smooth": false,
+    "plain_vertical_walls": true
+  },
+  {
+    "name": "Raised scale graduation 42",
+    "role": "metal",
+    "smooth": false,
+    "plain_vertical_walls": true
+  },
+  {
+    "name": "Raised scale graduation 43",
+    "role": "metal",
+    "smooth": false,
+    "plain_vertical_walls": true
+  },
+  {
+    "name": "Raised scale graduation 44",
+    "role": "metal",
+    "smooth": false,
+    "plain_vertical_walls": true
+  },
+  {
+    "name": "Raised scale graduation 45",
+    "role": "metal",
+    "smooth": false,
+    "plain_vertical_walls": true
+  },
+  {
+    "name": "Raised scale graduation 46",
+    "role": "metal",
+    "smooth": false,
+    "plain_vertical_walls": true
+  },
+  {
+    "name": "Raised scale graduation 47",
+    "role": "metal",
+    "smooth": false,
+    "plain_vertical_walls": true
+  },
+  {
+    "name": "Raised scale graduation 48",
+    "role": "metal",
+    "smooth": false,
+    "plain_vertical_walls": true
+  },
+  {
+    "name": "Raised scale graduation 49",
+    "role": "metal",
+    "smooth": false,
+    "plain_vertical_walls": true
+  },
+  {
+    "name": "Raised scale graduation 50",
+    "role": "metal",
+    "smooth": false,
+    "plain_vertical_walls": true
+  },
+  {
+    "name": "Raised scale graduation 51",
+    "role": "metal",
+    "smooth": false,
+    "plain_vertical_walls": true
+  },
+  {
+    "name": "Raised scale graduation 52",
+    "role": "metal",
+    "smooth": false,
+    "plain_vertical_walls": true
+  },
+  {
+    "name": "Raised scale graduation 53",
+    "role": "metal",
+    "smooth": false,
+    "plain_vertical_walls": true
+  },
+  {
+    "name": "Raised scale graduation 54",
+    "role": "metal",
+    "smooth": false,
+    "plain_vertical_walls": true
+  },
+  {
+    "name": "Raised scale graduation 55",
+    "role": "metal",
+    "smooth": false,
+    "plain_vertical_walls": true
+  },
+  {
+    "name": "Raised scale graduation 56",
+    "role": "metal",
+    "smooth": false,
+    "plain_vertical_walls": true
+  },
+  {
+    "name": "Raised scale graduation 57",
+    "role": "metal",
+    "smooth": false,
+    "plain_vertical_walls": true
+  },
+  {
+    "name": "Raised scale graduation 58",
+    "role": "metal",
+    "smooth": false,
+    "plain_vertical_walls": true
+  },
+  {
+    "name": "Raised scale graduation 59",
+    "role": "metal",
+    "smooth": false,
+    "plain_vertical_walls": true
+  },
+  {
+    "name": "Raised scale graduation 60",
+    "role": "metal",
+    "smooth": false,
+    "plain_vertical_walls": true
+  },
+  {
+    "name": "Raised scale graduation 61",
+    "role": "metal",
+    "smooth": false,
+    "plain_vertical_walls": true
+  },
+  {
+    "name": "Raised scale graduation 62",
+    "role": "metal",
+    "smooth": false,
+    "plain_vertical_walls": true
+  },
+  {
+    "name": "Raised scale graduation 63",
+    "role": "metal",
+    "smooth": false,
+    "plain_vertical_walls": true
+  },
+  {
+    "name": "Raised scale graduation 64",
+    "role": "metal",
+    "smooth": false,
+    "plain_vertical_walls": true
+  },
+  {
+    "name": "Raised scale graduation 65",
+    "role": "metal",
+    "smooth": false,
+    "plain_vertical_walls": true
+  },
+  {
+    "name": "Raised scale graduation 66",
+    "role": "metal",
+    "smooth": false,
+    "plain_vertical_walls": true
+  },
+  {
+    "name": "Raised scale graduation 67",
+    "role": "metal",
+    "smooth": false,
+    "plain_vertical_walls": true
+  },
+  {
+    "name": "Raised scale graduation 68",
+    "role": "metal",
+    "smooth": false,
+    "plain_vertical_walls": true
+  },
+  {
+    "name": "Raised scale graduation 69",
+    "role": "metal",
+    "smooth": false,
+    "plain_vertical_walls": true
+  },
+  {
+    "name": "Raised scale graduation 70",
+    "role": "metal",
+    "smooth": false,
+    "plain_vertical_walls": true
+  },
+  {
+    "name": "Raised scale graduation 71",
+    "role": "metal",
+    "smooth": false,
+    "plain_vertical_walls": true
+  },
+  {
+    "name": "Raised scale graduation 72",
+    "role": "metal",
+    "smooth": false,
+    "plain_vertical_walls": true
+  },
+  {
+    "name": "Raised scale graduation 73",
+    "role": "metal",
+    "smooth": false,
+    "plain_vertical_walls": true
+  },
+  {
+    "name": "Raised scale graduation 74",
+    "role": "metal",
+    "smooth": false,
+    "plain_vertical_walls": true
+  },
+  {
+    "name": "Raised scale graduation 75",
+    "role": "metal",
+    "smooth": false,
+    "plain_vertical_walls": true
+  },
+  {
+    "name": "Raised scale graduation 76",
+    "role": "metal",
+    "smooth": false,
+    "plain_vertical_walls": true
+  },
+  {
+    "name": "Raised scale graduation 77",
+    "role": "metal",
+    "smooth": false,
+    "plain_vertical_walls": true
+  },
+  {
+    "name": "Raised scale graduation 78",
+    "role": "metal",
+    "smooth": false,
+    "plain_vertical_walls": true
+  },
+  {
+    "name": "Raised scale graduation 79",
+    "role": "metal",
+    "smooth": false,
+    "plain_vertical_walls": true
+  },
+  {
+    "name": "Raised scale graduation 80",
+    "role": "metal",
+    "smooth": false,
+    "plain_vertical_walls": true
+  },
+  {
+    "name": "Raised scale graduation 81",
+    "role": "metal",
+    "smooth": false,
+    "plain_vertical_walls": true
+  },
+  {
+    "name": "Raised scale graduation 82",
+    "role": "metal",
+    "smooth": false,
+    "plain_vertical_walls": true
+  },
+  {
+    "name": "Raised scale graduation 83",
+    "role": "metal",
+    "smooth": false,
+    "plain_vertical_walls": true
+  },
+  {
+    "name": "Raised scale graduation 84",
+    "role": "metal",
+    "smooth": false,
+    "plain_vertical_walls": true
+  },
+  {
+    "name": "Raised scale graduation 85",
+    "role": "metal",
+    "smooth": false,
+    "plain_vertical_walls": true
+  },
+  {
+    "name": "Raised scale graduation 86",
+    "role": "metal",
+    "smooth": false,
+    "plain_vertical_walls": true
+  },
+  {
+    "name": "Raised scale graduation 87",
+    "role": "metal",
+    "smooth": false,
+    "plain_vertical_walls": true
+  },
+  {
+    "name": "Raised scale graduation 88",
+    "role": "metal",
+    "smooth": false,
+    "plain_vertical_walls": true
+  },
+  {
+    "name": "Raised scale graduation 89",
+    "role": "metal",
+    "smooth": false,
+    "plain_vertical_walls": true
+  },
+  {
+    "name": "Raised scale graduation 90",
+    "role": "metal",
+    "smooth": false,
+    "plain_vertical_walls": true
+  },
+  {
+    "name": "Raised scale graduation 91",
+    "role": "metal",
+    "smooth": false,
+    "plain_vertical_walls": true
+  },
+  {
+    "name": "Raised scale graduation 92",
+    "role": "metal",
+    "smooth": false,
+    "plain_vertical_walls": true
+  },
+  {
+    "name": "Raised scale graduation 93",
+    "role": "metal",
+    "smooth": false,
+    "plain_vertical_walls": true
+  },
+  {
+    "name": "Raised scale graduation 94",
+    "role": "metal",
+    "smooth": false,
+    "plain_vertical_walls": true
+  },
+  {
+    "name": "Raised scale graduation 95",
+    "role": "metal",
+    "smooth": false,
+    "plain_vertical_walls": true
+  },
+  {
+    "name": "Raised scale graduation 96",
+    "role": "metal",
+    "smooth": false,
+    "plain_vertical_walls": true
+  },
+  {
+    "name": "Raised scale graduation 97",
+    "role": "metal",
+    "smooth": false,
+    "plain_vertical_walls": true
+  },
+  {
+    "name": "Raised scale graduation 98",
+    "role": "metal",
+    "smooth": false,
+    "plain_vertical_walls": true
+  },
+  {
+    "name": "Raised scale graduation 99",
+    "role": "metal",
+    "smooth": false,
+    "plain_vertical_walls": true
+  },
+  {
+    "name": "Raised scale graduation 100",
+    "role": "metal",
+    "smooth": false,
+    "plain_vertical_walls": true
+  },
+  {
+    "name": "Raised scale graduation 101",
+    "role": "metal",
+    "smooth": false,
+    "plain_vertical_walls": true
+  },
+  {
+    "name": "Raised scale graduation 102",
+    "role": "metal",
+    "smooth": false,
+    "plain_vertical_walls": true
+  },
+  {
+    "name": "Raised scale graduation 103",
+    "role": "metal",
+    "smooth": false,
+    "plain_vertical_walls": true
+  },
+  {
+    "name": "Raised scale graduation 104",
+    "role": "metal",
+    "smooth": false,
+    "plain_vertical_walls": true
+  },
+  {
+    "name": "Raised scale graduation 105",
+    "role": "metal",
+    "smooth": false,
+    "plain_vertical_walls": true
+  },
+  {
+    "name": "Raised scale graduation 106",
+    "role": "metal",
+    "smooth": false,
+    "plain_vertical_walls": true
+  },
+  {
+    "name": "Raised scale graduation 107",
+    "role": "metal",
+    "smooth": false,
+    "plain_vertical_walls": true
+  },
+  {
+    "name": "Raised scale graduation 108",
+    "role": "metal",
+    "smooth": false,
+    "plain_vertical_walls": true
+  },
+  {
+    "name": "Raised scale graduation 109",
+    "role": "metal",
+    "smooth": false,
+    "plain_vertical_walls": true
+  },
+  {
+    "name": "Raised scale graduation 110",
+    "role": "metal",
+    "smooth": false,
+    "plain_vertical_walls": true
+  },
+  {
+    "name": "Raised scale graduation 111",
+    "role": "metal",
+    "smooth": false,
+    "plain_vertical_walls": true
+  },
+  {
+    "name": "Raised scale graduation 112",
+    "role": "metal",
+    "smooth": false,
+    "plain_vertical_walls": true
+  },
+  {
+    "name": "Raised scale graduation 113",
+    "role": "metal",
+    "smooth": false,
+    "plain_vertical_walls": true
+  },
+  {
+    "name": "Raised scale graduation 114",
+    "role": "metal",
+    "smooth": false,
+    "plain_vertical_walls": true
+  },
+  {
+    "name": "Raised scale graduation 115",
+    "role": "metal",
+    "smooth": false,
+    "plain_vertical_walls": true
+  },
+  {
+    "name": "Raised scale graduation 116",
+    "role": "metal",
+    "smooth": false,
+    "plain_vertical_walls": true
+  },
+  {
+    "name": "Raised scale graduation 117",
+    "role": "metal",
+    "smooth": false,
+    "plain_vertical_walls": true
+  },
+  {
+    "name": "Raised scale graduation 118",
+    "role": "metal",
+    "smooth": false,
+    "plain_vertical_walls": true
+  },
+  {
+    "name": "Raised scale graduation 119",
+    "role": "metal",
+    "smooth": false,
+    "plain_vertical_walls": true
+  },
+  {
+    "name": "Raised scale graduation 120",
+    "role": "metal",
+    "smooth": false,
+    "plain_vertical_walls": true
+  },
+  {
+    "name": "Raised scale graduation 121",
+    "role": "metal",
+    "smooth": false,
+    "plain_vertical_walls": true
+  },
+  {
+    "name": "Raised scale graduation 122",
+    "role": "metal",
+    "smooth": false,
+    "plain_vertical_walls": true
+  },
+  {
+    "name": "Raised scale graduation 123",
+    "role": "metal",
+    "smooth": false,
+    "plain_vertical_walls": true
+  },
+  {
+    "name": "Raised scale graduation 124",
+    "role": "metal",
+    "smooth": false,
+    "plain_vertical_walls": true
+  },
+  {
+    "name": "Raised scale graduation 125",
+    "role": "metal",
+    "smooth": false,
+    "plain_vertical_walls": true
+  },
+  {
+    "name": "Raised scale graduation 126",
+    "role": "metal",
+    "smooth": false,
+    "plain_vertical_walls": true
+  },
+  {
+    "name": "Raised scale graduation 127",
+    "role": "metal",
+    "smooth": false,
+    "plain_vertical_walls": true
+  },
+  {
+    "name": "Raised scale graduation 128",
+    "role": "metal",
+    "smooth": false,
+    "plain_vertical_walls": true
+  },
+  {
+    "name": "Raised scale graduation 129",
+    "role": "metal",
+    "smooth": false,
+    "plain_vertical_walls": true
+  },
+  {
+    "name": "Raised scale graduation 130",
+    "role": "metal",
+    "smooth": false,
+    "plain_vertical_walls": true
+  },
+  {
+    "name": "Raised scale graduation 131",
+    "role": "metal",
+    "smooth": false,
+    "plain_vertical_walls": true
+  },
+  {
+    "name": "Raised scale graduation 132",
+    "role": "metal",
+    "smooth": false,
+    "plain_vertical_walls": true
+  },
+  {
+    "name": "Raised scale graduation 133",
+    "role": "metal",
+    "smooth": false,
+    "plain_vertical_walls": true
+  },
+  {
+    "name": "Raised scale graduation 134",
+    "role": "metal",
+    "smooth": false,
+    "plain_vertical_walls": true
+  },
+  {
+    "name": "Raised scale graduation 135",
+    "role": "metal",
+    "smooth": false,
+    "plain_vertical_walls": true
+  },
+  {
+    "name": "Raised scale graduation 136",
+    "role": "metal",
+    "smooth": false,
+    "plain_vertical_walls": true
+  },
+  {
+    "name": "Raised scale graduation 137",
+    "role": "metal",
+    "smooth": false,
+    "plain_vertical_walls": true
+  },
+  {
+    "name": "Raised scale graduation 138",
+    "role": "metal",
+    "smooth": false,
+    "plain_vertical_walls": true
+  },
+  {
+    "name": "Raised scale graduation 139",
+    "role": "metal",
+    "smooth": false,
+    "plain_vertical_walls": true
+  },
+  {
+    "name": "Raised scale graduation 140",
+    "role": "metal",
+    "smooth": false,
+    "plain_vertical_walls": true
+  },
+  {
+    "name": "Raised scale graduation 141",
+    "role": "metal",
+    "smooth": false,
+    "plain_vertical_walls": true
+  },
+  {
+    "name": "Raised scale graduation 142",
+    "role": "metal",
+    "smooth": false,
+    "plain_vertical_walls": true
+  },
+  {
+    "name": "Raised scale graduation 143",
+    "role": "metal",
+    "smooth": false,
+    "plain_vertical_walls": true
+  },
+  {
+    "name": "Raised scale graduation 144",
+    "role": "metal",
+    "smooth": false,
+    "plain_vertical_walls": true
+  },
+  {
+    "name": "Raised scale graduation 145",
+    "role": "metal",
+    "smooth": false,
+    "plain_vertical_walls": true
+  },
+  {
+    "name": "Raised scale graduation 146",
+    "role": "metal",
+    "smooth": false,
+    "plain_vertical_walls": true
+  },
+  {
+    "name": "Raised scale graduation 147",
+    "role": "metal",
+    "smooth": false,
+    "plain_vertical_walls": true
+  },
+  {
+    "name": "Raised scale graduation 148",
+    "role": "metal",
+    "smooth": false,
+    "plain_vertical_walls": true
+  },
+  {
+    "name": "Raised scale graduation 149",
+    "role": "metal",
+    "smooth": false,
+    "plain_vertical_walls": true
+  },
+  {
+    "name": "Raised scale graduation 150",
+    "role": "metal",
+    "smooth": false,
+    "plain_vertical_walls": true
+  },
+  {
+    "name": "Raised scale graduation 151",
+    "role": "metal",
+    "smooth": false,
+    "plain_vertical_walls": true
+  },
+  {
+    "name": "Raised scale graduation 152",
+    "role": "metal",
+    "smooth": false,
+    "plain_vertical_walls": true
+  },
+  {
+    "name": "Raised scale graduation 153",
+    "role": "metal",
+    "smooth": false,
+    "plain_vertical_walls": true
+  },
+  {
+    "name": "Raised scale graduation 154",
+    "role": "metal",
+    "smooth": false,
+    "plain_vertical_walls": true
+  },
+  {
+    "name": "Raised scale graduation 155",
+    "role": "metal",
+    "smooth": false,
+    "plain_vertical_walls": true
+  },
+  {
+    "name": "Raised scale graduation 156",
+    "role": "metal",
+    "smooth": false,
+    "plain_vertical_walls": true
+  },
+  {
+    "name": "Raised scale graduation 157",
+    "role": "metal",
+    "smooth": false,
+    "plain_vertical_walls": true
+  },
+  {
+    "name": "Raised scale graduation 158",
+    "role": "metal",
+    "smooth": false,
+    "plain_vertical_walls": true
+  },
+  {
+    "name": "Raised scale graduation 159",
+    "role": "metal",
+    "smooth": false,
+    "plain_vertical_walls": true
+  },
+  {
+    "name": "Raised scale graduation 160",
+    "role": "metal",
+    "smooth": false,
+    "plain_vertical_walls": true
+  },
+  {
+    "name": "Raised scale graduation 161",
+    "role": "metal",
+    "smooth": false,
+    "plain_vertical_walls": true
+  },
+  {
+    "name": "Raised scale graduation 162",
+    "role": "metal",
+    "smooth": false,
+    "plain_vertical_walls": true
+  },
+  {
+    "name": "Raised scale graduation 163",
+    "role": "metal",
+    "smooth": false,
+    "plain_vertical_walls": true
+  },
+  {
+    "name": "Raised scale graduation 164",
+    "role": "metal",
+    "smooth": false,
+    "plain_vertical_walls": true
+  },
+  {
+    "name": "Raised scale graduation 165",
+    "role": "metal",
+    "smooth": false,
+    "plain_vertical_walls": true
+  },
+  {
+    "name": "Raised scale graduation 166",
+    "role": "metal",
+    "smooth": false,
+    "plain_vertical_walls": true
+  },
+  {
+    "name": "Raised scale graduation 167",
+    "role": "metal",
+    "smooth": false,
+    "plain_vertical_walls": true
+  },
+  {
+    "name": "Raised scale graduation 168",
+    "role": "metal",
+    "smooth": false,
+    "plain_vertical_walls": true
+  },
+  {
+    "name": "Raised scale graduation 169",
+    "role": "metal",
+    "smooth": false,
+    "plain_vertical_walls": true
+  },
+  {
+    "name": "Raised scale graduation 170",
+    "role": "metal",
+    "smooth": false,
+    "plain_vertical_walls": true
+  },
+  {
+    "name": "Raised scale graduation 171",
+    "role": "metal",
+    "smooth": false,
+    "plain_vertical_walls": true
+  },
+  {
+    "name": "Raised scale graduation 172",
+    "role": "metal",
+    "smooth": false,
+    "plain_vertical_walls": true
+  },
+  {
+    "name": "Raised scale graduation 173",
+    "role": "metal",
+    "smooth": false,
+    "plain_vertical_walls": true
+  },
+  {
+    "name": "Raised scale graduation 174",
+    "role": "metal",
+    "smooth": false,
+    "plain_vertical_walls": true
+  },
+  {
+    "name": "Raised scale graduation 175",
+    "role": "metal",
+    "smooth": false,
+    "plain_vertical_walls": true
+  },
+  {
+    "name": "Raised scale graduation 176",
+    "role": "metal",
+    "smooth": false,
+    "plain_vertical_walls": true
+  },
+  {
+    "name": "Raised scale graduation 177",
+    "role": "metal",
+    "smooth": false,
+    "plain_vertical_walls": true
+  },
+  {
+    "name": "Raised scale graduation 178",
+    "role": "metal",
+    "smooth": false,
+    "plain_vertical_walls": true
+  },
+  {
+    "name": "Raised scale graduation 179",
+    "role": "metal",
+    "smooth": false,
+    "plain_vertical_walls": true
+  },
+  {
+    "name": "Raised scale graduation 180",
+    "role": "metal",
+    "smooth": false,
+    "plain_vertical_walls": true
+  },
+  {
+    "name": "Diagonal gold compass blade 1",
+    "role": "metal",
+    "smooth": false,
+    "plain_vertical_walls": true
+  },
+  {
+    "name": "Diagonal gold compass blade 2",
+    "role": "metal",
+    "smooth": false,
+    "plain_vertical_walls": true
+  },
+  {
+    "name": "Diagonal gold compass blade 3",
+    "role": "metal",
+    "smooth": false,
+    "plain_vertical_walls": true
+  },
+  {
+    "name": "Diagonal gold compass blade 4",
+    "role": "metal",
+    "smooth": false,
+    "plain_vertical_walls": true
+  },
+  {
+    "name": "Gold and navy cardinal compass arm 1",
+    "role": "metal",
+    "smooth": false,
+    "plain_vertical_walls": true
+  },
+  {
+    "name": "Gold and navy cardinal compass arm 2",
+    "role": "metal",
+    "smooth": false,
+    "plain_vertical_walls": true
+  },
+  {
+    "name": "Gold and navy cardinal compass arm 3",
+    "role": "metal",
+    "smooth": false,
+    "plain_vertical_walls": true
+  },
+  {
+    "name": "Gold and navy cardinal compass arm 4",
+    "role": "metal",
+    "smooth": false,
+    "plain_vertical_walls": true
+  },
+  {
+    "name": "Diagonal faceted graduation marker 1",
+    "role": "metal",
+    "smooth": false,
+    "plain_vertical_walls": true
+  },
+  {
+    "name": "Diagonal faceted graduation marker 2",
+    "role": "metal",
+    "smooth": false,
+    "plain_vertical_walls": true
+  },
+  {
+    "name": "Diagonal faceted graduation marker 3",
+    "role": "metal",
+    "smooth": false,
+    "plain_vertical_walls": true
+  },
+  {
+    "name": "Diagonal faceted graduation marker 4",
+    "role": "metal",
+    "smooth": false,
+    "plain_vertical_walls": true
+  },
+  {
+    "name": "Central sapphire stepped gold bezel",
+    "role": "metal",
+    "smooth": true,
+    "plain_vertical_walls": true
+  },
+  {
+    "name": "Central sapphire fine inner lip",
+    "role": "metal",
+    "smooth": true,
+    "plain_vertical_walls": true
+  },
+  {
+    "name": "Central round faceted sapphire front brilliant",
+    "role": "CrestGem_Sapphire",
+    "smooth": false
+  },
+  {
+    "name": "Central round faceted sapphire reverse brilliant",
+    "role": "CrestGem_Sapphire",
+    "smooth": false
+  },
+  {
+    "name": "Outer sapphire gold setting 1",
+    "role": "metal",
+    "smooth": true,
+    "plain_vertical_walls": true
+  },
+  {
+    "name": "Outer round sapphire 1 front brilliant",
+    "role": "CrestGem_Sapphire",
+    "smooth": false
+  },
+  {
+    "name": "Outer round sapphire 1 reverse brilliant",
+    "role": "CrestGem_Sapphire",
+    "smooth": false
+  },
+  {
+    "name": "Outer sapphire gold setting 2",
+    "role": "metal",
+    "smooth": true,
+    "plain_vertical_walls": true
+  },
+  {
+    "name": "Outer round sapphire 2 front brilliant",
+    "role": "CrestGem_Sapphire",
+    "smooth": false
+  },
+  {
+    "name": "Outer round sapphire 2 reverse brilliant",
+    "role": "CrestGem_Sapphire",
+    "smooth": false
+  },
+  {
+    "name": "Outer sapphire gold setting 3",
+    "role": "metal",
+    "smooth": true,
+    "plain_vertical_walls": true
+  },
+  {
+    "name": "Outer round sapphire 3 front brilliant",
+    "role": "CrestGem_Sapphire",
+    "smooth": false
+  },
+  {
+    "name": "Outer round sapphire 3 reverse brilliant",
+    "role": "CrestGem_Sapphire",
+    "smooth": false
+  },
+  {
+    "name": "Outer sapphire gold setting 4",
+    "role": "metal",
+    "smooth": true,
+    "plain_vertical_walls": true
+  },
+  {
+    "name": "Outer round sapphire 4 front brilliant",
+    "role": "CrestGem_Sapphire",
+    "smooth": false
+  },
+  {
+    "name": "Outer round sapphire 4 reverse brilliant",
+    "role": "CrestGem_Sapphire",
+    "smooth": false
+  },
+  {
+    "name": "Cardinal sapphire gold diamond setting 1",
+    "role": "metal",
+    "smooth": false,
+    "plain_vertical_walls": true
+  },
+  {
+    "name": "Cardinal marquise sapphire 1 front cut",
+    "role": "CrestGem_Sapphire",
+    "smooth": false
+  },
+  {
+    "name": "Cardinal marquise sapphire 1 reverse cut",
+    "role": "CrestGem_Sapphire",
+    "smooth": false
+  },
+  {
+    "name": "Cardinal sapphire gold diamond setting 2",
+    "role": "metal",
+    "smooth": false,
+    "plain_vertical_walls": true
+  },
+  {
+    "name": "Cardinal marquise sapphire 2 front cut",
+    "role": "CrestGem_Sapphire",
+    "smooth": false
+  },
+  {
+    "name": "Cardinal marquise sapphire 2 reverse cut",
+    "role": "CrestGem_Sapphire",
+    "smooth": false
+  },
+  {
+    "name": "Cardinal sapphire gold diamond setting 3",
+    "role": "metal",
+    "smooth": false,
+    "plain_vertical_walls": true
+  },
+  {
+    "name": "Cardinal marquise sapphire 3 front cut",
+    "role": "CrestGem_Sapphire",
+    "smooth": false
+  },
+  {
+    "name": "Cardinal marquise sapphire 3 reverse cut",
+    "role": "CrestGem_Sapphire",
+    "smooth": false
+  },
+  {
+    "name": "Cardinal sapphire gold diamond setting 4",
+    "role": "metal",
+    "smooth": false,
+    "plain_vertical_walls": true
+  },
+  {
+    "name": "Cardinal marquise sapphire 4 front cut",
+    "role": "CrestGem_Sapphire",
+    "smooth": false
+  },
+  {
+    "name": "Cardinal marquise sapphire 4 reverse cut",
+    "role": "CrestGem_Sapphire",
+    "smooth": false
+  },
+  {
+    "name": "Reference traced gold scroll and celestial ornament 1",
+    "role": "metal",
+    "smooth": true
+  },
+  {
+    "name": "Reference traced gold scroll and celestial ornament 1 finished side walls",
+    "role": "side",
+    "smooth": true
+  },
+  {
+    "name": "Reference traced gold scroll and celestial ornament 2",
+    "role": "metal",
+    "smooth": true
+  },
+  {
+    "name": "Reference traced gold scroll and celestial ornament 2 finished side walls",
+    "role": "side",
+    "smooth": true
+  },
+  {
+    "name": "Reference traced gold scroll and celestial ornament 3",
+    "role": "metal",
+    "smooth": true
+  },
+  {
+    "name": "Reference traced gold scroll and celestial ornament 3 finished side walls",
+    "role": "side",
+    "smooth": true
+  },
+  {
+    "name": "Reference traced gold scroll and celestial ornament 4",
+    "role": "metal",
+    "smooth": true
+  },
+  {
+    "name": "Reference traced gold scroll and celestial ornament 4 finished side walls",
+    "role": "side",
+    "smooth": true
+  },
+  {
+    "name": "Reference traced gold scroll and celestial ornament 5",
+    "role": "metal",
+    "smooth": true
+  },
+  {
+    "name": "Reference traced gold scroll and celestial ornament 5 finished side walls",
+    "role": "side",
+    "smooth": true
+  },
+  {
+    "name": "Reference traced gold scroll and celestial ornament 6",
+    "role": "metal",
+    "smooth": true
+  },
+  {
+    "name": "Reference traced gold scroll and celestial ornament 6 finished side walls",
+    "role": "side",
+    "smooth": true
+  },
+  {
+    "name": "Reference traced gold scroll and celestial ornament 7",
+    "role": "metal",
+    "smooth": true
+  },
+  {
+    "name": "Reference traced gold scroll and celestial ornament 7 finished side walls",
+    "role": "side",
+    "smooth": true
+  },
+  {
+    "name": "Reference traced gold scroll and celestial ornament 8",
+    "role": "metal",
+    "smooth": true
+  },
+  {
+    "name": "Reference traced gold scroll and celestial ornament 8 finished side walls",
+    "role": "side",
+    "smooth": true
+  },
+  {
+    "name": "Reference traced gold scroll and celestial ornament 9",
+    "role": "metal",
+    "smooth": true
+  },
+  {
+    "name": "Reference traced gold scroll and celestial ornament 9 finished side walls",
+    "role": "side",
+    "smooth": true
+  },
+  {
+    "name": "Reference traced gold scroll and celestial ornament 10",
+    "role": "metal",
+    "smooth": true
+  },
+  {
+    "name": "Reference traced gold scroll and celestial ornament 10 finished side walls",
+    "role": "side",
+    "smooth": true
+  },
+  {
+    "name": "Reference traced gold scroll and celestial ornament 11",
+    "role": "metal",
+    "smooth": true
+  },
+  {
+    "name": "Reference traced gold scroll and celestial ornament 11 finished side walls",
+    "role": "side",
+    "smooth": true
+  },
+  {
+    "name": "Reference traced gold scroll and celestial ornament 12",
+    "role": "metal",
+    "smooth": true
+  },
+  {
+    "name": "Reference traced gold scroll and celestial ornament 12 finished side walls",
+    "role": "side",
+    "smooth": true
+  },
+  {
+    "name": "Reference traced gold scroll and celestial ornament 13",
+    "role": "metal",
+    "smooth": true
+  },
+  {
+    "name": "Reference traced gold scroll and celestial ornament 13 finished side walls",
+    "role": "side",
+    "smooth": true
+  },
+  {
+    "name": "Reference traced gold scroll and celestial ornament 14",
+    "role": "metal",
+    "smooth": true
+  },
+  {
+    "name": "Reference traced gold scroll and celestial ornament 14 finished side walls",
+    "role": "side",
+    "smooth": true
+  },
+  {
+    "name": "Reference traced gold scroll and celestial ornament 15",
+    "role": "metal",
+    "smooth": true
+  },
+  {
+    "name": "Reference traced gold scroll and celestial ornament 15 finished side walls",
+    "role": "side",
+    "smooth": true
+  },
+  {
+    "name": "Reference traced gold scroll and celestial ornament 16",
+    "role": "metal",
+    "smooth": true
+  },
+  {
+    "name": "Reference traced gold scroll and celestial ornament 16 finished side walls",
+    "role": "side",
+    "smooth": true
+  },
+  {
+    "name": "Reference traced gold scroll and celestial ornament 17",
+    "role": "metal",
+    "smooth": true
+  },
+  {
+    "name": "Reference traced gold scroll and celestial ornament 17 finished side walls",
+    "role": "side",
+    "smooth": true
+  },
+  {
+    "name": "Reference traced gold scroll and celestial ornament 18",
+    "role": "metal",
+    "smooth": true
+  },
+  {
+    "name": "Reference traced gold scroll and celestial ornament 18 finished side walls",
+    "role": "side",
+    "smooth": true
+  },
+  {
+    "name": "Reference traced gold scroll and celestial ornament 19",
+    "role": "metal",
+    "smooth": true
+  },
+  {
+    "name": "Reference traced gold scroll and celestial ornament 19 finished side walls",
+    "role": "side",
+    "smooth": true
+  },
+  {
+    "name": "Reference traced gold scroll and celestial ornament 20",
+    "role": "metal",
+    "smooth": true
+  },
+  {
+    "name": "Reference traced gold scroll and celestial ornament 20 finished side walls",
+    "role": "side",
+    "smooth": true
+  },
+  {
+    "name": "Reference traced gold scroll and celestial ornament 21",
+    "role": "metal",
+    "smooth": true
+  },
+  {
+    "name": "Reference traced gold scroll and celestial ornament 21 finished side walls",
+    "role": "side",
+    "smooth": true
+  },
+  {
+    "name": "Reference traced gold scroll and celestial ornament 22",
+    "role": "metal",
+    "smooth": true
+  },
+  {
+    "name": "Reference traced gold scroll and celestial ornament 22 finished side walls",
+    "role": "side",
+    "smooth": true
+  },
+  {
+    "name": "Reference traced gold scroll and celestial ornament 23",
+    "role": "metal",
+    "smooth": true
+  },
+  {
+    "name": "Reference traced gold scroll and celestial ornament 23 finished side walls",
+    "role": "side",
+    "smooth": true
+  },
+  {
+    "name": "Reference traced gold scroll and celestial ornament 24",
+    "role": "metal",
+    "smooth": true
+  },
+  {
+    "name": "Reference traced gold scroll and celestial ornament 24 finished side walls",
+    "role": "side",
+    "smooth": true
+  },
+  {
+    "name": "Reference traced gold scroll and celestial ornament 25",
+    "role": "metal",
+    "smooth": true
+  },
+  {
+    "name": "Reference traced gold scroll and celestial ornament 25 finished side walls",
+    "role": "side",
+    "smooth": true
+  },
+  {
+    "name": "Reference traced gold scroll and celestial ornament 26",
+    "role": "metal",
+    "smooth": true
+  },
+  {
+    "name": "Reference traced gold scroll and celestial ornament 26 finished side walls",
+    "role": "side",
+    "smooth": true
+  },
+  {
+    "name": "Reference traced gold scroll and celestial ornament 27",
+    "role": "metal",
+    "smooth": true
+  },
+  {
+    "name": "Reference traced gold scroll and celestial ornament 27 finished side walls",
+    "role": "side",
+    "smooth": true
+  },
+  {
+    "name": "Reference traced gold scroll and celestial ornament 28",
+    "role": "metal",
+    "smooth": true
+  },
+  {
+    "name": "Reference traced gold scroll and celestial ornament 28 finished side walls",
+    "role": "side",
+    "smooth": true
+  },
+  {
+    "name": "Reference traced gold scroll and celestial ornament 29",
+    "role": "metal",
+    "smooth": true
+  },
+  {
+    "name": "Reference traced gold scroll and celestial ornament 29 finished side walls",
+    "role": "side",
+    "smooth": true
+  },
+  {
+    "name": "Reference traced gold scroll and celestial ornament 30",
+    "role": "metal",
+    "smooth": true
+  },
+  {
+    "name": "Reference traced gold scroll and celestial ornament 30 finished side walls",
+    "role": "side",
+    "smooth": true
+  },
+  {
+    "name": "Reference traced gold scroll and celestial ornament 31",
+    "role": "metal",
+    "smooth": true
+  },
+  {
+    "name": "Reference traced gold scroll and celestial ornament 31 finished side walls",
+    "role": "side",
+    "smooth": true
+  },
+  {
+    "name": "Reference traced gold scroll and celestial ornament 32",
+    "role": "metal",
+    "smooth": true
+  },
+  {
+    "name": "Reference traced gold scroll and celestial ornament 32 finished side walls",
+    "role": "side",
+    "smooth": true
+  },
+  {
+    "name": "Reference traced gold scroll and celestial ornament 33",
+    "role": "metal",
+    "smooth": true
+  },
+  {
+    "name": "Reference traced gold scroll and celestial ornament 33 finished side walls",
+    "role": "side",
+    "smooth": true
+  },
+  {
+    "name": "Reference traced gold scroll and celestial ornament 34",
+    "role": "metal",
+    "smooth": true
+  },
+  {
+    "name": "Reference traced gold scroll and celestial ornament 34 finished side walls",
+    "role": "side",
+    "smooth": true
+  },
+  {
+    "name": "Reference traced gold scroll and celestial ornament 35",
+    "role": "metal",
+    "smooth": true
+  },
+  {
+    "name": "Reference traced gold scroll and celestial ornament 35 finished side walls",
+    "role": "side",
+    "smooth": true
+  },
+  {
+    "name": "Reference traced gold scroll and celestial ornament 36",
+    "role": "metal",
+    "smooth": true
+  },
+  {
+    "name": "Reference traced gold scroll and celestial ornament 36 finished side walls",
+    "role": "side",
+    "smooth": true
+  },
+  {
+    "name": "Reference traced gold scroll and celestial ornament 37",
+    "role": "metal",
+    "smooth": true
+  },
+  {
+    "name": "Reference traced gold scroll and celestial ornament 37 finished side walls",
+    "role": "side",
+    "smooth": true
+  },
+  {
+    "name": "Reference traced gold scroll and celestial ornament 38",
+    "role": "metal",
+    "smooth": true
+  },
+  {
+    "name": "Reference traced gold scroll and celestial ornament 38 finished side walls",
+    "role": "side",
+    "smooth": true
+  },
+  {
+    "name": "Reference traced gold scroll and celestial ornament 39",
+    "role": "metal",
+    "smooth": true
+  },
+  {
+    "name": "Reference traced gold scroll and celestial ornament 39 finished side walls",
+    "role": "side",
+    "smooth": true
+  },
+  {
+    "name": "Reference traced gold scroll and celestial ornament 40",
+    "role": "metal",
+    "smooth": true
+  },
+  {
+    "name": "Reference traced gold scroll and celestial ornament 40 finished side walls",
+    "role": "side",
+    "smooth": true
+  },
+  {
+    "name": "Reference traced gold scroll and celestial ornament 41",
+    "role": "metal",
+    "smooth": true
+  },
+  {
+    "name": "Reference traced gold scroll and celestial ornament 41 finished side walls",
+    "role": "side",
+    "smooth": true
+  },
+  {
+    "name": "Reference traced gold scroll and celestial ornament 42",
+    "role": "metal",
+    "smooth": true
+  },
+  {
+    "name": "Reference traced gold scroll and celestial ornament 42 finished side walls",
+    "role": "side",
+    "smooth": true
+  },
+  {
+    "name": "Reference traced gold scroll and celestial ornament 43",
+    "role": "metal",
+    "smooth": true
+  },
+  {
+    "name": "Reference traced gold scroll and celestial ornament 43 finished side walls",
+    "role": "side",
+    "smooth": true
+  },
+  {
+    "name": "Reference traced gold scroll and celestial ornament 44",
+    "role": "metal",
+    "smooth": true
+  },
+  {
+    "name": "Reference traced gold scroll and celestial ornament 44 finished side walls",
+    "role": "side",
+    "smooth": true
+  },
+  {
+    "name": "Reference traced gold scroll and celestial ornament 45",
+    "role": "metal",
+    "smooth": true
+  },
+  {
+    "name": "Reference traced gold scroll and celestial ornament 45 finished side walls",
+    "role": "side",
+    "smooth": true
+  },
+  {
+    "name": "Reference traced gold scroll and celestial ornament 46",
+    "role": "metal",
+    "smooth": true
+  },
+  {
+    "name": "Reference traced gold scroll and celestial ornament 46 finished side walls",
+    "role": "side",
+    "smooth": true
+  },
+  {
+    "name": "Reference traced gold scroll and celestial ornament 47",
+    "role": "metal",
+    "smooth": true
+  },
+  {
+    "name": "Reference traced gold scroll and celestial ornament 47 finished side walls",
+    "role": "side",
+    "smooth": true
+  },
+  {
+    "name": "Reference traced gold scroll and celestial ornament 48",
+    "role": "metal",
+    "smooth": true
+  },
+  {
+    "name": "Reference traced gold scroll and celestial ornament 48 finished side walls",
+    "role": "side",
+    "smooth": true
+  },
+  {
+    "name": "Reference traced gold scroll and celestial ornament 49",
+    "role": "metal",
+    "smooth": true
+  },
+  {
+    "name": "Reference traced gold scroll and celestial ornament 49 finished side walls",
+    "role": "side",
+    "smooth": true
+  },
+  {
+    "name": "Reference traced gold scroll and celestial ornament 50",
+    "role": "metal",
+    "smooth": true
+  },
+  {
+    "name": "Reference traced gold scroll and celestial ornament 50 finished side walls",
+    "role": "side",
+    "smooth": true
+  },
+  {
+    "name": "Reference traced gold scroll and celestial ornament 51",
+    "role": "metal",
+    "smooth": true
+  },
+  {
+    "name": "Reference traced gold scroll and celestial ornament 51 finished side walls",
+    "role": "side",
+    "smooth": true
+  },
+  {
+    "name": "Reference traced gold scroll and celestial ornament 52",
+    "role": "metal",
+    "smooth": true
+  },
+  {
+    "name": "Reference traced gold scroll and celestial ornament 52 finished side walls",
+    "role": "side",
+    "smooth": true
+  },
+  {
+    "name": "Reference traced gold scroll and celestial ornament 53",
+    "role": "metal",
+    "smooth": true
+  },
+  {
+    "name": "Reference traced gold scroll and celestial ornament 53 finished side walls",
+    "role": "side",
+    "smooth": true
+  },
+  {
+    "name": "Reference traced gold scroll and celestial ornament 54",
+    "role": "metal",
+    "smooth": true
+  },
+  {
+    "name": "Reference traced gold scroll and celestial ornament 54 finished side walls",
+    "role": "side",
+    "smooth": true
+  },
+  {
+    "name": "Reference traced gold scroll and celestial ornament 55",
+    "role": "metal",
+    "smooth": true
+  },
+  {
+    "name": "Reference traced gold scroll and celestial ornament 55 finished side walls",
+    "role": "side",
+    "smooth": true
+  },
+  {
+    "name": "Reference traced gold scroll and celestial ornament 56",
+    "role": "metal",
+    "smooth": true
+  },
+  {
+    "name": "Reference traced gold scroll and celestial ornament 56 finished side walls",
+    "role": "side",
+    "smooth": true
+  },
+  {
+    "name": "Reference traced gold scroll and celestial ornament 57",
+    "role": "metal",
+    "smooth": true
+  },
+  {
+    "name": "Reference traced gold scroll and celestial ornament 57 finished side walls",
+    "role": "side",
+    "smooth": true
+  },
+  {
+    "name": "Reference traced gold scroll and celestial ornament 58",
+    "role": "metal",
+    "smooth": true
+  },
+  {
+    "name": "Reference traced gold scroll and celestial ornament 58 finished side walls",
+    "role": "side",
+    "smooth": true
+  },
+  {
+    "name": "Reference traced gold scroll and celestial ornament 59",
+    "role": "metal",
+    "smooth": true
+  },
+  {
+    "name": "Reference traced gold scroll and celestial ornament 59 finished side walls",
+    "role": "side",
+    "smooth": true
+  },
+  {
+    "name": "Reference traced gold scroll and celestial ornament 60",
+    "role": "metal",
+    "smooth": true
+  },
+  {
+    "name": "Reference traced gold scroll and celestial ornament 60 finished side walls",
+    "role": "side",
+    "smooth": true
+  },
+  {
+    "name": "Circular cardinal stud 1",
+    "role": "metal",
+    "smooth": false,
+    "plain_vertical_walls": true
+  },
+  {
+    "name": "Circular cardinal stud 2",
+    "role": "metal",
+    "smooth": false,
+    "plain_vertical_walls": true
+  },
+  {
+    "name": "Circular cardinal stud 3",
+    "role": "metal",
+    "smooth": false,
+    "plain_vertical_walls": true
+  },
+  {
+    "name": "Circular cardinal stud 4",
+    "role": "metal",
+    "smooth": false,
+    "plain_vertical_walls": true
+  }
+]

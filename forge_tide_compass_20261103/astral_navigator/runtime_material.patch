@@ -1,0 +1,26 @@
+--- a/ScreenTime/Sources/App/Features/Badges/Badge3DLiveBadge.swift
++++ b/ScreenTime/Sources/App/Features/Badges/Badge3DLiveBadge.swift
+@@ -1318,6 +1318,7 @@
+         switch name {
+         case "CrestGem_Ice": return 0
+         case "CrestGem_Sapphire": return 1
++        case "CrestGem_SapphireAstral": return 4
+         case "CrestGem_Ruby": return 2
+         case "CrestGem_Amethyst": return 3
+         default: return nil
+--- a/ScreenTime/Sources/App/Features/Badges/BadgeCrestGemSurface.metal
++++ b/ScreenTime/Sources/App/Features/Badges/BadgeCrestGemSurface.metal
+@@ -279,8 +279,11 @@
+ {
+     float4 profile = params.uniforms().custom_parameter();
+     float3 indices = profile.y < 0.5 ? float3(1.45, 1.46, 1.475)
+-                   : profile.y > 2.5 ? float3(1.54, 1.55, 1.56) : float3(1.76, 1.77, 1.79);
+-    float3 absorption = profile.y < 0.5 ? float3(0.50, 0.20, 0.04)
++                   : profile.y > 2.5 && profile.y < 3.5 ? float3(1.54, 1.55, 1.56) : float3(1.76, 1.77, 1.79);
++    // Astral's sapphires absorb more light through their real internal paths.
++    // Existing crest profiles retain their original optical constants.
++    float3 absorption = profile.y > 3.5 ? float3(10.0, 6.0, 1.6)
++                        : profile.y < 0.5 ? float3(0.50, 0.20, 0.04)
+                         : profile.y < 1.5 ? float3(8.0, 4.0, 0.25)
+                         : profile.y > 2.5 ? float3(0.90, 12.0, 0.50) : float3(1.25, 16.0, 12.0);
+     absorption *= profile.z;

@@ -1,0 +1,81 @@
+{
+  "status": "diagnostic_only_not_native",
+  "closed_ruby_volume": true,
+  "removed_rear_dome_geometry": true,
+  "original_clear_optical_shader": true,
+  "no_appearance_maps": true,
+  "variants": [
+    {
+      "crown": 1.0,
+      "depth": 0.06,
+      "planes": [
+        107,
+        107
+      ]
+    },
+    {
+      "crown": 1.0,
+      "depth": 0.3,
+      "planes": [
+        107,
+        107
+      ]
+    },
+    {
+      "crown": 1.0,
+      "depth": 0.7,
+      "planes": [
+        107,
+        107
+      ]
+    },
+    {
+      "crown": 0.65,
+      "depth": 0.06,
+      "planes": [
+        107,
+        107
+      ]
+    },
+    {
+      "crown": 0.65,
+      "depth": 0.3,
+      "planes": [
+        107,
+        107
+      ]
+    },
+    {
+      "crown": 0.65,
+      "depth": 0.7,
+      "planes": [
+        107,
+        107
+      ]
+    },
+    {
+      "crown": 0.4,
+      "depth": 0.06,
+      "planes": [
+        107,
+        107
+      ]
+    },
+    {
+      "crown": 0.4,
+      "depth": 0.3,
+      "planes": [
+        107,
+        107
+      ]
+    },
+    {
+      "crown": 0.4,
+      "depth": 0.7,
+      "planes": [
+        107,
+        107
+      ]
+    }
+  ]
+}

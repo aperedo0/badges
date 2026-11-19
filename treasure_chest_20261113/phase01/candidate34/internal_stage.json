@@ -1,0 +1,22 @@
+{
+  "stage": "Actual slider, guides and removable crank key saved; spring detent and driven controls pending",
+  "complete_lock": false,
+  "permanent_cam_and_bearing_hidden": true,
+  "retaining_pin_locked_span": [
+    -0.5,
+    -0.1475
+  ],
+  "stroke": 0.12,
+  "retracted_span": [
+    -0.62,
+    -0.2675
+  ],
+  "receiver_cheek_rear_z": 1.865,
+  "remaining": [
+    "Real leaf detent and compliant contact",
+    "Actual pilot and crank insertion proof",
+    "Quarter turn contact controls",
+    "Relative motion proof and actual key absent appearance"
+  ],
+  "key_built": true
+}

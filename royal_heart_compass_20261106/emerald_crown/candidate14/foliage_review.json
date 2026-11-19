@@ -1,0 +1,9 @@
+{
+  "source": "candidate13",
+  "casting_rejected_before_export": true,
+  "reason": "Blender inspection still showed a flat undivided gold sheet. No native export or installation of that casting.",
+  "separate_curled_leaf_bodies": 28,
+  "corrected_laurel_retained": true,
+  "native_review_pending": true,
+  "cloth_ao_needs_refresh": true
+}

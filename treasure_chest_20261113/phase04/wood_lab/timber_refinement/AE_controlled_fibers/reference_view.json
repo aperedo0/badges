@@ -1,0 +1,76 @@
+{
+  "baseline_file": "/Users/antonioperedo/Desktop/badges/treasure_chest_20261113/phase04/wood_lab/timber_refinement/AE_controlled_fibers/master.blend",
+  "original_camera": "Whole chest evaluation",
+  "original_matrix": [
+    [
+      1.0,
+      0.0,
+      0.0,
+      0.0
+    ],
+    [
+      0.0,
+      0.0697563961148262,
+      -0.9975640773773193,
+      -45.0
+    ],
+    [
+      0.0,
+      0.9975640773773193,
+      0.0697563961148262,
+      3.0351459980010986
+    ],
+    [
+      0.0,
+      0.0,
+      0.0,
+      1.0
+    ]
+  ],
+  "original_ortho": 8.0,
+  "chest_geometry_and_material_slots_before": "19c7593d0daf35de38a64ec5fde821e9e5ca2026e8fd642d6b8c1034bfc243ec",
+  "approximate_reference_bbox": [
+    68,
+    176,
+    1184,
+    1080
+  ],
+  "reference_view_interpretation": "About 29 degrees of visible chest yaw and 5.7 degrees of downward viewing angle, estimated from the reference foot edges. Mockup perspective and shape are imperfect, so this is a visual comparison fit, not a calibrated reconstruction.",
+  "comparison_camera": "Owner reference comparison camera",
+  "target_screen_size": [
+    1030.357664823532,
+    834.626531124115
+  ],
+  "target_screen_center": [
+    1794.0767404437065,
+    840.0767405629158
+  ],
+  "fitted_ortho_scale": 7.321059109123266,
+  "comparison_matrix": [
+    [
+      0.9986295104026794,
+      -0.005198003724217415,
+      0.05207718163728714,
+      2.343473434448242
+    ],
+    [
+      0.0523359552025795,
+      0.09918379038572311,
+      -0.9936918616294861,
+      -44.71613311767578
+    ],
+    [
+      1.7573040800300532e-09,
+      0.9950555562973022,
+      0.09931990504264832,
+      4.524763584136963
+    ],
+    [
+      0.0,
+      0.0,
+      0.0,
+      1.0
+    ]
+  ],
+  "camera_only_fit": true
+}

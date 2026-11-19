@@ -1,0 +1,18 @@
+{
+  "filepath": "/Users/antonioperedo/Desktop/badges/treasure_chest_20261113/treasure_chest.blend",
+  "dirty": false,
+  "scenes": [
+    "Chest Complete Form Phase 1",
+    "Scene"
+  ],
+  "objects": 315,
+  "images": [
+    {
+      "name": "reference.png",
+      "packed": true,
+      "exists": true,
+      "path": "/Users/antonioperedo/Desktop/badges/treasure_chest_20261113/reference.png"
+    }
+  ],
+  "missing_libraries": []
+}

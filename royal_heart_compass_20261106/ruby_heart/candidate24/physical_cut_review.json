@@ -1,0 +1,29 @@
+{
+  "source_gold_setting": "candidate20",
+  "one_coordinated_crown_and_pavilion_field": true,
+  "old_shallow_twin_pavilion_domes_removed": true,
+  "whole_heart_ruby_optical_volume": true,
+  "outer_silhouette_preserved": true,
+  "crown_slope": 0.65,
+  "pavilion_depth": 1.7,
+  "uniform_absorption": [
+    0.16,
+    9,
+    0.65
+  ],
+  "original_clear_optical_transport_preserved": true,
+  "dense_body_and_scattering_trials_rejected": true,
+  "no_gem_appearance_images_or_body_diffuse_lobe": true,
+  "global_z_center_shift": 0.44000000000000006,
+  "domains": [
+    {
+      "name": "Ruby heart left optical lobe",
+      "facet_planes": 68
+    },
+    {
+      "name": "Ruby heart right optical lobe",
+      "facet_planes": 68
+    }
+  ],
+  "native_review_pending": true
+}

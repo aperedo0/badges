@@ -1,0 +1,29 @@
+{
+  "certified": false,
+  "screen_only": true,
+  "pairs": [
+    {
+      "insertion_offset": 0.0,
+      "fixed": "Chest Shield Lock Plate With Bore",
+      "triangle_pairs": 422,
+      "sample": [
+        [
+          2699,
+          869
+        ],
+        [
+          3255,
+          868
+        ],
+        [
+          2247,
+          869
+        ],
+        [
+          2247,
+          868
+        ]
+      ]
+    }
+  ]
+}

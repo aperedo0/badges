@@ -1,0 +1,1 @@
+Continues the successful flat normal cause test with a bounded curved reflection on fine gold borders, while preserving the broad setting and gold beads. Restores amber and log colors through the saved narrower gold exclusion mask. Native finish and motion acceptance are pending.

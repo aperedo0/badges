@@ -1,0 +1,35 @@
+{
+  "uniform_material_only": true,
+  "no_appearance_image_created": true,
+  "existing_studio_preserved": true,
+  "reference_body_samples": 893,
+  "native_forward_calibration_error": 0.0031186792454339254,
+  "calibration_reliable": true,
+  "original_tent_gain": 3,
+  "original_green_absorption": 2,
+  "fitted_tent_gain": 1.45768306077441,
+  "fitted_green_absorption": 4.350359687795594,
+  "before_loss": 0.08535599433622472,
+  "after_loss": 0.02463802772941136,
+  "predicted_original_median": [
+    0.3796618684095062,
+    0.5901333818448125,
+    0.9114804343626127
+  ],
+  "actual_native_median": [
+    0.3764705882352941,
+    0.5882352941176471,
+    0.9098039215686274
+  ],
+  "reference_median": [
+    0.0,
+    0.3137254901960784,
+    0.8
+  ],
+  "predicted_fitted_median": [
+    0.09771923932615294,
+    0.33476492712453876,
+    0.8116742142101556
+  ],
+  "native_review_pending": true
+}

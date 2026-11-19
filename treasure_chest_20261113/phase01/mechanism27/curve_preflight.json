@@ -1,0 +1,7 @@
+{
+  "prototype_only": true,
+  "upper_cubic_minimum_curvature_radius": 0.07500000000000023,
+  "body_half_thickness": 0.055,
+  "lower_bend_minimum_curvature_radius": 0.0767125,
+  "actual_self_intersection_screen_required": true
+}

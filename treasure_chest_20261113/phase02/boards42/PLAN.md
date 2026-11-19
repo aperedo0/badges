@@ -1,0 +1,15 @@
+# Broader wood planks
+
+Status: APPROVED existing construction method, owner requested size correction.
+
+The owner said the mockup planks are bigger than the model. This is a parameter correction to the already approved phase02/boards41/PLAN.md method, not a new construction method. Preserve41 as the previous reviewed version. Do not restart overnight work or touch finishes.
+
+The roof changes from12 to10 lengthwise staves, making angular spacing20percent greater. The body changes from three joint rows atY negative.35, negative.95, negative1.55 to two atY negative.48 and negative1.20. This removes the narrow bottom strip and increases the central row from.60 to.72. Endcap joints change from.90,1.40,1.90 to.95,1.60, increasing central spacing from.50 to.65. Both signs repeat identically. Exact values live in design.json.
+
+Use the accepted uncut40 wood mesh data as the clean source for the two wood cores only. Read it from the frozen40 Blender library, without loading that scene or overwriting the current rig. Assert its actual V and T arrays match41/wood_before.npz before assigning. Recut the new board profiles with the same Exact closed triangular prism method, depth.020, width.045 and existing source normal transfer and strict cleanup gates. Do not scale the chest, metal, joint depth or seam width.
+
+All153 hardware meshes, the removable key, materials, current parent ownership and rig controls remain unchanged from41. Actual hollow interiors, inner ray hits, retained outside surface samples and topology proofs must pass unchanged. Existing full motion screen still runs56 lid positions and99 sequence frames. New cold load and actual Blender renders are required. Compare mockup,41 and42 at the same height. Inspect front, both ends, rear, early turn and open cavity plus416pixel joint crops. A fresh independent construction review must find no new defects before promotion. If the wider layout looks worse, keep41 and report why.
+
+No grain, texture, wood color or metal finish. No app source or simulator changes. No automatic timers resume. Save isolated42 after the geometry gates, then promote only after visual acceptance. Preserve all current and frozen source files. This change does not finish the badge; final materials, mobile optimization and phone acceptance remain later.
+
+Hidden cutter extent refinement: the inherited front and end cutters intersected under the corner post and generated a real tiny twisted face. The unchanged original normal gate correctly rejected it. Keep that gate. Restrict only the body front prisms toX plus/minus2.35 and end prisms toZ plus/minus1.40, both well under the current posts. Actual post boundaries start atabsoluteX2.24 andabsoluteZ1.29. Actual double precision rays into every relevant post at both joint heights and offsets plus/minus.07 must prove at least.06 of metal projection beyond each termination. No exposed joint ends or visible geometry changes are permitted. All other profile values and accepted methods remain unchanged. The rejected unsaved partial is restored from clean41 before rerunning.

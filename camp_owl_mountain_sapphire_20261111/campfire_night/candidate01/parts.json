@@ -1,0 +1,688 @@
+{
+ "units": {
+  "S": 0.005046296296296296,
+  "axis": 615,
+  "top": 85,
+  "width_px": 1254,
+  "height_px": 1254
+ },
+ "box": [
+  0,
+  0,
+  1254,
+  1254
+ ],
+ "parts": [
+  {
+   "name": "night_backplate",
+   "base": 0.075,
+   "materials": [
+    "Enamel",
+    "Side"
+   ],
+   "triangles": 21608,
+   "front": 2872
+  },
+  {
+   "name": "purple_mountain_range",
+   "base": 0.11573536893216721,
+   "materials": [
+    "Enamel",
+    "Gold",
+    "Side"
+   ],
+   "triangles": 14108,
+   "front": 1930
+  },
+  {
+   "name": "green_campground",
+   "base": 0.19793943614584084,
+   "materials": [
+    "Enamel",
+    "Gold",
+    "Side"
+   ],
+   "triangles": 12996,
+   "front": 1797
+  },
+  {
+   "name": "crescent_moon",
+   "base": 0.10143321411044831,
+   "materials": [
+    "Enamel",
+    "Gold",
+    "Side"
+   ],
+   "triangles": 2288,
+   "front": 667
+  },
+  {
+   "name": "star_left",
+   "base": 0.101439371727158,
+   "materials": [
+    "Enamel",
+    "Gold",
+    "Side"
+   ],
+   "triangles": 584,
+   "front": 220
+  },
+  {
+   "name": "star_right",
+   "base": 0.10143952382237875,
+   "materials": [
+    "Enamel",
+    "Gold",
+    "Side"
+   ],
+   "triangles": 604,
+   "front": 230
+  },
+  {
+   "name": "night_gold_dot_00",
+   "base": 0.10232368581209264,
+   "materials": [
+    "Gold",
+    "Side"
+   ],
+   "triangles": 1436,
+   "front": 238
+  },
+  {
+   "name": "night_gold_dot_01",
+   "base": 0.10216077371811477,
+   "materials": [
+    "Gold",
+    "Side"
+   ],
+   "triangles": 1436,
+   "front": 238
+  },
+  {
+   "name": "night_gold_dot_02",
+   "base": 0.10236364871611608,
+   "materials": [
+    "Gold",
+    "Side"
+   ],
+   "triangles": 1388,
+   "front": 214
+  },
+  {
+   "name": "night_gold_dot_03",
+   "base": 0.10269442750669647,
+   "materials": [
+    "Gold",
+    "Side"
+   ],
+   "triangles": 1340,
+   "front": 190
+  },
+  {
+   "name": "night_gold_dot_04",
+   "base": 0.10232368581209261,
+   "materials": [
+    "Gold",
+    "Side"
+   ],
+   "triangles": 1436,
+   "front": 238
+  },
+  {
+   "name": "night_gold_dot_05",
+   "base": 0.10216077371811413,
+   "materials": [
+    "Gold",
+    "Side"
+   ],
+   "triangles": 1436,
+   "front": 238
+  },
+  {
+   "name": "night_gold_dot_06",
+   "base": 0.10269442750669641,
+   "materials": [
+    "Gold",
+    "Side"
+   ],
+   "triangles": 1340,
+   "front": 190
+  },
+  {
+   "name": "night_gold_dot_07",
+   "base": 0.10269442750669647,
+   "materials": [
+    "Gold",
+    "Side"
+   ],
+   "triangles": 1340,
+   "front": 190
+  },
+  {
+   "name": "night_gold_dot_08",
+   "base": 0.10269442750669647,
+   "materials": [
+    "Gold",
+    "Side"
+   ],
+   "triangles": 1340,
+   "front": 190
+  },
+  {
+   "name": "night_gold_dot_09",
+   "base": 0.10269442750669647,
+   "materials": [
+    "Gold",
+    "Side"
+   ],
+   "triangles": 1340,
+   "front": 190
+  },
+  {
+   "name": "small_pine_left",
+   "base": 0.17646231409678004,
+   "materials": [
+    "Enamel",
+    "Gold",
+    "Side"
+   ],
+   "triangles": 2300,
+   "front": 721
+  },
+  {
+   "name": "small_pine_right",
+   "base": 0.17646435308157754,
+   "materials": [
+    "Enamel",
+    "Gold",
+    "Side"
+   ],
+   "triangles": 2212,
+   "front": 743
+  },
+  {
+   "name": "pine_left_trunk",
+   "base": 0.2797633786299665,
+   "materials": [
+    "Enamel",
+    "Gold",
+    "Side"
+   ],
+   "triangles": 444,
+   "front": 72
+  },
+  {
+   "name": "pine_left_lower",
+   "base": 0.35942025900673225,
+   "materials": [
+    "Enamel",
+    "Gold",
+    "Side"
+   ],
+   "triangles": 2460,
+   "front": 705
+  },
+  {
+   "name": "pine_left_middle",
+   "base": 0.438986532892076,
+   "materials": [
+    "Enamel",
+    "Gold",
+    "Side"
+   ],
+   "triangles": 2404,
+   "front": 680
+  },
+  {
+   "name": "pine_left_top",
+   "base": 0.517523860184022,
+   "materials": [
+    "Enamel",
+    "Gold",
+    "Side"
+   ],
+   "triangles": 1880,
+   "front": 553
+  },
+  {
+   "name": "pine_right_trunk",
+   "base": 0.2746125097929195,
+   "materials": [
+    "Enamel",
+    "Gold",
+    "Side"
+   ],
+   "triangles": 444,
+   "front": 72
+  },
+  {
+   "name": "pine_right_lower",
+   "base": 0.35435975988248536,
+   "materials": [
+    "Enamel",
+    "Gold",
+    "Side"
+   ],
+   "triangles": 2228,
+   "front": 631
+  },
+  {
+   "name": "pine_right_middle",
+   "base": 0.43292545602773314,
+   "materials": [
+    "Enamel",
+    "Gold",
+    "Side"
+   ],
+   "triangles": 2568,
+   "front": 678
+  },
+  {
+   "name": "pine_right_top",
+   "base": 0.5137238819799067,
+   "materials": [
+    "Enamel",
+    "Gold",
+    "Side"
+   ],
+   "triangles": 1888,
+   "front": 557
+  },
+  {
+   "name": "left_crossed_log",
+   "base": 0.25725413806572295,
+   "materials": [
+    "Enamel",
+    "Gold",
+    "Side"
+   ],
+   "triangles": 1876,
+   "front": 329
+  },
+  {
+   "name": "right_crossed_log",
+   "base": 0.34384412624573946,
+   "materials": [
+    "Enamel",
+    "Gold",
+    "Side"
+   ],
+   "triangles": 1668,
+   "front": 291
+  },
+  {
+   "name": "log_end_left",
+   "base": 0.3431874886872006,
+   "materials": [
+    "Enamel",
+    "Gold",
+    "Side"
+   ],
+   "triangles": 2280,
+   "front": 624
+  },
+  {
+   "name": "wood_spiral_left",
+   "base": 0.4204304594174261,
+   "materials": [
+    "Side",
+    "WoodInlay"
+   ],
+   "triangles": 1196,
+   "front": 352
+  },
+  {
+   "name": "log_end_right",
+   "base": 0.43139810310781646,
+   "materials": [
+    "Enamel",
+    "Gold",
+    "Side"
+   ],
+   "triangles": 2264,
+   "front": 646
+  },
+  {
+   "name": "wood_spiral_right",
+   "base": 0.508639687210518,
+   "materials": [
+    "Side",
+    "WoodInlay"
+   ],
+   "triangles": 1196,
+   "front": 352
+  },
+  {
+   "name": "upright_front_log",
+   "base": 0.43405210771775216,
+   "materials": [
+    "Enamel",
+    "Gold",
+    "Side"
+   ],
+   "triangles": 2080,
+   "front": 353
+  },
+  {
+   "name": "front_log_end",
+   "base": 0.5211048940627584,
+   "materials": [
+    "Enamel",
+    "Gold",
+    "Side"
+   ],
+   "triangles": 2220,
+   "front": 501
+  },
+  {
+   "name": "wood_spiral_front",
+   "base": 0.5853921583747554,
+   "materials": [
+    "Side",
+    "WoodInlay"
+   ],
+   "triangles": 1324,
+   "front": 395
+  },
+  {
+   "name": "outer_red_flame",
+   "base": 0.5123207768418435,
+   "materials": [
+    "Enamel",
+    "Gold",
+    "Side"
+   ],
+   "triangles": 7228,
+   "front": 2402
+  },
+  {
+   "name": "middle_amber_flame",
+   "base": 0.5936487846725378,
+   "materials": [
+    "Enamel",
+    "Gold",
+    "Side"
+   ],
+   "triangles": 5236,
+   "front": 1541
+  },
+  {
+   "name": "inner_yellow_flame",
+   "base": 0.6617307016701959,
+   "materials": [
+    "Enamel",
+    "Gold",
+    "Side"
+   ],
+   "triangles": 2968,
+   "front": 1058
+  },
+  {
+   "name": "stone_back_left",
+   "base": 0.2942071812572681,
+   "materials": [
+    "Enamel",
+    "Gold",
+    "Side"
+   ],
+   "triangles": 1632,
+   "front": 462
+  },
+  {
+   "name": "stone_back_right",
+   "base": 0.27330808993677513,
+   "materials": [
+    "Enamel",
+    "Gold",
+    "Side"
+   ],
+   "triangles": 1452,
+   "front": 381
+  },
+  {
+   "name": "stone_middle_left",
+   "base": 0.42099349690950594,
+   "materials": [
+    "Enamel",
+    "Gold",
+    "Side"
+   ],
+   "triangles": 1588,
+   "front": 500
+  },
+  {
+   "name": "stone_middle_right",
+   "base": 0.5012393136916206,
+   "materials": [
+    "Enamel",
+    "Gold",
+    "Side"
+   ],
+   "triangles": 1292,
+   "front": 388
+  },
+  {
+   "name": "stone_front_left",
+   "base": 0.4978489611777248,
+   "materials": [
+    "Enamel",
+    "Gold",
+    "Side"
+   ],
+   "triangles": 1860,
+   "front": 600
+  },
+  {
+   "name": "stone_front_right",
+   "base": 0.5794607321594599,
+   "materials": [
+    "Enamel",
+    "Gold",
+    "Side"
+   ],
+   "triangles": 1692,
+   "front": 567
+  },
+  {
+   "name": "stone_front_center",
+   "base": 0.6086565430604874,
+   "materials": [
+    "Enamel",
+    "Gold",
+    "Side"
+   ],
+   "triangles": 1608,
+   "front": 546
+  },
+  {
+   "name": "grass_blade_0",
+   "base": 0.26149252984206356,
+   "materials": [
+    "Gold",
+    "Side"
+   ],
+   "triangles": 308,
+   "front": 67
+  },
+  {
+   "name": "grass_blade_1",
+   "base": 0.26143422015694295,
+   "materials": [
+    "Gold",
+    "Side"
+   ],
+   "triangles": 308,
+   "front": 67
+  },
+  {
+   "name": "grass_blade_2",
+   "base": 0.2614643323114163,
+   "materials": [
+    "Gold",
+    "Side"
+   ],
+   "triangles": 308,
+   "front": 67
+  },
+  {
+   "name": "grass_blade_3",
+   "base": 0.2614373916949162,
+   "materials": [
+    "Gold",
+    "Side"
+   ],
+   "triangles": 308,
+   "front": 67
+  },
+  {
+   "name": "grass_blade_4",
+   "base": 0.26151190116433365,
+   "materials": [
+    "Gold",
+    "Side"
+   ],
+   "triangles": 308,
+   "front": 67
+  },
+  {
+   "name": "grass_blade_5",
+   "base": 0.2614373916949162,
+   "materials": [
+    "Gold",
+    "Side"
+   ],
+   "triangles": 308,
+   "front": 67
+  },
+  {
+   "name": "grass_blade_6",
+   "base": 0.2614680923061343,
+   "materials": [
+    "Gold",
+    "Side"
+   ],
+   "triangles": 308,
+   "front": 67
+  },
+  {
+   "name": "outer_gold_setting",
+   "base": 0.15,
+   "materials": [
+    "Gold",
+    "Side"
+   ],
+   "triangles": 4096,
+   "front": 1088
+  }
+ ],
+ "order": [
+  "night_backplate",
+  "purple_mountain_range",
+  "green_campground",
+  "crescent_moon",
+  "star_left",
+  "star_right",
+  "night_gold_dot_00",
+  "night_gold_dot_01",
+  "night_gold_dot_02",
+  "night_gold_dot_03",
+  "night_gold_dot_04",
+  "night_gold_dot_05",
+  "night_gold_dot_06",
+  "night_gold_dot_07",
+  "night_gold_dot_08",
+  "night_gold_dot_09",
+  "small_pine_left",
+  "small_pine_right",
+  "pine_left_trunk",
+  "pine_left_lower",
+  "pine_left_middle",
+  "pine_left_top",
+  "pine_right_trunk",
+  "pine_right_lower",
+  "pine_right_middle",
+  "pine_right_top",
+  "left_crossed_log",
+  "right_crossed_log",
+  "log_end_left",
+  "wood_spiral_left",
+  "log_end_right",
+  "wood_spiral_right",
+  "upright_front_log",
+  "front_log_end",
+  "wood_spiral_front",
+  "outer_red_flame",
+  "middle_amber_flame",
+  "inner_yellow_flame",
+  "stone_back_left",
+  "stone_back_right",
+  "stone_middle_left",
+  "stone_middle_right",
+  "stone_front_left",
+  "stone_front_right",
+  "stone_front_center",
+  "grass_blade_0",
+  "grass_blade_1",
+  "grass_blade_2",
+  "grass_blade_3",
+  "grass_blade_4",
+  "grass_blade_5",
+  "grass_blade_6",
+  "outer_gold_setting"
+ ],
+ "validate_order": [
+  "night_backplate",
+  "purple_mountain_range",
+  "green_campground",
+  "crescent_moon",
+  "star_left",
+  "star_right",
+  "night_gold_dot_00",
+  "night_gold_dot_01",
+  "night_gold_dot_02",
+  "night_gold_dot_03",
+  "night_gold_dot_04",
+  "night_gold_dot_05",
+  "night_gold_dot_06",
+  "night_gold_dot_07",
+  "night_gold_dot_08",
+  "night_gold_dot_09",
+  "small_pine_left",
+  "small_pine_right",
+  "pine_left_trunk",
+  "pine_left_lower",
+  "pine_left_middle",
+  "pine_left_top",
+  "pine_right_trunk",
+  "pine_right_lower",
+  "pine_right_middle",
+  "pine_right_top",
+  "left_crossed_log",
+  "right_crossed_log",
+  "log_end_left",
+  "wood_spiral_left",
+  "log_end_right",
+  "wood_spiral_right",
+  "upright_front_log",
+  "front_log_end",
+  "wood_spiral_front",
+  "outer_red_flame",
+  "middle_amber_flame",
+  "inner_yellow_flame",
+  "stone_back_left",
+  "stone_back_right",
+  "stone_middle_left",
+  "stone_middle_right",
+  "stone_front_left",
+  "stone_front_right",
+  "stone_front_center",
+  "grass_blade_0",
+  "grass_blade_1",
+  "grass_blade_2",
+  "grass_blade_3",
+  "grass_blade_4",
+  "grass_blade_5",
+  "grass_blade_6",
+  "outer_gold_setting"
+ ]
+}

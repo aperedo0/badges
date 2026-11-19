@@ -1,0 +1,20 @@
+{
+  "vertices": 641121,
+  "polygons": 643262,
+  "triangles": 1282238,
+  "grid": [
+    1537,
+    417
+  ],
+  "boundary_edges": 0,
+  "nonmanifold_edges": 0,
+  "depth_min": -0.03982982524432188,
+  "depth_max": 0.0,
+  "source_scene_retained": true,
+  "source_geometry_hashes_match": true,
+  "source_materials_retained": true,
+  "reference_same_object": true,
+  "normal_residual_sigma": 0.0055,
+  "hardware_clearance": "All new front vertices remain at or behind the source front plane; boundary untouched",
+  "positive_fiber_vertices_capped": 60756
+}

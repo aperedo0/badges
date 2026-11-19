@@ -1,0 +1,11 @@
+# Another broader wood plank correction
+
+Status: APPROVED existing construction method, explicit owner requested size correction.
+
+The owner clarified in the current reply that the boards must be ANOTHER roughly40percent wider than the larger layout being shown in Blender, not40percent from the original smaller41 layout. The earlier42 design is superseded and must not be built or promoted. No automatic timer resumes. Both finishes remain withheld.
+
+Use the same strict approved shallow joint method and guards from41 with the diagnosed hidden termination fix documented in phase02/boards42/PLAN.md. This is a parameter correction only, no new construction method. The roof goes from the larger layout's10 staves to7, approximately42.9percent wider. Body and end faces change from3 visible board rows to2, approximately50percent greater average exposed row height because whole rows must fit the fixed frame. Keep single body jointY negative.84 and end jointY1.30. Do not stretch the chest or change hardware dimensions. This follows the owner's approximate wording rather than promising an impossible exact uniform40percent for all clipped rows.
+
+Restore only the two original uncut wood meshes from frozen40 library data after proving they match41/wood_before.npz. Retain41 live rig, materials and all153 other static meshes, plus the removable key. Cut new profiles from design.json. Body cutters terminateX plus/minus2.35 on front and back andZ plus/minus1.40 on the ends, beneath the existing corner posts. Actual rays at each termination and joint height plus/minus.07 must prove at least.06 of metal cover. Roof and end cutters retain the earlier limits, depth.020 and opening width.045. The actual source normal field, nondegenerate closed solid, retained cavity, topology, profile depth and width gates remain unchanged. No threshold widening.
+
+Save isolated43 only after these checks. Cold load, full56 angle and99 frame motion screen, and actual Blender views including phone scale and enlarged crops must pass. Fresh independent construction review against the inspiration and41 must find no new defects. On a failed method, stop and diagnose before revising. Keep41 as previous reviewed checkpoint and promote43 only after acceptance. Wood grain, wood color and metal finish remain untouched. No app code or simulator work. No badge completion claim.

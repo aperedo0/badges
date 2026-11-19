@@ -1,0 +1,24 @@
+{
+  "source": "N_charcoal_scale",
+  "target": "Lab Chest Lower Rim",
+  "mesh": "Locally forged lower rim.002",
+  "material": "Forged iron with dark surface scale",
+  "geometry_unchanged_from_source": true,
+  "scale_coverage": [
+    0.6,
+    0.92
+  ],
+  "reference_laps": true,
+  "original_geometry_functionality_and_wood_preserved": true,
+  "oxide_color_linear": [
+    0.012,
+    0.009,
+    0.006
+  ],
+  "review_scene": "Bottom iron reflection review",
+  "iron_knobs": [
+    "Lab Chest Rail Rivet 1 3",
+    "Lab Chest Rail Rivet 1 4"
+  ],
+  "knob_geometry_preserved": true
+}

@@ -1,0 +1,9 @@
+{
+  "status": "paused",
+  "owner_instruction": "stop. weekly limit will run out soon",
+  "epoch": 1794116152.339674,
+  "explicit_owner_resume_required": true,
+  "last_native_candidate": "ruby_heart/candidate25",
+  "last_diagnostic": "optics_fit/heart_reference_shared_point.npz",
+  "new_native_candidate_created": false
+}

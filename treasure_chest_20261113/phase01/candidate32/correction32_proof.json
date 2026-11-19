@@ -1,0 +1,665 @@
+{
+  "seats": [
+    {
+      "head": "Chest Boot Front Rivet -1 -1",
+      "front_exposure": 0.009000055910785676,
+      "back_overlap": 0.0020001596970580238,
+      "radial_ratio": 1.1000008287533771
+    },
+    {
+      "head": "Chest Boot End Rivet -1 -1",
+      "front_exposure": 0.009000266738983242,
+      "back_overlap": 0.0020001007366694523,
+      "radial_ratio": 1.0999999544599386
+    },
+    {
+      "head": "Chest Boot Front Rivet -1 1",
+      "front_exposure": 0.009000073252721563,
+      "back_overlap": 0.002000196883088279,
+      "radial_ratio": 1.1000008515140065
+    },
+    {
+      "head": "Chest Boot End Rivet -1 1",
+      "front_exposure": 0.009000125693631844,
+      "back_overlap": 0.0020002322296193142,
+      "radial_ratio": 1.09999929626101
+    },
+    {
+      "head": "Chest Boot Front Rivet 1 -1",
+      "front_exposure": 0.009000073252721563,
+      "back_overlap": 0.002000196883088279,
+      "radial_ratio": 1.1000008515140065
+    },
+    {
+      "head": "Chest Boot End Rivet 1 -1",
+      "front_exposure": 0.009000125693631844,
+      "back_overlap": 0.0020002322296193142,
+      "radial_ratio": 1.09999929626101
+    },
+    {
+      "head": "Chest Boot Front Rivet 1 1",
+      "front_exposure": 0.009000055910785676,
+      "back_overlap": 0.0020001596970580238,
+      "radial_ratio": 1.1000008287533771
+    },
+    {
+      "head": "Chest Boot End Rivet 1 1",
+      "front_exposure": 0.009000266738983242,
+      "back_overlap": 0.0020001007366694523,
+      "radial_ratio": 1.0999999544599386
+    }
+  ],
+  "arches": [
+    {
+      "side": -1,
+      "actual_join_maximum_x": 2.720000170218332,
+      "cap_toe_clearance": 0.004999829781668019,
+      "upper_arch_maximum_difference": 0.0
+    },
+    {
+      "side": 1,
+      "actual_join_maximum_x": 2.720000170218332,
+      "cap_toe_clearance": 0.004999829781668019,
+      "upper_arch_maximum_difference": 0.0
+    }
+  ],
+  "unchanged_meshes": [
+    {
+      "name": "Chest Body Envelope",
+      "maximum_coordinate_difference": 0.0
+    },
+    {
+      "name": "Chest Barrel Lid Envelope",
+      "maximum_coordinate_difference": 0.0
+    },
+    {
+      "name": "Chest Lid Hoop 2",
+      "maximum_coordinate_difference": 0.0
+    },
+    {
+      "name": "Chest Lid Hoop 3",
+      "maximum_coordinate_difference": 0.0
+    },
+    {
+      "name": "Chest Upper Lid Rim",
+      "maximum_coordinate_difference": 0.0
+    },
+    {
+      "name": "Chest Body Upper Rim",
+      "maximum_coordinate_difference": 0.0
+    },
+    {
+      "name": "Chest Lower Rim",
+      "maximum_coordinate_difference": 0.0
+    },
+    {
+      "name": "Chest Corner Upright -1 -1",
+      "maximum_coordinate_difference": 0.0
+    },
+    {
+      "name": "Chest Angular Boot -1 -1",
+      "maximum_coordinate_difference": 0.0
+    },
+    {
+      "name": "Chest Lid Corner Armor -1 -1",
+      "maximum_coordinate_difference": 0.0
+    },
+    {
+      "name": "Chest Corner Upright -1 1",
+      "maximum_coordinate_difference": 0.0
+    },
+    {
+      "name": "Chest Angular Boot -1 1",
+      "maximum_coordinate_difference": 0.0
+    },
+    {
+      "name": "Chest Lid Corner Armor -1 1",
+      "maximum_coordinate_difference": 0.0
+    },
+    {
+      "name": "Chest Corner Upright 1 -1",
+      "maximum_coordinate_difference": 0.0
+    },
+    {
+      "name": "Chest Angular Boot 1 -1",
+      "maximum_coordinate_difference": 0.0
+    },
+    {
+      "name": "Chest Lid Corner Armor 1 -1",
+      "maximum_coordinate_difference": 0.0
+    },
+    {
+      "name": "Chest Corner Upright 1 1",
+      "maximum_coordinate_difference": 0.0
+    },
+    {
+      "name": "Chest Angular Boot 1 1",
+      "maximum_coordinate_difference": 0.0
+    },
+    {
+      "name": "Chest Lid Corner Armor 1 1",
+      "maximum_coordinate_difference": 0.0
+    },
+    {
+      "name": "Chest Central Lock Strap",
+      "maximum_coordinate_difference": 0.0
+    },
+    {
+      "name": "Chest Central Lower Cuff",
+      "maximum_coordinate_difference": 0.0
+    },
+    {
+      "name": "Chest Crown Fastener Mass 1",
+      "maximum_coordinate_difference": 0.0
+    },
+    {
+      "name": "Chest Crown Fastener Mass 2",
+      "maximum_coordinate_difference": 0.0
+    },
+    {
+      "name": "Chest Crown Fastener Mass 3",
+      "maximum_coordinate_difference": 0.0
+    },
+    {
+      "name": "Chest Crown Fastener Mass 4",
+      "maximum_coordinate_difference": 0.0
+    },
+    {
+      "name": "Chest Hasp Mount",
+      "maximum_coordinate_difference": 0.0
+    },
+    {
+      "name": "Chest Front Hasp Barrel",
+      "maximum_coordinate_difference": 0.0
+    },
+    {
+      "name": "Chest Shield Lock Plate With Bore",
+      "maximum_coordinate_difference": 0.0
+    },
+    {
+      "name": "Chest Curved Hasp Tongue",
+      "maximum_coordinate_difference": 0.0
+    },
+    {
+      "name": "Chest Handle Mount -1",
+      "maximum_coordinate_difference": 0.0
+    },
+    {
+      "name": "Chest Solid Ring Handle -1",
+      "maximum_coordinate_difference": 0.0
+    },
+    {
+      "name": "Chest Handle Mount 1",
+      "maximum_coordinate_difference": 0.0
+    },
+    {
+      "name": "Chest Solid Ring Handle 1",
+      "maximum_coordinate_difference": 0.0
+    },
+    {
+      "name": "Chest Rear Hinge Lower -1",
+      "maximum_coordinate_difference": 0.0
+    },
+    {
+      "name": "Chest Rear Hinge Upper -1",
+      "maximum_coordinate_difference": 0.0
+    },
+    {
+      "name": "Chest Rear Hinge Barrel -1",
+      "maximum_coordinate_difference": 0.0
+    },
+    {
+      "name": "Chest Rear Hinge Lower 1",
+      "maximum_coordinate_difference": 0.0
+    },
+    {
+      "name": "Chest Rear Hinge Upper 1",
+      "maximum_coordinate_difference": 0.0
+    },
+    {
+      "name": "Chest Rear Hinge Barrel 1",
+      "maximum_coordinate_difference": 0.0
+    },
+    {
+      "name": "Chest Body Corner Collar -1 -1",
+      "maximum_coordinate_difference": 0.0
+    },
+    {
+      "name": "Chest Body Corner Collar -1 1",
+      "maximum_coordinate_difference": 0.0
+    },
+    {
+      "name": "Chest Body Corner Collar 1 -1",
+      "maximum_coordinate_difference": 0.0
+    },
+    {
+      "name": "Chest Body Corner Collar 1 1",
+      "maximum_coordinate_difference": 0.0
+    },
+    {
+      "name": "Chest Lock Backing With Bore",
+      "maximum_coordinate_difference": 0.0
+    },
+    {
+      "name": "Chest Lock Border With Bore",
+      "maximum_coordinate_difference": 0.0
+    },
+    {
+      "name": "Chest Hoop Rivet 0 0",
+      "maximum_coordinate_difference": 0.0
+    },
+    {
+      "name": "Chest Hoop Rivet 0 1",
+      "maximum_coordinate_difference": 0.0
+    },
+    {
+      "name": "Chest Hoop Rivet 1 0",
+      "maximum_coordinate_difference": 0.0
+    },
+    {
+      "name": "Chest Hoop Rivet 1 1",
+      "maximum_coordinate_difference": 0.0
+    },
+    {
+      "name": "Chest Hoop Rivet 1 2",
+      "maximum_coordinate_difference": 0.0
+    },
+    {
+      "name": "Chest Hoop Rivet 1 3",
+      "maximum_coordinate_difference": 0.0
+    },
+    {
+      "name": "Chest Hoop Rivet 1 4",
+      "maximum_coordinate_difference": 0.0
+    },
+    {
+      "name": "Chest Hoop Rivet 1 5",
+      "maximum_coordinate_difference": 0.0
+    },
+    {
+      "name": "Chest Hoop Rivet 2 0",
+      "maximum_coordinate_difference": 0.0
+    },
+    {
+      "name": "Chest Hoop Rivet 2 1",
+      "maximum_coordinate_difference": 0.0
+    },
+    {
+      "name": "Chest Hoop Rivet 2 2",
+      "maximum_coordinate_difference": 0.0
+    },
+    {
+      "name": "Chest Hoop Rivet 2 3",
+      "maximum_coordinate_difference": 0.0
+    },
+    {
+      "name": "Chest Hoop Rivet 2 4",
+      "maximum_coordinate_difference": 0.0
+    },
+    {
+      "name": "Chest Hoop Rivet 2 5",
+      "maximum_coordinate_difference": 0.0
+    },
+    {
+      "name": "Chest Hoop Rivet 3 0",
+      "maximum_coordinate_difference": 0.0
+    },
+    {
+      "name": "Chest Hoop Rivet 3 1",
+      "maximum_coordinate_difference": 0.0
+    },
+    {
+      "name": "Chest Upper Corner Front Rivet -1 -1",
+      "maximum_coordinate_difference": 0.0
+    },
+    {
+      "name": "Chest Upper Corner End Rivet -1 -1",
+      "maximum_coordinate_difference": 0.0
+    },
+    {
+      "name": "Chest Boot Front Rivet -1 -1",
+      "maximum_coordinate_difference": 0.0
+    },
+    {
+      "name": "Chest Boot End Rivet -1 -1",
+      "maximum_coordinate_difference": 0.0
+    },
+    {
+      "name": "Chest Upper Corner Front Rivet -1 1",
+      "maximum_coordinate_difference": 0.0
+    },
+    {
+      "name": "Chest Upper Corner End Rivet -1 1",
+      "maximum_coordinate_difference": 0.0
+    },
+    {
+      "name": "Chest Boot Front Rivet -1 1",
+      "maximum_coordinate_difference": 0.0
+    },
+    {
+      "name": "Chest Boot End Rivet -1 1",
+      "maximum_coordinate_difference": 0.0
+    },
+    {
+      "name": "Chest Upper Corner Front Rivet 1 -1",
+      "maximum_coordinate_difference": 0.0
+    },
+    {
+      "name": "Chest Upper Corner End Rivet 1 -1",
+      "maximum_coordinate_difference": 0.0
+    },
+    {
+      "name": "Chest Boot Front Rivet 1 -1",
+      "maximum_coordinate_difference": 0.0
+    },
+    {
+      "name": "Chest Boot End Rivet 1 -1",
+      "maximum_coordinate_difference": 0.0
+    },
+    {
+      "name": "Chest Upper Corner Front Rivet 1 1",
+      "maximum_coordinate_difference": 0.0
+    },
+    {
+      "name": "Chest Upper Corner End Rivet 1 1",
+      "maximum_coordinate_difference": 0.0
+    },
+    {
+      "name": "Chest Boot Front Rivet 1 1",
+      "maximum_coordinate_difference": 0.0
+    },
+    {
+      "name": "Chest Boot End Rivet 1 1",
+      "maximum_coordinate_difference": 0.0
+    },
+    {
+      "name": "Chest Body Lip Rivet -1 0",
+      "maximum_coordinate_difference": 0.0
+    },
+    {
+      "name": "Chest Body Lip Rivet -1 1",
+      "maximum_coordinate_difference": 0.0
+    },
+    {
+      "name": "Chest Body Lip Rivet 1 0",
+      "maximum_coordinate_difference": 0.0
+    },
+    {
+      "name": "Chest Body Lip Rivet 1 1",
+      "maximum_coordinate_difference": 0.0
+    },
+    {
+      "name": "Chest Handle Mount Rivet -1 -1",
+      "maximum_coordinate_difference": 0.0
+    },
+    {
+      "name": "Chest Handle Mount Rivet -1 1",
+      "maximum_coordinate_difference": 0.0
+    },
+    {
+      "name": "Chest Handle Mount Rivet 1 -1",
+      "maximum_coordinate_difference": 0.0
+    },
+    {
+      "name": "Chest Handle Mount Rivet 1 1",
+      "maximum_coordinate_difference": 0.0
+    },
+    {
+      "name": "Chest Lock Rivet 0",
+      "maximum_coordinate_difference": 0.0
+    },
+    {
+      "name": "Chest Lock Rivet 1",
+      "maximum_coordinate_difference": 0.0
+    },
+    {
+      "name": "Chest Lock Rivet 2",
+      "maximum_coordinate_difference": 0.0
+    },
+    {
+      "name": "Chest Lock Rivet 3",
+      "maximum_coordinate_difference": 0.0
+    },
+    {
+      "name": "Chest Lock Rivet 4",
+      "maximum_coordinate_difference": 0.0
+    },
+    {
+      "name": "Chest Lock Rivet 5",
+      "maximum_coordinate_difference": 0.0
+    },
+    {
+      "name": "Chest Lock Rivet 6",
+      "maximum_coordinate_difference": 0.0
+    },
+    {
+      "name": "Chest Lower Strap Rivet",
+      "maximum_coordinate_difference": 0.0
+    },
+    {
+      "name": "Chest Upright Diamond -1 -1",
+      "maximum_coordinate_difference": 0.0
+    },
+    {
+      "name": "Chest Upright Diamond -1 1",
+      "maximum_coordinate_difference": 0.0
+    },
+    {
+      "name": "Chest Upright Diamond 1 -1",
+      "maximum_coordinate_difference": 0.0
+    },
+    {
+      "name": "Chest Upright Diamond 1 1",
+      "maximum_coordinate_difference": 0.0
+    },
+    {
+      "name": "Chest End Arch Rivet -1 0",
+      "maximum_coordinate_difference": 0.0
+    },
+    {
+      "name": "Chest End Arch Rivet -1 1",
+      "maximum_coordinate_difference": 0.0
+    },
+    {
+      "name": "Chest Corner Body Cuff Front Rivet -1 -1",
+      "maximum_coordinate_difference": 0.0
+    },
+    {
+      "name": "Chest Corner Body Cuff End Rivet -1 -1",
+      "maximum_coordinate_difference": 0.0
+    },
+    {
+      "name": "Chest Corner Body Cuff Front Rivet -1 1",
+      "maximum_coordinate_difference": 0.0
+    },
+    {
+      "name": "Chest Corner Body Cuff End Rivet -1 1",
+      "maximum_coordinate_difference": 0.0
+    },
+    {
+      "name": "Chest End Arch Rivet 1 0",
+      "maximum_coordinate_difference": 0.0
+    },
+    {
+      "name": "Chest End Arch Rivet 1 1",
+      "maximum_coordinate_difference": 0.0
+    },
+    {
+      "name": "Chest Corner Body Cuff Front Rivet 1 -1",
+      "maximum_coordinate_difference": 0.0
+    },
+    {
+      "name": "Chest Corner Body Cuff End Rivet 1 -1",
+      "maximum_coordinate_difference": 0.0
+    },
+    {
+      "name": "Chest Corner Body Cuff Front Rivet 1 1",
+      "maximum_coordinate_difference": 0.0
+    },
+    {
+      "name": "Chest Corner Body Cuff End Rivet 1 1",
+      "maximum_coordinate_difference": 0.0
+    },
+    {
+      "name": "Chest Hasp Pivot Dome -1",
+      "maximum_coordinate_difference": 0.0
+    },
+    {
+      "name": "Chest Hasp Mount Fastener -1",
+      "maximum_coordinate_difference": 0.0
+    },
+    {
+      "name": "Chest End Arch Crown Tab -1",
+      "maximum_coordinate_difference": 0.0
+    },
+    {
+      "name": "Chest End Crown Fastener -1",
+      "maximum_coordinate_difference": 0.0
+    },
+    {
+      "name": "Chest Hasp Pivot Dome 1",
+      "maximum_coordinate_difference": 0.0
+    },
+    {
+      "name": "Chest Hasp Mount Fastener 1",
+      "maximum_coordinate_difference": 0.0
+    },
+    {
+      "name": "Chest End Arch Crown Tab 1",
+      "maximum_coordinate_difference": 0.0
+    },
+    {
+      "name": "Chest End Crown Fastener 1",
+      "maximum_coordinate_difference": 0.0
+    },
+    {
+      "name": "Chest Upper Corner Front Rivet -1 -1 Seat",
+      "maximum_coordinate_difference": 0.0
+    },
+    {
+      "name": "Chest Upper Corner End Rivet -1 -1 Seat",
+      "maximum_coordinate_difference": 0.0
+    },
+    {
+      "name": "Chest Upper Corner Front Rivet -1 1 Seat",
+      "maximum_coordinate_difference": 0.0
+    },
+    {
+      "name": "Chest Upper Corner End Rivet -1 1 Seat",
+      "maximum_coordinate_difference": 0.0
+    },
+    {
+      "name": "Chest Upper Corner Front Rivet 1 -1 Seat",
+      "maximum_coordinate_difference": 0.0
+    },
+    {
+      "name": "Chest Upper Corner End Rivet 1 -1 Seat",
+      "maximum_coordinate_difference": 0.0
+    },
+    {
+      "name": "Chest Upper Corner Front Rivet 1 1 Seat",
+      "maximum_coordinate_difference": 0.0
+    },
+    {
+      "name": "Chest Upper Corner End Rivet 1 1 Seat",
+      "maximum_coordinate_difference": 0.0
+    },
+    {
+      "name": "Chest Rail Rivet -1 0",
+      "maximum_coordinate_difference": 0.0
+    },
+    {
+      "name": "Chest Rail Rivet -1 1",
+      "maximum_coordinate_difference": 0.0
+    },
+    {
+      "name": "Chest Rail Rivet -1 2",
+      "maximum_coordinate_difference": 0.0
+    },
+    {
+      "name": "Chest Rail Rivet -1 3",
+      "maximum_coordinate_difference": 0.0
+    },
+    {
+      "name": "Chest Rail Rivet -1 4",
+      "maximum_coordinate_difference": 0.0
+    },
+    {
+      "name": "Chest Rail Rivet 1 0",
+      "maximum_coordinate_difference": 0.0
+    },
+    {
+      "name": "Chest Rail Rivet 1 1",
+      "maximum_coordinate_difference": 0.0
+    },
+    {
+      "name": "Chest Rail Rivet 1 2",
+      "maximum_coordinate_difference": 0.0
+    },
+    {
+      "name": "Chest Rail Rivet 1 3",
+      "maximum_coordinate_difference": 0.0
+    },
+    {
+      "name": "Chest Rail Rivet 1 4",
+      "maximum_coordinate_difference": 0.0
+    },
+    {
+      "name": "Chest End Rail Rivet -1 0",
+      "maximum_coordinate_difference": 0.0
+    },
+    {
+      "name": "Chest End Rail Rivet -1 1",
+      "maximum_coordinate_difference": 0.0
+    },
+    {
+      "name": "Chest End Rail Rivet 1 0",
+      "maximum_coordinate_difference": 0.0
+    },
+    {
+      "name": "Chest End Rail Rivet 1 1",
+      "maximum_coordinate_difference": 0.0
+    },
+    {
+      "name": "Chest Measured Rolled Handle Cover -1",
+      "maximum_coordinate_difference": 0.0
+    },
+    {
+      "name": "Chest Measured Rolled Handle Cover 1",
+      "maximum_coordinate_difference": 0.0
+    },
+    {
+      "name": "Chest Fixed Front Hinge Knuckle -1",
+      "maximum_coordinate_difference": 0.0
+    },
+    {
+      "name": "Chest Fixed Front Hinge Knuckle 1",
+      "maximum_coordinate_difference": 0.0
+    },
+    {
+      "name": "Chest Front Hinge Pin",
+      "maximum_coordinate_difference": 0.0
+    },
+    {
+      "name": "Chest Case Back With Key Bore",
+      "maximum_coordinate_difference": 0.0
+    },
+    {
+      "name": "Chest Hollow Lock Case Walls",
+      "maximum_coordinate_difference": 0.0
+    },
+    {
+      "name": "Chest Key Driven Slider",
+      "maximum_coordinate_difference": 0.0
+    },
+    {
+      "name": "Chest Compliant Catch Leaf",
+      "maximum_coordinate_difference": 0.0
+    },
+    {
+      "name": "Chest Fixed Leaf Clamp",
+      "maximum_coordinate_difference": 0.0
+    }
+  ],
+  "candidate31_files_unchanged": true
+}

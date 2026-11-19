@@ -1,0 +1,283 @@
+[
+  {
+    "pixel": [
+      860,
+      162
+    ],
+    "hits": [
+      {
+        "part": "Chest End Arch Crown Tab 1",
+        "local": [
+          2.5,
+          2.76794,
+          0.08121
+        ],
+        "distance": 46.3095
+      },
+      {
+        "part": "Chest End Arch Crown Tab 1",
+        "local": [
+          2.65443,
+          2.76468,
+          -0.142
+        ],
+        "distance": 46.58093
+      }
+    ]
+  },
+  {
+    "pixel": [
+      865,
+      163
+    ],
+    "hits": [
+      {
+        "part": "Chest End Arch Crown Tab 1",
+        "local": [
+          2.5,
+          2.76125,
+          0.14234
+        ],
+        "distance": 46.25932
+      },
+      {
+        "part": "Chest Broad End Arch 1",
+        "local": [
+          2.57896,
+          2.75957,
+          0.02839
+        ],
+        "distance": 46.39795
+      },
+      {
+        "part": "Chest Broad End Arch 1",
+        "local": [
+          2.64914,
+          2.75807,
+          -0.07289
+        ],
+        "distance": 46.52118
+      },
+      {
+        "part": "Chest End Arch Crown Tab 1",
+        "local": [
+          2.69703,
+          2.75704,
+          -0.142
+        ],
+        "distance": 46.60527
+      }
+    ]
+  },
+  {
+    "pixel": [
+      870,
+      164
+    ],
+    "hits": [
+      {
+        "part": "Chest End Arch Crown Tab 1",
+        "local": [
+          2.5,
+          2.75458,
+          0.20333
+        ],
+        "distance": 46.20927
+      },
+      {
+        "part": "Chest Broad End Arch 1",
+        "local": [
+          2.54491,
+          2.75361,
+          0.13862
+        ],
+        "distance": 46.28805
+      },
+      {
+        "part": "Chest End Arch Crown Tab 1",
+        "local": [
+          2.55869,
+          2.75331,
+          0.11876
+        ],
+        "distance": 46.31222
+      },
+      {
+        "part": "Chest End Arch Crown Tab 1",
+        "local": [
+          2.69917,
+          2.75027,
+          -0.08363
+        ],
+        "distance": 46.55861
+      },
+      {
+        "part": "Chest Broad End Arch 1",
+        "local": [
+          2.70379,
+          2.75017,
+          -0.09028
+        ],
+        "distance": 46.5667
+      }
+    ]
+  },
+  {
+    "pixel": [
+      875,
+      165
+    ],
+    "hits": [
+      {
+        "part": "Chest End Arch Crown Tab 1",
+        "local": [
+          2.5,
+          2.74792,
+          0.26419
+        ],
+        "distance": 46.15937
+      },
+      {
+        "part": "Chest Broad End Arch 1",
+        "local": [
+          2.54647,
+          2.7469,
+          0.19734
+        ],
+        "distance": 46.24079
+      },
+      {
+        "part": "Chest End Arch Crown Tab 1",
+        "local": [
+          2.55584,
+          2.7467,
+          0.18386
+        ],
+        "distance": 46.25721
+      },
+      {
+        "part": "Chest End Arch Crown Tab 1",
+        "local": [
+          2.71615,
+          2.74319,
+          -0.04674
+        ],
+        "distance": 46.53808
+      },
+      {
+        "part": "Chest Broad End Arch 1",
+        "local": [
+          2.71928,
+          2.74312,
+          -0.05124
+        ],
+        "distance": 46.54356
+      }
+    ]
+  },
+  {
+    "pixel": [
+      880,
+      166
+    ],
+    "hits": [
+      {
+        "part": "Chest End Arch Crown Tab 1",
+        "local": [
+          2.50203,
+          2.74123,
+          0.322
+        ],
+        "distance": 46.11315
+      },
+      {
+        "part": "Chest Broad End Arch 1",
+        "local": [
+          2.55638,
+          2.74003,
+          0.24394
+        ],
+        "distance": 46.20827
+      },
+      {
+        "part": "Chest End Arch Crown Tab 1",
+        "local": [
+          2.56389,
+          2.73986,
+          0.23316
+        ],
+        "distance": 46.22141
+      },
+      {
+        "part": "Chest End Arch Crown Tab 1",
+        "local": [
+          2.72581,
+          2.73628,
+          0.00061
+        ],
+        "distance": 46.5048
+      },
+      {
+        "part": "Chest Broad End Arch 1",
+        "local": [
+          2.72878,
+          2.73621,
+          -0.00365
+        ],
+        "distance": 46.50999
+      }
+    ]
+  },
+  {
+    "pixel": [
+      865,
+      169
+    ],
+    "hits": [
+      {
+        "part": "Chest Broad End Arch 1",
+        "local": [
+          2.36143,
+          2.72057,
+          0.34255
+        ],
+        "distance": 46.01631
+      },
+      {
+        "part": "Chest Broad End Arch 1",
+        "local": [
+          2.73806,
+          2.71189,
+          -0.20096
+        ],
+        "distance": 46.67761
+      }
+    ]
+  },
+  {
+    "pixel": [
+      865,
+      158
+    ],
+    "hits": [
+      {
+        "part": "Chest End Arch Crown Tab 1",
+        "local": [
+          2.5,
+          2.79782,
+          0.14213
+        ],
+        "distance": 46.25909
+      },
+      {
+        "part": "Chest End Arch Crown Tab 1",
+        "local": [
+          2.69689,
+          2.79388,
+          -0.142
+        ],
+        "distance": 46.6048
+      }
+    ]
+  }
+]

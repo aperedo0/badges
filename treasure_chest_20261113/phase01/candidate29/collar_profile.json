@@ -1,0 +1,78 @@
+{
+  "positive_outer_profile": [
+    [
+      0.25,
+      0.164
+    ],
+    [
+      0.254,
+      0.168
+    ],
+    [
+      0.26,
+      0.168
+    ],
+    [
+      0.27,
+      0.19
+    ],
+    [
+      0.29,
+      0.19
+    ],
+    [
+      0.298,
+      0.18
+    ],
+    [
+      0.306,
+      0.18
+    ],
+    [
+      0.314,
+      0.19
+    ],
+    [
+      0.334,
+      0.19
+    ],
+    [
+      0.344,
+      0.17
+    ],
+    [
+      0.356,
+      0.17
+    ],
+    [
+      0.36,
+      0.166
+    ]
+  ],
+  "inner_radius": 0.086,
+  "radial_segments": 64,
+  "old_outer_profile": [
+    [
+      0.25,
+      0.184
+    ],
+    [
+      0.256,
+      0.19
+    ],
+    [
+      0.354,
+      0.19
+    ],
+    [
+      0.36,
+      0.184
+    ]
+  ],
+  "maximum_radius_excess": 0.0,
+  "collar_material_subset": true,
+  "hinge_relief_radius": 0.18,
+  "minimum_inscribed_relief_radius": 0.17978318211693103,
+  "radial_sleeve_clearance": 0.011783182116931024,
+  "axial_sleeve_gap": 0.01
+}

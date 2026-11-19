@@ -1,0 +1,8 @@
+{
+  "change": "Full opaque plate passing through gem replaced with a closed annular support outside the actual gemstone outline. Physical internal light path is clear.",
+  "gem_geometry_normals_and_uvs_unchanged": true,
+  "frame_geometry_unchanged": true,
+  "frame_normals": "Angle weighted actual geometric bevel normals",
+  "runtime_unchanged": true,
+  "blender_review_pending": true
+}

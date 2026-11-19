@@ -1,0 +1,337 @@
+{
+ "units": {
+  "S": 0.004694229112833764,
+  "axis": 653.5,
+  "top": 15.0,
+  "width_px": 1312,
+  "height_px": 1199
+ },
+ "box": [
+  81,
+  15,
+  1227,
+  1177
+ ],
+ "parts": [
+  {
+   "name": "core",
+   "base": 0.03,
+   "materials": [
+    "Side"
+   ],
+   "triangles": 828,
+   "front": 102
+  },
+  {
+   "name": "background",
+   "base": 0.06,
+   "materials": [
+    "Red",
+    "Side"
+   ],
+   "triangles": 10248,
+   "front": 1272
+  },
+  {
+   "name": "star",
+   "base": 0.10359756197405859,
+   "materials": [
+    "Gold",
+    "Lemon",
+    "Side"
+   ],
+   "triangles": 25740,
+   "front": 5661
+  },
+  {
+   "name": "ring",
+   "base": 0.1006570419812273,
+   "materials": [
+    "GoldRing",
+    "Side"
+   ],
+   "triangles": 6984,
+   "front": 1551
+  },
+  {
+   "name": "point_top",
+   "base": 0.20081740356627736,
+   "materials": [
+    "GoldRing",
+    "Side"
+   ],
+   "triangles": 88,
+   "front": 32
+  },
+  {
+   "name": "point_diag_left",
+   "base": 0.1970436739479429,
+   "materials": [
+    "GoldRing",
+    "Side"
+   ],
+   "triangles": 112,
+   "front": 38
+  },
+  {
+   "name": "point_diag_right",
+   "base": 0.1970436739479429,
+   "materials": [
+    "GoldRing",
+    "Side"
+   ],
+   "triangles": 112,
+   "front": 38
+  },
+  {
+   "name": "point_side_left",
+   "base": 0.19681776093490927,
+   "materials": [
+    "GoldRing",
+    "Side"
+   ],
+   "triangles": 108,
+   "front": 36
+  },
+  {
+   "name": "point_side_right",
+   "base": 0.19681776093490927,
+   "materials": [
+    "GoldRing",
+    "Side"
+   ],
+   "triangles": 108,
+   "front": 36
+  },
+  {
+   "name": "sun",
+   "base": 0.14159318732345683,
+   "materials": [
+    "Gold",
+    "Side",
+    "SunDisc"
+   ],
+   "triangles": 5248,
+   "front": 1592
+  },
+  {
+   "name": "mountain_side_left",
+   "base": 0.13833205110894978,
+   "materials": [
+    "Gold",
+    "Royal",
+    "Side"
+   ],
+   "triangles": 2172,
+   "front": 468
+  },
+  {
+   "name": "mountain_side_left_snow",
+   "base": 0.174879469708153,
+   "materials": [
+    "Gold",
+    "Side",
+    "Snow",
+    "SnowLavender"
+   ],
+   "triangles": 1332,
+   "front": 471
+  },
+  {
+   "name": "mountain_side_right",
+   "base": 0.13833205110894978,
+   "materials": [
+    "Gold",
+    "Royal",
+    "Side"
+   ],
+   "triangles": 2164,
+   "front": 467
+  },
+  {
+   "name": "mountain_side_right_snow",
+   "base": 0.174879469708153,
+   "materials": [
+    "Gold",
+    "Side",
+    "Snow",
+    "SnowLavender"
+   ],
+   "triangles": 1072,
+   "front": 371
+  },
+  {
+   "name": "mountain_central",
+   "base": 0.20814225884973478,
+   "materials": [
+    "Gold",
+    "Navy",
+    "Side",
+    "Steel",
+    "Teal"
+   ],
+   "triangles": 4356,
+   "front": 1107
+  },
+  {
+   "name": "mountain_central_snow",
+   "base": 0.2446834367934448,
+   "materials": [
+    "Gold",
+    "Side",
+    "Snow",
+    "SnowLavender"
+   ],
+   "triangles": 1224,
+   "front": 465
+  },
+  {
+   "name": "mountain_central_chevron",
+   "base": 0.24470906821239935,
+   "materials": [
+    "Gold",
+    "Navy",
+    "Side"
+   ],
+   "triangles": 968,
+   "front": 298
+  },
+  {
+   "name": "cloud_0",
+   "base": 0.2466716409731917,
+   "materials": [
+    "Cloud",
+    "Gold",
+    "Side"
+   ],
+   "triangles": 4748,
+   "front": 1597
+  },
+  {
+   "name": "cloud_1",
+   "base": 0.2466716409731917,
+   "materials": [
+    "Cloud",
+    "Gold",
+    "Side"
+   ],
+   "triangles": 4740,
+   "front": 1605
+  },
+  {
+   "name": "cloud_2",
+   "base": 0.32457725220480693,
+   "materials": [
+    "Cloud",
+    "Gold",
+    "Side"
+   ],
+   "triangles": 2400,
+   "front": 624
+  },
+  {
+   "name": "cloud_3",
+   "base": 0.32457725220480693,
+   "materials": [
+    "Cloud",
+    "Gold",
+    "Side"
+   ],
+   "triangles": 2440,
+   "front": 632
+  },
+  {
+   "name": "curl_0",
+   "base": 0.265476266160943,
+   "materials": [
+    "GoldLower",
+    "Side"
+   ],
+   "triangles": 11148,
+   "front": 1830
+  },
+  {
+   "name": "border",
+   "base": 0.29254711293862956,
+   "materials": [
+    "GoldLower",
+    "Side"
+   ],
+   "triangles": 2320,
+   "front": 728
+  },
+  {
+   "name": "gem",
+   "base": 0.33652372884904846,
+   "materials": [
+    "Gem"
+   ],
+   "triangles": 80,
+   "front": 8
+  },
+  {
+   "name": "frame",
+   "base": 0.3525237288490485,
+   "materials": [
+    "Gold",
+    "Side"
+   ],
+   "triangles": 536,
+   "front": 220
+  }
+ ],
+ "order": [
+  "core",
+  "background",
+  "star",
+  "ring",
+  "point_top",
+  "point_diag_left",
+  "point_diag_right",
+  "point_side_left",
+  "point_side_right",
+  "sun",
+  "mountain_side_left",
+  "mountain_side_left_snow",
+  "mountain_side_right",
+  "mountain_side_right_snow",
+  "mountain_central",
+  "mountain_central_snow",
+  "mountain_central_chevron",
+  "cloud_0",
+  "cloud_1",
+  "cloud_2",
+  "cloud_3",
+  "curl_0",
+  "border",
+  "gem",
+  "frame"
+ ],
+ "validate_order": [
+  "core",
+  "background",
+  "star",
+  "ring",
+  "point_top",
+  "point_diag_left",
+  "point_diag_right",
+  "point_side_left",
+  "point_side_right",
+  "sun",
+  "mountain_side_left",
+  "mountain_side_left_snow",
+  "mountain_side_right",
+  "mountain_side_right_snow",
+  "mountain_central",
+  "mountain_central_snow",
+  "mountain_central_chevron",
+  "cloud_0",
+  "cloud_1",
+  "cloud_2",
+  "cloud_3",
+  "curl_0",
+  "border",
+  "gem",
+  "frame"
+ ]
+}

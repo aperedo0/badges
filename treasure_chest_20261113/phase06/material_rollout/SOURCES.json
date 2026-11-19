@@ -1,0 +1,10 @@
+{
+  "wood": "Existing approved BC_final_polish material and its coordinated authored height, color, roughness and complementary normal maps",
+  "wood_recipe": "wood_atlas/recipe.json",
+  "iron": "Existing phase05/iron_character/14_edge_review material. Original surface data and image datablocks shared by the new iron instance.",
+  "existing_free_resource_provenance": "../../phase05/iron_character/SOURCES.json",
+  "new_external_assets": 0,
+  "new_installations": 0,
+  "render_materials": "Actual production materials. Decorative hardware keeps its original gray placeholder; no temporary gold replacement.",
+  "geometry": "Source geometry, object hierarchy and functional mechanism retained. Existing sculpted wood and iron benchmark relief is preserved. Newly mapped surfaces use normal and bump relief without geometry changes."
+}

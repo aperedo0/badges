@@ -1,0 +1,10 @@
+{
+  "name": "Aurora Mountain",
+  "selection": "auroraMountain",
+  "scale": 0.004577405857740586,
+  "reference_top": 10.0,
+  "reference_center_x": 627.0,
+  "method": "Reference traced rock relief and gold road, two physical metal frames, independent convex amethyst, luminous aurora artwork",
+  "custom_frame": true,
+  "triangle_count": 51076
+}

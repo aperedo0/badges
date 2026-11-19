@@ -1,0 +1,20 @@
+{
+  "complete_mesh_count": 6,
+  "triangles": 106512,
+  "all_used_images_packed_and_match_usdz": true,
+  "images": [
+    {
+      "name": "surface_roughness.png",
+      "sha256": "c58a760d70cc3eb0d7e68932ce29e5c9b56c7914dc3a70d96f8aa61600d0529a"
+    },
+    {
+      "name": "surface_color.png",
+      "sha256": "6c3a6cee0248c539f17c4972ae466f71031f20d1aea3ffae585e0b9121daafdb"
+    },
+    {
+      "name": "surface_emission.png",
+      "sha256": "ca20d0dada0d35429e7927c0969432e5de2b13dff2046abb5c368c9195c7082e"
+    }
+  ],
+  "usdz_unchanged_sha256": "bd0ae00b65e0ee00806f9fea93902b951f53c065f84dd142e512ffb512cb3a10"
+}
