@@ -508,3 +508,8 @@ that I do not like.. idk what it is", and on the torches: "it can use some work.
   on a curved arm, a low wide quiet fire). Each shape sets where the flame starts, its card and the flame's
   own shape (`SHAPE`). `TORCH_STYLE=... temple/tools/shot.sh NAME` renders one without saving
   (`~/Downloads/Chest torch shape options.png`).
+- The owner picked the slim torch ("Let's go with A"): `TORCH_STYLE` now defaults to `slim` and the scene is saved
+  with it. `TORCH_LEAN` (degrees, default 17) leans it out from the pillar; 0 stands it straight up, further out
+  from the stone (0.8, leaning 0.4) so its fire stays clear. Both shown in
+  `~/Downloads/Chest slim torch leaning or straight.png` (close up, and the real frame's band through
+  `BORDER="0,0.6,1,0.86"`). The saved scene leans until the owner picks.

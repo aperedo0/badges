@@ -47,10 +47,19 @@ RIM = 2.1                                       # top of the cup above the plate
 # fire: where the flame starts (out from the pillar, up); coal: glowing bed (radius, up) or None; card: the flame
 # card's width and height; then the flame's own shape (width of its body, how round its top is, how far the top
 # splits into tongues, how hard they split, how much it leans).
-STYLE = G("TORCH_STYLE", "goblet")
+STYLE = G("TORCH_STYLE", "slim")                # the owner picked the slim torch on 2026-11-20 ("Let's go with A")
+# The slim torch can lean out from the pillar or stand straight up (owner: "let's try with a slant and no slant
+# just straight up"). Standing straight it sits further out, so its fire stays clear of the stone.
+LEAN = G("TORCH_LEAN", 17.0)
+SLIM_OUT = 0.40 if LEAN > 1.0 else 0.8
+SLIM_A = (SLIM_OUT, -0.75)
+SLIM_B = (SLIM_OUT + 2.5 * math.tan(math.radians(LEAN)), 1.75)
+_ln = math.hypot(SLIM_B[0] - SLIM_A[0], SLIM_B[1] - SLIM_A[1])
+SLIM_AX = ((SLIM_B[0] - SLIM_A[0]) / _ln, (SLIM_B[1] - SLIM_A[1]) / _ln)
+SLIM_HEAD = (SLIM_B[0] + SLIM_AX[0] * 0.62, SLIM_B[1] + SLIM_AX[1] * 0.62)
 SHAPE = {
     "goblet": dict(fire=(AX, 1.9), coal=(0.86, 1.99), card=(4.4, 4.6), width=0.47, round=1.4, tongues=1.5, split=2.8, sway=0.9, few=0.5),
-    "slim": dict(fire=(1.33, 2.2), coal=(0.27, 2.36), card=(3.0, 3.1), width=0.44, round=1.9, tongues=1.0, split=2.0, sway=0.7, few=0.66),
+    "slim": dict(fire=(SLIM_HEAD[0], SLIM_HEAD[1] - 0.14), coal=(0.27, SLIM_HEAD[1] + 0.02), card=(3.0, 3.1), width=0.44, round=1.9, tongues=1.0, split=2.0, sway=0.7, few=0.66),
     "bowl": dict(fire=(1.55, 0.86), coal=(0.95, 0.93), card=(4.8, 3.2), width=0.6, round=1.8, tongues=1.1, split=2.2, sway=0.75, few=0.62),
 }[STYLE]
 
@@ -202,9 +211,8 @@ for i, (g, cx, cy, s, h) in enumerate(SPOTS):
         iron.append(extrude(stadium(0.22, 0.62), -0.12, 0.14, lambda a, b, t: P(t, a, b)))
         for bz in (-0.68, 0.0, 0.68):
             iron.append(extrude([(hx * 0.8, bz + hz * 0.8) for hx, hz in HEX], 0.14, 0.25, lambda a, b, t: P(t, a, b)))
-        A_, B_ = (0.40, -0.75), (1.15, 1.75)                    # the torch leans out about 17 degrees
-        ln = math.hypot(B_[0] - A_[0], B_[1] - A_[1])
-        a0, a1 = (B_[0] - A_[0]) / ln, (B_[1] - A_[1]) / ln
+        A_, B_ = SLIM_A, SLIM_B                                 # leaning out, or straight up
+        a0, a1 = SLIM_AX
         iron.append(tube(P, (A_[0] - a0 * 0.12, A_[1] - a1 * 0.12), A_, 0.07, 0.12))      # a small pointed foot
         iron.append(tube(P, A_, B_, 0.12, 0.16))                                           # the shaft
         iron.append(tube(P, B_, (B_[0] + a0 * 0.1, B_[1] + a1 * 0.1), 0.2, 0.27))          # the head flares
