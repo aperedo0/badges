@@ -1,0 +1,92 @@
+[
+  {
+    "key": "polyhaven_plastered_stone_wall",
+    "asset": "Plastered Stone Wall",
+    "type": "texture",
+    "source": "Poly Haven",
+    "page": "https://polyhaven.com/a/plastered_stone_wall",
+    "authors": [
+      "Rob Tuytel"
+    ],
+    "license": "CC0 1.0",
+    "license_url": "https://polyhaven.com/license",
+    "api": "https://polyhaven.com/our-api",
+    "resolution": "2k",
+    "note": "temple columns, arches and walls: surface relief and roughness",
+    "files": {
+      "plastered_stone_wall_diff_2k.jpg": {
+        "url": "https://dl.polyhaven.org/file/ph-assets/Textures/jpg/2k/plastered_stone_wall/plastered_stone_wall_diff_2k.jpg",
+        "sha256": "8f20192144ce4725c7cfa7def9cbcd0d069bccc59ee8f2a2d80ed9647f717213"
+      },
+      "plastered_stone_wall_rough_2k.jpg": {
+        "url": "https://dl.polyhaven.org/file/ph-assets/Textures/jpg/2k/plastered_stone_wall/plastered_stone_wall_rough_2k.jpg",
+        "sha256": "4307e04e2c5185c3a26a522a4ac4ecf744935b353f8369a6e60799f57a1b0699"
+      },
+      "plastered_stone_wall_nor_gl_2k.jpg": {
+        "url": "https://dl.polyhaven.org/file/ph-assets/Textures/jpg/2k/plastered_stone_wall/plastered_stone_wall_nor_gl_2k.jpg",
+        "sha256": "25bed6b5b2d66bb3305ffa9a4308d105828fafa6cc37e806041b8b3d103139f1"
+      }
+    },
+    "date": "2026-11-19"
+  },
+  {
+    "key": "polyhaven_rock_surface",
+    "asset": "Rock Surface",
+    "type": "texture",
+    "source": "Poly Haven",
+    "page": "https://polyhaven.com/a/rock_surface",
+    "authors": [
+      "Amal Kumar"
+    ],
+    "license": "CC0 1.0",
+    "license_url": "https://polyhaven.com/license",
+    "api": "https://polyhaven.com/our-api",
+    "resolution": "2k",
+    "note": "temple floor slabs and dais: surface relief",
+    "files": {
+      "rock_surface_diff_2k.jpg": {
+        "url": "https://dl.polyhaven.org/file/ph-assets/Textures/jpg/2k/rock_surface/rock_surface_diff_2k.jpg",
+        "sha256": "00b52fc626948b0bb4a3ebe4c6513d75d19cc8ff50c3bc92567d66002836877b"
+      },
+      "rock_surface_rough_2k.jpg": {
+        "url": "https://dl.polyhaven.org/file/ph-assets/Textures/jpg/2k/rock_surface/rock_surface_rough_2k.jpg",
+        "sha256": "d64d3cda42beeea104d72d3b7b47f19968bd3deec021b17b80b65af015b9c4db"
+      },
+      "rock_surface_nor_gl_2k.jpg": {
+        "url": "https://dl.polyhaven.org/file/ph-assets/Textures/jpg/2k/rock_surface/rock_surface_nor_gl_2k.jpg",
+        "sha256": "f1cc9e614014461bbd556e5c83f434abf2b7b2a3b19af57ab39d6dfc1fd61f32"
+      }
+    },
+    "date": "2026-11-19"
+  },
+  {
+    "key": "polyhaven_concrete_moss",
+    "asset": "Concrete Moss",
+    "type": "texture",
+    "source": "Poly Haven",
+    "page": "https://polyhaven.com/a/concrete_moss",
+    "authors": [
+      "Rob Tuytel"
+    ],
+    "license": "CC0 1.0",
+    "license_url": "https://polyhaven.com/license",
+    "api": "https://polyhaven.com/our-api",
+    "resolution": "2k",
+    "note": "moss in floor joints, on column bases and dais edge",
+    "files": {
+      "concrete_moss_diff_2k.jpg": {
+        "url": "https://dl.polyhaven.org/file/ph-assets/Textures/jpg/2k/concrete_moss/concrete_moss_diff_2k.jpg",
+        "sha256": "764e43763490672a2067d3bd644ab0602a9d477533e598bcc0e3b3b01d8b937a"
+      },
+      "concrete_moss_rough_2k.jpg": {
+        "url": "https://dl.polyhaven.org/file/ph-assets/Textures/jpg/2k/concrete_moss/concrete_moss_rough_2k.jpg",
+        "sha256": "59b515c94d1759ecae0aa0f47bf5dfc6584d9bcc19b3de635cb0ad0218915626"
+      },
+      "concrete_moss_nor_gl_2k.jpg": {
+        "url": "https://dl.polyhaven.org/file/ph-assets/Textures/jpg/2k/concrete_moss/concrete_moss_nor_gl_2k.jpg",
+        "sha256": "4b680afc05e0e02aa96e8b3ad213d28e4805e980895f2c082c979a5c7ba8b3c2"
+      }
+    },
+    "date": "2026-11-19"
+  }
+]

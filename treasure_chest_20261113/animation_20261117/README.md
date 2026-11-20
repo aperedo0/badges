@@ -1,6 +1,6 @@
 # Treasure chest badge reveal animation
 
-**Current: `chest_reveal_v7.blend`** (2026-11-18; landing dust in `chest_reveal_v7_dust.blend`, ending light in `chest_reveal_v7_ending.blend`, see Version 7). Version 6: `chest_reveal_v6.blend`, scene **Chest Reveal**: 30 fps, frames 1 to 213
+**Newest: `chest_reveal_v9_temple.blend`** (2026-11-19, version 8 plus the temple background, see Version 9). **Core: `chest_reveal_v7.blend`** (2026-11-18; landing dust in `chest_reveal_v7_dust.blend`, ending light in `chest_reveal_v7_ending.blend`, see Version 7). Version 6: `chest_reveal_v6.blend`, scene **Chest Reveal**: 30 fps, frames 1 to 213
 (7.1 s), 1080 x 1920 portrait, EEVEE. Version 6 is the owner's core animation pass (see Version 6
 below): the chest drops in from off screen into a large straight on view, the clasp unlocks before
 the lid opens, the camera pulls back, and the app's 3 Days Total badge rises. No smoke or special
@@ -304,3 +304,39 @@ The owner turned down the version 7 opening fog (a thick cloud sitting on the ri
 - First look for the owner: res 72, no detail pass, half size, 24 samples
   (`~/Downloads/Chest opening mist test 1.mp4`). Run `v8_mist.py` only before a new bake: it changes the
   simulation settings, which outdates the cache.
+
+## Version 9 temple background (2026-11-19)
+
+The owner's mockup (`~/Downloads/Ancient stone temple with emerald badge.png`) put the chest in an old stone
+temple; only the background was to be built (its green floor light left out on purpose). `chest_reveal_v9_temple.blend`
+is a copy of `chest_reveal_v8_mist.blend` with collection **Reveal Temple** added; the chest, badge, mist, specks,
+beam and their lights are unchanged, and the temple's own lights reach only the temple (light linking).
+Render: `~/Downloads/Chest temple background.png` (frame 213, full size) and `... vs mockup.png`.
+
+- Built in the chest's frame (`Temple Root` copies `Reveal Chest Root`), positions solved through the resting
+  camera so pillars, arch and floor land where the mockup has them: front pillars about 58 units behind the
+  chest, the apse arch about 87. Natural perspective is kept (the camera is unchanged).
+- `tools/v9_temple_geo.py`: platform (dais) whose top is exactly the old floor, so the chest still lands on it
+  (every landing contact checked inside it); one worn top stone with a chipped edge, two gold inlay rings, six
+  base blocks; slightly oval (4.45 by 3.6) so its front sits where the mockup has it. Flagstones with real gaps,
+  chipped corners and tiny tilts, growing with distance so the far floor reads as large flags. Round pillars
+  with square chamfered plinths and capitals and a rounded base ring; smaller engaged pillars carry the low
+  elliptical apse arch (one continuous band); arcades, vault, dark side aisles, rounded apse. Crack decals
+  where the mockup has them. The old `Reveal Floor` is hidden, not deleted.
+- `tools/v9_temple_mat.py`: three CC0 Poly Haven scans for relief (`temple/resources/SOURCES.json`, cache not in
+  Git): weathered grey olive stone with pale flaked patches and moss low down and on ledges; dark damp flags
+  with patchy moss in the joints; warm worn stone for the dais.
+- `tools/v9_temple_light.py`: warm light from high over the hall, rakes on the front pillars' inner faces, warm
+  pools on the floor, a soft glow in the apse, a warm key and a front fill on the dais only. The owner said
+  the streaks first cast in the apse looked like a curtain ("just get rid of that"): that light is off and
+  the apse wall is one smooth surface. Shadow pool raised to 1024 MB (full size renders overflowed 512).
+- `tools/v9_temple_fog.py`: soft wisps hugging the far pillar bases (cards: beyond EEVEE's volume range) and a
+  thin ground mist volume beside the dais. The near mist follows the beam light's energy, so it comes up with
+  the light from above (frames 132 to 186) and never mixes with the landing dust.
+- Run order inside Blender: geo, mat, light, fog (each safe to run again, nothing deleted). Test renders use
+  `tools/v8_render.py`; `temple/tools/side_by_side.py` and `regions.py` compare with the mockup.
+- Two independent reviews (57, then 62 of 100) drove the second pass: round pillars, larger flags, darker
+  sides, one piece dais top, no joint lines on the arches, mist in place of near fog cards.
+- Left as is: the beam's brightness (the mockup's rays are brighter and more golden), the pillars' slight
+  lean from the camera's 10 degree downward tilt, and the white landing grit on the dais (both part of the
+  existing scene).
