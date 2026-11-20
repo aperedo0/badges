@@ -39,7 +39,7 @@ def clamp01(n, x):
 
 
 # ------------------------------------------------------------------ pillars, arches, walls
-def stone_material(name, dark=1.0, contrast=1.5, tile=3.4, scan_colour=True, spall=False, moss_k=1.0):
+def stone_material(name, dark=1.0, contrast=1.5, tile=3.4, scan_colour=True, spall=False, moss_k=1.0, flutes=0):
     m = mat(name)
     n = NT(m)
     tc = n.coord()
@@ -94,11 +94,24 @@ def stone_material(name, dark=1.0, contrast=1.5, tile=3.4, scan_colour=True, spa
     relief = lum(n, d.outputs[0]) if scan_colour else n.math("MULTIPLY", n.noise(obj, 0.9, detail=5, rough=0.6).outputs["Fac"], 0.08)
     h = n.math("ADD", n.math("ADD", relief, n.math("MULTIPLY", moss, 0.03)), n.math("MULTIPLY", sp, 0.02))
     bump = n.node("ShaderNodeBump", ins={"Strength": 0.45 if scan_colour else 0.25, "Distance": 0.05, "Height": h})
-    n.out(principled(n, col, rough, bump.outputs[0]).outputs[0])
+    nrm = bump.outputs[0]
+    if flutes:
+        # shallow grooves running up the pillar shafts (second polish round): each pillar's points carry their
+        # direction round the pillar and whether they sit on the shaft, so one material serves every pillar
+        ds = n.sep(n.uv("PillarDir"))
+        ang = n.math("ARCTAN2", ds[1], ds[0])
+        groove = n.math("SUBTRACT", 1.0, n.math("ABSOLUTE", n.math("SINE", n.math("MULTIPLY", ang, flutes / 2.0))))
+        on_shaft = n.sep(n.uv("PillarShaft"))[0]
+        fl = n.node("ShaderNodeBump", ins={"Strength": G("FLUTE_STRENGTH", 1.0), "Distance": G("FLUTE_DEPTH", 0.08),
+                                          "Height": n.math("MULTIPLY", groove, on_shaft), "Normal": nrm})
+        nrm = fl.outputs[0]
+        # the grooves' hollows sit a little darker (old dirt)
+        col = mul_col(n, col, n.math("ADD", 0.82, n.math("MULTIPLY", n.math("ADD", groove, n.math("SUBTRACT", 1.0, on_shaft)), 0.18)))
+    n.out(principled(n, col, rough, nrm).outputs[0])
     return m
 
 
-stone_material("Temple Stone", spall=True, moss_k=2.3)
+stone_material("Temple Stone", spall=True, moss_k=2.3, flutes=G("FLUTES", 16))
 stone_material("Temple Stone Arch", 0.78, 1.2, 3.4)
 stone_material("Temple Stone Wall", 0.32, 0.7, 7.0, False)     # the scan's block pattern repeated as a grid on big walls
 stone_material("Temple Stone Dark", 0.3, 0.7, 7.0, False)
@@ -140,7 +153,7 @@ moss = n.math("MULTIPLY", band, n.ramp(mz.outputs["Fac"], (0.42, 0.56)))
 md = n.image(MOSS + "diff_2k.jpg", n.vmath("SCALE", w, scale=1 / 1.4))
 mcol = mul_col(n, md.outputs[0], (0.16, 0.24, 0.09, 1))
 col = n.mix(clamp01(n, moss), col, mcol)
-wet = n.ramp(n.noise(w, 0.11, detail=3, rough=0.5).outputs["Fac"], (0.48, 0.62))
+wet = n.ramp(n.noise(w, 0.11, detail=3, rough=0.5).outputs["Fac"], (0.40, 0.58))
 rough = n.math("ADD", 0.52, n.math("MULTIPLY", n.math("SUBTRACT", r.outputs[0], 0.84), 2.0))
 rough = n.math("SUBTRACT", rough, n.math("MULTIPLY", wet, 0.12))
 rough = n.math("ADD", rough, n.math("MULTIPLY", edge, 0.25))      # worn, dusty edges do not shine
@@ -149,7 +162,7 @@ near = n.math("SUBTRACT", 1.0, n.ramp(dctr, (7.0, 20.0)))
 rough = n.math("ADD", rough, n.math("MULTIPLY", near, 0.3))
 # version 10: damp patches away from the dais, so the floor catches the light from the far doorway as soft glints
 damp = n.math("MULTIPLY", n.math("MULTIPLY", wet, n.math("SUBTRACT", 1.0, near)), n.math("SUBTRACT", 1.0, edge))
-rough = n.math("SUBTRACT", rough, n.math("MULTIPLY", damp, G("FLOOR_DAMP", 0.3)))
+rough = n.math("SUBTRACT", rough, n.math("MULTIPLY", damp, G("FLOOR_DAMP", 0.26)))
 col = mul_col(n, col, n.math("SUBTRACT", 1.0, n.math("MULTIPLY", damp, 0.25)))
 rough = n.mix(clamp01(n, moss), rough, 0.9, kind="FLOAT")
 n.out(principled(n, col, clamp01(n, rough), nmap.outputs[0], spec=n.math("SUBTRACT", 0.5, n.math("MULTIPLY", near, 0.3))).outputs[0])
@@ -206,7 +219,11 @@ n.out(principled(n, col, rough, bump.outputs[0], spec=0.22).outputs[0])
 # ------------------------------------------------------------------ gold inlay, groove, crack
 m = mat("Temple Gold Inlay")
 n = NT(m)
-n.out(principled(n, (1.0, 0.72, 0.36, 1), 0.42, metallic=1.0).outputs[0])      # satin, so it catches the light all round
+p_ = principled(n, (0.9, 0.55, 0.2, 1), 0.5, metallic=1.0)        # satin, so it catches the light all round
+# second polish round (owner: "ok we can try 9"): the rings glow softly, as if the temple answers the badge
+p_.inputs["Emission Color"].default_value = (1.0, 0.42, 0.06, 1)  # deep gold: a pale or strong glow read as white or pink
+p_.inputs["Emission Strength"].default_value = G("RING_GLOW", 0.55)
+n.out(p_.outputs[0])
 m = mat("Temple Inlay Groove")
 n = NT(m)
 n.out(principled(n, (0.008, 0.007, 0.006, 1), 0.85).outputs[0])
@@ -215,6 +232,17 @@ n = NT(m)
 n.out(principled(n, (0.004, 0.0035, 0.003, 1), 0.95).outputs[0])
 
 result = {"materials": "ok"}
+
+# ------------------------------------------------------------------ moss tufts on the pillar bases
+m = mat("Temple Moss")
+n = NT(m)
+uvm = n.uv("UVMap")
+md = n.image(MOSS + "diff_2k.jpg", n.vmath("SCALE", uvm, scale=1 / 1.1))
+mn_ = n.noise(n.coord().outputs["Object"], 6.0, detail=3, rough=0.6)
+col = mul_col(n, md.outputs[0], (0.75, 0.95, 0.42, 1))
+col = mul_col(n, col, n.math("ADD", 0.6, n.math("MULTIPLY", mn_.outputs["Fac"], 0.8)))
+bump = n.node("ShaderNodeBump", ins={"Strength": 0.8, "Distance": 0.06, "Height": mn_.outputs["Fac"]})
+n.out(principled(n, col, 0.95, bump.outputs[0], spec=0.2).outputs[0])
 
 # ------------------------------------------------------------------ the light beyond the far doorway
 m = mat("Temple Far Glow")

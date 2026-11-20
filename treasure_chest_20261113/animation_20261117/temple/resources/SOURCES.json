@@ -88,5 +88,73 @@
       }
     },
     "date": "2026-11-19"
+  },
+  {
+    "key": "polyhaven_rock_face_04",
+    "asset": "Rock Face 04",
+    "type": "texture",
+    "source": "Poly Haven",
+    "page": "https://polyhaven.com/a/rock_face_04",
+    "authors": [
+      "Dimitrios Savva"
+    ],
+    "license": "CC0 1.0",
+    "license_url": "https://polyhaven.com/license",
+    "api": "https://polyhaven.com/our-api",
+    "resolution": "2k",
+    "note": "version 11 flagstones: dark cracked stone, colour, roughness and relief",
+    "files": {
+      "rock_face_04_diff_2k.jpg": {
+        "url": "https://dl.polyhaven.org/file/ph-assets/Textures/jpg/2k/rock_face_04/rock_face_04_diff_2k.jpg",
+        "sha256": "297035d0c9c92ae8d8e17952ca527105916e06bb3160adfa4ceaa2689750688d"
+      },
+      "rock_face_04_rough_2k.jpg": {
+        "url": "https://dl.polyhaven.org/file/ph-assets/Textures/jpg/2k/rock_face_04/rock_face_04_rough_2k.jpg",
+        "sha256": "4b19723ae8f63c8db4d97848cb103e80169e3120390d4661016e08ef2cd3e48d"
+      },
+      "rock_face_04_nor_gl_2k.jpg": {
+        "url": "https://dl.polyhaven.org/file/ph-assets/Textures/jpg/2k/rock_face_04/rock_face_04_nor_gl_2k.jpg",
+        "sha256": "56541dd68f7a6a4d135ffb1a4bb52fbb49d55d500026376f52f1cb8dd346e804"
+      },
+      "rock_face_04_disp_2k.png": {
+        "url": "https://dl.polyhaven.org/file/ph-assets/Textures/png/2k/rock_face_04/rock_face_04_disp_2k.png",
+        "sha256": "5e64834f79f60ff3549cdbb5e293e8cb08f3d6b1c9f15c7160a38cb828bd28bf"
+      }
+    },
+    "date": "2026-11-19"
+  },
+  {
+    "key": "polyhaven_rock_3",
+    "asset": "Rock 3",
+    "type": "texture",
+    "source": "Poly Haven",
+    "page": "https://polyhaven.com/a/rock_3",
+    "authors": [
+      "Rob Tuytel"
+    ],
+    "license": "CC0 1.0",
+    "license_url": "https://polyhaven.com/license",
+    "api": "https://polyhaven.com/our-api",
+    "resolution": "2k",
+    "note": "version 11 platform under the chest: pitted worn stone",
+    "files": {
+      "rock_3_diff_2k.jpg": {
+        "url": "https://dl.polyhaven.org/file/ph-assets/Textures/jpg/2k/rock_3/rock_3_diff_2k.jpg",
+        "sha256": "2e7d3905a272ac7a83b0011e8d453909a6a69bb020bfa99ea1e203c9f7d549df"
+      },
+      "rock_3_rough_2k.jpg": {
+        "url": "https://dl.polyhaven.org/file/ph-assets/Textures/jpg/2k/rock_3/rock_3_rough_2k.jpg",
+        "sha256": "6e99d48bd19758e3bc7d008165fa14804da6c7a2a5f654f42a5b277198873c3a"
+      },
+      "rock_3_nor_gl_2k.jpg": {
+        "url": "https://dl.polyhaven.org/file/ph-assets/Textures/jpg/2k/rock_3/rock_3_nor_gl_2k.jpg",
+        "sha256": "018b06ff3c50f5bfca8619bd6807d20a35186fea8e02b18e85d0564932beade6"
+      },
+      "rock_3_disp_2k.png": {
+        "url": "https://dl.polyhaven.org/file/ph-assets/Textures/png/2k/rock_3/rock_3_disp_2k.png",
+        "sha256": "7574c0e5ab9255153aea233cc5dc260b30346ddd6086b502b817b416ed3fe04d"
+      }
+    },
+    "date": "2026-11-19"
   }
 ]

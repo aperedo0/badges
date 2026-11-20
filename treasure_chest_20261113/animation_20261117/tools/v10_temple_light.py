@@ -31,7 +31,8 @@ FLOORS = coll("Temple Floor Receivers", TC)
 for nm in ("Temple Pillar Front L", "Temple Pillar Front R", "Temple Pillar Arcade L", "Temple Pillar Arcade R",
            "Temple Pillar Apse L", "Temple Pillar Apse R", "Temple Pillar Cracks", "Temple Apse Arch", "Temple Nave Arch",
            "Temple Arcade Arches", "Temple Walls", "Temple Apse Wall", "Temple Vault", "Temple Floor", "Temple Floor Bed",
-           "Temple Corridor Ribs", "Temple Corridor Pillars", "Temple Corridor End"):
+           "Temple Corridor Ribs", "Temple Corridor Pillars", "Temple Corridor End", "Temple Moss Tufts",
+           "Temple Fallen Blocks"):
     o = bpy.data.objects.get(nm)
     if o and o.name not in RECV.objects:
         RECV.objects.link(o)
@@ -67,12 +68,16 @@ def light(name, kind, loc, aim, energy, color, vol=0.0, recv=RECV, **kw):
 S = G("TEMPLE_LIGHT_SCALE", 1.0)
 GOLD = (1.0, 0.70, 0.38)
 WARM = (1.0, 0.78, 0.50)
-COOL = G("COOL", (0.55, 0.68, 0.95))
+COOL = G("COOL", (0.42, 0.60, 1.0))
 # ---- behind: the glow in the corridor
 # one strong light at the far doorway, shining down the corridor toward the camera: the ribs and pillars stand
 # dark against glowing air, the arch and the big pillars catch it on their inner edges
 light("Temple Back Glow", "SPOT", (0.0, 232.0, 9.0), (0.0, 60.0, 9.0), G("BACK_E", 750000) * S, GOLD, recv=BACK,
       vol=G("BACK_VOL", 1.0), spot_size=math.radians(16), spot_blend=0.3, shadow_soft_size=1.5, use_shadow=True)
+# a wide, much weaker light from the same doorway for the tall corridor's vault and ribs. At the far light's
+# full strength they went cream white right above the badge; they have to stay darker than any badge's rim.
+light("Temple Corridor Glow", "SPOT", (0.0, 232.0, 9.0), (0.0, 60.0, 14.0), G("CORRIDOR_E", 90000) * S, GOLD, recv=BACK,
+      vol=G("CORRIDOR_VOL", 0.4), spot_size=math.radians(70), spot_blend=0.6, shadow_soft_size=1.5, use_shadow=True)
 # the same light on the floor, much weaker (at full strength every stone's far edge lit up as a bright bar)
 light("Temple Back Floor", "SPOT", (0.0, 232.0, 9.0), (0.0, 60.0, 9.0), G("BACK_FLOOR_E", 110000) * S, GOLD, recv=FLOORS,
       spot_size=math.radians(16), spot_blend=0.3, shadow_soft_size=1.5, use_shadow=True)
@@ -88,23 +93,28 @@ for sx, nm in ((-1, "L"), (1, "R")):
 light("Temple Arch Warm", "SPOT", (0.0, 61.5, 18.0), (0.0, 58.5, 44.0), G("ARCH_E", 30000) * S, GOLD,
       spot_size=math.radians(66), spot_blend=0.8, shadow_soft_size=2.0, use_shadow=True)
 # ---- the beam's glow on the small arch and the wall round it (the mockup's arch is lit at its crown)
-light("Temple Arch Face", "SPOT", (0.0, 40.0, 30.0), (0.0, 87.0, 31.0), G("FACE_E", 26000) * S, WARM,
-      spot_size=math.radians(34), spot_blend=1.0, shadow_soft_size=2.0, use_shadow=True)
+light("Temple Arch Face", "SPOT", (0.0, 40.0, 30.0), (0.0, 87.0, 38.0), G("FACE_E", 26000) * S, WARM,
+      spot_size=math.radians(40), spot_blend=1.0, shadow_soft_size=2.0, use_shadow=True)
 # ---- a little detail light on the fronts
 light("Temple High Light", "SPOT", (0.0, 4.0, 40.0), (0.0, 54.0, 6.0), G("HIGH_E", 9000) * S, (1.0, 0.82, 0.62),
       spot_size=math.radians(100), spot_blend=0.5, shadow_soft_size=3.0, use_shadow=True)
 # ---- cool shadows
 for sx, nm in ((-1, "L"), (1, "R")):
-    light("Temple Cool " + nm, "AREA", (sx * 27.0, 34.0, 26.0), (sx * 16.0, 58.0, 16.0), G("COOL_E", 2600) * S, COOL,
-          shape="DISK", size=14.0, use_shadow=True)
+    # from the side aisle, a little behind the pillar: a blue edge on its outer side, the middle stays dark
+    light("Temple Cool " + nm, "SPOT", (sx * 30.0, 66.0, 24.0), (sx * 17.2, 58.0, 15.0), G("COOL_E", 11000) * S, COOL,
+          spot_size=math.radians(70), spot_blend=0.8, shadow_soft_size=2.0, use_shadow=True)
 light("Temple Cool Top", "AREA", (0.0, 26.0, 52.0), (0.0, 58.0, 42.0), G("COOL_TOP_E", 3000) * S, COOL,
       shape="DISK", size=16.0, use_shadow=True)
 # ---- the floor and the dais
 light("Temple Floor Light", "SPOT", (0.0, 26.0, 44.0), (0.0, 24.0, 0.0), G("FLOOR_E", 7000) * S, (0.75, 0.8, 0.95), recv=FLOORS,
       spot_size=math.radians(92), spot_blend=1.0, shadow_soft_size=4.0, use_shadow=True)
 # the beam's warm spill on the floor round the dais, fading outward
-light("Temple Beam Spill", "SPOT", (0.0, -1.4, 26.0), (0.0, -1.0, FLOOR), G("SPILL_E", 9000) * S, (1.0, 0.8, 0.54), recv=FLOORS,
-      spot_size=math.radians(76), spot_blend=1.0, shadow_soft_size=2.0, use_shadow=True)
+light("Temple Beam Spill", "SPOT", (0.0, -1.4, 26.0), (0.0, -1.0, FLOOR), G("SPILL_E", 20000) * S, (1.0, 0.8, 0.54), recv=FLOORS,
+      spot_size=math.radians(66), spot_blend=1.0, shadow_soft_size=2.0, use_shadow=True)
+# low mist with lit edges: a warm light skimming the floor from behind the chest, for the ground mist only
+light("Temple Mist Rim", "SPOT", (0.0, 17.0, 2.2), (0.0, -12.0, 0.2), G("MIST_RIM_E", 2500) * S, (1.0, 0.8, 0.55), recv=FLOORS,
+      vol=G("MIST_RIM_VOL", 4.0), spot_size=math.radians(120), spot_blend=0.8, shadow_soft_size=1.0, use_shadow=True,
+      diffuse_factor=0.0, specular_factor=0.0)
 light("Temple Front Fill", "AREA", (0.0, -24.0, 5.0), (0.0, 10.0, -0.55), G("FRONT_E", 2200) * S, (1.0, 0.82, 0.6), recv=FRONT,
       vol=G("FRONT_VOL", 1.0), shape="RECTANGLE", size=24.0, size_y=6.0, use_shadow=True)
 light("Temple Dais Key", "SPOT", (-13.0, -9.0, 20.0), (-0.5, 0.5, 0.0), G("DAIS_E", 2500) * S, (1.0, 0.72, 0.44), recv=FRONT,

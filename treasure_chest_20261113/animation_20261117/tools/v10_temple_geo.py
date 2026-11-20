@@ -35,7 +35,8 @@ FRONT_Y, FRONT_X = 58.0, 17.2                  # front pillars
 ARCADE_Y = 22.0                                # pillars nearer the camera (fully out of the picture, carry the arcade)
 INNER_Y, INNER_X, INNER_S = 87.0, 17.5, 0.88   # engaged pillars of the apse arch (smaller)
 WALL_Y = 89.0                                  # front face of the back wall
-APSE_A, APSE_B, APSE_T = 15.3, 9.6, 2.3        # apse arch: half span, rise, band
+APSE_A, APSE_B, APSE_T = 15.3, 15.3, 2.3       # arch behind the chest: half span, rise, band (round and tall since
+                                               # the second polish round, so the long hall shows over the badge)
 SIDE_X = 32.0                                  # outer aisle walls
 SEED = G("TEMPLE_SEED", 7)
 CORR_END = 235.0                               # far end of the corridor beyond the arch
@@ -109,44 +110,68 @@ def shaft(h0, h1, a0, a1, n=8):
     return out
 
 
-PROFILE = ([("c", 3.55, 0.0), ("c", 3.55, 0.88), ("c", 3.45, 0.98),            # footing
-            ("c", 3.25, 0.98), ("c", 3.25, 4.35), ("c", 3.0, 4.6),               # lower plinth, worn top edge
-            ("c", 2.72, 4.6), ("c", 2.72, 5.62), ("c", 2.58, 5.8),               # upper plinth
-            ("r", 2.12, 5.8)] + torus_ring(2.12, 6.22, 0.42) +                   # rounded base ring
-           [("r", 2.06, 6.8)] + shaft(6.8, 24.35, 2.06, 1.9) +                  # shaft with a slight swell
-           torus_ring(1.9, 24.57, 0.22, 6) +                                     # neck ring
-           [("r", 1.9, 25.45)] +
-           [("r", 1.9 + 0.55 * (1 - math.cos(t)), 25.45 + 0.85 * math.sin(t)) for t in
-            [math.radians(15 * i) for i in range(1, 7)]] +                       # flaring echinus
-           [("c", 2.45, 26.3), ("c", 2.45, 27.35),                               # lower capital block
-            ("c", 2.58, 27.35), ("c", 2.84, 27.62), ("c", 2.84, 28.95)])         # abacus
+_BASE = ([("c", 3.55, 0.0), ("c", 3.55, 0.88), ("c", 3.45, 0.98),              # footing
+          ("c", 3.25, 0.98), ("c", 3.25, 4.35), ("c", 3.0, 4.6),                 # lower plinth, worn top edge
+          ("c", 2.72, 4.6), ("c", 2.72, 5.62), ("c", 2.58, 5.8),                 # upper plinth
+          ("r", 2.12, 5.8)] + torus_ring(2.12, 6.22, 0.42) + [("r", 2.06, 6.8)])  # rounded base ring
+_SHAFT = shaft(6.8, 24.35, 2.06, 1.9, n=10)                                      # shaft with a slight swell
+_TOP = (torus_ring(1.9, 24.57, 0.22, 6) + [("r", 1.9, 25.45)] +                  # neck ring
+        [("r", 1.9 + 0.55 * (1 - math.cos(t)), 25.45 + 0.85 * math.sin(t)) for t in
+         [math.radians(15 * i) for i in range(1, 7)]] +                          # flaring echinus
+        [("c", 2.45, 26.3), ("c", 2.45, 27.35),                                  # lower capital block
+         ("c", 2.58, 27.35), ("c", 2.84, 27.62), ("c", 2.84, 28.95)])            # abacus
+PROFILE = _BASE + _SHAFT + _TOP
+S0, S1 = len(_BASE), len(_BASE) + len(_SHAFT) - 1          # first and last rows of the shaft
+# where a corner can be chipped: (height, half width there, +1 chips downward from a top edge, -1 upward)
+CHIP_EDGES = [(0.95, 3.5, 1), (4.5, 3.1, 1), (5.7, 2.65, 1), (26.3, 2.45, -1), (27.5, 2.7, -1)]
 
 
-def pillar(cx, cy, s=1.0):
+def pillar(cx, cy, s=1.0, seed=None, chips=0):
+    """Returns points, faces, and per point: its direction round the pillar and (on the shaft?, height)."""
     n = len(UNIT_C)
-    verts, faces = [], []
+    verts, faces, dirs, marks = [], [], [], []
     starts = []
-    for kind, a, h in PROFILE:
+    for j, (kind, a, h) in enumerate(PROFILE):
         starts.append(len(verts))
         unit = UNIT_C if kind == "c" else UNIT_R
-        for x, y in unit:
-            verts.append((cx + s * a * x, cy + s * a * y, FLOOR + s * h))
+        m = 1.0 if S0 < j < S1 else 0.0
+        for (x, y), (rx, ry) in zip(unit, UNIT_R):
+            verts.append([cx + s * a * x, cy + s * a * y, FLOOR + s * h])
+            dirs.append((rx, ry))
+            marks.append((m, h / 29.0))
     for j in range(len(PROFILE) - 1):
         for i in range(n):
             a, b = starts[j] + i, starts[j] + (i + 1) % n
             faces.append((a, b, starts[j + 1] + (i + 1) % n, starts[j + 1] + i))
     faces.append(tuple(starts[0] + i for i in reversed(range(n))))
     faces.append(tuple(starts[-1] + i for i in range(n)))
-    return verts, faces
+    rng = random.Random(seed)
+    for _ in range(chips):                       # worn, broken corners: mostly on the sides the camera sees
+        h, a, sgn = rng.choice(CHIP_EDGES)
+        corner = rng.choice((-45.0, -135.0, -45.0, -135.0, 45.0, 135.0)) + rng.uniform(-16, 16)
+        i = min(range(n), key=lambda k: abs((math.degrees(math.atan2(UNIT_C[k][1], UNIT_C[k][0])) - corner + 180) % 360 - 180))
+        c = Vector((cx + s * a * UNIT_C[i][0], cy + s * a * UNIT_C[i][1], FLOOR + s * h))
+        rad, depth = rng.uniform(0.55, 1.15) * s, rng.uniform(0.14, 0.36) * s
+        for v in verts:
+            dd = (Vector(v) - c).length
+            if dd < rad:
+                w = (1.0 - dd / rad) ** 2
+                ax = Vector((cx - v[0], cy - v[1], 0.0))
+                if ax.length > 1e-6:
+                    ax.normalize()
+                v[0] += ax.x * depth * w
+                v[1] += ax.y * depth * w
+                v[2] -= sgn * 0.6 * depth * w
+    return [tuple(v) for v in verts], faces, dirs, marks
 
 
 for sx in (-1, 1):
     side = "L" if sx < 0 else "R"
-    for name, (cx, cy, s) in (("Temple Pillar Front " + side, (sx * FRONT_X, FRONT_Y, 1.0)),
-                              ("Temple Pillar Arcade " + side, (sx * FRONT_X, ARCADE_Y, 1.0)),
-                              ("Temple Pillar Apse " + side, (sx * INNER_X, INNER_Y, INNER_S))):
-        v, f = pillar(cx, cy, s)
-        me = mesh_from(name, v, f, smooth=True, sharp_deg=40)
+    for name, (cx, cy, s), chips in (("Temple Pillar Front " + side, (sx * FRONT_X, FRONT_Y, 1.0), 9),
+                                     ("Temple Pillar Arcade " + side, (sx * FRONT_X, ARCADE_Y, 1.0), 0),
+                                     ("Temple Pillar Apse " + side, (sx * INNER_X, INNER_Y, INNER_S), 6)):
+        v, f, dr, mk = pillar(cx, cy, s, seed=SEED * 31 + sx + len(name), chips=chips)
+        me = mesh_from(name, v, f, uvs={"PillarDir": dr, "PillarShaft": mk}, smooth=True, sharp_deg=40)
         o = put(name, me, TC, [M_STONE], root)
         bevel(o, 0.06, 2, 30)
 
@@ -313,18 +338,26 @@ for j in range(nyc):
 put("Temple Apse Wall", mesh_from("Temple Apse Wall", V, F, smooth=True, sharp_deg=40), TC, [M_WALL], root)
 parts = []
 for yb in BAYS:
-    parts.append(voussoirs(ellipse(CA - 1.6, CB - 1.2, cap_apse), 1.7, yb - 1.3, yb + 1.3, 1, 0.0,
+    parts.append(voussoirs(ellipse(CA - 1.6, CB - 1.6, cap_apse), 1.7, yb - 1.3, yb + 1.3, 1, 0.0,
                            lambda u, dd, z: (u, dd, z), samples=64))
 V, F = join(parts)
 o = put("Temple Corridor Ribs", mesh_from("Temple Corridor Ribs", V, F, smooth=True, sharp_deg=30), TC, [M_ARCH], root)
 bevel(o, 0.08, 2, 30)
-parts = [pillar(sx * (CA - 0.9), yb, INNER_S) for yb in BAYS for sx in (-1, 1)]
-V, F = join(parts)
-o = put("Temple Corridor Pillars", mesh_from("Temple Corridor Pillars", V, F, smooth=True, sharp_deg=40), TC, [M_STONE], root)
+V, F, DR, MK = [], [], [], []
+for yb in BAYS:
+    for sx in (-1, 1):
+        v_, f_, dr_, mk_ = pillar(sx * (CA - 0.9), yb, INNER_S)
+        o_ = len(V)
+        V += v_
+        F += [tuple(i + o_ for i in ff) for ff in f_]
+        DR += dr_
+        MK += mk_
+o = put("Temple Corridor Pillars", mesh_from("Temple Corridor Pillars", V, F, uvs={"PillarDir": DR, "PillarShaft": MK},
+                                             smooth=True, sharp_deg=40), TC, [M_STONE], root)
 # end wall with a tall doorway, and the light beyond it
-DW, DH = 3.4, 17.0
+DW, DH = 3.6, 20.0
 pts = ([(-CA - 1, LOW), (-DW, LOW), (-DW, DH)] + arc_pts(DW, DW, DH, n=24)[1:-1] +
-       [(DW, DH), (DW, LOW), (CA + 1, LOW), (CA + 1, 40.0), (-CA - 1, 40.0)])
+       [(DW, DH), (DW, LOW), (CA + 1, LOW), (CA + 1, 48.0), (-CA - 1, 48.0)])
 v_, f_ = slab_outline(pts, CORR_END, CORR_END + 2.5, lambda u, dd, z: (u, dd, z))
 put("Temple Corridor End", mesh_from("Temple Corridor End", v_, f_, sharp_deg=30), TC, [M_WALL], root)
 gv = [(-DW - 1, CORR_END + 6.0, LOW), (DW + 1, CORR_END + 6.0, LOW), (DW + 1, CORR_END + 6.0, DH + DW + 1), (-DW - 1, CORR_END + 6.0, DH + DW + 1)]
@@ -564,6 +597,62 @@ me = mesh_from("Temple Floor", V, F, uvs={"UVMap": UV_world, "SlabUV": UV_slab, 
 put("Temple Floor", me, TC, [M_FLOOR], root)
 V, F = box(-SIDE_X - 1, SIDE_X + 1, -24.0, CORR_END + 3.0, FLOOR - 0.3, FLOOR - 0.065)
 put("Temple Floor Bed", mesh_from("Temple Floor Bed", V, F, uvs={"UVMap": [(v[0], v[1]) for v in V]}), TC, [M_BED], root)
+
+# ------------------------------------------------------------------ moss tufts and fallen blocks
+def blob(center, rx, ry, rz, rng):
+    bm = bmesh.new()
+    bmesh.ops.create_icosphere(bm, subdivisions=2, radius=1.0)
+    bm.verts.index_update()
+    pts = []
+    for v in bm.verts:
+        k = 1.0 + rng.uniform(-0.2, 0.2)
+        pts.append((center[0] + v.co.x * rx * k, center[1] + v.co.y * ry * k, center[2] + max(v.co.z, -0.3) * rz * k))
+    fs = [tuple(vv.index for vv in f.verts) for f in bm.faces]
+    bm.free()
+    return pts, fs
+
+
+rng = random.Random(SEED + 9)
+tufts = []
+LEDGES = [(0.0, 3.72, UNIT_C), (0.98, 3.36, UNIT_C), (4.6, 2.88, UNIT_C), (5.8, 2.36, UNIT_R)]
+for (cx, cy, s, count) in ((-FRONT_X, FRONT_Y, 1.0, 13), (FRONT_X, FRONT_Y, 1.0, 13),
+                           (-INNER_X, INNER_Y, INNER_S, 7), (INNER_X, INNER_Y, INNER_S, 7)):
+    made = 0
+    while made < count:
+        h, a, unit = rng.choice(LEDGES)
+        ux, uy = rng.choice(unit)
+        if uy > 0.3:                              # the side away from the camera is never seen
+            continue
+        size = rng.uniform(0.28, 0.62) * s
+        tufts.append(blob((cx + s * a * ux, cy + s * a * uy, FLOOR + s * h + 0.02),
+                          size * rng.uniform(0.9, 1.5), size * rng.uniform(0.9, 1.5), size * rng.uniform(0.45, 0.75), rng))
+        made += 1
+V, F = join(tufts)
+put("Temple Moss Tufts", mesh_from("Temple Moss Tufts", V, F, uvs={"UVMap": [(v[0] + v[2], v[1])  for v in V]}, smooth=True),
+    TC, [ph("Temple Moss")], root)
+
+
+def fallen(x, y, dims, yaw, tilt=0.0):
+    lx, ly, lz = dims
+    cs = [Vector((sx * lx / 2 * (1 + rng.uniform(-0.08, 0.08)), sy * ly / 2 * (1 + rng.uniform(-0.08, 0.08)),
+                  sz * lz / 2 * (1 + rng.uniform(-0.06, 0.06)))) for sz in (-1, 1) for sy in (-1, 1) for sx in (-1, 1)]
+    R = Matrix.Rotation(math.radians(yaw), 3, "Z") @ Matrix.Rotation(math.radians(tilt), 3, "X")
+    ps = [R @ c for c in cs]
+    low = min(p.z for p in ps)
+    return ([(x + p.x, y + p.y, FLOOR - 0.03 + p.z - low) for p in ps],
+            [(0, 2, 3, 1), (4, 5, 7, 6), (0, 1, 5, 4), (1, 3, 7, 5), (3, 2, 6, 7), (2, 0, 4, 6)])
+
+
+blocks = [fallen(-12.4, 51.6, (2.7, 1.8, 1.5), 18), fallen(-10.3, 54.6, (1.9, 1.4, 1.2), -34), fallen(-13.1, 48.6, (1.4, 1.0, 0.8), 52, 14),
+          fallen(13.3, 52.9, (2.3, 1.9, 1.6), -22), fallen(11.0, 49.6, (1.5, 1.1, 0.9), 41), fallen(14.9, 47.8, (1.0, 0.8, 0.6), 8, 22)]
+for gx, gy in ((-11.8, 51.0), (12.4, 51.2)):
+    for _ in range(7):
+        d_ = rng.uniform(0.22, 0.5)
+        blocks.append(fallen(gx + rng.uniform(-3.2, 3.2), gy + rng.uniform(-4.5, 3.0), (d_, d_ * rng.uniform(0.7, 1.2), d_ * rng.uniform(0.5, 0.9)),
+                             rng.uniform(0, 180), rng.uniform(0, 25)))
+V, F = join([finish(v_, f_) for v_, f_ in blocks])
+o = put("Temple Fallen Blocks", mesh_from("Temple Fallen Blocks", V, F, sharp_deg=40), TC, [M_STONE], root)
+bevel(o, 0.07, 2, 30)
 
 # the old plain floor stops rendering (kept in the file)
 old = bpy.data.objects.get("Reveal Floor")

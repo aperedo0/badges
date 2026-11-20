@@ -1,6 +1,6 @@
 # Treasure chest badge reveal animation
 
-**Newest: `chest_reveal_v10_temple_polish.blend`** (2026-11-19, the temple's end look polished for iPhone screens, see Version 10; `chest_reveal_v9_temple.blend` is the version before, see Version 9). **Core: `chest_reveal_v7.blend`** (2026-11-18; landing dust in `chest_reveal_v7_dust.blend`, ending light in `chest_reveal_v7_ending.blend`, see Version 7). Version 6: `chest_reveal_v6.blend`, scene **Chest Reveal**: 30 fps, frames 1 to 213
+**Newest: `chest_reveal_v11_torches.blend`** (2026-11-19, version 10 plus torches, see Version 11). **Before that: `chest_reveal_v10_temple_polish.blend`** (the temple's end look polished for iPhone screens, see Version 10; `chest_reveal_v9_temple.blend` is the version before, see Version 9). **Core: `chest_reveal_v7.blend`** (2026-11-18; landing dust in `chest_reveal_v7_dust.blend`, ending light in `chest_reveal_v7_ending.blend`, see Version 7). Version 6: `chest_reveal_v6.blend`, scene **Chest Reveal**: 30 fps, frames 1 to 213
 (7.1 s), 1080 x 1920 portrait, EEVEE. Version 6 is the owner's core animation pass (see Version 6
 below): the chest drops in from off screen into a large straight on view, the clasp unlocks before
 the lid opens, the camera pulls back, and the app's 3 Days Total badge rises. No smoke or special
@@ -374,3 +374,89 @@ Pictures: `~/Downloads/Chest temple epic options.png` (before, A, B), `Chest tem
   213; `TWEAK` and `HIDE` change values for one render without saving.
 - Not done yet: the light over the rest of the 7 seconds, the movie without the badge, the badge's path for
   the app, and the one test picture in Cycles.
+
+### Version 10, second polish round (same day)
+
+The owner picked option A, kept the beam as it is, and asked to try: the long hall behind the badge, cool
+against gold, a floor that catches the light, older looking stone, glowing platform rings, richer stonework,
+a test with other badges, and an ending that keeps moving ("the user will decide when to continue"). Not
+wanted for now: the badge lighting its surroundings. Still unanswered: whether words or buttons sit over the
+movie, and where.
+
+- Long hall: the arch behind the chest is now round and tall (rise 15.3, was 9.6), so the corridor's receding
+  ribs show above the badge. The far doorway's strong light keeps its narrow cone; a second wide light at 12
+  percent (`Temple Corridor Glow`) lights the vault and ribs. At full strength they went cream white right
+  above the badge. Rule kept from the badge tests: everything behind the badge stays darker than a badge's rim.
+- Cool against gold: `Temple Cool L/R` shine from the side aisles a little behind the big pillars, so each
+  pillar has a blue outer edge, a dark middle and a warm inner edge.
+- Floor: damp patches (softer than a mirror: sharp wet glints read as white specks), a stronger warm pool
+  round the dais (`Temple Beam Spill`), and `Temple Mist Rim`, a low warm light behind the chest that lights
+  only the air, so the ground mist glows at its edges.
+- Stone: pillar shafts carry 16 shallow grooves (a bump in the shared stone material; each pillar's points
+  store their direction round the pillar and whether they are on the shaft, UV maps `PillarDir` and
+  `PillarShaft`), chipped corners on the big and small pillars' blocks, moss tufts on the plinth ledges
+  (`Temple Moss Tufts`), fallen blocks and small stones by the big pillars (`Temple Fallen Blocks`).
+- Rings: the dais's gold rings glow softly (emission 0.55, deep gold; stronger or paler read as white or pink).
+- Other badges: `temple/tools/other_badge.py` (through `BADGE_USDZ=... temple/tools/shot.sh NAME`) shows another
+  of the app's models in place of the scene's badge for one render, never saved. Golden Sands and the Gold
+  crown both stand clear of the hall.
+- Moving ending: `tools/v10_motion.py` (the beam's haze keeps drifting past frame 213, its rays shimmer, the
+  rings breathe once per loop) and `temple/tools/loop_test.py` plus `loop_join.py` (render the frames after
+  the reveal and blend the tail into the start so they repeat without a jump). The chest's mist simulation
+  ends at frame 213 and is held on its last frame in this first test.
+
+## Version 11 torches (2026-11-19)
+
+The owner wants the whole reveal more epic and added: "we can put some torches ... the fire can wake up the
+hall". They also explained the app's flow: the user swipes up to flip the lock and later decides when to
+continue, so the movie becomes four pieces (arrival once, a waiting loop, the reveal once, an ending loop).
+Decisions so far: torches on the pillars and down the hall, none beside the platform; an idle rattle may bump
+the lid a hair; the swipe works about 2 seconds after the landing (the dust has to clear faster); the mist in
+the chest stays as a thin drifting layer in the ending; three rattles on an even 2.5 second beat (each over
+within 0.8 seconds), delivered next to a one rattle clip, so the app's rule is the same for both.
+`chest_reveal_v11_torches.blend` is a copy of version 10 (which keeps the look without torches).
+Picture: `~/Downloads/Chest temple torches before and after.png`.
+
+- `tools/v11_torches.py` (run after the version 10 scripts): six pairs of torches (big pillars, small pillars,
+  four bays of the long hall), each an iron bracket and cup with a small flame card drawn by a shader, its own
+  small light, and a soft glow light per bay. `Temple Torch Control` has `lit_0` to `lit_5` (0 to 1): flame
+  size, flame brightness and all torch lights follow them, as do the warm edge lights on the big pillars
+  (`lit_0`) and the pool on the small arch (`lit_1`). All are 1 for now; keying them lights the hall pair by pair.
+- The far doorway's gold light is gone (it showed the hall before anything woke it): faint cold moonlight now.
+- `temple/tools/shot.sh` now renders from the version 11 file (`BLEND=` and `FRAMES_DIR=` choose another).
+- Agreed order of the light moments, so they build instead of piling up: the lid cracks and cold light bursts
+  from the chest; the badge rises and the torches catch pair after pair into the distance; the badge settles
+  and the golden beam comes to full with the rings. The camera holds still inside both loops. One time effects
+  (landing dust) end before a loop starts. Not built yet: all of that timing, the waiting loop with its
+  rattles, the reframed start for the tall screen, and the pieces as separate clips.
+
+### Version 11, torches second design and new stone (same day)
+
+The owner on the first torches: "maybe we can do even better on the fire", with a picture
+(`~/Downloads/Flaming Iron Torch on Stone Wall.png`: a goblet shaped iron cup on an arm and a bolted plate, a
+big flame with tongues and sparks), and: "do you think we can make some genuine enhancements to the texture
+beneath the badge and the concrete floor?". Pictures: `~/Downloads/Chest temple new torches and stone before
+and after.png`, `... details.png`, `Chest temple new torches and stone.png` (full size), and the clip
+`Chest temple torch fire close up.mp4`.
+
+- `tools/v11_torches.py` rewritten: forged iron sconces (oval plate with four bolts, square arm, socket with a
+  collar, goblet cup with a thick rim; hammered and rusted iron), turned 35 degrees toward the camera so the
+  arm and cup read. The fire is two cards per torch (a larger, deeper layer behind a brighter one, each with its
+  own shape), drawn by one shader: a bulb as wide as the cup, leaning, split into tongues by upright streaks of
+  noise that stream upward, fine veins, a yellow heart low in the middle. Colours are kept toward yellow: under
+  this scene's view transform (AgX) a bright pure red orange turns salmon pink. Glowing coals in the cup, a
+  few one pixel embers on their own card. Only the two big torches' lights cast shadows (twelve shadowed fire
+  lights overflowed the shadow memory at full size).
+- `tools/v11_stone.py` (run after `v10_temple_mat.py` and `v11_torches.py`): the floor and the platform get
+  two more CC0 scans. Flagstones: rock_face_04 laid large, its height map darkening cracks and hollows, grimy
+  joints, bitten edges, water only in the hollows of the damp areas, the scan's pale grit toned down (it would
+  be light specks at phone size). Platform: rock_3, pitted, dirt in the pits, a few long broken cracks across
+  the top, quieter moss. The mossy bed in the joints is darker (it glowed yellow green under firelight).
+  `Temple Floor Firelight L/R` bring the big torches' light to the floor at a low angle (floor only, no
+  shadows, follow `lit_0`); that raking light is what shows the stone's relief. The platform's key light is lower.
+- `temple/tools/closeup.py` (through `CLOSE="position;target;lens;width;height"` with `temple/tools/shot.sh`)
+  renders one spot through a temporary camera, never saved.
+- Run order for version 11: the version 10 scripts (geo, mat, light, lens, motion), then `v11_torches.py`,
+  then `v11_stone.py`.
+- To watch: a full size frame now takes about 5 minutes (it was about 70 seconds in version 10). The scene
+  needs speeding up before the whole movie is rendered. Not checked yet: the new floor from the low opening camera.
