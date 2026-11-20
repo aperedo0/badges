@@ -1,6 +1,6 @@
 # Treasure chest badge reveal animation
 
-**Newest: `chest_reveal_v9_temple.blend`** (2026-11-19, version 8 plus the temple background, see Version 9). **Core: `chest_reveal_v7.blend`** (2026-11-18; landing dust in `chest_reveal_v7_dust.blend`, ending light in `chest_reveal_v7_ending.blend`, see Version 7). Version 6: `chest_reveal_v6.blend`, scene **Chest Reveal**: 30 fps, frames 1 to 213
+**Newest: `chest_reveal_v10_temple_polish.blend`** (2026-11-19, the temple's end look polished for iPhone screens, see Version 10; `chest_reveal_v9_temple.blend` is the version before, see Version 9). **Core: `chest_reveal_v7.blend`** (2026-11-18; landing dust in `chest_reveal_v7_dust.blend`, ending light in `chest_reveal_v7_ending.blend`, see Version 7). Version 6: `chest_reveal_v6.blend`, scene **Chest Reveal**: 30 fps, frames 1 to 213
 (7.1 s), 1080 x 1920 portrait, EEVEE. Version 6 is the owner's core animation pass (see Version 6
 below): the chest drops in from off screen into a large straight on view, the clasp unlocks before
 the lid opens, the camera pulls back, and the app's 3 Days Total badge rises. No smoke or special
@@ -340,3 +340,37 @@ Render: `~/Downloads/Chest temple background.png` (frame 213, full size) and `..
 - Left as is: the beam's brightness (the mockup's rays are brighter and more golden), the pillars' slight
   lean from the camera's 10 degree downward tilt, and the white landing grit on the dais (both part of the
   existing scene).
+
+## Version 10 temple polish: the look at the very end (2026-11-19)
+
+Owner after version 9: the scene "looks ok", make it "more epic, more cinematic", and for now only the look at
+the very end (the whole animation's light comes later). The movie will ship without the badge (the phone draws
+the badge on top), but the badge stays in every render as a guide until the very end.
+`chest_reveal_v10_temple_polish.blend` is a copy of version 9; version 9 and its scripts are untouched.
+Pictures: `~/Downloads/Chest temple epic options.png` (before, A, B), `Chest temple epic A.png`, `... B.png`,
+`Chest temple on phone shapes.png`.
+
+- `tools/v10_frame.py`: picture 1080 by 2340 (9 by 19.5, every current iPhone; an older 9 by 16 phone crops top
+  and bottom). Lens 35 to 28.72 mm so the view's width is unchanged. The pillars looked slanted because the
+  resting camera looked down 10 degrees: drivers on the camera now keep it level whenever the dolly looks down
+  and shift the lens instead (the dolly's animation is untouched; the low opening shot is unchanged).
+- `tools/v10_temple_geo.py` (copy of the version 9 script): the apse is replaced by a long corridor of ribs and
+  pillars ending in a far doorway of light, so arches nest behind the badge. Two flicker bugs fixed: walls cut
+  on the same curve as an arch's underside showed as rows of bars (cuts now sit inside the arch stones, and
+  never wider than the wall itself).
+- `tools/v10_temple_mat.py` (copy): light touch only. Pillars and arches take their relief from the plain rock
+  scan (the block wall scan read as camouflage blotches); big walls use soft noise relief; damp patches on the
+  floor away from the dais; less mirror shine on the dais edge.
+- `tools/v10_temple_light.py`: a dark hall lit from behind and above. One strong light at the far doorway
+  (ribs and pillars stand dark against glowing air, inner edges catch it), warm edge lights on the big pillars
+  and under the big arch, a soft pool on the small arch, two faint columns of light between the pillars, faint
+  cool light from the aisles, thin air that thickens with distance. Only the far light and the two columns
+  light the air: in version 9 every temple light also lit the beam's haze, which greyed the top of the picture.
+  The beam from above is a little more golden and its haze has rays that fan out from the light and a hot core.
+- `tools/v10_lens.py`: soft focus behind the chest (f 0.9 at this scene's scale), darker corners and a gentle
+  grade in the compositor after the existing glow. No film grain (bad for a compressed phone movie).
+- Options shown to the owner: A (as saved) and B, more glow in the hall (far light's share in the air 3.2,
+  small arch light 42000, high light 15000; not saved). `temple/tools/shot.sh NAME [PCT]` renders a test of frame
+  213; `TWEAK` and `HIDE` change values for one render without saving.
+- Not done yet: the light over the rest of the 7 seconds, the movie without the badge, the badge's path for
+  the app, and the one test picture in Cycles.
