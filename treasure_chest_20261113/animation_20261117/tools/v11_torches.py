@@ -34,9 +34,10 @@ TORCH = coll("Temple Torches", TC)
 CAM = Vector((0.0, -16.0, 8.0))                 # where the resting camera stands, in the chest's frame
 FIRE = (1.0, 0.50, 0.17)
 TS = G("TORCH_SIZE", 1.0)
-TURN = math.radians(G("TORCH_TURN", 35.0))      # 0 = seen exactly from the side, 90 = pointing at the camera
-L = 1.3                                         # arm: from the plate to the socket
-AX = L + 0.34                                   # the cup's axis, out from the pillar's surface
+TURN = math.radians(G("TORCH_TURN", 45.0))      # 0 = seen exactly from the side, 90 = pointing at the camera (then snapped
+                                                # to the middle of a pillar band: 45 lands on the band that shows the plate's face)
+L = 1.25                                        # arm: from the plate to the socket
+AX = L + 0.40                                   # the cup's axis, out from the pillar's surface
 RIM = 2.1                                       # top of the cup above the plate's middle
 
 ctrl = bpy.data.objects.get("Temple Torch Control")
@@ -105,12 +106,13 @@ def lathe(profile, mapf, n=24):
     return finish(V, F)
 
 
-STADIUM = ([(0.5 * math.cos(t), 0.62 + 0.5 * math.sin(t)) for t in [math.pi * i / 10 for i in range(11)]] +
-           [(0.5 * math.cos(t), -0.62 + 0.5 * math.sin(t)) for t in [math.pi + math.pi * i / 10 for i in range(11)]])
-HEX = [(0.115 * math.cos(math.pi / 6 + math.pi * i / 3), 0.115 * math.sin(math.pi / 6 + math.pi * i / 3)) for i in range(6)]
-CUP = [(0.30, -0.52), (0.34, -0.46), (0.34, 0.10), (0.47, 0.10), (0.47, 0.30), (0.37, 0.30),        # socket and collar
-       (0.40, 0.36), (0.52, 0.62), (0.67, 1.0), (0.78, 1.4), (0.84, 1.8),                           # the goblet
-       (0.93, 1.8), (0.96, 1.86), (0.96, 2.04), (0.93, RIM), (0.83, RIM), (0.79, 1.97)]             # rim band, lip, inner floor
+PLATE_R, PLATE_H = 0.32, 0.98        # a slim strap: a band between two ridges is 0.78 wide on the big pillars
+STADIUM = ([(PLATE_R * math.cos(t), PLATE_H + PLATE_R * math.sin(t)) for t in [math.pi * i / 10 for i in range(11)]] +
+           [(PLATE_R * math.cos(t), -PLATE_H + PLATE_R * math.sin(t)) for t in [math.pi + math.pi * i / 10 for i in range(11)]])
+HEX = [(0.14 * math.cos(math.pi / 6 + math.pi * i / 3), 0.14 * math.sin(math.pi / 6 + math.pi * i / 3)) for i in range(6)]
+CUP = [(0.36, -0.62), (0.40, -0.56), (0.40, 0.08), (0.57, 0.08), (0.60, 0.12), (0.60, 0.30), (0.57, 0.34),     # stem and collar
+       (0.50, 0.34), (0.56, 0.42), (0.70, 0.62), (0.82, 0.92), (0.90, 1.3), (0.94, 1.78),                    # a rounded bowl
+       (1.03, 1.78), (1.06, 1.84), (1.06, 2.04), (1.03, RIM), (0.90, RIM), (0.86, 1.97)]                     # rim band, lip, inner floor
 
 iron, torches = [], []
 for i, (g, cx, cy, s, h) in enumerate(SPOTS):
@@ -121,17 +123,22 @@ for i, (g, cx, cy, s, h) in enumerate(SPOTS):
     if side.x * cx > 0:                       # toward the middle of the hall
         side = -side
     d = (side * math.cos(TURN) + to_cam * math.sin(TURN)).normalized()
+    # Owner, 2026-11-20: "the torch is sitting on a seam. it would never do that in real life ... it sits on a flat
+    # surface". The pillars have 16 grooves; the plate now sits in the middle of one band between two ridges
+    # (the nearest one, at most 11 degrees away), and it is slim enough to fit inside that band.
+    step = 2 * math.pi / G("FLUTES", 16)
+    ang = round((math.atan2(d.y, d.x) - step / 2) / step) * step + step / 2
+    d = Vector((math.cos(ang), math.sin(ang), 0.0))
     sd = Vector((-d.y, d.x, 0.0))
     r_s = 1.99 * s
 
     def P(out, sdv, up, C=C, d=d, sd=sd, S=S, r_s=r_s):
         return tuple(C + d * (r_s + out * S) + sd * (sdv * S) + Vector((0, 0, up * S)))
 
-    iron.append(extrude(STADIUM, -0.12, 0.1, lambda a, b, t: P(t, a, b)))
-    for bx in (-0.25, 0.25):
-        for bz in (-0.74, 0.74):
-            iron.append(extrude([(bx + hx, bz + hz) for hx, hz in HEX], 0.1, 0.2, lambda a, b, t: P(t, a, b)))
-    iron.append(extrude([(-0.16, -0.22), (0.16, -0.22), (0.16, 0.1), (-0.16, 0.1)], 0.05, L + 0.12, lambda a, b, t: P(t, a, b)))
+    iron.append(extrude(STADIUM, -0.12, 0.16, lambda a, b, t: P(t, a, b)))
+    for bz in (-0.95, 0.72, -0.5, 0.98):          # four bolts down the strap
+        iron.append(extrude([(hx, bz + hz) for hx, hz in HEX], 0.16, 0.3, lambda a, b, t: P(t, a, b)))
+    iron.append(extrude([(-0.19, -0.44), (0.19, -0.44), (0.19, -0.04), (-0.19, -0.04)], 0.05, L + 0.15, lambda a, b, t: P(t, a, b)))
     iron.append(lathe(CUP, lambda rx, ry, up: P(AX + rx, ry, up)))
     torches.append((i, g, s, S, Vector(P(AX, 0, 0)), d))
 
@@ -140,22 +147,24 @@ m_iron = mat("Temple Torch Iron")
 n = NT(m_iron)
 tc = n.coord()
 p = tc.outputs["Object"]
-dents = n.node("ShaderNodeTexVoronoi", ins={"Vector": p, "Scale": 5.5}, feature="SMOOTH_F1")
-fine = n.noise(p, 26.0, detail=3, rough=0.6)
-rustn = n.noise(p, 1.4, detail=5, rough=0.65)
-rust = n.ramp(rustn.outputs["Fac"], (0.42, 0.68))
-col = n.mix(rust, (0.026, 0.024, 0.022, 1), (0.10, 0.042, 0.018, 1))
-col = n.mix(n.math("MULTIPLY", n.ramp(fine.outputs["Fac"], (0.55, 0.8)), 0.4), col, (0.17, 0.07, 0.028, 1))
-hgt = n.math("ADD", n.math("MULTIPLY", dents.outputs["Distance"], 0.6), n.math("MULTIPLY", fine.outputs["Fac"], 0.12))
-bump = n.node("ShaderNodeBump", ins={"Strength": 0.55, "Distance": 0.06, "Height": hgt})
-rough = n.math("ADD", 0.36, n.math("MULTIPLY", rust, 0.34))
-pb = n.node("ShaderNodeBsdfPrincipled", ins={"Base Color": col, "Roughness": rough, "Metallic": n.math("SUBTRACT", 0.75, n.math("MULTIPLY", rust, 0.5)),
+dents = n.node("ShaderNodeTexVoronoi", ins={"Vector": p, "Scale": 3.2}, feature="SMOOTH_F1")
+fine = n.noise(p, 22.0, detail=3, rough=0.6)
+rustn = n.noise(p, 1.2, detail=5, rough=0.65)
+rust = n.ramp(rustn.outputs["Fac"], (0.48, 0.72))
+col = n.mix(rust, (0.020, 0.019, 0.019, 1), (0.070, 0.034, 0.017, 1))
+hgt = n.math("ADD", n.math("MULTIPLY", dents.outputs["Distance"], 0.8), n.math("MULTIPLY", fine.outputs["Fac"], 0.1))
+bump = n.node("ShaderNodeBump", ins={"Strength": 0.9, "Distance": 0.08, "Height": hgt})
+rough = n.math("ADD", n.math("ADD", 0.34, n.math("MULTIPLY", rust, 0.3)), n.math("MULTIPLY", n.math("SUBTRACT", fine.outputs["Fac"], 0.5), 0.1))
+pb = n.node("ShaderNodeBsdfPrincipled", ins={"Base Color": col, "Roughness": rough, "Metallic": n.math("SUBTRACT", 0.92, n.math("MULTIPLY", rust, 0.4)),
                                             "Normal": bump.outputs[0]})
 n.out(pb.outputs[0])
 V, F = join(iron)
 o = put("Temple Torch Iron", mesh_from("Temple Torch Iron", V, F, smooth=True, sharp_deg=38), TORCH, [m_iron], root)
 if o.name not in RECV.objects:
     RECV.objects.link(o)
+IRON_ONLY = coll("Temple Torch Iron Only", TC)            # for the small lights that give the iron its sheen
+if o.name not in IRON_ONLY.objects:
+    IRON_ONLY.objects.link(o)
 old = bpy.data.objects.get("Temple Torch Heads")          # from the first design: kept, not rendered
 if old:
     old.hide_render = True
@@ -207,7 +216,10 @@ n.set(pb.inputs["Emission Strength"], n.math("MULTIPLY", k, G("COAL_GLOW", 9.0))
 n.out(pb.outputs[0])
 
 # ------------------------------------------------------------------ the flame
-FW, FH = 3.8, 4.4
+# Third version. Fire is light, not paint: every layer only adds light, so where layers overlap the heart
+# burns pale yellow and the thin edges stay deep orange and see through. Three layers per torch (a wide dim
+# one behind, the body, a small hot heart), each with its own shape, plus a soft glow round the whole fire.
+FW, FH = 4.4, 4.6
 fm = mat("Temple Flame")
 fm.surface_render_method = "BLENDED"
 fm.use_backface_culling = False
@@ -220,53 +232,75 @@ t = time_node(n, "flame time")
 seed = n.math("MULTIPLY", oi.outputs["Random"], 37.0)
 x = n.math("MULTIPLY", n.math("SUBTRACT", u, 0.5), 2.0)
 S1, S2, S3 = G("FLAME_SPEEDS", (0.9, 1.5, 1.9))
+# the whole fire breathes: taller, then shorter
+hp = n.math("ADD", 0.84, n.math("MULTIPLY", n.noise(n.comb(n.math("MULTIPLY", t, 1.5), seed, 0.0), 1.0, detail=1.0).outputs["Fac"], 0.32))
+vv = n.math("MINIMUM", n.math("DIVIDE", v, hp), 1.0)
+vy = n.math("POWER", vv, 0.8)                     # shapes stretch as they rise
 
 
 def flow(n, fx, fy, speed, zk, zt, src, detail=2.0, rough=0.5):
     """Noise that streams upward: fx across, fy along the height."""
-    return n.noise(n.comb(n.math("MULTIPLY", src, fx), n.math("SUBTRACT", n.math("MULTIPLY", v, fy), n.math("MULTIPLY", t, speed)),
+    return n.noise(n.comb(n.math("MULTIPLY", src, fx), n.math("SUBTRACT", n.math("MULTIPLY", vy, fy), n.math("MULTIPLY", t, speed)),
                           n.math("ADD", n.math("MULTIPLY", seed, zk), n.math("MULTIPLY", t, zt))), 1.0, detail=detail, rough=rough).outputs["Fac"]
 
 
-w1 = flow(n, 1.1, 1.6, S1, 1.0, 0.21, x, detail=1.0)             # the whole fire leaning
-w2 = flow(n, 2.6, 3.2, S2, 1.37, 0.45, x)                        # licks
-lean = n.math("ADD", 0.06, n.math("POWER", v, 1.2))
-xs = n.math("ADD", x, n.math("ADD", n.math("MULTIPLY", n.math("MULTIPLY", n.math("SUBTRACT", w1, 0.5), G("FLAME_SWAY", 0.9)), lean),
-                             n.math("MULTIPLY", n.math("MULTIPLY", n.math("SUBTRACT", w2, 0.5), 0.6), lean)))
-# a bulb: a little narrower than the cup at the very bottom, fullest just above the rim, closing toward the tip
-wv = n.math("MULTIPLY", n.math("MULTIPLY", n.math("SUBTRACT", 1.0, n.math("POWER", v, 1.5)), G("FLAME_WIDTH", 0.52)),
-            n.math("MINIMUM", n.math("ADD", 0.7, n.math("MULTIPLY", v, 2.2)), 1.0))
-across = n.math("SUBTRACT", 1.0, n.math("POWER", n.math("DIVIDE", n.math("ABSOLUTE", xs), n.math("MAXIMUM", wv, 0.001)), 1.6))
-tn = flow(n, 4.2, 1.1, S3, 2.1, 0.3, xs)                         # long upright streaks: they split the top into tongues
-tn = n.math("MINIMUM", n.math("MAXIMUM", n.math("ADD", n.math("MULTIPLY", n.math("SUBTRACT", tn, 0.5), G("FLAME_SPLIT", 2.6)), 0.5), 0.0), 1.0)
-tn2 = flow(n, 7.0, 3.0, S3 * 1.5, 3.3, 0.5, xs)                  # fine veins
-cut = n.math("ADD", 0.02, n.math("MULTIPLY", n.math("POWER", v, 0.8), G("FLAME_TONGUES", 1.5)))
-eaten = n.math("SUBTRACT", n.math("SUBTRACT", across, n.math("MULTIPLY", tn, cut)),
-               n.math("MULTIPLY", n.math("MULTIPLY", n.math("SUBTRACT", tn2, 0.5), 0.25), n.math("ADD", 0.3, v)))
-alpha = n.math("MULTIPLY", sstep(n, eaten, 0.0, 0.07), n.math("MINIMUM", oi.outputs["Alpha"], 1.0))
-# heat: deep orange at the edges and in the tongues, yellow only low in the middle
-heat = n.math("MULTIPLY", n.math("MULTIPLY", n.math("POWER", n.math("MAXIMUM", n.math("MINIMUM", eaten, 1.0), 0.0), 1.3),
-                                 n.math("SUBTRACT", 1.0, n.math("MULTIPLY", v, 0.55))),
-              n.math("ADD", 0.7, n.math("MULTIPLY", tn2, 0.5)))
-core = n.math("MULTIPLY", sstep(n, across, 0.55, 1.0), n.math("POWER", n.math("MAXIMUM", n.math("SUBTRACT", 1.0, v), 0.0), 3.0))
-heat = n.math("MINIMUM", n.math("ADD", heat, n.math("MULTIPLY", core, 0.35)), 1.0)
-cr = n.node("ShaderNodeValToRGB", ins={0: heat})
+w1 = flow(n, 1.0, 1.5, S1, 1.0, 0.21, x, detail=1.0)             # the whole fire leaning
+w2 = flow(n, 2.4, 3.0, S2, 1.37, 0.45, x)                        # licks
+xs = n.math("ADD", x, n.math("ADD", n.math("MULTIPLY", n.math("MULTIPLY", n.math("SUBTRACT", w1, 0.5), G("FLAME_SWAY", 0.9)),
+                                                   n.math("ADD", 0.05, n.math("POWER", vv, 1.3))),
+                             n.math("MULTIPLY", n.math("MULTIPLY", n.math("SUBTRACT", w2, 0.5), 0.55), n.math("ADD", 0.05, vv))))
+wv = n.math("MULTIPLY", n.math("MULTIPLY", n.math("SUBTRACT", 1.0, n.math("POWER", vv, 1.4)), G("FLAME_WIDTH", 0.47)),
+            n.math("MINIMUM", n.math("ADD", 0.72, n.math("MULTIPLY", vv, 2.4)), 1.0))
+across = n.math("SUBTRACT", 1.0, n.math("POWER", n.math("DIVIDE", n.math("ABSOLUTE", xs), n.math("MAXIMUM", wv, 0.001)), 1.5))
+tn = flow(n, 3.6, 1.3, S3, 2.1, 0.3, xs)                         # upright streaks: they split the top into tongues
+tn = n.math("MINIMUM", n.math("MAXIMUM", n.math("ADD", n.math("MULTIPLY", n.math("SUBTRACT", tn, 0.5), G("FLAME_SPLIT", 2.8)), 0.5), 0.0), 1.0)
+e = n.math("SUBTRACT", across, n.math("MULTIPLY", tn, n.math("ADD", 0.03, n.math("MULTIPLY", n.math("POWER", vv, 0.85), G("FLAME_TONGUES", 1.5)))))
+rn = flow(n, 9.0, 2.2, S3 * 1.4, 3.3, 0.5, xs)                   # fine bright threads inside the fire
+ridge = n.math("POWER", n.math("SUBTRACT", 1.0, n.math("ABSOLUTE", n.math("SUBTRACT", n.math("MULTIPLY", rn, 2.0), 1.0))), 2.0)
+inten = n.math("MULTIPLY", n.math("MULTIPLY", n.math("POWER", n.math("MAXIMUM", n.math("MINIMUM", e, 1.0), 0.0), 1.5),
+                                  n.math("ADD", 0.45, n.math("MULTIPLY", ridge, 1.0))),
+               n.math("SUBTRACT", 1.0, n.math("MULTIPLY", vv, 0.35)))
+core = n.math("MULTIPLY", sstep(n, across, 0.5, 1.0), n.math("POWER", n.math("MAXIMUM", n.math("SUBTRACT", 1.0, vv), 0.0), 2.5))
+inten = n.math("ADD", inten, n.math("MULTIPLY", core, 0.6))
+inten = n.math("MULTIPLY", inten, n.math("MULTIPLY", sstep(n, v, 0.0, 0.04), n.math("SUBTRACT", 1.0, sstep(n, v, 0.9, 1.0))))
+cr = n.node("ShaderNodeValToRGB", ins={0: n.math("MINIMUM", inten, 1.0)})
 els = cr.color_ramp.elements
 # kept toward yellow: under this scene's view transform a bright pure red orange turns salmon pink
-els[0].position, els[0].color = 0.0, (0.7, 0.16, 0.0, 1)
-els[1].position, els[1].color = 1.0, (1.0, 0.9, 0.5, 1)
-for pos, c_ in ((0.28, (1.0, 0.36, 0.02, 1)), (0.55, (1.0, 0.52, 0.05, 1)), (0.8, (1.0, 0.72, 0.16, 1))):
+els[0].position, els[0].color = 0.0, (0.9, 0.14, 0.0, 1)
+els[1].position, els[1].color = 1.0, (1.0, 0.8, 0.3, 1)
+for pos, c_ in ((0.35, (1.0, 0.33, 0.02, 1)), (0.7, (1.0, 0.55, 0.08, 1))):
     e_ = els.new(pos)
     e_.color = c_
 fl = n.noise(n.comb(n.math("MULTIPLY", t, 4.0), seed, 0.0), 1.0, detail=1.0)
-bright = n.math("MULTIPLY", n.math("ADD", G("FLAME_LOW", 0.9), n.math("MULTIPLY", n.math("POWER", heat, 1.5), G("FLAME_HOT", 4.2))),
+bright = n.math("MULTIPLY", n.math("MULTIPLY", n.math("POWER", n.math("MAXIMUM", inten, 0.0), 1.3), G("FLAME_GAIN", 2.5)),
                 n.math("ADD", 0.85, n.math("MULTIPLY", fl.outputs["Fac"], 0.3)))
 bright = n.math("MULTIPLY", bright, oi.outputs["Alpha"])
-fcol = n.mix(1.0, cr.outputs["Color"], oi.outputs["Color"], blend="MULTIPLY")        # the back layer of each fire is tinted deeper
+fcol = n.mix(1.0, cr.outputs["Color"], oi.outputs["Color"], blend="MULTIPLY")        # each layer's own tint
 em = n.node("ShaderNodeEmission", ins={"Color": fcol, "Strength": bright})
 tp = n.node("ShaderNodeBsdfTransparent")
-mx = n.node("ShaderNodeMixShader", ins={0: alpha, 1: tp.outputs[0], 2: em.outputs[0]})
-n.out(mx.outputs[0])
+add = n.node("ShaderNodeAddShader")
+n.link(tp.outputs[0], add.inputs[0])
+n.link(em.outputs[0], add.inputs[1])
+n.out(add.outputs[0])
+
+# a soft glow in the air round each fire
+gm = mat("Temple Fire Glow")
+gm.surface_render_method = "BLENDED"
+gm.use_backface_culling = False
+n = NT(gm)
+uv = n.sep(n.coord().outputs["UV"])
+oi = n.node("ShaderNodeObjectInfo")
+t = time_node(n, "glow time")
+rr = n.math("MULTIPLY", n.math("SQRT", n.math("ADD", n.math("POWER", n.math("SUBTRACT", uv[0], 0.5), 2.0), n.math("POWER", n.math("SUBTRACT", uv[1], 0.5), 2.0))), 2.0)
+gl = n.math("POWER", n.math("MAXIMUM", n.math("SUBTRACT", 1.0, rr), 0.0), G("GLOW_FALLOFF", 2.6))
+gf = n.noise(n.comb(n.math("MULTIPLY", t, 3.0), n.math("MULTIPLY", oi.outputs["Random"], 21.0), 0.0), 1.0, detail=1.0)
+gs = n.math("MULTIPLY", n.math("MULTIPLY", gl, G("FIRE_GLOW", 0.28)), n.math("MULTIPLY", n.math("ADD", 0.8, n.math("MULTIPLY", gf.outputs["Fac"], 0.4)), oi.outputs["Alpha"]))
+em = n.node("ShaderNodeEmission", ins={"Color": (1.0, 0.42, 0.09, 1), "Strength": gs})
+tp = n.node("ShaderNodeBsdfTransparent")
+add = n.node("ShaderNodeAddShader")
+n.link(tp.outputs[0], add.inputs[0])
+n.link(em.outputs[0], add.inputs[1])
+n.out(add.outputs[0])
 
 # ------------------------------------------------------------------ embers
 EW, EH = 3.6, 9.5
@@ -292,12 +326,12 @@ vor = n.node("ShaderNodeTexVoronoi", ins={"Vector": pe, "Scale": 1.0}, feature="
 R = G("EMBER_RADIUS", 0.05)
 dot = n.math("SUBTRACT", 1.0, sstep(n, vor.outputs["Distance"], R * 0.4, R))
 cs = n.node("ShaderNodeSeparateColor", ins={0: vor.outputs["Color"]})
-keep = n.math("GREATER_THAN", cs.outputs[0], G("EMBER_FEW", 0.62))
+keep = n.math("GREATER_THAN", cs.outputs[0], G("EMBER_FEW", 0.5))
 fade = n.math("MULTIPLY", n.math("MULTIPLY", sstep(n, v, 0.1, 0.22), n.math("POWER", n.math("MAXIMUM", n.math("SUBTRACT", 1.0, v), 0.0), 1.3)),
               n.math("SUBTRACT", 1.0, n.math("MULTIPLY", x, x)))
 b = n.math("MULTIPLY", n.math("MULTIPLY", dot, keep), n.math("MULTIPLY", fade, n.math("MINIMUM", oi.outputs["Alpha"], 1.0)))
-ecol = n.mix(cs.outputs[1], (1.0, 0.36, 0.03, 1), (1.0, 0.6, 0.12, 1))
-em = n.node("ShaderNodeEmission", ins={"Color": ecol, "Strength": n.math("MULTIPLY", b, G("EMBER_GLOW", 7.0))})
+ecol = n.mix(cs.outputs[1], (1.0, 0.4, 0.03, 1), (1.0, 0.58, 0.1, 1))
+em = n.node("ShaderNodeEmission", ins={"Color": ecol, "Strength": n.math("MULTIPLY", b, G("EMBER_GLOW", 10.0))})
 tp = n.node("ShaderNodeBsdfTransparent")
 mx = n.node("ShaderNodeMixShader", ins={0: n.math("MINIMUM", b, 1.0), 1: tp.outputs[0], 2: em.outputs[0]})
 n.out(mx.outputs[0])
@@ -349,20 +383,25 @@ for i, g, s, S, axis, d in torches:
     to = CAM - top
     yaw = math.atan2(to.x, -to.y)
     fwd = Vector((to.x, to.y, 0)).normalized()
-    # two layers with their own shapes: a larger, deeper orange fire behind a brighter one
-    card(f"Temple Flame Back {i:02d}", FW * 1.12, FH * 1.12, top - fwd * 0.12, yaw, S, fm, g, True, tint=(0.62, 0.54, 0.4))
+    card(f"Temple Flame Back {i:02d}", FW * 1.18, FH * 1.12, top - fwd * 0.12, yaw, S, fm, g, True, tint=(0.55, 0.47, 0.38))
     card(f"Temple Flame {i:02d}", FW, FH, top, yaw, S, fm, g, True)
-    card(f"Temple Embers {i:02d}", EW, EH, top + fwd * 0.05, yaw, S, emb, g, False)
+    card(f"Temple Flame Core {i:02d}", FW * 0.66, FH * 0.72, top + fwd * 0.06, yaw, S, fm, g, True, tint=(1.0, 0.95, 0.8))
+    gcard = card(f"Temple Fire Glow {i:02d}", 9.0, 9.0, top - Vector((0, 0, 2.3 * S)) - fwd * 0.2, yaw, S, gm, g, False)
+    card(f"Temple Embers {i:02d}", EW, EH, top + fwd * 0.1, yaw, S, emb, g, False)
     n_c = 20
-    Vc = [(0.8 * S * math.cos(2 * math.pi * k_ / n_c), 0.8 * S * math.sin(2 * math.pi * k_ / n_c), 0.0) for k_ in range(n_c)]
+    Vc = [(0.86 * S * math.cos(2 * math.pi * k_ / n_c), 0.86 * S * math.sin(2 * math.pi * k_ / n_c), 0.0) for k_ in range(n_c)]
     co = put(f"Temple Coals {i:02d}", mesh_from(f"Temple Coals {i:02d}", Vc, [tuple(range(n_c))]), TORCH, [cm], root)
     co.matrix_basis = Matrix.Translation(axis + Vector((0, 0, 1.99 * S)))
     co.visible_shadow = False
     co.color = (1, 1, 1, 1)
     drive(co, "color", "lit", index=3, g=g)
     lamp(f"Temple Torch Light {i:02d}", "POINT", top + Vector((0, 0, 1.5 * S)) + fwd * 0.35,
-         G("TORCH_E", (1300.0, 950.0, 700.0))[min(g, 2)], FIRE, g, RECV, G("TORCH_VOL", 2.0), True,
+         G("TORCH_E", (2400.0, 1500.0, 700.0))[min(g, 2)], FIRE, g, RECV, G("TORCH_VOL", 2.0), True,
          shadow_soft_size=0.8, use_shadow=g == 0)
+    if g <= 1:
+        # the fire's sheen on the iron itself (reaches only the iron)
+        lamp(f"Temple Torch Sheen {i:02d}", "POINT", axis + fwd * 3.2 + Vector((0, 0, 2.6 * S)), G("SHEEN_E", 450.0), (1.0, 0.6, 0.28),
+             g, IRON_ONLY, 0.0, True, shadow_soft_size=0.6, use_shadow=False)
 
 # a soft glow for each bay of the long hall (a torch's own reach is short)
 for k_, yb in enumerate((116.0, 145.0, 174.0, 203.0)):

@@ -460,3 +460,39 @@ and after.png`, `... details.png`, `Chest temple new torches and stone.png` (ful
   then `v11_stone.py`.
 - To watch: a full size frame now takes about 5 minutes (it was about 70 seconds in version 10). The scene
   needs speeding up before the whole movie is rendered. Not checked yet: the new floor from the low opening camera.
+
+### Version 11, fire third version and platform options (same day)
+
+The owner on the pitted platform: "something about the texture beneath the badge, the circle object it rests on
+that I do not like.. idk what it is", and on the torches: "it can use some work. it's kind of there but not fully."
+
+- Fire (`tools/v11_torches.py`): the second flame was drawn as paint (a shape with see through edges laid over
+  the picture) and read as a cartoon blob. Now every layer only adds light (Add Shader of transparent and
+  emission), so overlapping layers burn pale yellow at the heart and the thin edges stay deep orange and see
+  through. Three layers per torch (wide dim back, body, small hot heart) with their own shapes, fine bright
+  threads inside (ridged noise), the whole fire breathing taller and shorter, and a soft glow card round it.
+  Sconce closer to the owner's picture: a stout rounded bowl with a thick rim band, a collar, a thicker arm, a
+  bigger plate and bolts; iron darker and more metallic with bigger hammer marks; `Temple Torch Sheen NN`
+  lights reach only the iron (collection `Temple Torch Iron Only`) and give it the fire's sheen.
+- Platform (`tools/v11_dais.py`, run by `v11_stone.py`): `DAIS_STYLE` chooses `pitted` (the scan, what the
+  owner did not like: speckled, blotchy, paler than the floor), `dressed` (dark, smooth, honed, a soft sheen),
+  `carved` (dressed plus a carved band of two grooves and short radial marks inside the gold rings) or
+  `marble` (dark polished stone with pale veins and the carved band). The saved file still has `pitted` until
+  the owner picks; `DAIS_STYLE=... temple/tools/shot.sh NAME` renders a style without saving it.
+- The firelight now reaches the platform as well as the floor (`Temple Firelight Receivers`): lit apart from
+  the floor, the platform looked pasted on.
+- Pictures: `~/Downloads/Chest platform options.png`, `Chest temple torch fire close up 2.mp4`.
+
+### Version 11, small changes on 2026-11-20
+
+- Platform: the owner asked to see "B with C's color". `DAIS_STYLE=carved_dark` is the carved stone in the
+  marble's near black colour, matte and without veins (`~/Downloads/Chest platform B in C colour.png`). The saved
+  file still has `pitted` until the owner picks.
+- Floor ("a teeny tiny bit less detailed, the stone at the very bottom almost draws my attention to it"): relief
+  0.9 to 0.62 (`FLOOR_RELIEF`), bump 0.45 to 0.32, cracks darkened to 0.48 where they went to 0.3, bitten edges
+  a little paler, the stones closer in tone to each other. Saved.
+- Torches ("the torch is sitting on a seam. it would never do that in real life"): each pillar has 16 grooves, so
+  a band between two ridges is 0.78 wide on the big pillars and the old plate (1.1 wide) always crossed a
+  ridge. Each torch now points at the exact middle of a band (`TORCH_TURN` 45, then snapped), and the plate is
+  a slim strap (0.64 wide) with four bolts in a column, so it fits inside the band
+  (`~/Downloads/Chest torch off the seam.png`). Saved.
