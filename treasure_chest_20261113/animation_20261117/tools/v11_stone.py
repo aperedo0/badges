@@ -64,9 +64,13 @@ dp = n.image(ROCKF + "disp_2k.png", v, color=False)
 h = sstep(n, dp.outputs[0], 0.50, 0.82)                       # 0 in the cracks and hollows, 1 on the high spots
 # colour: the scan's own, pulled toward a dark slate, each stone a little different
 col = desat(n, d.outputs[0], G("FLOOR_GREY", 0.5))
+# Second step down (owner could not see the first: "is the floor calmer? I can't really tell"): the scan's own
+# light and dark are pulled toward one even tone, the relief is much shallower, and the firelight no longer
+# rakes the stones nearest the camera, so the bottom of the picture falls quiet and darker.
+col = n.mix(G("FLOOR_EVEN", 0.45), col, (0.083, 0.069, 0.057, 1))
 # the scan's pale grit would show as light specks at phone size: bring the brightest bits down
 col = mul_col(n, col, n.math("SUBTRACT", 1.0, n.math("MULTIPLY", sstep(n, lum(n, d.outputs[0]), 0.15, 0.3), 0.55)))
-tint = n.math("ADD", 0.72, n.math("MULTIPLY", rs[0], 0.56))
+tint = n.math("ADD", 0.82, n.math("MULTIPLY", rs[0], 0.36))
 hue = n.mix(rs[1], (0.86, 0.97, 1.08, 1), (1.1, 1.0, 0.88, 1))
 big = n.noise(w, 0.06, detail=3, rough=0.5)
 broad = n.math("ADD", 0.8, n.math("MULTIPLY", big.outputs["Fac"], 0.4))
@@ -74,7 +78,7 @@ col = mul_col(n, col, n.math("MULTIPLY", n.math("MULTIPLY", tint, broad), G("FLO
 col = mul_col(n, col, hue)
 # owner, 2026-11-20: "a teeny tiny bit less detailed, the stone at the very bottom almost draws my attention": the
 # cracks are a little paler, the relief a little shallower, the stones a little closer in tone to each other
-col = mul_col(n, col, n.math("ADD", G("FLOOR_CRACK_DARK", 0.48), n.math("MULTIPLY", sstep(n, h, 0.0, 0.5), 1.0 - G("FLOOR_CRACK_DARK", 0.48))))
+col = mul_col(n, col, n.math("ADD", G("FLOOR_CRACK_DARK", 0.68), n.math("MULTIPLY", sstep(n, h, 0.0, 0.5), 1.0 - G("FLOOR_CRACK_DARK", 0.68))))
 # the edge of each stone
 ex = n.math("SUBTRACT", hh[0], n.math("ABSOLUTE", ss[0]))
 ey = n.math("SUBTRACT", hh[1], n.math("ABSOLUTE", ss[1]))
@@ -101,9 +105,9 @@ rough = n.math("ADD", rough, n.math("ADD", n.math("MULTIPLY", near, 0.2), n.math
 rough = n.math("SUBTRACT", rough, n.math("MULTIPLY", damp, 0.22))
 rough = n.mix(puddle, rough, G("PUDDLE_ROUGH", 0.2), kind="FLOAT")
 rough = n.mix(moss, rough, 0.9, kind="FLOAT")
-nmap = n.node("ShaderNodeNormalMap", ins={"Strength": G("FLOOR_RELIEF", 0.62), "Color": nm.outputs[0]}, space="TANGENT", uv_map="UVMap")
+nmap = n.node("ShaderNodeNormalMap", ins={"Strength": G("FLOOR_RELIEF", 0.36), "Color": nm.outputs[0]}, space="TANGENT", uv_map="UVMap")
 hb = n.math("SUBTRACT", n.math("MULTIPLY", h, 0.5), n.math("ADD", n.math("MULTIPLY", bite, 0.6), n.math("MULTIPLY", grime, 0.25)))
-bump = n.node("ShaderNodeBump", ins={"Strength": G("FLOOR_BUMP", 0.32), "Distance": 0.09, "Height": hb, "Normal": nmap.outputs[0]})
+bump = n.node("ShaderNodeBump", ins={"Strength": G("FLOOR_BUMP", 0.2), "Distance": 0.09, "Height": hb, "Normal": nmap.outputs[0]})
 geo = n.node("ShaderNodeNewGeometry")
 nrm = n.mix(n.math("MULTIPLY", puddle, 0.85), bump.outputs[0], geo.outputs["Normal"], kind="VECTOR")      # still water is flat
 pb = n.node("ShaderNodeBsdfPrincipled", ins={"Base Color": col, "Roughness": clamp01(n, rough), "Normal": nrm,
@@ -138,10 +142,10 @@ for sx, nm, e in ((-1, "L", 1.0), (1, "R", 0.7)):
     o.parent = root
     o.matrix_parent_inverse.identity()
     o.location = (sx * 15.0, 54.0, 17.0)
-    o.rotation_euler = (Vector((-sx * 2.0, -3.0, FLOOR)) - Vector(o.location)).to_track_quat("-Z", "Y").to_euler()
+    o.rotation_euler = (Vector((-sx * 2.0, G("FIRELIGHT_AIM_Y", 7.0), FLOOR)) - Vector(o.location)).to_track_quat("-Z", "Y").to_euler()
     L = o.data
     L.color = (1.0, 0.55, 0.22)
-    L.spot_size = math.radians(34)
+    L.spot_size = math.radians(30)
     L.spot_blend = 0.9
     L.shadow_soft_size = 1.0
     L.use_shadow = False                  # a help light for the stone's relief: the chest must not throw a long shadow at the camera
@@ -158,7 +162,7 @@ for sx, nm, e in ((-1, "L", 1.0), (1, "R", 0.7)):
     var.type = "SINGLE_PROP"
     var.targets[0].id = ctrl
     var.targets[0].data_path = '["lit_0"]'
-    dr.expression = "%.1f * lit" % (G("FIRELIGHT_E", 80000.0) * e)
+    dr.expression = "%.1f * lit" % (G("FIRELIGHT_E", 70000.0) * e)
 key = bpy.data.objects["Temple Dais Key"]
 key.location = G("DAIS_KEY_AT", (-14.0, -8.0, 11.0))
 key.rotation_euler = (Vector((-0.5, 0.5, 0.0)) - Vector(key.location)).to_track_quat("-Z", "Y").to_euler()

@@ -496,3 +496,15 @@ that I do not like.. idk what it is", and on the torches: "it can use some work.
   ridge. Each torch now points at the exact middle of a band (`TORCH_TURN` 45, then snapped), and the plate is
   a slim strap (0.64 wide) with four bolts in a column, so it fits inside the band
   (`~/Downloads/Chest torch off the seam.png`). Saved.
+- Floor, second step (the owner could not see the first: "is the floor calmer? I can't really tell"): the scan's
+  light and dark are pulled 45 percent toward one even tone (`FLOOR_EVEN`), relief 0.36, bump 0.2, cracks only
+  darkened to 0.68, stones closer in tone, and the firelight is aimed further back (y 7, was minus 3) so it no
+  longer rakes the stones nearest the camera. Saved. `~/Downloads/Chest floor calmer before and after.png` shows
+  the real bottom of the picture (`BORDER="0,0,1,0.3"` with `temple/tools/shot.sh` renders only that part of
+  the real frame, in about 20 seconds).
+- Torch shapes (the owner: "let's change the shape of the fire and torches I think it can be more tasteful"):
+  `TORCH_STYLE` in `v11_torches.py` chooses `goblet` (the stout cup with a tall fire, still the saved one),
+  `slim` (a slender torch leaning out of two iron rings, a small teardrop of fire) or `bowl` (a shallow dish
+  on a curved arm, a low wide quiet fire). Each shape sets where the flame starts, its card and the flame's
+  own shape (`SHAPE`). `TORCH_STYLE=... temple/tools/shot.sh NAME` renders one without saving
+  (`~/Downloads/Chest torch shape options.png`).
