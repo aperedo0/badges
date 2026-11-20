@@ -269,3 +269,38 @@ in its globals. All are safe to run again and never delete objects. Timing: `T` 
 
 Render: `blender -b chest_reveal_v5.blend --python tools/render_anim.py -- OUTDIR pct=100 samples=32 blur=1`
 (version 2 took about 15 s per frame on this M2; the smoke makes version 5 slower).
+
+## Version 8 mist and beam specks (2026-11-19)
+
+The owner turned down the version 7 opening fog (a thick cloud sitting on the rim) and its specks
+(too many, clumped, showing outside the beam). `chest_reveal_v8_mist.blend` (a copy of
+`chest_reveal_v7_dust.blend`) replaces both; the version 7 files and the `cache_opening` folder are untouched.
+
+- `tools/v8_mist.py`: thin, see through mist that only the cool light inside the chest shows. It fills the
+  shut chest, is dragged up by the swinging lid, lifts by its warmth and thins out. No glow of its own. Cache: `cache_smoke_mist` (ignored by Git).
+- `tools/v8_motes.py`: about 100 specks laid out evenly as the resting camera sees them, each at its own
+  depth in the beam, none in front of the badge. They only add light, and how much follows the beam: its
+  fade in over time, its cone edge and its lower fade. No bake. The version 7 speck particles stay in the
+  file, switched off.
+- `tools/v8_bake.py` bakes the mist in background Blender (MIST_RES, MIST_NOISE); `tools/v8_render.py`
+  renders frames from the front camera (FRAMES, OUT, PCT, SAMPLES, optional MIST_GAIN, MOTE_GAIN).
+- The light inside the chest is two lights (owner saw sparkle inside the lid and bright dashes on the
+  front): one light on the chest floor skimmed the lid at a shallow angle, so the wood grain's bumps
+  sparkled, and it leaked through the plank seams. Now `Reveal Opening Light` lights the mist only,
+  `Reveal Opening Glow` (a soft point light, no mirror glints, low and toward the front so it meets the
+  open lid squarely) lights the wood and the badge, and `Reveal Opening Light Blocker` (shadow only, inside
+  the walls) stops leaks. Both lights are at full strength before the lid moves and fade once it is open
+  (owner: "it starts bright and then fades, does not start low then grow").
+- Specks a tenth of their size (owner: "a tenth of their size ... much, much smaller"): their true radius
+  is far below a pixel, so `v8_motes.py` draws each one pixel wide and dims it by how much smaller than a
+  pixel it really is; `v8_render.py` tells them the pixel size for the render size. Judge them at full
+  size (`~/Downloads/Chest last frame tiny specks.png`, 1080 by 1920): at smaller sizes a pixel is bigger.
+- Third look (`~/Downloads/Chest opening mist test 3.mp4`, res 64, 60 percent size): real physics only.
+  The owner asked whether a real chest would push smoke up; it would not, so the upward push on the source
+  and the source that kept feeding smoke after the opening are gone. One fill of slightly warm smoke, made
+  while the lid is shut, moved by the lid, its warmth and the badge. Specks shrunk to about one pixel
+  (owner: "HUGE"). No slow motion copies.
+- Second look: thicker mist (res 80, `~/Downloads/Chest opening mist test 2.mp4`).
+- First look for the owner: res 72, no detail pass, half size, 24 samples
+  (`~/Downloads/Chest opening mist test 1.mp4`). Run `v8_mist.py` only before a new bake: it changes the
+  simulation settings, which outdates the cache.
