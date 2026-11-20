@@ -1,0 +1,38 @@
+{
+ "date": "2026-11-20",
+ "owner_request": "go through this folder and find things to delete to make space",
+ "before": {
+  "working_bytes": 29581531232,
+  "git_bytes": 5605480402,
+  "free_bytes": 9097322496
+ },
+ "removed": {
+  "receipt.jsonl": {
+   "files": 1558,
+   "bytes": 3092927212
+  },
+  "receipt_old_versions.jsonl": {
+   "files": 5,
+   "bytes": 1332964081
+  },
+  "receipt_cache_opening.jsonl": {
+   "files": 402,
+   "bytes": 5787988476
+  },
+  "receipt_cache_dust_after_95.jsonl": {
+   "files": 236,
+   "bytes": 9681213708
+  }
+ },
+ "removed_total_bytes": 19895093477,
+ "removed_total_files": 2201,
+ "kept_scene_files": [
+  "chest_reveal_v7.blend",
+  "chest_reveal_v9_temple.blend",
+  "chest_reveal_v10_temple_polish.blend",
+  "chest_reveal_v11_torches.blend",
+  "chest_reveal_v12_full.blend"
+ ],
+ "not_reviewed": "older chest building folders (phase04 to phase06, claude_attempt_20261117, about 3.3 GB) and the other badge folders (about 2 GB): left for the owner to decide",
+ "note": "the first inventory listing (2.5 MB) was dropped after this summary was written; the manifests and receipts list every removed file"
+}

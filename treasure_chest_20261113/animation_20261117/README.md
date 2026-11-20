@@ -1,6 +1,6 @@
 # Treasure chest badge reveal animation
 
-**Newest: `chest_reveal_v11_torches.blend`** (2026-11-19, version 10 plus torches, see Version 11). **Before that: `chest_reveal_v10_temple_polish.blend`** (the temple's end look polished for iPhone screens, see Version 10; `chest_reveal_v9_temple.blend` is the version before, see Version 9). **Core: `chest_reveal_v7.blend`** (2026-11-18; landing dust in `chest_reveal_v7_dust.blend`, ending light in `chest_reveal_v7_ending.blend`, see Version 7). Version 6: `chest_reveal_v6.blend`, scene **Chest Reveal**: 30 fps, frames 1 to 213
+**Newest: `chest_reveal_v12_full.blend`** (2026-11-20, the whole reveal in four pieces, see Version 12). **Before that: `chest_reveal_v11_torches.blend`** (the end look with torches, see Version 11). **Before that: `chest_reveal_v10_temple_polish.blend`** (the temple's end look polished for iPhone screens, see Version 10; `chest_reveal_v9_temple.blend` is the version before, see Version 9). **Core: `chest_reveal_v7.blend`** (2026-11-18; landing dust in `chest_reveal_v7_dust.blend`, ending light in `chest_reveal_v7_ending.blend`, see Version 7). Version 6: `chest_reveal_v6.blend`, scene **Chest Reveal**: 30 fps, frames 1 to 213
 (7.1 s), 1080 x 1920 portrait, EEVEE. Version 6 is the owner's core animation pass (see Version 6
 below): the chest drops in from off screen into a large straight on view, the clasp unlocks before
 the lid opens, the camera pulls back, and the app's 3 Days Total badge rises. No smoke or special
@@ -513,3 +513,153 @@ that I do not like.. idk what it is", and on the torches: "it can use some work.
   from the stone (0.8, leaning 0.4) so its fire stays clear. Both shown in
   `~/Downloads/Chest slim torch leaning or straight.png` (close up, and the real frame's band through
   `BORDER="0,0.6,1,0.86"`). The saved scene leans until the owner picks.
+
+## Version 12: the whole reveal in four pieces (2026-11-20, built overnight)
+
+The owner locked in the straight slim torch, the dark carved platform and the calmer floor, then: "create the
+entire scene ... make sure everything we talked about is implemented and then render the scene and leave it in
+the downloads folder". `chest_reveal_v12_full.blend` is a copy of version 11 (which keeps the end look alone).
+The badge is still in every render as the owner's guide; the phone will draw it in the app.
+Plan and progress: `badges/plans/chest_reveal_v12_full_scene_20261120.md` (not in Git).
+
+**The four pieces** (the user swipes up to flip the lock, and later decides when to continue):
+
+| Piece | Frames | What it is |
+|---|---|---|
+| 1 Arrival, once | 124 (4.1 s) | 1 s of empty temple, the chest drops in, dust clears, everything comes to rest |
+| 2 Waiting, loops | 225 (7.5 s) | rattles at 0, 2.5 and 5.0 s, each over within 0.8 s; the first 75 frames loop alone (one rattle) |
+| 3 Reveal, once | 164 (5.5 s) | lock flips, lid opens, badge rises, torches catch, gold beam |
+| 4 Ending, loops | 90 (3 s) | badge floating; fire, mist, dust in the beam and rings alive |
+
+Rule for the app in the waiting loop: take the clip's time modulo 2.5 s; under 0.8 s a rattle is playing, so
+wait until 0.8 s, otherwise start the reveal at once. The same rule serves the one rattle clip.
+The ending loop's first frames are blended with its last (so it repeats without a jump); to pass from the reveal
+into it with no flicker in the flames, play the unblended ending frames once (`render/v12_frames/ending`
+0 to 89), then the loop (`ending_loop`). The whole preview does that.
+
+- `tools/v12_story.py` (inside Blender, after the version 10 and 11 scripts): keys the story on the real timeline
+  (scene frames -28 to 213; Blender keeps the scene's first frame at 0, the story's start is in
+  `Temple Story["start"]`). Numbers on the empty `Temple Story` drive everything: `gold` (0 moonlight, 1 the
+  gold ending; the temple's lights follow it), `rings` (flash at the landing f17 and f22, pulse at the click f56
+  and when the badge settles f186, soft glow at the end), `burst` and `rays` (cold light from the chest when the
+  lid cracks at f90: on the floor and pillars through `Temple Chest Burst`, in the hall's air through
+  `Temple Burst Rays`), `keyhole`, `seam`, `dustfall` (dust shaken from above), `drift` (the chest's mist keeps
+  drifting at the end). Torch pairs catch near to far from f120, 9 frames apart, each with a flare
+  (`lit_0` to `lit_5`). The camera is level through the whole movie and the chest sits low in the tall picture
+  at the start (`START_SHIFT`); it pushes toward the lock from the swipe (f50) to f88. The chest now falls from
+  9 units higher so it is out of the picture before it drops. The studio surroundings that lit the chest are
+  dim from the start (they flattened the dark temple). The far doorway is a faint slit (bright, it sat on the
+  lid like a glowing pill once the camera rose).
+- `tools/v12_render.py` (background Blender, `PIECE=arrival|waiting|reveal|ending`): adds what a straight playback
+  cannot: the arrival's tail (chest held at f49 while the landing dust clears and the side rings swing to rest),
+  the waiting loop (chest held at f49; three different rattles as delta transforms on the lid, clasp, body
+  and rings; keyhole glow breathing; the line of light at the lid's seam follows the lid's lift), the reveal with
+  rings at rest and no landing dust, and the ending with the mist held on its last simulated frame. Nothing in
+  the scene's animation is touched: rig parts get delta transforms, and the story's numbers are set after its
+  action is taken off, in that process only. `ONLY="3,40"` renders chosen frames for tests.
+- `temple/tools/v12_run_all.sh`: renders the four pieces (resumes where it stopped), joins the ending loop and
+  writes the videos to Downloads (`Chest reveal whole scene preview.mp4` and one file per piece).
+- Things learned: a light's reach into mist and haze cannot be limited to chosen objects (light linking covers
+  surfaces only), so a light that should not brighten the chest's mist needs volume 0, and rays need their own
+  light that does not look at the mist. Custom numbers set from Python need `update_tag()` before drivers see
+  them. Animated values cannot be overridden by setting them at render time: use delta transforms, or take the
+  action off.
+- Known small things: five grains of landing grit are still in the air at f49 and hang there during the waiting
+  loop (they are far below a pixel in the preview). The platform's carving is shading, not cut geometry (it
+  reads from both cameras). This render is a preview: half size, 24 samples.
+
+### Version 12, first render checked and two fixes (2026-11-20, about 3:30 AM)
+
+The first render (half size, 24 samples) took 2 hours. Checked by measuring the difference between the last
+frame of each piece and the first frame of the next (mean difference per pixel, 0 to 255; two neighbouring
+frames of the ending differ by 0.25):
+
+| Join | First render | After the fix |
+|---|---|---|
+| arrival into waiting | 0.01 | same |
+| waiting into itself (three rattles, and one rattle) | 0.00 | same |
+| waiting into reveal | 0.40, top third 1.07: the dust from above came back | 0.01 |
+| reveal into ending | 0.03 | same |
+| ending loop into itself | 0.52 (flames blended over 24 frames) | same |
+
+- Fix 1: on the straight timeline the dust shaken from above is still falling at frame 50, so it popped back in
+  when the reveal started. `v12_render.py` now holds `dustfall` past its end for the reveal and the ending.
+- Fix 2: the cold burst made the floor at the bottom of the picture flash white (bottom eighth of the picture
+  at 77 of 255, now 37; the hall above is unchanged). `Temple Chest Burst` sits just above the chest's rim and a
+  little back (0, 0.2, 3.1), so the chest's own walls shade the floor all round it.
+- Reveal frames 0 to 136 were rendered again; the other pieces are unchanged.
+- The live Blender was closed during the first render (it holds 6 GB) and reopened with
+  `chest_reveal_v12_full.blend` afterwards.
+
+### Cleanup on 2026-11-20 (owner: "go through this folder and find things to delete to make space")
+
+Receipts in `cleanup_runs/make_space_20261120/` at the repository root. Removed from this folder:
+- Blender's automatic backups (`*.blend1`) and the test and preview frames of versions 7 to 11
+  (`render/v7_check`, `v7_full_frames`, `v7_opening_frames`, `v8_mist_frames`, `v9_temple_frames`, `v10_frames`,
+  `v11_frames`): 3.1 GB. The videos and pictures made from them are in the owner's Downloads.
+- `chest_reveal_v5.blend`, `v6`, `v7_dust`, `v7_ending` and `v8_mist`: 1.3 GB. Kept: `chest_reveal_v7.blend`
+  (the core animation), `v9_temple`, `v10_temple_polish`, `v11_torches`, `v12_full`. None of the kept files names
+  another version file (checked inside the files).
+- `cache_opening/` (the version 7 opening fog the owner turned down; only `v7_dust` used it): 5.8 GB.
+- `cache_dust` frames 96 to 213: 9.7 GB. Version 12 reads the landing dust only up to frame 95 (the arrival
+  piece; two arrival frames rendered again afterwards were identical). Playing a kept scene straight through in
+  Blender shows no landing dust after frame 95. To get it back: `tools/v7_squeeze.py`, `v7_dust.py`, then
+  `blender -b <file> --python tools/v7_bake_dust.py` (about 1.5 hours).
+Sections above that name the removed files are kept as a record of what each version was.
+
+### Version 12, second pass after the owner's notes (2026-11-20, about 3:45 AM)
+
+The owner watched the first version and said (speech to text, shortened):
+- about an arch in the dark start: "when it's dark, that texture ... looks a little cheap. I want it to look better";
+- "The smoke animation should animate the entire way out, and I want it to animate out smoothly ... if you have to,
+  extend the clip";
+- the platform's gold rings: "I don't want them to light up ... They're just colored that way";
+- "I don't ever want the camera to pull in"; "the camera animation is a little too fast ... slow and cinematic,
+  smooth and cinematic";
+- "the lights come on very fast ... dark scene and suddenly it's like a light scene. I want them to come on a
+  little slower ... they could appreciate the lights coming on and what it does to the environment".
+
+What changed (run order inside Blender after the version 10 and 11 scripts: `v12_story.py`, `v12_slow.py`,
+`v12_dark.py`; then `blender -b chest_reveal_v12_full.blend --python tools/v12_bake_mist.py` once):
+
+| Piece | Frames | Change |
+|---|---|---|
+| 1 Arrival, once | 124 (4.1 s) | rings never flash; dark look |
+| 2 Waiting, loops | 225 (7.5 s), first 75 loop alone | dark look |
+| 3 Reveal, once | 231 (7.7 s), scene frames 50 to 280 | no camera push; slower camera, slower lights, mist plays out |
+| 4 Ending, loops | 90 (3 s), from scene frame 280 | no mist left in the chest |
+
+- Rings: plain gold metal, emission 0, no driver (`v12_story.py`).
+- Camera: never moves toward the chest. The rise and pull back as the lid opens keeps its path but takes frames
+  90 to 205 (was 90 to 142) with one long ease (`v12_slow.py`; the original move is in
+  `temple/v12_camera_original.json`; the dolly has its own action `v12 Camera Dolly Slow` over its old NLA tracks).
+  The badge stays inside the picture through the whole move (its top is never closer than 21 percent of the
+  height to the top edge).
+- Lights: torch pairs catch from frame 126, 15 frames apart (was 120 and 9), each rising over 14 frames and
+  settling over 20; `gold` runs 122 to 238 (was 118 to 186); the beam and the room's change 130 to 228 (was 132
+  to 186); the cold burst rises with the lid to frame 114 and is gone by 228.
+- Mist from the chest: simulation baked again to frame 286 with the same settings (588 s; the old cache is in
+  `cache_smoke_mist_before_v12`, 176 MB, delete it once the new one is approved). How thick it reads fades from
+  full at frame 190 to nothing at 272 while it keeps moving. Nothing is left in the chest at the end: asked which
+  smoke they meant and whether any should stay, the owner answered "the mist that pours out of the chest ... I
+  want the mist to drift all the way out, none left at the end" (on 2026-11-19 they had chosen a thin layer that
+  stays). `Reveal Chest Haze`, a faint drifting layer, is kept in the file switched off (`CHEST_HAZE` 0).
+- The dark look (`v12_dark.py`): arches built of stones (joints as relief and old dirt, each stone its own tone,
+  a roll along the inner edge, a hood along the outer edge, a keystone; materials `Temple Arch Stone*`), coursed
+  masonry on the back wall and the long hall (`Temple Wall Masonry`), relief from a real height map; one cool
+  light from high on the left raking across the arches (`Temple Moon Key`, shadows only from pillars and
+  arches); the flat blue fill from the front far down while dark; two faint slanted shafts into the long hall
+  (`Temple Moon Shaft A/B`) and the two front shafts slanted the same way (straight down they read as pale
+  poles). All of it fades with `gold`. The moss tufts are quieter (they turned yellow green in the moonlight).
+- A driver on the camera that read the camera's own lens made a dependency cycle; the lens is a number now.
+- Render: 70 percent size (756 by 1638, twice the pixels of the first version), 24 samples, shadow detail kept
+  at the half size level (full size overflowed the shadow memory), dithering 1.5 and a higher quality encode
+  (crf 14) against bands and blocks in the dark. Full size frames take 25 to 37 seconds each, 70 percent about
+  11. The waiting loop's 51 quiet frames per beat are rendered once and reused for the other two beats.
+- The first version's videos are in `~/Downloads/Chest reveal first version (old)/`.
+- Second pass rendered 2026-11-20, 4:12 to 6:02 AM (reveal 41 min, ending 25, arrival 20, waiting 22). Checked with
+  `temple/tools/v12_check.py`: every join between pieces differs by 0.00 to 0.01 per pixel (0 to 255); the ending
+  loop's seam (0.49) equals the difference between two of its neighbouring frames (0.50). Through the reveal the
+  picture's change from frame to frame has no spike (median 0.64, a smooth rise to about 8 at the middle of the
+  camera's move and back down), and its brightness climbs steadily from 2.0 to 5.5 seconds (28, 29, 40, 38, 47,
+  50, 57, 60, 62, 63 of 255, every half second). Videos and `Chest reveal key moments.png` are in Downloads.

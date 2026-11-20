@@ -18,7 +18,7 @@ exec(open(bpy.path.abspath("//tools/v9_lib.py")).read())
 G = globals().get
 FLOOR = G("TEMPLE_FLOOR", -0.55)
 DAIS_A, DAIS_B = G("DAIS_AXES", (4.45, 3.6))
-STYLE = G("DAIS_STYLE", "pitted")
+STYLE = G("DAIS_STYLE", "carved_dark")       # the owner picked the dark carved stone on 2026-11-20
 ROCKD = RES + "polyhaven_rock_3/rock_3_"
 ROCKS = RES + "polyhaven_rock_surface/rock_surface_"
 MOSS = RES + "polyhaven_concrete_moss/concrete_moss_"

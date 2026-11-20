@@ -50,7 +50,7 @@ RIM = 2.1                                       # top of the cup above the plate
 STYLE = G("TORCH_STYLE", "slim")                # the owner picked the slim torch on 2026-11-20 ("Let's go with A")
 # The slim torch can lean out from the pillar or stand straight up (owner: "let's try with a slant and no slant
 # just straight up"). Standing straight it sits further out, so its fire stays clear of the stone.
-LEAN = G("TORCH_LEAN", 17.0)
+LEAN = G("TORCH_LEAN", 0.0)                  # the owner picked straight up on 2026-11-20 (17 leans it out)
 SLIM_OUT = 0.40 if LEAN > 1.0 else 0.8
 SLIM_A = (SLIM_OUT, -0.75)
 SLIM_B = (SLIM_OUT + 2.5 * math.tan(math.radians(LEAN)), 1.75)
