@@ -32,7 +32,7 @@ FLOORS = bpy.data.collections["Temple Floor Receivers"]
 FRONT = bpy.data.collections["Temple Front Receivers"]
 SC = coll("Temple Story", TC)
 F0 = G("STORY_START", -28)                       # one second of empty temple before the chest drops into the picture (about f2)
-END = G("STORY_END", 280)                        # the reveal's last frame; the ending loop starts here (was 213: the owner
+END = G("STORY_END", 290)                        # the reveal's last frame; the ending loop starts here (was 213: the owner
                                                  # asked for slower lights, a slower camera and smoke that plays all the way out)
 scn.frame_end = END
 scn.frame_start = max(F0, 0)                    # Blender keeps a scene's first frame at 0 or later; the story still starts at F0
@@ -69,7 +69,7 @@ story.location = (0.0, 40.0, 34.0)
 story.animation_data_clear()
 story["start"] = F0                              # the render script reads the story's first and last frames from here
 story["end"] = END
-PROPS = ("gold", "rings", "burst", "rays", "keyhole", "seam", "dustfall", "drift")
+PROPS = ("gold", "rings", "burst", "rays", "keyhole", "seam", "dustfall", "drift", "streak")
 for k in PROPS:
     story[k] = 0.0
     story.id_properties_ui(k).update(min=-100.0, max=100.0)
@@ -104,6 +104,7 @@ keys(story, "rays", [(F0, 0), (89, 0), (112, 1.0), (140, 0.6), (172, 0.0), (END,
 keys(story, "keyhole", [(F0, 0), (34, 0), (49, 0.5), (50, 0.5), (55, 1.5), (56, 3.0), (59, 0.5), (66, 0.15), (88, 0.15), (92, 0.0), (213, 0)], linear=True)
 keys(story, "seam", [(F0, 0), (213, 0)])
 keys(story, "dustfall", [(17, 0.0), (213, 196 / 30.0)], linear=True)
+story["streak"] = 0.0                                    # not keyed: v12_render.py sets it to 1 (the falling grit's stand in for motion blur)
 keys(story, "drift", [(F0, 0), (END, 0)])              # not used any more: the mist plays out by itself (v12_slow.py)
 ctrl = bpy.data.objects["Temple Torch Control"]
 ctrl.animation_data_clear()
@@ -175,14 +176,18 @@ drv(L("Temple Front Fill"), "energy", "2200.0 * (0.4 + 0.6 * gold)", gold=S("gol
 drv(L("Temple Dais Key"), "energy", "2600.0 * (0.4 + 0.6 * gold)", gold=S("gold"))
 # Moonlight through the roof, warming to gold. From the low opening camera the old shafts showed their own
 # beginning in mid air and read as thin poles: they now start far above the picture and are softer.
-for nm, e, deg in (("Temple Shaft L", 1.0, 4.4), ("Temple Shaft R", 0.8, 3.8)):
+for nm, e, deg, sx_, sy_ in (("Temple Shaft L", 1.0, 4.4, -10.0, 36.0), ("Temple Shaft R", 0.8, 3.8, 11.5, 47.0)):
     so = bpy.data.objects[nm]
-    aim = Vector((so.location.x, so.location.y + 1.0, FLOOR))
-    so.location.z = 90.0
+    aim = Vector((sx_, sy_, FLOOR))                    # straight down through the roof, where the owner liked them
+    # From very high up, so the light is as strong at the floor as under the roof (from z 90 the streak was seven
+    # times dimmer at the bottom and faded out half way down). Same width and same light on the floor as before.
+    HI = 330.0
+    so.location = (sx_, sy_ - 1.0, HI)
     so.rotation_euler = (aim - Vector(so.location)).to_track_quat("-Z", "Y").to_euler()
-    so.data.spot_size = math.radians(deg)
+    so.data.spot_size = 2.0 * math.atan(90.55 * math.tan(math.radians(deg) / 2.0) / (HI - FLOOR))
     so.data.spot_blend = 0.9
-    drv(L(nm), "energy", "%.1f * (1.5 - 0.5 * gold)" % (90000.0 * e * 1.5), gold=S("gold"))
+    so.data.volume_factor = G("SHAFT_AIR", 40.0)
+    drv(L(nm), "energy", "%.1f * (2.0 - 1.0 * gold)" % (90000.0 * e * 1.5 * ((HI - FLOOR) / 90.55) ** 2), gold=S("gold"))
     for i, (c0, c1) in enumerate(((0.62, 1.0), (0.76, 0.78), (1.0, 0.5))):
         drv(L(nm), "color", "%.3f + %.3f * gold" % (c0, c1 - c0), index=i, gold=S("gold"))
 airo = bpy.data.objects.get("Temple Air")           # the hall's air reaches higher, so the shafts have no visible top
@@ -319,7 +324,7 @@ def glow_card(name, corners, prop, strength, color):
 
 
 KY = G("KEYHOLE_Y", -1.98)                       # just behind the lock plate (its face is at -2.11): seen only through the keyhole
-glow_card("Temple Keyhole Glow", [(-0.3, KY, 1.35), (0.3, KY, 1.35), (0.3, KY, 2.15), (-0.3, KY, 2.15)], "keyhole", G("KEYHOLE_GLOW", 1.2), (0.6, 0.82, 1.0, 1))
+glow_card("Temple Keyhole Glow", [(-0.3, KY, 1.35), (0.3, KY, 1.35), (0.3, KY, 2.15), (-0.3, KY, 2.15)], "keyhole", G("KEYHOLE_GLOW", 1.7), (0.6, 0.82, 1.0, 1))
 SY = G("SEAM_Y", -1.6)                           # inside the front wall: seen only when the lid lifts a hair
 glow_card("Temple Seam Glow", [(-2.35, SY, 2.62), (2.35, SY, 2.62), (2.35, SY, 3.1), (-2.35, SY, 3.1)], "seam", G("SEAM_GLOW", 5.0), (0.6, 0.84, 1.0, 1))
 scn.frame_set(keep)

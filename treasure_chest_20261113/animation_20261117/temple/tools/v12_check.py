@@ -34,10 +34,10 @@ print("brightness of the whole picture every half second of the reveal:", " ".jo
     "%d" % np.asarray(Image.open(R + "reveal/%04d.png" % i).convert("L")).mean() for i in range(0, len(steps) + 1, 15)))
 if len(sys.argv) > 1:
     f = ImageFont.truetype("/System/Library/Fonts/Helvetica.ttc", 20)
-    picks = [("arrival", 5, "empty temple"), ("arrival", 46, "chest lands"), ("arrival", 62, "dust"), ("arrival", 123, "at rest"),
-             ("waiting", 4, "rattle 1"), ("waiting", 154, "rattle 3"), ("reveal", 6, "lock clicks"), ("reveal", 52, "lid opens"),
-             ("reveal", 80, "badge rises"), ("reveal", 100, "first torches"), ("reveal", 125, "more torches"), ("reveal", 150, "beam arriving"),
-             ("reveal", 175, "all lit"), ("reveal", 200, "mist thinning"), ("reveal", 230, "mist gone"), ("ending", 40, "ending loop")]
+    picks = [("arrival", 5, "empty temple"), ("arrival", 46, "chest lands"), ("arrival", 78, "sand from above"), ("arrival", 123, "at rest"),
+             ("waiting", 6, "rattle 1"), ("waiting", 80, "rattle 2"), ("waiting", 154, "rattle 3"), ("reveal", 6, "lock clicks"),
+             ("reveal", 60, "lid opens"), ("reveal", 90, "smoke rises"), ("reveal", 110, "first torches"), ("reveal", 135, "more torches"),
+             ("reveal", 160, "hall lighting up"), ("reveal", 190, "all lit"), ("reveal", 240, "end of the reveal"), ("ending", 40, "ending loop")]
     W = 300
     ims = []
     for d, i, t in picks:

@@ -12,7 +12,7 @@
     "license_url": "https://polyhaven.com/license",
     "api": "https://polyhaven.com/our-api",
     "resolution": "2k",
-    "note": "temple columns, arches and walls: surface relief and roughness",
+    "note": "temple columns, arches and walls: surface relief and roughness; version 12 pillars: colour, relief (height map) and roughness all from this scan",
     "files": {
       "plastered_stone_wall_diff_2k.jpg": {
         "url": "https://dl.polyhaven.org/file/ph-assets/Textures/jpg/2k/plastered_stone_wall/plastered_stone_wall_diff_2k.jpg",
@@ -25,6 +25,11 @@
       "plastered_stone_wall_nor_gl_2k.jpg": {
         "url": "https://dl.polyhaven.org/file/ph-assets/Textures/jpg/2k/plastered_stone_wall/plastered_stone_wall_nor_gl_2k.jpg",
         "sha256": "25bed6b5b2d66bb3305ffa9a4308d105828fafa6cc37e806041b8b3d103139f1"
+      },
+      "plastered_stone_wall_disp_2k.png": {
+        "url": "https://dl.polyhaven.org/file/ph-assets/Textures/png/2k/plastered_stone_wall/plastered_stone_wall_disp_2k.png",
+        "sha256": "800819eab51139cb58a4017a2497777076b04cb755d72fc2cc7ef56b407cd55a",
+        "date": "2026-11-20"
       }
     },
     "date": "2026-11-19"

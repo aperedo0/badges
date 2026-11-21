@@ -1,0 +1,2918 @@
+{
+"version": 1,
+"root": "/Users/antonioperedo/Desktop/badges",
+"authorization": "Owner, 2026-11-20, asked whether to go through the older chest building folders: \"if making or deleting the older chest folders will have no issue on the current ones, then sure\"",
+"models": [
+{
+"badge": "Treasure chest reveal scene",
+"blender": "treasure_chest_20261113/animation_20261117/chest_reveal_v12_full.blend",
+"export": "treasure_chest_20261113/animation_20261117/badge/sprout_badge_mobile.usdz",
+"evidence": "Every kept Blender file under treasure_chest_20261113 (the five reveal scenes, chest_simple, chest_claude, source_copy, phase06 master, phase05 14_edge_review master, phase01 candidate43, the root file) was decompressed and searched for image names; no image a kept file names is removed. Version 12 was also checked in Blender: 86 images packed, none read from the older folders."
+}
+],
+"keep": [
+{
+"path": "treasure_chest_20261113/treasure_chest.blend",
+"bytes": 12959871,
+"mtime_ns": 1794791633890612427,
+"sha256": "69b30d416900573920a4956d4d3a02d1fdf009b81267a5f88043e2b0f6eafbc4"
+},
+{
+"path": "treasure_chest_20261113/claude_attempt_20261117/chest_simple.blend",
+"bytes": 365294058,
+"mtime_ns": 1794957746143954789,
+"sha256": "7939d61ce8fcb1c26e320c37fde2d1a4ab87e11b9f75f116439c08c9714e2f22"
+},
+{
+"path": "treasure_chest_20261113/claude_attempt_20261117/chest_claude.blend",
+"bytes": 298988502,
+"mtime_ns": 1794911514911965915,
+"sha256": "a72b70b9dc2cf91e8df5f6cdcace92c1aa42a9b295aff8bfb427582907aeb599"
+},
+{
+"path": "treasure_chest_20261113/claude_attempt_20261117/source_copy.blend",
+"bytes": 258144794,
+"mtime_ns": 1794907036337799830,
+"sha256": "65632c90490b23e2d979455d6132e836fdda8983f5fc323887bce353eacb473d"
+},
+{
+"path": "treasure_chest_20261113/phase06/material_rollout/master.blend",
+"bytes": 121228696,
+"mtime_ns": 1794905778367203065,
+"sha256": "8a2c7e9ff36d559d0f8d48ccd59f195280491e3389bd08629aea87d6b1e5f137"
+},
+{
+"path": "treasure_chest_20261113/phase01/candidate43/chest.blend",
+"bytes": 10065181,
+"mtime_ns": 1794776467875876000,
+"sha256": "c3e181351f2a7e9fe42a47214ef84dc735b03d5a46754d1b75d7cfc44c457b54"
+},
+{
+"path": "treasure_chest_20261113/phase05/iron_character/14_edge_review/master.blend",
+"bytes": 165667427,
+"mtime_ns": 1794901911488555999,
+"sha256": "6be11a372c531a0a9594aeb7645df3b595c3f1c7e13cd55f9e59e905fd3be154"
+},
+{
+"path": "treasure_chest_20261113/reference.png",
+"bytes": 3353628,
+"mtime_ns": 1794604234382218810,
+"sha256": "d2e2989e9f27099c59bdee7693c7f1fa208aab5810b81d999c4147fc4c82a92d"
+},
+{
+"path": "treasure_chest_20261113/animation_20261117/chest_reveal_v12_full.blend",
+"bytes": 252829308,
+"mtime_ns": 1795186443432137675,
+"sha256": "5a2ce69b2a8616aeb16ac9df6374b9d16e34c1155e06f941879479c628115b50"
+},
+{
+"path": "treasure_chest_20261113/animation_20261117/badge/sprout_badge_mobile.usdz",
+"bytes": 3335464,
+"mtime_ns": 1794990870201991118,
+"sha256": "97129c73a399f82212b3a6064110019eac5529c0db6ac532599113ba3b00248e"
+},
+{
+"path": "treasure_chest_20261113/animation_20261117/chest_reveal_v7.blend",
+"bytes": 242596661,
+"mtime_ns": 1795060146038376410,
+"sha256": "e51515be0e12e52d72b704d83a0f619487079892fe3f0ace7f1c1b7cbb5e9576"
+}
+],
+"remove": [
+{
+"path": "treasure_chest_20261113/phase06/material_rollout/baseline.blend",
+"bytes": 165668234,
+"mtime_ns": 1794902709525461479,
+"sha256": "312da5a965c1640431b60a2a119c88828c4567290665850c43ef57d64be1144c",
+"reason": "Starting copy of the detailed chest for the material rollout: its source (phase05 iron_character 14_edge_review master) and its result (phase06 master) are both kept"
+},
+{
+"path": "treasure_chest_20261113/phase06/material_rollout/draft_/initial_full.png",
+"bytes": 1586367,
+"mtime_ns": 1794904034369148768,
+"sha256": "b0a66dc2a07c1af5c343c34169a2d759992cbd516b1a407de74cbb40be8ff95f",
+"reason": "Render or candidate map of an older chest step that no kept Blender file names"
+},
+{
+"path": "treasure_chest_20261113/phase06/material_rollout/draft_/arc_mapping_full.png",
+"bytes": 1614500,
+"mtime_ns": 1794904398489059693,
+"sha256": "4a8e07d94d7d4155aa010113d37680d6d7e44ee14d3e81aed4b2d47b84593e1c",
+"reason": "Render or candidate map of an older chest step that no kept Blender file names"
+},
+{
+"path": "treasure_chest_20261113/phase06/material_rollout/draft_/back.png",
+"bytes": 2138579,
+"mtime_ns": 1794906339051571055,
+"sha256": "b61a0f9d47688105614e8717c6b43909fbb1569279b43fba1fd2df57116d1878",
+"reason": "Render or candidate map of an older chest step that no kept Blender file names"
+},
+{
+"path": "treasure_chest_20261113/phase06/material_rollout/final_/full.png",
+"bytes": 4240219,
+"mtime_ns": 1794905961257696597,
+"sha256": "10475e8e37cfe8751c27d93e8a4805f63f54c0bc2d216f900227a4d7453d3f2d",
+"reason": "Render or candidate map of an older chest step that no kept Blender file names"
+},
+{
+"path": "treasure_chest_20261113/phase06/material_rollout/final_/close.png",
+"bytes": 3964747,
+"mtime_ns": 1794906106701264087,
+"sha256": "b8ffcc7217b21742bddd81ea7fd2f131b7e35ff017643076c19d7dfc7f80989c",
+"reason": "Render or candidate map of an older chest step that no kept Blender file names"
+},
+{
+"path": "treasure_chest_20261113/phase06/material_rollout/wood_atlas/height_fields.npz",
+"bytes": 33450046,
+"mtime_ns": 1794903633661092159,
+"sha256": "f4622d194b6a1feddd28f089175bfe33061bd8838d1a72ab2cba587669c3c35f",
+"reason": "Intermediate array of an older chest material step; no Blender file reads arrays and the current reveal scenes do not use it"
+},
+{
+"path": "treasure_chest_20261113/phase01/core_baseline.npz",
+"bytes": 34961,
+"mtime_ns": 1794618284934784436,
+"sha256": "9fcafbec7d38f5c15d040ba71d3f33c1b11d3c7af4d303136e5be8a8f864d54f",
+"reason": "Intermediate array of an older chest material step; no Blender file reads arrays and the current reveal scenes do not use it"
+},
+{
+"path": "treasure_chest_20261113/phase01/geometry.npz",
+"bytes": 1151771,
+"mtime_ns": 1794660592362229977,
+"sha256": "eb5475ab8355ec4eddd304ef4b765083e1785245b985927df832e0b4218a50d4",
+"reason": "Intermediate array of an older chest material step; no Blender file reads arrays and the current reveal scenes do not use it"
+},
+{
+"path": "treasure_chest_20261113/phase01/candidate42/wood_before.npz",
+"bytes": 55849,
+"mtime_ns": 1794774791923473220,
+"sha256": "1dd0ec009bd83edd81af8c1f1913e9bc3f4048c7ad78ce95e4cb139e3b54fbba",
+"reason": "Intermediate array of an older chest material step; no Blender file reads arrays and the current reveal scenes do not use it"
+},
+{
+"path": "treasure_chest_20261113/phase04/wood_lab/live_master.png",
+"bytes": 1189111,
+"mtime_ns": 1794796264583756716,
+"sha256": "abeaf6dd608e5b9a3224da6dc91372fcbc02321da583a8c05c20bd11386563b4",
+"reason": "Render or candidate map of an older chest step that no kept Blender file names"
+},
+{
+"path": "treasure_chest_20261113/phase04/wood_lab/screen_neutral.jpg",
+"bytes": 69338,
+"mtime_ns": 1794793931836046618,
+"sha256": "e202669450afc33181d77913a20645258622534a120b5bc357922201e1a0b8fc",
+"reason": "Render or candidate map of an older chest step that no kept Blender file names"
+},
+{
+"path": "treasure_chest_20261113/phase04/wood_lab/live_before.png",
+"bytes": 827202,
+"mtime_ns": 1794793582447411503,
+"sha256": "a1348391646169cf197eafb7e1ce4b091bfd27f79f55606b78f0a042a7ffb249",
+"reason": "Render or candidate map of an older chest step that no kept Blender file names"
+},
+{
+"path": "treasure_chest_20261113/phase04/wood_lab/resource_sheet.jpg",
+"bytes": 234800,
+"mtime_ns": 1794793698967967146,
+"sha256": "6c49ddf9f144e339ddb0d2835ab353861d6eb5f0bdc748a92dae42facf5423a4",
+"reason": "Render or candidate map of an older chest step that no kept Blender file names"
+},
+{
+"path": "treasure_chest_20261113/phase04/wood_lab/screen_warm.jpg",
+"bytes": 66250,
+"mtime_ns": 1794793931787331527,
+"sha256": "b1d04eef9ddee12acdeb2761074dc909c38df0ace7e079ca6d132fdb1fd47fd5",
+"reason": "Render or candidate map of an older chest step that no kept Blender file names"
+},
+{
+"path": "treasure_chest_20261113/phase04/wood_lab/texturecan_grid.jpg",
+"bytes": 189294,
+"mtime_ns": 1794794476863674010,
+"sha256": "0a43a2786447bcdf502ca39fbebd8e01a6547a9ee0129fafea86f0823f25e19a",
+"reason": "Render or candidate map of an older chest step that no kept Blender file names"
+},
+{
+"path": "treasure_chest_20261113/phase04/wood_lab/review/master_cinema_close_crop.png",
+"bytes": 1021410,
+"mtime_ns": 1794796621651024546,
+"sha256": "2f80c0241da31e90d64bd9d924921a6382bb5f8ae5776f3842808ed6ddef0f4c",
+"reason": "Render or candidate map of an older chest step that no kept Blender file names"
+},
+{
+"path": "treasure_chest_20261113/phase04/wood_lab/review/whole_chest_review.jpg",
+"bytes": 371056,
+"mtime_ns": 1794796621838332116,
+"sha256": "f941c4e2d8bd87462fa78dbc4553c97c9c3e07c4c7da2f5dbe6e7508d69768e3",
+"reason": "Render or candidate map of an older chest step that no kept Blender file names"
+},
+{
+"path": "treasure_chest_20261113/phase04/wood_lab/review/baseline_cinema_close_crop.png",
+"bytes": 1038978,
+"mtime_ns": 1794796621545779020,
+"sha256": "c8172b18a070b3a516ca0cc25d577322e0f7eaf896a900f8a60932b61873048d",
+"reason": "Render or candidate map of an older chest step that no kept Blender file names"
+},
+{
+"path": "treasure_chest_20261113/phase04/wood_lab/review/relief_diagnostics.jpg",
+"bytes": 238196,
+"mtime_ns": 1794796621952795342,
+"sha256": "053c9dda10fe54d209fb7e14447265343cddcb12258c271cb53f03b9f91f7269",
+"reason": "Render or candidate map of an older chest step that no kept Blender file names"
+},
+{
+"path": "treasure_chest_20261113/phase04/wood_lab/review/wood_review.jpg",
+"bytes": 336612,
+"mtime_ns": 1794796621713072344,
+"sha256": "65b1b5b37ea8bbfa847b43e126b7829902e76bda0acffa6fffb30e7f95ce2212",
+"reason": "Render or candidate map of an older chest step that no kept Blender file names"
+},
+{
+"path": "treasure_chest_20261113/phase04/wood_lab/review/neutral_before_after.jpg",
+"bytes": 219021,
+"mtime_ns": 1794796622036830153,
+"sha256": "1096877c0af9d506a82f83398eb35c711fb1602a29e55f3d3b999d6ce8574e48",
+"reason": "Render or candidate map of an older chest step that no kept Blender file names"
+},
+{
+"path": "treasure_chest_20261113/phase04/wood_lab/timber_refinement/baseline_cinema.png",
+"bytes": 1420467,
+"mtime_ns": 1794798371067759645,
+"sha256": "a2a85ad7303d45d76f4dcf436e6b4d1cf855691c758219ef6fedddb90e15c806",
+"reason": "Render or candidate map of an older chest step that no kept Blender file names"
+},
+{
+"path": "treasure_chest_20261113/phase04/wood_lab/timber_refinement/research/weathered_planks.png",
+"bytes": 435916,
+"mtime_ns": 1794800646401777446,
+"sha256": "6cbd0f10f082f257c0ba1728aff4f268074ef3c09258d3f81bdb3cff154cb126",
+"reason": "Render or candidate map of an older chest step that no kept Blender file names"
+},
+{
+"path": "treasure_chest_20261113/phase04/wood_lab/timber_refinement/research/raw_plank_wall.png",
+"bytes": 458281,
+"mtime_ns": 1794800646407712195,
+"sha256": "c643f8bc4bc8181832b4e1b8ce4485781ddede5aca50195de4a8b7e0147f9773",
+"reason": "Render or candidate map of an older chest step that no kept Blender file names"
+},
+{
+"path": "treasure_chest_20261113/phase04/wood_lab/timber_refinement/research/knotted_board_crop.png",
+"bytes": 1000263,
+"mtime_ns": 1794801026593444626,
+"sha256": "056320d6bd42e51b0b63711f93d322e8ee4341ca1fb011b99108b75c2e280df7",
+"reason": "Render or candidate map of an older chest step that no kept Blender file names"
+},
+{
+"path": "treasure_chest_20261113/phase04/wood_lab/timber_refinement/research/knotted_board_inner.png",
+"bytes": 754985,
+"mtime_ns": 1794801120922347415,
+"sha256": "24c6779414984533aeeb40d02b2e7e9dd6ef6cdbcd1e4b17944f52223785f899",
+"reason": "Render or candidate map of an older chest step that no kept Blender file names"
+},
+{
+"path": "treasure_chest_20261113/phase04/wood_lab/timber_refinement/research/rough_diff.jpg",
+"bytes": 218591,
+"mtime_ns": 1794800895461455981,
+"sha256": "41db72fd2503e9bc629b44787495bd439f9bd0a22dd269e360740b33148d9e6c",
+"reason": "Render or candidate map of an older chest step that no kept Blender file names"
+},
+{
+"path": "treasure_chest_20261113/phase04/wood_lab/timber_refinement/AE_controlled_fibers/surface.npz",
+"bytes": 5259840,
+"mtime_ns": 1794821881267497809,
+"sha256": "bba53714829280053a2fe89db004e021e6430e2b37577eff3f3064555225a42b",
+"reason": "Intermediate array of an older chest material step; no Blender file reads arrays and the current reveal scenes do not use it"
+},
+{
+"path": "treasure_chest_20261113/phase04/wood_lab/timber_refinement/AZ_edge_definition/master_height.npz",
+"bytes": 38603945,
+"mtime_ns": 1794872926857250930,
+"sha256": "79b3ba6bd9cc74e29974026d65e3d1eb69f53661c30afa173e0c15791f6ca3f6",
+"reason": "Intermediate array of an older chest material step; no Blender file reads arrays and the current reveal scenes do not use it"
+},
+{
+"path": "treasure_chest_20261113/phase04/wood_lab/timber_refinement/AZ_edge_definition/surface.npz",
+"bytes": 5270076,
+"mtime_ns": 1794872925307228211,
+"sha256": "8230b94f6764f84ad1ba53c3b4b83b5ebde5c30e8ebc063e20287f9808c6e242",
+"reason": "Intermediate array of an older chest material step; no Blender file reads arrays and the current reveal scenes do not use it"
+},
+{
+"path": "treasure_chest_20261113/phase04/wood_lab/timber_refinement/AZ_edge_definition/albedo.png",
+"bytes": 5106112,
+"mtime_ns": 1794859567039758433,
+"sha256": "db2ec78518078958da42f654b1734e605da424197211fc77e39723578096f339",
+"reason": "Render or candidate map of an older chest step that no kept Blender file names"
+},
+{
+"path": "treasure_chest_20261113/phase04/wood_lab/timber_refinement/AZ_edge_definition/normal_masks.npz",
+"bytes": 3384251,
+"mtime_ns": 1794857283734135145,
+"sha256": "840e20f62efa7b60352da16a8d3183f8f3d83c030872e50fcd0f1530dd4268b3",
+"reason": "Intermediate array of an older chest material step; no Blender file reads arrays and the current reveal scenes do not use it"
+},
+{
+"path": "treasure_chest_20261113/phase04/wood_lab/timber_refinement/AZ_edge_definition/normal.png",
+"bytes": 6621890,
+"mtime_ns": 1794873007753150760,
+"sha256": "bcf258bd7badfcdce82079596b6046d903e95cc34fbeaf0e5f47ba43c6be59c8",
+"reason": "Render or candidate map of an older chest step that no kept Blender file names"
+},
+{
+"path": "treasure_chest_20261113/phase04/wood_lab/timber_refinement/AZ_edge_definition/close_softwarm.png",
+"bytes": 1522691,
+"mtime_ns": 1794873038343118118,
+"sha256": "14f6a1e2887008194d36a1e49433f3f109e20d15b4c6ac67c5711fe55aecd41c",
+"reason": "Render or candidate map of an older chest step that no kept Blender file names"
+},
+{
+"path": "treasure_chest_20261113/phase04/wood_lab/timber_refinement/AZ_edge_definition/roughness.png",
+"bytes": 1460984,
+"mtime_ns": 1794859567205460125,
+"sha256": "016b13f316ce23471b6a3c47c87920a039a4dcd0568a909a2125e9c21e3585c6",
+"reason": "Render or candidate map of an older chest step that no kept Blender file names"
+},
+{
+"path": "treasure_chest_20261113/phase04/wood_lab/timber_refinement/AZ_edge_definition/normal_frames.npz",
+"bytes": 22688542,
+"mtime_ns": 1794872949180014807,
+"sha256": "828985219b0826fdde4317a5d638d83a1f0cde36b09a77e20d2a4c75560cccc3",
+"reason": "Intermediate array of an older chest material step; no Blender file reads arrays and the current reveal scenes do not use it"
+},
+{
+"path": "treasure_chest_20261113/phase04/wood_lab/timber_refinement/AZ_edge_definition/right_softwarm.png",
+"bytes": 1402078,
+"mtime_ns": 1794873093889602182,
+"sha256": "61b6a2499c909bb255bc48b6b4ad76794b62ddfd3f4fcc76995d71a7b4c5d539",
+"reason": "Render or candidate map of an older chest step that no kept Blender file names"
+},
+{
+"path": "treasure_chest_20261113/phase04/wood_lab/timber_refinement/final_fibers/broken_fiber_layers.npz",
+"bytes": 8375719,
+"mtime_ns": 1794819950149722245,
+"sha256": "0a69155f46cb96ab8fc107739f67652cac8a3d0a04f656661c46d3a0f044b7b3",
+"reason": "Intermediate array of an older chest material step; no Blender file reads arrays and the current reveal scenes do not use it"
+},
+{
+"path": "treasure_chest_20261113/phase04/wood_lab/timber_refinement/final_fibers/structure_layers.npz",
+"bytes": 16190276,
+"mtime_ns": 1794818894795727568,
+"sha256": "84513b2a5b69b7b1b5cccedf8896bcd6bbb42181e202eef28fa95059410cc50c",
+"reason": "Intermediate array of an older chest material step; no Blender file reads arrays and the current reveal scenes do not use it"
+},
+{
+"path": "treasure_chest_20261113/phase04/wood_lab/timber_refinement/final_polish/combined_screening.jpg",
+"bytes": 656291,
+"mtime_ns": 1794873307877756122,
+"sha256": "a8b3aa045c7cbe730e0c54987eb2ff2648a16ebfaeab099f69fc4a9d8e96899d",
+"reason": "Render or candidate map of an older chest step that no kept Blender file names"
+},
+{
+"path": "treasure_chest_20261113/phase04/wood_lab/timber_refinement/final_polish/edge_comparison.jpg",
+"bytes": 470700,
+"mtime_ns": 1794873076270348224,
+"sha256": "9069ac9d91cc0d468a264ee287cfc6ea4c3ee46f5e99c4191a8b1bcfb87fcb56",
+"reason": "Render or candidate map of an older chest step that no kept Blender file names"
+},
+{
+"path": "treasure_chest_20261113/phase04/wood_lab/timber_refinement/final_polish/required_AE_normal.png",
+"bytes": 2405481,
+"mtime_ns": 1794873002369060645,
+"sha256": "69edec4aaa29cc7e2151231e55d7c9d9c8a71a1993c60d45966408b4d9a68b19",
+"reason": "Render or candidate map of an older chest step that no kept Blender file names"
+},
+{
+"path": "treasure_chest_20261113/phase04/wood_lab/timber_refinement/final_polish/right_edges.jpg",
+"bytes": 411676,
+"mtime_ns": 1794873114071341193,
+"sha256": "219b61581e64439cb3eb36dfc9a83f9c3b832dc6716d89e23cfe05045704f00b",
+"reason": "Render or candidate map of an older chest step that no kept Blender file names"
+},
+{
+"path": "treasure_chest_20261113/phase04/wood_lab/timber_refinement/final_polish/material_diagnosis.jpg",
+"bytes": 827334,
+"mtime_ns": 1794872952872984912,
+"sha256": "09d5d2c79081a7378c11bb6ddcb61d01e8f7334bf1cc22ab1bd334df60a3d165",
+"reason": "Render or candidate map of an older chest step that no kept Blender file names"
+},
+{
+"path": "treasure_chest_20261113/phase04/wood_lab/timber_refinement/final_polish/right_cohesion.jpg",
+"bytes": 416504,
+"mtime_ns": 1794873197906338133,
+"sha256": "baffbf2d8cc011d8c09d0dddeda92487bd40b0222f8c9ade275b572fede22dbd",
+"reason": "Render or candidate map of an older chest step that no kept Blender file names"
+},
+{
+"path": "treasure_chest_20261113/phase04/wood_lab/timber_refinement/final_polish/baseline_final.jpg",
+"bytes": 574250,
+"mtime_ns": 1794873850081298475,
+"sha256": "b278264c4b38ea0963fd828127b65f4c31e055d806cde3c4f3cdd76ee0a254bd",
+"reason": "Render or candidate map of an older chest step that no kept Blender file names"
+},
+{
+"path": "treasure_chest_20261113/phase04/wood_lab/timber_refinement/final_polish/combined_right_screening.jpg",
+"bytes": 415274,
+"mtime_ns": 1794873356102708817,
+"sha256": "f6eb01638f88a6774437abe1ad7f2041280aac8ee2929de63e343a4afe68ecd9",
+"reason": "Render or candidate map of an older chest step that no kept Blender file names"
+},
+{
+"path": "treasure_chest_20261113/phase04/wood_lab/timber_refinement/final_polish/whole_plank.jpg",
+"bytes": 350498,
+"mtime_ns": 1794873850335523714,
+"sha256": "bf58d14295f52fe34bd1c421b1b1df6a2b5312ff29d08a1f5a4a24a72cbdcc03",
+"reason": "Render or candidate map of an older chest step that no kept Blender file names"
+},
+{
+"path": "treasure_chest_20261113/phase04/wood_lab/timber_refinement/final_polish/close_views.jpg",
+"bytes": 601492,
+"mtime_ns": 1794873850253727851,
+"sha256": "69821fa6940fddb4e4a1b10def057cb28818e98616c31d533ceb466959fabf28",
+"reason": "Render or candidate map of an older chest step that no kept Blender file names"
+},
+{
+"path": "treasure_chest_20261113/phase04/wood_lab/timber_refinement/final_polish/edge_fields.npz",
+"bytes": 16704040,
+"mtime_ns": 1794872927431835324,
+"sha256": "4e9442843184e053512ae0e48d964be55e0666e6338e4bcd16ff0e4b3bd0bacb",
+"reason": "Intermediate array of an older chest material step; no Blender file reads arrays and the current reveal scenes do not use it"
+},
+{
+"path": "treasure_chest_20261113/phase04/wood_lab/timber_refinement/final_polish/light_comparison.jpg",
+"bytes": 472881,
+"mtime_ns": 1794873114022312853,
+"sha256": "3580cb2402885aa74e499f851225c44d23e4bf0c488fca08a64892e7bd8fc408",
+"reason": "Render or candidate map of an older chest step that no kept Blender file names"
+},
+{
+"path": "treasure_chest_20261113/phase04/wood_lab/timber_refinement/final_polish/right_before_after.jpg",
+"bytes": 443948,
+"mtime_ns": 1794873850487148655,
+"sha256": "d987091babec661a86357213caded0fd952f707679d02757294c21fb3858f1d6",
+"reason": "Render or candidate map of an older chest step that no kept Blender file names"
+},
+{
+"path": "treasure_chest_20261113/phase04/wood_lab/timber_refinement/final_polish/depth_hierarchy_layers.npz",
+"bytes": 17959466,
+"mtime_ns": 1794873106979502312,
+"sha256": "eb6480cb0e26368393dce634d8ce2f1459eff4952b97b1ba0d2bbc49d786f0db",
+"reason": "Intermediate array of an older chest material step; no Blender file reads arrays and the current reveal scenes do not use it"
+},
+{
+"path": "treasure_chest_20261113/phase04/wood_lab/timber_refinement/final_polish/specular_diagnostic.jpg",
+"bytes": 414297,
+"mtime_ns": 1794872815321655187,
+"sha256": "32b127561970f66c0f8387a1890fc2c0a216739268e27aabede24d868cd90586",
+"reason": "Render or candidate map of an older chest step that no kept Blender file names"
+},
+{
+"path": "treasure_chest_20261113/phase04/wood_lab/timber_refinement/final_polish/pigment_channels.jpg",
+"bytes": 312882,
+"mtime_ns": 1794872754941163231,
+"sha256": "350bca30fd55edf15dcc48e858befbf7868f1744a9593d05f08150976fcbddfe",
+"reason": "Render or candidate map of an older chest step that no kept Blender file names"
+},
+{
+"path": "treasure_chest_20261113/phase04/wood_lab/timber_refinement/final_polish/pigment_comparison.jpg",
+"bytes": 414517,
+"mtime_ns": 1794872866269191663,
+"sha256": "bcf0756483e43239aee05f16a276595f22054595e2efb5ba84edb42a1ba46c55",
+"reason": "Render or candidate map of an older chest step that no kept Blender file names"
+},
+{
+"path": "treasure_chest_20261113/phase04/wood_lab/timber_refinement/final_polish/knot_close.jpg",
+"bytes": 401999,
+"mtime_ns": 1794873850124209600,
+"sha256": "b101ed5ad14cc94ba2d01c598939c0dbf679e03077128e7df9448d0a11a30998",
+"reason": "Render or candidate map of an older chest step that no kept Blender file names"
+},
+{
+"path": "treasure_chest_20261113/phase04/wood_lab/timber_refinement/AW_depth_hierarchy/right_softwarm_final.png",
+"bytes": 2984533,
+"mtime_ns": 1794865159451985372,
+"sha256": "ec8e6330e058f774372e6204b73947d5b7f5465d1d46fb8873b0d2693f5c9a03",
+"reason": "Render or candidate map of an older chest step that no kept Blender file names"
+},
+{
+"path": "treasure_chest_20261113/phase04/wood_lab/timber_refinement/AW_depth_hierarchy/context_contact_softwarm_final.png",
+"bytes": 2221202,
+"mtime_ns": 1794865310630917469,
+"sha256": "ca04afeda47fe84e9bb50da5370118c248a003fbb41799a01ec5b5ace2e57c97",
+"reason": "Render or candidate map of an older chest step that no kept Blender file names"
+},
+{
+"path": "treasure_chest_20261113/phase04/wood_lab/timber_refinement/AW_depth_hierarchy/plank_softwarm_final.png",
+"bytes": 3299279,
+"mtime_ns": 1794865270301620550,
+"sha256": "9163b72345acbe92ae44319352cb19f0b70b42e6a2962d1f86fee35f446c031d",
+"reason": "Render or candidate map of an older chest step that no kept Blender file names"
+},
+{
+"path": "treasure_chest_20261113/phase04/wood_lab/timber_refinement/AW_depth_hierarchy/master_height.npz",
+"bytes": 38664937,
+"mtime_ns": 1794864277902857520,
+"sha256": "f5bdc1b5399bcfa670b2afcda02d1830e7e99be65766cda52755a943a676f662",
+"reason": "Intermediate array of an older chest material step; no Blender file reads arrays and the current reveal scenes do not use it"
+},
+{
+"path": "treasure_chest_20261113/phase04/wood_lab/timber_refinement/AW_depth_hierarchy/surface.npz",
+"bytes": 5267582,
+"mtime_ns": 1794864276240039380,
+"sha256": "d14449033a604ac765fcbc9d3fa54de94375207ec047392d2b5506ec004923cd",
+"reason": "Intermediate array of an older chest material step; no Blender file reads arrays and the current reveal scenes do not use it"
+},
+{
+"path": "treasure_chest_20261113/phase04/wood_lab/timber_refinement/AW_depth_hierarchy/normal_masks.npz",
+"bytes": 3384251,
+"mtime_ns": 1794857283734135145,
+"sha256": "840e20f62efa7b60352da16a8d3183f8f3d83c030872e50fcd0f1530dd4268b3",
+"reason": "Intermediate array of an older chest material step; no Blender file reads arrays and the current reveal scenes do not use it"
+},
+{
+"path": "treasure_chest_20261113/phase04/wood_lab/timber_refinement/AW_depth_hierarchy/close_copperlight.png",
+"bytes": 1505614,
+"mtime_ns": 1794873066959496004,
+"sha256": "1f72bd097e7c3e318d2b3dbec7b033c84564caef0d532b8c4e82152745b9e7e0",
+"reason": "Render or candidate map of an older chest step that no kept Blender file names"
+},
+{
+"path": "treasure_chest_20261113/phase04/wood_lab/timber_refinement/AW_depth_hierarchy/close_softwarm_final.png",
+"bytes": 3211944,
+"mtime_ns": 1794865021048452910,
+"sha256": "74d97291d88b4d1d965325d11f35db2501cef522fd7f6199bbfc503d876706b8",
+"reason": "Render or candidate map of an older chest step that no kept Blender file names"
+},
+{
+"path": "treasure_chest_20261113/phase04/wood_lab/timber_refinement/AW_depth_hierarchy/close_softwarm.png",
+"bytes": 1521567,
+"mtime_ns": 1794864328084590488,
+"sha256": "c510112556ac1c6c86bd8eb94e8b0f76e3197b5fc6e4f783a891dbfbd5fcf524",
+"reason": "Render or candidate map of an older chest step that no kept Blender file names"
+},
+{
+"path": "treasure_chest_20261113/phase04/wood_lab/timber_refinement/AW_depth_hierarchy/close_softwarm_nospec.png",
+"bytes": 1418106,
+"mtime_ns": 1794872801624388783,
+"sha256": "950e1f236ab6843a90868f9c8acfce1d525cee116ecb59582990909ff7a772a6",
+"reason": "Render or candidate map of an older chest step that no kept Blender file names"
+},
+{
+"path": "treasure_chest_20261113/phase04/wood_lab/timber_refinement/AW_depth_hierarchy/normal_frames.npz",
+"bytes": 22686970,
+"mtime_ns": 1794864290167157761,
+"sha256": "7bfcf03cb60ace0b77a917bd92180cbd05e092a3931030d5e0d2d277da838970",
+"reason": "Intermediate array of an older chest material step; no Blender file reads arrays and the current reveal scenes do not use it"
+},
+{
+"path": "treasure_chest_20261113/phase04/wood_lab/timber_refinement/AW_depth_hierarchy/context_contact_softwarm.png",
+"bytes": 1406532,
+"mtime_ns": 1794864525240037749,
+"sha256": "7a1797629986f8204e5a329d754753f799cadf8b2dcbdfc5582c67c2fc901f2d",
+"reason": "Render or candidate map of an older chest step that no kept Blender file names"
+},
+{
+"path": "treasure_chest_20261113/phase04/wood_lab/timber_refinement/AW_depth_hierarchy/right_softwarm.png",
+"bytes": 1401799,
+"mtime_ns": 1794864509257996008,
+"sha256": "b06b902e263552d4784a287b9d04045b37b66cf3ead140c6c3ed78d1eaaf1deb",
+"reason": "Render or candidate map of an older chest step that no kept Blender file names"
+},
+{
+"path": "treasure_chest_20261113/phase04/wood_lab/timber_refinement/surface_definition/natural_core_layers.npz",
+"bytes": 1097995,
+"mtime_ns": 1794859567268169245,
+"sha256": "ded1d9b453dcdfbf3fe3fff463c474c7582174d66d5b970733633e8ab5e71651",
+"reason": "Intermediate array of an older chest material step; no Blender file reads arrays and the current reveal scenes do not use it"
+},
+{
+"path": "treasure_chest_20261113/phase04/wood_lab/timber_refinement/surface_definition/selected_right.jpg",
+"bytes": 320374,
+"mtime_ns": 1794860359587902547,
+"sha256": "bd9f1b845930733c22865ccb43b329b259eec2aeab26851b6cade02ed56364e5",
+"reason": "Render or candidate map of an older chest step that no kept Blender file names"
+},
+{
+"path": "treasure_chest_20261113/phase04/wood_lab/timber_refinement/surface_definition/right_native.jpg",
+"bytes": 325610,
+"mtime_ns": 1794863403981422143,
+"sha256": "84f2a869bc61dd4bb515e3d33af45281e2ad68e2de5bedbf55dbd94a68000c66",
+"reason": "Render or candidate map of an older chest step that no kept Blender file names"
+},
+{
+"path": "treasure_chest_20261113/phase04/wood_lab/timber_refinement/surface_definition/controlled_organization.jpg",
+"bytes": 504861,
+"mtime_ns": 1794865534652588220,
+"sha256": "87c080c4ac06ef9c6f5aa1f057276909dfa1aec828d6350e62dc810fceb00760",
+"reason": "Render or candidate map of an older chest step that no kept Blender file names"
+},
+{
+"path": "treasure_chest_20261113/phase04/wood_lab/timber_refinement/surface_definition/actual_face_caps.npz",
+"bytes": 19110343,
+"mtime_ns": 1794863686260197686,
+"sha256": "bca0106ce4d15450e871ab323680bc6efaaac3691cbc352a1725f4a774f04e99",
+"reason": "Intermediate array of an older chest material step; no Blender file reads arrays and the current reveal scenes do not use it"
+},
+{
+"path": "treasure_chest_20261113/phase04/wood_lab/timber_refinement/surface_definition/knot_native.jpg",
+"bytes": 402372,
+"mtime_ns": 1794865534693316033,
+"sha256": "74295f161de61857060232b3ab915d9af35883593c40d58065cb1ef35c33bf89",
+"reason": "Render or candidate map of an older chest step that no kept Blender file names"
+},
+{
+"path": "treasure_chest_20261113/phase04/wood_lab/timber_refinement/surface_definition/albedo_inspection.jpg",
+"bytes": 201926,
+"mtime_ns": 1794857624911490758,
+"sha256": "d4483e19bf51e35efa2c99e3af9246e49b44010f4fa58b4864318bd8e4b1a2d7",
+"reason": "Render or candidate map of an older chest step that no kept Blender file names"
+},
+{
+"path": "treasure_chest_20261113/phase04/wood_lab/timber_refinement/surface_definition/AI_native_review.jpg",
+"bytes": 292915,
+"mtime_ns": 1794858063433937908,
+"sha256": "da81b3d02c3e39b41b44c1ff6c8d67a589b4095fbb62bec20be22293e566553c",
+"reason": "Render or candidate map of an older chest step that no kept Blender file names"
+},
+{
+"path": "treasure_chest_20261113/phase04/wood_lab/timber_refinement/surface_definition/source_core_crop_diagnosis.jpg",
+"bytes": 252407,
+"mtime_ns": 1794859502777398124,
+"sha256": "e35029d15955c4290a5679f8d719224a69d1c882a7b3ee21edd4d9c4ca5a3f0e",
+"reason": "Render or candidate map of an older chest step that no kept Blender file names"
+},
+{
+"path": "treasure_chest_20261113/phase04/wood_lab/timber_refinement/surface_definition/endgrain_layers.npz",
+"bytes": 1000205,
+"mtime_ns": 1794859002904739664,
+"sha256": "b7b0437f361b7964f34aab164f20d3283c5f246087580ced096ac23502374c3f",
+"reason": "Intermediate array of an older chest material step; no Blender file reads arrays and the current reveal scenes do not use it"
+},
+{
+"path": "treasure_chest_20261113/phase04/wood_lab/timber_refinement/surface_definition/selected_native.jpg",
+"bytes": 291158,
+"mtime_ns": 1794860359499961487,
+"sha256": "1b6232736c43d87064cb9a8cdbf79fe6ec2742f1e52e8de416e9e35b559271c1",
+"reason": "Render or candidate map of an older chest step that no kept Blender file names"
+},
+{
+"path": "treasure_chest_20261113/phase04/wood_lab/timber_refinement/surface_definition/layer_diagnosis.jpg",
+"bytes": 295886,
+"mtime_ns": 1794858490740695021,
+"sha256": "703e65fcce1151d1aba2e8f8d676e1cacda38ef177854caf781057734d1e24ef",
+"reason": "Render or candidate map of an older chest step that no kept Blender file names"
+},
+{
+"path": "treasure_chest_20261113/phase04/wood_lab/timber_refinement/surface_definition/close_balanced.png",
+"bytes": 1538886,
+"mtime_ns": 1794857034125532202,
+"sha256": "a942cc8d774cd2ee4f7414a731e1a583457c51e6849e17875302fcd8dd2e62a0",
+"reason": "Render or candidate map of an older chest step that no kept Blender file names"
+},
+{
+"path": "treasure_chest_20261113/phase04/wood_lab/timber_refinement/surface_definition/organization_comparison.jpg",
+"bytes": 557548,
+"mtime_ns": 1794858561369119996,
+"sha256": "8b7084773b4e6849bff49bee65ffcf36a77c65f77b71459e41bb03ce17b45762",
+"reason": "Render or candidate map of an older chest step that no kept Blender file names"
+},
+{
+"path": "treasure_chest_20261113/phase04/wood_lab/timber_refinement/surface_definition/source_normal_fibers.npz",
+"bytes": 829793,
+"mtime_ns": 1794859791471349123,
+"sha256": "fd5aaa822206714021ce216251adc54407473dda89a87a3ae62add452da3a2d2",
+"reason": "Intermediate array of an older chest material step; no Blender file reads arrays and the current reveal scenes do not use it"
+},
+{
+"path": "treasure_chest_20261113/phase04/wood_lab/timber_refinement/surface_definition/depth_hierarchy_layers.npz",
+"bytes": 19073577,
+"mtime_ns": 1794864278719825373,
+"sha256": "f3a67fd77bf5fbb2308f075c0d01ebede6bac1503b8df970b82a108d2bae3e17",
+"reason": "Intermediate array of an older chest material step; no Blender file reads arrays and the current reveal scenes do not use it"
+},
+{
+"path": "treasure_chest_20261113/phase04/wood_lab/timber_refinement/surface_definition/equivalent_scale_knot.jpg",
+"bytes": 487469,
+"mtime_ns": 1794865535067409964,
+"sha256": "3c6c8855a2f64c29c80b32bd2d4ce61c08755a208fc11f412b012da113affcfe",
+"reason": "Render or candidate map of an older chest step that no kept Blender file names"
+},
+{
+"path": "treasure_chest_20261113/phase04/wood_lab/timber_refinement/surface_definition/cohesion_comparison.jpg",
+"bytes": 518786,
+"mtime_ns": 1794858367859685665,
+"sha256": "bfd8613bf705a07005411f248da679133eb4e0e58c5824f9b2cb227901f5fd8f",
+"reason": "Render or candidate map of an older chest step that no kept Blender file names"
+},
+{
+"path": "treasure_chest_20261113/phase04/wood_lab/timber_refinement/AX_chestnut_pigment/master_height.npz",
+"bytes": 38664937,
+"mtime_ns": 1794864277902857520,
+"sha256": "f5bdc1b5399bcfa670b2afcda02d1830e7e99be65766cda52755a943a676f662",
+"reason": "Intermediate array of an older chest material step; no Blender file reads arrays and the current reveal scenes do not use it"
+},
+{
+"path": "treasure_chest_20261113/phase04/wood_lab/timber_refinement/AX_chestnut_pigment/surface.npz",
+"bytes": 5267582,
+"mtime_ns": 1794864276240039380,
+"sha256": "d14449033a604ac765fcbc9d3fa54de94375207ec047392d2b5506ec004923cd",
+"reason": "Intermediate array of an older chest material step; no Blender file reads arrays and the current reveal scenes do not use it"
+},
+{
+"path": "treasure_chest_20261113/phase04/wood_lab/timber_refinement/AX_chestnut_pigment/albedo.png",
+"bytes": 5160106,
+"mtime_ns": 1794872754563564039,
+"sha256": "783fb5006acd9db169c51db895eecec5cd6949d35f33543de9d53c3324a8761d",
+"reason": "Render or candidate map of an older chest step that no kept Blender file names"
+},
+{
+"path": "treasure_chest_20261113/phase04/wood_lab/timber_refinement/AX_chestnut_pigment/normal_masks.npz",
+"bytes": 3384251,
+"mtime_ns": 1794857283734135145,
+"sha256": "840e20f62efa7b60352da16a8d3183f8f3d83c030872e50fcd0f1530dd4268b3",
+"reason": "Intermediate array of an older chest material step; no Blender file reads arrays and the current reveal scenes do not use it"
+},
+{
+"path": "treasure_chest_20261113/phase04/wood_lab/timber_refinement/AX_chestnut_pigment/normal.png",
+"bytes": 6605231,
+"mtime_ns": 1794864296503189931,
+"sha256": "06076fb372d2cc15149a8676a5439073210cde73cecb50d89920d4276d503a1e",
+"reason": "Render or candidate map of an older chest step that no kept Blender file names"
+},
+{
+"path": "treasure_chest_20261113/phase04/wood_lab/timber_refinement/AX_chestnut_pigment/close_softwarm.png",
+"bytes": 1517865,
+"mtime_ns": 1794872833262690386,
+"sha256": "6bcec761e277cfbaf9594585477a5b868dc9e5c04f7366ad3da534602b829b5f",
+"reason": "Render or candidate map of an older chest step that no kept Blender file names"
+},
+{
+"path": "treasure_chest_20261113/phase04/wood_lab/timber_refinement/AX_chestnut_pigment/roughness.png",
+"bytes": 1460984,
+"mtime_ns": 1794859567205460125,
+"sha256": "016b13f316ce23471b6a3c47c87920a039a4dcd0568a909a2125e9c21e3585c6",
+"reason": "Render or candidate map of an older chest step that no kept Blender file names"
+},
+{
+"path": "treasure_chest_20261113/phase04/wood_lab/timber_refinement/BB_right_cohesion/master_height.npz",
+"bytes": 38683793,
+"mtime_ns": 1794873106230219030,
+"sha256": "1ec068ffb7e62b992f94ba49b14b518f60874d046af1cb30af71512a2173afed",
+"reason": "Intermediate array of an older chest material step; no Blender file reads arrays and the current reveal scenes do not use it"
+},
+{
+"path": "treasure_chest_20261113/phase04/wood_lab/timber_refinement/BB_right_cohesion/surface.npz",
+"bytes": 5262979,
+"mtime_ns": 1794873104561682295,
+"sha256": "ade8754ef142f648b1d7e01c4bd0e72a7e50c26d63f523cff84cdc1e7fda2d79",
+"reason": "Intermediate array of an older chest material step; no Blender file reads arrays and the current reveal scenes do not use it"
+},
+{
+"path": "treasure_chest_20261113/phase04/wood_lab/timber_refinement/BB_right_cohesion/albedo.png",
+"bytes": 5106112,
+"mtime_ns": 1794859567039758433,
+"sha256": "db2ec78518078958da42f654b1734e605da424197211fc77e39723578096f339",
+"reason": "Render or candidate map of an older chest step that no kept Blender file names"
+},
+{
+"path": "treasure_chest_20261113/phase04/wood_lab/timber_refinement/BB_right_cohesion/normal_masks.npz",
+"bytes": 3384251,
+"mtime_ns": 1794857283734135145,
+"sha256": "840e20f62efa7b60352da16a8d3183f8f3d83c030872e50fcd0f1530dd4268b3",
+"reason": "Intermediate array of an older chest material step; no Blender file reads arrays and the current reveal scenes do not use it"
+},
+{
+"path": "treasure_chest_20261113/phase04/wood_lab/timber_refinement/BB_right_cohesion/normal.png",
+"bytes": 6643272,
+"mtime_ns": 1794873120003748222,
+"sha256": "0a9f14a9fe95f348e044961cc46854784f1bc510c5248eb8d28b85ed313f5e6a",
+"reason": "Render or candidate map of an older chest step that no kept Blender file names"
+},
+{
+"path": "treasure_chest_20261113/phase04/wood_lab/timber_refinement/BB_right_cohesion/close_softwarm.png",
+"bytes": 1521658,
+"mtime_ns": 1794873152094058119,
+"sha256": "959a41954257f2484ad0971eff70bc4730dffed95020b66633d512f2a336121c",
+"reason": "Render or candidate map of an older chest step that no kept Blender file names"
+},
+{
+"path": "treasure_chest_20261113/phase04/wood_lab/timber_refinement/BB_right_cohesion/roughness.png",
+"bytes": 1460984,
+"mtime_ns": 1794859567205460125,
+"sha256": "016b13f316ce23471b6a3c47c87920a039a4dcd0568a909a2125e9c21e3585c6",
+"reason": "Render or candidate map of an older chest step that no kept Blender file names"
+},
+{
+"path": "treasure_chest_20261113/phase04/wood_lab/timber_refinement/BB_right_cohesion/normal_frames.npz",
+"bytes": 22672577,
+"mtime_ns": 1794873114446136856,
+"sha256": "726b0629334c5ed2279ec686681d524ad4cf5ae3eee30d5075cfeee8835f7b18",
+"reason": "Intermediate array of an older chest material step; no Blender file reads arrays and the current reveal scenes do not use it"
+},
+{
+"path": "treasure_chest_20261113/phase04/wood_lab/timber_refinement/BB_right_cohesion/right_softwarm.png",
+"bytes": 1404363,
+"mtime_ns": 1794873180839377505,
+"sha256": "ccb212fc72036a379ea6af0ddc930e3a1c0a03fdf690b72f4d62031c6c41a977",
+"reason": "Render or candidate map of an older chest step that no kept Blender file names"
+},
+{
+"path": "treasure_chest_20261113/phase04/wood_lab/timber_refinement/review/relief_diagnostics.jpg",
+"bytes": 115230,
+"mtime_ns": 1794803110995397623,
+"sha256": "acd46fc2629328cf8663eef73d8a8d56096fafc2bfbf5606d6acdd5f535b343d",
+"reason": "Render or candidate map of an older chest step that no kept Blender file names"
+},
+{
+"path": "treasure_chest_20261113/phase04/wood_lab/timber_refinement/review/whole_comparison.jpg",
+"bytes": 195074,
+"mtime_ns": 1794803110932565229,
+"sha256": "422927bb63e071aa71aad2a709d3919904794cfc681a5c96af22f701547869bc",
+"reason": "Render or candidate map of an older chest step that no kept Blender file names"
+},
+{
+"path": "treasure_chest_20261113/phase04/wood_lab/timber_refinement/review/wood_comparison.jpg",
+"bytes": 236052,
+"mtime_ns": 1794803110824400965,
+"sha256": "e05ce4566eadf5caf6ae8ff67012326bf2c5031f97708437c514bb7611bd5ef7",
+"reason": "Render or candidate map of an older chest step that no kept Blender file names"
+},
+{
+"path": "treasure_chest_20261113/phase04/wood_lab/timber_refinement/grain_hierarchy/detail_layers.npz",
+"bytes": 13254248,
+"mtime_ns": 1794806027665457387,
+"sha256": "7a35c35c90c4825e6473483916a182d36378591f7bc7d37fbfb406590e122615",
+"reason": "Intermediate array of an older chest material step; no Blender file reads arrays and the current reveal scenes do not use it"
+},
+{
+"path": "treasure_chest_20261113/phase04/wood_lab/timber_refinement/AY_fiber_finish/master_height.npz",
+"bytes": 38664937,
+"mtime_ns": 1794864277902857520,
+"sha256": "f5bdc1b5399bcfa670b2afcda02d1830e7e99be65766cda52755a943a676f662",
+"reason": "Intermediate array of an older chest material step; no Blender file reads arrays and the current reveal scenes do not use it"
+},
+{
+"path": "treasure_chest_20261113/phase04/wood_lab/timber_refinement/AY_fiber_finish/surface.npz",
+"bytes": 5267582,
+"mtime_ns": 1794864276240039380,
+"sha256": "d14449033a604ac765fcbc9d3fa54de94375207ec047392d2b5506ec004923cd",
+"reason": "Intermediate array of an older chest material step; no Blender file reads arrays and the current reveal scenes do not use it"
+},
+{
+"path": "treasure_chest_20261113/phase04/wood_lab/timber_refinement/AY_fiber_finish/albedo.png",
+"bytes": 5106112,
+"mtime_ns": 1794859567039758433,
+"sha256": "db2ec78518078958da42f654b1734e605da424197211fc77e39723578096f339",
+"reason": "Render or candidate map of an older chest step that no kept Blender file names"
+},
+{
+"path": "treasure_chest_20261113/phase04/wood_lab/timber_refinement/AY_fiber_finish/normal_masks.npz",
+"bytes": 3384251,
+"mtime_ns": 1794857283734135145,
+"sha256": "840e20f62efa7b60352da16a8d3183f8f3d83c030872e50fcd0f1530dd4268b3",
+"reason": "Intermediate array of an older chest material step; no Blender file reads arrays and the current reveal scenes do not use it"
+},
+{
+"path": "treasure_chest_20261113/phase04/wood_lab/timber_refinement/AY_fiber_finish/normal.png",
+"bytes": 6605231,
+"mtime_ns": 1794864296503189931,
+"sha256": "06076fb372d2cc15149a8676a5439073210cde73cecb50d89920d4276d503a1e",
+"reason": "Render or candidate map of an older chest step that no kept Blender file names"
+},
+{
+"path": "treasure_chest_20261113/phase04/wood_lab/timber_refinement/AY_fiber_finish/close_softwarm.png",
+"bytes": 1521183,
+"mtime_ns": 1794872922423710092,
+"sha256": "1d6ac509f2eeb7bf4b1adaf99978a78e00a675a5e3995b939e5dda13ee2b229c",
+"reason": "Render or candidate map of an older chest step that no kept Blender file names"
+},
+{
+"path": "treasure_chest_20261113/phase04/wood_lab/timber_refinement/AY_fiber_finish/roughness.png",
+"bytes": 1316532,
+"mtime_ns": 1794872891745517865,
+"sha256": "98505bf02577400cdcf8923b01cbe1df02e044eea9c62afcd8efe7cc23d079cd",
+"reason": "Render or candidate map of an older chest step that no kept Blender file names"
+},
+{
+"path": "treasure_chest_20261113/phase03/stylized_wood45/candidate05/textures/wood_height_diagnostic.png",
+"bytes": 2223986,
+"mtime_ns": 1794786272272266115,
+"sha256": "f5e83ab8f638bc01920189f140125fd763f46012cc3deacb364077d4a07343f9",
+"reason": "Render or candidate map of an older chest step that no kept Blender file names"
+},
+{
+"path": "treasure_chest_20261113/phase05/iron_fidelity/baseline_comparison.jpg",
+"bytes": 357764,
+"mtime_ns": 1794886037200785525,
+"sha256": "fa9440e72bef248ed3631bf4bb2c4c63ed51322dcd857d4e5fe3d585d3729316",
+"reason": "Render or candidate map of an older chest step that no kept Blender file names"
+},
+{
+"path": "treasure_chest_20261113/phase05/iron_fidelity/close_views.jpg",
+"bytes": 432774,
+"mtime_ns": 1794886037548440863,
+"sha256": "1ec6933f94808bdf907647d92e0d9dd93ee52217f15b86f01ddc6d603d20fa14",
+"reason": "Render or candidate map of an older chest step that no kept Blender file names"
+},
+{
+"path": "treasure_chest_20261113/phase05/iron_fidelity/controls.jpg",
+"bytes": 621228,
+"mtime_ns": 1794880609997201843,
+"sha256": "9a38966a8141ec32ea07a34f9fbdb920c66ea87e72b5ab0dabd190f93ceaf4c9",
+"reason": "Render or candidate map of an older chest step that no kept Blender file names"
+},
+{
+"path": "treasure_chest_20261113/phase05/iron_fidelity/chest_comparison.jpg",
+"bytes": 558964,
+"mtime_ns": 1794886037794211993,
+"sha256": "c7a42166b4d2cb1e26ef185d09277d67e6cba586700105d60fea7bfc68621800",
+"reason": "Render or candidate map of an older chest step that no kept Blender file names"
+},
+{
+"path": "treasure_chest_20261113/phase05/iron_fidelity/F_planished_v2_bump/graze_studio2.png",
+"bytes": 757721,
+"mtime_ns": 1794882960484621695,
+"sha256": "becab6d31673b7f7d6b439b05f58db4b62b54bd6aaf9ff6c080a6ceeb5cc8701",
+"reason": "Render or candidate map of an older chest step that no kept Blender file names"
+},
+{
+"path": "treasure_chest_20261113/phase05/iron_fidelity/F_planished_v2_bump/iron_studio2.png",
+"bytes": 927146,
+"mtime_ns": 1794882614602698123,
+"sha256": "7fa0b2d785450383278d42eb20191742daa905cf13ad95549dda475d8d70d3e2",
+"reason": "Render or candidate map of an older chest step that no kept Blender file names"
+},
+{
+"path": "treasure_chest_20261113/phase05/iron_fidelity/G_planished_hires_displaced/iron_studio3.png",
+"bytes": 905953,
+"mtime_ns": 1794883524364325435,
+"sha256": "26be69462b0546f85a7ed926ddcdb0f76bf4be320d5430d08c76704a6b183963",
+"reason": "Render or candidate map of an older chest step that no kept Blender file names"
+},
+{
+"path": "treasure_chest_20261113/phase05/iron_fidelity/G_planished_hires_displaced/displacement.npz",
+"bytes": 6873152,
+"mtime_ns": 1794883487878011798,
+"sha256": "06f5881690f85d48beb3c27d0b9a63e94645997b98a6492894daef10528d8039",
+"reason": "Intermediate array of an older chest material step; no Blender file reads arrays and the current reveal scenes do not use it"
+},
+{
+"path": "treasure_chest_20261113/phase05/iron_fidelity/B_neutral_rot90/iron.png",
+"bytes": 828317,
+"mtime_ns": 1794880389143629492,
+"sha256": "554c7556332f36e99bf195de7dcb8f6ffad7b2b620df01c41e92085a8267b395",
+"reason": "Render or candidate map of an older chest step that no kept Blender file names"
+},
+{
+"path": "treasure_chest_20261113/phase05/iron_fidelity/F_battered_bump/iron_warm.png",
+"bytes": 962557,
+"mtime_ns": 1794881575718823782,
+"sha256": "96380ea94490228521310cad49355577fe5b30a941fdc78e236d361bf4e92adf",
+"reason": "Render or candidate map of an older chest step that no kept Blender file names"
+},
+{
+"path": "treasure_chest_20261113/phase05/iron_fidelity/C_clean_r32/iron.png",
+"bytes": 979966,
+"mtime_ns": 1794880408757181670,
+"sha256": "102e32019fd225dc5de9c7ece888bb2c27ac428eee6326a03213b9fd332d3d83",
+"reason": "Render or candidate map of an older chest step that no kept Blender file names"
+},
+{
+"path": "treasure_chest_20261113/phase05/iron_fidelity/H_balanced_scale/iron_studio2.png",
+"bytes": 925105,
+"mtime_ns": 1794883031167648657,
+"sha256": "570d910b58e7dba1624d81b15ebe2b7f34ae1e351e3d483191d63c08b35620af",
+"reason": "Render or candidate map of an older chest step that no kept Blender file names"
+},
+{
+"path": "treasure_chest_20261113/phase05/iron_fidelity/P_iron_knobs/context_studio3_final.png",
+"bytes": 2255561,
+"mtime_ns": 1794885912415891162,
+"sha256": "c92155ba3974b35ff403b740641f1ef9857cd4b9ac85d69af99ee37538ae2d04",
+"reason": "Render or candidate map of an older chest step that no kept Blender file names"
+},
+{
+"path": "treasure_chest_20261113/phase05/iron_fidelity/P_iron_knobs/right_studio3_final.png",
+"bytes": 1535234,
+"mtime_ns": 1794885856592534282,
+"sha256": "55b569d7c853f4d87d621e8f06a817d41c628cfce3c4a2666b8ec5d7f5590897",
+"reason": "Render or candidate map of an older chest step that no kept Blender file names"
+},
+{
+"path": "treasure_chest_20261113/phase05/iron_fidelity/P_iron_knobs/iron_current_final.png",
+"bytes": 1648628,
+"mtime_ns": 1794886007090784059,
+"sha256": "82426015d629b2750ddc0c57da8f76b8b37f48a6a48ca81b0284c4bab10c3a56",
+"reason": "Render or candidate map of an older chest step that no kept Blender file names"
+},
+{
+"path": "treasure_chest_20261113/phase05/iron_fidelity/P_iron_knobs/displacement.npz",
+"bytes": 6873152,
+"mtime_ns": 1794883487878011000,
+"sha256": "06f5881690f85d48beb3c27d0b9a63e94645997b98a6492894daef10528d8039",
+"reason": "Intermediate array of an older chest material step; no Blender file reads arrays and the current reveal scenes do not use it"
+},
+{
+"path": "treasure_chest_20261113/phase05/iron_fidelity/A_noFill/iron.png",
+"bytes": 877954,
+"mtime_ns": 1794882288722112176,
+"sha256": "72041cafa632c69b20d5ccb9c6a3400c07fe9ac86b409c15c718428eba807650",
+"reason": "Render or candidate map of an older chest step that no kept Blender file names"
+},
+{
+"path": "treasure_chest_20261113/phase05/iron_fidelity/C_clean_r50/iron.png",
+"bytes": 920240,
+"mtime_ns": 1794880428656416458,
+"sha256": "dea8f6c44bc0ac60808c479f703642ea423761add0cbf08dfce88d8a3c4d65e4",
+"reason": "Render or candidate map of an older chest step that no kept Blender file names"
+},
+{
+"path": "treasure_chest_20261113/phase05/iron_fidelity/N_charcoal_scale/context_studio3_final.png",
+"bytes": 2256649,
+"mtime_ns": 1794885214630910729,
+"sha256": "02a3c58203ec321fac82b0ba86c087417945394755e397d20f58c9e47a8828dd",
+"reason": "Render or candidate map of an older chest step that no kept Blender file names"
+},
+{
+"path": "treasure_chest_20261113/phase05/iron_fidelity/N_charcoal_scale/right_studio3_final.png",
+"bytes": 1536922,
+"mtime_ns": 1794885136493861431,
+"sha256": "74f8e95ffa917b4ab1d8351fb189be19866976d4fd0a2f19d9e5a356ba455134",
+"reason": "Render or candidate map of an older chest step that no kept Blender file names"
+},
+{
+"path": "treasure_chest_20261113/phase05/iron_fidelity/N_charcoal_scale/iron_studio3.png",
+"bytes": 887886,
+"mtime_ns": 1794884936118952109,
+"sha256": "1e87780b6f118a361ae5306dff3f53734b9fa3ec635aa3200bbc9386176bf20d",
+"reason": "Render or candidate map of an older chest step that no kept Blender file names"
+},
+{
+"path": "treasure_chest_20261113/phase05/iron_fidelity/N_charcoal_scale/iron_current_final.png",
+"bytes": 1653547,
+"mtime_ns": 1794885305003293308,
+"sha256": "075bbbd956c3076bcf4ad06174579afe688d77bee25184c4fe471cff56807fdc",
+"reason": "Render or candidate map of an older chest step that no kept Blender file names"
+},
+{
+"path": "treasure_chest_20261113/phase05/iron_fidelity/N_charcoal_scale/iron_studio5.png",
+"bytes": 828839,
+"mtime_ns": 1794884975625878955,
+"sha256": "540c6bb41abdd5bd79198d7a778a85d069370791afeda15309b9b12b7e612bab",
+"reason": "Render or candidate map of an older chest step that no kept Blender file names"
+},
+{
+"path": "treasure_chest_20261113/phase05/iron_fidelity/N_charcoal_scale/displacement.npz",
+"bytes": 6873152,
+"mtime_ns": 1794883487878011000,
+"sha256": "06f5881690f85d48beb3c27d0b9a63e94645997b98a6492894daef10528d8039",
+"reason": "Intermediate array of an older chest material step; no Blender file reads arrays and the current reveal scenes do not use it"
+},
+{
+"path": "treasure_chest_20261113/phase05/iron_fidelity/material_masks/fields.npz",
+"bytes": 13979079,
+"mtime_ns": 1794880884924998277,
+"sha256": "51fbc7607aecc37220cade040c3ed57781e61c4744d6beca73eaf305e2f22c5e",
+"reason": "Intermediate array of an older chest material step; no Blender file reads arrays and the current reveal scenes do not use it"
+},
+{
+"path": "treasure_chest_20261113/phase05/iron_fidelity/baseline/iron_studio2.png",
+"bytes": 912865,
+"mtime_ns": 1794882570247268417,
+"sha256": "a0279137b76596c1a69b6533043afe50c92357d01593bdf1e84144e93d2034e3",
+"reason": "Render or candidate map of an older chest step that no kept Blender file names"
+},
+{
+"path": "treasure_chest_20261113/phase05/iron_fidelity/baseline/iron_current_final.png",
+"bytes": 1663231,
+"mtime_ns": 1794884261406980674,
+"sha256": "214dcc1ad89dcb54a50ad178ba0f045e939727490ae03e01d8eb449990237dbd",
+"reason": "Render or candidate map of an older chest step that no kept Blender file names"
+},
+{
+"path": "treasure_chest_20261113/phase05/iron_fidelity/baseline/iron_studio3_final.png",
+"bytes": 1580482,
+"mtime_ns": 1794884335619535471,
+"sha256": "d026cc05b9499dc8ec6c370817f510dd04facd670fee32d7a206263bcbd2516d",
+"reason": "Render or candidate map of an older chest step that no kept Blender file names"
+},
+{
+"path": "treasure_chest_20261113/phase05/iron_fidelity/I_response/iron_studio3.png",
+"bytes": 884076,
+"mtime_ns": 1794883839486678887,
+"sha256": "15615cb516e7ee15eb0018627f6368c51c1dd00095c6fd2dd72511937473c5d6",
+"reason": "Render or candidate map of an older chest step that no kept Blender file names"
+},
+{
+"path": "treasure_chest_20261113/phase05/iron_fidelity/I_response/displacement.npz",
+"bytes": 6873152,
+"mtime_ns": 1794883487878011000,
+"sha256": "06f5881690f85d48beb3c27d0b9a63e94645997b98a6492894daef10528d8039",
+"reason": "Intermediate array of an older chest material step; no Blender file reads arrays and the current reveal scenes do not use it"
+},
+{
+"path": "treasure_chest_20261113/phase05/iron_fidelity/O_local_planishing/local_planishing.npz",
+"bytes": 9104851,
+"mtime_ns": 1794885110140426089,
+"sha256": "0af1c37e84dd14ff6987270fd6072f00110cf43b808c6e00206f398087856dbb",
+"reason": "Intermediate array of an older chest material step; no Blender file reads arrays and the current reveal scenes do not use it"
+},
+{
+"path": "treasure_chest_20261113/phase05/iron_fidelity/O_local_planishing/iron_studio3.png",
+"bytes": 887186,
+"mtime_ns": 1794885159104925991,
+"sha256": "7324805428504726c00ffb616ab9554ae96f75ce096ccf8316feb514ea3d876b",
+"reason": "Render or candidate map of an older chest step that no kept Blender file names"
+},
+{
+"path": "treasure_chest_20261113/phase05/iron_fidelity/O_local_planishing/displacement.npz",
+"bytes": 6873152,
+"mtime_ns": 1794883487878011000,
+"sha256": "06f5881690f85d48beb3c27d0b9a63e94645997b98a6492894daef10528d8039",
+"reason": "Intermediate array of an older chest material step; no Blender file reads arrays and the current reveal scenes do not use it"
+},
+{
+"path": "treasure_chest_20261113/phase05/iron_fidelity/H_scale_relief/iron_studio2.png",
+"bytes": 928892,
+"mtime_ns": 1794883008706535012,
+"sha256": "03554b2e5be69fb465043f60248f3703a246ca0eacf9202f3a016662b096c4ac",
+"reason": "Render or candidate map of an older chest step that no kept Blender file names"
+},
+{
+"path": "treasure_chest_20261113/phase05/iron_fidelity/A_current/iron.png",
+"bytes": 961080,
+"mtime_ns": 1794880347983845399,
+"sha256": "80d6671114c732b6f7dda1e56c4871013eefcb9038eeddfa0ea8e6b85ad2d761",
+"reason": "Render or candidate map of an older chest step that no kept Blender file names"
+},
+{
+"path": "treasure_chest_20261113/phase05/iron_fidelity/A_noRear/iron.png",
+"bytes": 953426,
+"mtime_ns": 1794882304412925807,
+"sha256": "84fb95507bdec8d500a1864f0aac8869d0cc8bfb43a8b96e894b2e124e168ca7",
+"reason": "Render or candidate map of an older chest step that no kept Blender file names"
+},
+{
+"path": "treasure_chest_20261113/phase05/iron_fidelity/F_planished_bump/iron_studio.png",
+"bytes": 907202,
+"mtime_ns": 1794881935431423149,
+"sha256": "a71ddca2a1bbc3a5d3a9c420a1bd5a7f5458cdbeab9060782e4c82d428c00cc6",
+"reason": "Render or candidate map of an older chest step that no kept Blender file names"
+},
+{
+"path": "treasure_chest_20261113/phase05/iron_fidelity/L_balanced_iron/right_studio3.png",
+"bytes": 892416,
+"mtime_ns": 1794884533383513415,
+"sha256": "5847213c01f26f0e834a12df25f4546b2922525bd44c9a581494c0252e990249",
+"reason": "Render or candidate map of an older chest step that no kept Blender file names"
+},
+{
+"path": "treasure_chest_20261113/phase05/iron_fidelity/L_balanced_iron/iron_studio3.png",
+"bytes": 899155,
+"mtime_ns": 1794884445605704982,
+"sha256": "61c7765df918f92ce731a367637864295325330e3efd3bd9eb7afd0a53da2843",
+"reason": "Render or candidate map of an older chest step that no kept Blender file names"
+},
+{
+"path": "treasure_chest_20261113/phase05/iron_fidelity/L_balanced_iron/displacement.npz",
+"bytes": 6873152,
+"mtime_ns": 1794883487878011000,
+"sha256": "06f5881690f85d48beb3c27d0b9a63e94645997b98a6492894daef10528d8039",
+"reason": "Intermediate array of an older chest material step; no Blender file reads arrays and the current reveal scenes do not use it"
+},
+{
+"path": "treasure_chest_20261113/phase05/iron_fidelity/relief_old/fields.npz",
+"bytes": 13927625,
+"mtime_ns": 1794881532987276420,
+"sha256": "196a0ece7fe26d0b686f7e4098876741934b5e47a8e1728830e7775eff924725",
+"reason": "Intermediate array of an older chest material step; no Blender file reads arrays and the current reveal scenes do not use it"
+},
+{
+"path": "treasure_chest_20261113/phase05/iron_fidelity/relief_old/contact_mask.png",
+"bytes": 35663,
+"mtime_ns": 1794881532564117145,
+"sha256": "d265f5aefcf7ec38488dc1a61792275ac2dc195f59786250a3850031a68f2eea",
+"reason": "Render or candidate map of an older chest step that no kept Blender file names"
+},
+{
+"path": "treasure_chest_20261113/phase05/iron_fidelity/relief_old/coarse16.png",
+"bytes": 1507167,
+"mtime_ns": 1794881532464106921,
+"sha256": "5be10c840f929a2bdb50d3adf7fb99d9a9160d275ffd066549c4ccc4c0c843b7",
+"reason": "Render or candidate map of an older chest step that no kept Blender file names"
+},
+{
+"path": "treasure_chest_20261113/phase05/iron_fidelity/relief_old/fine16.png",
+"bytes": 3578678,
+"mtime_ns": 1794881532553845046,
+"sha256": "3cedeadc8e3ef4a1cf450ac35b64f7e74906286036f14bd1c1aa3ae714cc1a57",
+"reason": "Render or candidate map of an older chest step that no kept Blender file names"
+},
+{
+"path": "treasure_chest_20261113/phase05/iron_fidelity/G_battered_displaced/iron_studio2.png",
+"bytes": 927136,
+"mtime_ns": 1794882669046666147,
+"sha256": "21306ecfee8c61e4205d913449fb87bced1b9af5c2b1548f9a4c1d2d6942a0a3",
+"reason": "Render or candidate map of an older chest step that no kept Blender file names"
+},
+{
+"path": "treasure_chest_20261113/phase05/iron_fidelity/G_battered_displaced/displacement.npz",
+"bytes": 1626070,
+"mtime_ns": 1794882292100487591,
+"sha256": "dd4b0e671df7af7a2c30f5ab602397db1efcd71013510a5256bcb5a7c5592730",
+"reason": "Intermediate array of an older chest material step; no Blender file reads arrays and the current reveal scenes do not use it"
+},
+{
+"path": "treasure_chest_20261113/phase05/iron_fidelity/relief_planished/fields.npz",
+"bytes": 13910221,
+"mtime_ns": 1794882280312116922,
+"sha256": "0c3b0c0e91e11319f2b1ec4c7e5ba8d379f2db7cc84d304757320c957ce3f1e7",
+"reason": "Intermediate array of an older chest material step; no Blender file reads arrays and the current reveal scenes do not use it"
+},
+{
+"path": "treasure_chest_20261113/phase05/iron_fidelity/relief_planished/contact_mask.png",
+"bytes": 35663,
+"mtime_ns": 1794882279290658312,
+"sha256": "d265f5aefcf7ec38488dc1a61792275ac2dc195f59786250a3850031a68f2eea",
+"reason": "Render or candidate map of an older chest step that no kept Blender file names"
+},
+{
+"path": "treasure_chest_20261113/phase05/iron_fidelity/F_old_bump/iron_warm.png",
+"bytes": 965087,
+"mtime_ns": 1794881558343697054,
+"sha256": "d82897d72f2e5160d643c119a73e24836d7ada6132e0d404ce6dd45aa357e14b",
+"reason": "Render or candidate map of an older chest step that no kept Blender file names"
+},
+{
+"path": "treasure_chest_20261113/phase05/iron_fidelity/F_old_bump/iron_studio.png",
+"bytes": 907014,
+"mtime_ns": 1794881918187345485,
+"sha256": "6357d19daddb5097c32e05dce2e8377417115196d4373141456809577f4ac43a",
+"reason": "Render or candidate map of an older chest step that no kept Blender file names"
+},
+{
+"path": "treasure_chest_20261113/phase05/iron_fidelity/F_old_bump/iron_studio2.png",
+"bytes": 926791,
+"mtime_ns": 1794882591555114525,
+"sha256": "24b32a735d1b0adb2584353d78a6863d56b14b8f10eea9c6555eb65eb1b08cad",
+"reason": "Render or candidate map of an older chest step that no kept Blender file names"
+},
+{
+"path": "treasure_chest_20261113/phase05/iron_fidelity/D_warm_environment/iron.png",
+"bytes": 962739,
+"mtime_ns": 1794880462897208468,
+"sha256": "aad72029b4683935830a007716978afa625733ba2f77f3309071ed2d4092e3f9",
+"reason": "Render or candidate map of an older chest step that no kept Blender file names"
+},
+{
+"path": "treasure_chest_20261113/phase05/iron_fidelity/F_planished_hires_bump/iron_studio3.png",
+"bytes": 907249,
+"mtime_ns": 1794883506010282819,
+"sha256": "8bb6a723527c5ee85da86a84762dc853b2236583958c91e43bdc46b340709bad",
+"reason": "Render or candidate map of an older chest step that no kept Blender file names"
+},
+{
+"path": "treasure_chest_20261113/phase05/iron_fidelity/C_clean_current/iron.png",
+"bytes": 983532,
+"mtime_ns": 1794880445147323392,
+"sha256": "5ceaf9daf0b1873297f610c65a940fc3676269794655097bba75ace6ec1cbd2e",
+"reason": "Render or candidate map of an older chest step that no kept Blender file names"
+},
+{
+"path": "treasure_chest_20261113/phase05/iron_fidelity/G_planished_displaced/graze_studio2.png",
+"bytes": 756552,
+"mtime_ns": 1794882983087396893,
+"sha256": "eeecf75e1c90b9b6c83b52bd55d2efdd3929a58b7ed7bc6e07cf5faf90b9f9b1",
+"reason": "Render or candidate map of an older chest step that no kept Blender file names"
+},
+{
+"path": "treasure_chest_20261113/phase05/iron_fidelity/G_planished_displaced/iron_studio2.png",
+"bytes": 927255,
+"mtime_ns": 1794882639256916509,
+"sha256": "c955e19df620f96f33ed6af2feafd9b4ec6f542edec5e62273d35f775fc81e83",
+"reason": "Render or candidate map of an older chest step that no kept Blender file names"
+},
+{
+"path": "treasure_chest_20261113/phase05/iron_fidelity/G_planished_displaced/displacement.npz",
+"bytes": 1565013,
+"mtime_ns": 1794882290193650004,
+"sha256": "ae9d261a66b9aa18cbf4d3256589ea065c2a388f697a8b9c616662d055d7e8da",
+"reason": "Intermediate array of an older chest material step; no Blender file reads arrays and the current reveal scenes do not use it"
+},
+{
+"path": "treasure_chest_20261113/phase05/iron_fidelity/B_neutral/iron.png",
+"bytes": 900253,
+"mtime_ns": 1794880368283670689,
+"sha256": "afe7f3539657b08861017159848cc9b52003c9ceb34845355c78ba352c37be20",
+"reason": "Render or candidate map of an older chest step that no kept Blender file names"
+},
+{
+"path": "treasure_chest_20261113/phase05/iron_fidelity/relief_battered/fields.npz",
+"bytes": 14072539,
+"mtime_ns": 1794881533616085842,
+"sha256": "ba793bf051a7b70d7f7ea8b8bca20592b75eb8533e81391dc920416551991ccb",
+"reason": "Intermediate array of an older chest material step; no Blender file reads arrays and the current reveal scenes do not use it"
+},
+{
+"path": "treasure_chest_20261113/phase05/iron_fidelity/relief_battered/contact_mask.png",
+"bytes": 35663,
+"mtime_ns": 1794881533140517483,
+"sha256": "d265f5aefcf7ec38488dc1a61792275ac2dc195f59786250a3850031a68f2eea",
+"reason": "Render or candidate map of an older chest step that no kept Blender file names"
+},
+{
+"path": "treasure_chest_20261113/phase05/iron_fidelity/relief_battered/coarse16.png",
+"bytes": 1810017,
+"mtime_ns": 1794881533046678502,
+"sha256": "e908762324018da9d84a58e24465e065341bd7bd1943c184e4aa2fccc007edde",
+"reason": "Render or candidate map of an older chest step that no kept Blender file names"
+},
+{
+"path": "treasure_chest_20261113/phase05/iron_fidelity/relief_battered/fine16.png",
+"bytes": 3578678,
+"mtime_ns": 1794881533130747137,
+"sha256": "3cedeadc8e3ef4a1cf450ac35b64f7e74906286036f14bd1c1aa3ae714cc1a57",
+"reason": "Render or candidate map of an older chest step that no kept Blender file names"
+},
+{
+"path": "treasure_chest_20261113/phase05/iron_fidelity/E_layered/iron_warm.png",
+"bytes": 982582,
+"mtime_ns": 1794880939385592086,
+"sha256": "549dafdb5e0a1c8c8f8ededcb86c76b8507934b0eb85e21e65e7b6bbf6d9db67",
+"reason": "Render or candidate map of an older chest step that no kept Blender file names"
+},
+{
+"path": "treasure_chest_20261113/phase05/iron_fidelity/E_layered/iron_current.png",
+"bytes": 972841,
+"mtime_ns": 1794880904953238645,
+"sha256": "edea97adaedb3b3795cf9af3c2fed85d1b66c8b9b66f0b933130fc81bb578d8b",
+"reason": "Render or candidate map of an older chest step that no kept Blender file names"
+},
+{
+"path": "treasure_chest_20261113/phase05/iron_fidelity/E_layered/iron_neutral.png",
+"bytes": 932677,
+"mtime_ns": 1794880922033799150,
+"sha256": "a94e2631fd1e60628f3142e1d994f54f424ea064dc5edf9d23bb440944a0624d",
+"reason": "Render or candidate map of an older chest step that no kept Blender file names"
+},
+{
+"path": "treasure_chest_20261113/phase05/iron_character/resume_context.jpg",
+"bytes": 557375,
+"mtime_ns": 1794902031159939325,
+"sha256": "ebf6bcbea378ef4e08b378ef9e5e9b78ff1b30430078bebc27631e958d751813",
+"reason": "Render or candidate map of an older chest step that no kept Blender file names"
+},
+{
+"path": "treasure_chest_20261113/phase05/iron_character/cached_sources.jpg",
+"bytes": 41962,
+"mtime_ns": 1794891035982224505,
+"sha256": "7514a585e4329193a536705d8c7a0e5e2e78f7da04bdca65ec54c12f151e7718",
+"reason": "Render or candidate map of an older chest step that no kept Blender file names"
+},
+{
+"path": "treasure_chest_20261113/phase05/iron_character/baseline_comparison.jpg",
+"bytes": 374169,
+"mtime_ns": 1794896208226434243,
+"sha256": "a69d0fc593979d1458c5573b2abf265d6eae9a9455c9877f4f7e76741680550b",
+"reason": "Render or candidate map of an older chest step that no kept Blender file names"
+},
+{
+"path": "treasure_chest_20261113/phase05/iron_character/close_views.jpg",
+"bytes": 474829,
+"mtime_ns": 1794896208320214592,
+"sha256": "c1852740698e93fba4c5b56bc30a557ebc45b666c8f9dc28795cefea440e5f2c",
+"reason": "Render or candidate map of an older chest step that no kept Blender file names"
+},
+{
+"path": "treasure_chest_20261113/phase05/iron_character/mark_direction_comparison.jpg",
+"bytes": 68658,
+"mtime_ns": 1794900429465399725,
+"sha256": "c63db4beef7b98e8d4344157c7e60906224fde43c1fb509360a1d208d25d4fe5",
+"reason": "Render or candidate map of an older chest step that no kept Blender file names"
+},
+{
+"path": "treasure_chest_20261113/phase05/iron_character/neutral_comparison.jpg",
+"bytes": 282502,
+"mtime_ns": 1794896208393356964,
+"sha256": "9aae97dff019545ca5bd0206787d7e28c7429acdcee3eed91c3a9834b8558847",
+"reason": "Render or candidate map of an older chest step that no kept Blender file names"
+},
+{
+"path": "treasure_chest_20261113/phase05/iron_character/marking_source.jpg",
+"bytes": 211675,
+"mtime_ns": 1794894931017950476,
+"sha256": "ba306fd59d6f14b6f3cd9d200551e1522564b04d718013a86c536bc6f0e2cb7c",
+"reason": "Render or candidate map of an older chest step that no kept Blender file names"
+},
+{
+"path": "treasure_chest_20261113/phase05/iron_character/chest_comparison.jpg",
+"bytes": 567296,
+"mtime_ns": 1794896208508153920,
+"sha256": "3950dd16fccb8c863bdeae22cebfdea188c96057f731ee03b65899ac5f5c0462",
+"reason": "Render or candidate map of an older chest step that no kept Blender file names"
+},
+{
+"path": "treasure_chest_20261113/phase05/iron_character/resume_close_views.jpg",
+"bytes": 436520,
+"mtime_ns": 1794902031053644632,
+"sha256": "a486f85e72d43fe9e57371dae8b6f78bfc7b2d6e66e3c7d2a2417b3fa27fd16e",
+"reason": "Render or candidate map of an older chest step that no kept Blender file names"
+},
+{
+"path": "treasure_chest_20261113/phase05/iron_character/08_bevel_facets/edge_geometry.npz",
+"bytes": 9148855,
+"mtime_ns": 1794891794792879437,
+"sha256": "407fca554d9259be2f921cd66e6afc2833957e850f82529d89f0a2a5373e7d8c",
+"reason": "Intermediate array of an older chest material step; no Blender file reads arrays and the current reveal scenes do not use it"
+},
+{
+"path": "treasure_chest_20261113/phase05/iron_character/08_bevel_facets/iron_neutral.png",
+"bytes": 892454,
+"mtime_ns": 1794891890781541266,
+"sha256": "7e6b3f1b1055f5b3dacc7fcdab38e87000659b16ac65ffd8b7d8e6aedcfd348f",
+"reason": "Render or candidate map of an older chest step that no kept Blender file names"
+},
+{
+"path": "treasure_chest_20261113/phase05/iron_character/layers/fields.npz",
+"bytes": 21938984,
+"mtime_ns": 1794894930995781362,
+"sha256": "d54d005ae51f549079530ab771405c3a967d3358ca2dfda94f883ac8bf5f2949",
+"reason": "Intermediate array of an older chest material step; no Blender file reads arrays and the current reveal scenes do not use it"
+},
+{
+"path": "treasure_chest_20261113/phase05/iron_character/02_edge_response/edge_geometry.npz",
+"bytes": 9106261,
+"mtime_ns": 1794891339420619332,
+"sha256": "06b4befc656677c989988ca5b1f87386b664a24d87903f65f044d519da58a649",
+"reason": "Intermediate array of an older chest material step; no Blender file reads arrays and the current reveal scenes do not use it"
+},
+{
+"path": "treasure_chest_20261113/phase05/iron_character/02_edge_response/iron_studio3.png",
+"bytes": 887893,
+"mtime_ns": 1794891379979565532,
+"sha256": "600d7d3c7f54c0eda8499437f7a9815061f27705bd34b7ac96f2855ab4914735",
+"reason": "Render or candidate map of an older chest step that no kept Blender file names"
+},
+{
+"path": "treasure_chest_20261113/phase05/iron_character/12_exposed_facets/iron_edge100.png",
+"bytes": 923405,
+"mtime_ns": 1794899662933786029,
+"sha256": "5197417d3e36eeddd271976bb3e1cd2178e037fa3049c0d7f8d61f1026322071",
+"reason": "Render or candidate map of an older chest step that no kept Blender file names"
+},
+{
+"path": "treasure_chest_20261113/phase05/iron_character/12_exposed_facets/edge_geometry.npz",
+"bytes": 9111580,
+"mtime_ns": 1794891974560799000,
+"sha256": "f0881b81c2d100a1fd56df218660fd07f8b055efadee5adf69ccf21a4dec7356",
+"reason": "Intermediate array of an older chest material step; no Blender file reads arrays and the current reveal scenes do not use it"
+},
+{
+"path": "treasure_chest_20261113/phase05/iron_character/01_weathering/iron_studio3.png",
+"bytes": 901891,
+"mtime_ns": 1794891362001588490,
+"sha256": "e89a3a81cc5482c625731ac6b4f4f7e29835c67ae79e142cdeb6914b60ee58fa",
+"reason": "Render or candidate map of an older chest step that no kept Blender file names"
+},
+{
+"path": "treasure_chest_20261113/phase05/iron_character/11_restored_pigment/iron_edge100.png",
+"bytes": 923419,
+"mtime_ns": 1794899285290358424,
+"sha256": "45d657173a08eac10700cbe932541b38356b1172bde80c400b3a9b4973cf33c2",
+"reason": "Render or candidate map of an older chest step that no kept Blender file names"
+},
+{
+"path": "treasure_chest_20261113/phase05/iron_character/11_restored_pigment/iron_lower10.png",
+"bytes": 931152,
+"mtime_ns": 1794900086276639697,
+"sha256": "e039accbf9114df4f832fe949c89923e1d24dd9d9b062d1f349df3f6bdc7efb7",
+"reason": "Render or candidate map of an older chest step that no kept Blender file names"
+},
+{
+"path": "treasure_chest_20261113/phase05/iron_character/11_restored_pigment/iron_edge_slits_final.png",
+"bytes": 1640518,
+"mtime_ns": 1794900259978884077,
+"sha256": "7d7cfa79cca880e0d5f649e644ca347a671b9ba634bc6e3f58d5a0a3e61ec80b",
+"reason": "Render or candidate map of an older chest step that no kept Blender file names"
+},
+{
+"path": "treasure_chest_20261113/phase05/iron_character/11_restored_pigment/iron_neutral_final.png",
+"bytes": 1546080,
+"mtime_ns": 1794895525637560372,
+"sha256": "0b120ba396cf9fd21b336321874eaab7506836b51d0969f05b0cc239e2c2fa63",
+"reason": "Render or candidate map of an older chest step that no kept Blender file names"
+},
+{
+"path": "treasure_chest_20261113/phase05/iron_character/11_restored_pigment/iron_edge1000.png",
+"bytes": 923104,
+"mtime_ns": 1794899540582269837,
+"sha256": "703fdfd8ebc46f64d10bdfc6a07b1a9a552c34975336770768865c8b703cc6d9",
+"reason": "Render or candidate map of an older chest step that no kept Blender file names"
+},
+{
+"path": "treasure_chest_20261113/phase05/iron_character/11_restored_pigment/iron_edge40.png",
+"bytes": 922996,
+"mtime_ns": 1794899238914318206,
+"sha256": "03894ac23d8da34761894e953df75e77988087d846269b3ace816aceca58d105",
+"reason": "Render or candidate map of an older chest step that no kept Blender file names"
+},
+{
+"path": "treasure_chest_20261113/phase05/iron_character/11_restored_pigment/edge_geometry.npz",
+"bytes": 9111580,
+"mtime_ns": 1794891974560799000,
+"sha256": "f0881b81c2d100a1fd56df218660fd07f8b055efadee5adf69ccf21a4dec7356",
+"reason": "Intermediate array of an older chest material step; no Blender file reads arrays and the current reveal scenes do not use it"
+},
+{
+"path": "treasure_chest_20261113/phase05/iron_character/11_restored_pigment/iron_lower30.png",
+"bytes": 944182,
+"mtime_ns": 1794900104526170099,
+"sha256": "b29cf179bc85374d1e52775bfde429e9403ae9b6464518197292a813d686fe34",
+"reason": "Render or candidate map of an older chest step that no kept Blender file names"
+},
+{
+"path": "treasure_chest_20261113/phase05/iron_character/baseline/iron_neutral.png",
+"bytes": 898724,
+"mtime_ns": 1794891208539454402,
+"sha256": "66a1abe454a61923908f973510ec891eadda383a534846cb5237dc3f8007b76c",
+"reason": "Render or candidate map of an older chest step that no kept Blender file names"
+},
+{
+"path": "treasure_chest_20261113/phase05/iron_character/baseline/iron_studio3.png",
+"bytes": 886236,
+"mtime_ns": 1794891183288645768,
+"sha256": "60b4e60f2e293df688b565d178469a754f00e2d8253ebb8952a4314b9cac280b",
+"reason": "Render or candidate map of an older chest step that no kept Blender file names"
+},
+{
+"path": "treasure_chest_20261113/phase05/iron_character/aov/edge_cut/boundary_crops.jpg",
+"bytes": 43673,
+"mtime_ns": 1794901207815766122,
+"sha256": "4c8922b0e8ec03d7fcee4a51be5ad59b27eb56844a3bdee86880e3cbaddc4b5e",
+"reason": "Render or candidate map of an older chest step that no kept Blender file names"
+},
+{
+"path": "treasure_chest_20261113/phase05/iron_character/aov/edge_cut/beauty.png",
+"bytes": 451427,
+"mtime_ns": 1794901094566808403,
+"sha256": "a415cf15ab3aa4d77644c254cb6601b52717f23f000c37e5713adb66a605b869",
+"reason": "Render or candidate map of an older chest step that no kept Blender file names"
+},
+{
+"path": "treasure_chest_20261113/phase05/iron_character/aov/edge_cut/Iron_RoughBare.png",
+"bytes": 101866,
+"mtime_ns": 1794901120347918516,
+"sha256": "bed2f6152585016ea115a594b205926d444d10c17a9f00c549a43803efdf61bf",
+"reason": "Render or candidate map of an older chest step that no kept Blender file names"
+},
+{
+"path": "treasure_chest_20261113/phase05/iron_character/aov/edge_cut/Iron_OxideCoverage.png",
+"bytes": 142351,
+"mtime_ns": 1794901120325470205,
+"sha256": "fb89f3d31d3e390e4f82908817cc9379bd94eedad86656b5ba20f0ac1c3be80a",
+"reason": "Render or candidate map of an older chest step that no kept Blender file names"
+},
+{
+"path": "treasure_chest_20261113/phase05/iron_character/aov/edge_cut/Iron_ExposedBlend.png",
+"bytes": 72506,
+"mtime_ns": 1794901120302422636,
+"sha256": "4dc88e4043578b7f28da42916d498ae8f3e92f04f8235691c58cfa4ada54fb86",
+"reason": "Render or candidate map of an older chest step that no kept Blender file names"
+},
+{
+"path": "treasure_chest_20261113/phase05/iron_character/aov/edge_cut/Iron_SurfaceAlpha.png",
+"bytes": 3051,
+"mtime_ns": 1794901120410130044,
+"sha256": "211b7c8cf9cd342a15df546885c0b0974c20b7ad298a357c7fde8fce9bb4a7d1",
+"reason": "Render or candidate map of an older chest step that no kept Blender file names"
+},
+{
+"path": "treasure_chest_20261113/phase05/iron_character/aov/edge_cut/Iron_GeometryNormal.png",
+"bytes": 93174,
+"mtime_ns": 1794901120372363271,
+"sha256": "1f310cac8b221bb4f16d0b6a1bd086d250855186179c7d90f7d11aa9cf0abcdd",
+"reason": "Render or candidate map of an older chest step that no kept Blender file names"
+},
+{
+"path": "treasure_chest_20261113/phase05/iron_character/aov/edge_cut/Iron_FinalNormal.png",
+"bytes": 296575,
+"mtime_ns": 1794901120400731789,
+"sha256": "5e24d5f50b00b694d756035b328a788ede5f55c82d9a6fb0e60c80df3a57505f",
+"reason": "Render or candidate map of an older chest step that no kept Blender file names"
+},
+{
+"path": "treasure_chest_20261113/phase05/iron_character/aov/edge_cut/diagnostic_sheet.jpg",
+"bytes": 189320,
+"mtime_ns": 1794901120544031647,
+"sha256": "4a6e718d9b94904effd98e4cc17c2362c47632fffab4b329358809d4d9b39c3d",
+"reason": "Render or candidate map of an older chest step that no kept Blender file names"
+},
+{
+"path": "treasure_chest_20261113/phase05/iron_character/aov/edge_cut/passes.npz",
+"bytes": 6767024,
+"mtime_ns": 1794901095215509466,
+"sha256": "7a59ba38d3b6dd743252f9e45afbaccad8766f20afe17b6233185644a29133a8",
+"reason": "Intermediate array of an older chest material step; no Blender file reads arrays and the current reveal scenes do not use it"
+},
+{
+"path": "treasure_chest_20261113/phase05/iron_character/aov/edge_cut/Iron_ExposedBlend/dataIron_ExposedBlend.exr",
+"bytes": 561801,
+"mtime_ns": 1794901094401816578,
+"sha256": "1464feae15e8a729951a031d57d0670dedc3a01587f609c5a91c2f57e8c9712a",
+"reason": "Render or candidate map of an older chest step that no kept Blender file names"
+},
+{
+"path": "treasure_chest_20261113/phase05/iron_character/aov/edge_cut/Iron_FinalNormal/dataIron_FinalNormal.exr",
+"bytes": 2753975,
+"mtime_ns": 1794901094421411433,
+"sha256": "f0f96350ebf076d83efc6441285dd5e09ace1b0cf45f5048f949babb085ceac3",
+"reason": "Render or candidate map of an older chest step that no kept Blender file names"
+},
+{
+"path": "treasure_chest_20261113/phase05/iron_character/aov/edge_cut/Iron_RoughBare/dataIron_RoughBare.exr",
+"bytes": 926275,
+"mtime_ns": 1794901094395725744,
+"sha256": "c14dc88b5d2d46f098e7080a9a1ca8e73500e7ffbc4c6b0c9e05bc23676fdca2",
+"reason": "Render or candidate map of an older chest step that no kept Blender file names"
+},
+{
+"path": "treasure_chest_20261113/phase05/iron_character/aov/edge_cut/Iron_SurfaceAlpha/dataIron_SurfaceAlpha.exr",
+"bytes": 25464,
+"mtime_ns": 1794901094389890746,
+"sha256": "9556822ef3321a7289ad69e7b62f88cfd35a770f0086475fe82e06d67b398e55",
+"reason": "Render or candidate map of an older chest step that no kept Blender file names"
+},
+{
+"path": "treasure_chest_20261113/phase05/iron_character/aov/edge_cut/Iron_GeometryNormal/dataIron_GeometryNormal.exr",
+"bytes": 2411372,
+"mtime_ns": 1794901094371387198,
+"sha256": "3e8be5957ac39ad38040cbd464b2d0314ea175036a90ca56855cee38f1954663",
+"reason": "Render or candidate map of an older chest step that no kept Blender file names"
+},
+{
+"path": "treasure_chest_20261113/phase05/iron_character/aov/edge_cut/Iron_OxideCoverage/dataIron_OxideCoverage.exr",
+"bytes": 916279,
+"mtime_ns": 1794901094384736341,
+"sha256": "f46a8aab7c3cbb5d7587c2c8d979c24457254aade11417694c24561844d4a412",
+"reason": "Render or candidate map of an older chest step that no kept Blender file names"
+},
+{
+"path": "treasure_chest_20261113/phase05/iron_character/aov/before/beauty.png",
+"bytes": 479835,
+"mtime_ns": 1794894578310553790,
+"sha256": "b077fa6f9f7980488cad6da9a24fafdbe668e236210a55bff31baafd7cd81069",
+"reason": "Render or candidate map of an older chest step that no kept Blender file names"
+},
+{
+"path": "treasure_chest_20261113/phase05/iron_character/aov/before/Iron_BaseBlack.png",
+"bytes": 12555,
+"mtime_ns": 1794894886697259532,
+"sha256": "b9b89db29a7e3f121014188dd2b8b357141966f6fb02ef577e0ea75d223f0c81",
+"reason": "Render or candidate map of an older chest step that no kept Blender file names"
+},
+{
+"path": "treasure_chest_20261113/phase05/iron_character/aov/before/Iron_MetalFe.png",
+"bytes": 3376,
+"mtime_ns": 1794894886812465682,
+"sha256": "e994fd58451f6e356f18944a37c9f504c5b51f09543e194ed9fae81d1fadd621",
+"reason": "Render or candidate map of an older chest step that no kept Blender file names"
+},
+{
+"path": "treasure_chest_20261113/phase05/iron_character/aov/before/Iron_RoughBare.png",
+"bytes": 107106,
+"mtime_ns": 1794894886803206016,
+"sha256": "796cfb778fdc271ee14ae611df82b255972317b65a952eacf4dd15967208ef8c",
+"reason": "Render or candidate map of an older chest step that no kept Blender file names"
+},
+{
+"path": "treasure_chest_20261113/phase05/iron_character/aov/before/Iron_OxideCoverage.png",
+"bytes": 148667,
+"mtime_ns": 1794894886845795978,
+"sha256": "f6d3524f072477e64848daa440f9c1bf50bbd2e8c827c48da703955f4ced24db",
+"reason": "Render or candidate map of an older chest step that no kept Blender file names"
+},
+{
+"path": "treasure_chest_20261113/phase05/iron_character/aov/before/Iron_ExposedBlend.png",
+"bytes": 72584,
+"mtime_ns": 1794894886862743587,
+"sha256": "07c3948ab0af3c911d2599a87c27dc800a63457627a7def7b3a5f99d193350cf",
+"reason": "Render or candidate map of an older chest step that no kept Blender file names"
+},
+{
+"path": "treasure_chest_20261113/phase05/iron_character/aov/before/Iron_PigmentSource.png",
+"bytes": 3369,
+"mtime_ns": 1794894886920585602,
+"sha256": "83b429dedd37e5e6a5e52ff0afdc180a0664992e7d8109685e785e3dad3da286",
+"reason": "Render or candidate map of an older chest step that no kept Blender file names"
+},
+{
+"path": "treasure_chest_20261113/phase05/iron_character/aov/before/Iron_SurfaceAlpha.png",
+"bytes": 3376,
+"mtime_ns": 1794894886987810450,
+"sha256": "e994fd58451f6e356f18944a37c9f504c5b51f09543e194ed9fae81d1fadd621",
+"reason": "Render or candidate map of an older chest step that no kept Blender file names"
+},
+{
+"path": "treasure_chest_20261113/phase05/iron_character/aov/before/Iron_MetalOxide.png",
+"bytes": 3369,
+"mtime_ns": 1794894886821796140,
+"sha256": "83b429dedd37e5e6a5e52ff0afdc180a0664992e7d8109685e785e3dad3da286",
+"reason": "Render or candidate map of an older chest step that no kept Blender file names"
+},
+{
+"path": "treasure_chest_20261113/phase05/iron_character/aov/before/Iron_GeometryNormal.png",
+"bytes": 81274,
+"mtime_ns": 1794894886978455866,
+"sha256": "4c78903f44439a1ecd1cb7b051b9f2fe853c2bc4cdba817bb2d668f322f417f5",
+"reason": "Render or candidate map of an older chest step that no kept Blender file names"
+},
+{
+"path": "treasure_chest_20261113/phase05/iron_character/aov/before/Iron_RoughOxide.png",
+"bytes": 124199,
+"mtime_ns": 1794894886779162094,
+"sha256": "a9f40ad371f786e3bf7f401dd51fd6676235c17305ccd039c2740c5484ed58b3",
+"reason": "Render or candidate map of an older chest step that no kept Blender file names"
+},
+{
+"path": "treasure_chest_20261113/phase05/iron_character/aov/before/Iron_FinalNormal.png",
+"bytes": 313491,
+"mtime_ns": 1794894886954390819,
+"sha256": "3088432d1a7a4ba853d4853a78c6c4aa7a006f6f8b0125044145d1dc10c2be59",
+"reason": "Render or candidate map of an older chest step that no kept Blender file names"
+},
+{
+"path": "treasure_chest_20261113/phase05/iron_character/aov/before/Iron_BaseOxide.png",
+"bytes": 7965,
+"mtime_ns": 1794894886715043232,
+"sha256": "884978e06366fb10c4acf4e8fa80b4e8858cc31063a2ce61ed501e71c83d575b",
+"reason": "Render or candidate map of an older chest step that no kept Blender file names"
+},
+{
+"path": "treasure_chest_20261113/phase05/iron_character/aov/before/Iron_BaseBare.png",
+"bytes": 3387,
+"mtime_ns": 1794894886729434235,
+"sha256": "4ab38254802bfd61321f3d6284f0470fc7f950f18a84d0ef53e22eb89eff984c",
+"reason": "Render or candidate map of an older chest step that no kept Blender file names"
+},
+{
+"path": "treasure_chest_20261113/phase05/iron_character/aov/before/diagnostic_sheet.jpg",
+"bytes": 380956,
+"mtime_ns": 1794894887066080604,
+"sha256": "03767c7420088f3f3d942f577bf83a1149ddc892018ab0b6238b96eaf1ebd1d7",
+"reason": "Render or candidate map of an older chest step that no kept Blender file names"
+},
+{
+"path": "treasure_chest_20261113/phase05/iron_character/aov/before/Iron_FacetWear.png",
+"bytes": 5819,
+"mtime_ns": 1794894886872247672,
+"sha256": "3e3c019ac764237c30a37745bc1532f894bdf7a48b3f42c615feacb110b30e07",
+"reason": "Render or candidate map of an older chest step that no kept Blender file names"
+},
+{
+"path": "treasure_chest_20261113/phase05/iron_character/aov/before/passes.npz",
+"bytes": 10755527,
+"mtime_ns": 1794894579596692102,
+"sha256": "812e8d531415e89efc6231e491758e3d1b2b9ec4481dd3f6f955ba8c38abb129",
+"reason": "Intermediate array of an older chest material step; no Blender file reads arrays and the current reveal scenes do not use it"
+},
+{
+"path": "treasure_chest_20261113/phase05/iron_character/aov/before/Iron_FineHeight.png",
+"bytes": 138077,
+"mtime_ns": 1794894886911259977,
+"sha256": "58c9daf633f4d89a20d85aefc3e3c3520ed2ef3df628ccac4dd38c72d80f7f4d",
+"reason": "Render or candidate map of an older chest step that no kept Blender file names"
+},
+{
+"path": "treasure_chest_20261113/phase05/iron_character/aov/before/Iron_MarkHeight.png",
+"bytes": 102223,
+"mtime_ns": 1794894886886225963,
+"sha256": "ab0dd76c052a24a55ed48516a79ce695e4aa719c8ff08f95f7a4c076b780affb",
+"reason": "Render or candidate map of an older chest step that no kept Blender file names"
+},
+{
+"path": "treasure_chest_20261113/phase05/iron_character/aov/before/Iron_RoughBlack.png",
+"bytes": 126790,
+"mtime_ns": 1794894886754508833,
+"sha256": "f188691935a4e56d03334fba0a73be3307ec29420641b0ce196961acabef58cc",
+"reason": "Render or candidate map of an older chest step that no kept Blender file names"
+},
+{
+"path": "treasure_chest_20261113/phase05/iron_character/aov/before/Iron_ExposedBlend/dataIron_ExposedBlend.exr",
+"bytes": 563492,
+"mtime_ns": 1794894578074400065,
+"sha256": "e1391bd61fdbe0824635f610a89fdd896ea66f8cd785859c6fe976df536491ef",
+"reason": "Render or candidate map of an older chest step that no kept Blender file names"
+},
+{
+"path": "treasure_chest_20261113/phase05/iron_character/aov/before/Iron_FacetWear/dataIron_FacetWear.exr",
+"bytes": 16424,
+"mtime_ns": 1794894578173574655,
+"sha256": "2f3e9b857ce9a43c9c23c64a8a36ef8c85d39ac76ea1a3e212c3d1de728e0805",
+"reason": "Render or candidate map of an older chest step that no kept Blender file names"
+},
+{
+"path": "treasure_chest_20261113/phase05/iron_character/aov/before/Iron_FinalNormal/dataIron_FinalNormal.exr",
+"bytes": 2923088,
+"mtime_ns": 1794894578123088081,
+"sha256": "4f3d0d5aac4529f98e0a48fec49abc0221999fc0f33c886d58423a669d9af06a",
+"reason": "Render or candidate map of an older chest step that no kept Blender file names"
+},
+{
+"path": "treasure_chest_20261113/phase05/iron_character/aov/before/Iron_RoughOxide/dataIron_RoughOxide.exr",
+"bytes": 980735,
+"mtime_ns": 1794894578088772442,
+"sha256": "c1b3ef92ca02df06f938a2a7cbdf40245dbc502cdbec5ad0fcc914b7dacd2506",
+"reason": "Render or candidate map of an older chest step that no kept Blender file names"
+},
+{
+"path": "treasure_chest_20261113/phase05/iron_character/aov/before/Iron_BaseOxide/dataIron_BaseOxide.exr",
+"bytes": 282654,
+"mtime_ns": 1794894578033132197,
+"sha256": "247f8ae590a3ffa7fd070af279888c8450e905cc692054f2f6c4d0ae18cba5b9",
+"reason": "Render or candidate map of an older chest step that no kept Blender file names"
+},
+{
+"path": "treasure_chest_20261113/phase05/iron_character/aov/before/zero_channel_control/beauty.png",
+"bytes": 1261,
+"mtime_ns": 1794894583054139933,
+"sha256": "345596147cec44320c20d3f6bbc93250af4dbff3df3ee78561a4f3edee9d68ab",
+"reason": "Render or candidate map of an older chest step that no kept Blender file names"
+},
+{
+"path": "treasure_chest_20261113/phase05/iron_character/aov/before/zero_channel_control/Iron_MetalOxide/dataIron_MetalOxide.exr",
+"bytes": 825,
+"mtime_ns": 1794894582998363271,
+"sha256": "76e61e5cae3efafc8ae4487bf5cbb39727d673392215f17a992a3284554832b0",
+"reason": "Render or candidate map of an older chest step that no kept Blender file names"
+},
+{
+"path": "treasure_chest_20261113/phase05/iron_character/aov/before/zero_channel_control/Iron_SurfaceAlpha/dataIron_SurfaceAlpha.exr",
+"bytes": 825,
+"mtime_ns": 1794894582996635547,
+"sha256": "76e61e5cae3efafc8ae4487bf5cbb39727d673392215f17a992a3284554832b0",
+"reason": "Render or candidate map of an older chest step that no kept Blender file names"
+},
+{
+"path": "treasure_chest_20261113/phase05/iron_character/aov/before/Iron_RoughBare/dataIron_RoughBare.exr",
+"bytes": 980093,
+"mtime_ns": 1794894578166157922,
+"sha256": "dc49a836002459336a3abf92ce3883380de24d1a6bedfc7e8f2027afcde85754",
+"reason": "Render or candidate map of an older chest step that no kept Blender file names"
+},
+{
+"path": "treasure_chest_20261113/phase05/iron_character/aov/before/Iron_PigmentSource/dataIron_PigmentSource.exr",
+"bytes": 5869,
+"mtime_ns": 1794894578058067461,
+"sha256": "8aa4330e8f704236a474f7f544368858e744a28afcf19a8e040886cfd4ece0cb",
+"reason": "Render or candidate map of an older chest step that no kept Blender file names"
+},
+{
+"path": "treasure_chest_20261113/phase05/iron_character/aov/before/Iron_MetalOxide/dataIron_MetalOxide.exr",
+"bytes": 5869,
+"mtime_ns": 1794894578150791452,
+"sha256": "8aa4330e8f704236a474f7f544368858e744a28afcf19a8e040886cfd4ece0cb",
+"reason": "Render or candidate map of an older chest step that no kept Blender file names"
+},
+{
+"path": "treasure_chest_20261113/phase05/iron_character/aov/before/Iron_BaseBare/dataIron_BaseBare.exr",
+"bytes": 48488,
+"mtime_ns": 1794894578171070758,
+"sha256": "d91f1a9e714b6dc11c3dd63e0bdbe3df2b82c6ab7209abd6762d0bdd31ffa151",
+"reason": "Render or candidate map of an older chest step that no kept Blender file names"
+},
+{
+"path": "treasure_chest_20261113/phase05/iron_character/aov/before/Iron_FineHeight/dataIron_FineHeight.exr",
+"bytes": 1010008,
+"mtime_ns": 1794894578068991600,
+"sha256": "ca6e8b0f513bbd85d01f2d6c3343cde1e8102642aabbd2287635f26d7acd54cc",
+"reason": "Render or candidate map of an older chest step that no kept Blender file names"
+},
+{
+"path": "treasure_chest_20261113/phase05/iron_character/aov/before/Iron_RoughBlack/dataIron_RoughBlack.exr",
+"bytes": 980854,
+"mtime_ns": 1794894578097870440,
+"sha256": "6504ee233da78c770e467d9553de75af81568f64598f52743d4e75038ffd0f69",
+"reason": "Render or candidate map of an older chest step that no kept Blender file names"
+},
+{
+"path": "treasure_chest_20261113/phase05/iron_character/aov/before/Iron_SurfaceAlpha/dataIron_SurfaceAlpha.exr",
+"bytes": 29229,
+"mtime_ns": 1794894578148995270,
+"sha256": "28d1c35f4c141afa00302df2f618fc905f44d29a720e3ecaeba6a831a35e4302",
+"reason": "Render or candidate map of an older chest step that no kept Blender file names"
+},
+{
+"path": "treasure_chest_20261113/phase05/iron_character/aov/before/Iron_GeometryNormal/dataIron_GeometryNormal.exr",
+"bytes": 2575444,
+"mtime_ns": 1794894578054876516,
+"sha256": "a4ff19fad8078670a96b898c6d36104366072b7d5247bd6aceb6a2856635409c",
+"reason": "Render or candidate map of an older chest step that no kept Blender file names"
+},
+{
+"path": "treasure_chest_20261113/phase05/iron_character/aov/before/Iron_OxideCoverage/dataIron_OxideCoverage.exr",
+"bytes": 965916,
+"mtime_ns": 1794894578146133411,
+"sha256": "6d33cb7a41f65312bb77b82933eeae702822a0f62d2138d62e8a99c51e0b5875",
+"reason": "Render or candidate map of an older chest step that no kept Blender file names"
+},
+{
+"path": "treasure_chest_20261113/phase05/iron_character/aov/before/Iron_MetalFe/dataIron_MetalFe.exr",
+"bytes": 29229,
+"mtime_ns": 1794894578062816795,
+"sha256": "28d1c35f4c141afa00302df2f618fc905f44d29a720e3ecaeba6a831a35e4302",
+"reason": "Render or candidate map of an older chest step that no kept Blender file names"
+},
+{
+"path": "treasure_chest_20261113/phase05/iron_character/aov/before/Iron_MarkHeight/dataIron_MarkHeight.exr",
+"bytes": 454878,
+"mtime_ns": 1794894578137337374,
+"sha256": "c63f709bbf7aeba5952845f7b8e87c7ea176179e5dbb69b4a809b3bff670f339",
+"reason": "Render or candidate map of an older chest step that no kept Blender file names"
+},
+{
+"path": "treasure_chest_20261113/phase05/iron_character/aov/before/Iron_BaseBlack/dataIron_BaseBlack.exr",
+"bytes": 282677,
+"mtime_ns": 1794894578060564983,
+"sha256": "6efa70b9447a7421521d9cb77f87ace2226c213ef11dc5cbcb7cba99c7e1a39d",
+"reason": "Render or candidate map of an older chest step that no kept Blender file names"
+},
+{
+"path": "treasure_chest_20261113/phase05/iron_character/aov/after/beauty.png",
+"bytes": 491190,
+"mtime_ns": 1794894955000457465,
+"sha256": "21a266a4bcc5fd3428fcb8c9be1dbe7c9fcf2771c16b8e71b2cb4562fb861403",
+"reason": "Render or candidate map of an older chest step that no kept Blender file names"
+},
+{
+"path": "treasure_chest_20261113/phase05/iron_character/aov/after/Iron_BaseBlack.png",
+"bytes": 126175,
+"mtime_ns": 1794895028647464047,
+"sha256": "a70d622eb098c4e920c7bad1ba35b3a5dcf7f794578a94aaa6040237dbdf54d4",
+"reason": "Render or candidate map of an older chest step that no kept Blender file names"
+},
+{
+"path": "treasure_chest_20261113/phase05/iron_character/aov/after/Iron_MetalFe.png",
+"bytes": 3376,
+"mtime_ns": 1794895028772488825,
+"sha256": "e994fd58451f6e356f18944a37c9f504c5b51f09543e194ed9fae81d1fadd621",
+"reason": "Render or candidate map of an older chest step that no kept Blender file names"
+},
+{
+"path": "treasure_chest_20261113/phase05/iron_character/aov/after/Iron_RoughBare.png",
+"bytes": 107106,
+"mtime_ns": 1794895028763203784,
+"sha256": "796cfb778fdc271ee14ae611df82b255972317b65a952eacf4dd15967208ef8c",
+"reason": "Render or candidate map of an older chest step that no kept Blender file names"
+},
+{
+"path": "treasure_chest_20261113/phase05/iron_character/aov/after/Iron_OxideCoverage.png",
+"bytes": 148667,
+"mtime_ns": 1794895028804645778,
+"sha256": "f6d3524f072477e64848daa440f9c1bf50bbd2e8c827c48da703955f4ced24db",
+"reason": "Render or candidate map of an older chest step that no kept Blender file names"
+},
+{
+"path": "treasure_chest_20261113/phase05/iron_character/aov/after/Iron_ExposedBlend.png",
+"bytes": 72584,
+"mtime_ns": 1794895028820631587,
+"sha256": "07c3948ab0af3c911d2599a87c27dc800a63457627a7def7b3a5f99d193350cf",
+"reason": "Render or candidate map of an older chest step that no kept Blender file names"
+},
+{
+"path": "treasure_chest_20261113/phase05/iron_character/aov/after/Iron_PigmentSource.png",
+"bytes": 129856,
+"mtime_ns": 1794895028891234298,
+"sha256": "c92e57aa11cecd0392d24bf5c786fe563fb046c8a7cf069836fe01b0423c19ff",
+"reason": "Render or candidate map of an older chest step that no kept Blender file names"
+},
+{
+"path": "treasure_chest_20261113/phase05/iron_character/aov/after/Iron_SurfaceAlpha.png",
+"bytes": 3376,
+"mtime_ns": 1794895028952587135,
+"sha256": "e994fd58451f6e356f18944a37c9f504c5b51f09543e194ed9fae81d1fadd621",
+"reason": "Render or candidate map of an older chest step that no kept Blender file names"
+},
+{
+"path": "treasure_chest_20261113/phase05/iron_character/aov/after/Iron_MetalOxide.png",
+"bytes": 3369,
+"mtime_ns": 1794895028781838200,
+"sha256": "83b429dedd37e5e6a5e52ff0afdc180a0664992e7d8109685e785e3dad3da286",
+"reason": "Render or candidate map of an older chest step that no kept Blender file names"
+},
+{
+"path": "treasure_chest_20261113/phase05/iron_character/aov/after/Iron_GeometryNormal.png",
+"bytes": 81274,
+"mtime_ns": 1794895028943263261,
+"sha256": "4c78903f44439a1ecd1cb7b051b9f2fe853c2bc4cdba817bb2d668f322f417f5",
+"reason": "Render or candidate map of an older chest step that no kept Blender file names"
+},
+{
+"path": "treasure_chest_20261113/phase05/iron_character/aov/after/Iron_RoughOxide.png",
+"bytes": 124198,
+"mtime_ns": 1794895028740990503,
+"sha256": "8daba8f91e6444d3b8b16b097e914fc220f52710beab4e1258a85b8192eb5deb",
+"reason": "Render or candidate map of an older chest step that no kept Blender file names"
+},
+{
+"path": "treasure_chest_20261113/phase05/iron_character/aov/after/Iron_FinalNormal.png",
+"bytes": 313491,
+"mtime_ns": 1794895028920590892,
+"sha256": "3088432d1a7a4ba853d4853a78c6c4aa7a006f6f8b0125044145d1dc10c2be59",
+"reason": "Render or candidate map of an older chest step that no kept Blender file names"
+},
+{
+"path": "treasure_chest_20261113/phase05/iron_character/aov/after/Iron_BaseOxide.png",
+"bytes": 111541,
+"mtime_ns": 1794895028680460465,
+"sha256": "7a5a243240267169ba2c884c4f1cb2cc2ae8e2a3418a8156cd5d29b445ab0e5d",
+"reason": "Render or candidate map of an older chest step that no kept Blender file names"
+},
+{
+"path": "treasure_chest_20261113/phase05/iron_character/aov/after/Iron_BaseBare.png",
+"bytes": 3387,
+"mtime_ns": 1794895028694904510,
+"sha256": "4ab38254802bfd61321f3d6284f0470fc7f950f18a84d0ef53e22eb89eff984c",
+"reason": "Render or candidate map of an older chest step that no kept Blender file names"
+},
+{
+"path": "treasure_chest_20261113/phase05/iron_character/aov/after/diagnostic_sheet.jpg",
+"bytes": 417162,
+"mtime_ns": 1794895029029899906,
+"sha256": "1f6ced973e00f6b2982b4daf169ccd8837e2053d910ce6aaa413ccada30de370",
+"reason": "Render or candidate map of an older chest step that no kept Blender file names"
+},
+{
+"path": "treasure_chest_20261113/phase05/iron_character/aov/after/Iron_FacetWear.png",
+"bytes": 5819,
+"mtime_ns": 1794895028830042254,
+"sha256": "3e3c019ac764237c30a37745bc1532f894bdf7a48b3f42c615feacb110b30e07",
+"reason": "Render or candidate map of an older chest step that no kept Blender file names"
+},
+{
+"path": "treasure_chest_20261113/phase05/iron_character/aov/after/passes.npz",
+"bytes": 15967328,
+"mtime_ns": 1794894956120827137,
+"sha256": "0e50e1b3d8391675343be27594223e37d72c1e818971cd030e1356eb428c1410",
+"reason": "Intermediate array of an older chest material step; no Blender file reads arrays and the current reveal scenes do not use it"
+},
+{
+"path": "treasure_chest_20261113/phase05/iron_character/aov/after/Iron_FineHeight.png",
+"bytes": 138077,
+"mtime_ns": 1794895028868905350,
+"sha256": "3e579e59efbc68bb572788fb836e1ab8f5872be0cbe37910729673d6c0bb42c2",
+"reason": "Render or candidate map of an older chest step that no kept Blender file names"
+},
+{
+"path": "treasure_chest_20261113/phase05/iron_character/aov/after/Iron_MarkHeight.png",
+"bytes": 102223,
+"mtime_ns": 1794895028844283714,
+"sha256": "ab0dd76c052a24a55ed48516a79ce695e4aa719c8ff08f95f7a4c076b780affb",
+"reason": "Render or candidate map of an older chest step that no kept Blender file names"
+},
+{
+"path": "treasure_chest_20261113/phase05/iron_character/aov/after/Iron_RoughBlack.png",
+"bytes": 126790,
+"mtime_ns": 1794895028718199134,
+"sha256": "f188691935a4e56d03334fba0a73be3307ec29420641b0ce196961acabef58cc",
+"reason": "Render or candidate map of an older chest step that no kept Blender file names"
+},
+{
+"path": "treasure_chest_20261113/phase05/iron_character/aov/after/Iron_ExposedBlend/dataIron_ExposedBlend.exr",
+"bytes": 563520,
+"mtime_ns": 1794894954858476453,
+"sha256": "4c144f7fab3c2f078b4c1db094dfcdb0944767dd869961e62787216b0f555cb5",
+"reason": "Render or candidate map of an older chest step that no kept Blender file names"
+},
+{
+"path": "treasure_chest_20261113/phase05/iron_character/aov/after/Iron_FacetWear/dataIron_FacetWear.exr",
+"bytes": 16430,
+"mtime_ns": 1794894954757847808,
+"sha256": "627f3ac35a446153e38dfa53a61fed017c4a2d9b98935538c4ebd842da38db46",
+"reason": "Render or candidate map of an older chest step that no kept Blender file names"
+},
+{
+"path": "treasure_chest_20261113/phase05/iron_character/aov/after/Iron_FinalNormal/dataIron_FinalNormal.exr",
+"bytes": 2923118,
+"mtime_ns": 1794894954690162581,
+"sha256": "a35bcdde117b343d1d5326be4432b8b7152ec09350327fc1f6216d8e87394137",
+"reason": "Render or candidate map of an older chest step that no kept Blender file names"
+},
+{
+"path": "treasure_chest_20261113/phase05/iron_character/aov/after/Iron_RoughOxide/dataIron_RoughOxide.exr",
+"bytes": 980763,
+"mtime_ns": 1794894954874502178,
+"sha256": "90550aeb9efcd7ccd7451d5b1c16b679fe03167387bede43b53dd258dd5d66f2",
+"reason": "Render or candidate map of an older chest step that no kept Blender file names"
+},
+{
+"path": "treasure_chest_20261113/phase05/iron_character/aov/after/Iron_BaseOxide/dataIron_BaseOxide.exr",
+"bytes": 2683754,
+"mtime_ns": 1794894954780561176,
+"sha256": "82fe78c495704a604bfb52b96c85660051ab85f9dd96ee5f6cbc6798c8ce62e3",
+"reason": "Render or candidate map of an older chest step that no kept Blender file names"
+},
+{
+"path": "treasure_chest_20261113/phase05/iron_character/aov/after/zero_channel_control/beauty.png",
+"bytes": 1294,
+"mtime_ns": 1794894958065570391,
+"sha256": "66bc8650ebcf2255e7799e3d0221be997b0335022840bac7e75dfa8ae192463d",
+"reason": "Render or candidate map of an older chest step that no kept Blender file names"
+},
+{
+"path": "treasure_chest_20261113/phase05/iron_character/aov/after/zero_channel_control/Iron_MetalOxide/dataIron_MetalOxide.exr",
+"bytes": 828,
+"mtime_ns": 1794894958053761786,
+"sha256": "6d2af7e47a38d45e29af970d31f8dab92258a443e9b770bff5dbf6c1d1ad1793",
+"reason": "Render or candidate map of an older chest step that no kept Blender file names"
+},
+{
+"path": "treasure_chest_20261113/phase05/iron_character/aov/after/zero_channel_control/Iron_SurfaceAlpha/dataIron_SurfaceAlpha.exr",
+"bytes": 828,
+"mtime_ns": 1794894958058060616,
+"sha256": "6d2af7e47a38d45e29af970d31f8dab92258a443e9b770bff5dbf6c1d1ad1793",
+"reason": "Render or candidate map of an older chest step that no kept Blender file names"
+},
+{
+"path": "treasure_chest_20261113/phase05/iron_character/aov/after/Iron_RoughBare/dataIron_RoughBare.exr",
+"bytes": 980094,
+"mtime_ns": 1794894954754464194,
+"sha256": "06f0f67961c3f8ee2eaaad6e360ec7ff201b20fba35c724b95ce625e15c04768",
+"reason": "Render or candidate map of an older chest step that no kept Blender file names"
+},
+{
+"path": "treasure_chest_20261113/phase05/iron_character/aov/after/Iron_PigmentSource/dataIron_PigmentSource.exr",
+"bytes": 963537,
+"mtime_ns": 1794894954718501958,
+"sha256": "435c510c80348e13fc86b7964f3adf711060958d3374c05b8ebb0081a62d10be",
+"reason": "Render or candidate map of an older chest step that no kept Blender file names"
+},
+{
+"path": "treasure_chest_20261113/phase05/iron_character/aov/after/Iron_MetalOxide/dataIron_MetalOxide.exr",
+"bytes": 5872,
+"mtime_ns": 1794894954723121249,
+"sha256": "dc6048dd792420e527b761b54c2254e8bfe3d13ab99fdd6bdafc59494b81e517",
+"reason": "Render or candidate map of an older chest step that no kept Blender file names"
+},
+{
+"path": "treasure_chest_20261113/phase05/iron_character/aov/after/Iron_BaseBare/dataIron_BaseBare.exr",
+"bytes": 48491,
+"mtime_ns": 1794894954841241383,
+"sha256": "7f5d4f37aaf6168e31754e5d471aebe98c116f0ca464527601fb9de1f2a36630",
+"reason": "Render or candidate map of an older chest step that no kept Blender file names"
+},
+{
+"path": "treasure_chest_20261113/phase05/iron_character/aov/after/Iron_FineHeight/dataIron_FineHeight.exr",
+"bytes": 1010019,
+"mtime_ns": 1794894954853055905,
+"sha256": "da516dad1a0935717d71c295cc6b96552ec1c28213b86518c58a7e7524974287",
+"reason": "Render or candidate map of an older chest step that no kept Blender file names"
+},
+{
+"path": "treasure_chest_20261113/phase05/iron_character/aov/after/Iron_RoughBlack/dataIron_RoughBlack.exr",
+"bytes": 980868,
+"mtime_ns": 1794894954886836330,
+"sha256": "4b92162ef16d076ce2261964493884296d96ccad81af9604af476cb582c9ad75",
+"reason": "Render or candidate map of an older chest step that no kept Blender file names"
+},
+{
+"path": "treasure_chest_20261113/phase05/iron_character/aov/after/Iron_SurfaceAlpha/dataIron_SurfaceAlpha.exr",
+"bytes": 29232,
+"mtime_ns": 1794894954726868282,
+"sha256": "4165571e5ea34cfd6b48ee4c70e6b12983449c3abb125f62ff2ca0b15903bb4f",
+"reason": "Render or candidate map of an older chest step that no kept Blender file names"
+},
+{
+"path": "treasure_chest_20261113/phase05/iron_character/aov/after/Iron_GeometryNormal/dataIron_GeometryNormal.exr",
+"bytes": 2575821,
+"mtime_ns": 1794894954805185687,
+"sha256": "91ed10d8383a88ec68db405cecb81ba8ff1d806b45d83486a272fa8521fb2f3f",
+"reason": "Render or candidate map of an older chest step that no kept Blender file names"
+},
+{
+"path": "treasure_chest_20261113/phase05/iron_character/aov/after/Iron_OxideCoverage/dataIron_OxideCoverage.exr",
+"bytes": 965909,
+"mtime_ns": 1794894954740232943,
+"sha256": "5650cc5d80c83996367d836557351330b12c7f6add232462f53a91e2fcd3d2d4",
+"reason": "Render or candidate map of an older chest step that no kept Blender file names"
+},
+{
+"path": "treasure_chest_20261113/phase05/iron_character/aov/after/Iron_MetalFe/dataIron_MetalFe.exr",
+"bytes": 29232,
+"mtime_ns": 1794894954743585764,
+"sha256": "4165571e5ea34cfd6b48ee4c70e6b12983449c3abb125f62ff2ca0b15903bb4f",
+"reason": "Render or candidate map of an older chest step that no kept Blender file names"
+},
+{
+"path": "treasure_chest_20261113/phase05/iron_character/aov/after/Iron_MarkHeight/dataIron_MarkHeight.exr",
+"bytes": 454884,
+"mtime_ns": 1794894954700589757,
+"sha256": "4ea67aec8e66b55dcac901a569d6d05ca5680c28e3ae0a3b28197767a334b4a0",
+"reason": "Render or candidate map of an older chest step that no kept Blender file names"
+},
+{
+"path": "treasure_chest_20261113/phase05/iron_character/aov/after/Iron_BaseBlack/dataIron_BaseBlack.exr",
+"bytes": 2675656,
+"mtime_ns": 1794894954836728426,
+"sha256": "ad34aabf927220d9e5c716009f16a153d4d04486cea3e6a2daae8a9196720080",
+"reason": "Render or candidate map of an older chest step that no kept Blender file names"
+},
+{
+"path": "treasure_chest_20261113/phase05/iron_character/04_weathering/iron_studio3.png",
+"bytes": 885529,
+"mtime_ns": 1794891530686076016,
+"sha256": "f7fb0bca713aafaeb5cc546af23710f0e6f3a580862b2bf80ff84736346e360f",
+"reason": "Render or candidate map of an older chest step that no kept Blender file names"
+},
+{
+"path": "treasure_chest_20261113/phase05/iron_character/07_integrated/edge_geometry.npz",
+"bytes": 9106261,
+"mtime_ns": 1794891512661671000,
+"sha256": "06b4befc656677c989988ca5b1f87386b664a24d87903f65f044d519da58a649",
+"reason": "Intermediate array of an older chest material step; no Blender file reads arrays and the current reveal scenes do not use it"
+},
+{
+"path": "treasure_chest_20261113/phase05/iron_character/06_balanced/edge_geometry.npz",
+"bytes": 9106261,
+"mtime_ns": 1794891512661671000,
+"sha256": "06b4befc656677c989988ca5b1f87386b664a24d87903f65f044d519da58a649",
+"reason": "Intermediate array of an older chest material step; no Blender file reads arrays and the current reveal scenes do not use it"
+},
+{
+"path": "treasure_chest_20261113/phase05/iron_character/06_balanced/iron_neutral.png",
+"bytes": 893818,
+"mtime_ns": 1794891703572145630,
+"sha256": "3efa28017bd08cd004cdab986100cf31e58b01a3d53e0f6bc57bb1ea41243a88",
+"reason": "Render or candidate map of an older chest step that no kept Blender file names"
+},
+{
+"path": "treasure_chest_20261113/phase05/iron_character/09_surface_character/iron_neutral_final.png",
+"bytes": 1511076,
+"mtime_ns": 1794892976789305046,
+"sha256": "c3b7b94e8fd767ec2908b3e4c07764d5c1a3a23130fc1e7c3f00d800def48bb5",
+"reason": "Render or candidate map of an older chest step that no kept Blender file names"
+},
+{
+"path": "treasure_chest_20261113/phase05/iron_character/09_surface_character/edge_geometry.npz",
+"bytes": 9111580,
+"mtime_ns": 1794891974560799435,
+"sha256": "f0881b81c2d100a1fd56df218660fd07f8b055efadee5adf69ccf21a4dec7356",
+"reason": "Intermediate array of an older chest material step; no Blender file reads arrays and the current reveal scenes do not use it"
+},
+{
+"path": "treasure_chest_20261113/phase05/iron_character/09_surface_character/iron_neutral.png",
+"bytes": 894164,
+"mtime_ns": 1794892034633062925,
+"sha256": "c7c62b3af5d93233b32cbcd431aa8f31f76bf1ea897ef33a4354ea0101a6daa4",
+"reason": "Render or candidate map of an older chest step that no kept Blender file names"
+},
+{
+"path": "treasure_chest_20261113/phase05/iron_character/03_combined/edge_geometry.npz",
+"bytes": 9106261,
+"mtime_ns": 1794891342218934726,
+"sha256": "06b4befc656677c989988ca5b1f87386b664a24d87903f65f044d519da58a649",
+"reason": "Intermediate array of an older chest material step; no Blender file reads arrays and the current reveal scenes do not use it"
+},
+{
+"path": "treasure_chest_20261113/phase05/iron_character/03_combined/iron_neutral.png",
+"bytes": 907197,
+"mtime_ns": 1794891425248224988,
+"sha256": "1be482351b967babfbdcb460e6b8318f12d7094532553bc1615085c719f06d54",
+"reason": "Render or candidate map of an older chest step that no kept Blender file names"
+},
+{
+"path": "treasure_chest_20261113/phase05/iron_character/03_combined/iron_studio3.png",
+"bytes": 903189,
+"mtime_ns": 1794891397625673479,
+"sha256": "7f80ca403720ac5e6c1436f4deb579f026552ab233277d6f8b33b4bfe8baf4df",
+"reason": "Render or candidate map of an older chest step that no kept Blender file names"
+},
+{
+"path": "treasure_chest_20261113/phase05/iron_character/10_defined_scale/iron_neutral_final.png",
+"bytes": 1514783,
+"mtime_ns": 1794893811097628225,
+"sha256": "749b4fde129a539ea94128beda7948cbb94853e8c8277b0bb128797ee441cf92",
+"reason": "Render or candidate map of an older chest step that no kept Blender file names"
+},
+{
+"path": "treasure_chest_20261113/phase05/iron_character/10_defined_scale/edge_geometry.npz",
+"bytes": 9111580,
+"mtime_ns": 1794891974560799000,
+"sha256": "f0881b81c2d100a1fd56df218660fd07f8b055efadee5adf69ccf21a4dec7356",
+"reason": "Intermediate array of an older chest material step; no Blender file reads arrays and the current reveal scenes do not use it"
+},
+{
+"path": "treasure_chest_20261113/phase05/iron_character/10_defined_scale/iron_neutral.png",
+"bytes": 896610,
+"mtime_ns": 1794893023847512482,
+"sha256": "701235305fc6a8655d69e73a7bf105b3d586f862e1bdceb4670008b7c5666344",
+"reason": "Render or candidate map of an older chest step that no kept Blender file names"
+},
+{
+"path": "treasure_chest_20261113/phase05/iron_character/05_combined/edge_geometry.npz",
+"bytes": 9106261,
+"mtime_ns": 1794891512661671379,
+"sha256": "06b4befc656677c989988ca5b1f87386b664a24d87903f65f044d519da58a649",
+"reason": "Intermediate array of an older chest material step; no Blender file reads arrays and the current reveal scenes do not use it"
+},
+{
+"path": "treasure_chest_20261113/phase05/iron_character/05_combined/right_studio3.png",
+"bytes": 880800,
+"mtime_ns": 1794891565046069301,
+"sha256": "74d56cd967289ab394cc6236c8c225322d1ed3e5f4dd27ef75d2267f7712527b",
+"reason": "Render or candidate map of an older chest step that no kept Blender file names"
+},
+{
+"path": "treasure_chest_20261113/phase05/iron_character/05_combined/iron_studio3.png",
+"bytes": 887089,
+"mtime_ns": 1794891547834047608,
+"sha256": "ee364368a9e59aaa7a3e325336feeb50006a6c43f14029e256b85942cc798bc7",
+"reason": "Render or candidate map of an older chest step that no kept Blender file names"
+},
+{
+"path": "treasure_chest_20261113/phase05/iron_character/13_recessed_scale/iron_edge_balanced.png",
+"bytes": 921142,
+"mtime_ns": 1794900478594358144,
+"sha256": "0b990801487acc42f724cd04cadfb2cde312fbef9e485e15eec1e77514a0608f",
+"reason": "Render or candidate map of an older chest step that no kept Blender file names"
+},
+{
+"path": "treasure_chest_20261113/phase05/iron_character/13_recessed_scale/iron_edge_fine.png",
+"bytes": 922847,
+"mtime_ns": 1794900371201370529,
+"sha256": "287cb28745f6114d7e813030a4c44175cd61fec55a2e60d7a8b6d437498a09d4",
+"reason": "Render or candidate map of an older chest step that no kept Blender file names"
+},
+{
+"path": "treasure_chest_20261113/phase05/iron_character/13_recessed_scale/iron_edge_slits_final.png",
+"bytes": 1640249,
+"mtime_ns": 1794900355015891199,
+"sha256": "7237e3d3d39825e8fdf7b944e55f9779d164b70ac02535e5bbeb546bc8c64a9f",
+"reason": "Render or candidate map of an older chest step that no kept Blender file names"
+},
+{
+"path": "treasure_chest_20261113/phase05/iron_character/13_recessed_scale/iron_neutral_final.png",
+"bytes": 1546829,
+"mtime_ns": 1794900706188424796,
+"sha256": "8e8a6d6c9df5f0c13bde55da944ab203790d8cc443340010bd167bd5443a5ee0",
+"reason": "Render or candidate map of an older chest step that no kept Blender file names"
+},
+{
+"path": "treasure_chest_20261113/phase05/iron_character/13_recessed_scale/right_edge_balanced.png",
+"bytes": 905879,
+"mtime_ns": 1794900492921001745,
+"sha256": "cfa6224e8d6d30d0a2ce87f80a6db1e971a4c75cc3fa268d21db3c4ee04f3039",
+"reason": "Render or candidate map of an older chest step that no kept Blender file names"
+},
+{
+"path": "treasure_chest_20261113/phase05/iron_character/13_recessed_scale/iron_edge_contrast.png",
+"bytes": 873619,
+"mtime_ns": 1794900597239127718,
+"sha256": "c765e87548a8f795abd3803794eb68895d84ba0d14dc7dca829870d8838e69f1",
+"reason": "Render or candidate map of an older chest step that no kept Blender file names"
+},
+{
+"path": "treasure_chest_20261113/phase05/iron_character/13_recessed_scale/edge_geometry.npz",
+"bytes": 9111580,
+"mtime_ns": 1794891974560799000,
+"sha256": "f0881b81c2d100a1fd56df218660fd07f8b055efadee5adf69ccf21a4dec7356",
+"reason": "Intermediate array of an older chest material step; no Blender file reads arrays and the current reveal scenes do not use it"
+},
+{
+"path": "treasure_chest_20261113/phase05/iron_character/13_recessed_scale/context_edge_balanced.png",
+"bytes": 1326562,
+"mtime_ns": 1794900507405326487,
+"sha256": "4bee7f9f199cbc991ff0db10547f0a76cff09f06881c3a878196d2b4420b7611",
+"reason": "Render or candidate map of an older chest step that no kept Blender file names"
+},
+{
+"path": "treasure_chest_20261113/phase05/iron_character/13_recessed_scale/right_edge_fine.png",
+"bytes": 901898,
+"mtime_ns": 1794900386822205127,
+"sha256": "be3c9a5003b5788a47e82adac1c98b2bddcb564a58f2e15ce1585a6a09119282",
+"reason": "Render or candidate map of an older chest step that no kept Blender file names"
+},
+{
+"path": "treasure_chest_20261113/phase05/iron_character/13_recessed_scale/context_edge_contrast.png",
+"bytes": 1268817,
+"mtime_ns": 1794900615719869529,
+"sha256": "bde0dd830611b2dac7ab962674e76c393adea7516cd868961deedcb084d1df11",
+"reason": "Render or candidate map of an older chest step that no kept Blender file names"
+},
+{
+"path": "treasure_chest_20261113/phase05/lower_iron/rim_geometry.npz",
+"bytes": 7223,
+"mtime_ns": 1794874893844637317,
+"sha256": "7234a98478af53f3061b0c31def4c2f2b2e6a788f88dc13c8a9c6b88d65f212b",
+"reason": "Intermediate array of an older chest material step; no Blender file reads arrays and the current reveal scenes do not use it"
+},
+{
+"path": "treasure_chest_20261113/phase05/lower_iron/baseline_comparison.jpg",
+"bytes": 192487,
+"mtime_ns": 1794878096049648588,
+"sha256": "f8e432b5afeea7eaf1fbdc2145ac16a5d80a7f1e53af73c305544bfb25839475",
+"reason": "Render or candidate map of an older chest step that no kept Blender file names"
+},
+{
+"path": "treasure_chest_20261113/phase05/lower_iron/context.jpg",
+"bytes": 444062,
+"mtime_ns": 1794878096291383632,
+"sha256": "6e384d99b8327214c16378a87d6723fb7e4fc23bbd2e32503c1e7a4ac89b1d78",
+"reason": "Render or candidate map of an older chest step that no kept Blender file names"
+},
+{
+"path": "treasure_chest_20261113/phase05/lower_iron/close_views.jpg",
+"bytes": 409011,
+"mtime_ns": 1794878096141795891,
+"sha256": "58e51301c6ff82e056bff21a6789769d928cbaad63a91478f7e649ab7aba5105",
+"reason": "Render or candidate map of an older chest step that no kept Blender file names"
+},
+{
+"path": "treasure_chest_20261113/phase05/lower_iron/screening.jpg",
+"bytes": 513660,
+"mtime_ns": 1794875474632669528,
+"sha256": "289192e44f368d8429b7b5a61017686f99fd9257db2f625fed89145f4cd2252c",
+"reason": "Render or candidate map of an older chest step that no kept Blender file names"
+},
+{
+"path": "treasure_chest_20261113/phase05/lower_iron/source_heights.jpg",
+"bytes": 201461,
+"mtime_ns": 1794876026839543758,
+"sha256": "8161acddc9561825f0f7c79a72243d0160a7ed63e60def17eda294edb462c312",
+"reason": "Render or candidate map of an older chest step that no kept Blender file names"
+},
+{
+"path": "treasure_chest_20261113/phase05/lower_iron/chest_comparison.jpg",
+"bytes": 856987,
+"mtime_ns": 1794878096260790712,
+"sha256": "cba2b81f275db9c5ad7d71a94b2bdd6a84bef7652b9a1d4a8bed43b8e265ae0d",
+"reason": "Render or candidate map of an older chest step that no kept Blender file names"
+},
+{
+"path": "treasure_chest_20261113/phase05/lower_iron/forging_refinement.jpg",
+"bytes": 156679,
+"mtime_ns": 1794875968707075645,
+"sha256": "3203cb776026745202c80726055d3752dbc3a63d6cbb1c235a1e924614df1049",
+"reason": "Render or candidate map of an older chest step that no kept Blender file names"
+},
+{
+"path": "treasure_chest_20261113/phase05/lower_iron/iron_close.jpg",
+"bytes": 496415,
+"mtime_ns": 1794878096072694830,
+"sha256": "2b8607890b4505cd09837f8ee113226c0a90dd55f2fb5e4b9d3d0124d4795602",
+"reason": "Render or candidate map of an older chest step that no kept Blender file names"
+},
+{
+"path": "treasure_chest_20261113/phase05/lower_iron/05_scale/sculpt_fields.npz",
+"bytes": 2675200,
+"mtime_ns": 1794876316231144730,
+"sha256": "25d5400ada374877b606be650792924917420f079554d558efdea567cd83243e",
+"reason": "Intermediate array of an older chest material step; no Blender file reads arrays and the current reveal scenes do not use it"
+},
+{
+"path": "treasure_chest_20261113/phase05/lower_iron/05_scale/iron.png",
+"bytes": 926249,
+"mtime_ns": 1794876339021791526,
+"sha256": "60cd2210b51ef823403f0bf57249cf8b17908fa060c9a980a73c54a3fbe03fc9",
+"reason": "Render or candidate map of an older chest step that no kept Blender file names"
+},
+{
+"path": "treasure_chest_20261113/phase05/lower_iron/surface03/fields.npz",
+"bytes": 20542677,
+"mtime_ns": 1794875772327951313,
+"sha256": "6392022e317e152177efdc5da6fb89cfc4560960e6a888c30d5f60f395cb4cb8",
+"reason": "Intermediate array of an older chest material step; no Blender file reads arrays and the current reveal scenes do not use it"
+},
+{
+"path": "treasure_chest_20261113/phase05/lower_iron/surface03/albedo.png",
+"bytes": 57776,
+"mtime_ns": 1794875771482962481,
+"sha256": "657070fdcc429fd2fe46bc77baa2bc9eed2de72793b00cbceaef11affdd67e17",
+"reason": "Render or candidate map of an older chest step that no kept Blender file names"
+},
+{
+"path": "treasure_chest_20261113/phase05/lower_iron/surface03/metallic.png",
+"bytes": 8362,
+"mtime_ns": 1794875326218547631,
+"sha256": "597c92c9cf13957b8f6c631e6d7ef3abec212a34c33bf8d2976d213878313ae2",
+"reason": "Render or candidate map of an older chest step that no kept Blender file names"
+},
+{
+"path": "treasure_chest_20261113/phase05/lower_iron/surface03/wear.png",
+"bytes": 32685,
+"mtime_ns": 1794875771554022901,
+"sha256": "fe93f5d206a531c30f1f241a341a79e26168b082ad88614ea3304f8b638cd818",
+"reason": "Render or candidate map of an older chest step that no kept Blender file names"
+},
+{
+"path": "treasure_chest_20261113/phase05/lower_iron/surface03/roughness.png",
+"bytes": 490052,
+"mtime_ns": 1794875771546917705,
+"sha256": "58922e47dee5af126bfd4190bf444c6f5a2a71b3e57ff6d4cbc65d7b03bd402a",
+"reason": "Render or candidate map of an older chest step that no kept Blender file names"
+},
+{
+"path": "treasure_chest_20261113/phase05/lower_iron/surface03/height16.png",
+"bytes": 3110113,
+"mtime_ns": 1794875771650924605,
+"sha256": "d443f49906325ae61ff76d598d02ada0be2780ea1c3b7b6a636fde8f18eeb6da",
+"reason": "Render or candidate map of an older chest step that no kept Blender file names"
+},
+{
+"path": "treasure_chest_20261113/phase05/lower_iron/surface04/fields.npz",
+"bytes": 30456995,
+"mtime_ns": 1794876090799324389,
+"sha256": "d2e909e5f24f84a1b7bd6287f9caff9e7fddc800b52793842883202b97501e7b",
+"reason": "Intermediate array of an older chest material step; no Blender file reads arrays and the current reveal scenes do not use it"
+},
+{
+"path": "treasure_chest_20261113/phase05/lower_iron/surface04/albedo.png",
+"bytes": 243630,
+"mtime_ns": 1794876089366351972,
+"sha256": "635bb3fff4b4aa4e74f1880266eeaa03d0e7e979d9bf676fd6ddb79475b4239a",
+"reason": "Render or candidate map of an older chest step that no kept Blender file names"
+},
+{
+"path": "treasure_chest_20261113/phase05/lower_iron/surface04/metallic.png",
+"bytes": 2744,
+"mtime_ns": 1794876089444227583,
+"sha256": "912c772276139e066f6629eeb55daeaf293500466f33ae94b4d9778720286d09",
+"reason": "Render or candidate map of an older chest step that no kept Blender file names"
+},
+{
+"path": "treasure_chest_20261113/phase05/lower_iron/surface04/wear.png",
+"bytes": 32685,
+"mtime_ns": 1794876089545593734,
+"sha256": "fe93f5d206a531c30f1f241a341a79e26168b082ad88614ea3304f8b638cd818",
+"reason": "Render or candidate map of an older chest step that no kept Blender file names"
+},
+{
+"path": "treasure_chest_20261113/phase05/lower_iron/surface04/roughness.png",
+"bytes": 371776,
+"mtime_ns": 1794876089438560202,
+"sha256": "62d6ce68fe1bcfb7dcb7f6edf7e16e83473bcd18aaaf013c9c082e47abda7fb8",
+"reason": "Render or candidate map of an older chest step that no kept Blender file names"
+},
+{
+"path": "treasure_chest_20261113/phase05/lower_iron/surface04/height16.png",
+"bytes": 3040532,
+"mtime_ns": 1794876089538357744,
+"sha256": "1d73d0a928bcbc0fa187b892ae6fe8dca0096cb62328372b4085d8738b8a6ca3",
+"reason": "Render or candidate map of an older chest step that no kept Blender file names"
+},
+{
+"path": "treasure_chest_20261113/phase05/lower_iron/02_forged/reflection.png",
+"bytes": 1028230,
+"mtime_ns": 1794876872456435531,
+"sha256": "16309b5657cd4cc2733f28d31ea48664d4345b95f85b3a26d92456940b0929bd",
+"reason": "Render or candidate map of an older chest step that no kept Blender file names"
+},
+{
+"path": "treasure_chest_20261113/phase05/lower_iron/02_forged/iron.png",
+"bytes": 981979,
+"mtime_ns": 1794875470834643935,
+"sha256": "2e9636d6bfe3d7c74049832db9c525cef40d6efb37bdeb659832997201856415",
+"reason": "Render or candidate map of an older chest step that no kept Blender file names"
+},
+{
+"path": "treasure_chest_20261113/phase05/lower_iron/06_quiet/sculpt_fields.npz",
+"bytes": 2675200,
+"mtime_ns": 1794876321183112642,
+"sha256": "25d5400ada374877b606be650792924917420f079554d558efdea567cd83243e",
+"reason": "Intermediate array of an older chest material step; no Blender file reads arrays and the current reveal scenes do not use it"
+},
+{
+"path": "treasure_chest_20261113/phase05/lower_iron/06_quiet/reflection.png",
+"bytes": 951331,
+"mtime_ns": 1794876886859274282,
+"sha256": "4b3dbf9c8c0a97ff793c386bc855cb0c2018da06f2bb435ac63bfc7d938cf385",
+"reason": "Render or candidate map of an older chest step that no kept Blender file names"
+},
+{
+"path": "treasure_chest_20261113/phase05/lower_iron/06_quiet/iron.png",
+"bytes": 920553,
+"mtime_ns": 1794876353571005061,
+"sha256": "7d95fe42c8a4b255c8147925b7dfdbf0f6a6c99d63be359328ec00d7866b30b7",
+"reason": "Render or candidate map of an older chest step that no kept Blender file names"
+},
+{
+"path": "treasure_chest_20261113/phase05/lower_iron/surface05/fields.npz",
+"bytes": 24420280,
+"mtime_ns": 1794876311674921809,
+"sha256": "877909069ba2fb0d8b5275602722e0c78bcab464fcb376ad4b5fc8380fbf60b2",
+"reason": "Intermediate array of an older chest material step; no Blender file reads arrays and the current reveal scenes do not use it"
+},
+{
+"path": "treasure_chest_20261113/phase05/lower_iron/surface05/albedo.png",
+"bytes": 243630,
+"mtime_ns": 1794876089366351972,
+"sha256": "635bb3fff4b4aa4e74f1880266eeaa03d0e7e979d9bf676fd6ddb79475b4239a",
+"reason": "Render or candidate map of an older chest step that no kept Blender file names"
+},
+{
+"path": "treasure_chest_20261113/phase05/lower_iron/surface05/metallic.png",
+"bytes": 2744,
+"mtime_ns": 1794876089444227583,
+"sha256": "912c772276139e066f6629eeb55daeaf293500466f33ae94b4d9778720286d09",
+"reason": "Render or candidate map of an older chest step that no kept Blender file names"
+},
+{
+"path": "treasure_chest_20261113/phase05/lower_iron/surface05/wear.png",
+"bytes": 32685,
+"mtime_ns": 1794876089545593734,
+"sha256": "fe93f5d206a531c30f1f241a341a79e26168b082ad88614ea3304f8b638cd818",
+"reason": "Render or candidate map of an older chest step that no kept Blender file names"
+},
+{
+"path": "treasure_chest_20261113/phase05/lower_iron/surface05/roughness.png",
+"bytes": 371776,
+"mtime_ns": 1794876089438560202,
+"sha256": "62d6ce68fe1bcfb7dcb7f6edf7e16e83473bcd18aaaf013c9c082e47abda7fb8",
+"reason": "Render or candidate map of an older chest step that no kept Blender file names"
+},
+{
+"path": "treasure_chest_20261113/phase05/lower_iron/surface05/height16.png",
+"bytes": 2984878,
+"mtime_ns": 1794876310936912426,
+"sha256": "c2e8e52c7f90cad83d09e6d387a31347a9d376de715d8a1600df33703790fb35",
+"reason": "Render or candidate map of an older chest step that no kept Blender file names"
+},
+{
+"path": "treasure_chest_20261113/phase05/lower_iron/07_hammered/warmkey.png",
+"bytes": 939051,
+"mtime_ns": 1794876629479790054,
+"sha256": "adcce208e97db1f95002aaa23910d40015197a7e502b791fb846c78d247d6481",
+"reason": "Render or candidate map of an older chest step that no kept Blender file names"
+},
+{
+"path": "treasure_chest_20261113/phase05/lower_iron/07_hammered/sculpt_fields.npz",
+"bytes": 2675200,
+"mtime_ns": 1794876582436331372,
+"sha256": "25d5400ada374877b606be650792924917420f079554d558efdea567cd83243e",
+"reason": "Intermediate array of an older chest material step; no Blender file reads arrays and the current reveal scenes do not use it"
+},
+{
+"path": "treasure_chest_20261113/phase05/lower_iron/07_hammered/reflection.png",
+"bytes": 996394,
+"mtime_ns": 1794876902240249438,
+"sha256": "843fe871f0b11c5a5134b8dbb7d01e501002f582391734d81d23ae999d0859c6",
+"reason": "Render or candidate map of an older chest step that no kept Blender file names"
+},
+{
+"path": "treasure_chest_20261113/phase05/lower_iron/07_hammered/iron.png",
+"bytes": 936872,
+"mtime_ns": 1794876600670034028,
+"sha256": "e3c08bb28704b9aefe82dacc9675118e1b7291c71d0c97e92177ca5a2dc4a3a5",
+"reason": "Render or candidate map of an older chest step that no kept Blender file names"
+},
+{
+"path": "treasure_chest_20261113/phase05/lower_iron/07_hammered/right.png",
+"bytes": 918133,
+"mtime_ns": 1794876614306316109,
+"sha256": "67d4ab9f4e7b6ee4c9a297e95dfb5291fcb9ed41f2f5df44f6bc6ffffaf9fbc6",
+"reason": "Render or candidate map of an older chest step that no kept Blender file names"
+},
+{
+"path": "treasure_chest_20261113/phase05/lower_iron/03_planished/sculpt_fields.npz",
+"bytes": 2681618,
+"mtime_ns": 1794875780176709508,
+"sha256": "3c86ede1c0c1e9dd25854243b5fdc4e5cc0677415ccd8ab13174418a8a4cc9c8",
+"reason": "Intermediate array of an older chest material step; no Blender file reads arrays and the current reveal scenes do not use it"
+},
+{
+"path": "treasure_chest_20261113/phase05/lower_iron/03_planished/iron.png",
+"bytes": 934249,
+"mtime_ns": 1794875799949921731,
+"sha256": "9a2fcd7e2a3e03b3dc3ce76030546968aa1d755b763a0a82b3bb7db9edb55b1a",
+"reason": "Render or candidate map of an older chest step that no kept Blender file names"
+},
+{
+"path": "treasure_chest_20261113/phase05/lower_iron/03_planished/right.png",
+"bytes": 915060,
+"mtime_ns": 1794875815579261414,
+"sha256": "a0e80490e65871517c61c82521c514167524c19b0ad26f1d137969406bb82b5f",
+"reason": "Render or candidate map of an older chest step that no kept Blender file names"
+},
+{
+"path": "treasure_chest_20261113/phase05/lower_iron/09_pitted_iron/sculpt_fields.npz",
+"bytes": 2675200,
+"mtime_ns": 1794877710317216007,
+"sha256": "25d5400ada374877b606be650792924917420f079554d558efdea567cd83243e",
+"reason": "Intermediate array of an older chest material step; no Blender file reads arrays and the current reveal scenes do not use it"
+},
+{
+"path": "treasure_chest_20261113/phase05/lower_iron/09_pitted_iron/right_final.png",
+"bytes": 1660348,
+"mtime_ns": 1794877976015860885,
+"sha256": "c6c4819c3d3a366f68787ef26006141f6384618fc7aeddd3f1dd5f3d31969ce2",
+"reason": "Render or candidate map of an older chest step that no kept Blender file names"
+},
+{
+"path": "treasure_chest_20261113/phase05/lower_iron/09_pitted_iron/context_final.png",
+"bytes": 2284259,
+"mtime_ns": 1794878007665331537,
+"sha256": "80570ee2fdc354b55535e5d4fda3221aff23d74d231fd4bd4d627b0d49101315",
+"reason": "Render or candidate map of an older chest step that no kept Blender file names"
+},
+{
+"path": "treasure_chest_20261113/phase05/lower_iron/09_pitted_iron/context.png",
+"bytes": 1321949,
+"mtime_ns": 1794877738483932362,
+"sha256": "3ce91ca6ecc1063950e5e24d7d32b8c403168bc60c9c141add6cb4b480224d39",
+"reason": "Render or candidate map of an older chest step that no kept Blender file names"
+},
+{
+"path": "treasure_chest_20261113/phase05/lower_iron/09_pitted_iron/iron.png",
+"bytes": 961069,
+"mtime_ns": 1794877725704643793,
+"sha256": "42bd43957c48738dcc26957e1663e9a251642e9157ed0560e21b5b8319b31cc6",
+"reason": "Render or candidate map of an older chest step that no kept Blender file names"
+},
+{
+"path": "treasure_chest_20261113/phase05/lower_iron/surface/fields.npz",
+"bytes": 22644120,
+"mtime_ns": 1794875326990580955,
+"sha256": "0054f6d47a2dca9217b77f87b6011c3649656043ad5265d9347b3c0b3315cf05",
+"reason": "Intermediate array of an older chest material step; no Blender file reads arrays and the current reveal scenes do not use it"
+},
+{
+"path": "treasure_chest_20261113/phase05/lower_iron/surface/albedo.png",
+"bytes": 256442,
+"mtime_ns": 1794875326152972713,
+"sha256": "45c6080f11daf5388dd1abef88bba83b3baea8cf3768506a03b718896aa3555b",
+"reason": "Render or candidate map of an older chest step that no kept Blender file names"
+},
+{
+"path": "treasure_chest_20261113/phase05/lower_iron/surface/metallic.png",
+"bytes": 8362,
+"mtime_ns": 1794875326218547631,
+"sha256": "597c92c9cf13957b8f6c631e6d7ef3abec212a34c33bf8d2976d213878313ae2",
+"reason": "Render or candidate map of an older chest step that no kept Blender file names"
+},
+{
+"path": "treasure_chest_20261113/phase05/lower_iron/surface/wear.png",
+"bytes": 34947,
+"mtime_ns": 1794875326309581705,
+"sha256": "28711dd91a68fbeadb98e2d6c2d2e44baecc1fc57954c28880ac2bee87c758ab",
+"reason": "Render or candidate map of an older chest step that no kept Blender file names"
+},
+{
+"path": "treasure_chest_20261113/phase05/lower_iron/surface/roughness.png",
+"bytes": 490336,
+"mtime_ns": 1794875326208794476,
+"sha256": "504852e7f173577355384680f34d1d6e83e819144a93ef4589567d4246491322",
+"reason": "Render or candidate map of an older chest step that no kept Blender file names"
+},
+{
+"path": "treasure_chest_20261113/phase05/lower_iron/surface/height16.png",
+"bytes": 3473352,
+"mtime_ns": 1794875326301127904,
+"sha256": "7ced474882914783551cc0d80b971cb57c797aff5cc4f6598f365e98383c0106",
+"reason": "Render or candidate map of an older chest step that no kept Blender file names"
+},
+{
+"path": "treasure_chest_20261113/phase05/lower_iron/08_iron_test/iron_final.png",
+"bytes": 1619080,
+"mtime_ns": 1794877413543396309,
+"sha256": "5be30b746d03b850ae4aeb0137e0c6924b92a438846beec661e0db6028d07697",
+"reason": "Render or candidate map of an older chest step that no kept Blender file names"
+},
+{
+"path": "treasure_chest_20261113/phase05/lower_iron/08_iron_test/sculpt_fields.npz",
+"bytes": 2675200,
+"mtime_ns": 1794876582436331000,
+"sha256": "25d5400ada374877b606be650792924917420f079554d558efdea567cd83243e",
+"reason": "Intermediate array of an older chest material step; no Blender file reads arrays and the current reveal scenes do not use it"
+},
+{
+"path": "treasure_chest_20261113/phase05/lower_iron/08_iron_test/right_final.png",
+"bytes": 1594789,
+"mtime_ns": 1794877451784753452,
+"sha256": "047e6c18200f89f3dba78a716347976f465d3673505df1f30d68f0d9224b4036",
+"reason": "Render or candidate map of an older chest step that no kept Blender file names"
+},
+{
+"path": "treasure_chest_20261113/phase05/lower_iron/08_iron_test/context_final.png",
+"bytes": 2282556,
+"mtime_ns": 1794877483658973003,
+"sha256": "73b746cbfc4d347fed03e62610e54f690f09b2e0816fc954847ff8d493bbe26b",
+"reason": "Render or candidate map of an older chest step that no kept Blender file names"
+},
+{
+"path": "treasure_chest_20261113/phase05/lower_iron/08_iron_test/iron.png",
+"bytes": 943345,
+"mtime_ns": 1794877067160509007,
+"sha256": "451da4f5b80b93bd5ab37e624985c5115feab18291e6a51b57e8d1e654cf2951",
+"reason": "Render or candidate map of an older chest step that no kept Blender file names"
+},
+{
+"path": "treasure_chest_20261113/phase05/lower_iron/08_iron_test/right.png",
+"bytes": 926702,
+"mtime_ns": 1794877079340959150,
+"sha256": "3d73e568a49a72a8bcf17793d27015f5fa66d9c17fb0d1c54fa593f063bbfd28",
+"reason": "Render or candidate map of an older chest step that no kept Blender file names"
+},
+{
+"path": "treasure_chest_20261113/phase05/lower_iron/surface09/fields.npz",
+"bytes": 29592617,
+"mtime_ns": 1794877707218731696,
+"sha256": "fe73903378054e8f11c775dcf7ed96512992d75659fc4ffbee1f8c48678cbcef",
+"reason": "Intermediate array of an older chest material step; no Blender file reads arrays and the current reveal scenes do not use it"
+},
+{
+"path": "treasure_chest_20261113/phase05/lower_iron/surface09/wear.png",
+"bytes": 32685,
+"mtime_ns": 1794876089545593734,
+"sha256": "fe93f5d206a531c30f1f241a341a79e26168b082ad88614ea3304f8b638cd818",
+"reason": "Render or candidate map of an older chest step that no kept Blender file names"
+},
+{
+"path": "treasure_chest_20261113/phase05/lower_iron/surface06/fields.npz",
+"bytes": 22665390,
+"mtime_ns": 1794876312536731117,
+"sha256": "9892731cf4d5dbcc7c0526d0d2fff23db1ce6d414fdd314727fc4fa760ae5648",
+"reason": "Intermediate array of an older chest material step; no Blender file reads arrays and the current reveal scenes do not use it"
+},
+{
+"path": "treasure_chest_20261113/phase05/lower_iron/surface06/albedo.png",
+"bytes": 243630,
+"mtime_ns": 1794876089366351972,
+"sha256": "635bb3fff4b4aa4e74f1880266eeaa03d0e7e979d9bf676fd6ddb79475b4239a",
+"reason": "Render or candidate map of an older chest step that no kept Blender file names"
+},
+{
+"path": "treasure_chest_20261113/phase05/lower_iron/surface06/metallic.png",
+"bytes": 2744,
+"mtime_ns": 1794876089444227583,
+"sha256": "912c772276139e066f6629eeb55daeaf293500466f33ae94b4d9778720286d09",
+"reason": "Render or candidate map of an older chest step that no kept Blender file names"
+},
+{
+"path": "treasure_chest_20261113/phase05/lower_iron/surface06/wear.png",
+"bytes": 32685,
+"mtime_ns": 1794876089545593734,
+"sha256": "fe93f5d206a531c30f1f241a341a79e26168b082ad88614ea3304f8b638cd818",
+"reason": "Render or candidate map of an older chest step that no kept Blender file names"
+},
+{
+"path": "treasure_chest_20261113/phase05/lower_iron/surface06/roughness.png",
+"bytes": 371776,
+"mtime_ns": 1794876089438560202,
+"sha256": "62d6ce68fe1bcfb7dcb7f6edf7e16e83473bcd18aaaf013c9c082e47abda7fb8",
+"reason": "Render or candidate map of an older chest step that no kept Blender file names"
+},
+{
+"path": "treasure_chest_20261113/phase05/lower_iron/surface06/height16.png",
+"bytes": 2979951,
+"mtime_ns": 1794876311812342533,
+"sha256": "4e24f7f1135b11933194b553c696abebe8272ee9b0a5e200221daff4d3074da3",
+"reason": "Render or candidate map of an older chest step that no kept Blender file names"
+},
+{
+"path": "treasure_chest_20261113/phase05/lower_iron/01_professional/iron.png",
+"bytes": 925455,
+"mtime_ns": 1794875441843097304,
+"sha256": "5ec4ed160073d363a1bbff31bc16d5933d9a61cfbbb416197b36d92707d3fffd",
+"reason": "Render or candidate map of an older chest step that no kept Blender file names"
+},
+{
+"path": "treasure_chest_20261113/phase05/lower_iron/04_hybrid/sculpt_fields.npz",
+"bytes": 2675200,
+"mtime_ns": 1794876095762603814,
+"sha256": "25d5400ada374877b606be650792924917420f079554d558efdea567cd83243e",
+"reason": "Intermediate array of an older chest material step; no Blender file reads arrays and the current reveal scenes do not use it"
+},
+{
+"path": "treasure_chest_20261113/phase05/lower_iron/04_hybrid/neutral.png",
+"bytes": 899260,
+"mtime_ns": 1794876154308427031,
+"sha256": "77561ff847e19d85a44ca74b782d14b1bf28cb9d1b8e8243de9dcb5d4e14633a",
+"reason": "Render or candidate map of an older chest step that no kept Blender file names"
+},
+{
+"path": "treasure_chest_20261113/phase05/lower_iron/04_hybrid/iron.png",
+"bytes": 926115,
+"mtime_ns": 1794876118298272021,
+"sha256": "5355601a4e3bf142d60626162cbafd06c40c6623433fca398b35c1a2670475c1",
+"reason": "Render or candidate map of an older chest step that no kept Blender file names"
+},
+{
+"path": "treasure_chest_20261113/phase05/lower_iron/04_hybrid/right.png",
+"bytes": 909705,
+"mtime_ns": 1794876136920845142,
+"sha256": "3beb99242f5ff632a1fe562f5a48e46ec4ab2ece2c740be252c80907ce927db8",
+"reason": "Render or candidate map of an older chest step that no kept Blender file names"
+},
+{
+"path": "treasure_chest_20261113/phase05/lower_iron/00_flat/iron_final.png",
+"bytes": 1539231,
+"mtime_ns": 1794877368276069857,
+"sha256": "11757ba485c17b7638be9ee576b12b6b1d05da23ea9991e711aebf6119fb08ca",
+"reason": "Render or candidate map of an older chest step that no kept Blender file names"
+},
+{
+"path": "treasure_chest_20261113/phase05/lower_iron/00_flat/iron.png",
+"bytes": 896383,
+"mtime_ns": 1794875421991656330,
+"sha256": "a95bd5dd4b07537e3d4b42fe5647908b769f647a521ae1efe559970c7b7956b6",
+"reason": "Render or candidate map of an older chest step that no kept Blender file names"
+}
+]
+}

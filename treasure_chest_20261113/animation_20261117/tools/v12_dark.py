@@ -99,29 +99,42 @@ def band(r0, r1, y0, y1, zc, th0=0.0, th1=math.pi, n=96):
 
 
 # ------------------------------------------------------------------ carved edges and keystones
-def trim(A, key=True):
+TRIM = G("TRIM_OUT", 0.1)                         # how far the carved edges stand out from the arch's face
+
+
+def trim(A, key=True, hood=True):
+    """Thin mouldings. At 0.3 to 0.4 deep, the foot of the inner one stood on the pillar's top as a bright
+    upright bar in the moonlight (owner: "on top of a pillar ... this weird shape. I don't know what that shape
+    is"). Thin, they only draw a fine light line along the arch's edges."""
     r0, r1, y, zc = A["r0"], A["r1"], A["y"], A["zc"]
-    parts = [band(r0 - 0.12, r0 + 0.42, y - 0.32, y + 0.1, zc),            # a roll along the inner edge
-             band(r1 - 0.36, r1 + 0.2, y - 0.24, y + 0.1, zc)]            # a hood along the outer edge
+    parts = [band(r0 - 0.06, r0 + 0.34, y - TRIM, y + 0.1, zc)]            # along the inner edge
+    if hood:
+        parts.append(band(r1 - 0.3, r1 + 0.08, y - TRIM, y + 0.1, zc))    # along the outer edge
     if key:
-        parts.append(band(r0 - 0.34, r1 + 0.46, y - 0.5, y + 0.15, zc, math.pi / 2 - 0.056, math.pi / 2 + 0.056, n=6))
+        parts.append(band(r0 - 0.2, r1 + 0.3, y - 0.3, y + 0.15, zc, math.pi / 2 - 0.056, math.pi / 2 + 0.056, n=6))
     return join(parts)
 
 
-def stone(name, zc, n_st, mid_r, dark=1.0, masonry=False):
+def stone(name, zc, n_st, mid_r, dark=1.0, masonry=False, joint=1.0, barrel=None):
     """Dressed stone built of blocks: joints as relief and old dirt, each block its own tone, relief from a height map."""
     m = mat(name)
     n = NT(m)
     obj = n.coord().outputs["Object"]
     ps = n.sep(obj)
     if masonry:                                   # courses on walls: along the wall and up
-        bt = n.node("ShaderNodeTexBrick", ins={"Vector": n.comb(n.math("ADD", ps[0], ps[1]), ps[2], 0.0), "Color1": (0.82, 0.82, 0.82, 1),
+        if barrel:                                # on a vault the courses follow the curve (barrel = its axis height, radius)
+            rows = n.math("MULTIPLY", n.math("ARCTAN2", n.math("SUBTRACT", ps[2], barrel[0]), ps[0]), barrel[1])
+            bvec = n.comb(ps[1], rows, 0.0)
+        else:
+            rows = ps[2]
+            bvec = n.comb(n.math("ADD", ps[0], ps[1]), ps[2], 0.0)
+        bt = n.node("ShaderNodeTexBrick", ins={"Vector": bvec, "Color1": (0.82, 0.82, 0.82, 1),
                                               "Color2": (1.16, 1.16, 1.16, 1), "Mortar": (1, 1, 1, 1), "Scale": 1.0, "Mortar Size": 0.035,
                                               "Mortar Smooth": 0.35, "Bias": 0.0, "Brick Width": 4.6, "Row Height": 2.3})
         bt.offset = 0.5
         groove = bt.outputs["Fac"]
         tone = n.node("ShaderNodeRGBToBW", ins={0: bt.outputs["Color"]}).outputs[0]
-        idx = n.math("FLOOR", n.math("DIVIDE", ps[2], 2.3))
+        idx = n.math("FLOOR", n.math("DIVIDE", rows, 2.3))
     else:                                         # voussoirs round an arch
         dz = n.math("SUBTRACT", ps[2], zc)
         th = n.math("ARCTAN2", dz, ps[0])
@@ -130,7 +143,7 @@ def stone(name, zc, n_st, mid_r, dark=1.0, masonry=False):
         idx = n.math("FLOOR", u)
         r = n.math("SQRT", n.math("ADD", n.math("MULTIPLY", ps[0], ps[0]), n.math("MULTIPLY", dz, dz)))
         dj = n.math("MULTIPLY", n.math("MINIMUM", fr, n.math("SUBTRACT", 1.0, fr)), n.math("MULTIPLY", r, math.pi / n_st))
-        groove = n.math("SUBTRACT", 1.0, n.ramp(dj, (0.012, 0.07), interp="SMOOTH"))
+        groove = n.math("MULTIPLY", n.math("SUBTRACT", 1.0, n.ramp(dj, (0.012, 0.07), interp="SMOOTH")), joint)
         wn = n.node("ShaderNodeTexWhiteNoise", ins={"W": n.math("ADD", idx, 11.3)}, noise_dimensions="1D")
         tone = n.math("ADD", 0.84, n.math("MULTIPLY", wn.outputs["Value"], 0.32))
     shift = n.comb(n.math("MULTIPLY", idx, 0.37), n.math("MULTIPLY", idx, 0.61), 0.0)      # cracks do not run across joints
@@ -157,8 +170,15 @@ def stone(name, zc, n_st, mid_r, dark=1.0, masonry=False):
 
 M_NAVE = stone("Temple Arch Stone High", ZN, NAVE["n"], 15.6, dark=G("ARCH_DARK", 0.8))
 M_APSE = stone("Temple Arch Stone", ZA, APSE["n"], 16.4, dark=G("ARCH_DARK", 0.8))
-M_RIB = stone("Temple Arch Stone Ribs", ZA, RIB["n"], 14.5, dark=G("ARCH_DARK", 0.8))
+# The ribs of the long hall are far away: with full joints they drew a dotted line through the haze (part of the
+# "pattern in the back" the owner did not like). Their joints are only hinted at.
+M_RIB = stone("Temple Arch Stone Ribs", ZA, RIB["n"], 14.5, dark=G("ARCH_DARK", 0.8), joint=G("RIB_JOINT", 0.15))
 M_WALL = stone("Temple Wall Masonry", 0.0, 1, 1.0, dark=G("WALL_DARK", 0.3), masonry=True)
+# for the ceilings built in v12_hall.py: the vault over the front hall and its ribs, and the long hall's vault,
+# which is kept dark between its ribs
+stone("Temple Vault Rib Stone", 46.0, 27, 14.3, dark=G("ARCH_DARK", 0.8))
+stone("Temple Vault Masonry", 0.0, 1, 1.0, dark=G("VAULT_DARK", 0.3), masonry=True, barrel=(46.0, 15.0))
+stone("Temple Corridor Vault Masonry", 0.0, 1, 1.0, dark=G("CORRIDOR_VAULT_DARK", 0.09), masonry=True, barrel=(FLOOR + 0.88 * 28.95, 16.6))
 
 for name, m in (("Temple Nave Arch", M_NAVE), ("Temple Apse Arch", M_APSE), ("Temple Corridor Ribs", M_RIB),
                 ("Temple Walls", M_WALL), ("Temple Apse Wall", M_WALL), ("Temple Corridor End", M_WALL)):
@@ -166,13 +186,15 @@ for name, m in (("Temple Nave Arch", M_NAVE), ("Temple Apse Arch", M_APSE), ("Te
     o.data.materials.clear()
     o.data.materials.append(m)
 
-V, F = trim(NAVE)
+# The big arch has no outer moulding: its outer edge is buried in the side arches, and only the moulding's foot
+# showed, as a small upright stub on top of each front pillar (found with a colour coded render).
+V, F = trim(NAVE, hood=False)
 o = put("Temple Nave Arch Trim", mesh_from("Temple Nave Arch Trim", V, F, smooth=True, sharp_deg=30), TC, [M_NAVE], root)
 bevel(o, 0.05, 2, 30)
 V, F = trim(APSE)
 o = put("Temple Apse Arch Trim", mesh_from("Temple Apse Arch Trim", V, F, smooth=True, sharp_deg=30), TC, [M_APSE], root)
 bevel(o, 0.05, 2, 30)
-V, F = join([band(RIB["r0"] - 0.1, RIB["r0"] + 0.36, yb - 1.3 - 0.26, yb - 1.3 + 0.1, RIB["zc"], n=64) for yb in BAYS])
+V, F = join([band(RIB["r0"] - 0.06, RIB["r0"] + 0.3, yb - 1.3 - TRIM, yb - 1.3 + 0.1, RIB["zc"], n=64) for yb in BAYS])
 o = put("Temple Corridor Rib Trim", mesh_from("Temple Corridor Rib Trim", V, F, smooth=True, sharp_deg=30), TC, [M_RIB], root)
 NEW = ("Temple Nave Arch Trim", "Temple Apse Arch Trim", "Temple Corridor Rib Trim")
 for nm in NEW:
@@ -223,16 +245,8 @@ for nm, x, y, deg, e in (("A", -3.0, 128.0, 7.0, 1.0), ("B", 5.0, 187.0, 6.0, 0.
     so = light("Temple Moon Shaft " + nm, tuple(tgt - MDIR * 95.0), tuple(tgt), MOON, RECV,
                spot_size=math.radians(deg), spot_blend=1.0, shadow_soft_size=1.5, use_shadow=True, volume_factor=G("HALL_SHAFT_VOL", 7.0))
     drv(so.data, "energy", "%.1f * (1.0 - 0.75 * gold)" % (G("HALL_SHAFT_E", 220000.0) * e), gold=GOLD)
-# the two shafts in the front hall slant the same way (they keep their pools on the floor where they were)
-for nm, x, y, deg, e in (("L", -10.0, 36.0, 5.5, 1.0), ("R", 11.5, 47.0, 5.0, 0.8)):
-    so = bpy.data.objects["Temple Shaft " + nm]
-    tgt = Vector((x, y, FLOOR))
-    so.location = tuple(tgt - MDIR * 100.0)
-    so.rotation_euler = (tgt - Vector(so.location)).to_track_quat("-Z", "Y").to_euler()
-    so.data.spot_size = math.radians(deg)
-    so.data.spot_blend = 1.0
-    so.light_linking.blocker_collection = MB
-    drv(so.data, "energy", "%.1f * (%.2f + %.2f * gold)" % (135000.0 * e, G("SHAFT_DARK", 0.7), 1.0 - G("SHAFT_DARK", 0.7)), gold=GOLD)
+# (The two shafts in the front hall stay straight: slanted like the moonlight they left the hall's air and vanished,
+# and the owner liked them as streaks of night light through the roof. v12_story.py places them.)
 # the flat blue fill from the front: far down while it is dark, as before once the gold light is up
 drv(bpy.data.objects["Temple Cool Top"].data, "energy", "3000.0 * (%.2f + %.2f * gold)" % (G("TOP_DARK", 0.25), 1.0 - G("TOP_DARK", 0.25)), gold=GOLD)
 # the moss tufts on the pillar bases: quieter (in the moonlight they turned bright yellow green)

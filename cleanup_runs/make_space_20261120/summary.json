@@ -22,10 +22,14 @@
   "receipt_cache_dust_after_95.jsonl": {
    "files": 236,
    "bytes": 9681213708
+  },
+  "receipt_old_chest_folders.jsonl": {
+   "files": 405,
+   "bytes": 1369944744
   }
  },
- "removed_total_bytes": 19895093477,
- "removed_total_files": 2201,
+ "removed_total_bytes": 21265038221,
+ "removed_total_files": 2606,
  "kept_scene_files": [
   "chest_reveal_v7.blend",
   "chest_reveal_v9_temple.blend",
@@ -33,6 +37,6 @@
   "chest_reveal_v11_torches.blend",
   "chest_reveal_v12_full.blend"
  ],
- "not_reviewed": "older chest building folders (phase04 to phase06, claude_attempt_20261117, about 3.3 GB) and the other badge folders (about 2 GB): left for the owner to decide",
+ "not_reviewed": "the other badge folders (about 2 GB). In the older chest folders, kept on purpose: claude_attempt_20261117 (the chest in use, 1.2 GB), all Blender files but phase06 baseline, resources folders, BC_final_polish, 14_edge_review, phase01 candidate43, zip archives (the helper does not remove them)",
  "note": "the first inventory listing (2.5 MB) was dropped after this summary was written; the manifests and receipts list every removed file"
 }

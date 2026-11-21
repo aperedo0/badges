@@ -6,7 +6,7 @@ The story is keyed on the real timeline (tools/v12_story.py). This script adds w
 - arrival: scene frames from the start (-28) to 49, then 46 more frames with the chest held at 49 while the landing dust clears
   and the side rings swing to rest (the chest must be perfectly still before the waiting loop);
 - waiting: the chest held at frame 49 for 225 frames (7.5 s), rattling at 0, 2.5 and 5.0 s, each rattle over
-  within 24 frames (0.8 s) and different, the keyhole glow breathing on a 75 frame period; the first 75
+  within 30 frames (1 s) and different, the keyhole glow breathing on a 75 frame period; the first 75
   frames are a loop of their own (one rattle);
 - reveal: scene frames 50 to the story's end (280) with the rings at rest and the landing dust gone;
 - ending: scene frames from the story's end on, 90 frames plus 24 to blend into the start
@@ -51,7 +51,7 @@ HOLD = 49
 END = int(bpy.data.objects["Temple Story"]["end"])        # the reveal's last frame; the ending loop starts here
 F0 = int(bpy.data.objects["Temple Story"]["start"])   # the story starts here (one second of empty temple)
 N1 = HOLD - F0 + 1                               # arrival frames that follow the scene one to one
-LOOP, FADE, CELL, RATTLE = 90, 24, 75, 24
+LOOP, FADE, CELL, RATTLE = 90, 24, 75, 30
 
 
 def rot(o):
@@ -94,31 +94,38 @@ def bump(k, a, b, amp):
     return amp * math.sin(math.pi * (k - a) / (b - a)) ** 2 if a <= k <= b else 0.0
 
 
+STRONG = (2.0, 2.0, 3.0)                          # owner, 2026-11-20: the rattles "more noticeable, probably like 2 times as
+                                                 # strong ... the third one, maybe we can even go up to 3x"
+
+
 def rattle(i, one=False):
-    """The chest's own small movements at output frame i of the waiting loop: degrees and units, all zero at rest."""
+    """The chest's own small movements at output frame i of the waiting loop: degrees and units, all zero at rest.
+    The shapes are the first version's, played over RATTLE frames (30, one second; they were made for 24) and
+    made stronger by STRONG."""
     k = i % CELL
     kind = 0 if one else (i // CELL) % 3
     z = dict(lid=0.0, roll=0.0, yaw=0.0, hop=0.0, hasp=0.0, ring=0.0)
     if k >= RATTLE:
         return z
-    w = 1.0 - smooth(k, RATTLE - 7, RATTLE - 1)                      # everything is back at rest before the rattle's last frame
+    w = 1.0 - smooth(k, RATTLE - 8, RATTLE - 1)                      # everything is back at rest before the rattle's last frame
+    q = k * 24.0 / RATTLE                                            # the same shapes, a little slower
     if kind == 0:                                                    # two knocks
-        z["lid"] = bump(k, 0, 9, 0.45) + bump(k, 10, 20, 0.3)
-        z["roll"] = 0.5 * math.sin(2 * math.pi * k / 10) * math.exp(-k / 8) * w
-        z["hasp"] = 4.0 * math.sin(2 * math.pi * k / 7) * math.exp(-k / 7) * w
-        z["ring"] = 5.0 * math.sin(2 * math.pi * k / 12) * math.exp(-k / 9) * w
+        z["lid"] = bump(q, 0, 9, 0.45) + bump(q, 10, 20, 0.3)
+        z["roll"] = 0.5 * math.sin(2 * math.pi * q / 10) * math.exp(-q / 8) * w
+        z["hasp"] = 4.0 * math.sin(2 * math.pi * q / 7) * math.exp(-q / 7) * w
+        z["ring"] = 5.0 * math.sin(2 * math.pi * q / 12) * math.exp(-q / 9) * w
     elif kind == 1:                                                  # one hard jolt
-        z["lid"] = bump(k, 0, 7, 0.75) + bump(k, 8, 15, 0.25) + bump(k, 16, 22, 0.08)
-        z["hop"] = bump(k, 0, 8, 0.035)
-        z["yaw"] = 0.35 * math.sin(2 * math.pi * k / 9) * math.exp(-k / 6) * w
-        z["hasp"] = 6.0 * math.sin(2 * math.pi * k / 8) * math.exp(-k / 7) * w
-        z["ring"] = 7.0 * math.sin(2 * math.pi * k / 12) * math.exp(-k / 9) * w
+        z["lid"] = bump(q, 0, 7, 0.75) + bump(q, 8, 15, 0.25) + bump(q, 16, 22, 0.08)
+        z["hop"] = bump(q, 0, 8, 0.035)
+        z["yaw"] = 0.35 * math.sin(2 * math.pi * q / 9) * math.exp(-q / 6) * w
+        z["hasp"] = 6.0 * math.sin(2 * math.pi * q / 8) * math.exp(-q / 7) * w
+        z["ring"] = 7.0 * math.sin(2 * math.pi * q / 12) * math.exp(-q / 9) * w
     else:                                                            # a shiver
-        z["roll"] = 0.35 * math.sin(2 * math.pi * k / 4) * math.exp(-k / 10) * w
-        z["lid"] = 0.2 * abs(math.sin(2 * math.pi * k / 4)) * math.exp(-k / 9) * w
-        z["hasp"] = 3.0 * math.sin(2 * math.pi * k / 4) * math.exp(-k / 8) * w
-        z["ring"] = 3.0 * math.sin(2 * math.pi * k / 10) * math.exp(-k / 9) * w
-    return z
+        z["roll"] = 0.35 * math.sin(2 * math.pi * q / 4) * math.exp(-q / 10) * w
+        z["lid"] = 0.2 * abs(math.sin(2 * math.pi * q / 4)) * math.exp(-q / 9) * w
+        z["hasp"] = 3.0 * math.sin(2 * math.pi * q / 4) * math.exp(-q / 8) * w
+        z["ring"] = 3.0 * math.sin(2 * math.pi * q / 10) * math.exp(-q / 9) * w
+    return {key: v * STRONG[kind] for key, v in z.items()}
 
 
 def set_rings(base_frame, want):
@@ -145,6 +152,7 @@ def state(i):
         if i < N1:
             f = F0 + i
             scn.frame_set(f)
+            story["dustfall"] = max(f - 17, 0) / 30.0                # stepped by hand (see below)
             for o in rings:
                 o.delta_rotation_euler = Euler((0, 0, 0))
             return f
@@ -152,6 +160,7 @@ def state(i):
         scn.frame_set(HOLD)
         free_story()
         story["dustfall"] = (v - 17) / 30.0
+        story["streak"] = 1.0
         env = 1.0 - smooth(v, 58, 95)
         set_rings(HOLD, [tuple(REST[k][a] + (RING[v][k][a] - REST[k][a]) * env for a in range(3)) for k in range(2)])
         dust_ds.cache_frame_offset = HOLD - v
@@ -162,8 +171,8 @@ def state(i):
         free_story()
         z = rattle(i, PIECE == "waiting1")
         story["dustfall"] = 9.0
-        story["keyhole"] = 0.5 + 0.13 * math.sin(2 * math.pi * (i % CELL) / CELL) + 1.6 * z["lid"]
-        story["seam"] = min(z["lid"] / 0.4, 1.6)
+        story["keyhole"] = 0.5 + 0.13 * math.sin(2 * math.pi * (i % CELL) / CELL) + 0.9 * z["lid"]
+        story["seam"] = min(z["lid"] / 0.8, 1.6)
         d = [0.0, 0.0, 0.0]
         d[LID_AX] = LID_SIGN * math.radians(z["lid"])
         lid.delta_rotation_euler = Euler(d)
@@ -208,6 +217,41 @@ if PIECE in ("reveal", "ending"):
                         for kp in fc.keyframe_points:
                             kp.co.y = kp.handle_left.y = kp.handle_right.y = 9.0
                         fc.update()
+
+if PIECE == "arrival":
+    # The dust from above is stepped by hand through the whole arrival and each grain draws its own streak. Left
+    # on its curve, the renderer's motion blur smeared the fine grains away in the frames that follow the scene
+    # and not in the held frames after them, so the grit popped in where the two meet.
+    for layer in story.animation_data.action.layers:
+        for st in layer.strips:
+            for cb in st.channelbags:
+                for fc in list(cb.fcurves):
+                    if fc.data_path in ('["dustfall"]', '["streak"]'):
+                        cb.fcurves.remove(fc)
+    story["streak"] = 1.0
+
+# The badge and the beam of light that comes down on it at the end are left out (owner, 2026-11-20: "I actually want
+# this render to be rendered without the badge and without the light at the top that comes at the very end ... I'm
+# going to actually do that part probably in the app"). BADGE=1 brings both back as a guide. Left out: every part
+# of the badge and its own lights, the beam's visible shaft in the air, its haze and its specks. Kept: the light
+# the beam throws on the chest, the platform and the floor, and the badge's push on the mist (it is baked in).
+if E("BADGE") != "1":
+    def below(o):
+        yield o
+        for c in o.children:
+            yield from below(c)
+    gone = list(below(OB["Reveal Badge Root"])) + [OB[n_] for n_ in ("Reveal Badge Key", "Reveal Badge Rake", "Reveal Badge Rim", "Reveal Ending Badge Light",
+                                                                    "Reveal Ending Haze", "Reveal Beam Specks") if n_ in OB]
+    for o in gone:
+        if o.animation_data and o.animation_data.action:
+            for layer in o.animation_data.action.layers:
+                for st in layer.strips:
+                    for cb in st.channelbags:
+                        for fc in list(cb.fcurves):
+                            if fc.data_path == "hide_render":
+                                cb.fcurves.remove(fc)
+        o.hide_render = True
+    OB["Reveal Overhead Light"].data.volume_factor = 0.0
 
 COUNT = {"arrival": N1 + 46, "waiting": 225, "waiting1": 75, "reveal": END - 50 + 1, "ending": LOOP + FADE}[PIECE]
 only = [int(x) for x in E("ONLY").split(",")] if E("ONLY") else list(range(COUNT))

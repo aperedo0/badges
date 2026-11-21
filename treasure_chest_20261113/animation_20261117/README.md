@@ -663,3 +663,216 @@ What changed (run order inside Blender after the version 10 and 11 scripts: `v12
   picture's change from frame to frame has no spike (median 0.64, a smooth rise to about 8 at the middle of the
   camera's move and back down), and its brightness climbs steadily from 2.0 to 5.5 seconds (28, 29, 40, 38, 47,
   50, 57, 60, 62, 63 of 255, every half second). Videos and `Chest reveal key moments.png` are in Downloads.
+
+### Version 12, third pass after the owner's second review (2026-11-20, about 6:15 AM)
+
+The owner watched the second pass and said (speech to text, shortened):
+- "you improve that one part and it looks good, it looks like stone, and then now the pillars look kind of like
+  Play-Doh. So now you got to improve the pillars";
+- the camera "goes back and then there's like a sharp up ... very quick. I want that to be like a fluid motion,
+  like it should be like an arc ... you can also make the badge come out a little slower";
+- "the one before had like two light streaks, almost as if ... parts of the roof were missing ... The night light
+  was shining through, and I like that. And then in those same areas ... dust came and fell ... I want it to be
+  higher quality dust ... like the chest falling kind of made some of the dust from above come down ... add that
+  back in";
+- with a picture of the far end of the hall: "this pattern in the back ... does not look good, maybe we can ...
+  blur it so it doesn't look so jaggedy".
+
+Run order inside Blender after the version 10 and 11 scripts: `v12_story.py`, `v12_slow.py`, `v12_dark.py`,
+`v12_pillars.py`, `v12_dust.py`; then `blender -b chest_reveal_v12_full.blend --python tools/v12_bake_mist.py`
+once (the badge is a collider in the mist, so the mist is baked again whenever the badge's timing changes).
+
+| Piece | Frames | Change |
+|---|---|---|
+| 1 Arrival, once | 124 (4.1 s) | two shafts of night light; dust falls in them after the landing |
+| 2 Waiting, loops | 225 (7.5 s), first 75 loop alone | shafts, new pillars |
+| 3 Reveal, once | 241 (8.0 s), scene frames 50 to 290 | camera on one arc, badge 1.3 times slower |
+| 4 Ending, loops | 90 (3 s), from scene frame 290 | new pillars |
+
+- Camera (`v12_slow.py`): one arc round the chest (pivot 0, 0, 3 in the chest's frame) from the old start
+  framing to the old end framing, frames 90 to 232 (4.7 s), with the lens shift on the same single ease
+  (speed rises over 35 percent of the move, holds, falls over 35 percent). The camera is level all the way and
+  its lens shift is keyed directly. Why the old one jerked: the path, the tilt (turned into lens shift by a
+  formula with a kink) and the camera's own distance each ran on their own timing. Measured on five fixed
+  points of the hall and chest, frame by frame at full size: none ever changes direction, the fastest moves
+  9.1 pixels a frame, and the largest change of speed between two frames is 0.29 pixels.
+- Badge: its rise, turn and settle take 1.3 times as long (front at about frame 182, settled about 206), in its
+  own action `v12 Badge Slow` over its old NLA track. The reveal ends at frame 290 (was 280); the mist fades
+  from frame 200 to 282 and its simulation runs to 296.
+- Pillars (`v12_pillars.py`): 16 real concave flutes with sharp ridges cut into each shaft (the old grooves were
+  only shading), crisper plinths and capitals. Ridges stand where the painted ones were, so each torch still sits
+  in the middle of a flute (the plate now stands 0.085 off the bottom of the flute, about 2 pixels, not visible).
+  A first build stacked each shaft from three drums with seams; shown the stills, the owner said "I don't like the
+  drums. Just make it look like real stone." So each shaft is one solid piece, and its colour, relief and
+  roughness all come from the same scan (Poly Haven plastered_stone_wall, with its height map added to
+  `temple/resources`), wrapped round the shaft through its own UV map `PillarUV` (two repeats; box projection
+  smeared on a round shaft) and projected flat on the square blocks. Matte (roughness about 0.86; at 0.6 the
+  ridges drew glossy lines), faint stains running down the shaft, a little dirt in grooves and pits.
+  7,042 faces per pillar. Stills: `~/Downloads/Chest pillars solid stone.png`.
+- Far end of the hall: the long hall's pillars are plain round shafts (their stepped plinths and flared capitals
+  stacked into a jagged outline), the hall's air beyond the small arch is twice as thick (`AIR_CORRIDOR` 3.2), the
+  far light sits beyond the air (no bright dot), and the joints of the far ribs are only hinted at (`RIB_JOINT`
+  0.15; at full strength they drew a dotted line through the haze).
+- The two shafts of night light (`Temple Shaft L/R`, placed in `v12_story.py`): straight down at (-10, 36) and
+  (11.5, 47), lit from very high (z 330) so the streak is as strong at the floor as under the roof, air boost 40.
+  The second pass had slanted them like the moonlight, which took them out of the hall's air: they vanished.
+- Dust from above (`v12_dust.py`), only inside the two shafts, driven by `dustfall` (seconds since the impact at
+  frame 17), over by 2.5 s: (1) `Temple Dust Grit L/R`, five loose threads of very fine pale grains per shaft
+  (about 2,800 grains), pouring from single points, falling with gravity and drag, each drawn as the short
+  streak it would blur to; (2) `Temple Dust Cloud L/R`, a thin veil of fine dust that comes down slower behind
+  the grit, spreads and thins away. The old six cards with scrolling streaks are kept in the file, switched off.
+  Tried and dropped on the way: solid grains lit only from above (brown blocks), and dense bright streams (white
+  ropes like poured milk).
+- `v12_render.py`: in the arrival `dustfall` is stepped by hand and `streak` is 1, so the renderer's own motion
+  blur cannot smear the fine grains away in some frames and not in others.
+- The videos of the second pass are in `~/Downloads/Chest reveal second version (old)/`.
+
+### Cleanup of the older chest building folders (2026-11-20, 7:05 AM)
+
+Owner: "if making or deleting the older chest folders will have no issue on the current ones, then sure".
+Checked first: every kept Blender file under `treasure_chest_20261113` (the five reveal scenes, `chest_simple`,
+`chest_claude`, `source_copy`, phase06 `master`, phase05 `14_edge_review/master`, phase01 `candidate43/chest`,
+the root file) was decompressed and searched for image names, and version 12 was checked in Blender before and
+after (86 images packed; the only missing image, a phase04 comparison picture, was missing before).
+Removed, 405 files, 1.37 GB (receipt `cleanup_runs/make_space_20261120/receipt_old_chest_folders.jsonl`):
+arrays (`.npz`, `.npy`) of older material steps in phase01 to phase06 (851 MB), `phase06/material_rollout/
+baseline.blend` (158 MB; its source and its result are both kept), and renders and candidate maps in phase03 to
+phase06 that no kept Blender file names (298 MB). 788 MB of it is in Git history and can be restored from there.
+Not touched: `claude_attempt_20261117` (the chest in use), every other Blender file, every text file, every
+`resources` folder, anything named reference or owner, `BC_final_polish`, `14_edge_review`, `phase01/candidate43`.
+The old generators of the detailed chest can no longer be run again from their arrays.
+- Third pass rendered 2026-11-20, 7:15 to 9:05 AM (reveal 47 min, arrival 19, ending 20, waiting 21), 70 percent
+  size, 24 samples. Checked with `temple/tools/v12_check.py`: every join between pieces differs by 0.00 to 0.04
+  per pixel (0 to 255); the ending loop's seam (0.57) is in the range of two of its neighbouring frames (0.38).
+  Through the reveal the picture's change from frame to frame is one hump (0, rising to 5.4 at the middle of the
+  camera's move, back to 0.4) and no frame changes more than 1.32 times the frames either side of it. The dust
+  from above is continuous where the arrival's two parts meet (frames 77 and 78). Videos and
+  `Chest reveal key moments.png` are in Downloads; the second pass is in `Chest reveal second version (old)`.
+
+### Version 12, fourth pass after the owner's third review (2026-11-20, about 9:20 AM)
+
+The owner watched the third pass and said (speech to text, shortened), with three pictures (the top of a front
+pillar, the top of the picture at the start, the two arches in the gold light):
+- "the light at the end, it twinkles way too fast ... It's got to be like a third of this current speed";
+- on top of a pillar: "It has this weird shape. I don't know what that shape is";
+- the top of the screen at the beginning: "it doesn't look like an enclosed space. It should look like an enclosed
+  place";
+- "I want it to start off darker. I want there to be more mystery about what's behind ... it's got to be revealed.
+  I feel like I see too much of the background, especially that top wall ... it's showing way too much";
+- the arches: the nearest one's strip "has a certain length, and then the next one ... way longer. And it doesn't
+  look congruent because one of them is thin and then the one's not thin";
+- "I want it to look like a movie scene ... A cool reveal, that's what I'm looking for";
+- the smoke: "It seems to be doing some not very physics-like things ... Just make sure it's in line with actual
+  physics. Like, it should be interacting with the box correctly".
+
+Run order inside Blender after the version 10 and 11 scripts: `v12_story.py`, `v12_slow.py`, `v12_dark.py`,
+`v12_pillars.py`, `v12_hall.py`, `v12_dust.py`, `v12_mood.py`, `v12_mist.py`; then
+`blender -b chest_reveal_v12_full.blend --python tools/v12_bake_mist.py` once.
+
+- Fire (`v12_mood.py`). Which light: measured in the rendered ending, the picture changes most from frame to
+  frame at the torches, and their light was built on beats of 7.6 and 3.3 frames (4 and 9 times a second). The
+  torches' light, flames, glow, coals and sparks all run at a third of that speed (`FIRE_SPEED`).
+- The odd shape (`v12_dark.py`). A colour coded render (`temple/tools/ids.py` before `tools/v12_render.py`)
+  showed it was the foot of the moulding along the big arch's outer edge: that edge is buried in the side arches,
+  so only a short upright stub showed on each front pillar. The big arch has no outer moulding now, and all
+  mouldings are thin (`TRIM_OUT` 0.1; at 0.3 to 0.4 their sides caught the moonlight as bright bars).
+- Enclosed (`v12_hall.py`). The vault over the front hall was a smooth dark shell that read as empty black. It is
+  now coursed stone 1.6 thick with ribs across it (at y 18, 29.8, 41.6 and where it meets the wall), broken open
+  in two ragged holes exactly where the two shafts come down (boolean, baked into the mesh; the cutters
+  `Temple Vault Hole L/R` stay in the file, hidden), with a dim night sky above (`Temple Night Sky`) and a faint
+  cool light from below (`Temple Vault Bounce`, 14,000 in the dark, only on the vault and its ribs). From the
+  start camera only the right opening is in the picture; the left one is just above its top edge. The vault is
+  out of the shafts' and torches' light (the shafts burned the openings' edges white).
+- Darker start (`v12_mood.py`). Dark levels only; the gold ending is unchanged. Moonlight on the top wall and
+  arches 420,000 to 80,000; side fills, the long hall's lights and floor light lower (table in the script). The
+  far hall did not get darker until the room's ambient light (the world) was lowered: it is what makes the haze
+  glow. It starts at 0.35 of its level and comes up with the gold. Measured on the start picture (0 to 255):
+  top wall 20 to 6, big arch 38 to 16, far hall 50 to 22, front pillars 31 to 16, whole picture 28 to 16; the
+  chest's own lights are untouched.
+- Matching arches (`v12_hall.py`). The small arch ran straight into a tunnel of its own radius (15.3), so its
+  underside seemed 30 units long against the big arch's 5.6. The long hall is now wider and higher than the arch
+  (16.6), its vault is its own object with dark masonry (`Temple Corridor Vault`), and each rib is a full arch
+  from 13.7 out to the vault. Its pillars and torches did not move (the pillars now stand free of the walls).
+- Smoke (`v12_mist.py`). Seen frame by frame against the chest, the smoke rose a little, stalled, lay flat at
+  the rim and faded where it lay. It now has three times the lift (in the scene's units a normal lift crawled:
+  the chest is 5.5 units wide, which the simulation reads as metres) and 96 cells in place of 64, so every wall
+  of the chest and lid is two to three cells thick. It leaves the chest as a rising plume, passes the badge and
+  thins. Baked at 96: see `render/v12_bake_mist_4.log`.
+- Stills: `~/Downloads/Chest third review check.png`. The third pass's videos are in
+  `~/Downloads/Chest reveal third version (old)/`.
+- Later the same morning the owner added: the lights shining down are "a teeny bit too bright. Maybe make them
+  70% or 80%"; "this is supposed to be a worn down temple ... it's not going to be a perfect circle shining down
+  ... not a well-defined shape"; and the sand: "It is way too much sand ... just a little bit of sand, enough to
+  be noticeable ... like 20% of the current amount", "maybe don't make the sand so white ... It'd probably be the
+  color of the stone" (a suggestion).
+  - Shape (`v12_hall.py`): each opening in the vault is now an uneven broken outline with straight edges and
+    corners, longer one way than the other. The same outline is a plate above the vault (`Temple Shaft Mask L/R`,
+    not seen by the camera) that only the shaft's light is blocked by, so the light takes the opening's shape in
+    the air and on the floor. The shaft lights are wider than the opening (the plate cuts them), still strongest
+    in the middle (blend 0.8), a little soft at the edge (light size 0.6).
+  - Level: measured on the start picture, each streak against the dark beside it. A first try was far too faint
+    (a third); now the left streak is at 65 to 83 percent of what it was and the right, set by the same measure,
+    at about 75 (`SHAFT_SHAPE` left 1.15, right 0.87; `SHAFT_LEVEL` 0.75 for the dark part of the story; the gold
+    ending keeps its level).
+  - Sand (`v12_dust.py`): three thin trickles of about 180 grains per shaft (it was five of about 550: 514
+    grains against 2,769), the veil of fine dust behind them at a third, and the grains grey like the stone
+    with far less shine of their own.
+- A bake was lost on the way: running `v12_mist.py` again in the open Blender while the bake ran in the background
+  made Blender clear the baked files (writing a simulation setting clears them, even with the same value).
+  `v12_mist.py` and `v12_slow.py` now write those settings only when they differ. Do not change the mist's
+  settings in the open Blender while a bake runs.
+- Fourth pass rendered 2026-11-20, 10:13 AM to 12:18 PM. Checked with `temple/tools/v12_check.py`: joins 0.00 to
+  0.01, the ending loop's seam 0.55 against 0.29 between two neighbouring frames, no jolt in the reveal, the sand
+  continuous where the arrival's two parts meet, the start picture's average brightness 18 of 255 (it was 28),
+  the ending's change from frame to frame 0.32 (it was 0.42, mostly the torches).
+- Smoke, second pass. In that render the main puff rose and left, but what spilled over the rim had cooled and
+  hung beside the chest as a flat sheet at rim height for over a second. `v12_mist.py` now gives it more lift
+  (`MIST_LIFT` 5; even the thinned smoke keeps rising) and lets it thin sooner (`MIST_THIN` 50 frames, was 68);
+  `v12_slow.py` shows it a little thinner (`MIST_GAIN` 10, was 13: at 96 cells it keeps more of its body).
+  Baked at 96 cells in 2,556 s (`render/v12_bake_mist_6.log`). The smoke has left the chest by about frame 200
+  (5 s into the reveal). Reveal frames 40 to 240 were rendered again; the other pieces are unchanged.
+
+### Version 12, fifth pass: the first render for the app's timing (2026-11-20, about 2:00 PM)
+
+The owner, after the fourth pass (speech to text, shortened):
+- the "twinkle" was not the torches: "at the very end, there's a light that looks like it's shining on the badge
+  from the top ... that light like changes ... The fire was fine." And: "I actually want this render to be rendered
+  without the badge and without the light at the top that comes at the very end ... I'm going to actually do that
+  part probably in the app." This render is the one they will use "to get all the timing right".
+- the light through the keyhole before the chest opens "a little bit brighter";
+- the waiting rattles "more noticeable, probably like 2 times as strong ... lengthen out the animation a teeny tiny
+  bit so that it still feels smooth ... the third one, maybe we can even go up to 3x";
+- the sand: "it comes down and then it opacities out ... I just don't like that look. I prefer just a little bit
+  of sand, very short. Just looks like it comes like almost all the way down";
+- "in the beginning, the background can be about 10% brighter ... really not much";
+- "the bottom half of the chest from the front is not lit well ... I want the entire front of the chest to be lit
+  like the top of the chest is".
+
+What changed:
+- No badge, no beam (`v12_render.py`, on unless `BADGE=1`): every part of the badge and its own lights, the
+  beam's visible shaft in the air (`Reveal Overhead Light` volume 0), its haze (`Reveal Ending Haze`) and its
+  specks (`Reveal Beam Specks`) are left out. Kept: the light the beam throws on the chest, the platform and the
+  floor, and the badge's push on the mist (baked in). The badge's path for the app is in
+  `~/Downloads/Chest reveal badge path.csv`: per frame of the reveal clip, its centre (x from the left, y from
+  the top, as shares of the picture), its width as a share of the picture's width, and its turn in degrees (0 is
+  facing the viewer). It clears the chest's rim at about clip frame 84, faces front at 132 (4.4 s) and has
+  settled by about 156 (5.2 s).
+- Fire back at its own speed (`FIRE_SPEED` 1 in `v12_mood.py`).
+- Keyhole: `KEYHOLE_GLOW` 1.7 (was 1.2) in `v12_story.py`.
+- Rattles (`v12_render.py`): each lasts 30 frames (1 s; was 24) with the same shapes played a little slower, and
+  is 2, 2 and 3 times as strong (`STRONG`). The lid now lifts up to 0.9, 1.5 and 0.6 degrees. The waiting loop is
+  still 225 frames with a rattle every 75; the one rattle clip is still its first 75 frames.
+  **For the app: a rattle is over 1.0 s into each 2.5 s beat (it was 0.8 s).**
+- Sand (`v12_dust.py`): each trickle lets go within a tenth of a second and its grains fall at nearly one speed,
+  so it stays a short clump all the way to the floor (the last grain lands 2.1 s after the impact); nothing
+  fades in the air; the soft veil behind it is off (`DUST_VEIL` 0). Grains a little larger and lighter so that
+  the short clump can be seen (the first try at this was nearly invisible).
+- Start (`v12_mood.py`): dark levels and the world's dark level up 12 percent (`DARK_LIFT`).
+- Chest front (`v12_mood.py`): `Temple Chest Front`, a soft warm light low in front of the chest, on the chest
+  only, fading as the gold light comes (190 in the dark; 700 washed the wood pale). Measured on the waiting
+  picture (0 to 255): front lower half 51 to 73, front upper half 50 to 56, lid top unchanged at about 31.
+- Fifth pass rendered 2026-11-20, 2:11 to 4:10 PM (arrival 20 min, waiting 24, ending 23, reveal 49), 70 percent
+  size, 24 samples, without the badge and the beam. Checked with `temple/tools/v12_check.py`: joins 0.00 to 0.07
+  per pixel (0 to 255), the ending loop's seam 0.35 against 0.34 between two neighbouring frames, no jolt in the
+  reveal (largest change from frame to frame 3.65 against a median of 1.37). Videos, `Chest reveal key moments.png`
+  and `Chest reveal badge path.csv` are in Downloads; the fourth pass is in `Chest reveal fourth version (old)`.
