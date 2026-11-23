@@ -1,0 +1,4 @@
+# made sounds are rebuilt by the scripts in tools/
+*/*.wav
+# the owner's downloaded recordings (copies; the originals stay in Downloads, checksums in sources/checksums.txt)
+sources/*.mp3

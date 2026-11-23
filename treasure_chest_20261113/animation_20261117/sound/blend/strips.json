@@ -1,0 +1,62 @@
+{
+ "note": "pieces of the eighth try's sound for a Blender timeline; scene_frame null = the wait, which is not on the scene's timeline (kept in the file, muted, starting after the frame the chest is held on)",
+ "fps": 30,
+ "hold_frame": 49,
+ "strips": [
+  {
+   "name": "Chest lands (three drops)",
+   "file": "chest_lands.wav",
+   "channel": 1,
+   "video_frame": 44,
+   "frames": 26,
+   "scene_frame": 16,
+   "mute": false,
+   "sounds_from_video_frame": 44.48,
+   "to": 66.32
+  },
+  {
+   "name": "Lock (on the keyhole flash)",
+   "file": "lock.wav",
+   "channel": 2,
+   "video_frame": 348,
+   "frames": 21,
+   "scene_frame": 49,
+   "mute": false,
+   "sounds_from_video_frame": 349.27,
+   "to": 366.15
+  },
+  {
+   "name": "Lid opens (drawer)",
+   "file": "lid_drawer.wav",
+   "channel": 3,
+   "video_frame": 391,
+   "frames": 27,
+   "scene_frame": 92,
+   "mute": false,
+   "sounds_from_video_frame": 392.2,
+   "to": 415.09
+  },
+  {
+   "name": "Fire (fades in over half a second)",
+   "file": "fire.wav",
+   "channel": 4,
+   "video_frame": 425,
+   "frames": 435,
+   "scene_frame": 126,
+   "mute": false,
+   "sounds_from_video_frame": 426.1,
+   "to": 860.0
+  },
+  {
+   "name": "Waiting rattles (footsteps)",
+   "file": "waiting_rattles.wav",
+   "channel": 5,
+   "video_frame": 124,
+   "frames": 225,
+   "scene_frame": null,
+   "mute": true,
+   "sounds_from_video_frame": 128.35,
+   "to": 298.73
+  }
+ ]
+}

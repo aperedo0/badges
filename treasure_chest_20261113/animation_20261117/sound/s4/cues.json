@@ -1,0 +1,377 @@
+{
+ "note": "frames of Chest reveal whole scene preview.mp4 at 30 a second",
+ "rattle_contacts": {
+  "0": [
+   [
+    4.41,
+    "hasp_left",
+    3.472
+   ],
+   [
+    6.28,
+    "roll_left",
+    0.268
+   ],
+   [
+    7.53,
+    "ring_left",
+    2.145
+   ],
+   [
+    11.25,
+    "lid",
+    0.009
+   ],
+   [
+    12.53,
+    "roll_right",
+    0.144
+   ],
+   [
+    13.16,
+    "hasp_left",
+    1.277
+   ],
+   [
+    18.78,
+    "roll_left",
+    0.077
+   ],
+   [
+    21.91,
+    "hasp_left",
+    0.47
+   ],
+   [
+    22.53,
+    "ring_left",
+    0.556
+   ],
+   [
+    25.0,
+    "lid",
+    0.005
+   ],
+   [
+    25.03,
+    "roll_right",
+    0.025
+   ],
+   [
+    29.0,
+    "hasp_left",
+    0.001
+   ],
+   [
+    29.0,
+    "roll_left",
+    0.0
+   ]
+  ],
+  "1": [
+   [
+    0.0,
+    "yaw",
+    0.389
+   ],
+   [
+    5.03,
+    "hasp_left",
+    4.242
+   ],
+   [
+    7.53,
+    "ring_left",
+    3.002
+   ],
+   [
+    8.75,
+    "lid",
+    0.024
+   ],
+   [
+    10.0,
+    "hop",
+    0.001
+   ],
+   [
+    15.03,
+    "hasp_left",
+    1.353
+   ],
+   [
+    18.75,
+    "lid",
+    0.008
+   ],
+   [
+    22.53,
+    "ring_left",
+    0.778
+   ],
+   [
+    25.03,
+    "hasp_left",
+    0.259
+   ],
+   [
+    27.5,
+    "lid",
+    0.004
+   ]
+  ],
+  "2": [
+   [
+    2.5,
+    "lid",
+    0.608
+   ],
+   [
+    2.53,
+    "hasp_left",
+    8.778
+   ],
+   [
+    2.53,
+    "roll_left",
+    1.077
+   ],
+   [
+    5.0,
+    "lid",
+    0.487
+   ],
+   [
+    5.03,
+    "roll_right",
+    0.882
+   ],
+   [
+    6.28,
+    "ring_left",
+    2.588
+   ],
+   [
+    7.5,
+    "lid",
+    0.39
+   ],
+   [
+    7.53,
+    "hasp_left",
+    5.324
+   ],
+   [
+    7.53,
+    "roll_left",
+    0.722
+   ],
+   [
+    10.0,
+    "lid",
+    0.312
+   ],
+   [
+    10.03,
+    "roll_right",
+    0.591
+   ],
+   [
+    12.5,
+    "lid",
+    0.25
+   ],
+   [
+    12.53,
+    "hasp_left",
+    3.229
+   ],
+   [
+    12.53,
+    "roll_left",
+    0.484
+   ],
+   [
+    15.0,
+    "lid",
+    0.2
+   ],
+   [
+    15.03,
+    "roll_right",
+    0.396
+   ],
+   [
+    17.5,
+    "lid",
+    0.16
+   ],
+   [
+    17.53,
+    "hasp_left",
+    1.959
+   ],
+   [
+    17.53,
+    "roll_left",
+    0.324
+   ],
+   [
+    18.78,
+    "ring_left",
+    0.852
+   ],
+   [
+    20.0,
+    "lid",
+    0.128
+   ],
+   [
+    20.03,
+    "roll_right",
+    0.266
+   ],
+   [
+    22.5,
+    "lid",
+    0.102
+   ],
+   [
+    22.53,
+    "hasp_left",
+    1.169
+   ],
+   [
+    22.53,
+    "roll_left",
+    0.214
+   ],
+   [
+    25.0,
+    "lid",
+    0.052
+   ],
+   [
+    25.03,
+    "roll_right",
+    0.107
+   ],
+   [
+    27.5,
+    "lid",
+    0.009
+   ],
+   [
+    27.53,
+    "hasp_left",
+    0.082
+   ],
+   [
+    27.53,
+    "roll_left",
+    0.017
+   ],
+   [
+    29.0,
+    "lid",
+    0.0
+   ],
+   [
+    29.0,
+    "ring_left",
+    0.001
+   ],
+   [
+    29.0,
+    "roll_right",
+    0.0
+   ]
+  ]
+ },
+ "cues": [
+  {
+   "sound": "chest lands on its left corner",
+   "frame": 44.6,
+   "seconds": 1.487,
+   "level_db": -4.0
+  },
+  {
+   "sound": "side rings swing back against their mounts",
+   "frame": 46.15,
+   "seconds": 1.538,
+   "level_db": -14.7
+  },
+  {
+   "sound": "sand pours from the vault",
+   "frame": 47.0,
+   "seconds": 1.567,
+   "level_db": -36
+  },
+  {
+   "sound": "the right side comes down flat",
+   "frame": 49.6,
+   "seconds": 1.653,
+   "level_db": -5.8
+  },
+  {
+   "sound": "it rocks back and the left side comes down",
+   "frame": 60.1,
+   "seconds": 2.003,
+   "level_db": -14.9
+  },
+  {
+   "sound": "a last small settle",
+   "frame": 61.9,
+   "seconds": 2.063,
+   "level_db": -30.0
+  },
+  {
+   "sound": "sand lands on the stone",
+   "frame": 83.6,
+   "seconds": 2.787,
+   "level_db": -24
+  },
+  {
+   "sound": "rattle: a shiver",
+   "frame": 276.5,
+   "seconds": 9.217,
+   "level_db": -16.0
+  },
+  {
+   "sound": "bolt slides back",
+   "frame": 349,
+   "seconds": 11.633,
+   "level_db": -20
+  },
+  {
+   "sound": "lock clicks open",
+   "frame": 355,
+   "seconds": 11.833,
+   "level_db": -3
+  },
+  {
+   "sound": "clasp lifts",
+   "frame": 365,
+   "seconds": 12.167,
+   "level_db": -24
+  },
+  {
+   "sound": "clasp drops against the chest",
+   "frame": 373,
+   "seconds": 12.433,
+   "level_db": -6
+  },
+  {
+   "sound": "lid creaks open",
+   "frame": 389,
+   "seconds": 12.967,
+   "level_db": -13
+  },
+  {
+   "sound": "lid stops, fully open",
+   "frame": 416,
+   "seconds": 13.867,
+   "level_db": -7
+  }
+ ]
+}

@@ -1,0 +1,213 @@
+{
+ "note": "frames of Chest reveal whole scene preview.mp4 at 30 a second; sounds are the owner's recordings",
+ "sources": {
+  "fire": "u_d3475dm30o-fire-sound-222359.mp3",
+  "drop": "freesound_community-luggage-drop-1-47660.mp3",
+  "lock": "freesound_community-door-lock-43124.mp3",
+  "steps": "freesound_community-footsteps-on-wood-floor-14735.mp3",
+  "drawer": "freesound_community-drawer-41055.mp3"
+ },
+ "fire_from_seconds": 9.5,
+ "footsteps_found": 23,
+ "rattle_up_semitones": 5.0,
+ "cues": [
+  {
+   "sound": "chest lands on its left corner",
+   "frame": 44.6,
+   "seconds": 1.487,
+   "level_db": 0.0
+  },
+  {
+   "sound": "the right side comes down flat",
+   "frame": 49.6,
+   "seconds": 1.653,
+   "level_db": -4.0
+  },
+  {
+   "sound": "it rocks back and the left side comes down",
+   "frame": 60.1,
+   "seconds": 2.003,
+   "level_db": -12.0
+  },
+  {
+   "sound": "rattle 1: small footstep click (hasp)",
+   "frame": 128.41,
+   "seconds": 4.28,
+   "level_db": -16.1
+  },
+  {
+   "sound": "rattle 1: footstep (roll)",
+   "frame": 130.28,
+   "seconds": 4.343,
+   "level_db": -15.1
+  },
+  {
+   "sound": "rattle 1: small footstep click (ring)",
+   "frame": 131.53,
+   "seconds": 4.384,
+   "level_db": -16.9
+  },
+  {
+   "sound": "rattle 1: footstep (lid)",
+   "frame": 135.25,
+   "seconds": 4.508,
+   "level_db": -28.0
+  },
+  {
+   "sound": "rattle 1: footstep (roll)",
+   "frame": 136.53,
+   "seconds": 4.551,
+   "level_db": -20.5
+  },
+  {
+   "sound": "rattle 1: small footstep click (hasp)",
+   "frame": 137.16,
+   "seconds": 4.572,
+   "level_db": -24.7
+  },
+  {
+   "sound": "rattle 1: footstep (roll)",
+   "frame": 142.78,
+   "seconds": 4.759,
+   "level_db": -25.9
+  },
+  {
+   "sound": "rattle 1: small footstep click (hasp)",
+   "frame": 145.91,
+   "seconds": 4.864,
+   "level_db": -33.4
+  },
+  {
+   "sound": "rattle 1: small footstep click (ring)",
+   "frame": 146.53,
+   "seconds": 4.884,
+   "level_db": -28.6
+  },
+  {
+   "sound": "rattle 1: footstep (lid)",
+   "frame": 149.0,
+   "seconds": 4.967,
+   "level_db": -28.0
+  },
+  {
+   "sound": "rattle 1: footstep (roll)",
+   "frame": 153.0,
+   "seconds": 5.1,
+   "level_db": -33.0
+  },
+  {
+   "sound": "rattle 2: small footstep click (hasp)",
+   "frame": 204.03,
+   "seconds": 6.801,
+   "level_db": -25.3
+  },
+  {
+   "sound": "rattle 2: small footstep click (ring)",
+   "frame": 206.53,
+   "seconds": 6.884,
+   "level_db": -25.0
+  },
+  {
+   "sound": "rattle 2: footstep (hop)",
+   "frame": 209.0,
+   "seconds": 6.967,
+   "level_db": -9.0
+  },
+  {
+   "sound": "rattle 3: footstep (lid)",
+   "frame": 276.5,
+   "seconds": 9.217,
+   "level_db": -16.0
+  },
+  {
+   "sound": "rattle 3: small footstep click (hasp)",
+   "frame": 276.5,
+   "seconds": 9.217,
+   "level_db": -26.0
+  },
+  {
+   "sound": "rattle 3: footstep (lid)",
+   "frame": 279.0,
+   "seconds": 9.3,
+   "level_db": -17.9
+  },
+  {
+   "sound": "rattle 3: small footstep click (ring)",
+   "frame": 280.28,
+   "seconds": 9.343,
+   "level_db": -33.3
+  },
+  {
+   "sound": "rattle 3: footstep (lid)",
+   "frame": 281.5,
+   "seconds": 9.383,
+   "level_db": -19.9
+  },
+  {
+   "sound": "rattle 3: small footstep click (hasp)",
+   "frame": 281.5,
+   "seconds": 9.383,
+   "level_db": -30.3
+  },
+  {
+   "sound": "rattle 3: footstep (lid)",
+   "frame": 284.0,
+   "seconds": 9.467,
+   "level_db": -21.8
+  },
+  {
+   "sound": "rattle 3: footstep (lid)",
+   "frame": 286.5,
+   "seconds": 9.55,
+   "level_db": -23.7
+  },
+  {
+   "sound": "rattle 3: small footstep click (hasp)",
+   "frame": 286.5,
+   "seconds": 9.55,
+   "level_db": -34.7
+  },
+  {
+   "sound": "rattle 3: footstep (lid)",
+   "frame": 289.0,
+   "seconds": 9.633,
+   "level_db": -25.7
+  },
+  {
+   "sound": "rattle 3: footstep (lid)",
+   "frame": 291.5,
+   "seconds": 9.717,
+   "level_db": -27.6
+  },
+  {
+   "sound": "rattle 3: footstep (lid)",
+   "frame": 294.0,
+   "seconds": 9.8,
+   "level_db": -29.5
+  },
+  {
+   "sound": "rattle 3: footstep (lid)",
+   "frame": 296.5,
+   "seconds": 9.883,
+   "level_db": -31.5
+  },
+  {
+   "sound": "door lock",
+   "frame": 355,
+   "seconds": 11.833,
+   "level_db": 0.0
+  },
+  {
+   "sound": "lid opens (drawer)",
+   "frame": 393,
+   "seconds": 13.1,
+   "level_db": 0.0
+  },
+  {
+   "sound": "fire comes on (over half a second)",
+   "frame": 425,
+   "seconds": 14.167,
+   "level_db": 0.0
+  }
+ ]
+}

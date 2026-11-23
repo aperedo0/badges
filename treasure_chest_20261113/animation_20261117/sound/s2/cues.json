@@ -1,0 +1,65 @@
+{
+ "note": "frames of Chest reveal whole scene preview.mp4 at 30 a second",
+ "cues": [
+  {
+   "sound": "chest lands, first corner",
+   "frame": 45,
+   "seconds": 1.5
+  },
+  {
+   "sound": "side rings knock against their mounts",
+   "frame": 46.55,
+   "seconds": 1.552
+  },
+  {
+   "sound": "sand pours from the vault",
+   "frame": 47.4,
+   "seconds": 1.58
+  },
+  {
+   "sound": "the other side comes down",
+   "frame": 49,
+   "seconds": 1.633
+  },
+  {
+   "sound": "it rocks and settles",
+   "frame": 60,
+   "seconds": 2.0
+  },
+  {
+   "sound": "sand lands on the stone",
+   "frame": 84.0,
+   "seconds": 2.8
+  },
+  {
+   "sound": "bolt slides back",
+   "frame": 349,
+   "seconds": 11.633
+  },
+  {
+   "sound": "lock clicks open",
+   "frame": 355,
+   "seconds": 11.833
+  },
+  {
+   "sound": "clasp lifts",
+   "frame": 365,
+   "seconds": 12.167
+  },
+  {
+   "sound": "clasp drops against the chest",
+   "frame": 373,
+   "seconds": 12.433
+  },
+  {
+   "sound": "lid creaks open",
+   "frame": 389,
+   "seconds": 12.967
+  },
+  {
+   "sound": "lid stops, fully open",
+   "frame": 416,
+   "seconds": 13.867
+  }
+ ]
+}

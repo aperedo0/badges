@@ -1,0 +1,7 @@
+# The owner's downloads (Nov 21 2026), copied byte for byte from ~/Downloads into this folder. SHA 256, checked
+# again after the sixth try: unchanged. Source: Pixabay (file names as downloaded).
+625d90cea78f379775d917d1e5ca23070191f1ac7d9a92df87427c90ceb78f15  freesound_community-footsteps-on-wood-floor-14735.mp3
+c58817b08274dea082b7710867dd88e80fba4241a797a00fc915f4201fc96e26  freesound_community-door-lock-43124.mp3
+3d4d4eb6fe8140440878fd9b17d3a94dc3000caeceeedcaa10d36e7ef9e4c1fc  freesound_community-luggage-drop-1-47660.mp3
+11913632029169463b3e74ac8195408ee710e0eeab6294be063362a27482f829  u_d3475dm30o-fire-sound-222359.mp3
+58c42e8355aadc86f7d86d87be5d0ecfa11817da6e498c839bfadb942596536b  freesound_community-drawer-41055.mp3

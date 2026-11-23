@@ -1,0 +1,135 @@
+{
+ "note": "frames of Chest reveal whole scene preview.mp4 at 30 a second",
+ "cues": [
+  {
+   "sound": "keyhole glow breathes",
+   "frame": 0,
+   "seconds": 0.0
+  },
+  {
+   "sound": "air rushing past the falling chest",
+   "frame": 31.5,
+   "seconds": 1.05
+  },
+  {
+   "sound": "chest lands, first corner",
+   "frame": 45,
+   "seconds": 1.5
+  },
+  {
+   "sound": "sand lets go high up",
+   "frame": 46.5,
+   "seconds": 1.55
+  },
+  {
+   "sound": "side rings swing and knock",
+   "frame": 47.22,
+   "seconds": 1.574
+  },
+  {
+   "sound": "the other side comes down",
+   "frame": 49,
+   "seconds": 1.633
+  },
+  {
+   "sound": "it rocks and settles",
+   "frame": 60,
+   "seconds": 2.0
+  },
+  {
+   "sound": "sand lands on the stone",
+   "frame": 84.0,
+   "seconds": 2.8
+  },
+  {
+   "sound": "rattle: two knocks",
+   "frame": 135.25,
+   "seconds": 4.508
+  },
+  {
+   "sound": "rattle: one hard jolt",
+   "frame": 209.0,
+   "seconds": 6.967
+  },
+  {
+   "sound": "rattle: a shiver",
+   "frame": 275.25,
+   "seconds": 9.175
+  },
+  {
+   "sound": "bolt slides",
+   "frame": 349,
+   "seconds": 11.633
+  },
+  {
+   "sound": "lock clicks open",
+   "frame": 355,
+   "seconds": 11.833
+  },
+  {
+   "sound": "clasp lifts",
+   "frame": 365,
+   "seconds": 12.167
+  },
+  {
+   "sound": "clasp falls back",
+   "frame": 373,
+   "seconds": 12.433
+  },
+  {
+   "sound": "cold light bursts out",
+   "frame": 387,
+   "seconds": 12.9
+  },
+  {
+   "sound": "lid creaks open",
+   "frame": 389,
+   "seconds": 12.967
+  },
+  {
+   "sound": "smoke rushes out and rises",
+   "frame": 393,
+   "seconds": 13.1
+  },
+  {
+   "sound": "lid stops, fully open",
+   "frame": 416,
+   "seconds": 13.867
+  },
+  {
+   "sound": "warm swell as the gold light rises",
+   "frame": 421,
+   "seconds": 14.033
+  },
+  {
+   "sound": "torch pair 1 catches",
+   "frame": 425,
+   "seconds": 14.167
+  },
+  {
+   "sound": "torch pair 2 catches",
+   "frame": 440,
+   "seconds": 14.667
+  },
+  {
+   "sound": "torch pair 3 catches",
+   "frame": 455,
+   "seconds": 15.167
+  },
+  {
+   "sound": "torch pair 4 catches",
+   "frame": 470,
+   "seconds": 15.667
+  },
+  {
+   "sound": "torch pair 5 catches",
+   "frame": 485,
+   "seconds": 16.167
+  },
+  {
+   "sound": "torch pair 6 catches",
+   "frame": 500,
+   "seconds": 16.667
+  }
+ ]
+}

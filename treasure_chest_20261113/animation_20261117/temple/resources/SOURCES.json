@@ -161,5 +161,35 @@
       }
     },
     "date": "2026-11-19"
+  },
+  {
+    "key": "polyhaven_rough_wood",
+    "asset": "Rough Wood",
+    "type": "texture",
+    "source": "Poly Haven",
+    "page": "https://polyhaven.com/a/rough_wood",
+    "authors": [
+      "Rob Tuytel"
+    ],
+    "license": "CC0 1.0",
+    "license_url": "https://polyhaven.com/license",
+    "api": "https://polyhaven.com/our-api",
+    "resolution": "2k",
+    "note": "first try of the great door's planks (2026-11-22), tinted brown; turned down by the owner (cheap looking). Not used since the second round, which uses the chest's own plank maps. Copied from phase04/wood_lab/resources/rough_wood",
+    "files": {
+      "rough_wood_diff_2k.jpg": {
+        "url": "https://dl.polyhaven.org/file/ph-assets/Textures/jpg/2k/rough_wood/rough_wood_diff_2k.jpg",
+        "sha256": "0bd2b3195db9b54d55aa0f842801220ec5e1d389f5fc1e670b378bdaca3f8e7b"
+      },
+      "rough_wood_rough_2k.jpg": {
+        "url": "https://dl.polyhaven.org/file/ph-assets/Textures/jpg/2k/rough_wood/rough_wood_rough_2k.jpg",
+        "sha256": "38343cb062e7fadcda513ded0b17271c9d7f1da56765d03508dc84c8ff1bd475"
+      },
+      "rough_wood_disp_2k.png": {
+        "url": "https://dl.polyhaven.org/file/ph-assets/Textures/png/2k/rough_wood/rough_wood_disp_2k.png",
+        "sha256": "11e031984e27ff58fa07b404e33ac9882b95f69b4686b7c8d352ff6f4bd4da2b"
+      }
+    },
+    "date": "2026-11-22"
   }
 ]

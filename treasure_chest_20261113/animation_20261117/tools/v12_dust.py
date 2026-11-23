@@ -69,25 +69,57 @@ ps = n.sep(p)
 tv = n.node("ShaderNodeValue", label="fall time")
 drive(tv.outputs[0], "t", t='["dustfall"]')
 oi = n.node("ShaderNodeObjectInfo")
-t = n.math("MAXIMUM", n.math("SUBTRACT", tv.outputs[0], 0.12), 0.0)
-fallen = n.math("MULTIPLY", n.math("SUBTRACT", 1.0, n.math("EXPONENT", n.math("MULTIPLY", t, -1.0 / 1.2))), G("CLOUD_FALL", 34.0))
-zh = n.math("SUBTRACT", ZC, fallen)                                  # the plume's lower end
-length = n.math("ADD", 6.0, n.math("MULTIPLY", t, 8.0))
-lo = n.node("ShaderNodeMapRange", ins={0: n.math("SUBTRACT", ps[2], zh), 1: -1.5, 2: 1.5, 3: 0.0, 4: 1.0}, interpolation_type="SMOOTHSTEP")
-hi = n.node("ShaderNodeMapRange", ins={0: n.math("SUBTRACT", n.math("SUBTRACT", ps[2], zh), length), 1: -4.0, 2: 0.0, 3: 1.0, 4: 0.0},
+# A soft curtain of dust with fine upright strands and no separate grains, after the owner's reference picture
+# of 2026-11-21 ("I want it more like this"). The owner picked it from the examples sheet on 2026-11-21 (example 1)
+# and asked for no render yet. Its look (colour, softness, strands, strength) is unchanged since.
+#
+# How it comes down (owner, 2026-11-22, with a clip of the first version's falling dust: "I want it to look and come
+# down like it looks in this short clip. I don't want you to change the light or anything ... where it like comes
+# down and then slowly disperses away, because I would imagine that real sand would kind of disperse"). Measured in
+# that clip: the dust shows about 0.2 s after the landing at the top of the picture, comes down slowly at about an
+# eighth of the picture's height a second as a clump about a tenth of the picture tall, is strongest about 0.7 s
+# after the landing, fades from there and is gone by about 2.4 s, a third of the way down the picture; it never
+# reaches the floor. So here it is let go with a short push out of the opening that the air soon takes out of it
+# (VEIL_V0 slowing to VEIL_SPEED), then drifts down slowly while it spreads: it grows longer (VEIL_STRETCH) and wider
+# (VEIL_SPREAD), thinning as it spreads (the same dust over more air), and breaks into finer strands, until it is
+# gone 2.5 s after the landing (END_T), before the arrival clip ends at 2.6 s. In the picture it covers about the
+# top third, as in the clip. Checked with the same sums against the clip (not rendered; the owner asked for no
+# render yet): how strong it is over time stays within about a tenth of the clip's. Before this it fell at 42 units
+# a second to the floor without fading.
+t = n.math("MAXIMUM", n.math("SUBTRACT", tv.outputs[0], 0.1), 0.0)
+V0, VT, LAG = G("VEIL_V0", 40.0), G("VEIL_SPEED", 8.5), 0.2            # units a second: let go, then drifting
+fallen = n.math("ADD", n.math("MULTIPLY", t, VT),
+                n.math("MULTIPLY", (V0 - VT) * LAG, n.math("SUBTRACT", 1.0, n.math("EXPONENT", n.math("MULTIPLY", t, -1.0 / LAG)))))
+L0 = G("VEIL_LENGTH", 7.5)
+length = n.math("ADD", L0, n.math("MULTIPLY", n.math("MAXIMUM", n.math("SUBTRACT", t, 0.3), 0.0), G("VEIL_STRETCH", 1.4)))
+# the curtain's lower end: it falls with the dust and stretches both ways about its middle
+zh = n.math("SUBTRACT", n.math("SUBTRACT", ZC, fallen), n.math("MULTIPLY", n.math("SUBTRACT", length, L0), 0.5))
+u = n.math("MULTIPLY", n.math("SUBTRACT", ps[2], zh), n.math("DIVIDE", L0, length))   # height in the curtain, stretched back to its first length
+lo = n.node("ShaderNodeMapRange", ins={0: u, 1: -0.5, 2: 3.0, 3: 0.0, 4: 1.0}, interpolation_type="SMOOTHSTEP")
+hi = n.node("ShaderNodeMapRange", ins={0: n.math("SUBTRACT", u, L0), 1: -4.5, 2: 0.0, 3: 1.0, 4: 0.0},
             interpolation_type="SMOOTHSTEP")
 band = n.math("MULTIPLY", lo.outputs[0], hi.outputs[0])
-sig = n.math("ADD", 0.7, n.math("MULTIPLY", t, 0.5))                  # it spreads as it comes down
+S0 = G("VEIL_WIDTH", 1.15)
+sig = n.math("ADD", S0, n.math("MULTIPLY", t, G("VEIL_SPREAD", 0.35)))
 rr = n.math("DIVIDE", n.math("SQRT", n.math("ADD", n.math("MULTIPLY", ps[0], ps[0]), n.math("MULTIPLY", ps[1], ps[1]))), sig)
 radial = n.math("EXPONENT", n.math("MULTIPLY", n.math("MULTIPLY", rr, rr), -1.0))
-# fine veils that hang long and thin, and travel down with the dust
-adv = n.comb(n.math("MULTIPLY", ps[0], 1.1), n.math("ADD", n.math("MULTIPLY", ps[1], 1.1), n.math("MULTIPLY", oi.outputs["Random"], 9.0)),
-             n.math("MULTIPLY", n.math("ADD", ps[2], n.math("MULTIPLY", fallen, 0.8)), 0.09))
-nz = n.node("ShaderNodeTexNoise", ins={"Vector": adv, "W": n.math("MULTIPLY", t, 0.35), "Scale": 1.0, "Detail": 4.0, "Roughness": 0.6,
-                                      "Distortion": 0.5}, noise_dimensions="4D")
-wisp = n.ramp(nz.outputs["Fac"], (0.3, 0.75), interp="SMOOTH")
-amp = n.math("MULTIPLY", n.ramp(t, (0.0, 0.25), interp="SMOOTH"), n.math("SUBTRACT", 1.0, n.ramp(t, (1.3, END_T - 0.15), interp="SMOOTH")))
-dens = n.math("MULTIPLY", n.math("MULTIPLY", n.math("MULTIPLY", radial, band), n.math("MULTIPLY", wisp, amp)), G("DUST_CLOUD", 0.007))
+# the same dust spread over more air: longer, and wider both ways across
+thin = n.math("MULTIPLY", n.math("DIVIDE", L0, length), n.math("POWER", n.math("DIVIDE", S0, sig), 2.0))
+# fine upright strands that travel down and stretch with the dust, breaking up finer as it disperses
+adv = n.comb(n.math("MULTIPLY", ps[0], 1.7), n.math("ADD", n.math("MULTIPLY", ps[1], 1.7), n.math("MULTIPLY", oi.outputs["Random"], 9.0)),
+             n.math("MULTIPLY", n.math("ADD", u, ZC), 0.1))
+nz = n.node("ShaderNodeTexNoise", ins={"Vector": adv, "W": n.math("MULTIPLY", t, 0.25), "Scale": 1.0, "Detail": 3.0, "Roughness": 0.55,
+                                      "Distortion": 0.3}, noise_dimensions="4D")
+brk = n.ramp(t, (0.5, 2.4), interp="SMOOTH")
+wisp = n.node("ShaderNodeMapRange", ins={0: nz.outputs["Fac"], 1: n.math("ADD", 0.28, n.math("MULTIPLY", brk, 0.1)),
+                                         2: n.math("ADD", 0.72, n.math("MULTIPLY", brk, 0.04)), 3: 0.0, 4: 1.0},
+              interpolation_type="SMOOTHSTEP").outputs[0]
+# It builds up over about half a second as it pours out (strongest about 0.7 s after the landing, as in the clip)
+# and the last of it thins away in the air, gone 2.5 s after the landing (t here starts 0.1 s after it).
+FADE = G("VEIL_FADE", (1.3, 2.4))
+amp = n.math("MULTIPLY", n.ramp(t, (0.0, G("VEIL_IN", 0.6)), interp="SMOOTH"), n.math("SUBTRACT", 1.0, n.ramp(t, FADE, interp="SMOOTH")))
+dens = n.math("MULTIPLY", n.math("MULTIPLY", n.math("MULTIPLY", radial, band), n.math("MULTIPLY", wisp, amp)),
+              n.math("MULTIPLY", thin, G("DUST_CLOUD", 0.012)))
 vol = n.node("ShaderNodeVolumePrincipled", ins={"Color": G("DUST_COLOR", (0.62, 0.58, 0.52, 1)), "Density": dens, "Anisotropy": 0.35})
 om = n.node("ShaderNodeOutputMaterial")
 n.link(vol.outputs[0], om.inputs["Volume"])
@@ -108,7 +140,11 @@ mx = n.node("ShaderNodeMixShader", ins={0: 0.5, 1: df.outputs[0], 2: tr.outputs[
 # The grains only ever exist inside the two shafts, in the dark part of the story.
 em = n.node("ShaderNodeEmission", ins={"Color": (0.56, 0.55, 0.53, 1), "Strength": G("GRIT_SHINE", 0.13)})
 ad = n.node("ShaderNodeAddShader", ins={0: mx.outputs[0], 1: em.outputs[0]})
-n.out(ad.outputs[0])
+# how see through each grain is: 1 = solid, as approved in the fifth pass. Options only, through
+# temple/tools/look_options.py; nothing here changes until the owner picks one.
+tp = n.node("ShaderNodeBsdfTransparent")
+op = n.node("ShaderNodeMixShader", ins={0: G("SAND_OPACITY", 1.0), 1: tp.outputs[0], 2: ad.outputs[0]})
+n.out(op.outputs[0])
 
 ng = bpy.data.node_groups.get("Temple Dust Grit")
 if ng is None:
@@ -183,7 +219,7 @@ for nm, x, y in SHAFTS:
     V = [(-R, -R, FLOOR), (R, -R, FLOOR), (R, R, FLOOR), (-R, R, FLOOR), (-R, -R, zt), (R, -R, zt), (R, R, zt), (-R, R, zt)]
     F = [(0, 3, 2, 1), (4, 5, 6, 7), (0, 1, 5, 4), (1, 2, 6, 5), (2, 3, 7, 6), (3, 0, 4, 7)]
     co = put("Temple Dust Cloud " + nm, mesh_from("Temple Dust Cloud " + nm, V, F), SC, [cm], root)
-    co.hide_render = G("DUST_VEIL", 0) <= 0        # the soft veil behind the sand is off: it came down and faded in the air
+    co.hide_render = G("DUST_VEIL", 1) <= 0        # the soft curtain is the sand (owner's pick, 2026-11-21: "go with the soft curtain")
     co.location = (x, y, 0.0)
     co.visible_shadow = False
     co.display_type = "WIRE"
@@ -201,13 +237,13 @@ for nm, x, y in SHAFTS:
         # little bit of sand, very short ... looks like it comes like almost all the way down"): each trickle lets
         # go within a tenth of a second and its grains fall at nearly one speed, so it stays a short clump, a few
         # units long, all the way to the floor (the last grain lands 2.1 s after the impact).
-        start, dur = rng.uniform(0.03, 0.15), rng.uniform(0.05, 0.10)
-        wide, v0 = rng.uniform(0.05, 0.12), rng.uniform(47.0, 57.0)
+        start, dur = rng.uniform(0.03, 0.15), rng.uniform(*G("SAND_DUR", (0.05, 0.10)))
+        wide, v0 = rng.uniform(0.05, 0.12) * G("SAND_WIDE", 1.0), rng.uniform(47.0, 57.0)
         for _ in range(int(G("DUST_GRAINS", 230) * rng.uniform(0.4, 1.2))):
             pts.append((x + cx_ + rng.gauss(0, wide), y + cy_ + rng.gauss(0, wide), ZC))
             a_t0.append(start + dur * rng.random() ** 1.3)
             a_vt.append(v0 * rng.uniform(0.96, 1.04))
-            a_size.append(rng.uniform(0.008, 0.017))
+            a_size.append(rng.uniform(*G("SAND_SIZES", (0.008, 0.017))))
             a_drift += [rng.gauss(0, 0.1), rng.gauss(0, 0.1), 0.0]
     me = bpy.data.meshes.new("Temple Dust Grit " + nm)
     me.from_pydata(pts, [], [])
@@ -218,6 +254,7 @@ for nm, x, y in SHAFTS:
     md = go.modifiers.get("Grit") or go.modifiers.new("Grit", "NODES")
     md.node_group = ng
     go.visible_shadow = False
+    go.hide_render = G("SAND_GRAINS", 0) <= 0      # the separate grains are off (kept in the file)
     if go.name not in RECV.objects:
         RECV.objects.link(go)
 bpy.context.view_layer.update()

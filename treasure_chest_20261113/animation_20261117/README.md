@@ -876,3 +876,397 @@ What changed:
   per pixel (0 to 255), the ending loop's seam 0.35 against 0.34 between two neighbouring frames, no jolt in the
   reveal (largest change from frame to frame 3.65 against a median of 1.37). Videos, `Chest reveal key moments.png`
   and `Chest reveal badge path.csv` are in Downloads; the fourth pass is in `Chest reveal fourth version (old)`.
+
+### Falling sand options (2026-11-21)
+
+Owner: "more options, and the opacity should be like 60% of what it is now", then "I am talking about the falling
+sand btw, and the more uniform same thing falling sand. Unless I say other wise i am talking about the same."
+`v12_dust.py` now has `SAND_OPACITY` (0.6; each grain is that see through), `SAND_SIZES`, `SAND_WIDE` and
+`SAND_DUR`. `temple/tools/look_options.py` (run before `tools/v12_render.py` with `OPT_SAND=NOW|A|B|C|D`, nothing
+saved) renders the options: A opacity only; B grains all one size; C finer grains, five trickles; D one even fine
+spill of about 1,900 very fine grains. Sheet: `~/Downloads/Chest sand options.png`. Waiting for the owner's pick;
+the saved scene has the opacity at 0.6 and otherwise the sand of the fifth pass.
+- The owner then sent a picture (a dark screenshot; with the contrast stretched it shows a soft curtain of dust
+  with fine upright strands and no separate grains): "I want it more like this". **Mistake:** I put that soft
+  curtain into the saved scene and started rendering the arrival again. The owner had asked for examples only:
+  "no no no don't change it, only show me examples ... when did i approve that". The render was stopped before it
+  wrote any video, and the scene's sand is back to the fifth pass exactly (separate grains, solid, no curtain:
+  `SAND_OPACITY` 1, `DUST_VEIL` 0, `SAND_GRAINS` 1). The soft curtain exists only as an option in
+  `v12_dust.py` and `temple/tools/look_options.py` (`OPT_SAND=S1..S5`, nothing saved). Examples sheet:
+  `~/Downloads/Chest sand examples.png` (the owner's picture, the sand as it is, five soft examples). No pick yet.
+  The arrival's frames in `render/v12_frames/arrival` were rendered again from the unchanged scene on 2026-11-21
+  (the first set was deleted by the mistaken render); the videos in Downloads are the fifth pass, untouched.
+- 2026-11-21, later: the owner picked the soft curtain ("go with the soft curtain but dont render it. because maybe
+  we will make more changes to the scene"). The saved scene now has it (`DUST_VEIL` 1, `SAND_GRAINS` 0,
+  `DUST_CLOUD` 0.012 in `v12_dust.py`); **nothing has been rendered with it**: the videos in Downloads still show
+  the grains of the fifth pass, and `render/v12_frames/arrival` is empty (the next render makes it).
+- The owner asked "can you add noise to the scene?". Examples only so far: `~/Downloads/Chest noise examples.png`
+  (none, light 4, medium 8, strong 13 of 255, added to finished frames in a picture editor, not in Blender).
+  Not in the scene; waiting for their pick and for where it should be added (in the videos or by the app).
+- 2026-11-22: the owner sent a clip (frames 33 to 134 of `~/Downloads/Chest reveal first version (old)/Chest reveal
+  whole scene preview.mp4`, matched exactly): "I want it to look and come down like it looks in this short clip. I
+  don't want you to change the light or anything. I think the smoke should already look like this in the clip. I
+  just want it to come down like that, you know, where it like comes down and then slowly disperses away, because I
+  would imagine that real sand would kind of disperse ... you're going to change the scene, but you're not going to
+  re-render it yet." Measured in that clip (the first version's six cards): the dust shows about 0.2 s after the
+  landing at the top of the picture, comes down at about an eighth of the picture's height a second as a clump about
+  a tenth of the picture tall, is strongest about 0.7 s after the landing, then thins (0.84 of its strongest at 1 s,
+  0.51 at 1.67 s, 0.19 at 2.2 s) and is gone by about 2.4 s, a third of the way down; it never reaches the floor.
+  The soft curtain keeps its look (colour, softness, strands, strength) and the light is untouched; only how it
+  comes down changed (`v12_dust.py`): a short push out of the opening that the air soon takes out of it, then a slow
+  drift (`VEIL_V0` 40 slowing to `VEIL_SPEED` 8.5 units a second), growing longer (`VEIL_STRETCH` 1.4) and wider
+  (`VEIL_SPREAD` 0.35) and thinner as it spreads, breaking into finer strands, building up over 0.6 s (`VEIL_IN`) and
+  thinning away from 1.4 to 2.5 s after the landing (`VEIL_FADE`). Before this it fell at 42 units a second to the
+  floor without fading. Checked with the same sums mapped through the camera (a check render was not made, as the
+  owner asked for no render): it covers the top third of the picture (left shaft from the top edge to about a
+  quarter down, right shaft from 5 to 33 percent) and its strength over time stays within about a tenth of the
+  clip's. Saved in `chest_reveal_v12_full.blend` (the state before is in the `.blend1`). **Nothing has been
+  rendered with it.**
+
+### Sound, first try (2026-11-21)
+
+The owner asked whether sounds could be made rather than downloaded, then: "Make the sounds, find the last export
+of the video and add them on top ... I'll hear what you got and then we'll take it from there ... we can work
+through time, or would be better to just download." Every sound is made from scratch in code
+(`sound/tools/s1_make_sounds.py`; numpy and scipy, about 4 seconds), no recordings. The script writes
+`sound/s1/mix.wav`, one file per group (`stem_*.wav`; the wav files are not in Git, the script rebuilds them the
+same every time) and `sound/s1/cues.json` (26 cues with their frames). The mix was laid under the last export,
+`~/Downloads/Chest reveal whole scene preview.mp4` (fifth pass), as a new file
+`~/Downloads/Chest reveal whole scene preview with sound.mp4`: the picture is copied, not rendered again
+(its picture checksum matches the original's), and the original is untouched.
+
+Timing was measured on that video (chest corner lands frame 45, other side 49, settles 60; lock 355; clasp 373;
+lid 389 to 416) and taken from the scene's keys for the rest (torch pairs 425 + 15 each; gold 421 to 537; the cold
+burst peaks 413). Sounds: hall rumble and draft throughout; air rushing past the falling chest; two heavy wood and
+iron impacts and a settle; the side rings knocking; sand letting go high up and landing; three rattles (wood
+knocks of the lid, the hasp, the rings) matching the rattle shapes; a faint airy tone that breathes with the
+keyhole glow and flares at the click; bolt, click, clasp; the lid's creak (stick and slip through wood and hinge
+resonances) and its stop; the cold light bursting out; smoke rushing out; each torch pair catching and then
+burning (roar and crackle, farther pairs quieter and duller); a low open chord of D swelling with the gold light.
+All of it goes through a made stone hall reverb about 3 seconds long. Loudness (0 to minus, dB): empty temple
+about 49 below full, chest landing 15 (its peak 1.6), waiting 28, lock and lid 23, torches 26, ending 30.
+Not judged by ear: nothing here has been listened to by me.
+- Second try (`sound/tools/s2_make_sounds.py`, output `sound/s2/`, video
+  `~/Downloads/Chest reveal whole scene preview with sound 2.mp4`, picture checksum identical to the original).
+  The owner: "there's a sound that I think that's just in the background. I want those sounds removed. I only want
+  sounds for, like, the chest opening, falling every time it hits the floor, the smoke that comes down [the sand],
+  pretty much just those ... they sound a little too cartoony ... I want like a realistic direction."
+  Kept: the chest's contacts with the floor (45, 49, 60, 62.5) with the side rings knocking, the sand pouring and
+  landing, the bolt, the lock, the clasp, the lid's creak and its stop. Removed: hall rumble and draft, the keyhole
+  tone, the air rush of the fall, the cold burst, the smoke rising from the chest, the torches, the warm swell, and
+  the rattles (not in the owner's list; asked). Realism: every hit is a short rough contact striking dozens of
+  closely packed, heavily damped resonances (wood, iron, stone) instead of a few clean tones; the low end is a thump
+  of noise, not a falling tone; a box landing on a corner makes two or three contacts milliseconds apart; the lid
+  creak is an iron hinge sticking and slipping in bursts and shaking the lid, with no narrow singing resonance; the
+  clasp lifting is a short scrape, not a sliding tone. Measured: the share of a hit's energy in its 20 strongest
+  single frequencies fell from 97 to 76 percent for the lock click and from 97 to 80 for the clasp.
+- Third try (`sound/tools/s3_make_sounds.py`, output `sound/s3/`, video
+  `~/Downloads/Chest reveal whole scene preview with sound 3.mp4`, picture checksum identical). The owner: sounds
+  for the three idle rattles too; "the thud in the beginning doesn't sound accurate ... the second thud doesn't
+  really sound like it's there"; "you went the right direction, but I want more realism".
+  - Landing timed from the scene (lowest corner of each side every quarter frame): left corner at video frame 44.6
+    (44 units a second), right side flat at 49.6 (23), left side back down at 60.1 (8), last settle at 61.9. In the
+    second try the second thud was 5 dB too quiet and too like the first. Now: first peak 1.0 dB below full, second
+    1.9 below (fuller and lower, a whole side at once), third 12.8 below.
+  - Rattles: contacts found from `rattle()` as rendered (copied into the script): lid drops, edges landing as it
+    rocks, the hop, a short scrape when it twists, hasp and side rings swinging back. Strength follows speed within
+    a rattle; the three rattles set about equally noticeable (`KIND_DB`; the first moves slowest). Peaks about 15,
+    11 and 12 dB below full.
+  - Realism: the hollow box's air resonance in every knock on the chest, loose planks and straps chattering after
+    hard hits, faster hits shorter and brighter, a short bright click from the stone floor, slight density
+    (`tanh`), and a room built from the hall's size and surfaces (first echoes at their true delays up to three
+    bounces, then the stone tail), with each sound placed where it happens and heard from the camera.
+- Fourth try (`sound/tools/s4_make_sounds.py`, output `sound/s4/`, video
+  `~/Downloads/Chest reveal whole scene preview with sound 4.mp4`, picture checksum identical). The owner: "I want
+  them to sound more light/light hearted without sounding fake, still very real." The third try made lighter: the
+  deep thump about a third as strong and nothing below 75 Hz; wood a little higher and crisper, the hollow box
+  sound higher (235 Hz) and softer; metal a touch longer and brighter, clinks 3 dB more present; the big landing
+  4 dB lower against the rest; a drier hall (tail about 1.3 s, was 2.6; 6 dB less of it); a shorter, higher,
+  softer lid creak; no added density. Measured: below 200 Hz the landing went from 96 to 81 percent of its sound
+  and the opening from 19 to 6; the lid stop's echo falls 30 dB in 0.52 s (was 0.98). Thuds: first peak 1.0 dB
+  below full, second 4.3 below (kept clearly there), third 11.6 below.
+- Fifth try (`sound/tools/s5_make_sounds.py`, output `sound/s5/` with a torches stem, video
+  `~/Downloads/Chest reveal whole scene preview with sound 5.mp4`, picture checksum identical). The owner: "they
+  sound like this like deep metal. They really should sound like wood. Like the drops should sound like wood
+  hitting wood. I don't need a creak sound for when the chest opens, just a quick unlock, you know, when the latch
+  opens. And then I want to hear the fire, when the fires go on, I want to hear them turn on."
+  - Wood: every knock is a wooden body made as noise in thirds of an octave, each band dying at
+    tau = 1 / (pi f eta) with eta about 0.03 (wood), plus a few heavily damped low board resonances. Below about
+    250 Hz a box this size barely radiates and its joints damp it, so the low end is weaker and shorter. The landing
+    excites the chest and a wooden floor, led by a hard first touch for the crisp knock. Iron straps, the stone
+    floor's ring and the side ring clinks after the landing are gone; the latch and rings in the rattles are light
+    wooden ticks with a brief click. Measured dry against the fourth try: the landing's sound sits at about 280 Hz in
+    the middle (was 166), ringing tones 3 to 15 dB weaker (now close to plain noise), 4 dB less left after 0.1 s.
+  - The hall's first echoes are short scattered bursts, not single clicks (those comb filtered into a metallic,
+    tube like colour).
+  - Opening: only the lock click when the keyhole flashes (frame 355) and the latch flipping up with a light clack
+    (frame 373). No bolt scrape, no creak, no knock when the lid stops.
+  - Torches: at frames 425 + 15 per pair (when each pair's flame shows), a soft whump, a rush as the flame climbs, a
+    burst of crackles, then a quiet steady burn to the end. Each torch is placed where it stands: the far pairs come
+    later (up to 80 ms), quieter and more echoey.
+  - Levels (mix, against full): landing peak 2.7 below in the middle of the two ears (1.0 in one), second thud 5.7,
+    third 15.2; rattles about 31 loudness; lock and latch peaks 6.6; first torches peak 10.3, last 16.3; the steady
+    burn about 46 loudness.
+- Sixth try: the owner's own downloaded recordings (`sound/tools/s6_use_downloads.py`, output `sound/s6/`, video
+  `~/Downloads/Chest reveal whole scene preview with sound 6.mp4`, picture checksum identical). Four Pixabay files
+  the owner downloaded: fire, luggage drop, door lock, footsteps on a wood floor. The owner: keep the downloads
+  "pristine because we're going to work off of those"; copies are in `sound/sources/` (not in Git) with their
+  checksums in `sound/sources/checksums.txt`, checked unchanged in Downloads afterwards. The script only decodes
+  them; every change is made to the decoded sound in memory.
+  - Drops: the luggage drop on the three landings (frames 44.6, 49.6, 60.1): full, 4 dB softer and pitched a hair
+    lower, 12 dB softer with less crack and pitched a hair higher; each cut off with a short fade before the next
+    lands; the handling noise before the hit left out. The fourth, tiny settle at 61.9 has no sound.
+  - Lock: the door lock once, the key turn included, its clack on the keyhole's flash (frame 355).
+  - Rattles: one footstep per knock found in the rattle motion (23 steps cut from the recording, never the same
+    twice in a row): wood knocks as the step itself (the jolt 2 semitones lower, rocking 1 lower, the shiver's taps
+    shorter and 2 higher); metal knocks (the gold latch, the side rings) as a step made 5 to 7 semitones higher,
+    shorter and with its low end removed, so only a click is left. Knocks more than 20 dB under a rattle's
+    strongest are left out. Each rattle's strongest knock is 8 dB under the first landing (loudness over 50 ms).
+  - Fire: one sound for all torches, from 9.5 s into the recording, faded in over half a second as the first pair
+    lights (frames 425 to 440), then on to the end; its deep rumble below 80 Hz (half its energy was below 64 Hz) is
+    left out; about 17 dB under the first landing.
+  - Everything else is gone (sand, latch, all made sounds). A light touch of the hall's echo on all four.
+- Seventh try (`sound/tools/s7_use_downloads_dry.py`, output `sound/s7/`, video
+  `~/Downloads/Chest reveal whole scene preview with sound 7.mp4`, picture checksum identical, downloads checked
+  unchanged). The owner: "I do not like the hall echo on any of those recordings. remove them." The sixth try with
+  no echo at all; levels were set on the dry sounds, so they stand.
+- Eighth try (`sound/tools/s8_lid_drawer.py`, output `sound/s8/`, video
+  `~/Downloads/Chest reveal whole scene preview with sound 8.mp4`, picture checksum identical, all five downloads
+  checked unchanged). The owner asked for a sound when the chest opens, then: "I downloaded a drawer opening effect.
+  try that". The seventh try plus the drawer recording (`freesound_community-drawer-41055.mp3`, copied into
+  `sound/sources/`, checksum added) on the lid, dry: its slide starts on frame 393 as the lid starts to lift, is
+  strongest from about 397 to 403 while the lid moves fastest, and is gone at 410 as the lid comes to rest. Its own
+  length fits, so it is not stretched. Level: its loudest twentieth of a second is 9 dB under the first landing.
+- Ninth try (`sound/tools/s9_higher_rattles.py`, output `sound/s9/`, video
+  `~/Downloads/Chest reveal whole scene preview with sound 9.mp4`, picture checksum identical, all five downloads
+  checked unchanged). The owner: "the footsteps that are used for when the chest moves, I want it to be a higher
+  pitch. So show me those sounds." The eighth try with every footstep in the three rattles 5 semitones higher
+  (`RATTLE_UP`; wood and metal alike, so their order from low to high stays), which also makes each knock about a
+  quarter shorter, as a recording played faster would. The middle of each rattle's sound moved up by a third (rattle
+  1: 548 to 721 Hz). Each rattle is exactly as loud as before (loudest twentieth of a second unchanged); its sharpest
+  peak is 1 to 3 dB higher, being a shorter click. Everything else is the eighth try.
+  **Turned down:** "I prefer the previous rattle. so change it back". The eighth try (`sound/s8/`, video
+  `Chest reveal whole scene preview with sound 8.mp4`) is the current sound again; the ninth is kept only for
+  comparison.
+
+### The great door and two fire bowls (2026-11-22)
+
+The owner sent a picture of the ending made from the scene itself (the same view as another agent's still,
+`render/Codex_Treasure_Chamber.png`): the long hall replaced by a wall with a big arched wooden double door, and a
+stone fire bowl on a block at each front pillar's foot in place of the torches. Their words: "I overall wasn't a fan
+of the long hall with a bunch of fires. I think we could have collapsed it a little bit. So I want to go with this.
+The main things I want you to take from this is ... above the pillars, behind them there's that like brick looking
+stuff. That is going to be darkened up for sure. There's going to be a new fire source, and that fire source is
+visible ... you're going to create the door and everything. Now, if other things were changed, you don't change them.
+Like the pillars were changed, you don't change the pillars ... This is mainly about what's behind the pillars and
+beyond. Anything from the pillars to the view doesn't change except for the fire. The fire does change."
+
+**Which file.** The owner, while this was being built: "there's a codex file ... I don't want you touching that file.
+I want you to touch the one that codex duplicated from, which should be the main file."
+- `chest_reveal_v12_full.blend` is the main file and now holds the door version.
+- `chest_reveal_v12_long_hall.blend` is the main file exactly as it was before this change (the long hall, with the
+  soft curtain sand and its slow fall). Open it to go back.
+- `Codex_Treasure_Chamber.blend` is another agent's copy: never opened or changed here (same checksum before and
+  after, `72f47176...`).
+
+**What was built** (`tools/v14_door.py`, run inside the main file; safe to run again; nothing is deleted):
+- The wall stands just behind the two front pillars and the big arch between them (its face at y 62; the arch ends
+  at 60.8). Coursed stone like the wall above the arch, at a sixth of its colour (`WALL_DARK` 0.16; the hall's thin
+  air glows a little in front of it, so the stone has to be that dark to read clearly darker than the picture's).
+- The door fills the arch: 26.4 wide and 42 tall (the chest is 5.5 wide), its round top on the big arch's centre, set
+  0.9 back in the wall. Two leaves of six upright planks each, real planks with gaps, boards meeting under the strap
+  hinges, each plank its own piece of the Poly Haven Rough Wood scan (the one the chest's planks came from; copied to
+  `temple/resources/cache/polyhaven_rough_wood`, recorded in `temple/resources/SOURCES.json`). The scan gives light,
+  dark, relief and roughness; the brown is the door's own. Ironwork: a band round the edge and down the middle, four
+  strap hinges with pointed ends, two tall pull handles, 39 studs; plain dark forged iron (the torches' rusted iron
+  turned orange and speckled in the firelight).
+- The fire bowls: an eight sided stone bowl on a stepped square block at (15.4, 50) and its mirror, in front of each
+  front pillar (they stand at 17.2, 58). 5.6 wide and 4.8 tall with the block. In the picture they are larger against
+  the frame; here they are sized to the scene's slimmer pillars, which the owner said not to change.
+- The fire is the first torch pair's own (flame, glow, embers, coals, light), moved into the bowls: a tall flame with a
+  lower one each side (the same shader with a wider shape, `Temple Bowl Flame`), over a heap of glowing coals. It
+  still follows `lit_0` on `Temple Torch Control`, so it catches at the same moment the first torches did (scene
+  frame 126 on, about 14.2 s into the whole video) and the fire in the sound tries still fits.
+- Switched off, kept in the file (102 objects): the small arch and its pillars, the long hall with its pillars, ribs,
+  vault, end wall and far doorway, the fog behind the wall, all twelve slim torches with the other ten fires, and the
+  lights of the hall (the far glow and its light on the floor, the four bay glows, the two moon shafts down the hall,
+  the warm edge lights behind the front pillars, the torches' sheen lights).
+- Lights. The two warm lights that glowed on the big arch and the wall above it are at 15 percent and skip the door
+  (`ARCH_DIM`; they stood for six pairs of torches at half the pillars' height). New: `Temple Door Glow` (the door's
+  own soft firelight, follows `lit_0`), `Temple Bowl Fill 00/06` (the floor's light back up onto each bowl). The fires
+  light everything the torches lit except the moss at the pillars' feet (right beside a fire it became bright yellow
+  blobs). In the dark the moonlight on the wall above the arch reaches the top of the door. The wall and door throw
+  no shadow for the two cool side lights that stand behind the wall's line.
+
+**Checked** with stills only, in the open Blender (dark wait at scene frame 49, lid opening 100, fires catching 132
+and 150, 200, the ending 290); **no video was rendered**, so the videos in Downloads still show the long hall.
+- In front of the pillars nothing moved: between stills from before and after, the chest and platform differ by
+  0.13 (dark wait) and 0.57 (ending) of 255, the floor at the bottom by 0.00 and 0.10.
+- Against the owner's picture in the ending (average colour, 0 to 255): door planks 47, 28, 13 (picture 53, 28, 12);
+  the lower pillar in the firelight 104, 72, 38 (picture 166, 93, 41: theirs glows stronger).
+- Sheet for the owner: `~/Downloads/Chest door scene.png` (their picture, the ending before, the ending now, the
+  fires catching, the dark start).
+
+**Not done, for the owner to decide:** the flames keep the look of the torches' fire, paler than the orange in the
+picture; the big arch between the pillars is unchanged apart from its dimmer glow; the bowls could be larger; the
+falling sand and the two streaks of night light are untouched and still fall in front of the door.
+
+#### The door, second round (same day)
+
+The owner, after the first sheet: "I want to see the ending by itself, not in a line of stuff ... by itself in the
+downloads folder." And on the scene: "the brick thing that goes behind the pillars, like above the arch ... That needs
+to be darkened to match the scene, to match the mock-up ... there's some depth before the door. That needs to be a
+little longer. The mock-up is longer. Also, the metal and the wood are like totally off ... the door and the metal
+just look cheap ... Make it look as close as possible to the inspiration. Also the flame is fine but the things
+holding the flame can look a whole lot more like the inspiration."
+
+Sizes and tones were read off the owner's picture this time (shares of the door, average colours of small patches),
+and `tools/v14_door.py` was rebuilt round them. Where the description above differs, this is what the main file has:
+- **Arch.** The big arch's stones and the wall above it are multiplied by 0.38, 0.18, 0.08 as the gold light comes up
+  (`ARCH_END`, driven by the story's `gold`), so they end dark and warm; in the dark part of the story they are
+  exactly as before (the dark wait measures 0.00 of 255 different there). The two lights that glowed on them are at
+  6 percent (`ARCH_DIM`).
+- **Depth.** The wall's face is right against the back of the big arch (y 60.9, no gap between the two) and the door
+  sits 7.1 back in it (`DOOR_DEPTH`; it was 0.9), at the end of a round tunnel of plain dark warm stone.
+- **Wood.** The chest's own plank maps (colour, roughness, relief; they are in the file already), set upright: four
+  planks to a leaf, each board a different stretch of the map, some turned round, with long soft streaks added, in
+  a darker, browner colour. The first try (a scan of grey weathered timber tinted brown, six narrow planks) was
+  scratched and busy.
+- **Iron.** Thick, with real edges: the band round the edge 1.8 wide and 0.42 proud, the middle band 2.0 wide, strap
+  hinges 2.1 tall with three studs each, studs 1.16 across, pull handles a square bar between two chamfered blocks.
+  One even dark tone with shallow hammer marks (two tones mixed by noise read as blotches).
+- **Light on the door.** The hall's cool light from above and its pale top light skip the door (they greyed the
+  wood); it is lit by the fires, `Temple Door Glow` (now with soft shadows, so the iron stands off the wood), two
+  small glints for edges and studs (`Temple Door Glint L/R`) and the moon in the dark. The fires' halo in the air
+  is 1.2 (the torches had 2: it veiled the door).
+- **Fire bowls.** Eight sided, upright sides flaring a little to a thick rim, 6 wide, on a square block that narrows
+  upward between a foot and a cap; eleven lumps of charcoal on the glowing bed. 5.2 tall in all. At (15, 50) and its
+  mirror. The loose stones of the fallen roof that lay under them are hidden by a mask on the heap (14 stones;
+  nothing removed). The flame is unchanged ("the flame is fine").
+- **Measured against the picture** in the ending (average colour, 0 to 255; picture first): planks 49, 24, 9 and
+  49, 30, 18; the middle iron band 43, 31, 22 and 52, 38, 26; arch stones 41, 30, 20 and 42, 36, 33; the bowl's
+  block 53, 36, 22 and 50, 34, 18. What is left is a thin grey veil from the hall's air.
+- **In front of the pillars** nothing moved: chest and platform 0.08 (dark wait) and 0.87 (ending) of 255, floor 0.00
+  and 0.06.
+- The scene's lens keeps everything behind the chest a little soft (it is focused on the chest); the picture is
+  sharp all over. Not changed: it is part of the view.
+- Picture for the owner: `~/Downloads/Chest door ending.png` (the ending by itself). Still no video rendered.
+
+#### The door, third round (same day)
+
+The owner, after `Chest door ending.png`: "in the tunnel thing, there's like an inner shape that you put there that
+wasn't there before ... There's like another little layer. It's one tunnel ... The door does look better. The metal
+does look better on the door as well ... but they can look even more like the inspiration. And same thing with the
+fire. Actually, the fire overall regressed. It might look more like the inspiration, but it doesn't look good. It
+needs to look a lot more like the inspiration because the inspiration had the proportions correct."
+
+- **One tunnel.** In the second round the tunnel was a little narrower than the big arch (13.9 against 14.36), so
+  a ring of wall showed between the two. Now `Temple Door Tunnel` carries the arch's own inner surface straight on
+  to the door: the same radius and steps round the curve, the arch's own stone (its joints depend only on the angle
+  round the arch, so they run on down the tunnel), lit by the same lights as the arch. Its two sides below the arch,
+  behind the pillars, are the coursed stone of the wall above the arch. `Temple Door Wall` is only the flat dark
+  face round it. The door grew with it: 28.6 wide, 43.3 tall.
+- **Wood.** Clear grain lines that wander a little (a wave pattern along each plank, also as relief), each plank
+  darker along its two edges, a deeper red brown.
+- **Iron.** Darker, hammer marks larger and deeper. Two far lights from high on either side are seen only as glints
+  in the iron (`Temple Door Glint L/R`, reflections only, on the ironwork only). A first try lit the whole door with
+  them at four times the strength and washed wood and stone pale: a rough surface throws back even a "reflections
+  only" light as a pale veil.
+- **Fire bowls.** Every proportion is the picture's, measured on it as shares of the bowl's width (foot 0.57, sides
+  flaring from 0.62 to 0.96, a rim band standing a little proud; the block's foot 0.98, body 0.94 narrowing to 0.84,
+  cap 0.89; bowl and block about equally tall). Two things are allowed for, because the picture looks down into its
+  bowls and this camera sees them almost from the side: the block stands nearer the camera than the bowl's middle
+  and looks about a tenth wider than it is (built that much narrower), and with no view of the bowl's mouth the
+  bowl's side carries its height (built a quarter taller). The bowl is 6 wide across its flat sides and 2.8 tall,
+  the block 5.3 wide at its foot and 2.6 tall. What was wrong in the second round: the block was wider than the bowl
+  (an eight sided bowl is narrower across its flat sides than across its corners) and lighter than it.
+  The bowl and its block are separate objects now, each with its own light from the firelit floor and the middle of
+  the hall, so the bowl is the lit part; a sunk panel on each of the bowl's eight sides; sixteen lumps of charcoal,
+  eight heaped in the middle. The flame is the same fire, the tall one a little wider, the two low ones closer in.
+- **Measured against the picture** (ending, average colour 0 to 255; picture first): planks 49, 24, 9 and 44, 23, 13;
+  the middle iron band 43, 31, 22 and 47, 34, 23; arch stones 41, 30, 20 and 43, 36, 33; the bowl's side 51, 32, 16
+  and 58, 38, 18; its block 53, 36, 22 and 47, 31, 15.
+- **In front of the pillars** nothing moved: chest and platform 0.09 (dark wait) and 0.89 (ending) of 255, floor 0.00
+  and 0.06; the arch and the wall above it in the dark wait 0.00.
+- Picture for the owner: `~/Downloads/Chest door ending 2.png` (the ending by itself). Still no video rendered.
+
+#### The door, fourth round (same day)
+
+The owner, after `Chest door ending 2.png`: the flame is fine and its colour stays. "you need to work on the thing that
+holds the fire ... the rocks ... look like they're sitting on top of a plate or something. There should be like rocks
+under those rocks ... the overall shape needs work ... The shape of the bowl is different and it's also much lower to
+the ground. And the position ... is actually fine. Now, what I do want you to work on is the biggest thing is
+definitely the door. Like the wood is like a different color, the metal's darker, more gritty ... it's definitely
+closer, definitely much closer, but it still needs a lot of work ... I also want to experiment with making ... a
+super mini hallway ... longer ... so that it appears smaller ... Make that little hall ... long to the point where it
+starts to match the inspiration in terms of size."
+
+The picture was measured patch by patch this time (average colour and spread of small patches at several heights of
+the door, on the planks, the bands and a strap), and the render the same way after every change.
+- **Hall.** 14 deep behind the big arch (`DOOR_DEPTH`; it was 7.1). At that length the door's own parts are the
+  picture's size on the screen: the two strap hinges as far apart and the handles as long, to within a hundredth.
+  The door stays a tenth narrower than the picture's (it is a taller, narrower door, shaped by the scene's arch). At
+  21 the door is 0.72 of its arch across, as in the picture, but an eighth smaller than the picture's door.
+- **Wood.** Flowing grain cut into the surface: rings round a heart that wanders behind each board, so lines run up
+  the plank and close into a long loop here and there, and come and go along it (drawn at one strength they read as
+  tiger stripes). Over it the chest's own fine fibres and long soft streaks. A warm red brown, with little sheen (a
+  full sheen laid a grey veil over the brown).
+- **Iron.** Nearly black, beaten in shallow dents, pitted and scuffed lighter in patches; the rounded edges of every
+  band, strap and handle are a second, worn, coppery metal (`Temple Door Iron Edge`, through the edge rounding's own
+  material setting).
+- **Light on the door.** One warm light from the upper left front, aimed at the door's middle and soft at its edge
+  (`Temple Door Glow`, a spot now; only the door's own parts throw shadows in it, because a lamp could not really
+  shine down the hall from the side), with a little even light straight on (`Temple Door Fill`). The fires no longer
+  light the door's wood and iron: they lit its foot brightest, and in the picture the door is brightest about its
+  middle.
+- **Measured against the picture** (ending, average colour 0 to 255; picture first): planks beside the handles
+  59, 28, 10 and 59, 26, 7; above the top straps 43, 22, 8 and 46, 20, 6; above the bottom straps 46, 23, 9 and
+  48, 24, 8; the middle iron band 43, 31, 22 and 42, 29, 18. The band round the edge is lighter here on its left
+  side (45, 31, 18 against 31, 22, 13), and the picture's iron has more contrast inside a strap than this one.
+- **Fire bowls.** The picture looks down on its bowls, so much of what had been read as the block's height was the
+  block's top seen from above. Now the block is low (1.55 high) and the bowl wide and low (6 wide, 2.25 high), sitting
+  straight on the block on a wide foot, no stem, its sides flaring a little to a thick rim. It is full of charcoal to
+  its rim and heaped in the middle: 29 lumps in three layers, lumps on lumps, the glowing bed deep underneath and
+  seen only between them. The flame rises from the top of the heap. Position unchanged.
+- **In front of the pillars:** chest and platform 0.12 (dark wait) and 1.00 (ending) of 255, floor 0.00 and 0.06, the
+  arch and the wall above it in the dark wait 0.00.
+- Picture for the owner: `~/Downloads/Chest door ending 3.png` (the ending by itself). Still no video rendered.
+- The owner asked why the Mac was slow while this ran: the check stills. The open scene needs nearly all of the
+  Mac's 8 GB while it renders (swap was at 6.0 of 7.2 GB). Say when stills are rendering.
+
+### The current sounds on a Blender file's timeline (2026-11-23)
+
+The owner: "add the sounds we have been working with to Codex_Temple_Fire.blend, sounds only". That file is Codex's
+(see the rule below); the owner named it and the change, so this once it was opened and saved, with sound and nothing
+else.
+
+- **Why it needed fitting.** The sounds were never inside a Blender file: they are timed to the frames of the whole
+  scene preview video and laid under it. A Blender file's timeline is the story played straight through, without the
+  wait. Video frame to scene frame: arrival, video frame minus 28 (frames 0 to 77); the wait, video frames 124 to
+  348, is not on the timeline (the chest is held on scene frame 49 by `tools/v12_render.py`); reveal and ending,
+  video frame minus 299 (from 349 on).
+- **`sound/tools/s8_for_blender.py`** cuts the eighth try's stems into five pieces on whole frames, with the mix's low
+  cut and ceiling, into `sound/blend/` (24 bit; `strips.json` holds where each goes). Laid back on the video's
+  frames the pieces add up to `sound/s8/mix.wav` (largest difference 3.4 sixteen bit steps, the two files' own
+  noise; nothing in the mix is left uncovered).
+- **`sound/tools/add_sound_to_blend.py`** (run inside Blender with the file open; safe to run again) adds one sound
+  strip per piece to the Chest Reveal scene and packs each into the file:
+  - Chest lands (three drops), from scene frame 16 (the drops at 16.6, 21.6 and 32.1);
+  - Lock, from 49 (the key turns from 50.3, the clack on the keyhole flash at 56);
+  - Lid opens (drawer), from 92 (the slide from 94 to 111);
+  - Fire, from 126 as the fire catches, on to frame 561 (past the ending loop);
+  - Waiting rattles (footsteps), the whole 225 frame wait, **muted** and parked from frame 50: there is no rattling
+    on the scene's timeline for it to go with. It is there for whoever builds the waiting piece.
+- **Checked.** Blender's own mixdown of the saved file's timeline (frames 0 to 290) against the pieces laid on those
+  frames: identical (difference 0, timing offset 0 samples), the muted rattles silent. In Codex's file the lock
+  flash (56) and the fire (126 to 140, the same control as the torches) are on the same frames as in the main
+  file. A sound strip does not change a render even with the sequencer switch on (tested in an empty Blender 5.2.2
+  scene: the same picture with and without one). The scene itself was not rendered.
+- **Sounds only.** By name, everything in the saved file is what was in the original, plus the five sounds, with one
+  difference: Blender leaves out unused data when it saves, and two unused pictures left from an earlier version of
+  Codex's fire ("Brazier | East fuel and heat", "Brazier | West fuel and heat"; no material used them) went that
+  way. The frame (290), the render settings and the playback range are as they were. The original is next to it
+  as `Codex_Temple_Fire.blend1` (Blender's own backup, sha256 `ce9812c761b8b7e3...`); the saved file is
+  `2db7f9bb6109a1ba...`, 4.6 MB bigger.
+- **The rule stands:** Codex's other files were not opened. A Codex file is touched only when the owner names the
+  file and the change.
