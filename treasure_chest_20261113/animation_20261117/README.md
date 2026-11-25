@@ -1270,3 +1270,193 @@ else.
   `2db7f9bb6109a1ba...`, 4.6 MB bigger.
 - **The rule stands:** Codex's other files were not opened. A Codex file is touched only when the owner names the
   file and the change.
+
+### One command to render a file's four clips with the sound (2026-11-23)
+
+The owner, after the sounds went into Codex's file: "how do I start the render and also make sure it goes to
+downloads?"
+
+- **`temple/tools/render_clips.sh`**: `zsh temple/tools/render_clips.sh` starts it and comes back at once (the
+  render carries on by itself and keeps the Mac awake); `... status` says how far it is; `... stop` stops it, and
+  starting again carries on from the frames that exist. It renders the four pieces with `tools/v12_render.py` from
+  `FILE` (default `Codex_Temple_Fire.blend`, opened read only in background Blender, never saved), joins them as the
+  whole scene (arrival, the wait, the reveal, the ending loop three times, 860 frames) and lays the eighth try's
+  mix under it. One file comes out: `~/Downloads/<NAME> whole scene with sound.mp4` (default NAME: the file's name
+  with spaces; a video already there is never written over, the new one gets a number). `PIECES=1` also writes the
+  four pieces. Frames are kept in `render/<file>_frames/` with a note of the file they came from: after the Blender
+  file has changed a plain start refuses, and `... fresh` throws the kept frames away and renders from the start.
+- Tested without starting the real run (the owner starts it): three frames from Codex's file with the clip renderer
+  (arrival 3, waiting 5, ending 0; 8 to 42 seconds each at 70 percent and 24 samples, kept so the run skips them);
+  the ending frame against Codex's own still of frame 290: average difference 1.07 of 255. Start and stop were
+  tried with a stand in that only waits; every refusal with a dry run (`DRY=1`).
+- It refuses to start while the Blender app is open: the scene needs nearly all of the Mac's 8 GB.
+- Why not Blender's own Render Animation: the file's timeline is the story played straight through, so that gives
+  no wait and no rattles, 291 separate pictures at full size (the file is set to PNG), and no sound.
+
+### A wider hall: the ceiling 50 percent wider, thinner ribs, no arches on the pillars (2026-11-23)
+
+The owner, on a frame of the Codex Temple Fire video (the reveal's frame 75, scene frame 125): the ceiling "should
+be about overall 50% wider. So the building is 50% wider"; its holes of light "Don't change that at all"; the ribs
+follow, and "the ends of those aren't going to be in view"; the ribs "half their height. Not width"; "on top of the
+pillar there are these arches. You're gonna remove the arches"; "Don't change anything I didn't talk about"; and
+"duplicate the latest codex one. So that one stays untouched."
+
+- **File: `Claude_Temple_Wide.blend`**, a copy of `Codex_Temple_Fire.blend` (which is untouched: same checksum
+  before and after, `2db7f9bb...`). Going back is opening the Codex file again. In the copy, the meshes that were
+  replaced are also kept, named with " (before v15)".
+- **`tools/v15_wide_vault.py`** (run inside the copy; safe to run again; nothing is deleted):
+  - The ceiling was half a circle 15 from the middle; now half an ellipse 22.5 from the middle, as high as before.
+    The two openings are cut with the same two plugs, so they sit at the same place over the floor with the same
+    outline; the shafts, their plates and the night sky are not touched. On the wider curve the ceiling is higher
+    above them, so in the picture the openings sit a little higher.
+  - The four ribs follow the wider curve and stand 0.7 out of the ceiling (1.4 before), as wide along the hall as
+    before. Their feet are 21.8 from the middle; the picture is never wider than 20.6 there, in any frame.
+  - `Temple Arcade Arches` is switched off, and the slab that stood on the arches is taken out of
+    `Temple Aisle Walls` (it would stand inside the wider ceiling). The flat ceilings over the side aisles start at
+    22.5 (19.4 before): left there, their edges were a dark wedge in both top corners of the picture.
+  - Stone patterns: the ceiling's courses and the ribs' stones were laid out by the angle round the circle. Both
+    meshes now carry "arc" (the distance round the curve) and the two materials read that, so the stones keep
+    their size (courses 2.3; rib stones 1.66 long, 35 where there were 27).
+  - `Temple Wide Light Blockers` (new, never seen by the camera): the ceiling throws no shadows, so the slab and
+    the aisle ceilings were the hall's roof against the world's light, which does cast shadows. Without them the
+    front floor came out 5 to 7 of 255 brighter. The blockers lie on the back of the new ceiling and stand where
+    the slab's top was, so they keep that light out without shading the ceiling from the lights in the hall.
+- **Checked** on the same frame with the clip renderer (70 percent, 24 samples) against the kept frame of the
+  Codex render, average difference of 255: chest 0.05, floor 0.01, platform 0.02, pillar shafts 0.01 and 0.08,
+  door 0.16. The opening (arrival 20) and the ending (ending 0) were looked at too: lower half 0.18 and 0.02.
+- For the owner: `~/Downloads/Chest wide ceiling.png` (the frame) and `Chest wide ceiling before and after.png`.
+  No video was rendered. For one: `FILE=Claude_Temple_Wide.blend zsh temple/tools/render_clips.sh`.
+
+### The ceiling blended into the walls, with the arches kept (2026-11-23)
+
+After seeing the wider hall the owner turned around: "I actually do like the things above the pillars ... I want
+them to remain"; the ribs should "still ... shrink a bit to how you did before"; and "I want a way to blend the top
+with the bottom ... I see like a brick just kind of like floating in the air ... I want it to all blend seamlessly
+... give me some ideas for how to blend it." They picked in two steps: "I like C", then "Let's try C and a darker
+cieling stone and no shine on the arch's edge".
+
+- **File: `Claude_Temple_Ceiling.blend`**, a fresh copy of `Codex_Temple_Fire.blend` (untouched, checksum
+  `2db7f9bb...`), so the ceiling has its original width and the arches stand. `Claude_Temple_Wide.blend` keeps the
+  wider hall as it was.
+- **What looking showed** (`temple/tools/blend_options.py`: pictures only, run before the clip renderer, saves
+  nothing; ideas A to F and the second round's settings are described in it):
+  - The pale patch at the foot of the ceiling was the stone's shine seen at a flat angle, mirroring the room's
+    soft overall light. Darker stone alone left it; with the shine or the world light off it went.
+  - The "floating brick" was a rib that stopped at the top of the wall with a flat underside and nothing under it.
+  - The line that was left ("this line caused from it going from light to dark") is the front face of the arch on
+    the pillars, seen from the side as a thin sliver under the ceiling, with the same shine. Chest closed: the
+    arch's underside 25 of 255, the sliver 47, the ceiling beside it 41. The small bright dots sat on it too.
+  - Darker ceiling stone moves the ceiling by 1 of 255 with the chest closed (up there the dark picture is haze and
+    shine, not the stone's colour) and by up to 8 with it open; it does not touch that line.
+- **`tools/v16_ceiling_blend.py`** (run inside the copy; safe to run again; nothing is deleted; every material node
+  it adds is named "v16 ...", and the ribs' old mesh is kept as "Temple Vault Ribs (before v16)"):
+  - The ribs stand 0.7 out of the ceiling (1.4 before), as wide as before, and sink into the ceiling over the
+    lowest 24 degrees of the curve, so they have no foot.
+  - `Temple Vault Masonry` and `Temple Vault Rib Stone`: no shine at the foot, back in full 12 above it; colour
+    times 0.5.
+  - `Temple Stone Wall` (the arches) and `Temple Stone Dark` (the wall on them): no shine on the faces that look
+    across the hall. Everything else about those two stones is as it was.
+- **Checked** from the saved file with the clip renderer (70 percent, 24 samples) against the kept frames of the
+  Codex render, average difference of 255: chest closed (waiting 36), chest open (reveal 75) and the opening
+  (arrival 20): chest, floor, platform, pillar shafts and door all 0.03 or less, the door's arch 0.10. The ending
+  (ending 0): chest 0.04, door 0.02, pillars 0.11, and the floor 0.6 darker (1.0 at the very front). That is the
+  darker ceiling mirrored faintly in the floor: with the stone's colour left alone the floor is unchanged (0.01).
+- With the stone darker the ribs are quiet in the top corners, most of all with the chest open.
+- For the owner: `~/Downloads/Chest ceiling blended before and after.png`; the ideas were shown on
+  `Chest ceiling blend ideas.png` and `Chest ceiling line ideas.png`. No video was rendered. For one, with Blender
+  closed: `FILE=Claude_Temple_Ceiling.blend zsh temple/tools/render_clips.sh`.
+
+### The shafts of night light hold steady: no sudden change at second 2 (2026-11-23)
+
+The owner, on the whole scene video of the Codex file: "the light on the left shifts, like very sudden very sharp
+shifts ... between the 2 and 3 second mark ... find out and if so fix it. I still want the light and the sand. just
+no sudden light change".
+
+- **What it was.** At second 2.00 exactly (video frame 60, scene frame 32, the chest's third impact) the right side
+  of the left shaft goes from a soft edge to a wider beam with a hard edge in one frame (a strip about 70 pixels wide
+  gets 5 to 11 of 255 brighter) and stays so. It is the only such jump in the 860 frames (every frame was compared
+  with the one before). The copy had it too: same two frames, same numbers.
+- **Why.** Nothing in the scene switches there. Each shaft's shape is the shadow of a mask (`Temple Shaft Mask L`,
+  `R`) in the light of a spot 270 above it. The renderer keeps shadows at several levels of detail and lights the
+  air with the finest level that happens to be in memory, and that depends on what the camera sees. With the
+  chest's body in view at rest the shaft got a finer level; with the chest in the air, hidden or not yet in the
+  picture, the coarsest. Found by rendering frames 59 and 60 again and again with one thing changed: not the dust's
+  clock, the landing dust, the grit, motion blur, the other lights' shadows, the shadow memory, the surfaces the
+  shafts may light, or any single part of the chest; the jump goes when the left shaft's light is off, when the
+  chest's meshes are hidden, and when they are unseen by the camera.
+- **`tools/v17_steady_beams.py`** (run inside `Claude_Temple_Ceiling.blend`; two numbers): Resolution Limit of
+  `Temple Shaft L` and `Temple Shaft R` 10 (was 0.001), so they always use the coarsest level. Limits 1.2, 2 and 3
+  still jump; 5, 10 and 40 do not and give the same picture.
+- **Checked** from the saved file (70 percent, 24 samples): frame 59 to 60 changes 0.49 of 255 in the top left
+  (2.21 before; the frames around it 0.38 and 0.54, which is the dust arriving); frames 20, 44, 50 and 123 of the
+  arrival are the same there to 0.1; the arrival's last frame and the wait's first are the same. Against the copy
+  before the fix: chest 0.10 or less, floor, platform and door 0.01 or less in the closed and open frames; the
+  shafts themselves 2.5 (left) and 1.5 (right) on average: the left one is a little wider on its left side and
+  more even inside, and keeps its hard right edge. In the ending the floor is again as in the Codex render (0.00;
+  it was 0.6 darker after the ceiling change): the shafts now put about that much more light on the stone.
+- For the owner: `~/Downloads/Chest light jump before and after.png`. No video was rendered.
+
+### The front planks sit tight together, and what the white specks are (2026-11-24)
+
+The owner, on the reveal in the new video (`Claude Temple Ceiling whole scene with sound.mp4`): "I am seeing these
+white specks at the bottom, find out why they are happening. Also I notice that the wood planks have some tiny gaps
+between them, bring the wood planks closer so that no gaps exist, adjust anything else you need to adjust".
+
+**Status: both changes are in `Claude_Temple_Ceiling.blend`, saved 2026-11-24 19:49** (`tools/v18_tight_planks.py`
+and `tools/v19_no_sparkle.py`). Blender's window was in use by another chat, so the owner was asked and picked:
+save without a window, and of the three speck choices the first (the sparkle under the chest goes, the grit stays).
+`Claude_Temple_Ceiling.blend1` is the file as it was before (the one the video of 2026-11-24 was rendered from).
+No new video has been rendered; the kept pictures in `render/Claude_Temple_Ceiling_frames` are from before, so the
+next whole scene render needs `fresh`.
+
+- **The planks.** The chest's front is three flat sheets (`R Simple Front Plank01`, `02`, `03`) shaped by their
+  material. The material they are rendered with is the one set on the object, `Chest tone | Simple wood plank0x`;
+  the untoned `Simple wood plank0x` on the mesh is not rendered (editing it changes nothing: that cost a round of
+  tests). Along each long edge the material rounded the edge off and pulled it in, on top of a notch that the lower
+  planks' height pictures have along their upper edge, and painted the groove nearly black. At video size that is a
+  black line one to two pixels wide with a dotted blue white glint on the lower plank's notched edge.
+- **`tools/v18_tight_planks.py`** (run inside `Claude_Temple_Ceiling.blend`; nodes named "v18 ...", old numbers kept
+  on the material, `V18_UNDO=1` puts it back): at each long edge the surface runs to a level both neighbours share
+  (0.62 in height picture units, the lower plank's own level), back on the plank's own shape 0.02 away; against the
+  iron rims the wood keeps its own level; the painted line becomes a hairline (0.5 of the colour, 0.006 wide) and
+  the shading toward the edge lighter (0.86 over 0.04). The planks still overlap like boards on a wall (that is in
+  their pictures). Lid, sides and back are single sheets with their joints painted in; not touched.
+- **Checked** (70 percent, 24 samples, nothing saved): against the video's own frames the change stays inside the
+  plank area in the reveal (frames 0, 60, 75, 100, 160, 240), the arrival (60, 123) and the ending (0); about 2000
+  to 5000 pixels each, nothing elsewhere. The glint is gone at 16 times zoom.
+- **The specks are three different things** (reveal frame 60 is the owner's picture):
+  1. *Sparkle under the chest, reveal frames 42 to 63 (video seconds 13.0 to 13.7).* The gold ring inlaid in the
+     platform (`Temple Dais Gold Rings`), its stretch behind the chest, seen through the gap under the chest, less
+     than a pixel thick. `Temple Chest Burst` (the light that bursts out as the lid opens) reaches it only over the
+     top of the chest's back wall, at the edge of that wall's shadow, so in each frame a few points of the shiny
+     metal catch it and they change from frame to frame. Not light leaking through the chest (a solid test box
+     inside its walls changed nothing), not the sparks.
+  2. *Still dots on the platform left and right.* The grit the feet kick up on landings 1, 2 and 4: particle
+     systems `Reveal Dust Grit Boot ...` (274 grains, size 0.008, lifetime 400 frames, so they lie there to the end).
+  3. *Faint dots on the platform's front edge.* Pale chips in the stone's own pattern (`Temple Dais Stone`).
+- **Fixes tested for 1.** Taking the ring out of the burst light's receivers removes the sparkle but also makes a
+  strip of the right pillar and bits of the floor 2 to 4 of 255 darker late in the reveal (the scene's light groups
+  get reshuffled): rejected. Making that stretch dull (not metal) made it sparkle more. Clean: in `Temple Gold
+  Inlay`, behind the chest only (within 2.2 to 2.5 of the middle across, beyond 1.7 to 2.0 deep, in the chest's own
+  directions), base colour and Specular Tint go to black, with Metallic and Roughness left as plain numbers; then
+  frames 44 to 62 change only on that line and frames 75 to 240 not at all. The faint gold line under the chest
+  goes with it.
+- **`tools/v19_no_sparkle.py`** is that clean fix (nodes named "v19 ...", no number of the material changed,
+  `V19_UNDO=1` takes it out). One thing the first tests missed: before the chest lands, that stretch of the ring is
+  in plain view (the temple stands empty for a second), and always dark it would have left a hole in the ring. So
+  the stretch is dark only once the chest stands in front of it: a number on the material, "v19 chest is down",
+  is keyed 0 at scene frame 34 and 1 at 46 (the chest is flat at 32; the line fades under the landing dust). The
+  arrival's held frames, the waiting and the reveal all sit at scene frame 49 or later.
+- **Saved without a window and checked** (2026-11-24). A list of everything in the file a render depends on
+  (objects, meshes, materials, node groups, lights, collections, actions, caches, scenes) was taken before the two
+  scripts, after them, and again from the saved file: the three plank materials and `Temple Gold Inlay` changed,
+  one action was added ("v19 chest is down"), nothing else. Pictures rendered from the saved file with
+  `tools/v12_render.py` (70 percent, 24 samples): arrival 0 (the empty temple) is the video's own picture, pixel
+  for pixel within 1 of 255; arrival 0 to 62 change nowhere outside the planks; from arrival 66 on, the waiting
+  and reveal 0 to 62 only the planks and the line under the chest change; reveal 75 to 240 and the ending only the
+  planks. In the gap under the chest the brightest pixel in reveal 44 to 62 went from 160 to 238 (of 255) down to
+  19 to 40, on a background of about 8.
+- **Test method.** `ONLY=60` alone and `ONLY=0,60` differ on the moving hasp (its blur follows the frame rendered
+  before); compare like with like.
+- For the owner: `~/Downloads/Chest planks before and after.png`, `~/Downloads/Chest white specks explained.png`,
+  and from the saved file `~/Downloads/Chest planks and specks now.png`.
