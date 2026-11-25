@@ -1460,3 +1460,73 @@ next whole scene render needs `fresh`.
   before); compare like with like.
 - For the owner: `~/Downloads/Chest planks before and after.png`, `~/Downloads/Chest white specks explained.png`,
   and from the saved file `~/Downloads/Chest planks and specks now.png`.
+
+### The left shaft of night light gets its own opening, in the picture (2026-11-25)
+
+The owner, with a phone picture of the waiting screen: "the light on the right ... interesting shape in the sense
+that it's not a circle, it's not a square. I want something similar on the left, and also the left light is too
+big. And make sure that when the sand comes down, it only shows in the area where the light shines ... at some point
+in the video, it like moved suddenly ... I had it worked on, and for some reason it became like thicker or
+something". Shown two looks (`~/Downloads/Chest left light options.png`: smaller where it was, or moved back so its
+opening shows) they answered: "I want it to be on the left and a little before or after in z space, but I want a
+different but similar shape for the light, so similar but different shape in the roof opening"; shown the result:
+"yes that one" and "yes save without window".
+
+**Status: in `Claude_Temple_Ceiling.blend`, saved 2026-11-25 13:24** (`tools/v20_left_shaft.py`).
+`Claude_Temple_Ceiling.blend1` is the file as it was before (planks and sparkle fix in, old left light). No new video
+has been rendered; the kept pictures in `render/Claude_Temple_Ceiling_frames` are older, so the next whole scene
+render needs `fresh`.
+
+- **Why the left light was big and had no shape.** Its opening in the ceiling was wider than the right one (8.9
+  against 6.6 across the hall) and nearer the camera (hall y 36 against 47), so high in the view that the opening
+  itself was above the top of the picture for the whole video, with its light running off the picture's left edge.
+  Only a wide band showed. And the owner's read was right: before version 17 that band was a narrow soft column for
+  the first two seconds and wide after; version 17 removed the jump by keeping it wide for the whole video and made
+  it even from side to side, which reads thicker. (Lesson: when a fix removes a jump between two looks, show both
+  and ask which one stays.)
+- **`tools/v20_left_shaft.py`** (run inside `Claude_Temple_Ceiling.blend`; safe to run again; `V20_UNDO=1` puts
+  everything back; the three meshes it replaces are kept as "... (before v20)"). All on the left side:
+  1. A new outline, drawn by the recipe of `tools/v12_hall.py` (thirteen corners, uneven, longer across the hall,
+     straight edges) from its own roll of the dice (`V20_SEED` 126), at the right opening's size (`V20_SIZE` 2.7;
+     the left was 3.0): 6.6 across, 4.6 along the hall.
+  2. At hall (`V20_X` -11, `V20_Y` 50.5): the same stretch of ceiling as the right opening, between the rib (y 40.7
+     to 42.5) and the arch (54.2 to 56.1), and 3.5 farther from the camera than it, so it sits about 50 pixels lower
+     in the picture and the two do not line up. "After" and not "before": the right opening already touches the top
+     of the picture, and that stretch of ceiling leaves room for only 1.7 nearer, which would put the left one's top
+     above the picture's edge.
+  3. `Temple Shaft Mask L` takes the outline; `Temple Shaft L` moves over it (1 in front of the centre, as before).
+     Strength, colour, cone, softness and version 17's Resolution Limit are not touched.
+  4. `Temple Vault` gets the opening cut through it (the plug `Temple Vault Hole L` takes the new outline), its new
+     faces on the ceiling's stone, smooth, with a hard edge only where two faces meet at more than 40 degrees, as
+     `v12_hall.py` did for the first two. Every other edge of the ceiling keeps what it had (1240 hard edges before
+     and after, plus 193 of the new opening's 250). The old left opening stays in the ceiling: it is above the
+     picture for the whole video and the ceiling throws no shadows, so no light comes through it.
+  5. `Temple Dust Cloud L` (the falling sand) moves with the light and narrows by 0.9 with the opening.
+- **A shaft's width in the air only changes in whole steps.** With Resolution Limit 10 the mask's shadow is drawn in
+  cells of about 2.1 hall units (about 48 of the picture's 756 pixels at that depth), so the column is two or three
+  cells wide whatever the outline's exact size, and which of the two cannot be told from the outline: render a
+  frame and measure. Outline 81 at size 2.7 gave three cells (128 pixels), at 2.4 two (92); outline 126 at 2.7 gave
+  the very same two cell column. The outline decides what the opening looks like in the roof; 126 was picked for
+  its clean patch of night sky (81 showed a pale sliver on the opening's wall). Measured on the waiting picture,
+  rows 330 to 470, at half brightness: left column 92 wide (x 109 to 200; before 224 and cut by the picture's edge),
+  right column 101.
+- **The sand shows only inside the light.** The cloud is a narrow curtain round the opening's centre and only its
+  own shaft lights it. Arrival frame 74 (second 2.5) rendered with and without the left cloud: the sand lifts
+  pixels by more than 1 of 255 only in x 105 to 203 (most 23), and the column there spans x 102 to 205.
+- **Checked** (70 percent, 24 samples). Waiting picture against the same picture from the file before: chest 0.01
+  of 255 on average, ceiling's middle 0.01, right third, door, floor and beside the chest on the right 0.00; top
+  left 23 (the light itself); the background left of the chest goes from 20.1 to 6.6, because the wide band is
+  gone (right of the chest it is 9.4). Against the video's kept frames, arrival 0, 59, 60, 74, 100, 123, reveal 44,
+  75, 150, 240 and the ending: right third 0.00, door 0.01 to 0.04, floor 0.00 everywhere; top left 23 in the dark,
+  18 at reveal 75, 7 at 150, 6 at 240 and in the ending (a little less haze at the far left of the gold ending).
+  Frame 59 to 60 (second 2) changes 0.13 in the top left third (0.60 in the video's frames; 0.14 in the right
+  third, which is the sand arriving): no jump.
+- **Left alone, and said to the owner:** the left light's strength. As a slim column it reads 39 of 255 against the
+  right's 24 (the wide band read 31); the left light has always had 1.65 times the right's energy.
+- **Saved without a window and checked** (the other chat's Blender window was open; the owner picked it again).
+  The list of everything a render depends on, taken before the script, after it and from the saved file: the
+  light's and the sand's place (each carries a note "v20 before" with the old numbers), the meshes of the mask, the
+  plug and the ceiling, the three kept meshes, and the ceiling stone now used by two meshes; nothing else. A dry
+  run of `V20_UNDO=1` gave back the file as it was. Pictures rendered from the saved file (waiting 0, arrival 59,
+  60, 74, reveal 44 and 75, ending 0) are the tested ones within 1 of 255.
+- For the owner: `~/Downloads/Chest left light new opening.png` (today and new, the two openings close up, the sand).
