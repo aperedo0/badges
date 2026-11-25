@@ -1,0 +1,7 @@
+# Local Blender studies and simulator captures. The selected package, render,
+# comparison, design, tools and verification summary live above these folders.
+candidate*/
+runtime_backup/
+*review_brief.md
+finish_adjustment_review.md
+facing_final_review.md

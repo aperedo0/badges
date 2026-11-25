@@ -1,0 +1,109 @@
+{
+  "file_bytes": 196452,
+  "triangles": 8968,
+  "pieces": {
+    "Upper_Ruby": {
+      "triangles": 64,
+      "closed": true,
+      "material": "CrestGem_Ruby"
+    },
+    "Lower_Ruby": {
+      "triangles": 72,
+      "closed": true,
+      "material": "CrestGem_Ruby"
+    },
+    "Left_Bronze_Rail": {
+      "triangles": 4348,
+      "closed": true,
+      "material": "Brushed_Bronze"
+    },
+    "Right_Bronze_Rail": {
+      "triangles": 4348,
+      "closed": true,
+      "material": "Brushed_Bronze"
+    },
+    "Upper_Ruby_Facing": {
+      "triangles": 64,
+      "closed": true,
+      "material": "Polished_Ruby_Facing"
+    },
+    "Lower_Ruby_Facing": {
+      "triangles": 72,
+      "closed": true,
+      "material": "Polished_Ruby_Facing"
+    }
+  },
+  "bounds": [
+    [
+      -2.0390355587005615,
+      -2.4549999237060547,
+      -0.9800000190734863
+    ],
+    [
+      2.0390355587005615,
+      2.994999885559082,
+      0.9800000190734863
+    ]
+  ],
+  "sha256": "7cf7dc4be103a7fe2f3bebc2f992dd8e7587e98a8dfc358f939cf5a0d7b93809",
+  "native_facet_check": {
+    "Lower_Ruby": {
+      "maximumCoefficientErrorInNanounits": 238,
+      "planes": 58,
+      "reflectionPlanes": 58
+    },
+    "Upper_Ruby": {
+      "maximumCoefficientErrorInNanounits": 238,
+      "planes": 50,
+      "reflectionPlanes": 50
+    }
+  },
+  "simulator": {
+    "device": "iPhone 17",
+    "installed_package_verified": true,
+    "poses": [
+      "front",
+      "early_turn",
+      "turn45",
+      "side_left",
+      "turn135",
+      "back",
+      "turn225",
+      "side_right",
+      "turn315"
+    ],
+    "real_ruby_attachments": 2,
+    "reflection_ruby_attachments": 2
+  },
+  "facing_only_comparison": {
+    "front upper": {
+      "median": 4,
+      "p95": 24,
+      "fraction_above_10": 0.206
+    },
+    "front lower": {
+      "median": 3,
+      "p95": 16,
+      "fraction_above_10": 0.146
+    },
+    "early_turn upper": {
+      "median": 3,
+      "p95": 10,
+      "fraction_above_10": 0.035
+    },
+    "early_turn lower": {
+      "median": 0,
+      "p95": 14,
+      "fraction_above_10": 0.222
+    }
+  },
+  "finish_review": {
+    "candidate": 5,
+    "status": "needs owner review",
+    "remaining": [
+      "Lower left rail highlight breaks into alternating pixels late in the turn",
+      "Cloudy red areas on rear upper ruby near the waist"
+    ],
+    "production_installed": false
+  }
+}
