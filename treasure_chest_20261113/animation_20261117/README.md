@@ -1530,3 +1530,60 @@ render needs `fresh`.
   run of `V20_UNDO=1` gave back the file as it was. Pictures rendered from the saved file (waiting 0, arrival 59,
   60, 74, reveal 44 and 75, ending 0) are the tested ones within 1 of 255.
 - For the owner: `~/Downloads/Chest left light new opening.png` (today and new, the two openings close up, the sand).
+
+### The roof lights 50 percent weaker and equally strong, the right sand 0.2 s after the left (2026-11-25)
+
+The owner, after the whole video with the new left opening: "I want the lights to be 40% less strong. and I want
+the left sand to come down 0.2 seconds before the right one. and also when the light from inside comes on, it
+should affect the light coming from the top how real physics would, idk how that is, I just know it will be
+affected. and if it's not then that's fine". Shown that (lights at 40 percent less, the left still 1.65 times the
+right): "make them both actually 60% less bright instead of 40 and also make the left light the same brightness as
+the right. and show me what that looks like by itself". Shown that: "ok actually show me 50% and 40% instead of
+60%, both on separate images", and with the two pictures in front of them: "50".
+
+- **Status:** in `Claude_Temple_Ceiling.blend`, saved 2026-11-25 19:33 from the open Blender window: both lights at
+  half the right light's old strength. (Saved the same way before it: 18:48 at 40 percent less with the left still
+  the stronger, 19:15 at 60 percent less and equal; `Claude_Temple_Ceiling.blend1` is the 60 percent one.) The
+  video in Downloads from 16:12 that day is from before all of this; the next whole scene render needs `fresh`.
+- **`tools/v21_roof_light_and_sand.py`** (`V21_LIGHT` 0.5, `V21_LEFT` right, `V21_LAG` 0.2; safe to run again, every
+  run starts from what was there before the first; `V21_UNDO=1` puts everything back).
+  1. **The lights** are the two shafts of night light, `Temple Shaft L` and `R`. Each one's strength is a driver, a
+     number times `(1.5 - 0.5 * gold)`; only the number changes (each light keeps a note "v21 before" with its old
+     formula). The right light's number is halved (1252104.1 to 626052.1) and the left light, which had always been
+     1.65 times the right (2068850.1), takes the same number. So the beam in the air, its patch on the stone and
+     the sand it lights get that much less light at every moment. Rows 330 to 470 of the waiting picture, left and
+     right beam of 255: 40.6 and 25.4 before; 16.7 and 13.5 now. The tries, lights equal: 19.3 and 16.2 at 40
+     percent less, 14.0 and 10.7 at 60. With the same strength the left still reads a little higher: the air is a
+     little thicker that far back and the stone behind that beam is paler (2.5 against 1.0 beside the beams). Said
+     to the owner.
+  2. **The sand.** Both curtains (`Temple Dust Cloud L` and `R`) wear one material on one clock, `dustfall`:
+     seconds since the chest first hits the platform (scene frame 17); the sand lets go 0.1 s after. The clock is
+     held at 0 before the hit and the sand's sound is laid to it, so the left keeps its moment and the right waits:
+     each curtain has a number `sand_delay` (left 0, right 0.2) that the material takes off the clock for that
+     curtain only (two new nodes after "fall time": "sand delay of this curtain", which reads the number from the
+     object, and "clock less its delay"). Reading a number from the object works for a material in the air.
+  3. **The light from inside the chest: nothing changed, the video already does what real light does.** Two lights
+     never change each other, so the roof beams keep their strength and shape when the lid opens. What changes is
+     what is around them: `Temple Chest Burst` lights the stone behind them and `Temple Burst Rays` the dusty air,
+     so they stand out less while it is bright. In the video of that day: left beam 41 before the lid opens and 42
+     at the brightest moment (scene frame 114), the stone beside it 2 and then 20. A test with the rays light
+     hidden: it adds about 2 of 255 in and around the beams at that moment. With the weaker lights the beams all
+     but go under at that moment: left 20.4 against 20.0 and 8.6 beside it, right 16.9 against 6.1 and 21.4.
+- **Checked** (70 percent, 24 samples, each against the same picture from the file before version 21). With only
+  the sand's wait switched on (arrival 60, 66, 72, 80, 123): the left third does not change (0.00), and the right
+  sand at arrival 66 is the old one at 60, at 72 the old one at 66 (0.00, most 1 of 255): the same sand, 6 pictures
+  later. On the arrival's last picture the late sand leaves 0.03 on average and at most 1, so nothing shows when
+  the waiting loop takes over. With everything (waiting 0, reveal 44, 64, 90 at the saved strength; the arrival
+  frames too at 60 percent less): the middle third above the chest, the floor and the chest itself 0.00 (most 1)
+  in every picture.
+- **Saved from the open Blender window and checked, each time.** Blender was closed (the owner had rendered); it
+  was reopened with the official connection and the file opened in it, with its own layout. The list of everything
+  a render depends on, now with every driver's formula and every custom number, taken before the script, after it
+  and from the saved file. First save: the two lights' strength and formula and their notes, the sand material (67
+  to 69 nodes) and the two curtains' `sand_delay`; nothing else. Second and third save: the two lights' strength
+  and formula; nothing else. The waiting picture rendered from the saved file is the tested one within 1 of 255
+  (first save, more pictures: the same, but for 10 pixels off by 2 in the reveal and, in the ending, specks of up
+  to 9 round a fire bowl that two renders of the same file also show between themselves; they were there before).
+- For the owner, in `~/Downloads`: `Chest roof lights now.png` (the waiting screen by itself, from the saved file),
+  the two tries `Chest roof lights 50 percent weaker.png` (the same look) and `Chest roof lights 40 percent
+  weaker.png`, and from the first try `Chest lights and sand timing.png` (the sand 2.2 and 2.4 seconds in).
